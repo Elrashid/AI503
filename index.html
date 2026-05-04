@@ -52,7 +52,7 @@
   <a class="card" href="Assignment01/paper_explorer.html">
     <h2>🔍 Paper Explorer</h2>
     <p>Interactive viewer: click any extracted field → see the source page image with the bbox highlighted.</p>
-    <p class="warn">⚠ Page images won't load on GitHub Pages (LFS-stored). Clone the repo to use it locally.</p>
+    <p class="ok">✓ Works fully on GitHub Pages (1,371 page renders + 520 figures served directly)</p>
   </a>
 
   <a class="card" href="Assignment01/comparative_analysis_table.csv">
@@ -69,26 +69,20 @@
 
 </div>
 
-<div class="note">
-  <strong>Why the paper-image previews don't load on GitHub Pages:</strong>
-  All 1,371 page PNGs and 520 figure JPGs are stored via Git LFS, and GitHub Pages
-  doesn't serve LFS content — it returns LFS pointer text instead, breaking the
-  &lt;img&gt; tags. To use the explorer with full source-image preview, clone the repo:
-  <pre>git lfs install
-git clone https://github.com/Elrashid/AI503.git
+<h2>Clone for local development</h2>
+<pre>git clone https://github.com/Elrashid/AI503.git
 cd AI503
 start Assignment01/paper_explorer.html   # or `open` on macOS / `xdg-open` on Linux</pre>
-</div>
 
 <h2>Repo layout</h2>
 <pre>Assignment01/
 ├── exports/                 ResearchRabbit CSV exports (Deliverable #1)
 ├── docs/                    Methodology — off-topic audit, replacement candidates, RR move cheatsheet
-├── papers_pdf/              50 PDFs (LFS)
-├── papers_json/             50 marker-pdf JSONs (LFS)
+├── papers_pdf/              50 PDFs
+├── papers_json/             50 marker-pdf JSONs
 ├── papers_xml/              50 source-traced XMLs
-├── papers_pages/            1,371 page renders @ 150 DPI (LFS)
-├── figures/                 520 figure images (LFS)
+├── papers_pages/            1,371 page renders @ 150 DPI
+├── figures/                 520 figure images
 ├── extractions/             50 source-traced extraction JSONs
 ├── comparative_analysis_table.csv
 ├── dashboard.html
