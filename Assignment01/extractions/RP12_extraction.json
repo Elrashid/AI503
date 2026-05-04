@@ -1,0 +1,1346 @@
+{
+  "rp_id": "RP12",
+  "year": {
+    "value": 2023,
+    "ev": {
+      "page": 1,
+      "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "quote": "In this work, we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs)",
+      "bbox": [
+        106.083984375,
+        394.83984375,
+        505.8751220703125,
+        481.8409729003906
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "first_author": {
+    "value": "Touvron",
+    "ev": {
+      "page": 1,
+      "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "quote": "Hugo Touvron^(∗) Louis Martin† Kevin Stone†",
+      "bbox": [
+        206.35601806640625,
+        129.1640625,
+        410.291015625,
+        142.0069580078125
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Hugo Touvron",
+      "ev": {
+        "page": 1,
+        "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+        "quote": "Hugo Touvron^(∗) Louis Martin† Kevin Stone†",
+        "bbox": [
+          206.35601806640625,
+          129.1640625,
+          410.291015625,
+          142.0069580078125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Louis Martin",
+      "ev": {
+        "page": 1,
+        "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+        "quote": "Hugo Touvron^(∗) Louis Martin† Kevin Stone†",
+        "bbox": [
+          206.35601806640625,
+          129.1640625,
+          410.291015625,
+          142.0069580078125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Kevin Stone",
+      "ev": {
+        "page": 1,
+        "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+        "quote": "Hugo Touvron^(∗) Louis Martin† Kevin Stone†",
+        "bbox": [
+          206.35601806640625,
+          129.1640625,
+          410.291015625,
+          142.0069580078125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Peter Albert",
+      "ev": {
+        "page": 1,
+        "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+        "quote": "Peter Albert Amjad Almahairi Yasmine Babaei Nikolay Bashlykov Soumya Batra Prajjwal Bhargava",
+        "bbox": [
+          84.568359375,
+          144.24609375,
+          526.0924072265625,
+          293.37701416015625
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Thomas Scialom",
+      "ev": {
+        "page": 1,
+        "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+        "quote": "Sergey Edunov Thomas Scialom^(∗)",
+        "bbox": [
+          84.568359375,
+          144.24609375,
+          526.0924072265625,
+          293.37701416015625
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    }
+  ],
+  "title": {
+    "value": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "ev": {
+      "page": 1,
+      "section": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "quote": "# **Llama 2: Open Foundation and Fine-Tuned Chat Models**",
+      "bbox": [
+        81.28125,
+        82.7578125,
+        529.1113891601562,
+        101.75286865234375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "arXiv preprint (Meta GenAI technical report)",
+    "ev": {
+      "page": 1,
+      "section": "GenAI, Meta",
+      "quote": "## **GenAI, Meta**",
+      "bbox": [
+        268.9453125,
+        317.109375,
+        341.5552978515625,
+        330.34478759765625
+      ],
+      "block_id": "/page/0/SectionHeader/4"
+    }
+  },
+  "doi": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "Llama 2 is an open-release family of pretrained and fine-tuned LLMs (7B, 13B, 70B) optimized via SFT and RLHF for dialogue, with safety tuning and Ghost Attention.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters",
+      "bbox": [
+        106.083984375,
+        394.83984375,
+        505.8751220703125,
+        481.8409729003906
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "datasets": [
+    {
+      "value": "HumanEval",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the average pass@1 scores of our models on HumanEval [(Chen et al., 2021)](#page-37-1) and MBPP",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "MBPP",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the average pass@1 scores of our models on HumanEval [(Chen et al., 2021)](#page-37-1) and MBPP",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "PIQA",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the average of PIQA [(Bisk et al., 2020)](#page-37-2), SIQA",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "SIQA",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the average of PIQA [(Bisk et al., 2020)](#page-37-2), SIQA [(Sap et al., 2019)](#page-41-3)",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "HellaSwag",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "HellaSwag [(Zellers et al., 2019a)](#page-43-5), WinoGrande",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "WinoGrande",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "WinoGrande [(Sakaguchi et al., 2021)](#page-41-4), ARC easy and challenge",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "ARC (easy and challenge)",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "ARC easy and challenge [(Clark et al., 2018)](#page-38-1), OpenBookQA",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "OpenBookQA",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "OpenBookQA [(Mihaylov et al., 2018)](#page-40-3), and CommonsenseQA",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "CommonsenseQA",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "CommonsenseQA [(Talmor et al., 2018)](#page-42-4)",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "NaturalQuestions",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We evaluate the 5-shot performance on NaturalQuestions [(Kwiatkowski et al., 2019)](#page-40-4) and TriviaQA",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "TriviaQA",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "and TriviaQA [(Joshi et al., 2017)](#page-39-3) and report the average",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "SQuAD",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "we report the 0-shot average on SQuAD [(Rajpurkar et al., 2018)](#page-41-5), QuAC",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "QuAC",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "QuAC [(Choi et al., 2018)](#page-37-3), and BoolQ",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "BoolQ",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "and BoolQ [(Clark et al., 2019)](#page-38-2)",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "GSM8K",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the average of the GSM8K (8 shot) [(Cobbe et al., 2021)](#page-38-3) and MATH",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "MATH",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "GSM8K (8 shot) [(Cobbe et al., 2021)](#page-38-3) and MATH (4 shot) [(Hendrycks et al., 2021)](#page-39-4)",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "MMLU",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the overall results for MMLU (5 shot) (Hendrycks et al., 2020), Big Bench Hard (BBH)",
+        "bbox": [
+          96.75,
+          279.59765625,
+          541.5,
+          311.30859375
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "BIG-Bench Hard (BBH)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Big Bench Hard (BBH) (3 shot) (Suzgun et al., 2022), and AGI Eval (3-5 shot)",
+        "bbox": [
+          96.75,
+          279.59765625,
+          541.5,
+          311.30859375
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "AGI Eval",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "and AGI Eval (3-5 shot) (Zhong et al., 2023). For AGI Eval, we only evaluate on the English tasks",
+        "bbox": [
+          96.75,
+          279.59765625,
+          541.5,
+          311.30859375
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "TruthfulQA",
+      "ev": {
+        "page": 31,
+        "section": "1 - Severe safety violations",
+        "quote": "Evaluation of fine-tuned LLMs on different safety datasets. For TruthfulQA, we present the percentage of generations that are both truthful and informative",
+        "bbox": [
+          70.822265625,
+          162.80859375,
+          541.7467651367188,
+          206.3079833984375
+        ],
+        "block_id": "/page/30/Caption/6"
+      }
+    },
+    {
+      "value": "ToxiGen",
+      "ev": {
+        "page": 31,
+        "section": "1 - Severe safety violations",
+        "quote": "For ToxiGen, we present the percentage of toxic generations (the smaller the better)",
+        "bbox": [
+          70.822265625,
+          162.80859375,
+          541.7467651367188,
+          206.3079833984375
+        ],
+        "block_id": "/page/30/Caption/6"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "2 trillion pretraining tokens; 27,540 SFT annotations; ~1.4M binary human preference comparisons for RLHF reward modeling",
+    "ev": {
+      "page": 5,
+      "section": "2.1 Pretraining Data",
+      "quote": "We trained on 2 trillion tokens of data as this provides a good performance–cost trade-off",
+      "bbox": [
+        70.5234375,
+        483.78515625,
+        540.095947265625,
+        538.2849273681641
+      ],
+      "block_id": "/page/4/Text/5"
+    }
+  },
+  "models_used": [
+    {
+      "value": "Llama 2 7B",
+      "ev": {
+        "page": 6,
+        "section": "2.2 Training Details",
+        "quote": "Llama 2 family of models. Token counts refer to pretraining data only",
+        "bbox": [
+          70.5,
+          206.89453125,
+          541.5,
+          238.60546875
+        ],
+        "block_id": "/page/5/Caption/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama 2 13B",
+      "ev": {
+        "page": 6,
+        "section": "2.2 Training Details",
+        "quote": "LLAMA 2 | A new mix of publicly available online data | 7B | 4k | X | 2.0T",
+        "bbox": [
+          80.7612890625,
+          68.31,
+          530.0433984375,
+          200.84625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama 2 34B",
+      "ev": {
+        "page": 6,
+        "section": "2.2 Training Details",
+        "quote": "34B | 4k | ✓ | 2.0T | 1.5 \\times 10^{-4}",
+        "bbox": [
+          80.7612890625,
+          68.31,
+          530.0433984375,
+          200.84625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama 2 70B",
+      "ev": {
+        "page": 6,
+        "section": "2.2 Training Details",
+        "quote": "70B | 4k | ✓ | 2.0T | 1.5 \\times 10^{-4}",
+        "bbox": [
+          80.7612890625,
+          68.31,
+          530.0433984375,
+          200.84625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama 2-Chat 7B",
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "Llama 2-Chat, a fine-tuned version of Llama 2 that is optimized for dialogue use cases. We release variants of this model with 7B, 13B, and 70B parameters",
+        "bbox": [
+          93.75,
+          425.00390625,
+          542.25,
+          516.75
+        ],
+        "block_id": "/page/3/ListGroup/86"
+      }
+    },
+    {
+      "value": "Llama 2-Chat 13B",
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "We release variants of this model with 7B, 13B, and 70B parameters as well",
+        "bbox": [
+          93.75,
+          425.00390625,
+          542.25,
+          516.75
+        ],
+        "block_id": "/page/3/ListGroup/86"
+      }
+    },
+    {
+      "value": "Llama 2-Chat 70B",
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "We release variants of this model with 7B, 13B, and 70B parameters as well",
+        "bbox": [
+          93.75,
+          425.00390625,
+          542.25,
+          516.75
+        ],
+        "block_id": "/page/3/ListGroup/86"
+      }
+    },
+    {
+      "value": "Llama 1 (7B/13B/33B/65B, baselines)",
+      "ev": {
+        "page": 6,
+        "section": "2.2 Training Details",
+        "quote": "LLAMA 1 | See Touvron et al. (2023) | 7B | 2k | X | 1.0T",
+        "bbox": [
+          80.7612890625,
+          68.31,
+          530.0433984375,
+          200.84625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "MPT (7B/30B, baseline)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5",
+        "bbox": [
+          97.51359375,
+          68.364140625,
+          514.48640625,
+          234.823359375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Falcon (7B/40B, baseline)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Falcon | 7B | 5.6 | 56.1 | 42.8 | 36.0",
+        "bbox": [
+          97.51359375,
+          68.364140625,
+          514.48640625,
+          234.823359375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "GPT-3.5 (closed baseline)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Comparison to closed-source models on academic benchmarks. Results for GPT-3.5 and GPT-4 are from OpenAI (2023)",
+        "bbox": [
+          70.5,
+          558.80859375,
+          540.75,
+          591.0
+        ],
+        "block_id": "/page/7/Caption/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "GPT-4 (closed baseline)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Results for GPT-3.5 and GPT-4 are from OpenAI (2023)",
+        "bbox": [
+          70.5,
+          558.80859375,
+          540.75,
+          591.0
+        ],
+        "block_id": "/page/7/Caption/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "PaLM 540B (closed baseline)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Results for the PaLM model are from Chowdhery et al. (2022)",
+        "bbox": [
+          70.5,
+          558.80859375,
+          540.75,
+          591.0
+        ],
+        "block_id": "/page/7/Caption/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "PaLM-2-L (closed baseline)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Results for the PaLM-2-L are from Anil et al. (2023)",
+        "bbox": [
+          70.5,
+          558.80859375,
+          540.75,
+          591.0
+        ],
+        "block_id": "/page/7/Caption/7",
+        "source_table": "Table 4"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "Accuracy (multiple-choice / classification benchmarks)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Llama 2 70B improves the results on MMLU and BBH by \\approx5 and \\approx8 points",
+        "bbox": [
+          69.92578125,
+          322.5,
+          543.0,
+          375.75
+        ],
+        "block_id": "/page/7/Text/3"
+      }
+    },
+    {
+      "value": "pass@1 (HumanEval / MBPP code)",
+      "ev": {
+        "page": 7,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "We report the average pass@1 scores of our models on HumanEval [(Chen et al., 2021)](#page-37-1) and MBPP",
+        "bbox": [
+          96.521484375,
+          546.8203125,
+          541.3644409179688,
+          693.5499420166016
+        ],
+        "block_id": "/page/6/ListGroup/295"
+      }
+    },
+    {
+      "value": "Helpfulness win-rate (human + GPT-4)",
+      "ev": {
+        "page": 3,
+        "section": "Contents",
+        "quote": "Win-rate % for helpfulness and safety between commercial-licensed baselines and Llama 2-Chat, according to GPT-4",
+        "bbox": [
+          340.6640625,
+          248.2734375,
+          541.668212890625,
+          357.5379943847656
+        ],
+        "block_id": "/page/2/Caption/3"
+      }
+    },
+    {
+      "value": "Safety violation percentage (human eval, ~2,000 adversarial prompts)",
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "Human raters judged model generations for safety violations across ~2,000 adversarial prompts",
+        "bbox": [
+          70.5,
+          288.75,
+          543.0,
+          363.0
+        ],
+        "block_id": "/page/3/Caption/1"
+      }
+    },
+    {
+      "value": "TruthfulQA truthful-and-informative %",
+      "ev": {
+        "page": 31,
+        "section": "1 - Severe safety violations",
+        "quote": "For TruthfulQA, we present the percentage of generations that are both truthful and informative",
+        "bbox": [
+          70.822265625,
+          162.80859375,
+          541.7467651367188,
+          206.3079833984375
+        ],
+        "block_id": "/page/30/Caption/6"
+      }
+    },
+    {
+      "value": "ToxiGen toxic-generation %",
+      "ev": {
+        "page": 31,
+        "section": "1 - Severe safety violations",
+        "quote": "For ToxiGen, we present the percentage of toxic generations (the smaller the better)",
+        "bbox": [
+          70.822265625,
+          162.80859375,
+          541.7467651367188,
+          206.3079833984375
+        ],
+        "block_id": "/page/30/Caption/6"
+      }
+    },
+    {
+      "value": "Self-BLEU (response diversity vs temperature)",
+      "ev": {
+        "page": 33,
+        "section": "5.1 Learnings and Observations",
+        "quote": "For each of the 25 responses we compute the Self-BLEU metric and report the mean and standard deviation against the temperature",
+        "bbox": [
+          70.822265625,
+          254.07421875,
+          540.0076904296875,
+          320.5229797363281
+        ],
+        "block_id": "/page/32/Caption/1"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Llama 2 70B reaches MMLU 68.9, BBH 51.2, AGI Eval 54.2, beating all open-source baselines (MPT-30B, Falcon-40B, Llama 1 65B)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "LLAMA 2 | 70B | **37.5** | **71.9** | **63.6** | **69.4** | **35.2** | **68.9** | **51.2** | **54.2**",
+        "bbox": [
+          97.51359375,
+          68.364140625,
+          514.48640625,
+          234.823359375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Llama 2 70B improves over Llama 1 65B by ~5 points on MMLU and ~8 points on BBH",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Llama 2 70B improves the results on MMLU and BBH by \\approx5 and \\approx8 points, respectively, compared to Llama 1 65B",
+        "bbox": [
+          69.92578125,
+          322.5,
+          543.0,
+          375.75
+        ],
+        "block_id": "/page/7/Text/3"
+      }
+    },
+    {
+      "value": "Llama 2 70B closes ground on GPT-3.5: MMLU 68.9 vs 70.0 and GSM8K 56.8 vs 57.1 (still a gap on coding)",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Llama 2 70B is close to GPT-3.5 (OpenAI, 2023) on MMLU and GSM8K, but there is a significant gap on coding benchmarks",
+        "bbox": [
+          97.51359375,
+          68.364140625,
+          514.48640625,
+          234.823359375
+        ],
+        "block_id": "/page/7/Text/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Pretraining cost: 3.3M GPU-hours on A100-80GB and 539 tCO2eq emitted (100% offset by Meta)",
+      "ev": {
+        "page": 7,
+        "section": "2.2.1 Training Hardware & Carbon Footprint",
+        "quote": "A cumulative of 3.3M GPU hours of computation was performed on hardware of type A100-80GB (TDP of 400W or 350W). We estimate the total emissions for training to be 539 tCO2eq",
+        "bbox": [
+          69.92578125,
+          353.2794189453125,
+          541.7467651367188,
+          409.7679748535156
+        ],
+        "block_id": "/page/6/Text/4",
+        "source_table": "Table 2"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs)",
+      "bbox": [
+        106.083984375,
+        394.83984375,
+        505.8751220703125,
+        481.8409729003906
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "method_family": {
+    "value": "architecture",
+    "ev": {
+      "page": 5,
+      "section": "2.2 Training Details",
+      "quote": "We use the standard transformer architecture [(Vaswani et al., 2017)](#page-43-2), apply pre-normalization using RMSNorm",
+      "bbox": [
+        70.224609375,
+        598.0094146728516,
+        540.0525512695312,
+        665.4069519042969
+      ],
+      "block_id": "/page/4/Text/8"
+    }
+  },
+  "quantization_method_name": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "bit_widths_tested": [],
+  "quantization_target": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A100-80GB (RSC + production cluster)",
+      "ev": {
+        "page": 6,
+        "section": "2.2.1 Training Hardware & Carbon Footprint",
+        "quote": "We pretrained our models on Meta's Research Super Cluster (RSC) (Lee and Sengupta, 2022) as well as internal production clusters. Both clusters use NVIDIA A100s",
+        "bbox": [
+          70.5,
+          636.0,
+          543.0,
+          722.00390625
+        ],
+        "block_id": "/page/5/Text/6"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "Open release of competitive 7B/13B/70B base + chat models with permissive license enables reproducible research and commercial use.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Our models outperform open-source chat models on most benchmarks we tested, and based on our human evaluations for helpfulness and safety, may be a suitable substitute for closed-source models",
+        "bbox": [
+          106.083984375,
+          394.83984375,
+          505.8751220703125,
+          481.8409729003906
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Architectural upgrades over Llama 1: 4k context, 40% more pretraining tokens, and grouped-query attention for inference scaling.",
+      "ev": {
+        "page": 5,
+        "section": "2 Pretraining",
+        "quote": "we performed more robust data cleaning, updated our data mixes, trained on 40% more total tokens, doubled the context length, and used grouped-query attention (GQA)",
+        "bbox": [
+          70.5234375,
+          393.07733154296875,
+          541.7894897460938,
+          449.36895751953125
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "Detailed safety methodology: red-teaming, safety-tuning, iterative RLHF, and Ghost Attention for multi-turn dialogue control.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We provide a detailed description of our approach to fine-tuning and safety improvements of Llama 2-Chat",
+        "bbox": [
+          106.083984375,
+          394.83984375,
+          505.8751220703125,
+          481.8409729003906
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Closes much of the gap to GPT-3.5 on MMLU and GSM8K and is on par with PaLM-540B on most benchmarks.",
+      "ev": {
+        "page": 8,
+        "section": "2.3 Llama 2 Pretrained Model Evaluation",
+        "quote": "Llama 2 70B results are on par or better than PaLM (540B) (Chowdhery et al., 2022) on almost all benchmarks",
+        "bbox": [
+          69.75,
+          382.078125,
+          543.0,
+          434.25
+        ],
+        "block_id": "/page/7/Text/4"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Knowledge frozen post-pretraining; the model can produce non-factual content and hallucinations.",
+      "ev": {
+        "page": 34,
+        "section": "5.2 Limitations and Ethical Considerations",
+        "quote": "Llama 2-Chat is subject to the same well-recognized limitations of other LLMs, including a cessation of knowledge updates post-pretraining, potential for non-factual generation",
+        "bbox": [
+          70.224609375,
+          554.6354064941406,
+          540.02734375,
+          589.3049468994141
+        ],
+        "block_id": "/page/33/Text/8"
+      }
+    },
+    {
+      "value": "Predominantly English; performance in other languages is fragile and should be used with caution.",
+      "ev": {
+        "page": 34,
+        "section": "5.2 Limitations and Ethical Considerations",
+        "quote": "the model's performance in languages other than English remains fragile and should be used with caution",
+        "bbox": [
+          70.5234375,
+          592.8414154052734,
+          541.7474975585938,
+          649.3299407958984
+        ],
+        "block_id": "/page/33/Text/9"
+      }
+    },
+    {
+      "value": "Safety tuning sometimes overshoots, causing the model to refuse benign requests or add excessive safety caveats.",
+      "ev": {
+        "page": 35,
+        "section": "5.2 Limitations and Ethical Considerations",
+        "quote": "in some instances, our safety tuning goes too far. Users of Llama 2-Chat may observe an overly cautious approach, with the model erring on the side of declining certain requests",
+        "bbox": [
+          70.224609375,
+          122.58984375,
+          540.064453125,
+          155.75799560546875
+        ],
+        "block_id": "/page/34/Text/1"
+      }
+    },
+    {
+      "value": "Can still emit harmful, offensive, or biased content because pretraining data is drawn from public web sources.",
+      "ev": {
+        "page": 34,
+        "section": "5.2 Limitations and Ethical Considerations",
+        "quote": "Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets",
+        "bbox": [
+          70.5234375,
+          653.0623016357422,
+          541.2437133789062,
+          698.4449462890625
+        ],
+        "block_id": "/page/33/Text/10"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Paper does not study post-training quantization or low-bit deployment of Llama 2 weights.",
+      "ev": {
+        "page": 5,
+        "section": "2.2 Training Details",
+        "quote": "We adopt most of the pretraining setting and model architecture from Llama 1",
+        "bbox": [
+          70.224609375,
+          598.0094146728516,
+          540.0525512695312,
+          665.4069519042969
+        ],
+        "block_id": "/page/4/Text/8"
+      }
+    },
+    {
+      "value": "Largest released model is 70B; the trained 34B variant is held back, limiting the open scaling story.",
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "We have also trained 34B variants, which we report on in this paper but are not releasing",
+        "bbox": [
+          93.75,
+          425.00390625,
+          542.25,
+          516.75
+        ],
+        "block_id": "/page/3/ListGroup/86"
+      }
+    },
+    {
+      "value": "All testing was performed in English and could not cover all deployment scenarios.",
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "Testing conducted to date has been in English and has not - and could not - cover all scenarios",
+        "bbox": [
+          70.5,
+          532.125,
+          543.0,
+          609.46875
+        ],
+        "block_id": "/page/3/Text/5"
+      }
+    },
+    {
+      "value": "Reports no per-token inference latency or edge-device deployment numbers; hardware focus is data-center A100.",
+      "ev": {
+        "page": 6,
+        "section": "2.2.1 Training Hardware & Carbon Footprint",
+        "quote": "Both clusters use NVIDIA A100s",
+        "bbox": [
+          70.5,
+          636.0,
+          543.0,
+          722.00390625
+        ],
+        "block_id": "/page/5/Text/6"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Continue to fine-tune and release updated versions to address bias and harmful content, especially for non-English languages.",
+      "ev": {
+        "page": 34,
+        "section": "5.2 Limitations and Ethical Considerations",
+        "quote": "We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues",
+        "bbox": [
+          70.5234375,
+          653.0623016357422,
+          541.2437133789062,
+          698.4449462890625
+        ],
+        "block_id": "/page/33/Text/10"
+      }
+    },
+    {
+      "value": "Encourage more community research and red-teaming on tool-use safety with Llama 2-Chat.",
+      "ev": {
+        "page": 34,
+        "section": "5.1 Learnings and Observations",
+        "quote": "LLM tool use, while exciting, can also cause some safety concerns. We encourage more community research and red teaming in this area",
+        "bbox": [
+          70.822265625,
+          484.9283142089844,
+          540.156982421875,
+          519.4019775390625
+        ],
+        "block_id": "/page/33/Text/6"
+      }
+    },
+    {
+      "value": "Explore alternative human-preference collection schemes beyond binary comparison for reward modeling.",
+      "ev": {
+        "page": 9,
+        "section": "3.2.1 Human Preference Data Collection",
+        "quote": "Still, other strategies are worth considering, which we leave for future work",
+        "bbox": null,
+        "block_id": "/page/9/Text/?"
+      }
+    },
+    {
+      "value": "Plan further improvements to Llama 2-Chat as part of ongoing transparency and safety commitments.",
+      "ev": {
+        "page": 36,
+        "section": "7 Conclusion",
+        "quote": "we plan to make further improvements to Llama 2-Chat in future work",
+        "bbox": [
+          70.5,
+          635.37890625,
+          543.0,
+          721.5
+        ],
+        "block_id": "/page/35/Text/8"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": true,
+      "ev": {
+        "page": 7,
+        "section": "2.2.1 Training Hardware & Carbon Footprint",
+        "quote": "We estimate the total emissions for training to be 539 tCO2eq, of which 100% were directly offset by Meta's sustainability program",
+        "bbox": [
+          69.92578125,
+          353.2794189453125,
+          541.7467651367188,
+          409.7679748535156
+        ],
+        "block_id": "/page/6/Text/4",
+        "source_table": "Table 2"
+      }
+    },
+    "reports_statistical_significance": {
+      "value": true,
+      "ev": {
+        "page": 33,
+        "section": "5.1 Learnings and Observations",
+        "quote": "we compute the Self-BLEU metric and report the mean and standard deviation against the temperature",
+        "bbox": [
+          70.822265625,
+          254.07421875,
+          540.0076904296875,
+          320.5229797363281
+        ],
+        "block_id": "/page/32/Caption/1"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 35,
+        "section": "5.3 Responsible Release Strategy",
+        "quote": "These code samples are available here: [https://github.com/facebookresearch/llama](https://github.com/facebookresearch/llama)",
+        "bbox": [
+          70.224609375,
+          266.22918701171875,
+          540.1116943359375,
+          311.7989501953125
+        ],
+        "block_id": "/page/34/Text/5"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": true,
+      "ev": {
+        "page": 4,
+        "section": "1 Introduction",
+        "quote": "Llama 2-Chat, a fine-tuned version of Llama 2 that is optimized for dialogue use cases",
+        "bbox": [
+          93.75,
+          425.00390625,
+          542.25,
+          516.75
+        ],
+        "block_id": "/page/3/ListGroup/86"
+      }
+    }
+  }
+}

@@ -1,0 +1,1193 @@
+{
+  "rp_id": "RP11",
+  "year": {
+    "value": 2022,
+    "ev": {
+      "page": 1,
+      "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+      "quote": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+      "bbox": [
+        157.33399963378906,
+        99.92486572265625,
+        454.66754150390625,
+        137.06524658203125
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "first_author": {
+    "value": "Dettmers",
+    "ev": {
+      "page": 1,
+      "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+      "quote": "Tim Dettmersλ^(∗) Mike Lewis† Younes Belkada§∓ Luke Zettlemoyer†^(λ)",
+      "bbox": [
+        126.703125,
+        175.5703125,
+        484.208251953125,
+        187.85107421875
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Tim Dettmers",
+      "ev": {
+        "page": 1,
+        "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+        "quote": "Tim Dettmersλ^(∗) Mike Lewis† Younes Belkada§∓ Luke Zettlemoyer†^(λ)",
+        "bbox": [
+          126.703125,
+          175.5703125,
+          484.208251953125,
+          187.85107421875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Mike Lewis",
+      "ev": {
+        "page": 1,
+        "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+        "quote": "Tim Dettmersλ^(∗) Mike Lewis† Younes Belkada§∓ Luke Zettlemoyer†^(λ)",
+        "bbox": [
+          126.703125,
+          175.5703125,
+          484.208251953125,
+          187.85107421875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Younes Belkada",
+      "ev": {
+        "page": 1,
+        "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+        "quote": "Tim Dettmersλ^(∗) Mike Lewis† Younes Belkada§∓ Luke Zettlemoyer†^(λ)",
+        "bbox": [
+          126.703125,
+          175.5703125,
+          484.208251953125,
+          187.85107421875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Luke Zettlemoyer",
+      "ev": {
+        "page": 1,
+        "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+        "quote": "Tim Dettmersλ^(∗) Mike Lewis† Younes Belkada§∓ Luke Zettlemoyer†^(λ)",
+        "bbox": [
+          126.703125,
+          175.5703125,
+          484.208251953125,
+          187.85107421875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+    "ev": {
+      "page": 1,
+      "section": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+      "quote": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+      "bbox": [
+        157.33399963378906,
+        99.92486572265625,
+        454.66754150390625,
+        137.06524658203125
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "NeurIPS 2022 (arXiv:2208.07339)",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "doi": {
+    "value": "arXiv:2208.07339",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "LLM.int8() is a two-part Int8 inference procedure (vector-wise quantization plus mixed-precision decomposition that isolates emergent outlier features in 16-bit) that quantizes transformers up to 175B parameters with no performance loss and halves inference memory.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "We develop a procedure for Int8 matrix multiplication for feed-forward and attention projection layers in transformers, which cut the memory needed for inference by half while retaining full precision performance",
+      "bbox": [
+        141.64453125,
+        316.3083801269531,
+        469.7928771972656,
+        522.7860717773438
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "datasets": [
+    {
+      "value": "C4 (validation)",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "we evaluate the perplexity of the 8-bit transformer on validation data of the C4 corpus (Raffel et al., 2019)",
+        "bbox": [
+          106.5,
+          549.0,
+          505.5,
+          582.75
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    {
+      "value": "WinoGrande",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "OPT model mean zeroshot accuracy for WinoGrande, HellaSwag, PIQA, and LAMBADA datasets",
+        "bbox": [
+          304.8046875,
+          350.7528076171875,
+          505.6546630859375,
+          448.0101013183594
+        ],
+        "block_id": "/page/1/Caption/4"
+      }
+    },
+    {
+      "value": "HellaSwag",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "OPT model mean zeroshot accuracy for WinoGrande, HellaSwag, PIQA, and LAMBADA datasets",
+        "bbox": [
+          304.8046875,
+          350.7528076171875,
+          505.6546630859375,
+          448.0101013183594
+        ],
+        "block_id": "/page/1/Caption/4"
+      }
+    },
+    {
+      "value": "PIQA",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "OPT model mean zeroshot accuracy for WinoGrande, HellaSwag, PIQA, and LAMBADA datasets",
+        "bbox": [
+          304.8046875,
+          350.7528076171875,
+          505.6546630859375,
+          448.0101013183594
+        ],
+        "block_id": "/page/1/Caption/4"
+      }
+    },
+    {
+      "value": "LAMBADA",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "OPT model mean zeroshot accuracy for WinoGrande, HellaSwag, PIQA, and LAMBADA datasets",
+        "bbox": [
+          304.8046875,
+          350.7528076171875,
+          505.6546630859375,
+          448.0101013183594
+        ],
+        "block_id": "/page/1/Caption/4"
+      }
+    },
+    {
+      "value": "EleutherAI LM Evaluation Harness",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "we use OPT models (Zhang et al., 2022), and we evaluate these models on the EleutherAI language model evaluation harness (Gao et al., 2021)",
+        "bbox": [
+          105.75,
+          587.25,
+          504.75,
+          608.6953125
+        ],
+        "block_id": "/page/4/Text/11"
+      }
+    },
+    {
+      "value": "Books / English Wikipedia / CC-News / OpenWebText / CC-Stories / English CC100 (pretraining corpus)",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "These transformers have been pretrained on Books (Zhu et al., 2015), English Wikipedia, CC-News (Nagel, 2016), OpenWebText (Gokaslan and Cohen, 2019), CC-Stories (Trinh and Le, 2018), and English CC100",
+        "bbox": [
+          106.3828125,
+          489.0,
+          504.75,
+          542.25
+        ],
+        "block_id": "/page/4/Text/9"
+      }
+    },
+    {
+      "value": "WMT14+WMT16 (NMT training appendix)",
+      "ev": {
+        "page": 18,
+        "section": "**E** Training Results",
+        "quote": "neural machine translation (NMT) (Ott et al., 2018) on WMT14+WMT16",
+        "bbox": [
+          106.3828125,
+          586.5,
+          506.25,
+          660.90234375
+        ],
+        "block_id": "/page/17/Text/8"
+      }
+    },
+    {
+      "value": "GLUE (RoBERTa-large finetuning appendix)",
+      "ev": {
+        "page": 19,
+        "section": "**F** Fine-tuning Results",
+        "quote": "We also test 8-bit finetuning on RoBERTa-large finetuned on GLUE",
+        "bbox": [
+          106.5,
+          396.75,
+          507.75,
+          439.5
+        ],
+        "block_id": "/page/18/Text/4"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "C4 validation perplexity for models 125M-13B; zeroshot evaluation on OPT models 125M-175B; 2048-token sequences for outlier analysis (about 150,000 outliers per sequence at 6.7B)",
+    "ev": {
+      "page": 8,
+      "section": "4.2 Measuring the Effect of Outlier Features",
+      "quote": "for a 6.7B transformer with a sequence length of 2048, we find about 150k outlier features per sequence for the entire transformer",
+      "bbox": [
+        106.681640625,
+        618.75,
+        504.0486145019531,
+        651.4730834960938
+      ],
+      "block_id": "/page/7/Text/7"
+    }
+  },
+  "models_used": [
+    {
+      "value": "Fairseq dense LM 125M",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "C4 validation perplexities of quantization methods for different transformer sizes ranging from 125M to 13B parameters",
+        "bbox": [
+          105.78515625,
+          78.1171875,
+          506.25,
+          142.5
+        ],
+        "block_id": "/page/5/Caption/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Fairseq dense LM 1.3B",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "| Parameters | 125M | 1.3B | 2.7B | 6.7B | 13B |",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Fairseq dense LM 2.7B",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "| Parameters | 125M | 1.3B | 2.7B | 6.7B | 13B |",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Fairseq dense LM 6.7B",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "| Parameters | 125M | 1.3B | 2.7B | 6.7B | 13B |",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Fairseq dense LM 13B",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "| Parameters | 125M | 1.3B | 2.7B | 6.7B | 13B |",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "OPT-125M / 1.3B / 2.7B / 6.7B / 13B / 30B / 66B / 175B",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "we use OPT models (Zhang et al., 2022), and we evaluate these models on the EleutherAI language model evaluation harness",
+        "bbox": [
+          105.75,
+          587.25,
+          504.75,
+          608.6953125
+        ],
+        "block_id": "/page/4/Text/11"
+      }
+    },
+    {
+      "value": "BLOOM-176B",
+      "ev": {
+        "page": 4,
+        "section": "3 Int8 Matrix Multiplication at Scale",
+        "quote": "for BLOOM-176B, we reduce the memory footprint of the model by 1.96x",
+        "bbox": [
+          106.5,
+          451.6875,
+          505.5,
+          516.0
+        ],
+        "block_id": "/page/3/Text/10"
+      }
+    },
+    {
+      "value": "GPT-2 (117M / 345M / 762M / 1.5B)",
+      "ev": {
+        "page": 17,
+        "section": "B Additional Related Work",
+        "quote": "| GPT2 | 33.5 | 117M | 1 | 1 | 25% | 6% | (-8, -7, -6) | 45% | 19% |",
+        "bbox": [
+          104.219296875,
+          263.1853125,
+          507.780703125,
+          398.8771875
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "GPT-J 6B",
+      "ev": {
+        "page": 17,
+        "section": "B Additional Related Work",
+        "quote": "| GPT-J | 13.8 | 6.0B | 6 | 6 | 62% | 28% | (-21, -17, -14) | 55% | 10% |",
+        "bbox": [
+          104.219296875,
+          263.1853125,
+          507.780703125,
+          398.8771875
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "RoBERTa-large (finetuning appendix)",
+      "ev": {
+        "page": 19,
+        "section": "**F** Fine-tuning Results",
+        "quote": "We also test 8-bit finetuning on RoBERTa-large finetuned on GLUE",
+        "bbox": [
+          106.5,
+          396.75,
+          507.75,
+          439.5
+        ],
+        "block_id": "/page/18/Text/4"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "C4 validation perplexity (PPL)",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "we evaluate the perplexity of the 8-bit transformer on validation data of the C4 corpus",
+        "bbox": [
+          106.5,
+          549.0,
+          505.5,
+          582.75
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    {
+      "value": "Mean zeroshot accuracy (WinoGrande, HellaSwag, PIQA, LAMBADA)",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "OPT model mean zeroshot accuracy for WinoGrande, HellaSwag, PIQA, and LAMBADA datasets",
+        "bbox": [
+          304.8046875,
+          350.7528076171875,
+          505.6546630859375,
+          448.0101013183594
+        ],
+        "block_id": "/page/1/Caption/4"
+      }
+    },
+    {
+      "value": "Top-1 attention softmax probability",
+      "ev": {
+        "page": 8,
+        "section": "4.2 Measuring the Effect of Outlier Features",
+        "quote": "the mean top-1 softmax probability is reduced from about 40% to about 20%",
+        "bbox": [
+          106.98046875,
+          657.03515625,
+          505.7890319824219,
+          722.4070739746094
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "Memory footprint reduction factor",
+      "ev": {
+        "page": 4,
+        "section": "3 Int8 Matrix Multiplication at Scale",
+        "quote": "for BLOOM-176B, we reduce the memory footprint of the model by 1.96x",
+        "bbox": [
+          106.5,
+          451.6875,
+          505.5,
+          516.0
+        ],
+        "block_id": "/page/3/Text/10"
+      }
+    },
+    {
+      "value": "Per-token end-to-end inference latency (ms)",
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "We also report the *per-token* generation speed in milliseconds for different batch sizes",
+        "bbox": [
+          105.75,
+          395.2265625,
+          506.25,
+          459.75
+        ],
+        "block_id": "/page/17/Caption/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": "Matrix multiplication speedup over FP16 (cuBLAS / cuBLASLt)",
+      "ev": {
+        "page": 18,
+        "section": "**D.1** Matrix Multiplication benchmarks",
+        "quote": "Inference speedups compared to 16-bit matrix multiplication for the first hidden layer in the feed-forward of differently sized GPT-3 transformers",
+        "bbox": [
+          106.083984375,
+          78.0,
+          506.25,
+          131.25
+        ],
+        "block_id": "/page/17/Caption/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": "BLEU (NMT training appendix)",
+      "ev": {
+        "page": 19,
+        "section": "**F** Fine-tuning Results",
+        "quote": "Neural machine translation results for 8-bit FFN and linear attention layers for WMT14+16. Decomp indicates the percentage that is computed in 16-bit instead of 8-bit. The BLEU score is the median of three random seeds",
+        "bbox": [
+          105.75,
+          582.75,
+          507.75,
+          614.25
+        ],
+        "block_id": "/page/18/Caption/6",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": "GLUE task accuracies (MNLI/QNLI/QQP/RTE/SST-2/MRPC/CoLA/STS-B)",
+      "ev": {
+        "page": 20,
+        "section": "**F** Fine-tuning Results",
+        "quote": "GLUE finetuning results for quantization methods for the feedforward layer in 8-bit while the rest is in 16-bit",
+        "bbox": [
+          105.0,
+          169.5,
+          506.25,
+          202.5
+        ],
+        "block_id": "/page/19/Caption/0",
+        "source_table": "Table 9"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "OPT-13B C4 PPL: FP32=12.45, Int8 absmax=19.08, Int8 vector-wise=16.48, LLM.int8()=12.45 (no degradation)",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "| 32-bit Float | 25.65 | 15.91 | 14.43 | 13.30 | 12.45 | ... Absmax LLM.int8() (vector-wise + decomp) | 25.83 | 15.93 | 14.44 | 13.24 | 12.45 |",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LLM.int8() preserves zeroshot accuracy from 125M up to 175B OPT, while 8-bit absmax vector-wise degenerates to random performance after 6.7B parameters",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "LLM.int8() maintains full 16-bit performance as we scale from 125M to 175B parameters. On the other hand, the baseline, 8-bit absmax vector-wise quantization, scales poorly and degenerates into random performance",
+        "bbox": [
+          106.5,
+          302.4140625,
+          506.25,
+          345.0
+        ],
+        "block_id": "/page/5/Text/2"
+      }
+    },
+    {
+      "value": "Removing the about 7 outlier feature dimensions (~0.1% of features) drops top-1 softmax probability from ~40% to ~20% and increases perplexity by 600-1000%",
+      "ev": {
+        "page": 8,
+        "section": "4.2 Measuring the Effect of Outlier Features",
+        "quote": "If the outliers are removed, the mean top-1 softmax probability is reduced from about 40% to about 20%, and validation perplexity increases by 600-1000% even though there are at most 7 outlier feature dimensions",
+        "bbox": [
+          106.98046875,
+          657.03515625,
+          505.7890319824219,
+          722.4070739746094
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "Phase shift at 6.7B parameters: outliers go from 65% to 100% of layers and 35% to 75% of sequence dimensions, co-occurring with quantization failure",
+      "ev": {
+        "page": 8,
+        "section": "4.2 Measuring the Effect of Outlier Features",
+        "quote": "the emergence of large magnitude features across all layers of a transformer occurs suddenly between 6B and 6.7B parameters as shown in Figure 3a as the percentage of layers affected increases from 65% to 100%. The number of sequence dimensions affected increases rapidly from 35% to 75%",
+        "bbox": [
+          106.3828125,
+          335.28515625,
+          504.3426818847656,
+          613.2660675048828
+        ],
+        "block_id": "/page/7/ListGroup/208"
+      }
+    },
+    {
+      "value": "BLOOM-176B end-to-end per-token latency: bf16 baseline 239 ms (8xA100) vs LLM.int8() 247 ms on only 3xA100 (similar speed, fewer GPUs)",
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "| bfloat16 baseline | 8xA100 80GB | **239** | **32** | 9.94 | LLM.int8() | 8xA100 80GB | 253 | 34 | 10.44 | | 4xA100 80GB | 246 | 33 | 9.40 | | 3xA100 80GB | 247 | 33 | **9.11** |",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 2,
+      "section": "1 Introduction",
+      "quote": "we present the first multi-billion-scale Int8 quantization procedure for transformers that does not incur any performance degradation",
+      "bbox": [
+        106.681640625,
+        73.08984375,
+        505.7920227050781,
+        171.64202880859375
+      ],
+      "block_id": "/page/1/Text/0"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "a 175B parameter 16/32-bit checkpoint can be loaded, converted to Int8, and used immediately without performance degradation",
+      "bbox": [
+        141.64453125,
+        316.3083801269531,
+        469.7928771972656,
+        522.7860717773438
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "quantization_method_name": {
+    "value": "LLM.int8() (vector-wise quantization + mixed-precision decomposition)",
+    "ev": {
+      "page": 4,
+      "section": "3 Int8 Matrix Multiplication at Scale",
+      "quote": "The **LLM.int8**() method is the combination of absmax vector-wise quantization and mixed precision decomposition",
+      "bbox": [
+        106.98046875,
+        522.75,
+        505.5,
+        543.75
+      ],
+      "block_id": "/page/3/Text/11"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 8,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We develop a procedure for Int8 matrix multiplication for feed-forward and attention projection layers in transformers",
+        "bbox": [
+          141.64453125,
+          316.3083801269531,
+          469.7928771972656,
+          522.7860717773438
+        ],
+        "block_id": "/page/0/Text/5"
+      }
+    },
+    {
+      "value": 16,
+      "ev": {
+        "page": 4,
+        "section": "3 Int8 Matrix Multiplication at Scale",
+        "quote": "the small number of large magnitude feature dimensions (≈0.1%) are represented in 16-bit precision while the other 99.9% of values are multiplied in 8-bit",
+        "bbox": [
+          106.5,
+          451.6875,
+          505.5,
+          516.0
+        ],
+        "block_id": "/page/3/Text/10"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "mixed",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we also include a new mixed-precision decomposition scheme, which isolates the outlier feature dimensions into a 16-bit matrix multiplication while still more than 99.9% of values are multiplied in 8-bit",
+      "bbox": [
+        141.64453125,
+        316.3083801269531,
+        469.7928771972656,
+        522.7860717773438
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "granularity": {
+    "value": "per-row",
+    "ev": {
+      "page": 2,
+      "section": "1 Introduction",
+      "quote": "For vector-wise quantization, matrix multiplication can be seen as a sequence of independent inner products of row and column vectors. As such, we can use a separate quantization normalization constant for each inner product",
+      "bbox": [
+        106.083984375,
+        187.9453125,
+        297.78277587890625,
+        330.2578125
+      ],
+      "block_id": "/page/1/Text/1"
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "a 175B parameter 16/32-bit checkpoint can be loaded, converted to Int8, and used immediately without performance degradation",
+      "bbox": [
+        141.64453125,
+        316.3083801269531,
+        469.7928771972656,
+        522.7860717773438
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A40",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "We use NVIDIA A40 GPUs for this evaluation",
+        "bbox": [
+          106.5,
+          549.0,
+          505.5,
+          582.75
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    {
+      "value": "NVIDIA A100 80GB",
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "| bfloat16 baseline | 8xA100 80GB | **239** | **32** | 9.94 |",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": "NVIDIA RTX 3090 (consumer)",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "| Academic server | 8x RTX 3090 | 24 GB | **OPT-175B / BLOOM** | OPT-66B |",
+        "bbox": [
+          103.9264453125,
+          384.98625,
+          506.8782421875,
+          482.810625
+        ],
+        "block_id": "/page/9/Table/6",
+        "source_table": "Table 2"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 1.81,
+      "baseline": "FP16 cuBLAS matrix multiplication (175B model dim 12288)",
+      "hardware": "NVIDIA A100 (cuBLASLt Int8 with vector-wise + mixed-precision decomposition)"
+    },
+    "ev": {
+      "page": 18,
+      "section": "**D.1** Matrix Multiplication benchmarks",
+      "quote": "| LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x |",
+      "bbox": [
+        104.23125,
+        133.301953125,
+        506.5734375,
+        224.026171875
+      ],
+      "block_id": "/page/17/Table/1",
+      "source_table": "Table 5"
+    }
+  },
+  "strengths": [
+    {
+      "value": "First Int8 method to preserve full predictive performance for 175B-parameter transformers, including OPT-175B and BLOOM-176B.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "we present the first multi-billion-scale Int8 quantization procedure for transformers that does not incur any performance degradation",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          505.7920227050781,
+          171.64202880859375
+        ],
+        "block_id": "/page/1/Text/0"
+      }
+    },
+    {
+      "value": "Halves inference memory and lets BLOOM-176B run on a single consumer GPU server, broadening access for low-resource researchers.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "making it possible to use OPT-175B/BLOOM on a single server with consumer GPUs",
+        "bbox": [
+          141.64453125,
+          316.3083801269531,
+          469.7928771972656,
+          522.7860717773438
+        ],
+        "block_id": "/page/0/Text/5"
+      }
+    },
+    {
+      "value": "Provides the first descriptive analysis of emergent outlier features that explains why prior 8-bit methods fail at the 6.7B scale.",
+      "ev": {
+        "page": 8,
+        "section": "4.2 Measuring the Effect of Outlier Features",
+        "quote": "the emergence of large magnitude features across *all* layers of a transformer occurs suddenly between 6B and 6.7B parameters",
+        "bbox": [
+          106.3828125,
+          335.28515625,
+          504.3426818847656,
+          613.2660675048828
+        ],
+        "block_id": "/page/7/ListGroup/208"
+      }
+    },
+    {
+      "value": "Open-source bitsandbytes library and Hugging Face integration, making the method easy to reproduce and apply to existing models.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "We open-source our software and release a Hugging Face Transformers (Wolf et al., 2019) integration making our method available to all hosted Hugging Face Models that have linear layers",
+        "bbox": [
+          106.98046875,
+          548.3671875,
+          505.650390625,
+          689.8990707397461
+        ],
+        "block_id": "/page/1/Text/6"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Studied only Int8; the FP8 data type and its potential accuracy or speed gains are left to future work.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "our analysis is solely on the Int8 data type, and we do not study 8-bit floating-point (FP8) data types",
+        "bbox": [
+          106.681640625,
+          163.811279296875,
+          505.10919189453125,
+          228.469970703125
+        ],
+        "block_id": "/page/9/Text/2"
+      }
+    },
+    {
+      "value": "Method is only validated up to 175B parameters; emergent properties at larger scales could break the procedure.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "we only study models with up to 175B parameters. While we quantize a 175B model to Int8 without performance degradation, additional emergent properties might disrupt our quantization methods at larger scales",
+        "bbox": [
+          106.681640625,
+          163.811279296875,
+          505.10919189453125,
+          228.469970703125
+        ],
+        "block_id": "/page/9/Text/2"
+      }
+    },
+    {
+      "value": "Attention function itself is not quantized, limiting compute savings beyond memory bandwidth reduction.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "we do not use Int8 multiplication for the attention function",
+        "bbox": [
+          106.98046875,
+          233.578125,
+          505.63421630859375,
+          277.5860595703125
+        ],
+        "block_id": "/page/9/Text/3"
+      }
+    },
+    {
+      "value": "Quantization overhead actually slows inference for models smaller than 6.7B parameters compared to FP16.",
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "The quantization overhead can slow inference for models with less than 6.7B parameters, as compared to a FP16 baseline",
+        "bbox": [
+          106.5,
+          351.52734375,
+          506.25,
+          405.0
+        ],
+        "block_id": "/page/5/Text/3"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Tested only on data-centre GPUs (A40, A100) and academic-tier RTX 3090; no mobile or edge-class devices evaluated.",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Experimental Setup",
+        "quote": "We use NVIDIA A40 GPUs for this evaluation",
+        "bbox": [
+          106.5,
+          549.0,
+          505.5,
+          582.75
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    {
+      "value": "Safety, bias, refusal, and jailbreak behaviour after quantization are not measured; evaluation is on perplexity and zero-shot tasks.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We develop a procedure for Int8 matrix multiplication for feed-forward and attention projection layers in transformers, which cut the memory needed for inference by half while retaining full precision performance",
+        "bbox": [
+          141.64453125,
+          316.3083801269531,
+          469.7928771972656,
+          522.7860717773438
+        ],
+        "block_id": "/page/0/Text/5"
+      }
+    },
+    {
+      "value": "Bit-widths below 8 are not explored for these multi-billion models.",
+      "ev": {
+        "page": 16,
+        "section": "B Additional Related Work",
+        "quote": "we focus on 8-bit transformers that *do not* degrade performance and that can benefit from commonly used GPUs that accelerates inference through Int8 tensor cores",
+        "bbox": [
+          106.3828125,
+          554.1465148925781,
+          505.24700927734375,
+          662.3820648193359
+        ],
+        "block_id": "/page/15/Text/7"
+      }
+    },
+    {
+      "value": "Training and finetuning at scale with Int8 is not solved; appendix shows attention-layer Int8 training degrades performance.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "we focus on inference but do not study training or finetuning",
+        "bbox": [
+          106.681640625,
+          282.69140625,
+          504.0900573730469,
+          326.7020568847656
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Extend the analysis to 8-bit floating-point (FP8) data types once GPU/TPU support exists.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "Since current GPUs and TPUs do not support this data type, we believe this is best left for future work. However, we also believe many insights from Int8 data types will directly translate to FP8 data types",
+        "bbox": [
+          106.681640625,
+          163.811279296875,
+          505.10919189453125,
+          228.469970703125
+        ],
+        "block_id": "/page/9/Text/2"
+      }
+    },
+    {
+      "value": "Develop additional quantization methods for the attention function itself, beyond linear projections.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "an initial exploration of this problem indicated that a solution required additional quantization methods beyond those we developed here, and we leave this for future work",
+        "bbox": [
+          106.98046875,
+          233.578125,
+          505.63421630859375,
+          277.5860595703125
+        ],
+        "block_id": "/page/9/Text/3"
+      }
+    },
+    {
+      "value": "Tackle Int8 training at scale, balancing quantization precision, training speed, and engineering complexity.",
+      "ev": {
+        "page": 10,
+        "section": "6 Discussion and Limitations",
+        "quote": "Int8 training at scale requires complex trade-offs between quantization precision, training speed, and engineering complexity and represents a very difficult problem. We again leave this to future work",
+        "bbox": [
+          106.681640625,
+          282.69140625,
+          504.0900573730469,
+          326.7020568847656
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": 14,
+        "section": "Checklist",
+        "quote": "Did you report error bars (e.g., with respect to the random seed after running experiments multiple times)? [No] Our experiments are deterministic for each model",
+        "bbox": [
+          129.69140625,
+          73.4765625,
+          505.743896484375,
+          567.6070709228516
+        ],
+        "block_id": "/page/14/ListGroup/235"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "We also report the *per-token* generation speed in milliseconds for different batch sizes",
+        "bbox": [
+          105.75,
+          395.2265625,
+          506.25,
+          459.75
+        ],
+        "block_id": "/page/17/Caption/5",
+        "source_table": "Table 6"
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "We open-source our software and release a Hugging Face Transformers (Wolf et al., 2019) integration",
+        "bbox": [
+          106.98046875,
+          548.3671875,
+          505.650390625,
+          689.8990707397461
+        ],
+        "block_id": "/page/1/Text/6"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

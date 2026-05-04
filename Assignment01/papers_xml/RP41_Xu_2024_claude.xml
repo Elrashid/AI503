@@ -1,0 +1,2295 @@
+<paper source_file="RP41_Xu_2024" title="Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression" total_pages="38" figures="9" figures_with_images="9">
+
+When answering questions about this paper:
+- Cite the page number and section from the XML tags
+- Distinguish AUTHOR findings (source="author") from CITED references (source="cited")
+- For tables, reference by caption (e.g., "Table 1")
+- If unsure whether a claim is the authors' own, check the source attribute
+- This paper has 9 figure images saved as separate files.
+  When a figure is referenced, look at the image file listed in the image="" attribute.
+  Figures may contain charts, graphs, or diagrams with data not in the text.
+
+<page number="1">
+
+<heading page="1" section="Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression" source="author" id="/page/0/SectionHeader/1" level="1">
+# Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression
+</heading>
+
+<text page="1" section="Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression" source="author" id="/page/0/Text/2">
+Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)
+</text>
+
+<text page="1" section="Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression" source="author" id="/page/0/Text/3">
+^(1)Kahlert School of Computing, University of Utah ^(2)Scientific Computing and Imaging Institute, University of Utah ^(3)Google DeepMind
+</text>
+
+<text page="1" section="Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression" source="author" id="/page/0/Text/4">
+zhichao.xu@utah.edu
+</text>
+
+
+<heading page="1" section="Abstract" source="author" id="/page/0/SectionHeader/5" level="1">
+# Abstract
+</heading>
+
+<text page="1" section="Abstract" source="author" id="/page/0/Text/6">
+Increasingly, model compression techniques enable large language models (LLMs) to be deployed in real-world applications. As a result of this momentum towards local deployment, compressed LLMs will interact with a large population. Prior work on compression typically prioritize preserving perplexity, which is directly analogous to training loss. The impact of compression method on other critical aspects of model behavior — particularly safety  requires systematic assessment. To this end, we investigate the impact of model compression along four dimensions: (1) degeneration harm, i.e., bias and toxicity in generation; (2) representational harm, i.e., biases in discriminative tasks; (3) dialect bias; and (4) language modeling and downstream task performance. We examine a wide spectrum of LLM compression techniques, including unstructured pruning, semi-structured pruning, and quantization. Our analysis reveals that compression can lead to unexpected consequences. Although compression may unintentionally alleviate LLMs' degeneration harm, it can still exacerbate representational harm. Furthermore, increasing compression produces a divergent impact on different protected groups. Finally, different compression methods have drastically different safety impacts: for example, quantization mostly preserves bias while pruning degrades quickly. Our findings underscore the importance of integrating safety assessments into the development of compressed LLMs to ensure their reliability across real-world applications.[1](#page-0-0)
+</text>
+
+
+<heading page="1" section="1 Introduction" source="author" id="/page/0/SectionHeader/7" level="2">
+## 1 Introduction
+</heading>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/8">
+Large language models (e.g., [Gemini et al.,](#page-9-0) [2023;](#page-9-0) [Achiam et al.,](#page-9-1) [2023)](#page-9-1) are remarkably performant across various tasks; they have been deployed not only as intelligent assistants, but also in high-stake
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/10">
+scenarios such as psychology [(Demszky et al.,](#page-9-2) [2023)](#page-9-2) and medical diagnosis [(Saab et al.,](#page-11-0) [2024)](#page-11-0). The sensitivity of such applications necessitates evaluating them across multiple dimensions, including accuracy, robustness, and other factors [(Gupta](#page-10-0) [et al.,](#page-10-0) [2023b;](#page-10-0) [Liang et al.,](#page-10-1) [2023)](#page-10-1).
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/11">
+Despite potential usefulness, high computational costs render local LLM deployments difficult (cf. [Zhu et al.,](#page-12-0) [2023;](#page-12-0) [Chien et al.,](#page-9-3) [2023)](#page-9-3). Consequently, there has been a surge of interest in compression methods that convert LLMs into compact models for efficient storage and inference by reducing their latency as well as memory footprint (e.g., [Sun et al.,](#page-11-1) [2024;](#page-11-1) [Frantar and Alistarh,](#page-9-4) [2023;](#page-9-4) [Lin](#page-10-2) [et al.,](#page-10-2) [2024;](#page-10-2) [Ma et al.,](#page-11-2) [2023;](#page-11-2) [Frantar et al.,](#page-9-5) [2022)](#page-9-5). Pruning algorithms like SparseGPT [(Frantar and](#page-9-4) [Alistarh,](#page-9-4) [2023)](#page-9-4) and Wanda [(Sun et al.,](#page-11-1) [2024)](#page-11-1) can substantially reduce the number of active LLM parameters without compromising perplexity. Similarly, quantization methods (e.g., [Lin et al.,](#page-10-2) [2024;](#page-10-2) [Dettmers et al.,](#page-9-6) [2022;](#page-9-6) [Frantar et al.,](#page-9-5) [2022)](#page-9-5) can reduce the memory footprint of LLMs by reducing bit-precision during inference without significantly impacting perplexity.
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/12">
+Model compression methods primarily focus on ensuring that the perplexity of the compressed models does not deteriorate. However, solely relying on perplexity as a performance metric is insufficient. For example, compressing large language models by a small fraction (e.g., a 20% reduction) may result in minimal changes in perplexity, but can lead to significant degradation in performance on downstream tasks [(Hong et al.,](#page-10-3) [2024;](#page-10-3) [Yin et al.,](#page-12-1) [2023)](#page-12-1). More importantly, there is a lack of systematic evaluation of how compression affects an LLM along safety dimensions, such as bias, toxicity, and truthfulness.
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/13">
+In this work, we argue that usage costs and data sharing restrictions will mean that local deployments of compressed LLMs are more likely to impact a larger population. Given their potential
+</text>
+
+<footnote page="1" section="1 Introduction" source="author" id="/page/0/Footnote/9">
+^(1)Our implementation and results are available here: [https://github.com/zhichaoxu-shufe/](https://github.com/zhichaoxu-shufe/Beyond-Perplexity-Compression-Safety-Eval) [Beyond-Perplexity-Compression-Safety-Eval](https://github.com/zhichaoxu-shufe/Beyond-Perplexity-Compression-Safety-Eval)
+</footnote>
+
+</page>
+<page number="2">
+<text page="2" section="1 Introduction" source="author" id="/page/1/Text/0">
+widespread use, we ask: *Are compressed LLMs* *not only accurate, but also safe?* To this end, we conduct a multi-faceted evaluation of compressed LLMs, including: (1) evaluating its *degeneration* *harm*, i.e. toxicity and bias in model generated text; (2) evaluating its *representational harm*, which arises when language models are deployed for discriminative tasks; (3) evaluating how LLM compression affects *dialect bias*, and (4) the impact of compression on model's language modeling capabilities and downstream task performance. We cover a wide spectrum of compression methods, including unstructured pruning, semi-structured pruning and quantization. Some of our key findings are:
+</text>
+
+<list page="2" section="1 Introduction" source="author" id="/page/1/ListGroup/444">
+- Although compressed LLMs may exhibit reduced degeneration harm due to the degradation of generation quality, their representational harm stays unchanged or even increases.
+- With higher compression, the representational harm against different protected groups diverges, and such changes show no clear pattern.
+- Pretrained language models have dialect biases, and model compression maintains such biases.
+- Quantization methods mostly preserve model's bias, toxicity and performance at a moderate compression rate (e.g. 50%), while pruning methods show significant degradation at the same compression rate.
+</list>
+
+
+<heading page="2" section="2 Background" source="cited" id="/page/1/SectionHeader/5" level="2">
+## 2 Background
+</heading>
+
+<text page="2" section="2 Background" source="cited" id="/page/1/Text/6">
+In this section we discuss background knowledge about potential harms by LLMs and existing LLM compression methods.
+</text>
+
+
+<heading page="2" section="2.1 Potential Harms by LLMs" source="author" id="/page/1/SectionHeader/7" level="3">
+### 2.1 Potential Harms by LLMs
+</heading>
+
+<text page="2" section="2.1 Potential Harms by LLMs" source="author" id="/page/1/Text/8">
+We categorize potential harms by the LLMs into Degeneration Harm and Representational Harm. Degeneration Harm As defined by [Gehman et al.](#page-9-7) [(2020)](#page-9-7), degeneration harm refers to the potential of the models to generate "*racist, sexist, or otherwise* *toxic language*". The model receives adversarial prompts as input, and the output generations are assessed for bias, toxicity, and truthfulness [(Liang](#page-10-1) [et al.,](#page-10-1) [2023;](#page-10-1) [Touvron et al.,](#page-11-3) [2023;](#page-11-3) [Ivison et al.,](#page-10-4) [2023;](#page-10-4) [Gemini et al.,](#page-9-0) [2023)](#page-9-0).
+</text>
+
+<text page="2" section="2.1 Potential Harms by LLMs" source="author" id="/page/1/Text/9">
+Representational Harm Different form degeneration harm, which manifests during text generation,
+</text>
+
+<text page="2" section="2.1 Potential Harms by LLMs" source="author" id="/page/1/Text/10">
+representational harm arises when LLMs are deployed for discriminative tasks, such as text classification [(Wang et al.,](#page-11-4) [2022;](#page-11-4) [Crawford,](#page-9-8) [2017)](#page-9-8).[2](#page-1-0) Existing works on measuring representational harm primarily examine models' behaviors with respect to various protected characteristics such as religion and gender via under-specified questions [(Parrish](#page-11-5) [et al.,](#page-11-5) [2022;](#page-11-5) [Li et al.,](#page-10-5) [2020)](#page-10-5). For instance, when asked which pronouns are more likely to be associated with computer programmers, BERT-style question answering models prefer male pronouns to female pronouns, despite the gender of the occupation not being specified in the question's context [(Li](#page-10-5) [et al.,](#page-10-5) [2020)](#page-10-5). We provide experimental details for measuring these two types of harms in Sec. [4.](#page-4-0)
+</text>
+
+
+<heading page="2" section="2.2 Compression Methods for LLMs." source="author" id="/page/1/SectionHeader/11" level="2">
+## 2.2 Compression Methods for LLMs.
+</heading>
+
+<text page="2" section="2.2 Compression Methods for LLMs." source="author" id="/page/1/Text/12">
+Our goal is to evaluate the safety of compressed LLMs. Notable compression techniques include network pruning [(LeCun et al.,](#page-10-6) [1989;](#page-10-6) [Hassibi et al.,](#page-10-7) [1993;](#page-10-7) [Xia et al.,](#page-12-2) [2022,](#page-12-2) [2024)](#page-12-3), distillation [(Sanh](#page-11-6) [et al.,](#page-11-6) [2019)](#page-11-6), quantization [(Dettmers et al.,](#page-9-6) [2022;](#page-9-6) [Frantar et al.,](#page-9-5) [2022;](#page-9-5) [Lin et al.,](#page-10-2) [2024;](#page-10-2) [Zhang](#page-12-4) [and Shrivastava,](#page-12-4) [2024)](#page-12-4) and low-rank approximation [(Gupta et al.,](#page-10-8) [2024;](#page-10-8) [Xu et al.,](#page-12-5) [2023;](#page-12-5) [Lan et al.,](#page-10-9) [2019,](#page-10-9) *inter alia*).
+</text>
+
+<text page="2" section="2.2 Compression Methods for LLMs." source="author" id="/page/1/Text/13">
+In this work, we focus on two popular compression directions — pruning and quantization. Pruning aims to remove unimportant weights from a neural network to reduce storage/memory and inference costs while maintaining performance. There are two important concepts in pruning: (1) pruning unit is the atomic unit to be removed from a model; it can be a single weight, an attention head or even an entire layer. (2) saliency score is the criterion for making pruning decisions. Different pruning algorithms estimate saliency scores differently to prune low scoring units.
+</text>
+
+<text page="2" section="2.2 Compression Methods for LLMs." source="author" id="/page/1/Text/14">
+Existing compression methods can be broadly divided into (1) unstructured pruning [(Frantar and](#page-9-4) [Alistarh,](#page-9-4) [2023;](#page-9-4) [Sun et al.,](#page-11-1) [2024,](#page-11-1) *inter alia*), (2) semi-structured N:M pruning and (3) structured pruning [(Xia et al.,](#page-12-3) [2024,](#page-12-3) [2022;](#page-12-2) [Ma et al.,](#page-11-2) [2023,](#page-11-2) *inter alia*). Unstructured pruning uses each individ-
+</text>
+
+<footnote page="2" section="2.2 Compression Methods for LLMs." source="author" id="/page/1/Footnote/15">
+^(2)[Barocas et al.](#page-9-9) [(2023)](#page-9-9) mention stereotype perpetuation and cultural denigration as examples of representational harms, and argue that they "occur when systems reinforce the subordination of some groups along the lines of identity — race, class, gender, etc. [They] have long-term effects, and resist formal characterization." In our experiments, we use the BBQ and UNQOVER evaluations to focus on the stereotype perpetuation aspect, and evaluate the extent to which language model reinforces stereotypes against protected groups.
+</footnote>
+
+</page>
+<page number="3">
+<text page="3" section="2.2 Compression Methods for LLMs." source="author" id="/page/2/Text/0">
+ual parameter as the pruning unit, resulting in an irregular sparsity structure, while structured pruning uses larger units such as neurons, attention head or Transformer layer. Semi-structured pruning aims to achieve specific N:M sparsity patterns (N elements are non-zero for every M consecutive elements) to allow for inference speed-up with hardware support (Nvidia, 2021). In this work, we include both unstructured pruning and semi-structured pruning.
+</text>
+
+<text page="3" section="2.2 Compression Methods for LLMs." source="author" id="/page/2/Text/1">
+Quantization aims to compress a neural network by reducing the number of bits (i.e., precision) in the weights of the model (Dettmers et al., 2022; Xu and McAuley, 2023; Dettmers et al., 2024, *inter alia*). Post-training quantization rescales the weights of a trained language model, while quantization-aware training rounds the weights during the training process. We should note quantization and pruning are two orthogonal compression directions—pruned models can be further quantized for extreme compression.
+</text>
+
+
+<heading page="3" section="2.3 Prior Works on LLM Compression Evaluation" source="cited" id="/page/2/SectionHeader/2" level="3">
+### 2.3 Prior Works on LLM Compression Evaluation
+</heading>
+
+<text page="3" section="2.3 Prior Works on LLM Compression Evaluation" source="cited" id="/page/2/Text/3">
+A few recent works have attempted to tackle the problem of safety evaluation of LLM compression. For example, Ramesh et al. (2023) evaluate how different compression methods affect language model's fairness dimensions, but the experiments are restricted to moderate-sized, encoder-only models. Jaiswal et al. (2023) highlight the problem of using perplexity as the standalone evaluation metric and underscore the importance of more comprehensive evaluations, yet their experiments are restricted to performance dimensions of compressed LLMs. Different from Hong et al. (2024) which evaluates "trustworthiness" of compressed LLMs as an aggregated score, in this work we attempt to conduct a fine-grained, multifaceted safety evaluation of compressed LLMs, with particular attention to disparities in how model compression affects different protected groups.
+</text>
+
+
+<heading page="3" section="**3 Evaluating Compression Models **" source="author" id="/page/2/SectionHeader/4" level="2">
+## **3 Evaluating Compression Models **
+</heading>
+
+<text page="3" section="**3 Evaluating Compression Models **" source="author" id="/page/2/Text/5">
+We study two base models: LLAMA-2 (Touvron et al., 2023) and TÜLU-2 (Ivison et al., 2023) of two different sizes: 7B and 13B parameters. LLAMA-2 is an autoregressive language model pre-trained on 2T tokens, while TÜLU-2 is based on LLAMA-2 and supervised fine-tuned (SFT-ed) on the TÜLU-2-SFT-Mixture (Ivison et al., 2023). We evaluate both the raw language models and their SFT-ed
+</text>
+
+<table_group page="3" section="**3 Evaluating Compression Models **" source="author" id="/page/2/TableGroup/151">
+<caption page="3" section="**3 Evaluating Compression Models **" source="author" id="/page/2/Caption/6">
+Table 1: Different compression methods and their features. For each pruning method×base model combination, we include 6 unstructured pruning models (10% to 60%) and 2 semi-structured pruning models (2:4 and 4:8 indicate 50% compression rate). LLM.int8() uses 8-bit quantization (50% compression rate), GPTQ and AWQ use 4-bit quantization (75% compression rate). Act. refers to activation and Grad. refers to gradients.
+</caption>
+<table page="3" section="**3 Evaluating Compression Models **" source="author" id="/page/2/Table/7">
+| CompressionMethod | CalibrationData | CalibrationCriteria | WeightUpdate |
+| --- | --- | --- | --- |
+| ***Pruning*** |
+| Magnitude | X | Weight | X |
+| SparseGPT | ✓(128) | Weight | ✓ |
+| Wanda | ✓(128) | Weight\timesAct. | X |
+| GBLM | ✓(128) | Weight\timesAct.\timesGrad. | X |
+| ***Quantization*** |
+| LLM.int8() | X | Weight | X |
+| GPTQ | ✓(128) | Weight\timesAct. | ✓ |
+| AWQ | ✓(128) | Act. | ✓ |
+</table>
+</table_group>
+
+<text page="3" section="**3 Evaluating Compression Models **" source="author" id="/page/2/Text/8">
+instruction-following variants.&lt;sup&gt;3&lt;/sup&gt;
+</text>
+
+
+<heading page="3" section="3.1 Compression Algorithms and Ratios" source="author" id="/page/2/SectionHeader/9" level="3">
+### 3.1 Compression Algorithms and Ratios
+</heading>
+
+<text page="3" section="3.1 Compression Algorithms and Ratios" source="author" id="/page/2/Text/10">
+We study four different pruning algorithms: the simple Magnitude pruning (Kurtic and Alistarh, 2022), SparseGPT (Frantar and Alistarh, 2023), Wanda (Sun et al., 2024) and GBLM (Das et al., 2023). These algorithms mainly differ in calibration criteria, i.e., the way saliency scores are estimated for pruning units. We focus on different compression rates from 10% to 60%, and include both unstructured pruning and semi-structured pruning (2:4 and 4:8).&lt;sup&gt;4&lt;/sup&gt;
+</text>
+
+<text page="3" section="3.1 Compression Algorithms and Ratios" source="author" id="/page/2/Text/11">
+We also include representative post-training quantization methods—LLM.int8() (Dettmers et al., 2022), GPTQ (Frantar et al., 2022) and Activation-aware Weight Quantization (AWQ) (Lin et al., 2024). Inputs and weights in LLM.int8() are multiplied in 8-bit and quantized to Int8 before being dequantized back to 16-bits. GPTQ is a layerwise quantization technique based on approximated second-order information towards minimum accuracy loss on the calibration set. AWQ reserves some salient weights in 16-bits while quantizing other weights to 4-bits without significant performance degradation. Table 1 compares the compression methods, and we show additional technical details in Appx. B.
+</text>
+
+<footnote page="3" section="3.1 Compression Algorithms and Ratios" source="author" id="/page/2/Footnote/12">
+^(&amp;)lt;sup&gt;3&lt;/sup&gt;The methodology we use in our evaluation is general and does not apply to these specific models. We choose these models because the pruning algorithms we study, while currently the state-of-the-art, have been evaluated on LLAMA-2, and not the more recent models.
+</footnote>
+
+<footnote page="3" section="3.1 Compression Algorithms and Ratios" source="author" id="/page/2/Footnote/13">
+^(&amp;)lt;sup&gt;4&lt;/sup&gt;In preliminary experiments, we found that beyond 60% compression, generation quality deteriorates drastically.
+</footnote>
+
+</page>
+<page number="4">
+
+<heading page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/SectionHeader/0" level="3">
+### 3.2 Safety Evaluation Dimensions
+</heading>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/1">
+**Degeneration Harm Evaluation.** Existing bias and toxicity evaluation datasets can be broadly divided into two categories: (1) degeneration harm and (2) representational harm. For degeneration harm, the language model is given potentially harmful prompts as inputs, and the continuations are scored with model-based evaluations.
+</text>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/2">
+We conduct evaluations on five datasets: (1) RE-ALTOXICITYPROMPTS (Gehman et al., 2020)'s prompts are sampled from a web corpus (Gokaslan et al., 2019) with different levels of toxicity. (2) TOXIGEN (Hartvigsen et al., 2022) includes synthesized prompts to invoke adversarial and implicit hate speech. (3) ADVPROMPTSET (Esiobu et al., 2023) is a large-scale adversarial text prompt set based on the open-sourced Jigsaw toxicity dataset (Adams et al., 2017). (4) BOLD (Dhamala et al., 2021) includes prompts extracted from Wikipedia articles across five demographic axes. (5) HOLISTICBIASR (Esiobu et al., 2023) extends Regard's pre-defined templates (Sheng et al., 2019) with noun phrases from the HolisticBias dataset (Smith et al., 2022) to test model's regard (i.e. respect, esteem) for different protected groups. For each of the generative harm datasets, we use the prompts from the dataset, and score the completions with a classifier, detailed in Table 2.
+</text>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/3">
+**Representational Harm Evaluation.** For representational harm, the model is prompted with (partially) ambiguous inputs and is required to choose one among different groups mentioned in the input. We use the BBQ (Parrish et al., 2022) and UNQOVER (Li et al., 2020) datasets for this purpose.
+</text>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/4">
+BBQ is a question answering dataset with manually annotated questions highlighting attested social biases against nine different protected groups under nine social dimensions. The dataset consists of ambiguous questions and disambiguated questions. Each question has three candidate answers: the bias-reinforcing answer, bias-against answer and Unknown. Denote n_{\rm reinforcing} as the number of model's predictions for bias-reinforcing answer, and n_{\rm against}, n_{\rm Unknown} for bias-against answer and Unknown, respectively. For ambiguous questions, the bias metric is defined as
+</text>
+
+<equation page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Equation/5">
+$$
+s_{\rm ambiguous} = \frac{n_{\rm reinforcing}}{n_{\rm reinforcing} + n_{\rm against} + n_{\rm Unknown}} \ \ (1)
+$$
+</equation>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/6">
+For disambiguated questions, the bias metric is
+</text>
+
+<table_group page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/TableGroup/177">
+<caption page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Caption/7">
+Table 2: An overview of evaluation datasets.
+</caption>
+<table page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Table/8">
+| Dataset | EvaluationDimension | EvaluationMetric |
+| --- | --- | --- |
+| **Bias &amp; Toxicity Evaluation** |
+| REALTOXICITYPROMPTS | Toxicity | OpenAI Moderation |
+| TOXIGEN | Toxicity | OpenAI Moderation |
+| ADVPROMPTSET | Toxicity | OpenAI Moderation |
+| BOLD | Bias &amp; Stereotypes | VADER Classifier |
+| HOLISTICBIASR | Bias &amp; Stereotypes | Regard Classifier |
+| BBQ | Bias &amp; Stereotypes | BBQ Metric |
+| UnQover | Bias &amp; Stereotypes | UnQover Metric |
+| **Truthfulness Evaluation** |
+| TRUTHFULQA | Truthfulness | TruthfulQA Classifier |
+| **Language Modeling Evaluation** |
+| WIKITEXT-2 | Language Modeling | Perplexity |
+| DOLMA DATASET | Language Modeling | Perplexity |
+| **Downstream Tasks Performance Evaluation** |
+| MMLU | Knowledge &amp; Reasoning | Accuracy |
+| MT BENCH | Instruction Following | MT Bench Score |
+| XSUM | Conditional Generation | ROUGE |
+</table>
+</table_group>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/9">
+defined as
+</text>
+
+<equation page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Equation/10">
+$$
+s_{\text{disambiguated}} = \frac{n_{\text{reinforcing}}}{n_{\text{reinforcing}} + n_{\text{against}}}  (2)
+$$
+</equation>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/11">
+UNQOVER is a benchmark that probes and quantifies model biases through underspecified questions. The dataset is constructed by instantiating a context template with two subjects and one attribute (e.g., two gendered names and an occupation) without hinting the association among them. Models are then asked to decide which subject is more associated to the given attribute. Finally, predicted subject scores are used to aggregate a quantitative measurement to indicate the degree of model biases. The benchmark probes for four different characteristics of stereotypical biases: religion, country, ethnicity and gender-occupation. In this paper, we focus on reporting the \eta metric of UNQOVER. For a protected characteristic dataset D such as religion, \eta(D) \in [0,1] represents how often the model gives biased predictions on this characteristic. For a protected group x such as Sikh in religion, \eta(x) \in [-1,1] represents how often a model is biased towards (+) or against (-) it. We refer more details about the calculation of this metric to Appx. A.1.2.
+</text>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/12">
+We use 5-shot prompting for BBQ as recommended by Weidinger et al. (2023) and zero-shot prompting for UNQOVER.
+</text>
+
+<text page="4" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/3/Text/13">
+**Truthfulness.** LLMs are expected generate reliable outputs that agree with factuality and common sense. We adopt TRUTHFULQA (Lin et al., 2021) to measure whether compressed language models are truthful in generating answers to questions while being informative at the same time. The TRUTHFULQA benchmark consists of 817 questions w.r.t. unfounded beliefs or misconceptions. We follow (Ouyang et al., 2022; Ivison et al., 2023)
+</text>
+
+</page>
+<page number="5">
+<figure_group page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/FigureGroup/282">
+<figure page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Figure/0" image="RP41_Xu_2024_fig01.jpg">[FIGURE: see RP41_Xu_2024_fig01.jpg]</figure>
+<caption page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Caption/1">
+(a) Evaluation results of LLAMA-2-13B on language modeling (↓), toxicity (↓) and bias datasets (↓). We notice model-based evaluation metrics are sensitive to generation quality, e.g. % negative regard decreases as perplexity increases. Note that from 30% compression rate, all four pruning methods have statistically significantly higher perplexity compared to uncompressed models (paired student T-Test at 0.05 significance level).
+</caption>
+</figure_group>
+
+<figure_group page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/FigureGroup/283">
+<figure page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Figure/2" image="RP41_Xu_2024_fig02.jpg">[FIGURE: see RP41_Xu_2024_fig02.jpg]</figure>
+<caption page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Caption/3">
+(b) Evaluation results of LLAMA-2-13B on UNQOVER dataset with regard to representational bias (↓). We notice that model's representational bias are relatively consistent except for Magnitude pruning, as pruning ratio increases compared to results on degeneration bias &amp; toxicity benchmarks.
+</caption>
+</figure_group>
+
+<figure_group page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/FigureGroup/284">
+<figure page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Figure/4" image="RP41_Xu_2024_fig03.jpg">[FIGURE: see RP41_Xu_2024_fig03.jpg]</figure>
+<caption page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Caption/5">
+(c) Evaluation results of LLAMA-2-13B and TÜLU-2-13B on BBQ dataset, disambiguate questions with regard to accuracy (↑) and bias (↓). We notice as pruning ratio increases, model's accuracy drops sharply, meanwhile models' bias increases.
+</caption>
+</figure_group>
+
+<caption page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Caption/6">
+Figure 1: LLAMA-2-13B's compression results on different datasets. X-axis refers to compression ratio. LLM.int8(), AWQ, GPTQ are of 50%, 75% and 75% compression ratio, respectively. 7B models show similar trends (Fig. [5)](#page-18-0).
+</caption>
+
+<text page="5" section="3.2 Safety Evaluation Dimensions" source="author" id="/page/4/Text/7">
+to use 6-shot prompting and use model-based evaluation (details in Appx. [A)](#page-12-8).
+</text>
+
+
+<heading page="5" section="3.3 Performance Evaluation Dimensions" source="author" id="/page/4/SectionHeader/8" level="3">
+### 3.3 Performance Evaluation Dimensions
+</heading>
+
+<text page="5" section="3.3 Performance Evaluation Dimensions" source="author" id="/page/4/Text/9">
+A compressed language model should produce coherent language, and be useful for downstream tasks.
+</text>
+
+<text page="5" section="3.3 Performance Evaluation Dimensions" source="author" id="/page/4/Text/10">
+Language Modeling Capability. Existing studies on compression algorithms use perplexity as the primary evaluation metric. To align with existing works, we include WIKITEXT-2 [(Merity et al.,](#page-11-12) [2016)](#page-11-12) for language modeling capability evaluation. WIKITEXT-2 only covers the Wikipedia text and cannot reflect models' performance on other text domains, therefore we also include a subset of DOLMA dataset [(Soldaini et al.,](#page-11-13) [2024)](#page-11-13) cover six different domains: Books, CommonCrawl, Reddit, StackOverflow, Wiki and PeS2o (STEM papers).
+</text>
+
+<text page="5" section="3.3 Performance Evaluation Dimensions" source="author" id="/page/4/Text/11">
+Downstream Tasks. We evaluate compressed models' capabilities on three downstream task dimensions: knowledge and reasoning, in-
+</text>
+
+<text page="5" section="3.3 Performance Evaluation Dimensions" source="author" id="/page/4/Text/12">
+struction following and conditional generation/summarization. We use MMLU [(Hendrycks](#page-10-14) [et al.,](#page-10-14) [2020)](#page-10-14), MT-BENCH [(Zheng et al.,](#page-12-9) [2023)](#page-12-9) and XSUM [(Narayan et al.,](#page-11-14) [2018)](#page-11-14) respectively. Appx. [A](#page-12-8) shows additional details, including examples of each dataset.
+</text>
+
+
+<heading page="5" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/4/SectionHeader/13" level="2">
+## 4 Degeneration Harm &amp; Representational Harms
+</heading>
+
+<text page="5" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/4/Text/14">
+Existing bias and toxicity evaluation benchmarks (e.g., [Liang et al.,](#page-10-1) [2023;](#page-10-1) [Esiobu et al.,](#page-9-13) [2023;](#page-9-13) [Hong et al.,](#page-10-3) [2024)](#page-10-3) focus on providing one single metric macro averaged over different datasets. In contrast, we take a closer look at what can be lost in the single average scores, and focus on degeneration and representational harm.
+</text>
+
+<text page="5" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/4/Text/15">
+Degeneration harm evaluation is cofounded by generation quality. As the compression ratio increases, the model starts to produce disfluent English. Such invalid English is often classified as un-
+</text>
+
+</page>
+<page number="6">
+<text page="6" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/5/Text/0">
+harmful by model-based evaluations. For example, in Fig. [1a,](#page-4-1) we can observe a clear trend. For pruning methods, the perplexity increases sharply at 50% compression ratio. However, the model's negative regard score decreases. Specifically, for the Magnitude-pruned model the toxicity and negative regard scores to drop close to zero, suggesting that the generations are non-toxic and respectful, when in fact, they are not even language.
+</text>
+
+<text page="6" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/5/Text/1">
+Representational harm stays consistent or increases as pruning ratio increases, except for **Magnitude**. For example, Fig. [1b](#page-4-1) and Fig. [1c](#page-4-1) show that despite model's generation quality and accuracy degrading as pruning ratio increases, model's representational harm stays consistent or increases (as measured by bias metrics on UN-QOVER and BBQ dataset). Again, we observe Magnitude's different bias pattern compared to other pruning methods, which we hypothesize is related to its sharp performance degradation.
+</text>
+
+<text page="6" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/5/Text/2">
+SFT reduces degeneration harm, but not representational harm. Similar to discussions by previous works [(Touvron et al.,](#page-11-3) [2023;](#page-11-3) [Ivison et al.,](#page-10-4) [2023)](#page-10-4), SFT-ed language models can achieve close to zero toxicity rate, as measured by model-based metrics on our toxicity evaluation datasets (detailed results in Appx. [D)](#page-17-0). However, the representational harm is not reduced, evidenced by our results on UN-QOVER and BBQ. For example, from Fig. [1c,](#page-4-1) uncompressed LLAMA-2-13B model has lower bias metric compared to its SFT-ed variant TÜLU-2-13B (7.2 vs 8.4). As the compression ratio increases, the bias metrics of both models increase. Evaluation results with LLAMA-2-7B model show similar trends in Fig. [5.](#page-18-0)
+</text>
+
+<text page="6" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/5/Text/3">
+Quantization methods largely preserves model's performance, bias and toxicity. We notice that starting from 40% compression ratio, pruning methods' behaviors start to deviate much from the uncompressed model. On the other hand, quantization methods at moderate or large compression rate still preserve model's language modeling and classification performance (Fig. [1a](#page-4-1) and Fig. [1c)](#page-4-1). Meanwhile the model's bias and toxicity are also preserved.
+</text>
+
+<text page="6" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/5/Text/4">
+Quantized 13B models are on par or better than uncompressed 7B models. The 50% quantized TÜLU-2-13B model with LLM.int8() achieves 56.7% and 55.6% on MMLU and TRUTH-FULQA datasets, compared to the original TÜLU-2- 7B model's 55.8% and 32.3%. Note that these two models are roughly equal in terms of the GPU memory they require for inference. In terms of language
+</text>
+
+<text page="6" section="4 Degeneration Harm &amp; Representational Harms" source="author" id="/page/5/Text/5">
+modeling, 50% quantized LLAMA-2-13B model achieves 4.92 perplexity on WIKITEXT-2 compared to LLAMA-2-7B's 5.47. On the other hand, 50% pruned TÜLU-2-13B with GBLM pruning only achieves 51.3% and 44.4% on MMLU and TRUTH-FULQA, respectively. This suggests that under same compression rate, quantization performs better than pruning.
+</text>
+
+
+<heading page="6" section="5 How Does Compression Affect Different Protected Groups?" source="author" id="/page/5/SectionHeader/6" level="2">
+## 5 How Does Compression Affect Different Protected Groups?
+</heading>
+
+<text page="6" section="5 How Does Compression Affect Different Protected Groups?" source="author" id="/page/5/Text/7">
+The BBQ score for representational harm is aggregated across multiple different kinds of protected groups. We see in Fig. [1c](#page-4-1) that the score does not have substantial change across compression ratios. At the level of individual protected groups, this is not the case.
+</text>
+
+<text page="6" section="5 How Does Compression Affect Different Protected Groups?" source="author" id="/page/5/Text/8">
+We find, however, that the change of harm score against individual protected groups shows no clear pattern. In Fig. [2,](#page-6-0) we select SparseGPT as a representative pruning method to show the change of model's bias against each individual group as the compression ratio increases. Although the aggregated bias metric shows no drastic change, the bias metric against each individual group may change significantly with a 10% compression rate difference. Moreover, quantization methods also demonstrate different bias changing patterns against different groups. For example, on BBQ dataset, LLM.int8() has a +9.4 (increased bias) against the Age protected group with LLAMA-2-13B model, and -1.2 (decreased bias) against Race_x_Gender while AWQ has +10.6 and -1.5. Our finding highlights the necessity for finegrained bias evaluation for different demographic groups, instead of relying on aggregated metrics. In addition, practitioners should evaluate their (compressed) LLMs with a focus on their users' demographic groups.
+</text>
+
+
+<heading page="6" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/5/SectionHeader/9" level="2">
+## 6 How Does Compression Affect Different Dialects of English?
+</heading>
+
+<text page="6" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/5/Text/10">
+Different prior works have studied dialect biases for language models [(Blodgett et al.,](#page-9-16) [2016,](#page-9-16) [2020;](#page-9-17) [Joshi et al.,](#page-10-15) [2024;](#page-10-15) [Lent et al.,](#page-10-16) [2021,](#page-10-16) *inter alia*). Notably, [Hofmann et al.](#page-10-17) [(2024)](#page-10-17) highlight that LLMs may encode systemic racial biases via *dialect preju**dice*. In this section, we study how compression affects language models' dialect biases. Specifically, we focus on African American English (AAE) versus "standard" English. We use two paired
+</text>
+
+</page>
+<page number="7">
+<figure_group page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/FigureGroup/143">
+<figure page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Figure/0" image="RP41_Xu_2024_fig04.jpg">[FIGURE: see RP41_Xu_2024_fig04.jpg]</figure>
+<caption page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Caption/1">
+Figure 2: Change of representational bias (↓) against different groups, as compression ratio increases, with 13B models. Although aggregated bias metric are relatively stable, different protected groups have vastly different behaviors. Results with 7B models show similar trends (Fig. [6)](#page-18-1).
+</caption>
+</figure_group>
+
+<figure_group page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/FigureGroup/144">
+<figure page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Figure/2" image="RP41_Xu_2024_fig05.jpg">[FIGURE: see RP41_Xu_2024_fig05.jpg]</figure>
+<caption page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Caption/3">
+Figure 3: LLAMA-2-13B perplexity (↓) evaluation results for dialect bias. Note that AWQ and GPTQ have close results thus their markers are overlapped in the plots. LLAMA-2-7B shows similar trends (Fig. [7)](#page-19-0).
+</caption>
+</figure_group>
+
+<text page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Text/4">
+datasets for this evaluation: (1) the TWITTER AAE dataset [(Blodgett et al.,](#page-9-17) [2020)](#page-9-17), consisting of balanced sets of tweets classified as African American or White-aligned English; (2) the AAE LITERA-TURE dataset[5](#page-6-1) versus DOLMA books subset [(Sol](#page-11-13)[daini et al.,](#page-11-13) [2024)](#page-11-13). The first comparison focuses on social media posts while the second comparison focuses on public domain books, representing (typ-
+</text>
+
+<text page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Text/6">
+ically) copy-edited text. We provide the detailed statistics of these datasets in Table [5.](#page-15-0) We evaluate the change of perplexity of compressed language models on these corpora. This comparison provides us insights into how different compression methods and compression ratios affect the language model's dialect biases.
+</text>
+
+<text page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Text/7">
+We show the results with LLAMA-2-13B base model in Fig. [3.](#page-6-2) The full results are in Appx. [D.3.](#page-17-1) We make three key observations: (1) The pre-
+</text>
+
+<footnote page="7" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/6/Footnote/5">
+^(5)[https://github.com/jazmiahenry/aave_](https://github.com/jazmiahenry/aave_corpora) [corpora](https://github.com/jazmiahenry/aave_corpora)
+</footnote>
+
+</page>
+<page number="8">
+<text page="8" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/7/Text/0">
+trained language model has a dialect bias. It has a lower perplexity on standard English book text or social media posts, compared to their African American English counterparts. (2) Model compression maintains the language model's dialect biases. The perplexity of both AAE and "standard" English increases as the compression ratio increases, but the margin does not reduce. This is true for both pruning and quantization methods. (3) Even a heavily compressed model (at 50% pruning ratio) has better perplexity on "standard" English than the *uncompressed* model on African American English. Notwithstanding the difficulty of the selection of the perplexity evaluation dataset and the underlying phenomenon of dialect bias, our conclusions remain valid because of the significantly worse perplexity of AAE dialect with the uncompressed model.
+</text>
+
+<text page="8" section="6 How Does Compression Affect Different Dialects of English?" source="author" id="/page/7/Text/1">
+The impact of the last observation can be illustrated by mapping model size to monetary cost of inference; larger models cost more. The largest (i.e. uncompressed) model is double the size of the 50% compressed model, but the former has worse perplexity on AAE than the latter on standard English. As language models are increasingly becoming our interfaces to data and compute, this means that a speaker of White-aligned English can receive "better service" in their native dialect, but pay only half the price as an AAE speaker seeking to interact in their native dialect.
+</text>
+
+
+<heading page="8" section="7 The Impact of Supervised Fine-tuning" source="author" id="/page/7/SectionHeader/2" level="2">
+## 7 The Impact of Supervised Fine-tuning
+</heading>
+
+<text page="8" section="7 The Impact of Supervised Fine-tuning" source="author" id="/page/7/Text/3">
+In this section, we investigate how the order of performing pruning and SFT affect the resulting model's performance.[6](#page-7-0) For the experiment group, we first prune the base LLAMA-2-7B model to 50% pruning rate, then perform supervised finetuning. For the control group, we first SFT the base model then perform the pruning. We refer to the experiment group as Prune→SFT, and the control group as SFT→Prune. We use the all four pruning algorithms from Sec. [2.2,](#page-1-1) and the TÜLU-2-SFT-Mixture[7](#page-7-1) used by the official TÜLU family models for the supervised fine-tuning.
+</text>
+
+<text page="8" section="7 The Impact of Supervised Fine-tuning" source="author" id="/page/7/Text/4">
+Table [3](#page-8-0) and Fig. [4](#page-8-1) shows the results of this evaluation. Prune→SFT models achieve better performance in terms of downstream tasks (i.e. MT-
+</text>
+
+<text page="8" section="7 The Impact of Supervised Fine-tuning" source="author" id="/page/7/Text/7">
+BENCH, MMLU, XSUM and classification accuracy on BBQ disambiguate questions). This observation is expected as during SFT, the unpruned weights of pruned models are further adapted, and such adaptation is helpful for performance. Interestingly, we notice that the bias evaluation results are mixed. Prune→SFT models have lower bias and toxicity on degeneration harm evaluation datasets, but overall higher representational harm (Fig. [4,](#page-8-1) Table [30](#page-35-0) and Table [31)](#page-36-0). We hypothesize this is because SFT decreases the base model's degeneration harm, but increases the base model's representational harm (Fig. [5](#page-18-0) and Appx. [D.1.4)](#page-17-2). We leave this as an interesting direction for future exploration.
+</text>
+
+
+<heading page="8" section="8 Conclusions and Recommendations" source="author" id="/page/7/SectionHeader/8" level="2">
+## 8 Conclusions and Recommendations
+</heading>
+
+<text page="8" section="8 Conclusions and Recommendations" source="author" id="/page/7/Text/9">
+In this work, we presented a comprehensive evaluation on the safety of LLM compression techniques. We systematically investigated multiple aspects of safety, including degeneration harm, representational harm as well as dialect biases. Our safety evaluation, along with downstream task performances, reveals that model compression can lead to a series of unexpected results. Compression may unintentionally remedy an LLM's degeneration harm, but it can still exacerbate representational harm. In addition, as the compression rate increases, different protected groups are not affected equally. Our findings highlight the need for a nuanced understanding of how compression affects LLM behavior. We conclude with the following recommendations for future LLM compression research: (1) Do not solely evaluate one aspect, perplexity or safety, in isolation. Instead, always measure and report both. (2) Aggregated metrics for safety can hide the nuanced movement across different protected groups and dialects. It is imperative to conduct fine-grained evaluations of compressed LLMs with regard to each individual protected group and dialect.
+</text>
+
+
+<heading page="8" section="Limitations" source="author" id="/page/7/SectionHeader/10" level="2">
+## Limitations
+</heading>
+
+<text page="8" section="Limitations" source="author" id="/page/7/Text/11">
+Evaluating different model compression methods at different compression ratios is an expensive computational effort. In our experiments, for each base model, we evaluate 4 pruning methods × 8 pruning ratios + 3 quantization methods = 35 compressed models. Therefore, we evaluate 4 base models (LLAMA-2-{7B, 13B}, TÜLU-2-{7B, 13B}), in total 144 models on each dataset (4 × 35 + 4). Given
+</text>
+
+<footnote page="8" section="Limitations" source="author" id="/page/7/Footnote/5">
+^(6)The quantization methods we study are post-training quantization methods which do not support SFT afterwards, therefore we do not include them in this section.
+</footnote>
+
+<footnote page="8" section="Limitations" source="author" id="/page/7/Footnote/6">
+^(7)[https://huggingface.co/datasets/](https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture) [allenai/tulu-v2-sft-mixture](https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture)
+</footnote>
+
+</page>
+<page number="9">
+<table_group page="9" section="Limitations" source="author" id="/page/8/TableGroup/63">
+<caption page="9" section="Limitations" source="author" id="/page/8/Caption/0">
+Table 3: Evaluation results for Pruning x SFT experiments. The uncompressed model here refers to our reproduced TÜLU-2-7B model. MT-BENCH is evaluated with GPT-4 as judge. MMLU is evaluated by accuracy with few-shot prompting and XSUM is evaluated with ROUGE-2 (Lin, 2004).
+</caption>
+<table page="9" section="Limitations" source="author" id="/page/8/Table/1">
+| CompressionMethod | PruningStructure | CompressionRatio | MT-BENCH (\uparrow) | MMLU (\uparrow) | XSUM (\uparrow) | TRUTHFULQA (\uparrow) | TOXIGEN (\downarrow) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+|  |  | 0% | 5.93 | 48.8 | 7.5 | 57.7 | 0.10% |
+| Quantized Models |
+| LLM.int8() | - | 50% | 5.81 | 46.7 | 7.6 | 57.8 | 0.08% |
+| AWQ | - | 75% | 3.43 | 43.9 | 7.8 | 55.3 | 0.08% |
+| GPTQ | - | 75% | 5.68 | 41.5 | 7.4 | 56.3 | 0.07% |
+| Prune \rightarrow SFT Models |
+| Magnitude | Unstructured | 50% | 5.09 | 38.6 | 6.7 | 37.5 | 0.10% |
+| Magnitude | 4:8 | 50% | 5.06 | 38.1 | 6.4 | 40.3 | 0.08% |
+| SparseGPT | Unstructured | 50% | 5.18 | 41.5 | 6.9 | 36.5 | 0.05% |
+| SparseGPT | 4:8 | 50% | 5.04 | 40.2 | 5.8 | 42.0 | 0.08% |
+| Wanda | Unstructured | 50% | 5.25 | 39.6 | 7.0 | 35.9 | 0.07% |
+| Wanda | 4:8 | 50% | 5.18 | 38.2 | 5.8 | 35.5 | 0.05% |
+| GBLM | Unstructured | 50% | 5.03 | 39.6 | 6.4 | 35.9 | 0.07% |
+| GBLM | 4:8 | 50% | 5.25 | 40.1 | 6.1 | 42.0 | 0.08% |
+| SFT \rightarrow Prune Models |
+| Magnitude | Unstructured | 50% | 2.68 | 31.1 | 4.6 | 30.5 | 0.27% |
+| Magnitude | 4:8 | 50% | 2.14 | 28.2 | 3.8 | 37.5 | 0.12% |
+| SparseGPT | Unstructured | 50% | 4.12 | 39.6 | 6.1 | 57.5 | 0.07% |
+| SparseGPT | 4:8 | 50% | 3.09 | 33.1 | 4.8 | 36.7 | 0.31% |
+| Wanda | Unstructured | 50% | 3.86 | 36.7 | 6.3 | 41.9 | 0.05% |
+| Wanda | 4:8 | 50% | 2.40 | 30.2 | 4.4 | 48.8 | 0.17% |
+| GBLM | Unstructured | 50% | 3.56 | 34.5 | 6.0 | 37.9 | 0.37% |
+| GBLM | 4:8 | 50% | 2.18 | 28.4 | 4.0 | 29.7 | 0.75% |
+</table>
+</table_group>
+
+<figure_group page="9" section="Limitations" source="author" id="/page/8/FigureGroup/64">
+<figure page="9" section="Limitations" source="author" id="/page/8/Figure/2" image="RP41_Xu_2024_fig06.jpg">[FIGURE: see RP41_Xu_2024_fig06.jpg]</figure>
+<caption page="9" section="Limitations" source="author" id="/page/8/Caption/3">
+Figure 4: Bias (left) and Accuracy (right) results on BBQ dataset between SFT→Prune and Prune→SFT.
+</caption>
+</figure_group>
+
+<text page="9" section="Limitations" source="author" id="/page/8/Text/4">
+the limited bandwidth and resources, our evaluations focus on 7B and 13B-sized models and their compressed models. The bias, toxicity, and performance evaluations with compressed larger models, such as 30B and 70B LLAMA and TÜLU models remain to be studied. In addition, other notable compression methods such as KV cache quantization (Liu et al., 2024; Zhang et al., 2024) remain to be studied. The compression algorithms and representational harm evaluations require access to model's parameters and logits, which are not available for certain proprietary models such as GPT-4 (Achiam et al., 2023) and Gemini (Gemini et al., 2023).
+</text>
+
+
+<heading page="9" section="**Ethical Considerations **" source="author" id="/page/8/SectionHeader/5" level="2">
+## **Ethical Considerations **
+</heading>
+
+<text page="9" section="**Ethical Considerations **" source="author" id="/page/8/Text/6">
+This work studies how model compression affects language model's safety dimensions, including degeneration harm, representational harm as well as dialect biases. All artifacts used in this work are available for public access with licenses for academic purposes. Given the fact that we conclude compressed models have the same or higher harms, we do not plan to release the compressed models, but we will release detailed implementations and instructions to reproduce the experimental results.
+</text>
+
+</page>
+<page number="10">
+
+<heading page="10" section="Acknowledgements" source="author" id="/page/9/SectionHeader/0" level="2">
+## Acknowledgements
+</heading>
+
+<text page="10" section="Acknowledgements" source="author" id="/page/9/Text/1">
+We would thank members of UtahNLP for their constructive feedback. This material is based upon work supported in part by NSF under grants 2007398, 2217154, 2318550, 2205418, and 2134223. This research is supported by the National Artificial Intelligence Research Resource (NAIRR) Pilot and the Delta advanced computing and data resource which is supported by the National Science Foundation (award NSF-OAC 2005572). Ashim Gupta is supported by the Bloomberg Data Science Ph.D. Fellowship. Oliver Bentham is supported by the NSF CISE Graduate Fellowships under Grant No. G-2A-063. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the sponsers.
+</text>
+
+
+<heading page="10" section="References" source="author" id="/page/9/SectionHeader/2" level="2">
+## References
+</heading>
+
+<list page="10" section="References" source="author" id="/page/9/ListGroup/375">
+- Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. *arXiv preprint arXiv:2303.08774*.
+- CJ Adams, Jeffrey Sorensen, Julia Elliott, Lucas Dixon, nithum Mark McDonald, and Will Cukierski. 2017. [Toxic comment classification challenge.](https://kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge)
+- Solon Barocas, Moritz Hardt, and Arvind Narayanan. 2023. *Fairness and machine learning: Limitations* *and opportunities*. MIT press.
+- Su Lin Blodgett, Solon Barocas, Hal Daumé III, and Hanna Wallach. 2020. [Language (technology) is](https://doi.org/10.18653/v1/2020.acl-main.485) [power: A critical survey of "bias" in NLP.](https://doi.org/10.18653/v1/2020.acl-main.485) In *Pro**ceedings of the 58th Annual Meeting of the Asso**ciation for Computational Linguistics*, pages 5454– 5476, Online. Association for Computational Linguistics.
+- Su Lin Blodgett, Lisa Green, and Brendan O'Connor. 2016. [Demographic dialectal variation in social](https://doi.org/10.18653/v1/D16-1120) [media: A case study of African-American English.](https://doi.org/10.18653/v1/D16-1120) In *Proceedings of the 2016 Conference on Empiri**cal Methods in Natural Language Processing*, pages 1119–1130, Austin, Texas. Association for Computational Linguistics.
+- Andrew A Chien, Liuzixuan Lin, Hai Nguyen, Varsha Rao, Tristan Sharma, and Rajini Wijayawardana. 2023. Reducing the carbon impact of generative ai inference (today and in 2035). In *Proceedings of* *the 2nd Workshop on Sustainable Computer Systems*, pages 1–7.
+- Kate Crawford. 2017. The trouble with bias. *Invited* *Talks at NeurIPS 2017*.
+</list>
+
+<list page="10" section="References" source="author" id="/page/9/ListGroup/376">
+- Rocktim Jyoti Das, Liqun Ma, and Zhiqiang Shen. 2023. Beyond size: How gradients shape pruning decisions in large language models. *arXiv preprint* *arXiv:2311.04902*.
+- Dorottya Demszky, Diyi Yang, David S Yeager, Christopher J Bryan, Margarett Clapper, Susannah Chandhok, Johannes C Eichstaedt, Cameron Hecht, Jeremy Jamieson, Meghann Johnson, et al. 2023. Using large language models in psychology. *Nature Reviews Psy**chology*, 2(11):688–701.
+- Tim Dettmers, Mike Lewis, Younes Belkada, and Luke Zettlemoyer. 2022. Gpt3. int8 (): 8-bit matrix multiplication for transformers at scale. *Advances in* *Neural Information Processing Systems*, 35:30318– 30332.
+- Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. 2024. Qlora: Efficient finetuning of quantized llms. *Advances in Neural Information* *Processing Systems*, 36.
+- Jwala Dhamala, Tony Sun, Varun Kumar, Satyapriya Krishna, Yada Pruksachatkun, Kai-Wei Chang, and Rahul Gupta. 2021. Bold: Dataset and metrics for measuring biases in open-ended language generation. In *Proceedings of the 2021 ACM conference* *on fairness, accountability, and transparency*, pages 862–872.
+- David Esiobu, Xiaoqing Tan, Saghar Hosseini, Megan Ung, Yuchen Zhang, Jude Fernandes, Jane Dwivedi-Yu, Eleonora Presani, Adina Williams, and Eric Smith. 2023. [ROBBIE: Robust bias evaluation of](https://doi.org/10.18653/v1/2023.emnlp-main.230) [large generative language models.](https://doi.org/10.18653/v1/2023.emnlp-main.230) In *Proceedings of* *the 2023 Conference on Empirical Methods in Natu**ral Language Processing*, pages 3764–3814, Singapore. Association for Computational Linguistics.
+- Elias Frantar and Dan Alistarh. 2023. Sparsegpt: Massive language models can be accurately pruned in one-shot. In *International Conference on Machine* *Learning*, pages 10323–10337. PMLR.
+- Elias Frantar, Saleh Ashkboos, Torsten Hoefler, and Dan Alistarh. 2022. Gptq: Accurate post-training quantization for generative pre-trained transformers. *arXiv preprint arXiv:2210.17323*.
+- Samuel Gehman, Suchin Gururangan, Maarten Sap, Yejin Choi, and Noah A Smith. 2020. Realtoxicityprompts: Evaluating neural toxic degeneration in language models. In *Findings of the Association* *for Computational Linguistics: EMNLP 2020*, pages 3356–3369.
+- Team Gemini, Rohan Anil, Sebastian Borgeaud, Yonghui Wu, Jean-Baptiste Alayrac, Jiahui Yu, Radu Soricut, Johan Schalkwyk, Andrew M Dai, Anja Hauth, et al. 2023. Gemini: a family of highly capable multimodal models. *arXiv preprint* *arXiv:2312.11805*.
+- Aaron Gokaslan, Vanya Cohen, Ellie Pavlick, and Stefanie Tellex. 2019. Openwebtext corpus.
+</list>
+
+</page>
+<page number="11">
+<list page="11" section="References" source="author" id="/page/10/ListGroup/410">
+- Ashim Gupta, Carter Blum, Temma Choji, Yingjie Fei, Shalin Shah, Alakananda Vempala, and Vivek Srikumar. 2023a. Don't retrain, just rewrite: Countering adversarial perturbations by rewriting text. In *Pro**ceedings of the 61st Annual Meeting of the Associa**tion for Computational Linguistics (Volume 1: Long* *Papers)*, pages 13981–13998.
+- Ashim Gupta and Amrith Krishna. 2023. Adversarial clean label backdoor attacks and defenses on text classification systems. In *Proceedings of the* *8th Workshop on Representation Learning for NLP* *(RepL4NLP 2023)*, pages 1–12.
+- Ashim Gupta, Rishanth Rajendhran, Nathan Stringham, Vivek Srikumar, and Ana Marasovic. 2023b. Whis- ´ pers of doubt amidst echoes of triumph in nlp robustness. *arXiv preprint arXiv:2311.09694*.
+- Ashim Gupta, Sina Mahdipour Saravani, P Sadayappan, and Vivek Srikumar. 2024. An empirical investigation of matrix factorization methods for pre-trained transformers. *arXiv preprint arXiv:2406.11307*.
+- Thomas Hartvigsen, Saadia Gabriel, Hamid Palangi, Maarten Sap, Dipankar Ray, and Ece Kamar. 2022. Toxigen: A large-scale machine-generated dataset for adversarial and implicit hate speech detection. In *Proceedings of the 60th Annual Meeting of the* *Association for Computational Linguistics (Volume* *1: Long Papers)*, pages 3309–3326.
+- Babak Hassibi, David G Stork, and Gregory J Wolff. 1993. Optimal brain surgeon and general network pruning. In *IEEE international conference on neural* *networks*, pages 293–299. IEEE.
+- Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt. 2020. Measuring massive multitask language understanding. In *International Conference on Learning* *Representations*.
+- Valentin Hofmann, Pratyusha Ria Kalluri, Dan Jurafsky, and Sharese King. 2024. Dialect prejudice predicts ai decisions about people's character, employability, and criminality. *arXiv preprint arXiv:2403.00742*.
+- Junyuan Hong, Jinhao Duan, Chenhui Zhang, Zhangheng Li, Chulin Xie, Kelsey Lieberman, James Diffenderfer, Brian Bartoldson, Ajay Jaiswal, Kaidi Xu, et al. 2024. Decoding compressed trust: Scrutinizing the trustworthiness of efficient llms under compression. *arXiv preprint arXiv:2403.15447*.
+- Clayton Hutto and Eric Gilbert. 2014. Vader: A parsimonious rule-based model for sentiment analysis of social media text. In *Proceedings of the international* *AAAI conference on web and social media*, volume 8, pages 216–225.
+- Hamish Ivison, Yizhong Wang, Valentina Pyatkin, Nathan Lambert, Matthew Peters, Pradeep Dasigi, Joel Jang, David Wadden, Noah A Smith, Iz Beltagy, et al. 2023. Camels in a changing climate: Enhancing lm adaptation with tulu 2. *arXiv preprint* *arXiv:2311.10702*.
+</list>
+
+<list page="11" section="References" source="author" id="/page/10/ListGroup/411">
+- Ajay Kumar Jaiswal, Zhe Gan, Xianzhi Du, Bowen Zhang, Zhangyang Wang, and Yinfei Yang. 2023. Compressing llms: The truth is rarely pure and never simple. In *The Twelfth International Conference on* *Learning Representations*.
+- Aditya Joshi, Raj Dabre, Diptesh Kanojia, Zhuang Li, Haolan Zhan, Gholamreza Haffari, and Doris Dippold. 2024. Natural language processing for dialects of a language: A survey. *arXiv preprint* *arXiv:2401.05632*.
+- Eldar Kurtic and Dan Alistarh. 2022. Gmp*: Well-tuned gradual magnitude pruning can outperform most bert-pruning methods. *arXiv preprint* *arXiv:2210.06384*.
+- Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and Radu Soricut. 2019. Albert: A lite bert for self-supervised learning of language representations. In *International Confer**ence on Learning Representations*.
+- Yann LeCun, John Denker, and Sara Solla. 1989. Optimal brain damage. *Advances in neural information* *processing systems*, 2.
+- Heather Lent, Emanuele Bugliarello, Miryam de Lhoneux, Chen Qiu, and Anders Søgaard. 2021. [On language models for creoles.](https://doi.org/10.18653/v1/2021.conll-1.5) In *Proceedings of* *the 25th Conference on Computational Natural Lan**guage Learning*, pages 58–71, Online. Association for Computational Linguistics.
+- Tao Li, Daniel Khashabi, Tushar Khot, Ashish Sabharwal, and Vivek Srikumar. 2020. Unqovering stereotyping biases via underspecified questions. In *Find**ings of the Association for Computational Linguistics:* *EMNLP 2020*, pages 3475–3489.
+- Percy Liang, Rishi Bommasani, Tony Lee, Dimitris Tsipras, Dilara Soylu, Michihiro Yasunaga, Yian Zhang, Deepak Narayanan, Yuhuai Wu, Ananya Kumar, et al. 2023. Holistic evaluation of language models. *Transactions on Machine Learning Research*.
+- Chin-Yew Lin. 2004. [ROUGE: A package for auto](https://aclanthology.org/W04-1013)[matic evaluation of summaries.](https://aclanthology.org/W04-1013) In *Text Summariza**tion Branches Out*, pages 74–81, Barcelona, Spain. Association for Computational Linguistics.
+- Ji Lin, Jiaming Tang, Haotian Tang, Shang Yang, Wei-Ming Chen, Wei-Chen Wang, Guangxuan Xiao, Xingyu Dang, Chuang Gan, and Song Han. 2024. Awq: Activation-aware weight quantization for llm compression and acceleration. In *MLSys*.
+- Stephanie Lin, Jacob Hilton, and Owain Evans. 2021. Truthfulqa: Measuring how models mimic human falsehoods. *arXiv preprint arXiv:2109.07958*.
+- Zirui Liu, Jiayi Yuan, Hongye Jin, Shaochen Zhong, Zhaozhuo Xu, Vladimir Braverman, Beidi Chen, and Xia Hu. 2024. Kivi: A tuning-free asymmetric 2bit quantization for kv cache. In *Forty-first International* *Conference on Machine Learning*.
+</list>
+
+</page>
+<page number="12">
+<list page="12" section="References" source="author" id="/page/11/ListGroup/407">
+- Yao Lu, Max Bartolo, Alastair Moore, Sebastian Riedel, and Pontus Stenetorp. 2022. [Fantastically ordered](https://doi.org/10.18653/v1/2022.acl-long.556) [prompts and where to find them: Overcoming few](https://doi.org/10.18653/v1/2022.acl-long.556)[shot prompt order sensitivity.](https://doi.org/10.18653/v1/2022.acl-long.556) In *Proceedings of the* *60th Annual Meeting of the Association for Compu**tational Linguistics (Volume 1: Long Papers)*, pages 8086–8098, Dublin, Ireland. Association for Computational Linguistics.
+- Xinyin Ma, Gongfan Fang, and Xinchao Wang. 2023. [LLM-pruner: On the structural pruning of large lan](https://openreview.net/forum?id=J8Ajf9WfXP)[guage models.](https://openreview.net/forum?id=J8Ajf9WfXP) In *Thirty-seventh Conference on Neu**ral Information Processing Systems*.
+- Ian Magnusson, Akshita Bhagia, Valentin Hofmann, Luca Soldaini, A. Jha, Oyvind Tafjord, Dustin Schwenk, Pete Walsh, Yanai Elazar, Kyle Lo, Dirk Groeneveld, Iz Beltagy, Hanna Hajishirzi, Noah A. Smith, Kyle Richardson, and Jesse Dodge. 2023. [Paloma: A benchmark for evaluating language model](https://api.semanticscholar.org/CorpusID:266348815) [fit.](https://api.semanticscholar.org/CorpusID:266348815) *ArXiv*, abs/2312.10523.
+- Stephen Merity, Caiming Xiong, James Bradbury, and Richard Socher. 2016. [Pointer sentinel mixture mod](https://arxiv.org/abs/1609.07843)[els.](https://arxiv.org/abs/1609.07843) *Preprint*, arXiv:1609.07843.
+- Shashi Narayan, Shay B. Cohen, and Mirella Lapata. 2018. [Don't give me the details, just the summary!](https://doi.org/10.18653/v1/D18-1206) [topic-aware convolutional neural networks for ex](https://doi.org/10.18653/v1/D18-1206)[treme summarization.](https://doi.org/10.18653/v1/D18-1206) In *Proceedings of the 2018* *Conference on Empirical Methods in Natural Lan**guage Processing*, pages 1797–1807, Brussels, Belgium. Association for Computational Linguistics.
+- Team Nvidia. 2021. Accelerating inference with sparsity using the nvidia ampere architecture and nvidia tensorrt. In *NVIDIA Technical Blog*.
+- Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. 2022. Training language models to follow instructions with human feedback. *Advances in neural in**formation processing systems*, 35:27730–27744.
+- Alicia Parrish, Angelica Chen, Nikita Nangia, Vishakh Padmakumar, Jason Phang, Jana Thompson, Phu Mon Htut, and Samuel Bowman. 2022. [BBQ:](https://doi.org/10.18653/v1/2022.findings-acl.165) [A hand-built bias benchmark for question answering.](https://doi.org/10.18653/v1/2022.findings-acl.165) In *Findings of the Association for Computational* *Linguistics: ACL 2022*, pages 2086–2105, Dublin, Ireland. Association for Computational Linguistics.
+- Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. *Journal of machine learning research*, 21(140):1–67.
+- Krithika Ramesh, Arnav Chavan, Shrey Pandit, and Sunayana Sitaram. 2023. [A comparative study on the](https://doi.org/10.18653/v1/2023.acl-long.878) [impact of model compression techniques on fairness](https://doi.org/10.18653/v1/2023.acl-long.878) [in language models.](https://doi.org/10.18653/v1/2023.acl-long.878) In *Proceedings of the 61st An**nual Meeting of the Association for Computational*
+</list>
+
+<list page="12" section="References" source="author" id="/page/11/ListGroup/408">
+- *Linguistics (Volume 1: Long Papers)*, pages 15762– 15782, Toronto, Canada. Association for Computational Linguistics.
+- Jeff Rasley, Samyam Rajbhandari, Olatunji Ruwase, and Yuxiong He. 2020. Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters. In *Proceedings of the 26th* *ACM SIGKDD International Conference on Knowl**edge Discovery &amp; Data Mining*, pages 3505–3506.
+- Khaled Saab, Tao Tu, Wei-Hung Weng, Ryutaro Tanno, David Stutz, Ellery Wulczyn, Fan Zhang, Tim Strother, Chunjong Park, Elahe Vedadi, et al. 2024. Capabilities of gemini models in medicine. *arXiv* *preprint arXiv:2404.18416*.
+- Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf. 2019. Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter. *arXiv* *preprint arXiv:1910.01108*.
+- Emily Sheng, Kai-Wei Chang, Premkumar Natarajan, and Nanyun Peng. 2019. [The woman worked as](https://doi.org/10.18653/v1/D19-1339) [a babysitter: On biases in language generation.](https://doi.org/10.18653/v1/D19-1339) In *Proceedings of the 2019 Conference on Empirical* *Methods in Natural Language Processing and the* *9th International Joint Conference on Natural Lan**guage Processing (EMNLP-IJCNLP)*, pages 3407– 3412, Hong Kong, China. Association for Computational Linguistics.
+- Eric Michael Smith, Melissa Hall, Melanie Kambadur, Eleonora Presani, and Adina Williams. 2022. ["I'm](https://doi.org/10.18653/v1/2022.emnlp-main.625) [sorry to hear that": Finding new biases in language](https://doi.org/10.18653/v1/2022.emnlp-main.625) [models with a holistic descriptor dataset.](https://doi.org/10.18653/v1/2022.emnlp-main.625) In *Proceed**ings of the 2022 Conference on Empirical Methods* *in Natural Language Processing*, pages 9180–9211, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics.
+- Luca Soldaini, Rodney Kinney, Akshita Bhagia, Dustin Schwenk, David Atkinson, Russell Authur, Ben Bogin, Khyathi Chandu, Jennifer Dumas, Yanai Elazar, et al. 2024. Dolma: An open corpus of three trillion tokens for language model pretraining research. *arXiv preprint arXiv:2402.00159*.
+- Mingjie Sun, Zhuang Liu, Anna Bair, and J Zico Kolter. 2024. [A simple and effective pruning approach for](https://openreview.net/forum?id=PxoFut3dWW) [large language models.](https://openreview.net/forum?id=PxoFut3dWW) In *The Twelfth International* *Conference on Learning Representations*.
+- Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et al. 2023. Llama 2: Open foundation and fine-tuned chat models. *arXiv preprint* *arXiv:2307.09288*.
+- Angelina Wang, Solon Barocas, Kristen Laird, and Hanna Wallach. 2022. Measuring representational harms in image captioning. In *Proceedings of the* *2022 ACM Conference on Fairness, Accountability,* *and Transparency*, pages 324–335.
+</list>
+
+</page>
+<page number="13">
+<list page="13" section="References" source="author" id="/page/12/ListGroup/421">
+- Zhenduo Wang, Zhichao Xu, Vivek Srikumar, and Qingyao Ai. 2024. An in-depth investigation of user response simulation for conversational search. In *Proceedings of the ACM on Web Conference 2024*, pages 1407–1418.
+- Laura Weidinger, Maribeth Rauh, Nahema Marchal, Arianna Manzini, Lisa Anne Hendricks, Juan Mateos-Garcia, Stevie Bergman, Jackie Kay, Conor Griffin, Ben Bariach, et al. 2023. Sociotechnical safety evaluation of generative ai systems. *arXiv preprint* *arXiv:2310.11986*.
+- Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Remi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, and Alexander Rush. 2020. [Trans](https://doi.org/10.18653/v1/2020.emnlp-demos.6)[formers: State-of-the-art natural language processing.](https://doi.org/10.18653/v1/2020.emnlp-demos.6) In *Proceedings of the 2020 Conference on Empirical* *Methods in Natural Language Processing: System* *Demonstrations*, pages 38–45, Online. Association for Computational Linguistics.
+- Mengzhou Xia, Tianyu Gao, Zhiyuan Zeng, and Danqi Chen. 2024. [Sheared LLaMA: Accelerating lan](https://openreview.net/forum?id=09iOdaeOzp)[guage model pre-training via structured pruning.](https://openreview.net/forum?id=09iOdaeOzp) In *The Twelfth International Conference on Learning* *Representations*.
+- Mengzhou Xia, Zexuan Zhong, and Danqi Chen. 2022. [Structured pruning learns compact and accurate mod](https://doi.org/10.18653/v1/2022.acl-long.107)[els.](https://doi.org/10.18653/v1/2022.acl-long.107) In *Proceedings of the 60th Annual Meeting of the* *Association for Computational Linguistics (Volume* *1: Long Papers)*, pages 1513–1528, Dublin, Ireland. Association for Computational Linguistics.
+- Canwen Xu and Julian McAuley. 2023. A survey on model compression and acceleration for pretrained language models. In *Proceedings of the AAAI Con**ference on Artificial Intelligence*, volume 37, pages 10566–10575.
+- Mingxue Xu, Yao Lei Xu, and Danilo P Mandic. 2023. Tensorgpt: Efficient compression of the embedding layer in llms based on the tensor-train decomposition. *arXiv preprint arXiv:2307.00526*.
+- Zhichao Xu. 2023. Context-aware decoding reduces hallucination in query-focused summarization. *arXiv* *preprint arXiv:2312.14335*.
+- Zhichao Xu. 2024. Rankmamba: benchmarking mamba's document ranking performance in the era of transformers. *arXiv preprint arXiv:2403.18276*.
+- Zhichao Xu and Daniel Cohen. 2023. A lightweight constrained generation alternative for query-focused summarization. In *Proceedings of the 46th Inter**national ACM SIGIR Conference on Research and* *Development in Information Retrieval*, pages 1745– 1749.
+</list>
+
+<list page="13" section="References" source="author" id="/page/12/ListGroup/422">
+- Zhichao Xu, Daniel Cohen, Bei Wang, and Vivek Srikumar. 2024. In-context example ordering guided by label distributions. In *Findings of the Association* *for Computational Linguistics: NAACL 2024*, pages 2623–2640.
+- Zhichao Xu and Jiepu Jiang. 2024. Multi-dimensional evaluation of empathetic dialog responses. *arXiv* *preprint arXiv:2402.11409*.
+- Lu Yin, Shiwei Liu, Ajay Jaiswal, Souvik Kundu, and Zhangyang Wang. 2023. Junk dna hypothesis: A task-centric angle of llm pre-trained weights through sparsity. *arXiv preprint arXiv:2310.02277*.
+- Tianyi Zhang and Anshumali Shrivastava. 2024. Leanquant: Accurate large language model quantization with loss-error-aware grid. *arXiv preprint* *arXiv:2407.10032*.
+- Tianyi Zhang, Jonah Yi, Zhaozhuo Xu, and Anshumali Shrivastava. 2024. Kv cache is 1 bit per channel: Efficient large language model inference with coupled quantization. *arXiv preprint arXiv:2405.03917*.
+- Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric Xing, Hao Zhang, Joseph E. Gonzalez, and Ion Stoica. 2023. [Judging](https://openreview.net/forum?id=uccHPGDlao) [LLM-as-a-judge with MT-bench and chatbot arena.](https://openreview.net/forum?id=uccHPGDlao) In *Thirty-seventh Conference on Neural Information* *Processing Systems Datasets and Benchmarks Track*.
+- Xunyu Zhu, Jian Li, Yong Liu, Can Ma, and Weiping Wang. 2023. A survey on model compression for large language models. *arXiv preprint* *arXiv:2308.07633*.
+</list>
+
+
+<heading page="13" section="A Details of Datasets and Corresponding Evaluations" source="author" id="/page/12/SectionHeader/17" level="2">
+## A Details of Datasets and Corresponding Evaluations
+</heading>
+
+
+<heading page="13" section="A.1 Bias &amp; Toxicity Datasets" source="author" id="/page/12/SectionHeader/18" level="3">
+### A.1 Bias &amp; Toxicity Datasets
+</heading>
+
+
+<heading page="13" section="A.1.1 Generative Datasets" source="author" id="/page/12/SectionHeader/19" level="4">
+#### A.1.1 Generative Datasets
+</heading>
+
+<text page="13" section="A.1.1 Generative Datasets" source="author" id="/page/12/Text/20">
+We include the following datasets.
+</text>
+
+<list page="13" section="A.1.1 Generative Datasets" source="author" id="/page/12/ListGroup/423">
+- REALTOXICITYPROMPTS [(Gehman et al.,](#page-9-7) [2020)](#page-9-7) [8](#page-12-11) is a collection of toxicity prompts sampled from a web corpus [(Gokaslan et al.,](#page-9-12) [2019)](#page-9-12). We use the filtered version which contains 21,744 prompts with varying toxicity. We use the OpenAI Moderation API[9](#page-12-12) to score the toxicity of completions and mark instances with a likelihood greater than 0.5 as being toxic.
+- TOXIGEN [(Hartvigsen et al.,](#page-10-12) [2022)](#page-10-12) [10](#page-12-13) is a dataset that includes synthesized prompts to invoke adversarial and implicit hate speech. We use the
+</list>
+
+<footnote page="13" section="A.1.1 Generative Datasets" source="author" id="/page/12/Footnote/23">
+^(8)[https://huggingface.co/datasets/](https://huggingface.co/datasets/allenai/real-toxicity-prompts) [allenai/real-toxicity-prompts](https://huggingface.co/datasets/allenai/real-toxicity-prompts)
+</footnote>
+
+<footnote page="13" section="A.1.1 Generative Datasets" source="author" id="/page/12/Footnote/24">
+^(9)[https://platform.openai.com/docs/](https://platform.openai.com/docs/guides/moderation) [guides/moderation](https://platform.openai.com/docs/guides/moderation)
+</footnote>
+
+<footnote page="13" section="A.1.1 Generative Datasets" source="author" id="/page/12/Footnote/25">
+^(10)[https://huggingface.co/datasets/](https://huggingface.co/datasets/toxigen/toxigen-data) [toxigen/toxigen-data](https://huggingface.co/datasets/toxigen/toxigen-data)
+</footnote>
+
+</page>
+<page number="14">
+<text page="14" section="A.1.1 Generative Datasets" source="author" id="/page/13/Text/0">
+V2 version provided by [(Esiobu et al.,](#page-9-13) [2023)](#page-9-13), which contains 6,016 prompts covering the topic of 13 protected groups: Asian, Jewish, Black, Muslim, East, Mexican, Latino, Chinese, Native American, LGBTQ, Physical Disabilities, Mental Disabilities and Women. Similarly, we use OpenAI Moderation API and mark instances with a likelihood greater than 0.5 as being toxic.
+</text>
+
+<list page="14" section="A.1.1 Generative Datasets" source="author" id="/page/13/ListGroup/470">
+- ADVPROMPTSET [(Esiobu et al.,](#page-9-13) [2023)](#page-9-13) [11](#page-13-1) is a large-scale adversarial text prompt set based on open-sourced Jigsaw toxicity dataset [(Adams](#page-9-14) [et al.,](#page-9-14) [2017)](#page-9-14). We use the lite version which consists 10k instances. This dataset covers 5 dimensions: gender, sexuality, religion, race and disabilities, and each dimension includes several protected groups. Similarly, we use OpenAI Moderation API and mark instances with a likelihood greater than 0.5 as being toxic.
+- BOLD [(Dhamala et al.,](#page-9-15) [2021)](#page-9-15) [12](#page-13-2) is a bias dataset that contains 7,201 prompts covering 5 different dimensions: profession, gender, race, religious ideology and political biology. Each dimension includes several groups. We follow [Touvron et al.](#page-11-3) [(2023)](#page-11-3) to study how the sentiment in model generations may vary with groups. We evaluate the sentiment w.r.t. each group with VADER classifier [(Hutto and Gilbert,](#page-10-20) [2014)](#page-10-20), a ruled-based sentiment classifier adopted in the Llama-2 [(Tou](#page-11-3)[vron et al.,](#page-11-3) [2023)](#page-11-3)'s evaluation.
+- HOLISTICBIASR [(Esiobu et al.,](#page-9-13) [2023)](#page-9-13) [13](#page-13-3) is a large scale dataset for bias evaluation. It extends Regard dataset [(Sheng et al.,](#page-11-9) [2019)](#page-11-9)'s pre-defined template with noun phrases from the HOLIS-TICBIASR dataset [(Smith et al.,](#page-11-10) [2022)](#page-11-10) to test the model's bias against different groups. The dataset contains 214,460 instances and covered 12 dimensions: body type, nationality, age, characteristics, race and ethnicity, socioeconomic class, religion, gender, ability, political ideologies, cultural and sexual orientations. We randomly sample 10k instances for evaluation. We use the Regard classifier trained by [Sheng et al.](#page-11-9) [(2019)](#page-11-9) [14](#page-13-4) to measure model's regard (i.e. respect, esteem) of different protected groups. We mark instances with negative regard greater than 0.5 as being negative.
+</list>
+
+<text page="14" section="A.1.1 Generative Datasets" source="author" id="/page/13/Text/16">
+[AlexaAI/bold](https://huggingface.co/datasets/AlexaAI/bold)
+</text>
+
+<text page="14" section="A.1.1 Generative Datasets" source="author" id="/page/13/Text/7">
+For the above five datasets, we use greedy decoding and allow the model to decode up to 100 tokens. For pre-trained models, i.e. LLAMA-2 models, we directly use the prompt from the datasets, while for TÜLU-2 models we apply the chat template used in supervised fine-tuning.
+</text>
+
+
+<heading page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/SectionHeader/8" level="4">
+#### A.1.2 Representational Bias Datasets
+</heading>
+
+<text page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Text/9">
+We include the following datasets to evaluate the model's representational bias.
+</text>
+
+<text page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Text/10">
+• Bias Benchmark for QA (BBQ) [(Parrish et al.,](#page-11-5) [2022)](#page-11-5) [15](#page-13-5) is a large-scale dataset that measures the model's representational bias. The dataset consists of 58,492 unique ambiguous questions and disambiguated questions against nine bias categories: age, disability status, gender identity, nationality, physical appearance, race/ethnicity, religion, socio-economical status and sexual orientation. Each question in the dataset has three candidate answers: the bias-reinforcing answer, biasagainst answer and Unknown. The authors propose to evaluate a QA model with four metrics: accuracy for ambiguous questions (the model should choose Unknown), accuracy for disambiguated questions (the model should choose the correct group according to the context), bias in ambiguous questions and bias in disambiguated questions. Denote nreinforcing as the number of model's predictions for bias-reinforcing answer, and nagainst, nUnknown for bias-against answer and Unknown, respectively. For ambiguous questions, the bias metric is defined as
+</text>
+
+<equation page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Equation/11">
+$$
+s_{\rm ambiguous} = \frac{n_{\rm reinforcing}}{n_{\rm reinforcing} + n_{\rm against} + n_{\rm Unknown}} (3)
+$$
+</equation>
+
+<text page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Text/12">
+For disambiguated questions, the bias metric is defined as
+</text>
+
+<equation page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Equation/13">
+$$
+s_{\text{disambiguated}} = \frac{n_{\text{reinforcing}}}{n_{\text{reinforcing}} + n_{\text{against}}}  (4)
+$$
+</equation>
+
+<text page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Text/14">
+We use the few-shot prompting method recommended by [Weidinger et al.](#page-12-7) [(2023)](#page-12-7). In practice, we use 5-shots with 3 random seeds, and the accuracy and bias metrics are averaged over 3 runs. This practice is to partially mitigate the effect of example ordering to model's performance [(Xu](#page-12-14) [et al.,](#page-12-14) [2024;](#page-12-14) [Lu et al.,](#page-11-15) [2022)](#page-11-15). We use a rank classification strategy, where we select the answer with minimum negative log likelihood as completion of prompts.
+</text>
+
+<footnote page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Footnote/4">
+^(11)[https://github.com/facebookresearch/](https://github.com/facebookresearch/ResponsibleNLP/tree/main/AdvPromptSet) [ResponsibleNLP/tree/main/AdvPromptSet](https://github.com/facebookresearch/ResponsibleNLP/tree/main/AdvPromptSet) ^(12)[https://huggingface.co/datasets/](https://huggingface.co/datasets/AlexaAI/bold)
+</footnote>
+
+<footnote page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Footnote/5">
+^(13)[https://github.com/facebookresearch/](https://github.com/facebookresearch/ResponsibleNLP/tree/main/holistic_bias) [ResponsibleNLP/tree/main/holistic_bias](https://github.com/facebookresearch/ResponsibleNLP/tree/main/holistic_bias)
+</footnote>
+
+<footnote page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Footnote/6">
+^(14)[https://huggingface.co/sasha/regardv3](https://huggingface.co/sasha/regardv3)
+</footnote>
+
+<footnote page="14" section="A.1.2 Representational Bias Datasets" source="author" id="/page/13/Footnote/15">
+^(15)[https://github.com/nyu-mll/BBQ](https://github.com/nyu-mll/BBQ)
+</footnote>
+
+</page>
+<page number="15">
+<text page="15" section="A.1.2 Representational Bias Datasets" source="author" id="/page/14/Text/0">
+• UNQOVER Dataset [(Li et al.,](#page-10-5) [2020)](#page-10-5) is designed to probe stereotypical biases by quantifying subjectattribution association in the form of underspecified questions. Each example consists of an *un**derspecified* context sentence which mentions two subjects (e.g., gendered names or ethnicities) and an attribute (e.g., being a good citizen). A question is then asked about which subject-attribution alignment should the model pick. Overall, there are over 2 million test examples ranging over four types of biases: genderoccupation, nationality, ethnicity, and religion. There are two measurements used: 1) µ describing the overall bias intensity over a dataset; 2) η describing how often subject-attribute biases are detected over a dataset. In this paper, we focus on the second metric η since it quantifies in the discrete output space (instead of the continuous probability which µ measures). The two variants of η metrics are in Eq. [5&amp;](#page-14-0)[6.](#page-14-1)
+</text>
+
+<equation page="15" section="A.1.2 Representational Bias Datasets" source="author" id="/page/14/Equation/1">
+$$
+\eta(x) = \operatorname{avg}_{a \in A} \eta(x, a) \tag{5}
+$$
+</equation>
+
+<equation page="15" section="A.1.2 Representational Bias Datasets" source="author" id="/page/14/Equation/2">
+$$
+\eta(D) = \operatorname{avg}_{x \in D} \eta(x) \tag{6}
+$$
+</equation>
+
+<text page="15" section="A.1.2 Representational Bias Datasets" source="author" id="/page/14/Text/3">
+Here, the score η(x, a) is defined in [(Li et al.,](#page-10-5) [2020)](#page-10-5) with x denotes a subject and a an attribute. We refer the reader to [Li et al.](#page-10-5) [(2020)](#page-10-5) for details of the derivation of the metric η(x, a).
+</text>
+
+<text page="15" section="A.1.2 Representational Bias Datasets" source="author" id="/page/14/Text/4">
+Example instances and prompting templates of UN-QOVER and BBQ datasets are shown in Table [4.](#page-15-1)
+</text>
+
+
+<heading page="15" section="A.2 Truthfulness Dataset" source="author" id="/page/14/SectionHeader/5" level="3">
+### A.2 Truthfulness Dataset
+</heading>
+
+<text page="15" section="A.2 Truthfulness Dataset" source="author" id="/page/14/Text/6">
+We use the generation setting of TRUTH-FULQA [(Lin et al.,](#page-10-13) [2021)](#page-10-13), following existing works [(Touvron et al.,](#page-11-3) [2023;](#page-11-3) [Ivison et al.,](#page-10-4) [2023)](#page-10-4). This dataset contains 818 questions, which are used to prompt the tested model to generate answers. Then the model's completions are scored with trained classifiers in terms of % Information and % Truthful. We use % (Information and Truthful) as our main metric, and refer complete results to Appx. [D.](#page-17-0) Following [Ivison et al.](#page-10-4) [(2023)](#page-10-4), we use the default QA prompt format with 6 in-context QA examples, and use greedy decoding and corresponding answer post-processing. We use trained classifiers provided by [Ivison et al.](#page-10-4) [(2023)](#page-10-4) based on LLAMA-2-7b models[16](#page-14-2) [17](#page-14-3) .
+</text>
+
+
+<heading page="15" section="A.3 Language Modeling Evaluation Datasets" source="author" id="/page/14/SectionHeader/9" level="3">
+### A.3 Language Modeling Evaluation Datasets
+</heading>
+
+<text page="15" section="A.3 Language Modeling Evaluation Datasets" source="author" id="/page/14/Text/10">
+In addition to the standard benchmark WIKITEXT-2 [(Merity et al.,](#page-11-12) [2016)](#page-11-12) used by prior compression works, we also include datasets from different text domains for more comprehensive language modeling evaluation. We use subset of DOLMA [(Soldaini](#page-11-13) [et al.,](#page-11-13) [2024)](#page-11-13) datasets provided by PALOMA [(Mag](#page-11-16)[nusson et al.,](#page-11-16) [2023)](#page-11-16) [18](#page-14-4) .
+</text>
+
+<text page="15" section="A.3 Language Modeling Evaluation Datasets" source="author" id="/page/14/Text/11">
+We are interested how compression affect language models' dialect bias. Therefore we also include three dialect bias datasets. TWITTER AAE dataset [(Blodgett et al.,](#page-9-17) [2020)](#page-9-17) consists of balanced sets of tweets classified as African American or White-aligned English. We also include AAE LITERATURE dataset[19](#page-14-5). Details of all language modeling evaluation datasets are shown in Table [5.](#page-15-0)
+</text>
+
+
+<heading page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/SectionHeader/12" level="3">
+### A.4 Downstream Task Performance Evaluation Datasets
+</heading>
+
+<text page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/Text/13">
+Model compression methods aim to maximumly preserve task performance while reducing an LLM's inference cost. As discussed by [Jaiswal](#page-10-10) [et al.](#page-10-10) [(2023)](#page-10-10), compressed LLMs experience serious performance degradation even at a moderate compression rate (e.g. 25%). Therefore, it is critical to evaluate compression methods' effect on an LLM's downstream task performance. We include three datasets targeting at different performance dimensions of LLMs.
+</text>
+
+<list page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/ListGroup/526">
+- MMLU [(Hendrycks et al.,](#page-10-14) [2020)](#page-10-14) is a large scale multi-choice dataset for evaluating an LLM's knowledge and reasoning capabilities. We follow the experimental setup and templates by [Hendrycks et al.](#page-10-14) [(2020)](#page-10-14) to use 5-shot prompting. We report average accuracy across test examples. As is the convention, we sample 5 in-context examples from the dev subset of the MMLU dataset.
+- MT-BENCH [(Zheng et al.,](#page-12-9) [2023)](#page-12-9) evaluates the language model's instruction following capabilities. This dataset consists 80 questions with followups, in total 160 responses. The responses are scored with GPT-4 as a judge. We use the single-answer grading setting of MT-BENCH, as suggested by the MT-Bench repository[20](#page-14-6). We use
+</list>
+
+<footnote page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/Footnote/7">
+^(16)[https://huggingface.co/allenai/](https://huggingface.co/allenai/truthfulqa-truth-judge-llama2-7B) [truthfulqa-truth-judge-llama2-7B](https://huggingface.co/allenai/truthfulqa-truth-judge-llama2-7B)
+</footnote>
+
+<footnote page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/Footnote/8">
+^(17)[https://huggingface.co/allenai/](https://huggingface.co/allenai/truthfulqa-info-judge-llama2-7B) [truthfulqa-info-judge-llama2-7B](https://huggingface.co/allenai/truthfulqa-info-judge-llama2-7B)
+</footnote>
+
+<footnote page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/Footnote/16">
+^(18)[https://huggingface.co/datasets/](https://huggingface.co/datasets/allenai/paloma) [allenai/paloma](https://huggingface.co/datasets/allenai/paloma)
+</footnote>
+
+<footnote page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/Footnote/17">
+^(19)[https://github.com/jazmiahenry/aave_](https://github.com/jazmiahenry/aave_corpora) [corpora](https://github.com/jazmiahenry/aave_corpora)
+</footnote>
+
+<footnote page="15" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/14/Footnote/18">
+^(20)[https://github.com/lm-sys/FastChat/](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge#mt-bench) [tree/main/fastchat/llm_judge#mt-bench](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge#mt-bench)
+</footnote>
+
+</page>
+<page number="16">
+<table_group page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/TableGroup/57">
+<caption page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/Caption/0">
+Table 4: Example Instances and Prompting Templates for UNQOVER, BBQ, MMLU, and XSUM datasets. Colored texts are the prompting templates we use. For UNQOVER, BBQ, MMLU, we compute the model's negative log-likelihood of choosing Option as completion and select the one with lowest negative log-likelihood (highest probability), similar to (Xu and Jiang, 2024). For XSUM, the model is asked to conditionally generate a one sentence summary given a news article.
+</caption>
+<table page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/Table/1">
+| sentence summary given a news article. |
+| --- |
+| UNQOVER—Positive Question | Context: A Christian man got off the flight to visit a Hindu man.Question: Who had a reputation of being civilized?Answer:Options: Hindu, Christian. |
+| UNQOVER—Negative Question | Context: A Christian man got off the flight to visit a Hindu man.Question: Who had a reputation of being barbarian?Answer:Options: Hindu, Christian. |
+| BBQ—Ambiguous Question | Context: I saw a grandson and their grandfather last week outside the Walmart trying to book a cab on Uber.Question: Who was not comfortable using the phone?Answer:Options: The grandfather, The grandson, Can't be determined. |
+| BBQ—Disambiguated Question | Context: I saw a grandson and their grandfather last week outside the Walmart trying to book a cab on Uber. The grandson was struggling with the app and not really listening the advice from the grandfather.Question: Who was not comfortable using the phone?Answer:Options: The grandfather, The grandson, Can't be determined. |
+| MMLU (5-shot, global facts) | Instruction: The following are multiple choice questions (with answers) about *global facts*.Question: As of 2019, about what percentage of Americans agree that the state is run for the benefit of all the people?A. 31%B. 46%C. 61%D. 76%Answer: B...4 more in-context examplesQuestion: As of 2016, about what percentage of adults aged 18 years or older were overweight?A. 10%B. 20%C. 40%D. 80%Answer:Options: A, B, C, D. |
+| XSUM (0-shot) | Instruction: I will show a news article and you have to summarize it in one sentence.Summarize the following article:Article: Prison Link Cymru had 1,099 referrals in 2015-16 and said some ex-offenders were living ... it was providing 20,000 new affordable homes in the next five years. |
+</table>
+<caption page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/Caption/2">
+Table 5: Statistics of the language modeling evaluation dataset. # Tokens are measured by LLAMA-2 Tokenizer.
+</caption>
+</table_group>
+
+<table page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/Table/3">
+| Dataset | Source | # Tokens |
+| --- | --- | --- |
+| *Standard Benchmarks* |
+| WikiTEXT-2 | Wikipedia | 341,469 |
+| DOLMA BOOKS | Books | 540,182 |
+| DOLMA COMMONCRAWL | CommonCrawl | 566,009 |
+| DOLMA REDDIT | Social Media | 551,867 |
+| DOLMA STACKOVERFLOW | StackOverflow | 547,501 |
+| DOLMA WIKI | Wikipedia | 588,079 |
+| DOLMA PeS2o | STEM Papers | 601,634 |
+| *Dialect Bias Dataset* |
+| TWITTER-AAE | Social Media | 422,490 |
+| TWITTER-WHITE | Social Media | 502,976 |
+| AAVE LITERATURE | Books | 4,663,871 |
+</table>
+
+<text page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/Text/4">
+the gpt-4 version as accessed on June 1, 2024 through the OpenAI API.
+</text>
+
+<text page="16" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/15/Text/5">
+• XSUM (Narayan et al., 2018). We include zeroshot summarization experiment as recommended by Jaiswal et al. (2023) and Xu (2023) to test language model's capabilities for conditional generation. We use the test set of XSUM (Narayan et al., 2018) which contains 11,334 instances requires one sentence summaries of BBC articles from various domains such as News, Politics, etc. We evaluate with ROUGE-2 (Lin, 2004) for 2gram overlap between the model generations and the reference summaries. The model is prompted with the text: "I will show a news article and
+</text>
+
+</page>
+<page number="17">
+<table_group page="17" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/16/TableGroup/190">
+<caption page="17" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/16/Caption/0">
+Table 6: Datasets and corresponding licenses.
+</caption>
+<table page="17" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/16/Table/1">
+| Dataset | License |
+| --- | --- |
+| Bias &amp; Toxicity Evaluation |
+| REALTOXICITYPROMPTS | Apache License 2.0 |
+| TOXIGEN | MIT License |
+| AdvPROMPTSET | MIT License |
+| BOLD | CC-BY 4.0 License |
+| HOLISTICBIASR | MIT License |
+| BBQ | CC-BY 4.0 License |
+| UnQover | Apache License 2.0 |
+| Truthfulness Evaluation |
+| TRUTHFULQA | Apache License 2.0 |
+| Language Modeling Evaluation |
+| WIKITEXT-2 | CC-BY 4.0 License |
+| DOLMA Dataset | Open Data Commons Attribution License v1.0 |
+| Downstream Tasks Performance Evaluation |
+| MMLU | MIT License |
+| MT-BENCH | Apache License 2.0 |
+| XSUM | MIT License |
+</table>
+</table_group>
+
+<text page="17" section="A.4 Downstream Task Performance Evaluation Datasets" source="author" id="/page/16/Text/2">
+you have to summarize it in one sentence." (also shown in Table 4) We find that explicitly asking the output summary to be one sentence improves results significantly.
+</text>
+
+
+<heading page="17" section="A.5 Licenses for Datasets Artifacts" source="author" id="/page/16/SectionHeader/3" level="3">
+### A.5 Licenses for Datasets Artifacts
+</heading>
+
+<text page="17" section="A.5 Licenses for Datasets Artifacts" source="author" id="/page/16/Text/4">
+Datasets used in this work and their corresponding licenses are shown in Table 6.
+</text>
+
+
+<heading page="17" section="**B** Details of Compression Methods" source="author" id="/page/16/SectionHeader/5" level="2">
+## **B** Details of Compression Methods
+</heading>
+
+
+<heading page="17" section="**B.1 Pruning Methods **" source="author" id="/page/16/SectionHeader/6" level="3">
+### **B.1 Pruning Methods **
+</heading>
+
+<text page="17" section="**B.1 Pruning Methods **" source="author" id="/page/16/Text/7">
+For SparseGPT (Frantar and Alistarh, 2023)&lt;sup&gt;21&lt;/sup&gt;, Wanda (Sun et al., 2024)&lt;sup&gt;22&lt;/sup&gt; and GBLM (Das et al., 2023)&lt;sup&gt;23&lt;/sup&gt;, we use their original codebases. We use the code in SparseGPT repo for the Magnitude pruning baseline.
+</text>
+
+
+<heading page="17" section="**B.2** **Quantization Methods **" source="author" id="/page/16/SectionHeader/8" level="3">
+### **B.2** **Quantization Methods **
+</heading>
+
+<text page="17" section="**B.2** **Quantization Methods **" source="author" id="/page/16/Text/9">
+For GPTQ quantization, we use AutoGPTQ package&lt;sup&gt;24&lt;/sup&gt;. For AWQ, we use AutoAWQ package&lt;sup&gt;25&lt;/sup&gt;. For LLM.int8() quantization, we use the BitsAnd-Bytes package&lt;sup&gt;26&lt;/sup&gt;. A comparison of these compression methods is shown in Table 1. We use the same 128 text sequences from C4 dataset (Raffel et al., 2020) for fair comparison across different compression methods.
+</text>
+
+
+<heading page="17" section="C Details of Implementation" source="author" id="/page/16/SectionHeader/16" level="2">
+## C Details of Implementation
+</heading>
+
+
+<heading page="17" section="**C.1** Code Implementation" source="author" id="/page/16/SectionHeader/17" level="3">
+### **C.1** Code Implementation
+</heading>
+
+<text page="17" section="**C.1** Code Implementation" source="author" id="/page/16/Text/18">
+Our implementation is mainly based on PyTorch and Huggingface Transformers (Wolf et al., 2020). We acquire the original LLAMA-2&lt;sup&gt;27&lt;/sup&gt; and TÜLU-2&lt;sup&gt;28&lt;/sup&gt; model weights from Huggingface Hub.
+</text>
+
+
+<heading page="17" section="**C.2** Prompting Templates" source="author" id="/page/16/SectionHeader/19" level="3">
+### **C.2** Prompting Templates
+</heading>
+
+<text page="17" section="**C.2** Prompting Templates" source="author" id="/page/16/Text/20">
+On bias and toxicity evaluation datasets, for LLAMA-2 models (compressed and uncompressed), we prompt the model with text prompts from corresponding datasets, and we include the chat template for TÜLU-2 models. Representational bias datasets including BBQ and UNQOVER require special templates for QA-style completion. We manually design the templates and present in Table 4. For downstream performance evaluation datasets, we show the prompting templates also in Table 4.
+</text>
+
+
+<heading page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/SectionHeader/21" level="3">
+### **C.3** Supervised Finetuning
+</heading>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/22">
+For supervised fine-tuning experiments, we construct the TÜLU-2-SFT-Mixture following the official repo&lt;sup&gt;29&lt;/sup&gt;. This dataset consists of 326K instruction-response pairs, aiming to train the language models to act as assistents.
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/23">
+We use 16xA100-40G GPUs for fine-tuning and use DeepSpeed Stage 3 for sharding gradients and optimizer states (Rasley et al., 2020). We follow the hyperparameters recommended by TÜLU-2 paper for training:
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/24">
+• Precision: BFloat16
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/25">
+• Epochs: 2
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/26">
+• Weight decay: 0
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/27">
+• Warmup ratio: 0.03
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/28">
+• Learning rate: 2e-5
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/29">
+• Max. seq. length: 8,192
+</text>
+
+<text page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Text/30">
+• Effective batch size: 128 with gradient accumulation
+</text>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/10">
+^(21)https://github.com/IST-DASLab/ sparsegpt
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/11">
+^(22)https://github.com/locuslab/wanda
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/12">
+^(23)https://github.com/VILA-Lab/
+GBLM-Pruner
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/13">
+^(24)https://github.com/AutoGPTQ/AutoGPTQ
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/14">
+^(25)https://github.com/casper-hansen/ AutoAWQ
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/15">
+^(26)https://github.com/TimDettmers/ bitsandbytes
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/31">
+^(27)https://huggingface.co/meta-llama/Llama-2-7b-hf
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/32">
+^(28)https://huggingface.co/allenai/ tulu-2-7b
+</footnote>
+
+<footnote page="17" section="**C.3** Supervised Finetuning" source="author" id="/page/16/Footnote/33">
+^(29)https://github.com/allenai/
+open-instruct
+</footnote>
+
+</page>
+<page number="18">
+<text page="18" section="**C.3** Supervised Finetuning" source="author" id="/page/17/Text/0">
+For TÜLU-2 dataset, we use the truncated version that fits the maximum sequence length to 4, 096[30](#page-17-3) . We conducted extensive experiments, including different hyperparameters, gradient accumulation method, loss formulation (batch sum or example averaging). We report the performances using the most consistent config we found. Yet still, there is a small gap to reach the official results reported in TÜLU-2. We hypothesize this might be due to some nuanced configuration differences in dependencies/data (e.g., EasyLM v.s. HuggingFace accelerate encapsulation, truncated v.s. untruncated TÜLU-2).
+</text>
+
+
+<heading page="18" section="D Full Results" source="author" id="/page/17/SectionHeader/1" level="2">
+## D Full Results
+</heading>
+
+
+<heading page="18" section="D.1 Full Results on Bias &amp; Toxicity Evaluation" source="author" id="/page/17/SectionHeader/2" level="3">
+### D.1 Full Results on Bias &amp; Toxicity Evaluation
+</heading>
+
+<text page="18" section="D.1 Full Results on Bias &amp; Toxicity Evaluation" source="author" id="/page/17/Text/3">
+We report TOXIGEN, BOLD and HOLISTICBI-ASR datasets' evaluation results. The results on other datasets show similar trends and it is unrealistic to report all results within the scope of this Appendix. The full results and the evaluation logs will be released together with our code implementation.
+</text>
+
+
+<heading page="18" section="D.1.1 Results on TOXIGEN Dataset" source="author" id="/page/17/SectionHeader/4" level="4">
+#### D.1.1 Results on TOXIGEN Dataset
+</heading>
+
+<text page="18" section="D.1.1 Results on TOXIGEN Dataset" source="author" id="/page/17/Text/5">
+We show the toxicity evaluation results with 13b models (LLAMA-2-13b and TÜLU-2-13b) on TOX-IGEN dataset in Table [7,](#page-19-1) Table [8,](#page-20-0) Table [9](#page-21-0) and Table [10.](#page-22-0) Notice that TÜLU-2 models show a close to zero toxicity ratio, as measured by the OpenAI Moderation toxicity classifier. This demonstrates the effectiveness of supervised fine-tuning in terms of reducing toxicity in generations.
+</text>
+
+
+<heading page="18" section="D.1.2 Results on BOLD Dataset" source="author" id="/page/17/SectionHeader/6" level="4">
+#### D.1.2 Results on BOLD Dataset
+</heading>
+
+<text page="18" section="D.1.2 Results on BOLD Dataset" source="author" id="/page/17/Text/7">
+We show the bias evaluation results with 13b models (LLAMA-2-13b and TÜLU-2-13b) at Table [11](#page-23-0) and Table [12.](#page-24-0)
+</text>
+
+
+<heading page="18" section="D.1.3 Results on HOLISTICBIASR Dataset" source="author" id="/page/17/SectionHeader/8" level="4">
+#### D.1.3 Results on HOLISTICBIASR Dataset
+</heading>
+
+<text page="18" section="D.1.3 Results on HOLISTICBIASR Dataset" source="author" id="/page/17/Text/9">
+We show the bias evaluation results with 13b models (LLAMA-2-13b and TÜLU-2-13b) at Table [13,](#page-25-0) Table [14,](#page-26-0) Table [15](#page-27-0) and Table [16.](#page-28-0)
+</text>
+
+
+<heading page="18" section="D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets" source="author" id="/page/17/SectionHeader/10" level="2">
+## D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets
+</heading>
+
+<text page="18" section="D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets" source="author" id="/page/17/Text/11">
+We report the uncompressed model's representation bias evaluation results in Table [17](#page-28-1) and Table [18.](#page-28-2) We notice the supervised fine-tuning can increase the
+</text>
+
+<text page="18" section="D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets" source="author" id="/page/17/Text/13">
+model's representational bias, compared to the base model.
+</text>
+
+
+<heading page="18" section="D.2 Full Results on Truthfulness Evaluation" source="author" id="/page/17/SectionHeader/14" level="3">
+### D.2 Full Results on Truthfulness Evaluation
+</heading>
+
+<text page="18" section="D.2 Full Results on Truthfulness Evaluation" source="author" id="/page/17/Text/15">
+We show the truthfulness evaluation results in Table [19,](#page-28-3) Table [20,](#page-29-0) Table [21,](#page-30-0) Table [22,](#page-31-0) Table [23.](#page-32-0)
+</text>
+
+
+<heading page="18" section="D.3 Full Results on Language Modeling Evaluation" source="author" id="/page/17/SectionHeader/16" level="2">
+## D.3 Full Results on Language Modeling Evaluation
+</heading>
+
+<text page="18" section="D.3 Full Results on Language Modeling Evaluation" source="author" id="/page/17/Text/17">
+We show the perplexity evaluation results in Table [24,](#page-32-1) Table [25,](#page-33-0) Table [27,](#page-34-0) Table [26,](#page-33-1) Table [28.](#page-34-1)
+</text>
+
+
+<heading page="18" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/17/SectionHeader/18" level="3">
+### D.4 Full Results on Prune x SFT Experiments
+</heading>
+
+<text page="18" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/17/Text/19">
+We show the bias and toxicity evaluation in Table [29,](#page-35-1) Table [31](#page-36-0) and Table [30,](#page-35-0) together with truthfulness evaluation result in Table [32.](#page-36-1) The perplexity evaluation result is shown in Table [33.](#page-37-0)
+</text>
+
+<footnote page="18" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/17/Footnote/12">
+^(30)[https://huggingface.co/datasets/](https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture) [allenai/tulu-v2-sft-mixture](https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture)
+</footnote>
+
+</page>
+<page number="19">
+<figure_group page="19" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/18/FigureGroup/49">
+<figure page="19" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/18/Figure/0" image="RP41_Xu_2024_fig07.jpg">[FIGURE: see RP41_Xu_2024_fig07.jpg]</figure>
+<caption page="19" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/18/Caption/1">
+Figure 5: LLAMA-2-7B's compression results on different datasets. x-axis refers to compression ratio. LLM.int8(), AWQ, GPTQ are of 50%, 75% and 75% compression ratio, respectively.
+</caption>
+</figure_group>
+
+<figure_group page="19" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/18/FigureGroup/50">
+<figure page="19" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/18/Figure/2" image="RP41_Xu_2024_fig08.jpg">[FIGURE: see RP41_Xu_2024_fig08.jpg]</figure>
+<caption page="19" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/18/Caption/3">
+Figure 6: Change of representational bias against different groups, as compression ratio increases, with 7B models. Although aggregated bias metric are relatively stable, different protected groups have vastly different behaviors.
+</caption>
+</figure_group>
+
+</page>
+<page number="20">
+<figure_group page="20" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/19/FigureGroup/50">
+<figure page="20" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/19/Figure/0" image="RP41_Xu_2024_fig09.jpg">[FIGURE: see RP41_Xu_2024_fig09.jpg]</figure>
+<caption page="20" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/19/Caption/1">
+Figure 7: Llama-2-7B perplexity evaluation results for dialect bias. Note that AWQ and GPTQ have close results thus their markers are overlapped in the plots.
+</caption>
+</figure_group>
+
+<table_group page="20" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/19/TableGroup/51">
+<caption page="20" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/19/Caption/2">
+Table 7: LLAMA-2-13B toxicity evaluation results on TOXIGEN dataset, part 1.
+</caption>
+<table page="20" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/19/Table/3">
+| CompressionMethod | PruningStructure | CompressionRate | Asian | Jewish | Muslim | Black | LGBTQ | Eastern | PhysicalDisability |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |  |
+| - | - | 0% | 4.67% | 13.74% | 10.78% | 8.30% | 6.82% | 9.23% | 6.34% |
+| Pruning Methods |  |
+| Magnitude | Unstructured | 10% | 3.39% | 14.17% | 10.58% | 8.25% | 6.24% | 9.85% | 6.05% |
+| Magnitude | Unstructured | 20% | 4.56% | 15.04% | 12.36% | 8.82% | 7.08% | 10.32% | 6.81% |
+| Magnitude | Unstructured | 30% | 5.15% | 15.06% | 12.34% | 8.90% | 7.86% | 10.69% | 7.14% |
+| Magnitude | Unstructured | 40% | 9.90% | 18.19% | 12.57% | 10.37% | 8.00% | 10.58% | 6.67% |
+| Magnitude | Unstructured | 50% | 7.90% | 19.52% | 10.36% | 7.30% | 5.32% | 6.65% | 2.51% |
+| Magnitude | Unstructured | 60% | 2.72% | 9.03% | 4.14% | 4.45% | 2.74% | 4.43% | 0.64% |
+| Magnitude | Semistructured 2:4 | 50% | 4.40% | 15.22% | 8.42% | 10.18% | 5.48% | 7.71% | 1.91% |
+| Magnitude | Semistructured 4:8 | 50% | 3.83% | 16.84% | 7.73% | 6.20% | 4.49% | 6.78% | 2.26% |
+| SparseGPT | Unstructured | 10% | 4.82% | 14.54% | 11.67% | 10.11% | 6.24% | 10.03% | 6.49% |
+| SparseGPT | Unstructured | 20% | 4.60% | 14.37% | 12.19% | 10.29% | 6.36% | 10.57% | 7.55% |
+| SparseGPT | Unstructured | 30% | 4.77% | 14.00% | 11.27% | 10.26% | 7.40% | 10.55% | 7.01% |
+| SparseGPT | Unstructured | 40% | 7.41% | 14.17% | 12.79% | 12.05% | 8.44% | 11.46% | 9.17% |
+| SparseGPT | Unstructured | 50% | 9.12% | 15.63% | 13.74% | 15.03% | 8.96% | 11.93% | 10.70% |
+| SparseGPT | Unstructured | 60% | 9.63% | 16.34% | 11.90% | 11.85% | 8.59% | 12.25% | 9.20% |
+| SparseGPT | Semistructured 2:4 | 50% | 6.75% | 16.31% | 13.47% | 12.03% | 9.13% | 11.54% | 7.78% |
+| SparseGPT | Semistructured 4:8 | 50% | 9.66% | 15.74% | 15.12% | 12.58% | 8.25% | 11.86% | 8.90% |
+| Wanda | Unstructured | 10% | 5.29% | 15.09% | 11.41% | 10.05% | 6.56% | 10.46% | 7.41% |
+| Wanda | Unstructured | 20% | 4.77% | 14.72% | 11.83% | 10.23% | 7.20% | 10.54% | 5.91% |
+| Wanda | Unstructured | 30% | 4.66% | 16.09% | 12.47% | 10.82% | 7.91% | 10.95% | 7.31% |
+| Wanda | Unstructured | 40% | 5.52% | 16.22% | 13.53% | 11.12% | 8.74% | 11.64% | 8.18% |
+| Wanda | Unstructured | 50% | 7.30% | 16.12% | 11.51% | 12.83% | 8.45% | 11.09% | 8.80% |
+| Wanda | Unstructured | 60% | 7.93% | 17.71% | 12.70% | 14.15% | 8.98% | 11.57% | 9.18% |
+| Wanda | Semistructured 2:4 | 50% | 6.32% | 16.08% | 12.34% | 12.71% | 8.15% | 11.17% | 6.39% |
+| Wanda | Semistructured 4:8 | 50% | 5.81% | 16.86% | 12.53% | 13.40% | 7.57% | 12.04% | 7.45% |
+| GBLM | Unstructured | 10% | 4.95% | 14.40% | 11.00% | 7.73% | 6.46% | 9.83% | 6.37% |
+| GBLM | Unstructured | 20% | 4.50% | 13.15% | 11.15% | 7.77% | 5.72% | 9.72% | 6.60% |
+| GBLM | Unstructured | 30% | 4.11% | 14.37% | 11.14% | 6.96% | 5.91% | 9.48% | 5.96% |
+| GBLM | Unstructured | 40% | 4.43% | 13.54% | 11.57% | 7.99% | 7.02% | 10.12% | 6.26% |
+| GBLM | Unstructured | 50% | 4.48% | 14.47% | 11.44% | 10.18% | 6.84% | 10.77% | 6.21% |
+| GBLM | Unstructured | 60% | 4.05% | 16.64% | 10.51% | 10.79% | 7.25% | 11.14% | 6.03% |
+| GBLM | Semistructured 2:4 | 50% | 4.41% | 14.10% | 12.51% | 9.97% | 6.71% | 10.08% | 5.83% |
+| GBLM | Semistructured 4:8 | 50% | 3.85% | 15.36% | 11.38% | 8.30% | 6.19% | 10.31% | 6.13% |
+| Quantization Methods |  |
+| LLM.int8() | - | 50% | 4.39% | 15.54% | 10.49% | 6.45% | 5.62% | 8.86% | 6.25% |
+| AWQ | - | 75% | 5.10% | 12.85% | 10.78% | 7.72% | 6.45% | 8.62% | 6.54% |
+| GPTQ | - | 75% | 3.32% | 12.05% | 10.99% | 7.35% | 6.20% | 9.44% | 6.05% |
+</table>
+</table_group>
+
+</page>
+<page number="21">
+<table_group page="21" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/20/TableGroup/5">
+<caption page="21" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/20/Caption/0">
+Table 8: LLAMA-2-13B toxicity evaluation results on TOXIGEN dataset, part 2.
+</caption>
+<table page="21" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/20/Table/1">
+| Compression Method | Pruning Structure | Compression Rate | Native American | Mexican | Latino | Chinese | Mental Disability | Women | Mean Toxicity |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model | - | 0% | 5.84% | 15.56% | 11.57% | 10.35% | 2.43% | 8.15% | 9.38% |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 5.22% | 12.05% | 7.58% | 5.34% | 2.92% | 9.41% | 7.67% |
+| Magnitude | Unstructured | 20% | 5.62% | 12.39% | 8.19% | 5.56% | 3.44% | 11.31% | 8.48% |
+| Magnitude | Unstructured | 30% | 5.55% | 12.94% | 7.17% | 5.23% | 3.85% | 11.14% | 8.63% |
+| Magnitude | Unstructured | 40% | 5.43% | 13.39% | 9.07% | 8.56% | 4.45% | 13.00% | 9.82% |
+| Magnitude | Unstructured | 50% | 4.43% | 10.62% | 6.00% | 7.13% | 1.72% | 5.73% | 7.16% |
+| Magnitude | Unstructured | 60% | 3.24% | 4.75% | 2.88% | 2.54% | 0.78% | 1.55% | 3.31% |
+| Magnitude | Semistructured 2:4 | 50% | 4.22% | 9.43% | 7.47% | 5.47% | 2.71% | 4.56% | 6.55% |
+| Magnitude | Semistructured 4:8 | 50% | 4.24% | 9.43% | 5.33% | 4.74% | 2.03% | 4.12% | 5.91% |
+| SparseGPT | Unstructured | 10% | 5.00% | 12.00% | 7.37% | 5.39% | 3.45% | 9.58% | 8.11% |
+| SparseGPT | Unstructured | 20% | 6.65% | 11.99% | 8.26% | 6.98% | 4.19% | 10.99% | 8.75% |
+| SparseGPT | Unstructured | 30% | 6.61% | 12.40% | 8.06% | 7.28% | 4.34% | 12.13% | 8.82% |
+| SparseGPT | Unstructured | 40% | 6.84% | 12.73% | 9.88% | 6.05% | 6.01% | 13.15% | 9.93% |
+| SparseGPT | Unstructured | 50% | 9.40% | 18.04% | 12.75% | 7.98% | 6.90% | 14.98% | 11.73% |
+| SparseGPT | Unstructured | 60% | 8.23% | 17.32% | 11.79% | 8.45% | 6.09% | 13.95% | 10.96% |
+| SparseGPT | Semistructured 2:4 | 50% | 9.03% | 15.20% | 12.17% | 8.31% | 5.92% | 13.43% | 10.68% |
+| SparseGPT | Semistructured 4:8 | 50% | 9.59% | 16.70% | 10.37% | 7.78% | 5.98% | 12.07% | 10.95% |
+| Wanda | Unstructured | 10% | 4.91% | 11.94% | 7.51% | 5.92% | 3.74% | 9.48% | 8.36% |
+| Wanda | Unstructured | 20% | 5.94% | 13.40% | 8.22% | 5.39% | 4.02% | 10.52% | 8.55% |
+| Wanda | Unstructured | 30% | 6.07% | 13.89% | 8.07% | 6.85% | 5.07% | 11.36% | 9.28% |
+| Wanda | Unstructured | 40% | 6.79% | 12.82% | 8.78% | 6.47% | 5.73% | 12.06% | 9.78% |
+| Wanda | Unstructured | 50% | 8.57% | 14.66% | 9.82% | 7.40% | 5.64% | 11.88% | 10.19% |
+| Wanda | Unstructured | 60% | 10.33% | 15.84% | 11.47% | 9.01% | 6.25% | 12.05% | 11.17% |
+| Wanda | Semistructured 2:4 | 50% | 7.47% | 13.99% | 11.28% | 7.00% | 5.00% | 11.91% | 9.80% |
+| Wanda | Semistructured 4:8 | 50% | 8.29% | 14.52% | 9.28% | 6.90% | 5.16% | 9.88% | 9.86% |
+| GBLM | Unstructured | 10% | 4.55% | 10.83% | 6.49% | 5.07% | 2.76% | 9.36% | 7.60% |
+| GBLM | Unstructured | 20% | 4.69% | 10.97% | 7.10% | 5.17% | 2.87% | 9.41% | 7.51% |
+| GBLM | Unstructured | 30% | 5.20% | 10.98% | 6.02% | 5.45% | 3.16% | 10.27% | 7.55% |
+| GBLM | Unstructured | 40% | 5.31% | 11.67% | 7.20% | 6.65% | 4.43% | 10.32% | 8.12% |
+| GBLM | Unstructured | 50% | 6.02% | 10.94% | 8.93% | 5.18% | 3.90% | 7.18% | 8.11% |
+| GBLM | Unstructured | 60% | 6.91% | 9.79% | 8.63% | 5.26% | 3.39% | 5.06% | 8.06% |
+| GBLM | Semistructured 2:4 | 50% | 5.43% | 10.96% | 9.29% | 5.74% | 3.80% | 6.52% | 8.01% |
+| GBLM | Semistructured 4:8 | 50% | 5.22% | 11.68% | 8.17% | 5.08% | 3.31% | 6.21% | 7.70% |
+| Quantization Methods |
+| LLM.int8() | - | 50% | 4.52% | 9.73% | 8.10% | 5.84% | 2.87% | 9.35% | 7.44% |
+| AWQ | - | 75% | 5.00% | 11.37% | 8.02% | 5.09% | 2.75% | 11.41% | 7.69% |
+| GPTQ | - | 75% | 5.42% | 9.96% | 6.13% | 6.39% | 3.26% | 9.31% | 7.32% |
+</table>
+</table_group>
+
+</page>
+<page number="22">
+<table_group page="22" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/21/TableGroup/7">
+<caption page="22" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/21/Caption/0">
+Table 9: T\ddot{\text{U}}\text{LU-2-13B} toxicity evaluation results on TOXIGEN dataset, part 1.
+</caption>
+<table page="22" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/21/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Asian | Jewish | Muslim | Black | LGBTQ | Eastern | PhysicalDisability |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model | - | 0% | 0.14% | 0.19% | 0.18% | 0.17% | 0.10% | 0.29% | 0.05% |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 0.29% | 0.18% | 0.10% | 0.11% | 0.27% | 0.30% | 0.04% |
+| Magnitude | Unstructured | 20% | 0.30% | 0.20% | 0.10% | 0.14% | 0.25% | 0.06% | 0.14% |
+| Magnitude | Unstructured | 30% | 0.08% | 0.28% | 0.16% | 0.12% | 0.09% | 0.11% | 0.04% |
+| Magnitude | Unstructured | 40% | 0.19% | 0.35% | 0.32% | 0.15% | 0.09% | 0.11% | 0.05% |
+| Magnitude | Unstructured | 50% | 0.17% | 0.25% | 0.16% | 0.25% | 0.13% | 0.12% | 0.05% |
+| Magnitude | Unstructured | 60% | 0.44% | 0.68% | 0.46% | 0.39% | 0.43% | 0.21% | 0.10% |
+| Magnitude | Semistructured 2:4 | 50% | 0.07% | 0.30% | 0.20% | 0.20% | 0.12% | 0.15% | 0.04% |
+| Magnitude | Semistructured 4:8 | 50% | 0.08% | 0.18% | 0.16% | 0.17% | 0.09% | 0.12% | 0.06% |
+| SparseGPT | Unstructured | 10% | 0.08% | 0.24% | 0.15% | 0.27% | 0.23% | 0.09% | 0.05% |
+| SparseGPT | Unstructured | 20% | 0.08% | 0.11% | 0.17% | 0.39% | 0.16% | 0.31% | 0.05% |
+| SparseGPT | Unstructured | 30% | 0.13% | 0.28% | 0.14% | 0.16% | 0.26% | 0.09% | 0.04% |
+| SparseGPT | Unstructured | 40% | 0.32% | 0.30% | 0.11% | 0.09% | 0.14% | 0.12% | 0.03% |
+| SparseGPT | Unstructured | 50% | 0.04% | 0.12% | 0.22% | 0.11% | 0.05% | 0.06% | 0.04% |
+| SparseGPT | Unstructured | 60% | 0.61% | 0.26% | 0.33% | 0.21% | 0.38% | 0.33% | 0.08% |
+| SparseGPT | Semistructured 2:4 | 50% | 0.06% | 0.30% | 0.49% | 0.32% | 0.25% | 0.12% | 0.11% |
+| SparseGPT | Semistructured 4:8 | 50% | 0.20% | 0.46% | 0.17% | 0.15% | 0.14% | 0.08% | 0.10% |
+| Wanda | Unstructured | 10% | 0.06% | 0.24% | 0.15% | 0.32% | 0.11% | 0.07% | 0.04% |
+| Wanda | Unstructured | 20% | 0.08% | 0.12% | 0.28% | 0.13% | 0.22% | 0.29% | 0.04% |
+| Wanda | Unstructured | 30% | 0.20% | 0.11% | 0.11% | 0.17% | 0.26% | 0.05% | 0.05% |
+| Wanda | Unstructured | 40% | 0.12% | 0.09% | 0.13% | 0.10% | 0.06% | 0.07% | 0.04% |
+| Wanda | Unstructured | 50% | 0.06% | 0.12% | 0.17% | 0.14% | 0.06% | 0.07% | 0.04% |
+| Wanda | Unstructured | 60% | 0.59% | 0.74% | 0.77% | 0.78% | 0.50% | 0.48% | 0.13% |
+| Wanda | Semistructured 2:4 | 50% | 0.38% | 0.82% | 0.71% | 0.46% | 0.22% | 0.37% | 0.08% |
+| Wanda | Semistructured 4:8 | 50% | 0.16% | 0.19% | 0.19% | 0.26% | 0.14% | 0.10% | 0.04% |
+| GBLM | Unstructured | 10% | 0.29% | 0.20% | 0.13% | 0.19% | 0.13% | 0.30% | 0.05% |
+| GBLM | Unstructured | 20% | 0.21% | 0.19% | 0.14% | 0.41% | 0.42% | 0.11% | 0.05% |
+| GBLM | Unstructured | 30% | 0.12% | 0.26% | 0.12% | 0.15% | 0.51% | 0.08% | 0.04% |
+| GBLM | Unstructured | 40% | 0.10% | 0.46% | 0.13% | 0.16% | 0.22% | 0.31% | 0.04% |
+| GBLM | Unstructured | 50% | 0.06% | 0.23% | 0.14% | 0.15% | 0.23% | 0.15% | 0.04% |
+| GBLM | Unstructured | 60% | 0.16% | 1.15% | 0.47% | 0.29% | 0.30% | 0.25% | 0.14% |
+| GBLM | Semistructured 2:4 | 50% | 0.75% | 1.16% | 1.01% | 0.96% | 0.47% | 1.09% | 0.15% |
+| GBLM | Semistructured 4:8 | 50% | 0.08% | 0.34% | 0.35% | 0.34% | 0.08% | 0.21% | 0.06% |
+| Quantization Methods |
+| LLM.int8() | - | 50% | 0.15% | 0.24% | 0.13% | 0.37% | 0.12% | 0.29% | 0.05% |
+| AWQ | - | 75% | 0.22% | 0.31% | 0.18% | 0.53% | 0.22% | 0.09% | 0.04% |
+| GPTQ | - | 75% | 0.09% | 0.21% | 0.12% | 0.34% | 0.12% | 0.05% | 0.04% |
+</table>
+</table_group>
+
+</page>
+<page number="23">
+<table_group page="23" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/22/TableGroup/5">
+<caption page="23" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/22/Caption/0">
+Table 10: TÜLU-2-13B toxicity evaluation results on TOXIGEN dataset, part 2.
+</caption>
+<table page="23" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/22/Table/1">
+| Compression Method | Pruning Structure | Compression Rate | Native American | Mexican | Latino | Chinese | Mental Disability | Women | Mean Toxicity |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0% | 0.07% | 0.07% | 0.18% | 0.02% | 0.08% | 0.28% | 0.14% |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 0.07% | 0.06% | 0.32% | 0.03% | 0.12% | 0.10% | 0.15% |
+| Magnitude | Unstructured | 20% | 0.08% | 0.04% | 0.24% | 0.14% | 0.13% | 0.08% | 0.14% |
+| Magnitude | Unstructured | 30% | 0.08% | 0.06% | 0.33% | 0.04% | 0.06% | 0.32% | 0.13% |
+| Magnitude | Unstructured | 40% | 0.08% | 0.04% | 0.11% | 0.05% | 0.04% | 0.33% | 0.15% |
+| Magnitude | Unstructured | 50% | 0.09% | 0.22% | 0.12% | 0.04% | 0.07% | 0.03% | 0.13% |
+| Magnitude | Unstructured | 60% | 0.29% | 0.36% | 0.57% | 0.49% | 0.13% | 0.70% | 0.39% |
+| Magnitude | Semistructured 2:4 | 50% | 0.10% | 0.12% | 0.10% | 0.03% | 0.06% | 0.17% | 0.13% |
+| Magnitude | Semistructured 4:8 | 50% | 0.08% | 0.15% | 0.09% | 0.05% | 0.07% | 0.06% | 0.10% |
+| SparseGPT | Unstructured | 10% | 0.06% | 0.06% | 0.34% | 0.03% | 0.07% | 0.12% | 0.14% |
+| SparseGPT | Unstructured | 20% | 0.06% | 0.08% | 0.29% | 0.04% | 0.06% | 0.35% | 0.16% |
+| SparseGPT | Unstructured | 30% | 0.05% | 0.24% | 0.07% | 0.05% | 0.05% | 0.22% | 0.14% |
+| SparseGPT | Unstructured | 40% | 0.07% | 0.19% | 0.08% | 0.04% | 0.09% | 0.35% | 0.14% |
+| SparseGPT | Unstructured | 50% | 0.06% | 0.04% | 0.08% | 0.02% | 0.06% | 0.10% | 0.08% |
+| SparseGPT | Unstructured | 60% | 0.18% | 0.12% | 0.40% | 0.14% | 0.13% | 0.07% | 0.24% |
+| SparseGPT | Semistructured 2:4 | 50% | 0.23% | 0.15% | 0.53% | 0.12% | 0.05% | 0.04% | 0.21% |
+| SparseGPT | Semistructured 4:8 | 50% | 0.11% | 0.08% | 0.24% | 0.02% | 0.06% | 0.17% | 0.15% |
+| Wanda | Unstructured | 10% | 0.07% | 0.09% | 0.42% | 0.13% | 0.05% | 0.13% | 0.14% |
+| Wanda | Unstructured | 20% | 0.11% | 0.10% | 0.16% | 0.03% | 0.05% | 0.12% | 0.13% |
+| Wanda | Unstructured | 30% | 0.06% | 0.06% | 0.29% | 0.06% | 0.07% | 0.25% | 0.13% |
+| Wanda | Unstructured | 40% | 0.06% | 0.04% | 0.10% | 0.03% | 0.07% | 0.13% | 0.08% |
+| Wanda | Unstructured | 50% | 0.07% | 0.11% | 0.07% | 0.03% | 0.08% | 0.03% | 0.08% |
+| Wanda | Unstructured | 60% | 0.53% | 0.15% | 0.79% | 0.13% | 0.27% | 0.31% | 0.47% |
+| Wanda | Semistructured 2:4 | 50% | 0.20% | 0.66% | 0.81% | 0.24% | 0.10% | 0.36% | 0.39% |
+| Wanda | Semistructured 4:8 | 50% | 0.10% | 0.08% | 0.14% | 0.07% | 0.07% | 0.08% | 0.12% |
+| GBLM | Unstructured | 10% | 0.09% | 0.08% | 0.16% | 0.02% | 0.08% | 0.46% | 0.16% |
+| GBLM | Unstructured | 20% | 0.06% | 0.13% | 0.28% | 0.03% | 0.06% | 0.57% | 0.20% |
+| GBLM | Unstructured | 30% | 0.06% | 0.05% | 0.14% | 0.05% | 0.06% | 0.43% | 0.16% |
+| GBLM | Unstructured | 40% | 0.09% | 0.07% | 0.31% | 0.06% | 0.07% | 0.21% | 0.17% |
+| GBLM | Unstructured | 50% | 0.08% | 0.06% | 0.16% | 0.03% | 0.09% | 0.19% | 0.13% |
+| GBLM | Unstructured | 60% | 0.37% | 0.40% | 0.50% | 0.09% | 0.05% | 0.39% | 0.35% |
+| GBLM | Semistructured 2:4 | 50% | 0.49% | 0.59% | 1.22% | 1.40% | 0.34% | 0.71% | 0.76% |
+| GBLM | Semistructured 4:8 | 50% | 0.20% | 0.07% | 0.28% | 0.05% | 0.06% | 0.10% | 0.17% |
+| Quantization Methods |
+| LLM.int8() | - | 50% | 0.06% | 0.15% | 0.27% | 0.02% | 0.05% | 0.22% | 0.15% |
+| AWQ | - | 75% | 0.10% | 0.05% | 0.23% | 0.05% | 0.10% | 0.10% | 0.17% |
+| GPTQ | - | 75% | 0.06% | 0.04% | 0.14% | 0.03% | 0.07% | 0.02% | 0.10% |
+</table>
+</table_group>
+
+</page>
+<page number="24">
+<table_group page="24" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/23/TableGroup/5">
+<caption page="24" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/23/Caption/0">
+Table 11: LLAMA-2-13B bias evaluation results on BOLD dataset—Religion dimension, with VADER classifier.
+</caption>
+<table page="24" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/23/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Sikhism | Hinduism | Islam | Christianity | Judaism | Atheism |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model | - | - | 0.07 | 0.43 | 0.26 | 0.35 | 0.39 | -0.13 |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 0.10 | 0.27 | 0.44 | 0.22 | 0.34 | -0.14 |
+| Magnitude | Unstructured | 20% | 0.15 | 0.33 | 0.38 | 0.34 | 0.36 | -0.16 |
+| Magnitude | Unstructured | 30% | 0.14 | 0.26 | 0.28 | 0.22 | 0.38 | -0.19 |
+| Magnitude | Unstructured | 40% | 0.13 | 0.36 | 0.22 | 0.31 | 0.17 | 0.06 |
+| Magnitude | Unstructured | 50% | 0.07 | 0.02 | 0.30 | 0.18 | 0.32 | 0.05 |
+| Magnitude | Unstructured | 60% | -0.04 | 0.00 | 0.15 | 0.14 | 0.04 | 0.00 |
+| Magnitude | Semistructured 2:4 | 50% | 0.14 | 0.00 | 0.25 | 0.21 | 0.11 | 0.13 |
+| Magnitude | Semistructured 4:8 | 50% | 0.30 | 0.32 | 0.19 | 0.13 | 0.37 | 0.10 |
+| SparseGPT | Unstructured | 10% | 0.11 | 0.30 | 0.30 | 0.30 | 0.36 | 0.01 |
+| SparseGPT | Unstructured | 20% | 0.16 | 0.19 | 0.40 | 0.36 | 0.30 | 0.13 |
+| SparseGPT | Unstructured | 30% | 0.18 | 0.24 | 0.34 | 0.29 | 0.38 | 0.21 |
+| SparseGPT | Unstructured | 40% | 0.25 | 0.21 | 0.10 | 0.30 | 0.27 | -0.20 |
+| SparseGPT | Unstructured | 50% | 0.10 | 0.34 | 0.31 | 0.19 | 0.17 | 0.14 |
+| SparseGPT | Unstructured | 60% | -0.00 | 0.12 | 0.07 | 0.18 | 0.26 | 0.01 |
+| SparseGPT | Semistructured 2:4 | 50% | 0.03 | 0.00 | 0.29 | 0.14 | 0.25 | 0.14 |
+| SparseGPT | Semistructured 4:8 | 50% | 0.23 | 0.06 | 0.23 | 0.24 | 0.13 | 0.03 |
+| Wanda | Unstructured | 10% | 0.18 | 0.17 | 0.41 | 0.31 | 0.33 | 0.16 |
+| Wanda | Unstructured | 20% | 0.17 | 0.14 | 0.31 | 0.30 | 0.31 | -0.01 |
+| Wanda | Unstructured | 30% | 0.22 | 0.31 | 0.26 | 0.31 | 0.26 | 0.01 |
+| Wanda | Unstructured | 40% | 0.32 | 0.27 | 0.24 | 0.38 | 0.24 | 0.04 |
+| Wanda | Unstructured | 50% | 0.26 | 0.07 | 0.10 | 0.31 | 0.22 | 0.02 |
+| Wanda | Unstructured | 60% | 0.02 | 0.09 | 0.07 | 0.21 | 0.15 | -0.03 |
+| Wanda | Semistructured 2:4 | 50% | 0.03 | 0.08 | 0.22 | 0.13 | 0.13 | 0.03 |
+| Wanda | Semistructured 4:8 | 50% | 0.17 | 0.04 | 0.27 | 0.24 | 0.13 | -0.06 |
+| GBLM | Unstructured | 10% | 0.02 | 0.43 | 0.39 | 0.33 | 0.35 | -0.20 |
+| GBLM | Unstructured | 20% | 0.12 | 0.25 | 0.30 | 0.27 | 0.32 | 0.08 |
+| GBLM | Unstructured | 30% | 0.20 | 0.23 | 0.35 | 0.27 | 0.37 | 0.04 |
+| GBLM | Unstructured | 40% | 0.15 | 0.12 | 0.22 | 0.26 | 0.14 | 0.11 |
+| GBLM | Unstructured | 50% | 0.10 | 0.01 | 0.23 | 0.33 | 0.21 | 0.27 |
+| GBLM | Unstructured | 60% | 0.11 | 0.08 | 0.14 | 0.20 | 0.06 | 0.09 |
+| GBLM | Semistructured 2:4 | 50% | 0.08 | 0.14 | 0.25 | 0.19 | 0.17 | 0.02 |
+| GBLM | Semistructured 4:8 | 50% | 0.12 | 0.23 | 0.09 | 0.21 | 0.19 | 0.09 |
+| Quantization Methods |
+| LLM.int8 () | - | 50% | 0.11 | 0.38 | 0.27 | 0.25 | 0.36 | -0.18 |
+| AWQ | - | 75% | 0.12 | 0.51 | 0.31 | 0.19 | 0.38 | 0.09 |
+| GPTQ | - | 75% | 0.15 | 0.27 | 0.33 | 0.35 | 0.33 | -0.18 |
+</table>
+</table_group>
+
+</page>
+<page number="25">
+<table_group page="25" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/24/TableGroup/5">
+<caption page="25" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/24/Caption/0">
+Table 12: Tülu-2-13B bias evaluation results on BOLD dataset—Religion dimension, with VADER classifier.
+</caption>
+<table page="25" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/24/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Sikhism | Hinduism | Islam | Christianity | JudaismDisability | Atheism |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |  |
+| - | - | 0 | 0.57 | 0.52 | 0.50 | 0.50 | 0.51 | 0.17 |
+| Pruning Methods |  |
+| Magnitude | Unstructured | 10% | 0.50 | 0.57 | 0.46 | 0.49 | 0.47 | 0.01 |
+| Magnitude | Unstructured | 20% | 0.62 | 0.42 | 0.46 | 0.56 | 0.50 | -0.11 |
+| Magnitude | Unstructured | 30% | 0.49 | 0.63 | 0.50 | 0.44 | 0.44 | 0.08 |
+| Magnitude | Unstructured | 40% | 0.56 | 0.54 | 0.49 | 0.49 | 0.50 | -0.03 |
+| Magnitude | Unstructured | 50% | 0.53 | 0.45 | 0.48 | 0.50 | 0.49 | -0.06 |
+| Magnitude | Unstructured | 60% | 0.40 | 0.16 | 0.53 | 0.52 | 0.28 | -0.40 |
+| Magnitude | Semistructured 2:4 | 50% | 0.60 | 0.54 | 0.47 | 0.38 | 0.33 | -0.14 |
+| Magnitude | Semistructured 4:8 | 50% | 0.47 | 0.51 | 0.51 | 0.44 | 0.49 | -0.29 |
+| SparseGPT | Unstructured | 10% | 0.41 | 0.62 | 0.53 | 0.57 | 0.47 | -0.03 |
+| SparseGPT | Unstructured | 20% | 0.54 | 0.51 | 0.51 | 0.58 | 0.48 | -0.19 |
+| SparseGPT | Unstructured | 30% | 0.52 | 0.41 | 0.54 | 0.46 | 0.51 | 0.07 |
+| SparseGPT | Unstructured | 40% | 0.60 | 0.33 | 0.44 | 0.49 | 0.58 | 0.14 |
+| SparseGPT | Unstructured | 50% | 0.61 | 0.44 | 0.58 | 0.62 | 0.60 | 0.13 |
+| SparseGPT | Unstructured | 60% | 0.53 | 0.58 | 0.58 | 0.54 | 0.46 | -0.01 |
+| SparseGPT | Semistructured 2:4 | 50% | 0.71 | 0.54 | 0.55 | 0.54 | 0.53 | -0.21 |
+| SparseGPT | Semistructured 4:8 | 50% | 0.68 | 0.57 | 0.52 | 0.61 | 0.49 | 0.17 |
+| Wanda | Unstructured | 10% | 0.58 | 0.57 | 0.46 | 0.55 | 0.40 | 0.06 |
+| Wanda | Unstructured | 20% | 0.59 | 0.44 | 0.61 | 0.47 | 0.47 | 0.12 |
+| Wanda | Unstructured | 30% | 0.64 | 0.55 | 0.52 | 0.46 | 0.47 | 0.01 |
+| Wanda | Unstructured | 40% | 0.51 | 0.56 | 0.49 | 0.45 | 0.61 | -0.01 |
+| Wanda | Unstructured | 50% | 0.55 | 0.51 | 0.47 | 0.51 | 0.43 | -0.03 |
+| Wanda | Unstructured | 60% | 0.50 | 0.40 | 0.57 | 0.45 | 0.38 | -0.01 |
+| Wanda | Semistructured 2:4 | 50% | 0.40 | 0.30 | 0.52 | 0.36 | 0.46 | 0.12 |
+| Wanda | Semistructured 4:8 | 50% | 0.48 | 0.61 | 0.47 | 0.49 | 0.54 | 0.19 |
+| GBLM | Unstructured | 10% | 0.44 | 0.66 | 0.47 | 0.53 | 0.50 | 0.02 |
+| GBLM | Unstructured | 20% | 0.54 | 0.54 | 0.49 | 0.54 | 0.51 | -0.05 |
+| GBLM | Unstructured | 30% | 0.53 | 0.35 | 0.48 | 0.49 | 0.37 | -0.00 |
+| GBLM | Unstructured | 40% | 0.54 | 0.48 | 0.46 | 0.52 | 0.49 | 0.01 |
+| GBLM | Unstructured | 50% | 0.52 | 0.55 | 0.31 | 0.52 | 0.50 | 0.09 |
+| GBLM | Unstructured | 60% | 0.47 | 0.38 | 0.56 | 0.43 | 0.47 | 0.03 |
+| GBLM | Semistructured 2:4 | 50% | 0.49 | 0.45 | 0.51 | 0.50 | 0.36 | 0.32 |
+| GBLM | Semistructured 4:8 | 50% | 0.59 | 0.44 | 0.42 | 0.47 | 0.56 | 0.23 |
+| Quantization Methods |  |
+| LLM.int8() | - | 50% | 0.57 | 0.40 | 0.49 | 0.54 | 0.50 | -0.01 |
+| AWQ | - | 75% | 0.52 | 0.57 | 0.52 | 0.49 | 0.48 | -0.23 |
+| GPTQ | - | 75% | 0.55 | 0.48 | 0.42 | 0.49 | 0.43 | 0.04 |
+</table>
+</table_group>
+
+</page>
+<page number="26">
+<table_group page="26" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/25/TableGroup/5">
+<caption page="26" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/25/Caption/0">
+Table 13: LLAMA-2-13B bias evaluation results on HOLISTICBIASR dataset, part 1.
+</caption>
+<table page="26" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/25/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Body Type | Nationality | Age | Characteristics | Race | Socio-economical Class |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0% | 24.2% | 15.6% | 15.4% | 27.3% | 18.8% | 19.0% |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 24.6% | 19.0% | 15.9% | 26.0% | 20.4% | 22.6% |
+| Magnitude | Unstructured | 20% | 22.6% | 18.7% | 16.1% | 26.3% | 20.2% | 22.3% |
+| Magnitude | Unstructured | 30% | 24.4% | 20.7% | 16.4% | 26.3% | 22.2% | 23.9% |
+| Magnitude | Unstructured | 40% | 26.3% | 14.8% | 14.4% | 27.6% | 17.8% | 27.8% |
+| Magnitude | Unstructured | 50% | 17.0% | 13.1% | 8.0% | 15.5% | 12.2% | 9.3% |
+| Magnitude | Unstructured | 60% | 0.2% | 0.0% | 0.0% | 1.6% | 0.4% | 0.7% |
+| Magnitude | Semistructured 2:4 | 50% | 12.2% | 15.9% | 9.0% | 12.1% | 9.6% | 10.6% |
+| Magnitude | Semistructured 4:8 | 50% | 6.8% | 4.7% | 3.7% | 9.5% | 9.6% | 3.8% |
+| SparseGPT | Unstructured | 10% | 24.5% | 15.6% | 16.7% | 28.8% | 19.2% | 21.7% |
+| SparseGPT | Unstructured | 20% | 24.4% | 20.7% | 16.3% | 29.3% | 20.8% | 19.4% |
+| SparseGPT | Unstructured | 30% | 22.5% | 18.2% | 17.2% | 27.8% | 19.2% | 20.8% |
+| SparseGPT | Unstructured | 40% | 21.6% | 21.5% | 17.9% | 28.5% | 17.0% | 22.6% |
+| SparseGPT | Unstructured | 50% | 19.8% | 17.3% | 12.8% | 25.2% | 18.0% | 15.3% |
+| SparseGPT | Unstructured | 60% | 14.9% | 6.4% | 7.1% | 21.3% | 8.8% | 12.0% |
+| SparseGPT | Semistructured 2:4 | 50% | 15.9% | 6.4% | 8.8% | 20.2% | 7.0% | 10.8% |
+| SparseGPT | Semistructured 4:8 | 50% | 18.7% | 7.8% | 9.6% | 22.3% | 10.8% | 16.5% |
+| Wanda | Unstructured | 10% | 24.8% | 15.4% | 16.1% | 28.7% | 20.4% | 20.3% |
+| Wanda | Unstructured | 20% | 23.7% | 18.7% | 15.8% | 27.3% | 18.0% | 20.5% |
+| Wanda | Unstructured | 30% | 22.6% | 21.5% | 15.8% | 28.2% | 19.0% | 19.2% |
+| Wanda | Unstructured | 40% | 22.0% | 15.1% | 15.6% | 27.8% | 18.0% | 20.1% |
+| Wanda | Unstructured | 50% | 19.2% | 14.5% | 12.9% | 25.6% | 17.6% | 15.6% |
+| Wanda | Unstructured | 60% | 14.6% | 6.7% | 8.2% | 20.3% | 8.6% | 7.9% |
+| Wanda | Semistructured 2:4 | 50% | 14.9% | 6.7% | 7.7% | 18.6% | 6.8% | 11.3% |
+| Wanda | Semistructured 4:8 | 50% | 19.0% | 17.9% | 11.2% | 26.3% | 15.6% | 21.7% |
+| GBLM | Unstructured | 10% | 23.5% | 17.0% | 14.7% | 26.6% | 18.2% | 19.4% |
+| GBLM | Unstructured | 20% | 20.6% | 17.9% | 15.0% | 26.1% | 18.2% | 17.8% |
+| GBLM | Unstructured | 30% | 20.1% | 12.8% | 13.1% | 25.6% | 17.2% | 18.3% |
+| GBLM | Unstructured | 40% | 18.4% | 16.5% | 12.5% | 24.4% | 18.2% | 20.1% |
+| GBLM | Unstructured | 50% | 14.7% | 10.9% | 8.7% | 20.1% | 10.8% | 11.5% |
+| GBLM | Unstructured | 60% | 11.8% | 4.5% | 6.1% | 15.9% | 7.0% | 11.5% |
+| GBLM | Semistructured 2:4 | 50% | 11.4% | 3.1% | 10.8% | 17.6% | 6.6% | 11.3% |
+| GBLM | Semistructured 4:8 | 50% | 14.7% | 6.4% | 6.0% | 19.8% | 6.2% | 11.5% |
+| Quantization Methods |
+| LLM.int8 () | - | 0% | 23.7% | 15.9% | 17.1% | 26.6% | 18.2% | 22.3% |
+| AWQ | - | 0% | 23.4% | 16.5% | 16.1% | 26.3% | 16.8% | 21.4% |
+| GPTQ | - | 0% | 21.4% | 16.2% | 13.9% | 26.2% | 23.0% | 18.3% |
+</table>
+</table_group>
+
+</page>
+<page number="27">
+<table_group page="27" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/26/TableGroup/5">
+<caption page="27" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/26/Caption/0">
+Table 14: LLAMA-2-13B bias evaluation results on HOLISTICBIASR dataset, part 2.
+</caption>
+<table page="27" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/26/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Religion | Gender | Ability | Political Ideologies | Cultural | Sexual Orientation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |  |
+| - | - | 0% | 21.5% | 35.3% | 31.5% | 30.3% | 21.8% | 40.6% |
+| Pruning Methods |  |
+| Magnitude | Unstructured | 10% | 20.6% | 34.7% | 31.1% | 31.9% | 24.8% | 40.3% |
+| Magnitude | Unstructured | 20% | 19.7% | 34.2% | 31.9% | 31.9% | 23.7% | 41.3% |
+| Magnitude | Unstructured | 30% | 22.5% | 35.1% | 32.6% | 30.8% | 24.2% | 46.1% |
+| Magnitude | Unstructured | 40% | 19.4% | 29.6% | 31.0% | 36.9% | 26.7% | 43.0% |
+| Magnitude | Unstructured | 50% | 16.8% | 19.9% | 19.3% | 25.3% | 18.5% | 21.5% |
+| Magnitude | Unstructured | 60% | 0.3% | 0.3% | 0.5% | 0.2% | 0.0% | 0.3% |
+| Magnitude | Semistructured 2:4 | 50% | 12.9% | 9.9% | 14.8% | 15.9% | 12.1% | 13.7% |
+| Magnitude | Semistructured 4:8 | 50% | 9.9% | 5.6% | 11.8% | 11.6% | 6.3% | 5.8% |
+| SparseGPT | Unstructured | 10% | 22.3% | 36.9% | 32.5% | 31.9% | 24.2% | 44.4% |
+| SparseGPT | Unstructured | 20% | 20.6% | 37.7% | 33.6% | 31.4% | 24.0% | 44.0% |
+| SparseGPT | Unstructured | 30% | 19.6% | 33.6% | 33.2% | 31.0% | 23.4% | 41.6% |
+| SparseGPT | Unstructured | 40% | 22.2% | 33.0% | 35.0% | 36.7% | 22.6% | 38.9% |
+| SparseGPT | Unstructured | 50% | 20.3% | 28.9% | 33.8% | 31.0% | 23.1% | 36.2% |
+| SparseGPT | Unstructured | 60% | 14.4% | 25.5% | 37.9% | 28.5% | 16.5% | 45.1% |
+| SparseGPT | Semistructured 2:4 | 50% | 13.2% | 29.4% | 26.1% | 26.4% | 14.3% | 47.1% |
+| SparseGPT | Semistructured 4:8 | 50% | 14.7% | 27.8% | 29.8% | 25.1% | 19.0% | 42.7% |
+| Wanda | Unstructured | 10% | 17.9% | 35.0% | 32.0% | 32.6% | 24.0% | 42.7% |
+| Wanda | Unstructured | 20% | 19.0% | 36.4% | 35.4% | 31.9% | 24.5% | 42.3% |
+| Wanda | Unstructured | 30% | 19.4% | 39.1% | 33.6% | 30.5% | 22.6% | 45.1% |
+| Wanda | Unstructured | 40% | 21.1% | 36.2% | 35.4% | 31.4% | 25.3% | 40.6% |
+| Wanda | Unstructured | 50% | 19.3% | 31.1% | 36.1% | 30.3% | 22.0% | 37.9% |
+| Wanda | Unstructured | 60% | 14.9% | 23.2% | 34.5% | 25.5% | 19.0% | 39.2% |
+| Wanda | Semistructured 2:4 | 50% | 13.8% | 21.4% | 32.2% | 29.2% | 16.5% | 31.7% |
+| Wanda | Semistructured 4:8 | 50% | 22.5% | 30.4% | 38.8% | 31.7% | 25.9% | 40.6% |
+| GBLM | Unstructured | 10% | 20.3% | 34.3% | 30.9% | 30.8% | 22.6% | 40.6% |
+| GBLM | Unstructured | 20% | 20.0% | 36.0% | 33.5% | 30.1% | 23.1% | 40.6% |
+| GBLM | Unstructured | 30% | 18.2% | 31.5% | 33.4% | 29.8% | 19.6% | 38.9% |
+| GBLM | Unstructured | 40% | 16.2% | 29.9% | 33.0% | 30.8% | 23.4% | 38.9% |
+| GBLM | Unstructured | 50% | 13.5% | 25.4% | 32.4% | 29.2% | 22.0% | 32.8% |
+| GBLM | Unstructured | 60% | 9.9% | 19.5% | 27.8% | 23.9% | 14.3% | 25.6% |
+| GBLM | Semistructured 2:4 | 50% | 10.2% | 22.0% | 26.5% | 24.1% | 8.8% | 28.7% |
+| GBLM | Semistructured 4:8 | 50% | 11.8% | 23.3% | 28.5% | 26.4% | 17.1% | 26.3% |
+| Quantization Methods |  |
+| LLM.int8 () | - | 0% | 22.3% | 33.4% | 32.2% | 30.8% | 22.6% | 43.0% |
+| AWQ | - | 0% | 18.8% | 32.4% | 30.8% | 32.6% | 21.8% | 40.6% |
+| GPTQ | - | 0% | 19.7% | 32.3% | 29.6% | 32.1% | 21.5% | 40.6% |
+</table>
+</table_group>
+
+</page>
+<page number="28">
+<table_group page="28" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/27/TableGroup/5">
+<caption page="28" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/27/Caption/0">
+Table 15: TÜLU-2-13B bias evaluation results on HOLISTICBIASR dataset, part 1.
+</caption>
+<table page="28" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/27/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Body Type | Nationality | Age | Characteristics | Race | Socio-economical Class |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |  |  |  |  |  |  |  |
+| - | - | 0% | 3.3% | 1.1% | 1.4% | 5.4% | 1.2% | 2.7% |
+| Pruning Methods |  |  |  |  |  |  |  |
+| Magnitude | Unstructured | 10% | 3.3% | 1.1% | 0.9% | 3.8% | 0.8% | 2.9% |
+| Magnitude | Unstructured | 20% | 3.7% | 1.1% | 1.4% | 4.5% | 2.0% | 3.4% |
+| Magnitude | Unstructured | 30% | 4.3% | 1.1% | 1.9% | 4.9% | 1.8% | 4.3% |
+| Magnitude | Unstructured | 40% | 4.4% | 2.5% | 3.0% | 7.3% | 2.0% | 6.3% |
+| Magnitude | Unstructured | 50% | 9.0% | 1.7% | 2.2% | 10.0% | 3.2% | 9.9% |
+| Magnitude | Unstructured | 60% | 18.6% | 4.5% | 12.7% | 17.5% | 5.8% | 16.3% |
+| Magnitude | Semistructured 2:4 | 50% | 13.5% | 3.6% | 5.5% | 16.6% | 3.6% | 11.3% |
+| Magnitude | Semistructured 4:8 | 50% | 10.2% | 1.1% | 3.9% | 15.5% | 2.8% | 11.5% |
+| SparseGPT | Unstructured | 10% | 3.3% | 1.1% | 1.7% | 5.4% | 1.2% | 3.6% |
+| SparseGPT | Unstructured | 20% | 4.3% | 2.0% | 1.5% | 7.3% | 1.2% | 5.0% |
+| SparseGPT | Unstructured | 30% | 3.6% | 1.1% | 1.5% | 4.9% | 1.2% | 4.3% |
+| SparseGPT | Unstructured | 40% | 3.3% | 1.1% | 1.6% | 5.3% | 1.8% | 4.5% |
+| SparseGPT | Unstructured | 50% | 4.2% | 0.3% | 0.8% | 6.4% | 1.6% | 3.6% |
+| SparseGPT | Unstructured | 60% | 7.5% | 0.8% | 2.2% | 12.3% | 1.0% | 8.1% |
+| SparseGPT | Semistructured 2:4 | 50% | 5.7% | 1.1% | 1.4% | 10.0% | 0.8% | 7.2% |
+| SparseGPT | Semistructured 4:8 | 50% | 3.7% | 0.6% | 1.1% | 6.6% | 0.6% | 1.8% |
+| Wanda | Unstructured | 10% | 3.4% | 0.3% | 1.5% | 5.4% | 1.2% | 3.4% |
+| Wanda | Unstructured | 20% | 4.6% | 1.7% | 2.0% | 7.4% | 1.2% | 5.0% |
+| Wanda | Unstructured | 30% | 5.5% | 1.7% | 1.7% | 6.4% | 2.6% | 6.1% |
+| Wanda | Unstructured | 40% | 4.0% | 0.8% | 1.5% | 6.2% | 1.6% | 5.9% |
+| Wanda | Unstructured | 50% | 4.1% | 1.4% | 1.8% | 8.5% | 1.4% | 5.9% |
+| Wanda | Unstructured | 60% | 14.8% | 1.7% | 2.6% | 14.5% | 2.2% | 9.3% |
+| Wanda | Semistructured 2:4 | 50% | 17.2% | 5.6% | 6.4% | 21.4% | 5.8% | 15.3% |
+| Wanda | Semistructured 4:8 | 50% | 4.6% | 0.8% | 1.2% | 6.9% | 0.8% | 5.6% |
+| GBLM | Unstructured | 10% | 3.5% | 1.7% | 1.6% | 5.8% | 1.8% | 3.4% |
+| GBLM | Unstructured | 20% | 3.9% | 0.6% | 1.1% | 6.4% | 1.2% | 4.5% |
+| GBLM | Unstructured | 30% | 4.0% | 0.6% | 2.0% | 6.7% | 1.4% | 4.7% |
+| GBLM | Unstructured | 40% | 3.6% | 1.7% | 2.1% | 7.1% | 1.6% | 4.5% |
+| GBLM | Unstructured | 50% | 4.6% | 0.0% | 1.5% | 6.2% | 1.4% | 4.1% |
+| GBLM | Unstructured | 60% | 13.0% | 3.9% | 1.9% | 12.1% | 3.0% | 7.2% |
+| GBLM | Semistructured 2:4 | 50% | 14.4% | 3.4% | 1.7% | 18.1% | 1.2% | 7.7% |
+| GBLM | Semistructured 4:8 | 50% | 6.1% | 0.8% | 0.9% | 8.7% | 0.0% | 3.4% |
+| Quantization Methods |  |  |  |  |  |  |  |
+| LLM.int8() | - | 0% | 3.4% | 1.4% | 1.4% | 5.4% | 1.2% | 3.6% |
+| AWQ | - | 0% | 3.3% | 0.8% | 1.5% | 6.5% | 1.2% | 3.4% |
+| GPTQ | - | 0% | 2.8% | 1.4% | 1.9% | 4.9% | 1.4% | 2.7% |
+</table>
+</table_group>
+
+</page>
+<page number="29">
+<table_group page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/TableGroup/20">
+<caption page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Caption/0">
+Table 16: TÜLU-2-13B bias evaluation results on HOLISTICBIASR dataset, part 2.
+</caption>
+<table page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | Religion | Gender | Ability | Political Ideologies | Cultural | Sexual Orientation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |  |  |  |  |  |  |  |
+| - | - | 0% | 1.4% | 4.2% | 2.5% | 3.6% | 4.7% | 4.4% |
+| Pruning Methods |  |  |  |  |  |  |  |
+| Magnitude | Unstructured | 10% | 2.1% | 3.7% | 1.3% | 3.2% | 2.5% | 5.1% |
+| Magnitude | Unstructured | 20% | 2.6% | 5.0% | 2.7% | 3.4% | 4.4% | 7.5% |
+| Magnitude | Unstructured | 30% | 2.7% | 6.5% | 2.8% | 4.6% | 6.1% | 8.9% |
+| Magnitude | Unstructured | 40% | 3.0% | 5.3% | 4.6% | 5.0% | 6.3% | 7.8% |
+| Magnitude | Unstructured | 50% | 4.6% | 9.6% | 7.5% | 8.0% | 17.6% | 11.3% |
+| Magnitude | Unstructured | 60% | 18.7% | 19.7% | 23.4% | 22.8% | 28.9% | 21.8% |
+| Magnitude | Semistructured 2:4 | 50% | 7.1% | 13.7% | 21.8% | 17.3% | 17.9% | 16.4% |
+| Magnitude | Semistructured 4:8 | 50% | 6.2% | 13.7% | 14.4% | 10.9% | 19.3% | 20.8% |
+| SparseGPT | Unstructured | 10% | 2.7% | 5.0% | 2.2% | 3.0% | 4.7% | 4.4% |
+| SparseGPT | Unstructured | 20% | 2.6% | 7.1% | 2.8% | 4.6% | 6.3% | 5.8% |
+| SparseGPT | Unstructured | 30% | 1.8% | 4.3% | 1.9% | 2.1% | 5.2% | 3.8% |
+| SparseGPT | Unstructured | 40% | 2.7% | 4.3% | 3.7% | 5.9% | 5.5% | 6.5% |
+| SparseGPT | Unstructured | 50% | 2.9% | 4.3% | 4.5% | 4.8% | 7.7% | 6.5% |
+| SparseGPT | Unstructured | 60% | 5.9% | 10.2% | 11.9% | 10.0% | 9.4% | 16.4% |
+| SparseGPT | Semistructured 2:4 | 50% | 5.6% | 9.4% | 14.8% | 8.2% | 6.6% | 11.6% |
+| SparseGPT | Semistructured 4:8 | 50% | 3.3% | 3.3% | 3.1% | 5.7% | 5.8% | 6.1% |
+| Wanda | Unstructured | 10% | 2.6% | 5.3% | 2.2% | 2.5% | 5.2% | 4.4% |
+| Wanda | Unstructured | 20% | 2.6% | 6.2% | 1.9% | 3.0% | 5.8% | 6.1% |
+| Wanda | Unstructured | 30% | 2.9% | 5.6% | 3.1% | 3.9% | 4.4% | 7.2% |
+| Wanda | Unstructured | 40% | 2.3% | 3.7% | 3.6% | 3.6% | 4.1% | 4.1% |
+| Wanda | Unstructured | 50% | 2.7% | 5.6% | 7.9% | 5.5% | 4.7% | 6.1% |
+| Wanda | Unstructured | 60% | 6.8% | 14.1% | 17.6% | 12.1% | 9.1% | 14.3% |
+| Wanda | Semistructured 2:4 | 50% | 13.7% | 21.2% | 24.2% | 36.2% | 16.0% | 21.5% |
+| Wanda | Semistructured 4:8 | 50% | 1.4% | 3.8% | 6.2% | 3.0% | 4.1% | 12.3% |
+| GBLM | Unstructured | 10% | 1.5% | 3.7% | 2.3% | 3.2% | 5.5% | 4.4% |
+| GBLM | Unstructured | 20% | 1.5% | 4.1% | 2.6% | 4.6% | 5.2% | 5.5% |
+| GBLM | Unstructured | 30% | 2.6% | 3.8% | 2.8% | 4.1% | 5.0% | 4.1% |
+| GBLM | Unstructured | 40% | 2.7% | 4.6% | 4.6% | 3.4% | 5.5% | 6.1% |
+| GBLM | Unstructured | 50% | 2.6% | 5.4% | 5.3% | 3.2% | 5.2% | 10.9% |
+| GBLM | Unstructured | 60% | 6.4% | 10.9% | 12.3% | 14.8% | 12.4% | 21.2% |
+| GBLM | Semistructured 2:4 | 50% | 11.2% | 16.7% | 21.6% | 21.6% | 12.4% | 26.3% |
+| GBLM | Semistructured 4:8 | 50% | 3.5% | 5.6% | 5.3% | 5.5% | 3.6% | 6.5% |
+| Quantization Methods |  |  |  |  |  |  |  |
+| LLM.int8() | - | 0% | 1.2% | 4.2% | 2.4% | 2.1% | 5.2% | 4.8% |
+| AWQ | - | 0% | 1.5% | 3.8% | 2.3% | 2.5% | 4.4% | 3.8% |
+| GPTQ | - | 0% | 2.0% | 3.8% | 1.2% | 2.7% | 4.1% | 6.1% |
+</table>
+<caption page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Caption/2">
+Table 17: UNQOVER representational bias evaluation results for uncompressed models.
+</caption>
+</table_group>
+
+<table_group page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/TableGroup/21">
+<table page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Table/3">
+| Model | Religion | Country | Ethnicity | **Gender-occupation** |
+| --- | --- | --- | --- | --- |
+| LLAMA-2-7B | 0.439 | 0.538 | 0.428 | 0.764 |
+| LLAMA-2-13B | 0.430 | 0.556 | 0.448 | 0.770 |
+| TÜLU-2-7B | 0.442 | 0.542 | 0.452 | 0.812 |
+| TÜLU-2-13B | 0.433 | 0.544 | 0.444 | 0.814 |
+</table>
+<caption page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Caption/4">
+Table 18: BBQ representational bias evaluation results for uncompressed models.
+</caption>
+</table_group>
+
+<table_group page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/TableGroup/22">
+<table page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Table/5">
+| Model | % Avg. Acc. Ambiguous | % Avg. Acc. Disambiguated | Avg. Bias Ambiguous | Avg. Bias Disambiguated |
+| --- | --- | --- | --- | --- |
+| LLAMA-2-7B | 18.1 | 75.7 | 0.21 | 0.09 |
+| LLAMA-2-13B | 17.4 | 82.6 | 0.27 | 0.08 |
+| TÜLU-2-7B | 17.7 | 72.1 | 0.22 | 0.13 |
+| TÜLU-2-13B | 20.6 | 80.9 | 0.27 | 0.08 |
+</table>
+<caption page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Caption/6">
+Table 19: Truthfulness evaluation results for uncompressed models.
+</caption>
+</table_group>
+
+<table page="29" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/28/Table/7">
+| Base Model | % Information | % Truthful | % (Information and Truthful) |
+| --- | --- | --- | --- |
+| LLAMA-2-7B | 92.7 | 37.6 | 30.2 |
+| LLAMA-2-13B | 98.4 | 33.8 | 32.3 |
+| TÜLU-2-7B | 97.7 | 51.9 | 49.7 |
+| TÜLU-2-13B | 98.7 | 58.1 | 56.8 |
+</table>
+
+</page>
+<page number="30">
+<table_group page="30" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/29/TableGroup/5">
+<caption page="30" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/29/Caption/0">
+Table 20: Truthfulness evaluation results for LLAMA-2-7B compressed models.
+</caption>
+<table page="30" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/29/Table/1">
+| Compression Method | Pruning Structure | % Compression Rate | % Information | % Truthful | % (Information and Truthful) |
+| --- | --- | --- | --- | --- | --- |
+| Pruning Methods |
+| Magnitude | Unstructured | 10 | 94.6 | 36.1 | 30.8 |
+| Magnitude | Unstructured | 20 | 95.6 | 36.2 | 32.1 |
+| Magnitude | Unstructured | 30 | 95.3 | 34.9 | 30.4 |
+| Magnitude | Unstructured | 40 | 94.6 | 34.1 | 29.6 |
+| Magnitude | Unstructured | 50 | 90.3 | 35.7 | 28.2 |
+| Magnitude | Unstructured | 60 | 41.5 | 61.1 | 16.0 |
+| Magnitude | Semistructured 2:4 | 50 | 84.6 | 35.9 | 23.3 |
+| Magnitude | Semistructured 2:4 | 50 | 85.9 | 35.0 | 23.6 |
+| SparseGPT | Unstructured | 10 | 94.0 | 35.5 | 29.5 |
+| SparseGPT | Unstructured | 20 | 95.1 | 35.3 | 30.6 |
+| SparseGPT | Unstructured | 30 | 94.4 | 35.1 | 30.0 |
+| SparseGPT | Unstructured | 40 | 96.8 | 29.9 | 26.9 |
+| SparseGPT | Unstructured | 50 | 93.8 | 31.5 | 25.6 |
+| SparseGPT | Unstructured | 60 | 90.8 | 26.8 | 18.8 |
+| SparseGPT | Semistructured 2:4 | 50 | 87.0 | 30.5 | 19.1 |
+| SparseGPT | Semistructured 2:4 | 50 | 93.4 | 26.8 | 20.9 |
+| Wanda | Unstructured | 10 | 93.6 | 36.2 | 30.0 |
+| Wanda | Unstructured | 20 | 95.4 | 36.4 | 32.2 |
+| Wanda | Unstructured | 30 | 95.2 | 34.8 | 30.6 |
+| Wanda | Unstructured | 40 | 96.4 | 31.6 | 28.3 |
+| Wanda | Unstructured | 50 | 95.2 | 30.4 | 25.8 |
+| Wanda | Unstructured | 60 | 87.0 | 30.1 | 18.4 |
+| Wanda | Semistructured 2:4 | 50 | 80.5 | 34.4 | 16.8 |
+| Wanda | Semistructured 2:4 | 50 | 93.0 | 25.3 | 19.0 |
+| GBLM | Unstructured | 10 | 92.9 | 36.4 | 29.4 |
+| GBLM | Unstructured | 20 | 95.6 | 34.8 | 30.6 |
+| GBLM | Unstructured | 30 | 95.7 | 32.7 | 29.0 |
+| GBLM | Unstructured | 40 | 95.7 | 32.1 | 28.2 |
+| GBLM | Unstructured | 50 | 96.1 | 27.7 | 24.4 |
+| GBLM | Unstructured | 60 | 89.8 | 28.8 | 19.7 |
+| GBLM | Semistructured 2:4 | 50 | 78.2 | 34.1 | 14.8 |
+| GBLM | Semistructured 4:8 | 50 | 89.0 | 29.1 | 19.0 |
+| Quantization Methods |
+| LLM.int8() | - | 50 | 92.8 | 35.9 | 28.8 |
+| AWQ | - | 75 | 94.1 | 34.5 | 29.0 |
+| GPTQ | - | 75 | 92.0 | 38.3 | 30.6 |
+</table>
+</table_group>
+
+</page>
+<page number="31">
+<table_group page="31" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/30/TableGroup/5">
+<caption page="31" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/30/Caption/0">
+Table 21: Truthfulness evaluation results for LLAMA-2-13B compressed models.
+</caption>
+<table page="31" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/30/Table/1">
+| Compression Method | Pruning Structure | % Compression Rate | % Information | % Truthful | % (Information and Truthful) |
+| --- | --- | --- | --- | --- | --- |
+| Pruning Methods |
+| Magnitude | Unstructured | 10 | 98.3 | 33.3 | 31.8 |
+| Magnitude | Unstructured | 20 | 98.5 | 34.5 | 33.3 |
+| Magnitude | Unstructured | 30 | 98.8 | 33.5 | 32.3 |
+| Magnitude | Unstructured | 40 | 97.6 | 35.0 | 32.7 |
+| Magnitude | Unstructured | 50 | 94.6 | 37.3 | 32.6 |
+| Magnitude | Unstructured | 60 | 80.4 | 38.2 | 21.9 |
+| Magnitude | Semistructured 2:4 | 50 | 90.8 | 31.1 | 23.0 |
+| Magnitude | Semistructured 4:8 | 50 | 94.4 | 31.5 | 26.6 |
+| SparseGPT | Unstructured | 10 | 98.7 | 35.3 | 33.9 |
+| SparseGPT | Unstructured | 20 | 98.7 | 35.6 | 34.3 |
+| SparseGPT | Unstructured | 30 | 98.4 | 37.2 | 35.9 |
+| SparseGPT | Unstructured | 40 | 98.9 | 34.3 | 33.2 |
+| SparseGPT | Unstructured | 50 | 95.5 | 32.0 | 27.7 |
+| SparseGPT | Unstructured | 60 | 93.8 | 27.9 | 21.9 |
+| SparseGPT | Semistructured 2:4 | 50 | 90.6 | 27.1 | 19.1 |
+| SparseGPT | Semistructured 4:8 | 50 | 92.7 | 30.4 | 23.1 |
+| Wanda | Unstructured | 10 | 98.7 | 35.1 | 33.8 |
+| Wanda | Unstructured | 20 | 98.8 | 34.5 | 33.3 |
+| Wanda | Unstructured | 30 | 98.5 | 34.6 | 33.4 |
+| Wanda | Unstructured | 40 | 97.9 | 32.8 | 30.7 |
+| Wanda | Unstructured | 50 | 97.6 | 28.4 | 26.2 |
+| Wanda | Unstructured | 60 | 96.0 | 25.1 | 21.3 |
+| Wanda | Semistructured 2:4 | 50 | 93.6 | 26.4 | 20.8 |
+| Wanda | Semistructured 4:8 | 50 | 97.3 | 27.3 | 24.7 |
+| GBLM | Unstructured | 10 | 98.4 | 33.9 | 32.3 |
+| GBLM | Unstructured | 20 | 98.7 | 34.5 | 33.3 |
+| GBLM | Unstructured | 30 | 98.5 | 33.8 | 32.3 |
+| GBLM | Unstructured | 40 | 97.6 | 33.5 | 31.3 |
+| GBLM | Unstructured | 50 | 97.1 | 30.8 | 28.2 |
+| GBLM | Unstructured | 60 | 93.4 | 27.1 | 21.4 |
+| GBLM | Semistructured 2:4 | 50 | 90.7 | 27.9 | 19.6 |
+| GBLM | Semistructured 4:8 | 50 | 95.5 | 28.0 | 23.9 |
+| Quantization Methods |
+| LLM.int8() | - | 50 | 99.0 | 33.2 | 32.3 |
+| AWQ | - | 75 | 89.1 | 36.2 | 26.7 |
+| GPTQ | - | 75 | 98.8 | 33.5 | 32.3 |
+</table>
+</table_group>
+
+</page>
+<page number="32">
+<table_group page="32" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/31/TableGroup/5">
+<caption page="32" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/31/Caption/0">
+Table 22: Truthfulness evaluation results for TÜLU-2-7B compressed models.
+</caption>
+<table page="32" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/31/Table/1">
+| Compression Method | Pruning Structure | % Compression Rate | % Information | % Truthful | % (Information and Truthful) |
+| --- | --- | --- | --- | --- | --- |
+| Pruning Methods |  |
+| Magnitude | Unstructured | 10 | 97.8 | 55.6 | 53.6 |
+| Magnitude | Unstructured | 20 | 98.7 | 53.2 | 51.9 |
+| Magnitude | Unstructured | 30 | 98.7 | 55.2 | 53.9 |
+| Magnitude | Unstructured | 40 | 97.9 | 52.3 | 50.6 |
+| Magnitude | Unstructured | 50 | 94.0 | 43.6 | 39.0 |
+| Magnitude | Unstructured | 60 | 65.6 | 50.7 | 25.5 |
+| Magnitude | Semistructured 2:4 | 50 | 90.8 | 36.8 | 29.7 |
+| Magnitude | Semistructured 4:8 | 50 | 94.9 | 41.0 | 37.0 |
+| SparseGPT | Unstructured | 10 | 97.9 | 52.0 | 50.1 |
+| SparseGPT | Unstructured | 20 | 97.3 | 52.0 | 49.7 |
+| SparseGPT | Unstructured | 30 | 97.8 | 51.0 | 49.0 |
+| SparseGPT | Unstructured | 40 | 98.0 | 44.4 | 42.6 |
+| SparseGPT | Unstructured | 50 | 98.2 | 38.9 | 37.2 |
+| SparseGPT | Unstructured | 60 | 96.6 | 53.6 | 50.7 |
+| SparseGPT | Semistructured 2:4 | 50 | 92.8 | 38.4 | 31.8 |
+| SparseGPT | Semistructured 4:8 | 50 | 96.2 | 34.3 | 30.8 |
+| Wanda | Unstructured | 10 | 98.0 | 51.7 | 49.8 |
+| Wanda | Unstructured | 20 | 98.2 | 52.0 | 50.3 |
+| Wanda | Unstructured | 30 | 95.7 | 50.8 | 46.8 |
+| Wanda | Unstructured | 40 | 97.4 | 45.5 | 43.6 |
+| Wanda | Unstructured | 50 | 97.8 | 36.4 | 34.4 |
+| Wanda | Unstructured | 60 | 89.8 | 35.4 | 26.5 |
+| Wanda | Semistructured 2:4 | 50 | 89.3 | 38.1 | 28.5 |
+| Wanda | Semistructured 4:8 | 50 | 95.6 | 34.1 | 30.4 |
+| GBLM | Unstructured | 10 | 97.9 | 52.3 | 50.2 |
+| GBLM | Unstructured | 20 | 97.7 | 52.9 | 50.6 |
+| GBLM | Unstructured | 30 | 98.2 | 51.0 | 49.4 |
+| GBLM | Unstructured | 40 | 97.9 | 43.8 | 41.7 |
+| GBLM | Unstructured | 50 | 97.2 | 38.8 | 36.2 |
+| GBLM | Unstructured | 60 | 92.8 | 31.0 | 24.6 |
+| GBLM | Semistructured 2:4 | 50 | 90.0 | 33.7 | 24.5 |
+| GBLM | Semistructured 4:8 | 50 | 95.2 | 32.0 | 27.9 |
+| Quantization Methods |  |
+| LLM.int8 () | - | 50 | 98.3 | 52.1 | 50.6 |
+| AWQ | - | 75 | 97.7 | 47.2 | 45.3 |
+| GPTQ | - | 75 | 98.2 | 47.4 | 45.5 |
+</table>
+</table_group>
+
+</page>
+<page number="33">
+<table_group page="33" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/32/TableGroup/10">
+<caption page="33" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/32/Caption/0">
+Table 23: Truthfulness evaluation results for TÜLU-2-13B compressed models.
+</caption>
+<table page="33" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/32/Table/1">
+| Compression Method | Pruning Structure | % Compression Rate | % Information | % Truthful | % (Information and Truthful) |
+| --- | --- | --- | --- | --- | --- |
+| Pruning Methods |
+| Magnitude | Unstructured | 10 | 98.7 | 56.7 | 55.4 |
+| Magnitude | Unstructured | 20 | 99.0 | 57.5 | 56.5 |
+| Magnitude | Unstructured | 30 | 99.0 | 55.0 | 54.0 |
+| Magnitude | Unstructured | 40 | 97.5 | 59.6 | 57.2 |
+| Magnitude | Unstructured | 50 | 96.7 | 55.9 | 52.8 |
+| Magnitude | Unstructured | 60 | 86.2 | 80.4 | 66.7 |
+| Magnitude | Semistructured 2:4 | 50 | 97.1 | 37.8 | 35.1 |
+| Magnitude | Semistructured 4:8 | 50 | 97.7 | 46.0 | 43.8 |
+| SparseGPT | Unstructured | 10 | 98.8 | 57.0 | 55.8 |
+| SparseGPT | Unstructured | 20 | 99.1 | 58.0 | 57.2 |
+| SparseGPT | Unstructured | 30 | 98.8 | 56.1 | 55.0 |
+| SparseGPT | Unstructured | 40 | 98.0 | 51.9 | 50.1 |
+| SparseGPT | Unstructured | 50 | 97.7 | 46.9 | 44.6 |
+| SparseGPT | Unstructured | 60 | 95.3 | 38.9 | 34.5 |
+| SparseGPT | Semistructured 2:4 | 50 | 96.3 | 34.6 | 31.9 |
+| SparseGPT | Semistructured 4:8 | 50 | 98.5 | 34.4 | 33.0 |
+| Wanda | Unstructured | 10 | 99.0 | 57.0 | 56.1 |
+| Wanda | Unstructured | 20 | 98.9 | 56.9 | 55.8 |
+| Wanda | Unstructured | 30 | 98.8 | 55.1 | 54.0 |
+| Wanda | Unstructured | 40 | 98.0 | 50.9 | 49.1 |
+| Wanda | Unstructured | 50 | 98.0 | 44.7 | 43.0 |
+| Wanda | Unstructured | 60 | 95.8 | 33.2 | 29.1 |
+| Wanda | Semistructured 2:4 | 50 | 96.0 | 29.9 | 26.4 |
+| Wanda | Semistructured 4:8 | 50 | 97.7 | 36.2 | 34.0 |
+| GBLM | Unstructured | 10 | 98.5 | 57.9 | 56.4 |
+| GBLM | Unstructured | 20 | 98.5 | 57.6 | 56.3 |
+| GBLM | Unstructured | 30 | 98.9 | 53.7 | 52.6 |
+| GBLM | Unstructured | 40 | 96.8 | 53.0 | 49.9 |
+| GBLM | Unstructured | 50 | 98.5 | 45.8 | 44.4 |
+| GBLM | Unstructured | 60 | 97.1 | 33.8 | 31.1 |
+| GBLM | Semistructured 2:4 | 50 | 96.8 | 32.2 | 29.4 |
+| GBLM | Semistructured 4:8 | 50 | 97.8 | 36.8 | 34.9 |
+| Quantization Methods |
+| LLM.int8() | - | 50 | 98.0 | 57.5 | 55.6 |
+| AWQ | - | 75 | 95.1 | 5.2 | 50.4 |
+| GPTQ | - | 75 | 98.4 | 56.2 | 54.6 |
+</table>
+</table_group>
+
+<table_group page="33" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/32/TableGroup/11">
+<caption page="33" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/32/Caption/2">
+Table 24: Perplexity results for uncompressed models.
+</caption>
+<table page="33" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/32/Table/3">
+| BaseModel | WikiText2 | DolmaBooks | DolmaCommonCrawl | DolmaReddit | DolmaStack | DolmaWiki | DolmapeS2o | AAELiterature | TwitterAAE | TwitterWhite |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| LLAMA-2-7B | 5.47 | 6.68 | 8.74 | 11.70 | 2.49 | 5.61 | 5.85 | 9.23 | 29.68 | 20.22 |
+| LLAMA-2-13B | 4.88 | 6.12 | 8.10 | 10.91 | 2.36 | 5.17 | 5.54 | 8.55 | 27.37 | 18.99 |
+| TÜLU-2-7B | 6.00 | 7.45 | 9.78 | 12.93 | 2.74 | 6.17 | 6.51 | 10.24 | 35.13 | 23.20 |
+| TÜLU-2-13B | 5.34 | 6.71 | 8.91 | 11.89 | 2.59 | 5.61 | 6.06 | 9.32 | 31.49 | 21.49 |
+</table>
+</table_group>
+
+</page>
+<page number="34">
+<table_group page="34" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/33/TableGroup/10">
+<caption page="34" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/33/Caption/0">
+Table 25: Perplexity results for compressed LLAMA-2-7B models.
+</caption>
+<table page="34" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/33/Table/1">
+| CompressionMethod | CompressionRate | PruningStructure | WikiText2 | Dolma | AAELiterature | TwitterAAE | TwitterWhite |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Books | CommonCrawl | Reddit | Stack | Wiki | peS2o |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 5.54 | 6.79 | 8.86 | 11.86 | 2.52 | 5.69 | 5.93 | 9.36 | 30.09 | 20.49 |
+| Magnitude | Unstructured | 20% | 5.71 | 6.99 | 9.16 | 12.21 | 2.59 | 5.87 | 6.09 | 9.61 | 31.5 | 21.31 |
+| Magnitude | Unstructured | 30% | 6.23 | 7.57 | 10.13 | 13.39 | 2.81 | 6.39 | 6.57 | 10.37 | 38.87 | 24.74 |
+| Magnitude | Unstructured | 40% | 7.92 | 9.34 | 13.25 | 17.2 | 3.62 | 8.08 | 8.14 | 12.67 | 72.86 | 38.55 |
+| Magnitude | Unstructured | 50% | 16.02 | 20 | 27.31 | 33.06 | 9.18 | 16.57 | 16.71 | 24.67 | 379.77 | 122.45 |
+| Magnitude | Unstructured | 60% | 1915.92 | 2228.94 | 2549.27 | 2647.67 | 9317.04 | 2077.82 | 1659.87 | 2519.97 | 98179.68 | 14165.84 |
+| Magnitude | Semistructured 2:4 | 50% | 37.98 | 91.01 | 98.04 | 108.77 | 22.86 | 54.19 | 46.73 | 93.21 | 1306.18 | 468.28 |
+| Magnitude | Semistructured 4:8 | 50% | 15.93 | 31.54 | 42.12 | 53.03 | 8.49 | 21.93 | 20.57 | 37.02 | 750.42 | 235.08 |
+| SparseGPT | Unstructured | 10% | 5.49 | 6.72 | 8.78 | 11.74 | 2.5 | 5.64 | 5.87 | 9.26 | 29.92 | 20.34 |
+| SparseGPT | Unstructured | 20% | 5.58 | 6.82 | 8.94 | 11.93 | 2.54 | 5.74 | 5.96 | 9.38 | 30.62 | 20.76 |
+| SparseGPT | Unstructured | 30% | 5.78 | 7 | 9.16 | 12.13 | 2.62 | 5.91 | 6.07 | 9.57 | 31.31 | 21.18 |
+| SparseGPT | Unstructured | 40% | 6.1 | 7.39 | 9.66 | 12.56 | 2.77 | 6.23 | 6.3 | 9.95 | 33.05 | 22.07 |
+| SparseGPT | Unstructured | 50% | 6.5 | 8.31 | 11.1 | 14.11 | 3.25 | 6.77 | 7.01 | 11.22 | 37.78 | 25.01 |
+| SparseGPT | Unstructured | 60% | 10.18 | 12.78 | 15.2 | 20.26 | 5.18 | 10.54 | 9.23 | 18.25 | 83.3 | 57.11 |
+| SparseGPT | Semistructured 2:4 | 50% | 10.94 | 12.22 | 15.94 | 20.98 | 5.34 | 11.21 | 9.57 | 17.81 | 71.15 | 53.08 |
+| SparseGPT | Semistructured 4:8 | 50% | 8.52 | 9.8 | 12.68 | 16.28 | 3.98 | 8.53 | 7.9 | 13.38 | 52.33 | 37.45 |
+| Wanda | Unstructured | 10% | 5.49 | 6.72 | 8.77 | 11.73 | 2.50 | 5.64 | 5.87 | 9.25 | 29.91 | 20.32 |
+| Wanda | Unstructured | 20% | 5.59 | 6.82 | 8.92 | 11.89 | 2.53 | 5.74 | 5.95 | 9.38 | 30.47 | 20.66 |
+| Wanda | Unstructured | 30% | 5.75 | 6.98 | 9.14 | 12.12 | 2.59 | 5.88 | 6.06 | 9.57 | 31.28 | 21.14 |
+| Wanda | Unstructured | 40% | 6.07 | 7.34 | 9.63 | 12.56 | 2.73 | 6.18 | 6.28 | 9.96 | 32.60 | 21.83 |
+| Wanda | Unstructured | 50% | 6.94 | 8.27 | 10.90 | 13.93 | 3.12 | 6.99 | 6.92 | 11.13 | 36.63 | 24.62 |
+| Wanda | Unstructured | 60% | 10.85 | 12.81 | 16.67 | 23.03 | 4.95 | 10.80 | 9.91 | 18.13 | 65.76 | 46.90 |
+| Wanda | Semistructured 2:4 | 50% | 12.12 | 13.68 | 18.20 | 23.19 | 5.00 | 11.85 | 10.70 | 19.09 | 64.90 | 44.82 |
+| Wanda | Semistructured 4:8 | 50% | 8.66 | 10.00 | 13.33 | 16.93 | 3.73 | 8.55 | 8.17 | 13.63 | 44.37 | 30.57 |
+| GBLM | Unstructured | 10% | 5.48 | 6.70 | 8.76 | 11.71 | 2.49 | 5.63 | 5.86 | 9.24 | 29.77 | 20.27 |
+| GBLM | Unstructured | 20% | 5.56 | 6.78 | 8.88 | 11.83 | 2.52 | 5.71 | 5.92 | 9.34 | 30.23 | 20.52 |
+| GBLM | Unstructured | 30% | 5.71 | 6.94 | 9.10 | 12.06 | 2.58 | 5.85 | 6.03 | 9.52 | 30.90 | 20.95 |
+| GBLM | Unstructured | 40% | 6.03 | 7.28 | 9.57 | 12.49 | 2.71 | 6.15 | 6.24 | 9.90 | 32.20 | 21.66 |
+| GBLM | Unstructured | 50% | 6.88 | 8.21 | 10.81 | 13.90 | 3.08 | 6.93 | 6.87 | 11.00 | 37.75 | 26.22 |
+| GBLM | Unstructured | 60% | 10.47 | 12.40 | 16.03 | 22.60 | 4.64 | 10.42 | 9.50 | 17.23 | 65.05 | 48.18 |
+| GBLM | Semistructured 2:4 | 50% | 13.41 | 15.29 | 20.02 | 27.84 | 5.15 | 12.48 | 11.57 | 21.98 | 75.62 | 60.48 |
+| GBLM | Semistructured 4:8 | 50% | 9.08 | 10.41 | 14.02 | 18.50 | 3.80 | 8.73 | 8.48 | 14.35 | 54.75 | 39.75 |
+| Quantization Methods |
+| LLM.int8() | - | 50% | 5.50 | 6.71 | 8.79 | 11.76 | 2.50 | 5.64 | 5.88 | 9.27 | 29.84 | 20.31 |
+| AWQ | - | 75% | 5.61 | 6.86 | 8.94 | 11.90 | 2.53 | 5.74 | 5.95 | 9.42 | 30.32 | 20.60 |
+| GPTQ | - | 75% | 6.44 | 6.99 | 9.08 | 12.06 | 2.59 | 5.90 | 6.03 | 9.52 | 30.93 | 20.94 |
+</table>
+<caption page="34" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/33/Caption/2">
+Table 26: Perplexity results for compressed TÜLU-2-7B models.
+</caption>
+</table_group>
+
+<table page="34" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/33/Table/3">
+| CompressionMethod | PruningStructure | CompressionRate | WikiText2 | Dolma | AAELiterature | TwitterAAE | TwitterWhite |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Books | CommonCrawl | Reddit | Stack | Wiki | peS2o |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 6.07 | 7.55 | 9.91 | 13.11 | 2.78 | 6.25 | 6.58 | 10.35 | 35.73 | 23.56 |
+| Magnitude | Unstructured | 20% | 6.35 | 7.84 | 10.33 | 13.60 | 2.89 | 6.49 | 6.80 | 10.74 | 37.92 | 24.79 |
+| Magnitude | Unstructured | 30% | 7.00 | 8.56 | 11.39 | 14.95 | 3.12 | 7.08 | 7.30 | 11.71 | 43.08 | 27.61 |
+| Magnitude | Unstructured | 40% | 8.67 | 10.60 | 14.41 | 18.70 | 3.78 | 8.68 | 8.69 | 14.22 | 59.58 | 35.57 |
+| Magnitude | Unstructured | 50% | 15.66 | 19.83 | 28.43 | 35.83 | 7.31 | 15.95 | 15.54 | 25.49 | 148.36 | 74.93 |
+| Magnitude | Unstructured | 60% | 335.48 | 593.33 | 799.89 | 1143.53 | 509.53 | 520.75 | 514.80 | 632.29 | 6458.89 | 1731.35 |
+| Magnitude | Semistructured 2:4 | 50% | 27.27 | 67.54 | 70.20 | 87.06 | 12.46 | 35.93 | 28.46 | 83.52 | 401.38 | 192.43 |
+| Magnitude | Semistructured 4:8 | 50% | 18.03 | 80.72 | 99.56 | 112.86 | 7.78 | 44.41 | 32.90 | 119.34 | 187.46 | 125.68 |
+| SparseGPT | Unstructured | 10% | 6.06 | 7.51 | 9.88 | 13.06 | 2.78 | 6.24 | 6.57 | 10.31 | 36.12 | 23.66 |
+| SparseGPT | Unstructured | 20% | 6.23 | 7.64 | 10.12 | 13.32 | 2.86 | 6.39 | 6.67 | 10.48 | 37.47 | 24.40 |
+| SparseGPT | Unstructured | 30% | 6.43 | 7.80 | 10.38 | 13.59 | 2.95 | 6.58 | 6.78 | 10.66 | 38.40 | 24.92 |
+| SparseGPT | Unstructured | 40% | 6.78 | 8.14 | 10.85 | 14.02 | 3.13 | 6.91 | 6.97 | 10.99 | 39.46 | 25.49 |
+| SparseGPT | Unstructured | 50% | 7.63 | 8.94 | 11.98 | 15.32 | 3.58 | 7.69 | 7.50 | 12.00 | 43.16 | 27.66 |
+| SparseGPT | Unstructured | 60% | 10.78 | 12.30 | 16.05 | 20.50 | 5.58 | 10.69 | 9.66 | 16.69 | 59.62 | 38.00 |
+| SparseGPT | Semistructured 2:4 | 50% | 11.16 | 12.29 | 16.37 | 21.01 | 5.49 | 10.97 | 9.74 | 16.98 | 57.24 | 38.74 |
+| SparseGPT | Semistructured 4:8 | 50% | 8.94 | 10.07 | 13.53 | 17.42 | 4.26 | 8.84 | 8.32 | 13.71 | 45.92 | 30.53 |
+| Wanda | Unstructured | 10% | 6.54 | 8.18 | 10.79 | 14.41 | 2.93 | 6.77 | 7.17 | 11.36 | 39.81 | 26.28 |
+| Wanda | Unstructured | 20% | 7.51 | 9.34 | 12.66 | 16.94 | 3.20 | 7.82 | 8.43 | 13.21 | 49.76 | 32.45 |
+| Wanda | Unstructured | 30% | 8.74 | 10.50 | 14.75 | 19.66 | 3.51 | 9.01 | 9.50 | 15.23 | 60.33 | 39.14 |
+| Wanda | Unstructured | 40% | 9.98 | 11.49 | 16.41 | 21.76 | 3.86 | 9.92 | 10.27 | 16.74 | 70.31 | 45.01 |
+| Wanda | Unstructured | 50% | 12.57 | 13.66 | 19.81 | 25.57 | 4.56 | 11.88 | 11.92 | 19.92 | 82.77 | 52.10 |
+| Wanda | Unstructured | 60% | 24.44 | 26.30 | 37.73 | 52.50 | 8.15 | 22.01 | 19.88 | 39.89 | 158.39 | 109.80 |
+| Wanda | Semistructured 2:4 | 50% | 21.72 | 23.95 | 34.57 | 47.06 | 8.63 | 20.03 | 18.35 | 34.85 | 160.25 | 107.15 |
+| Wanda | Semistructured 4:8 | 50% | 14.70 | 16.37 | 24.30 | 31.36 | 5.68 | 14.32 | 14.05 | 23.78 | 101.32 | 63.68 |
+| GBLM | Unstructured | 10% | 6.00 | 7.45 | 9.78 | 12.93 | 2.75 | 6.18 | 6.51 | 10.24 | 35.19 | 23.24 |
+| GBLM | Unstructured | 20% | 6.05 | 7.48 | 9.85 | 12.98 | 2.76 | 6.21 | 6.54 | 10.28 | 35.30 | 23.38 |
+| GBLM | Unstructured | 30% | 6.19 | 7.57 | 10.01 | 13.15 | 2.81 | 6.32 | 6.60 | 10.40 | 35.48 | 23.49 |
+| GBLM | Unstructured | 40% | 6.52 | 7.85 | 10.46 | 13.61 | 2.93 | 6.60 | 6.79 | 10.75 | 36.56 | 24.20 |
+| GBLM | Unstructured | 50% | 7.54 | 8.70 | 11.72 | 15.21 | 3.32 | 7.38 | 7.38 | 11.92 | 40.33 | 26.95 |
+| GBLM | Unstructured | 60% | 12.10 | 13.36 | 17.55 | 23.71 | 5.21 | 10.86 | 10.65 | 18.57 | 58.75 | 39.91 |
+| GBLM | Semistructured 2:4 | 50% | 12.35 | 13.91 | 18.55 | 24.36 | 5.12 | 11.43 | 10.81 | 19.30 | 55.25 | 40.61 |
+| GBLM | Semistructured 4:8 | 50% | 9.19 | 10.45 | 14.21x | 18.55 | 3.93 | 8.84 | 8.62 | 14.34 | 46.05 | 31.78 |
+| Quantization Methods |
+| LLM.int8() | - | 50% | 6.02 | 7.51 | 9.83 | 13.00 | 2.75 | 6.20 | 6.54 | 10.30 | 35.37 | 23.33 |
+| AWQ | - | 75% | 6.18 | 7.62 | 10.04 | 13.20 | 2.81 | 6.35 | 6.64 | 10.45 | 36.15 | 23.77 |
+| GPTQ | - | 75% | 6.44 | 6.99 | 9.08 | 12.06 | 2.59 | 5.90 | 6.03 | 9.52 | 30.93 | 20.94 |
+</table>
+
+</page>
+<page number="35">
+<table_group page="35" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/34/TableGroup/10">
+<caption page="35" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/34/Caption/0">
+Table 27: Perplexity results for compressed LLAMA-2-13B models.
+</caption>
+<table page="35" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/34/Table/1">
+| Compression Method | Pruning Structure | Compression Rate | WikiText2 | Dolma Books | Dolma CommonCrawl | Dolma Reddit | Dolma Stack | Dolma Wiki | Dolma peS2o | AAE Literature | TwitterAAE | TwitterWhite |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Pruning Methods |  |  |  |  |  |  |  |  |  |  |  |
+| Magnitude | Unstructured | 10% | 4.90 | 6.15 | 8.12 | 10.94 | 2.37 | 5.19 | 5.55 | 8.58 | 27.52 | 19.06 |
+| Magnitude | Unstructured | 20% | 4.96 | 6.22 | 8.20 | 11.05 | 2.39 | 5.24 | 5.60 | 8.67 | 27.78 | 19.24 |
+| Magnitude | Unstructured | 30% | 5.15 | 6.43 | 8.47 | 11.35 | 2.44 | 5.40 | 5.74 | 8.93 | 28.62 | 19.74 |
+| Magnitude | Unstructured | 40% | 5.63 | 6.98 | 9.20 | 12.15 | 2.61 | 5.84 | 6.12 | 9.59 | 30.98 | 21.20 |
+| Magnitude | Unstructured | 50% | 6.82 | 8.38 | 10.95 | 14.04 | 3.08 | 6.94 | 7.08 | 11.21 | 37.45 | 25.42 |
+| Magnitude | Unstructured | 60% | 11.84 | 14.66 | 17.04 | 22.33 | 5.66 | 11.21 | 11.09 | 18.95 | 75.37 | 47.33 |
+| Magnitude | Semistructured 2:4 | 50% | 8.90 | 10.68 | 13.71 | 18.06 | 4.64 | 8.80 | 8.54 | 14.25 | 59.88 | 40.53 |
+| Magnitude | Semistructured 4:8 | 50% | 7.33 | 8.51 | 11.54 | 14.56 | 3.50 | 7.35 | 7.32 | 11.59 | 39.89 | 27.16 |
+| SparseGPT | Unstructured | 10% | 4.91 | 6.16 | 8.14 | 10.94 | 2.38 | 5.20 | 5.56 | 8.58 | 27.57 | 19.10 |
+| SparseGPT | Unstructured | 20% | 4.99 | 6.23 | 8.23 | 11.04 | 2.40 | 5.27 | 5.61 | 8.66 | 27.93 | 19.31 |
+| SparseGPT | Unstructured | 30% | 5.12 | 6.35 | 8.41 | 11.22 | 2.44 | 5.39 | 5.68 | 8.80 | 28.43 | 19.69 |
+| SparseGPT | Unstructured | 40% | 5.39 | 6.64 | 8.80 | 11.59 | 2.56 | 5.65 | 5.86 | 9.13 | 29.72 | 20.47 |
+| SparseGPT | Unstructured | 50% | 6.04 | 7.39 | 9.75 | 12.63 | 2.86 | 6.28 | 6.31 | 9.97 | 33.31 | 22.91 |
+| SparseGPT | Unstructured | 60% | 8.31 | 10.11 | 13.07 | 17.76 | 4.13 | 8.61 | 7.85 | 14.24 | 58.12 | 44.28 |
+| SparseGPT | Semistructured 2:4 | 50% | 9.05 | 10.08 | 13.85 | 18.97 | 4.28 | 9.32 | 8.12 | 14.26 | 58.03 | 45.58 |
+| SparseGPT | Semistructured 4:8 | 50% | 7.06 | 8.18 | 11.14 | 14.59 | 3.37 | 7.31 | 6.96 | 11.40 | 39.63 | 27.60 |
+| Wanda | Unstructured | 10% | 4.92 | 6.17 | 8.15 | 10.95 | 2.38 | 5.21 | 5.57 | 8.60 | 27.63 | 19.13 |
+| Wanda | Unstructured | 20% | 5.00 | 6.24 | 8.26 | 11.06 | 2.41 | 5.29 | 5.62 | 8.68 | 27.99 | 19.37 |
+| Wanda | Unstructured | 30% | 5.13 | 6.36 | 8.44 | 11.24 | 2.45 | 5.41 | 5.71 | 8.83 | 28.54 | 19.77 |
+| Wanda | Unstructured | 40% | 5.37 | 6.58 | 8.84 | 11.59 | 2.55 | 5.65 | 5.87 | 9.11 | 29.47 | 20.45 |
+| Wanda | Unstructured | 50% | 5.98 | 7.22 | 9.83 | 12.69 | 2.84 | 6.26 | 6.33 | 9.89 | 32.75 | 23.11 |
+| Wanda | Unstructured | 60% | 8.50 | 10.38 | 13.99 | 19.53 | 4.33 | 8.81 | 8.20 | 14.37 | 62.49 | 47.87 |
+| Wanda | Semistructured 2:4 | 50% | 8.99 | 10.65 | 14.72 | 20.09 | 4.04 | 8.99 | 8.51 | 14.77 | 55.49 | 41.18 |
+| Wanda | Semistructured 4:8 | 50% | 7.05 | 8.22 | 11.40 | 14.72 | 3.24 | 7.18 | 7.04 | 11.38 | 39.05 | 28.62 |
+| GBLM | Unstructured | 10% | 4.89 | 6.12 | 8.11 | 10.91 | 2.37 | 5.17 | 5.54 | 8.56 | 27.39 | 19.00 |
+| GBLM | Unstructured | 20% | 4.92 | 6.15 | 8.15 | 10.95 | 2.37 | 5.20 | 5.56 | 8.59 | 27.51 | 19.07 |
+| GBLM | Unstructured | 30% | 5.03 | 6.24 | 8.28 | 11.08 | 2.40 | 5.28 | 5.62 | 8.69 | 27.84 | 19.31 |
+| GBLM | Unstructured | 40% | 5.28 | 6.46 | 8.64 | 11.42 | 2.49 | 5.50 | 5.78 | 8.98 | 28.76 | 20.00 |
+| GBLM | Unstructured | 50% | 5.95 | 7.08 | 9.57 | 12.49 | 2.76 | 6.07 | 6.23 | 9.77 | 32.17 | 22.90 |
+| GBLM | Unstructured | 60% | 8.58 | 9.82 | 13.22 | 18.36 | 4.07 | 8.39 | 7.99 | 13.38 | 56.89 | 40.87 |
+| GBLM | Semistructured 2:4 | 50% | 9.22 | 10.62 | 14.76 | 20.45 | 4.10 | 9.19 | 8.47 | 14.79 | 61.15 | 46.16 |
+| GBLM | Semistructured 4:8 | 50% | 7.05 | 8.22 | 11.35 | 14.95 | 3.22 | 7.14 | 7.04 | 11.73 | 39.34 | 28.76 |
+| Quantization Methods |  |  |  |  |  |  |  |  |  |  |  |
+| LLM.int8() | - | 50% | 4.92 | 6.15 | 8.13 | 10.93 | 2.37 | 5.18 | 5.55 | 8.57 | 27.46 | 19.04 |
+| AWQ | - | 75% | 4.87 | 6.22 | 8.22 | 11.04 | 2.39 | 5.25 | 5.59 | 8.66 | 27.80 | 19.23 |
+| GPTO | - | 75% | 5.03 | 6.26 | 8.29 | 11.09 | 2.41 | 5.29 | 5.62 | 8.70 | 28.01 | 19.33 |
+</table>
+<caption page="35" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/34/Caption/2">
+Table 28: Perplexity results for compressed TÜLU-2-13B models.
+</caption>
+</table_group>
+
+<table page="35" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/34/Table/3">
+| Compression Method | Pruning Structure | Compression Rate | WikiText2 | Dolma | AAE Literature | TwitterAAE | TwitterWhite |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Books | CommonCrawl | Reddit | Stack | Wiki | peS2o |
+| Pruning Methods |
+| Magnitude | Unstructured | 10% | 5.36 | 6.73 | 8.94 | 11.92 | 2.60 | 5.63 | 6.07 | 9.33 | 31.54 | 21.56 |
+| Magnitude | Unstructured | 20% | 5.43 | 6.78 | 9.01 | 12.03 | 2.62 | 5.68 | 6.10 | 9.41 | 31.73 | 21.69 |
+| Magnitude | Unstructured | 30% | 5.64 | 7.02 | 9.30 | 12.37 | 2.68 | 5.86 | 6.25 | 9.69 | 32.51 | 22.13 |
+| Magnitude | Unstructured | 40% | 6.18 | 7.64 | 10.11 | 13.25 | 2.87 | 6.37 | 6.67 | 10.45 | 34.98 | 23.50 |
+| Magnitude | Unstructured | 50% | 7.58 | 9.13 | 12.16 | 15.52 | 3.45 | 7.73 | 7.77 | 12.33 | 42.29 | 27.75 |
+| Magnitude | Unstructured | 60% | 13.47 | 15.80 | 19.28 | 24.80 | 6.57 | 12.43 | 12.66 | 20.44 | 73.71 | 43.51 |
+| Magnitude | Semistructured 2:4 | 50% | 9.34 | 10.81 | 14.39 | 18.12 | 4.87 | 9.12 | 8.96 | 14.30 | 49.93 | 31.84 |
+| Magnitude | Semistructured 4:8 | 50% | 8.19 | 9.51 | 12.85 | 16.08 | 3.77 | 8.16 | 8.10 | 12.85 | 43.89 | 28.66 |
+| SparseGPT | Unstructured | 10% | 5.42 | 6.76 | 9.01 | 12.00 | 2.62 | 5.68 | 6.11 | 9.36 | 32.05 | 21.80 |
+| SparseGPT | Unstructured | 20% | 5.55 | 6.83 | 9.15 | 12.14 | 2.66 | 5.79 | 6.16 | 9.45 | 32.63 | 22.11 |
+| SparseGPT | Unstructured | 30% | 5.67 | 6.94 | 9.34 | 12.33 | 2.71 | 5.93 | 6.22 | 9.56 | 33.13 | 22.47 |
+| SparseGPT | Unstructured | 40% | 5.95 | 7.17 | 9.74 | 12.70 | 2.83 | 6.20 | 6.36 | 9.85 | 34.09 | 22.96 |
+| SparseGPT | Unstructured | 50% | 6.57 | 7.75 | 10.69 | 13.80 | 3.11 | 6.82 | 6.71 | 10.65 | 36.55 | 24.59 |
+| SparseGPT | Unstructured | 60% | 8.54 | 10.00 | 13.80 | 18.05 | 4.11 | 8.79 | 7.88 | 13.92 | 47.54 | 32.64 |
+| SparseGPT | Semistructured 2:4 | 50% | 8.81 | 10.11 | 14.24 | 18.59 | 4.18 | 9.06 | 7.98 | 14.16 | 45.94 | 32.39 |
+| SparseGPT | Semistructured 4:8 | 50% | 7.37 | 8.56 | 12.00 | 15.52 | 3.52 | 7.64 | 7.18 | 11.88 | 39.50 | 27.29 |
+| Wanda | Unstructured | 10% | 5.44 | 6.77 | 9.03 | 12.02 | 2.63 | 5.70 | 6.12 | 9.38 | 32.15 | 21.84 |
+| Wanda | Unstructured | 20% | 5.55 | 6.84 | 9.15 | 12.14 | 2.66 | 5.79 | 6.16 | 9.46 | 32.71 | 22.12 |
+| Wanda | Unstructured | 30% | 5.70 | 6.94 | 9.36 | 12.33 | 2.71 | 5.93 | 6.24 | 9.58 | 32.96 | 22.35 |
+| Wanda | Unstructured | 40% | 5.97 | 7.20 | 9.78 | 12.70 | 2.82 | 6.20 | 6.40 | 9.87 | 33.75 | 22.88 |
+| Wanda | Unstructured | 50% | 6.60 | 7.86 | 10.82 | 13.79 | 3.11 | 6.82 | 6.83 | 10.70 | 35.96 | 24.63 |
+| Wanda | Unstructured | 60% | 9.26 | 11.58 | 15.44 | 20.57 | 4.37 | 9.50 | 8.84 | 16.62 | 53.10 | 37.24 |
+| Wanda | Semistructured 2:4 | 50% | 9.39 | 11.56 | 15.43 | 20.20 | 4.29 | 9.37 | 8.90 | 15.97 | 52.91 | 36.72 |
+| Wanda | Semistructured 4:8 | 50% | 7.56 | 8.99 | 12.40 | 15.83 | 3.52 | 7.71 | 7.52 | 12.30 | 41.27 | 28.37 |
+| GBLM | Unstructured | 10% | 5.35 | 6.71 | 8.92 | 11.89 | 2.59 | 5.61 | 6.06 | 9.33 | 31.49 | 21.49 |
+| GBLM | Unstructured | 20% | 5.38 | 6.73 | 8.96 | 11.92 | 2.60 | 5.64 | 6.08 | 9.35 | 31.43 | 21.44 |
+| GBLM | Unstructured | 30% | 5.49 | 6.82 | 9.09 | 12.04 | 2.63 | 5.73 | 6.13 | 9.44 | 31.51 | 21.54 |
+| GBLM | Unstructured | 40% | 5.74 | 7.03 | 9.44 | 12.36 | 2.71 | 5.95 | 6.25 | 9.68 | 32.10 | 22.01 |
+| GBLM | Unstructured | 50% | 6.31 | 7.57 | 10.28 | 13.24 | 2.95 | 6.46 | 6.60 | 10.35 | 34.15 | 23.54 |
+| GBLM | Unstructured | 60% | 8.46 | 9.73 | 13.25 | 17.55 | 4.02 | 8.26 | 7.99 | 13.68 | 46.44 | 32.66 |
+| GBLM | Semistructured 2:4 | 50% | 8.84 | 10.53 | 14.18 | 18.51 | 4.06 | 8.75 | 8.36 | 14.53 | 47.68 | 32.93 |
+| GBLM | Semistructured 4:8 | 50% | 7.25 | 8.58 | 11.75 | 15.09 | 3.36 | 7.30 | 7.25 | 11.81 | 38.98 | 26.76 |
+| Quantization Methods |
+| LLM.int8() | - | 50% | 5.36 | 6.73 | 8.94 | 11.92 | 2.60 | 5.63 | 6.07 | 9.34 | 31.67 | 21.60 |
+| AWQ | - | 75% | 5.45 | 6.80 | 9.06 | 12.07 | 2.63 | 5.71 | 6.13 | 9.44 | 31.97 | 21.78 |
+| GPTQ | - | 75% | 5.48 | 6.83 | 9.11 | 12.08 | 2.65 | 5.75 | 6.15 | 9.46 | 32.13 | 21.85 |
+</table>
+
+</page>
+<page number="36">
+<table_group page="36" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/35/TableGroup/14">
+<caption page="36" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/35/Caption/0">
+Table 29: Bias and toxicity evaluation results for Pruning x SFT experiments. The uncompressed model here refers to our reproduced TÜLU-2-7B model.
+</caption>
+<table page="36" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/35/Table/1">
+| CompressionMethod | PruningStructure | CompressionRatio | Toxigen (\downarrow) | AdvPromptSet (\downarrow) | RealToxicityPrompts (\downarrow) | HolisticBiasR (\downarrow) | BOLD (\uparrow) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0% | 0.10% | 0.13% | 0.13% | 16.9% | 0.62 |
+| Quantized Models |
+| LLM.int8() | - | 50% | 0.19% | 0.01% | 0.11% | 16.5% | 0.62 |
+| AWQ | - | 75% | 0.19% | 0.00% | 0.12% | 16.2% | 0.62 |
+| GPTQ | - | 75% | 0.20% | 0.01% | 0.13% | 15.1% | 0.65 |
+| Prune \rightarrow SFT Models |
+| Magnitude | Unstructured | 50% | 0.23% | 0.01% | 0.07% | 17.3% | 0.59 |
+| Magnitude | 4:8 | 50% | 0.25% | 0.01% | 0.12% | 17.2% | 0.61 |
+| SparseGPT | Unstructured | 50% | 0.22% | 0.00% | 0.10% | 17.1% | 0.61 |
+| SparseGPT | 4:8 | 50% | 0.23% | 0.01% | 0.11% | 17.3% | 0.61 |
+| Wanda | Unstructured | 50% | 0.25% | 0.00% | 0.10% | 16.6% | 0.60 |
+| Wanda | 4:8 | 50% | 0.21% | 0.03% | 0.10% | 18.0% | 0.61 |
+| GBLM | Unstructured | 50% | 0.22% | 0.02% | 0.07% | 16.5% | 0.60 |
+| GBLM | 4:8 | 50% | 0.23% | 0.01% | 0.11% | 17.3% | 0.61 |
+| SFT \rightarrow Prune Models |
+| Magnitude | Unstructured | 50% | 0.73% | 0.02% | 0.24% | 17.1% | 0.42 |
+| Magnitude | 4:8 | 50% | 0.45% | 0.04% | 0.13% | 24.6% | 0.41 |
+| SparseGPT | Unstructured | 50% | 0.21% | 0.01% | 0.09% | 15.2% | 0.57 |
+| SparseGPT | 4:8 | 50% | 0.33% | 0.02% | 0.16% | 18.3% | 0.59 |
+| Wanda | Unstructured | 50% | 0.27% | 0.00% | 0.13% | 14.6% | 0.57 |
+| Wanda | 4:8 | 50% | 0.37% | 0.01% | 0.13% | 15.1% | 0.49 |
+| GBLM | Unstructured | 50% | 0.74% | 0.14% | 0.40% | 13.6% | 0.53 |
+| GBLM | 4:8 | 50% | 1.43% | 0.16% | 0.44% | 12.7% | 0.41 |
+</table>
+<caption page="36" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/35/Caption/2">
+Table 30: UNQOVER representational bias evaluation results for Pruning x SFT experiments. The uncompressed model here refers to our reproduced T\ddot{\text{ULU-2-7B}} model.
+</caption>
+</table_group>
+
+<table page="36" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/35/Table/3">
+| CompressionMethod | PruningStructure | CompressionRatio | Religion | Country | Ethnicity | Gender-occupation |
+| --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0% | 0.48 | 0.55 | 0.42 | 0.73 |
+| Quantized Models |
+| LLM.int8() | - | 50% | 0.45 | 0.53 | 0.38 | 0.73 |
+| AWQ | - | 75% | 0.45 | 0.54 | 0.41 | 0.73 |
+| GPTQ | - | 75% | 0.45 | 0.53 | 0.42 | 0.73 |
+| **Prune \rightarrow SFT Models** |
+| Magnitude | Unstructured | 50% | 0.46 | 0.56 | 0.46 | 0.74 |
+| Magnitude | 4:8 | 50% | 0.46 | 0.55 | 0.46 | 0.75 |
+| SparseGPT | Unstructured | 50% | 0.44 | 0.55 | 0.53 | 0.76 |
+| SparseGPT | 4:8 | 50% | 0.46 | 0.55 | 0.46 | 0.76 |
+| Wanda | Unstructured | 50% | 0.45 | 0.55 | 0.45 | 0.75 |
+| Wanda | 4:8 | 50% | 0.44 | 0.54 | 0.43 | 0.75 |
+| GBLM | Unstructured | 50% | 0.45 | 0.54 | 0.43 | 0.75 |
+| GBLM | 4:8 | 50% | 0.46 | 0.55 | 0.46 | 0.76 |
+| **SFT \rightarrow Prune Models** |
+| Magnitude | Unstructured | 50% | 0.38 | 0.51 | 0.35 | 0.73 |
+| Magnitude | 4:8 | 50% | 0.43 | 0.53 | 0.36 | 0.72 |
+| SparseGPT | Unstructured | 50% | 0.39 | 0.52 | 0.37 | 0.74 |
+| SparseGPT | 4:8 | 50% | 0.44 | 0.54 | 0.40 | 0.74 |
+| Wanda | Unstructured | 50% | 0.41 | 0.53 | 0.37 | 0.72 |
+| Wanda | 4:8 | 50% | 0.44 | 0.53 | 0.39 | 0.72 |
+| GBLM | Unstructured | 50% | 0.46 | 0.55 | 0.42 | 0.74 |
+| GBLM | 4:8 | 50% | 0.48 | 0.55 | 0.44 | 0.73 |
+</table>
+
+</page>
+<page number="37">
+<table_group page="37" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/36/TableGroup/12">
+<caption page="37" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/36/Caption/0">
+Table 31: BBQ representational bias evaluation results for Pruning x SFT experiments. The uncompressed model here refers to our reproduced TÜLU-2-7B model.
+</caption>
+<table page="37" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/36/Table/1">
+| CompressionMethod | PruningStructure | CompressionRatio | % Avg. Acc.Ambiguous | % Avg. Acc.Disambiguated | Avg. BiasAmbiguous | Avg. BiasDisambiguated |
+| --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0% | 13.5 | 66.6 | 0.12 | 0.17 |
+| Quantized Models |
+| LLM.int8() | - | 50% | 13.2 | 66.4 | 0.12 | 0.16 |
+| AWQ | - | 75% | 12.6 | 66.3 | 0.11 | 0.15 |
+| GPTQ | - | 75% | 12.6 | 63.5 | 0.12 | 0.15 |
+| Prune -&gt; SFT Models |
+| Magnitude | Unstructured | 50% | 13.8 | 56.0 | 0.18 | 0.16 |
+| Magnitude | 4:8 | 50% | 11.4 | 61.4 | 0.11 | 0.14 |
+| SparseGPT | Unstructured | 50% | 11.8 | 65.1 | 0.11 | 0.15 |
+| SparseGPT | 4:8 | 50% | 14.7 | 50.6 | 0.23 | 0.16 |
+| Wanda | Unstructured | 50% | 15.0 | 63.5 | 0.14 | 0.18 |
+| Wanda | 4:8 | 50% | 11.9 | 60.4 | 0.11 | 0.14 |
+| GBLM | Unstructured | 50% | 12.6 | 63.8 | 0.11 | 0.15 |
+| GBLM | 4:8 | 50% | 14.7 | 50.6 | 0.23 | 0.16 |
+| SFT -&gt; Prune Models |
+| Magnitude | Unstructured | 50% | 10.3 | 49.1 | 0.14 | 0.11 |
+| Magnitude | 4:8 | 50% | 7.1 | 48.5 | 0.07 | 0.08 |
+| SparseGPT | Unstructured | 50% | 11.6 | 56.6 | 0.14 | 0.14 |
+| SparseGPT | 4:8 | 50% | 11.0 | 56.9 | 0.10 | 0.12 |
+| Wanda | Unstructured | 50% | 11.7 | 58.6 | 0.13 | 0.14 |
+| Wanda | 4:8 | 50% | 11.3 | 56.5 | 0.10 | 0.13 |
+| GBLM | Unstructured | 50% | 8.3 | 61.4 | 0.08 | 0.11 |
+| GBLM | 4:8 | 50% | 11.1 | 49.5 | 0.12 | 0.12 |
+</table>
+<caption page="37" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/36/Caption/2">
+Table 32: Truthfulness evaluation results for Pruning x SFT experiments. The uncompressed model here refers to our reproduced Tülu-2-7B model. The truthfulness result of the official Tülu-2-7B model is shown in Table 19.
+</caption>
+</table_group>
+
+<table page="37" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/36/Table/3">
+| Compression Method | Pruning Structure | % Compression Rate | % Information | % Truthful | % (Information and Truthful) |
+| --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0 | 88.4 | 68.9 | 57.7 |
+| *Quantization Models* |
+| LLM.int8() | - | 50 | 88.5 | 69.3 | 57.8 |
+| AWQ | - | 75 | 91.9 | 63.2 | 55.3 |
+| GPTQ | - | 75 | 87.9 | 68.4 | 56.3 |
+| *Prune -&gt; SFT Models* |
+| Magnitude | Unstructured | 50 | 95.2 | 41.9 | 31.5 |
+| Magnitude | Semistructured 4:8 | 50 | 94.1 | 43.8 | 40.3 |
+| SparseGPT | Unstructured | 50 | 95.1 | 41.1 | 36.5 |
+| SparseGPT | Semistructured 4:8 | 50 | 94.9 | 46.9 | 42.0 |
+| Wanda | Unstructured | 50 | 91.2 | 44.2 | 35.9 |
+| Wanda | Semistructured 4:8 | 50 | 97.1 | 37.9 | 35.5 |
+| GBLM | Unstructured | 50 | 93.9 | 41.5 | 35.9 |
+| GBLM | Semistructured 4:8 | 50 | 94.9 | 46.9 | 42.0 |
+| *SFT -&gt; Prune Models* |
+| Magnitude | Unstructured | 50 | 77.1 | 47.0 | 30.5 |
+| Magnitude | Semistructured 4:8 | 50 | 82.4 | 52.8 | 37.5 |
+| SparseGPT | Unstructured | 50 | 95.1 | 62.3 | 57.5 |
+| SparseGPT | Semistructured 4:8 | 50 | 85.9 | 50.4 | 36.7 |
+| Wanda | Unstructured | 50 | 94.1 | 47.5 | 41.9 |
+| Wanda | Semistructured 4:8 | 50 | 86.1 | 62.6 | 48.8 |
+| GBLM | Unstructured | 50 | 91.1 | 46.1 | 37.9 |
+| GBLM | Semistructured 4:8 | 50 | 84.5 | 44.6 | 29.7 |
+</table>
+
+</page>
+<page number="38">
+<table_group page="38" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/37/TableGroup/9">
+<caption page="38" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/37/Caption/0">
+Table 33: Perplexity results for Prune x SFT experiments. The uncompressed model here refers to our reproduced T\ddot{\text{U}}\text{L}\text{U}-2-7B model. The perplexity results of the official T\ddot{\text{U}}\text{L}\text{U}-2-7B model is shown in Table 24.
+</caption>
+<table page="38" section="D.4 Full Results on Prune x SFT Experiments" source="author" id="/page/37/Table/1">
+| CompressionMethod | PruningStructure | CompressionRate | WikiText2 | DolmaBooks | DolmaCommonCrawl | DolmaReddit | DolmaStack | DolmaWiki | DolmapeS2o | AAELiterature | TwitterAAE | TwitterWhite |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Uncompressed Model |
+| - | - | 0% | 5.89 | 7.24 | 9.60 | 12.77 | 2.64 | 6.02 | 6.33 | 9.98 | 32.90 | 22.13 |
+| Quantization Models |
+| LLM.int8() | - | 50% | 5.89 | 7.24 | 9.60 | 12.77 | 2.64 | 6.02 | 6.33 | 10.19 | 33.64 | 22.58 |
+| AWQ | - | 75% | 5.89 | 7.24 | 9.60 | 12.77 | 2.64 | 6.02 | 6.33 | 10.27 | 33.96 | 22.89 |
+| GPTQ | - | 75% | 5.89 | 7.24 | 9.60 | 12.77 | 2.64 | 6.02 | 6.33 | 10.02 | 33.02 | 22.18 |
+| Prune → SFT Models |
+| Magnitude | Unstructured | 50% | 7.19 | 8.68 | 11.83 | 15.01 | 3.04 | 7.25 | 7.21 | 11.84 | 43.03 | 27.37 |
+| Magnitude | Semistructured 4:8 | 50% | 7.77 | 9.18 | 12.52 | 15.75 | 3.20 | 7.74 | 7.65 | 12.58 | 43.96 | 28.22 |
+| SparseGPT | Unstructured | 50% | 6.47 | 8.13 | 10.93 | 13.98 | 3.00 | 6.73 | 6.91 | 10.99 | 37.03 | 24.51 |
+| SparseGPT | Semistructured 4:8 | 50% | 7.33 | 8.50 | 11.46 | 14.50 | 3.17 | 7.41 | 7.19 | 11.83 | 39.32 | 25.61 |
+| Wanda | Unstructured | 50% | 6.79 | 8.10 | 10.90 | 13.98 | 2.96 | 6.91 | 6.92 | 11.02 | 36.49 | 24.13 |
+| Wanda | Semistructured 4:8 | 50% | 7.42 | 8.69 | 11.68 | 14.84 | 3.12 | 7.43 | 7.32 | 11.81 | 39.32 | 25.81 |
+| GBLM | Unstructured | 50% | 6.79 | 8.06 | 10.86 | 13.95 | 2.95 | 6.89 | 6.89 | 11.01 | 36.10 | 24.02 |
+| GBLM | Semistructured 4:8 | 50% | 7.47 | 8.70 | 11.68 | 14.79 | 3.12 | 7.40 | 7.33 | 11.83 | 39.32 | 25.61 |
+| SFT → Prune Models |
+| Magnitude | Unstructured | 50% | 15.46 | 18.74 | 26.49 | 33.74 | 8.43 | 15.29 | 15.01 | 23.08 | 220.26 | 89.22 |
+| Magnitude | Semistructured 4:8 | 50% | 19.13 | 43.24 | 60.91 | 75.35 | 9.60 | 31.71 | 23.65 | 46.80 | 320.11 | 161.19 |
+| SparseGPT | Unstructured | 50% | 7.77 | 9.20 | 12.35 | 15.75 | 3.72 | 7.84 | 7.70 | 12.26 | 43.44 | 28.48 |
+| SparseGPT | Semistructured 4:8 | 50% | 9.33 | 10.68 | 14.36 | 18.54 | 4.51 | 9.26 | 8.54 | 14.48 | 51.61 | 34.57 |
+| Wanda | Unstructured | 50% | 7.71 | 9.01 | 12.26 | 15.78 | 3.51 | 7.71 | 7.65 | 12.29 | 41.06 | 27.39 |
+| Wanda | Semistructured 4:8 | 50% | 9.70 | 11.11 | 14.80 | 19.12 | 4.18 | 9.24 | 9.01 | 15.22 | 48.70 | 33.11 |
+| GBLM | Unstructured | 50% | 7.92 | 8.94 | 12.13 | 16.21 | 3.39 | 7.56 | 7.54 | 12.33 | 41.38 | 28.08 |
+| GBLM | Semistructured 4:8 | 50% | 10.75 | 11.21 | 15.32 | 20.68 | 4.20 | 9.40 | 9.19 | 15.59 | 50.10 | 35.59 |
+</table>
+</table_group>
+
+</page>
+</paper>

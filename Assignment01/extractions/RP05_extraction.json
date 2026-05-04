@@ -1,0 +1,842 @@
+{
+  "rp_id": "RP05",
+  "year": {
+    "value": 2019,
+    "ev": {
+      "page": 1,
+      "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+      "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi Paul G. Allen School of Computer Science & Engineering, University of Washington",
+      "bbox": [
+        90.82619647355163,
+        113.47265625,
+        509.6775818639798,
+        156.23046875
+      ],
+      "block_id": "/page/0/Text/1"
+    }
+  },
+  "first_author": {
+    "value": "Zellers",
+    "ev": {
+      "page": 1,
+      "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+      "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi",
+      "bbox": [
+        90.82619647355163,
+        113.47265625,
+        509.6775818639798,
+        156.23046875
+      ],
+      "block_id": "/page/0/Text/1"
+    }
+  },
+  "authors": [
+    {
+      "value": "Rowan Zellers",
+      "ev": {
+        "page": 1,
+        "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+        "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi",
+        "bbox": [
+          90.82619647355163,
+          113.47265625,
+          509.6775818639798,
+          156.23046875
+        ],
+        "block_id": "/page/0/Text/1"
+      }
+    },
+    {
+      "value": "Ari Holtzman",
+      "ev": {
+        "page": 1,
+        "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+        "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi",
+        "bbox": [
+          90.82619647355163,
+          113.47265625,
+          509.6775818639798,
+          156.23046875
+        ],
+        "block_id": "/page/0/Text/1"
+      }
+    },
+    {
+      "value": "Yonatan Bisk",
+      "ev": {
+        "page": 1,
+        "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+        "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi",
+        "bbox": [
+          90.82619647355163,
+          113.47265625,
+          509.6775818639798,
+          156.23046875
+        ],
+        "block_id": "/page/0/Text/1"
+      }
+    },
+    {
+      "value": "Ali Farhadi",
+      "ev": {
+        "page": 1,
+        "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+        "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi",
+        "bbox": [
+          90.82619647355163,
+          113.47265625,
+          509.6775818639798,
+          156.23046875
+        ],
+        "block_id": "/page/0/Text/1"
+      }
+    },
+    {
+      "value": "Yejin Choi",
+      "ev": {
+        "page": 1,
+        "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+        "quote": "Rowan Zellers Ari Holtzman Yonatan Bisk Ali Farhadi Yejin Choi",
+        "bbox": [
+          90.82619647355163,
+          113.47265625,
+          509.6775818639798,
+          156.23046875
+        ],
+        "block_id": "/page/0/Text/1"
+      }
+    }
+  ],
+  "title": {
+    "value": "HellaSwag: Can a Machine Really Finish Your Sentence?",
+    "ev": {
+      "page": 1,
+      "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+      "quote": "# Hella Swaq: Can a Machine Really Finish Your Sentence?",
+      "bbox": [
+        126.1057934508816,
+        71.537109375,
+        472.1460957178841,
+        84.693359375
+      ],
+      "block_id": "/page/0/SectionHeader/0"
+    }
+  },
+  "venue": {
+    "value": "ACL 2019",
+    "ev": {
+      "page": 1,
+      "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+      "quote": "https://rowanzellers.com/hellaswag",
+      "bbox": [
+        193.6624685138539,
+        157.45325022261798,
+        410.5944584382871,
+        168.9755859375
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "doi": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "HellaSwag is a 70k-question commonsense NLI benchmark built via Adversarial Filtering (AF) with GPT generations and BERT discriminators; it is easy for humans (>95%) but hard for state-of-the-art models (<48%).",
+    "ev": {
+      "page": 1,
+      "section": "**Abstract **",
+      "quote": "we show that commonsense inference still proves difficult for even stateof-the-art models, by presenting HellaSwag. a new challenge dataset. Though its questions are trivial for humans (>95\\% accuracy), state-of-the-art models struggle (<48%).",
+      "bbox": [
+        87.3046875,
+        372.6393588601959,
+        275.48110831234254,
+        561.5832591273374
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "datasets": [
+    {
+      "value": "HellaSwag",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "We use Adversarial Filtering (AF), a data-collection paradigm in which a series of discriminators is used to select a challenging set of generated wrong answers. AF is surprisingly effective towards this goal: the resulting dataset of 70k problems is easy for humans (95.6% accuracy), yet challenging for machines (<50%).",
+        "bbox": [
+          70.134765625,
+          240.1015625,
+          291.9949622166247,
+          440.8691006233303
+        ],
+        "block_id": "/page/1/Text/1"
+      }
+    },
+    {
+      "value": "ActivityNet Captions",
+      "ev": {
+        "page": 4,
+        "section": "4.1 ActivityNet Captions",
+        "quote": "We start by including video captions from the ActivityNet Captions dataset (Krishna et al., 2017).",
+        "bbox": [
+          305.275390625,
+          620.6078338623047,
+          525.5452880859375,
+          739.9099502563477
+        ],
+        "block_id": "/page/3/Text/14"
+      }
+    },
+    {
+      "value": "WikiHow",
+      "ev": {
+        "page": 5,
+        "section": "4.2 WikiHow: A New Testbed",
+        "quote": "We next consider a new and challenging testbed for commonsense reasoning: completing how-to articles from WikiHow, an online how-to manual. We scrape 80k context and follow-up paragraphs from WikiHow",
+        "bbox": [
+          71.0078125,
+          158.697265625,
+          290.2693176269531,
+          265.2049560546875
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    },
+    {
+      "value": "SWAG",
+      "ev": {
+        "page": 2,
+        "section": "2 Background",
+        "quote": "SWAG is a dataset for commonsense NLI. For each question, a model is given a **context** from a video caption and four **ending choices** for what might happen next.",
+        "bbox": [
+          305.56640625,
+          486.60552092609083,
+          526.9420654911838,
+          552.1513671875
+        ],
+        "block_id": "/page/1/Text/9"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "70k problems total: 25k ActivityNet contexts and 45k WikiHow contexts; 10K validation and 10K test (5k in-domain + 5k zero-shot each).",
+    "ev": {
+      "page": 5,
+      "section": "4.4 Zero-shot categories for evaluation",
+      "quote": "we craft two subsets: one containing 5k 'in-domain' examples that come from categories as seen during training (Figure [8)](#page-5-0), and another with 5k 'zero-shot' examples from randomly chosen held-out categories. In total, there are 70k dataset examples.",
+      "bbox": [
+        305.857421875,
+        462.5244140625,
+        525.5453491210938,
+        610.1840515136719
+      ],
+      "block_id": "/page/4/Text/13"
+    }
+  },
+  "models_used": [
+    {
+      "value": "BERT-Large",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| BERT-Large | **46.7** | **47.3** | **50.2** | **49.7** | **43.3** | **45.0** | **54.7** | **51.7** | **42.9** | **45.0** |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "BERT-Base",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| BERT-Base | 39.5 | 40.5 | 42.9 | 42.8 | 36.1 | 38.3 | 48.9 | 45.7 | 34.9 | 37.7 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "OpenAI GPT",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| OpenAI GPT | 41.9 | 41.7 | 45.3 | 44.0 | 38.6 | 39.3 | 46.4 | 43.8 | 39.8 | 40.5 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "ESIM+ELMo",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| ESIM+ELMo | 33.6 | 33.3 | 35.7 | 34.2 | 31.5 | 32.3 | 37.7 | 36.6 | 31.6 | 31.5 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LSTM+BERT-Base",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| LSTM+BERT-Base | 35.9 | 36.2 | 38.7 | 38.2 | 33.2 | 34.1 | 40.5 | 40.5 | 33.7 | 33.8 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LSTM+ELMo",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| LSTM+ELMo | 31.7 | 31.4 | 33.2 | 32.8 | 30.4 | 30.0 | 33.8 | 33.3 | 30.8 | 30.4 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LSTM+GloVe",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| LSTM+GloVe | 31.9 | 31.7 | 34.3 | 32.9 | 29.5 | 30.4 | 34.3 | 33.8 | 30.7 | 30.5 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "fastText",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| fastText | 30.9 | 31.6 | 33.8 | 32.9 | 28.0 | 30.2 | 27.7 | 28.4 | 32.4 | 33.3 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "accuracy (%) on four-way multiple choice",
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Table 1: Performance of models, evaluated with accuracy (%).We report results on the full validation and test sets (Overall), as well as results on informative subsets of the data",
+        "bbox": [
+          71.298828125,
+          216.6669921875,
+          525.865234375,
+          263.74920654296875
+        ],
+        "block_id": "/page/5/Caption/1",
+        "source_table": "Table 1"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "BERT-Large reaches 47.3% test accuracy on HellaSwag overall vs 95.6% human accuracy (gap > 48%)",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "| BERT-Large | **46.7** | **47.3** | ... | Human | 95.7 | 95.6 |",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "BERT-Large drops from 86% on SWAG to 47.3% on HellaSwag, while ESIM+ELMo drops from 59% (SWAG) to 33.3% (HellaSwag)",
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "while ESIM+ELMo obtained 59% accuracy on SWAG, it obtains only 33.3% accuracy on HellaSwag.",
+        "bbox": [
+          71.298828125,
+          549.6845703125,
+          290.270751953125,
+          656.324951171875
+        ],
+        "block_id": "/page/5/Text/13"
+      }
+    },
+    {
+      "value": "BERT-Large zero-shot test accuracy 45.0% vs in-domain 49.7%, a 4.7-point drop on novel categories",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "egories. Performance drops roughly 5% on the test fold, which suggests that the finetuning is not enough for BERT to learn to generalize to novel activities or how-to categories.",
+        "bbox": [
+          71.58984375,
+          242.568359375,
+          290.43359375,
+          295.1279296875
+        ],
+        "block_id": "/page/6/Text/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "BERT-Large transfers poorly: trained on SWAG, evaluated on HellaSwag scores only 34.6%; SWAG models on WikiHow get just 28%",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "Figure 9: Transfer experiments from SWAG to Hella-Swag and vice versa, evaluated on the validation sets. Overall, a BERT-Large that is trained on SWAG hardly generalizes to HellaSwag: it scores 34.6%.",
+        "bbox": [
+          71.298828125,
+          173.0869140625,
+          290.2772521972656,
+          220.13031005859375
+        ],
+        "block_id": "/page/6/Caption/1"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "benchmark",
+    "ev": {
+      "page": 1,
+      "section": "**Abstract **",
+      "quote": "we show that commonsense inference still proves difficult for even stateof-the-art models, by presenting HellaSwag. a new challenge dataset.",
+      "bbox": [
+        87.3046875,
+        372.6393588601959,
+        275.48110831234254,
+        561.5832591273374
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "method_family": {
+    "value": "none",
+    "ev": {
+      "page": 1,
+      "section": "**Abstract **",
+      "quote": "we show that commonsense inference still proves difficult for even stateof-the-art models, by presenting HellaSwag. a new challenge dataset.",
+      "bbox": [
+        87.3046875,
+        372.6393588601959,
+        275.48110831234254,
+        561.5832591273374
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "quantization_method_name": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "bit_widths_tested": [],
+  "quantization_target": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "hardware": [
+    {
+      "value": "RTX 2080 Ti (used for compute scaling extrapolation)",
+      "ev": {
+        "page": 8,
+        "section": "6.1 How easy might HellaSwag be for future discriminators?",
+        "quote": "Figure 12: Estimated pretraining hours required to reach a desired accuracy on HellaSwag. We estimate perfomance with respect to a RTX 2080 Ti - a modern, fast GPU",
+        "bbox": [
+          305.857421875,
+          232.88861083984375,
+          525.5477905273438,
+          326.5372314453125
+        ],
+        "block_id": "/page/7/Caption/8"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "absence",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "Builds a 70k commonsense NLI benchmark that is trivial for humans (>95%) yet hard for state-of-the-art models (<50%).",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "the resulting dataset of 70k problems is easy for humans (95.6% accuracy), yet challenging for machines (<50%).",
+        "bbox": [
+          70.134765625,
+          240.1015625,
+          291.9949622166247,
+          440.8691006233303
+        ],
+        "block_id": "/page/1/Text/1"
+      }
+    },
+    {
+      "value": "Identifies a Goldilocks zone of generation length where outputs fool BERT yet humans easily reject them.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "Our investigation reveals a Goldilocks zone – roughly three sentences of context, and two generated sentences – wherein generations are largely nonsensical, even though state-of-the-art discriminators cannot reliably tell the difference",
+        "bbox": [
+          70.55919395465995,
+          442.7900390625,
+          291.9949622166247,
+          631.3125556544968
+        ],
+        "block_id": "/page/1/Text/2"
+      }
+    },
+    {
+      "value": "Includes a zero-shot evaluation split using held-out categories to measure generalization beyond seen domains.",
+      "ev": {
+        "page": 5,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "another with 5k 'zero-shot' examples from randomly chosen held-out categories. In total, there are 70k dataset examples.",
+        "bbox": [
+          305.857421875,
+          462.5244140625,
+          525.5453491210938,
+          610.1840515136719
+        ],
+        "block_id": "/page/4/Text/13"
+      }
+    },
+    {
+      "value": "Releases dataset and code publicly for community use.",
+      "ev": {
+        "page": 1,
+        "section": "Hella Swaq: Can a Machine Really Finish Your Sentence?",
+        "quote": "https://rowanzellers.com/hellaswag",
+        "bbox": [
+          193.6624685138539,
+          157.45325022261798,
+          410.5944584382871,
+          168.9755859375
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Tests only models available in 2019 (BERT, GPT, ELMo); newer LLMs may quickly close the gap.",
+      "ev": {
+        "page": 8,
+        "section": "6.1 How easy might HellaSwag be for future discriminators?",
+        "quote": "Answering this question is challenging because *these models don't exist (or are unavailable) at* *the time of writing*.",
+        "bbox": [
+          71.298828125,
+          460.8798828125,
+          290.269287109375,
+          649.4259490966797
+        ],
+        "block_id": "/page/7/Text/6"
+      }
+    },
+    {
+      "value": "Compute extrapolation to human-level (10^9 GPU-hours) is a rough Roofline estimate, not a measurement.",
+      "ev": {
+        "page": 8,
+        "section": "6.2 How well does pretraining scale?",
+        "quote": "This estimation is a rough estimate: we convert reported TPU runtimes to our benchmark RTX 2080 Ti GPU using the Roofline model",
+        "bbox": [
+          306.1484375,
+          480.6142578125,
+          525.5546264648438,
+          642.4179382324219
+        ],
+        "block_id": "/page/7/Text/11"
+      }
+    },
+    {
+      "value": "Acknowledges that future models may solve HellaSwag by picking up on spurious patterns rather than reasoning.",
+      "ev": {
+        "page": 9,
+        "section": "6.2 How well does pretraining scale?",
+        "quote": "future models might answer correctly only by picking up on spurious patterns, in which case a new development of the benchmark – using these models as adversaries – would place us in the same position as we are right now.",
+        "bbox": [
+          71.58984375,
+          64.958984375,
+          290.43359375,
+          144.16693115234375
+        ],
+        "block_id": "/page/8/Text/0"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Covers only English text from ActivityNet captions and WikiHow articles; no multilingual or other domains.",
+      "ev": {
+        "page": 5,
+        "section": "4.2 WikiHow: A New Testbed",
+        "quote": "We scrape 80k context and follow-up paragraphs from WikiHow, covering such diverse topics as \"how to make an origami owl\" to \"how to survive a bank robbery.\"",
+        "bbox": [
+          71.0078125,
+          158.697265625,
+          290.2693176269531,
+          265.2049560546875
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    },
+    {
+      "value": "Benchmark is static; once solved, requires a new dataset crowdsourced via the same process.",
+      "ev": {
+        "page": 9,
+        "section": "6.3 Towards a future of evolving benchmarks",
+        "quote": "What happens when HellaSwag gets solved? We believe the answer is simple: crowdsource another dataset, with the same exact format, and see where models fail.",
+        "bbox": [
+          70.716796875,
+          337.951171875,
+          290.2693176269531,
+          459.1029357910156
+        ],
+        "block_id": "/page/8/Text/3"
+      }
+    },
+    {
+      "value": "Does not evaluate model robustness under quantization, compression, or any post-training modification.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    {
+      "value": "Does not report compute, energy, or per-token latency for any of the evaluated models.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Crowdsource a new dataset in the same format once HellaSwag is solved, using future state-of-the-art models as adversaries.",
+      "ev": {
+        "page": 9,
+        "section": "6.3 Towards a future of evolving benchmarks",
+        "quote": "What happens when HellaSwag gets solved? We believe the answer is simple: crowdsource another dataset, with the same exact format, and see where models fail.",
+        "bbox": [
+          70.716796875,
+          337.951171875,
+          290.2693176269531,
+          459.1029357910156
+        ],
+        "block_id": "/page/8/Text/3"
+      }
+    },
+    {
+      "value": "Move benchmarks toward an adversarial co-evolution loop with state-of-the-art generators and discriminators.",
+      "ev": {
+        "page": 9,
+        "section": "7 Conclusion",
+        "quote": "we provided insight into the inner workings of pretrained models, and suggest a path for NLP progress going forward: towards benchmarks that adversarially co-evolve with evolving state-of-the-art models.",
+        "bbox": [
+          306.1484375,
+          64.5478515625,
+          525.5453491210938,
+          157.7159423828125
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 2,
+        "section": "2 Background",
+        "quote": "Short for Harder Endings, Longer contexts, and Low-shot Activities for Situations With Adversarial Generations. Dataset and code at https://rowanzellers.com/hellaswag.",
+        "bbox": [
+          70.55919395465995,
+          735.10546875,
+          290.4937027707808,
+          764.7729296527159
+        ],
+        "block_id": "/page/1/Footnote/4"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

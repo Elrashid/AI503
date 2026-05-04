@@ -1,0 +1,1077 @@
+{
+  "rp_id": "RP28",
+  "year": {
+    "value": 2024,
+    "ev": {
+      "page": 1,
+      "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+      "quote": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+      "bbox": [
+        108.17578125,
+        80.05078125,
+        503.5605773925781,
+        117.53240966796875
+      ],
+      "block_id": "/page/0/SectionHeader/2"
+    }
+  },
+  "first_author": {
+    "value": "Ashkboos",
+    "ev": {
+      "page": 1,
+      "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+      "quote": "Saleh Ashkboos†∗ ETH Zurich",
+      "bbox": [
+        112.060546875,
+        135.25531005859375,
+        265.658203125,
+        165.12890625
+      ],
+      "block_id": "/page/0/Text/3"
+    }
+  },
+  "authors": [
+    {
+      "value": "Saleh Ashkboos",
+      "ev": {
+        "page": 1,
+        "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+        "quote": "Saleh Ashkboos†∗ ETH Zurich",
+        "bbox": [
+          112.060546875,
+          135.25531005859375,
+          265.658203125,
+          165.12890625
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Maximilian L. Croci",
+      "ev": {
+        "page": 1,
+        "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+        "quote": "Maximilian L. Croci† Microsoft Research t-mcroci@microsoft.com",
+        "bbox": [
+          334.986328125,
+          135.25531005859375,
+          468.1343688964844,
+          168.22698974609375
+        ],
+        "block_id": "/page/0/Text/10"
+      }
+    },
+    {
+      "value": "Marcelo Gennari do Nascimento",
+      "ev": {
+        "page": 1,
+        "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+        "quote": "Marcelo Gennari do Nascimento",
+        "bbox": [
+          113.255859375,
+          185.23828125,
+          252.42825317382812,
+          196.840087890625
+        ],
+        "block_id": "/page/0/Text/5"
+      }
+    },
+    {
+      "value": "James Hensman",
+      "ev": {
+        "page": 1,
+        "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+        "quote": "James Hensman Microsoft Research jameshensman@microsoft.com",
+        "bbox": [
+          112.359375,
+          236.989501953125,
+          269.39459228515625,
+          268.45098876953125
+        ],
+        "block_id": "/page/0/Text/9"
+      }
+    },
+    {
+      "value": "Torsten Hoefler",
+      "ev": {
+        "page": 1,
+        "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+        "quote": "Torsten Hoefler ETH Zurich torsten.hoefler@inf.ethz.ch",
+        "bbox": [
+          336.6280212402344,
+          185.625,
+          498.02215576171875,
+          218.33905029296875
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    }
+  ],
+  "title": {
+    "value": "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
+    "ev": {
+      "page": 1,
+      "section": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+      "quote": "SLICEGPT: COMPRESS LARGE LANGUAGE MODELS BY DELETING ROWS AND COLUMNS",
+      "bbox": [
+        108.17578125,
+        80.05078125,
+        503.5605773925781,
+        117.53240966796875
+      ],
+      "block_id": "/page/0/SectionHeader/2"
+    }
+  },
+  "venue": {
+    "value": "ICLR 2024",
+    "ev": {
+      "page": 1,
+      "section": "Page header",
+      "quote": "Published as a conference paper at ICLR 2024",
+      "bbox": [
+        107.578125,
+        27.0703125,
+        293.0950927734375,
+        37.77606201171875
+      ],
+      "block_id": "/page/0/PageHeader/0",
+      "recovered_via": "PyMuPDF furniture sidecar"
+    }
+  },
+  "doi": {
+    "value": "arXiv:2401.15024",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "SliceGPT is a post-training structured pruning method that applies an orthogonal transform (computational invariance) and slices entire rows and columns of weight matrices, reducing the embedding dimension while keeping competitive accuracy without recovery fine-tuning.",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "we present SliceGPT, a new post-training sparsification scheme which replaces each weight matrix with a smaller (dense) matrix, reducing the embedding dimension of the network",
+      "bbox": [
+        141.943359375,
+        324.075439453125,
+        469.87744140625,
+        531.299072265625
+      ],
+      "block_id": "/page/0/Text/13"
+    }
+  },
+  "datasets": [
+    {
+      "value": "WikiText-2",
+      "ev": {
+        "page": 8,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "We experiment with two different calibration sets: the WikiText-2 training dataset",
+        "bbox": [
+          106.3828125,
+          133.41796875,
+          506.25,
+          198.0
+        ],
+        "block_id": "/page/7/Text/1"
+      }
+    },
+    {
+      "value": "Alpaca",
+      "ev": {
+        "page": 8,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "and the Alpaca training dataset (Taori et al., 2023)",
+        "bbox": [
+          106.3828125,
+          133.41796875,
+          506.25,
+          198.0
+        ],
+        "block_id": "/page/7/Text/1"
+      }
+    },
+    {
+      "value": "PIQA",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "We assess SliceGPT across five well-known zero-shot tasks: PIQA (Bisk et al., 2020)",
+        "bbox": [
+          106.3828125,
+          616.81640625,
+          505.4167175292969,
+          704.3730773925781
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "WinoGrande",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "WinoGrande (Sakaguchi et al., 2021)",
+        "bbox": [
+          106.3828125,
+          616.81640625,
+          505.4167175292969,
+          704.3730773925781
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "HellaSwag",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "HellaSwag (Zellers et al., 2019)",
+        "bbox": [
+          106.3828125,
+          616.81640625,
+          505.4167175292969,
+          704.3730773925781
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "ARC-e",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "ARC-e and ARCc (Clark et al., 2018)",
+        "bbox": [
+          106.3828125,
+          616.81640625,
+          505.4167175292969,
+          704.3730773925781
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "ARC-c",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "ARC-e and ARCc (Clark et al., 2018)",
+        "bbox": [
+          106.3828125,
+          616.81640625,
+          505.4167175292969,
+          704.3730773925781
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "Calibration set size 1024 sequences with sequence length 2048 (main experiments); ablations from 128 to 4096",
+    "ev": {
+      "page": 8,
+      "section": "4.1 RESULTS",
+      "quote": "Table 1: OPT and LLAMA-2 perplexity results on WikiText2. The calibration set size and sequence length are 1024 and 2048, respectively.",
+      "bbox": [
+        102.10479827880859,
+        405.07121185302736,
+        507.98178009033205,
+        426.49510284423826
+      ],
+      "block_id": "/page/7/Table/6"
+    }
+  },
+  "models_used": [
+    {
+      "value": "OPT-125M",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "Method | OPT | LLAMA-2 | 125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B | 7B | 13B | 70B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "OPT-1.3B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "OPT-2.7B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "OPT-6.7B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "OPT-13B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "OPT-30B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "OPT-66B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "125M | 1.3B | 2.7B | 6.7B | 13B | 30B | 66B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "LLaMA-2-7B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "OPT | LLAMA-2 | ... | 7B | 13B | 70B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "LLaMA-2-13B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "OPT | LLAMA-2 | ... | 7B | 13B | 70B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "LLaMA-2-70B",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "OPT | LLAMA-2 | ... | 7B | 13B | 70B",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7"
+      }
+    },
+    {
+      "value": "Phi-2",
+      "ev": {
+        "page": 8,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "We evaluate all our experiments on OPT (Zhang et al., 2022), LLAMA-2 (Touvron et al., 2023) model families, and additionally evaluate Phi-2 (in our zero-shot task) experiments.",
+        "bbox": [
+          106.3828125,
+          204.75,
+          506.25,
+          269.9296875
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "WikiText-2 perplexity (PPL)",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "We begin by showcasing our findings using the WikiText-2 dataset. ... Table 1 shows the perplexity obtained by various slicing levels.",
+        "bbox": [
+          106.98046875,
+          294.29296875,
+          504.7964782714844,
+          393.99908447265625
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Zero-shot accuracy (PIQA, WinoGrande, HellaSwag, ARC-e, ARC-c, average)",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "We assess SliceGPT across five well-known zero-shot tasks: PIQA ... WinoGrande ... HellaSwag ... ARC-e and ARCc",
+        "bbox": [
+          106.3828125,
+          616.81640625,
+          505.4167175292969,
+          704.3730773925781
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "Per-token inference time (ms) and total compute (GPUms)",
+      "ev": {
+        "page": 10,
+        "section": "4.1 RESULTS",
+        "quote": "Table 2: Average per-token inference time of SliceGPT when generating sequences of length 128 (with batch size of 1). In each case, we show the time taken in ms, the number of GPUs required and the total compute in GPUms.",
+        "bbox": [
+          106.98046875,
+          319.4296875,
+          504.0697937011719,
+          352.0330810546875
+        ],
+        "block_id": "/page/9/Caption/3"
+      }
+    },
+    {
+      "value": "Throughput (tokens/sec)",
+      "ev": {
+        "page": 9,
+        "section": "4.1 RESULTS",
+        "quote": "The token throughput of models sliced at 25% and 50% are compared to the dense model on 80GB H100 GPUs.",
+        "bbox": [
+          106.083984375,
+          83.53125,
+          505.7436218261719,
+          204.1875
+        ],
+        "block_id": "/page/9/Text/1"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "LLaMA-2 70B sliced 25% reaches WikiText-2 PPL 4.60 vs dense 3.32 (Δ 1.28); SparseGPT 2:4 reaches 4.98",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "Dense | 27.64 | 14.61 | 12.46 | 10.85 | 10.12 | 9.56 | 9.33 | 5.47 | 4.88 | 3.32 ... SliceGPT (25%) | 37.74 | 17.46 | 14.56 | 11.90 | 10.94 | 10.04 | 9.68 | 7.24 | 6.30 | 4.60",
+        "bbox": [
+          120.12890625,
+          428.615859375,
+          485.89453125,
+          533.540390625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Sliced models keep 99% (LLAMA-2 70B), 99% (OPT 66B) and 90% (Phi-2) of zero-shot accuracy at 25% slicing (90% Phi-2 with RFT)",
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "SliceGPT can remove up to 25% of the model parameters (including embeddings) for LLAMA-2 70B, OPT 66B and Phi-2 models while maintaining 99%, 99% and 90% zero-shot task performance",
+        "bbox": [
+          141.943359375,
+          324.075439453125,
+          469.87744140625,
+          531.299072265625
+        ],
+        "block_id": "/page/0/Text/13"
+      }
+    },
+    {
+      "value": "LLaMA-2 70B at 25% slicing: 110ms/token on 3 A100s vs 125ms on 4 (compute reduced to 66%); 215ms on 5 RTX6000 vs 252ms on 7 (reduced to 64%)",
+      "ev": {
+        "page": 10,
+        "section": "4.1 RESULTS",
+        "quote": "A100 (40GB) | Dense | 114ms on 4 GPUs456 GPUms | 125ms on 4 GPUs500 GPUms | 25% | 102ms on 3 GPUs306 GPUms | 110ms on 3 GPUs330 GPUms | Quadro RTX6000(24GB) | Dense | 237ms on 6 GPUs1422 GPUms | 252ms on 7 GPUs1764 GPUms | 25% | 204ms on 5 GPUs1020 GPUms | 215ms on 5 GPUs1075 GPUms",
+        "bbox": [
+          115.25203125,
+          355.79671875,
+          490.77140625,
+          433.10953125
+        ],
+        "block_id": "/page/9/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "LLaMA-2 70B sliced 25% achieves 1.55x throughput on 80GB H100 (839 vs 541 tokens/s); 50% achieves 3.75x on a single GPU",
+      "ev": {
+        "page": 21,
+        "section": "A.6 BENCHMARKING THROUGHPUT EXPERIMENT",
+        "quote": "LLAMA-2 70B | Dense | 2 | 128 | 541 | 25% | 2 | 256 | 839 (1.55×) | 50% | 1 | 128 | 1014 (3.75×)",
+        "bbox": [
+          178.9323046875,
+          146.14875,
+          429.4817578125,
+          307.085625
+        ],
+        "block_id": "/page/20/Table/3",
+        "source_table": "Table 11"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "we present SliceGPT, a new post-training sparsification scheme which replaces each weight matrix with a smaller (dense) matrix",
+      "bbox": [
+        141.943359375,
+        324.075439453125,
+        469.87744140625,
+        531.299072265625
+      ],
+      "block_id": "/page/0/Text/13"
+    }
+  },
+  "method_family": {
+    "value": "pruning",
+    "ev": {
+      "page": 1,
+      "section": "1 INTRODUCTION",
+      "quote": "In this work we focus on pruning",
+      "bbox": [
+        107.279296875,
+        670.95703125,
+        505.2432861328125,
+        703.8533325195312
+      ],
+      "block_id": "/page/0/Text/16"
+    }
+  },
+  "quantization_method_name": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "bit_widths_tested": [],
+  "quantization_target": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 2,
+      "section": "^(X) ^(W) Unstructured sparsity ^(X) ^(W) 2:4 Structured sparsity XQ ^(Q)^(⊤)^(W) Slicing (ours)",
+      "quote": "With SliceGPT we compress large models using a single GPU in just a few hours and maintain competitive performance on generation and downstream tasks even without RFT.",
+      "bbox": [
+        106.3828125,
+        267.22265625,
+        505.7449951171875,
+        322.3540954589844
+      ],
+      "block_id": "/page/1/Text/3"
+    }
+  },
+  "hardware": [
+    {
+      "value": "H100 80GB",
+      "ev": {
+        "page": 7,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "The computation of Q is performed on a single H100 GPU with 80GB of memory, taking approximately 3.5 hours to complete for the LLAMA-2 70B model.",
+        "bbox": [
+          106.5,
+          666.75,
+          504.75,
+          731.28515625
+        ],
+        "block_id": "/page/6/Text/13"
+      }
+    },
+    {
+      "value": "A100 40GB",
+      "ev": {
+        "page": 8,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "40GB A100s and 80GB H100s to provide datacenter-level benchmarks",
+        "bbox": [
+          106.3828125,
+          133.41796875,
+          506.25,
+          198.0
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "Quadro RTX6000 24GB",
+      "ev": {
+        "page": 8,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "Quadro RTX6000 GPUs with 24GB of memory as a representative example of consumer-level GPUs",
+        "bbox": [
+          106.3828125,
+          133.41796875,
+          506.25,
+          198.0
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "V100 32GB",
+      "ev": {
+        "page": 10,
+        "section": "4.1 RESULTS",
+        "quote": "Phi-2 | 0h49m | 1xV100 32GB | 1h59m | 1xV100 32GB | 2h48m",
+        "bbox": [
+          160.936875,
+          605.222578125,
+          448.6725,
+          683.324296875
+        ],
+        "block_id": "/page/9/Table/8",
+        "source_table": "Table 3"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 1.55,
+      "baseline": "FP16 dense LLaMA-2 70B (541 tokens/s on 2x H100)",
+      "hardware": "80GB H100"
+    },
+    "ev": {
+      "page": 21,
+      "section": "A.6 BENCHMARKING THROUGHPUT EXPERIMENT",
+      "quote": "LLAMA-2 70B | Dense | 2 | 128 | 541 | 25% | 2 | 256 | 839 (1.55×)",
+      "bbox": [
+        178.9323046875,
+        146.14875,
+        429.4817578125,
+        307.085625
+      ],
+      "block_id": "/page/20/Table/3",
+      "source_table": "Table 11"
+    }
+  },
+  "strengths": [
+    {
+      "value": "Structured sliced models use dense kernels and run faster on standard hardware without custom sparse code.",
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "Our sliced models run on fewer GPUs and run faster without any additional code optimization",
+        "bbox": [
+          141.943359375,
+          324.075439453125,
+          469.87744140625,
+          531.299072265625
+        ],
+        "block_id": "/page/0/Text/13"
+      }
+    },
+    {
+      "value": "Reduces inference compute on LLaMA-2 70B to 64% on RTX6000 and 66% on A100, cutting GPU count.",
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "on 24GB consumer GPUs we reduce the total compute for inference on LLAMA-2 70B to 64% of that of the dense model; on 40GB A100 GPUs we reduce it to 66%",
+        "bbox": [
+          141.943359375,
+          324.075439453125,
+          469.87744140625,
+          531.299072265625
+        ],
+        "block_id": "/page/0/Text/13"
+      }
+    },
+    {
+      "value": "Single-shot method: no recovery fine-tuning needed to keep most accuracy at 25% slicing.",
+      "ev": {
+        "page": 2,
+        "section": "^(X) ^(W) Unstructured sparsity ^(X) ^(W) 2:4 Structured sparsity XQ ^(Q)^(⊤)^(W) Slicing (ours)",
+        "quote": "we compress large models using a single GPU in just a few hours and maintain competitive performance on generation and downstream tasks even without RFT",
+        "bbox": [
+          106.3828125,
+          267.22265625,
+          505.7449951171875,
+          322.3540954589844
+        ],
+        "block_id": "/page/1/Text/3"
+      }
+    },
+    {
+      "value": "Beats SparseGPT 2:4 in WikiText-2 PPL on every LLaMA-2 size at 25% slicing.",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "Comparing SliceGPT with SparseGPT, we see that that SparseGPT 2:4 performs worse than SliceGPT with 25% slicing in all LLAMA-2 models.",
+        "bbox": [
+          106.98046875,
+          294.29296875,
+          504.7964782714844,
+          393.99908447265625
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Sliced LLaMA-2 models lose more accuracy than OPT models because LLaMA-2's eigenvalue spectrum is flatter.",
+      "ev": {
+        "page": 8,
+        "section": "4.1 RESULTS",
+        "quote": "SliceGPT exhibits superior performance when applied to OPT models compared to LLAMA-2 models which matches our intuition from the spectrum analysis",
+        "bbox": [
+          106.98046875,
+          294.29296875,
+          504.7964782714844,
+          393.99908447265625
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Smaller models (under 13B) gain less from slicing because they hold less spare embedding dimension.",
+      "ev": {
+        "page": 11,
+        "section": "5 CONCLUSION AND FUTURE WORK",
+        "quote": "Smaller but dense LMs perform better than LMs with 13B parameters or less pruned to similar sizes",
+        "bbox": [
+          106.681640625,
+          107.5078125,
+          504.3650207519531,
+          183.9840087890625
+        ],
+        "block_id": "/page/10/Text/2"
+      }
+    },
+    {
+      "value": "Adds a small DxD residual-connection overhead per block that cannot be pre-computed.",
+      "ev": {
+        "page": 7,
+        "section": "3.3 A TRANSFORMATION PER BLOCK",
+        "quote": "these additional operations cannot be pre-computed and add a small (D × D) overhead to the model",
+        "bbox": [
+          107.25,
+          275.73046875,
+          505.5,
+          352.5
+        ],
+        "block_id": "/page/6/Text/3"
+      }
+    },
+    {
+      "value": "Sliced models keep more parameters than SparseGPT 2:4 at matched compute, since slicing does not exploit unstructured zeros.",
+      "ev": {
+        "page": 11,
+        "section": "5 CONCLUSION AND FUTURE WORK",
+        "quote": "Our pruned models have more parameters than those pruned with SparseGPT but our method allows for larger batch sizes",
+        "bbox": [
+          106.681640625,
+          107.5078125,
+          504.3650207519531,
+          183.9840087890625
+        ],
+        "block_id": "/page/10/Text/2"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Method is pruning-only and does not quantize weights or activations; quantization is left as complementary future work.",
+      "ev": {
+        "page": 11,
+        "section": "5 CONCLUSION AND FUTURE WORK",
+        "quote": "complementary methods including quantization (Xiao et al., 2023; Dettmers et al., 2022; Ashkboos et al., 2023; Dettmers et al., 2023; Frantar et al., 2022), and structural pruning ... could be used",
+        "bbox": [
+          106.3828125,
+          190.8062744140625,
+          504.8304748535156,
+          288.5920715332031
+        ],
+        "block_id": "/page/10/Text/3"
+      }
+    },
+    {
+      "value": "Tested only on data-center class GPUs (RTX6000, A100, H100); no edge or mobile evaluation.",
+      "ev": {
+        "page": 8,
+        "section": "4 EXPERIMENTAL VALIDATION",
+        "quote": "Quadro RTX6000 GPUs with 24GB of memory as a representative example of consumer-level GPUs; 40GB A100s and 80GB H100s to provide datacenter-level benchmarks",
+        "bbox": [
+          106.3828125,
+          133.41796875,
+          506.25,
+          198.0
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "PCA needs double-precision eigendecomposition; FP32 PCA hurts perplexity, especially for larger models.",
+      "ev": {
+        "page": 15,
+        "section": "A.2 SINGLE PRECISION EIGENVALUE CALCULATION",
+        "quote": "It shows that the accuracy of larger models could be affected by numerical errors during the PCA calculation phase.",
+        "bbox": [
+          106.5,
+          173.25,
+          504.75,
+          222.0
+        ],
+        "block_id": "/page/14/Text/4"
+      }
+    },
+    {
+      "value": "No evaluation of safety, bias, jailbreak, or refusal after pruning.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Combine SliceGPT with quantization and structural pruning to further reduce inference time and GPU count.",
+      "ev": {
+        "page": 11,
+        "section": "5 CONCLUSION AND FUTURE WORK",
+        "quote": "complementary methods including quantization ... and structural pruning (e.g. Ma et al., 2023b) could be used",
+        "bbox": [
+          106.3828125,
+          190.8062744140625,
+          504.8304748535156,
+          288.5920715332031
+        ],
+        "block_id": "/page/10/Text/3"
+      }
+    },
+    {
+      "value": "Explore alternative ways to compute the orthogonal matrix Q to improve accuracy.",
+      "ev": {
+        "page": 11,
+        "section": "5 CONCLUSION AND FUTURE WORK",
+        "quote": "Other methods of computing Q could improve the results.",
+        "bbox": [
+          106.3828125,
+          190.8062744140625,
+          504.8304748535156,
+          288.5920715332031
+        ],
+        "block_id": "/page/10/Text/3"
+      }
+    },
+    {
+      "value": "Combine slicing with sparsity to gain the benefits of both.",
+      "ev": {
+        "page": 11,
+        "section": "5 CONCLUSION AND FUTURE WORK",
+        "quote": "perhaps a combined method could obtain the best of both",
+        "bbox": [
+          106.681640625,
+          107.5078125,
+          504.3650207519531,
+          183.9840087890625
+        ],
+        "block_id": "/page/10/Text/2"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": 10,
+        "section": "4.1 RESULTS",
+        "quote": "providing energy and cost savings relative to deployment of the dense model",
+        "bbox": [
+          106.083984375,
+          215.40234375,
+          505.7470703125,
+          302.5220947265625
+        ],
+        "block_id": "/page/9/Text/2"
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 10,
+        "section": "4.1 RESULTS",
+        "quote": "Table 2: Average per-token inference time of SliceGPT when generating sequences of length 128 (with batch size of 1). In each case, we show the time taken in ms",
+        "bbox": [
+          106.98046875,
+          319.4296875,
+          504.0697937011719,
+          352.0330810546875
+        ],
+        "block_id": "/page/9/Caption/3",
+        "source_table": "Table 2"
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "Code is available at: https://github.com/microsoft/TransformerCompression",
+        "bbox": [
+          141.943359375,
+          324.075439453125,
+          469.87744140625,
+          531.299072265625
+        ],
+        "block_id": "/page/0/Text/13"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

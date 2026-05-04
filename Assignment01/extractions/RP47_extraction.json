@@ -1,0 +1,1046 @@
+{
+  "rp_id": "RP47",
+  "year": {
+    "value": 2025,
+    "ev": {
+      "page": 22,
+      "section": "References",
+      "quote": "DeepSeek-AI et al. (2025). DeepSeek-V3 Technical Report",
+      "bbox": [
+        71.12109375,
+        476.05078125,
+        543.5355834960938,
+        520.5080871582031
+      ],
+      "block_id": "/page/21/Text/10"
+    }
+  },
+  "first_author": {
+    "value": "Erdil",
+    "ev": {
+      "page": 1,
+      "section": "INFERENCE ECONOMICS OF LANGUAGE MODELS",
+      "quote": "Ege Erdil Epoch ege@epoch.ai",
+      "bbox": [
+        274.025390625,
+        163.58203125,
+        337.26983642578125,
+        195.86907958984375
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Ege Erdil",
+      "ev": {
+        "page": 1,
+        "section": "INFERENCE ECONOMICS OF LANGUAGE MODELS",
+        "quote": "Ege Erdil Epoch ege@epoch.ai",
+        "bbox": [
+          274.025390625,
+          163.58203125,
+          337.26983642578125,
+          195.86907958984375
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "Inference economics of language models",
+    "ev": {
+      "page": 1,
+      "section": "INFERENCE ECONOMICS OF LANGUAGE MODELS",
+      "quote": "INFERENCE ECONOMICS OF LANGUAGE MODELS",
+      "bbox": [
+        127.8984375,
+        97.7230224609375,
+        482.44097900390625,
+        114.93841552734375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "arXiv preprint (Epoch AI)",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "doi": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "Builds a theoretical roofline-style model for LLM inference economics that jointly handles arithmetic, memory bandwidth, network bandwidth and latency, and uses it to compute serial-speed versus cost-per-token Pareto frontiers for popular models on H100 hardware.",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "We develop a theoretical model that addresses the economic trade-off between cost per token versus serial token generation speed when deploying LLMs for inference at scale. Our model takes into account arithmetic, memory bandwidth, network bandwidth and latency constraints",
+      "bbox": [
+        106.98046875,
+        256.39453125,
+        504.15447998046875,
+        320.9910583496094
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "datasets": [
+    {
+      "value": "Artificial Analysis 2024 API price/speed benchmark data",
+      "ev": {
+        "page": 5,
+        "section": "2.2.2 Predictions",
+        "quote": "Artificial Analysis 2024 reports a maximum inference speed of ≈ 400 tokens/second at 20 cents per million tokens for Llama 3 8B and ≈ 150 tokens/second at 90 cents per million tokens for Llama 3 70B",
+        "bbox": [
+          70.5,
+          375.0,
+          540.75,
+          439.5
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "No training/calibration dataset; theoretical model validated against public API price-speed points (e.g. Llama 3 8B at 400 tok/s, Llama 3 70B at 150 tok/s)",
+    "ev": {
+      "page": 5,
+      "section": "2.2.2 Predictions",
+      "quote": "Artificial Analysis 2024 reports a maximum inference speed of ≈ 400 tokens/second at 20 cents per million tokens for Llama 3 8B",
+      "bbox": [
+        70.5,
+        375.0,
+        540.75,
+        439.5
+      ],
+      "block_id": "/page/4/Text/2"
+    }
+  },
+  "models_used": [
+    {
+      "value": "Llama 3 8B",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Llama 3 8B | 966 | 11",
+        "bbox": [
+          68.180625,
+          70.019296875,
+          550.99125,
+          146.543203125
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama 3 70B",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Llama 3 70B | 234 | 26",
+        "bbox": [
+          68.180625,
+          70.019296875,
+          550.99125,
+          146.543203125
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama 3.1 405B",
+      "ev": {
+        "page": 15,
+        "section": "4 Inference economics of example models",
+        "quote": "Llama 3.1 405B (8-bit) | 122 | 48",
+        "bbox": [
+          106.3648828125,
+          70.02217651367188,
+          504.4398046875,
+          146.25235961914063
+        ],
+        "block_id": "/page/14/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "GPT-3",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "GPT-3 | 148 | 42",
+        "bbox": [
+          68.180625,
+          70.019296875,
+          550.99125,
+          146.543203125
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "GPT-4",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "GPT-4 (architecture from Patel and Wong 2023) | 56 | 173",
+        "bbox": [
+          68.180625,
+          70.019296875,
+          550.99125,
+          146.543203125
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "PaLM-540B",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "PaLM-540B | 86 | 79",
+        "bbox": [
+          68.180625,
+          70.019296875,
+          550.99125,
+          146.543203125
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "PaLM 8B",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Pope et al. 2022 obtain best latency figures of 4 ms, 13 ms and 32 ms per token for PaLM 8B, 62B and 540B respectively",
+        "bbox": [
+          70.5,
+          650.25,
+          542.25,
+          681.75
+        ],
+        "block_id": "/page/6/Text/12"
+      }
+    },
+    {
+      "value": "PaLM 62B",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Pope et al. 2022 obtain best latency figures of 4 ms, 13 ms and 32 ms per token for PaLM 8B, 62B and 540B respectively",
+        "bbox": [
+          70.5,
+          650.25,
+          542.25,
+          681.75
+        ],
+        "block_id": "/page/6/Text/12"
+      }
+    },
+    {
+      "value": "DeepSeek-V3",
+      "ev": {
+        "page": 15,
+        "section": "4 Inference economics of example models",
+        "quote": "DeepSeek-V3 (8-bit) | 215 | 14",
+        "bbox": [
+          106.3648828125,
+          70.02217651367188,
+          504.4398046875,
+          146.25235961914063
+        ],
+        "block_id": "/page/14/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Mixtral 8x22B",
+      "ev": {
+        "page": 15,
+        "section": "4 Inference economics of example models",
+        "quote": "Mixtral 8x22B (16-bit) | 199 | 125",
+        "bbox": [
+          106.3648828125,
+          70.02217651367188,
+          504.4398046875,
+          146.25235961914063
+        ],
+        "block_id": "/page/14/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Mistral Large 2 (123B)",
+      "ev": {
+        "page": 20,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "we compare the short and long context token economics of Mistral Large 2, a dense transformer with 123 billion parameters and an attention group size of 12",
+        "bbox": [
+          70.5234375,
+          114.46875,
+          540.1702880859375,
+          147.22503662109375
+        ],
+        "block_id": "/page/19/Text/1"
+      }
+    },
+    {
+      "value": "Llama 2 70B",
+      "ev": {
+        "page": 3,
+        "section": "2.2.1 Intra-node and network latency",
+        "quote": "Llama 2 70B (Touvron et al. 2023) has 70 billion parameters and 80 layers at 16-bit precision, so each layer is around 1.75 GB in size",
+        "bbox": [
+          69.626953125,
+          660.9566497802734,
+          540.0031127929688,
+          691.3903884887695
+        ],
+        "block_id": "/page/2/Footnote/15"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "Tokens per second per request (serial decoding speed)",
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We use the model to compute Pareto frontiers of serial speed versus cost per token for popular language models",
+        "bbox": [
+          106.98046875,
+          256.39453125,
+          504.15447998046875,
+          320.9910583496094
+        ],
+        "block_id": "/page/0/Text/4"
+      }
+    },
+    {
+      "value": "Cost per million tokens (USD)",
+      "ev": {
+        "page": 5,
+        "section": "2.2.2 Predictions",
+        "quote": "plot the implied Pareto frontiers for the per-request token generation rate on the x-axis versus the cost per million tokens on the y-axis",
+        "bbox": [
+          70.5,
+          636.75,
+          540.75,
+          668.25
+        ],
+        "block_id": "/page/3/Text/15"
+      }
+    },
+    {
+      "value": "Token-to-token latency (ms)",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Pope et al. 2022 obtain best latency figures of 4 ms, 13 ms and 32 ms per token for PaLM 8B, 62B and 540B respectively",
+        "bbox": [
+          70.5,
+          650.25,
+          542.25,
+          681.75
+        ],
+        "block_id": "/page/6/Text/12"
+      }
+    },
+    {
+      "value": "Optimal instance size (number of GPUs)",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Maximum tokens per second and the optimal instance size required to achieve the maximum",
+        "bbox": [
+          70.5,
+          147.75,
+          544.5,
+          170.25
+        ],
+        "block_id": "/page/6/Caption/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Hardware (arithmetic) utilization rate",
+      "ev": {
+        "page": 18,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "at 100% utilization on an H100, the cost per million tokens of Llama 3 70B at 16-bit precision would be around $0.11, implying an utilization rate of ≈ 17%",
+        "bbox": [
+          70.5234375,
+          689.90625,
+          540.0758056640625,
+          722.4070739746094
+        ],
+        "block_id": "/page/17/Text/7"
+      }
+    },
+    {
+      "value": "Batch size at the efficient operating point",
+      "ev": {
+        "page": 15,
+        "section": "4 Inference economics of example models",
+        "quote": "Tokens per second | Cost per million tokens | Instance size (GPUs) | Batch size",
+        "bbox": [
+          66.6685546875,
+          387.144140625,
+          551.3080078125,
+          462.090234375
+        ],
+        "block_id": "/page/14/Table/5",
+        "source_table": "Table 3"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Each halving of weight precision (16-bit to 8-bit to 4-bit) gives roughly 26% more max tokens/sec for Llama 3 70B; 4-bit reaches 122 tok/s at $0.23/M, 8-bit 99 tok/s at $0.37/M, 16-bit 83 tok/s at $0.70/M.",
+      "ev": {
+        "page": 19,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "4-bit weights | 122 | $0.23 | 4 | 90 ... 8-bit weights | 99 | $0.37 | 7 | 109 ... 16-bit weights | 83 | $0.70 | 13 | 136",
+        "bbox": [
+          85.966875,
+          397.7933450317383,
+          522.4471875,
+          451.5440267944336
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": "Optimal serial-decoding token latency for dense models follows an inverse-square-root law in parameter count: token latency ∝ √N_param.",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "token-to-token latency ∝ √N_param",
+        "bbox": [
+          234.75,
+          621.84375,
+          541.5,
+          637.3125
+        ],
+        "block_id": "/page/6/Equation/11"
+      }
+    },
+    {
+      "value": "Speculative decoding at α=0.8 acceptance gives Llama 3 70B 66% higher throughput and roughly doubles Llama 3.1 405B throughput at fixed cost per token.",
+      "ev": {
+        "page": 17,
+        "section": "4.1 The impact of speculative decoding",
+        "quote": "the gains from speculative decoding at an 80% token acceptance rate are substantial: a 66% increase in throughput for Llama 3 70B and a doubling of throughput for Llama 3.1 405B at a fixed cost per token",
+        "bbox": [
+          71.12109375,
+          585.10546875,
+          541.2454833984375,
+          628.4970855712891
+        ],
+        "block_id": "/page/16/Text/13"
+      }
+    },
+    {
+      "value": "Maximum tokens/sec on H100 SXM with speculative decoding: Mixtral 8x22B 199 (125 GPUs), Llama 3 70B-8bit 189 (24), Llama 3.1 405B-8bit 122 (48), DeepSeek-V3-8bit 215 (14), GPT-4 16-bit 106 (460).",
+      "ev": {
+        "page": 15,
+        "section": "4 Inference economics of example models",
+        "quote": "Mixtral 8x22B (16-bit) | 199 | 125 | Llama 3 70B (8-bit) | 189 | 24 | Llama 3.1 405B (8-bit) | 122 | 48 | GPT-4 (16-bit, speculative) | 106 | 460 | DeepSeek-V3 (8-bit) | 215 | 14",
+        "bbox": [
+          106.3648828125,
+          70.02217651367188,
+          504.4398046875,
+          146.25235961914063
+        ],
+        "block_id": "/page/14/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Each NVIDIA generation gives ~25% more tokens/sec at fixed cost and halves the optimal instance size; H100 reaches 152 tok/s for Llama 3 70B-8bit (24 GPUs), A100 132 (32), V100 105 (102).",
+      "ev": {
+        "page": 16,
+        "section": "4 Inference economics of example models",
+        "quote": "H100 SXM | 152 | 24 | A100 SXM | 132 | 32 | V100 SXM | 105 | 102",
+        "bbox": [
+          77.1394921875,
+          405.9111395263672,
+          530.0792578125,
+          459.99834533691404
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 4"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "application",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "We develop a theoretical model that addresses the economic trade-off between cost per token versus serial token generation speed when deploying LLMs for inference at scale",
+      "bbox": [
+        106.98046875,
+        256.39453125,
+        504.15447998046875,
+        320.9910583496094
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "method_family": {
+    "value": "none",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "We develop a theoretical model that addresses the economic trade-off between cost per token versus serial token generation speed",
+      "bbox": [
+        106.98046875,
+        256.39453125,
+        504.15447998046875,
+        320.9910583496094
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "quantization_method_name": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 19,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "4-bit weights | 122 | $0.23 | 4 | 90",
+        "bbox": [
+          85.966875,
+          397.7933450317383,
+          522.4471875,
+          451.5440267944336
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 19,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "8-bit weights | 99 | $0.37 | 7 | 109",
+        "bbox": [
+          85.966875,
+          397.7933450317383,
+          522.4471875,
+          451.5440267944336
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": 16,
+      "ev": {
+        "page": 19,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "16-bit weights | 83 | $0.70 | 13 | 136",
+        "bbox": [
+          85.966875,
+          397.7933450317383,
+          522.4471875,
+          451.5440267944336
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 6"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight-only",
+    "ev": {
+      "page": 19,
+      "section": "4.3 The impact of long context lengths",
+      "quote": "The token economics for Llama 3 70B with weights quantized to different precisions, holding activation precision fixed at 16 bits",
+      "bbox": [
+        70.822265625,
+        359.26171875,
+        539.9937744140625,
+        380.72308349609375
+      ],
+      "block_id": "/page/18/Caption/1"
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA H100 SXM",
+      "ev": {
+        "page": 13,
+        "section": "4 Inference economics of example models",
+        "quote": "we now move on to discussing the inference economics of some well-known example models running on H100s at a price of two dollars per hour per H100 SXM",
+        "bbox": [
+          71.419921875,
+          656.4973754882812,
+          540.0040283203125,
+          688.429069519043
+        ],
+        "block_id": "/page/12/Text/21"
+      }
+    },
+    {
+      "value": "NVIDIA A100 SXM",
+      "ev": {
+        "page": 16,
+        "section": "4 Inference economics of example models",
+        "quote": "A100 SXM | 132 | 32",
+        "bbox": [
+          77.1394921875,
+          405.9111395263672,
+          530.0792578125,
+          459.99834533691404
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "NVIDIA V100 SXM",
+      "ev": {
+        "page": 16,
+        "section": "4 Inference economics of example models",
+        "quote": "V100 SXM | 105 | 102",
+        "bbox": [
+          77.1394921875,
+          405.9111395263672,
+          530.0792578125,
+          459.99834533691404
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "DGX H100 (8 x H100 + 8 ConnectX-7 VPI cards, 50 GB/s per GPU)",
+      "ev": {
+        "page": 11,
+        "section": "3.4 Taking network communication time into account",
+        "quote": "the inter-node bandwidth for e.g. a cluster consisting of DGX H100 systems would be 50 GB/s, because each DGX H100 system comes together with 8 ConnectX-7 VPI cards",
+        "bbox": [
+          70.5,
+          438.75,
+          541.5,
+          503.5078125
+        ],
+        "block_id": "/page/10/Text/10"
+      }
+    },
+    {
+      "value": "Groq LPU (SRAM-based inference accelerator)",
+      "ev": {
+        "page": 21,
+        "section": "5.1 Takeaways for short-context inference",
+        "quote": "Groq LPUs have up to 80 TB/s of memory bandwidth per chip compared to 3.3 TB/s per H100 SXM",
+        "bbox": [
+          94.130859375,
+          472.95703125,
+          541.2478637695312,
+          680.5098037719727
+        ],
+        "block_id": "/page/20/ListGroup/225"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 1.47,
+      "baseline": "16-bit weights for Llama 3 70B serving",
+      "hardware": "H100 SXM (efficient operating point per Equation 45)"
+    },
+    "ev": {
+      "page": 19,
+      "section": "4.3 The impact of long context lengths",
+      "quote": "4-bit weights | 122 | $0.23 ... 16-bit weights | 83 | $0.70",
+      "bbox": [
+        85.966875,
+        397.7933450317383,
+        522.4471875,
+        451.5440267944336
+      ],
+      "block_id": "/page/18/Table/2",
+      "source_table": "Table 6"
+    }
+  },
+  "strengths": [
+    {
+      "value": "Provides the first published roofline-style economic model for LLM inference that combines arithmetic, memory bandwidth, network bandwidth and latency in one framework.",
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "there's no equivalent to the \"roofline model\" in the literature about LLM inference right now",
+        "bbox": [
+          70.224609375,
+          524.00390625,
+          541.650146484375,
+          589.3500671386719
+        ],
+        "block_id": "/page/0/Text/8"
+      }
+    },
+    {
+      "value": "Predictions match empirical API data well: Pareto fronts agree with Artificial Analysis 2024 prices and speeds for Llama 3 8B/70B without manual fudge factors.",
+      "ev": {
+        "page": 22,
+        "section": "5.2 Takeaways for long-context inference",
+        "quote": "the theoretical model we've developed accurately predicts many empirical facts about LLM inference economics without having been fit to the data or adjusted with \"fudge factors\" by hand",
+        "bbox": [
+          70.822265625,
+          415.20343017578125,
+          540.075927734375,
+          446.9850769042969
+        ],
+        "block_id": "/page/21/Text/8"
+      }
+    },
+    {
+      "value": "Clean closed-form result: minimum token latency scales as √N_param with simple analytical optimum for instance size N_GPU.",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "token-to-token latency ∝ √N_param",
+        "bbox": [
+          234.75,
+          621.84375,
+          541.5,
+          637.3125
+        ],
+        "block_id": "/page/6/Equation/11"
+      }
+    },
+    {
+      "value": "Open-source code released for full reproducibility of all Pareto frontier and Table results.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "The code needed to reproduce the results in this paper can be found in this GitHub repository",
+        "bbox": [
+          70.5,
+          248.25,
+          446.25,
+          258.0
+        ],
+        "block_id": "/page/1/Text/4"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Network communication is conservatively assumed to not overlap with memory reads or arithmetic, which may understate achievable speeds.",
+      "ev": {
+        "page": 11,
+        "section": "3.4 Taking network communication time into account",
+        "quote": "we will conservatively assume that network communication cannot be overlapped with memory reads and arithmetic",
+        "bbox": [
+          70.5,
+          511.5,
+          541.5,
+          597.0
+        ],
+        "block_id": "/page/10/Text/11"
+      }
+    },
+    {
+      "value": "MoE expert activations are assumed independent and uniform; this is violated for shared-expert designs such as DeepSeek-V3.",
+      "ev": {
+        "page": 10,
+        "section": "3.2 Generalizing to mixture-of-experts models",
+        "quote": "this assumption would be violated for the \"shared experts\" of MoE variants such as DeepSeek-V3. We still stick to the independent and uniform routing case",
+        "bbox": [
+          70.5,
+          691.453125,
+          540.75,
+          721.5
+        ],
+        "block_id": "/page/9/Footnote/17"
+      }
+    },
+    {
+      "value": "Number of all-reduce participants is approximated as √N_GPU; in practice some all-reduces involve more or fewer ranks, slightly raising real latency.",
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "The approximation that R ≈ N_GPU^{1/2} is mildly optimistic: in practice some all-reduces will involve more than N_GPU^{1/2} ranks while some will involve less",
+        "bbox": [
+          93.0,
+          201.0,
+          540.75,
+          354.234375
+        ],
+        "block_id": "/page/6/ListGroup/114"
+      }
+    },
+    {
+      "value": "Extra communication cost from distributing attention is ignored to keep the model tractable.",
+      "ev": {
+        "page": 9,
+        "section": "3.1 Handling the attention operations",
+        "quote": "Because an accurate model of this would be rather complicated, in the remainder of this article we will ignore the extra communication cost arising from the attention operations",
+        "bbox": [
+          70.5,
+          221.203125,
+          540.75,
+          296.25
+        ],
+        "block_id": "/page/8/Text/3"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "No safety, refusal, jailbreak, or accuracy evaluation; the paper measures only cost, latency and throughput.",
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We use the model to compute Pareto frontiers of serial speed versus cost per token for popular language models",
+        "bbox": [
+          106.98046875,
+          256.39453125,
+          504.15447998046875,
+          320.9910583496094
+        ],
+        "block_id": "/page/0/Text/4"
+      }
+    },
+    {
+      "value": "Does not propose or evaluate a quantization algorithm; it only treats precision p as an input variable in cost equations.",
+      "ev": {
+        "page": 17,
+        "section": "4.2 The impact of quantization",
+        "quote": "Quantization is one of the primary techniques used by API providers to reduce inference costs and token-to-token latency",
+        "bbox": [
+          71.12109375,
+          652.1243591308594,
+          540.0032348632812,
+          694.9650726318359
+        ],
+        "block_id": "/page/16/Text/15"
+      }
+    },
+    {
+      "value": "Hardware coverage is limited to data-centre NVIDIA SXM GPUs (H100, A100, V100); no edge or mobile devices are modelled.",
+      "ev": {
+        "page": 16,
+        "section": "4 Inference economics of example models",
+        "quote": "H100 SXM | 152 | 24 | A100 SXM | 132 | 32 | V100 SXM | 105 | 102",
+        "bbox": [
+          77.1394921875,
+          405.9111395263672,
+          530.0792578125,
+          459.99834533691404
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "KV-cache compression and other lossy optimisations are explicitly excluded from the model.",
+      "ev": {
+        "page": 9,
+        "section": "3.1 Handling the attention operations",
+        "quote": "If we're willing to accept performance degradation, we can also compress the KV cache using various lossy methods, but for our model we will assume these methods are not used",
+        "bbox": [
+          70.224609375,
+          156.75,
+          541.5,
+          209.25
+        ],
+        "block_id": "/page/8/Text/2"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Extend the model with the more detailed NCCL latency calculations from the official NCCL codebase tuning file.",
+      "ev": {
+        "page": 3,
+        "section": "2.2.1 Intra-node and network latency",
+        "quote": "This is about the best that can be done unless we resort to using the more detailed latency calculations from the NCCL codebase. We leave this work for the next section.",
+        "bbox": [
+          71.12109375,
+          578.4329071044922,
+          540.0319213867188,
+          654.0810699462891
+        ],
+        "block_id": "/page/2/Text/14"
+      }
+    },
+    {
+      "value": "Test whether next-generation GPUs such as B100 continue the ~25% tokens/sec gain per generation trend.",
+      "ev": {
+        "page": 15,
+        "section": "4 Inference economics of example models",
+        "quote": "It remains to be seen whether new generations of GPUs such as the B100 will continue this trend",
+        "bbox": [
+          71.12109375,
+          678.69140625,
+          540.0377807617188,
+          722.4070739746094
+        ],
+        "block_id": "/page/14/Text/10"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 7,
+        "section": "2.2.3 Theoretical analysis",
+        "quote": "Pope et al. 2022 obtain best latency figures of 4 ms, 13 ms and 32 ms per token for PaLM 8B, 62B and 540B respectively",
+        "bbox": [
+          70.5,
+          650.25,
+          542.25,
+          681.75
+        ],
+        "block_id": "/page/6/Text/12"
+      }
+    },
+    "evaluates_long_context": {
+      "value": true,
+      "ev": {
+        "page": 20,
+        "section": "4.3 The impact of long context lengths",
+        "quote": "we compare the short and long context token economics of Mistral Large 2 ... At a context length of 100K, this means each generated token requires 10^5 · 360 KB = 36 GB of KV cache reads",
+        "bbox": [
+          71.12109375,
+          497.3203125,
+          540.0836791992188,
+          551.8880767822266
+        ],
+        "block_id": "/page/19/Text/4"
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "The code needed to reproduce the results in this paper can be found in this GitHub repository",
+        "bbox": [
+          70.5,
+          248.25,
+          446.25,
+          258.0
+        ],
+        "block_id": "/page/1/Text/4"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

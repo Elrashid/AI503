@@ -1,0 +1,466 @@
+{
+  "project": "AI503_Assignment1_SLR_Quantization",
+  "student": "22002576 Mohamed Elrashid",
+  "topic": "Post-Training Quantization of Transformer-Based Language Models for Edge LLMs",
+  "corpus_size": 50,
+  "pre_screened": true,
+  "pre_screening_source": "ResearchRabbit + manual selection (researchrabbit_export_50papers.csv)",
+  "paths": {
+    "papers_pdf": "papers_pdf",
+    "papers_json": "papers_json",
+    "papers_xml": "papers_xml",
+    "papers_pages": "papers_pages",
+    "figures": "figures",
+    "extractions": "extractions",
+    "verifications": "verifications",
+    "comparative_table": "comparative_analysis_table.csv"
+  },
+  "page_render": {
+    "dpi": 150,
+    "scale_factor": 2.0833333333333335,
+    "manifest": "papers_pages/manifest.json"
+  },
+  "extraction": {
+    "schema": ".slr/schema.json",
+    "system_prompt": ".slr/system_prompt.txt",
+    "output_dir": "extractions",
+    "evidence_required_per_field": true
+  },
+  "a1_rubric_mapping": {
+    "comparative_table_20pct": [
+      "rp_id",
+      "year",
+      "first_author",
+      "title",
+      "venue",
+      "doi",
+      "contribution",
+      "datasets",
+      "data_size",
+      "models_used",
+      "eval_metrics",
+      "key_results"
+    ],
+    "critical_analysis_25pct": [
+      "paper_type",
+      "method_family",
+      "quantization_method_name",
+      "bit_widths_tested",
+      "quantization_target",
+      "granularity",
+      "training_free",
+      "hardware",
+      "speedup_claim",
+      "strengths",
+      "weaknesses",
+      "limitations"
+    ],
+    "gap_analysis_10pct": [
+      "gap_signals",
+      "future_work_stated",
+      "limitations"
+    ]
+  },
+  "papers": {
+    "RP01": {
+      "stem": "RP01_Paperno_2016",
+      "first_author": "Paperno",
+      "year": 2016,
+      "json_dir": "RP01_Paperno_2016",
+      "xml_file": "RP01_Paperno_2016_claude.xml",
+      "pages_dir": "RP01_Paperno_2016"
+    },
+    "RP02": {
+      "stem": "RP02_Vaswani_2017",
+      "first_author": "Vaswani",
+      "year": 2017,
+      "json_dir": "RP02_Vaswani_2017",
+      "xml_file": "RP02_Vaswani_2017_claude.xml",
+      "pages_dir": "RP02_Vaswani_2017"
+    },
+    "RP03": {
+      "stem": "RP03_Mihaylov_2018",
+      "first_author": "Mihaylov",
+      "year": 2018,
+      "json_dir": "RP03_Mihaylov_2018",
+      "xml_file": "RP03_Mihaylov_2018_claude.xml",
+      "pages_dir": "RP03_Mihaylov_2018"
+    },
+    "RP04": {
+      "stem": "RP04_Clark_2019",
+      "first_author": "Clark",
+      "year": 2019,
+      "json_dir": "RP04_Clark_2019",
+      "xml_file": "RP04_Clark_2019_claude.xml",
+      "pages_dir": "RP04_Clark_2019"
+    },
+    "RP05": {
+      "stem": "RP05_Zellers_2019",
+      "first_author": "Zellers",
+      "year": 2019,
+      "json_dir": "RP05_Zellers_2019",
+      "xml_file": "RP05_Zellers_2019_claude.xml",
+      "pages_dir": "RP05_Zellers_2019"
+    },
+    "RP06": {
+      "stem": "RP06_Bisk_2019",
+      "first_author": "Bisk",
+      "year": 2019,
+      "json_dir": "RP06_Bisk_2019",
+      "xml_file": "RP06_Bisk_2019_claude.xml",
+      "pages_dir": "RP06_Bisk_2019"
+    },
+    "RP07": {
+      "stem": "RP07_Nagel_2020",
+      "first_author": "Nagel",
+      "year": 2020,
+      "json_dir": "RP07_Nagel_2020",
+      "xml_file": "RP07_Nagel_2020_claude.xml",
+      "pages_dir": "RP07_Nagel_2020"
+    },
+    "RP08": {
+      "stem": "RP08_Gholami_2022",
+      "first_author": "Gholami",
+      "year": 2022,
+      "json_dir": "RP08_Gholami_2022",
+      "xml_file": "RP08_Gholami_2022_claude.xml",
+      "pages_dir": "RP08_Gholami_2022"
+    },
+    "RP09": {
+      "stem": "RP09_Frantar_2022",
+      "first_author": "Frantar",
+      "year": 2022,
+      "json_dir": "RP09_Frantar_2022",
+      "xml_file": "RP09_Frantar_2022_claude.xml",
+      "pages_dir": "RP09_Frantar_2022"
+    },
+    "RP10": {
+      "stem": "RP10_Xiao_2022",
+      "first_author": "Xiao",
+      "year": 2022,
+      "json_dir": "RP10_Xiao_2022",
+      "xml_file": "RP10_Xiao_2022_claude.xml",
+      "pages_dir": "RP10_Xiao_2022"
+    },
+    "RP11": {
+      "stem": "RP11_Frantar_2023",
+      "first_author": "Frantar",
+      "year": 2023,
+      "json_dir": "RP11_Frantar_2023",
+      "xml_file": "RP11_Frantar_2023_claude.xml",
+      "pages_dir": "RP11_Frantar_2023"
+    },
+    "RP12": {
+      "stem": "RP12_Touvron_2023",
+      "first_author": "Touvron",
+      "year": 2023,
+      "json_dir": "RP12_Touvron_2023",
+      "xml_file": "RP12_Touvron_2023_claude.xml",
+      "pages_dir": "RP12_Touvron_2023"
+    },
+    "RP13": {
+      "stem": "RP13_Chee_2023",
+      "first_author": "Chee",
+      "year": 2023,
+      "json_dir": "RP13_Chee_2023",
+      "xml_file": "RP13_Chee_2023_claude.xml",
+      "pages_dir": "RP13_Chee_2023"
+    },
+    "RP14": {
+      "stem": "RP14_Lin_2023",
+      "first_author": "Lin",
+      "year": 2023,
+      "json_dir": "RP14_Lin_2023",
+      "xml_file": "RP14_Lin_2023_claude.xml",
+      "pages_dir": "RP14_Lin_2023"
+    },
+    "RP15": {
+      "stem": "RP15_Lin_2023",
+      "first_author": "Lin",
+      "year": 2023,
+      "json_dir": "RP15_Lin_2023",
+      "xml_file": "RP15_Lin_2023_claude.xml",
+      "pages_dir": "RP15_Lin_2023"
+    },
+    "RP16": {
+      "stem": "RP16_Kim_2023",
+      "first_author": "Kim",
+      "year": 2023,
+      "json_dir": "RP16_Kim_2023",
+      "xml_file": "RP16_Kim_2023_claude.xml",
+      "pages_dir": "RP16_Kim_2023"
+    },
+    "RP17": {
+      "stem": "RP17_Dettmers_2023",
+      "first_author": "Dettmers",
+      "year": 2023,
+      "json_dir": "RP17_Dettmers_2023",
+      "xml_file": "RP17_Dettmers_2023_claude.xml",
+      "pages_dir": "RP17_Dettmers_2023"
+    },
+    "RP18": {
+      "stem": "RP18_Shao_2023",
+      "first_author": "Shao",
+      "year": 2023,
+      "json_dir": "RP18_Shao_2023",
+      "xml_file": "RP18_Shao_2023_claude.xml",
+      "pages_dir": "RP18_Shao_2023"
+    },
+    "RP19": {
+      "stem": "RP19_Liu_2023",
+      "first_author": "Liu",
+      "year": 2023,
+      "json_dir": "RP19_Liu_2023",
+      "xml_file": "RP19_Liu_2023_claude.xml",
+      "pages_dir": "RP19_Liu_2023"
+    },
+    "RP20": {
+      "stem": "RP20_Dubey_2024",
+      "first_author": "Dubey",
+      "year": 2024,
+      "json_dir": "RP20_Dubey_2024",
+      "xml_file": "RP20_Dubey_2024_claude.xml",
+      "pages_dir": "RP20_Dubey_2024"
+    },
+    "RP21": {
+      "stem": "RP21_Tseng_2024",
+      "first_author": "Tseng",
+      "year": 2024,
+      "json_dir": "RP21_Tseng_2024",
+      "xml_file": "RP21_Tseng_2024_claude.xml",
+      "pages_dir": "RP21_Tseng_2024"
+    },
+    "RP22": {
+      "stem": "RP22_Hooper_2024",
+      "first_author": "Hooper",
+      "year": 2024,
+      "json_dir": "RP22_Hooper_2024",
+      "xml_file": "RP22_Hooper_2024_claude.xml",
+      "pages_dir": "RP22_Hooper_2024"
+    },
+    "RP23": {
+      "stem": "RP23_Li_2024",
+      "first_author": "Li",
+      "year": 2024,
+      "json_dir": "RP23_Li_2024",
+      "xml_file": "RP23_Li_2024_claude.xml",
+      "pages_dir": "RP23_Li_2024"
+    },
+    "RP24": {
+      "stem": "RP24_Kirsten_2024",
+      "first_author": "Kirsten",
+      "year": 2024,
+      "json_dir": "RP24_Kirsten_2024",
+      "xml_file": "RP24_Kirsten_2024_claude.xml",
+      "pages_dir": "RP24_Kirsten_2024"
+    },
+    "RP25": {
+      "stem": "RP25_Kirsten_2024",
+      "first_author": "Kirsten",
+      "year": 2024,
+      "json_dir": "RP25_Kirsten_2024",
+      "xml_file": "RP25_Kirsten_2024_claude.xml",
+      "pages_dir": "RP25_Kirsten_2024"
+    },
+    "RP26": {
+      "stem": "RP26_Hong_2024",
+      "first_author": "Hong",
+      "year": 2024,
+      "json_dir": "RP26_Hong_2024",
+      "xml_file": "RP26_Hong_2024_claude.xml",
+      "pages_dir": "RP26_Hong_2024"
+    },
+    "RP27": {
+      "stem": "RP27_Zhelnin_2024",
+      "first_author": "Zhelnin",
+      "year": 2024,
+      "json_dir": "RP27_Zhelnin_2024",
+      "xml_file": "RP27_Zhelnin_2024_claude.xml",
+      "pages_dir": "RP27_Zhelnin_2024"
+    },
+    "RP28": {
+      "stem": "RP28_Ashkboos_2024",
+      "first_author": "Ashkboos",
+      "year": 2024,
+      "json_dir": "RP28_Ashkboos_2024",
+      "xml_file": "RP28_Ashkboos_2024_claude.xml",
+      "pages_dir": "RP28_Ashkboos_2024"
+    },
+    "RP29": {
+      "stem": "RP29_Ashkboos_2024",
+      "first_author": "Ashkboos",
+      "year": 2024,
+      "json_dir": "RP29_Ashkboos_2024",
+      "xml_file": "RP29_Ashkboos_2024_claude.xml",
+      "pages_dir": "RP29_Ashkboos_2024"
+    },
+    "RP30": {
+      "stem": "RP30_Egiazarian_2024",
+      "first_author": "Egiazarian",
+      "year": 2024,
+      "json_dir": "RP30_Egiazarian_2024",
+      "xml_file": "RP30_Egiazarian_2024_claude.xml",
+      "pages_dir": "RP30_Egiazarian_2024"
+    },
+    "RP31": {
+      "stem": "RP31_Chua_2024",
+      "first_author": "Chua",
+      "year": 2024,
+      "json_dir": "RP31_Chua_2024",
+      "xml_file": "RP31_Chua_2024_claude.xml",
+      "pages_dir": "RP31_Chua_2024"
+    },
+    "RP32": {
+      "stem": "RP32_Belkhiter_2024",
+      "first_author": "Belkhiter",
+      "year": 2024,
+      "json_dir": "RP32_Belkhiter_2024",
+      "xml_file": "RP32_Belkhiter_2024_claude.xml",
+      "pages_dir": "RP32_Belkhiter_2024"
+    },
+    "RP33": {
+      "stem": "RP33_Zhang_2024",
+      "first_author": "Zhang",
+      "year": 2024,
+      "json_dir": "RP33_Zhang_2024",
+      "xml_file": "RP33_Zhang_2024_claude.xml",
+      "pages_dir": "RP33_Zhang_2024"
+    },
+    "RP34": {
+      "stem": "RP34_Song_2024",
+      "first_author": "Song",
+      "year": 2024,
+      "json_dir": "RP34_Song_2024",
+      "xml_file": "RP34_Song_2024_claude.xml",
+      "pages_dir": "RP34_Song_2024"
+    },
+    "RP35": {
+      "stem": "RP35_Sun_2024",
+      "first_author": "Sun",
+      "year": 2024,
+      "json_dir": "RP35_Sun_2024",
+      "xml_file": "RP35_Sun_2024_claude.xml",
+      "pages_dir": "RP35_Sun_2024"
+    },
+    "RP36": {
+      "stem": "RP36_Liu_2024",
+      "first_author": "Liu",
+      "year": 2024,
+      "json_dir": "RP36_Liu_2024",
+      "xml_file": "RP36_Liu_2024_claude.xml",
+      "pages_dir": "RP36_Liu_2024"
+    },
+    "RP37": {
+      "stem": "RP37_Guo_2024",
+      "first_author": "Guo",
+      "year": 2024,
+      "json_dir": "RP37_Guo_2024",
+      "xml_file": "RP37_Guo_2024_claude.xml",
+      "pages_dir": "RP37_Guo_2024"
+    },
+    "RP38": {
+      "stem": "RP38_Liu_2024",
+      "first_author": "Liu",
+      "year": 2024,
+      "json_dir": "RP38_Liu_2024",
+      "xml_file": "RP38_Liu_2024_claude.xml",
+      "pages_dir": "RP38_Liu_2024"
+    },
+    "RP39": {
+      "stem": "RP39_Yang_2025",
+      "first_author": "Yang",
+      "year": 2025,
+      "json_dir": "RP39_Yang_2025",
+      "xml_file": "RP39_Yang_2025_claude.xml",
+      "pages_dir": "RP39_Yang_2025"
+    },
+    "RP40": {
+      "stem": "RP40_Haziza_2025",
+      "first_author": "Haziza",
+      "year": 2025,
+      "json_dir": "RP40_Haziza_2025",
+      "xml_file": "RP40_Haziza_2025_claude.xml",
+      "pages_dir": "RP40_Haziza_2025"
+    },
+    "RP41": {
+      "stem": "RP41_Maximov_2025",
+      "first_author": "Maximov",
+      "year": 2025,
+      "json_dir": "RP41_Maximov_2025",
+      "xml_file": "RP41_Maximov_2025_claude.xml",
+      "pages_dir": "RP41_Maximov_2025"
+    },
+    "RP42": {
+      "stem": "RP42_Chen_2025",
+      "first_author": "Chen",
+      "year": 2025,
+      "json_dir": "RP42_Chen_2025",
+      "xml_file": "RP42_Chen_2025_claude.xml",
+      "pages_dir": "RP42_Chen_2025"
+    },
+    "RP43": {
+      "stem": "RP43_Kamirul_2025",
+      "first_author": "Kamirul",
+      "year": 2025,
+      "json_dir": "RP43_Kamirul_2025",
+      "xml_file": "RP43_Kamirul_2025_claude.xml",
+      "pages_dir": "RP43_Kamirul_2025"
+    },
+    "RP44": {
+      "stem": "RP44_Aljohani_2025",
+      "first_author": "Aljohani",
+      "year": 2025,
+      "json_dir": "RP44_Aljohani_2025",
+      "xml_file": "RP44_Aljohani_2025_claude.xml",
+      "pages_dir": "RP44_Aljohani_2025"
+    },
+    "RP45": {
+      "stem": "RP45_Fang_2025",
+      "first_author": "Fang",
+      "year": 2025,
+      "json_dir": "RP45_Fang_2025",
+      "xml_file": "RP45_Fang_2025_claude.xml",
+      "pages_dir": "RP45_Fang_2025"
+    },
+    "RP46": {
+      "stem": "RP46_Raza_2025",
+      "first_author": "Raza",
+      "year": 2025,
+      "json_dir": "RP46_Raza_2025",
+      "xml_file": "RP46_Raza_2025_claude.xml",
+      "pages_dir": "RP46_Raza_2025"
+    },
+    "RP47": {
+      "stem": "RP47_Shrestha_2025",
+      "first_author": "Shrestha",
+      "year": 2025,
+      "json_dir": "RP47_Shrestha_2025",
+      "xml_file": "RP47_Shrestha_2025_claude.xml",
+      "pages_dir": "RP47_Shrestha_2025"
+    },
+    "RP48": {
+      "stem": "RP48_Hu_2025",
+      "first_author": "Hu",
+      "year": 2025,
+      "json_dir": "RP48_Hu_2025",
+      "xml_file": "RP48_Hu_2025_claude.xml",
+      "pages_dir": "RP48_Hu_2025"
+    },
+    "RP49": {
+      "stem": "RP49_Fu_2025",
+      "first_author": "Fu",
+      "year": 2025,
+      "json_dir": "RP49_Fu_2025",
+      "xml_file": "RP49_Fu_2025_claude.xml",
+      "pages_dir": "RP49_Fu_2025"
+    },
+    "RP50": {
+      "stem": "RP50_Mi_2025",
+      "first_author": "Mi",
+      "year": 2025,
+      "json_dir": "RP50_Mi_2025",
+      "xml_file": "RP50_Mi_2025_claude.xml",
+      "pages_dir": "RP50_Mi_2025"
+    }
+  }
+}

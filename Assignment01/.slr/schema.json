@@ -1,0 +1,96 @@
+{
+  "schema_version": "a1.v1",
+  "description": "AI503 Assignment 1 SLR extraction schema. Every leaf field is a {value, ev} pair where ev = {page, section, quote, bbox, block_id}. Arrays of values become arrays of {value, ev} objects. Designed so an interactive paper explorer can show source page images with highlight overlays.",
+
+  "ev_shape": {
+    "page": "int — page number (1-indexed) from XML page='N'",
+    "section": "string — section title from XML section='...'",
+    "quote": "string — verbatim 80-200 chars from the source XML block",
+    "bbox": "[x0,y0,x1,y1] in PDF point space (72 DPI), top-left origin. From marker JSON. Optional if not available.",
+    "block_id": "string — XML block id like '/page/7/Text/12'. Optional but preferred for round-trip lookup."
+  },
+
+  "leaf_field_shape": {
+    "value": "the extracted scalar / string / number",
+    "ev":   "see ev_shape above"
+  },
+
+  "array_field_shape": [
+    {"value": "first item", "ev": {"page": 1, "section": "Abstract", "quote": "...", "bbox": null, "block_id": null}},
+    {"value": "second item", "ev": {"page": 2, "section": "Introduction", "quote": "...", "bbox": null, "block_id": null}}
+  ],
+
+  "fields": {
+    "rp_id":      {"type": "string", "traced": false, "note": "from filename, no source needed"},
+    "year":       {"type": "leaf", "value_type": "int"},
+    "first_author": {"type": "leaf", "value_type": "string", "note": "surname of first author for Harvard inline refs"},
+    "authors":    {"type": "array_leaf", "value_type": "string", "note": "all authors, full names"},
+    "title":      {"type": "leaf", "value_type": "string"},
+    "venue":      {"type": "leaf", "value_type": "string"},
+    "doi":        {"type": "leaf", "value_type": "string"},
+    "contribution": {"type": "leaf", "value_type": "string", "note": "1-2 sentences capturing the paper's headline novelty. Source typically Abstract or Introduction."},
+
+    "datasets":      {"type": "array_leaf", "value_type": "string", "note": "every evaluation/calibration dataset, one element per dataset"},
+    "data_size":     {"type": "leaf", "value_type": "string", "note": "free-form size description, e.g. '128 calibration sequences of 2048 tokens' or '10K passages'"},
+    "models_used":   {"type": "array_leaf", "value_type": "string", "note": "every model checkpoint tested, e.g. 'OPT-175B', 'LLaMA-2-7B'"},
+    "eval_metrics":  {"type": "array_leaf", "value_type": "string", "note": "every metric reported: PPL, accuracy, BLEU, ASR, etc."},
+    "key_results":   {"type": "array_leaf", "value_type": "string", "note": "2-4 headline numeric results in 'X on Y at Z = N' form. Source MUST point to the table or text where the number appears. Use ev.source_table if from a table."},
+
+    "paper_type":    {"type": "leaf", "value_type": "enum", "values": ["benchmark", "method", "survey", "application", "safety_analysis"]},
+    "method_family": {"type": "leaf", "value_type": "enum", "values": ["PTQ", "QAT", "KV-cache-quant", "pruning", "architecture", "none"], "note": "'none' for benchmark/non-method papers"},
+    "quantization_method_name": {"type": "leaf", "value_type": "string_or_null", "note": "e.g. 'GPTQ', 'SmoothQuant'. null if N/A."},
+    "bit_widths_tested": {"type": "array_leaf", "value_type": "int", "note": "[2, 3, 4, 8] etc. Empty array if not a quantization paper."},
+    "quantization_target": {"type": "leaf", "value_type": "enum_or_null", "values": ["weight-only", "weight+activation", "KV-cache", "mixed", null]},
+    "granularity":   {"type": "leaf", "value_type": "enum_or_null", "values": ["per-tensor", "per-channel", "per-group", "per-token", "per-row", null]},
+    "training_free": {"type": "leaf", "value_type": "bool_or_null"},
+    "hardware":      {"type": "array_leaf", "value_type": "string", "note": "e.g. ['A100', 'A6000']"},
+    "speedup_claim": {"type": "leaf", "value_type": "object_or_null", "object_shape": {"factor": "float", "baseline": "string", "hardware": "string"}, "note": "ev should point to the table/figure with the speedup number"},
+
+    "strengths":   {"type": "array_leaf", "value_type": "string", "note": "2-4 bullet strengths, each <= 25 words. Source the claim from results/abstract/conclusion."},
+    "weaknesses":  {"type": "array_leaf", "value_type": "string", "note": "2-4 weaknesses the paper itself acknowledges. Source from limitations/discussion."},
+    "limitations": {"type": "array_leaf", "value_type": "string", "note": "what the method does NOT do (extrapolated from scope/results). Source the bounding statement."},
+
+    "future_work_stated": {"type": "array_leaf", "value_type": "string", "note": "future directions the paper proposes"},
+
+    "gap_signals": {
+      "type": "object",
+      "fields": {
+        "reports_energy_consumption":             {"type": "leaf", "value_type": "bool", "note": "Watts, joules, kWh — anything past throughput."},
+        "reports_statistical_significance":        {"type": "leaf", "value_type": "bool", "note": "CIs, error bars, multiple seeds, p-values."},
+        "tests_on_edge_hardware":                  {"type": "leaf", "value_type": "bool", "note": "Mobile / Jetson / Raspberry Pi / non-data-center GPU."},
+        "tests_safety_after_quantization":         {"type": "leaf", "value_type": "bool", "note": "Bias, refusal, jailbreak, toxicity post-quantization."},
+        "tests_below_4_bit":                       {"type": "leaf", "value_type": "bool", "note": "3-bit, 2-bit, ternary."},
+        "reports_real_latency_not_just_throughput":{"type": "leaf", "value_type": "bool", "note": "Per-token latency measured, not just tokens/sec."},
+        "evaluates_long_context":                  {"type": "leaf", "value_type": "bool", "note": "LongBench / >=8K context evaluation."},
+        "releases_code":                           {"type": "leaf", "value_type": "bool", "note": "GitHub URL or 'code available' statement."},
+        "evaluates_instruction_tuned_models":      {"type": "leaf", "value_type": "bool", "note": "Tests Chat/Instruct variants alongside base."}
+      },
+      "note": "Each boolean traced with ev showing where the evidence is (or 'no mention' if absent — use ev with section='absence' and quote=''). Aggregating these across 50 papers builds the gap matrix."
+    }
+  },
+
+  "output_schema_example": {
+    "rp_id": "RP09",
+    "year": {"value": 2022, "ev": {"page": 1, "section": "Title", "quote": "GPTQ ... 2022", "bbox": null, "block_id": "/page/0/Text/0"}},
+    "first_author": {"value": "Frantar", "ev": {"page": 1, "section": "Title", "quote": "Elias Frantar", "bbox": null, "block_id": null}},
+    "authors": [
+      {"value": "Elias Frantar",   "ev": {"page": 1, "section": "Title", "quote": "Elias Frantar", "bbox": null, "block_id": null}},
+      {"value": "Saleh Ashkboos",  "ev": {"page": 1, "section": "Title", "quote": "Saleh Ashkboos", "bbox": null, "block_id": null}}
+    ],
+    "title": {"value": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers", "ev": {"page": 1, "section": "Title", "quote": "...", "bbox": null, "block_id": null}},
+    "contribution": {"value": "GPTQ is a one-shot weight-only PTQ method using approximate second-order information that quantizes 175B models to 3-4 bits in ~4 GPU-hours.", "ev": {"page": 1, "section": "Abstract", "quote": "we propose GPTQ, a new one-shot weight quantization method based on approximate second-order information", "bbox": [115, 412, 502, 478], "block_id": "/page/0/Text/3"}},
+    "datasets": [
+      {"value": "WikiText-2", "ev": {"page": 7, "section": "Experimental Setup", "quote": "We use WikiText-2 for perplexity evaluation", "bbox": null, "block_id": "/page/6/Text/4"}},
+      {"value": "C4",         "ev": {"page": 7, "section": "Experimental Setup", "quote": "and C4 for calibration", "bbox": null, "block_id": "/page/6/Text/4"}}
+    ],
+    "key_results": [
+      {"value": "OPT-175B at 4-bit reaches WikiText-2 PPL 8.37 vs FP16 8.34 (Δ 0.03)", "ev": {"page": 8, "section": "Experiments", "quote": "OPT 175B 4-bit GPTQ 8.37", "bbox": null, "block_id": "/page/7/Table/2", "source_table": "Table 5"}},
+      {"value": "3.25× decoding speedup on A100 over FP16",                              "ev": {"page": 9, "section": "Inference Speedup", "quote": "3.25x speedup on the A100", "bbox": null, "block_id": null, "source_table": "Table 6"}}
+    ],
+    "gap_signals": {
+      "reports_energy_consumption":             {"value": false, "ev": {"page": null, "section": "absence", "quote": "", "bbox": null, "block_id": null}},
+      "tests_safety_after_quantization":        {"value": false, "ev": {"page": null, "section": "absence", "quote": "", "bbox": null, "block_id": null}},
+      "tests_below_4_bit":                      {"value": true,  "ev": {"page": 8, "section": "Extreme Quantization", "quote": "we also tested 2-bit and 3-bit", "bbox": null, "block_id": null}}
+    }
+  }
+}

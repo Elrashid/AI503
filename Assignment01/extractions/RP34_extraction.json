@@ -1,0 +1,1261 @@
+{
+  "rp_id": "RP34",
+  "year": {
+    "value": 2024,
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "SOSP '24, November 4–6, 2024, Austin, TX, USA",
+      "bbox": [
+        52.892578125,
+        573.1171875,
+        295.2151184082031,
+        662.4472198486328
+      ],
+      "block_id": "/page/0/Text/9"
+    }
+  },
+  "first_author": {
+    "value": "Song",
+    "ev": {
+      "page": 1,
+      "section": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+      "quote": "Yixin Song, Zeyu Mi, Haotong Xie and Haibo Chen Institute of Parallel and Distributed Systems, SEIEE, Shanghai Jiao Tong University",
+      "bbox": [
+        142.79202270507812,
+        127.3692626953125,
+        469.2065734863281,
+        152.7940673828125
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Yixin Song",
+      "ev": {
+        "page": 1,
+        "section": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+        "quote": "Yixin Song, Zeyu Mi, Haotong Xie and Haibo Chen",
+        "bbox": [
+          142.79202270507812,
+          127.3692626953125,
+          469.2065734863281,
+          152.7940673828125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Zeyu Mi",
+      "ev": {
+        "page": 1,
+        "section": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+        "quote": "Yixin Song, Zeyu Mi, Haotong Xie and Haibo Chen",
+        "bbox": [
+          142.79202270507812,
+          127.3692626953125,
+          469.2065734863281,
+          152.7940673828125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Haotong Xie",
+      "ev": {
+        "page": 1,
+        "section": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+        "quote": "Yixin Song, Zeyu Mi, Haotong Xie and Haibo Chen",
+        "bbox": [
+          142.79202270507812,
+          127.3692626953125,
+          469.2065734863281,
+          152.7940673828125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Haibo Chen",
+      "ev": {
+        "page": 1,
+        "section": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+        "quote": "Yixin Song, Zeyu Mi, Haotong Xie and Haibo Chen",
+        "bbox": [
+          142.79202270507812,
+          127.3692626953125,
+          469.2065734863281,
+          152.7940673828125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+    "ev": {
+      "page": 1,
+      "section": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+      "quote": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+      "bbox": [
+        53.7890625,
+        71.13629150390625,
+        558.119873046875,
+        115.7088623046875
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "SOSP '24 (ACM Symposium on Operating Systems Principles)",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "SOSP '24, November 4–6, 2024, Austin, TX, USA",
+      "bbox": [
+        52.892578125,
+        573.1171875,
+        295.2151184082031,
+        662.4472198486328
+      ],
+      "block_id": "/page/0/Text/9"
+    }
+  },
+  "doi": {
+    "value": "10.1145/3694715.3695964",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "ACM ISBN 979-8-4007-1251-7/24/11. . . $15.00 https://doi.org/10.1145/3694715.3695964",
+      "bbox": [
+        52.892578125,
+        684.4921875,
+        198.7609405517578,
+        703.339714050293
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "contribution": {
+    "value": "PowerInfer is a GPU-CPU hybrid LLM inference engine that exploits power-law neuron activation, preloading hot neurons to GPU and computing cold neurons on CPU, reaching up to 11.69x speedup over llama.cpp on a single RTX 4090.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "PowerInfer exploits such an insight to design a GPU-CPU hybrid inference engine: hot-activated neurons are preloaded onto the GPU for fast access, while cold-activated neurons are computed on the CPU",
+      "bbox": [
+        52.59375,
+        178.10247802734375,
+        295.7325439453125,
+        463.1163330078125
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "datasets": [
+    {
+      "value": "Wikipedia",
+      "ev": {
+        "page": 4,
+        "section": "3.1 Insight-1: Power-law Activation",
+        "quote": "We profile from wikipedia [13] dataset to collect the statistics of the activation sparsity about 1M tokens.",
+        "bbox": [
+          316.16015625,
+          401.80078125,
+          560.25,
+          543.33984375
+        ],
+        "block_id": "/page/3/Text/13"
+      }
+    },
+    {
+      "value": "C4",
+      "ev": {
+        "page": 8,
+        "section": "6.1 Offline Profiling",
+        "quote": "we achieve the profile with an offline profiler, which deploys the LLM to handle requests generated from multiple general datasets, such as C4 [39] and Wikipedia [13].",
+        "bbox": [
+          52.5,
+          521.68359375,
+          296.25,
+          652.5
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "ChatGPT prompts",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "The workloads for our experiments are derived from chatbot arena [62] ChatGPT prompts [35] and Alpaca [50] datasets.",
+        "bbox": [
+          52.5,
+          333.3515625,
+          296.25,
+          415.3359375
+        ],
+        "block_id": "/page/9/Text/5"
+      }
+    },
+    {
+      "value": "Alpaca",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "The workloads for our experiments are derived from chatbot arena [62] ChatGPT prompts [35] and Alpaca [50] datasets.",
+        "bbox": [
+          52.5,
+          333.3515625,
+          296.25,
+          415.3359375
+        ],
+        "block_id": "/page/9/Text/5"
+      }
+    },
+    {
+      "value": "Chatbot Arena",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "The workloads for our experiments are derived from chatbot arena [62] ChatGPT prompts [35] and Alpaca [50] datasets.",
+        "bbox": [
+          52.5,
+          333.3515625,
+          296.25,
+          415.3359375
+        ],
+        "block_id": "/page/9/Text/5"
+      }
+    },
+    {
+      "value": "WikiText-2",
+      "ev": {
+        "page": 7,
+        "section": "5.1 Adaptive Sparsity Predictors",
+        "quote": "In training predictors, model perplexity on the WikiText-2 dataset served as the benchmark for the predictive accuracy.",
+        "bbox": [
+          52.5,
+          362.25,
+          296.25,
+          479.91796875
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "PIQA",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "PIQA [5] and Winogrande [41] assess common sense reasoning and understanding of physical interactions in LLMs.",
+        "bbox": [
+          315.5625,
+          72.0,
+          560.25,
+          165.0
+        ],
+        "block_id": "/page/12/Caption/10"
+      }
+    },
+    {
+      "value": "Winogrande",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "PIQA [5] and Winogrande [41] assess common sense reasoning and understanding of physical interactions in LLMs.",
+        "bbox": [
+          315.5625,
+          72.0,
+          560.25,
+          165.0
+        ],
+        "block_id": "/page/12/Caption/10"
+      }
+    },
+    {
+      "value": "Arc-Challenge",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "Arc-Challenge [11] is a dataset for evaluating AI systems' comprehension and reasoning in natural language.",
+        "bbox": [
+          315.5625,
+          72.0,
+          560.25,
+          165.0
+        ],
+        "block_id": "/page/12/Caption/10"
+      }
+    },
+    {
+      "value": "MMLU",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "MMLU [21] benchmarks model performance across various domains.",
+        "bbox": [
+          315.5625,
+          72.0,
+          560.25,
+          165.0
+        ],
+        "block_id": "/page/12/Caption/10"
+      }
+    },
+    {
+      "value": "GSM8K",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "| OPT-7B | 75.78% | 65.19% | 30.63% | 24.95% | 1.90% | 39.69% |",
+        "bbox": [
+          316.4888671875,
+          165.770859375,
+          557.2845703125,
+          258.072890625
+        ],
+        "block_id": "/page/12/Table/11"
+      }
+    },
+    {
+      "value": "HumanEval",
+      "ev": {
+        "page": 12,
+        "section": "8.3 Ablation Studies",
+        "quote": "We sample from the most representative tasks on the Hugging Face community, including STEM, coding, roleplaying and information extraction.",
+        "bbox": [
+          52.5,
+          608.30859375,
+          296.25,
+          702.75
+        ],
+        "block_id": "/page/11/Text/8"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "About 1M tokens used for activation profiling; predictors trained on Wikipedia general corpus; benchmark workloads sampled with input lengths 8-128 tokens (and 1.5K input length for long-context tests)",
+    "ev": {
+      "page": 4,
+      "section": "3.1 Insight-1: Power-law Activation",
+      "quote": "We profile from wikipedia [13] dataset to collect the statistics of the activation sparsity about 1M tokens.",
+      "bbox": [
+        316.16015625,
+        401.80078125,
+        560.25,
+        543.33984375
+      ],
+      "block_id": "/page/3/Text/13"
+    }
+  },
+  "models_used": [
+    {
+      "value": "OPT-7B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| OPT-7B/13B/30B/66B/175B | ReLU | 96%-98% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "OPT-13B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| OPT-7B/13B/30B/66B/175B | ReLU | 96%-98% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "OPT-30B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| OPT-7B/13B/30B/66B/175B | ReLU | 96%-98% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "OPT-66B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| OPT-7B/13B/30B/66B/175B | ReLU | 96%-98% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "OPT-175B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| OPT-7B/13B/30B/66B/175B | ReLU | 96%-98% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "Bamboo-7B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| Bamboo-7B | dReLU | 90% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "Falcon(ReLU)-40B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| Falcon(ReLU)-40B | ReLU | 95% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "LLaMA2(ReGLU)-7B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| LLaMA2(ReGLU)-7B | ReGLU | 70% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "LLaMA2(ReGLU)-13B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| LLaMA2(ReGLU)-13B | ReGLU | 78% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "LLaMA2(ReGLU)-70B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| LLaMA2(ReGLU)-70B | ReGLU | 82% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "Qwen1.5-4B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| Qwen1.5-4B | SwiGLU | 40% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "LLaMA2(SwiGLU)-13B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| LLaMA2(SwiGLU)-13B | SwiGLU | 43% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    },
+    {
+      "value": "Yi-34B",
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "| Yi-34B | SwiGLU | 53% |",
+        "bbox": [
+          53.23921875,
+          106.773046875,
+          292.20609375,
+          221.164453125
+        ],
+        "block_id": "/page/9/Table/3"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "tokens/s (generation throughput)",
+      "ev": {
+        "page": 10,
+        "section": "8.2 End-to-End Performance",
+        "quote": "On average, PowerInfer achieves a generation speed of 8.32 tokens/s, reaching up to 16.06 tokens/s",
+        "bbox": [
+          315.861328125,
+          382.078125,
+          560.25,
+          571.5
+        ],
+        "block_id": "/page/9/Text/14"
+      }
+    },
+    {
+      "value": "Speedup (vs llama.cpp)",
+      "ev": {
+        "page": 10,
+        "section": "8.2 End-to-End Performance",
+        "quote": "with average speedups of 7.23x and 6.19x, and for Falcon-40B, up to 11.69x compared with llama.cpp.",
+        "bbox": [
+          316.5,
+          585.4921875,
+          560.25,
+          703.0546875
+        ],
+        "block_id": "/page/9/Text/14"
+      }
+    },
+    {
+      "value": "Per-token generation latency (ms)",
+      "ev": {
+        "page": 11,
+        "section": "8.2 End-to-End Performance",
+        "quote": "End-to-end latency comparison for different models with 1.5K input length and 256 output length on PC-High.",
+        "bbox": [
+          52.5,
+          191.25,
+          294.75,
+          212.30859375
+        ],
+        "block_id": "/page/10/Caption/4"
+      }
+    },
+    {
+      "value": "P95 / P99 inter-token latency",
+      "ev": {
+        "page": 12,
+        "section": "8.3 Ablation Studies",
+        "quote": "Generation latency (ms) distribution on various Tasks.",
+        "bbox": [
+          52.5,
+          175.5,
+          295.5,
+          208.5
+        ],
+        "block_id": "/page/11/Caption/9"
+      }
+    },
+    {
+      "value": "Downstream task accuracy (PIQA, Winogrande, ARC-C, MMLU, GSM8K)",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "Comparison of LLM accuracy between PowerInfer-optimized models (termed as \"model-PowerInfer\") and their original counterparts.",
+        "bbox": [
+          315.5625,
+          72.0,
+          560.25,
+          165.0
+        ],
+        "block_id": "/page/12/Caption/10"
+      }
+    },
+    {
+      "value": "Cosine similarity (output vs dense)",
+      "ev": {
+        "page": 14,
+        "section": "8.5 LLM Accuracy",
+        "quote": "By comparing the cosine similarity between outputs from original dense computations and our predictor-based computations, we found that mispredictions only affect results by approximately 0.4%.",
+        "bbox": [
+          52.5,
+          337.21875,
+          295.5,
+          501.75
+        ],
+        "block_id": "/page/13/Text/6"
+      }
+    },
+    {
+      "value": "Predictor accuracy (%)",
+      "ev": {
+        "page": 6,
+        "section": "5.1 Adaptive Sparsity Predictors",
+        "quote": "a decrease from 480MB to 320MB in predictor size dropped its accuracy from 92% to 84%",
+        "bbox": [
+          316.458984375,
+          405.75,
+          561.0,
+          571.5703125
+        ],
+        "block_id": "/page/5/Text/15"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Up to 11.69x speedup over llama.cpp for Falcon-40B (FP16) on RTX 4090, average 7.23x across models",
+      "ev": {
+        "page": 10,
+        "section": "8.2 End-to-End Performance",
+        "quote": "with average speedups of 7.23x and 6.19x, and for Falcon-40B, up to 11.69x compared with llama.cpp.",
+        "bbox": [
+          316.5,
+          585.4921875,
+          560.25,
+          703.0546875
+        ],
+        "block_id": "/page/9/Text/14",
+        "source_table": null
+      }
+    },
+    {
+      "value": "RTX 4090 reaches 82% of A100 token generation rate for OPT-30B (only 18% slower than A100)",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "PowerInfer achieves performance comparable to that of a high-end server-grade A100 GPU, reaching 82% of its token generation rate on a single consumer-grade RTX 4090 GPU.",
+        "bbox": [
+          52.59375,
+          178.10247802734375,
+          295.7325439453125,
+          463.1163330078125
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": null
+      }
+    },
+    {
+      "value": "INT4 quantized models reach 13.20 tokens/s average (peak 29.08) on PC-High, 2.89x avg speedup vs llama.cpp",
+      "ev": {
+        "page": 11,
+        "section": "8.2 End-to-End Performance",
+        "quote": "On a high-end PC (PC-High), PowerInfer delivers responses at an average speed of 13.20 tokens/s, reaching a peak of 29.08 tokens/s. The average speedup achieved compared with llama.cpp is 2.89x",
+        "bbox": [
+          316.5,
+          417.65625,
+          559.5,
+          583.171875
+        ],
+        "block_id": "/page/10/Text/13",
+        "source_table": null
+      }
+    },
+    {
+      "value": "Accuracy preserved: Falcon-40B average 56.23% vs Falcon-40B-PowerInfer 55.95% across PIQA/Winogrande/ARC-C/MMLU/GSM8K",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "| Falcon-40B | 81.23% | 75.45% | 50.68% | 51.78% | 21.99% | 56.23% |",
+        "bbox": [
+          316.4888671875,
+          165.770859375,
+          557.2845703125,
+          258.072890625
+        ],
+        "block_id": "/page/12/Table/11",
+        "source_table": "Table 7"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "This paper introduces PowerInfer, a high-speed Large Language Model (LLM) inference engine on a personal computer (PC) equipped with a single consumer-grade GPU.",
+      "bbox": [
+        52.59375,
+        178.10247802734375,
+        295.7325439453125,
+        463.1163330078125
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "method_family": {
+    "value": "none",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "The key principle underlying the design of PowerInfer is exploiting the high locality inherent in LLM inference, characterized by a power-law distribution in neuron activation.",
+      "bbox": [
+        52.59375,
+        178.10247802734375,
+        295.7325439453125,
+        463.1163330078125
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "quantization_method_name": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 16,
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "all models in our experiments use FP16 and INT4 quantized parameters, with intermediate activations in FP32",
+        "bbox": [
+          52.5,
+          238.5,
+          295.5,
+          331.8046875
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    },
+    {
+      "value": 4,
+      "ev": {
+        "page": 10,
+        "section": "8.1 Experimental Setup",
+        "quote": "all models in our experiments use FP16 and INT4 quantized parameters, with intermediate activations in FP32",
+        "bbox": [
+          52.5,
+          238.5,
+          295.5,
+          331.8046875
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight-only",
+    "ev": {
+      "page": 10,
+      "section": "8.1 Experimental Setup",
+      "quote": "all models in our experiments use FP16 and INT4 quantized parameters, with intermediate activations in FP32, consistent with recent LLM research practices [15, 57].",
+      "bbox": [
+        52.5,
+        238.5,
+        295.5,
+        331.8046875
+      ],
+      "block_id": "/page/9/Text/4"
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 9,
+      "section": "7 Implementation",
+      "quote": "PowerInfer utilized general corpora such as Wikipedia [13] to train online activation predictors, Notably we deliberately avoided using any of the downstream task datasets in our predictor training process.",
+      "bbox": [
+        316.5,
+        378.75,
+        559.5,
+        471.796875
+      ],
+      "block_id": "/page/8/Text/15"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA RTX 4090 (24GB)",
+      "ev": {
+        "page": 9,
+        "section": "8.1 Experimental Setup",
+        "quote": "PC-High: Intel i9-13900K processor (eight 5.4GHz cores), 192GB host memory (bandwidth of 67.2 GB/s), an NVIDIA RTX 4090 GPU (24GB), and PCIe 4.0 interface",
+        "bbox": [
+          331.400390625,
+          570.0234375,
+          559.5,
+          663.75
+        ],
+        "block_id": "/page/8/ListGroup/207"
+      }
+    },
+    {
+      "value": "NVIDIA RTX 2080Ti (11GB)",
+      "ev": {
+        "page": 9,
+        "section": "8.1 Experimental Setup",
+        "quote": "PC-Low: Intel i7-12700K processor (eight 4.9GHz cores), 64GB host memory (bandwidth 38.4 GB/s), an NVIDIA RTX 2080Ti GPU (11GB), and PCIe 3.0 interface",
+        "bbox": [
+          331.400390625,
+          570.0234375,
+          559.5,
+          663.75
+        ],
+        "block_id": "/page/8/ListGroup/207"
+      }
+    },
+    {
+      "value": "Intel i9-13900K CPU (PC-High)",
+      "ev": {
+        "page": 9,
+        "section": "8.1 Experimental Setup",
+        "quote": "PC-High: Intel i9-13900K processor (eight 5.4GHz cores), 192GB host memory",
+        "bbox": [
+          331.400390625,
+          570.0234375,
+          559.5,
+          663.75
+        ],
+        "block_id": "/page/8/ListGroup/207"
+      }
+    },
+    {
+      "value": "Intel i7-12700K CPU (PC-Low)",
+      "ev": {
+        "page": 9,
+        "section": "8.1 Experimental Setup",
+        "quote": "PC-Low: Intel i7-12700K processor (eight 4.9GHz cores), 64GB host memory",
+        "bbox": [
+          331.400390625,
+          570.0234375,
+          559.5,
+          663.75
+        ],
+        "block_id": "/page/8/ListGroup/207"
+      }
+    },
+    {
+      "value": "NVIDIA A100 80GB (baseline comparison)",
+      "ev": {
+        "page": 13,
+        "section": "8.3 Ablation Studies",
+        "quote": "we evaluate the generation speed of PowerInfer, deployed on PC-High, in comparison to the performance of llama.cpp and vLLM [23] executed on a single 80GB NVIDIA A100 GPU.",
+        "bbox": [
+          52.5,
+          410.6953125,
+          296.25,
+          576.0
+        ],
+        "block_id": "/page/12/Text/8"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 11.69,
+      "baseline": "llama.cpp",
+      "hardware": "NVIDIA RTX 4090 (PC-High), Falcon-40B FP16"
+    },
+    "ev": {
+      "page": 10,
+      "section": "8.2 End-to-End Performance",
+      "quote": "with average speedups of 7.23x and 6.19x, and for Falcon-40B, up to 11.69x compared with llama.cpp.",
+      "bbox": [
+        316.5,
+        585.4921875,
+        560.25,
+        703.0546875
+      ],
+      "block_id": "/page/9/Text/14",
+      "source_table": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "Up to 11.69x faster than llama.cpp on consumer RTX 4090 while keeping accuracy across multiple LLM families.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "PowerInfer significantly outperforms llama.cpp by up to 11.69x while retaining model accuracy across various LLMs (including OPT-175B) on a single NVIDIA RTX 4090 GPU.",
+        "bbox": [
+          52.59375,
+          178.10247802734375,
+          295.7325439453125,
+          463.1163330078125
+        ],
+        "block_id": "/page/0/Text/4"
+      }
+    },
+    {
+      "value": "Reaches 82% of A100 token generation speed for OPT-30B on a $2,000 RTX 4090 vs $20,000 A100.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "the inference speed achieved on an NVIDIA RTX 4090 GPU (priced at approximately $2,000) is only 18% slower compared to the performance on a top-tier A100 GPU (costing around $20,000)",
+        "bbox": [
+          315.5625,
+          342.6727294921875,
+          559.68505859375,
+          436.3213195800781
+        ],
+        "block_id": "/page/1/Text/12"
+      }
+    },
+    {
+      "value": "Adaptive predictors keep predictor parameters at only ~6-7% of LLM size, freeing GPU memory.",
+      "ev": {
+        "page": 7,
+        "section": "5.1 Adaptive Sparsity Predictors",
+        "quote": "Through this approach, PowerInfer effectively limits predictor parameters to a mere 6% of the total LLM parameters.",
+        "bbox": [
+          52.5,
+          362.25,
+          296.25,
+          479.91796875
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "Open-sourced and supports OPT, LLaMA2, Falcon families plus INT4 quantization on RTX 4090 and 2080Ti.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "PowerInfer is compatible with various popular LLM families, including OPT (7B-175B), LLaMA2 (7B-70B), and Falcon-40B, and supports consumer-grade GPUs like the NVIDIA RTX 4090 and NVIDIA RTX 2080Ti.",
+        "bbox": [
+          316.458984375,
+          466.3828125,
+          559.6875,
+          622.4303131103516
+        ],
+        "block_id": "/page/1/Text/12"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Speedup drops sharply on SwiGLU/SiLU models (only 1.47x-1.7x) due to lower activation sparsity.",
+      "ev": {
+        "page": 13,
+        "section": "8.4 SiLU-based LLM Performance",
+        "quote": "PowerInfer achieves a speedup of 1.47 x to 1.7x. This performance gain, albeit less pronounced than for ReLU-based counterparts",
+        "bbox": [
+          316.16015625,
+          377.25,
+          560.25,
+          493.5
+        ],
+        "block_id": "/page/12/Text/15"
+      }
+    },
+    {
+      "value": "Long-prompt short-output cases give limited gains (1.07x-4x) as prompt phase dilutes activation sparsity.",
+      "ev": {
+        "page": 11,
+        "section": "8.2 End-to-End Performance",
+        "quote": "In scenarios involving long input prompts with extremely short output lengths (less than 8 tokens), which are less common [35], PowerInfer demonstrates limited performance gains, ranging from 1.07x (Figure 11) to 4x",
+        "bbox": [
+          52.5,
+          608.30859375,
+          296.25,
+          702.75
+        ],
+        "block_id": "/page/10/Text/8"
+      }
+    },
+    {
+      "value": "Speedup decreases as batch size grows beyond 32 because joint activations become denser.",
+      "ev": {
+        "page": 11,
+        "section": "8.2 End-to-End Performance",
+        "quote": "As the batch size increases, the speed-up ratio offered by PowerInfer decreases. This reduction is attributed to the diminished sparsity of model joint activations.",
+        "bbox": [
+          315.75,
+          385.9453125,
+          560.25,
+          539.0859375
+        ],
+        "block_id": "/page/10/Text/14"
+      }
+    },
+    {
+      "value": "On PC-Low (11GB GPU) gains are smaller than PC-High due to memory limits forcing more CPU work.",
+      "ev": {
+        "page": 10,
+        "section": "8.2 End-to-End Performance",
+        "quote": "these improvements are smaller compared to those on a higher-end PC (PC-High), primarily due to the 11GB GPU memory limitation of PC-Low.",
+        "bbox": [
+          316.5,
+          573.75,
+          560.25,
+          702.28125
+        ],
+        "block_id": "/page/9/Text/15"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Targets local single-GPU PC inference with batch size near one; not designed for data-center high-throughput serving.",
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "In contrast to data-center deployments, which prioritize high throughput [23, 43, 57], local deployments focus on low latency in processing small batches.",
+        "bbox": [
+          317.056640625,
+          162.421875,
+          559.6857299804688,
+          304.98431396484375
+        ],
+        "block_id": "/page/0/Text/12"
+      }
+    },
+    {
+      "value": "Effectiveness depends heavily on activation sparsity; non-ReLU models with under 50% sparsity see modest gains.",
+      "ev": {
+        "page": 5,
+        "section": "4 PowerInfer Overview",
+        "quote": "The effectiveness of PowerInfer is directly correlated with the model's activation sparsity. ReLU-family LLMs, exhibiting over 90% sparse activations in their FFNs, are ideal candidates for PowerInfer.",
+        "bbox": [
+          316.16015625,
+          401.80078125,
+          560.25,
+          543.33984375
+        ],
+        "block_id": "/page/4/Text/15"
+      }
+    },
+    {
+      "value": "Predictor training is one-time but slow, often taking several hours and benefiting from multiple GPUs.",
+      "ev": {
+        "page": 9,
+        "section": "7 Implementation",
+        "quote": "Training predictors, though time-consuming (often several hours), is a one-time task that can be expedited with multiple GPUs.",
+        "bbox": [
+          316.5,
+          378.75,
+          559.5,
+          471.796875
+        ],
+        "block_id": "/page/8/Text/15"
+      }
+    },
+    {
+      "value": "No reporting of energy consumption, edge-device tests, safety metrics, or long-context evaluation.",
+      "ev": {
+        "page": 14,
+        "section": "10 Conclusion",
+        "quote": "PowerInfer achieves up to 11.69x faster LLM inference compared to systems like llama.cpp, without compromising accuracy.",
+        "bbox": [
+          316.5,
+          502.34765625,
+          558.75,
+          571.5
+        ],
+        "block_id": "/page/13/Text/15"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Integrate speculative inference with PowerInfer to further boost LLM inference speed.",
+      "ev": {
+        "page": 14,
+        "section": "9 Related Work",
+        "quote": "While separate from our focus, integrating speculative inference into PowerInfer could further boost LLM inference speed.",
+        "bbox": [
+          316.458984375,
+          287.33203125,
+          558.75,
+          370.08984375
+        ],
+        "block_id": "/page/13/Text/12"
+      }
+    },
+    {
+      "value": "Extend applicability through emerging ReLU-family activations (Nemotron, Mini-Tron) and sparsity-enhancing methods.",
+      "ev": {
+        "page": 5,
+        "section": "4 PowerInfer Overview",
+        "quote": "there is a growing trend on enhancing LLM sparsity without compromising performance [44, 46], or directly training LLMs with ReLU-family activations... This trend is expected to extend PowerInfer's applicability across a more diverse spectrum of LLMs.",
+        "bbox": [
+          316.16015625,
+          401.80078125,
+          560.25,
+          543.33984375
+        ],
+        "block_id": "/page/4/Text/15"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": true,
+      "ev": {
+        "page": 12,
+        "section": "8.3 Ablation Studies",
+        "quote": "We measure the inter-token generation latency distribution across different tasks. Table 5 presents the evaluation results of Bamboo-7B on PC-Low.",
+        "bbox": [
+          52.5,
+          410.6953125,
+          296.25,
+          576.0
+        ],
+        "block_id": "/page/11/Text/8"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 11,
+        "section": "8.2 End-to-End Performance",
+        "quote": "End-to-end latency comparison for different models with 1.5K input length and 256 output length on PC-High.",
+        "bbox": [
+          52.5,
+          191.25,
+          294.75,
+          212.30859375
+        ],
+        "block_id": "/page/10/Caption/4"
+      }
+    },
+    "evaluates_long_context": {
+      "value": true,
+      "ev": {
+        "page": 11,
+        "section": "8.2 End-to-End Performance",
+        "quote": "For relatively long input sequences, PowerInfer still achieves a 3.47x to 5.69x speedup, as shown in Table 4.",
+        "bbox": [
+          315.75,
+          385.9453125,
+          560.25,
+          539.0859375
+        ],
+        "block_id": "/page/10/Text/8"
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "PowerInfer's code has been open sourced completely.",
+        "bbox": [
+          316.458984375,
+          466.3828125,
+          559.6875,
+          622.4303131103516
+        ],
+        "block_id": "/page/1/Text/12"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

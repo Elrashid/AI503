@@ -1,0 +1,1464 @@
+{
+  "rp_id": "RP40",
+  "year": {
+    "value": 2023,
+    "ev": {
+      "page": 1,
+      "section": "QLORA: Efficient Finetuning of Quantized LLMs",
+      "quote": "QLORA: Efficient Finetuning of Quantized LLMs",
+      "bbox": [
+        120.78099822998047,
+        99.8768310546875,
+        491.6518249511719,
+        117.09222412109375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "first_author": {
+    "value": "Dettmers",
+    "ev": {
+      "page": 1,
+      "section": "QLORA: Efficient Finetuning of Quantized LLMs",
+      "quote": "Tim Dettmers^(∗) Artidoro Pagnoni^(∗) Ari Holtzman",
+      "bbox": [
+        154.6280059814453,
+        159.69439697265625,
+        457.37274169921875,
+        171.1661376953125
+      ],
+      "block_id": "/page/0/Text/3"
+    }
+  },
+  "authors": [
+    {
+      "value": "Tim Dettmers",
+      "ev": {
+        "page": 1,
+        "section": "QLORA: Efficient Finetuning of Quantized LLMs",
+        "quote": "Tim Dettmers^(∗) Artidoro Pagnoni^(∗) Ari Holtzman",
+        "bbox": [
+          154.6280059814453,
+          159.69439697265625,
+          457.37274169921875,
+          171.1661376953125
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Artidoro Pagnoni",
+      "ev": {
+        "page": 1,
+        "section": "QLORA: Efficient Finetuning of Quantized LLMs",
+        "quote": "Tim Dettmers^(∗) Artidoro Pagnoni^(∗) Ari Holtzman",
+        "bbox": [
+          154.6280059814453,
+          159.69439697265625,
+          457.37274169921875,
+          171.1661376953125
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Ari Holtzman",
+      "ev": {
+        "page": 1,
+        "section": "QLORA: Efficient Finetuning of Quantized LLMs",
+        "quote": "Tim Dettmers^(∗) Artidoro Pagnoni^(∗) Ari Holtzman",
+        "bbox": [
+          154.6280059814453,
+          159.69439697265625,
+          457.37274169921875,
+          171.1661376953125
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Luke Zettlemoyer",
+      "ev": {
+        "page": 1,
+        "section": "Luke Zettlemoyer",
+        "quote": "University of Washington {dettmers,artidoro,ahai,lsz}@cs.washington.edu",
+        "bbox": [
+          185.73098754882812,
+          211.29248046875,
+          425.8594665527344,
+          232.412109375
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    }
+  ],
+  "title": {
+    "value": "QLORA: Efficient Finetuning of Quantized LLMs",
+    "ev": {
+      "page": 1,
+      "section": "QLORA: Efficient Finetuning of Quantized LLMs",
+      "quote": "QLORA: Efficient Finetuning of Quantized LLMs",
+      "bbox": [
+        120.78099822998047,
+        99.8768310546875,
+        491.6518249511719,
+        117.09222412109375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "NeurIPS 2023",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "doi": {
+    "value": "arXiv:2305.14314",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "QLORA is an efficient finetuning method that backpropagates gradients through a frozen 4-bit quantized model into LoRA adapters, enabling 65B-parameter finetuning on a single 48GB GPU while preserving 16-bit performance through NF4, Double Quantization, and Paged Optimizers.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "We present QLORA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLORA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)",
+      "bbox": [
+        141.345703125,
+        283.46484375,
+        469.7901611328125,
+        545.1580810546875
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "datasets": [
+    {
+      "value": "GLUE",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Our evaluations include GLUE [58] with RoBERTa-large [38]",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "Super-NaturalInstructions",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Super-NaturalInstructions (TKInstruct) [61] with T5 [49]",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "MMLU",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "5-shot MMLU [24] after finetuning LLaMA on Flan v2 [39] and Alpaca [55]",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "FLAN v2",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "corpora aggregations (FLAN v2 [12])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Alpaca",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "distillation from instruction-tuned models (Alpaca [55], self-instruct [59], unnatural-instructions [26])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Self-Instruct",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "distillation from instruction-tuned models (Alpaca [55], self-instruct [59], unnatural-instructions [26])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Unnatural Instructions",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "distillation from instruction-tuned models (Alpaca [55], self-instruct [59], unnatural-instructions [26])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "OASST1",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "datasets obtained through crowd-sourcing (OASST1 [31], HH-RLHF [4])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "HH-RLHF",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "datasets obtained through crowd-sourcing (OASST1 [31], HH-RLHF [4])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Chip2",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "as well as hybrids (Chip2 [32], Longform [30])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Longform",
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "as well as hybrids (Chip2 [32], Longform [30])",
+        "bbox": [
+          106.5,
+          264.75,
+          506.25,
+          318.0
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Vicuna benchmark (80 prompts)",
+      "ev": {
+        "page": 9,
+        "section": "5.2 Evaluation",
+        "quote": "We use the Vicuna prompts, a set of 80 prompts from a diverse set of categories, without modifications",
+        "bbox": [
+          106.98046875,
+          73.08984375,
+          504.0895690917969,
+          138.91497802734375
+        ],
+        "block_id": "/page/8/Text/0"
+      }
+    },
+    {
+      "value": "OpenAssistant validation (953 queries)",
+      "ev": {
+        "page": 9,
+        "section": "5.2 Evaluation",
+        "quote": "We select all user messages in the validation dataset as queries and include previous turns in the prompt. This procedure leads to 953 unique user queries",
+        "bbox": [
+          106.98046875,
+          73.08984375,
+          504.0895690917969,
+          138.91497802734375
+        ],
+        "block_id": "/page/8/Text/0"
+      }
+    },
+    {
+      "value": "Pile Common Crawl",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Table 2: Pile Common Crawl mean perplexity for different data types for 125M to 13B OPT, BLOOM, LLaMA, and Pythia models",
+        "bbox": [
+          371.443359375,
+          289.265625,
+          505.11810302734375,
+          329.432373046875
+        ],
+        "block_id": "/page/6/Caption/6"
+      }
+    },
+    {
+      "value": "Winogrande, HellaSwag, PiQA, ARC-Easy, ARC-Challenge (zero-shot)",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Mean zero-shot accuracy over Winogrande, HellaSwag, PiQA, Arc-Easy, and Arc-Challenge using LLaMA models with different 4-bit data types",
+        "bbox": [
+          316.458984375,
+          608.25,
+          506.25,
+          705.75
+        ],
+        "block_id": "/page/5/Caption/10"
+      }
+    },
+    {
+      "value": "CrowS (bias evaluation)",
+      "ev": {
+        "page": 15,
+        "section": "7 Related Work",
+        "quote": "Table 8: Evaluation of biases on the CrowS dataset. A lower score indicates lower likelihood of generating biased sequences",
+        "bbox": [
+          106.681640625,
+          78.890625,
+          504.00274658203125,
+          98.07635498046875
+        ],
+        "block_id": "/page/14/Caption/0"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "9,209 OASST1 top-of-tree examples for Guanaco; >1,000 finetuned models trained across 8 datasets ranging from 9k to 240k examples",
+    "ev": {
+      "page": 22,
+      "section": "B.1 Datasets",
+      "quote": "In our experiments, we only use the top reply at each level in the conversation tree. This limits the dataset to 9,209 examples",
+      "bbox": [
+        106.5,
+        541.79296875,
+        506.25,
+        595.16015625
+      ],
+      "block_id": "/page/21/Text/11"
+    }
+  },
+  "models_used": [
+    {
+      "value": "LLaMA-7B",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "Table 5: MMLU 5-shot test results for different sizes of LLaMA finetuned on the corresponding datasets using QLoRA",
+        "bbox": [
+          331.998046875,
+          545.25,
+          506.25,
+          573.75
+        ],
+        "block_id": "/page/7/Caption/11",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": "LLaMA-13B",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "Dataset | 7B | 13B | 33B | 65B",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": "LLaMA-33B",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "Dataset | 7B | 13B | 33B | 65B",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": "LLaMA-65B",
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "regular 16-bit finetuning of a LLaMA 65B parameter model [57] requires more than 780 GB of GPU memory",
+        "bbox": [
+          106.98046875,
+          579.69140625,
+          505.2467956542969,
+          645.0710754394531
+        ],
+        "block_id": "/page/0/Text/10"
+      }
+    },
+    {
+      "value": "RoBERTa-large",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Our evaluations include GLUE [58] with RoBERTa-large [38]",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "T5-80M",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Model | RoBERTa-large | T5-80M | T5-250M | T5-780M | T5-3B | T5-11B",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "T5-250M",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "T5-80M | T5-250M | T5-780M | T5-3B | T5-11B",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "T5-780M",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "T5-80M | T5-250M | T5-780M | T5-3B | T5-11B",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "T5-3B",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "T5-80M | T5-250M | T5-780M | T5-3B | T5-11B",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "T5-11B",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "T5-80M | T5-250M | T5-780M | T5-3B | T5-11B",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "OPT (125M-13B)",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "post-quantization zero-shot accuracy and perplexity across different models (OPT [72], LLaMA [57], BLOOM [52], Pythia [7]) for model sizes 125m -13B",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "BLOOM (125M-13B)",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "across different models (OPT [72], LLaMA [57], BLOOM [52], Pythia [7]) for model sizes 125m -13B",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "Pythia (125M-13B)",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "across different models (OPT [72], LLaMA [57], BLOOM [52], Pythia [7]) for model sizes 125m -13B",
+        "bbox": [
+          106.681640625,
+          73.08984375,
+          506.25,
+          171.31640625
+        ],
+        "block_id": "/page/5/Text/0"
+      }
+    },
+    {
+      "value": "Guanaco-7B/13B/33B/65B (released)",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "We release a collection of adapters for 7/13/33/65B size models, trained on 8 different instruction following datasets, for a total of 32 different open sourced, finetuned models",
+        "bbox": [
+          106.98046875,
+          667.86328125,
+          504.0003662109375,
+          722.4070739746094
+        ],
+        "block_id": "/page/1/Text/9"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "Perplexity (Pile Common Crawl mean PPL)",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Table 2: Pile Common Crawl mean perplexity for different data types for 125M to 13B OPT, BLOOM, LLaMA, and Pythia models",
+        "bbox": [
+          371.443359375,
+          289.265625,
+          505.11810302734375,
+          329.432373046875
+        ],
+        "block_id": "/page/6/Caption/6",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Mean zero-shot accuracy",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Mean zero-shot accuracy over Winogrande, HellaSwag, PiQA, Arc-Easy, and Arc-Challenge using LLaMA models",
+        "bbox": [
+          316.458984375,
+          608.25,
+          506.25,
+          705.75
+        ],
+        "block_id": "/page/5/Caption/10"
+      }
+    },
+    {
+      "value": "5-shot MMLU accuracy",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "We report 5-shot test accuracy",
+        "bbox": [
+          106.5,
+          541.79296875,
+          327.0,
+          617.25
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "GLUE accuracy",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Dataset | GLUE (Acc.) | Super-NaturalInstructions (RougeL)",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "RougeL (Super-NaturalInstructions)",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Super-NaturalInstructions (RougeL)",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Vicuna benchmark % vs ChatGPT (GPT-4 judge)",
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Table 6: Zero-shot Vicuna benchmark scores as a percentage of the score obtained by ChatGPT evaluated by GPT-4",
+        "bbox": [
+          106.3828125,
+          78.75,
+          506.25,
+          106.734375
+        ],
+        "block_id": "/page/9/Caption/0",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": "Elo rating (tournament)",
+      "ev": {
+        "page": 9,
+        "section": "5.2 Evaluation",
+        "quote": "We start with a score of 1,000 and use K = 32. Similar to Chiang et al. [10], we repeat this procedure 10,000 times with different random seeds",
+        "bbox": [
+          107.25299835205078,
+          362.14691162109375,
+          505.7437438964844,
+          514.0491027832031
+        ],
+        "block_id": "/page/8/Text/4"
+      }
+    },
+    {
+      "value": "Inter-annotator agreement (Fleiss kappa, Kendall tau, Spearman r)",
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "consistent for most models with a Kendall Tau of \\tau=0.43 and Spearman rank correlation of r=0.55 at the system level. At the example level, the agreement between GPT-4 and human annotators' majority vote is weaker with Fleiss \\kappa=0.25",
+        "bbox": [
+          106.5,
+          363.90234375,
+          506.25,
+          440.25
+        ],
+        "block_id": "/page/9/Text/2"
+      }
+    },
+    {
+      "value": "CrowS bias score (gender, race, religion, etc.)",
+      "ev": {
+        "page": 15,
+        "section": "7 Related Work",
+        "quote": "Table 8: Evaluation of biases on the CrowS dataset. A lower score indicates lower likelihood of generating biased sequences",
+        "bbox": [
+          106.681640625,
+          78.890625,
+          504.00274658203125,
+          98.07635498046875
+        ],
+        "block_id": "/page/14/Caption/0",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": "GPU memory footprint (GB)",
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Model bits | Memory | ChatGPT vs Sys",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "QLORA NF4+DQ matches BFloat16 mean MMLU 5-shot accuracy on LLaMA 7B-65B (53.1 vs 53.0); FP4 lags by ~1 point (52.2)",
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | 38.4 | 45.6 | 47.2 | 50.6 | 57.7 | 60.5 | 61.8 | 62.5 | 53.0 ... NFloat4 + DQ | 39.0 | 44.5 | 47.5 | 50.7 | 57.3 | 59.2 | 61.8 | 63.9 | 53.1",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "NF4+DQ achieves Pile-CC mean PPL 27.41 vs FP4-E2M1 31.07, FP4-E3M0 29.48, Int4 34.34 (lowest of all 4-bit types)",
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Int4 | 34.34 ... Float4 (E2M1) | 31.07 ... Float4 (E3M0) | 29.48 ... NFloat4 + DQ | **27.41**",
+        "bbox": [
+          371.67046875,
+          336.174609375,
+          500.90765625,
+          403.231640625
+        ],
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "QLORA reduces 65B finetuning memory from >780GB to <48GB while matching 16-bit baseline performance",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "QLORA reduces the average memory requirements of finetuning a 65B parameter model from >780GB of GPU memory to <48GB without degrading the runtime or predictive performance compared to a 16 bit fully finetuned baseline",
+        "bbox": [
+          107.578125,
+          104.338134765625,
+          317.1469421386719,
+          277.98199462890625
+        ],
+        "block_id": "/page/1/Text/1"
+      }
+    },
+    {
+      "value": "Guanaco-65B reaches 99.3% of ChatGPT performance on Vicuna benchmark (95% CI 4.4%) using only 41GB and 24h of single-GPU training",
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Guanaco | 65B | 4-bit | 41 GB | 96.7% | 101.9% | **99.3%** | 4.4%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": "Guanaco-65B has CrowS average bias score 43.5 vs LLaMA-65B 66.6, GPT-3 67.2, OPT-175B 69.5, indicating lower bias after OASST1 finetuning",
+      "ev": {
+        "page": 15,
+        "section": "7 Related Work",
+        "quote": "Average | 66.6 | 67.2 | 69.5 | **43.5**",
+        "bbox": [
+          142.02703125,
+          100.384453125,
+          468.77765625,
+          235.287421875
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": "Double Quantization saves 0.373 bits/parameter (32/64=0.5 to 8/64+32/(64*256)=0.127), about 3GB on a 65B model",
+      "ev": {
+        "page": 5,
+        "section": "3 QLORA Finetuning",
+        "quote": "this quantization reduces the memory footprint per parameter from 32/64 = 0.5 bits, to 8/64 + 32/(64 · 256) = 0.127 bits, a reduction of 0.373 bits per parameter",
+        "bbox": [
+          105.75,
+          206.25,
+          506.25,
+          303.75
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "We present QLORA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU",
+      "bbox": [
+        141.345703125,
+        283.46484375,
+        469.7901611328125,
+        545.1580810546875
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "method_family": {
+    "value": "QAT",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "We demonstrate for the first time that it is possible to finetune a quantized 4-bit model without any performance degradation. Our method, QLORA, uses a novel high-precision technique to quantize a pretrained model to 4-bit, then adds a small set of learnable Low-rank Adapter weights",
+      "bbox": [
+        106.98046875,
+        653.5546875,
+        504.3437194824219,
+        686.0390625
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "quantization_method_name": {
+    "value": "QLORA (NF4 + Double Quantization + Paged Optimizers)",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "QLORA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information theoretically optimal for normally distributed weights (b) Double Quantization to reduce the average memory footprint by quantizing the quantization constants, and (c) Paged Optimizers to manage memory spikes",
+      "bbox": [
+        141.345703125,
+        283.46484375,
+        469.7901611328125,
+        545.1580810546875
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "QLORA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)",
+        "bbox": [
+          141.345703125,
+          283.46484375,
+          469.7901611328125,
+          545.1580810546875
+        ],
+        "block_id": "/page/0/Text/8"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA Int8 | 88.8 | 40.4 | 42.9 | 45.4 | 56.5 | 60.7",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": 16,
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6 | 40.1 | 42.1 | 48.0 | 54.3 | 62.0",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight-only",
+    "ev": {
+      "page": 4,
+      "section": "3 QLORA Finetuning",
+      "quote": "QLORA has one low-precision storage data type, in our case usually 4-bit, and one computation data type that is usually BFloat16. In practice, this means whenever a QLORA weight tensor is used, we dequantize the tensor to BFloat16, and then perform a matrix multiplication in 16-bit",
+      "bbox": [
+        106.681640625,
+        284.625,
+        504.08709716796875,
+        317.2240905761719
+      ],
+      "block_id": "/page/3/Text/3"
+    }
+  },
+  "granularity": {
+    "value": "per-group",
+    "ev": {
+      "page": 5,
+      "section": "3 QLORA Finetuning",
+      "quote": "We use NF4 for W and FP8 for c_2. We use a blocksize of 64 for W for higher quantization precision and a blocksize of 256 for c_2 to conserve memory",
+      "bbox": [
+        106.5,
+        488.0390625,
+        504.75,
+        510.0
+      ],
+      "block_id": "/page/4/Text/8"
+    }
+  },
+  "training_free": {
+    "value": false,
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "QLORA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)",
+      "bbox": [
+        141.345703125,
+        283.46484375,
+        469.7901611328125,
+        545.1580810546875
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA 48GB GPU (A6000-class) for 65B finetuning",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU",
+        "bbox": [
+          141.345703125,
+          283.46484375,
+          469.7901611328125,
+          545.1580810546875
+        ],
+        "block_id": "/page/0/Text/8"
+      }
+    },
+    {
+      "value": "Single 24GB consumer GPU for 33B Guanaco",
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "our 33B Guanaco can be trained on 24 GB consumer GPUs in less than 12 hours",
+        "bbox": [
+          106.681640625,
+          550.5,
+          505.5,
+          636.92578125
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    },
+    {
+      "value": "iPhone 12 Plus (estimated edge inference / finetuning)",
+      "ev": {
+        "page": 16,
+        "section": "9 Broader Impacts",
+        "quote": "We estimate that with an iPhone 12 Plus, QLORA can finetune 3 million tokens per night while the phone is charging",
+        "bbox": [
+          106.3828125,
+          293.90625,
+          504.35272216796875,
+          392.1900634765625
+        ],
+        "block_id": "/page/15/Text/3"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "First method to finetune a 65B model on a single 48GB GPU while matching 16-bit full-finetuning quality.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We present QLORA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance",
+        "bbox": [
+          141.345703125,
+          283.46484375,
+          469.7901611328125,
+          545.1580810546875
+        ],
+        "block_id": "/page/0/Text/8"
+      }
+    },
+    {
+      "value": "Introduces NF4, an information-theoretically optimal 4-bit data type for normal weights, beating FP4 and Int4 on PPL and accuracy.",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "we see that NF4 improves performance significantly over FP4 and Int4 and that double quantization reduces the memory footprint without degrading performance",
+        "bbox": [
+          106.5,
+          528.64453125,
+          312.0,
+          681.01171875
+        ],
+        "block_id": "/page/5/Text/4"
+      }
+    },
+    {
+      "value": "Double Quantization saves 0.37 bits per parameter without measurable accuracy loss.",
+      "ev": {
+        "page": 5,
+        "section": "3 QLORA Finetuning",
+        "quote": "this quantization reduces the memory footprint per parameter from 32/64 = 0.5 bits, to 8/64 + 32/(64 · 256) = 0.127 bits, a reduction of 0.373 bits per parameter",
+        "bbox": [
+          105.75,
+          206.25,
+          506.25,
+          303.75
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    },
+    {
+      "value": "Paged Optimizers prevent OOM during gradient checkpointing for long sequences, enabling stable single-GPU training at 33B/65B.",
+      "ev": {
+        "page": 5,
+        "section": "3 QLORA Finetuning",
+        "quote": "Paged Optimizers use the NVIDIA unified memory feature wich does automatic page-to-page transfers between the CPU and GPU for error-free GPU processing in the scenario where the GPU occasionally runs out-of-memory",
+        "bbox": [
+          106.5,
+          310.5,
+          504.75,
+          376.27734375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "Open-source release of all code, CUDA kernels, and 32 finetuned adapters across model sizes and datasets.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "We open-source our codebase and CUDA kernels and integrate our methods into the Hugging Face transformers stack [64], making them easily accessible to all. We release a collection of adapters for 7/13/33/65B size models, trained on 8 different instruction following datasets",
+        "bbox": [
+          106.98046875,
+          667.86328125,
+          504.0003662109375,
+          722.4070739746094
+        ],
+        "block_id": "/page/1/Text/9"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Did not establish that QLORA matches full 16-bit finetuning at 33B and 65B scales due to compute cost.",
+      "ev": {
+        "page": 15,
+        "section": "8 Limitations and Discussion",
+        "quote": "Despite this evidence, we did not establish that QLORA can match full 16-bit finetuning performance at 33B and 65B scales. Due to the immense resource costs, we leave this study to future work",
+        "bbox": [
+          105.78515625,
+          419.203125,
+          504.04022216796875,
+          462.12408447265625
+        ],
+        "block_id": "/page/14/Text/5"
+      }
+    },
+    {
+      "value": "Evaluation limited to MMLU, Vicuna, OA; no BigBench, RAFT, or HELM coverage.",
+      "ev": {
+        "page": 15,
+        "section": "8 Limitations and Discussion",
+        "quote": "we did not evaluate on other benchmarks such as BigBench, RAFT, and HELM, and it is not ensured that our evaluations generalize to these benchmarks",
+        "bbox": [
+          106.681640625,
+          469.4765625,
+          504.0788269042969,
+          523.4310607910156
+        ],
+        "block_id": "/page/14/Text/6"
+      }
+    },
+    {
+      "value": "Responsible AI assessment is limited to CrowS bias scores; other safety axes not evaluated.",
+      "ev": {
+        "page": 15,
+        "section": "8 Limitations and Discussion",
+        "quote": "another limitation is that we only do a limited responsible AI evaluation of Guanaco. We evaluate the likelihood of Guanaco-65B to generate a socially biased sequence of tokens compared to other models in Table 8",
+        "bbox": [
+          106.3828125,
+          646.20703125,
+          504.0898742675781,
+          722.4070739746094
+        ],
+        "block_id": "/page/14/Text/8"
+      }
+    },
+    {
+      "value": "Did not test 3-bit base models or alternative PEFT adapters, leaving aggressive-quantization performance frontier open.",
+      "ev": {
+        "page": 16,
+        "section": "8 Limitations and Discussion",
+        "quote": "we did not evaluate different bit-precisions, such as using 3-bit base models, or different adapter methods",
+        "bbox": [
+          106.681640625,
+          73.86328125,
+          505.77081298828125,
+          160.7330322265625
+        ],
+        "block_id": "/page/15/Text/0"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Trained chatbots can be jailbroken with simple prompt tricks, exposing fragile instruction following.",
+      "ev": {
+        "page": 12,
+        "section": "6.1 Qualitative Analysis of Example Generations",
+        "quote": "However, a tiny amount of trickery breaks this behavior",
+        "bbox": [
+          107.578125,
+          682.171875,
+          453.7914733886719,
+          693.4340667724609
+        ],
+        "block_id": "/page/11/Text/15"
+      }
+    },
+    {
+      "value": "No measurement of refusal, jailbreak, or toxicity beyond CrowS bias and qualitative anecdotes.",
+      "ev": {
+        "page": 15,
+        "section": "8 Limitations and Discussion",
+        "quote": "While these results are encouraging, it is unclear if Guanaco does also well when assessed on other types of biases. We leave further evaluation of analyzing biases in Guanaco and similar chatbots to future work",
+        "bbox": [
+          106.3828125,
+          646.20703125,
+          504.0898742675781,
+          722.4070739746094
+        ],
+        "block_id": "/page/14/Text/8"
+      }
+    },
+    {
+      "value": "All experiments use data-centre or workstation GPUs; iPhone deployment is only an estimate, not a measured run.",
+      "ev": {
+        "page": 16,
+        "section": "9 Broader Impacts",
+        "quote": "We estimate that with an iPhone 12 Plus, QLORA can finetune 3 million tokens per night while the phone is charging",
+        "bbox": [
+          106.3828125,
+          293.90625,
+          504.35272216796875,
+          392.1900634765625
+        ],
+        "block_id": "/page/15/Text/3"
+      }
+    },
+    {
+      "value": "Long-context behaviour not evaluated; training uses sequence lengths up to 1024 with no LongBench-style probing.",
+      "ev": {
+        "page": 23,
+        "section": "**B.1** Datasets",
+        "quote": "Source Length | Target Length ... 7B | Longform | 16 | 2e-4 | 4000 | 512 | 1024",
+        "bbox": [
+          114.9233203125,
+          68.248125,
+          493.4907421875,
+          285.98625
+        ],
+        "block_id": "/page/22/Table/0"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Test whether QLORA matches full 16-bit finetuning at 33B and 65B scales.",
+      "ev": {
+        "page": 15,
+        "section": "8 Limitations and Discussion",
+        "quote": "we did not establish that QLORA can match full 16-bit finetuning performance at 33B and 65B scales. Due to the immense resource costs, we leave this study to future work",
+        "bbox": [
+          105.78515625,
+          419.203125,
+          504.04022216796875,
+          462.12408447265625
+        ],
+        "block_id": "/page/14/Text/5"
+      }
+    },
+    {
+      "value": "Explore 3-bit quantization of the base model with LoRA finetuning to push further compression.",
+      "ev": {
+        "page": 16,
+        "section": "8 Limitations and Discussion",
+        "quote": "3-bit GPTQ quantization of the basemodel with LoRA might also yield 16-bit full finetuning performance after finetuning",
+        "bbox": [
+          106.681640625,
+          73.86328125,
+          505.77081298828125,
+          160.7330322265625
+        ],
+        "block_id": "/page/15/Text/0"
+      }
+    },
+    {
+      "value": "Conduct broader bias and responsible-AI evaluation across additional bias categories and benchmarks.",
+      "ev": {
+        "page": 15,
+        "section": "8 Limitations and Discussion",
+        "quote": "it is unclear if Guanaco does also well when assessed on other types of biases. We leave further evaluation of analyzing biases in Guanaco and similar chatbots to future work",
+        "bbox": [
+          106.3828125,
+          646.20703125,
+          504.0898742675781,
+          722.4070739746094
+        ],
+        "block_id": "/page/14/Text/8"
+      }
+    },
+    {
+      "value": "Investigate trade-offs of cross-entropy loss versus RLHF when finetuning on high-quality data.",
+      "ev": {
+        "page": 14,
+        "section": "6.2 Considerations",
+        "quote": "we note that our model is only trained with cross-entropy loss (supervised learning) without relying on reinforcement learning from human feedback (RLHF). This calls for further investigations",
+        "bbox": [
+          106.98046875,
+          459.80859375,
+          504.6677551269531,
+          503.4490966796875
+        ],
+        "block_id": "/page/13/Text/8"
+      }
+    },
+    {
+      "value": "Measure on-device finetuning behaviour and slowdowns of Paged Optimizers under varied workloads.",
+      "ev": {
+        "page": 6,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Future work should measure and characterize under what circumstances slowdowns occur from the paging process",
+        "bbox": [
+          105.75,
+          177.50390625,
+          312.0,
+          309.76171875
+        ],
+        "block_id": "/page/5/Text/1"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": true,
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Guanaco | 65B | 4-bit | 41 GB | 96.7% | 101.9% | **99.3%** | 4.4%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": true,
+      "ev": {
+        "page": 15,
+        "section": "7 Related Work",
+        "quote": "Table 8: Evaluation of biases on the CrowS dataset. A lower score indicates lower likelihood of generating biased sequences. Guanaco follows the biased pattern of the LLaMA base model",
+        "bbox": [
+          106.681640625,
+          78.890625,
+          504.00274658203125,
+          98.07635498046875
+        ],
+        "block_id": "/page/14/Caption/0",
+        "source_table": "Table 8"
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "https://github.com/artidoro/qlora and https://github.com/TimDettmers/bitsandbytes",
+        "bbox": [
+          120.12890625,
+          701.12109375,
+          498.8970031738281,
+          710.9756011962891
+        ],
+        "block_id": "/page/0/Footnote/13"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": true,
+      "ev": {
+        "page": 8,
+        "section": "5.1 Experimental setup",
+        "quote": "We compare our models to both research (Vicuna [10] and Open Assistant [31]) and commercial (GPT-4 [42], GPT-3.5-turbo and Bard) chatbot systems",
+        "bbox": [
+          106.5,
+          453.234375,
+          506.25,
+          516.75
+        ],
+        "block_id": "/page/7/Text/7"
+      }
+    }
+  }
+}

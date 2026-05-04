@@ -1,0 +1,1068 @@
+{
+  "rp_id": "RP45",
+  "year": {
+    "value": 2025,
+    "ev": {
+      "page": 1,
+      "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+      "quote": "Sen Fang, Weiyuan Ding, Antonio Mastropaolo and Bowen Xu",
+      "bbox": [
+        159.03097534179688,
+        118.3359375,
+        445.2993469238281,
+        130.519775390625
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "first_author": {
+    "value": "Fang",
+    "ev": {
+      "page": 1,
+      "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+      "quote": "Sen Fang, Weiyuan Ding, Antonio Mastropaolo and Bowen Xu",
+      "bbox": [
+        159.03097534179688,
+        118.3359375,
+        445.2993469238281,
+        130.519775390625
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Sen Fang",
+      "ev": {
+        "page": 1,
+        "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+        "quote": "Sen Fang, Weiyuan Ding, Antonio Mastropaolo and Bowen Xu",
+        "bbox": [
+          159.03097534179688,
+          118.3359375,
+          445.2993469238281,
+          130.519775390625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Weiyuan Ding",
+      "ev": {
+        "page": 1,
+        "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+        "quote": "Sen Fang, Weiyuan Ding, Antonio Mastropaolo and Bowen Xu",
+        "bbox": [
+          159.03097534179688,
+          118.3359375,
+          445.2993469238281,
+          130.519775390625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Antonio Mastropaolo",
+      "ev": {
+        "page": 1,
+        "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+        "quote": "Sen Fang, Weiyuan Ding, Antonio Mastropaolo and Bowen Xu",
+        "bbox": [
+          159.03097534179688,
+          118.3359375,
+          445.2993469238281,
+          130.519775390625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Bowen Xu",
+      "ev": {
+        "page": 1,
+        "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+        "quote": "Sen Fang, Weiyuan Ding, Antonio Mastropaolo and Bowen Xu",
+        "bbox": [
+          159.03097534179688,
+          118.3359375,
+          445.2993469238281,
+          130.519775390625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+    "ev": {
+      "page": 1,
+      "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+      "quote": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+      "bbox": [
+        65.16497802734375,
+        57.234375,
+        546.837890625,
+        110.33697509765625
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "arXiv preprint",
+    "ev": {
+      "page": 1,
+      "section": "Page header",
+      "quote": "arXiv:2506.22776v1  [cs.SE]  28 Jun 2025",
+      "bbox": [
+        15.837890625,
+        224.296875,
+        42.0,
+        566.3600006103516
+      ],
+      "block_id": "/page/0/PageHeader/0",
+      "recovered_via": "PyMuPDF furniture sidecar"
+    }
+  },
+  "doi": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "First systematic investigation showing that quantized LLMs (8-bit and 4-bit via bitsandbytes) often exhibit superior robustness than full-precision counterparts in code generation, against adversarial prompt attacks and weight noise perturbations.",
+    "ev": {
+      "page": 1,
+      "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+      "quote": "we present the first systematic investigation of how quantization affects the robustness of LLMs in code generation tasks",
+      "bbox": [
+        48.41015625,
+        176.73046875,
+        300.0233459472656,
+        415.21563720703125
+      ],
+      "block_id": "/page/0/Text/3"
+    }
+  },
+  "datasets": [
+    {
+      "value": "HumanEval",
+      "ev": {
+        "page": 5,
+        "section": "C. Datasets",
+        "quote": "We evaluate our approach on two mainstream code generation benchmarks: HumanEval [23] and MBPP [24]. HumanEval consists of 164 Python programming problems",
+        "bbox": [
+          310.482421875,
+          282.0,
+          563.25,
+          410.30859375
+        ],
+        "block_id": "/page/4/Text/20"
+      }
+    },
+    {
+      "value": "MBPP",
+      "ev": {
+        "page": 5,
+        "section": "C. Datasets",
+        "quote": "MBPP (Mostly Basic Programming Problems) contains 974 Python programming tasks, designed to test fundamental programming abilities",
+        "bbox": [
+          310.482421875,
+          282.0,
+          563.25,
+          410.30859375
+        ],
+        "block_id": "/page/4/Text/20"
+      }
+    },
+    {
+      "value": "HumanEval Plus",
+      "ev": {
+        "page": 5,
+        "section": "C. Datasets",
+        "quote": "we additionally incorporate HumanEval Plus and MBPP Plus",
+        "bbox": [
+          310.482421875,
+          282.0,
+          563.25,
+          410.30859375
+        ],
+        "block_id": "/page/4/Text/20"
+      }
+    },
+    {
+      "value": "MBPP Plus",
+      "ev": {
+        "page": 5,
+        "section": "C. Datasets",
+        "quote": "MBPP Plus filters low-quality samples to 378 problems, so we evaluate identical samples across both versions",
+        "bbox": [
+          310.482421875,
+          719.25,
+          563.25,
+          737.47265625
+        ],
+        "block_id": "/page/4/Footnote/26"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "HumanEval = 164 Python problems; MBPP = 974 Python problems; MBPP Plus = 378 filtered problems; HumanEval Plus expands tests 80x and MBPP Plus 35x.",
+    "ev": {
+      "page": 5,
+      "section": "C. Datasets",
+      "quote": "HumanEval consists of 164 Python programming problems with test cases ... MBPP ... contains 974 Python programming tasks ... expand the original test suites by 80x and 35x respectively",
+      "bbox": [
+        310.482421875,
+        282.0,
+        563.25,
+        410.30859375
+      ],
+      "block_id": "/page/4/Text/20"
+    }
+  },
+  "models_used": [
+    {
+      "value": "LLaMA-3.2-1B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "LLaMA-3.2-1B, LLaMA-3.2-3B, and LLaMA-3.1-8B",
+        "bbox": [
+          47.25,
+          666.0,
+          300.75,
+          747.9140625
+        ],
+        "block_id": "/page/4/ListGroup/204"
+      }
+    },
+    {
+      "value": "LLaMA-3.2-3B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "LLaMA-3.2-1B, LLaMA-3.2-3B, and LLaMA-3.1-8B",
+        "bbox": [
+          47.25,
+          666.0,
+          300.75,
+          747.9140625
+        ],
+        "block_id": "/page/4/ListGroup/204"
+      }
+    },
+    {
+      "value": "LLaMA-3.1-8B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "LLaMA-3.2-1B, LLaMA-3.2-3B, and LLaMA-3.1-8B",
+        "bbox": [
+          47.25,
+          666.0,
+          300.75,
+          747.9140625
+        ],
+        "block_id": "/page/4/ListGroup/204"
+      }
+    },
+    {
+      "value": "DeepSeek-Coder-1.3B-base",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "DeepSeek-Coder-1.3B-base, DeepSeek-Coder-6.7B-base, and DeepSeek-Coder-33B-base",
+        "bbox": [
+          309.5859375,
+          55.6875,
+          563.25,
+          101.25
+        ],
+        "block_id": "/page/4/Text/16"
+      }
+    },
+    {
+      "value": "DeepSeek-Coder-6.7B-base",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "DeepSeek-Coder-1.3B-base, DeepSeek-Coder-6.7B-base, and DeepSeek-Coder-33B-base",
+        "bbox": [
+          309.5859375,
+          55.6875,
+          563.25,
+          101.25
+        ],
+        "block_id": "/page/4/Text/16"
+      }
+    },
+    {
+      "value": "DeepSeek-Coder-33B-base",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "DeepSeek-Coder-1.3B-base, DeepSeek-Coder-6.7B-base, and DeepSeek-Coder-33B-base",
+        "bbox": [
+          309.5859375,
+          55.6875,
+          563.25,
+          101.25
+        ],
+        "block_id": "/page/4/Text/16"
+      }
+    },
+    {
+      "value": "CodeGen-350M",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "we include three variants: CodeGen-350M, CodeGen-2B, and CodeGen-6B, the mono version",
+        "bbox": [
+          309.884765625,
+          104.25,
+          563.25,
+          244.5
+        ],
+        "block_id": "/page/4/ListGroup/205"
+      }
+    },
+    {
+      "value": "CodeGen-2B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "we include three variants: CodeGen-350M, CodeGen-2B, and CodeGen-6B, the mono version",
+        "bbox": [
+          309.884765625,
+          104.25,
+          563.25,
+          244.5
+        ],
+        "block_id": "/page/4/ListGroup/205"
+      }
+    },
+    {
+      "value": "CodeGen-6B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "we include three variants: CodeGen-350M, CodeGen-2B, and CodeGen-6B, the mono version",
+        "bbox": [
+          309.884765625,
+          104.25,
+          563.25,
+          244.5
+        ],
+        "block_id": "/page/4/ListGroup/205"
+      }
+    },
+    {
+      "value": "StarCoder2-3B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "we evaluate three model variants  StarCoder2-3B, StarCoder2-7B, and StarCoder2-15B",
+        "bbox": [
+          309.884765625,
+          104.25,
+          563.25,
+          244.5
+        ],
+        "block_id": "/page/4/ListGroup/205"
+      }
+    },
+    {
+      "value": "StarCoder2-7B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "we evaluate three model variants  StarCoder2-3B, StarCoder2-7B, and StarCoder2-15B",
+        "bbox": [
+          309.884765625,
+          104.25,
+          563.25,
+          244.5
+        ],
+        "block_id": "/page/4/ListGroup/205"
+      }
+    },
+    {
+      "value": "StarCoder2-15B",
+      "ev": {
+        "page": 5,
+        "section": "B. Studied Models",
+        "quote": "we evaluate three model variants  StarCoder2-3B, StarCoder2-7B, and StarCoder2-15B",
+        "bbox": [
+          309.884765625,
+          104.25,
+          563.25,
+          244.5
+        ],
+        "block_id": "/page/4/ListGroup/205"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "pass@1",
+      "ev": {
+        "page": 6,
+        "section": "F. Evaluation Framework",
+        "quote": "we calculate the pass@1 metric to measure base performance",
+        "bbox": [
+          324.228515625,
+          431.578125,
+          548.349609375,
+          598.5445251464844
+        ],
+        "block_id": "/page/6/Text/9"
+      }
+    },
+    {
+      "value": "pass@k",
+      "ev": {
+        "page": 4,
+        "section": "C. S3: Evaluation",
+        "quote": "the pass@k metric quantifies the likelihood of finding a working solution among k generated samples",
+        "bbox": [
+          310.78125,
+          470.63671875,
+          563.0396728515625,
+          601.6346282958984
+        ],
+        "block_id": "/page/3/Text/15"
+      }
+    },
+    {
+      "value": "Relative Robustness Score (RRS)",
+      "ev": {
+        "page": 5,
+        "section": "C. S3: Evaluation",
+        "quote": "we propose the Relative Robustness Score (RRS), which directly quantifies the relationship between robustness degradation in original and quantized models",
+        "bbox": [
+          47.25,
+          203.25,
+          300.75,
+          299.70703125
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    },
+    {
+      "value": "Percentage performance change %Δ",
+      "ev": {
+        "page": 4,
+        "section": "C. S3: Evaluation",
+        "quote": "calculating the percentage change in performance between perturbed and unperturbed inputs",
+        "bbox": [
+          310.78125,
+          470.63671875,
+          563.0396728515625,
+          601.6346282958984
+        ],
+        "block_id": "/page/3/Text/15"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Across adversarial experiments, 51.59% of cases show quantized LLMs are more robust than originals, 42.86% favour originals, 5.56% are tied",
+      "ev": {
+        "page": 6,
+        "section": "A. RQ1: Adversarial Robustness Evaluation",
+        "quote": "51.59% of cases show that quantized LLMs are more robust than their original versions, 42.86% of cases show that original LLMs are more robust",
+        "bbox": [
+          310.18359375,
+          256.3326416015625,
+          563.0413208007812,
+          457.5780944824219
+        ],
+        "block_id": "/page/5/Text/14",
+        "source_table": null
+      }
+    },
+    {
+      "value": "8-bit quantization decreases clean pass@1 by only 0.36% on average; 4-bit decreases it by 1.19%",
+      "ev": {
+        "page": 9,
+        "section": "C. Quantization-Robustness Trade-off Evaluation",
+        "quote": "8 bit quantization decreases clean performance by just 0.36% on average, while 4-bit causes a more noticeable 1.19% reduction",
+        "bbox": [
+          310.78125,
+          193.74609375,
+          563.0360717773438,
+          397.60601806640625
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": "DeepSeek-Coder-6.7B sentence-level RRS = 5.000 on HumanEval, indicating quantized model far more robust than full-precision",
+      "ev": {
+        "page": 7,
+        "section": "A. RQ1: Adversarial Robustness Evaluation",
+        "quote": "5.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": "CodeGen-2B word-level RRS = 5.999 on HumanEval+, showing strong robustness gain from quantization for smaller CodeGen variants",
+      "ev": {
+        "page": 7,
+        "section": "A. RQ1: Adversarial Robustness Evaluation",
+        "quote": "CodeGen-2B with RRS=5.999 on HumanEval",
+        "bbox": [
+          48.111328125,
+          250.59375,
+          300.02154541015625,
+          356.4220275878906
+        ],
+        "block_id": "/page/6/Text/3",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": "Final summary: 59.72% of adversarial experiments show better resilience in quantized models",
+      "ev": {
+        "page": 10,
+        "section": "VII. CONCLUSION",
+        "quote": "59.72% of our adversarial experiments showing better resilience in quantized models",
+        "bbox": [
+          310.482421875,
+          606.76171875,
+          563.03564453125,
+          748.30078125
+        ],
+        "block_id": "/page/9/Text/14",
+        "source_table": null
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "safety_analysis",
+    "ev": {
+      "page": 1,
+      "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+      "quote": "we present the first systematic investigation of how quantization affects the robustness of LLMs in code generation tasks",
+      "bbox": [
+        48.41015625,
+        176.73046875,
+        300.0233459472656,
+        415.21563720703125
+      ],
+      "block_id": "/page/0/Text/3"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 5,
+      "section": "D. Model Quantization",
+      "quote": "We leverage bitsandbytes library for model quantization, which supports both 4-bit and 8-bit precision levels",
+      "bbox": [
+        310.18359375,
+        444.75,
+        563.25,
+        586.5
+      ],
+      "block_id": "/page/4/Text/22"
+    }
+  },
+  "quantization_method_name": {
+    "value": "bitsandbytes (NF4 + INT8)",
+    "ev": {
+      "page": 5,
+      "section": "D. Model Quantization",
+      "quote": "For 4-bit quantization, we employed the NF4 (normalized float 4) format with double quantization enabled and float32 compute dtype ... The 8-bit quantization uses standard linear quantization",
+      "bbox": [
+        310.18359375,
+        444.75,
+        563.25,
+        586.5
+      ],
+      "block_id": "/page/4/Text/22"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 5,
+        "section": "D. Model Quantization",
+        "quote": "For 4-bit quantization, we employed the NF4 (normalized float 4) format with double quantization enabled",
+        "bbox": [
+          310.18359375,
+          444.75,
+          563.25,
+          586.5
+        ],
+        "block_id": "/page/4/Text/22"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 5,
+        "section": "D. Model Quantization",
+        "quote": "The 8-bit quantization uses standard linear quantization applied uniformly across model weights",
+        "bbox": [
+          310.18359375,
+          444.75,
+          563.25,
+          586.5
+        ],
+        "block_id": "/page/4/Text/22"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight-only",
+    "ev": {
+      "page": 5,
+      "section": "D. Model Quantization",
+      "quote": "The 8-bit quantization uses standard linear quantization applied uniformly across model weights",
+      "bbox": [
+        310.18359375,
+        444.75,
+        563.25,
+        586.5
+      ],
+      "block_id": "/page/4/Text/22"
+    }
+  },
+  "granularity": {
+    "value": "per-tensor",
+    "ev": {
+      "page": 5,
+      "section": "D. Model Quantization",
+      "quote": "standard linear quantization applied uniformly across model weights",
+      "bbox": [
+        310.18359375,
+        444.75,
+        563.25,
+        586.5
+      ],
+      "block_id": "/page/4/Text/22"
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 4,
+      "section": "A. S1: Selection of Quantization Method",
+      "quote": "bitsandbytes eliminates the need for task-specific calibration data, which is particularly advantageous when working with LLMs",
+      "bbox": [
+        48.41015625,
+        266.44921875,
+        300.02471923828125,
+        491.68682861328125
+      ],
+      "block_id": "/page/3/Text/3"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A6000 (dual GPU)",
+      "ev": {
+        "page": 6,
+        "section": "G. Experimental Environment",
+        "quote": "Ubuntu server with an AMD Ryzen Threadripper PRO 7955WX CPU, 256 GB RAM, and dual NVIDIA A6000 GPUs",
+        "bbox": [
+          311.080078125,
+          156.25250244140625,
+          563.039794921875,
+          214.03515625
+        ],
+        "block_id": "/page/5/Text/11"
+      }
+    },
+    {
+      "value": "AMD Ryzen Threadripper PRO 7955WX CPU",
+      "ev": {
+        "page": 6,
+        "section": "G. Experimental Environment",
+        "quote": "AMD Ryzen Threadripper PRO 7955WX CPU, 256 GB RAM",
+        "bbox": [
+          311.080078125,
+          156.25250244140625,
+          563.039794921875,
+          214.03515625
+        ],
+        "block_id": "/page/5/Text/11"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "First systematic study of how quantization affects code-LLM robustness, covering 12 models from 350M to 33B across four families.",
+      "ev": {
+        "page": 1,
+        "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+        "quote": "we present the first systematic investigation of how quantization affects the robustness of LLMs in code generation tasks",
+        "bbox": [
+          48.41015625,
+          176.73046875,
+          300.0233459472656,
+          415.21563720703125
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Dual-perspective evaluation: input-level adversarial attacks (character/word/sentence) plus model-level Gaussian and Uniform weight noise.",
+      "ev": {
+        "page": 2,
+        "section": "Adversarial prompt:",
+        "quote": "input-level robustness using three types of adversarial attacks and model-level robustness through two systematic noise perturbations",
+        "bbox": [
+          319.447265625,
+          310.53515625,
+          563.0353393554688,
+          535.9900512695312
+        ],
+        "block_id": "/page/1/ListGroup/500"
+      }
+    },
+    {
+      "value": "Introduces Relative Robustness Score (RRS) that normalizes degradation between original and quantized models for fair comparison.",
+      "ev": {
+        "page": 5,
+        "section": "C. S3: Evaluation",
+        "quote": "we propose the Relative Robustness Score (RRS), which directly quantifies the relationship between robustness degradation in original and quantized models",
+        "bbox": [
+          47.25,
+          203.25,
+          300.75,
+          299.70703125
+        ],
+        "block_id": "/page/4/Text/2"
+      }
+    },
+    {
+      "value": "Open-source standardized tool released for evaluating LLM robustness pre- and post-quantization for any LLM.",
+      "ev": {
+        "page": 2,
+        "section": "Adversarial prompt:",
+        "quote": "We develop and open-source a flexible, standardized tool for evaluating LLM robustness pre- and postquantization, which is applicable to any LLM",
+        "bbox": [
+          319.447265625,
+          310.53515625,
+          563.0353393554688,
+          535.9900512695312
+        ],
+        "block_id": "/page/1/ListGroup/500"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Choice of quantization method (only bitsandbytes) may bias results compared with other quantization techniques.",
+      "ev": {
+        "page": 10,
+        "section": "C. Threats to Validity",
+        "quote": "our chosen quantization method, which could affect results differently than alternative quantization techniques",
+        "bbox": [
+          310.78125,
+          193.74609375,
+          563.0360717773438,
+          397.60601806640625
+        ],
+        "block_id": "/page/9/Text/11"
+      }
+    },
+    {
+      "value": "Adversarial-attack hyperparameters (e.g., 0.5 character probability, 5-char limit) may shape findings.",
+      "ev": {
+        "page": 10,
+        "section": "C. Threats to Validity",
+        "quote": "the specific parameter settings such as the character-level attack's specific transformation parameters (0.5 probability, 5-character maximum)",
+        "bbox": [
+          310.78125,
+          193.74609375,
+          563.0360717773438,
+          397.60601806640625
+        ],
+        "block_id": "/page/9/Text/11"
+      }
+    },
+    {
+      "value": "Construct validity threatened by metric and attack-method choices specific to code generation domain.",
+      "ev": {
+        "page": 10,
+        "section": "C. Threats to Validity",
+        "quote": "the selection of metrics used to evaluate the robustness of LMCs, as well as the methodologies employed to implement adversarial attacks",
+        "bbox": [
+          310.18359375,
+          400.24261474609375,
+          563.03564453125,
+          565.7079010009766
+        ],
+        "block_id": "/page/9/Text/12"
+      }
+    },
+    {
+      "value": "StarCoder discarded on HumanEval because the model could not produce any usable outputs in that setting.",
+      "ev": {
+        "page": 7,
+        "section": "A. RQ1: Adversarial Robustness Evaluation",
+        "quote": "FOR STARCODER, WE DISCARD IT ON HUMANEVAL DATASET SINCE WE CANNOT GET ANY OUTPUTS",
+        "bbox": [
+          50.501953125,
+          58.3935546875,
+          559.521240234375,
+          93.26263427734375
+        ],
+        "block_id": "/page/6/Caption/1"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Restricted to Python code generation; broader programming languages not yet evaluated.",
+      "ev": {
+        "page": 11,
+        "section": "Adversarial prompt:",
+        "quote": "we plan to extend this investigation with additional programming languages, model architectures, and quantization techniques",
+        "bbox": [
+          47.21484375,
+          328.7834167480469,
+          300.62109375,
+          410.4769592285156
+        ],
+        "block_id": "/page/10/Text/16"
+      }
+    },
+    {
+      "value": "Only bitsandbytes NF4 and INT8 tested; sub-4-bit and other PTQ schemes (GPTQ, AWQ) not benchmarked.",
+      "ev": {
+        "page": 5,
+        "section": "D. Model Quantization",
+        "quote": "We leverage bitsandbytes library for model quantization, which supports both 4-bit and 8-bit precision levels",
+        "bbox": [
+          310.18359375,
+          444.75,
+          563.25,
+          586.5
+        ],
+        "block_id": "/page/4/Text/22"
+      }
+    },
+    {
+      "value": "No latency, throughput, or energy measurements; speedup or efficiency claims rely on cited bitsandbytes behaviour.",
+      "ev": {
+        "page": 4,
+        "section": "A. S1: Selection of Quantization Method",
+        "quote": "achieving up to 4x memory reduction compared to FP16 models while maintaining competitive inference speed",
+        "bbox": [
+          48.41015625,
+          266.44921875,
+          300.02471923828125,
+          491.68682861328125
+        ],
+        "block_id": "/page/3/Text/3"
+      }
+    },
+    {
+      "value": "Mechanism explanation (regularization, reduced sensitivity) is qualitative, lacking theoretical proofs.",
+      "ev": {
+        "page": 11,
+        "section": "Adversarial prompt:",
+        "quote": "We also plan to explore more theoretical research to fully understand the mechanisms by which quantization enhances model robustness",
+        "bbox": [
+          47.21484375,
+          328.7834167480469,
+          300.62109375,
+          410.4769592285156
+        ],
+        "block_id": "/page/10/Text/16"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Extend study to additional programming languages beyond Python.",
+      "ev": {
+        "page": 11,
+        "section": "Adversarial prompt:",
+        "quote": "we plan to extend this investigation with additional programming languages",
+        "bbox": [
+          47.21484375,
+          328.7834167480469,
+          300.62109375,
+          410.4769592285156
+        ],
+        "block_id": "/page/10/Text/16"
+      }
+    },
+    {
+      "value": "Test more model architectures and quantization techniques.",
+      "ev": {
+        "page": 11,
+        "section": "Adversarial prompt:",
+        "quote": "additional programming languages, model architectures, and quantization techniques",
+        "bbox": [
+          47.21484375,
+          328.7834167480469,
+          300.62109375,
+          410.4769592285156
+        ],
+        "block_id": "/page/10/Text/16"
+      }
+    },
+    {
+      "value": "Theoretical investigation of why quantization enhances robustness.",
+      "ev": {
+        "page": 11,
+        "section": "Adversarial prompt:",
+        "quote": "explore more theoretical research to fully understand the mechanisms by which quantization enhances model robustness",
+        "bbox": [
+          47.21484375,
+          328.7834167480469,
+          300.62109375,
+          410.4769592285156
+        ],
+        "block_id": "/page/10/Text/16"
+      }
+    },
+    {
+      "value": "Design new quantization techniques optimized jointly for efficiency and robustness.",
+      "ev": {
+        "page": 11,
+        "section": "Adversarial prompt:",
+        "quote": "prompting advanced quantization techniques specifically designed to optimize for both efficiency and robustness",
+        "bbox": [
+          47.21484375,
+          328.7834167480469,
+          300.62109375,
+          410.4769592285156
+        ],
+        "block_id": "/page/10/Text/16"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+        "quote": "we present the first systematic investigation of how quantization affects the robustness of LLMs in code generation tasks",
+        "bbox": [
+          48.41015625,
+          176.73046875,
+          300.0233459472656,
+          415.21563720703125
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 2,
+        "section": "*A. LLMs' Robustness in Code Generation*",
+        "quote": "https://github.com/safeai4code/adversarial-codegen",
+        "bbox": [
+          318.849609375,
+          738.5376434326172,
+          487.340087890625,
+          747.8086547851562
+        ],
+        "block_id": "/page/1/Footnote/30"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

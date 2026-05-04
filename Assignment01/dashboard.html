@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>AI503 Assignment 1 — SLR Dashboard (v3)</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, system-ui, sans-serif;
+         margin: 0; padding: 24px 32px; background: #f7f8fa; color: #1f2329; }
+  h1 { margin: 0 0 4px 0; font-size: 24px; }
+  h2 { margin: 24px 0 8px 0; font-size: 18px; color: #444; }
+  h3 { margin: 0 0 8px 0; font-size: 14px; color: #666; }
+  .sub { color: #555; margin-bottom: 24px; font-size: 14px; }
+  .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+  .stat { background: white; padding: 16px; border-radius: 8px;
+          border: 1px solid #e1e4e8; text-align: center; }
+  .stat .big { font-size: 26px; font-weight: 600; color: #4472C4; }
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+  .chart { background: white; padding: 16px; border-radius: 8px;
+           border: 1px solid #e1e4e8; }
+  .row { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 13px; }
+  .lbl { display: inline-block; width: 220px; color: #444; overflow: hidden;
+         text-overflow: ellipsis; white-space: nowrap; }
+  .bar { height: 16px; border-radius: 3px; }
+  .num { color: #555; min-width: 30px; text-align: right; }
+  table { width: 100%; border-collapse: collapse; background: white;
+          border-radius: 8px; border: 1px solid #e1e4e8; overflow: hidden;
+          margin-top: 12px; font-size: 13px; }
+  th { background: #f0f2f5; text-align: left; padding: 8px 10px;
+       border-bottom: 1px solid #e1e4e8; font-weight: 600; cursor: pointer; }
+  th:hover { background: #e6e9ec; }
+  td { padding: 6px 10px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
+  td.rp { font-family: monospace; font-weight: 600; color: #4472C4; }
+  td.title { max-width: 380px; overflow: hidden; text-overflow: ellipsis;
+              white-space: nowrap; }
+  td.num { text-align: right; }
+  tr:hover { background: #fafbfc; }
+  .oa { background: #16A085; color: white; padding: 2px 6px; border-radius: 3px;
+        font-size: 11px; font-weight: 600; }
+  a { color: #4472C4; text-decoration: none; margin-right: 6px; }
+  a:hover { text-decoration: underline; }
+  .filter { margin-bottom: 12px; }
+  .filter input { padding: 6px 10px; width: 320px; border: 1px solid #ccc;
+                  border-radius: 4px; font-size: 14px; }
+</style>
+</head><body>
+<h1>AI503 Assignment 1 — SLR Dashboard</h1>
+<div class="sub">Quantization Safety SLR · v3 · 50 papers · regenerated from
+<code>extractions/</code> + <code>exports/AI503_A1_RR_export_50papers_extended.csv</code></div>
+
+<div class="stats">
+<div class="stat"><div class="big">50</div><div>papers</div></div>
+<div class="stat"><div class="big">43</div><div>recent (≥2021)</div></div>
+<div class="stat"><div class="big">86%</div><div>recency rate</div></div>
+<div class="stat"><div class="big">3,894</div><div>extraction leaves</div></div>
+<div class="stat"><div class="big">88%</div><div>traced</div></div>
+<div class="stat"><div class="big">88%</div><div>with bbox</div></div>
+</div>
+
+<h2>Coverage charts</h2>
+<div class="charts">
+<div class="chart"><h3>Year distribution (n=50)</h3><div class="row"><span class="lbl">2016</span><span class="bar" style="width:20px;background:#4472C4"></span><span class="num">1</span></div><div class="row"><span class="lbl">2017</span><span class="bar" style="width:20px;background:#4472C4"></span><span class="num">1</span></div><div class="row"><span class="lbl">2018</span><span class="bar" style="width:20px;background:#4472C4"></span><span class="num">1</span></div><div class="row"><span class="lbl">2019</span><span class="bar" style="width:60px;background:#4472C4"></span><span class="num">3</span></div><div class="row"><span class="lbl">2020</span><span class="bar" style="width:20px;background:#4472C4"></span><span class="num">1</span></div><div class="row"><span class="lbl">2022</span><span class="bar" style="width:100px;background:#4472C4"></span><span class="num">5</span></div><div class="row"><span class="lbl">2023</span><span class="bar" style="width:260px;background:#4472C4"></span><span class="num">13</span></div><div class="row"><span class="lbl">2024</span><span class="bar" style="width:400px;background:#4472C4"></span><span class="num">20</span></div><div class="row"><span class="lbl">2025</span><span class="bar" style="width:100px;background:#4472C4"></span><span class="num">5</span></div></div>
+<div class="chart"><h3>Paper type</h3><div class="row"><span class="lbl">method</span><span class="bar" style="width:400px;background:#8E44AD"></span><span class="num">31</span></div><div class="row"><span class="lbl">benchmark</span><span class="bar" style="width:129px;background:#8E44AD"></span><span class="num">10</span></div><div class="row"><span class="lbl">safety_analysis</span><span class="bar" style="width:90px;background:#8E44AD"></span><span class="num">7</span></div><div class="row"><span class="lbl">application</span><span class="bar" style="width:25px;background:#8E44AD"></span><span class="num">2</span></div></div>
+<div class="chart"><h3>Method family</h3><div class="row"><span class="lbl">PTQ</span><span class="bar" style="width:400px;background:#16A085"></span><span class="num">27</span></div><div class="row"><span class="lbl">none</span><span class="bar" style="width:177px;background:#16A085"></span><span class="num">12</span></div><div class="row"><span class="lbl">architecture</span><span class="bar" style="width:74px;background:#16A085"></span><span class="num">5</span></div><div class="row"><span class="lbl">KV-cache-quant</span><span class="bar" style="width:29px;background:#16A085"></span><span class="num">2</span></div><div class="row"><span class="lbl">QAT</span><span class="bar" style="width:29px;background:#16A085"></span><span class="num">2</span></div><div class="row"><span class="lbl">pruning</span><span class="bar" style="width:29px;background:#16A085"></span><span class="num">2</span></div></div>
+<div class="chart"><h3>Gap-signal coverage (papers reporting yes, n=50)</h3><div class="row"><span class="lbl">Code released</span><span class="bar" style="width:400px;background:#E67E22"></span><span class="num">47</span></div><div class="row"><span class="lbl">Instruction-tuned eval</span><span class="bar" style="width:229px;background:#E67E22"></span><span class="num">27</span></div><div class="row"><span class="lbl">Real latency</span><span class="bar" style="width:212px;background:#E67E22"></span><span class="num">25</span></div><div class="row"><span class="lbl">Sub-4-bit tested</span><span class="bar" style="width:161px;background:#E67E22"></span><span class="num">19</span></div><div class="row"><span class="lbl">Stats / CIs</span><span class="bar" style="width:119px;background:#E67E22"></span><span class="num">14</span></div><div class="row"><span class="lbl">Long-context eval</span><span class="bar" style="width:102px;background:#E67E22"></span><span class="num">12</span></div><div class="row"><span class="lbl">Safety post-quant</span><span class="bar" style="width:85px;background:#E67E22"></span><span class="num">10</span></div><div class="row"><span class="lbl">Reports energy</span><span class="bar" style="width:25px;background:#E67E22"></span><span class="num">3</span></div><div class="row"><span class="lbl">Edge HW tested</span><span class="bar" style="width:25px;background:#E67E22"></span><span class="num">3</span></div></div>
+</div>
+
+<h2>Per-paper status (sortable, filterable)</h2>
+<div class="filter">
+  <input type="text" id="filter" placeholder="Filter by title, author, RP id, paper_type…"
+         oninput="filterTable()">
+</div>
+<table id="papers">
+<thead><tr>
+<th onclick="sortBy(0)">RP</th>
+<th onclick="sortBy(1)">Author / Year</th>
+<th onclick="sortBy(2)">Title</th>
+<th onclick="sortBy(3)">Type</th>
+<th onclick="sortBy(4)">Method family</th>
+<th onclick="sortBy(5)">Bits</th>
+<th onclick="sortBy(6)">#Models</th>
+<th onclick="sortBy(7)">#Data</th>
+<th onclick="sortBy(8)">#Metrics</th>
+<th onclick="sortBy(9)">Traced</th>
+<th onclick="sortBy(10)">Gap signals</th>
+<th onclick="sortBy(11)">Cited by</th>
+<th>Links</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="rp">RP01</td>
+<td>Paperno 2016</td>
+<td class="title" title="The LAMBADA dataset: Word prediction requiring a broad discourse context">The LAMBADA dataset: Word prediction requiring a broad discour</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">7</td>
+<td class="num">3</td>
+<td class="num">3</td>
+<td class="num"><span title="53/66 leaves">80%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">1,265</td>
+<td> <a href="https://arxiv.org/abs/1606.06031" target="_blank">arXiv</a> <a href="paper_explorer.html#RP01">explorer</a></td>
+</tr><tr>
+<td class="rp">RP02</td>
+<td>Vaswani 2017</td>
+<td class="title" title="Attention Is All You Need">Attention Is All You Need</td>
+<td>method</td>
+<td>architecture</td>
+<td>—</td>
+<td class="num">3</td>
+<td class="num">4</td>
+<td class="num">4</td>
+<td class="num"><span title="49/63 leaves">77%</span></td>
+<td class="num"><span title="1/9 gap signals positive">11%</span></td>
+<td class="num">195,906</td>
+<td> <a href="https://arxiv.org/abs/1706.03762" target="_blank">arXiv</a> <a href="paper_explorer.html#RP02">explorer</a></td>
+</tr><tr>
+<td class="rp">RP03</td>
+<td>Mihaylov 2018</td>
+<td class="title" title="Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering">Can a Suit of Armor Conduct Electricity? A New Dataset for Ope</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">13</td>
+<td class="num">5</td>
+<td class="num">2</td>
+<td class="num"><span title="54/67 leaves">80%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">2,836</td>
+<td> <a href="https://arxiv.org/abs/1809.02789" target="_blank">arXiv</a> <a href="paper_explorer.html#RP03">explorer</a></td>
+</tr><tr>
+<td class="rp">RP04</td>
+<td>Clark 2019</td>
+<td class="title" title="BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions">BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Q</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">4</td>
+<td class="num">9</td>
+<td class="num">1</td>
+<td class="num"><span title="46/59 leaves">77%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">2,775</td>
+<td> <a href="https://arxiv.org/abs/1905.10044" target="_blank">arXiv</a> <a href="paper_explorer.html#RP04">explorer</a></td>
+</tr><tr>
+<td class="rp">RP05</td>
+<td>Zellers 2019</td>
+<td class="title" title="HellaSwag: Can a Machine Really Finish Your Sentence?">HellaSwag: Can a Machine Really Finish Your Sentence?</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">8</td>
+<td class="num">4</td>
+<td class="num">1</td>
+<td class="num"><span title="43/59 leaves">72%</span></td>
+<td class="num"><span title="1/9 gap signals positive">11%</span></td>
+<td class="num">4,852</td>
+<td> <a href="https://arxiv.org/abs/1905.07830" target="_blank">arXiv</a> <a href="paper_explorer.html#RP05">explorer</a></td>
+</tr><tr>
+<td class="rp">RP06</td>
+<td>Bisk 2019</td>
+<td class="title" title="PIQA: Reasoning about Physical Commonsense in Natural Language">PIQA: Reasoning about Physical Commonsense in Natural Language</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">1</td>
+<td class="num"><span title="38/52 leaves">73%</span></td>
+<td class="num"><span title="1/9 gap signals positive">11%</span></td>
+<td class="num">3,579</td>
+<td> <a href="https://arxiv.org/abs/1911.11641" target="_blank">arXiv</a> <a href="paper_explorer.html#RP06">explorer</a></td>
+</tr><tr>
+<td class="rp">RP07</td>
+<td>Nagel 2020</td>
+<td class="title" title="Up or Down? Adaptive Rounding for Post-Training Quantization">Up or Down? Adaptive Rounding for Post-Training Quantization</td>
+<td>method</td>
+<td>PTQ</td>
+<td>4/8</td>
+<td class="num">5</td>
+<td class="num">3</td>
+<td class="num">2</td>
+<td class="num"><span title="47/57 leaves">82%</span></td>
+<td class="num"><span title="1/9 gap signals positive">11%</span></td>
+<td class="num">997</td>
+<td> <a href="https://arxiv.org/abs/2004.10568" target="_blank">arXiv</a> <a href="paper_explorer.html#RP07">explorer</a></td>
+</tr><tr>
+<td class="rp">RP08</td>
+<td>Aminabadi 2022</td>
+<td class="title" title="DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale">DeepSpeed Inference: Enabling Efficient Inference of Transform</td>
+<td>method</td>
+<td>PTQ</td>
+<td>8</td>
+<td class="num">16</td>
+<td class="num">3</td>
+<td class="num">5</td>
+<td class="num"><span title="70/80 leaves">87%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">776</td>
+<td> <a href="https://arxiv.org/abs/2207.00032" target="_blank">arXiv</a> <a href="paper_explorer.html#RP08">explorer</a></td>
+</tr><tr>
+<td class="rp">RP09</td>
+<td>Frantar 2022</td>
+<td class="title" title="GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers">GPTQ: Accurate Post-Training Quantization for Generative Pre-t</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4</td>
+<td class="num">18</td>
+<td class="num">8</td>
+<td class="num">8</td>
+<td class="num"><span title="78/86 leaves">90%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">2,258</td>
+<td> <a href="https://arxiv.org/abs/2210.17323" target="_blank">arXiv</a> <a href="paper_explorer.html#RP09">explorer</a></td>
+</tr><tr>
+<td class="rp">RP10</td>
+<td>Xiao 2022</td>
+<td class="title" title="SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models">SmoothQuant: Accurate and Efficient Post-Training Quantization</td>
+<td>method</td>
+<td>PTQ</td>
+<td>8</td>
+<td class="num">11</td>
+<td class="num">12</td>
+<td class="num">5</td>
+<td class="num"><span title="71/77 leaves">92%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">1,802</td>
+<td> <a href="https://arxiv.org/abs/2211.10438" target="_blank">arXiv</a> <a href="paper_explorer.html#RP10">explorer</a></td>
+</tr><tr>
+<td class="rp">RP11</td>
+<td>Dettmers 2022</td>
+<td class="title" title="LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale">LLM.int8(): 8-bit Matrix Multiplication for Transformers at Sc</td>
+<td>method</td>
+<td>PTQ</td>
+<td>8/16</td>
+<td class="num">10</td>
+<td class="num">9</td>
+<td class="num">8</td>
+<td class="num"><span title="71/79 leaves">89%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">1,193</td>
+<td> <a href="https://arxiv.org/abs/2208.07339" target="_blank">arXiv</a> <a href="paper_explorer.html#RP11">explorer</a></td>
+</tr><tr>
+<td class="rp">RP12</td>
+<td>Touvron 2023</td>
+<td class="title" title="Llama 2: Open Foundation and Fine-Tuned Chat Models">Llama 2: Open Foundation and Fine-Tuned Chat Models</td>
+<td>method</td>
+<td>architecture</td>
+<td>—</td>
+<td class="num">14</td>
+<td class="num">21</td>
+<td class="num">7</td>
+<td class="num"><span title="80/91 leaves">87%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">21,795</td>
+<td> <a href="https://arxiv.org/abs/2307.09288" target="_blank">arXiv</a> <a href="paper_explorer.html#RP12">explorer</a></td>
+</tr><tr>
+<td class="rp">RP13</td>
+<td>Chee 2023</td>
+<td class="title" title="QuIP: 2-Bit Quantization of Large Language Models With Guarantees">QuIP: 2-Bit Quantization of Large Language Models With Guarant</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4/16</td>
+<td class="num">8</td>
+<td class="num">7</td>
+<td class="num">3</td>
+<td class="num"><span title="61/68 leaves">89%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">437</td>
+<td> <a href="https://arxiv.org/abs/2307.13304" target="_blank">arXiv</a> <a href="paper_explorer.html#RP13">explorer</a></td>
+</tr><tr>
+<td class="rp">RP14</td>
+<td>Yao 2022</td>
+<td class="title" title="ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers">ZeroQuant: Efficient and Affordable Post-Training Quantization</td>
+<td>method</td>
+<td>PTQ</td>
+<td>4/8/16</td>
+<td class="num">6</td>
+<td class="num">21</td>
+<td class="num">7</td>
+<td class="num"><span title="79/89 leaves">88%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">855</td>
+<td> <a href="https://arxiv.org/abs/2206.01861" target="_blank">arXiv</a> <a href="paper_explorer.html#RP14">explorer</a></td>
+</tr><tr>
+<td class="rp">RP15</td>
+<td>Lin 2023</td>
+<td class="title" title="AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration">AWQ: Activation-aware Weight Quantization for On-Device LLM Co</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4</td>
+<td class="num">22</td>
+<td class="num">9</td>
+<td class="num">7</td>
+<td class="num"><span title="95/99 leaves">95%</span></td>
+<td class="num"><span title="6/9 gap signals positive">66%</span></td>
+<td class="num">1,683</td>
+<td> <a href="https://arxiv.org/abs/2306.00978" target="_blank">arXiv</a> <a href="paper_explorer.html#RP15">explorer</a></td>
+</tr><tr>
+<td class="rp">RP16</td>
+<td>Kim 2023</td>
+<td class="title" title="SqueezeLLM: Dense-and-Sparse Quantization">SqueezeLLM: Dense-and-Sparse Quantization</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4</td>
+<td class="num">11</td>
+<td class="num">4</td>
+<td class="num">6</td>
+<td class="num"><span title="70/76 leaves">92%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">383</td>
+<td> <a href="https://arxiv.org/abs/2306.07629" target="_blank">arXiv</a> <a href="paper_explorer.html#RP16">explorer</a></td>
+</tr><tr>
+<td class="rp">RP17</td>
+<td>Dettmers 2023</td>
+<td class="title" title="SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression">SpQR: A Sparse-Quantized Representation for Near-Lossless LLM </td>
+<td>method</td>
+<td>PTQ</td>
+<td>3/4/16</td>
+<td class="num">7</td>
+<td class="num">10</td>
+<td class="num">4</td>
+<td class="num"><span title="72/78 leaves">92%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">497</td>
+<td> <a href="https://arxiv.org/abs/2306.03078" target="_blank">arXiv</a> <a href="paper_explorer.html#RP17">explorer</a></td>
+</tr><tr>
+<td class="rp">RP18</td>
+<td>Shao 2023</td>
+<td class="title" title="OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models">OmniQuant: Omnidirectionally Calibrated Quantization for Large</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4/6/16</td>
+<td class="num">5</td>
+<td class="num">9</td>
+<td class="num">4</td>
+<td class="num"><span title="67/75 leaves">89%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">477</td>
+<td> <a href="https://arxiv.org/abs/2308.13137" target="_blank">arXiv</a> <a href="paper_explorer.html#RP18">explorer</a></td>
+</tr><tr>
+<td class="rp">RP19</td>
+<td>Jaiswal 2023</td>
+<td class="title" title="Compressing LLMs: The Truth is Rarely Pure and Never Simple">Compressing LLMs: The Truth is Rarely Pure and Never Simple</td>
+<td>benchmark</td>
+<td>PTQ</td>
+<td>4/8</td>
+<td class="num">5</td>
+<td class="num">6</td>
+<td class="num">7</td>
+<td class="num"><span title="57/67 leaves">85%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">84</td>
+<td> <a href="https://arxiv.org/abs/2310.01382" target="_blank">arXiv</a> <a href="paper_explorer.html#RP19">explorer</a></td>
+</tr><tr>
+<td class="rp">RP20</td>
+<td>Dubey 2024</td>
+<td class="title" title="The Llama 3 Herd of Models">The Llama 3 Herd of Models</td>
+<td>method</td>
+<td>architecture</td>
+<td>—</td>
+<td class="num">11</td>
+<td class="num">26</td>
+<td class="num">9</td>
+<td class="num"><span title="88/96 leaves">91%</span></td>
+<td class="num"><span title="6/9 gap signals positive">66%</span></td>
+<td class="num">16,807</td>
+<td> <a href="https://arxiv.org/abs/2407.21783" target="_blank">arXiv</a> <a href="paper_explorer.html#RP20">explorer</a></td>
+</tr><tr>
+<td class="rp">RP21</td>
+<td>Tseng 2024</td>
+<td class="title" title="QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks">QuIP#: Even Better LLM Quantization with Hadamard Incoherence </td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4</td>
+<td class="num">10</td>
+<td class="num">8</td>
+<td class="num">5</td>
+<td class="num"><span title="68/76 leaves">89%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">344</td>
+<td> <a href="https://arxiv.org/abs/2402.04396" target="_blank">arXiv</a> <a href="paper_explorer.html#RP21">explorer</a></td>
+</tr><tr>
+<td class="rp">RP22</td>
+<td>Hooper 2024</td>
+<td class="title" title="KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization">KVQuant: Towards 10 Million Context Length LLM Inference with </td>
+<td>method</td>
+<td>KV-cache-quant</td>
+<td>2/3/4</td>
+<td class="num">12</td>
+<td class="num">5</td>
+<td class="num">6</td>
+<td class="num"><span title="69/76 leaves">90%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">557</td>
+<td> <a href="https://arxiv.org/abs/2401.18079" target="_blank">arXiv</a> <a href="paper_explorer.html#RP22">explorer</a></td>
+</tr><tr>
+<td class="rp">RP23</td>
+<td>Wang 2023</td>
+<td class="title" title="DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models">DecodingTrust: A Comprehensive Assessment of Trustworthiness i</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">11</td>
+<td class="num">11</td>
+<td class="num">12</td>
+<td class="num"><span title="84/98 leaves">85%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">792</td>
+<td> <a href="https://arxiv.org/abs/2306.11698" target="_blank">arXiv</a> <a href="paper_explorer.html#RP23">explorer</a></td>
+</tr><tr>
+<td class="rp">RP24</td>
+<td>Kirsten 2024</td>
+<td class="title" title="The Impact of Inference Acceleration on Bias of LLMs">The Impact of Inference Acceleration on Bias of LLMs</td>
+<td>safety_analysis</td>
+<td>PTQ</td>
+<td>4/8</td>
+<td class="num">3</td>
+<td class="num">6</td>
+<td class="num">10</td>
+<td class="num"><span title="64/69 leaves">92%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">7</td>
+<td> <a href="https://arxiv.org/abs/2410.22118" target="_blank">arXiv</a> <a href="paper_explorer.html#RP24">explorer</a></td>
+</tr><tr>
+<td class="rp">RP25</td>
+<td>Kwon 2023</td>
+<td class="title" title="Efficient Memory Management for Large Language Model Serving with PagedAttention">Efficient Memory Management for Large Language Model Serving w</td>
+<td>application</td>
+<td>none</td>
+<td>—</td>
+<td class="num">4</td>
+<td class="num">3</td>
+<td class="num">6</td>
+<td class="num"><span title="56/67 leaves">83%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">6,223</td>
+<td> <a href="https://arxiv.org/abs/2309.06180" target="_blank">arXiv</a> <a href="paper_explorer.html#RP25">explorer</a></td>
+</tr><tr>
+<td class="rp">RP26</td>
+<td>Hong 2024</td>
+<td class="title" title="Decoding Compressed Trust: Scrutinizing the Trustworthiness of Efficient LLMs Under Compression">Decoding Compressed Trust: Scrutinizing the Trustworthiness of</td>
+<td>safety_analysis</td>
+<td>PTQ</td>
+<td>3/4/8</td>
+<td class="num">5</td>
+<td class="num">5</td>
+<td class="num">6</td>
+<td class="num"><span title="69/76 leaves">90%</span></td>
+<td class="num"><span title="5/9 gap signals positive">55%</span></td>
+<td class="num">63</td>
+<td> <a href="https://arxiv.org/abs/2403.15447" target="_blank">arXiv</a> <a href="paper_explorer.html#RP26">explorer</a></td>
+</tr><tr>
+<td class="rp">RP27</td>
+<td>Zhelnin 2024</td>
+<td class="title" title="GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs">GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weight</td>
+<td>method</td>
+<td>QAT</td>
+<td>2/3/4</td>
+<td class="num">5</td>
+<td class="num">10</td>
+<td class="num">2</td>
+<td class="num"><span title="63/71 leaves">88%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">7</td>
+<td> <a href="https://arxiv.org/abs/2408.15300" target="_blank">arXiv</a> <a href="paper_explorer.html#RP27">explorer</a></td>
+</tr><tr>
+<td class="rp">RP28</td>
+<td>Ashkboos 2024</td>
+<td class="title" title="SliceGPT: Compress Large Language Models by Deleting Rows and Columns">SliceGPT: Compress Large Language Models by Deleting Rows and </td>
+<td>method</td>
+<td>pruning</td>
+<td>—</td>
+<td class="num">11</td>
+<td class="num">7</td>
+<td class="num">4</td>
+<td class="num"><span title="62/73 leaves">84%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">395</td>
+<td> <a href="https://arxiv.org/abs/2401.15024" target="_blank">arXiv</a> <a href="paper_explorer.html#RP28">explorer</a></td>
+</tr><tr>
+<td class="rp">RP29</td>
+<td>Ashkboos 2024</td>
+<td class="title" title="QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs">QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4/6/8</td>
+<td class="num">6</td>
+<td class="num">7</td>
+<td class="num">5</td>
+<td class="num"><span title="70/76 leaves">92%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">511</td>
+<td> <a href="https://arxiv.org/abs/2404.00456" target="_blank">arXiv</a> <a href="paper_explorer.html#RP29">explorer</a></td>
+</tr><tr>
+<td class="rp">RP30</td>
+<td>Egiazarian 2024</td>
+<td class="title" title="Extreme Compression of Large Language Models via Additive Quantization">Extreme Compression of Large Language Models via Additive Quan</td>
+<td>method</td>
+<td>PTQ</td>
+<td>2/3/4</td>
+<td class="num">4</td>
+<td class="num">8</td>
+<td class="num">7</td>
+<td class="num"><span title="67/74 leaves">90%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">222</td>
+<td> <a href="https://arxiv.org/abs/2401.06118" target="_blank">arXiv</a> <a href="paper_explorer.html#RP30">explorer</a></td>
+</tr><tr>
+<td class="rp">RP31</td>
+<td>Zhang 2023</td>
+<td class="title" title="H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models">H2O: Heavy-Hitter Oracle for Efficient Generative Inference of</td>
+<td>method</td>
+<td>architecture</td>
+<td>4</td>
+<td class="num">11</td>
+<td class="num">14</td>
+<td class="num">6</td>
+<td class="num"><span title="81/89 leaves">91%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">765</td>
+<td> <a href="https://arxiv.org/abs/2306.14048" target="_blank">arXiv</a> <a href="paper_explorer.html#RP31">explorer</a></td>
+</tr><tr>
+<td class="rp">RP32</td>
+<td>Belkhiter 2024</td>
+<td class="title" title="HarmLevelBench: Evaluating Harm-Level Compliance and the Impact of Quantization on Model Alignment">HarmLevelBench: Evaluating Harm-Level Compliance and the Impac</td>
+<td>safety_analysis</td>
+<td>PTQ</td>
+<td>—</td>
+<td class="num">5</td>
+<td class="num">2</td>
+<td class="num">4</td>
+<td class="num"><span title="44/55 leaves">80%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">11</td>
+<td> <a href="https://arxiv.org/abs/2411.06835" target="_blank">arXiv</a> <a href="paper_explorer.html#RP32">explorer</a></td>
+</tr><tr>
+<td class="rp">RP33</td>
+<td>Sheng 2023</td>
+<td class="title" title="FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU">FlexGen: High-Throughput Generative Inference of Large Languag</td>
+<td>method</td>
+<td>PTQ</td>
+<td>4/3/16</td>
+<td class="num">4</td>
+<td class="num">9</td>
+<td class="num">7</td>
+<td class="num"><span title="78/84 leaves">92%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">837</td>
+<td> <a href="https://arxiv.org/abs/2303.06865" target="_blank">arXiv</a> <a href="paper_explorer.html#RP33">explorer</a></td>
+</tr><tr>
+<td class="rp">RP34</td>
+<td>Song 2024</td>
+<td class="title" title="PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU">PowerInfer: Fast Large Language Model Serving with a Consumer-</td>
+<td>method</td>
+<td>none</td>
+<td>16/4</td>
+<td class="num">13</td>
+<td class="num">12</td>
+<td class="num">7</td>
+<td class="num"><span title="77/84 leaves">91%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">333</td>
+<td> <a href="https://arxiv.org/abs/2312.12456" target="_blank">arXiv</a> <a href="paper_explorer.html#RP34">explorer</a></td>
+</tr><tr>
+<td class="rp">RP35</td>
+<td>Sun 2024</td>
+<td class="title" title="FLATQUANT: Flatness Matters for LLM Quantization">FLATQUANT: Flatness Matters for LLM Quantization</td>
+<td>method</td>
+<td>PTQ</td>
+<td>4/3/2/8</td>
+<td class="num">10</td>
+<td class="num">10</td>
+<td class="num">7</td>
+<td class="num"><span title="81/87 leaves">93%</span></td>
+<td class="num"><span title="5/9 gap signals positive">55%</span></td>
+<td class="num">71</td>
+<td> <a href="https://arxiv.org/abs/2410.09426" target="_blank">arXiv</a> <a href="paper_explorer.html#RP35">explorer</a></td>
+</tr><tr>
+<td class="rp">RP36</td>
+<td>Liu 2024</td>
+<td class="title" title="SpinQuant: LLM Quantization with Learned Rotations">SpinQuant: LLM Quantization with Learned Rotations</td>
+<td>method</td>
+<td>PTQ</td>
+<td>4/8/16/3</td>
+<td class="num">8</td>
+<td class="num">12</td>
+<td class="num">5</td>
+<td class="num"><span title="73/80 leaves">91%</span></td>
+<td class="num"><span title="6/9 gap signals positive">66%</span></td>
+<td class="num">390</td>
+<td> <a href="https://arxiv.org/abs/2405.16406" target="_blank">arXiv</a> <a href="paper_explorer.html#RP36">explorer</a></td>
+</tr><tr>
+<td class="rp">RP37</td>
+<td>Alizadeh 2024</td>
+<td class="title" title="LLM in a flash: Efficient Large Language Model Inference with Limited Memory">LLM in a flash: Efficient Large Language Model Inference with </td>
+<td>method</td>
+<td>architecture</td>
+<td>16/32</td>
+<td class="num">5</td>
+<td class="num">6</td>
+<td class="num">8</td>
+<td class="num"><span title="69/77 leaves">89%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">288</td>
+<td> <a href="https://arxiv.org/abs/2312.11514" target="_blank">arXiv</a> <a href="paper_explorer.html#RP37">explorer</a></td>
+</tr><tr>
+<td class="rp">RP38</td>
+<td>Liu 2024</td>
+<td class="title" title="KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache">KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache</td>
+<td>method</td>
+<td>KV-cache-quant</td>
+<td>2/4/16</td>
+<td class="num">9</td>
+<td class="num">13</td>
+<td class="num">9</td>
+<td class="num"><span title="77/83 leaves">92%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">517</td>
+<td> <a href="https://arxiv.org/abs/2402.02750" target="_blank">arXiv</a> <a href="paper_explorer.html#RP38">explorer</a></td>
+</tr><tr>
+<td class="rp">RP39</td>
+<td>Ge 2023</td>
+<td class="title" title="Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs">Model Tells You What to Discard: Adaptive KV Cache Compression</td>
+<td>method</td>
+<td>pruning</td>
+<td>—</td>
+<td class="num">5</td>
+<td class="num">7</td>
+<td class="num">8</td>
+<td class="num"><span title="61/71 leaves">85%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">545</td>
+<td> <a href="https://arxiv.org/abs/2310.01801" target="_blank">arXiv</a> <a href="paper_explorer.html#RP39">explorer</a></td>
+</tr><tr>
+<td class="rp">RP40</td>
+<td>Dettmers 2023</td>
+<td class="title" title="QLORA: Efficient Finetuning of Quantized LLMs">QLORA: Efficient Finetuning of Quantized LLMs</td>
+<td>method</td>
+<td>QAT</td>
+<td>4/8/16</td>
+<td class="num">14</td>
+<td class="num">16</td>
+<td class="num">10</td>
+<td class="num"><span title="89/97 leaves">91%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">5,131</td>
+<td> <a href="https://arxiv.org/abs/2305.14314" target="_blank">arXiv</a> <a href="paper_explorer.html#RP40">explorer</a></td>
+</tr><tr>
+<td class="rp">RP41</td>
+<td>Xu 2024</td>
+<td class="title" title="Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression">Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM </td>
+<td>safety_analysis</td>
+<td>PTQ</td>
+<td>4/8</td>
+<td class="num">4</td>
+<td class="num">16</td>
+<td class="num">10</td>
+<td class="num"><span title="73/82 leaves">89%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">35</td>
+<td> <a href="https://arxiv.org/abs/2407.04965" target="_blank">arXiv</a> <a href="paper_explorer.html#RP41">explorer</a></td>
+</tr><tr>
+<td class="rp">RP42</td>
+<td>Lin 2024</td>
+<td class="title" title="DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs">DuQuant: Distributing Outliers via Dual Transformation Makes S</td>
+<td>method</td>
+<td>PTQ</td>
+<td>4/6/8</td>
+<td class="num">13</td>
+<td class="num">11</td>
+<td class="num">8</td>
+<td class="num"><span title="80/88 leaves">90%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">166</td>
+<td> <a href="https://arxiv.org/abs/2406.01721" target="_blank">arXiv</a> <a href="paper_explorer.html#RP42">explorer</a></td>
+</tr><tr>
+<td class="rp">RP43</td>
+<td>Lee 2024</td>
+<td class="title" title="Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant">Exploring the Trade-Offs: Quantization Methods, Task Difficult</td>
+<td>benchmark</td>
+<td>PTQ</td>
+<td>4/8/16</td>
+<td class="num">12</td>
+<td class="num">13</td>
+<td class="num">7</td>
+<td class="num"><span title="79/86 leaves">91%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">17</td>
+<td> <a href="https://arxiv.org/abs/2409.11055" target="_blank">arXiv</a> <a href="paper_explorer.html#RP43">explorer</a></td>
+</tr><tr>
+<td class="rp">RP44</td>
+<td>Mazeika 2024</td>
+<td class="title" title="HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal">HarmBench: A Standardized Evaluation Framework for Automated R</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">33</td>
+<td class="num">6</td>
+<td class="num">4</td>
+<td class="num"><span title="85/100 leaves">85%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">1,150</td>
+<td> <a href="https://arxiv.org/abs/2402.04249" target="_blank">arXiv</a> <a href="paper_explorer.html#RP44">explorer</a></td>
+</tr><tr>
+<td class="rp">RP45</td>
+<td>Fang 2025</td>
+<td class="title" title="Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation">Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in</td>
+<td>safety_analysis</td>
+<td>PTQ</td>
+<td>4/8</td>
+<td class="num">12</td>
+<td class="num">4</td>
+<td class="num">4</td>
+<td class="num"><span title="63/72 leaves">87%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">6</td>
+<td> <a href="https://arxiv.org/abs/2506.22776" target="_blank">arXiv</a> <a href="paper_explorer.html#RP45">explorer</a></td>
+</tr><tr>
+<td class="rp">RP46</td>
+<td>Sun 2024</td>
+<td class="title" title="TrustLLM: Trustworthiness in Large Language Models">TrustLLM: Trustworthiness in Large Language Models</td>
+<td>benchmark</td>
+<td>none</td>
+<td>—</td>
+<td class="num">16</td>
+<td class="num">30</td>
+<td class="num">8</td>
+<td class="num"><span title="103/116 leaves">88%</span></td>
+<td class="num"><span title="2/9 gap signals positive">22%</span></td>
+<td class="num">434</td>
+<td> <a href="https://arxiv.org/abs/2401.05561" target="_blank">arXiv</a> <a href="paper_explorer.html#RP46">explorer</a></td>
+</tr><tr>
+<td class="rp">RP47</td>
+<td>Erdil 2025</td>
+<td class="title" title="Inference economics of language models">Inference economics of language models</td>
+<td>application</td>
+<td>none</td>
+<td>4/8/16</td>
+<td class="num">12</td>
+<td class="num">1</td>
+<td class="num">6</td>
+<td class="num"><span title="59/70 leaves">84%</span></td>
+<td class="num"><span title="3/9 gap signals positive">33%</span></td>
+<td class="num">11</td>
+<td> <a href="https://arxiv.org/abs/2506.04645" target="_blank">arXiv</a> <a href="paper_explorer.html#RP47">explorer</a></td>
+</tr><tr>
+<td class="rp">RP48</td>
+<td>Hu 2025</td>
+<td class="title" title="OSTQuant: Refining Large Language Model Quantization with Orthogonal and Scaling Transformations for Better Distribution Fitting">OSTQuant: Refining Large Language Model Quantization with Orth</td>
+<td>method</td>
+<td>PTQ</td>
+<td>3/4/16</td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num">5</td>
+<td class="num"><span title="74/80 leaves">92%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">80</td>
+<td> <a href="https://arxiv.org/abs/2501.13987" target="_blank">arXiv</a> <a href="paper_explorer.html#RP48">explorer</a></td>
+</tr><tr>
+<td class="rp">RP49</td>
+<td>Fu 2025</td>
+<td class="title" title="Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs">Quantized but Deceptive? A Multi-Dimensional Truthfulness Eval</td>
+<td>safety_analysis</td>
+<td>none</td>
+<td>16/4/2</td>
+<td class="num">8</td>
+<td class="num">8</td>
+<td class="num">10</td>
+<td class="num"><span title="73/81 leaves">90%</span></td>
+<td class="num"><span title="4/9 gap signals positive">44%</span></td>
+<td class="num">6</td>
+<td> <a href="https://arxiv.org/abs/2508.19432" target="_blank">arXiv</a> <a href="paper_explorer.html#RP49">explorer</a></td>
+</tr><tr>
+<td class="rp">RP50</td>
+<td>Kharinaev 2025</td>
+<td class="title" title="Investigating the Impact of Quantization Methods on the Safety and Reliability of Large Language Models">Investigating the Impact of Quantization Methods on the Safety</td>
+<td>safety_analysis</td>
+<td>PTQ</td>
+<td>2/3/4</td>
+<td class="num">7</td>
+<td class="num">4</td>
+<td class="num">6</td>
+<td class="num"><span title="65/72 leaves">90%</span></td>
+<td class="num"><span title="5/9 gap signals positive">55%</span></td>
+<td class="num">10</td>
+<td> <a href="https://arxiv.org/abs/2502.15799" target="_blank">arXiv</a> <a href="paper_explorer.html#RP50">explorer</a></td>
+</tr>
+</tbody>
+</table>
+
+<script>
+function filterTable() {
+  const q = document.getElementById('filter').value.toLowerCase();
+  const rows = document.querySelectorAll('#papers tbody tr');
+  for (const r of rows) {
+    r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+  }
+}
+let sortDir = {};
+function sortBy(col) {
+  const tbody = document.querySelector('#papers tbody');
+  const rows = Array.from(tbody.rows);
+  const dir = sortDir[col] = !sortDir[col];
+  const isNum = (s) => !isNaN(parseFloat(s.replace(/[%,]/g, '')));
+  rows.sort((a, b) => {
+    const av = a.cells[col].textContent.trim();
+    const bv = b.cells[col].textContent.trim();
+    if (isNum(av) && isNum(bv)) {
+      return dir ? parseFloat(av.replace(/[%,]/g, '')) - parseFloat(bv.replace(/[%,]/g, ''))
+                 : parseFloat(bv.replace(/[%,]/g, '')) - parseFloat(av.replace(/[%,]/g, ''));
+    }
+    return dir ? av.localeCompare(bv) : bv.localeCompare(av);
+  });
+  for (const r of rows) tbody.appendChild(r);
+}
+</script>
+</body></html>

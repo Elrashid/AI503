@@ -1,0 +1,1307 @@
+{
+  "rp_id": "RP43",
+  "year": {
+    "value": 2024,
+    "ev": {
+      "page": 1,
+      "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+      "quote": "Even models like Llama-3.3-70B (released in December 2024) and Llama-3.2-1B (released in September 2024)",
+      "bbox": [
+        52.892578125,
+        556.875,
+        298.738037109375,
+        676.8352203369141
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "first_author": {
+    "value": "Lee",
+    "ev": {
+      "page": 1,
+      "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+      "quote": "Jemin Lee^(1) , Sihyeong Park^(2) , Jinse Kwon^(1) , Jihun Oh^(3) and Yongin Kwon^(1)^(∗)",
+      "bbox": [
+        108.7734375,
+        126.29583740234375,
+        501.8441162109375,
+        142.3125
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Jemin Lee",
+      "ev": {
+        "page": 1,
+        "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+        "quote": "Jemin Lee^(1) , Sihyeong Park^(2) , Jinse Kwon^(1) , Jihun Oh^(3) and Yongin Kwon^(1)^(∗)",
+        "bbox": [
+          108.7734375,
+          126.29583740234375,
+          501.8441162109375,
+          142.3125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Sihyeong Park",
+      "ev": {
+        "page": 1,
+        "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+        "quote": "Jemin Lee^(1) , Sihyeong Park^(2) , Jinse Kwon^(1) , Jihun Oh^(3) and Yongin Kwon^(1)^(∗)",
+        "bbox": [
+          108.7734375,
+          126.29583740234375,
+          501.8441162109375,
+          142.3125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Jinse Kwon",
+      "ev": {
+        "page": 1,
+        "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+        "quote": "Jemin Lee^(1) , Sihyeong Park^(2) , Jinse Kwon^(1) , Jihun Oh^(3) and Yongin Kwon^(1)^(∗)",
+        "bbox": [
+          108.7734375,
+          126.29583740234375,
+          501.8441162109375,
+          142.3125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Jihun Oh",
+      "ev": {
+        "page": 1,
+        "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+        "quote": "Jemin Lee^(1) , Sihyeong Park^(2) , Jinse Kwon^(1) , Jihun Oh^(3) and Yongin Kwon^(1)^(∗)",
+        "bbox": [
+          108.7734375,
+          126.29583740234375,
+          501.8441162109375,
+          142.3125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Yongin Kwon",
+      "ev": {
+        "page": 1,
+        "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+        "quote": "Jemin Lee^(1) , Sihyeong Park^(2) , Jinse Kwon^(1) , Jihun Oh^(3) and Yongin Kwon^(1)^(∗)",
+        "bbox": [
+          108.7734375,
+          126.29583740234375,
+          501.8441162109375,
+          142.3125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+    "ev": {
+      "page": 1,
+      "section": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+      "quote": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+      "bbox": [
+        54.0,
+        88.171875,
+        558.1565551757812,
+        119.16021728515625
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "IJCAI 2025 (arXiv:2409.11055)",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "Appendix available at: https://arxiv.org/abs/2409.11055",
+      "bbox": [
+        53.677001953125,
+        683.4788513183594,
+        252.79383850097656,
+        704.1663818359375
+      ],
+      "block_id": "/page/0/Footnote/9"
+    }
+  },
+  "doi": {
+    "value": "arXiv:2409.11055",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "Appendix available at: https://arxiv.org/abs/2409.11055",
+      "bbox": [
+        53.677001953125,
+        683.4788513183594,
+        252.79383850097656,
+        704.1663818359375
+      ],
+      "block_id": "/page/0/Footnote/9"
+    }
+  },
+  "contribution": {
+    "value": "A comprehensive evaluation of four PTQ methods (GPTQ, AWQ, SmoothQuant, FP8) on 12 instruction-tuned LLMs spanning 1B to 405B parameters across 13 datasets, finding FP8 is most robust, AWQ outperforms GPTQ, smaller models suffer severe drops at 4-bit, and quantization magnifies inherent model weaknesses rather than correlating with task difficulty.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we conduct a comprehensive evaluation of instructiontuned models spanning 1B to 405B parameters, applying four quantization methods across 13 datasets",
+      "bbox": [
+        72.017578125,
+        243.6328125,
+        278.86846923828125,
+        517.4750671386719
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "datasets": [
+    {
+      "value": "ARC-Challenge",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "CommonSenseQA (ARC, HellaSwag, Winogrande)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "HellaSwag",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "CommonSenseQA (ARC, HellaSwag, Winogrande)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "Winogrande",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "CommonSenseQA (ARC, HellaSwag, Winogrande)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "MMLU",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Knowledge and Language Understanding (MMLU, GPQA, MMLU-PRO, BBH, MuSR)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "GPQA",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Knowledge and Language Understanding (MMLU, GPQA, MMLU-PRO, BBH, MuSR)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "MMLU-PRO",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Knowledge and Language Understanding (MMLU, GPQA, MMLU-PRO, BBH, MuSR)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "BBH",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Knowledge and Language Understanding (MMLU, GPQA, MMLU-PRO, BBH, MuSR)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "MuSR",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Knowledge and Language Understanding (MMLU, GPQA, MMLU-PRO, BBH, MuSR)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "IFEval",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Instruction Following (IFEval)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "TruthfulQA",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Hallucination (TruthfulQA)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "GSM8K",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Mathematics (GSM8K, MATH-Lvl-5)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "MATH-Lvl-5",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Mathematics (GSM8K, MATH-Lvl-5)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "MT-Bench",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Dialogue (MT-Bench)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "Calibration sets vary by tool: 128 samples x 2048 tokens (Wikitext2 for AutoGPTQ), 128 x 512 (pile-val-backup for AWQ), 512 x 4,096-8,192 (UltraChat-200k or LLM_compression_calibration for FP8/GPTQ-llmcompressor); evaluation across 13 datasets totaling tens of thousands of test samples",
+    "ev": {
+      "page": 21,
+      "section": "D.5 Calibration Data for Quantization",
+      "quote": "Calibration settings for quantization, including dataset used, sample count, fixed sequence length",
+      "bbox": [
+        51.0,
+        604.5,
+        560.25,
+        642.0
+      ],
+      "block_id": "/page/20/Caption/1",
+      "source_table": "Table 9"
+    }
+  },
+  "models_used": [
+    {
+      "value": "Vicuna-7B-v1.3",
+      "ev": {
+        "page": 12,
+        "section": "**B** Additional Models",
+        "quote": "Vicuna-7B-v1.3 | FP16 | 16 / 16 | 14",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Gemma-2B-it",
+      "ev": {
+        "page": 12,
+        "section": "**B** Additional Models",
+        "quote": "Gemma-2B-it | FP16 | 16 / 16 | 4",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Gemma-7B-it",
+      "ev": {
+        "page": 12,
+        "section": "**B** Additional Models",
+        "quote": "Gemma-7B-it | FP16 | 16 / 16 | 14",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Llama-2-7B-Chat",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-2-7B-Chat | FP16 | 16 / 16 | 14",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-2-13B-Chat",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-2-13B-Chat | FP16 | 16 / 16 | 26",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-2-70B-Chat",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-2-70B-Chat | FP16 | 16 / 16 | 140",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.1-8B-Instruct",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.1-8B-it | FP16 | 16 / 16 | 16",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.1-70B-Instruct",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.1-70B-it | FP16 | 16 / 16 | 140",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.1-405B-Instruct",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.1-405B-it | FP16 | 16 / 16 | 810",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.2-1B-Instruct",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.2-1B-it | FP16 | 16 / 16 | 2",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.2-3B-Instruct",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.2-3B-it | FP16 | 16 / 16 | 6",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.3-70B-Instruct",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.3-70B-it | FP16 | 16 / 16 | 140",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "Accuracy (acc / acc_norm)",
+      "ev": {
+        "page": 11,
+        "section": "A Details of Datasets",
+        "quote": "ARC-Challenge ... | Accuracy ↑",
+        "bbox": [
+          47.8543359375,
+          539.062734375,
+          561.7550390625,
+          659.765390625
+        ],
+        "block_id": "/page/10/Table/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Strict accuracy (IFEval)",
+      "ev": {
+        "page": 11,
+        "section": "A Details of Datasets",
+        "quote": "IFEval ... | Strict Accuracy ↑",
+        "bbox": [
+          47.8543359375,
+          539.062734375,
+          561.7550390625,
+          659.765390625
+        ],
+        "block_id": "/page/10/Table/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Multi-True (MC2) for TruthfulQA",
+      "ev": {
+        "page": 11,
+        "section": "A Details of Datasets",
+        "quote": "TruthfulQA ... | Multi-True (MC2) ↑",
+        "bbox": [
+          47.8543359375,
+          539.062734375,
+          561.7550390625,
+          659.765390625
+        ],
+        "block_id": "/page/10/Table/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Strict-Match (GSM8K)",
+      "ev": {
+        "page": 11,
+        "section": "A Details of Datasets",
+        "quote": "GSM8K ... | Strict-Match ↑",
+        "bbox": [
+          47.8543359375,
+          539.062734375,
+          561.7550390625,
+          659.765390625
+        ],
+        "block_id": "/page/10/Table/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Exact-Match (MATH-Lvl-5)",
+      "ev": {
+        "page": 11,
+        "section": "A Details of Datasets",
+        "quote": "MATH-Lvl-5 ... | Exact-Match ↑",
+        "bbox": [
+          47.8543359375,
+          539.062734375,
+          561.7550390625,
+          659.765390625
+        ],
+        "block_id": "/page/10/Table/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "MT-Bench score (0-10) judged by GPT-4",
+      "ev": {
+        "page": 11,
+        "section": "A Details of Datasets",
+        "quote": "MT-Bench ... | Score (0–10) ↑",
+        "bbox": [
+          47.8543359375,
+          539.062734375,
+          561.7550390625,
+          659.765390625
+        ],
+        "block_id": "/page/10/Table/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "Storage size in GB",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Model | Method | W/A | Storage(GB)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Llama-3.2-1B GPTQ 4-bit drops GSM8k by -25.32 points (33.36 to 8.04) and IFEval by -16.01 points; average leaderboard-v1 score drops -10.14",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.2-1B-it ... GPTQ*** | 4/16 | 0.5 | 34.90 (↓7.16) | 8.04 (↓25.32) | 43.14 (↓16.48) | 40.20 (↓5.24) | 41.92 (↓1.90) | 57.85 (↓4.74) | 37.67 (↓10.14)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Llama-3.1-405B SmoothQuant W8A8 collapses on Leaderboard-v2 by -12.14 average points (47.70 to 35.56), with MMLU-PRO crashing -41.77 points",
+      "ev": {
+        "page": 4,
+        "section": "2 Related Work",
+        "quote": "Llama-3.1-405B-it ... SmoothQuant | 8 / 8 | 405 | 54.46 (↓12.35) | 16.73 (↓9.52) | 70.34 (↓5.84) | 35.01 (↓2.05) | 18.24 (↓41.77) | 18.60 (↓1.26) | 35.56 (↓12.14)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Llama-3.1-70B FP8 W8A8 maintains Leaderboard-v1 average within 0.21 points of FP16 (78.55 vs 78.76); AWQ at 4-bit reaches 78.70",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.1-70B-it | FP16 | 16 / 16 | 140 | 69.54 | 88.70 | 86.74 | 82.30 | 59.85 | 85.40 | 78.76 ... FP8 | 8/8 | 70 | ... 78.55 (↓0.21) ... AWQ | 4/16 | 35 | ... 78.70 (↓0.06)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "AWQ outperforms GPTQ on Llama-3.2-1B Leaderboard-v1 by 4.42 points (42.09 vs 37.67) at 4-bit",
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "Llama-3.2-1B-it ... GPTQ*** | 4/16 | 0.5 | ... 37.67 (↓10.14) ... AWQ | 4/16 | 0.5 | ... 42.09 (↓5.72)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "Quantizing Llama-3.2-3B with SmoothQuant improves Leaderboard-v1 average by +13.32% over FP16 Llama-3.2-1B and +8.72% on Leaderboard-v2",
+      "ev": {
+        "page": 5,
+        "section": "5.1 RQ1: Do quantized LLMs outperform smaller original models on most benchmarks, and how do they fare across different architectures and SLMs?",
+        "quote": "quantizing Llama-3.2-3B (SmoothQuant) improves accuracy by 13.32% on OpenLLM Leaderboard-v1 and 8.72% on OpenLLM Leaderboard-v2 compared to the FP16-Llama-3.2-1B",
+        "bbox": [
+          312.873046875,
+          416.109375,
+          558.3875122070312,
+          492.2890930175781
+        ],
+        "block_id": "/page/4/Text/19"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "benchmark",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we conduct a comprehensive evaluation of instructiontuned models spanning 1B to 405B parameters, applying four quantization methods across 13 datasets",
+      "bbox": [
+        72.017578125,
+        243.6328125,
+        278.86846923828125,
+        517.4750671386719
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 5,
+      "section": "4.3 Quantization Methods and Calibration Data",
+      "quote": "We evaluated multiple PTQ methods, including GPTQ, AWQ, SmoothQuant, and FP8",
+      "bbox": [
+        52.59375,
+        438.15234375,
+        298.65673828125,
+        503.2120666503906
+      ],
+      "block_id": "/page/4/Text/8"
+    }
+  },
+  "quantization_method_name": {
+    "value": "GPTQ, AWQ, SmoothQuant, FP8 (compared)",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "Our study applies four quantization methods—GPTQ [Frantar et al., 2022], AWQ [Lin et al., 2024], SmoothQuant [Xiao et al., 2023], and FP8 [Micikevicius et al., 2022]",
+      "bbox": [
+        313.470703125,
+        660.6714782714844,
+        559.65673828125,
+        704.4552154541016
+      ],
+      "block_id": "/page/0/Text/14"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 17,
+        "section": "AutoGPTQ",
+        "quote": "the model is quantized to 4-bit with a group size of 128",
+        "bbox": [
+          52.892578125,
+          68.44921875,
+          559.7891235351562,
+          122.97900390625
+        ],
+        "block_id": "/page/16/Text/1"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 17,
+        "section": "vLLM's llmcompressor",
+        "quote": "This method uses INT8 quantization, and the activations are also quantized using INT8",
+        "bbox": [
+          52.59375,
+          373.89404296875,
+          558.3433837890625,
+          405.903076171875
+        ],
+        "block_id": "/page/16/Text/10"
+      }
+    },
+    {
+      "value": 16,
+      "ev": {
+        "page": 3,
+        "section": "2 Related Work",
+        "quote": "FP16 | 16 / 16",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "mixed",
+    "ev": {
+      "page": 5,
+      "section": "4.3 Quantization Methods and Calibration Data",
+      "quote": "GPTQ and AWQ focus on weightonly quantization, while SmoothQuant and FP8 apply to both weights and activations",
+      "bbox": [
+        52.59375,
+        438.15234375,
+        298.65673828125,
+        503.2120666503906
+      ],
+      "block_id": "/page/4/Text/8"
+    }
+  },
+  "granularity": {
+    "value": "per-channel",
+    "ev": {
+      "page": 17,
+      "section": "vLLM's llmcompressor",
+      "quote": "Symmetric per-channel quantization is applied, where a linear scaling per output dimension maps the INT8 or INT4 representations to floating-point weights",
+      "bbox": [
+        52.294921875,
+        339.92578125,
+        558.0565185546875,
+        372.6170654296875
+      ],
+      "block_id": "/page/16/Text/9"
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 5,
+      "section": "4.3 Quantization Methods and Calibration Data",
+      "quote": "We evaluated multiple PTQ methods, including GPTQ, AWQ, SmoothQuant, and FP8",
+      "bbox": [
+        52.59375,
+        438.15234375,
+        298.65673828125,
+        503.2120666503906
+      ],
+      "block_id": "/page/4/Text/8"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA H100-80G x8",
+      "ev": {
+        "page": 4,
+        "section": "3 Evaluation Procedure",
+        "quote": "four servers: H100-80Gx8, A100-80Gx4, RTX 6000-48Gx4, and A6000-48Gx4",
+        "bbox": [
+          313.470703125,
+          539.25,
+          559.5,
+          702.75
+        ],
+        "block_id": "/page/3/Text/6"
+      }
+    },
+    {
+      "value": "NVIDIA A100-80G x4",
+      "ev": {
+        "page": 4,
+        "section": "3 Evaluation Procedure",
+        "quote": "four servers: H100-80Gx8, A100-80Gx4, RTX 6000-48Gx4, and A6000-48Gx4",
+        "bbox": [
+          313.470703125,
+          539.25,
+          559.5,
+          702.75
+        ],
+        "block_id": "/page/3/Text/6"
+      }
+    },
+    {
+      "value": "NVIDIA RTX 6000 Ada-48G x4",
+      "ev": {
+        "page": 4,
+        "section": "3 Evaluation Procedure",
+        "quote": "four servers: H100-80Gx8, A100-80Gx4, RTX 6000-48Gx4, and A6000-48Gx4",
+        "bbox": [
+          313.470703125,
+          539.25,
+          559.5,
+          702.75
+        ],
+        "block_id": "/page/3/Text/6"
+      }
+    },
+    {
+      "value": "NVIDIA A6000-48G x4",
+      "ev": {
+        "page": 4,
+        "section": "3 Evaluation Procedure",
+        "quote": "four servers: H100-80Gx8, A100-80Gx4, RTX 6000-48Gx4, and A6000-48Gx4",
+        "bbox": [
+          313.470703125,
+          539.25,
+          559.5,
+          702.75
+        ],
+        "block_id": "/page/3/Text/6"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "Broadest scale coverage in the SLR: 12 instruction-tuned LLMs from 1B to 405B parameters across Vicuna, Gemma, and Llama-2/3.1/3.2/3.3 families.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we conduct a comprehensive evaluation of instructiontuned models spanning 1B to 405B parameters, applying four quantization methods across 13 datasets",
+        "bbox": [
+          72.017578125,
+          243.6328125,
+          278.86846923828125,
+          517.4750671386719
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Compares four PTQ methods (GPTQ, AWQ, SmoothQuant, FP8) on the same 13 benchmarks, including new harder Leaderboard-v2 tasks like IFEval and MMLU-PRO.",
+      "ev": {
+        "page": 5,
+        "section": "5 Experimental Results",
+        "quote": "Table 1 and Table 2 summarize the experimental results from OpenLLM Leaderboard-v1 and v2, respectively",
+        "bbox": [
+          313.470703125,
+          127.6171875,
+          559.6569213867188,
+          181.696044921875
+        ],
+        "block_id": "/page/4/Text/15"
+      }
+    },
+    {
+      "value": "Reveals that hard tasks do not always suffer the largest drops; quantization magnifies a model's existing weaknesses, especially in reasoning.",
+      "ev": {
+        "page": 6,
+        "section": "5.4 RQ4: Does higher task difficulty always correlate with greater accuracy degradation under quantization?",
+        "quote": "quantization amplifies a model's existing weaknesses, particularly in commonsense, logical, or mathematical reasoning",
+        "bbox": [
+          322.13671875,
+          423.84375,
+          550.8844604492188,
+          511.32305908203125
+        ],
+        "block_id": "/page/5/Text/11"
+      }
+    },
+    {
+      "value": "Includes free-form MT-Bench LLM-as-judge evaluation with manual inspection, exposing GPT-4 misjudgement cases not captured by leaderboards.",
+      "ev": {
+        "page": 7,
+        "section": "5.5 RQ5: How does quantization impact the free-form conversation quality of LLMs when evaluated using the MT-Bench framework, which employs LLMs as judges?",
+        "quote": "GPT4 sometimes misjudges incorrect responses as correct, particularly for math and reasoning tasks",
+        "bbox": [
+          52.892578125,
+          494.2265625,
+          298.65679931640625,
+          625.714111328125
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Different GPTQ tools (AutoGPTQ, llmcompressor, AutoRound) used across model sizes makes direct GPTQ-vs-GPTQ comparison noisy.",
+      "ev": {
+        "page": 6,
+        "section": "5.2 RQ2: How do different quantization methods affect the performance of models across diverse tasks? Are there noticeable differences in how specific methods (e.g., GPTQ, AWQ, SmoothQuant, FP8) impact task accuracy?",
+        "quote": "different implementations of GPTQ, such as AutoGPTQ and llmcompressor, demonstrate notable performance differences",
+        "bbox": [
+          53.490234375,
+          166.67578125,
+          298.65673828125,
+          242.82403564453125
+        ],
+        "block_id": "/page/5/Text/1"
+      }
+    },
+    {
+      "value": "Some 405B configurations skipped due to runtime limits over 30 days, leaving incomplete coverage at the largest scale.",
+      "ev": {
+        "page": 5,
+        "section": "4.4 Models",
+        "quote": "due to runtime limitations (over 30 days), we did not measure the original model accuracy or test all GPTQ configurations for Llama-3.1-405B",
+        "bbox": [
+          314.666015625,
+          55.30078125,
+          559.6526489257812,
+          99.24609375
+        ],
+        "block_id": "/page/4/Text/13"
+      }
+    },
+    {
+      "value": "MT-Bench evaluation uses only 80 prompts and depends on GPT-4 judgement, which can mark wrong answers as correct.",
+      "ev": {
+        "page": 7,
+        "section": "5.5 RQ5: How does quantization impact the free-form conversation quality of LLMs when evaluated using the MT-Bench framework, which employs LLMs as judges?",
+        "quote": "GPT4 sometimes misjudges incorrect responses as correct, particularly for math and reasoning tasks",
+        "bbox": [
+          52.892578125,
+          494.2265625,
+          298.65679931640625,
+          625.714111328125
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "Calibration dataset choice is acknowledged to influence accuracy, but the paper does not study this dimension.",
+      "ev": {
+        "page": 17,
+        "section": "D.5 Calibration Data for Quantization",
+        "quote": "the accuracy of quantized models can be influenced by the variety of subjects included in the calibration data. However, a thorough investigation of calibration datasets is beyond the scope of our study",
+        "bbox": [
+          52.59375,
+          564.22265625,
+          558.09765625,
+          629.9930877685547
+        ],
+        "block_id": "/page/16/Text/17"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "All quantization runs use data-centre GPUs (H100, A100, RTX 6000, A6000); no edge or mobile inference is measured.",
+      "ev": {
+        "page": 4,
+        "section": "3 Evaluation Procedure",
+        "quote": "four servers: H100-80Gx8, A100-80Gx4, RTX 6000-48Gx4, and A6000-48Gx4",
+        "bbox": [
+          313.470703125,
+          539.25,
+          559.5,
+          702.75
+        ],
+        "block_id": "/page/3/Text/6"
+      }
+    },
+    {
+      "value": "Safety dimensions like jailbreak, bias, or refusal are not measured; TruthfulQA is the only safety-adjacent benchmark.",
+      "ev": {
+        "page": 5,
+        "section": "4.1 Datasets",
+        "quote": "Hallucination (TruthfulQA)",
+        "bbox": [
+          53.19140625,
+          145.79296875,
+          298.65673828125,
+          255.34808349609375
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "No latency, throughput, or energy numbers are reported; the focus is purely on accuracy preservation.",
+      "ev": {
+        "page": 6,
+        "section": "5.2 RQ2: How do different quantization methods affect the performance of models across diverse tasks? Are there noticeable differences in how specific methods (e.g., GPTQ, AWQ, SmoothQuant, FP8) impact task accuracy?",
+        "quote": "FP8 offers greater stability compared to SmoothQuant and is advantageous to use when supported by hardware such as the NVIDIA H100 GPU and RTX 6000 Ada, as it provides benefits in both latency and throughput",
+        "bbox": [
+          52.892578125,
+          244.01953125,
+          298.73809814453125,
+          386.40106201171875
+        ],
+        "block_id": "/page/5/Text/2"
+      }
+    },
+    {
+      "value": "Bit-width range is restricted to 4-bit and 8-bit; sub-4-bit (3-bit, 2-bit) regimes are not tested.",
+      "ev": {
+        "page": 17,
+        "section": "AutoGPTQ",
+        "quote": "the model is quantized to 4-bit with a group size of 128",
+        "bbox": [
+          52.892578125,
+          68.44921875,
+          559.7891235351562,
+          122.97900390625
+        ],
+        "block_id": "/page/16/Text/1"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "More sensitive metrics or stronger judging models are needed to evaluate subtle quality differences in large quantized chat models.",
+      "ev": {
+        "page": 7,
+        "section": "5.5 RQ5: How does quantization impact the free-form conversation quality of LLMs when evaluated using the MT-Bench framework, which employs LLMs as judges?",
+        "quote": "for the latest large-scale models, more sensitive metrics or superior judging models may be required to evaluate subtle quality gaps",
+        "bbox": [
+          313.76953125,
+          55.30078125,
+          559.6567993164062,
+          99.24609375
+        ],
+        "block_id": "/page/6/Text/6"
+      }
+    },
+    {
+      "value": "Investigation of calibration data composition is left for future work despite known influence on quantized accuracy.",
+      "ev": {
+        "page": 17,
+        "section": "D.5 Calibration Data for Quantization",
+        "quote": "a thorough investigation of calibration datasets is beyond the scope of our study",
+        "bbox": [
+          52.59375,
+          564.22265625,
+          558.09765625,
+          629.9930877685547
+        ],
+        "block_id": "/page/16/Text/17"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": true,
+      "ev": {
+        "page": 5,
+        "section": "5.1 RQ1: Do quantized LLMs outperform smaller original models on most benchmarks, and how do they fare across different architectures and SLMs?",
+        "quote": "tasks like instruction-following (IFEval) and hallucination detection (TruthfulQA) remain challenging for quantized models",
+        "bbox": [
+          322.435546875,
+          505.828125,
+          550.8820190429688,
+          582.4410858154297
+        ],
+        "block_id": "/page/4/Text/20"
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "Appendix available at: https://arxiv.org/abs/2409.11055",
+        "bbox": [
+          53.677001953125,
+          683.4788513183594,
+          252.79383850097656,
+          704.1663818359375
+        ],
+        "block_id": "/page/0/Footnote/9"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": true,
+      "ev": {
+        "page": 5,
+        "section": "4.4 Models",
+        "quote": "We applied quantization techniques to 12 instruction-tuned open LLMs, including the Vicuna, Gemma, and Llama families, with model sizes ranging from 1B to 405B",
+        "bbox": [
+          53.490234375,
+          606.2543640136719,
+          298.2454833984375,
+          671.1630783081055
+        ],
+        "block_id": "/page/4/Text/11"
+      }
+    }
+  }
+}

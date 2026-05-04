@@ -1,0 +1,1043 @@
+{
+  "rp_id": "RP24",
+  "year": {
+    "value": 2024,
+    "ev": {
+      "page": 1,
+      "section": "The Impact of Inference Acceleration on Bias of LLMs",
+      "quote": "Elisabeth Kirsten1,3, Ivan Habernal1,3, Vedant Nanda 2 , Muhammad Bilal Zafar1,3",
+      "bbox": [
+        92.54296875,
+        117.9951171875,
+        505.78515625,
+        132.11639404296875
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "first_author": {
+    "value": "Kirsten",
+    "ev": {
+      "page": 1,
+      "section": "The Impact of Inference Acceleration on Bias of LLMs",
+      "quote": "Elisabeth Kirsten1,3, Ivan Habernal1,3, Vedant Nanda 2 , Muhammad Bilal Zafar1,3",
+      "bbox": [
+        92.54296875,
+        117.9951171875,
+        505.78515625,
+        132.11639404296875
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Elisabeth Kirsten",
+      "ev": {
+        "page": 1,
+        "section": "The Impact of Inference Acceleration on Bias of LLMs",
+        "quote": "Elisabeth Kirsten1,3, Ivan Habernal1,3, Vedant Nanda 2 , Muhammad Bilal Zafar1,3",
+        "bbox": [
+          92.54296875,
+          117.9951171875,
+          505.78515625,
+          132.11639404296875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Ivan Habernal",
+      "ev": {
+        "page": 1,
+        "section": "The Impact of Inference Acceleration on Bias of LLMs",
+        "quote": "Elisabeth Kirsten1,3, Ivan Habernal1,3, Vedant Nanda 2 , Muhammad Bilal Zafar1,3",
+        "bbox": [
+          92.54296875,
+          117.9951171875,
+          505.78515625,
+          132.11639404296875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Vedant Nanda",
+      "ev": {
+        "page": 1,
+        "section": "The Impact of Inference Acceleration on Bias of LLMs",
+        "quote": "Elisabeth Kirsten1,3, Ivan Habernal1,3, Vedant Nanda 2 , Muhammad Bilal Zafar1,3",
+        "bbox": [
+          92.54296875,
+          117.9951171875,
+          505.78515625,
+          132.11639404296875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Muhammad Bilal Zafar",
+      "ev": {
+        "page": 1,
+        "section": "The Impact of Inference Acceleration on Bias of LLMs",
+        "quote": "Elisabeth Kirsten1,3, Ivan Habernal1,3, Vedant Nanda 2 , Muhammad Bilal Zafar1,3",
+        "bbox": [
+          92.54296875,
+          117.9951171875,
+          505.78515625,
+          132.11639404296875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "The Impact of Inference Acceleration on Bias of LLMs",
+    "ev": {
+      "page": 1,
+      "section": "The Impact of Inference Acceleration on Bias of LLMs",
+      "quote": "# The Impact of Inference Acceleration on Bias of LLMs",
+      "bbox": [
+        128.62890625,
+        78.115234375,
+        465.04296875,
+        93.19622802734375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "arXiv preprint",
+    "ev": {
+      "page": 1,
+      "section": "Page header",
+      "quote": "arXiv:2410.22118v3  [cs.CL]  5 Jun 2025",
+      "bbox": [
+        15.71484375,
+        253.6689453125,
+        42.0,
+        587.5249938964844
+      ],
+      "block_id": "/page/0/PageHeader/0",
+      "recovered_via": "PyMuPDF furniture sidecar"
+    }
+  },
+  "doi": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "Probes how five inference acceleration strategies (INT4/INT8, AWQ, KV4/KV8, structured/unstructured Wanda pruning) change demographic bias in three instruction-tuned LLMs across six bias metrics.",
+    "ev": {
+      "page": 1,
+      "section": "1 Introduction",
+      "quote": "Our assessment includes five commonly used inference acceleration techniques and three widely used LLMs. Noting the multidimensional nature of bias",
+      "bbox": [
+        305.56640625,
+        601.8984375,
+        526.221435546875,
+        775.6324691772461
+      ],
+      "block_id": "/page/0/Text/17"
+    }
+  },
+  "datasets": [
+    {
+      "value": "CrowSPairs",
+      "ev": {
+        "page": 3,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "CrowSPairs (Nangia et al., 2020) is a dataset of crowd-sourced sentence pairs designed to evaluate stereotypes related to race, gender",
+        "bbox": [
+          304.7556675062972,
+          157.875,
+          526.9420654911838,
+          319.0390625
+        ],
+        "block_id": "/page/2/Text/9"
+      }
+    },
+    {
+      "value": "GlobalOpinionQA",
+      "ev": {
+        "page": 3,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "GlobalOpinionQA (Durmus et al., 2024) uses multiple-choice questions to assess the opinions stated by a model relative to aggregated population opinions from different countries",
+        "bbox": [
+          304.111328125,
+          323.97265625,
+          526.9420654911838,
+          539.0899376669635
+        ],
+        "block_id": "/page/2/Text/10"
+      }
+    },
+    {
+      "value": "WorldBench",
+      "ev": {
+        "page": 3,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "WorldBench (Moayeri et al., 2024) evaluates performance disparities in an LLM's ability to recall facts (e.g., population, GDP, and capital) about different countries",
+        "bbox": [
+          304.40234375,
+          655.3054318788958,
+          526.9420654911838,
+          774.9853515625
+        ],
+        "block_id": "/page/2/Text/12"
+      }
+    },
+    {
+      "value": "DT-Stereotyping",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "DT-Stereotyping. DecodingTrust (Wang et al., 2024) is a framework for evaluating the trustworthiness of LLMs across eight dimensions, one of which is stereotype bias",
+        "bbox": [
+          68.3073047858942,
+          102.71950133570792,
+          291.9949622166247,
+          357.685546875
+        ],
+        "block_id": "/page/3/Text/1"
+      }
+    },
+    {
+      "value": "DiscrimEval",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "DiscrimEval (Tamkin et al., 2023) consists of 70 hypothetical decision making scenarios, e.g., approving a loan",
+        "bbox": [
+          68.3073047858942,
+          444.0234375,
+          291.9949622166247,
+          685.2965271593945
+        ],
+        "block_id": "/page/3/Text/3"
+      }
+    },
+    {
+      "value": "DiscrimEvalGen",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "we propose a new dataset DiscrimEvalGen. While DiscrimEval asks the same question separately for each demographic group g, DiscrimEvalGen forces the model to make a single choice",
+        "bbox": [
+          304.693359375,
+          415.244140625,
+          526.9420654911838,
+          574.3294746215494
+        ],
+        "block_id": "/page/3/Text/10"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "1,508 CrowSPairs prompts; 9,450 DiscrimEval prompts; 70 DiscrimEvalGen scenarios; 2,556 GlobalOpinionQA questions; 2,225 WorldBench questions; 1,152 DT-Stereotyping prompts",
+    "ev": {
+      "page": 14,
+      "section": "4. Average Lexical Diversity (ALD):",
+      "quote": "CrowSPairs | 1,508 | Gender, Race, Sexual Orientation, Religion, Age, Nationality, Disability, Physical Appearance, Socioeconomic Status",
+      "bbox": [
+        81.356328125,
+        69.29232421875,
+        509.987421875,
+        172.45376953125
+      ],
+      "block_id": "/page/13/Table/0",
+      "source_table": "Table A.1"
+    }
+  },
+  "models_used": [
+    {
+      "value": "LLaMA-2-7B-chat",
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "We consider the smallest size variant of each model: LLaMA-2-7B, LLaMA-3.1- 8B, and Mistral-7B-v0.3",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "LLaMA-3.1-8B-Instruct",
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "We consider the smallest size variant of each model: LLaMA-2-7B, LLaMA-3.1- 8B, and Mistral-7B-v0.3",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "Mistral-7B-Instruct-v0.3",
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "We consider the smallest size variant of each model: LLaMA-2-7B, LLaMA-3.1- 8B, and Mistral-7B-v0.3",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "CrowSPairs stereotype probability score",
+      "ev": {
+        "page": 3,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "the metric measures I[p(s_more) > p(s_less)] and averages this quantity over all pairs",
+        "bbox": [
+          304.7556675062972,
+          157.875,
+          526.9420654911838,
+          319.0390625
+        ],
+        "block_id": "/page/2/Text/9"
+      }
+    },
+    {
+      "value": "GlobalOpinionQA Wasserstein-Gini divergence",
+      "ev": {
+        "page": 3,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "we use the Wasserstein distance as our divergence metric ... The final bias value is then the Gini coefficient of the Wasserstein distance for each country",
+        "bbox": [
+          304.111328125,
+          323.97265625,
+          526.9420654911838,
+          539.0899376669635
+        ],
+        "block_id": "/page/2/Text/10"
+      }
+    },
+    {
+      "value": "WorldBench mean absolute relative error",
+      "ev": {
+        "page": 3,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "we calculate the absolute relative error between the model's answer and the ground truth, and average",
+        "bbox": [
+          304.40234375,
+          655.3054318788958,
+          526.9420654911838,
+          774.9853515625
+        ],
+        "block_id": "/page/2/Text/12"
+      }
+    },
+    {
+      "value": "DT-Stereotyping agreement rate",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "To measure stereotyping behavior, we compute the fraction of times the model agrees with the stereotypical statements",
+        "bbox": [
+          68.3073047858942,
+          102.71950133570792,
+          291.9949622166247,
+          357.685546875
+        ],
+        "block_id": "/page/3/Text/1"
+      }
+    },
+    {
+      "value": "DiscrimEval max-min P(yes) gap",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "measure the difference between the highest and lowest probability of \"yes\" for all groups g ∈ G",
+        "bbox": [
+          68.3073047858942,
+          444.0234375,
+          291.9949622166247,
+          685.2965271593945
+        ],
+        "block_id": "/page/3/Text/3"
+      }
+    },
+    {
+      "value": "DiscrimEvalGen max-min selection gap",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "the bias metric is: 1/n (max_g n_g - min_g n_g)",
+        "bbox": [
+          304.693359375,
+          415.244140625,
+          526.9420654911838,
+          574.3294746215494
+        ],
+        "block_id": "/page/3/Text/10"
+      }
+    },
+    {
+      "value": "Average Response Length (ARL)",
+      "ev": {
+        "page": 13,
+        "section": "1. Average Response Length (ARL):",
+        "quote": "We compute the average response length as the mean number of words in the generated text to assess the models' verbosity",
+        "bbox": [
+          324.482421875,
+          305.8828125,
+          526.2158813476562,
+          372.479736328125
+        ],
+        "block_id": "/page/12/Text/16"
+      }
+    },
+    {
+      "value": "Average Non-Dictionary Word Rate (ANDWR)",
+      "ev": {
+        "page": 13,
+        "section": "2. Average Non-Dictionary Word Rate (ANDWR):",
+        "quote": "This metric calculates the average proportion of non-dictionary words in the generated texts",
+        "bbox": [
+          325.35546875,
+          409.8994140625,
+          524.4121704101562,
+          462.74176025390625
+        ],
+        "block_id": "/page/12/Text/18"
+      }
+    },
+    {
+      "value": "Average Repetition Rate (ARR)",
+      "ev": {
+        "page": 13,
+        "section": "3. Average Repetition Rate (ARR):",
+        "quote": "We measure the average number of repeated words in the generated text to analyze repetitiveness and redundancy",
+        "bbox": [
+          325.9375,
+          486.78125,
+          526.2223510742188,
+          539.4537353515625
+        ],
+        "block_id": "/page/12/Text/20"
+      }
+    },
+    {
+      "value": "Average Lexical Diversity (ALD)",
+      "ev": {
+        "page": 13,
+        "section": "4. Average Lexical Diversity (ALD):",
+        "quote": "Lexical diversity is a measure of the richness of the vocabulary used in a text",
+        "bbox": [
+          324.19140625,
+          563.6630859375,
+          526.2258911132812,
+          629.7147521972656
+        ],
+        "block_id": "/page/12/Text/22"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "AWQ 4-bit on Mistral DiscrimEval rises from 0.21 to 0.94 (+348%) under greedy decoding",
+      "ev": {
+        "page": 7,
+        "section": "(d) DiscrimEval",
+        "quote": "Mistral | 21 | ↑71 6 | ↑367 98 | ↑348 94 | ↑267 77 | ↑43 30",
+        "bbox": [
+          68.5691015625,
+          377.7652734375,
+          525.1027734375,
+          426.4105078125
+        ],
+        "block_id": "/page/6/Table/8",
+        "source_table": "Table 2d"
+      }
+    },
+    {
+      "value": "Structured Wanda pruning on Mistral DT-Stereotyping drops agreement from 0.87 to 0.26 (-70%)",
+      "ev": {
+        "page": 7,
+        "section": "(e) DT-Stereotyping",
+        "quote": "Mistral | 0.87 | ↓70 0.26 | ↓18 0.71 | ↑8 0.94 | 0.87 | ↓1 0.86",
+        "bbox": [
+          68.5691015625,
+          455.1240234375,
+          525.1027734375,
+          497.0595703125
+        ],
+        "block_id": "/page/6/Table/10",
+        "source_table": "Table 2e"
+      }
+    },
+    {
+      "value": "AWQ on LLaMA-2 WorldBench raises mean error from 0.22 to 0.49 (+123%)",
+      "ev": {
+        "page": 7,
+        "section": "(c) WorldBench",
+        "quote": "LLaMA-2 | 0.22 | ↓86 0.03 | ↓27 0.16 | ↑123 0.49 | ↓36 0.14 | ↑18 0.26 | ↓64 0.08 | 0.22",
+        "bbox": [
+          104.1777734375,
+          299.21423828125,
+          490.6581640625,
+          350.37560546875
+        ],
+        "block_id": "/page/6/Table/6",
+        "source_table": "Table 2c"
+      }
+    },
+    {
+      "value": "Mistral DT-Stereotyping agreement rate jumps from 34 to 71 under AWQ (+109%)",
+      "ev": {
+        "page": 16,
+        "section": "C Results With Instruction / Chat Template",
+        "quote": "Mistral | 34 | ↓21 27 | ↑76 60 | ↑109 71 | ↑21 41 | ↑3 35",
+        "bbox": [
+          151.968359375,
+          441.10439453125,
+          442.867578125,
+          696.91123046875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table B.2"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "safety_analysis",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we explore another critical aspect of LLM performance: demographic bias in model generations due to inference acceleration optimizations",
+      "bbox": [
+        86.431640625,
+        242.9794921875,
+        273.8663635253906,
+        578.7920532226562
+      ],
+      "block_id": "/page/0/Text/7"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 5,
+      "section": "4 Experimental Setup",
+      "quote": "We consider inference time acceleration techniques that do not require re-training",
+      "bbox": [
+        69.552734375,
+        410.7216796875,
+        291.044921875,
+        612.5757598876953
+      ],
+      "block_id": "/page/4/Text/4"
+    }
+  },
+  "quantization_method_name": {
+    "value": "AWQ, Bitsandbytes INT4/INT8, KV4/KV8 (KIVI), Wanda",
+    "ev": {
+      "page": 5,
+      "section": "4 Experimental Setup",
+      "quote": "INT4 or INT8 quantization using Bitsandbytes library ... Activation-aware Weight Quantization (AWQ) ... Key-Value Cache Quantization (KV4 or KV8)",
+      "bbox": [
+        319.53515625,
+        71.9482421875,
+        526.2222290039062,
+        326.8505859375
+      ],
+      "block_id": "/page/4/ListGroup/436"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "INT4 or INT8 quantization using Bitsandbytes library ... it quantizes the weights to 4 or 8 bits for storage",
+        "bbox": [
+          85.267578125,
+          640.544921875,
+          290.95001220703125,
+          775.5797576904297
+        ],
+        "block_id": "/page/4/Text/6"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "it quantizes the weights to 4 or 8 bits for storage",
+        "bbox": [
+          85.267578125,
+          640.544921875,
+          290.95001220703125,
+          775.5797576904297
+        ],
+        "block_id": "/page/4/Text/6"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "mixed",
+    "ev": {
+      "page": 5,
+      "section": "4 Experimental Setup",
+      "quote": "INT4 or INT8 quantization ... AWQ ... Key-Value Cache Quantization (KV4 or KV8) dynamically compresses the KV cache",
+      "bbox": [
+        319.53515625,
+        71.9482421875,
+        526.2222290039062,
+        326.8505859375
+      ],
+      "block_id": "/page/4/ListGroup/436"
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 5,
+      "section": "4 Experimental Setup",
+      "quote": "We consider inference time acceleration techniques that do not require re-training",
+      "bbox": [
+        69.552734375,
+        410.7216796875,
+        291.044921875,
+        612.5757598876953
+      ],
+      "block_id": "/page/4/Text/4"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A100 GPU (4x, single node)",
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "a single node equipped with four NVIDIA A100 GPUs that was shared among several research teams",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "Tests six diverse bias metrics across three modern instruction-tuned LLMs and five acceleration strategies",
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "Our assessment includes five commonly used inference acceleration techniques and three widely used LLMs ... we test the models with six different bias metrics",
+        "bbox": [
+          305.56640625,
+          601.8984375,
+          526.221435546875,
+          775.6324691772461
+        ],
+        "block_id": "/page/0/Text/17"
+      }
+    },
+    {
+      "value": "Introduces a new generation-based bias dataset, DiscrimEvalGen, that forces the model to choose between groups",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "we propose a new dataset DiscrimEvalGen. While DiscrimEval asks the same question separately for each demographic group g, DiscrimEvalGen forces the model to make a single choice",
+        "bbox": [
+          304.693359375,
+          415.244140625,
+          526.9420654911838,
+          574.3294746215494
+        ],
+        "block_id": "/page/3/Text/10"
+      }
+    },
+    {
+      "value": "Releases full code on GitHub for reproducibility of every metric and acceleration setting",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "The code for our experiments is available at https://github.com/aisoc-lab/inference-acceleration-bias",
+        "bbox": [
+          69.552734375,
+          464.0031433105469,
+          289.46246337890625,
+          502.5697326660156
+        ],
+        "block_id": "/page/1/Text/4"
+      }
+    },
+    {
+      "value": "Shows that bias effects after quantization are model-specific and direction-unpredictable, contradicting prior uniform claims",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Worryingly, these bias effects are complex and unpredictable. A combination of an acceleration strategy and bias type may show little bias change in one model but may lead to a large effect in another",
+        "bbox": [
+          86.431640625,
+          242.9794921875,
+          273.8663635253906,
+          578.7920532226562
+        ],
+        "block_id": "/page/0/Text/7"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Benchmark coverage is not exhaustive and may miss domain-specific or harder bias manifestations",
+      "ev": {
+        "page": 9,
+        "section": "7 Limitations",
+        "quote": "the set of benchmarks used in our evaluation and their coverage of different domains and demographic groups is not exhaustive",
+        "bbox": [
+          304.984375,
+          561.2671813964844,
+          526.3175659179688,
+          775.5797576904297
+        ],
+        "block_id": "/page/8/Text/11"
+      }
+    },
+    {
+      "value": "Only training-free acceleration is studied; fine-tuning and retraining-based methods are excluded",
+      "ev": {
+        "page": 10,
+        "section": "7 Limitations",
+        "quote": "we focused only on training-free acceleration strategies. While these strategies are practical and widely used, this excludes other methods, such as fine-tuning or retraining",
+        "bbox": [
+          69.552734375,
+          71.9482421875,
+          290.9502258300781,
+          233.6116943359375
+        ],
+        "block_id": "/page/9/Text/0"
+      }
+    },
+    {
+      "value": "Fixed hyperparameters (greedy and five-sample nucleus) limit the range of behaviors observed",
+      "ev": {
+        "page": 10,
+        "section": "7 Limitations",
+        "quote": "our use of fixed hyperparameters (e.g., greedy search, sampling five generations) may not capture the full range of model behaviors under different deployment conditions",
+        "bbox": [
+          69.552734375,
+          71.9482421875,
+          290.9502258300781,
+          233.6116943359375
+        ],
+        "block_id": "/page/9/Text/0"
+      }
+    },
+    {
+      "value": "Results should be read as indicative, not definitive, since bias in modern instruction-tuned LLMs is under-explored",
+      "ev": {
+        "page": 10,
+        "section": "7 Limitations",
+        "quote": "our results should be taken as indicative rather than definitive since bias in modern, instruction-tuned LLMs remains an under-explored area",
+        "bbox": [
+          69.552734375,
+          235.16796875,
+          289.3167724609375,
+          355.55474853515625
+        ],
+        "block_id": "/page/9/Text/1"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Only three 7B-8B models are evaluated; results may not transfer to larger or non-chat variants",
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "We consider the smallest size variant of each model: LLaMA-2-7B, LLaMA-3.1- 8B, and Mistral-7B-v0.3",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    {
+      "value": "DiscrimEvalGen is restricted to gender groups only, dropping race and age intersectionality",
+      "ev": {
+        "page": 4,
+        "section": "3 Measuring Bias in LLM Outputs",
+        "quote": "we limit the groups to those based on gender, that is, G = {man, non-binary, woman}",
+        "bbox": [
+          304.7556675062972,
+          668.0908203125,
+          526.9420654911838,
+          774.520035618878
+        ],
+        "block_id": "/page/3/Text/13"
+      }
+    },
+    {
+      "value": "KV cache quantization is not implemented for Mistral, leaving holes in the comparison grid",
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "We use the native HuggingFace implementation. This implementation does not support Mistral models",
+        "bbox": [
+          319.53515625,
+          71.9482421875,
+          526.2222290039062,
+          326.8505859375
+        ],
+        "block_id": "/page/4/ListGroup/436"
+      }
+    },
+    {
+      "value": "Demographic bias is the only safety axis studied; toxicity, jailbreak, and refusal direction are not measured",
+      "ev": {
+        "page": 9,
+        "section": "6 Conclusion & Future Work",
+        "quote": "Our analysis focused on demographic bias. However, extending this work to other forms of bias (such as political bias) remains an important direction for future work",
+        "bbox": [
+          305.275390625,
+          469.7816467285156,
+          526.2188110351562,
+          521.3387451171875
+        ],
+        "block_id": "/page/8/Text/9"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Incorporate inference acceleration into model alignment training to proactively address bias",
+      "ev": {
+        "page": 9,
+        "section": "6 Conclusion & Future Work",
+        "quote": "Incorporating these strategies into the model alignment process can help proactively address biases",
+        "bbox": [
+          304.693359375,
+          195.69921875,
+          526.3175659179688,
+          329.520751953125
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    },
+    {
+      "value": "Explore fairness-aware training and bias-sensitive hyperparameter optimization",
+      "ev": {
+        "page": 9,
+        "section": "6 Conclusion & Future Work",
+        "quote": "explore approaches that integrate explicit bias mitigation objectives, such as fairness-aware training methods or bias-sensitive hyperparameter optimization",
+        "bbox": [
+          304.40234375,
+          331.373046875,
+          526.2174072265625,
+          466.0777587890625
+        ],
+        "block_id": "/page/8/Text/8"
+      }
+    },
+    {
+      "value": "Study hybrid approaches that mix pruning with quantization",
+      "ev": {
+        "page": 9,
+        "section": "6 Conclusion & Future Work",
+        "quote": "exploring the combined effects of multiple strategies, such as hybrid approaches that mix pruning with quantization, could provide valuable insights",
+        "bbox": [
+          304.40234375,
+          331.373046875,
+          526.2174072265625,
+          466.0777587890625
+        ],
+        "block_id": "/page/8/Text/8"
+      }
+    },
+    {
+      "value": "Extend analysis to other forms of bias such as political bias",
+      "ev": {
+        "page": 9,
+        "section": "6 Conclusion & Future Work",
+        "quote": "extending this work to other forms of bias (such as political bias) remains an important direction for future work",
+        "bbox": [
+          305.275390625,
+          469.7816467285156,
+          526.2188110351562,
+          521.3387451171875
+        ],
+        "block_id": "/page/8/Text/9"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "When using stochastic decoding, we sample the output 5 times and report the average bias",
+        "bbox": [
+          305.7490234375,
+          532.828125,
+          526.2252197265625,
+          694.2847442626953
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "a single node equipped with four NVIDIA A100 GPUs",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we explore another critical aspect of LLM performance: demographic bias in model generations due to inference acceleration optimizations ... Analysis of outputs before and after inference acceleration shows significant change in bias",
+        "bbox": [
+          86.431640625,
+          242.9794921875,
+          273.8663635253906,
+          578.7920532226562
+        ],
+        "block_id": "/page/0/Text/7"
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "it quantizes the weights to 4 or 8 bits for storage",
+        "bbox": [
+          85.267578125,
+          640.544921875,
+          290.95001220703125,
+          775.5797576904297
+        ],
+        "block_id": "/page/4/Text/6"
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "Although we did not track the exact runtime, our experiments required several GPU days to complete",
+        "bbox": [
+          68.970703125,
+          285.70623779296875,
+          290.94989013671875,
+          554.2157592773438
+        ],
+        "block_id": "/page/5/Text/2"
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "The code for our experiments is available at https://github.com/aisoc-lab/inference-acceleration-bias",
+        "bbox": [
+          69.552734375,
+          464.0031433105469,
+          289.46246337890625,
+          502.5697326660156
+        ],
+        "block_id": "/page/1/Text/4"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": true,
+      "ev": {
+        "page": 5,
+        "section": "4 Experimental Setup",
+        "quote": "Our evaluation focuses on the chat versions of these models, which are specifically designed to align with human values and preferences",
+        "bbox": [
+          69.552734375,
+          203.921875,
+          291.0126647949219,
+          406.19921875
+        ],
+        "block_id": "/page/4/Text/3"
+      }
+    }
+  }
+}

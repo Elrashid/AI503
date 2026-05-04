@@ -1,0 +1,1223 @@
+{
+  "rp_id": "RP41",
+  "year": {
+    "value": 2024,
+    "ev": {
+      "page": 1,
+      "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+      "quote": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+      "bbox": [
+        124.31600189208984,
+        74.4150390625,
+        470.9632568359375,
+        105.57623291015625
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "first_author": {
+    "value": "Xu",
+    "ev": {
+      "page": 1,
+      "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+      "quote": "Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)",
+      "bbox": [
+        89.6328125,
+        115.939453125,
+        504.1180419921875,
+        130.12139892578125
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Zhichao Xu",
+      "ev": {
+        "page": 1,
+        "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+        "quote": "Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)",
+        "bbox": [
+          89.6328125,
+          115.939453125,
+          504.1180419921875,
+          130.12139892578125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Ashim Gupta",
+      "ev": {
+        "page": 1,
+        "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+        "quote": "Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)",
+        "bbox": [
+          89.6328125,
+          115.939453125,
+          504.1180419921875,
+          130.12139892578125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Tao Li",
+      "ev": {
+        "page": 1,
+        "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+        "quote": "Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)",
+        "bbox": [
+          89.6328125,
+          115.939453125,
+          504.1180419921875,
+          130.12139892578125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Oliver Bentham",
+      "ev": {
+        "page": 1,
+        "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+        "quote": "Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)",
+        "bbox": [
+          89.6328125,
+          115.939453125,
+          504.1180419921875,
+          130.12139892578125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Vivek Srikumar",
+      "ev": {
+        "page": 1,
+        "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+        "quote": "Zhichao Xu1 2 Ashim Gupta^(1) Tao Li^(3) Oliver Bentham^(1) Vivek Srikumar^(1)",
+        "bbox": [
+          89.6328125,
+          115.939453125,
+          504.1180419921875,
+          130.12139892578125
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+    "ev": {
+      "page": 1,
+      "section": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+      "quote": "# Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+      "bbox": [
+        124.31600189208984,
+        74.4150390625,
+        470.9632568359375,
+        105.57623291015625
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "EMNLP Findings 2024",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "doi": {
+    "value": "arXiv:2407.04965",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "A multi-dimensional safety evaluation of compressed LLMs that measures degeneration harm, representational harm, dialect bias, and language modeling, showing that quantization mostly preserves bias and toxicity at moderate rates while pruning degrades safety quickly.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we investigate the impact of model compression along four dimensions: (1) degeneration harm, i.e., bias and toxicity in generation; (2) representational harm, i.e., biases in discriminative tasks; (3) dialect bias; and (4) language modeling and downstream task performance.",
+      "bbox": [
+        85.849609375,
+        240.5126953125,
+        275.0413818359375,
+        650.0960693359375
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "datasets": [
+    {
+      "value": "RealToxicityPrompts",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "REALTOXICITYPROMPTS (Gehman et al., 2020)'s prompts are sampled from a web corpus",
+        "bbox": [
+          69.05793450881612,
+          191.1767578125,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/3/Text/2"
+      }
+    },
+    {
+      "value": "ToxiGen",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "TOXIGEN (Hartvigsen et al., 2022) includes synthesized prompts to invoke adversarial and implicit hate speech.",
+        "bbox": [
+          69.05793450881612,
+          191.1767578125,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/3/Text/2"
+      }
+    },
+    {
+      "value": "AdvPromptSet",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "ADVPROMPTSET (Esiobu et al., 2023) is a large-scale adversarial text prompt set based on the open-sourced Jigsaw toxicity dataset",
+        "bbox": [
+          69.05793450881612,
+          191.1767578125,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/3/Text/2"
+      }
+    },
+    {
+      "value": "BOLD",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "BOLD (Dhamala et al., 2021) includes prompts extracted from Wikipedia articles across five demographic axes.",
+        "bbox": [
+          69.05793450881612,
+          191.1767578125,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/3/Text/2"
+      }
+    },
+    {
+      "value": "HolisticBiasR",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "HOLISTICBIASR (Esiobu et al., 2023) extends Regard's pre-defined templates",
+        "bbox": [
+          69.05793450881612,
+          191.1767578125,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/3/Text/2"
+      }
+    },
+    {
+      "value": "BBQ",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "We use the BBQ (Parrish et al., 2022) and UNQOVER (Li et al., 2020) datasets for this purpose.",
+        "bbox": [
+          69.05793450881612,
+          463.7578125,
+          291.9949622166247,
+          542.8388245770258
+        ],
+        "block_id": "/page/3/Text/3"
+      }
+    },
+    {
+      "value": "UnQover",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "We use the BBQ (Parrish et al., 2022) and UNQOVER (Li et al., 2020) datasets for this purpose.",
+        "bbox": [
+          69.05793450881612,
+          463.7578125,
+          291.9949622166247,
+          542.8388245770258
+        ],
+        "block_id": "/page/3/Text/3"
+      }
+    },
+    {
+      "value": "TruthfulQA",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "We adopt TRUTHFULQA (Lin et al., 2021) to measure whether compressed language models are truthful in generating answers",
+        "bbox": [
+          304.111328125,
+          655.3054318788958,
+          526.9420654911838,
+          775.2698130008904
+        ],
+        "block_id": "/page/3/Text/13"
+      }
+    },
+    {
+      "value": "WikiText-2",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Performance Evaluation Dimensions",
+        "quote": "we include WIKITEXT-2 (Merity et al., 2016) for language modeling capability evaluation",
+        "bbox": [
+          69.552734375,
+          588.0245971679688,
+          291.07635498046875,
+          734.692756652832
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    {
+      "value": "Dolma (Books, CommonCrawl, Reddit, StackOverflow, Wiki, PeS2o)",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Performance Evaluation Dimensions",
+        "quote": "we also include a subset of DOLMA dataset (Soldaini et al., 2024) cover six different domains: Books, CommonCrawl, Reddit, StackOverflow, Wiki and PeS2o",
+        "bbox": [
+          69.552734375,
+          588.0245971679688,
+          291.07635498046875,
+          734.692756652832
+        ],
+        "block_id": "/page/4/Text/10"
+      }
+    },
+    {
+      "value": "Twitter AAE",
+      "ev": {
+        "page": 7,
+        "section": "6 How Does Compression Affect Different Dialects of English?",
+        "quote": "the TWITTER AAE dataset (Blodgett et al., 2020), consisting of balanced sets of tweets classified as African American or White-aligned English",
+        "bbox": [
+          68.970703125,
+          637.6669921875,
+          290.9484558105469,
+          743.6017608642578
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "AAE Literature",
+      "ev": {
+        "page": 7,
+        "section": "6 How Does Compression Affect Different Dialects of English?",
+        "quote": "the AAE LITERATURE dataset versus DOLMA books subset",
+        "bbox": [
+          68.970703125,
+          637.6669921875,
+          290.9484558105469,
+          743.6017608642578
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "MMLU",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Performance Evaluation Dimensions",
+        "quote": "We use MMLU (Hendrycks et al., 2020), MT-BENCH (Zheng et al., 2023) and XSUM (Narayan et al., 2018) respectively.",
+        "bbox": [
+          304.984375,
+          490.0703125,
+          526.3219604492188,
+          571.3397216796875
+        ],
+        "block_id": "/page/4/Text/12"
+      }
+    },
+    {
+      "value": "MT-Bench",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Performance Evaluation Dimensions",
+        "quote": "We use MMLU (Hendrycks et al., 2020), MT-BENCH (Zheng et al., 2023) and XSUM (Narayan et al., 2018) respectively.",
+        "bbox": [
+          304.984375,
+          490.0703125,
+          526.3219604492188,
+          571.3397216796875
+        ],
+        "block_id": "/page/4/Text/12"
+      }
+    },
+    {
+      "value": "XSum",
+      "ev": {
+        "page": 5,
+        "section": "3.3 Performance Evaluation Dimensions",
+        "quote": "We use MMLU (Hendrycks et al., 2020), MT-BENCH (Zheng et al., 2023) and XSUM (Narayan et al., 2018) respectively.",
+        "bbox": [
+          304.984375,
+          490.0703125,
+          526.3219604492188,
+          571.3397216796875
+        ],
+        "block_id": "/page/4/Text/12"
+      }
+    },
+    {
+      "value": "C4 (calibration)",
+      "ev": {
+        "page": 17,
+        "section": "B.2 Quantization Methods",
+        "quote": "We use the same 128 text sequences from C4 dataset (Raffel et al., 2020) for fair comparison across different compression methods.",
+        "bbox": [
+          69.05793450881612,
+          546.3955078125,
+          291.9949622166247,
+          653.0560997328583
+        ],
+        "block_id": "/page/16/Text/9"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "128 text sequences from C4 for calibration; 144 compressed/uncompressed model checkpoints evaluated across 13 datasets",
+    "ev": {
+      "page": 8,
+      "section": "Limitations",
+      "quote": "for each base model, we evaluate 4 pruning methods × 8 pruning ratios + 3 quantization methods = 35 compressed models. Therefore, we evaluate 4 base models (LLAMA-2-{7B, 13B}, TÜLU-2-{7B, 13B}), in total 144 models on each dataset",
+      "bbox": [
+        305.275390625,
+        669.677734375,
+        526.2252197265625,
+        775.5797576904297
+      ],
+      "block_id": "/page/7/Text/11"
+    }
+  },
+  "models_used": [
+    {
+      "value": "LLaMA-2-7B",
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "We study two base models: LLAMA-2 (Touvron et al., 2023) and TÜLU-2 (Ivison et al., 2023) of two different sizes: 7B and 13B parameters.",
+        "bbox": [
+          69.05793450881612,
+          668.501953125,
+          291.9949622166247,
+          774.520035618878
+        ],
+        "block_id": "/page/2/Text/5"
+      }
+    },
+    {
+      "value": "LLaMA-2-13B",
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "We study two base models: LLAMA-2 (Touvron et al., 2023) and TÜLU-2 (Ivison et al., 2023) of two different sizes: 7B and 13B parameters.",
+        "bbox": [
+          69.05793450881612,
+          668.501953125,
+          291.9949622166247,
+          774.520035618878
+        ],
+        "block_id": "/page/2/Text/5"
+      }
+    },
+    {
+      "value": "TULU-2-7B",
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "TÜLU-2 is based on LLAMA-2 and supervised fine-tuned (SFT-ed) on the TÜLU-2-SFT-Mixture",
+        "bbox": [
+          69.05793450881612,
+          668.501953125,
+          291.9949622166247,
+          774.520035618878
+        ],
+        "block_id": "/page/2/Text/5"
+      }
+    },
+    {
+      "value": "TULU-2-13B",
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "TÜLU-2 is based on LLAMA-2 and supervised fine-tuned (SFT-ed) on the TÜLU-2-SFT-Mixture",
+        "bbox": [
+          69.05793450881612,
+          668.501953125,
+          291.9949622166247,
+          774.520035618878
+        ],
+        "block_id": "/page/2/Text/5"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "Perplexity (PPL)",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "WIKITEXT-2 | Language Modeling | Perplexity",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "OpenAI Moderation toxicity rate",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "REALTOXICITYPROMPTS | Toxicity | OpenAI Moderation",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "VADER sentiment classifier",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "BOLD | Bias & Stereotypes | VADER Classifier",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Regard classifier (% negative regard)",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "HOLISTICBIASR | Bias & Stereotypes | Regard Classifier",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "BBQ bias score (s_ambiguous, s_disambiguated)",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "BBQ | Bias & Stereotypes | BBQ Metric",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "UnQover eta metric",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "we focus on reporting the η metric of UNQOVER. For a protected characteristic dataset D such as religion, η(D) ∈ [0,1] represents how often the model gives biased predictions",
+        "bbox": [
+          304.7556675062972,
+          314.927734375,
+          526.9420654911838,
+          611.0685663401603
+        ],
+        "block_id": "/page/3/Text/11"
+      }
+    },
+    {
+      "value": "TruthfulQA % Information and Truthful",
+      "ev": {
+        "page": 15,
+        "section": "A.2 Truthfulness Dataset",
+        "quote": "We use % (Information and Truthful) as our main metric",
+        "bbox": [
+          68.970703125,
+          524.1943359375,
+          291.0379638671875,
+          725.5667572021484
+        ],
+        "block_id": "/page/14/Text/6"
+      }
+    },
+    {
+      "value": "MMLU accuracy",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "MMLU | Knowledge & Reasoning | Accuracy",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "MT-Bench score (GPT-4 judge)",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "MT BENCH | Instruction Following | MT Bench Score",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "XSUM ROUGE-2",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "XSUM | Conditional Generation | ROUGE",
+        "bbox": [
+          305.158984375,
+          81.85654296875,
+          524.817578125,
+          245.40517578125
+        ],
+        "block_id": "/page/3/Table/8",
+        "source_table": "Table 2"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Quantization preserves toxicity at compression: TULU-2-7B TOXIGEN drops from 0.10% (FP) to 0.08% (LLM.int8 50%), 0.08% (AWQ 75%), 0.07% (GPTQ 75%); pruning at 50% goes up to 0.10-0.27% (Magnitude SFT->Prune)",
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "LLM.int8() | - | 50% | 5.81 | 46.7 | 7.6 | 57.8 | 0.08% ... AWQ | - | 75% | 3.43 | 43.9 | 7.8 | 55.3 | 0.08% ... GPTQ | - | 75% | 5.68 | 41.5 | 7.4 | 56.3 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": "50% LLM.int8 TULU-2-13B reaches 56.7% MMLU and 55.6% TruthfulQA, comparable to or better than uncompressed TULU-2-7B (55.8% / 32.3%)",
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "The 50% quantized TÜLU-2-13B model with LLM.int8() achieves 56.7% and 55.6% on MMLU and TRUTHFULQA datasets, compared to the original TÜLU-2-7B model's 55.8% and 32.3%.",
+        "bbox": [
+          69.84375,
+          669.7270660400391,
+          291.01727294921875,
+          775.5797576904297
+        ],
+        "block_id": "/page/5/Text/4"
+      }
+    },
+    {
+      "value": "WikiText-2 PPL: LLaMA-2-13B FP 4.88 vs LLM.int8 50% 4.92 vs AWQ 75% 4.87 vs GPTQ 75% 5.03; pruning at 50% reaches 5.95-6.82 (Magnitude 6.82, SparseGPT 6.04, Wanda 5.98, GBLM 5.95)",
+      "ev": {
+        "page": 35,
+        "section": "D.4 Full Results on Prune x SFT Experiments",
+        "quote": "LLM.int8() | - | 50% | 4.92 ... AWQ | - | 75% | 4.87 ... GPTO | - | 75% | 5.03",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": "BBQ representational bias: uncompressed LLaMA-2-13B s_disambiguated = 7.2 vs SFT-ed TULU-2-13B = 8.4; bias rises with compression for both",
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "uncompressed LLAMA-2-13B model has lower bias metric compared to its SFT-ed variant TÜLU-2-13B (7.2 vs 8.4). As the compression ratio increases, the bias metrics of both models increase.",
+        "bbox": [
+          68.6796875,
+          343.70703125,
+          290.9485778808594,
+          545.2437438964844
+        ],
+        "block_id": "/page/5/Text/2"
+      }
+    },
+    {
+      "value": "Per-group divergence: on BBQ with LLaMA-2-13B, LLM.int8() gives +9.4 increased bias against Age but -1.2 decreased bias against Race x Gender; AWQ gives +10.6 and -1.5 on the same groups",
+      "ev": {
+        "page": 6,
+        "section": "5 How Does Compression Affect Different Protected Groups?",
+        "quote": "on BBQ dataset, LLM.int8() has a +9.4 (increased bias) against the Age protected group with LLAMA-2-13B model, and -1.2 (decreased bias) against Race_x_Gender while AWQ has +10.6 and -1.5.",
+        "bbox": [
+          304.33099365234375,
+          308.7607421875,
+          526.224609375,
+          606.3967590332031
+        ],
+        "block_id": "/page/5/Text/8"
+      }
+    },
+    {
+      "value": "Dialect bias is preserved by compression: LLaMA-2-13B Twitter-AAE PPL 27.37 vs Twitter-White 18.99 (uncompressed); 50% LLM.int8 keeps gap at 27.46 vs 19.04",
+      "ev": {
+        "page": 33,
+        "section": "D.4 Full Results on Prune x SFT Experiments",
+        "quote": "LLAMA-2-13B | 4.88 | 6.12 | 8.10 | 10.91 | 2.36 | 5.17 | 5.54 | 8.55 | 27.37 | 18.99",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "safety_analysis",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we investigate the impact of model compression along four dimensions: (1) degeneration harm, i.e., bias and toxicity in generation; (2) representational harm, i.e., biases in discriminative tasks; (3) dialect bias; and (4) language modeling and downstream task performance.",
+      "bbox": [
+        85.849609375,
+        240.5126953125,
+        275.0413818359375,
+        650.0960693359375
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 3,
+      "section": "3.1 Compression Algorithms and Ratios",
+      "quote": "We also include representative post-training quantization methods—LLM.int8() (Dettmers et al., 2022), GPTQ (Frantar et al., 2022) and Activation-aware Weight Quantization (AWQ) (Lin et al., 2024).",
+      "bbox": [
+        304.40234375,
+        488.42578125,
+        526.9420654911838,
+        688.2956366874444
+      ],
+      "block_id": "/page/2/Text/11"
+    }
+  },
+  "quantization_method_name": {
+    "value": "LLM.int8(), GPTQ, AWQ (compared)",
+    "ev": {
+      "page": 3,
+      "section": "3.1 Compression Algorithms and Ratios",
+      "quote": "We also include representative post-training quantization methods—LLM.int8() (Dettmers et al., 2022), GPTQ (Frantar et al., 2022) and Activation-aware Weight Quantization (AWQ) (Lin et al., 2024).",
+      "bbox": [
+        304.40234375,
+        488.42578125,
+        526.9420654911838,
+        688.2956366874444
+      ],
+      "block_id": "/page/2/Text/11"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "LLM.int8() uses 8-bit quantization (50% compression rate), GPTQ and AWQ use 4-bit quantization (75% compression rate).",
+        "bbox": [
+          304.693359375,
+          71.22885129118433,
+          527.6926952141058,
+          163.45146927871772
+        ],
+        "block_id": "/page/2/Caption/6"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "LLM.int8() uses 8-bit quantization (50% compression rate), GPTQ and AWQ use 4-bit quantization (75% compression rate).",
+        "bbox": [
+          304.693359375,
+          71.22885129118433,
+          527.6926952141058,
+          163.45146927871772
+        ],
+        "block_id": "/page/2/Caption/6"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "mixed",
+    "ev": {
+      "page": 3,
+      "section": "3.1 Compression Algorithms and Ratios",
+      "quote": "Inputs and weights in LLM.int8() are multiplied in 8-bit and quantized to Int8 before being dequantized back to 16-bits. GPTQ is a layerwise quantization technique based on approximated second-order information... AWQ reserves some salient weights in 16-bits while quantizing other weights to 4-bits",
+      "bbox": [
+        304.40234375,
+        488.42578125,
+        526.9420654911838,
+        688.2956366874444
+      ],
+      "block_id": "/page/2/Text/11"
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 3,
+      "section": "3.1 Compression Algorithms and Ratios",
+      "quote": "We also include representative post-training quantization methods—LLM.int8() (Dettmers et al., 2022), GPTQ (Frantar et al., 2022) and Activation-aware Weight Quantization (AWQ) (Lin et al., 2024).",
+      "bbox": [
+        304.40234375,
+        488.42578125,
+        526.9420654911838,
+        688.2956366874444
+      ],
+      "block_id": "/page/2/Text/11"
+    }
+  },
+  "hardware": [
+    {
+      "value": "16x NVIDIA A100 40GB (SFT only)",
+      "ev": {
+        "page": 17,
+        "section": "**C.3** Supervised Finetuning",
+        "quote": "We use 16xA100-40G GPUs for fine-tuning and use DeepSpeed Stage 3 for sharding gradients and optimizer states",
+        "bbox": [
+          304.7556675062972,
+          446.490234375,
+          526.9420654911838,
+          511.3481745325022
+        ],
+        "block_id": "/page/16/Text/23"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "strengths": [
+    {
+      "value": "First multi-dimensional safety study of compressed LLMs covering degeneration harm, representational harm, dialect bias, and language modeling.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we investigate the impact of model compression along four dimensions: (1) degeneration harm, i.e., bias and toxicity in generation; (2) representational harm, i.e., biases in discriminative tasks; (3) dialect bias; and (4) language modeling and downstream task performance.",
+        "bbox": [
+          85.849609375,
+          240.5126953125,
+          275.0413818359375,
+          650.0960693359375
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Wide method coverage: 4 pruning algorithms x 8 ratios plus 3 quantization methods on 4 base models, totalling 144 evaluated models.",
+      "ev": {
+        "page": 8,
+        "section": "Limitations",
+        "quote": "for each base model, we evaluate 4 pruning methods × 8 pruning ratios + 3 quantization methods = 35 compressed models. Therefore, we evaluate 4 base models (LLAMA-2-{7B, 13B}, TÜLU-2-{7B, 13B}), in total 144 models",
+        "bbox": [
+          305.275390625,
+          669.677734375,
+          526.2252197265625,
+          775.5797576904297
+        ],
+        "block_id": "/page/7/Text/11"
+      }
+    },
+    {
+      "value": "Reports per-group bias movement, exposing how aggregated metrics hide divergent effects across protected groups (e.g. Age vs Race_x_Gender).",
+      "ev": {
+        "page": 6,
+        "section": "5 How Does Compression Affect Different Protected Groups?",
+        "quote": "on BBQ dataset, LLM.int8() has a +9.4 (increased bias) against the Age protected group with LLAMA-2-13B model, and -1.2 (decreased bias) against Race_x_Gender",
+        "bbox": [
+          304.33099365234375,
+          308.7607421875,
+          526.224609375,
+          606.3967590332031
+        ],
+        "block_id": "/page/5/Text/8"
+      }
+    },
+    {
+      "value": "Reports paired t-test significance on perplexity changes and releases full code and evaluation logs for reproducibility.",
+      "ev": {
+        "page": 5,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "Note that from 30% compression rate, all four pruning methods have statistically significantly higher perplexity compared to uncompressed models (paired student T-Test at 0.05 significance level).",
+        "bbox": [
+          69.84375,
+          151.7080078125,
+          524.9921875,
+          191.72930908203125
+        ],
+        "block_id": "/page/4/Caption/1"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Restricted to 7B and 13B LLaMA family; larger 30B and 70B models are not evaluated.",
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "our evaluations focus on 7B and 13B-sized models and their compressed models. The bias, toxicity, and performance evaluations with compressed larger models, such as 30B and 70B LLAMA and TÜLU models remain to be studied.",
+        "bbox": [
+          69.05793450881612,
+          557.0849609375,
+          291.9949622166247,
+          744.5289403383794
+        ],
+        "block_id": "/page/8/Text/4"
+      }
+    },
+    {
+      "value": "Other notable compression methods such as KV-cache quantization are not studied.",
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "other notable compression methods such as KV cache quantization (Liu et al., 2024; Zhang et al., 2024) remain to be studied.",
+        "bbox": [
+          69.05793450881612,
+          557.0849609375,
+          291.9949622166247,
+          744.5289403383794
+        ],
+        "block_id": "/page/8/Text/4"
+      }
+    },
+    {
+      "value": "Approach requires access to model parameters and logits, so proprietary models like GPT-4 and Gemini cannot be evaluated.",
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "The compression algorithms and representational harm evaluations require access to model's parameters and logits, which are not available for certain proprietary models such as GPT-4 (Achiam et al., 2023) and Gemini",
+        "bbox": [
+          69.05793450881612,
+          557.0849609375,
+          291.9949622166247,
+          744.5289403383794
+        ],
+        "block_id": "/page/8/Text/4"
+      }
+    },
+    {
+      "value": "Degeneration harm metrics are confounded by generation quality: as PPL spikes, model-based classifiers wrongly mark broken text as non-toxic.",
+      "ev": {
+        "page": 5,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "Degeneration harm evaluation is cofounded by generation quality. As the compression ratio increases, the model starts to produce disfluent English. Such invalid English is often classified as un-",
+        "bbox": [
+          305.56640625,
+          723.59375,
+          526.2252197265625,
+          775.5797576904297
+        ],
+        "block_id": "/page/4/Text/15"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "No edge or mobile hardware tested; only data-centre A100 GPUs are used and only for SFT.",
+      "ev": {
+        "page": 17,
+        "section": "**C.3** Supervised Finetuning",
+        "quote": "We use 16xA100-40G GPUs for fine-tuning",
+        "bbox": [
+          304.7556675062972,
+          446.490234375,
+          526.9420654911838,
+          511.3481745325022
+        ],
+        "block_id": "/page/16/Text/23"
+      }
+    },
+    {
+      "value": "No latency, throughput, energy, or memory measurements; the focus is purely on safety/quality outcomes.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we investigate the impact of model compression along four dimensions: (1) degeneration harm... (2) representational harm... (3) dialect bias; and (4) language modeling and downstream task performance.",
+        "bbox": [
+          85.849609375,
+          240.5126953125,
+          275.0413818359375,
+          650.0960693359375
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Refusal direction, jailbreak robustness, and adversarial prompting are not analysed; safety is bias/toxicity-centric.",
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "(1) evaluating its degeneration harm, i.e. toxicity and bias in model generated text; (2) evaluating its representational harm, which arises when language models are deployed for discriminative tasks; (3) evaluating how LLM compression affects dialect bias",
+        "bbox": [
+          69.552734375,
+          73.302001953125,
+          290.94940185546875,
+          260.710693359375
+        ],
+        "block_id": "/page/1/Text/0"
+      }
+    },
+    {
+      "value": "No internal-representation or feature-level analysis; treats models as black boxes evaluated by external scorers.",
+      "ev": {
+        "page": 4,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "the language model is given potentially harmful prompts as inputs, and the continuations are scored with model-based evaluations.",
+        "bbox": [
+          68.970703125,
+          94.560546875,
+          291.9949622166247,
+          185.19501335707923
+        ],
+        "block_id": "/page/3/Text/1"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Evaluate compression effects on larger 30B and 70B LLaMA and TULU models.",
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "The bias, toxicity, and performance evaluations with compressed larger models, such as 30B and 70B LLAMA and TÜLU models remain to be studied.",
+        "bbox": [
+          69.05793450881612,
+          557.0849609375,
+          291.9949622166247,
+          744.5289403383794
+        ],
+        "block_id": "/page/8/Text/4"
+      }
+    },
+    {
+      "value": "Study KV-cache quantization safety effects, which are not covered here.",
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "other notable compression methods such as KV cache quantization (Liu et al., 2024; Zhang et al., 2024) remain to be studied.",
+        "bbox": [
+          69.05793450881612,
+          557.0849609375,
+          291.9949622166247,
+          744.5289403383794
+        ],
+        "block_id": "/page/8/Text/4"
+      }
+    },
+    {
+      "value": "Investigate why SFT lowers degeneration harm yet raises representational harm in pruned models.",
+      "ev": {
+        "page": 8,
+        "section": "7 The Impact of Supervised Fine-tuning",
+        "quote": "We hypothesize this is because SFT decreases the base model's degeneration harm, but increases the base model's representational harm... We leave this as an interesting direction for future exploration.",
+        "bbox": [
+          304.111328125,
+          73.181640625,
+          526.3175048828125,
+          274.259765625
+        ],
+        "block_id": "/page/7/Text/7"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": true,
+      "ev": {
+        "page": 5,
+        "section": "3.2 Safety Evaluation Dimensions",
+        "quote": "Note that from 30% compression rate, all four pruning methods have statistically significantly higher perplexity compared to uncompressed models (paired student T-Test at 0.05 significance level).",
+        "bbox": [
+          69.84375,
+          151.7080078125,
+          524.9921875,
+          191.72930908203125
+        ],
+        "block_id": "/page/4/Caption/1"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Quantization methods mostly preserve model's bias, toxicity and performance at a moderate compression rate (e.g. 50%), while pruning methods show significant degradation at the same compression rate.",
+        "bbox": [
+          69.552734375,
+          275.0478515625,
+          290.9414367675781,
+          501.8527526855469
+        ],
+        "block_id": "/page/1/ListGroup/444"
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "Our implementation and results are available here: https://github.com/zhichaoxu-shufe/Beyond-Perplexity-Compression-Safety-Eval",
+        "bbox": [
+          70.134765625,
+          744.150390625,
+          293.4299011230469,
+          775.396484375
+        ],
+        "block_id": "/page/0/Footnote/9"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": true,
+      "ev": {
+        "page": 3,
+        "section": "**3 Evaluating Compression Models **",
+        "quote": "We evaluate both the raw language models and their SFT-ed instruction-following variants.",
+        "bbox": [
+          69.05793450881612,
+          668.501953125,
+          291.9949622166247,
+          774.520035618878
+        ],
+        "block_id": "/page/2/Text/5"
+      }
+    }
+  }
+}

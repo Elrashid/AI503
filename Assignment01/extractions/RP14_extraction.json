@@ -1,0 +1,1325 @@
+{
+  "rp_id": "RP14",
+  "year": {
+    "value": 2022,
+    "ev": {
+      "page": 1,
+      "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+      "quote": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+      "bbox": [
+        78.18999481201172,
+        110.367919921875,
+        533.382568359375,
+        149.5013427734375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "first_author": {
+    "value": "Yao",
+    "ev": {
+      "page": 1,
+      "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+      "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+      "bbox": [
+        166.447265625,
+        164.0489501953125,
+        443.6664123535156,
+        191.1806640625
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Zhewei Yao",
+      "ev": {
+        "page": 1,
+        "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+        "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+        "bbox": [
+          166.447265625,
+          164.0489501953125,
+          443.6664123535156,
+          191.1806640625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Reza Yazdani Aminabadi",
+      "ev": {
+        "page": 1,
+        "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+        "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+        "bbox": [
+          166.447265625,
+          164.0489501953125,
+          443.6664123535156,
+          191.1806640625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Minjia Zhang",
+      "ev": {
+        "page": 1,
+        "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+        "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+        "bbox": [
+          166.447265625,
+          164.0489501953125,
+          443.6664123535156,
+          191.1806640625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Xiaoxia Wu",
+      "ev": {
+        "page": 1,
+        "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+        "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+        "bbox": [
+          166.447265625,
+          164.0489501953125,
+          443.6664123535156,
+          191.1806640625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Conglong Li",
+      "ev": {
+        "page": 1,
+        "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+        "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+        "bbox": [
+          166.447265625,
+          164.0489501953125,
+          443.6664123535156,
+          191.1806640625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Yuxiong He",
+      "ev": {
+        "page": 1,
+        "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+        "quote": "Zhewei Yao^(∗) , Reza Yazdani Aminabadi, Minjia Zhang Xiaoxia Wu, Conglong Li, Yuxiong He",
+        "bbox": [
+          166.447265625,
+          164.0489501953125,
+          443.6664123535156,
+          191.1806640625
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+    "ev": {
+      "page": 1,
+      "section": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+      "quote": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+      "bbox": [
+        78.18999481201172,
+        110.367919921875,
+        533.382568359375,
+        149.5013427734375
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "NeurIPS 2022",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "doi": {
+    "value": "arXiv:2206.01861",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "ZeroQuant is an end-to-end post-training quantization and inference pipeline that pairs group-wise weight and token-wise activation quantization with a layer-by-layer knowledge distillation method and optimized INT8 GPU kernels for BERT and GPT-3-style models up to 20B parameters.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we present an efficient and affordable post-training quantization approach to compress large Transformer-based models, termed as ZeroQuant. ZeroQuant is an end-to-end quantization and inference pipeline with three main components",
+      "bbox": [
+        94.728515625,
+        276.1171875,
+        516.4363403320312,
+        450.3239440917969
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "datasets": [
+    {
+      "value": "GLUE (CoLA, MNLI, MRPC, QNLI, QQP, RTE, SST-2, STS-B)",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "When fine-tuning on GLUE [[65]](#page-14-10) tasks ((i.e., MRPC [[17]](#page-12-12), STS-B [[10]](#page-11-8), SST-2 [[58]](#page-14-11), QNLI [[51]](#page-14-12), QQP [[27]](#page-12-13), MNLI [[70]](#page-15-7), CoLA [[69]](#page-15-8), RTE [[13]](#page-11-9))",
+        "bbox": [
+          69.92578125,
+          244.01953125,
+          541.36962890625,
+          303.1517028808594
+        ],
+        "block_id": "/page/17/Text/6"
+      }
+    },
+    {
+      "value": "Lambada",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "19 accuracy evaluation tasks (i.e., HellaSwag [[77]](#page-15-9), LAMBADA [[47]](#page-13-15), TriviaQA [[30]](#page-12-15), WebQS [[3]](#page-11-10)",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "PIQA",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "Winogrande [[54]](#page-14-14), PIQA [[62]](#page-14-15), ARC (Challenge/Easy) [[7]](#page-11-11)",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "OpenBookQA",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "ANLI (R1/R2/R3) [[71]](#page-15-10), OpenBookQA [[44]](#page-13-16), RACE-h [[32]](#page-12-16)",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "ReCoRD",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "BoolQ [[12]](#page-11-12), Copa [[1]](#page-11-13), RTE [[13]](#page-11-9), WSC [[35]](#page-13-17), MultiRC [[73]](#page-15-11), ReCoRD [[78]](#page-15-12))",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "HellaSwag",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "19 accuracy evaluation tasks (i.e., HellaSwag [[77]](#page-15-9), LAMBADA",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "TriviaQA",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "TriviaQA [[30]](#page-12-15), WebQS [[3]](#page-11-10)",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "WebQS",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "TriviaQA [[30]](#page-12-15), WebQS [[3]](#page-11-10)",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "Winogrande",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "Winogrande [[54]](#page-14-14), PIQA",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "ARC (Easy and Challenge)",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "PIQA [[62]](#page-14-15), ARC (Challenge/Easy) [[7]](#page-11-11)",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "ANLI (R1/R2/R3)",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "ANLI (R1/R2/R3) [[71]](#page-15-10), OpenBookQA",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "RACE-h",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "OpenBookQA [[44]](#page-13-16), RACE-h [[32]](#page-12-16), BoolQ",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "BoolQ",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "BoolQ [[12]](#page-11-12), Copa",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "COPA",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "BoolQ [[12]](#page-11-12), Copa [[1]](#page-11-13), RTE",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "WSC",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "RTE [[13]](#page-11-9), WSC [[35]](#page-13-17), MultiRC",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "MultiRC",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "WSC [[35]](#page-13-17), MultiRC [[73]](#page-15-11), ReCoRD",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "WikiText-2",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "1 language modeling generation task (i.e., Wikitext-2 [[42]](#page-13-13))",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "WikiText-103",
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "We report the results of GPT-J\\u003csub\\u003e6B\\u003c/sub\\u003e in Table 7 on three generation datasets, i.e., PTB [41], Wikitext-2, and Wikitext-103",
+        "bbox": [
+          70.5,
+          384.78515625,
+          540.0,
+          431.25
+        ],
+        "block_id": "/page/8/Text/6"
+      }
+    },
+    {
+      "value": "Penn Treebank (PTB)",
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "three generation datasets, i.e., PTB [41], Wikitext-2, and Wikitext-103",
+        "bbox": [
+          70.5,
+          384.78515625,
+          540.0,
+          431.25
+        ],
+        "block_id": "/page/8/Text/6"
+      }
+    },
+    {
+      "value": "PILE (LKD calibration / GPT-3 pretraining)",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "The pretraining data are from PILE dataset [[22]](#page-12-14), and the training pipeline and hyperparameters are based on the Megatron-DeepSpeed repository",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "Wikipedia (HuggingFace, LKD without original data)",
+      "ev": {
+        "page": 10,
+        "section": "5.6 No Access to The Original Training Data",
+        "quote": "Wikipedia (using Huggingface to get the data\\u003csup\\u003e1\\u003c/sup\\u003e), and original PILE dataset",
+        "bbox": [
+          70.5,
+          457.1015625,
+          540.0,
+          491.25
+        ],
+        "block_id": "/page/9/Text/10"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "BERT calibration: batch size 32, sequence length 128, momentum 0.95 over 100 iterations; GPT-3 calibration: batch size 8, sequence length 2048; LKD: 100-1600 iterations depending on model.",
+    "ev": {
+      "page": 18,
+      "section": "B.1 Details of PTQ on BERT and GPT",
+      "quote": "For BERT, we use a batch size of 32 and sequence length 128 to calibrate the range of activations. In order to capture the dynamic range, we use 0.95 momentum with 100 iterations",
+      "bbox": [
+        70.224609375,
+        116.40234375,
+        539.7244873046875,
+        138.32373046875
+      ],
+      "block_id": "/page/17/Text/2"
+    }
+  },
+  "models_used": [
+    {
+      "value": "BERT-base",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "For BERT, we tested both BERTbase and BERTlarge on GLUE benchmark",
+        "bbox": [
+          69.92578125,
+          95.1328125,
+          541.918212890625,
+          213.584716796875
+        ],
+        "block_id": "/page/6/Text/1"
+      }
+    },
+    {
+      "value": "BERT-large",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "For BERT, we tested both BERTbase and BERTlarge on GLUE benchmark",
+        "bbox": [
+          69.92578125,
+          95.1328125,
+          541.918212890625,
+          213.584716796875
+        ],
+        "block_id": "/page/6/Text/1"
+      }
+    },
+    {
+      "value": "GPT-3-style 350M",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "for GPT-3-style models, we tested the GPT-3350M (i.e., GPT-3-style model with 350M parameters) and GPT-31.3B",
+        "bbox": [
+          69.92578125,
+          95.1328125,
+          541.918212890625,
+          213.584716796875
+        ],
+        "block_id": "/page/6/Text/1"
+      }
+    },
+    {
+      "value": "GPT-3-style 1.3B",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "GPT-3-style model with 350M parameters) and GPT-31.3B (i.e., GPT-3-style model with 1.3B parameters)",
+        "bbox": [
+          69.92578125,
+          95.1328125,
+          541.918212890625,
+          213.584716796875
+        ],
+        "block_id": "/page/6/Text/1"
+      }
+    },
+    {
+      "value": "GPT-J 6B",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "we also directly apply it to two of the largest open-sourced GPT-3-style models, i.e., GPT-J6B [[66]](#page-14-9) and GPT-NeoX20B",
+        "bbox": [
+          69.92578125,
+          95.1328125,
+          541.918212890625,
+          213.584716796875
+        ],
+        "block_id": "/page/6/Text/1"
+      }
+    },
+    {
+      "value": "GPT-NeoX 20B",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "GPT-J6B [[66]](#page-14-9) and GPT-NeoX20B [[4]](#page-11-7)",
+        "bbox": [
+          69.92578125,
+          95.1328125,
+          541.918212890625,
+          213.584716796875
+        ],
+        "block_id": "/page/6/Text/1"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "GLUE accuracy (Matthews / accuracy / F1 / Pearson-Spearman)",
+      "ev": {
+        "page": 19,
+        "section": "B.3 Accuracy reported for BERT on GLUE",
+        "quote": "Matthews Correction | Accuracy | Accuracy | Accuracy / F1 | Accuracy | Accuracy / F1 | Accuracy | Accuracy | Pearson / Spearman",
+        "bbox": [
+          68.87390625,
+          92.565,
+          541.93078125,
+          117.81
+        ],
+        "block_id": "/page/18/Table/1",
+        "source_table": "Table B.1"
+      }
+    },
+    {
+      "value": "Zero-shot accuracy (19 tasks average)",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "the accuracy performance of accuracy-based tasks is more tolerant to quantization than generation tasks. For instance, W8A8 PTQ has a 1.1% average accuracy drop on 19 accuracy-based tasks",
+        "bbox": [
+          70.224609375,
+          370.4765625,
+          540.0,
+          415.5
+        ],
+        "block_id": "/page/7/Text/4"
+      }
+    },
+    {
+      "value": "Perplexity (Wikitext-2 / Wikitext-103 / PTB)",
+      "ev": {
+        "page": 4,
+        "section": "3 Background and Challenge",
+        "quote": "Wikitext-2, GPT-3\\u003csub\\u003e350M\\u003c/sub\\u003e with W4/8A16 cannot generate any meaningful text anymore",
+        "bbox": [
+          70.224609375,
+          204.0,
+          540.0,
+          285.75
+        ],
+        "block_id": "/page/3/Text/2"
+      }
+    },
+    {
+      "value": "End-to-end latency (ms)",
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "We measure the end-to-end average latency for the entire BERT model, and the time reported is in milliseconds",
+        "bbox": [
+          69.92578125,
+          208.0546875,
+          540.0,
+          230.25
+        ],
+        "block_id": "/page/8/Caption/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": "Speedup factor over FP16",
+      "ev": {
+        "page": 8,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "the INT8 model can achieve 2.27-5.19x speedup on BERTbase and 2.47-5.01x on BERTlarge",
+        "bbox": [
+          70.5,
+          595.5,
+          540.0,
+          630.3515625
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "Quantization runtime / wall-clock cost (s)",
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W8A8 (ZeroQuant) ... Ave. Time (s) ... 0",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "GPU count required for inference",
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "reduce both the GPU resource requirement (from 2 A100 GPUs to 1) and the latency from 65ms to 25ms",
+        "bbox": [
+          70.5,
+          433.5,
+          540.0,
+          538.5
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "BERT-base W8A8 ZeroQuant reaches 83.75 GLUE average vs 83.95 FP16 baseline (delta 0.20) at 0 s calibration cost, while standard PTQ falls to 77.41",
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W16A16 (Baseline) | 59.72 | 84.94 | 85.06 | 86.27/90.57 | ... | 83.95 ... W8A8 (PTQ) ... 77.41 ... W8A8 (ZeroQuant) ... 83.75",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "BERT-base W4/8A16 ZeroQuant-LKD reaches 82.35 GLUE average (vs PTQ 33.11) in 31 s per task, ~93.5x cheaper than INT8 QAT (2900 s)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 Main Results of BERT",
+        "quote": "the accuracy can be further boosted to 82.35 with a cost of 31s per task using only a single GPU, which is 93.5x cheaper than INT8 QAT quantization",
+        "bbox": [
+          70.224609375,
+          417.24383544921875,
+          540.8228759765625,
+          510.9156799316406
+        ],
+        "block_id": "/page/6/Text/6"
+      }
+    },
+    {
+      "value": "GPT-3 350M W8A8 ZeroQuant reaches Wikitext-2 PPL 21.7 vs 21.5 FP16 (delta 0.2), while W8A8 PTQ degrades to 26.2",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W16A16 | 49.3 | 66.3 | 29.4 | 53.8 | 75.1 | 38.9 | 21.5 ... W8A8 (PTQ) ... 26.2 ... W8A8 (ZeroQuant) ... 21.7",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Up to 5.19x INT8 speedup on BERT-base and 4.16x on GPT-3 350M end-to-end on a single 40G A100 vs FP16",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "leads to up to 5.19x/4.16x speedup on those models compared to FP16 inference",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "GPT-NeoX 20B W8A8/16 cuts latency from 2x65ms to 1x25ms and halves GPU count, giving 5.2x better efficiency at matched accuracy (Ave. 50.4 vs 50.5)",
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 71.7 | 77.7 | 50.5 | 2x65ms (1x) ... W8A8/16 | 71.9 | 78.3 | 50.4 | 1x25ms (5.2x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": "GPT-J 6B W8A8 reaches 10.51 PPL on WikiText-2 vs 10.35 FP16 with 3.67x latency speedup (29.13 ms to 7.94 ms)",
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 20.47 | 10.35 | 10.35 | 29.13ms (1x) | W8A8 | 20.97 | 10.51 | 10.52 | 7.94ms (3.67x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 2,
+      "section": "1 Introduction",
+      "quote": "we present ZeroQuant, an end-to-end post-training quantization and inference pipeline, to address those challenges, targeting both INT8 and INT4/INT8 mixed-precision quantization",
+      "bbox": [
+        71.12109375,
+        217.6690673828125,
+        540.8751831054688,
+        251.541748046875
+      ],
+      "block_id": "/page/1/Text/2"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we present an efficient and affordable post-training quantization approach to compress large Transformer-based models, termed as ZeroQuant",
+      "bbox": [
+        94.728515625,
+        276.1171875,
+        516.4363403320312,
+        450.3239440917969
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "quantization_method_name": {
+    "value": "ZeroQuant (with optional layer-by-layer knowledge distillation, LKD)",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "ZeroQuant is an end-to-end quantization and inference pipeline with three main components: (1) a fine-grained hardware-friendly quantization scheme for both weight and activations; (2) a novel affordable layer-by-layer knowledge distillation algorithm (LKD)",
+      "bbox": [
+        94.728515625,
+        276.1171875,
+        516.4363403320312,
+        450.3239440917969
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 4,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "ZeroQuant plus LKD affordably quantize the weights in the fully-connected module to INT4 along with INT8 weights in the attention module and INT8 activations",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": 8,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "ZeroQuant can reduce the precision for weights and activations to INT8 in a cost-free way for both BERT and GPT-3-style models",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": 16,
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "We use WxAy to represent using x-bit for weight quantization and y-bit for activation quantization. ... for A8/16, we use FP16 activation",
+        "bbox": [
+          70.5234375,
+          214.62890625,
+          539.9654541015625,
+          285.3157043457031
+        ],
+        "block_id": "/page/6/Text/2"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight+activation",
+    "ev": {
+      "page": 2,
+      "section": "1 Introduction",
+      "quote": "We apply fine-grained hardware-friendly quantization schemes on both weight and activations, i.e., groupwise quantization for weight and token-wise quantization for activations",
+      "bbox": [
+        70.822265625,
+        252.9140625,
+        541.1580810546875,
+        539.2851867675781
+      ],
+      "block_id": "/page/1/ListGroup/257"
+    }
+  },
+  "granularity": {
+    "value": "per-group",
+    "ev": {
+      "page": 4,
+      "section": "4.1 Fine-grained Hardware-friendly Quantization Scheme",
+      "quote": "use group-wise (token-wise) quantization for the weight matrix (activations)",
+      "bbox": [
+        69.92578125,
+        542.1796875,
+        540.0,
+        587.25
+      ],
+      "block_id": "/page/3/Text/7"
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "an efficient and affordable post-training quantization approach to compress large Transformer-based models, termed as ZeroQuant",
+      "bbox": [
+        94.728515625,
+        276.1171875,
+        516.4363403320312,
+        450.3239440917969
+      ],
+      "block_id": "/page/0/Text/6"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A100 40GB (Azure ND A100)",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "All the models are trained using a single 40G-A100 GPU (Azure ND A100 instances)",
+        "bbox": [
+          85.46484375,
+          364.67578125,
+          461.9263610839844,
+          374.8826599121094
+        ],
+        "block_id": "/page/17/Text/9"
+      }
+    },
+    {
+      "value": "NVIDIA A100 (multi-GPU pretraining of GPT-3)",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "We use 128 A100 GPUs (Azure ND A100 instances) to do the pretraining",
+        "bbox": [
+          70.5234375,
+          389.0390625,
+          541.4261474609375,
+          484.461669921875
+        ],
+        "block_id": "/page/17/Text/10"
+      }
+    },
+    {
+      "value": "INT8 Tensor Cores (Ampere architecture)",
+      "ev": {
+        "page": 19,
+        "section": "D Details about System Optimization",
+        "quote": "we can use the GeMM schedule that exploits the INT8 Tensor-core units which provide 2x/4x more compute efficiency compared to the FP16/FP32 Tensor cores",
+        "bbox": [
+          70.224609375,
+          645.046875,
+          540.75,
+          691.5
+        ],
+        "block_id": "/page/18/Text/9"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 5.19,
+      "baseline": "FP16 inference (BERT-base, sequence length 256, batch size 128)",
+      "hardware": "single 40GB NVIDIA A100"
+    },
+    "ev": {
+      "page": 8,
+      "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+      "quote": "Using our efficient quantization kernel implementation and operator fusion, the INT8 model can achieve 2.27-5.19x speedup on BERTbase and 2.47-5.01x on BERTlarge",
+      "bbox": [
+        70.5,
+        595.5,
+        540.0,
+        630.3515625
+      ],
+      "block_id": "/page/7/Text/8",
+      "source_table": "Table 6"
+    }
+  },
+  "strengths": [
+    {
+      "value": "Group-wise weight and token-wise activation quantization recover near-FP16 accuracy on BERT and GPT-3-style models with zero calibration cost.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "ZeroQuant can reduce the precision for weights and activations to INT8 in a cost-free way for both BERT and GPT-3-style models with minimal accuracy impact",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Layer-by-layer knowledge distillation enables INT4/INT8 mixed-precision compression even without access to the original training data.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "a novel affordable layer-by-layer knowledge distillation algorithm (LKD) even without the access to the original training data",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Custom CUTLASS INT8 kernels and operator fusion give real end-to-end speedups up to 5.19x on BERT and 5.2x on GPT-NeoX 20B.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "leads to up to 5.19x/4.16x speedup on those models compared to FP16 inference ... GPT-NeoX20B ... up to 5.2x better efficiency",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "Scales to 20B-parameter open-source models, halving the GPU count required for GPT-NeoX 20B inference from 2 A100 to 1 A100.",
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "reduce both the GPU resource requirement (from 2 A100 GPUs to 1) and the latency from 65ms to 25ms, which together lead to 5.2x better throughput/efficiency",
+        "bbox": [
+          70.5,
+          433.5,
+          540.0,
+          538.5
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Self-attention input activations of GPT-NeoX 20B must stay in FP16 because INT8 there causes large accuracy loss; root cause is conjectured but not verified.",
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "the activation quantization for the attention calculation (i.e., the input of self-attention) causes the accuracy loss. We conjecture that this is because of the sensitivity of the self-attention module for extra-large models (20B) but cannot verify this",
+        "bbox": [
+          70.5,
+          433.5,
+          540.0,
+          538.5
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    },
+    {
+      "value": "INT4/INT8 mixed precision still loses accuracy on small or generation-heavy tasks such as RTE and Wikitext-2 even with LKD.",
+      "ev": {
+        "page": 7,
+        "section": "5.1 Main Results of BERT",
+        "quote": "ZeroQuant and ZeroQuant-LKD still achieve good accuracy except for RTE but the model size is about 3x smaller than FP16 counterpart",
+        "bbox": [
+          70.5234375,
+          571.95703125,
+          541.4280395507812,
+          630.4676971435547
+        ],
+        "block_id": "/page/6/Text/8"
+      }
+    },
+    {
+      "value": "Hyper-parameters for LKD are kept fixed across all tasks; the authors note tuning could change results.",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "We fix the learning rate as 5e-6 for both models on all tasks. However, tuning them may favor ZeroQuant",
+        "bbox": [
+          70.5234375,
+          328.32421875,
+          540.2876586914062,
+          362.92767333984375
+        ],
+        "block_id": "/page/17/Text/8"
+      }
+    },
+    {
+      "value": "INT4 weights are only applied to FFC; MHSA weights stay at INT8, so the average bitwidth is higher than pure INT4.",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "for W4/8, we quantize the MHSA's weight to INT8 and FFC's weight to INT4",
+        "bbox": [
+          70.5234375,
+          214.62890625,
+          539.9654541015625,
+          285.3157043457031
+        ],
+        "block_id": "/page/6/Text/2"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Evaluated only on data-centre A100 GPUs; no edge, mobile, or CPU deployment is reported.",
+      "ev": {
+        "page": 18,
+        "section": "B.2 Details of Main Result",
+        "quote": "All the models are trained using a single 40G-A100 GPU (Azure ND A100 instances)",
+        "bbox": [
+          85.46484375,
+          364.67578125,
+          461.9263610839844,
+          374.8826599121094
+        ],
+        "block_id": "/page/17/Text/9"
+      }
+    },
+    {
+      "value": "Safety, jailbreak, refusal, bias, and toxicity behaviour after quantization are not measured at all.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "ZeroQuant can reduce the precision for weights and activations to INT8 in a cost-free way for both BERT and GPT-3-style models with minimal accuracy impact",
+        "bbox": [
+          94.728515625,
+          276.1171875,
+          516.4363403320312,
+          450.3239440917969
+        ],
+        "block_id": "/page/0/Text/6"
+      }
+    },
+    {
+      "value": "No statistical-significance reporting (no error bars, multiple seeds, or confidence intervals) on accuracy or perplexity.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    {
+      "value": "Does not test sub-4-bit quantization; FFC weights stop at INT4 and MHSA weights at INT8.",
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "for W4/8, we quantize the MHSA's weight to INT8 and FFC's weight to INT4",
+        "bbox": [
+          70.5234375,
+          214.62890625,
+          539.9654541015625,
+          285.3157043457031
+        ],
+        "block_id": "/page/6/Text/2"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Extend ZeroQuant to encoder-decoder models such as T5.",
+      "ev": {
+        "page": 17,
+        "section": "A.1 Transformer Architecture",
+        "quote": "In this paper, we focus on encoder-only and decoder-only models but our approach can be applied to encoder-decoder models as well",
+        "bbox": [
+          70.5234375,
+          116.40606689453125,
+          541.4261474609375,
+          210.05474853515625
+        ],
+        "block_id": "/page/16/Text/2"
+      }
+    },
+    {
+      "value": "Investigate the cause of self-attention activation sensitivity at 20B scale and beyond.",
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "We conjecture that this is because of the sensitivity of the self-attention module for extra-large models (20B) but cannot verify this for other models due to the lack of open-sourced extra-large models",
+        "bbox": [
+          70.5,
+          433.5,
+          540.0,
+          538.5
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "We measure the end-to-end average latency for the entire BERT model, and the time reported is in milliseconds",
+        "bbox": [
+          69.92578125,
+          208.0546875,
+          540.0,
+          230.25
+        ],
+        "block_id": "/page/8/Caption/2",
+        "source_table": "Table 6"
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "1 Introduction",
+        "quote": "Code will be released soon as a part of [https://github.com/microsoft/DeepSpeed](https://github.com/microsoft/DeepSpeed)",
+        "bbox": [
+          83.07421875,
+          681.2917175292969,
+          394.4996337890625,
+          690.6930923461914
+        ],
+        "block_id": "/page/0/Footnote/11"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

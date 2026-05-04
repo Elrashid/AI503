@@ -1,0 +1,1017 @@
+{
+  "rp_id": "RP13",
+  "year": {
+    "value": 2023,
+    "ev": {
+      "page": 1,
+      "section": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
+      "quote": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
+      "bbox": [
+        149.71,
+        99.39,
+        461.09,
+        136.97
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "first_author": {
+    "value": "Chee",
+    "ev": {
+      "page": 1,
+      "section": "Jerry Chee",
+      "quote": "Cornell University jerrychee@cs.cornell.edu",
+      "bbox": [
+        164.06,
+        191.04,
+        290.08,
+        213.21
+      ],
+      "block_id": "/page/0/Text/3"
+    }
+  },
+  "authors": [
+    {
+      "value": "Jerry Chee",
+      "ev": {
+        "page": 1,
+        "section": "Jerry Chee",
+        "quote": "Cornell University jerrychee@cs.cornell.edu",
+        "bbox": [
+          164.06,
+          191.04,
+          290.08,
+          213.21
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Yaohui Cai",
+      "ev": {
+        "page": 1,
+        "section": "Yaohui Cai",
+        "quote": "Cornell University yc2632@cornell.edu",
+        "bbox": [
+          349.33,
+          190.65,
+          447.04,
+          213.21
+        ],
+        "block_id": "/page/0/Text/7"
+      }
+    },
+    {
+      "value": "Volodymyr Kuleshov",
+      "ev": {
+        "page": 1,
+        "section": "Volodymyr Kuleshov",
+        "quote": "Cornell University kuleshov@cornell.edu",
+        "bbox": [
+          167.04,
+          239.77,
+          272.83,
+          263.2
+        ],
+        "block_id": "/page/0/Text/5"
+      }
+    },
+    {
+      "value": "Christopher De Sa",
+      "ev": {
+        "page": 1,
+        "section": "Christopher De Sa",
+        "quote": "Cornell University cdesa@cs.cornell.edu",
+        "bbox": [
+          337.68,
+          241.31,
+          443.53,
+          263.2
+        ],
+        "block_id": "/page/0/Text/9"
+      }
+    }
+  ],
+  "title": {
+    "value": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
+    "ev": {
+      "page": 1,
+      "section": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
+      "quote": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
+      "bbox": [
+        149.71,
+        99.39,
+        461.09,
+        136.97
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "NeurIPS 2023",
+    "ev": {
+      "page": 1,
+      "section": "Proceedings footer",
+      "quote": "37th Conference on Neural Information Processing Systems (NeurIPS 2023).",
+      "bbox": [
+        107.279296875,
+        732.4453125,
+        385.1692810058594,
+        742.0433807373047
+      ],
+      "block_id": "/page/0/PageFooter/16",
+      "recovered_via": "PyMuPDF furniture sidecar"
+    }
+  },
+  "doi": {
+    "value": "arXiv:2307.13304",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "QuIP is a post-training weight-only quantization method that uses incoherence processing via random orthogonal matrices to enable the first viable 2-bit LLM quantization, paired with adaptive rounding (LDLQ) and theoretical guarantees.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "QuIP consists of two steps: (1) an adaptive rounding procedure minimizing a quadratic proxy objective; (2) efficient pre- and post-processing that ensures weight and Hessian incoherence via multiplication by random orthogonal matrices",
+      "bbox": [
+        143.14,
+        315.95,
+        469.43,
+        469.55
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "datasets": [
+    {
+      "value": "C4",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "Our calibration set is the same as OPTQ; 128 random 2048 token segments from the C4 dataset",
+        "bbox": [
+          106.38,
+          400.25,
+          505.77,
+          520.51
+        ],
+        "block_id": "/page/7/Text/6"
+      }
+    },
+    {
+      "value": "WikiText2",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "We evaluate on the following language generation tasks: WikiText2",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "Penn Treebank (PTB)",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "Penn Treebank (PTB)",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "LAMBADA",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "We also evaluate on zero-shot tasks, including LAMBADA (LAMB)",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "ARC Easy",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "ARC Easy (ArcE)",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "PiQA",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "PiQA",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "StoryCloze",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "and StoryCloze (SC)",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "128 random 2048-token segments from C4 (calibration set)",
+    "ev": {
+      "page": 8,
+      "section": "6 Experiments",
+      "quote": "Our calibration set is the same as OPTQ; 128 random 2048 token segments from the C4 dataset",
+      "bbox": [
+        106.38,
+        400.25,
+        505.77,
+        520.51
+      ],
+      "block_id": "/page/7/Text/6"
+    }
+  },
+  "models_used": [
+    {
+      "value": "OPT-125m",
+      "ev": {
+        "page": 18,
+        "section": "C.6 Section 6 (All Methods, All Model Sizes, All Bit Weights, All Evaluation Tasks)",
+        "quote": "model sizes (OPT 125m-30b)",
+        "bbox": [
+          105.75,
+          333.73828125,
+          507.0,
+          365.44921875
+        ],
+        "block_id": "/page/17/Text/4"
+      }
+    },
+    {
+      "value": "OPT-1.3B",
+      "ev": {
+        "page": 20,
+        "section": "C.8 Section 6 (Evaluating Unbiased Rounding in LDLQ/OPTQ)",
+        "quote": "Quantizing **OPT-1.3b** with all combinations of quantization and pre-post processing methods",
+        "bbox": [
+          105.75,
+          521.25,
+          505.5,
+          553.39453125
+        ],
+        "block_id": "/page/19/Caption/3"
+      }
+    },
+    {
+      "value": "OPT-2.7B",
+      "ev": {
+        "page": 20,
+        "section": "C.8 Section 6 (Evaluating Unbiased Rounding in LDLQ/OPTQ)",
+        "quote": "Quantizing **OPT-2.7b** with all combinations of quantization and pre-post processing methods",
+        "bbox": [
+          105.75,
+          269.25,
+          505.5,
+          301.5
+        ],
+        "block_id": "/page/19/Caption/1"
+      }
+    },
+    {
+      "value": "OPT-6.7B",
+      "ev": {
+        "page": 19,
+        "section": "C.6 Section 6 (All Methods, All Model Sizes, All Bit Weights, All Evaluation Tasks)",
+        "quote": "Quantizing **OPT-6.7b** with all combinations of quantization and pre-post processing methods",
+        "bbox": [
+          105.75,
+          516.0,
+          505.5,
+          547.98046875
+        ],
+        "block_id": "/page/18/Caption/3"
+      }
+    },
+    {
+      "value": "OPT-13B",
+      "ev": {
+        "page": 19,
+        "section": "C.6 Section 6 (All Methods, All Model Sizes, All Bit Weights, All Evaluation Tasks)",
+        "quote": "Quantizing **OPT-13b** with all combinations of quantization and pre-post processing methods",
+        "bbox": [
+          105.75,
+          265.5,
+          506.25,
+          297.0
+        ],
+        "block_id": "/page/18/Caption/1"
+      }
+    },
+    {
+      "value": "OPT-30B",
+      "ev": {
+        "page": 9,
+        "section": "6 Experiments",
+        "quote": "Table 2: Quantizing OPT-30b with various quantization and processing methods",
+        "bbox": [
+          105.75,
+          675.0,
+          505.5,
+          708.0
+        ],
+        "block_id": "/page/8/Caption/5"
+      }
+    },
+    {
+      "value": "OPT-66B",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "We quantize the OPT [[35]](#page-12-1) family of models (up to 66B parameters)",
+        "bbox": [
+          106.98,
+          286.17,
+          505.74,
+          395.04
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Llama 2 70B",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "and Llama 2 70B [[27]](#page-11-4) using various quantization and processing methods",
+        "bbox": [
+          106.98,
+          286.17,
+          505.74,
+          395.04
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "Perplexity (PPL)",
+      "ev": {
+        "page": 9,
+        "section": "6 Experiments",
+        "quote": "WBits | Wiki↓ | C4↓ | ArcE↑ | PiQA↑ | SC↑",
+        "bbox": [
+          105.19,
+          334.19,
+          500.83,
+          406.77
+        ],
+        "block_id": "/page/8/Table/2"
+      }
+    },
+    {
+      "value": "Zero-shot accuracy",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "We also evaluate on zero-shot tasks, including LAMBADA (LAMB) [[21]](#page-11-9), ARC Easy (ArcE) [[1]](#page-10-14), PiQA [[26]](#page-11-10), and StoryCloze (SC)",
+        "bbox": [
+          107.58,
+          608.66,
+          505.11,
+          640.56
+        ],
+        "block_id": "/page/7/Text/8"
+      }
+    },
+    {
+      "value": "Per-token throughput (ms)",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Table 4: Average per-token throughput (batch size 1) when generating sequences of length 128 with OPT-66B on an A6000 GPU.",
+        "bbox": [
+          363.97,
+          271.09,
+          505.66,
+          314.1
+        ],
+        "block_id": "/page/9/Caption/6"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Llama 2 70B at 2-bit with QuIP reaches WikiText PPL 6.326 vs 16-bit 3.319, while OPTQ collapses to 123.908 at 2-bit",
+      "ev": {
+        "page": 9,
+        "section": "6 Experiments",
+        "quote": "2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75 | **6.326** | **8.937** | **54.38** | **75.08** | **75.37**",
+        "bbox": [
+          105.19,
+          334.19,
+          500.83,
+          406.77
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "OPT-30B at 2-bit with QuIP reaches WikiText PPL 11.48 vs 16-bit 9.56, while OPTQ degrades to 71.70",
+      "ev": {
+        "page": 9,
+        "section": "6 Experiments",
+        "quote": "2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77 | **11.48** | 17.40 | 13.55 | 57.87 | **65.24**",
+        "bbox": [
+          104.06,
+          453.01,
+          523.48,
+          673.11
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "QuIP is about 1.5x slower than OPTQ at inference: 81 ms/token vs 53 ms/token on OPT-66B (A6000)",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Method | Throughput | QuIP | 81ms | OPTQ | 53ms",
+        "bbox": [
+          376.07,
+          225.86,
+          483.36,
+          263.75
+        ],
+        "block_id": "/page/9/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Random permutation in fast orthogonal multiplication reduces 2-bit perplexity by 74.2 points on OPT-125m (averaged over WikiText2/PTB/C4)",
+      "ev": {
+        "page": 10,
+        "section": "7 Conclusion",
+        "quote": "Wbits | ∆Perplexity fromrandom permute↓ | 4 | -0.22 | 3 | -9.96 | 2 | -74.2",
+        "bbox": [
+          370.8277734375,
+          473.9177847290039,
+          494.5784765625,
+          533.7021798706055
+        ],
+        "block_id": "/page/9/Table/12",
+        "source_table": "Table 5"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 2,
+      "section": "1 Introduction",
+      "quote": "we propose QuIP, a quantization method based on the insight that model parameters should ideally be incoherent",
+      "bbox": [
+        106.98,
+        231.64,
+        506.25,
+        274.18
+      ],
+      "block_id": "/page/1/Text/3"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "This work studies post-training parameter quantization in large language models (LLMs)",
+      "bbox": [
+        143.14,
+        315.95,
+        469.43,
+        469.55
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "quantization_method_name": {
+    "value": "QuIP",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "We introduce quantization with incoherence processing (QuIP), a new method based on the insight that quantization benefits from *incoherent* weight and Hessian matrices",
+      "bbox": [
+        143.14,
+        315.95,
+        469.43,
+        469.55
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 2,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "yields the first LLM quantization methods that produce viable results using only two bits per weight",
+        "bbox": [
+          143.14,
+          315.95,
+          469.43,
+          469.55
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    },
+    {
+      "value": 3,
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "we compare QuIP and OPTQ when quantizing to 2 and 3 bits per weight (4-bit quantization works equally well for both methods)",
+        "bbox": [
+          107.28,
+          646.88,
+          505.25,
+          722.42
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": 4,
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "4-bit quantization works equally well for both methods",
+        "bbox": [
+          107.28,
+          646.88,
+          505.25,
+          722.42
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": 16,
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "the difference between 2-bit and 16-bit weight performance becomes small",
+        "bbox": [
+          106.98,
+          286.17,
+          505.74,
+          395.04
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight-only",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "ensures weight and Hessian incoherence via multiplication by random orthogonal matrices",
+      "bbox": [
+        143.14,
+        315.95,
+        469.43,
+        469.55
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "granularity": {
+    "value": "per-tensor",
+    "ev": {
+      "page": 8,
+      "section": "6 Experiments",
+      "quote": "quantization is performed one Transformer block at a time: loaded into GPU memory, the Hessian computed, and then the weights quantized",
+      "bbox": [
+        106.38,
+        400.25,
+        505.77,
+        520.51
+      ],
+      "block_id": "/page/7/Text/6"
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "This work studies post-training parameter quantization in large language models (LLMs)",
+      "bbox": [
+        143.14,
+        315.95,
+        469.43,
+        469.55
+      ],
+      "block_id": "/page/0/Text/11"
+    }
+  },
+  "hardware": [
+    {
+      "value": "Single GPU with up to 48 GB memory",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "All models are quantized on a single GPU, with up to 48GB of memory",
+        "bbox": [
+          106.38,
+          400.25,
+          505.77,
+          520.51
+        ],
+        "block_id": "/page/7/Text/6"
+      }
+    },
+    {
+      "value": "NVIDIA A6000",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Average per-token throughput (batch size 1) when generating sequences of length 128 with OPT-66B on an A6000 GPU.",
+        "bbox": [
+          363.97,
+          271.09,
+          505.66,
+          314.1
+        ],
+        "block_id": "/page/9/Caption/6"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": null,
+    "ev": {
+      "page": 10,
+      "section": "6 Experiments",
+      "quote": "Table[ 4](#page-9-0) shows that our QuIP implementation is about 1.5× slower than OPTQ.",
+      "bbox": [
+        106.98,
+        327.94,
+        504.17,
+        382.03
+      ],
+      "block_id": "/page/9/Text/7"
+    }
+  },
+  "strengths": [
+    {
+      "value": "First PTQ method to make 2-bit weight quantization viable across LLM sizes (including OPT-66B and Llama 2 70B).",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "QuIP is the first PTQ procedure to achieve good quantization at two bits per weight, across a variety of LLM sizes and evaluation tasks",
+        "bbox": [
+          107.28,
+          646.88,
+          505.25,
+          722.42
+        ],
+        "block_id": "/page/7/Text/9"
+      }
+    },
+    {
+      "value": "Provides the first theoretical analysis for an LLM-scale quantization algorithm and shows the analysis also covers OPTQ.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We complement QuIP with the first theoretical analysis for an LLM-scale quantization algorithm, and show that our theory also applies to an existing method, OPTQ",
+        "bbox": [
+          143.14,
+          315.95,
+          469.43,
+          469.55
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    },
+    {
+      "value": "Incoherence processing improves every rounding method tested, including plain nearest rounding, at 2 bits.",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "all quantization methods—even nearest—are viable at two bits with our incoherence processing",
+        "bbox": [
+          107.58,
+          213.62,
+          357.09,
+          322.01
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    },
+    {
+      "value": "Code is open-sourced on GitHub for full reproducibility.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Our code can be found at [https://github.com/Cornell-RelaxML/QuIP]",
+        "bbox": [
+          143.14,
+          315.95,
+          469.43,
+          469.55
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "QuIP inference is about 1.5x slower than OPTQ because incoherence processing is implemented in PyTorch.",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Table[ 4](#page-9-0) shows that our QuIP implementation is about 1.5× slower than OPTQ",
+        "bbox": [
+          106.98,
+          327.94,
+          504.17,
+          382.03
+        ],
+        "block_id": "/page/9/Text/7"
+      }
+    },
+    {
+      "value": "Adaptive rounding proxy treats each layer in isolation; cross-layer interactions are not modelled.",
+      "ev": {
+        "page": 14,
+        "section": "A.2 Limitations",
+        "quote": "The adaptive rounding [3] proxy objective considers each layer in isolation; it remains to be seen what other computationally tractable proxies could improve quantization",
+        "bbox": [
+          105.75,
+          195.75,
+          504.75,
+          238.5
+        ],
+        "block_id": "/page/13/Text/4"
+      }
+    },
+    {
+      "value": "QuIP-RG variant sometimes beats QuIP but the authors note further study is required to evaluate it.",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Our modifications in QuIP-RG sometimes give an improvement over QuIP, but further study is required to evaluate these modifications",
+        "bbox": [
+          107.58,
+          213.62,
+          357.09,
+          322.01
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Weight-only quantization; activations and KV-cache are not quantized.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "ensures weight and Hessian incoherence via multiplication by random orthogonal matrices",
+        "bbox": [
+          143.14,
+          315.95,
+          469.43,
+          469.55
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    },
+    {
+      "value": "Evaluated only on OPT and Llama 2 base models; instruction-tuned and chat variants are not tested.",
+      "ev": {
+        "page": 8,
+        "section": "6 Experiments",
+        "quote": "We quantize the OPT [[35]](#page-12-1) family of models (up to 66B parameters) and Llama 2 70B [[27]](#page-11-4) using various quantization and processing methods",
+        "bbox": [
+          106.98,
+          286.17,
+          505.74,
+          395.04
+        ],
+        "block_id": "/page/7/Text/5"
+      }
+    },
+    {
+      "value": "Hardware tests use a single A6000 data-center GPU; no edge or mobile evaluation.",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Average per-token throughput (batch size 1) when generating sequences of length 128 with OPT-66B on an A6000 GPU.",
+        "bbox": [
+          363.97,
+          271.09,
+          505.66,
+          314.1
+        ],
+        "block_id": "/page/9/Caption/6"
+      }
+    },
+    {
+      "value": "Safety, bias, and refusal behaviour after quantization are not evaluated.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Explore tractable proxies that consider interactions between layers rather than per-layer rounding only.",
+      "ev": {
+        "page": 14,
+        "section": "A.2 Limitations",
+        "quote": "it remains to be seen what other computationally tractable proxies could improve quantization. For example quantization methods do exist which consider interactions between layers",
+        "bbox": [
+          105.75,
+          195.75,
+          504.75,
+          238.5
+        ],
+        "block_id": "/page/13/Text/4"
+      }
+    },
+    {
+      "value": "Further study of QuIP-RG (re-ordering and greedy updates) which sometimes outperforms QuIP.",
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Our modifications in QuIP-RG sometimes give an improvement over QuIP, but further study is required to evaluate these modifications",
+        "bbox": [
+          107.58,
+          213.62,
+          357.09,
+          322.01
+        ],
+        "block_id": "/page/9/Text/4"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": true,
+      "ev": {
+        "page": 18,
+        "section": "C.5 Section[ 6](#page-7-0) (Main Results on Additional Evaluations)",
+        "quote": "Our observations about OPTQ and QuIP on WikiText2 and OPT-2.7b were consistent across multiple independent runs",
+        "bbox": [
+          106.5,
+          277.5,
+          506.25,
+          299.25
+        ],
+        "block_id": "/page/17/Text/2"
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "yields the first LLM quantization methods that produce viable results using only two bits per weight",
+        "bbox": [
+          143.14,
+          315.95,
+          469.43,
+          469.55
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 10,
+        "section": "6 Experiments",
+        "quote": "Table 4: Average per-token throughput (batch size 1) when generating sequences of length 128 with OPT-66B on an A6000 GPU.",
+        "bbox": [
+          363.97,
+          271.09,
+          505.66,
+          314.1
+        ],
+        "block_id": "/page/9/Caption/6"
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Our code can be found at [https://github.com/Cornell-RelaxML/QuIP]",
+        "bbox": [
+          143.14,
+          315.95,
+          469.43,
+          469.55
+        ],
+        "block_id": "/page/0/Text/11"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  }
+}

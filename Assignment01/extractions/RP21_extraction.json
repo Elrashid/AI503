@@ -1,0 +1,1136 @@
+{
+  "rp_id": "RP21",
+  "year": {
+    "value": 2024,
+    "ev": {
+      "page": 1,
+      "section": "1. Introduction",
+      "quote": "Proceedings of the 41^(st) International Conference on Machine Learning, Vienna, Austria. PMLR 235, 2024.",
+      "bbox": [
+        54.0,
+        524.00390625,
+        291.0,
+        617.58984375
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "first_author": {
+    "value": "Tseng",
+    "ev": {
+      "page": 1,
+      "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+      "quote": "Albert Tseng * 1 Jerry Chee * 1 Qingyao Sun 2 Volodymyr Kuleshov 1 Christopher De Sa 1",
+      "bbox": [
+        102.0,
+        155.25,
+        492.0,
+        167.44921875
+      ],
+      "block_id": "/page/0/Text/2"
+    }
+  },
+  "authors": [
+    {
+      "value": "Albert Tseng",
+      "ev": {
+        "page": 1,
+        "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+        "quote": "Albert Tseng * 1 Jerry Chee * 1 Qingyao Sun 2",
+        "bbox": [
+          102.0,
+          155.25,
+          492.0,
+          167.44921875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Jerry Chee",
+      "ev": {
+        "page": 1,
+        "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+        "quote": "Albert Tseng * 1 Jerry Chee * 1 Qingyao Sun 2",
+        "bbox": [
+          102.0,
+          155.25,
+          492.0,
+          167.44921875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Qingyao Sun",
+      "ev": {
+        "page": 1,
+        "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+        "quote": "Jerry Chee * 1 Qingyao Sun 2 Volodymyr Kuleshov 1",
+        "bbox": [
+          102.0,
+          155.25,
+          492.0,
+          167.44921875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Volodymyr Kuleshov",
+      "ev": {
+        "page": 1,
+        "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+        "quote": "Qingyao Sun 2 Volodymyr Kuleshov 1 Christopher De Sa 1",
+        "bbox": [
+          102.0,
+          155.25,
+          492.0,
+          167.44921875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    },
+    {
+      "value": "Christopher De Sa",
+      "ev": {
+        "page": 1,
+        "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+        "quote": "Volodymyr Kuleshov 1 Christopher De Sa 1",
+        "bbox": [
+          102.0,
+          155.25,
+          492.0,
+          167.44921875
+        ],
+        "block_id": "/page/0/Text/2"
+      }
+    }
+  ],
+  "title": {
+    "value": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+    "ev": {
+      "page": 1,
+      "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+      "quote": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+      "bbox": [
+        152.25,
+        89.25,
+        444.0,
+        120.0
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "venue": {
+    "value": "ICML 2024 (PMLR 235)",
+    "ev": {
+      "page": 1,
+      "section": "1. Introduction",
+      "quote": "Proceedings of the 41^(st) International Conference on Machine Learning, Vienna, Austria. PMLR 235, 2024.",
+      "bbox": [
+        54.0,
+        524.00390625,
+        291.0,
+        617.58984375
+      ],
+      "block_id": "/page/0/Text/8"
+    }
+  },
+  "doi": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "QuIP# is a weight-only PTQ method that combines Randomized Hadamard Transform incoherence processing, an E_8 lattice (E8P) vector-quantization codebook with BlockLDLQ rounding, and inter-layer fine-tuning to reach state-of-the-art at 2-4 bits with fast GPU inference.",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we introduce QuIP#, a weight-only PTQ method that achieves state-of-the-art results in extreme compression regimes (\\leq 4 bits per weight) using three novel techniques.",
+      "bbox": [
+        74.109375,
+        207.66796875,
+        271.5,
+        479.25
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "datasets": [
+    {
+      "value": "WikiText-2",
+      "ev": {
+        "page": 25,
+        "section": "F.4. Perplexity and Zeroshot Evaluation",
+        "quote": "We use the OPTQ (Frantar et al., 2023) \"Wiktext2\" and \"C4\" (not \"C4 New\") sampling functions to calculate perplexity for our experiments.",
+        "bbox": [
+          53.7890625,
+          508.921875,
+          543.0945434570312,
+          532.2030639648438
+        ],
+        "block_id": "/page/24/Text/4"
+      }
+    },
+    {
+      "value": "C4",
+      "ev": {
+        "page": 25,
+        "section": "F.4. Perplexity and Zeroshot Evaluation",
+        "quote": "We use the OPTQ (Frantar et al., 2023) \"Wiktext2\" and \"C4\" (not \"C4 New\") sampling functions to calculate perplexity for our experiments.",
+        "bbox": [
+          53.7890625,
+          508.921875,
+          543.0945434570312,
+          532.2030639648438
+        ],
+        "block_id": "/page/24/Text/4"
+      }
+    },
+    {
+      "value": "RedPajama 1T (calibration / fine-tuning)",
+      "ev": {
+        "page": 24,
+        "section": "F.2. Hessian Generation",
+        "quote": "Hessian matrices H were generated with 6144 sequences of a model's native context length (2048 for Llama 1, 4096 for Llama 2) from the RedPajama 1T (Computer, 2023) dataset.",
+        "bbox": [
+          54.0,
+          694.5,
+          543.0,
+          716.203125
+        ],
+        "block_id": "/page/23/Text/9"
+      }
+    },
+    {
+      "value": "ARC-Challenge (zeroshot)",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "Table 3. Zeroshot Accuracy (acc in LM Eval, not acc_norm), Llama 2.",
+        "bbox": [
+          164.654296875,
+          257.5546875,
+          431.1305847167969,
+          268.3828125
+        ],
+        "block_id": "/page/7/Text/3"
+      }
+    },
+    {
+      "value": "ARC-Easy (zeroshot)",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "ArCC | ArCE | PIQA | WINO",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4"
+      }
+    },
+    {
+      "value": "PIQA (zeroshot)",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "ArCC | ArCE | PIQA | WINO",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4"
+      }
+    },
+    {
+      "value": "WinoGrande (zeroshot)",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "ArCC | ArCE | PIQA | WINO",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4"
+      }
+    },
+    {
+      "value": "BoolQ (zeroshot, appendix)",
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MODEL | BITS | WIKI2 | C4 | ARCC | ARCE | BOOLQ | PIQA | WINO",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "Hessians: 6144 calibration sequences from RedPajama 1T at native context length (2048 for Llama 1, 4096 for Llama 2). Fine-tuning: 256 train + 128 validation sequences from RedPajama 1T.",
+    "ev": {
+      "page": 24,
+      "section": "F.2. Hessian Generation",
+      "quote": "Hessian matrices H were generated with 6144 sequences of a model's native context length (2048 for Llama 1, 4096 for Llama 2) from the RedPajama 1T (Computer, 2023) dataset.",
+      "bbox": [
+        54.0,
+        694.5,
+        543.0,
+        716.203125
+      ],
+      "block_id": "/page/23/Text/9"
+    }
+  },
+  "models_used": [
+    {
+      "value": "Llama 1 7B",
+      "ev": {
+        "page": 7,
+        "section": "6. Experiments",
+        "quote": "Our main experiments show the performance of QuIP# on the Llama 1 (Touvron et al., 2023a) and 2 (Touvron et al., 2023b) family of models. These models range in size from 7 billion to 70 billion parameters",
+        "bbox": [
+          54.0,
+          490.359375,
+          291.0,
+          572.34375
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "Llama 1 13B",
+      "ev": {
+        "page": 7,
+        "section": "6. Experiments",
+        "quote": "Llama 1 (Touvron et al., 2023a) and 2 (Touvron et al., 2023b) family of models. These models range in size from 7 billion to 70 billion parameters",
+        "bbox": [
+          54.0,
+          490.359375,
+          291.0,
+          572.34375
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "Llama 1 30B",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| 1-7 | 1-13 | 1-30 | 1-65 | 2-7 | 2-13 | 2-70 |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": "Llama 1 65B",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| 1-7 | 1-13 | 1-30 | 1-65 | 2-7 | 2-13 | 2-70 |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": "Llama 2 7B",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| 1-30 | 1-65 | 2-7 | 2-13 | 2-70 |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": "Llama 2 13B",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| 2-7 | 2-13 | 2-70 |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": "Llama 2 70B",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| 2-13 | 2-70 |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": "Mixtral 8x7B",
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "Table 9. 2 bit QuIP# without fine-tuning on Mixtral 8x7B, a mixture of experts (MoE), and Falcon 180B, a non-Llama-based model.",
+        "bbox": [
+          54.38671875,
+          623.4784851074219,
+          543.0093994140625,
+          643.6113739013672
+        ],
+        "block_id": "/page/21/Caption/6"
+      }
+    },
+    {
+      "value": "Falcon 180B",
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "Table 9. 2 bit QuIP# without fine-tuning on Mixtral 8x7B, a mixture of experts (MoE), and Falcon 180B, a non-Llama-based model.",
+        "bbox": [
+          54.38671875,
+          623.4784851074219,
+          543.0093994140625,
+          643.6113739013672
+        ],
+        "block_id": "/page/21/Caption/6"
+      }
+    },
+    {
+      "value": "Llama 2 70B Chat (qualitative example generations only)",
+      "ev": {
+        "page": 25,
+        "section": "G. Example Generation",
+        "quote": "Below are some example generations from Llama 2 70B chat quantized with QuIP# to 2 bits, truncated to 256 tokens.",
+        "bbox": [
+          53.7890625,
+          569.25,
+          527.8287353515625,
+          580.1410522460938
+        ],
+        "block_id": "/page/24/Text/14"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "WikiText-2 perplexity",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "Table 2. Llama 1 & 2 Wikitext2 and C4 perplexity (↓), context length 2048.",
+        "bbox": [
+          53.7890625,
+          75.41015625,
+          278.1722106933594,
+          95.6763916015625
+        ],
+        "block_id": "/page/7/Caption/1"
+      }
+    },
+    {
+      "value": "C4 perplexity",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "Table 2. Llama 1 & 2 Wikitext2 and C4 perplexity (↓), context length 2048.",
+        "bbox": [
+          53.7890625,
+          75.41015625,
+          278.1722106933594,
+          95.6763916015625
+        ],
+        "block_id": "/page/7/Caption/1"
+      }
+    },
+    {
+      "value": "Zeroshot accuracy (LM Eval)",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "Table 3. Zeroshot Accuracy (acc in LM Eval, not acc_norm), Llama 2.",
+        "bbox": [
+          164.654296875,
+          257.5546875,
+          431.1305847167969,
+          268.3828125
+        ],
+        "block_id": "/page/7/Text/3"
+      }
+    },
+    {
+      "value": "Generation throughput (tokens/sec)",
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "Table 5. QuIP# generation throughput on a NVIDIA RTX 4090 using the FlashAttention library's Llama implementation.",
+        "bbox": [
+          54.89299774169922,
+          314.015625,
+          290.9275817871094,
+          357.04937744140625
+        ],
+        "block_id": "/page/8/Caption/3"
+      }
+    },
+    {
+      "value": "% peak memory bandwidth",
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "QuIP# achieves > 50% peak memory bandwidth (1TB/s) during generation and admits fast inference.",
+        "bbox": [
+          54.89299774169922,
+          314.015625,
+          290.9275817871094,
+          357.04937744140625
+        ],
+        "block_id": "/page/8/Caption/3"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "Llama-2-70B at 2 bits with QuIP# reaches WikiText-2 PPL 4.16 vs FP16 3.32 (ctx 2048)",
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| QUIP# | 2 | **6.86** | **5.97** | **5.02** | **4.36** | **6.66** | **5.74** | **4.16** |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Llama-2-70B at 3 bits with QuIP# reaches WikiText-2 PPL 3.35 vs FP16 3.12 (ctx 4096), beating AQLM 3.04-bit at 3.36 PPL",
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "| QUIP# | 3 | **5.41** | **7.04** | 3 | **4.78** | **6.35** | 3 | **3.35** | **5.15** |",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": "Llama-2-70B at 2 bits achieves 32.74 tok/s and 56.84% peak memory bandwidth on RTX 4090 (FlashAttention impl.)",
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "| 2-70B | 32.74 | 56.84% | OOM | OOM |",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": "QuIP# 2-bit Llama-2-7B reaches 106.3 tok/s vs FP16 33.1 tok/s (~3.2x speedup) on RTX 4090 via HuggingFace impl.",
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "| FP16 | 33.1 TOK/S | OOM | | AQLM 2 BIT | 20.6 | 8.27 | | QuIP# 2 BIT | 106.3 | 25.9 |",
+        "bbox": [
+          97.4650717163086,
+          664.282265625,
+          245.06291290283204,
+          713.983359375
+        ],
+        "block_id": "/page/8/Table/7",
+        "source_table": "Table 6"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we introduce QuIP#, a weight-only PTQ method that achieves state-of-the-art results in extreme compression regimes (\\leq 4 bits per weight) using three novel techniques.",
+      "bbox": [
+        74.109375,
+        207.66796875,
+        271.5,
+        479.25
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "method_family": {
+    "value": "PTQ",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "Post-training quantization (PTQ) reduces the memory footprint of LLMs by quantizing their weights to low-precision.",
+      "bbox": [
+        74.109375,
+        207.66796875,
+        271.5,
+        479.25
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "quantization_method_name": {
+    "value": "QuIP#",
+    "ev": {
+      "page": 1,
+      "section": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+      "quote": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+      "bbox": [
+        152.25,
+        89.25,
+        444.0,
+        120.0
+      ],
+      "block_id": "/page/0/SectionHeader/1"
+    }
+  },
+  "bit_widths_tested": [
+    {
+      "value": 2,
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| QUIP# | 2 | **6.86** | **5.97** | **5.02** | **4.36** | **6.66** | **5.74** | **4.16** |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": 3,
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| QUIP# | 3 | **5.98** | **5.31** | **4.36** | **3.78** | **5.79** | **5.10** | **3.56** |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    {
+      "value": 4,
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| QUIP# | 4 | **5.76** | **5.17** | **4.18** | **3.60** | **5.56** | **4.95** | **3.38** |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    }
+  ],
+  "quantization_target": {
+    "value": "weight-only",
+    "ev": {
+      "page": 1,
+      "section": "Abstract",
+      "quote": "we introduce QuIP#, a weight-only PTQ method that achieves state-of-the-art results in extreme compression regimes",
+      "bbox": [
+        74.109375,
+        207.66796875,
+        271.5,
+        479.25
+      ],
+      "block_id": "/page/0/Text/4"
+    }
+  },
+  "granularity": {
+    "value": "per-group",
+    "ev": {
+      "page": 5,
+      "section": "4.1. Adaptive Rounding for Vector Quantization",
+      "quote": "Given a block size g that evenly divides n, our block LDLQ is based on a novel g-block LDL decomposition H = L^T D L",
+      "bbox": [
+        305.25,
+        69.0,
+        542.25,
+        161.25
+      ],
+      "block_id": "/page/4/Text/9"
+    }
+  },
+  "training_free": {
+    "value": false,
+    "ev": {
+      "page": 6,
+      "section": "5. Fine-Tuning During Quantization",
+      "quote": "Here, we employ a simple fine-tuning algorithm that attempts to recover the original unquantized model during quantization. Our fine tuning method runs on a small development set and can be performed in around 50 GPU-hours for a 70B parameter model.",
+      "bbox": [
+        306.0,
+        581.625,
+        543.0,
+        663.0
+      ],
+      "block_id": "/page/5/Text/11"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A100 (quantization)",
+      "ev": {
+        "page": 25,
+        "section": "F.7. Hardware",
+        "quote": "All experiments were run on NVIDIA A100 GPUs except for the timing numbers, which were measured on a NVIDIA RTX 4090",
+        "bbox": [
+          53.7890625,
+          430.03125,
+          543.2296752929688,
+          476.46307373046875
+        ],
+        "block_id": "/page/24/Text/10"
+      }
+    },
+    {
+      "value": "NVIDIA RTX 4090 (timing/throughput)",
+      "ev": {
+        "page": 25,
+        "section": "F.7. Hardware",
+        "quote": "the timing numbers, which were measured on a NVIDIA RTX 4090 to see what was possible with the current state-of-the-art NVIDIA consumer GPU.",
+        "bbox": [
+          53.7890625,
+          430.03125,
+          543.2296752929688,
+          476.46307373046875
+        ],
+        "block_id": "/page/24/Text/10"
+      }
+    },
+    {
+      "value": "NVIDIA A6000 (comparison vs QuIP)",
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "Compared to QuIP's published throughput numbers (measured on an A6000), QuIP# on an A6000 achieves roughly twice the inference throughput at the same bitrate",
+        "bbox": [
+          305.40234375,
+          88.12042236328125,
+          543.0969848632812,
+          229.59002685546875
+        ],
+        "block_id": "/page/8/Text/5"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 3.21,
+      "baseline": "FP16 (HuggingFace Llama impl.)",
+      "hardware": "NVIDIA RTX 4090"
+    },
+    "ev": {
+      "page": 9,
+      "section": "6.3. Efficient Inference with QuIP#",
+      "quote": "| FP16 | 33.1 TOK/S | OOM | | QuIP# 2 BIT | 106.3 | 25.9 |",
+      "bbox": [
+        97.4650717163086,
+        664.282265625,
+        245.06291290283204,
+        713.983359375
+      ],
+      "block_id": "/page/8/Table/7",
+      "source_table": "Table 6"
+    }
+  },
+  "strengths": [
+    {
+      "value": "First PTQ method where 3-bit models scale better than theoretical lossless 4-bit models on Llama 2.",
+      "ev": {
+        "page": 8,
+        "section": "6.2. QuIP# Bit Scaling",
+        "quote": "on Llama 2, QuIP# 3 bit outperforms a theoretical lossless 4 bit model (FP16 at 4 bits). To the best of our knowledge, this is the first time a 3 bit PTQ method has outperformed a theoretical lossless 4 bit model",
+        "bbox": [
+          54.38671875,
+          459.03515625,
+          290.7376708984375,
+          566.3750762939453
+        ],
+        "block_id": "/page/7/Text/6"
+      }
+    },
+    {
+      "value": "Hardware-friendly E8P codebook fits in 1 KiB of GPU L1 cache, enabling >50% peak memory bandwidth at 2 bits.",
+      "ev": {
+        "page": 8,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "E8P only requires 1KiB and can be decoded from with very few (< 5) instructions per weight... QuIP# is able to achieve over 50% of peak memory bandwidth with a 2 bit model",
+        "bbox": [
+          305.40234375,
+          88.12042236328125,
+          543.0969848632812,
+          229.59002685546875
+        ],
+        "block_id": "/page/8/Text/9"
+      }
+    },
+    {
+      "value": "RHT incoherence processing improves the theoretical bound on incoherence and runs in O(n log n) time.",
+      "ev": {
+        "page": 4,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "(1) the theoretical bound on the incoherence parameter μ is improved; (2) the asymptotic cost of multiplying by the structured random orthogonal matrix is improved from Θ(n√n) to Θ(n log n)",
+        "bbox": [
+          54.0,
+          244.79296875,
+          291.0,
+          456.75
+        ],
+        "block_id": "/page/3/Text/5"
+      }
+    },
+    {
+      "value": "Fine-tuning step can quantize Llama 2 70B in roughly 100 GPU-hours, far cheaper than QAT (LLM-QAT 960 GPU-hours).",
+      "ev": {
+        "page": 4,
+        "section": "2.5. Fine-Tuning vs. Quantization Aware Training",
+        "quote": "QuIP# can quantize a 70B parameter model in a few hours on a single 8 GPU node while LLM-QAT needs 960 GPU-hours to generate training data alone.",
+        "bbox": [
+          54.0,
+          274.18359375,
+          291.75,
+          476.25
+        ],
+        "block_id": "/page/3/Text/5"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Method is restricted to weight-only quantization; activations stay in FP16.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we introduce QuIP#, a weight-only PTQ method",
+        "bbox": [
+          74.109375,
+          207.66796875,
+          271.5,
+          479.25
+        ],
+        "block_id": "/page/0/Text/4"
+      }
+    },
+    {
+      "value": "RHT requires power-of-2 dimensions or special factorisations; non-supported sizes need an alternative RFFT.",
+      "ev": {
+        "page": 4,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "While the Hadamard conjecture states that ∃ H_k ∀k, 4 | k, finding such Hadamard matrices is still an open problem... we present a Randomized Fast Fourier Transform (RFFT) incoherence processing algorithm",
+        "bbox": [
+          305.103515625,
+          402.0,
+          543.0,
+          567.31640625
+        ],
+        "block_id": "/page/3/Text/13"
+      }
+    },
+    {
+      "value": "Authors note QuIP# fast-inference design choices restrict quantization quality, so better quality is possible but slower.",
+      "ev": {
+        "page": 8,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "since these \"fast inference design choices\" essentially amount to restrictions on what can be done during quantization, it should be entirely possible to achieve even better quantization quality at the expense of inference speed.",
+        "bbox": [
+          305.40234375,
+          88.12042236328125,
+          543.0969848632812,
+          229.59002685546875
+        ],
+        "block_id": "/page/8/Text/9"
+      }
+    },
+    {
+      "value": "RFFT incoherence variant performs slightly worse than RHT in practice (Table 1).",
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "In practice, we find that the RFFT performs slightly worse than the RHT but still achieves strong results (Table 1).",
+        "bbox": [
+          53.7890625,
+          68.8359375,
+          291.0,
+          149.2734375
+        ],
+        "block_id": "/page/4/Text/1"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Does not quantize KV cache or activations, limiting end-to-end memory savings beyond weights.",
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we introduce QuIP#, a weight-only PTQ method",
+        "bbox": [
+          74.109375,
+          207.66796875,
+          271.5,
+          479.25
+        ],
+        "block_id": "/page/0/Text/4"
+      }
+    },
+    {
+      "value": "Safety, bias, refusal and toxicity behaviours of quantized models are not evaluated.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    {
+      "value": "Throughput results limited to NVIDIA data-center and consumer GPUs; no edge or mobile hardware tested.",
+      "ev": {
+        "page": 25,
+        "section": "F.7. Hardware",
+        "quote": "All experiments were run on NVIDIA A100 GPUs except for the timing numbers, which were measured on a NVIDIA RTX 4090",
+        "bbox": [
+          53.7890625,
+          430.03125,
+          543.2296752929688,
+          476.46307373046875
+        ],
+        "block_id": "/page/24/Text/10"
+      }
+    },
+    {
+      "value": "Long-context evaluation (e.g. LongBench, >=8K) is not reported; perplexity context capped at 4096.",
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Use more advanced multi-codebook quantization beyond residual vector quantization for higher bitrates.",
+      "ev": {
+        "page": 7,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "the QuIP# 3 and 4 bit results presented in this paper use residual vector quantization; one could potentially achieve better numbers with more advanced multi-codebook quantization approaches.",
+        "bbox": [
+          305.25,
+          584.71875,
+          543.0,
+          677.53125
+        ],
+        "block_id": "/page/6/Text/12"
+      }
+    },
+    {
+      "value": "Trade some inference speed for higher quantization quality by relaxing the cache-size constraints.",
+      "ev": {
+        "page": 8,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "it should be entirely possible to achieve even better quantization quality at the expense of inference speed.",
+        "bbox": [
+          305.40234375,
+          88.12042236328125,
+          543.0969848632812,
+          229.59002685546875
+        ],
+        "block_id": "/page/8/Text/9"
+      }
+    },
+    {
+      "value": "Conjectures that 2-bit models will scale better than 3-bit models in the near future, motivating sub-2-bit research.",
+      "ev": {
+        "page": 9,
+        "section": "7. Conclusion",
+        "quote": "Our results indicate that, in the near future, 2 bit models are likely to scale better than 3 bit ones.",
+        "bbox": [
+          305.103515625,
+          266.8359375,
+          543.2206420898438,
+          444.90008544921875
+        ],
+        "block_id": "/page/8/Text/11"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": true,
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "| QUIP# | 2 | **6.86** | **5.97** | **5.02** | **4.36** | **6.66** | **5.74** | **4.16** |",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/7/Table/2"
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": false,
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "Table 5. QuIP# generation throughput on a NVIDIA RTX 4090 using the FlashAttention library's Llama implementation.",
+        "bbox": [
+          54.89299774169922,
+          314.015625,
+          290.9275817871094,
+          357.04937744140625
+        ],
+        "block_id": "/page/8/Caption/3"
+      }
+    },
+    "evaluates_long_context": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 25,
+        "section": "F.8. Code and Prequantized Models",
+        "quote": "Our code is available at https://github.com/Cornell-RelaxML/quip-sharp and prequantized QuIP# models are available at https://huggingface.co/relaxml.",
+        "bbox": [
+          53.7890625,
+          508.921875,
+          543.0945434570312,
+          532.2030639648438
+        ],
+        "block_id": "/page/24/Text/12"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": false,
+      "ev": {
+        "page": 25,
+        "section": "G. Example Generation",
+        "quote": "Below are some example generations from Llama 2 70B chat quantized with QuIP# to 2 bits, truncated to 256 tokens.",
+        "bbox": [
+          53.7890625,
+          569.25,
+          527.8287353515625,
+          580.1410522460938
+        ],
+        "block_id": "/page/24/Text/14"
+      }
+    }
+  }
+}

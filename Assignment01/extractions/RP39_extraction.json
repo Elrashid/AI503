@@ -1,0 +1,1052 @@
+{
+  "rp_id": "RP39",
+  "year": {
+    "value": 2023,
+    "ev": {
+      "page": 1,
+      "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+      "quote": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+      "bbox": [
+        107.578125,
+        80.2540283203125,
+        470.79046630859375,
+        117.3944091796875
+      ],
+      "block_id": "/page/0/SectionHeader/2"
+    }
+  },
+  "first_author": {
+    "value": "Ge",
+    "ev": {
+      "page": 1,
+      "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+      "quote": "Suyu Ge1^(∗) , Yunan Zhang2^(∗) , Liyuan Liu2^(∗) , Minjia Zhang^(2) , Jiawei Han^(1) , Jianfeng Gao^(2)",
+      "bbox": [
+        110.865234375,
+        135.17828369140625,
+        479.1531066894531,
+        180.2109375
+      ],
+      "block_id": "/page/0/Text/3"
+    }
+  },
+  "authors": [
+    {
+      "value": "Suyu Ge",
+      "ev": {
+        "page": 1,
+        "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+        "quote": "Suyu Ge1^(∗) , Yunan Zhang2^(∗) , Liyuan Liu2^(∗)",
+        "bbox": [
+          110.865234375,
+          135.17828369140625,
+          479.1531066894531,
+          180.2109375
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Yunan Zhang",
+      "ev": {
+        "page": 1,
+        "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+        "quote": "Yunan Zhang2^(∗) , Liyuan Liu2^(∗) , Minjia Zhang^(2)",
+        "bbox": [
+          110.865234375,
+          135.17828369140625,
+          479.1531066894531,
+          180.2109375
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Liyuan Liu",
+      "ev": {
+        "page": 1,
+        "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+        "quote": "Liyuan Liu2^(∗) , Minjia Zhang^(2) , Jiawei Han^(1)",
+        "bbox": [
+          110.865234375,
+          135.17828369140625,
+          479.1531066894531,
+          180.2109375
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Minjia Zhang",
+      "ev": {
+        "page": 1,
+        "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+        "quote": "Minjia Zhang^(2) , Jiawei Han^(1) , Jianfeng Gao^(2)",
+        "bbox": [
+          110.865234375,
+          135.17828369140625,
+          479.1531066894531,
+          180.2109375
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Jiawei Han",
+      "ev": {
+        "page": 1,
+        "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+        "quote": "Jiawei Han^(1) , Jianfeng Gao^(2) ^(1)University of Illinois Urbana-Champaign",
+        "bbox": [
+          110.865234375,
+          135.17828369140625,
+          479.1531066894531,
+          180.2109375
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    },
+    {
+      "value": "Jianfeng Gao",
+      "ev": {
+        "page": 1,
+        "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+        "quote": "Jianfeng Gao^(2) ^(1)University of Illinois Urbana-Champaign, ^(2)Microsoft",
+        "bbox": [
+          110.865234375,
+          135.17828369140625,
+          479.1531066894531,
+          180.2109375
+        ],
+        "block_id": "/page/0/Text/3"
+      }
+    }
+  ],
+  "title": {
+    "value": "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs",
+    "ev": {
+      "page": 1,
+      "section": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+      "quote": "MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS",
+      "bbox": [
+        107.578125,
+        80.2540283203125,
+        470.79046630859375,
+        117.3944091796875
+      ],
+      "block_id": "/page/0/SectionHeader/2"
+    }
+  },
+  "venue": {
+    "value": "ICLR 2024 (arXiv preprint 2023)",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "doi": {
+    "value": "arXiv:2310.01801",
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "contribution": {
+    "value": "FastGen is a plug-and-play adaptive KV cache compression method that profiles per-head attention structures and applies tailored eviction policies (special tokens, punctuation, locality, frequency) to reduce LLM inference memory without fine-tuning.",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "we introduce adaptive KV cache compression, a plug-and-play method that reduces the memory footprint of generative inference for Large Language Models (LLMs)",
+      "bbox": [
+        141.943359375,
+        232.41796875,
+        468.13873291015625,
+        385.9657897949219
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "datasets": [
+    {
+      "value": "GSM8k",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we choose 4 different tasks, including HumanEval (Chen et al., 2021), GSM8k (Cobbe et al., 2021), NQ (Kwiatkowski et al., 2019) and TQA",
+        "bbox": [
+          106.5,
+          543.7265625,
+          506.25,
+          630.75
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "HumanEval",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we choose 4 different tasks, including HumanEval (Chen et al., 2021), GSM8k (Cobbe et al., 2021)",
+        "bbox": [
+          106.5,
+          543.7265625,
+          506.25,
+          630.75
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "Natural Questions (NQ)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "NQ (Kwiatkowski et al., 2019) and TQA (Kembhavi et al., 2017)",
+        "bbox": [
+          106.5,
+          543.7265625,
+          506.25,
+          630.75
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "TQA (Textbook Question Answering)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "TQA (Kembhavi et al., 2017) to evaluate models' abilities on different domains (code, math, question answering and reading comprehension)",
+        "bbox": [
+          106.5,
+          543.7265625,
+          506.25,
+          630.75
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "AlpacaEval",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "We evaluate the instruction finetuned LLaMa model on the instruction tuning benchmark AlpacaEval (Li et al., 2023), which consists of 805 question prompts",
+        "bbox": [
+          106.5,
+          543.7265625,
+          506.25,
+          630.75
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "LIMA (instruction-tuning data)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "the fine-tuned variants are trained on LIMA<sup>1</sup> data (Zhou et al., 2023)",
+        "bbox": [
+          106.681640625,
+          464.0625,
+          506.25,
+          529.03125
+        ],
+        "block_id": "/page/6/Text/3"
+      }
+    },
+    {
+      "value": "Open Assistant (instruction-tuning data)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "and Open Assistant<sup>2</sup> (Köpf et al., 2023) data",
+        "bbox": [
+          106.681640625,
+          464.0625,
+          506.25,
+          529.03125
+        ],
+        "block_id": "/page/6/Text/3"
+      }
+    }
+  ],
+  "data_size": {
+    "value": "AlpacaEval: 805 prompts; profiling and analysis on Llama 1-65B with random GSM8k samples; latency measured at sequence lengths up to 16384 tokens",
+    "ev": {
+      "page": 7,
+      "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+      "quote": "AlpacaEval (Li et al., 2023), which consists of 805 question prompts from diverse domains",
+      "bbox": [
+        106.5,
+        543.7265625,
+        506.25,
+        630.75
+      ],
+      "block_id": "/page/6/Text/4"
+    }
+  },
+  "models_used": [
+    {
+      "value": "LLaMA 1-7B",
+      "ev": {
+        "page": 6,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "We conduct experiments with both Llama 1 (Touvron et al., 2023a) and its fine-tuned variants, with model sizes ranging from 7B to 65B",
+        "bbox": [
+          106.5,
+          710.7890625,
+          506.25,
+          731.25
+        ],
+        "block_id": "/page/5/Text/12"
+      }
+    },
+    {
+      "value": "LLaMA 1-13B",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13B | 6.7Gb | 3.1Gb | 53.4% | 91% | 32.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LLaMA 1-30B",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "30B | 13.1Gb | 5.7Gb | 56.7% | 93% | 37.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LLaMA 1-65B",
+      "ev": {
+        "page": 5,
+        "section": "4 DIVERSITY AND STABILITY OF ATTENTION STRUCTURES",
+        "quote": "We do so by analyzing the attention scores of Llama 1 65B using random samples from GSM8k",
+        "bbox": [
+          106.5,
+          327.1640625,
+          504.75,
+          380.25
+        ],
+        "block_id": "/page/4/Text/7"
+      }
+    },
+    {
+      "value": "Fine-tuned LLaMA 1 (LIMA + Open Assistant) at 7B/13B/30B/65B",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we fine-tuned the Llama 1 model with open-sourced instruction-tuning datasets. Specifically, the fine-tuned variants are trained on LIMA<sup>1</sup> data",
+        "bbox": [
+          106.681640625,
+          464.0625,
+          506.25,
+          529.03125
+        ],
+        "block_id": "/page/6/Text/3"
+      }
+    }
+  ],
+  "eval_metrics": [
+    {
+      "value": "F1 score (GSM8k, NQ, TQA)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "We calculate F1 scores for GSM8k, NQ and TQA, and use the code execution Pass@1 rate for HumanEval",
+        "bbox": [
+          105.78515625,
+          645.046875,
+          506.25,
+          699.1875
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "Pass@1 (HumanEval)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "use the code execution Pass@1 rate for HumanEval",
+        "bbox": [
+          105.78515625,
+          645.046875,
+          506.25,
+          699.1875
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "GPT-4 win rate (AlpacaEval pairwise)",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we follow previous work (Zhou et al., 2023; Touvron et al., 2023b) to use GPT4 as an evaluator for pair-wise comparison between two different model generations",
+        "bbox": [
+          105.78515625,
+          645.046875,
+          506.25,
+          699.1875
+        ],
+        "block_id": "/page/6/Text/5"
+      }
+    },
+    {
+      "value": "KV cache memory footprint (GB)",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Memory Footprint Reduction Analysis",
+        "quote": "We report the KV cache memory footprint reduction in Table 1",
+        "bbox": [
+          106.5,
+          541.79296875,
+          505.5,
+          606.75
+        ],
+        "block_id": "/page/7/Text/6"
+      }
+    },
+    {
+      "value": "Pruned KV ratio (%)",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "FastGen can get as much as 44.9% pruned ratio on Llama 1-65B, compared to 16.9% pruned ratio on Llama 1-7B",
+        "bbox": [
+          106.3828125,
+          209.25,
+          505.5,
+          295.5
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "End-to-end latency (seconds)",
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "Table 2: End-to-end latency comparison on Llama 1-7B",
+        "bbox": [
+          190.951171875,
+          647.25,
+          418.5,
+          656.6484375
+        ],
+        "block_id": "/page/7/Caption/8",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": "Attention map recovery ratio T",
+      "ev": {
+        "page": 4,
+        "section": "3.3 MODEL PROFILING",
+        "quote": "FastGen is able to recover +95% of the attention map with +40% compression ratio for a 65B model",
+        "bbox": [
+          106.681640625,
+          384.01171875,
+          504.003662109375,
+          438.4938659667969
+        ],
+        "block_id": "/page/3/Text/8"
+      }
+    },
+    {
+      "value": "Profiling time / total generation time (%)",
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "the profiling time only accounts for a very small percentage of the total generation duration, up to 0.35% in our tested cases",
+        "bbox": [
+          106.98046875,
+          505.828125,
+          504.0032653808594,
+          538.3871154785156
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "key_results": [
+    {
+      "value": "FastGen recovers over 95% of attention scores while compressing 35% of the KV cache",
+      "ev": {
+        "page": 3,
+        "section": "1 INTRODUCTION",
+        "quote": "FastGen effectively performs KV cache compression with negligible generation quality loss (i.e., recover over 95% of attention scores with 35% cache compressed)",
+        "bbox": [
+          107.279296875,
+          112.1484375,
+          504.00335693359375,
+          165.9620361328125
+        ],
+        "block_id": "/page/2/Text/2"
+      }
+    },
+    {
+      "value": "On LLaMA 1-65B, FastGen prunes 44.9% of KV cache at win rate 45% vs 16.9% on LLaMA 1-7B at the same recovery ratio (95%)",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Memory Footprint Reduction Analysis",
+        "quote": "65B | 21.5Gb | 11.8Gb | 44.9% | 95% | 44.2% ... 7B | 4.3Gb | 2.6Gb | 39.8% | 95% | 37.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "LLaMA 1-65B KV cache memory drops from 21.5GB (Full) to 11.8GB (FastGen) at 95% recovery, a 45% memory reduction",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Memory Footprint Reduction Analysis",
+        "quote": "65B | 21.5Gb | 11.8Gb | 44.9% | 95% | 44.2%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": "End-to-end latency on LLaMA 1-7B (V100): up to 55.0% latency reduction over Hugging Face FP16 baseline at generation length 16k (799.14s to 359.83s, batch=1)",
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "we can achieve up to 55.0% latency reduction over HF with FastGen at a generation length of 16k",
+        "bbox": [
+          106.681640625,
+          187.9453125,
+          504.0033874511719,
+          308.4278259277344
+        ],
+        "block_id": "/page/8/Text/2"
+      }
+    },
+    {
+      "value": "Profiling overhead is at most 0.35% of total generation time and drops to 0.07% at generation length 1024",
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "the profiling time only accounts for a very small percentage of the total generation duration, up to 0.35% in our tested cases. Also, the overhead decreases as the generation length increases, dropping to 0.07% when the generation length comes to 1024",
+        "bbox": [
+          106.98046875,
+          505.828125,
+          504.0032653808594,
+          538.3871154785156
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "paper_type": {
+    "value": "method",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "we propose FastGen, which constructs the KV cache in an adaptive manner",
+      "bbox": [
+        141.943359375,
+        232.41796875,
+        468.13873291015625,
+        385.9657897949219
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "method_family": {
+    "value": "pruning",
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "evicting long-range contexts on attention heads emphasizing local contexts, discarding non-special tokens on attention heads centered on special tokens",
+      "bbox": [
+        141.943359375,
+        232.41796875,
+        468.13873291015625,
+        385.9657897949219
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "quantization_method_name": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "bit_widths_tested": [],
+  "quantization_target": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "granularity": {
+    "value": null,
+    "ev": {
+      "page": null,
+      "section": "not_found",
+      "quote": "",
+      "bbox": null,
+      "block_id": null
+    }
+  },
+  "training_free": {
+    "value": true,
+    "ev": {
+      "page": 1,
+      "section": "ABSTRACT",
+      "quote": "FastGen can be deployed without resource-intensive fine-tuning or re-training",
+      "bbox": [
+        141.943359375,
+        232.41796875,
+        468.13873291015625,
+        385.9657897949219
+      ],
+      "block_id": "/page/0/Text/5"
+    }
+  },
+  "hardware": [
+    {
+      "value": "NVIDIA A100 80GB (8 GPUs, main experiments)",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "Experiments are conducted on 8 NVIDIA A100 80GB GPUs",
+        "bbox": [
+          106.083984375,
+          83.91796875,
+          505.5,
+          195.0
+        ],
+        "block_id": "/page/7/Text/1"
+      }
+    },
+    {
+      "value": "NVIDIA V100 (latency measurements)",
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "All methods are tested on the same Nvidia V100 GPUs",
+        "bbox": [
+          106.3828125,
+          83.91796875,
+          504.00341796875,
+          181.9029541015625
+        ],
+        "block_id": "/page/8/Text/1"
+      }
+    }
+  ],
+  "speedup_claim": {
+    "value": {
+      "factor": 2.22,
+      "baseline": "Hugging Face Accelerate FP16 (HF) at batch=1, gen length=16k",
+      "hardware": "NVIDIA V100 GPU"
+    },
+    "ev": {
+      "page": 9,
+      "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+      "quote": "we can achieve up to 55.0% latency reduction over HF with FastGen at a generation length of 16k",
+      "bbox": [
+        106.681640625,
+        187.9453125,
+        504.0033874511719,
+        308.4278259277344
+      ],
+      "block_id": "/page/8/Text/2",
+      "source_table": "Table 2"
+    }
+  },
+  "strengths": [
+    {
+      "value": "Plug-and-play: requires no fine-tuning or retraining, making it cheap to deploy on extra-large LLMs.",
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "FastGen can be deployed without resource-intensive fine-tuning or re-training",
+        "bbox": [
+          141.943359375,
+          232.41796875,
+          468.13873291015625,
+          385.9657897949219
+        ],
+        "block_id": "/page/0/Text/5"
+      }
+    },
+    {
+      "value": "Adapts compression policy per attention head, beating fixed-policy baselines like H2O and Scissorhands at matched compression.",
+      "ev": {
+        "page": 3,
+        "section": "1 INTRODUCTION",
+        "quote": "as to the 30b model in Figure 2, FastGen (50% cache compressed) surpasses all fixed KV compression methods (15% cache compressed)",
+        "bbox": [
+          107.279296875,
+          112.1484375,
+          504.00335693359375,
+          165.9620361328125
+        ],
+        "block_id": "/page/2/Text/2"
+      }
+    },
+    {
+      "value": "Compression ratio scales with model size: 65B saves about 45% memory while 7B saves about 20% at the same recovery target.",
+      "ev": {
+        "page": 8,
+        "section": "5.2 Memory Footprint Reduction Analysis",
+        "quote": "FastGen can achieve ∼40% memory reduction in Llama 1-65B, ∼30% in Llama 1-30B, ∼20% in Llama 1-13B and Llama 1-7B",
+        "bbox": [
+          106.5,
+          541.79296875,
+          505.5,
+          606.75
+        ],
+        "block_id": "/page/7/Text/6"
+      }
+    },
+    {
+      "value": "Profiling overhead is negligible (<=0.35% of total generation time and 0.78% extra memory for cumulative attention scores).",
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "the profiling time only accounts for a very small percentage of the total generation duration, up to 0.35% in our tested cases",
+        "bbox": [
+          106.98046875,
+          505.828125,
+          504.0032653808594,
+          538.3871154785156
+        ],
+        "block_id": "/page/8/Text/7"
+      }
+    }
+  ],
+  "weaknesses": [
+    {
+      "value": "Does not integrate with grouped-query attention (so LLaMA 2-chat is excluded), limiting modern model coverage.",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we do not choose the open-sourced Llama 2-chat (Touvron et al., 2023b) model due to its grouped-query attention techniques",
+        "bbox": [
+          106.681640625,
+          464.0625,
+          506.25,
+          529.03125
+        ],
+        "block_id": "/page/6/Text/3"
+      }
+    },
+    {
+      "value": "Custom sparsity kernel is not yet competitive with full-stack systems like DeepSpeed and needs further engineering.",
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "there is still much room to further improve FastGen by polishing the sparsity kernel. We leave this unique research and engineering challenge to future works",
+        "bbox": [
+          106.681640625,
+          187.9453125,
+          504.0033874511719,
+          308.4278259277344
+        ],
+        "block_id": "/page/8/Text/2"
+      }
+    },
+    {
+      "value": "Compression ratio for smaller models (7B/13B) is modest (about 16-20%) before quality drops.",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "FastGen can get as much as 44.9% pruned ratio on Llama 1-65B, compared to 16.9% pruned ratio on Llama 1-7B",
+        "bbox": [
+          106.3828125,
+          209.25,
+          505.5,
+          295.5
+        ],
+        "block_id": "/page/7/Text/2"
+      }
+    },
+    {
+      "value": "Method assumes attention structure is stable across decoding steps; deviations could break the one-shot profiling assumption.",
+      "ev": {
+        "page": 4,
+        "section": "3.3 MODEL PROFILING",
+        "quote": "our method assumes that the structure of the attention map for a head is stable through the generation process",
+        "bbox": [
+          106.681640625,
+          445.46826171875,
+          504.0034484863281,
+          499.2658386230469
+        ],
+        "block_id": "/page/3/Text/9"
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "value": "Tests only on data-centre GPUs (A100, V100); no edge or mobile deployment is evaluated.",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "Experiments are conducted on 8 NVIDIA A100 80GB GPUs",
+        "bbox": [
+          106.083984375,
+          83.91796875,
+          505.5,
+          195.0
+        ],
+        "block_id": "/page/7/Text/1"
+      }
+    },
+    {
+      "value": "Safety, jailbreak, refusal, bias, and toxicity behaviour after compression are not measured.",
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we choose 4 different tasks, including HumanEval (Chen et al., 2021), GSM8k (Cobbe et al., 2021), NQ (Kwiatkowski et al., 2019) and TQA",
+        "bbox": [
+          106.5,
+          543.7265625,
+          506.25,
+          630.75
+        ],
+        "block_id": "/page/6/Text/4"
+      }
+    },
+    {
+      "value": "Energy or power consumption is not reported; only latency and memory.",
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "we record the total duration in seconds, measured from the start of prompt encoding, until the end of generation as the end-to-end latency",
+        "bbox": [
+          106.3828125,
+          83.91796875,
+          504.00341796875,
+          181.9029541015625
+        ],
+        "block_id": "/page/8/Text/1"
+      }
+    },
+    {
+      "value": "No statistical significance testing (no error bars, seeds, or confidence intervals) reported on results.",
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "For generation, we use nucleus sampling (Holtzman et al., 2019) with temperature T = 0.6, p = 0.9",
+        "bbox": [
+          106.083984375,
+          83.91796875,
+          505.5,
+          195.0
+        ],
+        "block_id": "/page/7/Text/1"
+      }
+    }
+  ],
+  "future_work_stated": [
+    {
+      "value": "Combine FastGen with quantization and distillation as orthogonal compression techniques.",
+      "ev": {
+        "page": 9,
+        "section": "6 CONCLUSION",
+        "quote": "Areas for future explorations include combining FastGen with other model compression techniques, such as quantization and distillation",
+        "bbox": [
+          106.681640625,
+          675.984375,
+          504.0032653808594,
+          729.880054473877
+        ],
+        "block_id": "/page/8/Text/10"
+      }
+    },
+    {
+      "value": "Integrate FastGen with grouped-query attention used in LLaMA 2-chat and similar modern architectures.",
+      "ev": {
+        "page": 9,
+        "section": "6 CONCLUSION",
+        "quote": "and other efficient attention architectures, such as grouped-query attention",
+        "bbox": [
+          106.681640625,
+          675.984375,
+          504.0032653808594,
+          729.880054473877
+        ],
+        "block_id": "/page/8/Text/10"
+      }
+    },
+    {
+      "value": "Polish the custom sparsity kernel to close the gap with optimised inference systems like DeepSpeed.",
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "there is still much room to further improve FastGen by polishing the sparsity kernel. We leave this unique research and engineering challenge to future works",
+        "bbox": [
+          106.681640625,
+          187.9453125,
+          504.0033874511719,
+          308.4278259277344
+        ],
+        "block_id": "/page/8/Text/2"
+      }
+    }
+  ],
+  "gap_signals": {
+    "reports_energy_consumption": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_statistical_significance": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_on_edge_hardware": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_safety_after_quantization": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "tests_below_4_bit": {
+      "value": false,
+      "ev": {
+        "page": null,
+        "section": "absence",
+        "quote": "",
+        "bbox": null,
+        "block_id": null
+      }
+    },
+    "reports_real_latency_not_just_throughput": {
+      "value": true,
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "we record the total duration in seconds, measured from the start of prompt encoding, until the end of generation as the end-to-end latency",
+        "bbox": [
+          106.3828125,
+          83.91796875,
+          504.00341796875,
+          181.9029541015625
+        ],
+        "block_id": "/page/8/Text/1"
+      }
+    },
+    "evaluates_long_context": {
+      "value": true,
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "[prompt len, gen len] | [32,512] | [32,2048] | [32,8192] | [32,16384]",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    "releases_code": {
+      "value": true,
+      "ev": {
+        "page": 1,
+        "section": "1 INTRODUCTION",
+        "quote": "Code is available is at https://github.com/machilusZ/FastGen",
+        "bbox": [
+          118.037109375,
+          721.303840637207,
+          504.000244140625,
+          732.0283699035645
+        ],
+        "block_id": "/page/0/Footnote/12"
+      }
+    },
+    "evaluates_instruction_tuned_models": {
+      "value": true,
+      "ev": {
+        "page": 7,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "we fine-tuned the Llama 1 model with open-sourced instruction-tuning datasets. Specifically, the fine-tuned variants are trained on LIMA",
+        "bbox": [
+          106.681640625,
+          464.0625,
+          506.25,
+          529.03125
+        ],
+        "block_id": "/page/6/Text/3"
+      }
+    }
+  }
+}

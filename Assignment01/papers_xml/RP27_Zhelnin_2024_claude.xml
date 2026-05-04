@@ -1,0 +1,1040 @@
+<paper source_file="RP27_Zhelnin_2024" title="GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs" total_pages="16" figures="4" figures_with_images="4">
+
+When answering questions about this paper:
+- Cite the page number and section from the XML tags
+- Distinguish AUTHOR findings (source="author") from CITED references (source="cited")
+- For tables, reference by caption (e.g., "Table 1")
+- If unsure whether a claim is the authors' own, check the source attribute
+- This paper has 4 figure images saved as separate files.
+  When a figure is referenced, look at the image file listed in the image="" attribute.
+  Figures may contain charts, graphs, or diagrams with data not in the text.
+
+<page number="1">
+
+<heading page="1" section="GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs" source="author" id="/page/0/SectionHeader/1" level="1">
+# GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs
+</heading>
+
+<text page="1" section="GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs" source="author" id="/page/0/Text/2">
+Maxim Zhelnin♣ ^(1) , Viktor Moskvoretskii♣ 1,3, Egor Shvetsov^(1) , Egor Venediktov, Mariya Krylova, Aleksandr Zuev, Evgeny Burnaev 1,2
+</text>
+
+<text page="1" section="GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs" source="author" id="/page/0/Text/3">
+1 Skolkovo Institute of Science and Technology ^(2) Artificial Intelligence Research Institute ^(3) HSE University
+</text>
+
+<text page="1" section="GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs" source="author" id="/page/0/Text/4">
+Correspondence: [m.zhelnin@skol.tech](mailto: m.zhelnin@skol.tech) ♣ indicates equal contribution.
+</text>
+
+
+<heading page="1" section="Abstract" source="author" id="/page/0/SectionHeader/5" level="2">
+## Abstract
+</heading>
+
+<text page="1" section="Abstract" source="author" id="/page/0/Text/6">
+Parameter Efficient Fine-Tuning (PEFT) methods have gained popularity and democratized the usage of Large Language Models (LLMs). Recent studies have shown that a small subset of weights significantly impacts performance. Based on this observation, we introduce a novel PEFT method, called Gaussian noise Injected Fine Tuning of Salient Weights (GIFT-SW). Our method updates only salient columns, while injecting Gaussian noise into non-salient ones. To identify these columns, we developed a generalized sensitivity metric that extends and unifies metrics from previous studies. Experiments with LLaMA models demonstrate that GIFT-SW outperforms full fine-tuning and modern PEFT methods under the same computational budget. Moreover, GIFT-SW offers practical advantages to recover performance of models subjected to mixed-precision quantization with keeping salient weights in full precision. Code is available in [our repository.](https://github.com/On-Point-RND/GIFT_SW)
+</text>
+
+
+<heading page="1" section="1 Introduction" source="author" id="/page/0/SectionHeader/7" level="2">
+## 1 Introduction
+</heading>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/8">
+Modern LLMs demonstrate remarkable generalization capabilities on unseen tasks. However, finetuning remains crucial to enhance these models performance or to restore the performance after compression techniques like quantization [(Dettmers](#page-9-0) [et al.,](#page-9-0) [2024;](#page-9-0) [Moskvoretskii et al.,](#page-10-0) [2024)](#page-10-0), pruning [(Frantar and Alistarh,](#page-10-1) [2023;](#page-10-1) [Kim et al.,](#page-10-2) [2023)](#page-10-2), or tensor decomposition have been applied. Given the large scale of modern LLMs, fine-tuning all parameters can be computationally and memoryintensive. To overcome this challenge, Parameter Efficient Fine-Tuning schemes have been developed, aimed to improve model performance while using limited computational and memory resources.
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/9">
+To date, PEFT methods have not matched the accuracy of full fine-tuning [(Nikdan et al.,](#page-10-3) [2024)](#page-10-3),
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/10">
+highlighting the need for new approaches that can close this gap while still minimizing resource use. Additionally, most PEFT methods involve adding extra parameters, which increases computational demands.
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/11">
+To address those issues and enhance the performance of efficiently trained LLMs, we introduce a novel PEFT method, GIFT-SW. This approach focuses on updating a small subset of salient weights while injecting noise into the non-salient weights. The development of this method is grounded in observations from previous studies and the related questions they raise, which we aim to answer:
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/12">
+Previous research has shown that there is a small subset of salient weights which can significantly affect the effectiveness of post-training quantization (PTQ) [(Dettmers et al.,](#page-9-1) [2022,](#page-9-1) [2023;](#page-9-2) [Kim et al.,](#page-10-2) [2023)](#page-10-2) and pruning techniques [(Yin et al.,](#page-11-0) [2023;](#page-11-0) [Frantar and Alistarh,](#page-10-1) [2023;](#page-10-1) [Sun et al.,](#page-11-1) [2023)](#page-11-1). Moreover, [Gurnee et al.](#page-10-4) identified a group of "universal neurons" that are critical to a model's functionality, emphasizing the importance of selecting and updating these salient weights. *Question 1: Does* *updating a small subset of salient weights is suffi**cient to adjust the model?*
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/13">
+Recent studies have demonstrated that Perturbed Gradient Descent (PGD), with noise injections applied both before and after the gradient step, can stabilize convergence and help prevent overfitting [(Poole et al.,](#page-10-5) [2014;](#page-10-5) [Zhu et al.,](#page-11-2) [2018;](#page-11-2) [Jin et al.,](#page-10-6) [2021)](#page-10-6). *Question 2: Does Injecting Noise helps conver**gence?*
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/14">
+PGD is commonly employed to enhance model robustness by approximating the quantization process [(Shvetsov et al.,](#page-11-3) [2022;](#page-11-3) [Shin et al.,](#page-11-4) [2023;](#page-11-4) [Défos](#page-9-3)[sez et al.,](#page-9-3) [2021)](#page-9-3). This increased robustness can aid in maintaining the quality of the quantized model. *Question 3: Does injecting noise helps robust**ness?*
+</text>
+
+<text page="1" section="1 Introduction" source="author" id="/page/0/Text/15">
+Selecting salient weights is a significant challenge, particularly in quantization and pruning, and
+</text>
+
+</page>
+<page number="2">
+<figure_group page="2" section="1 Introduction" source="author" id="/page/1/FigureGroup/167">
+<figure page="2" section="1 Introduction" source="author" id="/page/1/Figure/0" image="RP27_Zhelnin_2024_fig01.jpg">[FIGURE: see RP27_Zhelnin_2024_fig01.jpg]</figure>
+<caption page="2" section="1 Introduction" source="author" id="/page/1/Caption/1">
+Figure 1: Mean performance of different fine-tuning approaches for LLaMA models with scaling data budget. GIFT-SW shows superior performance with nearly all data budgets, also being as stable as full fine-tuning.
+</caption>
+</figure_group>
+
+<text page="2" section="1 Introduction" source="author" id="/page/1/Text/2">
+it is central to our method. In our paper, we derive a general formulation for all previously established saliency metrics and present experiments to compare their effectiveness.
+</text>
+
+<text page="2" section="1 Introduction" source="author" id="/page/1/Text/3">
+The main contributions of our work can be summarized as follows:
+</text>
+
+<list page="2" section="1 Introduction" source="author" id="/page/1/ListGroup/168">
+- We introduce a novel PEFT method for pretrained and quantized LLMs, called GIFT-SW.
+    It is designed to fine-tune weights in salient columns while injecting Gaussian noise into non-salient weights, which are kept frozen during training.
+- We generalize sensitivity metrics for identifying salient columns in pre-trained LLMs. We compare various novel and existing instances of the proposed general form and identify a new metric, which on average outperform previously studied in the literature metrics(Xiao et al., 2023; Lee et al., 2024).
+- Experiments demonstrate that GIFT-SW outperforms modern PEFT methods and full fine-tuning baselines across most zero-shot tasks.
+   GIFT-SW for LLaMA models achieve comparable accuracy to the corresponding state-of-the-art TÜLU2 models, despite fine-tuning only 3% of the parameters and utilizing ten times less computational resources.
+- We demonstrate that GIFT-SW is more stable with respect to a size of training set compared with low-rank adapters.
+</list>
+
+
+<heading page="2" section="2 Related Work" source="cited" id="/page/1/SectionHeader/8" level="2">
+## 2 Related Work
+</heading>
+
+
+<heading page="2" section="2.1 Parameter efficient fine-tuning of LLM" source="author" id="/page/1/SectionHeader/9" level="3">
+### 2.1 Parameter efficient fine-tuning of LLM
+</heading>
+
+<text page="2" section="2.1 Parameter efficient fine-tuning of LLM" source="author" id="/page/1/Text/10">
+One of the most popular method with high efficiency is LoRA (Hu et al., 2021), which trains the low-rank adapters. Recent modifications to the method aim to improve the initialization of the adapters (Liu et al., 2024) and enhance the low-rank representation of pre-trained weights by adding sparse adapters (Nikdan et al., 2024). Another improvement of the learning capacity of LoRA is given by DoRA (Liu et al., 2024), which fine-tunes magnitude and direction components of the pre-trained weights. This method achieves considerable performance across various fine-tuning tasks.
+</text>
+
+
+<heading page="2" section="2.2 Salient Weights in LLMs" source="author" id="/page/1/SectionHeader/11" level="3">
+### 2.2 Salient Weights in LLMs
+</heading>
+
+<text page="2" section="2.2 Salient Weights in LLMs" source="author" id="/page/1/Text/12">
+The identification of salient weights&lt;sup&gt;1&lt;/sup&gt; is one of the main problems in weight pruning. Recently, several approaches have been proposed to identify such weights in LLMs, including SparseGPT (Frantar and Alistarh, 2023), Wanda (Sun et al., 2023), and OWL (Yin et al., 2023).
+</text>
+
+<text page="2" section="2.2 Salient Weights in LLMs" source="author" id="/page/1/Text/13">
+Dettmers et al.'s (2022) demonstrated that a small subset of outliers in input activations has a substantial impact on LLM performance, highlighting the relationship between the activation outliers and the salient weights. Many subsequent Post-Training Quantization (PTQ) methods used similar or identical pruning metrics to identify these salient weights (Dettmers et al., 2023; Xiao et al., 2023; Lee et al., 2024).
+</text>
+
+<footnote page="2" section="2.2 Salient Weights in LLMs" source="author" id="/page/1/Footnote/14">
+^(&amp;)lt;sup&gt;1&lt;/sup&gt;In our work, we use the terms **salient weights** and weight **outliers** interchangeably.
+</footnote>
+
+</page>
+<page number="3">
+<text page="3" section="2.2 Salient Weights in LLMs" source="author" id="/page/2/Text/0">
+In our work, we generalize the identification metrics for salient weights by considering metrics from both the literature on pruning and quantization.
+</text>
+
+
+<heading page="3" section="2.3 Structured and Non-structured Salient Weights selection" source="author" id="/page/2/SectionHeader/1" level="3">
+### 2.3 Structured and Non-structured Salient Weights selection
+</heading>
+
+<text page="3" section="2.3 Structured and Non-structured Salient Weights selection" source="author" id="/page/2/Text/2">
+Since salient weights account for only a few percent of all the weights, a straightforward approach to preserve them would be to store unstructured salient weights in a sparse matrix. (Dettmers et al., 2023) demonstrated that this approach is computationally reasonable and leads to performance improvement. On the other hand, Xiao et al.'s (2023) revealed that outliers in activations are confined to a small fraction of weight channels, which was incorporated into SmoothQuant, where outlier columns are identified using a small calibration dataset. This concept is further developed in OUIK (Ashkboos et al., 2023), where outlier columns are retained in full precision, while other columns are quantized using GPTQ (Frantar et al., 2022). A similar procedure is used in OWQ (Lee et al., 2024), but with an OBD-based metric (LeCun et al., 1989).
+</text>
+
+<text page="3" section="2.3 Structured and Non-structured Salient Weights selection" source="author" id="/page/2/Text/3">
+Due to the lack of results in the literature on which approach brings better results, structured or unstructured salient weight selection, and motivated by computational efficiency mentioned in (Ashkboos et al., 2023), in our work we follow the second line of work with structured column-wise salient weight selection.
+</text>
+
+
+<heading page="3" section="2.4 Noise Injections" source="author" id="/page/2/SectionHeader/4" level="3">
+### 2.4 Noise Injections
+</heading>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/5">
+In this section, we briefly describe Gaussian Noise Injections (GNI) and its benefits. Then, we show that the approximation of quantization noise and GNI are identical. Therefore, GNI can also benefit further model quantization. Therefor, to examine our third question, we sample noise relative to quantization levels, leaving other sampling options for future work.
+</text>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/6">
+Gaussian Noise Injections (GNI). Perturbed Gradient Descent (PGD) is a family of methods that involve adding or multiplying weights with samples from some random distribution, during an optimization procedure. Gaussian noise injection (GNI) after the gradient step helps model to escape saddle points efficiently in non-convex optimization (Jin et al., 2021). However, when Gaussian noise is injected before the gradient step, it helps model to escape from the spurious local optimum (Zhu et al., 2018).
+</text>
+
+<equation page="3" section="2.4 Noise Injections" source="author" id="/page/2/Equation/7">
+$$
+\theta_{t+1} \leftarrow \theta_t - \tau(\nabla f(\theta_t) + \xi) (1)
+$$
+</equation>
+
+<equation page="3" section="2.4 Noise Injections" source="author" id="/page/2/Equation/8">
+$$
+\theta_{t+1} \leftarrow \theta_t - \tau(\nabla f(\theta_t + \xi)) (2)
+$$
+</equation>
+
+<equation page="3" section="2.4 Noise Injections" source="author" id="/page/2/Equation/9">
+$$
+\xi \sim \mathcal{N}(\mu, \sigma^2) (3)
+$$
+</equation>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/10">
+Moreover, practical benefits of noise injections are well documented in the literature and often can be discussed as regularization techniques (Bishop, 1995; Srivastava et al., 2014; Camuto et al., 2020), methods to prompt adversarial robustenss (Panda and Roy, 2021) and to be used for data agumentation (Moreno-Barea et al., 2018).
+</text>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/11">
+In our work we use GNI before evaluating the gradient. For this scenario, Orvieto et al. (2023) proposed to add noise only to one layer at training iteration to avoid variance explosion. It was empirically and theoretically demonstrated that GNI serves as a regularization. Liu et al. (2023) study fine-tuning of pre-trained Language Models with GNI. Authors propose first to learn layer-wise variance parameters for noise distributions and then to fine-tune the model by adding noise to all the weights. The obtained results showed that the approach is superior to independent layer-wise noise injections.
+</text>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/12">
+Quantization Noise Injections (QNI). Quantization aware training (QAT) of networks is applied to mitigate their accuracy degradation after quantization. However, uniform quantization ^2Q is a non-differentiable operation. For simplicity, it can be expressed as a composition of scaling and rounding operations, Q(\mathbf{W}) = \Delta \lfloor \frac{\mathbf{W}}{\Delta} \rfloor. In terms of QAT operation Q can be efficiently approximated with quantization noise \Omega such that \Omega = Q(\mathbf{W}) - \mathbf{W} (Défossez et al., 2021; Shvetsov et al., 2022; Shin et al., 2023). Thus, training models with QNI is exactly the same as employing PGD with GNI before evaluating the gradient.
+</text>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/13">
+Under some assumptions the noise \Omega induced by uniform quantization can often be modeled by an additive noise that is uniformly distributed, uncorrelated with the input signal, and has a white spectrum (Widrow et al., 1996). However in practice, the conditions are often not satisfied. Therefore employing Gaussian distribution \mathcal{N}(\mu, \sigma^2) for \Omega typically yields improved outcomes (Défossez et al., 2021; Shvetsov et al., 2022).
+</text>
+
+<text page="3" section="2.4 Noise Injections" source="author" id="/page/2/Text/14">
+Although GNI is beneficial for model training there is no clear answer on how to choose noise
+</text>
+
+<footnote page="3" section="2.4 Noise Injections" source="author" id="/page/2/Footnote/15">
+^(&amp;)lt;sup&gt;2&lt;/sup&gt;For the reader not familiar with uniform quantization, we discuss it in more details in Section A.
+</footnote>
+
+</page>
+<page number="4">
+<text page="4" section="2.4 Noise Injections" source="author" id="/page/3/Text/0">
+parameters. [Liu et al.](#page-10-15) [(2023)](#page-10-15) determine noise parameters such that KL divergence between original and perturbed weights is minimized. [Shin et al.](#page-11-4) [(2023)](#page-11-4) identify parameters of the Gaussian distribution to resemble the weight distribution with a scale proportional to quantization step.
+</text>
+
+
+<heading page="4" section="2.5 Straight Through Estimator" source="author" id="/page/3/SectionHeader/1" level="3">
+### 2.5 Straight Through Estimator
+</heading>
+
+<text page="4" section="2.5 Straight Through Estimator" source="author" id="/page/3/Text/2">
+The most popular QAT technique incorporating quantization operation into the traning process is Straight Through Estimation (STE)[3](#page-3-0) [(Bengio](#page-9-7) [et al.,](#page-9-7) [2013;](#page-9-7) [Shang et al.,](#page-11-8) [2023)](#page-11-8), which basically reparameterizes gradients. However, [Défossez et al.'](#page-9-3)s [(2021)](#page-9-3) demonstrated that STE has some disadvantages compared with QNI[4](#page-3-1) , as STE is biased and may cause weight oscillation between quantization steps. [Shin et al.'](#page-11-4)s [(2023)](#page-11-4) demonstrated that pretraining models for the following quantization with QNI instead of STE results in better performance. More technical details are provided in Section [C.](#page-13-0)
+</text>
+
+
+<heading page="4" section="3 Method" source="author" id="/page/3/SectionHeader/3" level="2">
+## 3 Method
+</heading>
+
+<text page="4" section="3 Method" source="author" id="/page/3/Text/4">
+GIFT-SW consists of the following steps:
+</text>
+
+<list page="4" section="3 Method" source="author" id="/page/3/ListGroup/443">
+- (1) Identify a fixed number of salient columns using a chosen sensitive metric, based on a small calibration set. This number remains consistent across all layers.
+- (2) Split columns of the matrices into subsets of salient columns and regular ones.
+- (3) During training, add noise to the weights in non-salient columns and update weights only in the salient columns.
+</list>
+
+<text page="4" section="3 Method" source="author" id="/page/3/Text/8">
+Thus, the method depends on two main design choices: 1) how to choose salient columns and 2) the parameters of noise injections. We cover the choice of metrics in Section [3.1.](#page-3-2) Noise injection details are provided in Section [3.2.](#page-4-0)
+</text>
+
+
+<heading page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/SectionHeader/9" level="2">
+## 3.1 Generalizing parameter sensitivity metrics
+</heading>
+
+<text page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Text/10">
+Several approaches have been proposed recently to identify weights sensitive to quantization [(Dettmers](#page-9-2) [et al.,](#page-9-2) [2023)](#page-9-2) or pruning [(Sun et al.,](#page-11-1) [2023)](#page-11-1). We generalize them as metrics for sensitivity to perturbations, and by applying these metrics, we determine which columns are more susceptible to degradation. Therefore, we avoid adding noise to such columns and use them to fine-tune the model.
+</text>
+
+<figure_group page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/FigureGroup/442">
+<figure page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Figure/13" image="RP27_Zhelnin_2024_fig02.jpg">[FIGURE: see RP27_Zhelnin_2024_fig02.jpg]</figure>
+<caption page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Caption/14">
+Figure 2: GIFT-SW procedure follows Equation [2.](#page-2-1) We first sample some noise, relative to quantization levels, then, perform forward pass, and then update salient weights only. In GIFT-SW, quantization, pruning or tensor decomposition can be applied to non-salient weights and then, salient weights can be fine-tuned effectively without changing non-salient weights structure. In our experiments we select only 128 columns of salient weights, unless specified otherwise.
+</caption>
+</figure_group>
+
+<text page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Text/15">
+The proposed sensitivity metric is written for a column j of weight matrix W as
+</text>
+
+<equation page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Equation/16">
+$$
+s_j = \|\mathbf{D}_j\|_{\tau} \|\mathbf{X}_j\|_{\rho}^{\gamma},\tag{4}
+$$
+</equation>
+
+<text page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Text/17">
+where D^(j) is a measure of weights perturbation, s^(j) denotes sensitivity of the column to perturbations, X is the input feature, and γ takes on one of the following values 1/2, 1, 2. As discussed in Section [2.4](#page-2-2) we could apply GNI as a source of perturbations, then we would compute D^(j) = W:,j +ξ. However, sampling noise ξ is not deterministic. To approximate an influence of the noise ξ we utilize perturbations caused by quantization.[5](#page-3-3) That would lead to D^(j) = W:,j − Q(W:,j ), where Q(W:,j ) corresponds to the weights subjected to uniform symmetric quantization (see Appendix [A)](#page-12-0).
+</text>
+
+<text page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Text/18">
+The input feature X for each layer is computed using a number of random sentences from a calibration dataset. After that, sensitivity values s^(j) are estimated for individual columns. Columns with the highest values are identified as the salient columns. Some details about the calibration dataset is described in Section [4.1.](#page-4-1)
+</text>
+
+<footnote page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Footnote/11">
+^(3)More details on STE can be found in Section [C.](#page-13-0)
+</footnote>
+
+<footnote page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Footnote/12">
+^(4)Event though QNI and GNI are identical operations for consistency and clarity, in the case of quantization we will refer to this procedure as Quantization Noise Injections (QNI)
+</footnote>
+
+<footnote page="4" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/3/Footnote/19">
+^(5)Optionally, one could use weight pruning as a source of perturbations or any other.
+</footnote>
+
+</page>
+<page number="5">
+<text page="5" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/4/Text/0">
+The metric given by Equation [4](#page-3-4) is closely related to those studied in the recent literature on quantization. In particular, the metric ∥X∥^(∞) is employed in QUIK [(Ashkboos et al.,](#page-9-4) [2023)](#page-9-4) and SmoothQuant [(Xiao et al.,](#page-11-5) [2023)](#page-11-5). OWQ [(Lee et al.,](#page-10-7) [2024)](#page-10-7) adopts λj∥Dj∥ 2 2 , where λ^(j) = ∥Xj∥ 2 2 is the j-th diagonal element of the Hessian matrix H for the layer quantization error. It can be seen, that the sensitivity metric used in OWQ is a modification for column quantization of the salience measure provided in OBD [(LeCun et al.,](#page-10-11) [1989)](#page-10-11) for network pruning. A metric proposed in Wanda [(Sun et al.,](#page-11-1) [2023)](#page-11-1) is element-wise variant of the metric ∥Dj∥1∥Xj∥2, which can be easily obtained from Equation [4](#page-3-4) with pruning as a source of perturbations for D^(j) .
+</text>
+
+<text page="5" section="3.1 Generalizing parameter sensitivity metrics" source="author" id="/page/4/Text/1">
+In contrast to Wanda, we use l^(∞) norm in our general Equation [4](#page-3-4) due to the following observations, examples contained in a calibration dataset induce different values of the input feature, a use of l^(2) norm leads to averaging of the values along input channels. Therefore, the appearance of the outlier values in the input activation can be obscured by a large number of lower values. The same conclusions can be also applied to the weight error. In the case of the l^(2) norm, the error for each channel includes all deviations between the quantized and original weights. Therefore, rare considerable errors can be mitigated by a large number of small deviations.
+</text>
+
+
+<heading page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/SectionHeader/2" level="2">
+## 3.2 Quantization Noise Injection
+</heading>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/3">
+To improve our fine-tuning procedure with QNI, we avoid applying perturbations to sensitive weights. Therefore, after identifying columns that are sensitive to perturbations or salient during the finetuning stage, we inject quantization noise only into non-salient columns across all layers, as shown in Figure [2.](#page-3-5)
+</text>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/4">
+The scale parameters of the Gaussian noise are determined by the quantization step sizes, which are computed for each layer prior to the training process.
+</text>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/5">
+For the weight matrix W of a given layer in the model, the process of noise injection can be described as follows. During each forward pass in the training phase, we first sample elements of noise matrix Ω from standard normal distribution N (0, 1). Subsequently, the matrix Ω is scaled with the quantization step size ∆. Finally, we add scaled noise to weights of non-salient columns W[:,*non-salient*] . The operation of the noise injection ✵ is given as
+</text>
+
+<equation page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Equation/6">
+$$
+\mathbf{V}(\mathbf{W}) = \begin{cases} \mathbf{W}_{[:,salient]}, \\ \mathbf{W}_{[:,non\text{-}salient]} + \frac{1}{2} \operatorname{diag}(\mathbf{\Delta}) \mathbf{\Omega} \end{cases}, (5)
+$$
+</equation>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/7">
+where diag(∆) is the diagonal matrix with elements of the vector ∆.
+</text>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/8">
+Only weights of the salient columns W[:,*salient*] are updated during training, whereas weights of other columns W[:,*non-salient*] are frozen. We do not inject noise to salient weights since small perturbations in them can cause high model degradation.
+</text>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/9">
+The quantization step size ∆ is determined only for weights in non-salient columns W[:,*non-salient*] . To closer match the initial distribution of the weights, quantization scale factors including in ∆ are estimated for each row individually. For i-s row the scale factor ∆^(i) is computed as:
+</text>
+
+<equation page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Equation/10">
+$$
+\Delta_i = \frac{\alpha_i}{2^{b-1} - 1},\tag{6}
+$$
+</equation>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/11">
+where b is the bit-width and α^(i) is the quantization parameter. As in quantization methods, smaller bitwidth b corresponds to higher quantization noise. The parameter α^(i) is estimated by optimizing weight error through linear search as discussed in Appendix [A.](#page-12-0)
+</text>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/12">
+Based on Equations [5](#page-4-2) and [6,](#page-4-3) the variance of the injected noise is determined by the distribution of non-salient weights across rows. We exclude salient columns from this distribution, as the salient weights may induce large quantization error and distort row-wise scale factors. This approach helps us to minimize the noise variance, which, in turn, leads to a reduction in the deviation of the nonsalient weights during training.
+</text>
+
+<text page="5" section="3.2 Quantization Noise Injection" source="author" id="/page/4/Text/13">
+By sampling noise in such way we can use it for quantization pre-training experiments discussed in Section [6.3.](#page-7-0)
+</text>
+
+
+<heading page="5" section="4 Experiments" source="author" id="/page/4/SectionHeader/14" level="2">
+## 4 Experiments
+</heading>
+
+<text page="5" section="4 Experiments" source="author" id="/page/4/Text/15">
+In this section, we describe the experimental procedure used to test the performance of GIFT-SW compared to others.
+</text>
+
+
+<heading page="5" section="4.1 Data" source="author" id="/page/4/SectionHeader/16" level="2">
+## 4.1 Data
+</heading>
+
+<text page="5" section="4.1 Data" source="author" id="/page/4/Text/17">
+Following previous studies [(Nikdan et al.,](#page-10-3) [2024;](#page-10-3) [Hu et al.,](#page-10-8) [2021;](#page-10-8) [Liu et al.,](#page-10-9) [2024)](#page-10-9), we focus on the instruction tuning task. For this purpose, we use the TULU-V2-Mix as the main source of data [(Ivison](#page-10-16) [et al.,](#page-10-16) [2023)](#page-10-16), as it encompasses a wide range of instructions from different sources. This dataset has been filtered, contains a substantial amount of
+</text>
+
+</page>
+<page number="6">
+<table_group page="6" section="4.1 Data" source="author" id="/page/5/TableGroup/494">
+<table page="6" section="4.1 Data" source="author" id="/page/5/Table/0">
+|  | LLaMA2-7b | LLaMA2-13b | LLaMA3-8b |
+| --- | --- | --- | --- |
+|  | TÜLU-V2-mix | OpenOrca | TÜLU-V2-mix | OpenOrca | TÜLU-V2-mix | OpenOrca |
+| FT | 71.97 | 71.88 | 75.09 | 75.21 | 76.13 | **77.02** |
+| LoRA | 71.78 | 70.89 | 74.03 | 74.01 | 75.91 | 75.63 |
+| DoRA | 72.03 | 70.97 | 73.97 | 73.96 | 75.89 | 75.72 |
+| GIFT-SW | **73.33** | **72.33** | **75.93** | **76.02** | **76.37** | 76.78 |
+</table>
+<caption page="6" section="4.1 Data" source="author" id="/page/5/Caption/1">
+Table 1: Mean accuracy of LLaMA models fine-tuned with various instructive datasets and different methods.
+</caption>
+</table_group>
+
+<table_group page="6" section="4.1 Data" source="author" id="/page/5/TableGroup/495">
+<table page="6" section="4.1 Data" source="author" id="/page/5/Table/2">
+| Bits | Method | LLaMA2-7b | LLaMA2-13b | LLaMA3-8b |
+| --- | --- | --- | --- | --- |
+| 4 bit | STE | 72.43 | **75.29** | 74.84 |
+| QUIK + LORA | 63.99 | 71.08 | 74.27 |
+| GIFT-SW | **72.53** | 74.50 | **75.46** |
+| 3 bit | STE | 69.82 | **74.37** | 70.24 |
+| QUIK + LORA | 62.91 | 71.30 | 71.65 |
+| GIFT-SW | **71.00** | 74.34 | **73.27** |
+| 2 bit | STE | 58.20 | 62.19 | 48.96 |
+| QUIK + LORA | 41.44 | 47.14 | 53.80 |
+| GIFT-SW | **61.09** | **67.61** | **58.89** |
+</table>
+<caption page="6" section="4.1 Data" source="author" id="/page/5/Caption/3">
+Table 2: Mean accuracy of quantized and then fine-tuned models. For fine-tuning we used TÜLU-V2-mix.
+</caption>
+</table_group>
+
+<text page="6" section="4.1 Data" source="author" id="/page/5/Text/4">
+data without being too large, and models tuned to this set show superior performance. Additionally, we utilize the OpenOrca dataset [(Mukherjee et al.,](#page-10-17) [2023)](#page-10-17) to demonstrate that our method does not depend on a specific set of instructions.
+</text>
+
+<text page="6" section="4.1 Data" source="author" id="/page/5/Text/5">
+The sensitivity metrics to find salient columns are estimated based on 512 random sentences from the Pile validation dataset [(Xiao et al.,](#page-11-5) [2023)](#page-11-5).
+</text>
+
+
+<heading page="6" section="4.2 Baselines" source="author" id="/page/5/SectionHeader/6" level="3">
+### 4.2 Baselines
+</heading>
+
+<text page="6" section="4.2 Baselines" source="author" id="/page/5/Text/7">
+We consider several baselines for both full precision and quantized experiments. All baselines are applied to LLaMA2-7b, LLaMA2-13b and LLaMA3-8b.
+</text>
+
+<text page="6" section="4.2 Baselines" source="author" id="/page/5/Text/8">
+Full precision version includes the choice of baselines, following recent studies [(Liu et al.,](#page-10-9) [2024;](#page-10-9) [Nikdan et al.,](#page-10-3) [2024)](#page-10-3). We employ:
+</text>
+
+<list page="6" section="4.2 Baselines" source="author" id="/page/5/ListGroup/496">
+- LoRA is a widely used adapter-based method [(Hu et al.,](#page-10-8) [2021)](#page-10-8)
+- DoRA is modification of LoRA outperforming all current PEFT methods [(Liu et al.,](#page-10-9) [2024)](#page-10-9)
+- FT is full fine-tuning of all parameters
+</list>
+
+<text page="6" section="4.2 Baselines" source="author" id="/page/5/Text/12">
+We do not include PEFT methods connected with prompt tuning, as they show worse performance compared to adapter-based methods [(Xu et al.,](#page-11-9) [2023)](#page-11-9).
+</text>
+
+<text page="6" section="4.2 Baselines" source="author" id="/page/5/Text/13">
+Quantized version is presented by baselines of only weight quantization at {4, 3, 2} bit-widths:
+</text>
+
+<list page="6" section="4.2 Baselines" source="author" id="/page/5/ListGroup/497">
+- STE is quantization-aware fine-tuning of all parameters of a pre-trained model [(Bengio](#page-9-7) [et al.,](#page-9-7) [2013)](#page-9-7). During fine-tuning all parameters are trained, but 128 salient columns are updated in full-precision without quantization.
+- QUIK + LoRA is an application of LoRA to the QUIK quantized model. Only lowrank adapters are trained, while the quantized weights and the salient weights are frozen.
+</list>
+
+<text page="6" section="4.2 Baselines" source="author" id="/page/5/Text/16">
+QUIK is a mixed-precision quantization method, that leverages GPTQ for quantization non-salient columns, while keeping the salient weight in fullprecision [(Frantar et al.,](#page-10-10) [2022;](#page-10-10) [Ashkboos et al.,](#page-9-4) [2023)](#page-9-4). Due to the techniques, QUIK achieves the highest performance among PTQ methods, such as GTPQ [(Frantar et al.,](#page-10-10) [2022)](#page-10-10), AWQ [(Lin et al.,](#page-10-18) [2023)](#page-10-18), SmoothQuant [(Xiao et al.,](#page-11-5) [2023)](#page-11-5).
+</text>
+
+
+<heading page="6" section="4.3 Evaluation and Datasets" source="author" id="/page/5/SectionHeader/17" level="3">
+### 4.3 Evaluation and Datasets
+</heading>
+
+<text page="6" section="4.3 Evaluation and Datasets" source="author" id="/page/5/Text/18">
+We perform a comprehensive evaluation measuring zero-shot performance on HellaSwag [(Zellers](#page-11-10) [et al.,](#page-11-10) [2019)](#page-11-10), BoolQ [(Clark et al.,](#page-9-8) [2019)](#page-9-8), Wino-Grande [(Sakaguchi et al.,](#page-11-11) [2021)](#page-11-11), PiQA [(Tata and](#page-11-12) [Patel,](#page-11-12) [2003)](#page-11-12), ARC-easy, and ARC-challenge [(Clark](#page-9-9) [et al.,](#page-9-9) [2018)](#page-9-9) using the LM Eval Harness [(Gao et al.,](#page-10-19)
+</text>
+
+</page>
+<page number="7">
+<text page="7" section="4.3 Evaluation and Datasets" source="author" id="/page/6/Text/0">
+[2023)](#page-10-19). The choice of baselines is similar to those in previous studies [(Egiazarian et al.,](#page-9-10) [2024;](#page-9-10) [Frantar](#page-10-10) [et al.,](#page-10-10) [2022;](#page-10-10) [van Baalen et al.,](#page-11-13) [2024)](#page-11-13).
+</text>
+
+<text page="7" section="4.3 Evaluation and Datasets" source="author" id="/page/6/Text/1">
+We demonstrate average accuracy across all the datasets, detailed per-dataset comparison can be found in Section [D.](#page-13-1)
+</text>
+
+
+<heading page="7" section="4.4 Compute Budget" source="author" id="/page/6/SectionHeader/2" level="3">
+### 4.4 Compute Budget
+</heading>
+
+<text page="7" section="4.4 Compute Budget" source="author" id="/page/6/Text/3">
+In all experiments, the number of salient columns in the models is fixed at 128. Furthermore, we fix our training budget at 500 training iterations, unless specified otherwise. According to a recent study [(Komatsuzaki,](#page-10-20) [2019)](#page-10-20), it is more effective to train for one epoch with a larger dataset rather than multiple epochs with less data. Therefore, all 500 iterations are performed within one epoch with no instruction repetitions.
+</text>
+
+
+<heading page="7" section="4.5 Training Details" source="author" id="/page/6/SectionHeader/4" level="3">
+### 4.5 Training Details
+</heading>
+
+<text page="7" section="4.5 Training Details" source="author" id="/page/6/Text/5">
+The training was performed with 4 GPUs ( 40 GB each) for 500 iterations. The batch size is 128 for 7b models and 64 for 13b models. For baseline methods, the learning rate was set to 3 × 10−^(5) for LLaMA2 models and to 1 × 10−^(5) for the LLaMA3 model. We experimented with different learning rates and found these to be the most beneficial for baseline methods. We used a cosine annealing scheduler with the warmup ratio of 0.03. The LoRA and DoRA alpha and dropout values were as specified in the original papers, and the rank was set to 64 to match the number of trainable parameters in our method. Thus, the number of trainable parameters is 160M for LLaMA2-7b, 250M for LLaMA2-13b, 167M for LLaMA3-8b.
+</text>
+
+<text page="7" section="4.5 Training Details" source="author" id="/page/6/Text/6">
+For our method, the learning rate was set to 1 × 10−^(4) for salient columns of LLaMA2 models and to 1 × 10−^(5) of the LLaMA3 model. We fixed the number of salient columns at 128, such that the number of trainable parameters is 174M for LLaMA2-7b, 272M for LLaMA2-13b, and 176M for LLaMA3-8b.
+</text>
+
+<text page="7" section="4.5 Training Details" source="author" id="/page/6/Text/7">
+In the case of full fune-tuning with the noise injection, the learning rate was set to 3 × 10−^(5) and 1 × 10−^(5) for LLaMA2 &amp; 3 models, correspondingly.
+</text>
+
+
+<heading page="7" section="5 Results" source="author" id="/page/6/SectionHeader/8" level="2">
+## 5 Results
+</heading>
+
+<text page="7" section="5 Results" source="author" id="/page/6/Text/9">
+In this section, we present the results of our computational experiments and answer the questions posed in Section [1.](#page-1-1) In short, our results are as follows:
+</text>
+
+<table_group page="7" section="5 Results" source="author" id="/page/6/TableGroup/454">
+<table page="7" section="5 Results" source="author" id="/page/6/Table/10">
+|  | LLaMA2-7b | LLaMA2-13b |
+| --- | --- | --- |
+|  | Performance | Compute† | Performance | Compute† |
+| TÜLU2 | 73.49 | 6.7B / 5K | 75.51 | 13B / 5K |
+| TÜLU2-DPO | 73.8 | 6.7B / 5K | 75.53 | 13B / 11K |
+| GIFT-SW | 73.33 | 174M / 500 | 75.93 | 272M / 500 |
+</table>
+<caption page="7" section="5 Results" source="author" id="/page/6/Caption/11">
+Table 3: Comparison of Performance and Compute for LLaMA2 Models using our fine-tuning method versus original TÜLU2 models. Note: Compute values are represented as Trainable Parameters / Iterations.
+</caption>
+</table_group>
+
+<list page="7" section="5 Results" source="author" id="/page/6/ListGroup/455">
+- Q1: The results confirm that fine-tuning a subset of salient weights produces results comparable to those obtained using low-rank adapters.
+- Q2: Noise injections lead to improved model performance.
+- Q3: We could not confirm that models trained with noise injections are more robust to further degradation.
+</list>
+
+
+<heading page="7" section="5.1 Full Precision" source="author" id="/page/6/SectionHeader/15" level="3">
+### 5.1 Full Precision
+</heading>
+
+<text page="7" section="5.1 Full Precision" source="author" id="/page/6/Text/16">
+The average performance across evaluation benchmarks for full precision models is presented in Table [1.](#page-5-0) GIFT-SW generally shows superior metrics across most models and instruction sets. However, we observe slight underperformance in LLaMA3 on the OpenOrca subset, where full training proves superior. This issue likely stems from the choice of learning rate and schedule, which can impact the tuning of outliers.
+</text>
+
+
+<heading page="7" section="5.2 Quantized Models" source="author" id="/page/6/SectionHeader/17" level="3">
+### 5.2 Quantized Models
+</heading>
+
+<text page="7" section="5.2 Quantized Models" source="author" id="/page/6/Text/18">
+We present the averaged performance of models quantized with different precision (4, 3, 2) in Table [2.](#page-5-1) For 4 and 3 bits GIFT-SW achieves comparable quality with STE, however, latter one requires significantly more compute. In the 2-bit setting, GIFT-SW shows a substantial quality improvement, surpassing the second-ranked model by over 5 points.
+</text>
+
+
+<heading page="7" section="5.3 Comparison with T
+
+	ÜLU2" source="author" id="/page/6/SectionHeader/19" level="3">
+### 5.3 Comparison with T
+
+	ÜLU2
+</heading>
+
+<text page="7" section="5.3 Comparison with T
+
+	ÜLU2" source="author" id="/page/6/Text/20">
+We compare GIFT-SW with TÜLU2 models [(Ivi](#page-10-16)[son et al.,](#page-10-16) [2023)](#page-10-16), which are LLaMA2 models finetuned using a combination of instructions and DPO [(Rafailov et al.,](#page-10-21) [2023)](#page-10-21). These models are among the top-performing LLaMA2 modifications but demand significant computational resources.
+</text>
+
+<text page="7" section="5.3 Comparison with T
+
+	ÜLU2" source="author" id="/page/6/Text/21">
+In Table [3,](#page-6-0) we show that by applying GIFT-SW with significantly lower computational budget (a smaller number of parameters and iterations) we
+</text>
+
+</page>
+<page number="8">
+<text page="8" section="5.3 Comparison with T
+
+	ÜLU2" source="author" id="/page/7/Text/0">
+achieve comparable results for LLaMA2-7b and outperform TÜLU2 for 13b.
+</text>
+
+
+<heading page="8" section="5.4 Scaling Properties" source="author" id="/page/7/SectionHeader/1" level="3">
+### 5.4 Scaling Properties
+</heading>
+
+<text page="8" section="5.4 Scaling Properties" source="author" id="/page/7/Text/2">
+We perform experiments to explore the performance of GIFT-SW and baselines with scaling data using LLaMA2 and LLaMA3 models. The results reported in Figure [1](#page-1-1) show that while LoRA and DoRA exhibit unstable performance with scaling data, our method and full fine-tuning are more stable. Moreover, our method consistently ranks first across nearly all data budgets.
+</text>
+
+<table_group page="8" section="5.4 Scaling Properties" source="author" id="/page/7/TableGroup/381">
+<table page="8" section="5.4 Scaling Properties" source="author" id="/page/7/Table/3">
+| Method | 4 bit | 3 bit | 2 bit |
+| --- | --- | --- | --- |
+| Salient FT | 72.82 | **71.06** | 59.82 |
+| Pre-GIFT-SW | **73.15** | 70.24 | 47.08 |
+| Post-GIFT-SW | 72.53 | 71.00 | **61.09** |
+</table>
+<caption page="8" section="5.4 Scaling Properties" source="author" id="/page/7/Caption/4">
+Table 4: Mean performance for quantized models with or without applying GIFT-SW before or after quantization, results are demonstrated for LLaMA2-7b model.
+</caption>
+</table_group>
+
+
+<heading page="8" section="6 Ablation" source="author" id="/page/7/SectionHeader/5" level="2">
+## 6 Ablation
+</heading>
+
+
+<heading page="8" section="6.1 Comparison sensitivity metrics" source="author" id="/page/7/SectionHeader/6" level="3">
+### 6.1 Comparison sensitivity metrics
+</heading>
+
+<text page="8" section="6.1 Comparison sensitivity metrics" source="author" id="/page/7/Text/7">
+We study sensitivity metrics with respect to different noise levels (various perturbation magnitudes), which translate into varying quantization precision. In this experiment, the non-salient weights of LLaMA2 and TÜLU2 with 7B and 13B parameters. Models are quantized with QUIK, the salient weights are not updated. We select 128 columns of salient weights.
+</text>
+
+<text page="8" section="6.1 Comparison sensitivity metrics" source="author" id="/page/7/Text/8">
+Mean results for zero-shot tasks in Table [5](#page-8-0) show that for most precisions, the best performance is achieved with salient columns identified by Equation [4](#page-3-4) with γ = 1, ρ = ∞, τ = ∞ (second column). Columns identified by the squared l^(2) norm of the input feature (the OWQ metric) show better performance only for TÜLU2 quantized to 3 and 2 bits. Choosing salient columns solely by the input features (the QUIK metric) leads to underperformance, especially for 2 bit. Therefore, identifying salient columns sensitive to quantization noise requires considering both the weight quantization error and the maximum values of input activation.
+</text>
+
+<text page="8" section="6.1 Comparison sensitivity metrics" source="author" id="/page/7/Text/9">
+Based on the results, we chose the bestperforming sensitivity metric with γ = 1, ρ = ∞, τ = ∞. However, the results do not reveal a clear rule for selecting the optimal sensitivity metric, as performance varies across different bitwidths and models with no discernible pattern. This
+</text>
+
+<text page="8" section="6.1 Comparison sensitivity metrics" source="author" id="/page/7/Text/10">
+remains an area for future research.
+</text>
+
+
+<heading page="8" section="6.2 Noise Injection Impact" source="author" id="/page/7/SectionHeader/11" level="3">
+### 6.2 Noise Injection Impact
+</heading>
+
+<text page="8" section="6.2 Noise Injection Impact" source="author" id="/page/7/Text/12">
+To ablate the importance of QNI in the fullprecision setting, we measure the mean performance of LLaMA2 models with and without noise injections for both salient columns fine-tuning and full fine-tuning. In the latter case, the noise is applied to the entire weight matrix.
+</text>
+
+<text page="8" section="6.2 Noise Injection Impact" source="author" id="/page/7/Text/13">
+The results in Table [6](#page-8-1) show that QNI consistently enhances the performance of outlier finetuning. Although QNI can reduce performance when applied to the entire network, it still benefits LLaMA3-8b. Notably, outlier fine-tuning outperforms full fine-tuning, but only when QNI is used.
+</text>
+
+
+<heading page="8" section="6.3 Quantization Before and After Training" source="author" id="/page/7/SectionHeader/14" level="2">
+## 6.3 Quantization Before and After Training
+</heading>
+
+<text page="8" section="6.3 Quantization Before and After Training" source="author" id="/page/7/Text/15">
+From studies related to QAT, it is known that pretraining a model with noise injection enables to improve its predictive capabilities after quantization [(Défossez et al.,](#page-9-3) [2021;](#page-9-3) [Shvetsov et al.,](#page-11-3) [2022)](#page-11-3). Based on those observations, in this section we examine the performance of the quantized LLaMA2- 7b after fine-tuning full precision salient columns in several settings:
+</text>
+
+<list page="8" section="6.3 Quantization Before and After Training" source="author" id="/page/7/ListGroup/382">
+- Pre-GIFT-SW. Applying GIFT-SW prior to the quantization.
+- Post-GIFT-SW. Applying GIFT-SW after the quantization.
+- Salient FT. Fine-tuning salient columns after quantization with no noise injected
+</list>
+
+<text page="8" section="6.3 Quantization Before and After Training" source="author" id="/page/7/Text/19">
+In the case of the pre-training, the bit-width for the model quantization corresponds to the noise level injected during the training. For the posttraining, the noise injection is always performed at 4 bit.
+</text>
+
+<text page="8" section="6.3 Quantization Before and After Training" source="author" id="/page/7/Text/20">
+Table [4](#page-7-1) presents the average scores achieved by the models across evaluation benchmark. In the case of 4 bit quantization the Pre-GIFT-SW model considerable outperforms other models. But in the case of 3 and 2 bits, fine-tuning salient columns after quantization enables to achieve quantized models better generative capabilities.
+</text>
+
+<text page="8" section="6.3 Quantization Before and After Training" source="author" id="/page/7/Text/21">
+It can be explained by significant deviation of the quantized weights from their original values that is induced by the extremely low-bit quantization. As a result, the interrelations between the salient weights and the quantized weights are disrupted, and the positive effect of pre-training
+</text>
+
+</page>
+<page number="9">
+<table_group page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/TableGroup/131">
+<table page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/Table/0">
+| Bits | Model | \\|\mathbf{D}_{j}\\|_{2}^{2}\\|\mathbf{X}_{j}\\|_{2}^{2} | \\|\mathbf{D}_j\\|_{\infty}\\|\mathbf{X}_j\\|_{\infty} | \\|\mathbf{X}_j\\|_{\infty} | \\|\mathbf{D}_j\\|_{\infty}\\|\mathbf{X}_j\\|_{\infty}^{1/2} | \\|\mathbf{D}_j\\|_{\infty}\\|\mathbf{X}_j\\|_{\infty}^2 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 4 bit | LLaMA2-7b | **69.86** | 69.85 | 69.68 | 69.55 | 69.52 |
+| TÜLU2-7b | 72.94 | **73.17** | 72.77 | 72.22 | 72.78 |
+| LLaMA2-13b | 72.92 | **72.99** | 72.83 | 72.83 | 72.56 |
+| TÜLU2-13b | 75.12 | 74.86 | 75.19 | **75.47** | 75.17 |
+| 3 bit | LLaMA2-7b | 67.50 | **68.31** | 67.47 | 68.09 | 67.86 |
+| TÜLU2-7b | 70.91 | **71.30** | 70.85 | 71.14 | 70.88 |
+| LLaMA2-13b | 71.92 | 71.59 | **72.10** | 71.77 | 71.45 |
+| TÜLU2-13b | **74.33** | 74.07 | 74.07 | 74.09 | 74.31 |
+| 2 bit | LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81 | **46.83** |
+| TÜLU2-7b | **54.84** | 46.85 | 46.78 | 48.56 | 48.20 |
+| LLaMA2-13b | 57.07 | **57.36** | 51.83 | 57.30 | 56.73 |
+| TÜLU2-13b | 59.62 | 59.62 | 59.43 | **60.67** | 59.39 |
+</table>
+<caption page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/Caption/1">
+Table 5: Performance of LLaMA2 and TÜLU2 models after QUIK quantization with salient columns selected via various metrics. Weight perturbation is given by \mathbf{D}_j = \mathbf{W}_{:,j} - Q(\mathbf{W}_{:,j}).
+</caption>
+</table_group>
+
+<table_group page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/TableGroup/132">
+<table page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/Table/2">
+| Model | Outliers FT | Full FT |
+| --- | --- | --- |
+| w/ Noise | w/o Noise | w/ Noise | w/o Noise |
+| LLaMA2-7b | **73.33** | 73.16 | 71.64 | 71.97 |
+| LLaMA2-13b | **75.93** | 74.80 | 74.58 | 75.09 |
+| LLaMA3-8b | **76.37** | 75.45 | 76.32 | 76.13 |
+</table>
+<caption page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/Caption/3">
+Table 6: Mean Performance of LLaMA models with and without Noise Injection for outlier fine-tuning and full model fine-tuning
+</caption>
+</table_group>
+
+<text page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/Text/4">
+disappears. However, post-training of the salient weight enables to form them new relations with other weights, so the model partially recovers its generative capabilities.
+</text>
+
+<text page="9" section="6.3 Quantization Before and After Training" source="author" id="/page/8/Text/5">
+Also it can be observed that application of **Post-GIFT-SW** and **Salient FT** to model quantized in 3 bit gives the similar scores. But in the case of 2 bit quantization, the noise injection improves the fine-tuning of the quantized model.
+</text>
+
+
+<heading page="9" section="7 Conclusion" source="author" id="/page/8/SectionHeader/6" level="2">
+## 7 Conclusion
+</heading>
+
+<text page="9" section="7 Conclusion" source="author" id="/page/8/Text/7">
+In this paper, we introduce GIFT-SW, a parameter-efficient fine-tuning method that trains only weights in a small subset of salient columns while injecting quantization noise into the frozen weights. GIFT-SW proves to be superior to previous fine-tuning strategies in both full precision and quantized settings, requiring less compute budget. In data scaling experiments, GIFT-SW demonstrates greater stability than previous PEFT methods and outperforms both PEFT and full fine-tuning across nearly all data budgets. Our ablation studies show that QNI is beneficial but only with salient weights. Although GIFT-SW outperforms previous methods,
+</text>
+
+<text page="9" section="7 Conclusion" source="author" id="/page/8/Text/8">
+further research is needed to determine how to maximize its performance in quantized settings.
+</text>
+
+<text page="9" section="7 Conclusion" source="author" id="/page/8/Text/9">
+We generalize the criterion for selecting salient columns from previous studies and empirically compare various parameters. Our experiments show that while some criteria perform better than others, none emerge as a clear dominant choice. This significant finding underscores the need for further research to refine these criteria.
+</text>
+
+
+<heading page="9" section="8 Limitations" source="author" id="/page/8/SectionHeader/10" level="2">
+## 8 Limitations
+</heading>
+
+<text page="9" section="8 Limitations" source="author" id="/page/8/Text/11">
+We find the main limitations of our work as follows:
+</text>
+
+<list page="9" section="8 Limitations" source="author" id="/page/8/ListGroup/133">
+- We report results of GIFT-SW exclusively for LLaMA models. Currently, numerous opensource pre-trained LLMs with high generative capabilities are available. However, LLaMA models are the most commonly chosen for studying the efficiency of modern PEFT and quantization methods. Despite the architectural similarities among most LLMs, future experiments with different models are necessary.
+- 2. For quantizing models, we use only the GPTQ method, which is widely used for mixed-precision quantization of LLMs. This method improves the performance of quantized models by aggregating quantization error into columns stored in full precision. However, GIFT-SW can be easily integrated with other methods, such as conventional RTN or QuantEase.
+</list>
+
+</page>
+<page number="10">
+<list page="10" section="8 Limitations" source="author" id="/page/9/ListGroup/352">
+- 3. Experiments with GIFT-SW report results for salient columns selected using the sensitivity metric [(4)](#page-3-4) with γ = 1. Our proposed metric, based on our analysis, shows high sensitivity of the salient columns to quantization in most LLaMA2 cases. However, other sensitivity metrics may yield better performance for GIFT-SW and mixed-precision quantization in different LLMs.
+- 4. Noise parameters for fine-tuning the salient weights are determined using the QNI approach. However, other noise distributions may also enhance the fine-tuning process. Identifying the optimal noise distribution is beyond the scope of this paper.
+- 5. In this study, we focus on developing the GIFT-SW algorithm for effective fine-tuning of LLMs, but we do not provide computationally efficient implementations of CUDA kernels for the algorithm. In the future, CUDA kernels for GIFT-SW can be developed based on the code from QUIK [(Ashkboos et al.,](#page-9-4) [2023)](#page-9-4) and OWQ [(Lee et al.,](#page-10-7) [2024)](#page-10-7).
+- 6. We train GIFT-SW with only a few finetuning instruction sets, selected for their size and high benchmark results in previous studies. However, expanding the number of finetuning sets could make the experiments more comprehensive.
+- 7. We evaluate our method using six distinct benchmarks inherited from various previous studies. In future research, it would be beneficial to include more benchmarks to gain additional insights.
+</list>
+
+
+<heading page="10" section="9 Potential Risks" source="author" id="/page/9/SectionHeader/5" level="2">
+## 9 Potential Risks
+</heading>
+
+<text page="10" section="9 Potential Risks" source="author" id="/page/9/Text/6">
+The GIFT-SW method poses risks similar to those of any PEFT method. For example, it omits explicit safety training measures, so could be applied to fine-tune LLMs for generating harmful content. Also it can be applied to tailor LLMs to tailor highly specific and potentially dangerous outputs.
+</text>
+
+
+<heading page="10" section="10 Acknowledgment" source="author" id="/page/9/SectionHeader/7" level="2">
+## 10 Acknowledgment
+</heading>
+
+<text page="10" section="10 Acknowledgment" source="author" id="/page/9/Text/8">
+The work was supported by the Analytical center under the RF Government (subsidy agreement 000000D730321P5Q0002, Grant No. 70-2021- 00145 02.11.2021).
+</text>
+
+
+<heading page="10" section="References" source="author" id="/page/9/SectionHeader/9" level="2">
+## References
+</heading>
+
+<list page="10" section="References" source="author" id="/page/9/ListGroup/353">
+- Saleh Ashkboos, Ilia Markov, Elias Frantar, Tingxuan Zhong, Xincheng Wang, Jie Ren, Torsten Hoefler, and Dan Alistarh. 2023. Towards end-to-end 4-bit inference on generative large language models. *arXiv* *preprint arXiv:2310.09259*.
+- Yoshua Bengio, Nicholas Léonard, and Aaron Courville. 2013. Estimating or propagating gradients through stochastic neurons for conditional computation. *arXiv preprint arXiv:1308.3432*.
+- Chris M Bishop. 1995. Training with noise is equivalent to tikhonov regularization. *Neural computation*, 7(1):108–116.
+- Alexander Camuto, Matthew Willetts, Umut Simsekli, Stephen J Roberts, and Chris C Holmes. 2020. Explicit regularisation in gaussian noise injections. *Ad**vances in Neural Information Processing Systems*, 33:16603–16614.
+- Christopher Clark, Kenton Lee, Ming-Wei Chang, Tom Kwiatkowski, Michael Collins, and Kristina Toutanova. 2019. Boolq: Exploring the surprising difficulty of natural yes/no questions. *arXiv preprint* *arXiv:1905.10044*.
+- Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa Schoenick, and Oyvind Tafjord. 2018. Think you have solved question answering? try arc, the ai2 reasoning challenge. *arXiv* *preprint arXiv:1803.05457*.
+- Alexandre Défossez, Yossi Adi, and Gabriel Synnaeve. 2021. Differentiable model compression via pseudo quantization noise. *arXiv preprint* *arXiv:2104.09987*.
+- Tim Dettmers, Mike Lewis, Younes Belkada, and Luke Zettlemoyer. 2022. Gpt3. int8 (): 8-bit matrix multiplication for transformers at scale. *Advances in* *Neural Information Processing Systems*, 35:30318– 30332.
+- Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. 2024. Qlora: Efficient finetuning of quantized llms. *Advances in Neural Information* *Processing Systems*, 36.
+- Tim Dettmers, Ruslan A Svirschevski, Vage Egiazarian, Denis Kuznedelev, Elias Frantar, Saleh Ashkboos, Alexander Borzunov, Torsten Hoefler, and Dan Alistarh. 2023. Spqr: A sparse-quantized representation for near-lossless llm weight compression. In *The* *Twelfth International Conference on Learning Repre**sentations*.
+- Vage Egiazarian, Andrei Panferov, Denis Kuznedelev, Elias Frantar, Artem Babenko, and Dan Alistarh. 2024. Extreme compression of large language models via additive quantization. *arXiv preprint* *arXiv:2401.06118*.
+</list>
+
+</page>
+<page number="11">
+<list page="11" section="References" source="author" id="/page/10/ListGroup/391">
+- Elias Frantar and Dan Alistarh. 2023. Sparsegpt: massive language models can be accurately pruned in oneshot. In *Proceedings of the 40th International Con**ference on Machine Learning*, pages 10323–10337.
+- Elias Frantar, Saleh Ashkboos, Torsten Hoefler, and Dan Alistarh. 2022. Gptq: Accurate post-training quantization for generative pre-trained transformers. *arXiv preprint arXiv:2210.17323*.
+- Leo Gao, Jonathan Tow, Baber Abbasi, Stella Biderman, Sid Black, Anthony DiPofi, Charles Foster, Laurence Golding, Jeffrey Hsu, Alain Le Noac'h, Haonan Li, Kyle McDonell, Niklas Muennighoff, Chris Ociepa, Jason Phang, Laria Reynolds, Hailey Schoelkopf, Aviya Skowron, Lintang Sutawika, Eric Tang, Anish Thite, Ben Wang, Kevin Wang, and Andy Zou. 2023. [A framework for few-shot language model](https://doi.org/10.5281/zenodo.10256836) [evaluation.](https://doi.org/10.5281/zenodo.10256836)
+- Wes Gurnee, Theo Horsley, Zifan Carl Guo, Tara Rezaei Kheirkhah, Qinyi Sun, Will Hathaway, Neel Nanda, and Dimitris Bertsimas. 2024. Universal neurons in gpt2 language models. *arXiv preprint* *arXiv:2401.12181*.
+- Edward J Hu, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen, et al. 2021. Lora: Low-rank adaptation of large language models. In *International Conference on Learn**ing Representations*.
+- Hamish Ivison, Yizhong Wang, Valentina Pyatkin, Nathan Lambert, Matthew Peters, Pradeep Dasigi, Joel Jang, David Wadden, Noah A. Smith, Iz Beltagy, and Hannaneh Hajishirzi. 2023. [Camels in a](https://arxiv.org/abs/2311.10702) [changing climate: Enhancing lm adaptation with tulu](https://arxiv.org/abs/2311.10702) [2.](https://arxiv.org/abs/2311.10702) *Preprint*, arXiv:2311.10702.
+- Chi Jin, Praneeth Netrapalli, Rong Ge, Sham M Kakade, and Michael I Jordan. 2021. On nonconvex optimization for machine learning: Gradients, stochasticity, and saddle points. *Journal of the ACM (JACM)*, 68(2):1–29.
+- Sehoon Kim, Coleman Hooper, Amir Gholami, Zhen Dong, Xiuyu Li, Sheng Shen, Michael W Mahoney, and Kurt Keutzer. 2023. Squeezellm: Dense-and-sparse quantization. *arXiv preprint* *arXiv:2306.07629*.
+- Aran Komatsuzaki. 2019. One epoch is all you need. *arXiv preprint arXiv:1906.06669*.
+- Yann LeCun, John Denker, and Sara Solla. 1989. Optimal brain damage. *Advances in neural information* *processing systems*, 2.
+- Changhun Lee, Jungyu Jin, Taesu Kim, Hyungjun Kim, and Eunhyeok Park. 2024. Owq: Outlier-aware weight quantization for efficient fine-tuning and inference of large language models. In *Proceedings* *of the AAAI Conference on Artificial Intelligence*, volume 38, pages 13355–13364.
+</list>
+
+<list page="11" section="References" source="author" id="/page/10/ListGroup/392">
+- Ji Lin, Jiaming Tang, Haotian Tang, Shang Yang, Wei-Ming Chen, Wei-Chen Wang, Guangxuan Xiao, Xingyu Dang, Chuang Gan, and Song Han. 2023. Awq: Activation-aware weight quantization for llm compression and acceleration. *arXiv preprint* *arXiv:2306.00978*.
+- Xiaofan Lin, Cong Zhao, and Wei Pan. 2017. Towards accurate binary convolutional neural network. *Ad**vances in neural information processing systems*, 30.
+- Guangliang Liu, Zhiyu Xue, Xitong Zhang, Kristen Marie Johnson, and Rongrong Wang. 2023. Pactuning: Fine-tuning pretrained language models with pac-driven perturbed gradient descent. *arXiv preprint* *arXiv:2310.17588*.
+- Shih-Yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, Kwang-Ting Cheng, and Min-Hung Chen. 2024. Dora: Weightdecomposed low-rank adaptation. *arXiv preprint* *arXiv:2402.09353*.
+- Francisco J Moreno-Barea, Fiammetta Strazzera, José M Jerez, Daniel Urda, and Leonardo Franco. 2018. Forward noise adjustment scheme for data augmentation. In *2018 IEEE symposium series on* *computational intelligence (SSCI)*, pages 728–734. IEEE.
+- Viktor Moskvoretskii, Alexander Panchenko, and Irina Nikishina. 2024. [Are large language models good](https://aclanthology.org/2024.lrec-main.133) [at lexical semantics? a case of taxonomy learn](https://aclanthology.org/2024.lrec-main.133)[ing.](https://aclanthology.org/2024.lrec-main.133) In *Proceedings of the 2024 Joint International* *Conference on Computational Linguistics, Language* *Resources and Evaluation (LREC-COLING 2024)*, pages 1498–1510, Torino, Italia. ELRA and ICCL.
+- Subhabrata Mukherjee, Arindam Mitra, Ganesh Jawahar, Sahaj Agarwal, Hamid Palangi, and Ahmed Awadallah. 2023. [Orca: Progressive learning from](https://arxiv.org/abs/2306.02707) [complex explanation traces of gpt-4.](https://arxiv.org/abs/2306.02707) *Preprint*, arXiv:2306.02707.
+- Mahdi Nikdan, Soroush Tabesh, and Dan Alistarh. 2024. Rosa: Accurate parameter-efficient fine-tuning via robust adaptation. *arXiv preprint arXiv:2401.04679*.
+- Antonio Orvieto, Anant Raj, Hans Kersting, and Francis Bach. 2023. Explicit regularization in overparametrized models via noise injection. In *Inter**national Conference on Artificial Intelligence and* *Statistics*, pages 7265–7287. PMLR.
+- Priyadarshini Panda and Kaushik Roy. 2021. Implicit adversarial data augmentation and robustness with noise-based learning. *Neural Networks*, 141:120– 132.
+- Ben Poole, Jascha Sohl-Dickstein, and Surya Ganguli. 2014. Analyzing noise in autoencoders and deep networks. *arXiv preprint arXiv:1406.1831*.
+- Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, and Chelsea Finn.
+</list>
+
+</page>
+<page number="12">
+<list page="12" section="References" source="author" id="/page/11/ListGroup/259">
+- 2023. [Direct preference optimization: Your lan](https://arxiv.org/abs/2305.18290)[guage model is secretly a reward model.](https://arxiv.org/abs/2305.18290) *Preprint*, arXiv:2305.18290.
+- Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi. 2021. Winogrande: An adversarial winograd schema challenge at scale. *Commu**nications of the ACM*, 64(9):99–106.
+- Yuzhang Shang, Zhihang Yuan, and Zhen Dong. 2023. Pb-llm: Partially binarized large language models. In *The Twelfth International Conference on Learning* *Representations*.
+- Juncheol Shin, Junhyuk So, Sein Park, Seungyeop Kang, Sungjoo Yoo, and Eunhyeok Park. 2023. Nipq: Noise proxy-based integrated pseudo-quantization. In *Proceedings of the IEEE/CVF Conference on Com**puter Vision and Pattern Recognition*, pages 3852– 3861.
+- Egor Shvetsov, Dmitry Osin, Alexey Zaytsev, Ivan Koryakovskiy, Valentin Buchnev, Ilya Trofimov, and Evgeny Burnaev. 2022. Quantnas for super resolution: searching for efficient quantization-friendly architectures against quantization noise. *arXiv preprint* *arXiv:2208.14839*.
+- Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. 2014. Dropout: a simple way to prevent neural networks from overfitting. *The journal of machine learning* *research*, 15(1):1929–1958.
+- Mingjie Sun, Zhuang Liu, Anna Bair, and J Zico Kolter. 2023. A simple and effective pruning approach for large language models. In *The Twelfth International* *Conference on Learning Representations*.
+- Sandeep Tata and Jignesh M Patel. 2003. Piqa: An algebra for querying protein data sets. In *15th In**ternational Conference on Scientific and Statistical* *Database Management, 2003.*, pages 141–150. IEEE.
+- Mart van Baalen, Andrey Kuzmin, Markus Nagel, Peter Couperus, Cedric Bastoul, Eric Mahurin, Tijmen Blankevoort, and Paul Whatmough. 2024. Gptvq: The blessing of dimensionality for llm quantization. *arXiv preprint arXiv:2402.15319*.
+- Bernard Widrow, Istvan Kollar, and Ming-Chang Liu. 1996. Statistical theory of quantization. *IEEE* *Transactions on instrumentation and measurement*, 45(2):353–361.
+- Guangxuan Xiao, Ji Lin, Mickael Seznec, Hao Wu, Julien Demouth, and Song Han. 2023. Smoothquant: Accurate and efficient post-training quantization for large language models. In *International Conference* *on Machine Learning*, pages 38087–38099. PMLR.
+- Lingling Xu, Haoran Xie, Si-Zhao Joe Qin, Xiaohui Tao, and Fu Lee Wang. 2023. Parameter-efficient fine-tuning methods for pretrained language models: A critical review and assessment. *arXiv preprint* *arXiv:2312.12148*.
+</list>
+
+<list page="12" section="References" source="author" id="/page/11/ListGroup/260">
+- Lu Yin, You Wu, Zhenyu Zhang, Cheng-Yu Hsieh, Yaqing Wang, Yiling Jia, Mykola Pechenizkiy, Yi Liang, Zhangyang Wang, and Shiwei Liu. 2023. Outlier weighed layerwise sparsity (owl): A missing secret sauce for pruning llms to high sparsity. In *Con**ference on Parsimony and Learning (Recent Spotlight* *Track)*.
+- Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. 2019. Hellaswag: Can a machine really finish your sentence? *arXiv preprint* *arXiv:1905.07830*.
+- Zhanxing Zhu, Jingfeng Wu, Bing Yu, Lei Wu, and Jinwen Ma. 2018. The anisotropic noise in stochastic gradient descent: Its behavior of escaping from sharp minima and regularization effects. *arXiv preprint* *arXiv:1803.00195*.
+</list>
+
+</page>
+<page number="13">
+<figure_group page="13" section="References" source="author" id="/page/12/FigureGroup/109">
+<figure page="13" section="References" source="author" id="/page/12/Figure/0" image="RP27_Zhelnin_2024_fig03.jpg">[FIGURE: see RP27_Zhelnin_2024_fig03.jpg]</figure>
+<caption page="13" section="References" source="author" id="/page/12/Caption/1">
+Figure 3: Uniform quantization step function with real valued one dimensional w and integer valued Q(w).
+</caption>
+</figure_group>
+
+
+<heading page="13" section="A Uniform quantization" source="author" id="/page/12/SectionHeader/2" level="2">
+## A Uniform quantization
+</heading>
+
+<text page="13" section="A Uniform quantization" source="author" id="/page/12/Text/3">
+While non-uniform quantization may lead to higher compression rates, in our work we focus on uniform quantization since it widely used in efficient PTQ methods such as GPTQ, QUIK, OWQ (Frantar et al., 2022; Ashkboos et al., 2023; Lee et al., 2024). Quantization is a mapping that converts a range of full-precision values into a discrete range of values allowing usage of integer arithmetic and reduced memory consumption. For example, Fig. 3 depicts a mapping with the quantization scale size \Delta = \frac{1}{4} of float values from the interval (0,1) into integer values.
+</text>
+
+<text page="13" section="A Uniform quantization" source="author" id="/page/12/Text/4">
+In our work we apply uniform symmetric quantization with the row-wise quantization step size \Delta. In this case, computations of quantization, dequantization and estimation of \Delta are performed for the bit-width b as below
+</text>
+
+<equation page="13" section="A Uniform quantization" source="author" id="/page/12/Equation/5">
+$$
+q_{\min} = -2^{b-1}, \quad q_{\max} = 2^{b-1} - 1 (7)
+$$
+</equation>
+
+<equation page="13" section="A Uniform quantization" source="author" id="/page/12/Equation/6">
+$$
+clamp(x; q_{\min}, q_{\max}) = \max(q_{\min}, \min(x, q_{\max})) 
+(8)
+$$
+</equation>
+
+<equation page="13" section="A Uniform quantization" source="author" id="/page/12/Equation/7">
+$$
+\mathbf{\Delta} = (\Delta_1, \dots, \Delta_n)^{\mathrm{T}}, \quad \Delta_i = \frac{\alpha_i}{q_{\max}} (9)
+$$
+</equation>
+
+<equation page="13" section="A Uniform quantization" source="author" id="/page/12/Equation/8">
+$$
+\mathbf{W}_{i,:}^{\text{int}} = \text{clamp}\left(\left|\frac{\mathbf{W}_{i,:}}{\Delta_i}\right|; q_{\min}, q_{\max}\right) 
+(10)
+$$
+</equation>
+
+<equation page="13" section="A Uniform quantization" source="author" id="/page/12/Equation/9">
+$$
+\mathbf{W} \approx Q(\mathbf{W}) = \operatorname{diag}(\mathbf{\Delta})\mathbf{W}^{\text{int}} \tag{11}
+$$
+</equation>
+
+<text page="13" section="A Uniform quantization" source="author" id="/page/12/Text/10">
+where \Delta_i is the scale factor for i row \mathbf{W}_{i,:}, \mathbf{W}^{int} denotes the matrix of the quantized weights, \operatorname{diag}(\boldsymbol{\Delta}) is the diagonal matrix with elements of the vector \boldsymbol{\Delta}. For the given bit-width b, the parameter \alpha_i is found for each row by performing linear grid search over the interval [0, \max(\mathbf{W}_{i,:})], where \max(\mathbf{W}_{i,:}) is the maximum element of i row . The search is conducted to minimize layer-wise mean squared error between weights:
+</text>
+
+<equation page="13" section="A Uniform quantization" source="author" id="/page/12/Equation/11">
+$$
+\operatorname{argmin}_{\Delta} \|\mathbf{W} - Q(\mathbf{W})\|_{2}^{2},\tag{12}
+$$
+</equation>
+
+
+<heading page="13" section="**B** Details of LLMs quantization" source="author" id="/page/12/SectionHeader/12" level="2">
+## **B** Details of LLMs quantization
+</heading>
+
+<text page="13" section="**B** Details of LLMs quantization" source="author" id="/page/12/Text/13">
+For only weight quantization of LLaMA and TÜLU2 models models, we apply QUIK implementation of mixed-precision GPTQ method (Ashkboos et al., 2023; Frantar et al., 2022). We isolate 128 salient columns in full-precision. Non-salient columns are subjected to uniform symmetric quantization, as discussed in Appendix A. The salient columns are identified through sensitive metrics described in Section 3.1. The Hessian matrix for the GPTQ method is computed on 128 random samples of the Wikitext-2 dataset.
+</text>
+
+</page>
+<page number="14">
+
+<heading page="14" section="C Straight Through Estimator" source="author" id="/page/13/SectionHeader/0" level="2">
+## C Straight Through Estimator
+</heading>
+
+<text page="14" section="C Straight Through Estimator" source="author" id="/page/13/Text/1">
+STE can be described in two steps:
+</text>
+
+<list page="14" section="C Straight Through Estimator" source="author" id="/page/13/ListGroup/606">
+- Obtain quantized weights Q(W) from the real-valued parameters W with some quantization function Q, which is usually is non differentiable.
+- Compute gradients at quantized weights Q(W) and update real valued weights Wt+1 ← W^(t) − τ∇f(Q(W))
+</list>
+
+<text page="14" section="C Straight Through Estimator" source="author" id="/page/13/Text/4">
+STE makes a particular choice of a quantization function to obtain the discrete weights from the realvalued weights. This approximation can be justified in some settings [(Lin et al.,](#page-10-22) [2017)](#page-10-22) but in general the reasons behind its effectiveness are unknown.
+</text>
+
+
+<heading page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/SectionHeader/5" level="2">
+## D Detailed Benchmark Results
+</heading>
+
+<text page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/Text/6">
+In this section we report detailed benchmark results for LLaMA 2 &amp; 3 after training with different methods. Tables [7,](#page-13-2) [8](#page-13-3) present accuracy metrics which are achieved by the full-precision models after fine-tuning on the TÜLU-V2-mix and OpenOrca subsets. Corresponding mean values are listed in Table [1.](#page-5-0) Tables present accuracy metrics which are achieved by quantized in 4, 3, 2 bits models after fine-tuning on the TÜLU-V2-mix subset. Corresponding mean values are listed in Table [2.](#page-5-1)
+</text>
+
+<table_group page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/TableGroup/604">
+<table page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/Table/7">
+| Model | Method | BoolQ | HellaSwag | WinoGrande | ARC-e | ARC-c | PiQA |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| LLaMA2-7b | FP | 78.65 | **76.91** | 69.93 | 77.99 | 48.63 | 79.71 |
+| LoRA | 80.28 | 76.67 | 69.85 | 76.64 | 47.95 | 79.27 |
+| DoRA | 81.93 | 76.27 | 70.09 | 76.05 | 48.89 | 78.94 |
+| GIFT-SW | **82.63** | 76.68 | **70.80** | **80.01** | **49.91** | **79.92** |
+| LLaMA2-13b | FP | 83.27 | 79.77 | 72.69 | 80.43 | 53.67 | **80.69** |
+| LoRA | 81.10 | 79.57 | 72.77 | 78.91 | 51.28 | 80.52 |
+| DoRA | 81.01 | 79.64 | 72.22 | 78.87 | 51.54 | 80.52 |
+| GIFT-SW | **84.22** | **80.18** | **73.24** | **82.20** | **55.38** | 80.36 |
+| LLaMA3-8b | FP | 83.64 | 79.56 | 74.35 | **82.41** | 55.72 | 81.12 |
+| LoRA | 83.30 | 79.62 | 75.14 | 80.15 | 56.06 | 81.18 |
+| DoRA | 83.61 | 79.53 | **75.45** | 80.09 | 55.63 | 81.01 |
+| GIFT-SW | **83.88** | **80.02** | 75.22 | 80.56 | **57.00** | **81.56** |
+</table>
+<caption page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/Caption/8">
+Table 7: LLaMA models performance fine-tuned with TÜLU-V2-mix subset
+</caption>
+</table_group>
+
+<table_group page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/TableGroup/605">
+<table page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/Table/9">
+| Model | Method | BoolQ | HellaSwag | WinoGrande | ARC-e | ARC-c | PiQA |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| LLaMA2-7b | FT | 80.03 | **77.02** | 69.69 | **76.64** | 48.72 | 79.16 |
+| LoRA | 78.81 | 76.24 | 68.82 | 75.42 | 46.59 | **79.43** |
+| DoRA | 78.78 | 76.30 | 68.92 | 75.67 | 46.93 | 79.22 |
+| Our Best | **82.51** | 76.64 | **72.22** | 74.71 | **48.89** | 79.00 |
+| LLaMA2-13b | FT | 82.66 | **80.30** | 73.01 | 79.97 | 54.78 | **80.52** |
+| LoRA | 81.68 | 79.64 | 72.85 | 78.41 | 51.11 | 80.36 |
+| DoRA | 81.65 | 79.64 | 72.93 | 78.28 | 51.19 | 80.09 |
+| Our Best | **85.44** | 80.07 | **74.03** | **79.97** | **56.48** | 80.14 |
+| LLaMA3-8b | FT | **84.37** | **80.11** | **75.93** | **81.82** | **57.85** | **82.05** |
+| LoRA | 82.84 | 79.76 | 74.19 | 80.30 | 55.54 | 81.12 |
+| DoRA | 82.63 | 79.71 | 75.22 | 80.30 | 55.46 | 81.01 |
+| Our Best | 84.34 | 80.10 | 75.53 | 81.06 | 57.76 | 81.88 |
+</table>
+<caption page="14" section="D Detailed Benchmark Results" source="author" id="/page/13/Caption/10">
+Table 8: LLaMA models performance fine-tuned with OpenOrca
+</caption>
+</table_group>
+
+</page>
+<page number="15">
+<table_group page="15" section="D Detailed Benchmark Results" source="author" id="/page/14/TableGroup/540">
+<table page="15" section="D Detailed Benchmark Results" source="author" id="/page/14/Table/0">
+| Bits | Model | Method | Benchmarks |
+| --- | --- | --- | --- |
+| BoolQ | HellaSwag | WinoGrande | ARC-e | ARC-c | PiQA |
+| 4 bit | LLaMA2-7b | STE | 80.21 | **76.27** | 70.01 | 79.63 | 48.55 | **79.92** |
+| QUIK + LORA | 68.96 | 74.85 | 69.85 | 55.30 | 37.20 | 77.80 |
+| GIFT-SW | **82.78** | 76.14 | **70.48** | **79.76** | **50.00** | 79.71 |
+| LLaMA2-13b | STE | **84.77** | 79.16 | 72.69 | **80.76** | **53.67** | **80.69** |
+| QUIK + LORA | 74.89 | 78.01 | 72.22 | 71.76 | 50.17 | 79.43 |
+| GIFT-SW | 84.65 | **79.59** | **73.01** | 78.37 | 53.50 | 80.52 |
+| LLaMA3-8b | STE | 81.59 | 78.55 | 73.88 | 79.76 | 54.27 | 81.01 |
+| QUIK + LORA | 82.51 | 77.73 | **74.66** | 79.04 | 51.62 | 80.03 |
+| GIFT-SW | **83.15** | **79.05** | 74.09 | **80.01** | **55.20** | **81.28** |
+| 3 bit | LLaMA2-7b | STE | 76.79 | 74.19 | 68.19 | 75.04 | 45.65 | 79.05 |
+| QUIK + LORA | 63.88 | 72.00 | 66.93 | 61.24 | 38.74 | 74.64 |
+| GIFT-SW | **80.46** | **74.20** | **68.90** | **75.88** | **47.35** | **79.22** |
+| LLaMA2-13b | STE | 83.33 | 78.02 | 71.59 | **79.92** | **53.24** | **80.09** |
+| QUIK + LORA | 82.02 | 76.64 | 70.95 | 71.51 | 48.21 | 78.45 |
+| GIFT-SW | **85.44** | **78.20** | **71.90** | 79.12 | 51.54 | 79.82 |
+| LLaMA3-8b | STE | 75.87 | 74.38 | 69.14 | 74.41 | 49.32 | 78.29 |
+| QUIK + LORA | 78.72 | 74.54 | 70.72 | 77.31 | 50.60 | 78.02 |
+| GIFT-SW | **80.31** | **75.98** | **71.51** | **79.63** | **52.99** | **79.22** |
+| 2 bit | LLaMA2-7b | STE | 68.47 | 58.90 | 60.62 | 57.66 | 32.17 | 71.38 |
+| QUIK + LORA | 62.11 | 26.77 | 49.88 | 29.67 | 26.45 | 53.75 |
+| GIFT-SW | **71.90** | **64.18** | **62.59** | **61.57** | **34.90** | **71.38** |
+| LLaMA2-13b | STE | 73.09 | 63.74 | 61.40 | 64.14 | 36.09 | 74.70 |
+| QUIK + LORA | 59.36 | 41.34 | 55.41 | 40.28 | 27.82 | 58.60 |
+| GIFT-SW | **81.99** | **69.49** | **65.43** | **70.33** | **43.17** | **75.24** |
+| LLaMA3-8b | STE | 60.46 | 43.82 | 54.46 | 44.23 | 27.65 | 63.16 |
+| QUIK + LORA | 64.68 | 48.55 | 58.25 | 53.32 | 32.17 | 65.83 |
+| GIFT-SW | **74.13** | **48.92** | **58.88** | **63.17** | **37.88** | **70.35** |
+</table>
+<caption page="15" section="D Detailed Benchmark Results" source="author" id="/page/14/Caption/1">
+Table 9: Performance of quantized LLaMA models fine-tuned with TÜLU-V2-mix subset
+</caption>
+</table_group>
+
+</page>
+<page number="16">
+<figure_group page="16" section="D Detailed Benchmark Results" source="author" id="/page/15/FigureGroup/103">
+<figure page="16" section="D Detailed Benchmark Results" source="author" id="/page/15/Figure/0" image="RP27_Zhelnin_2024_fig04.jpg">[FIGURE: see RP27_Zhelnin_2024_fig04.jpg]</figure>
+<caption page="16" section="D Detailed Benchmark Results" source="author" id="/page/15/Caption/1">
+Figure 4: Number of examples in datasets included in TÜLU-V2-mix subset
+</caption>
+</figure_group>
+
+
+<heading page="16" section="E TÜLU-V2-mix subset" source="author" id="/page/15/SectionHeader/2" level="2">
+## E TÜLU-V2-mix subset
+</heading>
+
+<text page="16" section="E TÜLU-V2-mix subset" source="author" id="/page/15/Text/3">
+Figure [4](#page-15-0) shows number of examples in datasets included in the TÜLU-V2-mix subset, which is used for fine-tuning experiments presented in this paper.
+</text>
+
+</page>
+</paper>
