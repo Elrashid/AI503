@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Reports / scratch
+*.log
+*.tmp
+
+# Local scratch (don't publish)
+.scratch/
+local_notes.md
+
+# Secrets — never commit
+*.key
+*api-key*
+*.pem
+*.p12
+secrets.json
+.env.local

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI503 — Quantization-Safety SLR</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, system-ui, sans-serif;
+         margin: 0; padding: 32px; background: #f7f8fa; color: #1f2329;
+         max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 4px 0; }
+  .sub { color: #555; margin-bottom: 24px; font-size: 14px; }
+  .deck { display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+          margin-top: 16px; }
+  .card { background: white; padding: 20px; border-radius: 10px;
+          border: 1px solid #e1e4e8; text-decoration: none; color: inherit;
+          transition: transform 0.1s, box-shadow 0.1s; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .card h2 { margin: 0 0 6px 0; font-size: 18px; color: #4472C4; }
+  .card p { margin: 4px 0; font-size: 14px; color: #555; }
+  .card .ok { color: #16A085; font-weight: 600; }
+  .card .warn { color: #E67E22; font-weight: 600; }
+  .stat { display: inline-block; margin-right: 16px; }
+  .note { background: #fff8e1; border-left: 4px solid #E67E22;
+          padding: 12px 16px; border-radius: 4px; margin: 16px 0; font-size: 13px; }
+  .note code { background: #f0f2f5; padding: 1px 6px; border-radius: 3px; }
+  pre { background: #f0f2f5; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 12px; }
+  .footer { margin-top: 32px; font-size: 12px; color: #888; text-align: center; }
+  a { color: #4472C4; }
+</style>
+</head>
+<body>
+
+<h1>AI503 — Quantization-Safety SLR</h1>
+<p class="sub">
+  Systematic literature review of post-training quantization for transformer LLMs ·
+  50 papers · BUiD Spring 2026 · Mohamed Elrashid<br>
+  <span class="stat">📄 50 papers</span>
+  <span class="stat">🔖 3,894 traced extractions</span>
+  <span class="stat">🖼 1,371 page renders</span>
+  <span class="stat">📊 50-row comparative table</span>
+</p>
+
+<div class="deck">
+
+  <a class="card" href="Assignment01/dashboard.html">
+    <h2>📊 Dashboard</h2>
+    <p>Birds-eye view: corpus stats, year/method/gap-signal coverage charts, sortable per-paper table.</p>
+    <p class="ok">✓ Works fully on GitHub Pages</p>
+  </a>
+
+  <a class="card" href="Assignment01/paper_explorer.html">
+    <h2>🔍 Paper Explorer</h2>
+    <p>Interactive viewer: click any extracted field → see the source page image with the bbox highlighted.</p>
+    <p class="warn">⚠ Page images won't load on GitHub Pages (LFS-stored). Clone the repo to use it locally.</p>
+  </a>
+
+  <a class="card" href="Assignment01/comparative_analysis_table.csv">
+    <h2>📋 Comparative Analysis Table</h2>
+    <p>50 rows × all required columns (RP_ID, Author, Year, Title, Methods, Datasets, Models, Metrics, Key Results).</p>
+    <p>CSV format — open in Excel / Numbers / Pandas.</p>
+  </a>
+
+  <a class="card" href="Assignment01/exports/AI503_A1_RR_export_50papers_official.csv">
+    <h2>📚 ResearchRabbit Export</h2>
+    <p>The 50-paper corpus as exported from ResearchRabbit (DOI, Title, Authors, Journal, Year, Abstract, Cited By, References).</p>
+    <p>Assignment Deliverable #1.</p>
+  </a>
+
+</div>
+
+<div class="note">
+  <strong>Why the paper-image previews don't load on GitHub Pages:</strong>
+  All 1,371 page PNGs and 520 figure JPGs are stored via Git LFS, and GitHub Pages
+  doesn't serve LFS content — it returns LFS pointer text instead, breaking the
+  &lt;img&gt; tags. To use the explorer with full source-image preview, clone the repo:
+  <pre>git lfs install
+git clone https://github.com/Elrashid/AI503.git
+cd AI503
+start Assignment01/paper_explorer.html   # or `open` on macOS / `xdg-open` on Linux</pre>
+</div>
+
+<h2>Repo layout</h2>
+<pre>Assignment01/
+├── exports/                 ResearchRabbit CSV exports (Deliverable #1)
+├── docs/                    Methodology — off-topic audit, replacement candidates, RR move cheatsheet
+├── papers_pdf/              50 PDFs (LFS)
+├── papers_json/             50 marker-pdf JSONs (LFS)
+├── papers_xml/              50 source-traced XMLs
+├── papers_pages/            1,371 page renders @ 150 DPI (LFS)
+├── figures/                 520 figure images (LFS)
+├── extractions/             50 source-traced extraction JSONs
+├── comparative_analysis_table.csv
+├── dashboard.html
+├── paper_explorer.html
+└── scripts/                 Build pipeline (Python)
+notebooks/
+└── marker_convert_v5.ipynb  Colab notebook (Gemini key removed)</pre>
+
+<div class="footer">
+  Source: <a href="https://github.com/Elrashid/AI503">github.com/Elrashid/AI503</a>
+  · License: MIT (code) + CC BY 4.0 (data) + fair-use (PDFs)
+</div>
+
+</body>
+</html>

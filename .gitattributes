@@ -1,0 +1,18 @@
+# No LFS — all binaries stored as regular blobs (each file < 100 MB)
+# This makes the repo work fully on GitHub Pages.
+
+# Treat as text for diffs / line endings
+*.xml text
+*.md text
+*.csv text
+*.py text
+*.js text
+*.html text
+*.json text
+
+# Treat as binary (no diff, no line-ending conversion)
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
