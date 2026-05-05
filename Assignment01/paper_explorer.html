@@ -5,10 +5,72 @@
 <title>AI503 SLR Paper Explorer</title>
 <style>
   * { box-sizing: border-box; }
+  html, body { -webkit-text-size-adjust: 100%; }
   body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         background: #0f172a; color: #e2e8f0; }
-  #app { display: grid; grid-template-columns: 220px 480px 1fr; height: 100vh; overflow: hidden; }
-  .panel { overflow: auto; border-right: 1px solid #334155; }
+         background: #0f172a; color: #e2e8f0;
+         /* viewport-aware height for mobile browsers (handles dynamic chrome) */
+         min-height: 100vh; min-height: 100dvh; }
+  #app { display: grid; grid-template-columns: 240px 480px 1fr; height: 100vh; height: 100dvh;
+         overflow: hidden; }
+  .panel { overflow: auto; border-right: 1px solid #334155; -webkit-overflow-scrolling: touch; }
+
+  /* === Mobile/tablet tab bar — hidden on desktop === */
+  #tabs {
+    display: none;
+    background: #0b1220; border-bottom: 1px solid #334155;
+    padding: 4px 4px 0;
+  }
+  #tabs button {
+    flex: 1; padding: 12px 4px; border: none; background: transparent;
+    color: #94a3b8; font-size: 13px; font-weight: 600; cursor: pointer;
+    border-bottom: 3px solid transparent; min-height: 44px;
+  }
+  #tabs button.active { color: #f1f5f9; border-bottom-color: #60a5fa; }
+  #tabs button:active { background: #1e293b; }
+
+  /* === Tablet: viewer overlays as a slide-out === */
+  @media (max-width: 1100px) {
+    #app { grid-template-columns: 220px 1fr; }
+    #viewer { display: none; position: fixed; top: 0; right: 0; bottom: 0;
+              width: min(720px, 100vw); z-index: 30;
+              box-shadow: -4px 0 20px rgba(0,0,0,0.6); }
+    #app.show-viewer #viewer { display: block; }
+    #app.show-viewer::before {
+      content: ''; position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+      z-index: 25; pointer-events: auto;
+    }
+    #close-viewer { display: inline-block; }
+  }
+
+  /* === Phone: single column, tab-switched === */
+  @media (max-width: 700px) {
+    body { display: flex; flex-direction: column; height: 100vh; height: 100dvh; }
+    #tabs { display: flex; flex-shrink: 0; }
+    #app { grid-template-columns: 1fr; flex: 1; min-height: 0; height: auto; }
+    #papers, #tree, #viewer { display: none; border-right: none; }
+    #app.tab-papers #papers { display: block; }
+    #app.tab-tree #tree     { display: block; }
+    #app.tab-viewer #viewer { display: block; position: static; width: 100%;
+                              box-shadow: none; }
+    #app.tab-viewer::before { display: none; }
+    #viewer-stage { height: calc(100vh - 130px) !important; padding: 8px !important; }
+    #viewer-header { flex-wrap: wrap; height: auto; padding: 8px; gap: 6px; }
+    #viewer-header .quote { width: 100%; flex-basis: 100%; white-space: normal;
+                            font-size: 11px; line-height: 1.35; max-height: 3em;
+                            overflow: hidden; }
+    .page-nav button { padding: 8px 14px; min-height: 40px; }
+    .page-nav .counter { font-size: 13px; }
+    .page-nav .counter input { font-size: 13px; width: 44px; padding: 4px; min-height: 32px; }
+    #tree { padding: 12px 14px 60px; }
+    #tree h1 { font-size: 16px; }
+    .field { padding: 6px 8px; font-size: 13.5px; }
+    .paper-row { padding: 12px 14px; font-size: 14px; min-height: 44px;
+                 display: flex; flex-direction: column; justify-content: center; }
+  }
+
+  #close-viewer { display: none; appearance: none; border: 1px solid #334155;
+                  background: #1e293b; color: #fbbf24; width: 36px; height: 36px;
+                  border-radius: 4px; cursor: pointer; font-size: 16px; margin-left: auto; }
   #papers { background: #0b1220; padding: 8px 0; }
   #papers h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;
                color: #94a3b8; padding: 0 12px; margin: 8px 0; }
@@ -64,7 +126,12 @@
 </style>
 </head>
 <body>
-<div id="app">
+<div id="tabs">
+  <button data-tab="papers" class="active">📚 Papers</button>
+  <button data-tab="tree">🧾 Extraction</button>
+  <button data-tab="viewer">📄 Source page</button>
+</div>
+<div id="app" class="tab-papers">
   <aside class="panel" id="papers">
     <h2>Papers (50)</h2>
     <div id="paper-list"></div>
@@ -85,6 +152,7 @@
         </span>
         <button id="nav-next" title="Next page (→)">▶</button>
       </div>
+      <button id="close-viewer" title="Close source view" aria-label="Close">×</button>
     </div>
     <div id="viewer-stage">
       <div class="empty-stage">Hover or click a field with a page reference to see its source.</div>
@@ -323,10 +391,35 @@ function init() {
     const tEl = el("span", null, title.slice(0, 60));
     tEl.style.color = "#cbd5e1";
     row.appendChild(tEl);
-    row.addEventListener("click", () => loadPaper(rp));
+    row.addEventListener("click", () => { loadPaper(rp); setTab("tree"); });
     list.appendChild(row);
   });
   if (ids.length) loadPaper(ids[0]);
+
+  // === Responsive tab + slide-out wiring ===
+  const app = document.getElementById("app");
+  window.setTab = function(name) {
+    // Phone (tab-switched layout)
+    app.classList.remove("tab-papers", "tab-tree", "tab-viewer");
+    app.classList.add("tab-" + name);
+    document.querySelectorAll("#tabs button").forEach(b =>
+      b.classList.toggle("active", b.dataset.tab === name));
+    // Tablet (viewer = slide-out)
+    if (name === "viewer") app.classList.add("show-viewer");
+    else app.classList.remove("show-viewer");
+  };
+  document.querySelectorAll("#tabs button").forEach(b =>
+    b.addEventListener("click", () => setTab(b.dataset.tab)));
+  document.getElementById("close-viewer").addEventListener("click",
+    () => app.classList.remove("show-viewer"));
+  // Delegated click on tree fields — when a field with ev.page is clicked,
+  // switch to the viewer panel (mobile) / slide it in (tablet).
+  document.getElementById("tree").addEventListener("click", (e) => {
+    const f = e.target.closest(".field");
+    if (!f) return;
+    // Only switch if this field has a page reference shown in the viewer
+    if (CURRENT_EV && CURRENT_EV.page) setTab("viewer");
+  });
 
   // page-nav controls
   document.getElementById("nav-prev").addEventListener("click", goPrev);
