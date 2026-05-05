@@ -3,8 +3,10 @@
   "rp_id": "RP01",
   "title": "The LAMBADA dataset: Word prediction requiring a broad discourse context",
   "first_author": "Paperno",
+  "authors_count": 9,
   "year": 2016,
   "venue": "ACL 2016",
+  "doi": "",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "Introduces LAMBADA, a word prediction benchmark of 10,022 narrative passages where the last word is guessable only with broad discourse context, not the final sentence alone.",
@@ -30,14 +32,20 @@
     "section": "4 Modeling experiments"
    }
   ],
-  "md_path": "papers_md/RP01_Paperno_2016.md"
+  "md_path": "papers_md/RP01_Paperno_2016.md",
+  "extraction_path": "extractions/RP01_extraction.json",
+  "pages_dir": "papers_pages/RP01_Paperno_2016/",
+  "page_count": 10,
+  "pdf_path": "papers_pdf/RP01_Paperno_2016.pdf"
  },
  {
   "rp_id": "RP02",
   "title": "Attention Is All You Need",
   "first_author": "Vaswani",
+  "authors_count": 8,
   "year": 2017,
   "venue": "NeurIPS (NIPS) 2017",
+  "doi": "",
   "paper_type": "method",
   "method_family": "architecture",
   "contribution": "Introduces the Transformer, a sequence transduction architecture based solely on self-attention, removing recurrence and convolutions and enabling far more parallel training while reaching state-of-the-art translation quality.",
@@ -63,14 +71,20 @@
     "section": "6.3 English Constituency Parsing"
    }
   ],
-  "md_path": "papers_md/RP02_Vaswani_2017.md"
+  "md_path": "papers_md/RP02_Vaswani_2017.md",
+  "extraction_path": "extractions/RP02_extraction.json",
+  "pages_dir": "papers_pages/RP02_Vaswani_2017/",
+  "page_count": 15,
+  "pdf_path": "papers_pdf/RP02_Vaswani_2017.pdf"
  },
  {
   "rp_id": "RP03",
   "title": "Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering",
   "first_author": "Mihaylov",
+  "authors_count": 4,
   "year": 2018,
   "venue": "EMNLP 2018",
+  "doi": "",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "OpenBookQA is a new 5,957-question multiple-choice QA benchmark paired with a 1,326-fact open book of elementary science, requiring multi-hop reasoning that combines a core fact with broad common knowledge.",
@@ -96,14 +110,20 @@
     "section": "4.4 Trained Model with External Knowledge"
    }
   ],
-  "md_path": "papers_md/RP03_Mihaylov_2018.md"
+  "md_path": "papers_md/RP03_Mihaylov_2018.md",
+  "extraction_path": "extractions/RP03_extraction.json",
+  "pages_dir": "papers_pages/RP03_Mihaylov_2018/",
+  "page_count": 11,
+  "pdf_path": "papers_pdf/RP03_Mihaylov_2018.pdf"
  },
  {
   "rp_id": "RP04",
   "title": "BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions",
   "first_author": "Clark",
+  "authors_count": 6,
   "year": 2019,
   "venue": "NAACL 2019",
+  "doi": "",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "BoolQ is a reading comprehension dataset of 16,000 naturally occurring yes/no questions paired with Wikipedia passages, used to test inferential abilities of QA models.",
@@ -129,14 +149,20 @@
     "section": "5.4 Transfer Learning Results"
    }
   ],
-  "md_path": "papers_md/RP04_Clark_2019.md"
+  "md_path": "papers_md/RP04_Clark_2019.md",
+  "extraction_path": "extractions/RP04_extraction.json",
+  "pages_dir": "papers_pages/RP04_Clark_2019/",
+  "page_count": 13,
+  "pdf_path": "papers_pdf/RP04_Clark_2019.pdf"
  },
  {
   "rp_id": "RP05",
   "title": "HellaSwag: Can a Machine Really Finish Your Sentence?",
   "first_author": "Zellers",
+  "authors_count": 5,
   "year": 2019,
   "venue": "ACL 2019",
+  "doi": "",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "HellaSwag is a 70k-question commonsense NLI benchmark built via Adversarial Filtering (AF) with GPT generations and BERT discriminators; it is easy for humans (>95%) but hard for state-of-the-art models (<48%).",
@@ -162,14 +188,20 @@
     "section": "5 Results"
    }
   ],
-  "md_path": "papers_md/RP05_Zellers_2019.md"
+  "md_path": "papers_md/RP05_Zellers_2019.md",
+  "extraction_path": "extractions/RP05_extraction.json",
+  "pages_dir": "papers_pages/RP05_Zellers_2019/",
+  "page_count": 10,
+  "pdf_path": "papers_pdf/RP05_Zellers_2019.pdf"
  },
  {
   "rp_id": "RP06",
   "title": "PIQA: Reasoning about Physical Commonsense in Natural Language",
   "first_author": "Bisk",
+  "authors_count": 5,
   "year": 2019,
   "venue": "AAAI 2020",
+  "doi": "",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "Introduces PIQA, a multiple-choice benchmark for physical commonsense reasoning where humans reach 95% but large pretrained models (GPT, BERT, RoBERTa) plateau near 77%.",
@@ -195,14 +227,20 @@
     "section": "**Experiments **"
    }
   ],
-  "md_path": "papers_md/RP06_Bisk_2019.md"
+  "md_path": "papers_md/RP06_Bisk_2019.md",
+  "extraction_path": "extractions/RP06_extraction.json",
+  "pages_dir": "papers_pages/RP06_Bisk_2019/",
+  "page_count": 9,
+  "pdf_path": "papers_pdf/RP06_Bisk_2019.pdf"
  },
  {
   "rp_id": "RP07",
   "title": "Up or Down? Adaptive Rounding for Post-Training Quantization",
   "first_author": "Nagel",
+  "authors_count": 5,
   "year": 2020,
   "venue": "ICML 2020 (PMLR 119)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "AdaRound is a post-training weight-rounding method that adapts to data and task loss using a per-layer QUBO formulation solved via continuous relaxation, quantizing ResNet-18/50 weights to 4 bits within 1% accuracy drop.",
@@ -228,14 +266,20 @@
     "section": "5.2. Literature comparison"
    }
   ],
-  "md_path": "papers_md/RP07_Nagel_2020.md"
+  "md_path": "papers_md/RP07_Nagel_2020.md",
+  "extraction_path": "extractions/RP07_extraction.json",
+  "pages_dir": "papers_pages/RP07_Nagel_2020/",
+  "page_count": 12,
+  "pdf_path": "papers_pdf/RP07_Nagel_2020.pdf"
  },
  {
   "rp_id": "RP08",
   "title": "DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale",
   "first_author": "Aminabadi",
+  "authors_count": 11,
   "year": 2022,
   "venue": "SC22: International Conference for High Performance Computing, Networking, Storage and Analysis (arXiv preprint arXiv:2207.00032)",
+  "doi": "arXiv:2207.00032",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "DeepSpeed Inference is a comprehensive transformer inference system combining inference-optimized GPU kernels (with FP16 and INT8 GeMM), tensor and pipeline parallelism, MoE-specific optimizations, and ZeRO-Inference heterogeneous offloading to deliver up to 7.3x latency reduction and 25x larger servable model size.",
@@ -266,14 +310,20 @@
     "section": "*B. Evaluation of DeepSpeed Inference for Latency Sensitive* *Workloads*"
    }
   ],
-  "md_path": "papers_md/RP08_Aminabadi_2022.md"
+  "md_path": "papers_md/RP08_Aminabadi_2022.md",
+  "extraction_path": "extractions/RP08_extraction.json",
+  "pages_dir": "papers_pages/RP08_Aminabadi_2022/",
+  "page_count": 13,
+  "pdf_path": "papers_pdf/RP08_Aminabadi_2022.pdf"
  },
  {
   "rp_id": "RP09",
   "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
   "first_author": "Frantar",
+  "authors_count": 4,
   "year": 2022,
   "venue": "ICLR 2023 (arXiv preprint 2022)",
+  "doi": "arXiv:2210.17323",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "GPTQ is a one-shot weight-only post-training quantization method using approximate second-order information that compresses 175B-parameter GPT models to 3-4 bits in about four GPU hours with negligible accuracy loss.",
@@ -304,14 +354,20 @@
     "section": "5 EXPERIMENTAL VALIDATION"
    }
   ],
-  "md_path": "papers_md/RP09_Frantar_2022.md"
+  "md_path": "papers_md/RP09_Frantar_2022.md",
+  "extraction_path": "extractions/RP09_extraction.json",
+  "pages_dir": "papers_pages/RP09_Frantar_2022/",
+  "page_count": 16,
+  "pdf_path": "papers_pdf/RP09_Frantar_2022.pdf"
  },
  {
   "rp_id": "RP10",
   "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
   "first_author": "Xiao",
+  "authors_count": 6,
   "year": 2022,
   "venue": "ICML 2023 (Proceedings of the 40th International Conference on Machine Learning, PMLR 202)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "SmoothQuant is a training-free W8A8 PTQ method that uses an offline mathematically equivalent per-channel scaling to migrate quantization difficulty from activations to weights for LLMs.",
@@ -337,14 +393,20 @@
     "section": "6 Related Work"
    }
   ],
-  "md_path": "papers_md/RP10_Xiao_2022.md"
+  "md_path": "papers_md/RP10_Xiao_2022.md",
+  "extraction_path": "extractions/RP10_extraction.json",
+  "pages_dir": "papers_pages/RP10_Xiao_2022/",
+  "page_count": 13,
+  "pdf_path": "papers_pdf/RP10_Xiao_2022.pdf"
  },
  {
   "rp_id": "RP11",
   "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
   "first_author": "Dettmers",
+  "authors_count": 4,
   "year": 2022,
   "venue": "NeurIPS 2022 (arXiv:2208.07339)",
+  "doi": "arXiv:2208.07339",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "LLM.int8() is a two-part Int8 inference procedure (vector-wise quantization plus mixed-precision decomposition that isolates emergent outlier features in 16-bit) that quantizes transformers up to 175B parameters with no performance loss and halves inference memory.",
@@ -375,14 +437,20 @@
     "section": "D.2 End-to-end benchmarks"
    }
   ],
-  "md_path": "papers_md/RP11_Dettmers_2022.md"
+  "md_path": "papers_md/RP11_Dettmers_2022.md",
+  "extraction_path": "extractions/RP11_extraction.json",
+  "pages_dir": "papers_pages/RP11_Dettmers_2022/",
+  "page_count": 20,
+  "pdf_path": "papers_pdf/RP11_Dettmers_2022.pdf"
  },
  {
   "rp_id": "RP12",
   "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
   "first_author": "Touvron",
+  "authors_count": 5,
   "year": 2023,
   "venue": "arXiv preprint (Meta GenAI technical report)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "architecture",
   "contribution": "Llama 2 is an open-release family of pretrained and fine-tuned LLMs (7B, 13B, 70B) optimized via SFT and RLHF for dialogue, with safety tuning and Ghost Attention.",
@@ -408,14 +476,20 @@
     "section": "2.2.1 Training Hardware & Carbon Footprint"
    }
   ],
-  "md_path": "papers_md/RP12_Touvron_2023.md"
+  "md_path": "papers_md/RP12_Touvron_2023.md",
+  "extraction_path": "extractions/RP12_extraction.json",
+  "pages_dir": "papers_pages/RP12_Touvron_2023/",
+  "page_count": 77,
+  "pdf_path": "papers_pdf/RP12_Touvron_2023.pdf"
  },
  {
   "rp_id": "RP13",
   "title": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
   "first_author": "Chee",
+  "authors_count": 4,
   "year": 2023,
   "venue": "NeurIPS 2023",
+  "doi": "arXiv:2307.13304",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "QuIP is a post-training weight-only quantization method that uses incoherence processing via random orthogonal matrices to enable the first viable 2-bit LLM quantization, paired with adaptive rounding (LDLQ) and theoretical guarantees.",
@@ -441,14 +515,20 @@
     "section": "7 Conclusion"
    }
   ],
-  "md_path": "papers_md/RP13_Chee_2023.md"
+  "md_path": "papers_md/RP13_Chee_2023.md",
+  "extraction_path": "extractions/RP13_extraction.json",
+  "pages_dir": "papers_pages/RP13_Chee_2023/",
+  "page_count": 34,
+  "pdf_path": "papers_pdf/RP13_Chee_2023.pdf"
  },
  {
   "rp_id": "RP14",
   "title": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
   "first_author": "Yao",
+  "authors_count": 6,
   "year": 2022,
   "venue": "NeurIPS 2022",
+  "doi": "arXiv:2206.01861",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "ZeroQuant is an end-to-end post-training quantization and inference pipeline that pairs group-wise weight and token-wise activation quantization with a layer-by-layer knowledge distillation method and optimized INT8 GPU kernels for BERT and GPT-3-style models up to 20B parameters.",
@@ -484,14 +564,20 @@
     "section": "5.5 Ablation Study of Different Components"
    }
   ],
-  "md_path": "papers_md/RP14_Yao_2022.md"
+  "md_path": "papers_md/RP14_Yao_2022.md",
+  "extraction_path": "extractions/RP14_extraction.json",
+  "pages_dir": "papers_pages/RP14_Yao_2022/",
+  "page_count": 24,
+  "pdf_path": "papers_pdf/RP14_Yao_2022.pdf"
  },
  {
   "rp_id": "RP15",
   "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
   "first_author": "Lin",
+  "authors_count": 10,
   "year": 2023,
   "venue": "MLSys 2024 (Best Paper Award)",
+  "doi": "https://github.com/mit-han-lab/llm-awq",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "AWQ is a hardware-friendly low-bit weight-only PTQ method that protects the top 1% salient channels using activation-aware per-channel scaling, with no backpropagation, and is paired with TinyChat to deliver 3-4x edge speedup over FP16.",
@@ -522,14 +608,20 @@
     "section": "5.2 Evaluation"
    }
   ],
-  "md_path": "papers_md/RP15_Lin_2023.md"
+  "md_path": "papers_md/RP15_Lin_2023.md",
+  "extraction_path": "extractions/RP15_extraction.json",
+  "pages_dir": "papers_pages/RP15_Lin_2023/",
+  "page_count": 15,
+  "pdf_path": "papers_pdf/RP15_Lin_2023.pdf"
  },
  {
   "rp_id": "RP16",
   "title": "SqueezeLLM: Dense-and-Sparse Quantization",
   "first_author": "Kim",
+  "authors_count": 8,
   "year": 2023,
   "venue": "ICML 2024 (PMLR 235)",
+  "doi": "arXiv:2306.07629",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "SqueezeLLM is a post-training weight-only PTQ framework that uses sensitivity-based non-uniform quantization plus Dense-and-Sparse decomposition to achieve near-lossless 3-bit LLM compression and up to 2.3x speedup on A6000.",
@@ -555,14 +647,20 @@
     "section": "5.2. Main Results"
    }
   ],
-  "md_path": "papers_md/RP16_Kim_2023.md"
+  "md_path": "papers_md/RP16_Kim_2023.md",
+  "extraction_path": "extractions/RP16_extraction.json",
+  "pages_dir": "papers_pages/RP16_Kim_2023/",
+  "page_count": 23,
+  "pdf_path": "papers_pdf/RP16_Kim_2023.pdf"
  },
  {
   "rp_id": "RP17",
   "title": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
   "first_author": "Dettmers",
+  "authors_count": 9,
   "year": 2023,
   "venue": "arXiv preprint (arXiv:2306.03078)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "SpQR is a hybrid sparse-quantized PTQ format that isolates outlier weights at 16-bit and quantizes the rest to 3-4 bits, reaching near-lossless (<1% perplexity loss) compression of LLaMA and Falcon LLMs.",
@@ -588,14 +686,20 @@
     "section": "Falcon"
    }
   ],
-  "md_path": "papers_md/RP17_Dettmers_2023.md"
+  "md_path": "papers_md/RP17_Dettmers_2023.md",
+  "extraction_path": "extractions/RP17_extraction.json",
+  "pages_dir": "papers_pages/RP17_Dettmers_2023/",
+  "page_count": 26,
+  "pdf_path": "papers_pdf/RP17_Dettmers_2023.pdf"
  },
  {
   "rp_id": "RP18",
   "title": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
   "first_author": "Shao",
+  "authors_count": 10,
   "year": 2023,
   "venue": "ICLR 2024 (arXiv:2308.13137)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "OmniQuant is a differentiable PTQ method for LLMs that learns weight clipping (LWC) and equivalent transformation (LET) parameters via block-wise error minimization, working for both weight-only and weight-activation quantization.",
@@ -621,14 +725,20 @@
     "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS"
    }
   ],
-  "md_path": "papers_md/RP18_Shao_2023.md"
+  "md_path": "papers_md/RP18_Shao_2023.md",
+  "extraction_path": "extractions/RP18_extraction.json",
+  "pages_dir": "papers_pages/RP18_Shao_2023/",
+  "page_count": 25,
+  "pdf_path": "papers_pdf/RP18_Shao_2023.pdf"
  },
  {
   "rp_id": "RP19",
   "title": "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
   "first_author": "Jaiswal",
+  "authors_count": 6,
   "year": 2023,
   "venue": "ICLR 2024",
+  "doi": "arXiv:2310.01382",
   "paper_type": "benchmark",
   "method_family": "PTQ",
   "contribution": "Introduces LLM-KICK, a knowledge-intensive benchmark that re-evaluates SoTA pruning and quantization methods beyond perplexity, showing pruning fails at modest sparsity while quantization is more successful but still drops on knowledge tasks.",
@@ -659,14 +769,20 @@
     "section": "(1) Factoid-based Question Answering"
    }
   ],
-  "md_path": "papers_md/RP19_Jaiswal_2023.md"
+  "md_path": "papers_md/RP19_Jaiswal_2023.md",
+  "extraction_path": "extractions/RP19_extraction.json",
+  "pages_dir": "papers_pages/RP19_Jaiswal_2023/",
+  "page_count": 21,
+  "pdf_path": "papers_pdf/RP19_Jaiswal_2023.pdf"
  },
  {
   "rp_id": "RP20",
   "title": "The Llama 3 Herd of Models",
   "first_author": "Dubey",
+  "authors_count": 6,
   "year": 2024,
   "venue": "arXiv preprint",
+  "doi": "",
   "paper_type": "method",
   "method_family": "architecture",
   "contribution": "Llama 3 is a herd of dense Transformer foundation models (8B, 70B, 405B parameters) with up to 128K context, pre-trained on 15.6T tokens, openly released and competitive with GPT-4.",
@@ -692,14 +808,20 @@
     "section": "5.4.7 System Level Safety"
    }
   ],
-  "md_path": "papers_md/RP20_Dubey_2024.md"
+  "md_path": "papers_md/RP20_Dubey_2024.md",
+  "extraction_path": "extractions/RP20_extraction.json",
+  "pages_dir": "papers_pages/RP20_Dubey_2024/",
+  "page_count": 92,
+  "pdf_path": "papers_pdf/RP20_Dubey_2024.pdf"
  },
  {
   "rp_id": "RP21",
   "title": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
   "first_author": "Tseng",
+  "authors_count": 5,
   "year": 2024,
   "venue": "ICML 2024 (PMLR 235)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "QuIP# is a weight-only PTQ method that combines Randomized Hadamard Transform incoherence processing, an E_8 lattice (E8P) vector-quantization codebook with BlockLDLQ rounding, and inter-layer fine-tuning to reach state-of-the-art at 2-4 bits with fast GPU inference.",
@@ -725,14 +847,20 @@
     "section": "6.3. Efficient Inference with QuIP#"
    }
   ],
-  "md_path": "papers_md/RP21_Tseng_2024.md"
+  "md_path": "papers_md/RP21_Tseng_2024.md",
+  "extraction_path": "extractions/RP21_extraction.json",
+  "pages_dir": "papers_pages/RP21_Tseng_2024/",
+  "page_count": 27,
+  "pdf_path": "papers_pdf/RP21_Tseng_2024.pdf"
  },
  {
   "rp_id": "RP22",
   "title": "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization",
   "first_author": "Hooper",
+  "authors_count": 7,
   "year": 2024,
   "venue": "NeurIPS 2024 (arXiv preprint arXiv:2401.18079)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "KV-cache-quant",
   "contribution": "KVQuant is a sub-4-bit KV cache PTQ method using per-channel pre-RoPE Key quantization, sensitivity-weighted non-uniform datatypes (nuqX), and per-vector dense-and-sparse outlier handling, enabling 10M context length LLaMA-7B inference on an 8-GPU system with under 0.1 perplexity loss.",
@@ -758,14 +886,20 @@
     "section": "4.4 Performance Analysis and Memory Savings"
    }
   ],
-  "md_path": "papers_md/RP22_Hooper_2024.md"
+  "md_path": "papers_md/RP22_Hooper_2024.md",
+  "extraction_path": "extractions/RP22_extraction.json",
+  "pages_dir": "papers_pages/RP22_Hooper_2024/",
+  "page_count": 27,
+  "pdf_path": "papers_pdf/RP22_Hooper_2024.pdf"
  },
  {
   "rp_id": "RP23",
   "title": "DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models",
   "first_author": "Wang",
+  "authors_count": 19,
   "year": 2023,
   "venue": "NeurIPS 2023 (Datasets and Benchmarks Track, Outstanding Paper)",
+  "doi": "arXiv:2306.11698",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "DecodingTrust is a comprehensive benchmark assessing GPT-3.5, GPT-4 and six open LLMs across eight trustworthiness dimensions: toxicity, stereotype bias, adversarial robustness, OOD robustness, robustness to adversarial demonstrations, privacy, machine ethics, and fairness.",
@@ -796,14 +930,20 @@
     "section": "I.1 Aggregation protocol for each trustworthiness perspective"
    }
   ],
-  "md_path": "papers_md/RP23_Wang_2023.md"
+  "md_path": "papers_md/RP23_Wang_2023.md",
+  "extraction_path": "extractions/RP23_extraction.json",
+  "pages_dir": "papers_pages/RP23_Wang_2023/",
+  "page_count": 110,
+  "pdf_path": "papers_pdf/RP23_Wang_2023.pdf"
  },
  {
   "rp_id": "RP24",
   "title": "The Impact of Inference Acceleration on Bias of LLMs",
   "first_author": "Kirsten",
+  "authors_count": 4,
   "year": 2024,
   "venue": "arXiv preprint",
+  "doi": "",
   "paper_type": "safety_analysis",
   "method_family": "PTQ",
   "contribution": "Probes how five inference acceleration strategies (INT4/INT8, AWQ, KV4/KV8, structured/unstructured Wanda pruning) change demographic bias in three instruction-tuned LLMs across six bias metrics.",
@@ -829,14 +969,20 @@
     "section": "C Results With Instruction / Chat Template"
    }
   ],
-  "md_path": "papers_md/RP24_Kirsten_2024.md"
+  "md_path": "papers_md/RP24_Kirsten_2024.md",
+  "extraction_path": "extractions/RP24_extraction.json",
+  "pages_dir": "papers_pages/RP24_Kirsten_2024/",
+  "page_count": 20,
+  "pdf_path": "papers_pdf/RP24_Kirsten_2024.pdf"
  },
  {
   "rp_id": "RP25",
   "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
   "first_author": "Kwon",
+  "authors_count": 9,
   "year": 2023,
   "venue": "SOSP '23 (29th ACM Symposium on Operating Systems Principles)",
+  "doi": "10.1145/3600006.3613165",
   "paper_type": "application",
   "method_family": "none",
   "contribution": "Proposes PagedAttention, an attention algorithm that stores KV cache in non-contiguous paged blocks like OS virtual memory, and builds vLLM, a serving system that yields 2-4x throughput over FasterTransformer and Orca.",
@@ -867,14 +1013,20 @@
     "section": "1 Introduction"
    }
   ],
-  "md_path": "papers_md/RP25_Kwon_2023.md"
+  "md_path": "papers_md/RP25_Kwon_2023.md",
+  "extraction_path": "extractions/RP25_extraction.json",
+  "pages_dir": "papers_pages/RP25_Kwon_2023/",
+  "page_count": 16,
+  "pdf_path": "papers_pdf/RP25_Kwon_2023.pdf"
  },
  {
   "rp_id": "RP26",
   "title": "Decoding Compressed Trust: Scrutinizing the Trustworthiness of Efficient LLMs Under Compression",
   "first_author": "Hong",
+  "authors_count": 15,
   "year": 2024,
   "venue": "ICML 2024 (Proceedings of the 41st International Conference on Machine Learning, PMLR 235)",
+  "doi": "",
   "paper_type": "safety_analysis",
   "method_family": "PTQ",
   "contribution": "First comprehensive evaluation of compressed LLMs on trustworthiness across eight DecodingTrust dimensions, comparing five SoTA quantization and pruning methods.",
@@ -900,14 +1052,20 @@
     "section": "**Abstract **"
    }
   ],
-  "md_path": "papers_md/RP26_Hong_2024.md"
+  "md_path": "papers_md/RP26_Hong_2024.md",
+  "extraction_path": "extractions/RP26_extraction.json",
+  "pages_dir": "papers_pages/RP26_Hong_2024/",
+  "page_count": 23,
+  "pdf_path": "papers_pdf/RP26_Hong_2024.pdf"
  },
  {
   "rp_id": "RP27",
   "title": "GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs",
   "first_author": "Zhelnin",
+  "authors_count": 7,
   "year": 2024,
   "venue": "arXiv preprint",
+  "doi": "",
   "paper_type": "method",
   "method_family": "QAT",
   "contribution": "GIFT-SW is a PEFT method that updates only salient weight columns while injecting Gaussian noise into non-salient columns; it also recovers performance of mixed-precision quantized LLMs.",
@@ -933,14 +1091,20 @@
     "section": "5.4 Scaling Properties"
    }
   ],
-  "md_path": "papers_md/RP27_Zhelnin_2024.md"
+  "md_path": "papers_md/RP27_Zhelnin_2024.md",
+  "extraction_path": "extractions/RP27_extraction.json",
+  "pages_dir": "papers_pages/RP27_Zhelnin_2024/",
+  "page_count": 16,
+  "pdf_path": "papers_pdf/RP27_Zhelnin_2024.pdf"
  },
  {
   "rp_id": "RP28",
   "title": "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
   "first_author": "Ashkboos",
+  "authors_count": 5,
   "year": 2024,
   "venue": "ICLR 2024",
+  "doi": "arXiv:2401.15024",
   "paper_type": "method",
   "method_family": "pruning",
   "contribution": "SliceGPT is a post-training structured pruning method that applies an orthogonal transform (computational invariance) and slices entire rows and columns of weight matrices, reducing the embedding dimension while keeping competitive accuracy without recovery fine-tuning.",
@@ -966,14 +1130,20 @@
     "section": "A.6 BENCHMARKING THROUGHPUT EXPERIMENT"
    }
   ],
-  "md_path": "papers_md/RP28_Ashkboos_2024.md"
+  "md_path": "papers_md/RP28_Ashkboos_2024.md",
+  "extraction_path": "extractions/RP28_extraction.json",
+  "pages_dir": "papers_pages/RP28_Ashkboos_2024/",
+  "page_count": 22,
+  "pdf_path": "papers_pdf/RP28_Ashkboos_2024.pdf"
  },
  {
   "rp_id": "RP29",
   "title": "QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs",
   "first_author": "Ashkboos",
+  "authors_count": 9,
   "year": 2024,
   "venue": "NeurIPS 2024 (arXiv:2404.00456)",
+  "doi": "arXiv:2404.00456",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "QuaRot is a rotation-based PTQ scheme that fuses randomized Hadamard transforms into LLM weights to eliminate activation outliers, enabling end-to-end 4-bit quantization of weights, activations, and KV cache with minimal accuracy loss.",
@@ -999,14 +1169,20 @@
     "section": "5.2 Performance Analysis"
    }
   ],
-  "md_path": "papers_md/RP29_Ashkboos_2024.md"
+  "md_path": "papers_md/RP29_Ashkboos_2024.md",
+  "extraction_path": "extractions/RP29_extraction.json",
+  "pages_dir": "papers_pages/RP29_Ashkboos_2024/",
+  "page_count": 21,
+  "pdf_path": "papers_pdf/RP29_Ashkboos_2024.pdf"
  },
  {
   "rp_id": "RP30",
   "title": "Extreme Compression of Large Language Models via Additive Quantization",
   "first_author": "Egiazarian",
+  "authors_count": 6,
   "year": 2024,
   "venue": "ICML 2024 (arXiv:2401.06118)",
+  "doi": "arXiv:2401.06118",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "AQLM extends classic Additive Quantization (a multi-codebook method from information retrieval) to LLM weight compression, achieving Pareto-optimal accuracy below 3 bits per parameter and strong results in the 2-bit regime, with practical GPU/CPU kernels.",
@@ -1032,14 +1208,20 @@
     "section": "4.4. Inference Speed"
    }
   ],
-  "md_path": "papers_md/RP30_Egiazarian_2024.md"
+  "md_path": "papers_md/RP30_Egiazarian_2024.md",
+  "extraction_path": "extractions/RP30_extraction.json",
+  "pages_dir": "papers_pages/RP30_Egiazarian_2024/",
+  "page_count": 20,
+  "pdf_path": "papers_pdf/RP30_Egiazarian_2024.pdf"
  },
  {
   "rp_id": "RP31",
   "title": "H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models",
   "first_author": "Zhang",
+  "authors_count": 12,
   "year": 2023,
   "venue": "NeurIPS 2023",
+  "doi": "arXiv:2306.14048",
   "paper_type": "method",
   "method_family": "architecture",
   "contribution": "H2O is a KV cache eviction policy that dynamically retains a balance of recent and Heavy-Hitter tokens, reducing KV cache memory while preserving accuracy and improving generation throughput up to 29x over leading inference systems.",
@@ -1070,14 +1252,20 @@
     "section": "1 Introduction"
    }
   ],
-  "md_path": "papers_md/RP31_Zhang_2023.md"
+  "md_path": "papers_md/RP31_Zhang_2023.md",
+  "extraction_path": "extractions/RP31_extraction.json",
+  "pages_dir": "papers_pages/RP31_Zhang_2023/",
+  "page_count": 49,
+  "pdf_path": "papers_pdf/RP31_Zhang_2023.pdf"
  },
  {
   "rp_id": "RP32",
   "title": "HarmLevelBench: Evaluating Harm-Level Compliance and the Impact of Quantization on Model Alignment",
   "first_author": "Belkhiter",
+  "authors_count": 3,
   "year": 2024,
   "venue": "arXiv preprint (Safe Generative AI Workshop @ NeurIPS 2024)",
+  "doi": "",
   "paper_type": "safety_analysis",
   "method_family": "PTQ",
   "contribution": "Introduces HarmLevelBench, a dataset of 7 topics x 8 harm levels, and benchmarks 7 jailbreak attacks on Vicuna 13B v1.5 to study how AWQ and GPTQ quantization affect model alignment.",
@@ -1103,14 +1291,20 @@
     "section": "4.1 Classic ASR"
    }
   ],
-  "md_path": "papers_md/RP32_Belkhiter_2024.md"
+  "md_path": "papers_md/RP32_Belkhiter_2024.md",
+  "extraction_path": "extractions/RP32_extraction.json",
+  "pages_dir": "papers_pages/RP32_Belkhiter_2024/",
+  "page_count": 11,
+  "pdf_path": "papers_pdf/RP32_Belkhiter_2024.pdf"
  },
  {
   "rp_id": "RP33",
   "title": "FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU",
   "first_author": "Sheng",
+  "authors_count": 14,
   "year": 2023,
   "venue": "ICML 2023 (PMLR 202)",
+  "doi": "arXiv:2303.06865",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "FlexGen is a high-throughput offloading engine that runs OPT-175B on a single 16GB GPU by aggregating GPU, CPU, and disk memory through linear-programming-based scheduling and 4-bit group-wise compression of weights and KV cache, reaching 1 token/s with effective batch size 144.",
@@ -1141,14 +1335,20 @@
     "section": "6.1. Offloading"
    }
   ],
-  "md_path": "papers_md/RP33_Sheng_2023.md"
+  "md_path": "papers_md/RP33_Sheng_2023.md",
+  "extraction_path": "extractions/RP33_extraction.json",
+  "pages_dir": "papers_pages/RP33_Sheng_2023/",
+  "page_count": 23,
+  "pdf_path": "papers_pdf/RP33_Sheng_2023.pdf"
  },
  {
   "rp_id": "RP34",
   "title": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
   "first_author": "Song",
+  "authors_count": 4,
   "year": 2024,
   "venue": "SOSP '24 (ACM Symposium on Operating Systems Principles)",
+  "doi": "10.1145/3694715.3695964",
   "paper_type": "method",
   "method_family": "none",
   "contribution": "PowerInfer is a GPU-CPU hybrid LLM inference engine that exploits power-law neuron activation, preloading hot neurons to GPU and computing cold neurons on CPU, reaching up to 11.69x speedup over llama.cpp on a single RTX 4090.",
@@ -1174,14 +1374,20 @@
     "section": "8.3 Ablation Studies"
    }
   ],
-  "md_path": "papers_md/RP34_Song_2024.md"
+  "md_path": "papers_md/RP34_Song_2024.md",
+  "extraction_path": "extractions/RP34_extraction.json",
+  "pages_dir": "papers_pages/RP34_Song_2024/",
+  "page_count": 17,
+  "pdf_path": "papers_pdf/RP34_Song_2024.pdf"
  },
  {
   "rp_id": "RP35",
   "title": "FLATQUANT: Flatness Matters for LLM Quantization",
   "first_author": "Sun",
+  "authors_count": 13,
   "year": 2024,
   "venue": "International Conference on Machine Learning (ICML) 2025 / arXiv 2024",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "FLATQUANT is a post-training quantization method that learns fast affine transformations per linear layer using Kronecker-product matrices, flattening weights and activations and fusing transformation with quantization in a single kernel.",
@@ -1207,14 +1413,20 @@
     "section": "4.3. Inference Latency"
    }
   ],
-  "md_path": "papers_md/RP35_Sun_2024.md"
+  "md_path": "papers_md/RP35_Sun_2024.md",
+  "extraction_path": "extractions/RP35_extraction.json",
+  "pages_dir": "papers_pages/RP35_Sun_2024/",
+  "page_count": 27,
+  "pdf_path": "papers_pdf/RP35_Sun_2024.pdf"
  },
  {
   "rp_id": "RP36",
   "title": "SpinQuant: LLM Quantization with Learned Rotations",
   "first_author": "Liu",
+  "authors_count": 9,
   "year": 2024,
   "venue": "arXiv preprint (Meta)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "SpinQuant proposes learned rotation matrices, optimized on the Stiefel manifold via Cayley SGD, that remove activation/weight outliers in LLMs and enable accurate W4A4KV4 post-training quantization.",
@@ -1240,14 +1452,20 @@
     "section": "4.3.4 Comparison with Quarot"
    }
   ],
-  "md_path": "papers_md/RP36_Liu_2024.md"
+  "md_path": "papers_md/RP36_Liu_2024.md",
+  "extraction_path": "extractions/RP36_extraction.json",
+  "pages_dir": "papers_pages/RP36_Liu_2024/",
+  "page_count": 24,
+  "pdf_path": "papers_pdf/RP36_Liu_2024.pdf"
  },
  {
   "rp_id": "RP37",
   "title": "LLM in a flash: Efficient Large Language Model Inference with Limited Memory",
   "first_author": "Alizadeh",
+  "authors_count": 8,
   "year": 2024,
   "venue": "ACL 2024",
+  "doi": "arXiv:2312.11514",
   "paper_type": "method",
   "method_family": "architecture",
   "contribution": "LLM-in-a-flash stores model parameters in flash and selectively loads only the active subset to DRAM using windowing and row-column bundling, enabling LLMs up to 2x DRAM size with 4-5x CPU and 20-25x GPU speedups.",
@@ -1278,14 +1496,20 @@
     "section": "**Efficient Inference for Large Language Models. **"
    }
   ],
-  "md_path": "papers_md/RP37_Alizadeh_2023.md"
+  "md_path": "papers_md/RP37_Alizadeh_2023.md",
+  "extraction_path": "extractions/RP37_extraction.json",
+  "pages_dir": "papers_pages/RP37_Alizadeh_2023/",
+  "page_count": 23,
+  "pdf_path": "papers_pdf/RP37_Alizadeh_2023.pdf"
  },
  {
   "rp_id": "RP38",
   "title": "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache",
   "first_author": "Liu",
+  "authors_count": 8,
   "year": 2024,
   "venue": "ICML 2024 (PMLR 235)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "KV-cache-quant",
   "contribution": "KIVI is a tuning-free 2-bit KV cache quantization method that quantizes key cache per-channel and value cache per-token, giving 2.6x peak memory reduction and 2.35-3.47x throughput.",
@@ -1311,14 +1535,20 @@
     "section": "5. Related Work"
    }
   ],
-  "md_path": "papers_md/RP38_Liu_2024.md"
+  "md_path": "papers_md/RP38_Liu_2024.md",
+  "extraction_path": "extractions/RP38_extraction.json",
+  "pages_dir": "papers_pages/RP38_Liu_2024/",
+  "page_count": 15,
+  "pdf_path": "papers_pdf/RP38_Liu_2024.pdf"
  },
  {
   "rp_id": "RP39",
   "title": "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs",
   "first_author": "Ge",
+  "authors_count": 6,
   "year": 2023,
   "venue": "ICLR 2024 (arXiv preprint 2023)",
+  "doi": "arXiv:2310.01801",
   "paper_type": "method",
   "method_family": "pruning",
   "contribution": "FastGen is a plug-and-play adaptive KV cache compression method that profiles per-head attention structures and applies tailored eviction policies (special tokens, punctuation, locality, frequency) to reduce LLM inference memory without fine-tuning.",
@@ -1349,14 +1579,20 @@
     "section": "5.4 PROFILING COST"
    }
   ],
-  "md_path": "papers_md/RP39_Ge_2023.md"
+  "md_path": "papers_md/RP39_Ge_2023.md",
+  "extraction_path": "extractions/RP39_extraction.json",
+  "pages_dir": "papers_pages/RP39_Ge_2023/",
+  "page_count": 14,
+  "pdf_path": "papers_pdf/RP39_Ge_2023.pdf"
  },
  {
   "rp_id": "RP40",
   "title": "QLORA: Efficient Finetuning of Quantized LLMs",
   "first_author": "Dettmers",
+  "authors_count": 4,
   "year": 2023,
   "venue": "NeurIPS 2023",
+  "doi": "arXiv:2305.14314",
   "paper_type": "method",
   "method_family": "QAT",
   "contribution": "QLORA is an efficient finetuning method that backpropagates gradients through a frozen 4-bit quantized model into LoRA adapters, enabling 65B-parameter finetuning on a single 48GB GPU while preserving 16-bit performance through NF4, Double Quantization, and Paged Optimizers.",
@@ -1392,14 +1628,20 @@
     "section": "3 QLORA Finetuning"
    }
   ],
-  "md_path": "papers_md/RP40_Dettmers_2023.md"
+  "md_path": "papers_md/RP40_Dettmers_2023.md",
+  "extraction_path": "extractions/RP40_extraction.json",
+  "pages_dir": "papers_pages/RP40_Dettmers_2023/",
+  "page_count": 26,
+  "pdf_path": "papers_pdf/RP40_Dettmers_2023.pdf"
  },
  {
   "rp_id": "RP41",
   "title": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
   "first_author": "Xu",
+  "authors_count": 5,
   "year": 2024,
   "venue": "EMNLP Findings 2024",
+  "doi": "arXiv:2407.04965",
   "paper_type": "safety_analysis",
   "method_family": "PTQ",
   "contribution": "A multi-dimensional safety evaluation of compressed LLMs that measures degeneration harm, representational harm, dialect bias, and language modeling, showing that quantization mostly preserves bias and toxicity at moderate rates while pruning degrades safety quickly.",
@@ -1435,14 +1677,20 @@
     "section": "D.4 Full Results on Prune x SFT Experiments"
    }
   ],
-  "md_path": "papers_md/RP41_Xu_2024.md"
+  "md_path": "papers_md/RP41_Xu_2024.md",
+  "extraction_path": "extractions/RP41_extraction.json",
+  "pages_dir": "papers_pages/RP41_Xu_2024/",
+  "page_count": 38,
+  "pdf_path": "papers_pdf/RP41_Xu_2024.pdf"
  },
  {
   "rp_id": "RP42",
   "title": "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs",
   "first_author": "Lin",
+  "authors_count": 9,
   "year": 2024,
   "venue": "NeurIPS 2024 (Spotlight)",
+  "doi": "arXiv:2406.01721",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "DuQuant introduces dual block-diagonal rotation and zigzag permutation transformations to redistribute both massive and normal activation outliers, enabling state-of-the-art 4-bit weight-activation PTQ for LLMs without GPTQ.",
@@ -1473,14 +1721,20 @@
     "section": "4.2 Ablation Study"
    }
   ],
-  "md_path": "papers_md/RP42_Lin_2024.md"
+  "md_path": "papers_md/RP42_Lin_2024.md",
+  "extraction_path": "extractions/RP42_extraction.json",
+  "pages_dir": "papers_pages/RP42_Lin_2024/",
+  "page_count": 29,
+  "pdf_path": "papers_pdf/RP42_Lin_2024.pdf"
  },
  {
   "rp_id": "RP43",
   "title": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
   "first_author": "Lee",
+  "authors_count": 5,
   "year": 2024,
   "venue": "IJCAI 2025 (arXiv:2409.11055)",
+  "doi": "arXiv:2409.11055",
   "paper_type": "benchmark",
   "method_family": "PTQ",
   "contribution": "A comprehensive evaluation of four PTQ methods (GPTQ, AWQ, SmoothQuant, FP8) on 12 instruction-tuned LLMs spanning 1B to 405B parameters across 13 datasets, finding FP8 is most robust, AWQ outperforms GPTQ, smaller models suffer severe drops at 4-bit, and quantization magnifies inherent model weaknesses rather than correlating with task difficulty.",
@@ -1511,14 +1765,20 @@
     "section": "5.1 RQ1: Do quantized LLMs outperform smaller original models on most benchmarks, and how do they fare across different architectures and SLMs?"
    }
   ],
-  "md_path": "papers_md/RP43_Lee_2024.md"
+  "md_path": "papers_md/RP43_Lee_2024.md",
+  "extraction_path": "extractions/RP43_extraction.json",
+  "pages_dir": "papers_pages/RP43_Lee_2024/",
+  "page_count": 21,
+  "pdf_path": "papers_pdf/RP43_Lee_2024.pdf"
  },
  {
   "rp_id": "RP44",
   "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
   "first_author": "Mazeika",
+  "authors_count": 12,
   "year": 2024,
   "venue": "ICML 2024 (Proceedings of the 41st International Conference on Machine Learning)",
+  "doi": "arXiv:2402.04249",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "HarmBench is a standardized red-teaming benchmark with 510 harmful behaviors across 4 functional categories used to compare 18 attack methods on 33 LLMs, and the paper introduces R2D2, an efficient adversarial training defense.",
@@ -1549,14 +1809,20 @@
     "section": "Contextual Behaviors"
    }
   ],
-  "md_path": "papers_md/RP44_Mazeika_2024.md"
+  "md_path": "papers_md/RP44_Mazeika_2024.md",
+  "extraction_path": "extractions/RP44_extraction.json",
+  "pages_dir": "papers_pages/RP44_Mazeika_2024/",
+  "page_count": 44,
+  "pdf_path": "papers_pdf/RP44_Mazeika_2024.pdf"
  },
  {
   "rp_id": "RP45",
   "title": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
   "first_author": "Fang",
+  "authors_count": 4,
   "year": 2025,
   "venue": "arXiv preprint",
+  "doi": "",
   "paper_type": "safety_analysis",
   "method_family": "PTQ",
   "contribution": "First systematic investigation showing that quantized LLMs (8-bit and 4-bit via bitsandbytes) often exhibit superior robustness than full-precision counterparts in code generation, against adversarial prompt attacks and weight noise perturbations.",
@@ -1587,14 +1853,20 @@
     "section": "VII. CONCLUSION"
    }
   ],
-  "md_path": "papers_md/RP45_Fang_2025.md"
+  "md_path": "papers_md/RP45_Fang_2025.md",
+  "extraction_path": "extractions/RP45_extraction.json",
+  "pages_dir": "papers_pages/RP45_Fang_2025/",
+  "page_count": 13,
+  "pdf_path": "papers_pdf/RP45_Fang_2025.pdf"
  },
  {
   "rp_id": "RP46",
   "title": "TrustLLM: Trustworthiness in Large Language Models",
   "first_author": "Sun",
+  "authors_count": 19,
   "year": 2024,
   "venue": "ICML 2024 (arXiv preprint, latest update Sep 2024)",
+  "doi": "arXiv:2401.05561",
   "paper_type": "benchmark",
   "method_family": "none",
   "contribution": "TrustLLM is a comprehensive benchmark of trustworthiness for 16 mainstream LLMs across six dimensions (truthfulness, safety, fairness, robustness, privacy, machine ethics) using over 30 datasets, with principles, evaluation methodology, and a public leaderboard.",
@@ -1625,14 +1897,20 @@
     "section": "2.2 Novel Insights into Individual Dimensions of Trustworthiness"
    }
   ],
-  "md_path": "papers_md/RP46_Sun_2024.md"
+  "md_path": "papers_md/RP46_Sun_2024.md",
+  "extraction_path": "extractions/RP46_extraction.json",
+  "pages_dir": "papers_pages/RP46_Sun_2024/",
+  "page_count": 119,
+  "pdf_path": "papers_pdf/RP46_Sun_2024.pdf"
  },
  {
   "rp_id": "RP47",
   "title": "Inference economics of language models",
   "first_author": "Erdil",
+  "authors_count": 1,
   "year": 2025,
   "venue": "arXiv preprint (Epoch AI)",
+  "doi": "",
   "paper_type": "application",
   "method_family": "none",
   "contribution": "Builds a theoretical roofline-style model for LLM inference economics that jointly handles arithmetic, memory bandwidth, network bandwidth and latency, and uses it to compute serial-speed versus cost-per-token Pareto frontiers for popular models on H100 hardware.",
@@ -1663,14 +1941,20 @@
     "section": "4 Inference economics of example models"
    }
   ],
-  "md_path": "papers_md/RP47_Erdil_2025.md"
+  "md_path": "papers_md/RP47_Erdil_2025.md",
+  "extraction_path": "extractions/RP47_extraction.json",
+  "pages_dir": "papers_pages/RP47_Erdil_2025/",
+  "page_count": 23,
+  "pdf_path": "papers_pdf/RP47_Erdil_2025.pdf"
  },
  {
   "rp_id": "RP48",
   "title": "OSTQuant: Refining Large Language Model Quantization with Orthogonal and Scaling Transformations for Better Distribution Fitting",
   "first_author": "Hu",
+  "authors_count": 10,
   "year": 2025,
   "venue": "ICLR 2025 (arXiv:2501.13987)",
+  "doi": "",
   "paper_type": "method",
   "method_family": "PTQ",
   "contribution": "OSTQuant is a learnable PTQ method that combines orthogonal and scaling transformation pairs guided by a new Quantization Space Utilization Rate (QSUR) metric and a KL-Top loss to fit weights and activations into the quantization space.",
@@ -1696,14 +1980,20 @@
     "section": "5 EXPERIMENTS"
    }
   ],
-  "md_path": "papers_md/RP48_Hu_2025.md"
+  "md_path": "papers_md/RP48_Hu_2025.md",
+  "extraction_path": "extractions/RP48_extraction.json",
+  "pages_dir": "papers_pages/RP48_Hu_2025/",
+  "page_count": 27,
+  "pdf_path": "papers_pdf/RP48_Hu_2025.pdf"
  },
  {
   "rp_id": "RP49",
   "title": "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs",
   "first_author": "Fu",
+  "authors_count": 8,
   "year": 2025,
   "venue": "arXiv preprint",
+  "doi": "",
   "paper_type": "safety_analysis",
   "method_family": "none",
   "contribution": "Introduces TruthfulnessEval, a framework that evaluates quantized LLMs across logical reasoning, common sense, and imitative falsehoods, and shows that 4-bit and 2-bit models retain internal truthful representations but produce false outputs under deceptive prompts.",
@@ -1729,14 +2019,20 @@
     "section": "Vanilla Prompt for True/False Datasets"
    }
   ],
-  "md_path": "papers_md/RP49_Fu_2025.md"
+  "md_path": "papers_md/RP49_Fu_2025.md",
+  "extraction_path": "extractions/RP49_extraction.json",
+  "pages_dir": "papers_pages/RP49_Fu_2025/",
+  "page_count": 24,
+  "pdf_path": "papers_pdf/RP49_Fu_2025.pdf"
  },
  {
   "rp_id": "RP50",
   "title": "Investigating the Impact of Quantization Methods on the Safety and Reliability of Large Language Models",
   "first_author": "Kharinaev",
+  "authors_count": 6,
   "year": 2025,
   "venue": "arXiv preprint (Skoltech / AIRI / HSE)",
+  "doi": "",
   "paper_type": "safety_analysis",
   "method_family": "PTQ",
   "contribution": "Releases OpenMiniSafety, a 1,067-question human-curated safety dataset, and benchmarks 66 quantized variants of 4 LLMs across four PTQ and two QAT methods, showing both PTQ and QAT can degrade safety alignment.",
@@ -1772,6 +2068,10 @@
     "section": "4.3.1 Open-Ended Safety"
    }
   ],
-  "md_path": "papers_md/RP50_Kharinaev_2025.md"
+  "md_path": "papers_md/RP50_Kharinaev_2025.md",
+  "extraction_path": "extractions/RP50_extraction.json",
+  "pages_dir": "papers_pages/RP50_Kharinaev_2025/",
+  "page_count": 23,
+  "pdf_path": "papers_pdf/RP50_Kharinaev_2025.pdf"
  }
 ]
