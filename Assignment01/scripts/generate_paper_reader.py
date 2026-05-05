@@ -1,13 +1,28 @@
 """
-Build a focus-mode paper reader (paper_reader.html) — ADHD-friendly + mobile-first.
+paper_reader v3 — comprehensive reading + verification UI.
+
+Features:
+  - 5 tabs (Read / Pages / Findings / Data / Summary)
+  - EN ↔ AR language toggle (loads papers_md_ar/<rp>.md if present, RTL render)
+  - Bookmarks ⭐, tags, reading progress, all per-paper in localStorage
+  - Bionic reading + dyslexia font + wide layout + focus mode (toggleable)
+  - Auto-generated table of contents (sticky on wide screens)
+  - BibTeX / APA citation export per paper
+  - Cross-paper text search (filter picker by title OR by paper content)
+  - Print stylesheet
+  - Browser TTS (read paragraph aloud)
+  - Compare mode (pick 2 papers, side-by-side)
+  - Highlight mode (drag to highlight, persisted to localStorage)
 
 Reads:
-  extractions/*.json   — for the paper list + key findings sidebar
-  papers_md/*.md       — the rendered paper content (loaded on demand at runtime)
+  extractions/*.json
+  papers_md/*.md  (English)
+  papers_md_ar/*.md  (Arabic, optional)
+  papers_pages/manifest.json
 
 Writes:
-  paper_reader.html    — single-file app (~50 KB), loads papers via fetch()
-  paper_reader.json    — manifest with paper metadata + key findings
+  paper_reader.html
+  paper_reader.json
 """
 
 import json
@@ -17,6 +32,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent.parent
 EXTR_DIR = HERE / "extractions"
 MD_DIR = HERE / "papers_md"
+MD_AR_DIR = HERE / "papers_md_ar"
 OUT_HTML = HERE / "paper_reader.html"
 OUT_MANIFEST = HERE / "paper_reader.json"
 
@@ -27,14 +43,40 @@ def v(node):
     return node
 
 
-def collect(arr):
-    if not arr:
-        return []
-    return [v(x) for x in arr if v(x) is not None]
+def count_leaves_traced(j):
+    total = traced = 0
+    if isinstance(j, dict):
+        if "value" in j and "ev" in j:
+            total = 1
+            ev = j.get("ev") or {}
+            if ev.get("page") and ev.get("section") and ev.get("section") != "not_found":
+                traced = 1
+            return total, traced
+        for val in j.values():
+            t, tr = count_leaves_traced(val); total += t; traced += tr
+    elif isinstance(j, list):
+        for item in j:
+            t, tr = count_leaves_traced(item); total += t; traced += tr
+    return total, traced
+
+
+_md_strip_re = re.compile(
+    r"<!--.*?-->|"             # comments
+    r"```[\s\S]*?```|"         # code fences
+    r"!\[[^\]]*\]\([^)]+\)|"   # images
+    r"\[([^\]]+)\]\([^)]+\)|"  # links → keep text
+    r"[*_`#~|>-]+"             # md punctuation
+)
+
+
+def word_count(md_text):
+    if not md_text:
+        return 0
+    cleaned = _md_strip_re.sub(" ", md_text)
+    return len(cleaned.split())
 
 
 def build_manifest():
-    # Pages manifest (DPI + per-paper page count + dir name)
     pages_manifest_path = HERE / "papers_pages" / "manifest.json"
     pages_meta = {}
     if pages_manifest_path.exists():
@@ -56,7 +98,7 @@ def build_manifest():
         mfam = v(j.get("method_family")) or ""
         contribution = v(j.get("contribution")) or ""
 
-        # Key findings — pull just the value strings + page numbers
+        # Findings
         kr_raw = j.get("key_results") or []
         if isinstance(kr_raw, dict) and "value" in kr_raw:
             kr_raw = kr_raw["value"] or []
@@ -67,12 +109,27 @@ def build_manifest():
                 ev = kr.get("ev") or {}
                 page = ev.get("page") if isinstance(ev, dict) else None
                 section = ev.get("section") if isinstance(ev, dict) else None
-                findings.append({"text": value if isinstance(value, str) else str(value),
-                                "page": page, "section": section})
+                findings.append({
+                    "text": value if isinstance(value, str) else str(value),
+                    "page": page, "section": section,
+                })
 
-        # MD file existence
-        md_files = list(MD_DIR.glob(f"{rp}_*.md"))
-        md_path = f"papers_md/{md_files[0].name}" if md_files else None
+        # Trace stats
+        leaves_total, leaves_traced = count_leaves_traced(j)
+
+        # MD files (en + ar)
+        md_files_en = list(MD_DIR.glob(f"{rp}_*.md"))
+        md_path_en = f"papers_md/{md_files_en[0].name}" if md_files_en else None
+        md_files_ar = list(MD_AR_DIR.glob(f"{rp}_*.md")) if MD_AR_DIR.exists() else []
+        md_path_ar = f"papers_md_ar/{md_files_ar[0].name}" if md_files_ar else None
+
+        # Word count from EN .md (used for reading time)
+        words = 0
+        if md_files_en:
+            try:
+                words = word_count(md_files_en[0].read_text(encoding="utf-8"))
+            except Exception:
+                pass
 
         # Pages
         pmeta = pages_meta.get(rp, {})
@@ -92,11 +149,17 @@ def build_manifest():
             "method_family": mfam,
             "contribution": contribution,
             "findings": findings,
-            "md_path": md_path,
+            "md_path_en": md_path_en,
+            "md_path_ar": md_path_ar,
             "extraction_path": f"extractions/{fp.name}",
             "pages_dir": pages_dir,
             "page_count": page_count,
             "pdf_path": pdf_path,
+            "word_count": words,
+            "reading_minutes": max(1, round(words / 220)) if words else 0,
+            "leaves_total": leaves_total,
+            "leaves_traced": leaves_traced,
+            "traced_pct": round(leaves_traced / leaves_total * 100) if leaves_total else 0,
         })
 
     papers.sort(key=lambda p: int(p["rp_id"][2:]))
@@ -110,124 +173,150 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <meta name="theme-color" content="#fdf6e3">
 <title>AI503 — Paper Reader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  /* === Calm, low-stim palette (Solarized-light–inspired) === */
   :root {
     --bg: #fdf6e3; --bg-alt: #eee8d5;
     --ink: #073642; --ink-soft: #586e75; --muted: #93a1a1;
     --accent: #268bd2; --accent-soft: #cfe6f5;
-    --warn: #b58900; --good: #859900;
+    --warn: #b58900; --good: #859900; --bad: #dc322f;
+    --hl: #ffe066;
     --border: #d6cfb8; --shadow: 0 2px 12px rgba(7, 54, 66, 0.08);
     --reader-width: 780px;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #002b36; --bg-alt: #073642;
-      --ink: #eee8d5; --ink-soft: #93a1a1; --muted: #586e75;
-      --accent-soft: #073642; --border: #073642;
-    }
+    :root { --bg: #002b36; --bg-alt: #073642; --ink: #eee8d5;
+            --ink-soft: #93a1a1; --muted: #586e75; --accent-soft: #073642;
+            --border: #073642; --hl: #5a4a08; }
   }
   * { box-sizing: border-box; }
-  html { font-size: 18px; }
   body {
     margin: 0;
     font-family: -apple-system, "Segoe UI", "Atkinson Hyperlegible", system-ui, sans-serif;
     background: var(--bg); color: var(--ink); line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    overscroll-behavior-y: contain;
+    -webkit-font-smoothing: antialiased; overscroll-behavior-y: contain;
   }
+  body.dyslexia { font-family: "Atkinson Hyperlegible", "Open Dyslexic", system-ui, sans-serif; letter-spacing: 0.02em; }
+  body.lang-ar [data-lang-target] { font-family: "Noto Naskh Arabic", "Tahoma", system-ui, sans-serif; }
 
   /* === Top bar === */
   .topbar {
     position: sticky; top: 0; z-index: 30;
-    display: flex; align-items: center; gap: 10px;
-    padding: 10px 14px;
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 10px;
     background: var(--bg-alt); border-bottom: 1px solid var(--border);
     backdrop-filter: blur(6px);
+    flex-wrap: wrap;
   }
-  .topbar h1 { font-size: 17px; margin: 0; font-weight: 600; flex: 1; }
-  .topbar h1 small { font-size: 13px; color: var(--ink-soft); font-weight: 400; }
+  .topbar h1 { font-size: 16px; margin: 0; font-weight: 600; flex: 1; min-width: 120px; }
+  .topbar h1 small { font-size: 12px; color: var(--ink-soft); font-weight: 400; }
   .iconbtn {
     appearance: none; border: 1px solid var(--border);
     background: var(--bg); color: var(--ink);
-    width: 44px; height: 40px; border-radius: 8px;
-    cursor: pointer; font-size: 17px;
-    display: flex; align-items: center; justify-content: center;
+    min-width: 40px; height: 38px; padding: 0 10px; border-radius: 7px;
+    cursor: pointer; font-size: 15px;
+    display: flex; align-items: center; justify-content: center; gap: 4px;
   }
   .iconbtn.active { background: var(--accent); color: white; border-color: var(--accent); }
   .iconbtn:active { background: var(--bg-alt); }
   .progress {
-    color: var(--ink-soft); font-size: 13px;
-    padding: 4px 10px; background: var(--bg); border-radius: 6px;
+    color: var(--ink-soft); font-size: 12px;
+    padding: 4px 8px; background: var(--bg); border-radius: 6px;
     border: 1px solid var(--border);
   }
 
   /* === Drawer === */
-  .drawer-bg {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.35);
-    opacity: 0; pointer-events: none; transition: opacity 0.18s; z-index: 40;
-  }
+  .drawer-bg { position: fixed; inset: 0; background: rgba(0,0,0,0.35);
+               opacity: 0; pointer-events: none; transition: opacity 0.18s; z-index: 40; }
   .drawer-bg.open { opacity: 1; pointer-events: auto; }
   .drawer {
     position: fixed; top: 0; left: 0; bottom: 0;
-    width: min(420px, 90vw);
-    background: var(--bg);
-    box-shadow: var(--shadow);
-    z-index: 50;
+    width: min(420px, 90vw); background: var(--bg);
+    box-shadow: var(--shadow); z-index: 50;
     transform: translateX(-100%); transition: transform 0.22s;
     display: flex; flex-direction: column;
   }
   .drawer.open { transform: translateX(0); }
   .drawer-head {
-    padding: 12px 14px; border-bottom: 1px solid var(--border);
-    display: flex; gap: 8px; align-items: center;
+    padding: 10px 12px; border-bottom: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 8px;
   }
   .drawer-head input {
-    flex: 1; padding: 12px; font-size: 16px;
-    border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px; font-size: 15px;
+    border: 1px solid var(--border); border-radius: 6px;
     background: var(--bg-alt); color: var(--ink);
   }
-  .drawer-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+  .filter-chips { display: flex; gap: 4px; flex-wrap: wrap; }
+  .filter-chip {
+    padding: 4px 9px; border: 1px solid var(--border); border-radius: 12px;
+    cursor: pointer; user-select: none; font-size: 12px; color: var(--ink-soft);
+    background: var(--bg);
+  }
+  .filter-chip.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .drawer-list { flex: 1; overflow-y: auto; padding: 6px 0; }
   .paper-item {
-    display: block; padding: 14px 18px; border-bottom: 1px solid var(--border);
-    cursor: pointer; line-height: 1.4;
+    display: block; padding: 10px 14px; border-bottom: 1px solid var(--border);
+    cursor: pointer; line-height: 1.4; position: relative;
   }
   .paper-item:hover { background: var(--bg-alt); }
-  .paper-item.active {
-    background: var(--accent-soft); border-left: 4px solid var(--accent); padding-left: 14px;
+  .paper-item.active { background: var(--accent-soft); border-left: 4px solid var(--accent); padding-left: 10px; }
+  .paper-item .rp { font-family: ui-monospace, monospace; color: var(--accent); font-weight: 600; font-size: 13px; }
+  .paper-item .meta { color: var(--ink-soft); font-size: 12px; margin-top: 2px; }
+  .paper-item .title { font-size: 14px; margin-top: 4px; }
+  .paper-item .star {
+    position: absolute; top: 8px; right: 8px; font-size: 16px;
+    background: transparent; border: none; cursor: pointer; padding: 4px;
+    color: var(--muted);
   }
-  .paper-item .rp {
-    font-family: ui-monospace, SFMono-Regular, monospace;
-    color: var(--accent); font-weight: 600; font-size: 14px;
+  .paper-item .star.on { color: var(--warn); }
+  .paper-item .progress-bar {
+    height: 3px; background: var(--bg-alt); border-radius: 2px; overflow: hidden;
+    margin-top: 6px;
   }
-  .paper-item .meta { color: var(--ink-soft); font-size: 13px; margin-top: 2px; }
-  .paper-item .title { font-size: 15px; margin-top: 4px; }
+  .paper-item .progress-bar > div { height: 100%; background: var(--good); transition: width 0.3s; }
+  .paper-item .tag-stripe {
+    position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  }
+  .paper-item .tag-stripe.t-read    { background: var(--good); }
+  .paper-item .tag-stripe.t-skim    { background: var(--accent); }
+  .paper-item .tag-stripe.t-cite    { background: var(--warn); }
+  .paper-item .tag-stripe.t-important { background: var(--bad); }
 
   /* === Main content === */
   main {
     max-width: var(--reader-width);
     margin: 0 auto;
-    padding: 20px 18px 90px;
+    padding: 18px 16px 90px;
   }
-  body.wide main { max-width: 100%; padding: 20px 32px 90px; }
+  body.wide main { max-width: 100%; padding: 18px 28px 90px; }
+  body.compare-mode main { max-width: 100%; padding: 16px 16px 90px; }
 
   .paper-header {
-    margin: 8px 0 24px; padding-bottom: 16px;
+    margin: 4px 0 18px; padding-bottom: 14px;
     border-bottom: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 8px;
   }
+  .paper-header .row1 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
   .paper-header .rp-tag {
-    display: inline-block; background: var(--accent); color: white;
-    padding: 4px 10px; border-radius: 6px;
-    font-family: ui-monospace, monospace; font-size: 14px; font-weight: 600;
+    background: var(--accent); color: white; padding: 4px 10px; border-radius: 6px;
+    font-family: ui-monospace, monospace; font-size: 13px; font-weight: 600;
   }
-  .paper-header h2 { font-size: 24px; line-height: 1.3; margin: 12px 0 8px; }
-  .paper-header .author-line { color: var(--ink-soft); font-size: 15px; }
-  .paper-header .pills { margin-top: 12px; }
+  .paper-header .header-actions { margin-left: auto; display: flex; gap: 4px; }
+  .paper-header h2 { font-size: 22px; line-height: 1.3; margin: 0; }
+  .paper-header .author-line { color: var(--ink-soft); font-size: 14px; }
+  .paper-header .pills { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
   .pill {
-    display: inline-block; font-size: 12px;
-    padding: 3px 8px; margin-right: 6px;
-    border-radius: 12px; border: 1px solid var(--border);
-    color: var(--ink-soft);
+    font-size: 11px; padding: 2px 8px; border-radius: 12px;
+    border: 1px solid var(--border); color: var(--ink-soft);
+  }
+  .pill.link { color: var(--accent); text-decoration: none; cursor: pointer; }
+  .pill.link:hover { background: var(--accent-soft); }
+  .tag-select {
+    font-size: 11px; padding: 2px 8px; border-radius: 12px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--ink-soft);
+    cursor: pointer;
   }
 
   /* === Tabs === */
@@ -237,13 +326,12 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     overflow-x: auto;
   }
   .mode-btn {
-    flex: 1; min-width: 100px;
-    padding: 10px 6px; border: none; cursor: pointer;
-    background: transparent; color: var(--ink-soft);
-    border-radius: 6px; font-size: 14px; font-weight: 500;
-    white-space: nowrap;
+    flex: 1; min-width: 80px; padding: 10px 6px; border: none; cursor: pointer;
+    background: transparent; color: var(--ink-soft); border-radius: 6px;
+    font-size: 13px; font-weight: 500; white-space: nowrap;
   }
   .mode-btn.active { background: var(--bg); color: var(--ink); box-shadow: var(--shadow); }
+  .mode-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 
   .pane { display: none; animation: fadeIn 0.18s; }
   .pane.active { display: block; }
@@ -256,14 +344,11 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   .md p { margin: 0 0 18px; line-height: 1.7; }
   .md a { color: var(--accent); }
   .md code { background: var(--bg-alt); padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
-  .md pre { background: var(--bg-alt); padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 14px; }
-  .md table { border-collapse: collapse; margin: 16px 0; font-size: 14px; width: 100%; }
+  .md pre { background: var(--bg-alt); padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 13px; }
+  .md table { border-collapse: collapse; margin: 16px 0; font-size: 13px; width: 100%; }
   .md table th, .md table td { border: 1px solid var(--border); padding: 6px 10px; }
   .md table th { background: var(--bg-alt); }
-  .md img {
-    max-width: 100%; height: auto; border-radius: 4px; margin: 12px 0;
-    cursor: zoom-in; background: var(--bg-alt);
-  }
+  .md img { max-width: 100%; height: auto; border-radius: 4px; margin: 12px 0; cursor: zoom-in; background: var(--bg-alt); }
   .md blockquote {
     border-left: 3px solid var(--accent); margin: 16px 0; padding: 4px 12px;
     color: var(--ink-soft); background: var(--bg-alt); border-radius: 0 4px 4px 0;
@@ -274,27 +359,59 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     text-transform: uppercase; letter-spacing: 1px;
   }
 
-  /* === Findings cards === */
+  /* RTL mode for Arabic */
+  .md.rtl { direction: rtl; text-align: right; }
+  .md.rtl pre, .md.rtl code { direction: ltr; text-align: left; }
+
+  /* Bionic reading: bold the first half of each word */
+  body.bionic .md p, body.bionic .md li {
+    /* applied via JS class on tokens — see toggleBionic() */
+  }
+  .bio-b { font-weight: 700; }
+  .bio-r { font-weight: 400; opacity: 0.85; }
+
+  /* User highlights */
+  .user-hl { background: var(--hl); padding: 0 2px; border-radius: 2px; }
+
+  /* TOC */
+  .toc {
+    position: sticky; top: 60px;
+    background: var(--bg-alt); padding: 10px 14px; border-radius: 8px;
+    margin-bottom: 16px; max-height: 200px; overflow-y: auto;
+    font-size: 13px;
+  }
+  .toc h4 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; color: var(--muted); letter-spacing: 1px; }
+  .toc a { display: block; padding: 2px 0; color: var(--ink-soft); text-decoration: none; }
+  .toc a:hover { color: var(--accent); }
+  .toc a[data-lvl="2"] { padding-left: 12px; }
+  .toc a[data-lvl="3"] { padding-left: 24px; font-size: 12px; }
+
+  /* Findings */
   .finding {
-    background: var(--bg);
-    border: 1px solid var(--border);
+    background: var(--bg); border: 1px solid var(--border);
     border-left: 3px solid var(--good);
-    padding: 14px 16px; margin-bottom: 12px;
-    border-radius: 6px; font-size: 16px;
+    padding: 14px 16px; margin-bottom: 12px; border-radius: 6px; font-size: 15px;
   }
   .finding .where {
-    display: block; font-size: 12px; color: var(--ink-soft); margin-top: 8px;
+    display: flex; gap: 8px; align-items: center;
+    font-size: 12px; color: var(--ink-soft); margin-top: 8px;
     font-family: ui-monospace, monospace;
   }
+  .finding .cite-btn {
+    appearance: none; background: var(--bg-alt); border: 1px solid var(--border);
+    color: var(--ink-soft); padding: 2px 8px; border-radius: 4px; font-size: 11px;
+    cursor: pointer;
+  }
+  .finding .cite-btn:hover { color: var(--accent); }
+
   .summary-block {
-    background: var(--bg-alt); padding: 14px 16px;
-    border-radius: 8px; margin-bottom: 24px;
+    background: var(--bg-alt); padding: 14px 16px; border-radius: 8px;
+    margin-bottom: 16px;
   }
 
-  /* === Pages tab === */
+  /* Pages tab */
   .pages-grid {
-    display: grid;
-    gap: 16px;
+    display: grid; gap: 14px;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
   body.wide .pages-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
@@ -310,83 +427,72 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     font-size: 11px; font-weight: 600; font-family: ui-monospace, monospace;
   }
 
-  /* === Lightbox === */
-  .lightbox {
-    position: fixed; inset: 0; z-index: 100;
-    background: rgba(0, 0, 0, 0.92);
-    display: none; align-items: center; justify-content: center;
-    padding: 20px;
-  }
+  /* Lightbox */
+  .lightbox { position: fixed; inset: 0; z-index: 100;
+              background: rgba(0,0,0,0.92);
+              display: none; align-items: center; justify-content: center;
+              padding: 20px; }
   .lightbox.open { display: flex; }
   .lightbox img { max-width: 100%; max-height: 100%; cursor: zoom-out; }
-  .lightbox .lb-close {
-    position: absolute; top: 12px; right: 12px;
-    background: var(--bg); color: var(--ink);
-    width: 44px; height: 44px; border-radius: 8px; border: none; cursor: pointer;
-    font-size: 22px; font-weight: 600;
-  }
-  .lightbox .lb-info {
-    position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
-    background: var(--bg); color: var(--ink); padding: 6px 14px;
-    border-radius: 18px; font-size: 13px;
-  }
+  .lightbox .lb-close { position: absolute; top: 12px; right: 12px;
+                        background: var(--bg); color: var(--ink);
+                        width: 44px; height: 44px; border-radius: 8px;
+                        border: none; cursor: pointer; font-size: 22px; font-weight: 600; }
+  .lightbox .lb-info { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
+                       background: var(--bg); color: var(--ink); padding: 6px 14px;
+                       border-radius: 18px; font-size: 13px; }
 
-  /* === Data tab (extraction tree) === */
-  .data-tree { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 13px; }
-  .data-key { color: var(--accent); font-weight: 600; }
-  .data-leaf {
-    margin: 4px 0; padding: 8px 12px;
-    background: var(--bg); border: 1px solid var(--border); border-radius: 4px;
-  }
+  /* Data tab */
+  .data-tree { font-family: ui-monospace, monospace; font-size: 13px; }
+  .data-leaf { margin: 4px 0; padding: 8px 12px; background: var(--bg);
+               border: 1px solid var(--border); border-radius: 4px; }
   .data-leaf .v { color: var(--ink); margin: 4px 0; line-height: 1.5;
                   white-space: pre-wrap; word-break: break-word;
                   font-family: -apple-system, system-ui, sans-serif; font-size: 14px; }
   .data-leaf .v.empty { color: var(--muted); font-style: italic; }
-  .data-leaf .ev {
-    color: var(--ink-soft); font-size: 11px;
-    border-top: 1px dashed var(--border); padding-top: 4px; margin-top: 6px;
-  }
+  .data-leaf .ev { color: var(--ink-soft); font-size: 11px;
+                   border-top: 1px dashed var(--border); padding-top: 4px; margin-top: 6px; }
   .data-leaf .ev .pg { color: var(--warn); font-weight: 600; }
-  .data-section {
-    margin: 16px 0; padding: 12px; background: var(--bg-alt);
-    border-radius: 6px; border: 1px solid var(--border);
-  }
-  .data-section > h3 {
-    margin: 0 0 8px; font-size: 14px; color: var(--accent);
-    font-family: ui-monospace, monospace;
-  }
-  .data-list-item {
-    margin-left: 12px; padding-left: 12px;
-    border-left: 2px solid var(--border);
-  }
+  .data-section { margin: 14px 0; padding: 12px; background: var(--bg-alt);
+                  border-radius: 6px; border: 1px solid var(--border); }
+  .data-section > h3 { margin: 0 0 8px; font-size: 14px; color: var(--accent);
+                       font-family: ui-monospace, monospace; }
+  .data-list-item { margin-left: 12px; padding-left: 12px;
+                    border-left: 2px solid var(--border); }
 
-  /* === Bottom nav === */
-  .bottom-nav {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    display: flex; gap: 8px; padding: 8px;
-    background: var(--bg-alt); border-top: 1px solid var(--border);
-    z-index: 20;
+  /* Reading progress (bottom) */
+  .read-progress { position: fixed; left: 0; bottom: 0; height: 3px;
+                   background: var(--accent); width: 0; transition: width 0.1s; z-index: 25; }
+
+  /* Compare mode */
+  body.compare-mode .compare-pane { display: grid; gap: 16px;
+                                    grid-template-columns: 1fr 1fr; }
+  @media (max-width: 800px) {
+    body.compare-mode .compare-pane { grid-template-columns: 1fr; }
   }
-  .nav-btn {
-    flex: 1; padding: 14px; border: 1px solid var(--border);
-    background: var(--bg); color: var(--ink);
-    border-radius: 8px; cursor: pointer; font-size: 14px;
-  }
+  .compare-side { background: var(--bg); border: 1px solid var(--border);
+                  border-radius: 8px; padding: 16px; max-height: 75vh; overflow-y: auto; }
+
+  /* Bottom nav */
+  .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0;
+                display: flex; gap: 8px; padding: 6px;
+                background: var(--bg-alt); border-top: 1px solid var(--border);
+                z-index: 20; }
+  .nav-btn { flex: 1; padding: 12px; border: 1px solid var(--border);
+             background: var(--bg); color: var(--ink);
+             border-radius: 8px; cursor: pointer; font-size: 13px; }
   .nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  /* === Wide screens: drawer permanent + 2-column reader if 'side-by-side' === */
   @media (min-width: 900px) {
     body { display: grid; grid-template-columns: 320px 1fr; min-height: 100vh; }
     body.no-drawer { grid-template-columns: 1fr; }
     .topbar { grid-column: 1 / -1; }
-    .drawer {
-      position: static; transform: none; box-shadow: none;
-      border-right: 1px solid var(--border);
-      width: 320px; height: calc(100vh - 65px);
-    }
+    .drawer { position: static; transform: none; box-shadow: none;
+              border-right: 1px solid var(--border);
+              width: 320px; height: calc(100vh - 60px); }
     body.no-drawer .drawer { display: none; }
     .drawer-bg, .iconbtn.menu { display: none; }
-    main { padding: 24px 40px 40px; }
+    main { padding: 22px 36px 40px; }
     .bottom-nav { left: 320px; }
     body.no-drawer .bottom-nav { left: 0; }
   }
@@ -395,32 +501,61 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     :root { --reader-width: 920px; }
   }
 
-  /* Loading + empty states */
   .loading, .empty { text-align: center; padding: 60px 20px; color: var(--ink-soft); }
 
-  /* Focus mode */
   body.focus-mode .topbar > *:not(h1):not(.iconbtn.focus) { display: none; }
   body.focus-mode .drawer-bg, body.focus-mode .drawer { display: none; }
-  body.focus-mode .modes, body.focus-mode .paper-header .pills { display: none; }
-  body.focus-mode .bottom-nav { display: none; }
+  body.focus-mode .modes, body.focus-mode .paper-header .pills,
+  body.focus-mode .toc, body.focus-mode .bottom-nav,
+  body.focus-mode .read-progress { display: none; }
   body.focus-mode main { max-width: 720px; padding-bottom: 40px; }
   body.focus-mode { grid-template-columns: 1fr !important; }
+
+  /* Print stylesheet — clean export */
+  @media print {
+    .topbar, .drawer, .drawer-bg, .modes, .bottom-nav, .read-progress, .toc { display: none !important; }
+    body { display: block !important; background: white !important; color: black !important; }
+    main { max-width: none !important; padding: 0 !important; }
+    .paper-header { border-bottom: 2px solid black; }
+    .md a { color: black; text-decoration: underline; }
+    .md img { page-break-inside: avoid; }
+    .md h1, .md h2 { page-break-after: avoid; }
+  }
+
+  .toast {
+    position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
+    background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 24px;
+    box-shadow: var(--shadow); z-index: 200; font-size: 14px;
+    opacity: 0; pointer-events: none; transition: opacity 0.2s;
+  }
+  .toast.show { opacity: 1; }
 </style>
 </head>
 <body>
 
 <header class="topbar">
-  <button class="iconbtn menu" onclick="toggleDrawer()" aria-label="Open paper list" title="Papers">☰</button>
+  <button class="iconbtn menu" onclick="toggleDrawer()" aria-label="Papers" title="Papers (/)">☰</button>
   <h1>AI503 Reader <small id="paperCount">— loading…</small></h1>
   <span class="progress" id="progress">—</span>
-  <button class="iconbtn" id="wideBtn" onclick="toggleWide()" title="Toggle wide layout (W)" aria-label="Wide">↔</button>
+  <button class="iconbtn" id="langBtn" onclick="toggleLang()" title="Toggle EN/AR (L)" aria-label="Language">EN</button>
+  <button class="iconbtn" id="bionicBtn" onclick="toggleBionic()" title="Bionic reading (B)" aria-label="Bionic">⚫</button>
+  <button class="iconbtn" id="dyslexiaBtn" onclick="toggleDyslexia()" title="Dyslexia font (D)" aria-label="Dyslexia">Aa</button>
+  <button class="iconbtn" id="wideBtn" onclick="toggleWide()" title="Wide layout (W)" aria-label="Wide">↔</button>
   <button class="iconbtn focus" onclick="toggleFocus()" title="Focus mode (F)" aria-label="Focus">🎯</button>
 </header>
 
 <div class="drawer-bg" onclick="toggleDrawer(false)"></div>
 <aside class="drawer" id="drawer">
   <div class="drawer-head">
-    <input type="search" id="search" placeholder="Search title, author, RP…" oninput="filterPapers()">
+    <input type="search" id="search" placeholder="Search picker (Shift+/) — press ⏎ to search inside papers" oninput="filterPapers()" onkeydown="handleSearchKey(event)">
+    <div class="filter-chips" id="filters">
+      <span class="filter-chip active" data-filter="all">All</span>
+      <span class="filter-chip" data-filter="starred">⭐ Starred</span>
+      <span class="filter-chip" data-filter="unread">Unread</span>
+      <span class="filter-chip" data-filter="read">Read</span>
+      <span class="filter-chip" data-filter="cite">To cite</span>
+      <span class="filter-chip" data-filter="ar">Has Arabic</span>
+    </div>
   </div>
   <div class="drawer-list" id="paperList"><div class="loading">Loading…</div></div>
 </aside>
@@ -429,8 +564,11 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   <div class="loading">Loading paper list…</div>
 </main>
 
+<div class="read-progress" id="readProgress"></div>
+
 <nav class="bottom-nav" id="bottomNav" style="display:none">
   <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">← Previous (k)</button>
+  <button class="nav-btn" id="cmpBtn" onclick="toggleCompare()">⇄ Compare</button>
   <button class="nav-btn" id="nextBtn" onclick="navigate(1)">Next (j) →</button>
 </nav>
 
@@ -440,142 +578,279 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   <div class="lb-info" id="lightboxInfo"></div>
 </div>
 
+<div class="toast" id="toast"></div>
+
 <script>
 let manifest = [];
 let currentIndex = -1;
 let currentMode = 'read';
-let currentExtraction = null;   // cached for the data tab
+let currentExtraction = null;
+let currentMd = '';
+let currentLang = localStorage.getItem('ai503_lang') || 'en';
+let compareMode = false;
+let compareTarget = null;  // second paper RP for compare mode
+let xpSearch = false;      // cross-paper search active
+let mdCache = {};          // {rp+lang: md text}
 
 const $ = (q) => document.querySelector(q);
 const $$ = (q) => document.querySelectorAll(q);
+const LS = {
+  bookmarks: () => JSON.parse(localStorage.getItem('ai503_bookmarks') || '{}'),
+  setBookmarks: (v) => localStorage.setItem('ai503_bookmarks', JSON.stringify(v)),
+  tags: () => JSON.parse(localStorage.getItem('ai503_tags') || '{}'),
+  setTags: (v) => localStorage.setItem('ai503_tags', JSON.stringify(v)),
+  progress: () => JSON.parse(localStorage.getItem('ai503_progress') || '{}'),
+  setProgress: (v) => localStorage.setItem('ai503_progress', JSON.stringify(v)),
+  highlights: () => JSON.parse(localStorage.getItem('ai503_hl') || '{}'),
+  setHighlights: (v) => localStorage.setItem('ai503_hl', JSON.stringify(v)),
+};
+
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
 
 async function loadManifest() {
   try {
     manifest = await (await fetch('paper_reader.json')).json();
     $('#paperCount').textContent = `· ${manifest.length} papers`;
+    // Restore prefs
+    if (localStorage.getItem('ai503_bionic') === '1') document.body.classList.add('bionic');
+    if (localStorage.getItem('ai503_dyslexia') === '1') document.body.classList.add('dyslexia');
+    if (localStorage.getItem('ai503_wide') === '1') { document.body.classList.add('wide'); $('#wideBtn').classList.add('active'); }
+    setLangButton();
     renderPaperList();
     const initial = location.hash.replace('#', '') || manifest[0].rp_id;
     showPaper(initial);
   } catch (e) {
-    $('#main').innerHTML = `<div class="empty">Failed to load manifest: ${e.message}</div>`;
+    $('#main').innerHTML = `<div class="empty">Failed: ${e.message}</div>`;
   }
 }
 
-function renderPaperList(filter = '') {
-  const f = filter.toLowerCase();
+function renderPaperList() {
+  const f = ($('#search').value || '').toLowerCase();
+  const activeFilter = $('.filter-chip.active')?.dataset.filter || 'all';
+  const bookmarks = LS.bookmarks();
+  const tags = LS.tags();
+  const progress = LS.progress();
   const html = manifest.map((p, i) => {
+    // Filter by chip
+    if (activeFilter === 'starred' && !bookmarks[p.rp_id]) return '';
+    if (activeFilter === 'unread' && progress[p.rp_id] >= 80) return '';
+    if (activeFilter === 'read' && tags[p.rp_id] !== 'read') return '';
+    if (activeFilter === 'cite' && tags[p.rp_id] !== 'cite') return '';
+    if (activeFilter === 'ar' && !p.md_path_ar) return '';
+    // Filter by search
     const hay = `${p.rp_id} ${p.first_author} ${p.year} ${p.title}`.toLowerCase();
     if (f && !hay.includes(f)) return '';
+
     const isActive = i === currentIndex ? 'active' : '';
+    const star = bookmarks[p.rp_id] ? '⭐' : '☆';
+    const starClass = bookmarks[p.rp_id] ? 'on' : '';
+    const tag = tags[p.rp_id];
+    const tagStripe = tag ? `<span class="tag-stripe t-${tag}"></span>` : '';
+    const prog = progress[p.rp_id] || 0;
+    const arBadge = p.md_path_ar ? ' 🌐' : '';
     return `<a class="paper-item ${isActive}" onclick="showPaper('${p.rp_id}')" tabindex="0">
+      ${tagStripe}
+      <button class="star ${starClass}" onclick="event.stopPropagation(); toggleBookmark('${p.rp_id}')" title="Star">${star}</button>
       <span class="rp">${p.rp_id}</span>
-      <span class="meta">  · ${p.first_author} ${p.year}${p.venue ? ' · ' + escapeHtml(p.venue) : ''}</span>
+      <span class="meta">  · ${escapeHtml(p.first_author)} ${p.year}${arBadge} · ${p.reading_minutes}min</span>
       <div class="title">${escapeHtml(p.title)}</div>
+      <div class="progress-bar"><div style="width:${prog}%"></div></div>
     </a>`;
   }).join('');
   $('#paperList').innerHTML = html || '<div class="empty">No matches</div>';
 }
 
-function filterPapers() { renderPaperList($('#search').value); }
+function filterPapers() {
+  if (xpSearch) doCrossPaperSearch($('#search').value);
+  else renderPaperList();
+}
+
+async function handleSearchKey(e) {
+  if (e.key === 'Enter' && $('#search').value.length > 2) {
+    xpSearch = true;
+    await doCrossPaperSearch($('#search').value);
+  } else if (e.key === 'Escape') {
+    xpSearch = false; $('#search').value = ''; renderPaperList();
+  }
+}
+
+async function doCrossPaperSearch(q) {
+  const ql = q.toLowerCase();
+  $('#paperList').innerHTML = '<div class="loading">Searching across all papers…</div>';
+  const matches = [];
+  for (const p of manifest) {
+    if (!p.md_path_en) continue;
+    if (!mdCache[p.rp_id + '_en']) {
+      try { mdCache[p.rp_id + '_en'] = await (await fetch(p.md_path_en)).text(); } catch { continue; }
+    }
+    const text = mdCache[p.rp_id + '_en'].toLowerCase();
+    const idx = text.indexOf(ql);
+    if (idx !== -1) {
+      const ctx = mdCache[p.rp_id + '_en'].slice(Math.max(0, idx - 60), idx + ql.length + 60);
+      matches.push({ p, ctx });
+    }
+  }
+  $('#paperList').innerHTML = matches.length ?
+    matches.map(({p, ctx}) => `<a class="paper-item" onclick="showPaper('${p.rp_id}')">
+      <span class="rp">${p.rp_id}</span> <span class="meta">${escapeHtml(p.first_author)} ${p.year}</span>
+      <div class="title">${escapeHtml(p.title)}</div>
+      <div style="font-size:12px; color:var(--ink-soft); margin-top:6px; font-style:italic">…${escapeHtml(ctx)}…</div>
+    </a>`).join('')
+    : '<div class="empty">No matches in any paper.</div>';
+}
+
+function toggleBookmark(rpId) {
+  const b = LS.bookmarks();
+  b[rpId] = !b[rpId]; if (!b[rpId]) delete b[rpId];
+  LS.setBookmarks(b);
+  renderPaperList();
+  toast(b[rpId] ? 'Starred' : 'Unstarred');
+}
+
+function setTag(rpId, tag) {
+  const t = LS.tags();
+  if (tag) t[rpId] = tag; else delete t[rpId];
+  LS.setTags(t);
+  renderPaperList();
+}
 
 async function showPaper(rpId) {
+  // In compare mode, second click sets the right side
+  if (compareMode && currentIndex >= 0 && manifest[currentIndex].rp_id !== rpId) {
+    compareTarget = rpId;
+    return renderCompare();
+  }
   const i = manifest.findIndex(p => p.rp_id === rpId);
   if (i === -1) return;
   currentIndex = i;
-  currentExtraction = null;
+  currentExtraction = null; currentMd = ''; mdCache = {};
+  compareTarget = null;
   const p = manifest[i];
   history.replaceState(null, '', `#${rpId}`);
   $('#progress').textContent = `${i + 1} / ${manifest.length}`;
   $('#prevBtn').disabled = i === 0;
   $('#nextBtn').disabled = i === manifest.length - 1;
   $('#bottomNav').style.display = '';
-  renderPaperList($('#search').value);
+  renderPaperList();
 
   const findingsHtml = (p.findings || []).slice(0, 12).map(f => `
-    <div class="finding">${escapeHtml(typeof f.text === 'string' ? f.text : JSON.stringify(f.text))}
-      ${f.page ? `<span class="where">page ${f.page}${f.section ? ' · ' + escapeHtml(f.section) : ''}</span>` : ''}
-    </div>
-  `).join('');
+    <div class="finding">
+      <div>${escapeHtml(typeof f.text === 'string' ? f.text : JSON.stringify(f.text))}</div>
+      ${f.page ? `<div class="where">
+        <span>page ${f.page}${f.section ? ' · ' + escapeHtml(f.section) : ''}</span>
+        <button class="cite-btn" onclick="copyCite('${p.rp_id}', ${f.page}, ${JSON.stringify(f.section || '').replace(/"/g, '&quot;')})">Cite</button>
+      </div>` : ''}
+    </div>`).join('');
+
+  const tags = LS.tags();
+  const currentTag = tags[p.rp_id] || '';
+  const bookmarks = LS.bookmarks();
 
   const tabs = [
-    { id: 'read',     label: '📖 Full text',  enabled: !!p.md_path },
-    { id: 'pages',    label: '📄 Pages',       enabled: !!p.pages_dir && p.page_count > 0 },
-    { id: 'findings', label: '⭐ Findings',     enabled: (p.findings || []).length > 0 },
-    { id: 'data',     label: '🗂 All data',    enabled: !!p.extraction_path },
-    { id: 'summary',  label: '📋 Summary',     enabled: true },
+    { id: 'read',     label: '📖 Read',      enabled: !!p.md_path_en },
+    { id: 'pages',    label: '📄 Pages',     enabled: !!p.pages_dir && p.page_count > 0 },
+    { id: 'findings', label: '⭐ Findings',   enabled: (p.findings || []).length > 0 },
+    { id: 'data',     label: '🗂 Data',      enabled: !!p.extraction_path },
+    { id: 'summary',  label: '📋 Summary',   enabled: true },
   ];
 
   $('#main').innerHTML = `
     <div class="paper-header">
-      <span class="rp-tag">${p.rp_id}</span>
-      <h2>${escapeHtml(p.title)}</h2>
+      <div class="row1">
+        <span class="rp-tag">${p.rp_id}</span>
+        <span class="pill">${p.reading_minutes} min · ${p.word_count.toLocaleString()} words</span>
+        <span class="pill">${p.page_count || '?'} pages</span>
+        <div class="header-actions">
+          <button class="iconbtn" onclick="toggleBookmark('${p.rp_id}')" title="Star">${bookmarks[p.rp_id] ? '⭐' : '☆'}</button>
+          <select class="tag-select" onchange="setTag('${p.rp_id}', this.value)" title="Tag">
+            <option value="" ${!currentTag ? 'selected' : ''}>— tag —</option>
+            <option value="read" ${currentTag === 'read' ? 'selected' : ''}>Read ✓</option>
+            <option value="skim" ${currentTag === 'skim' ? 'selected' : ''}>Skim 👀</option>
+            <option value="cite" ${currentTag === 'cite' ? 'selected' : ''}>To cite 📎</option>
+            <option value="important" ${currentTag === 'important' ? 'selected' : ''}>Important ⚡</option>
+          </select>
+          <button class="iconbtn" onclick="copyBibtex('${p.rp_id}')" title="Copy BibTeX">{ }</button>
+          <button class="iconbtn" onclick="window.print()" title="Print">🖨</button>
+          <button class="iconbtn" onclick="toggleTTS()" id="ttsBtn" title="Read aloud">🔊</button>
+        </div>
+      </div>
+      <h2 data-lang-target="${p.md_path_ar ? 'translatable' : ''}">${escapeHtml(p.title)}</h2>
       <div class="author-line">${escapeHtml(p.first_author)}${p.authors_count > 1 ? ' et al.' : ''} · ${p.year}${p.venue ? ' · ' + escapeHtml(p.venue) : ''}</div>
       <div class="pills">
         ${p.paper_type ? `<span class="pill">${escapeHtml(p.paper_type)}</span>` : ''}
         ${p.method_family ? `<span class="pill">${escapeHtml(p.method_family)}</span>` : ''}
-        ${p.page_count ? `<span class="pill">${p.page_count} pages</span>` : ''}
-        ${p.pdf_path ? `<a class="pill" href="${p.pdf_path}" target="_blank" style="color:var(--accent); text-decoration:none">⬇ PDF</a>` : ''}
-        ${p.doi ? `<a class="pill" href="https://doi.org/${escapeAttr(p.doi.replace(/^arXiv:/i, '10.48550/arXiv.'))}" target="_blank" style="color:var(--accent); text-decoration:none">DOI</a>` : ''}
+        ${p.traced_pct ? `<span class="pill">${p.traced_pct}% traced</span>` : ''}
+        ${p.pdf_path ? `<a class="pill link" href="${p.pdf_path}" target="_blank">⬇ PDF</a>` : ''}
+        ${p.doi ? `<a class="pill link" href="https://doi.org/${escapeAttr(p.doi.replace(/^arXiv:/i, '10.48550/arXiv.'))}" target="_blank">DOI</a>` : ''}
+        ${p.md_path_ar ? `<span class="pill" title="Arabic translation available">🌐 AR</span>` : ''}
       </div>
     </div>
     <div class="modes">
-      ${tabs.map(t => `<button class="mode-btn ${currentMode === t.id ? 'active' : ''}" ${!t.enabled ? 'disabled style="opacity:0.4"' : ''} onclick="setMode('${t.id}')">${t.label}</button>`).join('')}
+      ${tabs.map(t => `<button class="mode-btn ${currentMode === t.id ? 'active' : ''}" ${!t.enabled ? 'disabled' : ''} onclick="setMode('${t.id}')">${t.label}</button>`).join('')}
     </div>
-    <div class="pane ${currentMode === 'read' ? 'active' : ''}" id="paneRead">
-      <div class="loading">Loading paper content…</div>
-    </div>
-    <div class="pane ${currentMode === 'pages' ? 'active' : ''}" id="panePages">
-      <div class="loading">Loading pages…</div>
-    </div>
-    <div class="pane ${currentMode === 'findings' ? 'active' : ''}" id="paneFindings">
-      ${findingsHtml || '<div class="empty">No key findings extracted.</div>'}
-    </div>
-    <div class="pane ${currentMode === 'data' ? 'active' : ''}" id="paneData">
-      <div class="loading">Loading extraction…</div>
-    </div>
+    <div class="pane ${currentMode === 'read' ? 'active' : ''}" id="paneRead"><div class="loading">Loading…</div></div>
+    <div class="pane ${currentMode === 'pages' ? 'active' : ''}" id="panePages"><div class="loading">Loading…</div></div>
+    <div class="pane ${currentMode === 'findings' ? 'active' : ''}" id="paneFindings">${findingsHtml || '<div class="empty">No key findings.</div>'}</div>
+    <div class="pane ${currentMode === 'data' ? 'active' : ''}" id="paneData"><div class="loading">Loading…</div></div>
     <div class="pane ${currentMode === 'summary' ? 'active' : ''}" id="paneSummary">
+      <div class="summary-block"><strong>Contribution:</strong><br>${p.contribution ? escapeHtml(p.contribution) : '<em>(none)</em>'}</div>
       <div class="summary-block">
-        <strong>Contribution:</strong><br>
-        ${p.contribution ? escapeHtml(p.contribution) : '<em>(none extracted)</em>'}
+        <strong>${(p.findings || []).length} key results</strong> · ${p.leaves_total} extraction leaves · ${p.traced_pct}% traced
       </div>
       <div class="summary-block">
-        <strong>${(p.findings || []).length} key results</strong> · type <em>${escapeHtml(p.paper_type || '?')}</em> · method family <em>${escapeHtml(p.method_family || '?')}</em>
+        <strong>Find in paper:</strong> press <code>Ctrl+F</code> (Cmd+F on Mac) when on the Read tab.
       </div>
     </div>
   `;
 
   loadPaneIfNeeded(currentMode, p);
-
   if (window.innerWidth < 900) toggleDrawer(false);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 async function loadPaneIfNeeded(mode, p) {
-  if (mode === 'read')  loadMarkdown(p);
+  if (mode === 'read')  await loadMarkdown(p);
   if (mode === 'pages') loadPages(p);
   if (mode === 'data')  loadDataTree(p);
 }
 
 async function loadMarkdown(p) {
   const pane = $('#paneRead');
-  if (!p.md_path) { pane.innerHTML = '<div class="empty">No Markdown for this paper.</div>'; return; }
-  if (pane.querySelector('.md')) return;  // cached
+  const path = currentLang === 'ar' && p.md_path_ar ? p.md_path_ar : p.md_path_en;
+  if (!path) { pane.innerHTML = '<div class="empty">No content for this language.</div>'; return; }
+  const cacheKey = p.rp_id + '_' + (currentLang === 'ar' && p.md_path_ar ? 'ar' : 'en');
   try {
-    const md = await (await fetch(p.md_path)).text();
-    pane.innerHTML = `<div class="md">${markdownToHtml(md, p)}</div>`;
+    if (!mdCache[cacheKey]) mdCache[cacheKey] = await (await fetch(path)).text();
+    currentMd = mdCache[cacheKey];
+    const isAr = currentLang === 'ar' && p.md_path_ar;
+    const tocHtml = buildToc(currentMd);
+    pane.innerHTML = `${tocHtml}<div class="md ${isAr ? 'rtl' : ''}" ${isAr ? 'dir="rtl" lang="ar"' : ''} id="mdContent">${markdownToHtml(currentMd, p)}</div>`;
     bindLightbox(pane);
+    if (document.body.classList.contains('bionic')) applyBionic($('#mdContent'));
+    restoreHighlights(p.rp_id);
+    bindHighlightCapture(p.rp_id);
+    // Restore scroll position
+    const prog = LS.progress()[p.rp_id];
+    if (prog && prog > 0) {
+      setTimeout(() => {
+        const md = $('#mdContent');
+        if (md) window.scrollTo({ top: md.scrollHeight * prog / 100, behavior: 'smooth' });
+      }, 100);
+    }
   } catch (e) {
-    pane.innerHTML = `<div class="empty">Failed to load: ${e.message}</div>`;
+    pane.innerHTML = `<div class="empty">Failed: ${e.message}</div>`;
   }
 }
 
 function loadPages(p) {
   const pane = $('#panePages');
   if (!p.pages_dir || !p.page_count) {
-    pane.innerHTML = '<div class="empty">Page renders not available for this paper.</div>';
-    return;
+    pane.innerHTML = '<div class="empty">Page renders not available.</div>'; return;
   }
-  if (pane.querySelector('.pages-grid')) return;  // cached
+  if (pane.querySelector('.pages-grid')) return;
   const pad = (n) => String(n).padStart(2, '0');
   const grid = [];
   for (let i = 1; i <= p.page_count; i++) {
@@ -590,32 +865,27 @@ function loadPages(p) {
 
 async function loadDataTree(p) {
   const pane = $('#paneData');
-  if (!p.extraction_path) { pane.innerHTML = '<div class="empty">No extraction JSON.</div>'; return; }
-  if (pane.querySelector('.data-tree')) return;  // cached
+  if (!p.extraction_path) { pane.innerHTML = '<div class="empty">No extraction.</div>'; return; }
+  if (pane.querySelector('.data-tree')) return;
   try {
-    if (!currentExtraction) {
-      currentExtraction = await (await fetch(p.extraction_path)).json();
-    }
+    if (!currentExtraction) currentExtraction = await (await fetch(p.extraction_path)).json();
     pane.innerHTML = `<div class="data-tree">${renderDataNode(currentExtraction)}</div>`;
   } catch (e) {
     pane.innerHTML = `<div class="empty">Failed: ${e.message}</div>`;
   }
 }
 
-function renderDataNode(node, key = null, depth = 0) {
-  if (node === null || node === undefined) {
+function renderDataNode(node) {
+  if (node === null || node === undefined)
     return `<div class="data-leaf"><div class="v empty">null</div></div>`;
-  }
-  // {value, ev} leaf
   if (typeof node === 'object' && !Array.isArray(node) && 'value' in node && 'ev' in node) {
-    const v = node.value;
-    const ev = node.ev || {};
-    let valStr;
-    if (v === null) valStr = '<span class="v empty">null</span>';
-    else if (typeof v === 'object') valStr = `<div class="v"><pre>${escapeHtml(JSON.stringify(v, null, 2))}</pre></div>`;
-    else valStr = `<div class="v">${escapeHtml(String(v))}</div>`;
+    const val = node.value, ev = node.ev || {};
+    let valStr = val === null ? '<span class="v empty">null</span>' :
+      typeof val === 'object'
+        ? `<div class="v"><pre>${escapeHtml(JSON.stringify(val, null, 2))}</pre></div>`
+        : `<div class="v">${escapeHtml(String(val))}</div>`;
     const evParts = [];
-    if (ev.page) evParts.push(`<span class="pg">page ${ev.page}</span>`);
+    if (ev.page) evParts.push(`<span class="pg">p${ev.page}</span>`);
     if (ev.section) evParts.push(`<span>§ ${escapeHtml(ev.section)}</span>`);
     if (ev.quote) evParts.push(`<em>"${escapeHtml(ev.quote.slice(0,140))}${ev.quote.length>140?'…':''}"</em>`);
     return `<div class="data-leaf">${valStr}${evParts.length ? `<div class="ev">${evParts.join(' · ')}</div>` : ''}</div>`;
@@ -623,19 +893,32 @@ function renderDataNode(node, key = null, depth = 0) {
   if (Array.isArray(node)) {
     if (node.length === 0) return `<div class="data-leaf"><span class="v empty">[]</span></div>`;
     return node.map((item, i) =>
-      `<div class="data-list-item">${renderDataNode(item, `[${i}]`, depth + 1)}</div>`).join('');
+      `<div class="data-list-item">${renderDataNode(item)}</div>`).join('');
   }
   if (typeof node === 'object') {
     return Object.entries(node).map(([k, val]) => {
-      // Skip sections that are obviously empty
       if (val === null || val === undefined) return '';
-      return `<div class="data-section">
-        <h3>${escapeHtml(k)}</h3>
-        ${renderDataNode(val, k, depth + 1)}
-      </div>`;
+      return `<div class="data-section"><h3>${escapeHtml(k)}</h3>${renderDataNode(val)}</div>`;
     }).join('');
   }
   return `<div class="data-leaf"><div class="v">${escapeHtml(String(node))}</div></div>`;
+}
+
+function buildToc(md) {
+  const headings = [];
+  const re = /^(#{1,3})\s+(.+)$/gm;
+  let m;
+  while ((m = re.exec(md))) {
+    const lvl = m[1].length;
+    const text = m[2].trim();
+    const slug = 'h-' + text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').slice(0, 50);
+    headings.push({ lvl, text, slug });
+  }
+  if (headings.length < 3) return '';
+  const items = headings.slice(0, 30).map(h =>
+    `<a href="#${h.slug}" data-lvl="${h.lvl}" onclick="event.preventDefault(); document.getElementById('${h.slug}')?.scrollIntoView({behavior:'smooth'})">${escapeHtml(h.text.slice(0, 60))}</a>`
+  ).join('');
+  return `<div class="toc"><h4>Sections</h4>${items}</div>`;
 }
 
 function setMode(mode) {
@@ -664,23 +947,156 @@ function toggleDrawer(force) {
 function toggleFocus() { document.body.classList.toggle('focus-mode'); }
 function toggleWide()  {
   document.body.classList.toggle('wide');
-  $('#wideBtn').classList.toggle('active', document.body.classList.contains('wide'));
+  const on = document.body.classList.contains('wide');
+  $('#wideBtn').classList.toggle('active', on);
+  localStorage.setItem('ai503_wide', on ? '1' : '0');
+}
+function toggleBionic() {
+  document.body.classList.toggle('bionic');
+  const on = document.body.classList.contains('bionic');
+  $('#bionicBtn').classList.toggle('active', on);
+  localStorage.setItem('ai503_bionic', on ? '1' : '0');
+  if (on && $('#mdContent')) applyBionic($('#mdContent'));
+  else if ($('#mdContent') && currentIndex >= 0) loadMarkdown(manifest[currentIndex]);  // re-render to remove
+}
+function toggleDyslexia() {
+  document.body.classList.toggle('dyslexia');
+  const on = document.body.classList.contains('dyslexia');
+  $('#dyslexiaBtn').classList.toggle('active', on);
+  localStorage.setItem('ai503_dyslexia', on ? '1' : '0');
+}
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ar' : 'en';
+  localStorage.setItem('ai503_lang', currentLang);
+  setLangButton();
+  if (currentIndex >= 0 && currentMode === 'read') loadMarkdown(manifest[currentIndex]);
+}
+function setLangButton() {
+  $('#langBtn').textContent = currentLang.toUpperCase();
+  $('#langBtn').classList.toggle('active', currentLang === 'ar');
+  document.body.classList.toggle('lang-ar', currentLang === 'ar');
+}
+function toggleCompare() {
+  compareMode = !compareMode;
+  document.body.classList.toggle('compare-mode', compareMode);
+  $('#cmpBtn').textContent = compareMode ? '✕ Exit compare' : '⇄ Compare';
+  if (!compareMode) {
+    compareTarget = null;
+    if (currentIndex >= 0) showPaper(manifest[currentIndex].rp_id);
+  } else {
+    toast('Pick a second paper from the list to compare.');
+    toggleDrawer(true);
+  }
+}
+async function renderCompare() {
+  const left = manifest[currentIndex];
+  const right = manifest.find(p => p.rp_id === compareTarget);
+  if (!left || !right) return;
+  $('#main').innerHTML = `<h2>Comparing: ${left.rp_id} vs ${right.rp_id}</h2>
+    <div class="compare-pane">
+      <div class="compare-side"><h3>${escapeHtml(left.title)}</h3><div id="cmpL"><div class="loading">Loading…</div></div></div>
+      <div class="compare-side"><h3>${escapeHtml(right.title)}</h3><div id="cmpR"><div class="loading">Loading…</div></div></div>
+    </div>`;
+  const sides = [[left, '#cmpL'], [right, '#cmpR']];
+  for (const [p, sel] of sides) {
+    if (p.md_path_en) {
+      const md = await (await fetch(p.md_path_en)).text();
+      $(sel).innerHTML = `<div class="md">${markdownToHtml(md, p)}</div>`;
+    } else {
+      $(sel).innerHTML = '<div class="empty">No markdown.</div>';
+    }
+  }
+}
+
+function applyBionic(scope) {
+  // Bold first half (rounded down) of each word in <p>/<li> elements
+  scope.querySelectorAll('p, li').forEach(el => {
+    if (el.dataset.bionic === '1') return;
+    el.dataset.bionic = '1';
+    el.innerHTML = el.innerHTML.replace(/(\b[A-Za-z؀-ۿ]{2,}\b)/g, (w) => {
+      const n = Math.ceil(w.length / 2);
+      return `<span class="bio-b">${w.slice(0, n)}</span><span class="bio-r">${w.slice(n)}</span>`;
+    });
+  });
+}
+
+function copyBibtex(rpId) {
+  const p = manifest.find(x => x.rp_id === rpId);
+  if (!p) return;
+  const key = `${p.first_author.replace(/\W/g, '')}${p.year}_${p.rp_id}`;
+  const bibtex = `@article{${key},
+  title  = {${p.title}},
+  author = {${p.first_author}${p.authors_count > 1 ? ' and others' : ''}},
+  year   = {${p.year}},
+  journal= {${p.venue || ''}},
+  doi    = {${p.doi || ''}},
+  note   = {${p.rp_id}}
+}`;
+  navigator.clipboard.writeText(bibtex).then(() => toast('BibTeX copied'));
+}
+function copyCite(rpId, page, section) {
+  const p = manifest.find(x => x.rp_id === rpId);
+  const cite = `${p.first_author}${p.authors_count > 1 ? ' et al.' : ''} (${p.year})${section ? ', §' + section : ''}, p. ${page} [${rpId}]`;
+  navigator.clipboard.writeText(cite).then(() => toast('Citation copied'));
+}
+
+function toggleTTS() {
+  if (!('speechSynthesis' in window)) { toast('TTS not supported'); return; }
+  if (speechSynthesis.speaking) {
+    speechSynthesis.cancel(); $('#ttsBtn').classList.remove('active'); return;
+  }
+  const md = $('#mdContent');
+  if (!md) { toast('Open Read tab first'); return; }
+  const text = md.innerText.slice(0, 8000);  // cap
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = currentLang === 'ar' ? 'ar-SA' : 'en-US';
+  u.rate = 1.0;
+  u.onend = () => $('#ttsBtn').classList.remove('active');
+  speechSynthesis.speak(u);
+  $('#ttsBtn').classList.add('active');
+}
+
+function bindHighlightCapture(rpId) {
+  const md = $('#mdContent');
+  if (!md) return;
+  md.addEventListener('mouseup', () => {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+    const text = sel.toString().trim();
+    if (text.length < 3 || text.length > 400) return;
+    if (confirm(`Highlight: "${text.slice(0, 80)}"?`)) {
+      const range = sel.getRangeAt(0);
+      const span = document.createElement('span');
+      span.className = 'user-hl';
+      try { range.surroundContents(span); } catch { return; }
+      const all = LS.highlights();
+      all[rpId] = all[rpId] || [];
+      all[rpId].push({ text, ts: new Date().toISOString() });
+      LS.setHighlights(all);
+      sel.removeAllRanges();
+      toast('Highlight saved');
+    }
+  });
+}
+function restoreHighlights(rpId) {
+  const all = LS.highlights()[rpId] || [];
+  if (!all.length) return;
+  const md = $('#mdContent');
+  if (!md) return;
+  const html0 = md.innerHTML;
+  let html = html0;
+  for (const h of all) {
+    const safe = h.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    html = html.replace(new RegExp(`(${safe})`, 'g'), '<span class="user-hl">$1</span>');
+  }
+  if (html !== html0) md.innerHTML = html;
 }
 
 function openLightbox(src, info) {
-  $('#lightboxImg').src = src;
-  $('#lightboxInfo').textContent = info || '';
+  $('#lightboxImg').src = src; $('#lightboxInfo').textContent = info || '';
   $('#lightbox').classList.add('open');
 }
-function closeLightbox(e) {
-  // Only close if clicking the bg or the close btn (not the img zoom-out)
-  if (e && e.target && e.target.tagName === 'IMG') {
-    $('#lightbox').classList.remove('open');
-    return;
-  }
-  $('#lightbox').classList.remove('open');
-}
-
+function closeLightbox(e) { $('#lightbox').classList.remove('open'); }
 function bindLightbox(scope) {
   scope.querySelectorAll('img').forEach(img => {
     img.addEventListener('click', () => openLightbox(img.src, img.alt));
@@ -693,9 +1109,6 @@ function escapeHtml(s) {
 }
 function escapeAttr(s) { return escapeHtml(s).replace(/"/g, '&quot;'); }
 
-/* Markdown → HTML.  Rewrites figure paths so they resolve from
-   paper_reader.html (located at Assignment01/) instead of from
-   papers_md/*.md. */
 function markdownToHtml(md, paper) {
   md = md.replace(/<!-- page (\d+) -->/g, (_, n) => `\n<div class="page-marker">page ${n}</div>\n`);
   md = md.replace(/<!--[\s\S]*?-->/g, '');
@@ -714,7 +1127,9 @@ function markdownToHtml(md, paper) {
     if (block.startsWith('<')) return block;
     let m;
     if ((m = block.match(/^(#{1,6})\s+(.+)$/))) {
-      return `<h${m[1].length}>${inline(m[2])}</h${m[1].length}>`;
+      const text = m[2];
+      const slug = 'h-' + text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').slice(0, 50);
+      return `<h${m[1].length} id="${slug}">${inline(text)}</h${m[1].length}>`;
     }
     if (block.startsWith('>')) {
       return `<blockquote>${inline(block.split('\n').map(l => l.replace(/^>\s?/, '')).join(' '))}</blockquote>`;
@@ -730,15 +1145,10 @@ function markdownToHtml(md, paper) {
 
   function inline(t) {
     t = t.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) => {
-      // Markdown comes from papers_md/*.md, which contains paths like
-      // "../figures/RP09_fig01.jpg".  paper_reader.html lives at
-      // Assignment01/, so "../figures/" would resolve one level too high.
-      // Strip the "../" so the path becomes "figures/..." (correct from here).
       const fixed = src.replace(/^\.\.\//, '');
       return `<img src="${escapeAttr(fixed)}" alt="${escapeHtml(alt)}" loading="lazy">`;
     });
-    t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, href) =>
-      `<a href="${escapeAttr(href)}" target="_blank">${escapeHtml(text)}</a>`);
+    t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, href) => `<a href="${escapeAttr(href)}" target="_blank">${escapeHtml(text)}</a>`);
     t = t.replace(/`([^`]+)`/g, (_, c) => `<code>${escapeHtml(c)}</code>`);
     t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     t = t.replace(/\*([^*]+)\*/g, '<em>$1</em>');
@@ -748,8 +1158,24 @@ function markdownToHtml(md, paper) {
   }
 }
 
+// Persist scroll progress per paper
+window.addEventListener('scroll', () => {
+  const md = $('#mdContent');
+  if (!md || currentIndex < 0 || currentMode !== 'read') return;
+  const pct = Math.min(100, Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100));
+  $('#readProgress').style.width = pct + '%';
+  // Save (debounced)
+  clearTimeout(window._scrollSave);
+  window._scrollSave = setTimeout(() => {
+    const prog = LS.progress();
+    prog[manifest[currentIndex].rp_id] = pct;
+    LS.setProgress(prog);
+  }, 400);
+});
+
+// Keyboard shortcuts
 document.addEventListener('keydown', e => {
-  if (e.target.tagName === 'INPUT') return;
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
   if (e.key === 'Escape') {
     if ($('#lightbox').classList.contains('open')) closeLightbox();
     else toggleDrawer(false);
@@ -758,11 +1184,22 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight' || e.key === 'j') navigate(1);
   if (e.key === 'f') toggleFocus();
   if (e.key === 'w') toggleWide();
+  if (e.key === 'b') toggleBionic();
+  if (e.key === 'd') toggleDyslexia();
+  if (e.key === 'l') toggleLang();
   if (e.key === '/') { e.preventDefault(); $('#search').focus(); toggleDrawer(true); }
-  // Tab numbers 1-5 switch panes
   if (['1','2','3','4','5'].includes(e.key)) {
     const tabs = ['read','pages','findings','data','summary'];
-    setMode(tabs[parseInt(e.key,10) - 1]);
+    setMode(tabs[parseInt(e.key, 10) - 1]);
+  }
+});
+
+// Filter chips
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('filter-chip')) {
+    $$('.filter-chip').forEach(c => c.classList.remove('active'));
+    e.target.classList.add('active');
+    renderPaperList();
   }
 });
 
@@ -783,13 +1220,14 @@ def main():
     manifest = build_manifest()
     OUT_MANIFEST.write_text(json.dumps(manifest, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"  Wrote {OUT_MANIFEST.relative_to(HERE)}: {OUT_MANIFEST.stat().st_size:,} bytes ({len(manifest)} papers)")
+    n_ar = sum(1 for p in manifest if p.get("md_path_ar"))
+    print(f"  Arabic translations available: {n_ar}/{len(manifest)}")
 
     OUT_HTML.write_text(HTML_TEMPLATE, encoding="utf-8")
     print(f"  Wrote {OUT_HTML.relative_to(HERE)}: {OUT_HTML.stat().st_size:,} bytes")
 
     print()
-    print("Done. Open in browser:")
-    print(f"  file:///{OUT_HTML.as_posix()}")
+    print("Open:")
     print(f"  https://elrashid.github.io/AI503/Assignment01/paper_reader.html")
 
 
