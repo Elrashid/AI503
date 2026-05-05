@@ -1,0 +1,1777 @@
+[
+ {
+  "rp_id": "RP01",
+  "title": "The LAMBADA dataset: Word prediction requiring a broad discourse context",
+  "first_author": "Paperno",
+  "year": 2016,
+  "venue": "ACL 2016",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "Introduces LAMBADA, a word prediction benchmark of 10,022 narrative passages where the last word is guessable only with broad discourse context, not the final sentence alone.",
+  "findings": [
+   {
+    "text": "On LAMBADA, no tested language model reaches above 1% accuracy (LSTM, RNN, Memory Network, N-Gram all 0%; N-Gram w/cache 0.1%)",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "LSTM accuracy: LAMBADA 0% (PPL 5357) vs Control 21.9% (PPL 149)",
+    "page": 8,
+    "section": "4 Modeling experiments"
+   },
+   {
+    "text": "N-Gram with cache achieves the best LAMBADA perplexity at 768 (still 0.1% accuracy)",
+    "page": 8,
+    "section": "4 Modeling experiments"
+   },
+   {
+    "text": "Random capitalized word from passage baseline reaches 7.3% accuracy on LAMBADA, beating all neural models",
+    "page": 8,
+    "section": "4 Modeling experiments"
+   }
+  ],
+  "md_path": "papers_md/RP01_Paperno_2016.md"
+ },
+ {
+  "rp_id": "RP02",
+  "title": "Attention Is All You Need",
+  "first_author": "Vaswani",
+  "year": 2017,
+  "venue": "NeurIPS (NIPS) 2017",
+  "paper_type": "method",
+  "method_family": "architecture",
+  "contribution": "Introduces the Transformer, a sequence transduction architecture based solely on self-attention, removing recurrence and convolutions and enabling far more parallel training while reaching state-of-the-art translation quality.",
+  "findings": [
+   {
+    "text": "Transformer (big) reaches 28.4 BLEU on WMT 2014 EN-DE, beating prior best (including ensembles) by over 2 BLEU",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "Transformer (big) reaches 41.8 BLEU on WMT 2014 EN-FR, a new single-model state of the art, after 3.5 days on 8 P100 GPUs",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "Transformer (base) reaches 27.3 BLEU EN-DE / 38.1 BLEU EN-FR at training cost 3.3×10^18 FLOPs, far below prior models",
+    "page": 8,
+    "section": "5.4 Regularization"
+   },
+   {
+    "text": "4-layer Transformer reaches 91.3 F1 on WSJ-23 (WSJ-only) and 92.7 F1 (semi-supervised), outperforming most prior parsers",
+    "page": 10,
+    "section": "6.3 English Constituency Parsing"
+   }
+  ],
+  "md_path": "papers_md/RP02_Vaswani_2017.md"
+ },
+ {
+  "rp_id": "RP03",
+  "title": "Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering",
+  "first_author": "Mihaylov",
+  "year": 2018,
+  "venue": "EMNLP 2018",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "OpenBookQA is a new 5,957-question multiple-choice QA benchmark paired with a 1,326-fact open book of elementary science, requiring multi-hop reasoning that combines a core fact with broad common knowledge.",
+  "findings": [
+   {
+    "text": "Human performance on OpenBookQA Test = 91.7% (Dev = 89.3%); reported as conservative Ĥ(Q)-3% lower estimate",
+    "page": 8,
+    "section": "4.4 Trained Model with External Knowledge"
+   },
+   {
+    "text": "Best knowledge-free trained baseline (Question Match / Odd-one-out) reaches 50.2% Test accuracy, far below the ~92% human level",
+    "page": 8,
+    "section": "4.4 Trained Model with External Knowledge"
+   },
+   {
+    "text": "Pre-trained science QA solvers perform near random: TupleInference 17.9%, PMI 21.2%, TableILP 23.4%, DGEM 24.4% on Test",
+    "page": 8,
+    "section": "4.4 Trained Model with External Knowledge"
+   },
+   {
+    "text": "Oracle Knowledge-Enhanced Reader given gold f and k reaches 76.9% Test, still ~15 points below human performance",
+    "page": 8,
+    "section": "4.4 Trained Model with External Knowledge"
+   }
+  ],
+  "md_path": "papers_md/RP03_Mihaylov_2018.md"
+ },
+ {
+  "rp_id": "RP04",
+  "title": "BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions",
+  "first_author": "Clark",
+  "year": 2019,
+  "venue": "NAACL 2019",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "BoolQ is a reading comprehension dataset of 16,000 naturally occurring yes/no questions paired with Wikipedia passages, used to test inferential abilities of QA models.",
+  "findings": [
+   {
+    "text": "BERT-Large + MultiNLI two-step transfer reaches 80.43% test accuracy on BoolQ",
+    "page": 8,
+    "section": "5.4 Transfer Learning Results"
+   },
+   {
+    "text": "Human annotators reach 90% accuracy on 110 gold-standard examples",
+    "page": 4,
+    "section": "3.3 Annotation Quality"
+   },
+   {
+    "text": "Majority-class baseline gets 62.31% test accuracy on BoolQ",
+    "page": 8,
+    "section": "5.4 Transfer Learning Results"
+   },
+   {
+    "text": "MultiNLI single-step transfer with Recurrent model reaches 75.57% on BoolQ dev (best supervised method)",
+    "page": 8,
+    "section": "5.4 Transfer Learning Results"
+   }
+  ],
+  "md_path": "papers_md/RP04_Clark_2019.md"
+ },
+ {
+  "rp_id": "RP05",
+  "title": "HellaSwag: Can a Machine Really Finish Your Sentence?",
+  "first_author": "Zellers",
+  "year": 2019,
+  "venue": "ACL 2019",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "HellaSwag is a 70k-question commonsense NLI benchmark built via Adversarial Filtering (AF) with GPT generations and BERT discriminators; it is easy for humans (>95%) but hard for state-of-the-art models (<48%).",
+  "findings": [
+   {
+    "text": "BERT-Large reaches 47.3% test accuracy on HellaSwag overall vs 95.6% human accuracy (gap > 48%)",
+    "page": 6,
+    "section": "5 Results"
+   },
+   {
+    "text": "BERT-Large drops from 86% on SWAG to 47.3% on HellaSwag, while ESIM+ELMo drops from 59% (SWAG) to 33.3% (HellaSwag)",
+    "page": 6,
+    "section": "5 Results"
+   },
+   {
+    "text": "BERT-Large zero-shot test accuracy 45.0% vs in-domain 49.7%, a 4.7-point drop on novel categories",
+    "page": 7,
+    "section": "5 Results"
+   },
+   {
+    "text": "BERT-Large transfers poorly: trained on SWAG, evaluated on HellaSwag scores only 34.6%; SWAG models on WikiHow get just 28%",
+    "page": 7,
+    "section": "5 Results"
+   }
+  ],
+  "md_path": "papers_md/RP05_Zellers_2019.md"
+ },
+ {
+  "rp_id": "RP06",
+  "title": "PIQA: Reasoning about Physical Commonsense in Natural Language",
+  "first_author": "Bisk",
+  "year": 2019,
+  "venue": "AAAI 2020",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "Introduces PIQA, a multiple-choice benchmark for physical commonsense reasoning where humans reach 95% but large pretrained models (GPT, BERT, RoBERTa) plateau near 77%.",
+  "findings": [
+   {
+    "text": "RoBERTa-Large reaches 79.2% validation / 77.1% test accuracy on PIQA, the best of the three pretrained models",
+    "page": 5,
+    "section": "**Experiments **"
+   },
+   {
+    "text": "Human performance reaches 94.9% validation accuracy, ~18 points above RoBERTa",
+    "page": 5,
+    "section": "**Experiments **"
+   },
+   {
+    "text": "BERT-Large reaches 67.1% validation / 66.8% test, GPT 70.9% / 69.2% on PIQA",
+    "page": 5,
+    "section": "**Experiments **"
+   },
+   {
+    "text": "Roughly 20-point absolute gap between best model and human performance on PIQA",
+    "page": 5,
+    "section": "**Experiments **"
+   }
+  ],
+  "md_path": "papers_md/RP06_Bisk_2019.md"
+ },
+ {
+  "rp_id": "RP07",
+  "title": "Up or Down? Adaptive Rounding for Post-Training Quantization",
+  "first_author": "Nagel",
+  "year": 2020,
+  "venue": "ICML 2020 (PMLR 119)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "AdaRound is a post-training weight-rounding method that adapts to data and task loss using a per-layer QUBO formulation solved via continuous relaxation, quantizing ResNet-18/50 weights to 4 bits within 1% accuracy drop.",
+  "findings": [
+   {
+    "text": "ResNet-18 at 4-bit weights (W4/A32) reaches 68.71% top-1 vs FP32 69.68% (drop ~0.97 pp)",
+    "page": 8,
+    "section": "5.2. Literature comparison"
+   },
+   {
+    "text": "ResNet-50 at 4-bit weights reaches 75.23% top-1 vs FP32 76.07% (drop ~0.84 pp)",
+    "page": 8,
+    "section": "5.2. Literature comparison"
+   },
+   {
+    "text": "MobileNetV2 at W4/A32 reaches 69.78% vs FP32 71.72%; nearest rounding collapses to 8.09%",
+    "page": 8,
+    "section": "5.2. Literature comparison"
+   },
+   {
+    "text": "DeepLabV3+ on Pascal VOC at W4/A8 reaches 70.86 mIOU vs FP32 72.94 (~2 pp drop) while nearest collapses to 6.09",
+    "page": 9,
+    "section": "5.2. Literature comparison"
+   }
+  ],
+  "md_path": "papers_md/RP07_Nagel_2020.md"
+ },
+ {
+  "rp_id": "RP08",
+  "title": "DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale",
+  "first_author": "Aminabadi",
+  "year": 2022,
+  "venue": "SC22: International Conference for High Performance Computing, Networking, Storage and Analysis (arXiv preprint arXiv:2207.00032)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "DeepSpeed Inference is a comprehensive transformer inference system combining inference-optimized GPU kernels (with FP16 and INT8 GeMM), tensor and pipeline parallelism, MoE-specific optimizations, and ZeRO-Inference heterogeneous offloading to deliver up to 7.3x latency reduction and 25x larger servable model size.",
+  "findings": [
+   {
+    "text": "DeepSpeed-INT8 reaches up to 1.95x latency speedup over FasterTransformer FP16 baseline at small batch sizes for dense GPT models",
+    "page": 10,
+    "section": "*B. Evaluation of DeepSpeed Inference for Latency Sensitive* *Workloads*"
+   },
+   {
+    "text": "DeepSpeed-MoE delivers up to 7.3x lower per-token latency vs PyTorch baseline and serves a 1T-parameter MoE model under 25 ms on 256 GPUs",
+    "page": 10,
+    "section": "*B. Evaluation of DeepSpeed Inference for Latency Sensitive* *Workloads*"
+   },
+   {
+    "text": "1.51x throughput improvement over FasterTransformer for GPT-3 175B on 2x8 A100 nodes",
+    "page": 11,
+    "section": "C. Throughput Oriented Massive Model Inference"
+   },
+   {
+    "text": "ZeRO-Inference runs a 530B model on a single A6000 GPU at 84 TFLOPS (54% of 158.4 TFLOPS theoretical peak), 25x larger than GPU-only solutions",
+    "page": 11,
+    "section": "D. Democratizing Larger Model Inference with ZeRO-Inference"
+   },
+   {
+    "text": "DeepSpeed-FP16 reduces dense-model latency by up to 1.55x at small batch sizes and 1.57x at larger batches over FasterTransformer FP16",
+    "page": 10,
+    "section": "*B. Evaluation of DeepSpeed Inference for Latency Sensitive* *Workloads*"
+   }
+  ],
+  "md_path": "papers_md/RP08_Aminabadi_2022.md"
+ },
+ {
+  "rp_id": "RP09",
+  "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+  "first_author": "Frantar",
+  "year": 2022,
+  "venue": "ICLR 2023 (arXiv preprint 2022)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "GPTQ is a one-shot weight-only post-training quantization method using approximate second-order information that compresses 175B-parameter GPT models to 3-4 bits in about four GPU hours with negligible accuracy loss.",
+  "findings": [
+   {
+    "text": "OPT-175B at 4-bit GPTQ reaches WikiText2 PPL 8.37 vs FP16 8.34 (delta 0.03), while RTN drops to 10.54",
+    "page": 8,
+    "section": "5 EXPERIMENTAL VALIDATION"
+   },
+   {
+    "text": "OPT-175B at 3-bit GPTQ reaches WikiText2 PPL 8.68 (vs 8.34 FP16); RTN collapses to 7.3e3",
+    "page": 8,
+    "section": "5 EXPERIMENTAL VALIDATION"
+   },
+   {
+    "text": "End-to-end 3.24x decoding speedup on A100 80GB (230 ms FP16 to 71 ms 3-bit) for OPT-175B",
+    "page": 8,
+    "section": "5 EXPERIMENTAL VALIDATION"
+   },
+   {
+    "text": "End-to-end 4.53x speedup on A6000 48GB (589 ms FP16 to 130 ms 3-bit), reducing GPU count from 8 to 2",
+    "page": 8,
+    "section": "5 EXPERIMENTAL VALIDATION"
+   },
+   {
+    "text": "GPTQ quantizes OPT-175B in 4.2h and BLOOM-176B in 3.8h on a single A100",
+    "page": 7,
+    "section": "5 EXPERIMENTAL VALIDATION"
+   }
+  ],
+  "md_path": "papers_md/RP09_Frantar_2022.md"
+ },
+ {
+  "rp_id": "RP10",
+  "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+  "first_author": "Xiao",
+  "year": 2022,
+  "venue": "ICML 2023 (Proceedings of the 40th International Conference on Machine Learning, PMLR 202)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "SmoothQuant is a training-free W8A8 PTQ method that uses an offline mathematically equivalent per-channel scaling to migrate quantization difficulty from activations to weights for LLMs.",
+  "findings": [
+   {
+    "text": "OPT-175B average accuracy across 7 zero-shot tasks: FP16 66.9% vs SmoothQuant-O3 66.8% (−0.1pp); WikiText PPL 10.99 → 11.17",
+    "page": 6,
+    "section": "5.2 Accurate Quantization"
+   },
+   {
+    "text": "BLOOM-176B average accuracy: FP16 68.2% vs SmoothQuant-O2 68.4%; GLM-130B FP16 73.8% vs SmoothQuant-O1 73.7%",
+    "page": 6,
+    "section": "5.2 Accurate Quantization"
+   },
+   {
+    "text": "Up to 1.56× inference speedup and ~2× memory saving over FP16 in FasterTransformer; 1.51× speedup and 1.96× memory in PyTorch on A100",
+    "page": 8,
+    "section": "5.3 Speedup and Memory Saving"
+   },
+   {
+    "text": "MT-NLG 530B served on 8 GPUs (vs 16 for FP16) at similar latency; e.g. SeqLen 1024: FP16 16-GPU 1707ms/1095GB vs INT8 8-GPU 1689ms/570GB",
+    "page": 9,
+    "section": "6 Related Work"
+   }
+  ],
+  "md_path": "papers_md/RP10_Xiao_2022.md"
+ },
+ {
+  "rp_id": "RP11",
+  "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+  "first_author": "Dettmers",
+  "year": 2022,
+  "venue": "NeurIPS 2022 (arXiv:2208.07339)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "LLM.int8() is a two-part Int8 inference procedure (vector-wise quantization plus mixed-precision decomposition that isolates emergent outlier features in 16-bit) that quantizes transformers up to 175B parameters with no performance loss and halves inference memory.",
+  "findings": [
+   {
+    "text": "OPT-13B C4 PPL: FP32=12.45, Int8 absmax=19.08, Int8 vector-wise=16.48, LLM.int8()=12.45 (no degradation)",
+    "page": 6,
+    "section": "3.4 Main Results"
+   },
+   {
+    "text": "LLM.int8() preserves zeroshot accuracy from 125M up to 175B OPT, while 8-bit absmax vector-wise degenerates to random performance after 6.7B parameters",
+    "page": 6,
+    "section": "3.4 Main Results"
+   },
+   {
+    "text": "Removing the about 7 outlier feature dimensions (~0.1% of features) drops top-1 softmax probability from ~40% to ~20% and increases perplexity by 600-1000%",
+    "page": 8,
+    "section": "4.2 Measuring the Effect of Outlier Features"
+   },
+   {
+    "text": "Phase shift at 6.7B parameters: outliers go from 65% to 100% of layers and 35% to 75% of sequence dimensions, co-occurring with quantization failure",
+    "page": 8,
+    "section": "4.2 Measuring the Effect of Outlier Features"
+   },
+   {
+    "text": "BLOOM-176B end-to-end per-token latency: bf16 baseline 239 ms (8xA100) vs LLM.int8() 247 ms on only 3xA100 (similar speed, fewer GPUs)",
+    "page": 18,
+    "section": "D.2 End-to-end benchmarks"
+   }
+  ],
+  "md_path": "papers_md/RP11_Dettmers_2022.md"
+ },
+ {
+  "rp_id": "RP12",
+  "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+  "first_author": "Touvron",
+  "year": 2023,
+  "venue": "arXiv preprint (Meta GenAI technical report)",
+  "paper_type": "method",
+  "method_family": "architecture",
+  "contribution": "Llama 2 is an open-release family of pretrained and fine-tuned LLMs (7B, 13B, 70B) optimized via SFT and RLHF for dialogue, with safety tuning and Ghost Attention.",
+  "findings": [
+   {
+    "text": "Llama 2 70B reaches MMLU 68.9, BBH 51.2, AGI Eval 54.2, beating all open-source baselines (MPT-30B, Falcon-40B, Llama 1 65B)",
+    "page": 8,
+    "section": "2.3 Llama 2 Pretrained Model Evaluation"
+   },
+   {
+    "text": "Llama 2 70B improves over Llama 1 65B by ~5 points on MMLU and ~8 points on BBH",
+    "page": 8,
+    "section": "2.3 Llama 2 Pretrained Model Evaluation"
+   },
+   {
+    "text": "Llama 2 70B closes ground on GPT-3.5: MMLU 68.9 vs 70.0 and GSM8K 56.8 vs 57.1 (still a gap on coding)",
+    "page": 8,
+    "section": "2.3 Llama 2 Pretrained Model Evaluation"
+   },
+   {
+    "text": "Pretraining cost: 3.3M GPU-hours on A100-80GB and 539 tCO2eq emitted (100% offset by Meta)",
+    "page": 7,
+    "section": "2.2.1 Training Hardware & Carbon Footprint"
+   }
+  ],
+  "md_path": "papers_md/RP12_Touvron_2023.md"
+ },
+ {
+  "rp_id": "RP13",
+  "title": "QuIP: 2-Bit Quantization of Large Language Models With Guarantees",
+  "first_author": "Chee",
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "QuIP is a post-training weight-only quantization method that uses incoherence processing via random orthogonal matrices to enable the first viable 2-bit LLM quantization, paired with adaptive rounding (LDLQ) and theoretical guarantees.",
+  "findings": [
+   {
+    "text": "Llama 2 70B at 2-bit with QuIP reaches WikiText PPL 6.326 vs 16-bit 3.319, while OPTQ collapses to 123.908 at 2-bit",
+    "page": 9,
+    "section": "6 Experiments"
+   },
+   {
+    "text": "OPT-30B at 2-bit with QuIP reaches WikiText PPL 11.48 vs 16-bit 9.56, while OPTQ degrades to 71.70",
+    "page": 9,
+    "section": "6 Experiments"
+   },
+   {
+    "text": "QuIP is about 1.5x slower than OPTQ at inference: 81 ms/token vs 53 ms/token on OPT-66B (A6000)",
+    "page": 10,
+    "section": "6 Experiments"
+   },
+   {
+    "text": "Random permutation in fast orthogonal multiplication reduces 2-bit perplexity by 74.2 points on OPT-125m (averaged over WikiText2/PTB/C4)",
+    "page": 10,
+    "section": "7 Conclusion"
+   }
+  ],
+  "md_path": "papers_md/RP13_Chee_2023.md"
+ },
+ {
+  "rp_id": "RP14",
+  "title": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+  "first_author": "Yao",
+  "year": 2022,
+  "venue": "NeurIPS 2022",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "ZeroQuant is an end-to-end post-training quantization and inference pipeline that pairs group-wise weight and token-wise activation quantization with a layer-by-layer knowledge distillation method and optimized INT8 GPU kernels for BERT and GPT-3-style models up to 20B parameters.",
+  "findings": [
+   {
+    "text": "BERT-base W8A8 ZeroQuant reaches 83.75 GLUE average vs 83.95 FP16 baseline (delta 0.20) at 0 s calibration cost, while standard PTQ falls to 77.41",
+    "page": 6,
+    "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost"
+   },
+   {
+    "text": "BERT-base W4/8A16 ZeroQuant-LKD reaches 82.35 GLUE average (vs PTQ 33.11) in 31 s per task, ~93.5x cheaper than INT8 QAT (2900 s)",
+    "page": 7,
+    "section": "5.1 Main Results of BERT"
+   },
+   {
+    "text": "GPT-3 350M W8A8 ZeroQuant reaches Wikitext-2 PPL 21.7 vs 21.5 FP16 (delta 0.2), while W8A8 PTQ degrades to 26.2",
+    "page": 8,
+    "section": "5.2 Main Results of GPT-3-style Models"
+   },
+   {
+    "text": "Up to 5.19x INT8 speedup on BERT-base and 4.16x on GPT-3 350M end-to-end on a single 40G A100 vs FP16",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "GPT-NeoX 20B W8A8/16 cuts latency from 2x65ms to 1x25ms and halves GPU count, giving 5.2x better efficiency at matched accuracy (Ave. 50.4 vs 50.5)",
+    "page": 10,
+    "section": "5.5 Ablation Study of Different Components"
+   },
+   {
+    "text": "GPT-J 6B W8A8 reaches 10.51 PPL on WikiText-2 vs 10.35 FP16 with 3.67x latency speedup (29.13 ms to 7.94 ms)",
+    "page": 10,
+    "section": "5.5 Ablation Study of Different Components"
+   }
+  ],
+  "md_path": "papers_md/RP14_Yao_2022.md"
+ },
+ {
+  "rp_id": "RP15",
+  "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+  "first_author": "Lin",
+  "year": 2023,
+  "venue": "MLSys 2024 (Best Paper Award)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "AWQ is a hardware-friendly low-bit weight-only PTQ method that protects the top 1% salient channels using activation-aware per-channel scaling, with no backpropagation, and is paired with TinyChat to deliver 3-4x edge speedup over FP16.",
+  "findings": [
+   {
+    "text": "Llama-2-7B at INT3-g128: AWQ PPL 6.24 vs FP16 5.47 (GPTQ 6.43, GPTQ-R 6.42, RTN 6.66) on WikiText-2",
+    "page": 7,
+    "section": "4.2 Deploy AWQ with TinyChat"
+   },
+   {
+    "text": "Llama-2-70B at INT4-g128: AWQ PPL 3.41 vs FP16 3.32 (Delta 0.09)",
+    "page": 7,
+    "section": "4.2 Deploy AWQ with TinyChat"
+   },
+   {
+    "text": "OpenFlamingo-9B at INT4-g128 32-shot: AWQ CIDEr 80.53 vs FP16 81.70 (degradation reduced from 4.57 to 1.17)",
+    "page": 8,
+    "section": "5.2 Evaluation"
+   },
+   {
+    "text": "TinyChat with 4-bit AWQ delivers 3.2-3.3x average speedup over Huggingface FP16 across desktop, laptop and mobile GPUs",
+    "page": 2,
+    "section": "1 Introduction"
+   },
+   {
+    "text": "TinyChat reaches 3.9x speedup on RTX 4090 desktop and 3.5x on Jetson Orin mobile GPU vs FP16 Huggingface",
+    "page": 10,
+    "section": "5.2 Evaluation"
+   }
+  ],
+  "md_path": "papers_md/RP15_Lin_2023.md"
+ },
+ {
+  "rp_id": "RP16",
+  "title": "SqueezeLLM: Dense-and-Sparse Quantization",
+  "first_author": "Kim",
+  "year": 2023,
+  "venue": "ICML 2024 (PMLR 235)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "SqueezeLLM is a post-training weight-only PTQ framework that uses sensitivity-based non-uniform quantization plus Dense-and-Sparse decomposition to achieve near-lossless 3-bit LLM compression and up to 2.3x speedup on A6000.",
+  "findings": [
+   {
+    "text": "3-bit LLaMA-7B (dense-only) PPL on C4 = 7.75 vs FP16 7.08; 0.45% sparsity drops it to 7.56 (gap 0.48); RTN baseline is 28.26.",
+    "page": 7,
+    "section": "5.2. Main Results"
+   },
+   {
+    "text": "3-bit LLaMA-7B reduces perplexity gap from FP16 by up to 2.1x compared to GPTQ/AWQ at the same memory budget.",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "Up to 2.3x decoding speedup over FP16 on A6000 (3-bit dense-only LLaMA-7B latency 1.5s vs 3.2s baseline for 128 tokens).",
+    "page": 9,
+    "section": "5.4. Hardware Deployment and Profiling"
+   },
+   {
+    "text": "4-bit LLaMA-7B (0.45% sparse) PPL = 7.18 on C4 / 5.77 on WikiText-2 vs FP16 7.08/5.68 (~0.1 PPL gap) at 3.95x compression.",
+    "page": 7,
+    "section": "5.2. Main Results"
+   }
+  ],
+  "md_path": "papers_md/RP16_Kim_2023.md"
+ },
+ {
+  "rp_id": "RP17",
+  "title": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+  "first_author": "Dettmers",
+  "year": 2023,
+  "venue": "arXiv preprint (arXiv:2306.03078)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "SpQR is a hybrid sparse-quantized PTQ format that isolates outlier weights at 16-bit and quantizes the rest to 3-4 bits, reaching near-lossless (<1% perplexity loss) compression of LLaMA and Falcon LLMs.",
+  "findings": [
+   {
+    "text": "LLaMA-65B at SpQR 4.71 avg bits: WikiText2 PPL 3.57 vs FP16 3.53 (Δ 0.04, near-lossless)",
+    "page": 9,
+    "section": "LLaMa"
+   },
+   {
+    "text": "LLaMA-7B at SpQR ~3.94 bits: WikiText2 PPL 5.87 vs GPTQ-4bit 6.13 and RTN-4bit 6.43",
+    "page": 9,
+    "section": "LLaMa"
+   },
+   {
+    "text": "Falcon-40B at SpQR 4.46 avg bits: WikiText2 PPL 5.26 vs FP16 5.23 (within 1%)",
+    "page": 10,
+    "section": "Falcon"
+   },
+   {
+    "text": "Optimized SpQR inference: 20-30% faster than FP16 baseline on A100 (e.g. LLaMA-30B 22 vs 19 tok/s)",
+    "page": 10,
+    "section": "Falcon"
+   }
+  ],
+  "md_path": "papers_md/RP17_Dettmers_2023.md"
+ },
+ {
+  "rp_id": "RP18",
+  "title": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+  "first_author": "Shao",
+  "year": 2023,
+  "venue": "ICLR 2024 (arXiv:2308.13137)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "OmniQuant is a differentiable PTQ method for LLMs that learns weight clipping (LWC) and equivalent transformation (LET) parameters via block-wise error minimization, working for both weight-only and weight-activation quantization.",
+  "findings": [
+   {
+    "text": "LLaMA-13B at W2A16: OmniQuant PPL 13.21 vs GPTQ 5.5e3 (huge gap at 2-bit weight-only)",
+    "page": 3,
+    "section": "1 Introduction"
+   },
+   {
+    "text": "LLaMA-1-7B at W4A4: OmniQuant average zero-shot acc 52.65% vs SmoothQuant 38.41%, surpassing LLM-QAT (41.27%) by +6.22%",
+    "page": 8,
+    "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS"
+   },
+   {
+    "text": "W4A4 average accuracy gain across LLaMA models: +4.99% to +11.80% over best prior PTQ baseline",
+    "page": 8,
+    "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS"
+   },
+   {
+    "text": "LLaMA-7B W4A16g128 deployment via MLC-LLM: 134.2 tokens/s vs FP16 69.2 tokens/s (1.94x faster) and 3.8GB weight memory vs 12.6GB",
+    "page": 9,
+    "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS"
+   }
+  ],
+  "md_path": "papers_md/RP18_Shao_2023.md"
+ },
+ {
+  "rp_id": "RP19",
+  "title": "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+  "first_author": "Jaiswal",
+  "year": 2023,
+  "venue": "ICLR 2024",
+  "paper_type": "benchmark",
+  "method_family": "PTQ",
+  "contribution": "Introduces LLM-KICK, a knowledge-intensive benchmark that re-evaluates SoTA pruning and quantization methods beyond perplexity, showing pruning fails at modest sparsity while quantization is more successful but still drops on knowledge tasks.",
+  "findings": [
+   {
+    "text": "GPTQ 8-bit on Vicuna-7B Factoid-QA reaches 60.14% vs LLM-int8 61.02% and AWQ 60.31% (dense baseline ~65.4%)",
+    "page": 20,
+    "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8"
+   },
+   {
+    "text": "GPTQ 8-bit on Vicuna-7B MMLU reaches 47.10%, AWQ 47.18%, LLM-int8 47.82% (vs dense 47.1%)",
+    "page": 20,
+    "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8"
+   },
+   {
+    "text": "All SoTA pruning methods catastrophically fail on FreebaseQA at 50% sparsity (Magnitude 13.99%, SparseGPT 42.86%, Wanda 44.66%) vs dense 65.44%",
+    "page": 20,
+    "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK"
+   },
+   {
+    "text": "Vicuna-13B with 46% sparsity (Magnitude/Wanda/SparseGPT, ~7B params) hits MMLU 31.7% / 45.3% / 46.3% vs dense Vicuna-7B 46.7% — large-sparse not better than small-dense",
+    "page": 9,
+    "section": "4 Additional Results and Discussions"
+   },
+   {
+    "text": "Even 8-bit GPTQ shows ~8-10% drop on Factoid-QA, indicating non-aggressive quantization remains unsolved",
+    "page": 5,
+    "section": "(1) Factoid-based Question Answering"
+   }
+  ],
+  "md_path": "papers_md/RP19_Jaiswal_2023.md"
+ },
+ {
+  "rp_id": "RP20",
+  "title": "The Llama 3 Herd of Models",
+  "first_author": "Dubey",
+  "year": 2024,
+  "venue": "arXiv preprint",
+  "paper_type": "method",
+  "method_family": "architecture",
+  "contribution": "Llama 3 is a herd of dense Transformer foundation models (8B, 70B, 405B parameters) with up to 128K context, pre-trained on 15.6T tokens, openly released and competitive with GPT-4.",
+  "findings": [
+   {
+    "text": "Llama 3 405B Instruct reaches MMLU 87.3 (5-shot) and 88.6 (0-shot CoT), competitive with GPT-4 (85.1) and GPT-4o (89.1)",
+    "page": 3,
+    "section": "1 Introduction"
+   },
+   {
+    "text": "Llama 3 405B Instruct scores 89.0 on HumanEval (0-shot) and 96.8 on GSM8K (8-shot CoT)",
+    "page": 3,
+    "section": "1 Introduction"
+   },
+   {
+    "text": "FP8 quantization yields up to 50% throughput improvement during pre-fill on H100 vs BF16 for Llama 3 405B",
+    "page": 53,
+    "section": "6.2 FP8 Quantization"
+   },
+   {
+    "text": "int8 Llama Guard 3 keeps English F1 at 0.936 vs 0.939 non-quantized while shrinking size by more than 40%",
+    "page": 51,
+    "section": "5.4.7 System Level Safety"
+   }
+  ],
+  "md_path": "papers_md/RP20_Dubey_2024.md"
+ },
+ {
+  "rp_id": "RP21",
+  "title": "QuIP#: Even Better LLM Quantization with Hadamard Incoherence and Lattice Codebooks",
+  "first_author": "Tseng",
+  "year": 2024,
+  "venue": "ICML 2024 (PMLR 235)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "QuIP# is a weight-only PTQ method that combines Randomized Hadamard Transform incoherence processing, an E_8 lattice (E8P) vector-quantization codebook with BlockLDLQ rounding, and inter-layer fine-tuning to reach state-of-the-art at 2-4 bits with fast GPU inference.",
+  "findings": [
+   {
+    "text": "Llama-2-70B at 2 bits with QuIP# reaches WikiText-2 PPL 4.16 vs FP16 3.32 (ctx 2048)",
+    "page": 8,
+    "section": "6.1. QuIP# on Llama Models"
+   },
+   {
+    "text": "Llama-2-70B at 3 bits with QuIP# reaches WikiText-2 PPL 3.35 vs FP16 3.12 (ctx 4096), beating AQLM 3.04-bit at 3.36 PPL",
+    "page": 9,
+    "section": "6.3. Efficient Inference with QuIP#"
+   },
+   {
+    "text": "Llama-2-70B at 2 bits achieves 32.74 tok/s and 56.84% peak memory bandwidth on RTX 4090 (FlashAttention impl.)",
+    "page": 9,
+    "section": "6.3. Efficient Inference with QuIP#"
+   },
+   {
+    "text": "QuIP# 2-bit Llama-2-7B reaches 106.3 tok/s vs FP16 33.1 tok/s (~3.2x speedup) on RTX 4090 via HuggingFace impl.",
+    "page": 9,
+    "section": "6.3. Efficient Inference with QuIP#"
+   }
+  ],
+  "md_path": "papers_md/RP21_Tseng_2024.md"
+ },
+ {
+  "rp_id": "RP22",
+  "title": "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization",
+  "first_author": "Hooper",
+  "year": 2024,
+  "venue": "NeurIPS 2024 (arXiv preprint arXiv:2401.18079)",
+  "paper_type": "method",
+  "method_family": "KV-cache-quant",
+  "contribution": "KVQuant is a sub-4-bit KV cache PTQ method using per-channel pre-RoPE Key quantization, sensitivity-weighted non-uniform datatypes (nuqX), and per-vector dense-and-sparse outlier handling, enabling 10M context length LLaMA-7B inference on an 8-GPU system with under 0.1 perplexity loss.",
+  "findings": [
+   {
+    "text": "LLaMA-7B at 3-bit (KVQuant-3bit-1%): Wikitext-2 PPL 5.75 vs fp16 5.68 (Δ 0.07)",
+    "page": 7,
+    "section": "3.7 Kernel Implementation"
+   },
+   {
+    "text": "LLaMA-7B at 2-bit (KVQuant-2bit-1%): Wikitext-2 PPL 6.01 vs fp16 5.68 with 6.9× memory savings",
+    "page": 7,
+    "section": "4.1 Main Evaluation"
+   },
+   {
+    "text": "Up to 1.7× speedup over fp16 matvec for Value at l=16K on A6000 (LLaMA-2-7B-32K, nuq4-1%)",
+    "page": 9,
+    "section": "4.4 Performance Analysis and Memory Savings"
+   },
+   {
+    "text": "Enables 1M context length LLaMA-7B on a single A100-80GB GPU and 10M context on 8-GPU system (nuq2)",
+    "page": 9,
+    "section": "4.4 Performance Analysis and Memory Savings"
+   }
+  ],
+  "md_path": "papers_md/RP22_Hooper_2024.md"
+ },
+ {
+  "rp_id": "RP23",
+  "title": "DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models",
+  "first_author": "Wang",
+  "year": 2023,
+  "venue": "NeurIPS 2023 (Datasets and Benchmarks Track, Outstanding Paper)",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "DecodingTrust is a comprehensive benchmark assessing GPT-3.5, GPT-4 and six open LLMs across eight trustworthiness dimensions: toxicity, stereotype bias, adversarial robustness, OOD robustness, robustness to adversarial demonstrations, privacy, machine ethics, and fairness.",
+  "findings": [
+   {
+    "text": "Adversarial system prompts push GPT-4 toxicity probability from 31% (benign) to 100% on REALTOXICITYPROMPTS, showing alignment is bypassed by jailbreaking system prompts.",
+    "page": 13,
+    "section": "3.1 Evaluation on standard benchmark"
+   },
+   {
+    "text": "AdvGLUE++ adversarial texts cut GPT-4 robust accuracy from 78.18% on AdvGLUE to 55.64% (Alpaca-source), and GPT-3.5 from 67.37% to 49.23%.",
+    "page": 24,
+    "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++"
+   },
+   {
+    "text": "5-shot prompting with known email domain extracts up to 48.19% (GPT-4) and 44.04% (GPT-3.5) of Enron email addresses; unknown-domain rate is ~100x lower.",
+    "page": 41,
+    "section": "8.1 Privacy leakage of training data"
+   },
+   {
+    "text": "Combined jailbreaking prompts raise FPR on ETHICS from 4% (benign) to 94% on GPT-4 and to 65.5% on GPT-3.5 (ΔFPR +90% / +59.5%).",
+    "page": 51,
+    "section": "9.2 Evaluation on jailbreaking prompts"
+   },
+   {
+    "text": "Aggregated DecodingTrust scores: Llama-v2-7B-Chat best on Toxicity 80, Bias 97.6, Privacy 97.4, Fairness 100; GPT-4 best on Adv 64.04, OoD 87.55; GPT-3.5 best on Demo 81.28 and ME 86.38.",
+    "page": 103,
+    "section": "I.1 Aggregation protocol for each trustworthiness perspective"
+   }
+  ],
+  "md_path": "papers_md/RP23_Wang_2023.md"
+ },
+ {
+  "rp_id": "RP24",
+  "title": "The Impact of Inference Acceleration on Bias of LLMs",
+  "first_author": "Kirsten",
+  "year": 2024,
+  "venue": "arXiv preprint",
+  "paper_type": "safety_analysis",
+  "method_family": "PTQ",
+  "contribution": "Probes how five inference acceleration strategies (INT4/INT8, AWQ, KV4/KV8, structured/unstructured Wanda pruning) change demographic bias in three instruction-tuned LLMs across six bias metrics.",
+  "findings": [
+   {
+    "text": "AWQ 4-bit on Mistral DiscrimEval rises from 0.21 to 0.94 (+348%) under greedy decoding",
+    "page": 7,
+    "section": "(d) DiscrimEval"
+   },
+   {
+    "text": "Structured Wanda pruning on Mistral DT-Stereotyping drops agreement from 0.87 to 0.26 (-70%)",
+    "page": 7,
+    "section": "(e) DT-Stereotyping"
+   },
+   {
+    "text": "AWQ on LLaMA-2 WorldBench raises mean error from 0.22 to 0.49 (+123%)",
+    "page": 7,
+    "section": "(c) WorldBench"
+   },
+   {
+    "text": "Mistral DT-Stereotyping agreement rate jumps from 34 to 71 under AWQ (+109%)",
+    "page": 16,
+    "section": "C Results With Instruction / Chat Template"
+   }
+  ],
+  "md_path": "papers_md/RP24_Kirsten_2024.md"
+ },
+ {
+  "rp_id": "RP25",
+  "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+  "first_author": "Kwon",
+  "year": 2023,
+  "venue": "SOSP '23 (29th ACM Symposium on Operating Systems Principles)",
+  "paper_type": "application",
+  "method_family": "none",
+  "contribution": "Proposes PagedAttention, an attention algorithm that stores KV cache in non-contiguous paged blocks like OS virtual memory, and builds vLLM, a serving system that yields 2-4x throughput over FasterTransformer and Orca.",
+  "findings": [
+   {
+    "text": "vLLM yields 2-4x throughput improvement over FasterTransformer and Orca at the same level of latency",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "On ShareGPT, vLLM sustains 1.7-2.7x higher request rates than Orca (Oracle) and 2.7-8x higher than Orca (Max); up to 22x higher than FasterTransformer",
+    "page": 11,
+    "section": "6.2 Basic Sampling"
+   },
+   {
+    "text": "Beam search with width 6 on OPT-13B/Alpaca: improvement over Orca (Oracle) grows from 1.3x (basic sampling) to 2.3x; KV memory savings of 37.6-55.2%",
+    "page": 11,
+    "section": "6.3 Parallel Sampling and Beam Search"
+   },
+   {
+    "text": "Shared-prefix translation (LLaMA-13B, WMT16): 1.67x throughput over Orca (Oracle) for 1-shot prefix, 3.58x for 5-shot prefix",
+    "page": 12,
+    "section": "6.4 Shared prefix"
+   },
+   {
+    "text": "Existing systems waste ~80% of KV cache memory; only 20.4-38.2% of KV cache stores actual token states",
+    "page": 2,
+    "section": "1 Introduction"
+   }
+  ],
+  "md_path": "papers_md/RP25_Kwon_2023.md"
+ },
+ {
+  "rp_id": "RP26",
+  "title": "Decoding Compressed Trust: Scrutinizing the Trustworthiness of Efficient LLMs Under Compression",
+  "first_author": "Hong",
+  "year": 2024,
+  "venue": "ICML 2024 (Proceedings of the 41st International Conference on Machine Learning, PMLR 235)",
+  "paper_type": "safety_analysis",
+  "method_family": "PTQ",
+  "contribution": "First comprehensive evaluation of compressed LLMs on trustworthiness across eight DecodingTrust dimensions, comparing five SoTA quantization and pruning methods.",
+  "findings": [
+   {
+    "text": "LLAMA2 13b Chat at 4-bit GPTQ improves Ethics from 54.1 to 76.3 (+22.2) and at 4-bit AWQ to 62.8 (+8.7) vs FP16",
+    "page": 7,
+    "section": "5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness"
+   },
+   {
+    "text": "LLAMA2 13b Chat 4-bit GPTQ MT-Bench drops to 6.55 vs FP16 7.00; 3-bit GPTQ collapses to 2.89 while AWQ 3-bit holds 6.42",
+    "page": 16,
+    "section": "C.1. AdvGLUE++"
+   },
+   {
+    "text": "GPTQ 3-bit causes catastrophic trust drops on LLAMA2 13b Chat: ~30 points OOD robustness and ~50 points Toxicity vs dense",
+    "page": 8,
+    "section": "5.2. The Losses on the Extreme Compression Rate"
+   },
+   {
+    "text": "Pruning at 50% sparsity (2:4) significantly degrades trustworthiness while 4-bit quantization preserves it",
+    "page": 1,
+    "section": "**Abstract **"
+   }
+  ],
+  "md_path": "papers_md/RP26_Hong_2024.md"
+ },
+ {
+  "rp_id": "RP27",
+  "title": "GIFT-SW: Gaussian noise Injected Fine-Tuning of Salient Weights for LLMs",
+  "first_author": "Zhelnin",
+  "year": 2024,
+  "venue": "arXiv preprint",
+  "paper_type": "method",
+  "method_family": "QAT",
+  "contribution": "GIFT-SW is a PEFT method that updates only salient weight columns while injecting Gaussian noise into non-salient columns; it also recovers performance of mixed-precision quantized LLMs.",
+  "findings": [
+   {
+    "text": "GIFT-SW reaches 73.33 mean accuracy on LLaMA2-7B with TULU-V2-mix, beating FT (71.97), LoRA (71.78) and DoRA (72.03)",
+    "page": 6,
+    "section": "4.1 Data"
+   },
+   {
+    "text": "At 2-bit quantization GIFT-SW reaches 61.09 on LLaMA2-7B vs STE 58.20 and QUIK+LoRA 41.44 (more than 5 points over second-best)",
+    "page": 6,
+    "section": "4.1 Data"
+   },
+   {
+    "text": "GIFT-SW matches TULU2 on LLaMA2-7B (73.33 vs 73.49) using 174M trainable params and 500 iters vs 6.7B / 5K (~10x less compute)",
+    "page": 7,
+    "section": "5 Results"
+   },
+   {
+    "text": "Pre-GIFT-SW outperforms at 4-bit (73.15 vs 72.53 Post-GIFT-SW) on LLaMA2-7B but Post-GIFT-SW dominates at 2-bit (61.09 vs 47.08)",
+    "page": 8,
+    "section": "5.4 Scaling Properties"
+   }
+  ],
+  "md_path": "papers_md/RP27_Zhelnin_2024.md"
+ },
+ {
+  "rp_id": "RP28",
+  "title": "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
+  "first_author": "Ashkboos",
+  "year": 2024,
+  "venue": "ICLR 2024",
+  "paper_type": "method",
+  "method_family": "pruning",
+  "contribution": "SliceGPT is a post-training structured pruning method that applies an orthogonal transform (computational invariance) and slices entire rows and columns of weight matrices, reducing the embedding dimension while keeping competitive accuracy without recovery fine-tuning.",
+  "findings": [
+   {
+    "text": "LLaMA-2 70B sliced 25% reaches WikiText-2 PPL 4.60 vs dense 3.32 (Δ 1.28); SparseGPT 2:4 reaches 4.98",
+    "page": 8,
+    "section": "4.1 RESULTS"
+   },
+   {
+    "text": "Sliced models keep 99% (LLAMA-2 70B), 99% (OPT 66B) and 90% (Phi-2) of zero-shot accuracy at 25% slicing (90% Phi-2 with RFT)",
+    "page": 1,
+    "section": "ABSTRACT"
+   },
+   {
+    "text": "LLaMA-2 70B at 25% slicing: 110ms/token on 3 A100s vs 125ms on 4 (compute reduced to 66%); 215ms on 5 RTX6000 vs 252ms on 7 (reduced to 64%)",
+    "page": 10,
+    "section": "4.1 RESULTS"
+   },
+   {
+    "text": "LLaMA-2 70B sliced 25% achieves 1.55x throughput on 80GB H100 (839 vs 541 tokens/s); 50% achieves 3.75x on a single GPU",
+    "page": 21,
+    "section": "A.6 BENCHMARKING THROUGHPUT EXPERIMENT"
+   }
+  ],
+  "md_path": "papers_md/RP28_Ashkboos_2024.md"
+ },
+ {
+  "rp_id": "RP29",
+  "title": "QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs",
+  "first_author": "Ashkboos",
+  "year": 2024,
+  "venue": "NeurIPS 2024 (arXiv:2404.00456)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "QuaRot is a rotation-based PTQ scheme that fuses randomized Hadamard transforms into LLM weights to eliminate activation outliers, enabling end-to-end 4-bit quantization of weights, activations, and KV cache with minimal accuracy loss.",
+  "findings": [
+   {
+    "text": "LLaMA-2-70B 4-bit (W4A4KV4) QuaRot reaches WikiText-2 PPL 3.79 vs FP16 3.32 (delta 0.47), beating QUIK-4B (6.91) with 0 outlier features",
+    "page": 8,
+    "section": "5.2 Performance Analysis"
+   },
+   {
+    "text": "LLaMA-2-70B at 4-bit QuaRot retains 75.98% zero-shot average vs 77.07% FP16 (1.09% drop, ~99% retention)",
+    "page": 8,
+    "section": "5.2 Performance Analysis"
+   },
+   {
+    "text": "Up to 3.33x prefill speedup on LLaMA-2-70B and 2.16x on LLaMA-2-7B over FP16 on a single NVIDIA RTX 3090",
+    "page": 8,
+    "section": "5.2 Performance Analysis"
+   },
+   {
+    "text": "Decoding-stage peak memory saving up to 3.89x on LLaMA-2-70B and 3.75x on LLaMA-2-7B over FP16",
+    "page": 8,
+    "section": "5.2 Performance Analysis"
+   }
+  ],
+  "md_path": "papers_md/RP29_Ashkboos_2024.md"
+ },
+ {
+  "rp_id": "RP30",
+  "title": "Extreme Compression of Large Language Models via Additive Quantization",
+  "first_author": "Egiazarian",
+  "year": 2024,
+  "venue": "ICML 2024 (arXiv:2401.06118)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "AQLM extends classic Additive Quantization (a multi-codebook method from information retrieval) to LLM weight compression, achieving Pareto-optimal accuracy below 3 bits per parameter and strong results in the 2-bit regime, with practical GPU/CPU kernels.",
+  "findings": [
+   {
+    "text": "LLAMA 2 70B at 2.07-bit AQLM reaches WikiText-2 PPL 3.94 vs FP16 3.12, beating QuIP# 2.01-bit (PPL 4.16) and average zero-shot accuracy 68.75 vs 67.67",
+    "page": 7,
+    "section": "4.1. Compression quality for modern LLMs"
+   },
+   {
+    "text": "LLAMA 2 7B at 2.02-bit AQLM gets WikiText-2 PPL 6.59 vs QuIP# 8.22 at the same bit budget (FP16 baseline 5.12)",
+    "page": 7,
+    "section": "4.1. Compression quality for modern LLMs"
+   },
+   {
+    "text": "LLAMA 2 70B at 3.01-bit AQLM reaches WikiText-2 PPL 3.36 vs FP16 3.12, beating GPTQ 4.40 and QuIP 3.87 at 3 bits",
+    "page": 7,
+    "section": "4.1. Compression quality for modern LLMs"
+   },
+   {
+    "text": "GPU matrix-vector speedup of x1.20-x1.31 over FP16 on RTX 3090; CPU 2x8-bit AQLM gives up to x4.07 speedup over FP32 on Intel i9 for LLAMA 2 70B",
+    "page": 9,
+    "section": "4.4. Inference Speed"
+   }
+  ],
+  "md_path": "papers_md/RP30_Egiazarian_2024.md"
+ },
+ {
+  "rp_id": "RP31",
+  "title": "H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models",
+  "first_author": "Zhang",
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "paper_type": "method",
+  "method_family": "architecture",
+  "contribution": "H2O is a KV cache eviction policy that dynamically retains a balance of recent and Heavy-Hitter tokens, reducing KV cache memory while preserving accuracy and improving generation throughput up to 29x over leading inference systems.",
+  "findings": [
+   {
+    "text": "H2O with 20% KV cache budget improves throughput up to 29x over DeepSpeed Zero-Inference, 29x over HuggingFace Accelerate, and 3x over FlexGen on OPT-6.7B and OPT-30B (T4 GPU)",
+    "page": 1,
+    "section": "**Abstract **"
+   },
+   {
+    "text": "On OPT-30B with 20% KV budget, H2O matches full-cache accuracy (PiQA 78.45 vs 78.51, COPA 84.00 vs 85.00, OpenBookQA 43.00 vs 43.20, Winogrande 69.06 vs 70.24)",
+    "page": 8,
+    "section": "5.1 End-to-End Results"
+   },
+   {
+    "text": "H2O reduces latency by 1.1-1.9x compared to FlexGen on A100 (e.g., OPT-6.7B 2048+2048 batch-24: 99.5s to 53.5s)",
+    "page": 9,
+    "section": "5.2 Heavy Hitter for High-Throughput Generative Inference"
+   },
+   {
+    "text": "Combining H2O with 4-bit quantization preserves accuracy on OPT-30B (COPA 84.00, OpenBookQA 43.20, PiQA 78.80) versus full FP16 (85.00, 43.20, 78.51)",
+    "page": 24,
+    "section": "*LLaMA-7B 20% Cache* *Output*"
+   },
+   {
+    "text": "Attention matrices in pre-trained LLMs are over 95% sparse at inference time, allowing up to 20x KV cache reduction",
+    "page": 2,
+    "section": "1 Introduction"
+   }
+  ],
+  "md_path": "papers_md/RP31_Zhang_2023.md"
+ },
+ {
+  "rp_id": "RP32",
+  "title": "HarmLevelBench: Evaluating Harm-Level Compliance and the Impact of Quantization on Model Alignment",
+  "first_author": "Belkhiter",
+  "year": 2024,
+  "venue": "arXiv preprint (Safe Generative AI Workshop @ NeurIPS 2024)",
+  "paper_type": "safety_analysis",
+  "method_family": "PTQ",
+  "contribution": "Introduces HarmLevelBench, a dataset of 7 topics x 8 harm levels, and benchmarks 7 jailbreak attacks on Vicuna 13B v1.5 to study how AWQ and GPTQ quantization affect model alignment.",
+  "findings": [
+   {
+    "text": "On AWQ Vicuna 13B v1.5 direct attack, PAIR reaches 98.2 String ASR vs 92.9 on FP16 baseline",
+    "page": 6,
+    "section": "4.3 Vulnerability of Quantized Models to Direct Attacks"
+   },
+   {
+    "text": "Transferred PAIR Human ASR drops from 94.6 (FP16) to 66.1 (AWQ) and 64.3 (GPTQ)",
+    "page": 7,
+    "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks"
+   },
+   {
+    "text": "Transferred AutoDAN Human ASR drops from 100 (FP16) to 71.4 (AWQ) and 67.9 (GPTQ)",
+    "page": 7,
+    "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks"
+   },
+   {
+    "text": "FP16 Vicuna 13B v1.5: AutoDAN reaches 100 Human ASR and GCG reaches 100 String ASR",
+    "page": 5,
+    "section": "4.1 Classic ASR"
+   }
+  ],
+  "md_path": "papers_md/RP32_Belkhiter_2024.md"
+ },
+ {
+  "rp_id": "RP33",
+  "title": "FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU",
+  "first_author": "Sheng",
+  "year": 2023,
+  "venue": "ICML 2023 (PMLR 202)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "FlexGen is a high-throughput offloading engine that runs OPT-175B on a single 16GB GPU by aggregating GPU, CPU, and disk memory through linear-programming-based scheduling and 4-bit group-wise compression of weights and KV cache, reaching 1 token/s with effective batch size 144.",
+  "findings": [
+   {
+    "text": "FlexGen reaches 0.69 token/s on OPT-175B at prompt length 512, vs DeepSpeed 0.01 and Accelerate 0.01 (about 69x higher throughput on a single T4 16GB GPU)",
+    "page": 8,
+    "section": "6.1. Offloading"
+   },
+   {
+    "text": "With 4-bit group-wise compression, FlexGen reaches 1.12 token/s on OPT-175B (effective batch size 144), 100x higher max throughput than baselines",
+    "page": 8,
+    "section": "6.1. Offloading"
+   },
+   {
+    "text": "4-bit group-wise quantization of weights and KV cache preserves accuracy: OPT-175B Lambada 0.756 (4-bit) vs 0.758 (FP16); WikiText PPL 10.94 (4-bit) vs 10.82 (FP16)",
+    "page": 9,
+    "section": "6.1. Offloading"
+   },
+   {
+    "text": "OPT-30B 4-bit: Lambada 0.724 vs 0.725 FP16; WikiText PPL 12.90 vs 12.72 FP16; 3-bit cannot preserve accuracy",
+    "page": 9,
+    "section": "**6.2.** Approximations"
+   },
+   {
+    "text": "Pipeline parallelism on 4 T4 GPUs gives super-linear decoding throughput: FlexGen(4) reaches 3.86 token/s decoding on OPT-175B vs 0.83 single-GPU",
+    "page": 8,
+    "section": "6.1. Offloading"
+   }
+  ],
+  "md_path": "papers_md/RP33_Sheng_2023.md"
+ },
+ {
+  "rp_id": "RP34",
+  "title": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU",
+  "first_author": "Song",
+  "year": 2024,
+  "venue": "SOSP '24 (ACM Symposium on Operating Systems Principles)",
+  "paper_type": "method",
+  "method_family": "none",
+  "contribution": "PowerInfer is a GPU-CPU hybrid LLM inference engine that exploits power-law neuron activation, preloading hot neurons to GPU and computing cold neurons on CPU, reaching up to 11.69x speedup over llama.cpp on a single RTX 4090.",
+  "findings": [
+   {
+    "text": "Up to 11.69x speedup over llama.cpp for Falcon-40B (FP16) on RTX 4090, average 7.23x across models",
+    "page": 10,
+    "section": "8.2 End-to-End Performance"
+   },
+   {
+    "text": "RTX 4090 reaches 82% of A100 token generation rate for OPT-30B (only 18% slower than A100)",
+    "page": 1,
+    "section": "Abstract"
+   },
+   {
+    "text": "INT4 quantized models reach 13.20 tokens/s average (peak 29.08) on PC-High, 2.89x avg speedup vs llama.cpp",
+    "page": 11,
+    "section": "8.2 End-to-End Performance"
+   },
+   {
+    "text": "Accuracy preserved: Falcon-40B average 56.23% vs Falcon-40B-PowerInfer 55.95% across PIQA/Winogrande/ARC-C/MMLU/GSM8K",
+    "page": 13,
+    "section": "8.3 Ablation Studies"
+   }
+  ],
+  "md_path": "papers_md/RP34_Song_2024.md"
+ },
+ {
+  "rp_id": "RP35",
+  "title": "FLATQUANT: Flatness Matters for LLM Quantization",
+  "first_author": "Sun",
+  "year": 2024,
+  "venue": "International Conference on Machine Learning (ICML) 2025 / arXiv 2024",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "FLATQUANT is a post-training quantization method that learns fast affine transformations per linear layer using Kronecker-product matrices, flattening weights and activations and fusing transformation with quantization in a single kernel.",
+  "findings": [
+   {
+    "text": "LLaMA-3-70B at W4A4 (RTN) reaches WikiText-2 PPL 3.78 vs FP16 2.86 and surpasses SpinQuant by 7.5% accuracy",
+    "page": 1,
+    "section": "**Abstract **"
+   },
+   {
+    "text": "LLaMA-3-8B W4A4 (RTN) WikiText-2 PPL 6.98 vs FP16 6.14 (FLATQUANT-RTN best in row)",
+    "page": 6,
+    "section": "4.1. Settings"
+   },
+   {
+    "text": "LLaMA-3-70B zero-shot QA W4A4 (RTN) average 79.01 vs FP16 79.95 (only 0.94% drop)",
+    "page": 6,
+    "section": "4.2. Main Results"
+   },
+   {
+    "text": "Up to 2.30x prefill speedup and 1.76x decoding speedup over FP16 on RTX 3090 at batch size 64",
+    "page": 7,
+    "section": "4.3. Inference Latency"
+   }
+  ],
+  "md_path": "papers_md/RP35_Sun_2024.md"
+ },
+ {
+  "rp_id": "RP36",
+  "title": "SpinQuant: LLM Quantization with Learned Rotations",
+  "first_author": "Liu",
+  "year": 2024,
+  "venue": "arXiv preprint (Meta)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "SpinQuant proposes learned rotation matrices, optimized on the Stiefel manifold via Cayley SGD, that remove activation/weight outliers in LLMs and enable accurate W4A4KV4 post-training quantization.",
+  "findings": [
+   {
+    "text": "SpinQuant_had on LLaMA-2 7B at W4A4KV4 reaches 64.0 zero-shot avg, only 2.9 points below FP16 (66.9), surpassing LLM-QAT by 19.1 points",
+    "page": 1,
+    "section": "ABSTRACT"
+   },
+   {
+    "text": "Learned rotation outperforms random Hadamard rotation by up to 16.2 points on Mistral-7B at W4A4KV4 (52.4 -> 68.6)",
+    "page": 8,
+    "section": "4.2 Main results"
+   },
+   {
+    "text": "On MacBook M1 Pro CPU, LLaMA-3 8B at W4A8 (SpinQuant_no_had) decodes 58.88 ms/token vs 177.15 ms/token for FP16 (~3x speedup)",
+    "page": 10,
+    "section": "4.4 ILLUSTRATIVE ANALYSIS OF THE ROTATION EFFICACY"
+   },
+   {
+    "text": "On LLaMA-3 70B at W4A4KV4, SpinQuant_had achieves 70.1 avg vs QuaRot+RTN 41.3 (improvement of 28.8 points)",
+    "page": 9,
+    "section": "4.3.4 Comparison with Quarot"
+   }
+  ],
+  "md_path": "papers_md/RP36_Liu_2024.md"
+ },
+ {
+  "rp_id": "RP37",
+  "title": "LLM in a flash: Efficient Large Language Model Inference with Limited Memory",
+  "first_author": "Alizadeh",
+  "year": 2024,
+  "venue": "ACL 2024",
+  "paper_type": "method",
+  "method_family": "architecture",
+  "contribution": "LLM-in-a-flash stores model parameters in flash and selectively loads only the active subset to DRAM using windowing and row-column bundling, enabling LLMs up to 2x DRAM size with 4-5x CPU and 20-25x GPU speedups.",
+  "findings": [
+   {
+    "text": "OPT 6.7B end-to-end CPU latency drops from 3182 ms (naive) to 669 ms with all techniques (4.76x speedup) on M1 Max",
+    "page": 8,
+    "section": "4.2 Faster Load From Flash"
+   },
+   {
+    "text": "OPT 6.7B end-to-end GPU latency drops from 2218 ms (naive) to 84 ms (26x speedup) on RTX 4090",
+    "page": 8,
+    "section": "4.2 Faster Load From Flash"
+   },
+   {
+    "text": "I/O latency for OPT 6.7B 16-bit on M1 Max reduces from 2196 ms (no opt) to 87 ms with predictor+windowing+bundling (25x reduction); chunk-throughput rises from 1.25 to 2.25 GB/s with bundling",
+    "page": 7,
+    "section": "4.1 Experimental Setup"
+   },
+   {
+    "text": "OPT 6.7B with low-rank predictor matches base on zero-shot tasks: Arc Easy 66.2 vs 66.1, Arc Challenge 30.6 vs 30.6, HellaSwag 49.8 vs 50.3",
+    "page": 4,
+    "section": "3.1 Reducing Data Transfer"
+   },
+   {
+    "text": "Active neuron percentage is preserved under quantization: OPT 6.7B average 3.30% vs Quantized 3.27% (sparsity is quantization-invariant)",
+    "page": 20,
+    "section": "**Efficient Inference for Large Language Models. **"
+   }
+  ],
+  "md_path": "papers_md/RP37_Alizadeh_2023.md"
+ },
+ {
+  "rp_id": "RP38",
+  "title": "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache",
+  "first_author": "Liu",
+  "year": 2024,
+  "venue": "ICML 2024 (PMLR 235)",
+  "paper_type": "method",
+  "method_family": "KV-cache-quant",
+  "contribution": "KIVI is a tuning-free 2-bit KV cache quantization method that quantizes key cache per-channel and value cache per-token, giving 2.6x peak memory reduction and 2.35-3.47x throughput.",
+  "findings": [
+   {
+    "text": "Llama-2-7B KIVI-2 vs FP16 on CoQA: 63.05 vs 63.88 (Δ -0.83); on GSM8K: 12.74 vs 13.50",
+    "page": 8,
+    "section": "4.2.4. EFFICIENCY COMPARISON"
+   },
+   {
+    "text": "Llama-2-13B KIVI-2 on GSM8K: 20.77 vs FP16 22.67 (~2% drop) at 2-bit KV cache",
+    "page": 8,
+    "section": "4.2.4. EFFICIENCY COMPARISON"
+   },
+   {
+    "text": "KIVI delivers 2.6x peak memory reduction and 2.35x-3.47x throughput on Llama-2-7B (A100 80GB)",
+    "page": 8,
+    "section": "4.2.4. EFFICIENCY COMPARISON"
+   },
+   {
+    "text": "Mistral-7B KIVI-2 LongBench average 45.85 vs FP16 46.58 (Δ -0.73)",
+    "page": 9,
+    "section": "5. Related Work"
+   }
+  ],
+  "md_path": "papers_md/RP38_Liu_2024.md"
+ },
+ {
+  "rp_id": "RP39",
+  "title": "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs",
+  "first_author": "Ge",
+  "year": 2023,
+  "venue": "ICLR 2024 (arXiv preprint 2023)",
+  "paper_type": "method",
+  "method_family": "pruning",
+  "contribution": "FastGen is a plug-and-play adaptive KV cache compression method that profiles per-head attention structures and applies tailored eviction policies (special tokens, punctuation, locality, frequency) to reduce LLM inference memory without fine-tuning.",
+  "findings": [
+   {
+    "text": "FastGen recovers over 95% of attention scores while compressing 35% of the KV cache",
+    "page": 3,
+    "section": "1 INTRODUCTION"
+   },
+   {
+    "text": "On LLaMA 1-65B, FastGen prunes 44.9% of KV cache at win rate 45% vs 16.9% on LLaMA 1-7B at the same recovery ratio (95%)",
+    "page": 8,
+    "section": "5.2 Memory Footprint Reduction Analysis"
+   },
+   {
+    "text": "LLaMA 1-65B KV cache memory drops from 21.5GB (Full) to 11.8GB (FastGen) at 95% recovery, a 45% memory reduction",
+    "page": 8,
+    "section": "5.2 Memory Footprint Reduction Analysis"
+   },
+   {
+    "text": "End-to-end latency on LLaMA 1-7B (V100): up to 55.0% latency reduction over Hugging Face FP16 baseline at generation length 16k (799.14s to 359.83s, batch=1)",
+    "page": 9,
+    "section": "5.3 END-TO-END LATENCY IMPROVEMENT"
+   },
+   {
+    "text": "Profiling overhead is at most 0.35% of total generation time and drops to 0.07% at generation length 1024",
+    "page": 9,
+    "section": "5.4 PROFILING COST"
+   }
+  ],
+  "md_path": "papers_md/RP39_Ge_2023.md"
+ },
+ {
+  "rp_id": "RP40",
+  "title": "QLORA: Efficient Finetuning of Quantized LLMs",
+  "first_author": "Dettmers",
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "paper_type": "method",
+  "method_family": "QAT",
+  "contribution": "QLORA is an efficient finetuning method that backpropagates gradients through a frozen 4-bit quantized model into LoRA adapters, enabling 65B-parameter finetuning on a single 48GB GPU while preserving 16-bit performance through NF4, Double Quantization, and Paged Optimizers.",
+  "findings": [
+   {
+    "text": "QLORA NF4+DQ matches BFloat16 mean MMLU 5-shot accuracy on LLaMA 7B-65B (53.1 vs 53.0); FP4 lags by ~1 point (52.2)",
+    "page": 8,
+    "section": "5 Pushing the Chatbot State-of-the-art with QLoRA"
+   },
+   {
+    "text": "NF4+DQ achieves Pile-CC mean PPL 27.41 vs FP4-E2M1 31.07, FP4-E3M0 29.48, Int4 34.34 (lowest of all 4-bit types)",
+    "page": 7,
+    "section": "4 QLoRA vs. Standard Finetuning"
+   },
+   {
+    "text": "QLORA reduces 65B finetuning memory from >780GB to <48GB while matching 16-bit baseline performance",
+    "page": 2,
+    "section": "1 Introduction"
+   },
+   {
+    "text": "Guanaco-65B reaches 99.3% of ChatGPT performance on Vicuna benchmark (95% CI 4.4%) using only 41GB and 24h of single-GPU training",
+    "page": 10,
+    "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot"
+   },
+   {
+    "text": "Guanaco-65B has CrowS average bias score 43.5 vs LLaMA-65B 66.6, GPT-3 67.2, OPT-175B 69.5, indicating lower bias after OASST1 finetuning",
+    "page": 15,
+    "section": "7 Related Work"
+   },
+   {
+    "text": "Double Quantization saves 0.373 bits/parameter (32/64=0.5 to 8/64+32/(64*256)=0.127), about 3GB on a 65B model",
+    "page": 5,
+    "section": "3 QLORA Finetuning"
+   }
+  ],
+  "md_path": "papers_md/RP40_Dettmers_2023.md"
+ },
+ {
+  "rp_id": "RP41",
+  "title": "Beyond Perplexity: Multi-dimensional Safety Evaluation of LLM Compression",
+  "first_author": "Xu",
+  "year": 2024,
+  "venue": "EMNLP Findings 2024",
+  "paper_type": "safety_analysis",
+  "method_family": "PTQ",
+  "contribution": "A multi-dimensional safety evaluation of compressed LLMs that measures degeneration harm, representational harm, dialect bias, and language modeling, showing that quantization mostly preserves bias and toxicity at moderate rates while pruning degrades safety quickly.",
+  "findings": [
+   {
+    "text": "Quantization preserves toxicity at compression: TULU-2-7B TOXIGEN drops from 0.10% (FP) to 0.08% (LLM.int8 50%), 0.08% (AWQ 75%), 0.07% (GPTQ 75%); pruning at 50% goes up to 0.10-0.27% (Magnitude SFT->Prune)",
+    "page": 9,
+    "section": "Limitations"
+   },
+   {
+    "text": "50% LLM.int8 TULU-2-13B reaches 56.7% MMLU and 55.6% TruthfulQA, comparable to or better than uncompressed TULU-2-7B (55.8% / 32.3%)",
+    "page": 6,
+    "section": "4 Degeneration Harm & Representational Harms"
+   },
+   {
+    "text": "WikiText-2 PPL: LLaMA-2-13B FP 4.88 vs LLM.int8 50% 4.92 vs AWQ 75% 4.87 vs GPTQ 75% 5.03; pruning at 50% reaches 5.95-6.82 (Magnitude 6.82, SparseGPT 6.04, Wanda 5.98, GBLM 5.95)",
+    "page": 35,
+    "section": "D.4 Full Results on Prune x SFT Experiments"
+   },
+   {
+    "text": "BBQ representational bias: uncompressed LLaMA-2-13B s_disambiguated = 7.2 vs SFT-ed TULU-2-13B = 8.4; bias rises with compression for both",
+    "page": 6,
+    "section": "4 Degeneration Harm & Representational Harms"
+   },
+   {
+    "text": "Per-group divergence: on BBQ with LLaMA-2-13B, LLM.int8() gives +9.4 increased bias against Age but -1.2 decreased bias against Race x Gender; AWQ gives +10.6 and -1.5 on the same groups",
+    "page": 6,
+    "section": "5 How Does Compression Affect Different Protected Groups?"
+   },
+   {
+    "text": "Dialect bias is preserved by compression: LLaMA-2-13B Twitter-AAE PPL 27.37 vs Twitter-White 18.99 (uncompressed); 50% LLM.int8 keeps gap at 27.46 vs 19.04",
+    "page": 33,
+    "section": "D.4 Full Results on Prune x SFT Experiments"
+   }
+  ],
+  "md_path": "papers_md/RP41_Xu_2024.md"
+ },
+ {
+  "rp_id": "RP42",
+  "title": "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs",
+  "first_author": "Lin",
+  "year": 2024,
+  "venue": "NeurIPS 2024 (Spotlight)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "DuQuant introduces dual block-diagonal rotation and zigzag permutation transformations to redistribute both massive and normal activation outliers, enabling state-of-the-art 4-bit weight-activation PTQ for LLMs without GPTQ.",
+  "findings": [
+   {
+    "text": "LLaMA2-7B W4A4 WikiText2 PPL drops from FP16 5.47 to DuQuant+LWC 6.08, beating Atom (8.40) and QLLM (11.75)",
+    "page": 7,
+    "section": "4 Experiment"
+   },
+   {
+    "text": "Vicuna-v1.5-13B W4A4 zero-shot MMLU rises from Atom 41.07 to DuQuant+LWC 51.08 (+10 points), close to FP16 54.54",
+    "page": 8,
+    "section": "4.1 Main Results"
+   },
+   {
+    "text": "LLaMA2-7B pre-filling 2.08x speedup at batch 16, decoding 3.50x peak memory reduction (13.638 GB to 3.893 GB) on RTX 3090",
+    "page": 10,
+    "section": "4.2 Ablation Study"
+   },
+   {
+    "text": "LLaMA3-8B W4A4 WikiText2 PPL is 8.06 with DuQuant+LWC vs 22.14 for Atom and 3.64e3 for OmniQuant; FP16 baseline 6.14",
+    "page": 8,
+    "section": "4.1 Main Results"
+   },
+   {
+    "text": "Quantization runtime: 50s for LLaMA2-7B and 270s for LLaMA2-70B on a single A100, vs 14.6h for OmniQuant on 70B",
+    "page": 10,
+    "section": "4.2 Ablation Study"
+   }
+  ],
+  "md_path": "papers_md/RP42_Lin_2024.md"
+ },
+ {
+  "rp_id": "RP43",
+  "title": "Exploring the Trade-Offs: Quantization Methods, Task Difficulty, and Model Size in Large Language Models From Edge to Giant",
+  "first_author": "Lee",
+  "year": 2024,
+  "venue": "IJCAI 2025 (arXiv:2409.11055)",
+  "paper_type": "benchmark",
+  "method_family": "PTQ",
+  "contribution": "A comprehensive evaluation of four PTQ methods (GPTQ, AWQ, SmoothQuant, FP8) on 12 instruction-tuned LLMs spanning 1B to 405B parameters across 13 datasets, finding FP8 is most robust, AWQ outperforms GPTQ, smaller models suffer severe drops at 4-bit, and quantization magnifies inherent model weaknesses rather than correlating with task difficulty.",
+  "findings": [
+   {
+    "text": "Llama-3.2-1B GPTQ 4-bit drops GSM8k by -25.32 points (33.36 to 8.04) and IFEval by -16.01 points; average leaderboard-v1 score drops -10.14",
+    "page": 3,
+    "section": "2 Related Work"
+   },
+   {
+    "text": "Llama-3.1-405B SmoothQuant W8A8 collapses on Leaderboard-v2 by -12.14 average points (47.70 to 35.56), with MMLU-PRO crashing -41.77 points",
+    "page": 4,
+    "section": "2 Related Work"
+   },
+   {
+    "text": "Llama-3.1-70B FP8 W8A8 maintains Leaderboard-v1 average within 0.21 points of FP16 (78.55 vs 78.76); AWQ at 4-bit reaches 78.70",
+    "page": 3,
+    "section": "2 Related Work"
+   },
+   {
+    "text": "AWQ outperforms GPTQ on Llama-3.2-1B Leaderboard-v1 by 4.42 points (42.09 vs 37.67) at 4-bit",
+    "page": 3,
+    "section": "2 Related Work"
+   },
+   {
+    "text": "Quantizing Llama-3.2-3B with SmoothQuant improves Leaderboard-v1 average by +13.32% over FP16 Llama-3.2-1B and +8.72% on Leaderboard-v2",
+    "page": 5,
+    "section": "5.1 RQ1: Do quantized LLMs outperform smaller original models on most benchmarks, and how do they fare across different architectures and SLMs?"
+   }
+  ],
+  "md_path": "papers_md/RP43_Lee_2024.md"
+ },
+ {
+  "rp_id": "RP44",
+  "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+  "first_author": "Mazeika",
+  "year": 2024,
+  "venue": "ICML 2024 (Proceedings of the 41st International Conference on Machine Learning)",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "HarmBench is a standardized red-teaming benchmark with 510 harmful behaviors across 4 functional categories used to compare 18 attack methods on 33 LLMs, and the paper introduces R2D2, an efficient adversarial training defense.",
+  "findings": [
+   {
+    "text": "Average ASR across 18 attacks shows AutoDAN highest (52.7%) and PAP-top5 lowest among automated attacks (16.6%); Direct Request baseline is 25.3%",
+    "page": 26,
+    "section": "C.3. Full Results"
+   },
+   {
+    "text": "Zephyr 7B + R2D2 cuts GCG ASR from 69.4% (vanilla Zephyr 7B) to 5.5%, beating Llama 2 7B Chat (31.8 -> 5.9) and Llama 2 13B Chat (30.2 -> 5.9)",
+    "page": 10,
+    "section": "6.2. Adversarial Training Results"
+   },
+   {
+    "text": "HarmBench classifier reaches 93.19% average agreement with human labels, exceeding GPT-4 (88.37%), GPTFuzz (75.42%), AdvBench substring (69.93%) and Llama-Guard (66.94%)",
+    "page": 18,
+    "section": "Evaluations in prior work."
+   },
+   {
+    "text": "Robustness is independent of model size: no correlation between scale and ASR within the six tested model families spanning 7B to 70B parameters",
+    "page": 9,
+    "section": "6.1. Main Results"
+   },
+   {
+    "text": "On multimodal models, MultiModalPGD reaches up to 82.73% ASR (Qwen-VL-Chat), and Render Text attacks score much lower (1.82-20.00%)",
+    "page": 32,
+    "section": "Contextual Behaviors"
+   }
+  ],
+  "md_path": "papers_md/RP44_Mazeika_2024.md"
+ },
+ {
+  "rp_id": "RP45",
+  "title": "Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation",
+  "first_author": "Fang",
+  "year": 2025,
+  "venue": "arXiv preprint",
+  "paper_type": "safety_analysis",
+  "method_family": "PTQ",
+  "contribution": "First systematic investigation showing that quantized LLMs (8-bit and 4-bit via bitsandbytes) often exhibit superior robustness than full-precision counterparts in code generation, against adversarial prompt attacks and weight noise perturbations.",
+  "findings": [
+   {
+    "text": "Across adversarial experiments, 51.59% of cases show quantized LLMs are more robust than originals, 42.86% favour originals, 5.56% are tied",
+    "page": 6,
+    "section": "A. RQ1: Adversarial Robustness Evaluation"
+   },
+   {
+    "text": "8-bit quantization decreases clean pass@1 by only 0.36% on average; 4-bit decreases it by 1.19%",
+    "page": 9,
+    "section": "C. Quantization-Robustness Trade-off Evaluation"
+   },
+   {
+    "text": "DeepSeek-Coder-6.7B sentence-level RRS = 5.000 on HumanEval, indicating quantized model far more robust than full-precision",
+    "page": 7,
+    "section": "A. RQ1: Adversarial Robustness Evaluation"
+   },
+   {
+    "text": "CodeGen-2B word-level RRS = 5.999 on HumanEval+, showing strong robustness gain from quantization for smaller CodeGen variants",
+    "page": 7,
+    "section": "A. RQ1: Adversarial Robustness Evaluation"
+   },
+   {
+    "text": "Final summary: 59.72% of adversarial experiments show better resilience in quantized models",
+    "page": 10,
+    "section": "VII. CONCLUSION"
+   }
+  ],
+  "md_path": "papers_md/RP45_Fang_2025.md"
+ },
+ {
+  "rp_id": "RP46",
+  "title": "TrustLLM: Trustworthiness in Large Language Models",
+  "first_author": "Sun",
+  "year": 2024,
+  "venue": "ICML 2024 (arXiv preprint, latest update Sep 2024)",
+  "paper_type": "benchmark",
+  "method_family": "none",
+  "contribution": "TrustLLM is a comprehensive benchmark of trustworthiness for 16 mainstream LLMs across six dimensions (truthfulness, safety, fairness, robustness, privacy, machine ethics) using over 30 datasets, with principles, evaluation methodology, and a public leaderboard.",
+  "findings": [
+   {
+    "text": "Llama2-70b achieves the highest overall jailbreak resistance with RtA 0.974, vs Baichuan-13b worst at 0.250 and PaLM 2 at 0.486 (Jailbreak Trigger, 1300 prompts)",
+    "page": 39,
+    "section": "7.2 Exaggerated Safety"
+   },
+   {
+    "text": "Llama2-7b shows worst exaggerated safety with RtA 0.490 on XSTest (refusing 49% of harmless prompts); Vicuna-33b is best at 0.035",
+    "page": 39,
+    "section": "7.2 Exaggerated Safety"
+   },
+   {
+    "text": "ERNIE has the lowest average toxicity at 0.072 and max 0.215; GPT-4 highest average toxicity 0.386 on jailbroken outputs",
+    "page": 39,
+    "section": "7.2 Exaggerated Safety"
+   },
+   {
+    "text": "Best stereotype recognition is GPT-4 at 65% overall accuracy across CrowS-Pairs and StereoSet",
+    "page": 10,
+    "section": "2.2 Novel Insights into Individual Dimensions of Trustworthiness"
+   },
+   {
+    "text": "Llama2 series achieve 99.9% RtA in high-ambiguity machine ethics scenarios; GPT-4 achieves 94% average accuracy on awareness tasks",
+    "page": 11,
+    "section": "2.2 Novel Insights into Individual Dimensions of Trustworthiness"
+   }
+  ],
+  "md_path": "papers_md/RP46_Sun_2024.md"
+ },
+ {
+  "rp_id": "RP47",
+  "title": "Inference economics of language models",
+  "first_author": "Erdil",
+  "year": 2025,
+  "venue": "arXiv preprint (Epoch AI)",
+  "paper_type": "application",
+  "method_family": "none",
+  "contribution": "Builds a theoretical roofline-style model for LLM inference economics that jointly handles arithmetic, memory bandwidth, network bandwidth and latency, and uses it to compute serial-speed versus cost-per-token Pareto frontiers for popular models on H100 hardware.",
+  "findings": [
+   {
+    "text": "Each halving of weight precision (16-bit to 8-bit to 4-bit) gives roughly 26% more max tokens/sec for Llama 3 70B; 4-bit reaches 122 tok/s at $0.23/M, 8-bit 99 tok/s at $0.37/M, 16-bit 83 tok/s at $0.70/M.",
+    "page": 19,
+    "section": "4.3 The impact of long context lengths"
+   },
+   {
+    "text": "Optimal serial-decoding token latency for dense models follows an inverse-square-root law in parameter count: token latency ∝ √N_param.",
+    "page": 7,
+    "section": "2.2.3 Theoretical analysis"
+   },
+   {
+    "text": "Speculative decoding at α=0.8 acceptance gives Llama 3 70B 66% higher throughput and roughly doubles Llama 3.1 405B throughput at fixed cost per token.",
+    "page": 17,
+    "section": "4.1 The impact of speculative decoding"
+   },
+   {
+    "text": "Maximum tokens/sec on H100 SXM with speculative decoding: Mixtral 8x22B 199 (125 GPUs), Llama 3 70B-8bit 189 (24), Llama 3.1 405B-8bit 122 (48), DeepSeek-V3-8bit 215 (14), GPT-4 16-bit 106 (460).",
+    "page": 15,
+    "section": "4 Inference economics of example models"
+   },
+   {
+    "text": "Each NVIDIA generation gives ~25% more tokens/sec at fixed cost and halves the optimal instance size; H100 reaches 152 tok/s for Llama 3 70B-8bit (24 GPUs), A100 132 (32), V100 105 (102).",
+    "page": 16,
+    "section": "4 Inference economics of example models"
+   }
+  ],
+  "md_path": "papers_md/RP47_Erdil_2025.md"
+ },
+ {
+  "rp_id": "RP48",
+  "title": "OSTQuant: Refining Large Language Model Quantization with Orthogonal and Scaling Transformations for Better Distribution Fitting",
+  "first_author": "Hu",
+  "year": 2025,
+  "venue": "ICLR 2025 (arXiv:2501.13987)",
+  "paper_type": "method",
+  "method_family": "PTQ",
+  "contribution": "OSTQuant is a learnable PTQ method that combines orthogonal and scaling transformation pairs guided by a new Quantization Space Utilization Rate (QSUR) metric and a KL-Top loss to fit weights and activations into the quantization space.",
+  "findings": [
+   {
+    "text": "W4A16 (weight-only) OSTQuant retains >=99.5% of FP zero-shot accuracy across LLaMA-1/2/3 family",
+    "page": 9,
+    "section": "5 EXPERIMENTS"
+   },
+   {
+    "text": "LLaMA-3-8B at W4A4KV4: OSTQuant 65.37 zero-shot avg vs SpinQuant 64.10 (+1.27); Wiki PPL 7.29 vs 7.35",
+    "page": 9,
+    "section": "5 EXPERIMENTS"
+   },
+   {
+    "text": "LLaMA-2-7B W4A4KV4: OSTQuant Wiki PPL 5.91 vs FP 5.47; zero-shot 63.18 vs FP 65.21 (96.9% retention)",
+    "page": 9,
+    "section": "5 EXPERIMENTS"
+   },
+   {
+    "text": "Average prefill speedup over 2x and memory saving over 3.5x at 4-bit on a 3090 GPU (LLaMA-30B reaches 3.18x speedup at seqlen 256)",
+    "page": 10,
+    "section": "5 EXPERIMENTS"
+   }
+  ],
+  "md_path": "papers_md/RP48_Hu_2025.md"
+ },
+ {
+  "rp_id": "RP49",
+  "title": "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs",
+  "first_author": "Fu",
+  "year": 2025,
+  "venue": "arXiv preprint",
+  "paper_type": "safety_analysis",
+  "method_family": "none",
+  "contribution": "Introduces TruthfulnessEval, a framework that evaluates quantized LLMs across logical reasoning, common sense, and imitative falsehoods, and shows that 4-bit and 2-bit models retain internal truthful representations but produce false outputs under deceptive prompts.",
+  "findings": [
+   {
+    "text": "LLaMA3.1-8B-Instruct AQLM-PV-1x16 (2-bit) drops Affirmative accuracy from 97.17 (FP16) to 85.11 and Negated from 93.24 to 92.03; AQLM-PV-2x8 collapses to 68.48 / 49.41",
+    "page": 4,
+    "section": "3.1 Models and Quantization Methods"
+   },
+   {
+    "text": "On TruthfulQA MC2, LLaMA2-13B-Chat AWQ-4bit reaches 51.18 vs 52.14 for FP16, and adding DoLa raises both to 64.59 and 64.37",
+    "page": 5,
+    "section": "Vanilla Prompt for True/False Datasets"
+   },
+   {
+    "text": "Quantizing 16-bit to 4-bit (AWQ/GPTQ) does not significantly affect Affirmative, Negated, and Conjunction accuracy; 2-bit AQLM-PV-1x16 deteriorates truthfulness by up to 40%",
+    "page": 5,
+    "section": "4.1 Findings on True/False Datasets"
+   },
+   {
+    "text": "DoLa decoding raises True*Info on TruthfulQA for LLaMA3.1-8B-Instruct AQLM-PV-1x16 (2-bit) from 26.39 to 32.24",
+    "page": 5,
+    "section": "Vanilla Prompt for True/False Datasets"
+   }
+  ],
+  "md_path": "papers_md/RP49_Fu_2025.md"
+ },
+ {
+  "rp_id": "RP50",
+  "title": "Investigating the Impact of Quantization Methods on the Safety and Reliability of Large Language Models",
+  "first_author": "Kharinaev",
+  "year": 2025,
+  "venue": "arXiv preprint (Skoltech / AIRI / HSE)",
+  "paper_type": "safety_analysis",
+  "method_family": "PTQ",
+  "contribution": "Releases OpenMiniSafety, a 1,067-question human-curated safety dataset, and benchmarks 66 quantized variants of 4 LLMs across four PTQ and two QAT methods, showing both PTQ and QAT can degrade safety alignment.",
+  "findings": [
+   {
+    "text": "Human eval on LLaMA-3.1-8B: FP16 90.59% safe vs Abliterated 58.67% safe; QUIK int4 90.75% safe (≈ FP16); QUIP# int2 drops to 78.81% safe with errors rising to 6.28%",
+    "page": 5,
+    "section": "4.3.2 Multiple-Choice Safety"
+   },
+   {
+    "text": "QAT on LLaMA-3.1-8B at int2: STE collapses SafetyBench to 51.50% and HotPotQA in-accuracy to 0.390; QLoRA falls to 36.30% / 0.265 (vs FP16 73.90% / 0.684)",
+    "page": 6,
+    "section": "5.2 Automatic Evaluation"
+   },
+   {
+    "text": "Qwen2.5-1.5B at int2 QUIP# collapses XSafety safety ratio from 85.96% (FP16) to 5.96% (-80 pts), and OpenSafetyMini from 83.13% to 8.35% (-74.78 pts)",
+    "page": 22,
+    "section": "F.2 HotPotQA"
+   },
+   {
+    "text": "QUIK int4 on LLaMA-3.1-8B SafetyBench reaches 74.60% (best, beating FP16 73.90%); QUIP# int4 drops to 63.30%; AQLM int2 holds 59.80% while QUIP# int2 collapses to 54.70%",
+    "page": 7,
+    "section": "6 Multiple-Choice Safety"
+   },
+   {
+    "text": "QAT LLaMA-3.1-8B QLoRA int2 LLM-as-Judge safety ratio drops to 40.29% on XSafety (-53.46 pts) and 24.77% on OpenSafetyMini (-68.29 pts vs FP16 baseline)",
+    "page": 22,
+    "section": "F.2 HotPotQA"
+   },
+   {
+    "text": "LLM-as-a-Judge (Gemma-2-27B) reaches 92% agreement with human safety judgments across 4,268 labeled QA pairs",
+    "page": 4,
+    "section": "4.3.1 Open-Ended Safety"
+   }
+  ],
+  "md_path": "papers_md/RP50_Kharinaev_2025.md"
+ }
+]
