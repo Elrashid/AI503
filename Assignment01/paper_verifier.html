@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="theme-color" content="#fdf6e3">
+<title>AI503 — Paper Verifier</title>
+<style>
+  :root {
+    --bg:        #fdf6e3;
+    --bg-alt:   #eee8d5;
+    --ink:      #073642;
+    --ink-soft: #586e75;
+    --muted:    #93a1a1;
+    --accent:   #268bd2;
+    --accent-soft: #cfe6f5;
+    --good:     #859900;
+    --good-bg:  #e9eed1;
+    --warn:     #b58900;
+    --warn-bg:  #f4e9c1;
+    --bad:      #dc322f;
+    --bad-bg:   #f3cdcc;
+    --border:   #d6cfb8;
+    --shadow:   0 2px 12px rgba(7, 54, 66, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #002b36; --bg-alt: #073642;
+      --ink: #eee8d5; --ink-soft: #93a1a1; --muted: #586e75;
+      --accent-soft: #073642; --good-bg: #0a4035; --warn-bg: #4a3a08; --bad-bg: #5a2020;
+      --border: #073642;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    margin: 0; font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.55;
+  }
+
+  /* === Top bar === */
+  .topbar {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px;
+    background: var(--bg-alt); border-bottom: 1px solid var(--border);
+  }
+  .topbar h1 { font-size: 16px; margin: 0; flex: 1; font-weight: 600; }
+  .topbar .stats { display: flex; gap: 6px; font-size: 12px; }
+  .stat-chip {
+    padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .stat-chip.good { color: var(--good); border-color: var(--good); }
+  .stat-chip.bad { color: var(--bad); border-color: var(--bad); }
+  .stat-chip.warn { color: var(--warn); border-color: var(--warn); }
+  .iconbtn {
+    appearance: none; border: 1px solid var(--border); background: var(--bg);
+    color: var(--ink); width: 40px; height: 40px; border-radius: 8px;
+    cursor: pointer; font-size: 17px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* === Drawer (paper picker) === */
+  .drawer-bg {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.35);
+    opacity: 0; pointer-events: none; transition: opacity 0.18s; z-index: 40;
+  }
+  .drawer-bg.open { opacity: 1; pointer-events: auto; }
+  .drawer {
+    position: fixed; top: 0; left: 0; bottom: 0;
+    width: min(380px, 90vw); background: var(--bg);
+    box-shadow: var(--shadow); z-index: 50;
+    transform: translateX(-100%); transition: transform 0.22s;
+    display: flex; flex-direction: column;
+  }
+  .drawer.open { transform: translateX(0); }
+  .drawer-head { padding: 12px; border-bottom: 1px solid var(--border); }
+  .drawer-head input {
+    width: 100%; padding: 10px; font-size: 15px;
+    border: 1px solid var(--border); border-radius: 6px;
+    background: var(--bg-alt); color: var(--ink);
+  }
+  .drawer-list { flex: 1; overflow-y: auto; }
+  .paper-item {
+    display: block; padding: 12px 16px; border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+  .paper-item:hover { background: var(--bg-alt); }
+  .paper-item.active { background: var(--accent-soft); border-left: 4px solid var(--accent); padding-left: 12px; }
+  .paper-item .rp { font-family: ui-monospace, monospace; color: var(--accent); font-weight: 600; font-size: 14px; }
+  .paper-item .meta { color: var(--ink-soft); font-size: 12px; margin-top: 2px; }
+  .paper-item .progress-bar {
+    height: 4px; background: var(--bg-alt); border-radius: 2px; overflow: hidden;
+    margin-top: 6px;
+  }
+  .paper-item .progress-bar > div { height: 100%; background: var(--good); }
+
+  /* === Main verification card === */
+  main {
+    max-width: 1100px; margin: 0 auto;
+    padding: 20px 16px 100px;
+    display: grid; gap: 16px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) {
+    main { grid-template-columns: 1fr 1fr; align-items: start; }
+  }
+
+  .card {
+    background: var(--bg);
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+  }
+  .leaf-counter {
+    color: var(--ink-soft); font-size: 13px; margin: 0 0 4px;
+    font-family: ui-monospace, monospace;
+  }
+  .leaf-path {
+    color: var(--accent); font-family: ui-monospace, monospace; font-size: 13px;
+    margin-bottom: 10px; word-break: break-all;
+  }
+  .leaf-value {
+    background: var(--bg-alt); padding: 14px; border-radius: 8px;
+    margin-bottom: 14px; font-size: 16px; line-height: 1.6;
+    border-left: 4px solid var(--accent);
+  }
+  .leaf-value pre {
+    margin: 0; white-space: pre-wrap; word-break: break-word;
+    font-family: inherit; font-size: inherit;
+  }
+
+  .ev-block { font-size: 13px; color: var(--ink-soft); margin-bottom: 12px; }
+  .ev-block code {
+    background: var(--bg-alt); padding: 2px 6px; border-radius: 3px;
+    font-size: 12px;
+  }
+
+  .quote {
+    background: var(--good-bg); padding: 12px;
+    border-left: 3px solid var(--good);
+    border-radius: 0 6px 6px 0;
+    font-size: 14px; line-height: 1.5;
+    color: var(--ink);
+    max-height: 220px; overflow-y: auto;
+  }
+  .quote.empty { background: var(--warn-bg); border-color: var(--warn); color: var(--warn); }
+
+  /* === Verdict buttons === */
+  .verdicts {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+    margin-top: 16px;
+  }
+  .verdict-btn {
+    appearance: none; padding: 14px 8px; font-size: 14px; font-weight: 600;
+    border-radius: 8px; cursor: pointer; border: 2px solid var(--border);
+    background: var(--bg); color: var(--ink);
+    transition: transform 0.05s;
+  }
+  .verdict-btn:hover { transform: translateY(-1px); }
+  .verdict-btn.correct { color: var(--good); border-color: var(--good); }
+  .verdict-btn.wrong   { color: var(--bad);  border-color: var(--bad); }
+  .verdict-btn.unsure  { color: var(--warn); border-color: var(--warn); }
+  .verdict-btn.skip    { color: var(--muted); }
+  .verdict-btn.active.correct { background: var(--good); color: white; }
+  .verdict-btn.active.wrong   { background: var(--bad);  color: white; }
+  .verdict-btn.active.unsure  { background: var(--warn); color: white; }
+  .verdict-btn.active.skip    { background: var(--muted); color: white; }
+
+  .nav {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;
+    margin-top: 16px;
+  }
+  .nav button {
+    padding: 10px; border-radius: 8px; cursor: pointer; font-size: 13px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--ink);
+  }
+  .nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .nav .pos { text-align: center; padding: 10px; font-family: ui-monospace, monospace; font-size: 13px; color: var(--ink-soft); }
+
+  /* === Page image card === */
+  .page-card { padding: 0; overflow: hidden; }
+  .page-card .page-head {
+    padding: 12px 16px; background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+    display: flex; gap: 8px; align-items: center; font-size: 13px;
+  }
+  .page-card .page-head strong { color: var(--ink); }
+  .page-img-wrap {
+    position: relative; max-height: 70vh; overflow: auto;
+    background: var(--bg-alt);
+  }
+  .page-img-wrap img { display: block; max-width: 100%; }
+  .bbox-overlay {
+    position: absolute; border: 3px solid var(--bad);
+    background: rgba(220, 50, 47, 0.15);
+    box-shadow: 0 0 0 3px rgba(220, 50, 47, 0.4);
+    pointer-events: none;
+    transition: all 0.15s;
+  }
+  .no-bbox { padding: 30px; text-align: center; color: var(--ink-soft); font-size: 14px; }
+
+  /* === Filters === */
+  .filters {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    padding: 10px 14px;
+    background: var(--bg-alt); border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .filter-chip {
+    padding: 5px 10px; border-radius: 14px;
+    background: var(--bg); border: 1px solid var(--border);
+    cursor: pointer; user-select: none;
+  }
+  .filter-chip.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+  .empty, .loading { text-align: center; padding: 60px 20px; color: var(--ink-soft); }
+  .empty .big { font-size: 28px; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="iconbtn" onclick="toggleDrawer()" aria-label="Papers">☰</button>
+  <h1 id="paperHeading">AI503 — Paper Verifier</h1>
+  <div class="stats" id="stats">
+    <span class="stat-chip good" id="cntCorrect" title="correct">✓ 0</span>
+    <span class="stat-chip bad" id="cntWrong" title="wrong">✗ 0</span>
+    <span class="stat-chip warn" id="cntUnsure" title="unsure">? 0</span>
+  </div>
+  <button class="iconbtn" onclick="exportVerdicts()" title="Export verdicts" aria-label="Export">⬇</button>
+</header>
+
+<div class="filters" id="filterBar" style="display:none">
+  <span class="filter-chip active" data-filter="all">All leaves</span>
+  <span class="filter-chip" data-filter="findings">Key findings only</span>
+  <span class="filter-chip" data-filter="unverified">Unverified only</span>
+  <span class="filter-chip" data-filter="hasbbox">With bbox only</span>
+</div>
+
+<div class="drawer-bg" onclick="toggleDrawer(false)"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <input type="search" id="search" placeholder="Search RP, author, title…" oninput="renderPaperList()">
+  </div>
+  <div class="drawer-list" id="paperList"><div class="loading">Loading…</div></div>
+</aside>
+
+<main id="main">
+  <div class="empty"><div class="big">📋</div>Pick a paper from the menu (☰) to start verifying.</div>
+</main>
+
+<script>
+let manifest = [];
+let pagesManifest = {};
+let currentPaper = null;        // current paper manifest entry
+let currentExtraction = null;
+let currentLeaves = [];         // flattened {path, value, ev}
+let currentLeafIdx = 0;
+let currentFilter = 'all';
+
+const $ = (q) => document.querySelector(q);
+const $$ = (q) => document.querySelectorAll(q);
+const LS_KEY = 'ai503_verifier_v1';
+
+function getVerdicts() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); }
+  catch { return {}; }
+}
+function saveVerdict(rp, path, verdict) {
+  const all = getVerdicts();
+  all[rp] = all[rp] || {};
+  if (verdict) {
+    all[rp][path] = { verdict, ts: new Date().toISOString() };
+  } else {
+    delete all[rp][path];
+  }
+  localStorage.setItem(LS_KEY, JSON.stringify(all));
+}
+function getVerdict(rp, path) {
+  const all = getVerdicts();
+  return all[rp]?.[path]?.verdict || null;
+}
+
+async function loadManifest() {
+  try {
+    const [m, p] = await Promise.all([
+      fetch('paper_verifier.json').then(r => r.json()),
+      fetch('papers_pages/manifest.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    ]);
+    manifest = m;
+    pagesManifest = p;
+    renderPaperList();
+    const initial = location.hash.replace('#', '');
+    if (initial) selectPaper(initial);
+  } catch (e) {
+    $('#main').innerHTML = `<div class="empty">Failed to load: ${escapeHtml(e.message)}</div>`;
+  }
+}
+
+function paperVerdictCounts(rp) {
+  const v = getVerdicts()[rp] || {};
+  const out = { correct: 0, wrong: 0, unsure: 0, skip: 0, total: 0 };
+  for (const k in v) {
+    out.total++;
+    out[v[k].verdict] = (out[v[k].verdict] || 0) + 1;
+  }
+  return out;
+}
+
+function renderPaperList() {
+  const f = ($('#search').value || '').toLowerCase();
+  const html = manifest.map(p => {
+    const hay = `${p.rp_id} ${p.first_author} ${p.year} ${p.title}`.toLowerCase();
+    if (f && !hay.includes(f)) return '';
+    const counts = paperVerdictCounts(p.rp_id);
+    const pct = p.leaf_count ? Math.round(counts.total / p.leaf_count * 100) : 0;
+    const isActive = currentPaper?.rp_id === p.rp_id ? 'active' : '';
+    return `<a class="paper-item ${isActive}" onclick="selectPaper('${p.rp_id}')" tabindex="0">
+      <span class="rp">${p.rp_id}</span>
+      <span class="meta">  ${p.first_author} ${p.year}  ·  ${p.leaf_count} leaves</span>
+      <div style="font-size:13px; margin-top:2px">${escapeHtml(p.title.slice(0, 70))}</div>
+      <div class="progress-bar"><div style="width:${pct}%"></div></div>
+      <div class="meta">${counts.total} / ${p.leaf_count} verified${counts.wrong ? '  ·  ' + counts.wrong + ' wrong' : ''}</div>
+    </a>`;
+  }).join('');
+  $('#paperList').innerHTML = html || '<div class="empty">No matches</div>';
+}
+
+async function selectPaper(rpId) {
+  const p = manifest.find(x => x.rp_id === rpId);
+  if (!p) return;
+  currentPaper = p;
+  history.replaceState(null, '', `#${rpId}`);
+  $('#paperHeading').textContent = `${rpId} · ${p.first_author} ${p.year}`;
+  $('#filterBar').style.display = '';
+
+  $('#main').innerHTML = '<div class="loading">Loading extraction…</div>';
+
+  try {
+    currentExtraction = await fetch(p.extraction_path).then(r => r.json());
+  } catch (e) {
+    $('#main').innerHTML = `<div class="empty">Failed: ${escapeHtml(e.message)}</div>`;
+    return;
+  }
+
+  // Flatten extraction tree -> [{path, value, ev}]
+  currentLeaves = flattenLeaves(currentExtraction);
+  currentLeafIdx = 0;
+  applyFilter(currentFilter);
+  renderPaperList();
+  updateStats();
+  if (window.innerWidth < 900) toggleDrawer(false);
+}
+
+function flattenLeaves(node, prefix = '') {
+  const out = [];
+  if (Array.isArray(node)) {
+    node.forEach((item, i) => out.push(...flattenLeaves(item, `${prefix}[${i}]`)));
+  } else if (node && typeof node === 'object') {
+    if ('value' in node && 'ev' in node) {
+      out.push({ path: prefix || '(root)', value: node.value, ev: node.ev || {} });
+    } else {
+      for (const k in node) {
+        const sub = prefix ? `${prefix}.${k}` : k;
+        out.push(...flattenLeaves(node[k], sub));
+      }
+    }
+  }
+  return out;
+}
+
+function applyFilter(filter) {
+  currentFilter = filter;
+  $$('.filter-chip').forEach(c => c.classList.toggle('active', c.dataset.filter === filter));
+  renderLeaf();
+}
+
+function getFilteredLeaves() {
+  const verdicts = getVerdicts()[currentPaper?.rp_id] || {};
+  return currentLeaves.filter(l => {
+    if (currentFilter === 'findings') {
+      return l.path.includes('key_results') || l.path.includes('findings');
+    }
+    if (currentFilter === 'unverified') return !verdicts[l.path];
+    if (currentFilter === 'hasbbox') return !!l.ev?.bbox;
+    return true;
+  });
+}
+
+function renderLeaf() {
+  if (!currentPaper) return;
+  const filtered = getFilteredLeaves();
+  if (filtered.length === 0) {
+    $('#main').innerHTML = `<div class="empty">No leaves match this filter.</div>`;
+    return;
+  }
+  // Clamp idx into the filtered set
+  if (currentLeafIdx >= filtered.length) currentLeafIdx = filtered.length - 1;
+  if (currentLeafIdx < 0) currentLeafIdx = 0;
+
+  const leaf = filtered[currentLeafIdx];
+  const verdict = getVerdict(currentPaper.rp_id, leaf.path);
+  const ev = leaf.ev || {};
+
+  // Bbox info
+  const pageNum = ev.page;
+  const bbox = ev.bbox;  // [x0, y0, x1, y1] in PDF points (72 DPI, top-left origin)
+  const pageManifest = pagesManifest[currentPaper.pages_dir?.replace('papers_pages/', '').replace('/', '')] || {};
+  const dpi = pageManifest.dpi || pagesManifest.dpi || 150;
+  const scale = dpi / 72.0;
+
+  const valueStr = (typeof leaf.value === 'object')
+    ? JSON.stringify(leaf.value, null, 2)
+    : String(leaf.value ?? '<null>');
+
+  const quote = ev.quote || '';
+
+  // Page image — papers_pages/<dir>/page_NN.png (1-indexed, 2-digit padded)
+  const padded = (n) => String(n).padStart(2, '0');
+  const imgSrc = pageNum && currentPaper.pages_dir
+    ? `${currentPaper.pages_dir}page_${padded(pageNum)}.png`
+    : null;
+
+  $('#main').innerHTML = `
+    <div class="card">
+      <p class="leaf-counter">leaf ${currentLeafIdx + 1} / ${filtered.length} (filtered)
+        · paper has ${currentLeaves.length} total · verdict: <strong>${verdict || '—'}</strong></p>
+      <div class="leaf-path">${escapeHtml(leaf.path)}</div>
+      <div class="leaf-value"><pre>${escapeHtml(valueStr)}</pre></div>
+
+      <div class="ev-block">
+        <strong>page</strong> <code>${ev.page ?? '—'}</code>
+        · <strong>section</strong> <code>${escapeHtml(ev.section || '—')}</code>
+        · <strong>block_id</strong> <code>${escapeHtml(ev.block_id || '—')}</code>
+        ${ev.bbox ? `· <strong>bbox</strong> <code>${ev.bbox.map(x => Math.round(x)).join(', ')}</code>` : ''}
+      </div>
+
+      <div class="quote ${quote ? '' : 'empty'}">
+        ${quote ? escapeHtml(quote) : '⚠️ No quote in extraction (ev.quote is empty)'}
+      </div>
+
+      <div class="verdicts">
+        <button class="verdict-btn correct ${verdict === 'correct' ? 'active' : ''}" onclick="setVerdict('correct')">✓ Correct (1)</button>
+        <button class="verdict-btn wrong ${verdict === 'wrong' ? 'active' : ''}" onclick="setVerdict('wrong')">✗ Wrong (2)</button>
+        <button class="verdict-btn unsure ${verdict === 'unsure' ? 'active' : ''}" onclick="setVerdict('unsure')">? Unsure (3)</button>
+        <button class="verdict-btn skip ${verdict === 'skip' ? 'active' : ''}" onclick="setVerdict('skip')">⏭ Skip (4)</button>
+      </div>
+
+      <div class="nav">
+        <button onclick="navLeaf(-1)" ${currentLeafIdx === 0 ? 'disabled' : ''}>← Prev (k)</button>
+        <div class="pos">${currentLeafIdx + 1} / ${filtered.length}</div>
+        <button onclick="navLeaf(1)" ${currentLeafIdx === filtered.length - 1 ? 'disabled' : ''}>Next (j) →</button>
+      </div>
+    </div>
+
+    <div class="card page-card">
+      ${imgSrc ? `
+        <div class="page-head">
+          <strong>page ${ev.page}</strong>
+          ${ev.bbox ? `· bbox highlighted in red` : '· no bbox in extraction'}
+        </div>
+        <div class="page-img-wrap">
+          <img id="pageImg" src="${imgSrc}" alt="page ${ev.page}" onload="positionBbox()" onerror="this.alt='[image not found: ${escapeHtml(imgSrc)}]'">
+          ${ev.bbox ? `<div class="bbox-overlay" id="bboxOverlay" data-bbox="${ev.bbox.join(',')}" data-scale="${scale}" style="display:none"></div>` : ''}
+        </div>` :
+      '<div class="no-bbox">No source page available for this leaf.<br>Page number missing in <code>ev.page</code> or page renders not built.</div>'}
+    </div>
+  `;
+}
+
+function positionBbox() {
+  const img = $('#pageImg');
+  const bx = $('#bboxOverlay');
+  if (!img || !bx) return;
+  const [x0, y0, x1, y1] = bx.dataset.bbox.split(',').map(parseFloat);
+  const scale = parseFloat(bx.dataset.scale);
+  // Convert PDF-point bbox (origin top-left) to displayed-image pixel rect.
+  // Image natural size = native PNG (rendered at DPI scale of PDF points).
+  // Displayed scale = displayed.width / natural.width
+  const dispScale = img.clientWidth / img.naturalWidth;
+  const left   = x0 * scale * dispScale;
+  const top    = y0 * scale * dispScale;
+  const width  = (x1 - x0) * scale * dispScale;
+  const height = (y1 - y0) * scale * dispScale;
+  bx.style.left = left + 'px';
+  bx.style.top  = top + 'px';
+  bx.style.width  = width + 'px';
+  bx.style.height = height + 'px';
+  bx.style.display = '';
+  // Scroll the bbox into view inside .page-img-wrap
+  const wrap = bx.parentElement;
+  wrap.scrollTop = Math.max(0, top - 100);
+}
+
+window.addEventListener('resize', () => {
+  if ($('#bboxOverlay')) positionBbox();
+});
+
+function setVerdict(verdict) {
+  const filtered = getFilteredLeaves();
+  if (!filtered.length) return;
+  const leaf = filtered[currentLeafIdx];
+  saveVerdict(currentPaper.rp_id, leaf.path, verdict);
+  updateStats();
+  renderPaperList();
+  // Auto-advance on a verdict (helpful for fast walkthrough)
+  setTimeout(() => navLeaf(1), 100);
+}
+
+function navLeaf(delta) {
+  const filtered = getFilteredLeaves();
+  const newIdx = currentLeafIdx + delta;
+  if (newIdx < 0 || newIdx >= filtered.length) return;
+  currentLeafIdx = newIdx;
+  renderLeaf();
+}
+
+function updateStats() {
+  if (!currentPaper) return;
+  const c = paperVerdictCounts(currentPaper.rp_id);
+  $('#cntCorrect').textContent = `✓ ${c.correct || 0}`;
+  $('#cntWrong').textContent   = `✗ ${c.wrong || 0}`;
+  $('#cntUnsure').textContent  = `? ${(c.unsure || 0) + (c.skip || 0)}`;
+}
+
+function exportVerdicts() {
+  const all = getVerdicts();
+  if (!Object.keys(all).length) { alert('No verdicts saved yet.'); return; }
+  const blob = new Blob([JSON.stringify(all, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `verifier_verdicts_${new Date().toISOString().slice(0,10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000);
+}
+
+function toggleDrawer(force) {
+  const drawer = $('#drawer');
+  const bg = $('.drawer-bg');
+  const open = (force === undefined) ? !drawer.classList.contains('open') : force;
+  drawer.classList.toggle('open', open);
+  bg.classList.toggle('open', open);
+}
+
+$$('.filter-chip').forEach(c =>
+  c.addEventListener('click', () => applyFilter(c.dataset.filter))
+);
+
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === '1') setVerdict('correct');
+  else if (e.key === '2') setVerdict('wrong');
+  else if (e.key === '3') setVerdict('unsure');
+  else if (e.key === '4') setVerdict('skip');
+  else if (e.key === 'j' || e.key === 'ArrowRight') navLeaf(1);
+  else if (e.key === 'k' || e.key === 'ArrowLeft') navLeaf(-1);
+  else if (e.key === '/') { e.preventDefault(); $('#search').focus(); toggleDrawer(true); }
+});
+
+function escapeHtml(s) {
+  if (typeof s !== 'string') s = String(s ?? '');
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+loadManifest();
+</script>
+</body>
+</html>
