@@ -980,5 +980,2415 @@
         "block_id": "/page/3/Text/5"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 60.14,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Factoid-QA | 60.14% | 60.31% | 61.02%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "AWQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 60.31,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Factoid-QA | 60.14% | 60.31% | 61.02%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 61.02,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Factoid-QA | 60.14% | 60.31% | 61.02%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 47.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "MCR-QA (MMLU) | 47.10% | 47.18% | 47.82%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "AWQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 47.18,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "MCR-QA (MMLU) | 47.10% | 47.18% | 47.82%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 47.82,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "MCR-QA (MMLU) | 47.10% | 47.18% | 47.82%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TriviaQA",
+        "metric": "Accuracy (Retrieval Augmented QA)",
+        "value": 75.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Retrieval Augmented QA | 75.55% | 75.89% | 75.91%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "AWQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TriviaQA",
+        "metric": "Accuracy (Retrieval Augmented QA)",
+        "value": 75.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Retrieval Augmented QA | 75.55% | 75.89% | 75.91%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TriviaQA",
+        "metric": "Accuracy (Retrieval Augmented QA)",
+        "value": 75.91,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Retrieval Augmented QA | 75.55% | 75.89% | 75.91%",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 9.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Instruction Following (GPT4-Score) | 9.74 | 9.72 | 9.81",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "AWQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 9.72,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Instruction Following (GPT4-Score) | 9.74 | 9.72 | 9.81",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 9.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.6 COMPARSION WITH AWQ AND LLM-INT8",
+        "quote": "Instruction Following (GPT4-Score) | 9.74 | 9.72 | 9.81",
+        "bbox": [
+          151.4759765625,
+          79.7878125,
+          459.3287109375,
+          146.0559375
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "0% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 65.44,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Factoid-QA | Magnitude | 65.44 | 61.74 | 66.53 | 60.84 | 42.06 | 13.99",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 61.74,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -3.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Factoid-QA | Magnitude | 65.44 | 61.74 | 66.53 | 60.84 | 42.06 | 13.99",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 66.53,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": 1.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Factoid-QA | Magnitude | 65.44 | 61.74 | 66.53 | 60.84 | 42.06 | 13.99",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 60.84,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -4.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Factoid-QA | Magnitude | 65.44 | 61.74 | 66.53 | 60.84 | 42.06 | 13.99",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 42.06,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -23.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Factoid-QA | Magnitude | 65.44 | 61.74 | 66.53 | 60.84 | 42.06 | 13.99",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 13.99,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -51.45,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Factoid-QA | Magnitude | 65.44 | 61.74 | 66.53 | 60.84 | 42.06 | 13.99",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 63.84,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -1.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 65.44 | 63.84 | 62.44 | 58.54 | 55.54 | 42.86",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 62.44,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -3.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 65.44 | 63.84 | 62.44 | 58.54 | 55.54 | 42.86",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 58.54,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -6.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 65.44 | 63.84 | 62.44 | 58.54 | 55.54 | 42.86",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 55.54,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -9.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 65.44 | 63.84 | 62.44 | 58.54 | 55.54 | 42.86",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 42.86,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -22.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 65.44 | 63.84 | 62.44 | 58.54 | 55.54 | 42.86",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 63.34,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -2.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 65.44 | 63.34 | 65.23 | 61.24 | 58.24 | 44.66",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 65.23,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 65.44 | 63.34 | 65.23 | 61.24 | 58.24 | 44.66",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 61.24,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -4.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 65.44 | 63.34 | 65.23 | 61.24 | 58.24 | 44.66",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 58.24,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -7.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 65.44 | 63.34 | 65.23 | 61.24 | 58.24 | 44.66",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "FreebaseQA",
+        "metric": "Accuracy",
+        "value": 44.66,
+        "baseline_label": "Dense",
+        "baseline_value": 65.44,
+        "delta": -20.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 65.44 | 63.34 | 65.23 | 61.24 | 58.24 | 44.66",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "0% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.471,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "MCR-QA (MMLU) | Magnitude | 0.471 | 0.466 | 0.455 | 0.422 | 0.339 | 0.050",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.466,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.005,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "MCR-QA (MMLU) | Magnitude | 0.471 | 0.466 | 0.455 | 0.422 | 0.339 | 0.050",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.455,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.016,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "MCR-QA (MMLU) | Magnitude | 0.471 | 0.466 | 0.455 | 0.422 | 0.339 | 0.050",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.422,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.049,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "MCR-QA (MMLU) | Magnitude | 0.471 | 0.466 | 0.455 | 0.422 | 0.339 | 0.050",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.339,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.132,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "MCR-QA (MMLU) | Magnitude | 0.471 | 0.466 | 0.455 | 0.422 | 0.339 | 0.050",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.05,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.421,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "MCR-QA (MMLU) | Magnitude | 0.471 | 0.466 | 0.455 | 0.422 | 0.339 | 0.050",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.47,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.001,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 0.471 | 0.470 | 0.460 | 0.437 | 0.395 | 0.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.46,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.011,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 0.471 | 0.470 | 0.460 | 0.437 | 0.395 | 0.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.437,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.034,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 0.471 | 0.470 | 0.460 | 0.437 | 0.395 | 0.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.395,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.076,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 0.471 | 0.470 | 0.460 | 0.437 | 0.395 | 0.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.308,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.163,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 0.471 | 0.470 | 0.460 | 0.437 | 0.395 | 0.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.469,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.002,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 0.471 | 0.469 | 0.460 | 0.455 | 0.425 | 0.386",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.46,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.011,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 0.471 | 0.469 | 0.460 | 0.455 | 0.425 | 0.386",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.455,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.016,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 0.471 | 0.469 | 0.460 | 0.455 | 0.425 | 0.386",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.425,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.046,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 0.471 | 0.469 | 0.460 | 0.455 | 0.425 | 0.386",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 0.386,
+        "baseline_label": "Dense",
+        "baseline_value": 0.471,
+        "delta": -0.085,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 0.471 | 0.469 | 0.460 | 0.455 | 0.425 | 0.386",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "0% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.883,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "In-context Retrieval(Long Story: Coherence) | Magnitude | 5.883 | 6.112 | 5.855 | 5.567 | 4.329 | 1.233",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 6.112,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": 0.229,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "In-context Retrieval(Long Story: Coherence) | Magnitude | 5.883 | 6.112 | 5.855 | 5.567 | 4.329 | 1.233",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.855,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.028,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "In-context Retrieval(Long Story: Coherence) | Magnitude | 5.883 | 6.112 | 5.855 | 5.567 | 4.329 | 1.233",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.567,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.316,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "In-context Retrieval(Long Story: Coherence) | Magnitude | 5.883 | 6.112 | 5.855 | 5.567 | 4.329 | 1.233",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 4.329,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -1.554,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "In-context Retrieval(Long Story: Coherence) | Magnitude | 5.883 | 6.112 | 5.855 | 5.567 | 4.329 | 1.233",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 1.233,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -4.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "In-context Retrieval(Long Story: Coherence) | Magnitude | 5.883 | 6.112 | 5.855 | 5.567 | 4.329 | 1.233",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 6.033,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 5.883 | 6.033 | 5.533 | 6.067 | 5.567 | 5.067",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.533,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 5.883 | 6.033 | 5.533 | 6.067 | 5.567 | 5.067",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 6.067,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": 0.184,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 5.883 | 6.033 | 5.533 | 6.067 | 5.567 | 5.067",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.567,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.316,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 5.883 | 6.033 | 5.533 | 6.067 | 5.567 | 5.067",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.067,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.816,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 5.883 | 6.033 | 5.533 | 6.067 | 5.567 | 5.067",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 6.0,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": 0.117,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 5.883 | 6.0 | 5.783 | 5.933 | 5.267 | 5.033",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.783,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 5.883 | 6.0 | 5.783 | 5.933 | 5.267 | 5.033",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.933,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 5.883 | 6.0 | 5.783 | 5.933 | 5.267 | 5.033",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.267,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.616,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 5.883 | 6.0 | 5.783 | 5.933 | 5.267 | 5.033",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "CNN/DailyMail (Long Story)",
+        "metric": "Coherence (GPT-4)",
+        "value": 5.033,
+        "baseline_label": "Dense",
+        "baseline_value": 5.883,
+        "delta": -0.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 5.883 | 6.0 | 5.783 | 5.933 | 5.267 | 5.033",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "0% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.763,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Instruction Following(GPT-4 Score) | Magnitude | 7.763 | 7.567 | 7.621 | 7.201 | 6.208 | 3.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.567,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.196,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Instruction Following(GPT-4 Score) | Magnitude | 7.763 | 7.567 | 7.621 | 7.201 | 6.208 | 3.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.621,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.142,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Instruction Following(GPT-4 Score) | Magnitude | 7.763 | 7.567 | 7.621 | 7.201 | 6.208 | 3.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.201,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.562,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Instruction Following(GPT-4 Score) | Magnitude | 7.763 | 7.567 | 7.621 | 7.201 | 6.208 | 3.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 6.208,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -1.555,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Instruction Following(GPT-4 Score) | Magnitude | 7.763 | 7.567 | 7.621 | 7.201 | 6.208 | 3.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 3.308,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -4.455,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Instruction Following(GPT-4 Score) | Magnitude | 7.763 | 7.567 | 7.621 | 7.201 | 6.208 | 3.308",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.645,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.118,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 7.763 | 7.645 | 7.50 | 7.188 | 6.905 | 6.206",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.5,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.263,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 7.763 | 7.645 | 7.50 | 7.188 | 6.905 | 6.206",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.188,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.575,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 7.763 | 7.645 | 7.50 | 7.188 | 6.905 | 6.206",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 6.905,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.858,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 7.763 | 7.645 | 7.50 | 7.188 | 6.905 | 6.206",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 6.206,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -1.557,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "SparseGPT | 7.763 | 7.645 | 7.50 | 7.188 | 6.905 | 6.206",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "10% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.731,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.032,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 7.763 | 7.731 | 7.546 | 7.202 | 7.071 | 6.838",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "20% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.546,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.217,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 7.763 | 7.731 | 7.546 | 7.202 | 7.071 | 6.838",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "30% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.202,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.561,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 7.763 | 7.731 | 7.546 | 7.202 | 7.071 | 6.838",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "40% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 7.071,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.692,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 7.763 | 7.731 | 7.546 | 7.202 | 7.071 | 6.838",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "50% sparsity",
+        "dataset": "MT-Bench",
+        "metric": "GPT-4 Score (Instruction Following)",
+        "value": 6.838,
+        "baseline_label": "Dense",
+        "baseline_value": 7.763,
+        "delta": -0.925,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.8 SUMMARY OF VARIOUS PRUNING METHODS ON LLM-KICK",
+        "quote": "Wanda | 7.763 | 7.731 | 7.546 | 7.202 | 7.071 | 6.838",
+        "bbox": [
+          103.023984375,
+          368.0015625,
+          506.585390625,
+          541.5609375
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 46.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4 Additional Results and Discussions",
+        "quote": "in comparison with dense Vicuna-7B (MMLU accuracy 46.7%)",
+        "bbox": [
+          106.5,
+          319.5,
+          506.25,
+          427.5
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B",
+        "method": "Magnitude (pruning)",
+        "bit_width": null,
+        "group_size": "46.16% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 31.7,
+        "baseline_label": "Vicuna-7B FP16",
+        "baseline_value": 46.7,
+        "delta": -15.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4 Additional Results and Discussions",
+        "quote": "compressed Vicuna-13B with exactly similar parameter count (46.16% sparsity) of 7 billion using one-shot magnitude, Wanda, SparseGPT can only achieve MMLU accuracy of 31.7%, 45.3%, and 46.3%, respectively",
+        "bbox": [
+          106.5,
+          319.5,
+          506.25,
+          427.5
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B",
+        "method": "Wanda",
+        "bit_width": null,
+        "group_size": "46.16% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 45.3,
+        "baseline_label": "Vicuna-7B FP16",
+        "baseline_value": 46.7,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4 Additional Results and Discussions",
+        "quote": "compressed Vicuna-13B with exactly similar parameter count (46.16% sparsity) of 7 billion using one-shot magnitude, Wanda, SparseGPT can only achieve MMLU accuracy of 31.7%, 45.3%, and 46.3%, respectively",
+        "bbox": [
+          106.5,
+          319.5,
+          506.25,
+          427.5
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B",
+        "method": "SparseGPT",
+        "bit_width": null,
+        "group_size": "46.16% sparsity",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 46.3,
+        "baseline_label": "Vicuna-7B FP16",
+        "baseline_value": 46.7,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4 Additional Results and Discussions",
+        "quote": "compressed Vicuna-13B with exactly similar parameter count (46.16% sparsity) of 7 billion using one-shot magnitude, Wanda, SparseGPT can only achieve MMLU accuracy of 31.7%, 45.3%, and 46.3%, respectively",
+        "bbox": [
+          106.5,
+          319.5,
+          506.25,
+          427.5
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 80,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 4
   }
 }

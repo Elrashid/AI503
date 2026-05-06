@@ -1112,5 +1112,3885 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "7B | – | 16 | 5.12 | 6.63 | 67.25 | 78.45 | 56.69 | 69.32 | 40.02 | 62.35",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.63,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "7B | – | 16 | 5.12 | 6.63 | 67.25 | 78.45 | 56.69 | 69.32 | 40.02 | 62.35",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 62.35,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "7B | – | 16 | 5.12 | 6.63 | 67.25 | 78.45 | 56.69 | 69.32 | 40.02 | 62.35",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.59,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.02 | **6.59** | **8.54** | **65.67** | **74.76** | **49.55** | **63.68** | **32.76** | **57.28**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.54,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 1.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.02 | **6.59** | **8.54** | **65.67** | **74.76** | **49.55** | **63.68** | **32.76** | **57.28**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 57.28,
+        "baseline_label": "FP16",
+        "baseline_value": 62.35,
+        "delta": -5.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.02 | **6.59** | **8.54** | **65.67** | **74.76** | **49.55** | **63.68** | **32.76** | **57.28**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.22,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.02 | 8.22 | 11.01 | 62.43 | 71.38 | 42.94 | 55.56 | 28.84 | 52.23",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 11.01,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 4.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.02 | 8.22 | 11.01 | 62.43 | 71.38 | 42.94 | 55.56 | 28.84 | 52.23",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 52.23,
+        "baseline_label": "FP16",
+        "baseline_value": 62.35,
+        "delta": -10.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.02 | 8.22 | 11.01 | 62.43 | 71.38 | 42.94 | 55.56 | 28.84 | 52.23",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.29-bit-config",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.29 | 6.29 | 8.11 | 65.67 | 74.92 | 50.88 | 66.50 | 34.90 | 58.57",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.29-bit-config",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.11,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 1.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.29 | 6.29 | 8.11 | 65.67 | 74.92 | 50.88 | 66.50 | 34.90 | 58.57",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.57,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "13B | – | 16 | 4.57 | 6.05 | 69.61 | 78.73 | 59.72 | 73.27 | 45.56 | 65.38",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.05,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "13B | – | 16 | 4.57 | 6.05 | 69.61 | 78.73 | 59.72 | 73.27 | 45.56 | 65.38",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 65.38,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "13B | – | 16 | 4.57 | 6.05 | 69.61 | 78.73 | 59.72 | 73.27 | 45.56 | 65.38",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1.97-bit-config",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.6,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 1.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 1.97 | **5.60** | **7.49** | **68.82** | **75.90** | **53.80** | **69.28** | **38.82** | **61.32**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1.97-bit-config",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.49,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 1.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 1.97 | **5.60** | **7.49** | **68.82** | **75.90** | **53.80** | **69.28** | **38.82** | **61.32**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1.97-bit-config",
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 61.32,
+        "baseline_label": "FP16",
+        "baseline_value": 65.38,
+        "delta": -4.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 1.97 | **5.60** | **7.49** | **68.82** | **75.90** | **53.80** | **69.28** | **38.82** | **61.32**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 13.48,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 8.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP | 2.00 | 13.48 | 16.16 | 52.80 | 62.02 | 35.80 | 45.24 | 23.46 | 43.86",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.16,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 10.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP | 2.00 | 13.48 | 16.16 | 52.80 | 62.02 | 35.80 | 45.24 | 23.46 | 43.86",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.06,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 1.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 6.06 | 8.07 | 63.38 | 74.76 | 51.58 | 64.06 | 33.96 | 57.55",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.07,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 2.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 6.06 | 8.07 | 63.38 | 74.76 | 51.58 | 64.06 | 33.96 | 57.55",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 57.55,
+        "baseline_label": "FP16",
+        "baseline_value": 65.38,
+        "delta": -7.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 6.06 | 8.07 | 63.38 | 74.76 | 51.58 | 64.06 | 33.96 | 57.55",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.19-bit-config",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.37,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.19 | 5.37 | 7.16 | 67.64 | 77.37 | 55.03 | 70.29 | 38.65 | 61.80",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.53-bit-config",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.13,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.53 | 5.13 | 6.82 | 69.77 | 76.99 | 56.15 | 70.33 | 39.16 | 62.48",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.76-bit-config",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.94,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.37,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.76 | 4.94 | 6.54 | 68.98 | 77.58 | 57.71 | 72.90 | 43.60 | 64.15",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.76-bit-config",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.54,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 0.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.76 | 4.94 | 6.54 | 68.98 | 77.58 | 57.71 | 72.90 | 43.60 | 64.15",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "70B | – | 16 | 3.12 | 4.97 | 76.95 | 81.07 | 63.99 | 77.74 | 51.11 | 70.17",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 4.97,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "70B | – | 16 | 3.12 | 4.97 | 76.95 | 81.07 | 63.99 | 77.74 | 51.11 | 70.17",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 70.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "70B | – | 16 | 3.12 | 4.97 | 76.95 | 81.07 | 63.99 | 77.74 | 51.11 | 70.17",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.07-bit-config",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.94,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.82,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.07 | **3.94** | **5.72** | **75.93** | **80.43** | **61.79** | **77.68** | **47.93** | **68.75**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.07-bit-config",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.72,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.07 | **3.94** | **5.72** | **75.93** | **80.43** | **61.79** | **77.68** | **47.93** | **68.75**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2.07-bit-config",
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 68.75,
+        "baseline_label": "FP16",
+        "baseline_value": 70.17,
+        "delta": -1.42,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 2.07 | **3.94** | **5.72** | **75.93** | **80.43** | **61.79** | **77.68** | **47.93** | **68.75**",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.9,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 2.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP | 2.01 | 5.90 | 8.17 | 67.48 | 74.76 | 50.45 | 62.16 | 33.96 | 57.76",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.16,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 4.16 | 6.01 | 74.11 | 79.76 | 60.01 | 76.85 | 47.61 | 67.67",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.01,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 1.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 4.16 | 6.01 | 74.11 | 79.76 | 60.01 | 76.85 | 47.61 | 67.67",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 67.67,
+        "baseline_label": "FP16",
+        "baseline_value": 70.17,
+        "delta": -2.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 4.16 | 6.01 | 74.11 | 79.76 | 60.01 | 76.85 | 47.61 | 67.67",
+        "bbox": [
+          80.002265625,
+          105.35765625,
+          515.263359375,
+          324.67359375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.46,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.04 | **5.46** | **7.08** | **66.93** | **76.88** | **54.12** | **68.06** | **38.40** | **60.88**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.08,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.04 | **5.46** | **7.08** | **66.93** | **76.88** | **54.12** | **68.06** | **38.40** | **60.88**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.06,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 2.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "GPTQ | 3.00 | 8.06 | 10.61 | 59.19 | 71.49 | 45.21 | 58.46 | 31.06 | 53.08",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 10.61,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 3.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "GPTQ | 3.00 | 8.06 | 10.61 | 59.19 | 71.49 | 45.21 | 58.46 | 31.06 | 53.08",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.2,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "SpQR | 2.98 | 6.20 | 8.20 | 63.54 | 74.81 | 51.85 | 67.42 | 37.71 | 59.07",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.2,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 1.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "SpQR | 2.98 | 6.20 | 8.20 | 63.54 | 74.81 | 51.85 | 67.42 | 37.71 | 59.07",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.82,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.03 | **4.82** | **6.37** | 68.43 | **77.26** | **58.30** | **70.88** | **42.58** | **64.49**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.37,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.03 | **4.82** | **6.37** | 68.43 | **77.26** | **58.30** | **70.88** | **42.58** | **64.49**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.85,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "GPTQ | 3.00 | 5.85 | 7.86 | 63.93 | 76.50 | 53.47 | 65.66 | 38.48 | 59.61",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.28,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "SpQR | 2.98 | 5.28 | 7.06 | 67.48 | 77.20 | 56.34 | 69.78 | 39.16 | 61.99",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.12,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP | 3.00 | 5.12 | 6.79 | **69.93** | 76.88 | 57.07 | 70.41 | 41.47 | 63.15",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.36,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.01 | **3.36** | **5.17** | **77.19** | **81.28** | **63.23** | **77.61** | **50.00** | **69.86**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.17,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.01 | **3.36** | **5.17** | **77.19** | **81.28** | **63.23** | **77.61** | **50.00** | **69.86**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": "2x12-g8",
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 69.86,
+        "baseline_label": "FP16",
+        "baseline_value": 70.17,
+        "delta": -0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "AQLM | 3.01 | **3.36** | **5.17** | **77.19** | **81.28** | **63.23** | **77.61** | **50.00** | **69.86**",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.4,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "GPTQ | 3.00 | 4.40 | 6.26 | 71.82 | 78.40 | 60.00 | 72.73 | 44.11 | 65.41",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.85,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "SpQR | 2.98 | 3.85 | 5.63 | 74.66 | 80.52 | 61.95 | 75.93 | 48.04 | 68.22",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.87,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP | 3.01 | 3.87 | 5.67 | 74.59 | 79.98 | 60.73 | 73.19 | 46.33 | 66.96",
+        "bbox": [
+          78.5141015625,
+          346.554140625,
+          513.1655859375,
+          538.258359375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.46,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "| - | 16 | 3.46 | 5.02 | 75.45 | 82.37 | 64.65 | 83.38 | 55.80 | 72.33",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 72.33,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "| - | 16 | 3.46 | 5.02 | 75.45 | 82.37 | 64.65 | 83.38 | 55.80 | 72.33",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.61,
+        "baseline_label": "FP16",
+        "baseline_value": 3.46,
+        "delta": 1.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "8x7B | AQLM | 1.98 | **4.61** | **5.75** | **73.64** | **79.27** | 57.91 | **78.96** | **48.63** | **67.68**",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.75,
+        "baseline_label": "FP16",
+        "baseline_value": 5.02,
+        "delta": 0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "8x7B | AQLM | 1.98 | **4.61** | **5.75** | **73.64** | **79.27** | 57.91 | **78.96** | **48.63** | **67.68**",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 67.68,
+        "baseline_label": "FP16",
+        "baseline_value": 72.33,
+        "delta": -4.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "8x7B | AQLM | 1.98 | **4.61** | **5.75** | **73.64** | **79.27** | 57.91 | **78.96** | **48.63** | **67.68**",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.75,
+        "baseline_label": "FP16",
+        "baseline_value": 3.46,
+        "delta": 1.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 4.75 | 5.89 | 71.11 | 79.05 | **58.23** | 77.57 | 45.73 | 66.34",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+PiQA+HellaSwag+ArcE+ArcC",
+        "metric": "Average Zero-shot Accuracy",
+        "value": 66.34,
+        "baseline_label": "FP16",
+        "baseline_value": 72.33,
+        "delta": -5.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1. Compression quality for modern LLMs",
+        "quote": "QuIP# | 2.01 | 4.75 | 5.89 | 71.11 | 79.05 | **58.23** | 77.57 | 45.73 | 66.34",
+        "bbox": [
+          80.9166796875,
+          110.408203125,
+          514.3489453125,
+          169.576171875
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.14,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "AQLM★ | 2.02 | **6.14** | **8.09** | **65.67** | **76.01** | 51.83 | 63.43 | 34.39 | 58.27",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.09,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 1.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "AQLM★ | 2.02 | **6.14** | **8.09** | **65.67** | **76.01** | 51.83 | 63.43 | 34.39 | 58.27",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "QuIP#-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.19,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "QuIP#★ | 2.02 | 6.19 | 8.16 | 64.96 | 75.41 | **51.91** | **64.96** | **35.15** | **58.48**",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.33,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "AQLM★ | 1.97 | **5.33** | **7.19** | **68.67** | 76.82 | **56.31** | **69.99** | **40.36** | **62.43**",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP#-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.35,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "QuIP#★ | 2.01 | 5.35 | 7.20 | 67.64 | **77.26** | 56.04 | 69.02 | 39.85 | 61.96",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.83,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "AQLM★ | 2.07 | **3.83** | **5.62** | 74.35 | **80.90** | 62.17 | 74.58 | **48.98** | 68.20",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.62,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 0.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "AQLM★ | 2.07 | **3.83** | **5.62** | 74.35 | **80.90** | 62.17 | 74.58 | **48.98** | 68.20",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP#-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.91,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3. Ablation analysis",
+        "quote": "QuIP#★ | 2.01 | 3.91 | 5.71 | **74.66** | 79.54 | **62.52** | **77.06** | 47.61 | **68.28**",
+        "bbox": [
+          80.611875,
+          81.450703125,
+          514.65375,
+          254.221171875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (1x16)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Speedup over FP16 (gate_proj matvec)",
+        "value": 1.31,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.31,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "Original (float16)AQLM (Table 1)AQLM (2×8-bit) | 129 μsx1.31x1.57",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Speedup over FP16 (gate_proj matvec)",
+        "value": 1.57,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.57,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "Original (float16)AQLM (Table 1)AQLM (2×8-bit) | 129 μsx1.31x1.57",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM (1x16)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Speedup over FP16 (gate_proj matvec)",
+        "value": 1.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.2,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "190 μsx1.20x1.82",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Speedup over FP16 (gate_proj matvec)",
+        "value": 1.82,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.82,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "190 μsx1.20x1.82",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM (1x16)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Speedup over FP16 (gate_proj matvec)",
+        "value": 1.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.2,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "578 μsx1.20x3.05",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Speedup over FP16 (gate_proj matvec)",
+        "value": 3.05,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.05,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "578 μsx1.20x3.05",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Intel i9 CPU",
+        "metric": "Speedup over FP32 (gate_proj matvec)",
+        "value": 2.75,
+        "baseline_label": "FP32",
+        "baseline_value": 1.0,
+        "delta": 1.75,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "Original (float32)AQLM (2×8-bit)AQLM (4×8-bit)AQLM (8×8-bit) | 1.83 msx2.75x2.55x2.29",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Intel i9 CPU",
+        "metric": "Speedup over FP32 (gate_proj matvec)",
+        "value": 3.54,
+        "baseline_label": "FP32",
+        "baseline_value": 1.0,
+        "delta": 2.54,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "3.12 msx3.54x3.02x2.68",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM (4x8)",
+        "bit_width": "2-bit",
+        "group_size": "4x8",
+        "dataset": "Intel i9 CPU",
+        "metric": "Speedup over FP32 (gate_proj matvec)",
+        "value": 4.07,
+        "baseline_label": "FP32",
+        "baseline_value": 1.0,
+        "delta": 3.07,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4. Inference Speed",
+        "quote": "11.31 msx3.69x4.07x4.03",
+        "bbox": [
+          59.6640234375,
+          551.55375,
+          283.3906640625,
+          699.868125
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (no fine-tune)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.18,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 3.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "E. Ablation analysis",
+        "quote": "w/o | 8.18 | 10.59",
+        "bbox": [
+          229.6613671875,
+          482.292421875,
+          365.6042578125,
+          555.660703125
+        ],
+        "block_id": "/page/14/Table/6",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (RMSnorm only)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.31,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 3.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "E. Ablation analysis",
+        "quote": "RMSnorm | 8.31 | 10.46",
+        "bbox": [
+          229.6613671875,
+          482.292421875,
+          365.6042578125,
+          555.660703125
+        ],
+        "block_id": "/page/14/Table/6",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (AQ params only)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.92,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "E. Ablation analysis",
+        "quote": "AQ params | 6.92 | 8.85",
+        "bbox": [
+          229.6613671875,
+          482.292421875,
+          365.6042578125,
+          555.660703125
+        ],
+        "block_id": "/page/14/Table/6",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (full)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.93,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "E. Ablation analysis",
+        "quote": "Full | 6.93 | 8.84",
+        "bbox": [
+          229.6613671875,
+          482.292421875,
+          365.6042578125,
+          555.660703125
+        ],
+        "block_id": "/page/14/Table/6",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (128 calib)",
+        "bit_width": "2-bit",
+        "group_size": "2.3-bit",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.994,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.874,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "128 | 6.994 | 0.127",
+        "bbox": [
+          90.96328125,
+          420.958828125,
+          261.65390625,
+          517.994296875
+        ],
+        "block_id": "/page/15/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (4096 calib)",
+        "bit_width": "2-bit",
+        "group_size": "2.3-bit",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.267,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.147,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "4096 | 6.267 | 0.005",
+        "bbox": [
+          90.96328125,
+          420.958828125,
+          261.65390625,
+          517.994296875
+        ],
+        "block_id": "/page/15/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.6107,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 2.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "AQLM | 2x8gs8 | 7.6107",
+        "bbox": [
+          346.748203125,
+          422.74546875,
+          518.658046875,
+          534.77015625
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "8x8-g32",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.3755,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 2.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "8x8gs32 | 7.3755",
+        "bbox": [
+          346.748203125,
+          422.74546875,
+          518.658046875,
+          534.77015625
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.5746,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "AQLM\\star | 2x8gs8 | 6.5746",
+        "bbox": [
+          346.748203125,
+          422.74546875,
+          518.658046875,
+          534.77015625
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.21,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "AQLM | 4.04 | **5.21** | **6.75** | 67.32 | 78.24 | **55.99** | **70.16** | **41.04** | **62.55**",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.75,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "AQLM | 4.04 | **5.21** | **6.75** | 67.32 | 78.24 | **55.99** | **70.16** | **41.04** | **62.55**",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.49,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "GPTQ | 4.00 | 5.49 | 7.20 | **68.19** | 76.61 | 55.44 | 66.20 | 36.77 | 60.64",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": "g16",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.28,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "SpQR | 3.98 | 5.28 | 6.87 | 66.93 | **78.35** | 56.10 | 69.11 | 39.68 | 62.17",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "QuIP# | 4.02 | 5.29 | 6.86 | 66.85 | 77.91 | 55.78 | 68.06 | 39.68 | 61.66",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.65,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "AQLM | 3.94 | **4.65** | **6.14** | 69.85 | 78.35 | **59.27** | 73.32 | 44.80 | 65.12",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.78,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "GPTQ | 4 | 4.78 | 6.34 | **70.01** | 77.75 | 58.67 | 70.45 | 42.49 | 63.87",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.68,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "QuIP# | 4.01 | 4.68 | 6.20 | 69.38 | 77.91 | 58.86 | **73.74** | 44.63 | 64.90",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.19,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "AQLM | 4.14 | **3.19** | **5.03** | 76.48 | **81.50** | 63.69 | 77.31 | 50.68 | 69.93",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.35,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "GPTQ | 4.00 | 3.35 | 5.15 | 75.61 | 81.23 | 63.47 | 76.81 | 49.15 | 69.25",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.22,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "E. Ablation analysis",
+        "quote": "QuIP# | 4.01 | 3.22 | 5.05 | **76.80** | 81.45 | 63.51 | **78.37** | **50.85** | **70.20**",
+        "bbox": [
+          82.1478515625,
+          101.83078125,
+          511.9224609375,
+          365.32546875
+        ],
+        "block_id": "/page/15/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.79,
+        "baseline_label": "FP16",
+        "baseline_value": 3.46,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM | 3.02 | **3.79** | **5.17** | **75.45** | **81.61** | **63.25** | **81.90** | **53.92** | **71.23**",
+        "bbox": [
+          81.2334375,
+          117.090703125,
+          512.836875,
+          204.659296875
+        ],
+        "block_id": "/page/16/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "AQLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.57,
+        "baseline_label": "FP16",
+        "baseline_value": 3.46,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM | 3.915 | **3.57** | **5.07** | 74.82 | **81.99** | **64.23** | **83.12** | 54.61 | 71.75",
+        "bbox": [
+          81.2334375,
+          117.090703125,
+          512.836875,
+          204.659296875
+        ],
+        "block_id": "/page/16/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.6,
+        "baseline_label": "FP16",
+        "baseline_value": 3.46,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "QuIP# | 4.000 | 3.60 | 5.08 | **76.56** | **81.99** | 63.92 | 82.62 | **54.78** | **71.97**",
+        "bbox": [
+          81.2334375,
+          117.090703125,
+          512.836875,
+          204.659296875
+        ],
+        "block_id": "/page/16/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.61,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 2.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM | 2 | 7.61 | 9.68 | 62.27 | 71.87 | 46.41 | 61.03 | 30.03 | 54.32",
+        "bbox": [
+          80.9166796875,
+          282.126796875,
+          514.3489453125,
+          418.607578125
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.57,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM★ | 2 | 6.57 | 8.60 | 63.22 | 74.54 | 50.08 | 61.28 | 31.83 | 56.19",
+        "bbox": [
+          80.9166796875,
+          282.126796875,
+          514.3489453125,
+          418.607578125
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.63,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 1.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM★ | 2 | 5.63 | 7.55 | 63.85 | 77.04 | 54.19 | 67.85 | 37.20 | 60.03",
+        "bbox": [
+          80.9166796875,
+          282.126796875,
+          514.3489453125,
+          418.607578125
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.21,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM★ | 2 | 4.21 | 5.99 | 73.48 | 79.54 | 61.29 | 74.49 | 46.84 | 67.13",
+        "bbox": [
+          80.9166796875,
+          282.126796875,
+          514.3489453125,
+          418.607578125
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.77,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "2-bit | – | 16.00 | 4.77 | 5.71 | 73.64 | 80.47 | 61.15 | 78.87 | 49.23 | 68.67",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.32,
+        "baseline_label": "FP16",
+        "baseline_value": 4.77,
+        "delta": 1.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM | 2.01 | 6.32 | 6.93 | 68.75 | 76.01 | 52.13 | **73.65** | **40.44** | 62.17",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.02,
+        "baseline_label": "FP16",
+        "baseline_value": 4.77,
+        "delta": 1.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "QuIP# | 2.01 | **6.02** | **6.84** | **69.30** | **76.71** | **52.95** | 72.14 | 39.76 | **62.20**",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.76,
+        "baseline_label": "FP16",
+        "baseline_value": 4.77,
+        "delta": 0.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM\\star | 2.01 | 5.76 | 6.60 | 68.67 | 77.64 | 56.44 | 73.32 | 42.66 | 63.75",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "AQLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.02,
+        "baseline_label": "FP16",
+        "baseline_value": 4.77,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM | 3.04 | **5.02** | **5.93** | **73.24** | **79.22** | **59.31** | **78.28** | **46.76** | **67.36**",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "AQLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.89,
+        "baseline_label": "FP16",
+        "baseline_value": 4.77,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "AQLM | 4.02 | 4.89 | 5.81 | 73.80 | 79.71 | 60.27 | 77.86 | 48.21 | 67.97",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.85,
+        "baseline_label": "FP16",
+        "baseline_value": 4.77,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "F.1. Mixtral",
+        "quote": "QuIP# | 4.01 | **4.85** | **5.79** | **73.95** | **80.41** | **60.62** | **78.96** | **49.40** | **68.67**",
+        "bbox": [
+          80.3070703125,
+          493.801171875,
+          514.9585546875,
+          655.526953125
+        ],
+        "block_id": "/page/16/Table/6",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 GPU",
+        "metric": "Throughput (tokens/sec)",
+        "value": 54.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I. End-to-End Inference Speed",
+        "quote": "Original (float16) | 54.2 | 29.5 | 5.8",
+        "bbox": [
+          77.8686328125,
+          262.2571875,
+          273.5532421875,
+          413.7271875
+        ],
+        "block_id": "/page/18/Table/5",
+        "source_table": "Table 14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (1x16)",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Throughput (tokens/sec)",
+        "value": 65.3,
+        "baseline_label": "FP16",
+        "baseline_value": 54.2,
+        "delta": 11.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I. End-to-End Inference Speed",
+        "quote": "AQLM (1 \\times 16\\text{-bit}) | 65.3 | 34.1 | 6.7",
+        "bbox": [
+          77.8686328125,
+          262.2571875,
+          273.5532421875,
+          413.7271875
+        ],
+        "block_id": "/page/18/Table/5",
+        "source_table": "Table 14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Throughput (tokens/sec)",
+        "value": 114.1,
+        "baseline_label": "FP16",
+        "baseline_value": 54.2,
+        "delta": 59.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I. End-to-End Inference Speed",
+        "quote": "AQLM (2 \\times 8\\text{-bit}) | 114.1 | 68.1 | 14.3",
+        "bbox": [
+          77.8686328125,
+          262.2571875,
+          273.5532421875,
+          413.7271875
+        ],
+        "block_id": "/page/18/Table/5",
+        "source_table": "Table 14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 GPU",
+        "metric": "Throughput (tokens/sec)",
+        "value": 5.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I. End-to-End Inference Speed",
+        "quote": "Original (float16) | 54.2 | 29.5 | 5.8",
+        "bbox": [
+          77.8686328125,
+          262.2571875,
+          273.5532421875,
+          413.7271875
+        ],
+        "block_id": "/page/18/Table/5",
+        "source_table": "Table 14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM (2x8)",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "RTX 3090 GPU",
+        "metric": "Throughput (tokens/sec)",
+        "value": 14.3,
+        "baseline_label": "FP16",
+        "baseline_value": 5.8,
+        "delta": 8.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I. End-to-End Inference Speed",
+        "quote": "AQLM (2 \\times 8\\text{-bit}) | 114.1 | 68.1 | 14.3",
+        "bbox": [
+          77.8686328125,
+          262.2571875,
+          273.5532421875,
+          413.7271875
+        ],
+        "block_id": "/page/18/Table/5",
+        "source_table": "Table 14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 45.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "7B | - | 16 | 45.9 | 14.6",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "QuIP#-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 36.8,
+        "baseline_label": "FP16",
+        "baseline_value": 45.9,
+        "delta": -9.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "QuIP#★ | 2.02 | 36.8 | **6.2**",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 38.5,
+        "baseline_label": "FP16",
+        "baseline_value": 45.9,
+        "delta": -7.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "AQLM★ | 2.02 | **38.5** | 5.3",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "GSM8k",
+        "metric": "Accuracy (8-shot)",
+        "value": 5.3,
+        "baseline_label": "FP16",
+        "baseline_value": 14.6,
+        "delta": -9.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "AQLM★ | 2.02 | **38.5** | 5.3",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 55.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "13B | - | 16 | 55.2 | 24.3",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 48.8,
+        "baseline_label": "FP16",
+        "baseline_value": 55.2,
+        "delta": -6.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "AQLM★ | 1.97 | 48.8 | 13.8",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "GSM8k",
+        "metric": "Accuracy (8-shot)",
+        "value": 13.8,
+        "baseline_label": "FP16",
+        "baseline_value": 24.3,
+        "delta": -10.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "AQLM★ | 1.97 | 48.8 | 13.8",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 68.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "70B | - | 16 | 68.8 | 56.3",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 65.3,
+        "baseline_label": "FP16",
+        "baseline_value": 68.8,
+        "delta": -3.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "AQLM★ | 2.07 | **65.3** | **47.9**",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "GSM8k",
+        "metric": "Accuracy (8-shot)",
+        "value": 47.9,
+        "baseline_label": "FP16",
+        "baseline_value": 56.3,
+        "delta": -8.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "AQLM★ | 2.07 | **65.3** | **47.9**",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-70B",
+        "method": "QuIP#-PV",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy (5-shot)",
+        "value": 65.3,
+        "baseline_label": "FP16",
+        "baseline_value": 68.8,
+        "delta": -3.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K. Evaluation on MMLU and GSM8k",
+        "quote": "QuIP#★ | 2.01 | **65.3** | 46.4",
+        "bbox": [
+          165.945234375,
+          97.352578125,
+          430.515703125,
+          225.944296875
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GPTQ (block-tuned)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16.77,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 11.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "L. Block-wise tuning for scalar quantization",
+        "quote": "GPTQ | 2.14 | 16.77 | 17.53",
+        "bbox": [
+          202.2528515625,
+          346.76296875,
+          390.6221484375,
+          398.83078125
+        ],
+        "block_id": "/page/19/Table/7",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AQLM (block-tuned)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.64,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.52,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "L. Block-wise tuning for scalar quantization",
+        "quote": "AQLM | 2.02 | **6.64** | **8.56**",
+        "bbox": [
+          202.2528515625,
+          346.76296875,
+          390.6221484375,
+          398.83078125
+        ],
+        "block_id": "/page/19/Table/7",
+        "source_table": "Table 16"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 129,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

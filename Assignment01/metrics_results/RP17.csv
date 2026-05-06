@@ -1,0 +1,149 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP17,LLaMA-33B,SpQR,4-bit,,Consumer GPU 24GB,Speedup over FP16,1.15,FP16,1.0,0.15,x_factor,True,measured,1,Abstract,,run 33B parameter LLM on a single 24 GB consumer GPU without any performance degradation at 15% speedup
+RP17,LLaMA family,SpQR,4-bit,,WikiText2,Memory compression factor,4.0,FP16,1.0,3.0,x_factor,True,measured,1,Abstract,,enabling memory compression gains of more than 4x
+RP17,LLaMA family,SpQR,4-bit,,WikiText2,Relative perplexity error vs FP16,1.0,FP16,0.0,1.0,percent,True,measured,1,Abstract,,achieves relative accuracy losses of less than 1% in perplexity for highly-accurate LLaMA and Falcon LLMs
+RP17,LLaMA family,SpQR,4-bit,,A100,Speedup over FP16,1.25,FP16,1.0,0.25,x_factor,True,measured,2,1 Introduction,,SpQR reduces the memory footprint of LLMs by a factor of about 3.4x or more without degradation in accuracy ... while also being 20-30% faster for LLM generation compared to 16-bit inference
+RP17,LLaMA-7B,FP16,16-bit,,WikiText2,Perplexity,5.68,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,7B | – | 16.00 | 5.68 | 7.08 | 8.80
+RP17,LLaMA-7B,FP16,16-bit,,C4,Perplexity,7.08,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,7B | – | 16.00 | 5.68 | 7.08 | 8.80
+RP17,LLaMA-7B,FP16,16-bit,,Penn Treebank,Perplexity,8.8,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,7B | – | 16.00 | 5.68 | 7.08 | 8.80
+RP17,LLaMA-7B,SpQR,4-bit,,WikiText2,Perplexity,5.73,FP16,5.68,0.05,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.63 | 5.73 | 7.13 | 8.88
+RP17,LLaMA-7B,SpQR,4-bit,,C4,Perplexity,7.13,FP16,7.08,0.05,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.63 | 5.73 | 7.13 | 8.88
+RP17,LLaMA-7B,SpQR,4-bit,,Penn Treebank,Perplexity,8.88,FP16,8.8,0.08,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.63 | 5.73 | 7.13 | 8.88
+RP17,LLaMA-7B,RTN,4-bit,,WikiText2,Perplexity,6.43,FP16,5.68,0.75,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 6.43 | 7.93 | 10.30
+RP17,LLaMA-7B,RTN,4-bit,,C4,Perplexity,7.93,FP16,7.08,0.85,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 6.43 | 7.93 | 10.30
+RP17,LLaMA-7B,RTN,4-bit,,Penn Treebank,Perplexity,10.3,FP16,8.8,1.5,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 6.43 | 7.93 | 10.30
+RP17,LLaMA-7B,GPTQ,4-bit,,WikiText2,Perplexity,6.13,FP16,5.68,0.45,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 6.13 | 7.43 | 9.27
+RP17,LLaMA-7B,GPTQ,4-bit,,C4,Perplexity,7.43,FP16,7.08,0.35,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 6.13 | 7.43 | 9.27
+RP17,LLaMA-7B,GPTQ,4-bit,,Penn Treebank,Perplexity,9.27,FP16,8.8,0.47,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 6.13 | 7.43 | 9.27
+RP17,LLaMA-7B,SpQR,3-bit,,WikiText2,Perplexity,5.87,FP16,5.68,0.19,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.94 | 5.87 | 7.28 | 9.07
+RP17,LLaMA-7B,SpQR,3-bit,,C4,Perplexity,7.28,FP16,7.08,0.2,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.94 | 5.87 | 7.28 | 9.07
+RP17,LLaMA-7B,SpQR,3-bit,,Penn Treebank,Perplexity,9.07,FP16,8.8,0.27,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.94 | 5.87 | 7.28 | 9.07
+RP17,LLaMA-13B,FP16,16-bit,,WikiText2,Perplexity,5.09,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,13B | – | 16.00 | 5.09 | 6.61 | 8.07
+RP17,LLaMA-13B,FP16,16-bit,,C4,Perplexity,6.61,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,13B | – | 16.00 | 5.09 | 6.61 | 8.07
+RP17,LLaMA-13B,FP16,16-bit,,Penn Treebank,Perplexity,8.07,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,13B | – | 16.00 | 5.09 | 6.61 | 8.07
+RP17,LLaMA-13B,SpQR,4-bit,,WikiText2,Perplexity,5.13,FP16,5.09,0.04,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.63 | 5.13 | 6.64 | 8.13
+RP17,LLaMA-13B,SpQR,4-bit,,C4,Perplexity,6.64,FP16,6.61,0.03,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.63 | 5.13 | 6.64 | 8.13
+RP17,LLaMA-13B,SpQR,4-bit,,Penn Treebank,Perplexity,8.13,FP16,8.07,0.06,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.63 | 5.13 | 6.64 | 8.13
+RP17,LLaMA-13B,RTN,4-bit,,WikiText2,Perplexity,5.55,FP16,5.09,0.46,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 5.55 | 6.98 | 8.65
+RP17,LLaMA-13B,RTN,4-bit,,C4,Perplexity,6.98,FP16,6.61,0.37,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 5.55 | 6.98 | 8.65
+RP17,LLaMA-13B,RTN,4-bit,,Penn Treebank,Perplexity,8.65,FP16,8.07,0.58,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 5.55 | 6.98 | 8.65
+RP17,LLaMA-13B,GPTQ,4-bit,,WikiText2,Perplexity,5.4,FP16,5.09,0.31,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 5.40 | 6.84 | 8.44
+RP17,LLaMA-13B,GPTQ,4-bit,,C4,Perplexity,6.84,FP16,6.61,0.23,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 5.40 | 6.84 | 8.44
+RP17,LLaMA-13B,GPTQ,4-bit,,Penn Treebank,Perplexity,8.44,FP16,8.07,0.37,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 5.40 | 6.84 | 8.44
+RP17,LLaMA-13B,SpQR,3-bit,,WikiText2,Perplexity,5.22,FP16,5.09,0.13,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.96 | 5.22 | 6.72 | 8.22
+RP17,LLaMA-13B,SpQR,3-bit,,C4,Perplexity,6.72,FP16,6.61,0.11,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.96 | 5.22 | 6.72 | 8.22
+RP17,LLaMA-13B,SpQR,3-bit,,Penn Treebank,Perplexity,8.22,FP16,8.07,0.15,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.96 | 5.22 | 6.72 | 8.22
+RP17,LLaMA-30B,FP16,16-bit,,WikiText2,Perplexity,4.1,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,30B | – | 16.00 | 4.10 | 5.98 | 7.30
+RP17,LLaMA-30B,FP16,16-bit,,C4,Perplexity,5.98,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,30B | – | 16.00 | 4.10 | 5.98 | 7.30
+RP17,LLaMA-30B,FP16,16-bit,,Penn Treebank,Perplexity,7.3,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,30B | – | 16.00 | 4.10 | 5.98 | 7.30
+RP17,LLaMA-30B,SpQR,4-bit,,WikiText2,Perplexity,4.14,FP16,4.1,0.04,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.69 | 4.14 | 6.01 | 7.33
+RP17,LLaMA-30B,SpQR,4-bit,,C4,Perplexity,6.01,FP16,5.98,0.03,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.69 | 4.14 | 6.01 | 7.33
+RP17,LLaMA-30B,SpQR,4-bit,,Penn Treebank,Perplexity,7.33,FP16,7.3,0.03,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.69 | 4.14 | 6.01 | 7.33
+RP17,LLaMA-30B,RTN,4-bit,,WikiText2,Perplexity,4.57,FP16,4.1,0.47,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 4.57 | 6.34 | 7.75
+RP17,LLaMA-30B,RTN,4-bit,,C4,Perplexity,6.34,FP16,5.98,0.36,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 4.57 | 6.34 | 7.75
+RP17,LLaMA-30B,RTN,4-bit,,Penn Treebank,Perplexity,7.75,FP16,7.3,0.45,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 4.57 | 6.34 | 7.75
+RP17,LLaMA-30B,GPTQ,4-bit,,WikiText2,Perplexity,4.48,FP16,4.1,0.38,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 4.48 | 6.20 | 7.54
+RP17,LLaMA-30B,GPTQ,4-bit,,C4,Perplexity,6.2,FP16,5.98,0.22,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 4.48 | 6.20 | 7.54
+RP17,LLaMA-30B,GPTQ,4-bit,,Penn Treebank,Perplexity,7.54,FP16,7.3,0.24,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 4.48 | 6.20 | 7.54
+RP17,LLaMA-30B,SpQR,3-bit,,WikiText2,Perplexity,4.25,FP16,4.1,0.15,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.89 | 4.25 | 6.08 | 7.38
+RP17,LLaMA-30B,SpQR,3-bit,,C4,Perplexity,6.08,FP16,5.98,0.1,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.89 | 4.25 | 6.08 | 7.38
+RP17,LLaMA-30B,SpQR,3-bit,,Penn Treebank,Perplexity,7.38,FP16,7.3,0.08,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.89 | 4.25 | 6.08 | 7.38
+RP17,LLaMA-65B,FP16,16-bit,,WikiText2,Perplexity,3.53,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,65B | – | 16.00 | 3.53 | 5.62 | 6.91
+RP17,LLaMA-65B,FP16,16-bit,,C4,Perplexity,5.62,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,65B | – | 16.00 | 3.53 | 5.62 | 6.91
+RP17,LLaMA-65B,FP16,16-bit,,Penn Treebank,Perplexity,6.91,,,,,False,measured,9,5 Experimental Validation - LLaMa,Table 1,65B | – | 16.00 | 3.53 | 5.62 | 6.91
+RP17,LLaMA-65B,SpQR,4-bit,,WikiText2,Perplexity,3.57,FP16,3.53,0.04,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.71 | 3.57 | 5.64 | 6.93
+RP17,LLaMA-65B,SpQR,4-bit,,C4,Perplexity,5.64,FP16,5.62,0.02,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.71 | 3.57 | 5.64 | 6.93
+RP17,LLaMA-65B,SpQR,4-bit,,Penn Treebank,Perplexity,6.93,FP16,6.91,0.02,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 4.71 | 3.57 | 5.64 | 6.93
+RP17,LLaMA-65B,RTN,4-bit,,WikiText2,Perplexity,3.87,FP16,3.53,0.34,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 3.87 | 5.85 | 7.17
+RP17,LLaMA-65B,RTN,4-bit,,C4,Perplexity,5.85,FP16,5.62,0.23,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 3.87 | 5.85 | 7.17
+RP17,LLaMA-65B,RTN,4-bit,,Penn Treebank,Perplexity,7.17,FP16,6.91,0.26,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,RTN | 4 | 3.87 | 5.85 | 7.17
+RP17,LLaMA-65B,GPTQ,4-bit,,WikiText2,Perplexity,3.83,FP16,3.53,0.3,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 3.83 | 5.80 | 7.07
+RP17,LLaMA-65B,GPTQ,4-bit,,C4,Perplexity,5.8,FP16,5.62,0.18,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 3.83 | 5.80 | 7.07
+RP17,LLaMA-65B,GPTQ,4-bit,,Penn Treebank,Perplexity,7.07,FP16,6.91,0.16,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,GPTQ | 4 | 3.83 | 5.80 | 7.07
+RP17,LLaMA-65B,SpQR,3-bit,,WikiText2,Perplexity,3.68,FP16,3.53,0.15,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.90 | 3.68 | 5.70 | 6.99
+RP17,LLaMA-65B,SpQR,3-bit,,C4,Perplexity,5.7,FP16,5.62,0.08,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.90 | 3.68 | 5.70 | 6.99
+RP17,LLaMA-65B,SpQR,3-bit,,Penn Treebank,Perplexity,6.99,FP16,6.91,0.08,absolute,False,measured,9,5 Experimental Validation - LLaMa,Table 1,SpQR | 3.90 | 3.68 | 5.70 | 6.99
+RP17,Falcon-7B,FP16,16-bit,,WikiText2,Perplexity,6.59,,,,,False,measured,10,5 Experimental Validation - Falcon,Table 2,- | 16.00 | 6.59 | 9.50 | 9.90
+RP17,Falcon-7B,FP16,16-bit,,C4,Perplexity,9.5,,,,,False,measured,10,5 Experimental Validation - Falcon,Table 2,- | 16.00 | 6.59 | 9.50 | 9.90
+RP17,Falcon-7B,FP16,16-bit,,Penn Treebank,Perplexity,9.9,,,,,False,measured,10,5 Experimental Validation - Falcon,Table 2,- | 16.00 | 6.59 | 9.50 | 9.90
+RP17,Falcon-7B,SpQR,4-bit,,WikiText2,Perplexity,6.64,FP16,6.59,0.05,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 4.44 | 6.64 | 9.58 | 9.97
+RP17,Falcon-7B,SpQR,4-bit,,C4,Perplexity,9.58,FP16,9.5,0.08,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 4.44 | 6.64 | 9.58 | 9.97
+RP17,Falcon-7B,SpQR,4-bit,,Penn Treebank,Perplexity,9.97,FP16,9.9,0.07,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 4.44 | 6.64 | 9.58 | 9.97
+RP17,Falcon-7B,RTN,4-bit,,WikiText2,Perplexity,8.73,FP16,6.59,2.14,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,RTN | 4 | 8.73 | 12.56 | 13.76
+RP17,Falcon-7B,RTN,4-bit,,C4,Perplexity,12.56,FP16,9.5,3.06,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,RTN | 4 | 8.73 | 12.56 | 13.76
+RP17,Falcon-7B,RTN,4-bit,,Penn Treebank,Perplexity,13.76,FP16,9.9,3.86,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,RTN | 4 | 8.73 | 12.56 | 13.76
+RP17,Falcon-7B,GPTQ,4-bit,,WikiText2,Perplexity,6.91,FP16,6.59,0.32,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,GPTQ | 4 | 6.91 | 9.93 | 10.33
+RP17,Falcon-7B,GPTQ,4-bit,,C4,Perplexity,9.93,FP16,9.5,0.43,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,GPTQ | 4 | 6.91 | 9.93 | 10.33
+RP17,Falcon-7B,GPTQ,4-bit,,Penn Treebank,Perplexity,10.33,FP16,9.9,0.43,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,GPTQ | 4 | 6.91 | 9.93 | 10.33
+RP17,Falcon-7B,SpQR,3-bit,,WikiText2,Perplexity,6.74,FP16,6.59,0.15,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 3.92 | 6.74 | 9.70 | 19.114
+RP17,Falcon-7B,SpQR,3-bit,,C4,Perplexity,9.7,FP16,9.5,0.2,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 3.92 | 6.74 | 9.70 | 19.114
+RP17,Falcon-40B,FP16,16-bit,,WikiText2,Perplexity,5.23,,,,,False,measured,10,5 Experimental Validation - Falcon,Table 2,- | 16.00 | 5.23 | 7.76 | 7.83
+RP17,Falcon-40B,FP16,16-bit,,C4,Perplexity,7.76,,,,,False,measured,10,5 Experimental Validation - Falcon,Table 2,- | 16.00 | 5.23 | 7.76 | 7.83
+RP17,Falcon-40B,FP16,16-bit,,Penn Treebank,Perplexity,7.83,,,,,False,measured,10,5 Experimental Validation - Falcon,Table 2,- | 16.00 | 5.23 | 7.76 | 7.83
+RP17,Falcon-40B,SpQR,4-bit,,WikiText2,Perplexity,5.26,FP16,5.23,0.03,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 4.46 | 5.26 | 7.79 | 7.86
+RP17,Falcon-40B,SpQR,4-bit,,C4,Perplexity,7.79,FP16,7.76,0.03,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 4.46 | 5.26 | 7.79 | 7.86
+RP17,Falcon-40B,SpQR,4-bit,,Penn Treebank,Perplexity,7.86,FP16,7.83,0.03,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 4.46 | 5.26 | 7.79 | 7.86
+RP17,Falcon-40B,RTN,4-bit,,WikiText2,Perplexity,6.52,FP16,5.23,1.29,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,RTN | 4 | 6.52 | 9.76 | 10.63
+RP17,Falcon-40B,RTN,4-bit,,C4,Perplexity,9.76,FP16,7.76,2.0,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,RTN | 4 | 6.52 | 9.76 | 10.63
+RP17,Falcon-40B,RTN,4-bit,,Penn Treebank,Perplexity,10.63,FP16,7.83,2.8,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,RTN | 4 | 6.52 | 9.76 | 10.63
+RP17,Falcon-40B,GPTQ,4-bit,,WikiText2,Perplexity,5.36,FP16,5.23,0.13,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,GPTQ | 4 | 5.36 | 7.95 | 8.01
+RP17,Falcon-40B,GPTQ,4-bit,,C4,Perplexity,7.95,FP16,7.76,0.19,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,GPTQ | 4 | 5.36 | 7.95 | 8.01
+RP17,Falcon-40B,GPTQ,4-bit,,Penn Treebank,Perplexity,8.01,FP16,7.83,0.18,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,GPTQ | 4 | 5.36 | 7.95 | 8.01
+RP17,Falcon-40B,SpQR,3-bit,,WikiText2,Perplexity,5.29,FP16,5.23,0.06,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 3.90 | 5.29 | 7.85 | 7.91
+RP17,Falcon-40B,SpQR,3-bit,,C4,Perplexity,7.85,FP16,7.76,0.09,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 3.90 | 5.29 | 7.85 | 7.91
+RP17,Falcon-40B,SpQR,3-bit,,Penn Treebank,Perplexity,7.91,FP16,7.83,0.08,absolute,False,measured,10,5 Experimental Validation - Falcon,Table 2,SpQR | 3.90 | 5.29 | 7.85 | 7.91
+RP17,LLaMA-65B,"SpQR (3-bit statistics, g16)",3-bit,g16,WikiText2,Perplexity,3.74,FP16,3.53,0.21,absolute,False,measured,10,Falcon - Ablation Table 3,Table 3,3-bit statistics | 3.74 | 5.73 | 7.02 | 3.63
+RP17,LLaMA-65B,"SpQR (16-bit statistics, g16)",3-bit,g16,WikiText2,Perplexity,3.84,FP16,3.53,0.31,absolute,False,measured,10,Falcon - Ablation Table 3,Table 3,16-bit statistics | 3.84 | 5.83 | 7.12 | 3.67
+RP17,LLaMA-65B,SpQR (Round zero ablation),3-bit,g16,WikiText2,Perplexity,3.75,FP16,3.53,0.22,absolute,False,measured,10,Falcon - Ablation Table 3,Table 3,Round zero | 3.75 | 5.76 | 7.01 | 3.63
+RP17,LLaMA-65B,SpQR (w/o act order),3-bit,g16,WikiText2,Perplexity,3.74,FP16,3.53,0.21,absolute,False,measured,10,Falcon - Ablation Table 3,Table 3,w/o act order | 3.74 | 5.76 | 7.05 | 3.63
+RP17,LLaMA-13B,FP16,16-bit,,A100,"Inference speed (tokens/s, scratch)",47,,,,,False,measured,11,Falcon - Inference Time Table 4,Table 4,scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1 | OOM
+RP17,LLaMA-30B,FP16,16-bit,,A100,"Inference speed (tokens/s, scratch)",37,,,,,False,measured,11,Falcon - Inference Time Table 4,Table 4,scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1
+RP17,LLaMA-65B,FP16,16-bit,,A100,"Inference speed (tokens/s, scratch)",19,,,,,False,measured,11,Falcon - Inference Time Table 4,Table 4,scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1 | OOM
+RP17,LLaMA-13B,SpQR (PyTorch sparse),4-bit,,A100,"Inference speed (tokens/s, scratch)",30,FP16,47,-17,absolute,False,measured,11,Falcon - Inference Time Table 4,Table 4,scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1 | OOM | 30 ± 2.2 | 24 ± 1.2 | 8.8 ± 0.4
+RP17,LLaMA-30B,SpQR (PyTorch sparse),4-bit,,A100,"Inference speed (tokens/s, scratch)",24,FP16,37,-13,absolute,False,measured,11,Falcon - Inference Time Table 4,Table 4,30 ± 2.2 | 24 ± 1.2 | 8.8 ± 0.4
+RP17,LLaMA-65B,SpQR (PyTorch sparse),4-bit,,A100,"Inference speed (tokens/s, scratch)",8.8,FP16,19,-10.2,absolute,False,measured,11,Falcon - Inference Time Table 4,Table 4,30 ± 2.2 | 24 ± 1.2 | 8.8 ± 0.4
+RP17,LLaMA-13B,SpQR (optimized),4-bit,,A100,"Inference speed (tokens/s, scratch)",57,FP16,47,10,absolute,True,measured,11,Falcon - Inference Time Table 4,Table 4,**57** ± 2.4 | **44** ± 0.5 | **22** ± 0.9 | **12** ± 0.6
+RP17,LLaMA-30B,SpQR (optimized),4-bit,,A100,"Inference speed (tokens/s, scratch)",44,FP16,37,7,absolute,False,measured,11,Falcon - Inference Time Table 4,Table 4,**57** ± 2.4 | **44** ± 0.5 | **22** ± 0.9 | **12** ± 0.6
+RP17,LLaMA-65B,SpQR (optimized),4-bit,,A100,"Inference speed (tokens/s, scratch)",22,FP16,19,3,absolute,False,measured,11,Falcon - Inference Time Table 4,Table 4,**57** ± 2.4 | **44** ± 0.5 | **22** ± 0.9 | **12** ± 0.6
+RP17,LLaMA-7B,FP16,16-bit,,Winogrande,Accuracy (%),67.09,,,,,False,measured,21,G LLaMA - Table 7,Table 7,7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492
+RP17,LLaMA-7B,FP16,16-bit,,PiQA,Accuracy (%),78.32,,,,,False,measured,21,G LLaMA - Table 7,Table 7,7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492
+RP17,LLaMA-7B,FP16,16-bit,,HellaSwag,Accuracy (%),56.41,,,,,False,measured,21,G LLaMA - Table 7,Table 7,7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492
+RP17,LLaMA-7B,FP16,16-bit,,ARC-easy,Accuracy (%),67.38,,,,,False,measured,21,G LLaMA - Table 7,Table 7,7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492
+RP17,LLaMA-7B,FP16,16-bit,,ARC-challenge,Accuracy (%),38.23,,,,,False,measured,21,G LLaMA - Table 7,Table 7,7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492
+RP17,LLaMA-7B,FP16,16-bit,,Avg zero-shot,Accuracy (%),61.492,,,,,False,measured,21,G LLaMA - Table 7,Table 7,7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492
+RP17,LLaMA-7B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),61.46,FP16,61.492,-0.032,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 4.63 | 67.48 | 78.45 | 56.01 | 67.13 | 38.23 | 61.460
+RP17,LLaMA-7B,RTN,4-bit,,Avg zero-shot,Accuracy (%),58.952,FP16,61.492,-2.54,absolute,False,measured,21,G LLaMA - Table 7,Table 7,RTN | 4 | 64.72 | 76.44 | 53.49 | 63.51 | 36.60 | 58.952
+RP17,LLaMA-7B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),59.564,FP16,61.492,-1.928,absolute,False,measured,21,G LLaMA - Table 7,Table 7,GPTQ | 4 | 65.35 | 77.58 | 54.99 | 63.55 | 36.35 | 59.564
+RP17,LLaMA-7B,SpQR,3-bit,,Avg zero-shot,Accuracy (%),60.96,FP16,61.492,-0.532,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 3.45 | 67.48 | 78.13 | 55.27 | 65.87 | 38.05 | 60.960
+RP17,LLaMA-13B,FP16,16-bit,,Avg zero-shot,Accuracy (%),65.314,,,,,False,measured,21,G LLaMA - Table 7,Table 7,13B | – | 16.00 | 70.09 | 78.89 | 59.11 | 74.54 | 43.94 | 65.314
+RP17,LLaMA-13B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),65.054,FP16,65.314,-0.26,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 4.63 | 69.77 | 78.94 | 59.02 | 74.37 | 43.17 | 65.054
+RP17,LLaMA-13B,RTN,4-bit,,Avg zero-shot,Accuracy (%),64.066,FP16,65.314,-1.248,absolute,False,measured,21,G LLaMA - Table 7,Table 7,RTN | 4 | 69.61 | 78.24 | 57.34 | 72.56 | 42.58 | 64.066
+RP17,LLaMA-13B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),64.398,FP16,65.314,-0.916,absolute,False,measured,21,G LLaMA - Table 7,Table 7,GPTQ | 4 | 69.06 | 78.40 | 58.04 | 73.23 | 43.26 | 64.398
+RP17,LLaMA-13B,SpQR,3-bit,,Avg zero-shot,Accuracy (%),64.374,FP16,65.314,-0.94,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 3.45 | 68.90 | 78.73 | 58.22 | 73.27 | 42.75 | 64.374
+RP17,LLaMA-30B,FP16,16-bit,,Avg zero-shot,Accuracy (%),67.73,,,,,False,measured,21,G LLaMA - Table 7,Table 7,30B | – | 16.00 | 72.93 | 80.96 | 62.66 | 75.34 | 46.76 | 67.730
+RP17,LLaMA-30B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),67.934,FP16,67.73,0.204,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 4.69 | 72.93 | 81.01 | 62.50 | 76.05 | 47.18 | 67.934
+RP17,LLaMA-30B,RTN,4-bit,,Avg zero-shot,Accuracy (%),64.924,FP16,67.73,-2.806,absolute,False,measured,21,G LLaMA - Table 7,Table 7,RTN | 4 | 72.06 | 79.05 | 60.61 | 70.66 | 42.24 | 64.924
+RP17,LLaMA-30B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),65.936,FP16,67.73,-1.794,absolute,False,measured,21,G LLaMA - Table 7,Table 7,GPTQ | 4 | 72.61 | 79.92 | 61.07 | 71.8 | 44.28 | 65.936
+RP17,LLaMA-30B,SpQR,3-bit,,Avg zero-shot,Accuracy (%),67.486,FP16,67.73,-0.244,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 3.49 | 73.32 | 80.47 | 61.96 | 74.75 | 46.93 | 67.486
+RP17,LLaMA-65B,FP16,16-bit,,Avg zero-shot,Accuracy (%),69.03,,,,,False,measured,21,G LLaMA - Table 7,Table 7,65B | – | 16.00 | 77.43 | 81.50 | 63.95 | 75.17 | 47.10 | 69.030
+RP17,LLaMA-65B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),68.89,FP16,69.03,-0.14,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 4.71 | 76.95 | 81.56 | 63.76 | 75.25 | 46.93 | 68.890
+RP17,LLaMA-65B,RTN,4-bit,,Avg zero-shot,Accuracy (%),67.398,FP16,69.03,-1.632,absolute,False,measured,21,G LLaMA - Table 7,Table 7,RTN | 4 | 75.14 | 81.45 | 62.79 | 72.64 | 44.97 | 67.398
+RP17,LLaMA-65B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),68.068,FP16,69.03,-0.962,absolute,False,measured,21,G LLaMA - Table 7,Table 7,GPTQ | 4 | 75.85 | 80.79 | 62.91 | 74.20 | 46.59 | 68.068
+RP17,LLaMA-65B,SpQR,3-bit,,Avg zero-shot,Accuracy (%),68.046,FP16,69.03,-0.984,absolute,False,measured,21,G LLaMA - Table 7,Table 7,SpQR | 3.52 | 76.09 | 81.18 | 63.54 | 74.37 | 45.05 | 68.046
+RP17,OPT-6.7B,FP16,16-bit,,WikiText2,Perplexity,10.86,,,,,False,measured,20,F Additional results - OPT Table 6,Table 6,6.7B | - | 16.00 | 10.86 | 11.74 | 13.09
+RP17,OPT-6.7B,SpQR,4-bit,,WikiText2,Perplexity,10.81,FP16,10.86,-0.05,absolute,False,measured,20,F Additional results - OPT Table 6,Table 6,SpQR | 4.27 | 10.81 | 11.88 | 13.17
+RP17,OPT-6.7B,RTN,4-bit,,WikiText2,Perplexity,12.1,FP16,10.86,1.24,absolute,False,measured,20,F Additional results - OPT Table 6,Table 6,RTN | 4 | 12.10 | 13.38 | 16.09
+RP17,OPT-6.7B,GPTQ,4-bit,,WikiText2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,20,F Additional results - OPT Table 6,Table 6,GPTQ | 4 | 11.39 | 12.15 | 13.80
+RP17,OPT-30B,FP16,16-bit,,WikiText2,Perplexity,9.56,,,,,False,measured,20,F Additional results - OPT Table 6,Table 6,30B | - | 16.00 | 9.56 | 10.69 | 11.84
+RP17,OPT-30B,SpQR,4-bit,,WikiText2,Perplexity,9.5,FP16,9.56,-0.06,absolute,False,measured,20,F Additional results - OPT Table 6,Table 6,SpQR | 4.26 | 9.50 | 10.73 | 11.88
+RP17,OPT-66B,FP16,16-bit,,WikiText2,Perplexity,9.33,,,,,False,measured,20,F Additional results - OPT Table 6,Table 6,66B | - | 16.00 | 9.33 | 10.28 | 11.36
+RP17,OPT-66B,SpQR,4-bit,,WikiText2,Perplexity,9.37,FP16,9.33,0.04,absolute,False,measured,20,F Additional results - OPT Table 6,Table 6,SpQR | 4.23 | 9.37 | 10.32 | 11.40
+RP17,OPT-66B,RTN,4-bit,,WikiText2,Perplexity,110,FP16,9.33,100.67,absolute,False,measured,20,F Additional results - OPT Table 6,Table 6,RTN | 4 | 110 | 249 | 274
+RP17,Falcon-7B,FP16,16-bit,,Avg zero-shot,Accuracy (%),63.878,,,,,False,measured,21,Falcon - Table 8,Table 8,7B | – | 16.00 | 67.32 | 79.49 | 57.77 | 74.71 | 40.10 | 63.878
+RP17,Falcon-7B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),63.262,FP16,63.878,-0.616,absolute,False,measured,21,Falcon - Table 8,Table 8,SpQR | 4.44 | 67.09 | 79.16 | 57.21 | 73.86 | 38.99 | 63.262
+RP17,Falcon-7B,RTN,4-bit,,Avg zero-shot,Accuracy (%),59.426,FP16,63.878,-4.452,absolute,False,measured,21,Falcon - Table 8,Table 8,RTN | 4.00 | 65.51 | 77.37 | 51.86 | 68.69 | 33.7 | 59.426
+RP17,Falcon-7B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),62.76,FP16,63.878,-1.118,absolute,False,measured,21,Falcon - Table 8,Table 8,GPTQ | 4.00 | 66.38 | 79.11 | 56.68 | 73.15 | 38.48 | 62.760
+RP17,Falcon-40B,FP16,16-bit,,Avg zero-shot,Accuracy (%),71.058,,,,,False,measured,21,Falcon - Table 8,Table 8,40B | – | 16.00 | 76.62 | 82.32 | 64.06 | 82.03 | 50.26 | 71.058
+RP17,Falcon-40B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),70.986,FP16,71.058,-0.072,absolute,False,measured,21,Falcon - Table 8,Table 8,SpQR | 4.46 | 76.48 | 82.1 | 63.8 | 81.78 | 50.77 | 70.986
+RP17,Falcon-40B,RTN,4-bit,,Avg zero-shot,Accuracy (%),69.252,FP16,71.058,-1.806,absolute,False,measured,21,Falcon - Table 8,Table 8,RTN | 4.00 | 75.69 | 80.30 | 60.52 | 79.92 | 49.83 | 69.252
+RP17,Falcon-40B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),70.212,FP16,71.058,-0.846,absolute,False,measured,21,Falcon - Table 8,Table 8,GPTQ | 4.00 | 75.93 | 81.23 | 63.05 | 80.85 | 50.00 | 70.212

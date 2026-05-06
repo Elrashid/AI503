@@ -1189,5 +1189,3795 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Performance retention vs FP16",
+        "value": "no degradation",
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": 0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we show empirically it is possible to perform inference in LLMs with up to 175B parameters without any performance degradation",
+        "bbox": [
+          141.64453125,
+          316.3083801269531,
+          469.7928771972656,
+          522.7860717773438
+        ],
+        "block_id": "/page/0/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "N/A",
+        "metric": "Memory reduction factor",
+        "value": 1.96,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.96,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3 Int8 Matrix Multiplication at Scale",
+        "quote": "for BLOOM-176B, we reduce the memory footprint of the model by 1.96x",
+        "bbox": [
+          106.5,
+          451.6875,
+          505.5,
+          516.0
+        ],
+        "block_id": "/page/3/Text/10",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-LM",
+        "method": "FP16 (outliers zeroed)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity degradation (%)",
+        "value": "600-1000%",
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "Setting these outlier feature dimensions to zero decreases top-1 attention softmax probability mass by more than 20% and degrades validation perplexity by 600-1000%",
+        "bbox": [
+          106.98046875,
+          475.6640625,
+          505.7408142089844,
+          542.60107421875
+        ],
+        "block_id": "/page/1/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-LM",
+        "method": "FP16 (random feats zeroed)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity degradation (%)",
+        "value": 0.1,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": 0.1,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "removing the same amount of random features decreases the probability by a maximum of 0.3% and degrades perplexity by about 0.1%",
+        "bbox": [
+          106.98046875,
+          475.6640625,
+          505.7408142089844,
+          542.60107421875
+        ],
+        "block_id": "/page/1/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 25.65,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "32-bit Float | 25.65 | 15.91 | 14.43 | 13.30 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 15.91,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "32-bit Float | 25.65 | 15.91 | 14.43 | 13.30 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "32-bit Float | 25.65 | 15.91 | 14.43 | 13.30 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "32-bit Float | 25.65 | 15.91 | 14.43 | 13.30 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "32-bit Float | 25.65 | 15.91 | 14.43 | 13.30 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "absmax",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 87.76,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 62.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax | 87.76 | 16.55 | 15.11 | 14.59 | 19.08",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "absmax",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.55,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax | 87.76 | 16.55 | 15.11 | 14.59 | 19.08",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "absmax",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 15.11,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax | 87.76 | 16.55 | 15.11 | 14.59 | 19.08",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "absmax",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.59,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": 1.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax | 87.76 | 16.55 | 15.11 | 14.59 | 19.08",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "absmax",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 19.08,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 6.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax | 87.76 | 16.55 | 15.11 | 14.59 | 19.08",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "zeropoint",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 56.66,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 31.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint | 56.66 | 16.24 | 14.76 | 13.49 | 13.94",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "zeropoint",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.24,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint | 56.66 | 16.24 | 14.76 | 13.49 | 13.94",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "zeropoint",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.76,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint | 56.66 | 16.24 | 14.76 | 13.49 | 13.94",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "zeropoint",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.49,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint | 56.66 | 16.24 | 14.76 | 13.49 | 13.94",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "zeropoint",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.94,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 1.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint | 56.66 | 16.24 | 14.76 | 13.49 | 13.94",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "absmax row-wise",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 30.93,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 5.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise | 30.93 | 17.08 | 15.24 | 14.13 | 16.49",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "absmax row-wise",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 17.08,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 1.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise | 30.93 | 17.08 | 15.24 | 14.13 | 16.49",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "absmax row-wise",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 15.24,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise | 30.93 | 17.08 | 15.24 | 14.13 | 16.49",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "absmax row-wise",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.13,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": 0.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise | 30.93 | 17.08 | 15.24 | 14.13 | 16.49",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "absmax row-wise",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.49,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 4.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise | 30.93 | 17.08 | 15.24 | 14.13 | 16.49",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "absmax vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 35.84,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 10.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax vector-wise | 35.84 | 16.82 | 14.98 | 14.13 | 16.48",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "absmax vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.82,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax vector-wise | 35.84 | 16.82 | 14.98 | 14.13 | 16.48",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "absmax vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.98,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax vector-wise | 35.84 | 16.82 | 14.98 | 14.13 | 16.48",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "absmax vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.13,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": 0.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax vector-wise | 35.84 | 16.82 | 14.98 | 14.13 | 16.48",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "absmax vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.48,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 4.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax vector-wise | 35.84 | 16.82 | 14.98 | 14.13 | 16.48",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "zeropoint vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 25.72,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint vector-wise | 25.72 | 15.94 | 14.36 | 13.38 | 13.47",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "zeropoint vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 15.94,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint vector-wise | 25.72 | 15.94 | 14.36 | 13.38 | 13.47",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "zeropoint vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.36,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint vector-wise | 25.72 | 15.94 | 14.36 | 13.38 | 13.47",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "zeropoint vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.38,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint vector-wise | 25.72 | 15.94 | 14.36 | 13.38 | 13.47",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "zeropoint vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.47,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 1.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 zeropoint vector-wise | 25.72 | 15.94 | 14.36 | 13.38 | 13.47",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "absmax row-wise + decomposition",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 30.76,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 5.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise + decomposition | 30.76 | 16.19 | 14.65 | 13.25 | 12.46",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "absmax row-wise + decomposition",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.19,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise + decomposition | 30.76 | 16.19 | 14.65 | 13.25 | 12.46",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "absmax row-wise + decomposition",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.65,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise + decomposition | 30.76 | 16.19 | 14.65 | 13.25 | 12.46",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "absmax row-wise + decomposition",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.25,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": -0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise + decomposition | 30.76 | 16.19 | 14.65 | 13.25 | 12.46",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "absmax row-wise + decomposition",
+        "bit_width": "8-bit",
+        "group_size": "per-row",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.46,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Int8 absmax row-wise + decomposition | 30.76 | 16.19 | 14.65 | 13.25 | 12.46",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "Absmax LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 25.83,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Absmax LLM.int8() (vector-wise + decomp) | 25.83 | 15.93 | 14.44 | 13.24 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "Absmax LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 15.93,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Absmax LLM.int8() (vector-wise + decomp) | 25.83 | 15.93 | 14.44 | 13.24 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "Absmax LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.44,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Absmax LLM.int8() (vector-wise + decomp) | 25.83 | 15.93 | 14.44 | 13.24 | 12.45",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "Absmax LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.24,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Absmax LLM.int8() (vector-wise + decomp) | 25.83 | 15.93 | 14.44 | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "Absmax LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.45,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Absmax LLM.int8() (vector-wise + decomp) | 25.83 | 15.93 | 14.44 | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-125M",
+        "method": "Zeropoint LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 25.69,
+        "baseline_label": "FP32",
+        "baseline_value": 25.65,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Zeropoint LLM.int8() (vector-wise + decomp) | **25.69** | **15.92** | **14.43** | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.3B",
+        "method": "Zeropoint LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 15.92,
+        "baseline_label": "FP32",
+        "baseline_value": 15.91,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Zeropoint LLM.int8() (vector-wise + decomp) | **25.69** | **15.92** | **14.43** | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-2.7B",
+        "method": "Zeropoint LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.43,
+        "baseline_label": "FP32",
+        "baseline_value": 14.43,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Zeropoint LLM.int8() (vector-wise + decomp) | **25.69** | **15.92** | **14.43** | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-6.7B",
+        "method": "Zeropoint LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.24,
+        "baseline_label": "FP32",
+        "baseline_value": 13.3,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Zeropoint LLM.int8() (vector-wise + decomp) | **25.69** | **15.92** | **14.43** | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-13B",
+        "method": "Zeropoint LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.45,
+        "baseline_label": "FP32",
+        "baseline_value": 12.45,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "3.4 Main Results",
+        "quote": "Zeropoint LLM.int8() (vector-wise + decomp) | **25.69** | **15.92** | **14.43** | **13.24** | **12.45**",
+        "bbox": [
+          116.435390625,
+          144.485859375,
+          493.173984375,
+          277.811015625
+        ],
+        "block_id": "/page/5/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Small (768)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.99,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.01,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Medium (1024)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.08,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.08,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Large (1536)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.43,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.43,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 XL (2048)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.61,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.61,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 2.7B (2560)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.63,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.63,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 6.7B (4096)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.67,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.67,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 13B (5140)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 2.13,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.13,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B (12288)",
+        "method": "Int8 without overhead",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 2.29,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.29,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Int8 without overhead | 0.99x | 1.08x | 1.43x | 1.61x | 1.63x | 1.67x | 2.13x | 2.29x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Small (768)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.25,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.75,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Medium (1024)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.24,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.76,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Large (1536)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.36,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.64,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 XL (2048)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.45,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.55,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 2.7B (2560)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.53,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.47,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 6.7B (4096)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.7,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.3,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 13B (5140)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.96,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.04,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B (12288)",
+        "method": "Absmax PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.5,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Absmax PyTorch+NVIDIA | 0.25x | 0.24x | 0.36x | 0.45x | 0.53x | 0.70x | 0.96x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Small (768)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.21,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.79,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Medium (1024)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.22,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.78,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Large (1536)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.33,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.67,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 XL (2048)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.41,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.59,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 2.7B (2560)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.5,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 6.7B (4096)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.65,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.35,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 13B (5140)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.91,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.09,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B (12288)",
+        "method": "Vector-wise PyTorch+NVIDIA",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.5,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise PyTorch+NVIDIA | 0.21x | 0.22x | 0.33x | 0.41x | 0.50x | 0.65x | 0.91x | 1.50x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Small (768)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.43,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.57,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Medium (1024)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.49,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.51,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Large (1536)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.74,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.26,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 XL (2048)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.91,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.09,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 2.7B (2560)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.94,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.06,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 6.7B (4096)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.18,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.18,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 13B (5140)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.59,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.59,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B (12288)",
+        "method": "vector-wise (custom CUDA)",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 2.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "Vector-wise | **0.43x** | **0.49x** | **0.74x** | **0.91x** | **0.94x** | **1.18x** | **1.59x** | **2.00x**",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Small (768)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.14,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.86,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Medium (1024)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.8,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 Large (1536)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.36,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.64,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 XL (2048)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.51,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.49,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 2.7B (2560)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.64,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.36,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 6.7B (4096)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 0.86,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.14,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 13B (5140)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.22,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.22,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B (12288)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "synthetic matmul",
+        "metric": "Speedup over FP16",
+        "value": 1.81,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.81,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.1 Matrix Multiplication benchmarks",
+        "quote": "LLM.int8() (vector-wise+decomp) | 0.14x | 0.20x | 0.36x | 0.51x | 0.64x | 0.86x | 1.22x | 1.81x",
+        "bbox": [
+          104.23125,
+          133.301953125,
+          506.5734375,
+          224.026171875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "BF16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "8xA100 80GB",
+        "metric": "Latency (ms/token)",
+        "value": 239,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "bfloat16 baseline | 8xA100 80GB | **239** | **32** | 9.94",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "BF16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "8xA100 80GB (batch=8)",
+        "metric": "Latency (ms/token)",
+        "value": 32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "bfloat16 baseline | 8xA100 80GB | **239** | **32** | 9.94",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "BF16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "8xA100 80GB (batch=32)",
+        "metric": "Latency (ms/token)",
+        "value": 9.94,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "bfloat16 baseline | 8xA100 80GB | **239** | **32** | 9.94",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "8xA100 80GB",
+        "metric": "Latency (ms/token)",
+        "value": 253,
+        "baseline_label": "BF16",
+        "baseline_value": 239,
+        "delta": 14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "LLM.int8() | 8xA100 80GB | 253 | 34 | 10.44",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "8xA100 80GB (batch=8)",
+        "metric": "Latency (ms/token)",
+        "value": 34,
+        "baseline_label": "BF16",
+        "baseline_value": 32,
+        "delta": 2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "LLM.int8() | 8xA100 80GB | 253 | 34 | 10.44",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "8xA100 80GB (batch=32)",
+        "metric": "Latency (ms/token)",
+        "value": 10.44,
+        "baseline_label": "BF16",
+        "baseline_value": 9.94,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "LLM.int8() | 8xA100 80GB | 253 | 34 | 10.44",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "4xA100 80GB",
+        "metric": "Latency (ms/token)",
+        "value": 246,
+        "baseline_label": "BF16",
+        "baseline_value": 239,
+        "delta": 7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "4xA100 80GB | 246 | 33 | 9.40",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "4xA100 80GB (batch=8)",
+        "metric": "Latency (ms/token)",
+        "value": 33,
+        "baseline_label": "BF16",
+        "baseline_value": 32,
+        "delta": 1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "4xA100 80GB | 246 | 33 | 9.40",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "4xA100 80GB (batch=32)",
+        "metric": "Latency (ms/token)",
+        "value": 9.4,
+        "baseline_label": "BF16",
+        "baseline_value": 9.94,
+        "delta": -0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "4xA100 80GB | 246 | 33 | 9.40",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "3xA100 80GB",
+        "metric": "Latency (ms/token)",
+        "value": 247,
+        "baseline_label": "BF16",
+        "baseline_value": 239,
+        "delta": 8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "3xA100 80GB | 247 | 33 | **9.11**",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "3xA100 80GB (batch=8)",
+        "metric": "Latency (ms/token)",
+        "value": 33,
+        "baseline_label": "BF16",
+        "baseline_value": 32,
+        "delta": 1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "3xA100 80GB | 247 | 33 | **9.11**",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "3xA100 80GB (batch=32)",
+        "metric": "Latency (ms/token)",
+        "value": 9.11,
+        "baseline_label": "BF16",
+        "baseline_value": 9.94,
+        "delta": -0.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D.2 End-to-end benchmarks",
+        "quote": "3xA100 80GB | 247 | 33 | **9.11**",
+        "bbox": [
+          186.8213671875,
+          460.682578125,
+          425.1786328125,
+          529.317421875
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 16.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M |  |  |  | 0% | 16.74",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 16.77,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ |  |  | 0% | 16.77",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 16.83,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓. |  | 0% | 16.83",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear+decomp 2%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 16.78,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓ |  | 2% | 16.78",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear+decomp 5%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 16.77,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓ |  | 5% | 16.77",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear+decomp 10%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 16.8,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓ |  | 10% | 16.80",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear+Attn+decomp 2%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 24.33,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 7.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓ | ✓ | 2% | 24.33",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear+Attn+decomp 5%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 20.0,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 3.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓ | ✓ | 5% | 20.00",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-209M",
+        "method": "8-bit FFN+Linear+Attn+decomp 10%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 19.0,
+        "baseline_label": "FP32",
+        "baseline_value": 16.74,
+        "delta": 2.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "209M | ✓ | ✓ | ✓ | 10% | 19.00",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.1B",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 9.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "1.1B |  |  |  | 0% | 9.99",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.1B",
+        "method": "8-bit FFN",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 9.93,
+        "baseline_label": "FP32",
+        "baseline_value": 9.99,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "1.1B | ✓ |  |  | 0% | 9.93",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.1B",
+        "method": "8-bit FFN+Linear",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 10.52,
+        "baseline_label": "FP32",
+        "baseline_value": 9.99,
+        "delta": 0.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "1.1B | ✓ | ✓ |  | 0% | 10.52",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-1.1B",
+        "method": "8-bit FFN+Linear+decomp 1%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "RoBERTa corpus (LM)",
+        "metric": "Perplexity",
+        "value": 10.41,
+        "baseline_label": "FP32",
+        "baseline_value": 9.99,
+        "delta": 0.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "E Training Results",
+        "quote": "1.1B | ✓ | ✓ |  | 1% | 10.41",
+        "bbox": [
+          183.48046875,
+          157.0958203125,
+          427.32421875,
+          345.3455859375
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-NMT",
+        "method": "FP32",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "WMT14+WMT16",
+        "metric": "BLEU",
+        "value": 28.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F Fine-tuning Results",
+        "quote": "|  |  | 0% | 28.9",
+        "bbox": [
+          221.909765625,
+          616.592109375,
+          386.504296875,
+          718.361015625
+        ],
+        "block_id": "/page/18/Table/7",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-NMT",
+        "method": "8-bit FFN",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "WMT14+WMT16",
+        "metric": "BLEU",
+        "value": 28.8,
+        "baseline_label": "FP32",
+        "baseline_value": 28.9,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark |  | 0% | 28.8",
+        "bbox": [
+          221.909765625,
+          616.592109375,
+          386.504296875,
+          718.361015625
+        ],
+        "block_id": "/page/18/Table/7",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-NMT",
+        "method": "8-bit FFN+Linear+decomp 2%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "WMT14+WMT16",
+        "metric": "BLEU",
+        "value": 28.0,
+        "baseline_label": "FP32",
+        "baseline_value": 28.9,
+        "delta": -0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 2% | 28.0",
+        "bbox": [
+          221.909765625,
+          616.592109375,
+          386.504296875,
+          718.361015625
+        ],
+        "block_id": "/page/18/Table/7",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-NMT",
+        "method": "8-bit FFN+Linear+decomp 5%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "WMT14+WMT16",
+        "metric": "BLEU",
+        "value": 27.6,
+        "baseline_label": "FP32",
+        "baseline_value": 28.9,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 5% | 27.6",
+        "bbox": [
+          221.909765625,
+          616.592109375,
+          386.504296875,
+          718.361015625
+        ],
+        "block_id": "/page/18/Table/7",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Transformer-NMT",
+        "method": "8-bit FFN+Linear+decomp 10%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "WMT14+WMT16",
+        "metric": "BLEU",
+        "value": 27.5,
+        "baseline_label": "FP32",
+        "baseline_value": 28.9,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 10% | 27.5",
+        "bbox": [
+          221.909765625,
+          616.592109375,
+          386.504296875,
+          718.361015625
+        ],
+        "block_id": "/page/18/Table/7",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "FP32 Replication",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 88.83,
+        "baseline_label": "FP32 Baseline",
+        "baseline_value": 88.61,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "32-bit Replication | 90.3 | 94.8 | 92.3 | 85.4 | 96.6 | 90.4 | 68.8 | 92.0 | 88.83",
+        "bbox": [
+          102.414375,
+          204.504609375,
+          507.195,
+          290.495390625
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "vector-wise",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 88.81,
+        "baseline_label": "FP32 Baseline",
+        "baseline_value": 88.61,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "Vector-wise | **90.2** | **94.7** | **92.3** | 85.4 | **96.4** | **91.0** | **68.6** | **91.9** | **88.81**",
+        "bbox": [
+          102.414375,
+          204.504609375,
+          507.195,
+          290.495390625
+        ],
+        "block_id": "/page/19/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "8-bit FFN",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 88.8,
+        "baseline_label": "FP32",
+        "baseline_value": 88.6,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark |  | 0% | 90.2 | 94.7 | 92.3 | 85.4 | 96.4 | 91.0 | 68.6 | 91.9 | 88.8",
+        "bbox": [
+          103.023984375,
+          535.095,
+          506.585390625,
+          626.608125
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "8-bit FFN+Linear",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 87.7,
+        "baseline_label": "FP32",
+        "baseline_value": 88.6,
+        "delta": -0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 0% | 90.2 | 94.4 | 92.2 | 84.1 | 96.2 | 89.7 | 63.6 | 91.6 | 87.7",
+        "bbox": [
+          103.023984375,
+          535.095,
+          506.585390625,
+          626.608125
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "8-bit FFN+Linear+decomp 1%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 87.9,
+        "baseline_label": "FP32",
+        "baseline_value": 88.6,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 1% | 90.0 | 94.6 | 92.2 | 83.0 | 96.2 | 89.7 | 65.8 | 91.8 | 87.9",
+        "bbox": [
+          103.023984375,
+          535.095,
+          506.585390625,
+          626.608125
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "8-bit FFN+Linear+decomp 2%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 88.7,
+        "baseline_label": "FP32",
+        "baseline_value": 88.6,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 2% | 90.0 | 94.5 | 92.2 | 85.9 | 96.7 | 90.4 | 68.0 | 91.9 | 88.7",
+        "bbox": [
+          103.023984375,
+          535.095,
+          506.585390625,
+          626.608125
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "8-bit FFN+Linear+decomp 3%",
+        "bit_width": "8-bit",
+        "group_size": "vector-wise",
+        "dataset": "GLUE",
+        "metric": "Mean Accuracy",
+        "value": 88.7,
+        "baseline_label": "FP32",
+        "baseline_value": 88.6,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Fine-tuning Results",
+        "quote": "\\checkmark | \\checkmark | 3% | 90.0 | 94.6 | 92.2 | 86.3 | 96.4 | 90.2 | 68.3 | 91.8 | 88.7",
+        "bbox": [
+          103.023984375,
+          535.095,
+          506.585390625,
+          626.608125
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 10"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 126,
+    "dropped_cited_count": 4,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

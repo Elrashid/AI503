@@ -1172,5 +1172,4455 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA-33B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Consumer GPU 24GB",
+        "metric": "Speedup over FP16",
+        "value": 1.15,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.15,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "run 33B parameter LLM on a single 24 GB consumer GPU without any performance degradation at 15% speedup",
+        "bbox": [
+          141.64453125,
+          317.25,
+          470.25,
+          545.2734375
+        ],
+        "block_id": "/page/0/Text/12",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA family",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Memory compression factor",
+        "value": 4.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "enabling memory compression gains of more than 4x",
+        "bbox": [
+          141.64453125,
+          317.25,
+          470.25,
+          545.2734375
+        ],
+        "block_id": "/page/0/Text/12",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA family",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Relative perplexity error vs FP16",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 0.0,
+        "delta": 1.0,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "achieves relative accuracy losses of less than 1% in perplexity for highly-accurate LLaMA and Falcon LLMs",
+        "bbox": [
+          141.64453125,
+          317.25,
+          470.25,
+          545.2734375
+        ],
+        "block_id": "/page/0/Text/12",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA family",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Speedup over FP16",
+        "value": 1.25,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.25,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "SpQR reduces the memory footprint of LLMs by a factor of about 3.4x or more without degradation in accuracy ... while also being 20-30% faster for LLM generation compared to 16-bit inference",
+        "bbox": [
+          106.5,
+          646.20703125,
+          506.25,
+          721.23046875
+        ],
+        "block_id": "/page/1/Text/7",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.68,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "7B | – | 16.00 | 5.68 | 7.08 | 8.80",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.08,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "7B | – | 16.00 | 5.68 | 7.08 | 8.80",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "7B | – | 16.00 | 5.68 | 7.08 | 8.80",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.73,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.63 | 5.73 | 7.13 | 8.88",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.13,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.63 | 5.73 | 7.13 | 8.88",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.88,
+        "baseline_label": "FP16",
+        "baseline_value": 8.8,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.63 | 5.73 | 7.13 | 8.88",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.43,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 6.43 | 7.93 | 10.30",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.93,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 6.43 | 7.93 | 10.30",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 10.3,
+        "baseline_label": "FP16",
+        "baseline_value": 8.8,
+        "delta": 1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 6.43 | 7.93 | 10.30",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.13,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 6.13 | 7.43 | 9.27",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.43,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 6.13 | 7.43 | 9.27",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 9.27,
+        "baseline_label": "FP16",
+        "baseline_value": 8.8,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 6.13 | 7.43 | 9.27",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.87,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.94 | 5.87 | 7.28 | 9.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.28,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.94 | 5.87 | 7.28 | 9.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 9.07,
+        "baseline_label": "FP16",
+        "baseline_value": 8.8,
+        "delta": 0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.94 | 5.87 | 7.28 | 9.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "13B | – | 16.00 | 5.09 | 6.61 | 8.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.61,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "13B | – | 16.00 | 5.09 | 6.61 | 8.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "13B | – | 16.00 | 5.09 | 6.61 | 8.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.13,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.63 | 5.13 | 6.64 | 8.13",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.64,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.63 | 5.13 | 6.64 | 8.13",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.13,
+        "baseline_label": "FP16",
+        "baseline_value": 8.07,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.63 | 5.13 | 6.64 | 8.13",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.55,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 5.55 | 6.98 | 8.65",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.98,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 5.55 | 6.98 | 8.65",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.65,
+        "baseline_label": "FP16",
+        "baseline_value": 8.07,
+        "delta": 0.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 5.55 | 6.98 | 8.65",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.4,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 5.40 | 6.84 | 8.44",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.84,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 5.40 | 6.84 | 8.44",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.44,
+        "baseline_label": "FP16",
+        "baseline_value": 8.07,
+        "delta": 0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 5.40 | 6.84 | 8.44",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.22,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.96 | 5.22 | 6.72 | 8.22",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.72,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.96 | 5.22 | 6.72 | 8.22",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.22,
+        "baseline_label": "FP16",
+        "baseline_value": 8.07,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.96 | 5.22 | 6.72 | 8.22",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "30B | – | 16.00 | 4.10 | 5.98 | 7.30",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "30B | – | 16.00 | 4.10 | 5.98 | 7.30",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "30B | – | 16.00 | 4.10 | 5.98 | 7.30",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.14,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.69 | 4.14 | 6.01 | 7.33",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.01,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.69 | 4.14 | 6.01 | 7.33",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.33,
+        "baseline_label": "FP16",
+        "baseline_value": 7.3,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.69 | 4.14 | 6.01 | 7.33",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.57,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 4.57 | 6.34 | 7.75",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.34,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 0.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 4.57 | 6.34 | 7.75",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.75,
+        "baseline_label": "FP16",
+        "baseline_value": 7.3,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 4.57 | 6.34 | 7.75",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.48,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 4.48 | 6.20 | 7.54",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.2,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 4.48 | 6.20 | 7.54",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.54,
+        "baseline_label": "FP16",
+        "baseline_value": 7.3,
+        "delta": 0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 4.48 | 6.20 | 7.54",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.25,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.89 | 4.25 | 6.08 | 7.38",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.08,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.89 | 4.25 | 6.08 | 7.38",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.38,
+        "baseline_label": "FP16",
+        "baseline_value": 7.3,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.89 | 4.25 | 6.08 | 7.38",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "65B | – | 16.00 | 3.53 | 5.62 | 6.91",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.62,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "65B | – | 16.00 | 3.53 | 5.62 | 6.91",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 6.91,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "65B | – | 16.00 | 3.53 | 5.62 | 6.91",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.57,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.71 | 3.57 | 5.64 | 6.93",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.64,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.71 | 3.57 | 5.64 | 6.93",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 6.93,
+        "baseline_label": "FP16",
+        "baseline_value": 6.91,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 4.71 | 3.57 | 5.64 | 6.93",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.87,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 3.87 | 5.85 | 7.17",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.85,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 3.87 | 5.85 | 7.17",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.17,
+        "baseline_label": "FP16",
+        "baseline_value": 6.91,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "RTN | 4 | 3.87 | 5.85 | 7.17",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.83,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 3.83 | 5.80 | 7.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.8,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 3.83 | 5.80 | 7.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.07,
+        "baseline_label": "FP16",
+        "baseline_value": 6.91,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "GPTQ | 4 | 3.83 | 5.80 | 7.07",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.68,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.90 | 3.68 | 5.70 | 6.99",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.7,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.90 | 3.68 | 5.70 | 6.99",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 6.99,
+        "baseline_label": "FP16",
+        "baseline_value": 6.91,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Experimental Validation - LLaMa",
+        "quote": "SpQR | 3.90 | 3.68 | 5.70 | 6.99",
+        "bbox": [
+          113.41125,
+          75.417890625,
+          493.8075,
+          232.410234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "- | 16.00 | 6.59 | 9.50 | 9.90",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 9.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "- | 16.00 | 6.59 | 9.50 | 9.90",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 9.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "- | 16.00 | 6.59 | 9.50 | 9.90",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.64,
+        "baseline_label": "FP16",
+        "baseline_value": 6.59,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 4.44 | 6.64 | 9.58 | 9.97",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 9.58,
+        "baseline_label": "FP16",
+        "baseline_value": 9.5,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 4.44 | 6.64 | 9.58 | 9.97",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 9.97,
+        "baseline_label": "FP16",
+        "baseline_value": 9.9,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 4.44 | 6.64 | 9.58 | 9.97",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.73,
+        "baseline_label": "FP16",
+        "baseline_value": 6.59,
+        "delta": 2.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "RTN | 4 | 8.73 | 12.56 | 13.76",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.56,
+        "baseline_label": "FP16",
+        "baseline_value": 9.5,
+        "delta": 3.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "RTN | 4 | 8.73 | 12.56 | 13.76",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 13.76,
+        "baseline_label": "FP16",
+        "baseline_value": 9.9,
+        "delta": 3.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "RTN | 4 | 8.73 | 12.56 | 13.76",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.91,
+        "baseline_label": "FP16",
+        "baseline_value": 6.59,
+        "delta": 0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "GPTQ | 4 | 6.91 | 9.93 | 10.33",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 9.93,
+        "baseline_label": "FP16",
+        "baseline_value": 9.5,
+        "delta": 0.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "GPTQ | 4 | 6.91 | 9.93 | 10.33",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 10.33,
+        "baseline_label": "FP16",
+        "baseline_value": 9.9,
+        "delta": 0.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "GPTQ | 4 | 6.91 | 9.93 | 10.33",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.74,
+        "baseline_label": "FP16",
+        "baseline_value": 6.59,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 3.92 | 6.74 | 9.70 | 19.114",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 9.7,
+        "baseline_label": "FP16",
+        "baseline_value": 9.5,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 3.92 | 6.74 | 9.70 | 19.114",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "- | 16.00 | 5.23 | 7.76 | 7.83",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.76,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "- | 16.00 | 5.23 | 7.76 | 7.83",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "- | 16.00 | 5.23 | 7.76 | 7.83",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.26,
+        "baseline_label": "FP16",
+        "baseline_value": 5.23,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 4.46 | 5.26 | 7.79 | 7.86",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.79,
+        "baseline_label": "FP16",
+        "baseline_value": 7.76,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 4.46 | 5.26 | 7.79 | 7.86",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.86,
+        "baseline_label": "FP16",
+        "baseline_value": 7.83,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 4.46 | 5.26 | 7.79 | 7.86",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.52,
+        "baseline_label": "FP16",
+        "baseline_value": 5.23,
+        "delta": 1.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "RTN | 4 | 6.52 | 9.76 | 10.63",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 9.76,
+        "baseline_label": "FP16",
+        "baseline_value": 7.76,
+        "delta": 2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "RTN | 4 | 6.52 | 9.76 | 10.63",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 10.63,
+        "baseline_label": "FP16",
+        "baseline_value": 7.83,
+        "delta": 2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "RTN | 4 | 6.52 | 9.76 | 10.63",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.36,
+        "baseline_label": "FP16",
+        "baseline_value": 5.23,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "GPTQ | 4 | 5.36 | 7.95 | 8.01",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.95,
+        "baseline_label": "FP16",
+        "baseline_value": 7.76,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "GPTQ | 4 | 5.36 | 7.95 | 8.01",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 8.01,
+        "baseline_label": "FP16",
+        "baseline_value": 7.83,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "GPTQ | 4 | 5.36 | 7.95 | 8.01",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.23,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 3.90 | 5.29 | 7.85 | 7.91",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.85,
+        "baseline_label": "FP16",
+        "baseline_value": 7.76,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 3.90 | 5.29 | 7.85 | 7.91",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Penn Treebank",
+        "metric": "Perplexity",
+        "value": 7.91,
+        "baseline_label": "FP16",
+        "baseline_value": 7.83,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5 Experimental Validation - Falcon",
+        "quote": "SpQR | 3.90 | 5.29 | 7.85 | 7.91",
+        "bbox": [
+          109.120078125,
+          77.281875,
+          500.489296875,
+          162.48375
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR (3-bit statistics, g16)",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.74,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "Falcon - Ablation Table 3",
+        "quote": "3-bit statistics | 3.74 | 5.73 | 7.02 | 3.63",
+        "bbox": [
+          107.93671875,
+          256.53375,
+          315.20390625,
+          360.669375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR (16-bit statistics, g16)",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.84,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "Falcon - Ablation Table 3",
+        "quote": "16-bit statistics | 3.84 | 5.83 | 7.12 | 3.67",
+        "bbox": [
+          107.93671875,
+          256.53375,
+          315.20390625,
+          360.669375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR (Round zero ablation)",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.75,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "Falcon - Ablation Table 3",
+        "quote": "Round zero | 3.75 | 5.76 | 7.01 | 3.63",
+        "bbox": [
+          107.93671875,
+          256.53375,
+          315.20390625,
+          360.669375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR (w/o act order)",
+        "bit_width": "3-bit",
+        "group_size": "g16",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.74,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "Falcon - Ablation Table 3",
+        "quote": "w/o act order | 3.74 | 5.76 | 7.05 | 3.63",
+        "bbox": [
+          107.93671875,
+          256.53375,
+          315.20390625,
+          360.669375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1 | OOM",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 19,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1 | OOM",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR (PyTorch sparse)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 30,
+        "baseline_label": "FP16",
+        "baseline_value": 47,
+        "delta": -17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "scratch | 47 ± 2.3 | 37 ± 0.8 | 19 ± 1.1 | OOM | 30 ± 2.2 | 24 ± 1.2 | 8.8 ± 0.4",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR (PyTorch sparse)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 24,
+        "baseline_label": "FP16",
+        "baseline_value": 37,
+        "delta": -13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "30 ± 2.2 | 24 ± 1.2 | 8.8 ± 0.4",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR (PyTorch sparse)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 8.8,
+        "baseline_label": "FP16",
+        "baseline_value": 19,
+        "delta": -10.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "30 ± 2.2 | 24 ± 1.2 | 8.8 ± 0.4",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR (optimized)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 57,
+        "baseline_label": "FP16",
+        "baseline_value": 47,
+        "delta": 10,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "**57** ± 2.4 | **44** ± 0.5 | **22** ± 0.9 | **12** ± 0.6",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR (optimized)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 44,
+        "baseline_label": "FP16",
+        "baseline_value": 37,
+        "delta": 7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "**57** ± 2.4 | **44** ± 0.5 | **22** ± 0.9 | **12** ± 0.6",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR (optimized)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100",
+        "metric": "Inference speed (tokens/s, scratch)",
+        "value": 22,
+        "baseline_label": "FP16",
+        "baseline_value": 19,
+        "delta": 3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "Falcon - Inference Time Table 4",
+        "quote": "**57** ± 2.4 | **44** ± 0.5 | **22** ± 0.9 | **12** ± 0.6",
+        "bbox": [
+          102.414375,
+          66.523359375,
+          507.195,
+          105.179765625
+        ],
+        "block_id": "/page/10/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Winogrande",
+        "metric": "Accuracy (%)",
+        "value": 67.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy (%)",
+        "value": 78.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy (%)",
+        "value": 56.41,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ARC-easy",
+        "metric": "Accuracy (%)",
+        "value": 67.38,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ARC-challenge",
+        "metric": "Accuracy (%)",
+        "value": 38.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 61.492,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "7B | – | 16.00 | 67.09 | 78.32 | 56.41 | 67.38 | 38.23 | 61.492",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 61.46,
+        "baseline_label": "FP16",
+        "baseline_value": 61.492,
+        "delta": -0.032,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 4.63 | 67.48 | 78.45 | 56.01 | 67.13 | 38.23 | 61.460",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 58.952,
+        "baseline_label": "FP16",
+        "baseline_value": 61.492,
+        "delta": -2.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "RTN | 4 | 64.72 | 76.44 | 53.49 | 63.51 | 36.60 | 58.952",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 59.564,
+        "baseline_label": "FP16",
+        "baseline_value": 61.492,
+        "delta": -1.928,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "GPTQ | 4 | 65.35 | 77.58 | 54.99 | 63.55 | 36.35 | 59.564",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 60.96,
+        "baseline_label": "FP16",
+        "baseline_value": 61.492,
+        "delta": -0.532,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 3.45 | 67.48 | 78.13 | 55.27 | 65.87 | 38.05 | 60.960",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 65.314,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "13B | – | 16.00 | 70.09 | 78.89 | 59.11 | 74.54 | 43.94 | 65.314",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 65.054,
+        "baseline_label": "FP16",
+        "baseline_value": 65.314,
+        "delta": -0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 4.63 | 69.77 | 78.94 | 59.02 | 74.37 | 43.17 | 65.054",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 64.066,
+        "baseline_label": "FP16",
+        "baseline_value": 65.314,
+        "delta": -1.248,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "RTN | 4 | 69.61 | 78.24 | 57.34 | 72.56 | 42.58 | 64.066",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 64.398,
+        "baseline_label": "FP16",
+        "baseline_value": 65.314,
+        "delta": -0.916,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "GPTQ | 4 | 69.06 | 78.40 | 58.04 | 73.23 | 43.26 | 64.398",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 64.374,
+        "baseline_label": "FP16",
+        "baseline_value": 65.314,
+        "delta": -0.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 3.45 | 68.90 | 78.73 | 58.22 | 73.27 | 42.75 | 64.374",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 67.73,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "30B | – | 16.00 | 72.93 | 80.96 | 62.66 | 75.34 | 46.76 | 67.730",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 67.934,
+        "baseline_label": "FP16",
+        "baseline_value": 67.73,
+        "delta": 0.204,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 4.69 | 72.93 | 81.01 | 62.50 | 76.05 | 47.18 | 67.934",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 64.924,
+        "baseline_label": "FP16",
+        "baseline_value": 67.73,
+        "delta": -2.806,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "RTN | 4 | 72.06 | 79.05 | 60.61 | 70.66 | 42.24 | 64.924",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 65.936,
+        "baseline_label": "FP16",
+        "baseline_value": 67.73,
+        "delta": -1.794,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "GPTQ | 4 | 72.61 | 79.92 | 61.07 | 71.8 | 44.28 | 65.936",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 67.486,
+        "baseline_label": "FP16",
+        "baseline_value": 67.73,
+        "delta": -0.244,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 3.49 | 73.32 | 80.47 | 61.96 | 74.75 | 46.93 | 67.486",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 69.03,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "65B | – | 16.00 | 77.43 | 81.50 | 63.95 | 75.17 | 47.10 | 69.030",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 68.89,
+        "baseline_label": "FP16",
+        "baseline_value": 69.03,
+        "delta": -0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 4.71 | 76.95 | 81.56 | 63.76 | 75.25 | 46.93 | 68.890",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 67.398,
+        "baseline_label": "FP16",
+        "baseline_value": 69.03,
+        "delta": -1.632,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "RTN | 4 | 75.14 | 81.45 | 62.79 | 72.64 | 44.97 | 67.398",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 68.068,
+        "baseline_label": "FP16",
+        "baseline_value": 69.03,
+        "delta": -0.962,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "GPTQ | 4 | 75.85 | 80.79 | 62.91 | 74.20 | 46.59 | 68.068",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SpQR",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 68.046,
+        "baseline_label": "FP16",
+        "baseline_value": 69.03,
+        "delta": -0.984,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G LLaMA - Table 7",
+        "quote": "SpQR | 3.52 | 76.09 | 81.18 | 63.54 | 74.37 | 45.05 | 68.046",
+        "bbox": [
+          111.8513671875,
+          112.38046875,
+          498.9533203125,
+          404.27578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 10.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "6.7B | - | 16.00 | 10.86 | 11.74 | 13.09",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 10.81,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": -0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "SpQR | 4.27 | 10.81 | 11.88 | 13.17",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 12.1,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": 1.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "RTN | 4 | 12.10 | 13.38 | 16.09",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 11.39,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": 0.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "GPTQ | 4 | 11.39 | 12.15 | 13.80",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.56,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "30B | - | 16.00 | 9.56 | 10.69 | 11.84",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.5,
+        "baseline_label": "FP16",
+        "baseline_value": 9.56,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "SpQR | 4.26 | 9.50 | 10.73 | 11.88",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.33,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "66B | - | 16.00 | 9.33 | 10.28 | 11.36",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.37,
+        "baseline_label": "FP16",
+        "baseline_value": 9.33,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "SpQR | 4.23 | 9.37 | 10.32 | 11.40",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 110,
+        "baseline_label": "FP16",
+        "baseline_value": 9.33,
+        "delta": 100.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Additional results - OPT Table 6",
+        "quote": "RTN | 4 | 110 | 249 | 274",
+        "bbox": [
+          105.2054296875,
+          320.09484375,
+          499.6226953125,
+          488.92078125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 63.878,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "7B | – | 16.00 | 67.32 | 79.49 | 57.77 | 74.71 | 40.10 | 63.878",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 63.262,
+        "baseline_label": "FP16",
+        "baseline_value": 63.878,
+        "delta": -0.616,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "SpQR | 4.44 | 67.09 | 79.16 | 57.21 | 73.86 | 38.99 | 63.262",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 59.426,
+        "baseline_label": "FP16",
+        "baseline_value": 63.878,
+        "delta": -4.452,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "RTN | 4.00 | 65.51 | 77.37 | 51.86 | 68.69 | 33.7 | 59.426",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 62.76,
+        "baseline_label": "FP16",
+        "baseline_value": 63.878,
+        "delta": -1.118,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "GPTQ | 4.00 | 66.38 | 79.11 | 56.68 | 73.15 | 38.48 | 62.760",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 71.058,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "40B | – | 16.00 | 76.62 | 82.32 | 64.06 | 82.03 | 50.26 | 71.058",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SpQR",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 70.986,
+        "baseline_label": "FP16",
+        "baseline_value": 71.058,
+        "delta": -0.072,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "SpQR | 4.46 | 76.48 | 82.1 | 63.8 | 81.78 | 50.77 | 70.986",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 69.252,
+        "baseline_label": "FP16",
+        "baseline_value": 71.058,
+        "delta": -1.806,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "RTN | 4.00 | 75.69 | 80.30 | 60.52 | 79.92 | 49.83 | 69.252",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg zero-shot",
+        "metric": "Accuracy (%)",
+        "value": 70.212,
+        "baseline_label": "FP16",
+        "baseline_value": 71.058,
+        "delta": -0.846,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "Falcon - Table 8",
+        "quote": "GPTQ | 4.00 | 75.93 | 81.23 | 63.05 | 80.85 | 50.00 | 70.212",
+        "bbox": [
+          111.57046875,
+          508.9528125,
+          496.84359375,
+          663.5784375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 8"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 148,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

@@ -1,0 +1,166 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,OpenSafetyMini (Human Eval),Safe rate (%),90.59,,,,,True,measured,5,4.3.2 Multiple-Choice Safety,Table 2,bfloat16 | FP 16 ... 90.59% | 7.36% | 0.69%
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,OpenSafetyMini (Human Eval),Unsafe rate (%),7.36,,,,,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,bfloat16 | FP 16 ... 90.59% | 7.36% | 0.69%
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,OpenSafetyMini (Human Eval),Error rate (%),0.69,,,,,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,bfloat16 | FP 16 ... 90.59% | 7.36% | 0.69%
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,OpenSafetyMini (Human Eval),Safe rate (%),58.67,FP16,90.59,-31.92,absolute,True,measured,5,4.3.2 Multiple-Choice Safety,Table 2,Abliterated | 58.67% | 37.03% | 1.53%
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,OpenSafetyMini (Human Eval),Unsafe rate (%),37.03,FP16,7.36,29.67,absolute,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,Abliterated | 58.67% | 37.03% | 1.53%
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,OpenSafetyMini (Human Eval),Error rate (%),1.53,FP16,0.69,0.84,absolute,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,Abliterated | 58.67% | 37.03% | 1.53%
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,OpenSafetyMini (Human Eval),Safe rate (%),90.75,FP16,90.59,0.16,absolute,True,measured,5,4.3.2 Multiple-Choice Safety,Table 2,int4 | QUIK | 90.75% | 7.77% | 0.52%
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,OpenSafetyMini (Human Eval),Unsafe rate (%),7.77,FP16,7.36,0.41,absolute,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,int4 | QUIK | 90.75% | 7.77% | 0.52%
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,OpenSafetyMini (Human Eval),Error rate (%),0.52,FP16,0.69,-0.17,absolute,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,int4 | QUIK | 90.75% | 7.77% | 0.52%
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,OpenSafetyMini (Human Eval),Safe rate (%),78.81,FP16,90.59,-11.78,absolute,True,measured,5,4.3.2 Multiple-Choice Safety,Table 2,int2 | QUIP# | 78.81% | 13.45% | 6.28%
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,OpenSafetyMini (Human Eval),Unsafe rate (%),13.45,FP16,7.36,6.09,absolute,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,int2 | QUIP# | 78.81% | 13.45% | 6.28%
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,OpenSafetyMini (Human Eval),Error rate (%),6.28,FP16,0.69,5.59,absolute,False,measured,5,4.3.2 Multiple-Choice Safety,Table 2,int2 | QUIP# | 78.81% | 13.45% | 6.28%
+RP50,Llama-3-8B-Instruct,STE (QAT),4-bit,,SafetyBench,Accuracy (%),71.4,FP16,73.9,-2.5,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,int4 | STE | 71.40 | 0.512
+RP50,Llama-3-8B-Instruct,STE (QAT),4-bit,,HotPotQA,In-accuracy,0.512,FP16,0.684,-0.172,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,int4 | STE | 71.40 | 0.512
+RP50,Llama-3-8B-Instruct,STE (QAT),3-bit,,SafetyBench,Accuracy (%),73.6,FP16,73.9,-0.3,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,int3 | STE | 73.60 | 0.614
+RP50,Llama-3-8B-Instruct,STE (QAT),3-bit,,HotPotQA,In-accuracy,0.614,FP16,0.684,-0.07,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,int3 | STE | 73.60 | 0.614
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),3-bit,,SafetyBench,Accuracy (%),65.6,FP16,73.9,-8.3,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,QLORA | 65.60 | 0.529
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),3-bit,,HotPotQA,In-accuracy,0.529,FP16,0.684,-0.155,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,QLORA | 65.60 | 0.529
+RP50,Llama-3-8B-Instruct,STE (QAT),2-bit,,SafetyBench,Accuracy (%),51.5,FP16,73.9,-22.4,absolute,True,measured,6,5.2 Automatic Evaluation,Table 3,int2 | STE | 51.50 | 0.390
+RP50,Llama-3-8B-Instruct,STE (QAT),2-bit,,HotPotQA,In-accuracy,0.39,FP16,0.684,-0.294,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,int2 | STE | 51.50 | 0.390
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),2-bit,,SafetyBench,Accuracy (%),36.3,FP16,73.9,-37.6,absolute,True,measured,6,5.2 Automatic Evaluation,Table 3,QLORA | 36.30 | 0.265
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),2-bit,,HotPotQA,In-accuracy,0.265,FP16,0.684,-0.419,absolute,False,measured,6,5.2 Automatic Evaluation,Table 3,QLORA | 36.30 | 0.265
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,SafetyBench,Accuracy (%),73.9,,,,,False,measured,7,6 Multiple-Choice Safety,Table 4,bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,SafetyBench,Accuracy (%),73.9,FP16,73.9,0.0,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,Abliterated | 73.90 | - | - | - | -
+RP50,Llama-3-8B-Instruct,AWQ,4-bit,,SafetyBench,Accuracy (%),72.5,FP16,73.9,-1.4,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,SafetyBench,Accuracy (%),74.6,FP16,73.9,0.7,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10
+RP50,Llama-3-8B-Instruct,QUIP#,4-bit,,SafetyBench,Accuracy (%),63.3,FP16,73.9,-10.6,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,SafetyBench,Accuracy (%),54.7,FP16,73.9,-19.2,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50
+RP50,Llama-3-8B-Instruct,AQLM,2-bit,,SafetyBench,Accuracy (%),59.8,FP16,73.9,-14.1,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,AQLM | 59.80 | 65.90 | - | 72.60 | 79.80
+RP50,Mistral-7B-Instruct-v0.2,FP16,16-bit,,SafetyBench,Accuracy (%),68.7,,,,,False,measured,7,6 Multiple-Choice Safety,Table 4,bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60
+RP50,Mistral-7B-Instruct-v0.2,AWQ,4-bit,,SafetyBench,Accuracy (%),68.8,FP16,68.7,0.1,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80
+RP50,Mistral-7B-Instruct-v0.2,QUIK,4-bit,,SafetyBench,Accuracy (%),62.2,FP16,68.7,-6.5,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,4-bit,,SafetyBench,Accuracy (%),65.9,FP16,68.7,-2.8,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,2-bit,,SafetyBench,Accuracy (%),60.6,FP16,68.7,-8.1,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50
+RP50,Mistral-7B-Instruct-v0.2,AQLM,2-bit,,SafetyBench,Accuracy (%),65.9,FP16,68.7,-2.8,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,AQLM | 59.80 | 65.90 | - | 72.60 | 79.80
+RP50,Qwen2.5-1.5B-Instruct,FP16,16-bit,,SafetyBench,Accuracy (%),66.7,,,,,False,measured,7,6 Multiple-Choice Safety,Table 4,bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60
+RP50,Qwen2.5-1.5B-Instruct,AWQ,4-bit,,SafetyBench,Accuracy (%),63.6,FP16,66.7,-3.1,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80
+RP50,Qwen2.5-1.5B-Instruct,QUIK,4-bit,,SafetyBench,Accuracy (%),61.7,FP16,66.7,-5.0,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10
+RP50,Qwen2.5-7B-Instruct,FP16,16-bit,,SafetyBench,Accuracy (%),79.9,,,,,False,measured,7,6 Multiple-Choice Safety,Table 4,bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60
+RP50,Qwen2.5-7B-Instruct,AWQ,4-bit,,SafetyBench,Accuracy (%),77.1,FP16,79.9,-2.8,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80
+RP50,Qwen2.5-7B-Instruct,QUIK,4-bit,,SafetyBench,Accuracy (%),80.6,FP16,79.9,0.7,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10
+RP50,Qwen2.5-7B-Instruct,QUIP#,4-bit,,SafetyBench,Accuracy (%),73.2,FP16,79.9,-6.7,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50
+RP50,Qwen2.5-7B-Instruct,QUIP#,2-bit,,SafetyBench,Accuracy (%),42.1,FP16,79.9,-37.8,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50
+RP50,Qwen2.5-7B-Instruct,AQLM,2-bit,,SafetyBench,Accuracy (%),72.6,FP16,79.9,-7.3,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,AQLM | 59.80 | 65.90 | - | 72.60 | 79.80
+RP50,Qwen2.5-14B-Instruct,FP16,16-bit,,SafetyBench,Accuracy (%),83.6,,,,,False,measured,7,6 Multiple-Choice Safety,Table 4,bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60
+RP50,Qwen2.5-14B-Instruct,AWQ,4-bit,,SafetyBench,Accuracy (%),81.8,FP16,83.6,-1.8,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80
+RP50,Qwen2.5-14B-Instruct,QUIK,4-bit,,SafetyBench,Accuracy (%),83.1,FP16,83.6,-0.5,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10
+RP50,Qwen2.5-14B-Instruct,QUIP#,4-bit,,SafetyBench,Accuracy (%),77.5,FP16,83.6,-6.1,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50
+RP50,Qwen2.5-14B-Instruct,QUIP#,2-bit,,SafetyBench,Accuracy (%),45.5,FP16,83.6,-38.1,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50
+RP50,Qwen2.5-14B-Instruct,AQLM,2-bit,,SafetyBench,Accuracy (%),79.8,FP16,83.6,-3.8,absolute,False,measured,7,6 Multiple-Choice Safety,Table 4,AQLM | 59.80 | 65.90 | - | 72.60 | 79.80
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,HotPotQA,In-accuracy,0.684,,,,,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,HotPotQA,In-accuracy,0.587,FP16,0.684,-0.097,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,Abliterated | 0.587 | - | - | - | -
+RP50,Llama-3-8B-Instruct,AWQ,4-bit,,HotPotQA,In-accuracy,0.672,FP16,0.684,-0.012,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,HotPotQA,In-accuracy,0.655,FP16,0.684,-0.029,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798
+RP50,Llama-3-8B-Instruct,QUIP#,4-bit,,HotPotQA,In-accuracy,0.666,FP16,0.684,-0.018,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,HotPotQA,In-accuracy,0.617,FP16,0.684,-0.067,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743
+RP50,Llama-3-8B-Instruct,AQLM,2-bit,,HotPotQA,In-accuracy,0.653,FP16,0.684,-0.031,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,AQLM | 0.653 | 0.679 | - | 0.734 | 0.785
+RP50,Mistral-7B-Instruct-v0.2,FP16,16-bit,,HotPotQA,In-accuracy,0.718,,,,,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799
+RP50,Mistral-7B-Instruct-v0.2,AWQ,4-bit,,HotPotQA,In-accuracy,0.708,FP16,0.718,-0.01,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785
+RP50,Mistral-7B-Instruct-v0.2,QUIK,4-bit,,HotPotQA,In-accuracy,0.519,FP16,0.718,-0.199,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,4-bit,,HotPotQA,In-accuracy,0.698,FP16,0.718,-0.02,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,2-bit,,HotPotQA,In-accuracy,0.686,FP16,0.718,-0.032,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743
+RP50,Mistral-7B-Instruct-v0.2,AQLM,2-bit,,HotPotQA,In-accuracy,0.679,FP16,0.718,-0.039,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,AQLM | 0.653 | 0.679 | - | 0.734 | 0.785
+RP50,Qwen2.5-1.5B-Instruct,FP16,16-bit,,HotPotQA,In-accuracy,0.558,,,,,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799
+RP50,Qwen2.5-1.5B-Instruct,AWQ,4-bit,,HotPotQA,In-accuracy,0.549,FP16,0.558,-0.009,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785
+RP50,Qwen2.5-1.5B-Instruct,QUIK,4-bit,,HotPotQA,In-accuracy,0.583,FP16,0.558,0.025,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798
+RP50,Qwen2.5-1.5B-Instruct,QUIP#,4-bit,,HotPotQA,In-accuracy,0.416,FP16,0.558,-0.142,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764
+RP50,Qwen2.5-7B-Instruct,FP16,16-bit,,HotPotQA,In-accuracy,0.753,,,,,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799
+RP50,Qwen2.5-7B-Instruct,AWQ,4-bit,,HotPotQA,In-accuracy,0.743,FP16,0.753,-0.01,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785
+RP50,Qwen2.5-7B-Instruct,QUIK,4-bit,,HotPotQA,In-accuracy,0.73,FP16,0.753,-0.023,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798
+RP50,Qwen2.5-7B-Instruct,QUIP#,4-bit,,HotPotQA,In-accuracy,0.661,FP16,0.753,-0.092,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764
+RP50,Qwen2.5-7B-Instruct,QUIP#,2-bit,,HotPotQA,In-accuracy,0.611,FP16,0.753,-0.142,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743
+RP50,Qwen2.5-7B-Instruct,AQLM,2-bit,,HotPotQA,In-accuracy,0.734,FP16,0.753,-0.019,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,AQLM | 0.653 | 0.679 | - | 0.734 | 0.785
+RP50,Qwen2.5-14B-Instruct,FP16,16-bit,,HotPotQA,In-accuracy,0.799,,,,,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799
+RP50,Qwen2.5-14B-Instruct,AWQ,4-bit,,HotPotQA,In-accuracy,0.785,FP16,0.799,-0.014,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785
+RP50,Qwen2.5-14B-Instruct,QUIK,4-bit,,HotPotQA,In-accuracy,0.798,FP16,0.799,-0.001,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798
+RP50,Qwen2.5-14B-Instruct,QUIP#,4-bit,,HotPotQA,In-accuracy,0.764,FP16,0.799,-0.035,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764
+RP50,Qwen2.5-14B-Instruct,QUIP#,2-bit,,HotPotQA,In-accuracy,0.743,FP16,0.799,-0.056,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743
+RP50,Qwen2.5-14B-Instruct,AQLM,2-bit,,HotPotQA,In-accuracy,0.785,FP16,0.799,-0.014,absolute,False,measured,8,Limitations of Closed-ended Safety Evaluation,Table 5,AQLM | 0.653 | 0.679 | - | 0.734 | 0.785
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,HotPotQA,AlignScore,0.588,,,,,False,measured,20,F.2 HotPotQA,Table 7,bfloat16 | FP 16 ... | bfloat16 | FP 16 | 0.588 | 0.684
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,HotPotQA,AlignScore,0.444,FP16,0.588,-0.144,absolute,False,measured,20,F.2 HotPotQA,Table 7,Abliterated | 0.444 | 0.587
+RP50,Llama-3-8B-Instruct,AWQ,4-bit,,HotPotQA,AlignScore,0.599,FP16,0.588,0.011,absolute,False,measured,20,F.2 HotPotQA,Table 7,int4 | AWQ | 0.599 | 0.672
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,HotPotQA,AlignScore,0.55,FP16,0.588,-0.038,absolute,False,measured,20,F.2 HotPotQA,Table 7,QUIK | 0.550 | 0.655
+RP50,Llama-3-8B-Instruct,QUIP#,4-bit,,HotPotQA,AlignScore,0.564,FP16,0.588,-0.024,absolute,False,measured,20,F.2 HotPotQA,Table 7,QUIP# | 0.564 | 0.666
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,HotPotQA,AlignScore,0.511,FP16,0.588,-0.077,absolute,False,measured,20,F.2 HotPotQA,Table 7,int2 | QUIP# | 0.511 | 0.617
+RP50,Llama-3-8B-Instruct,AQLM,2-bit,,HotPotQA,AlignScore,0.547,FP16,0.588,-0.041,absolute,False,measured,20,F.2 HotPotQA,Table 7,AQLM | 0.547 | 0.653
+RP50,Mistral-7B-Instruct-v0.2,FP16,16-bit,,HotPotQA,AlignScore,0.549,,,,,False,measured,20,F.2 HotPotQA,Table 7,bfloat16 | FP 16 | 0.549 | 0.718
+RP50,Mistral-7B-Instruct-v0.2,AWQ,4-bit,,HotPotQA,AlignScore,0.555,FP16,0.549,0.006,absolute,False,measured,20,F.2 HotPotQA,Table 7,int4 | AWQ | 0.555 | 0.708
+RP50,Mistral-7B-Instruct-v0.2,QUIK,4-bit,,HotPotQA,AlignScore,0.537,FP16,0.549,-0.012,absolute,False,measured,20,F.2 HotPotQA,Table 7,QUIK | 0.537 | 0.519
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,4-bit,,HotPotQA,AlignScore,0.54,FP16,0.549,-0.009,absolute,False,measured,20,F.2 HotPotQA,Table 7,QUIP# | 0.540 | 0.698
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,2-bit,,HotPotQA,AlignScore,0.543,FP16,0.549,-0.006,absolute,False,measured,20,F.2 HotPotQA,Table 7,int2 | QUIP# | 0.543 | 0.686
+RP50,Mistral-7B-Instruct-v0.2,AQLM,2-bit,,HotPotQA,AlignScore,0.56,FP16,0.549,0.011,absolute,False,measured,20,F.2 HotPotQA,Table 7,AQLM | 0.560 | 0.679
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),93.75,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 93.75 | 93.06
+RP50,Llama-3-8B-Instruct,FP16,16-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),93.06,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 93.75 | 93.06
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),83.32,FP16,93.75,-10.43,absolute,False,measured,22,F.2 HotPotQA,Table 9,Abliterated | 83.32 | 63.26 | -24.08%
+RP50,Llama-3-8B-Instruct-Abliterated,FP16,16-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),63.26,FP16,93.06,-29.8,absolute,False,measured,22,F.2 HotPotQA,Table 9,Abliterated | 83.32 | 63.26 | -24.08%
+RP50,Llama-3-8B-Instruct,AWQ,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),93.18,FP16,93.75,-0.57,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 93.18 | 89.50 | -3.94%
+RP50,Llama-3-8B-Instruct,AWQ,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),89.5,FP16,93.06,-3.56,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 93.18 | 89.50 | -3.94%
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),93.21,FP16,93.75,-0.54,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 93.21 | 93.25 | +0.04%
+RP50,Llama-3-8B-Instruct,QUIK,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),93.25,FP16,93.06,0.19,absolute,True,measured,22,F.2 HotPotQA,Table 9,QUIK | 93.21 | 93.25 | +0.04%
+RP50,Llama-3-8B-Instruct,QUIP#,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),89.25,FP16,93.75,-4.5,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 89.25 | 84.44 | -5.39%
+RP50,Llama-3-8B-Instruct,QUIP#,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),84.44,FP16,93.06,-8.62,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 89.25 | 84.44 | -5.39%
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),85.07,FP16,93.75,-8.68,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 85.07 | 84.25 | -0.96%
+RP50,Llama-3-8B-Instruct,QUIP#,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),84.25,FP16,93.06,-8.81,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 85.07 | 84.25 | -0.96%
+RP50,Llama-3-8B-Instruct,AQLM,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),91.5,FP16,93.75,-2.25,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 91.50 | 89.03 | -2.69%
+RP50,Llama-3-8B-Instruct,AQLM,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),89.03,FP16,93.06,-4.03,absolute,True,measured,22,F.2 HotPotQA,Table 9,AQLM | 91.50 | 89.03 | -2.69%
+RP50,Mistral-7B-Instruct-v0.2,FP16,16-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),91.07,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 91.07 | 84.82
+RP50,Mistral-7B-Instruct-v0.2,FP16,16-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),84.82,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 91.07 | 84.82
+RP50,Mistral-7B-Instruct-v0.2,AWQ,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),89.89,FP16,91.07,-1.18,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 89.89 | 83.13 | -7.52%
+RP50,Mistral-7B-Instruct-v0.2,AWQ,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),83.13,FP16,84.82,-1.69,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 89.89 | 83.13 | -7.52%
+RP50,Mistral-7B-Instruct-v0.2,QUIK,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),83.21,FP16,91.07,-7.86,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 83.21 | 76.38 | -8.21%
+RP50,Mistral-7B-Instruct-v0.2,QUIK,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),76.38,FP16,84.82,-8.44,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 83.21 | 76.38 | -8.21%
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),89.79,FP16,91.07,-1.28,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 89.79 | 79.48 | -11.48%
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),79.48,FP16,84.82,-5.34,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 89.79 | 79.48 | -11.48%
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),83.04,FP16,91.07,-8.03,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 83.04 | 70.10 | -15.57%
+RP50,Mistral-7B-Instruct-v0.2,QUIP#,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),70.1,FP16,84.82,-14.72,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 83.04 | 70.10 | -15.57%
+RP50,Mistral-7B-Instruct-v0.2,AQLM,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),87.54,FP16,91.07,-3.53,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 87.54 | 77.88 | -11.03%
+RP50,Mistral-7B-Instruct-v0.2,AQLM,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),77.88,FP16,84.82,-6.94,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 87.54 | 77.88 | -11.03%
+RP50,Qwen2.5-1.5B-Instruct,FP16,16-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),85.96,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 85.96 | 83.13
+RP50,Qwen2.5-1.5B-Instruct,FP16,16-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),83.13,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 85.96 | 83.13
+RP50,Qwen2.5-1.5B-Instruct,AWQ,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),86.18,FP16,85.96,0.22,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 86.18 | 84.35 | -2.12%
+RP50,Qwen2.5-1.5B-Instruct,AWQ,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),84.35,FP16,83.13,1.22,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 86.18 | 84.35 | -2.12%
+RP50,Qwen2.5-1.5B-Instruct,QUIK,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),86.86,FP16,85.96,0.9,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 86.86 | 85.27 | -1.83%
+RP50,Qwen2.5-1.5B-Instruct,QUIK,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),85.27,FP16,83.13,2.14,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 86.86 | 85.27 | -1.83%
+RP50,Qwen2.5-1.5B-Instruct,QUIP#,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),70.5,FP16,85.96,-15.46,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 70.50 | 69.42 | -1.53%
+RP50,Qwen2.5-1.5B-Instruct,QUIP#,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),69.42,FP16,83.13,-13.71,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 70.50 | 69.42 | -1.53%
+RP50,Qwen2.5-1.5B-Instruct,QUIP#,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),5.96,FP16,85.96,-80.0,absolute,True,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 5.96 | 8.35 | +40.10%
+RP50,Qwen2.5-1.5B-Instruct,QUIP#,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),8.35,FP16,83.13,-74.78,absolute,True,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 5.96 | 8.35 | +40.10%
+RP50,Qwen2.5-7B-Instruct,FP16,16-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),95.04,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 95.04 | 89.69
+RP50,Qwen2.5-7B-Instruct,FP16,16-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),89.69,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 95.04 | 89.69
+RP50,Qwen2.5-7B-Instruct,AWQ,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),93.0,FP16,95.04,-2.04,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 93.00 | 86.22 | -7.29%
+RP50,Qwen2.5-7B-Instruct,AWQ,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),86.22,FP16,89.69,-3.47,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 93.00 | 86.22 | -7.29%
+RP50,Qwen2.5-7B-Instruct,QUIK,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),93.96,FP16,95.04,-1.08,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 93.96 | 87.99 | -6.35%
+RP50,Qwen2.5-7B-Instruct,QUIK,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),87.99,FP16,89.69,-1.7,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 93.96 | 87.99 | -6.35%
+RP50,Qwen2.5-7B-Instruct,QUIP#,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),90.29,FP16,95.04,-4.75,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 90.29 | 81.52 | -9.71%
+RP50,Qwen2.5-7B-Instruct,QUIP#,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),81.52,FP16,89.69,-8.17,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 90.29 | 81.52 | -9.71%
+RP50,Qwen2.5-7B-Instruct,QUIP#,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),77.89,FP16,95.04,-17.15,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 77.89 | 76.27 | -2.08%
+RP50,Qwen2.5-7B-Instruct,QUIP#,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),76.27,FP16,89.69,-13.42,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 77.89 | 76.27 | -2.08%
+RP50,Qwen2.5-7B-Instruct,AQLM,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),90.5,FP16,95.04,-4.54,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 90.50 | 81.63 | -9.80%
+RP50,Qwen2.5-7B-Instruct,AQLM,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),81.63,FP16,89.69,-8.06,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 90.50 | 81.63 | -9.80%
+RP50,Qwen2.5-14B-Instruct,FP16,16-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),96.46,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 96.46 | 92.13
+RP50,Qwen2.5-14B-Instruct,FP16,16-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),92.13,,,,,False,measured,22,F.2 HotPotQA,Table 9,bfloat16 | FP 16 | 96.46 | 92.13
+RP50,Qwen2.5-14B-Instruct,AWQ,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),96.32,FP16,96.46,-0.14,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 96.32 | 92.60 | -3.86%
+RP50,Qwen2.5-14B-Instruct,AWQ,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),92.6,FP16,92.13,0.47,absolute,False,measured,22,F.2 HotPotQA,Table 9,int4 | AWQ | 96.32 | 92.60 | -3.86%
+RP50,Qwen2.5-14B-Instruct,QUIK,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),97.0,FP16,96.46,0.54,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 97.00 | 93.62 | -3.48%
+RP50,Qwen2.5-14B-Instruct,QUIK,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),93.62,FP16,92.13,1.49,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIK | 97.00 | 93.62 | -3.48%
+RP50,Qwen2.5-14B-Instruct,QUIP#,4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),96.07,FP16,96.46,-0.39,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 96.07 | 92.87 | -3.33%
+RP50,Qwen2.5-14B-Instruct,QUIP#,4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),92.87,FP16,92.13,0.74,absolute,False,measured,22,F.2 HotPotQA,Table 9,QUIP# | 96.07 | 92.87 | -3.33%
+RP50,Qwen2.5-14B-Instruct,QUIP#,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),92.61,FP16,96.46,-3.85,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 92.61 | 89.21 | -3.67%
+RP50,Qwen2.5-14B-Instruct,QUIP#,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),89.21,FP16,92.13,-2.92,absolute,False,measured,22,F.2 HotPotQA,Table 9,int2 | QUIP# | 92.61 | 89.21 | -3.67%
+RP50,Qwen2.5-14B-Instruct,AQLM,2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),96.5,FP16,96.46,0.04,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 96.50 | 93.25 | -3.37%
+RP50,Qwen2.5-14B-Instruct,AQLM,2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),93.25,FP16,92.13,1.12,absolute,False,measured,22,F.2 HotPotQA,Table 9,AQLM | 96.50 | 93.25 | -3.37%
+RP50,Llama-3-8B-Instruct,STE (QAT),4-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),53.11,FP16,93.75,-40.64,absolute,True,measured,22,F.2 HotPotQA,Table 9,int4 | STE | 53.11 | 34.52 | -35.00%
+RP50,Llama-3-8B-Instruct,STE (QAT),4-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),34.52,FP16,93.06,-58.54,absolute,True,measured,22,F.2 HotPotQA,Table 9,int4 | STE | 53.11 | 34.52 | -35.00%
+RP50,Llama-3-8B-Instruct,STE (QAT),3-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),62.71,FP16,93.75,-31.04,absolute,False,measured,22,F.2 HotPotQA,Table 9,int3 | STE | 62.71 | 44.00
+RP50,Llama-3-8B-Instruct,STE (QAT),3-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),44.0,FP16,93.06,-49.06,absolute,False,measured,22,F.2 HotPotQA,Table 9,int3 | STE | 62.71 | 44.00
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),3-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),61.86,FP16,93.75,-31.89,absolute,False,measured,22,F.2 HotPotQA,Table 9,QLORA | 61.86 | 44.84
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),3-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),44.84,FP16,93.06,-48.22,absolute,False,measured,22,F.2 HotPotQA,Table 9,QLORA | 61.86 | 44.84
+RP50,Llama-3-8B-Instruct,STE (QAT),2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),16.25,FP16,93.75,-77.5,absolute,True,measured,22,F.2 HotPotQA,Table 9,int2 | STE | 16.25 | 13.04
+RP50,Llama-3-8B-Instruct,STE (QAT),2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),13.04,FP16,93.06,-80.02,absolute,True,measured,22,F.2 HotPotQA,Table 9,int2 | STE | 16.25 | 13.04
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),2-bit,,XSafety,Safety ratio (%) (LLM-as-Judge),40.29,FP16,93.75,-53.46,absolute,False,measured,22,F.2 HotPotQA,Table 9,QLORA | 40.29 | 24.77
+RP50,Llama-3-8B-Instruct,QLoRA (QAT),2-bit,,OpenSafetyMini,Safety ratio (%) (LLM-as-Judge),24.77,FP16,93.06,-68.29,absolute,False,measured,22,F.2 HotPotQA,Table 9,QLORA | 40.29 | 24.77
+RP50,Gemma-2-27B-it,FP16,16-bit,,SafetyBench,Accuracy (%),82.4,,,,,False,measured,20,F.2 HotPotQA,Table 7,Gemma-2-27b-it | bfloat16 | FP 16 | 82.40 | 84.60 | 89.40 | 89.00 | 78.60 | 90.20 | 89.70 | 61.90
+RP50,Gemma-2-27B-it,LLM-as-a-Judge,16-bit,,OpenSafetyMini (Human Eval),Agreement with humans (%),92.0,,,,,True,measured,4,4.3.1 Open-Ended Safety,,Our results demonstrate a high 92% agreement with human judgments
+RP50,Llama-3-8B-Instruct,Inter-rater (Human),16-bit,,OpenSafetyMini (Human Eval),Krippendorff's alpha,0.623,,,,,False,measured,4,4.3.1 Open-Ended Safety,,"interrater agreement, measured using Krippendorff's α, yielded a score of 0.623"

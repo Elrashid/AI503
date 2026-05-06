@@ -976,5 +976,735 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "OPT/LLaMA",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT/Alpaca",
+        "metric": "Throughput speedup over SOTA",
+        "value": "2-4x",
+        "baseline_label": "FasterTransformer/Orca",
+        "baseline_value": 1.0,
+        "delta": null,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "vLLM improves the throughput of popular LLMs by 2-4x with the same level of latency compared to the state-of-the-art systems, such as FasterTransformer and Orca",
+        "bbox": [
+          52.5,
+          195.29296875,
+          296.25,
+          432.75
+        ],
+        "block_id": "/page/0/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "Existing systems (FasterTransformer/Orca)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT/Alpaca",
+        "metric": "Effective KV cache memory utilization (%)",
+        "value": "20.4-38.2",
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "our profiling results in Fig. 2 show that only 20.4% - 38.2% of the KV cache memory is used to store the actual token states in the existing systems",
+        "bbox": [
+          52.892578125,
+          504.8717041015625,
+          295.7307434082031,
+          694.1613159179688
+        ],
+        "block_id": "/page/1/Text/4",
+        "source_table": "Figure 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT (13B/66B/175B), LLaMA-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Sustainable request rate vs Orca (Oracle)",
+        "value": "1.7-2.7x",
+        "baseline_label": "Orca (Oracle)",
+        "baseline_value": 1.0,
+        "delta": null,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.2 Basic Sampling",
+        "quote": "On the ShareGPT dataset, vLLM can sustain 1.7x-2.7x higher request rates compared to Orca (Oracle) and 2.7x-8x compared to Orca (Max), while maintaining similar latencies",
+        "bbox": [
+          52.5,
+          431.578125,
+          295.5,
+          573.890625
+        ],
+        "block_id": "/page/10/Text/4",
+        "source_table": "Figure 12"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT (13B/66B/175B), LLaMA-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Sustainable request rate vs Orca (Max)",
+        "value": "2.7-8x",
+        "baseline_label": "Orca (Max)",
+        "baseline_value": 1.0,
+        "delta": null,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.2 Basic Sampling",
+        "quote": "vLLM can sustain 1.7x-2.7x higher request rates compared to Orca (Oracle) and 2.7x-8x compared to Orca (Max), while maintaining similar latencies",
+        "bbox": [
+          52.5,
+          431.578125,
+          295.5,
+          573.890625
+        ],
+        "block_id": "/page/10/Text/4",
+        "source_table": "Figure 12"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT (13B/66B/175B), LLaMA-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Sustainable request rate vs FasterTransformer",
+        "value": 22.0,
+        "baseline_label": "FasterTransformer",
+        "baseline_value": 1.0,
+        "delta": 21.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.2 Basic Sampling",
+        "quote": "Compared to FasterTransformer, vLLM can sustain up to 22x higher request rates, as FasterTransformer does not utilize a fine-grained scheduling mechanism",
+        "bbox": [
+          52.5,
+          431.578125,
+          295.5,
+          573.890625
+        ],
+        "block_id": "/page/10/Text/4",
+        "source_table": "Figure 12"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Concurrent batched requests vs Orca (Oracle)",
+        "value": 2.2,
+        "baseline_label": "Orca (Oracle)",
+        "baseline_value": 1.0,
+        "delta": 1.2,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.2 Basic Sampling",
+        "quote": "as shown in Fig. 13a, for OPT-13B vLLM processes 2.2x more requests at the same time than Orca (Oracle) and 4.3x more requests than Orca (Max)",
+        "bbox": [
+          52.5,
+          431.578125,
+          295.5,
+          573.890625
+        ],
+        "block_id": "/page/10/Text/4",
+        "source_table": "Figure 13a"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Concurrent batched requests vs Orca (Max)",
+        "value": 4.3,
+        "baseline_label": "Orca (Max)",
+        "baseline_value": 1.0,
+        "delta": 3.3,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.2 Basic Sampling",
+        "quote": "for OPT-13B vLLM processes 2.2x more requests at the same time than Orca (Oracle) and 4.3x more requests than Orca (Max)",
+        "bbox": [
+          52.5,
+          431.578125,
+          295.5,
+          573.890625
+        ],
+        "block_id": "/page/10/Text/4",
+        "source_table": "Figure 13a"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca",
+        "metric": "Memory saving from KV sharing - parallel sampling (%)",
+        "value": "6.1-9.8",
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.3 Parallel Sampling and Beam Search",
+        "quote": "We show 6.1% - 9.8% memory saving on parallel sampling and 37.6% - 55.2% on beam search",
+        "bbox": [
+          316.5,
+          589.359375,
+          558.75,
+          671.34375
+        ],
+        "block_id": "/page/10/Text/10",
+        "source_table": "Figure 15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca",
+        "metric": "Memory saving from KV sharing - beam search (%)",
+        "value": "37.6-55.2",
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.3 Parallel Sampling and Beam Search",
+        "quote": "6.1% - 9.8% memory saving on parallel sampling and 37.6% - 55.2% on beam search",
+        "bbox": [
+          316.5,
+          589.359375,
+          558.75,
+          671.34375
+        ],
+        "block_id": "/page/10/Text/10",
+        "source_table": "Figure 15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Memory saving from KV sharing - parallel sampling (%)",
+        "value": "16.2-30.5",
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.3 Parallel Sampling and Beam Search",
+        "quote": "with the ShareGPT dataset, we saw 16.2% - 30.5% memory saving on parallel sampling and 44.3% - 66.3% on beam search",
+        "bbox": [
+          316.5,
+          589.359375,
+          558.75,
+          671.34375
+        ],
+        "block_id": "/page/10/Text/10",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Memory saving from KV sharing - beam search (%)",
+        "value": "44.3-66.3",
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.3 Parallel Sampling and Beam Search",
+        "quote": "with the ShareGPT dataset, we saw 16.2% - 30.5% memory saving on parallel sampling and 44.3% - 66.3% on beam search",
+        "bbox": [
+          316.5,
+          589.359375,
+          558.75,
+          671.34375
+        ],
+        "block_id": "/page/10/Text/10",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca",
+        "metric": "Throughput improvement over Orca (Oracle) - basic sampling",
+        "value": 1.3,
+        "baseline_label": "Orca (Oracle)",
+        "baseline_value": 1.0,
+        "delta": 0.3,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.3 Parallel Sampling and Beam Search",
+        "quote": "The improvement of vLLM over Orca (Oracle) on OPT-13B and the Alpaca dataset goes from 1.3x in basic sampling to 2.3x in beam search with a width of 6",
+        "bbox": [
+          315.75,
+          433.5,
+          559.5,
+          586.5
+        ],
+        "block_id": "/page/10/Text/9",
+        "source_table": "Figure 14"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca",
+        "metric": "Throughput improvement over Orca (Oracle) - beam search width=6",
+        "value": 2.3,
+        "baseline_label": "Orca (Oracle)",
+        "baseline_value": 1.0,
+        "delta": 1.3,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6.3 Parallel Sampling and Beam Search",
+        "quote": "The improvement of vLLM over Orca (Oracle) on OPT-13B and the Alpaca dataset goes from 1.3x in basic sampling to 2.3x in beam search with a width of 6",
+        "bbox": [
+          315.75,
+          433.5,
+          559.5,
+          586.5
+        ],
+        "block_id": "/page/10/Text/9",
+        "source_table": "Figure 14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WMT16 (one-shot prefix, 80 tokens)",
+        "metric": "Throughput improvement over Orca (Oracle)",
+        "value": 1.67,
+        "baseline_label": "Orca (Oracle)",
+        "baseline_value": 1.0,
+        "delta": 0.67,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "6.4 Shared prefix",
+        "quote": "vLLM achieves 1.67x higher throughput than Orca (Oracle) when the one-shot prefix is shared",
+        "bbox": [
+          52.5,
+          363.515625,
+          296.25,
+          481.078125
+        ],
+        "block_id": "/page/11/Text/5",
+        "source_table": "Figure 16(a)"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WMT16 (5-shot prefix, 341 tokens)",
+        "metric": "Throughput improvement over Orca (Oracle)",
+        "value": 3.58,
+        "baseline_label": "Orca (Oracle)",
+        "baseline_value": 1.0,
+        "delta": 2.58,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "6.4 Shared prefix",
+        "quote": "when more examples are shared (Fig. 16 (b)), vLLM achieves 3.58x higher throughput than Orca (Oracle)",
+        "bbox": [
+          52.5,
+          363.515625,
+          296.25,
+          481.078125
+        ],
+        "block_id": "/page/11/Text/5",
+        "source_table": "Figure 16(b)"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM (PagedAttention)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT (chatbot)",
+        "metric": "Sustainable request rate vs Orca baselines",
+        "value": 2.0,
+        "baseline_label": "Orca (Oracle/Pow2/Max)",
+        "baseline_value": 1.0,
+        "delta": 1.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "6.5 Chatbot",
+        "quote": "Fig. 17 shows that vLLM can sustain 2x higher request rates compared to the three Orca baselines",
+        "bbox": [
+          52.5,
+          624.0,
+          300.75,
+          716.9765625
+        ],
+        "block_id": "/page/11/Text/8",
+        "source_table": "Figure 17"
+      }
+    },
+    {
+      "value": {
+        "model": "vLLM kernel",
+        "method": "PagedAttention",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Kernel microbenchmark",
+        "metric": "Attention kernel latency overhead vs FasterTransformer (%)",
+        "value": "20-26",
+        "baseline_label": "FasterTransformer",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "7.1 Kernel Microbenchmark",
+        "quote": "this leads to 20-26% higher attention kernel latency, compared to the highly-optimized FasterTransformer implementation",
+        "bbox": [
+          315.75,
+          334.8984375,
+          559.5,
+          489.0
+        ],
+        "block_id": "/page/11/Text/18",
+        "source_table": "Figure 18a"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "vLLM recomputation",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ShareGPT",
+        "metric": "Recomputation overhead relative to swapping (%)",
+        "value": 20.0,
+        "baseline_label": "Swapping",
+        "baseline_value": 100.0,
+        "delta": -80.0,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "7.3 Comparing Recomputation and Swapping",
+        "quote": "recomputation overhead is never higher than 20% of swapping's latency",
+        "bbox": [
+          52.5,
+          235.125,
+          295.5,
+          423.84375
+        ],
+        "block_id": "/page/12/Text/4",
+        "source_table": "Figure 19"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "Server config (Table 1)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Hardware (1xA100 40GB)",
+        "metric": "Memory for KV cache (GB)",
+        "value": 12.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.6 Distributed Execution",
+        "quote": "Memory for KV cache | 12 GB | 21 GB | 264 GB",
+        "bbox": [
+          74.2707421875,
+          83.956640625,
+          271.1745703125,
+          158.902734375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "Server config (Table 1)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Hardware (4xA100 160GB)",
+        "metric": "Memory for KV cache (GB)",
+        "value": 21.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.6 Distributed Execution",
+        "quote": "Memory for KV cache | 12 GB | 21 GB | 264 GB",
+        "bbox": [
+          74.2707421875,
+          83.956640625,
+          271.1745703125,
+          158.902734375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Server config (Table 1)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Hardware (8xA100-80GB 640GB)",
+        "metric": "Memory for KV cache (GB)",
+        "value": 264.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.6 Distributed Execution",
+        "quote": "Memory for KV cache | 12 GB | 21 GB | 264 GB",
+        "bbox": [
+          74.2707421875,
+          83.956640625,
+          271.1745703125,
+          158.902734375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "Server config (Table 1)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Hardware (1xA100 40GB)",
+        "metric": "Max KV cache slots (K)",
+        "value": 15.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.6 Distributed Execution",
+        "quote": "Max. # KV cache slots | 15.7K | 9.7K | 60.1K",
+        "bbox": [
+          74.2707421875,
+          83.956640625,
+          271.1745703125,
+          158.902734375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "Server config (Table 1)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Hardware (4xA100 160GB)",
+        "metric": "Max KV cache slots (K)",
+        "value": 9.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.6 Distributed Execution",
+        "quote": "Max. # KV cache slots | 15.7K | 9.7K | 60.1K",
+        "bbox": [
+          74.2707421875,
+          83.956640625,
+          271.1745703125,
+          158.902734375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Server config (Table 1)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Hardware (8xA100-80GB)",
+        "metric": "Max KV cache slots (K)",
+        "value": 60.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.6 Distributed Execution",
+        "quote": "Max. # KV cache slots | 15.7K | 9.7K | 60.1K",
+        "bbox": [
+          74.2707421875,
+          83.956640625,
+          271.1745703125,
+          158.902734375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 1"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 24,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 4
   }
 }

@@ -1077,5 +1077,4965 @@
         "block_id": "/page/3/Text/0"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Safe rate (%)",
+        "value": 90.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 ... 90.59% | 7.36% | 0.69%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Unsafe rate (%)",
+        "value": 7.36,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 ... 90.59% | 7.36% | 0.69%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Error rate (%)",
+        "value": 0.69,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 ... 90.59% | 7.36% | 0.69%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Safe rate (%)",
+        "value": 58.67,
+        "baseline_label": "FP16",
+        "baseline_value": 90.59,
+        "delta": -31.92,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "Abliterated | 58.67% | 37.03% | 1.53%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Unsafe rate (%)",
+        "value": 37.03,
+        "baseline_label": "FP16",
+        "baseline_value": 7.36,
+        "delta": 29.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "Abliterated | 58.67% | 37.03% | 1.53%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Error rate (%)",
+        "value": 1.53,
+        "baseline_label": "FP16",
+        "baseline_value": 0.69,
+        "delta": 0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "Abliterated | 58.67% | 37.03% | 1.53%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Safe rate (%)",
+        "value": 90.75,
+        "baseline_label": "FP16",
+        "baseline_value": 90.59,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "int4 | QUIK | 90.75% | 7.77% | 0.52%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Unsafe rate (%)",
+        "value": 7.77,
+        "baseline_label": "FP16",
+        "baseline_value": 7.36,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "int4 | QUIK | 90.75% | 7.77% | 0.52%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Error rate (%)",
+        "value": 0.52,
+        "baseline_label": "FP16",
+        "baseline_value": 0.69,
+        "delta": -0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "int4 | QUIK | 90.75% | 7.77% | 0.52%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Safe rate (%)",
+        "value": 78.81,
+        "baseline_label": "FP16",
+        "baseline_value": 90.59,
+        "delta": -11.78,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 78.81% | 13.45% | 6.28%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Unsafe rate (%)",
+        "value": 13.45,
+        "baseline_label": "FP16",
+        "baseline_value": 7.36,
+        "delta": 6.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 78.81% | 13.45% | 6.28%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Error rate (%)",
+        "value": 6.28,
+        "baseline_label": "FP16",
+        "baseline_value": 0.69,
+        "delta": 5.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3.2 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 78.81% | 13.45% | 6.28%",
+        "bbox": [
+          69.436328125,
+          321.16873046875,
+          289.094921875,
+          397.49142578125
+        ],
+        "block_id": "/page/4/Table/4",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 71.4,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -2.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "int4 | STE | 71.40 | 0.512",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.512,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.172,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "int4 | STE | 71.40 | 0.512",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 73.6,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "int3 | STE | 73.60 | 0.614",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.614,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "int3 | STE | 73.60 | 0.614",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 65.6,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -8.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "QLORA | 65.60 | 0.529",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.529,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.155,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "QLORA | 65.60 | 0.529",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 51.5,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -22.4,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "int2 | STE | 51.50 | 0.390",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.39,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.294,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "int2 | STE | 51.50 | 0.390",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 36.3,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -37.6,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "QLORA | 36.30 | 0.265",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.265,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.419,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Automatic Evaluation",
+        "quote": "QLORA | 36.30 | 0.265",
+        "bbox": [
+          74.779375,
+          321.89232421875,
+          283.751875,
+          408.27955078125
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 73.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 73.9,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "Abliterated | 73.90 | - | - | - | -",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 72.5,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 74.6,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": 0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 63.3,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -10.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 54.7,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -19.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 59.8,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -14.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "AQLM | 59.80 | 65.90 | - | 72.60 | 79.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 68.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 68.8,
+        "baseline_label": "FP16",
+        "baseline_value": 68.7,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 62.2,
+        "baseline_label": "FP16",
+        "baseline_value": 68.7,
+        "delta": -6.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 65.9,
+        "baseline_label": "FP16",
+        "baseline_value": 68.7,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 60.6,
+        "baseline_label": "FP16",
+        "baseline_value": 68.7,
+        "delta": -8.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 65.9,
+        "baseline_label": "FP16",
+        "baseline_value": 68.7,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "AQLM | 59.80 | 65.90 | - | 72.60 | 79.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 66.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 63.6,
+        "baseline_label": "FP16",
+        "baseline_value": 66.7,
+        "delta": -3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 61.7,
+        "baseline_label": "FP16",
+        "baseline_value": 66.7,
+        "delta": -5.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 79.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 77.1,
+        "baseline_label": "FP16",
+        "baseline_value": 79.9,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 80.6,
+        "baseline_label": "FP16",
+        "baseline_value": 79.9,
+        "delta": 0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 73.2,
+        "baseline_label": "FP16",
+        "baseline_value": 79.9,
+        "delta": -6.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 42.1,
+        "baseline_label": "FP16",
+        "baseline_value": 79.9,
+        "delta": -37.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 72.6,
+        "baseline_label": "FP16",
+        "baseline_value": 79.9,
+        "delta": -7.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "AQLM | 59.80 | 65.90 | - | 72.60 | 79.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 83.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "bfloat16 | FP 16 | 73.90 | 68.70 | 66.70 | 79.90 | 83.60",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 81.8,
+        "baseline_label": "FP16",
+        "baseline_value": 83.6,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int4 | AWQ | 72.50 | 68.80 | 63.60 | 77.10 | 81.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 83.1,
+        "baseline_label": "FP16",
+        "baseline_value": 83.6,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIK | 74.60 | 62.20 | 61.70 | 80.60 | 83.10",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 77.5,
+        "baseline_label": "FP16",
+        "baseline_value": 83.6,
+        "delta": -6.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "QUIP# | 63.30 | 65.90 | - | 73.20 | 77.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 45.5,
+        "baseline_label": "FP16",
+        "baseline_value": 83.6,
+        "delta": -38.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "int2 | QUIP# | 54.70 | 60.60 | - | 42.10 | 45.50",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 79.8,
+        "baseline_label": "FP16",
+        "baseline_value": 83.6,
+        "delta": -3.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "6 Multiple-Choice Safety",
+        "quote": "AQLM | 59.80 | 65.90 | - | 72.60 | 79.80",
+        "bbox": [
+          133.2909765625,
+          68.66740234375,
+          459.2168359375,
+          151.69978515625
+        ],
+        "block_id": "/page/6/Table/0",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.684,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.587,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.097,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "Abliterated | 0.587 | - | - | - | -",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.672,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.012,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.655,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.029,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.666,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.018,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.617,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.067,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.653,
+        "baseline_label": "FP16",
+        "baseline_value": 0.684,
+        "delta": -0.031,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "AQLM | 0.653 | 0.679 | - | 0.734 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.718,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.708,
+        "baseline_label": "FP16",
+        "baseline_value": 0.718,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.519,
+        "baseline_label": "FP16",
+        "baseline_value": 0.718,
+        "delta": -0.199,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.698,
+        "baseline_label": "FP16",
+        "baseline_value": 0.718,
+        "delta": -0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.686,
+        "baseline_label": "FP16",
+        "baseline_value": 0.718,
+        "delta": -0.032,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.679,
+        "baseline_label": "FP16",
+        "baseline_value": 0.718,
+        "delta": -0.039,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "AQLM | 0.653 | 0.679 | - | 0.734 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.558,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.549,
+        "baseline_label": "FP16",
+        "baseline_value": 0.558,
+        "delta": -0.009,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.583,
+        "baseline_label": "FP16",
+        "baseline_value": 0.558,
+        "delta": 0.025,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.416,
+        "baseline_label": "FP16",
+        "baseline_value": 0.558,
+        "delta": -0.142,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.753,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.743,
+        "baseline_label": "FP16",
+        "baseline_value": 0.753,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.73,
+        "baseline_label": "FP16",
+        "baseline_value": 0.753,
+        "delta": -0.023,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.661,
+        "baseline_label": "FP16",
+        "baseline_value": 0.753,
+        "delta": -0.092,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.611,
+        "baseline_label": "FP16",
+        "baseline_value": 0.753,
+        "delta": -0.142,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.734,
+        "baseline_label": "FP16",
+        "baseline_value": 0.753,
+        "delta": -0.019,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "AQLM | 0.653 | 0.679 | - | 0.734 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.799,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "bfloat16 | FP 16 | 0.684 | 0.718 | 0.558 | 0.753 | 0.799",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.785,
+        "baseline_label": "FP16",
+        "baseline_value": 0.799,
+        "delta": -0.014,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int4 | AWQ | 0.672 | 0.708 | 0.549 | 0.743 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.798,
+        "baseline_label": "FP16",
+        "baseline_value": 0.799,
+        "delta": -0.001,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIK | 0.655 | 0.519 | 0.583 | 0.730 | 0.798",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.764,
+        "baseline_label": "FP16",
+        "baseline_value": 0.799,
+        "delta": -0.035,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "QUIP# | 0.666 | 0.698 | 0.416 | 0.661 | 0.764",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.743,
+        "baseline_label": "FP16",
+        "baseline_value": 0.799,
+        "delta": -0.056,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "int2 | QUIP# | 0.617 | 0.686 | - | 0.611 | 0.743",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "In-accuracy",
+        "value": 0.785,
+        "baseline_label": "FP16",
+        "baseline_value": 0.799,
+        "delta": -0.014,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "Limitations of Closed-ended Safety Evaluation",
+        "quote": "AQLM | 0.653 | 0.679 | - | 0.734 | 0.785",
+        "bbox": [
+          133.8962890625,
+          68.182265625,
+          457.4474609375,
+          158.763046875
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.588,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 ... | bfloat16 | FP 16 | 0.588 | 0.684",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.444,
+        "baseline_label": "FP16",
+        "baseline_value": 0.588,
+        "delta": -0.144,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "Abliterated | 0.444 | 0.587",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.599,
+        "baseline_label": "FP16",
+        "baseline_value": 0.588,
+        "delta": 0.011,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 0.599 | 0.672",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.55,
+        "baseline_label": "FP16",
+        "baseline_value": 0.588,
+        "delta": -0.038,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 0.550 | 0.655",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.564,
+        "baseline_label": "FP16",
+        "baseline_value": 0.588,
+        "delta": -0.024,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 0.564 | 0.666",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.511,
+        "baseline_label": "FP16",
+        "baseline_value": 0.588,
+        "delta": -0.077,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 0.511 | 0.617",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.547,
+        "baseline_label": "FP16",
+        "baseline_value": 0.588,
+        "delta": -0.041,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 0.547 | 0.653",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.549,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 0.549 | 0.718",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.555,
+        "baseline_label": "FP16",
+        "baseline_value": 0.549,
+        "delta": 0.006,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 0.555 | 0.708",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.537,
+        "baseline_label": "FP16",
+        "baseline_value": 0.549,
+        "delta": -0.012,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 0.537 | 0.519",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.54,
+        "baseline_label": "FP16",
+        "baseline_value": 0.549,
+        "delta": -0.009,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 0.540 | 0.698",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.543,
+        "baseline_label": "FP16",
+        "baseline_value": 0.549,
+        "delta": -0.006,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 0.543 | 0.686",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "HotPotQA",
+        "metric": "AlignScore",
+        "value": 0.56,
+        "baseline_label": "FP16",
+        "baseline_value": 0.549,
+        "delta": 0.011,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 0.560 | 0.679",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.75,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 93.75 | 93.06",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.06,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 93.75 | 93.06",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 83.32,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -10.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "Abliterated | 83.32 | 63.26 | -24.08%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct-Abliterated",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 63.26,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -29.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "Abliterated | 83.32 | 63.26 | -24.08%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.18,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -0.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 93.18 | 89.50 | -3.94%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.5,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -3.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 93.18 | 89.50 | -3.94%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.21,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 93.21 | 93.25 | +0.04%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.25,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 93.21 | 93.25 | +0.04%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.25,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -4.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 89.25 | 84.44 | -5.39%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 84.44,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -8.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 89.25 | 84.44 | -5.39%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 85.07,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -8.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 85.07 | 84.25 | -0.96%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 84.25,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -8.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 85.07 | 84.25 | -0.96%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 91.5,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -2.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 91.50 | 89.03 | -2.69%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.03,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -4.03,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 91.50 | 89.03 | -2.69%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 91.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 91.07 | 84.82",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 84.82,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 91.07 | 84.82",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.89,
+        "baseline_label": "FP16",
+        "baseline_value": 91.07,
+        "delta": -1.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 89.89 | 83.13 | -7.52%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 83.13,
+        "baseline_label": "FP16",
+        "baseline_value": 84.82,
+        "delta": -1.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 89.89 | 83.13 | -7.52%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 83.21,
+        "baseline_label": "FP16",
+        "baseline_value": 91.07,
+        "delta": -7.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 83.21 | 76.38 | -8.21%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 76.38,
+        "baseline_label": "FP16",
+        "baseline_value": 84.82,
+        "delta": -8.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 83.21 | 76.38 | -8.21%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.79,
+        "baseline_label": "FP16",
+        "baseline_value": 91.07,
+        "delta": -1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 89.79 | 79.48 | -11.48%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 79.48,
+        "baseline_label": "FP16",
+        "baseline_value": 84.82,
+        "delta": -5.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 89.79 | 79.48 | -11.48%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 83.04,
+        "baseline_label": "FP16",
+        "baseline_value": 91.07,
+        "delta": -8.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 83.04 | 70.10 | -15.57%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 70.1,
+        "baseline_label": "FP16",
+        "baseline_value": 84.82,
+        "delta": -14.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 83.04 | 70.10 | -15.57%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 87.54,
+        "baseline_label": "FP16",
+        "baseline_value": 91.07,
+        "delta": -3.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 87.54 | 77.88 | -11.03%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 77.88,
+        "baseline_label": "FP16",
+        "baseline_value": 84.82,
+        "delta": -6.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 87.54 | 77.88 | -11.03%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 85.96,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 85.96 | 83.13",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 83.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 85.96 | 83.13",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 86.18,
+        "baseline_label": "FP16",
+        "baseline_value": 85.96,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 86.18 | 84.35 | -2.12%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 84.35,
+        "baseline_label": "FP16",
+        "baseline_value": 83.13,
+        "delta": 1.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 86.18 | 84.35 | -2.12%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 86.86,
+        "baseline_label": "FP16",
+        "baseline_value": 85.96,
+        "delta": 0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 86.86 | 85.27 | -1.83%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 85.27,
+        "baseline_label": "FP16",
+        "baseline_value": 83.13,
+        "delta": 2.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 86.86 | 85.27 | -1.83%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 70.5,
+        "baseline_label": "FP16",
+        "baseline_value": 85.96,
+        "delta": -15.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 70.50 | 69.42 | -1.53%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 69.42,
+        "baseline_label": "FP16",
+        "baseline_value": 83.13,
+        "delta": -13.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 70.50 | 69.42 | -1.53%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 5.96,
+        "baseline_label": "FP16",
+        "baseline_value": 85.96,
+        "delta": -80.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 5.96 | 8.35 | +40.10%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-1.5B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 8.35,
+        "baseline_label": "FP16",
+        "baseline_value": 83.13,
+        "delta": -74.78,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 5.96 | 8.35 | +40.10%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 95.04,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 95.04 | 89.69",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.69,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 95.04 | 89.69",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.0,
+        "baseline_label": "FP16",
+        "baseline_value": 95.04,
+        "delta": -2.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 93.00 | 86.22 | -7.29%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 86.22,
+        "baseline_label": "FP16",
+        "baseline_value": 89.69,
+        "delta": -3.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 93.00 | 86.22 | -7.29%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.96,
+        "baseline_label": "FP16",
+        "baseline_value": 95.04,
+        "delta": -1.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 93.96 | 87.99 | -6.35%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 87.99,
+        "baseline_label": "FP16",
+        "baseline_value": 89.69,
+        "delta": -1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 93.96 | 87.99 | -6.35%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 90.29,
+        "baseline_label": "FP16",
+        "baseline_value": 95.04,
+        "delta": -4.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 90.29 | 81.52 | -9.71%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 81.52,
+        "baseline_label": "FP16",
+        "baseline_value": 89.69,
+        "delta": -8.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 90.29 | 81.52 | -9.71%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 77.89,
+        "baseline_label": "FP16",
+        "baseline_value": 95.04,
+        "delta": -17.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 77.89 | 76.27 | -2.08%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 76.27,
+        "baseline_label": "FP16",
+        "baseline_value": 89.69,
+        "delta": -13.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 77.89 | 76.27 | -2.08%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 90.5,
+        "baseline_label": "FP16",
+        "baseline_value": 95.04,
+        "delta": -4.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 90.50 | 81.63 | -9.80%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-7B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 81.63,
+        "baseline_label": "FP16",
+        "baseline_value": 89.69,
+        "delta": -8.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 90.50 | 81.63 | -9.80%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 96.46,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 96.46 | 92.13",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 92.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "bfloat16 | FP 16 | 96.46 | 92.13",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 96.32,
+        "baseline_label": "FP16",
+        "baseline_value": 96.46,
+        "delta": -0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 96.32 | 92.60 | -3.86%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 92.6,
+        "baseline_label": "FP16",
+        "baseline_value": 92.13,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | AWQ | 96.32 | 92.60 | -3.86%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 97.0,
+        "baseline_label": "FP16",
+        "baseline_value": 96.46,
+        "delta": 0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 97.00 | 93.62 | -3.48%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIK",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.62,
+        "baseline_label": "FP16",
+        "baseline_value": 92.13,
+        "delta": 1.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIK | 97.00 | 93.62 | -3.48%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 96.07,
+        "baseline_label": "FP16",
+        "baseline_value": 96.46,
+        "delta": -0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 96.07 | 92.87 | -3.33%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 92.87,
+        "baseline_label": "FP16",
+        "baseline_value": 92.13,
+        "delta": 0.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QUIP# | 96.07 | 92.87 | -3.33%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 92.61,
+        "baseline_label": "FP16",
+        "baseline_value": 96.46,
+        "delta": -3.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 92.61 | 89.21 | -3.67%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "QUIP#",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 89.21,
+        "baseline_label": "FP16",
+        "baseline_value": 92.13,
+        "delta": -2.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | QUIP# | 92.61 | 89.21 | -3.67%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 96.5,
+        "baseline_label": "FP16",
+        "baseline_value": 96.46,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 96.50 | 93.25 | -3.37%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 93.25,
+        "baseline_label": "FP16",
+        "baseline_value": 92.13,
+        "delta": 1.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "AQLM | 96.50 | 93.25 | -3.37%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 53.11,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -40.64,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | STE | 53.11 | 34.52 | -35.00%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 34.52,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -58.54,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int4 | STE | 53.11 | 34.52 | -35.00%",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 62.71,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -31.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int3 | STE | 62.71 | 44.00",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 44.0,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -49.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int3 | STE | 62.71 | 44.00",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 61.86,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -31.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QLORA | 61.86 | 44.84",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 44.84,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -48.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QLORA | 61.86 | 44.84",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 16.25,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -77.5,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | STE | 16.25 | 13.04",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "STE (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 13.04,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -80.02,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "int2 | STE | 16.25 | 13.04",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "XSafety",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 40.29,
+        "baseline_label": "FP16",
+        "baseline_value": 93.75,
+        "delta": -53.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QLORA | 40.29 | 24.77",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "QLoRA (QAT)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini",
+        "metric": "Safety ratio (%) (LLM-as-Judge)",
+        "value": 24.77,
+        "baseline_label": "FP16",
+        "baseline_value": 93.06,
+        "delta": -68.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "F.2 HotPotQA",
+        "quote": "QLORA | 40.29 | 24.77",
+        "bbox": [
+          63.8197265625,
+          100.151953125,
+          529.8521484375,
+          704.023828125
+        ],
+        "block_id": "/page/21/Table/0",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2-27B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "SafetyBench",
+        "metric": "Accuracy (%)",
+        "value": 82.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F.2 HotPotQA",
+        "quote": "Gemma-2-27b-it | bfloat16 | FP 16 | 82.40 | 84.60 | 89.40 | 89.00 | 78.60 | 90.20 | 89.70 | 61.90",
+        "bbox": [
+          64.1165625,
+          73.91345703125,
+          529.5553125,
+          712.17248046875
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2-27B-it",
+        "method": "LLM-as-a-Judge",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Agreement with humans (%)",
+        "value": 92.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "4.3.1 Open-Ended Safety",
+        "quote": "Our results demonstrate a high 92% agreement with human judgments",
+        "bbox": [
+          305.56640625,
+          506.1044921875,
+          526.2215576171875,
+          586.3327789306641
+        ],
+        "block_id": "/page/3/Text/21",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "Inter-rater (Human)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenSafetyMini (Human Eval)",
+        "metric": "Krippendorff's alpha",
+        "value": 0.623,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "4.3.1 Open-Ended Safety",
+        "quote": "interrater agreement, measured using Krippendorff's α, yielded a score of 0.623",
+        "bbox": [
+          304.40234375,
+          126.43408203125,
+          526.2199096679688,
+          394.87774658203125
+        ],
+        "block_id": "/page/3/Text/17",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 165,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 15
   }
 }

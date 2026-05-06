@@ -1321,5 +1321,2235 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g48",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 83.75,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W8A8 (ZeroQuant) | 59.59 | 84.83 | 85.13 | 86.03/90.39 | 91.98 | 91.45/88.46 | 71.12 | 93.12 | 90.09/89.62 | 83.75 | 0",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "PTQ (baseline)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 77.41,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -6.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W8A8 (PTQ) | 56.06 | 79.99 | 81.06 | 75.49/79.67 | 87.35 | 89.92/86.82 | 48.38 | 91.40 | 86.58/86.44 | 77.41 | 6",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "QAT (authors' run)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 83.37,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -0.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W8A8 (QAT) | 61.21 | 84.80 | 84.64 | 83.82/88.85 | 91.29 | 91.29/88.28 | 71.12 | 92.89 | 88.39/88.18 | 83.37 | 2900",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "4-bit",
+        "group_size": "g48",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 81.65,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -2.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W4/8A16 (ZeroQuant) | 57.29 | 82.69 | 83.27 | 84.56/88.40 | 90.04 | 86.52/79.49 | 70.76 | 92.78 | 88.46/88.61 | 81.65 | 0",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g48",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 82.35,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -1.6,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W4/8A16 (ZeroQuant-LKD) | 58.50 | 83.16 | 83.69 | 84.80/89.31 | 90.83 | 88.94/84.12 | 70.04 | 92.78 | 88.49/88.67 | 82.35 | 31",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "PTQ (baseline)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 33.11,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -50.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W4/8A16 (PTQ) | 0.00 | 16.74 | 16.95 | 31.62/0.00 | 50.74 | 63.18/0.00 | 47.29 | 70.64 | 16.48/15.91 | 33.11 | 6",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "4-bit",
+        "group_size": "g48",
+        "dataset": "GLUE (W4/8A8)",
+        "metric": "Average Accuracy",
+        "value": 81.55,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -2.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W4/8A8 (ZeroQuant) | 56.69 | 82.46 | 83.06 | 84.07/88.03 | 90.13 | 87.04/80.50 | 70.76 | 92.78 | 88.07/88.44 | 81.55 | 0",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g48",
+        "dataset": "GLUE (W4/8A8)",
+        "metric": "Average Accuracy",
+        "value": 82.71,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -1.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.2 Layer-by-layer Knowledge Distillation with Affordable Cost",
+        "quote": "W4/8A8 (ZeroQuant-LKD) | 58.80 | 83.09 | 83.65 | 85.78/89.90 | 90.76 | 89.16/84.85 | 71.84 | 93.00 | 88.16/88.55 | 82.71 | 31",
+        "bbox": [
+          68.87390625,
+          216.508359375,
+          541.93078125,
+          340.366640625
+        ],
+        "block_id": "/page/5/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 85.03,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W16A16 (Baseline) | 63.35 | 86.65 | 85.91 | 87.99/91.62 | 92.24 | 91.08/88.08 | 74.01 | 93.46 | 90.34/90.11 | 85.03",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 84.81,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (ZeroQuant) | 63.38 | 86.52 | 85.64 | 87.75/91.50 | 92.31 | 91.09/88.05 | 72.56 | 93.35 | 90.45/90.19 | 84.81 | 0",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "QAT (authors' run)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 82.78,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -2.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (QAT)+ | 59.85 | 86.65 | 86.35 | 85.29/89.43 | 92.55 | 91.60/88.60 | 61.37 | 93.23 | 87.55/87.65 | 82.78 | 7181",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "PTQ (baseline)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 73.54,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -11.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (PTQ) | 60.57 | 75.69 | 76.94 | 81.13/84.93 | 88.49 | 84.04/74.35 | 46.93 | 91.74 | 62.75/55.77 | 73.54 | 31",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 81.85,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -3.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant-LKD) | 63.72 | 84.90 | 84.81 | 87.99/91.39 | 91.45 | 90.34/86.92 | 51.62 | 92.43 | 89.46/89.29 | 81.85 | 550",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 81.23,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -3.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant) | 62.99 | 84.77 | 84.42 | 87.50/91.16 | 91.63 | 90.03/86.41 | 48.01 | 92.16 | 89.49/89.28 | 81.23",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "GLUE (W4/8A8)",
+        "metric": "Average Accuracy",
+        "value": 81.62,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -3.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A8 (ZeroQuant-LKD) | 63.51 | 84.70 | 84.71 | 88.73/91.99 | 91.73 | 90.25/86.74 | 49.82 | 92.09 | 89.34/89.08 | 81.62 | 550",
+        "bbox": [
+          68.5691015625,
+          103.34671875,
+          542.2355859375,
+          212.21578125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 21.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W16A16 | 49.3 | 66.3 | 29.4 | 53.8 | 75.1 | 38.9 | 21.5 | N/A",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 38.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W16A16 | 49.3 | 66.3 | 29.4 | 53.8 | 75.1 | 38.9 | 21.5 | N/A",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "PTQ (baseline)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 26.2,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 4.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (PTQ) | 42.6 | 64.1 | 28.0 | 53.1 | 67.5 | 37.8 | 26.2 | 7 mins",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "PTQ (baseline)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 37.8,
+        "baseline_label": "FP16",
+        "baseline_value": 38.9,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (PTQ) | 42.6 | 64.1 | 28.0 | 53.1 | 67.5 | 37.8 | 26.2 | 7 mins",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 21.7,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (ZeroQuant) | 51.0 | 66.5 | 29.2 | 53.4 | 74.9 | 38.7 | 21.7 | 0",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 38.7,
+        "baseline_label": "FP16",
+        "baseline_value": 38.9,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W8A8 (ZeroQuant) | 51.0 | 66.5 | 29.2 | 53.4 | 74.9 | 38.7 | 21.7 | 0",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "PTQ (baseline)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 176000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 175978.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A16 (PTQ) | 0.00 | 51.4 | 30.2 | 52.7 | 16.1 | 28.9 | 1.76e5 | 7 mins",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 88.6,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 67.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant) | 10.1 | 58.5 | 27.2 | 52.0 | 56.5 | 33.5 | 88.6 | 0",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 30.6,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 9.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant-LKD) | 39.8 | 63.8 | 29.4 | 53.1 | 70.1 | 37.0 | 30.6 | 1.1 hours",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 37.0,
+        "baseline_label": "FP16",
+        "baseline_value": 38.9,
+        "delta": -1.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant-LKD) | 39.8 | 63.8 | 29.4 | 53.1 | 70.1 | 37.0 | 30.6 | 1.1 hours",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2 (W4/8A8)",
+        "metric": "Perplexity",
+        "value": 92.1,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 70.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A8 (ZeroQuant) | 10.5 | 57.7 | 28.0 | 52.7 | 55.3 | 33.4 | 92.1 | 0",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2 (W4/8A8)",
+        "metric": "Perplexity",
+        "value": 31.1,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 9.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Main Results of GPT-3-style Models",
+        "quote": "W4/8A8 (ZeroQuant-LKD) | 37.4 | 61.8 | 28.2 | 53.1 | 68.5 | 36.6 | 31.1 | 1.1 hours",
+        "bbox": [
+          68.27625,
+          254.32171875,
+          541.333125,
+          347.41265625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 15.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W16A16 | 61.3 | 71.4 | 33.6 | 53.1 | 82.6 | 42.4 | 15.3 | N/A",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 42.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W16A16 | 61.3 | 71.4 | 33.6 | 53.1 | 82.6 | 42.4 | 15.3 | N/A",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 15.7,
+        "baseline_label": "FP16",
+        "baseline_value": 15.3,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W8A8 (ZeroQuant) | 62.6 | 70.7 | 33.4 | 52.7 | 80.9 | 42.3 | 15.7 | 0",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 42.3,
+        "baseline_label": "FP16",
+        "baseline_value": 42.4,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W8A8 (ZeroQuant) | 62.6 | 70.7 | 33.4 | 52.7 | 80.9 | 42.3 | 15.7 | 0",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "PTQ (baseline)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 18.9,
+        "baseline_label": "FP16",
+        "baseline_value": 15.3,
+        "delta": 3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W8A8 (PTQ) | 54.8 | 67.7 | 16.6 | 54.5 | 75.7 | 40.5 | 18.9 | 13 mins",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "ZeroQuant-LKD",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 17.6,
+        "baseline_label": "FP16",
+        "baseline_value": 15.3,
+        "delta": 2.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant-LKD) | 59.4 | 69.5 | 31.6 | 52.7 | 79.7 | 41.5 | 17.6 | 3 hours",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "ZeroQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 21.9,
+        "baseline_label": "FP16",
+        "baseline_value": 15.3,
+        "delta": 6.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W4/8A16 (ZeroQuant) | 43.9 | 66.5 | 30.0 | 52.7 | 77.3 | 39.38 | 21.9 | 0",
+        "bbox": [
+          68.5810546875,
+          103.122421875,
+          541.0283203125,
+          195.424453125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g48",
+        "dataset": "A100 (BS128, SeqLen128)",
+        "metric": "Speedup over FP16",
+        "value": 5.19,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 4.19,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Speedup | 2.27 | 2.78 | 2.71 | 3.13 | 3.86 | 4.60 | 5.08 | 5.19",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g48",
+        "dataset": "A100 (BS1, SeqLen128)",
+        "metric": "Speedup over FP16",
+        "value": 2.27,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.27,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Speedup | 2.27 | 2.78 | 2.71 | 3.13 | 3.86 | 4.60 | 5.08 | 5.19",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g48",
+        "dataset": "A100 (BS128, SeqLen256)",
+        "metric": "Speedup over FP16",
+        "value": 4.98,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.98,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Speedup | 2.57 | 2.81 | 2.74 | 3.66 | 4.70 | 4.70 | 4.89 | 4.98",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "A100 (BS128, SeqLen128)",
+        "metric": "Speedup over FP16",
+        "value": 5.01,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 4.01,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Speedup | 2.62 | 2.47 | 3.07 | 3.66 | 4.24 | 4.73 | 4.90 | 5.01",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "A100 (BS1, SeqLen128)",
+        "metric": "Speedup over FP16",
+        "value": 2.62,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.62,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Speedup | 2.62 | 2.47 | 3.07 | 3.66 | 4.24 | 4.73 | 4.90 | 5.01",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 (BS128, SeqLen128)",
+        "metric": "Latency (ms)",
+        "value": 67.08,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "BERT_base | W16A16 | 2.45 | 3.22 | 3.85 | 5.51 | 9.96 | 17.93 | 34.25 | 67.08",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g48",
+        "dataset": "A100 (BS128, SeqLen128)",
+        "metric": "Latency (ms)",
+        "value": 12.92,
+        "baseline_label": "FP16",
+        "baseline_value": 67.08,
+        "delta": -54.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "W8A8 | 1.08 | 1.16 | 1.42 | 1.76 | 2.58 | 3.90 | 6.74 | 12.92",
+        "bbox": [
+          68.5691015625,
+          239.7346875,
+          542.2355859375,
+          321.7809375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "A100 (50-token gen)",
+        "metric": "Speedup over FP16",
+        "value": 4.16,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.16,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Our INT8 model leads to 4.16 x/4.06 x speedup for GPT-3_{350 \\text{M}}/\\text{GPT-}3_{1.3 \\text{B}} as compared to the FP16 counterpart.",
+        "bbox": [
+          70.224609375,
+          631.125,
+          540.75,
+          677.53125
+        ],
+        "block_id": "/page/7/Text/9",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-1.3B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "A100 (50-token gen)",
+        "metric": "Speedup over FP16",
+        "value": 4.06,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.06,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 Latency Reduction of BERT and GPT-3-style Models",
+        "quote": "Our INT8 model leads to 4.16 x/4.06 x speedup for GPT-3_{350 \\text{M}}/\\text{GPT-}3_{1.3 \\text{B}} as compared to the FP16 counterpart.",
+        "bbox": [
+          70.224609375,
+          631.125,
+          540.75,
+          677.53125
+        ],
+        "block_id": "/page/7/Text/9",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 20.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 20.47 | 10.35 | 10.35 | 29.13ms (1x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 20.97,
+        "baseline_label": "FP16",
+        "baseline_value": 20.47,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8 | 20.97 | 10.51 | 10.52 | 7.94ms (3.67x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 10.35,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 20.47 | 10.35 | 10.35 | 29.13ms (1x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 10.51,
+        "baseline_label": "FP16",
+        "baseline_value": 10.35,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8 | 20.97 | 10.51 | 10.52 | 7.94ms (3.67x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Wikitext-103",
+        "metric": "Perplexity",
+        "value": 10.52,
+        "baseline_label": "FP16",
+        "baseline_value": 10.35,
+        "delta": 0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8 | 20.97 | 10.51 | 10.52 | 7.94ms (3.67x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 (50-token gen)",
+        "metric": "Latency (ms)",
+        "value": 29.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 20.47 | 10.35 | 10.35 | 29.13ms (1x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 (50-token gen)",
+        "metric": "Latency (ms)",
+        "value": 7.94,
+        "baseline_label": "FP16",
+        "baseline_value": 29.13,
+        "delta": -21.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8 | 20.97 | 10.51 | 10.52 | 7.94ms (3.67x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-J-6B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 (50-token gen)",
+        "metric": "Speedup over FP16",
+        "value": 3.67,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.67,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8 | 20.97 | 10.51 | 10.52 | 7.94ms (3.67x)",
+        "bbox": [
+          68.814140625,
+          103.96546875,
+          304.123359375,
+          149.72203125
+        ],
+        "block_id": "/page/9/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 50.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 71.7 | 77.7 | 50.5 | 2x65ms (1x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "20 zero-shot tasks",
+        "metric": "Average Accuracy (19 tasks)",
+        "value": 50.38,
+        "baseline_label": "FP16",
+        "baseline_value": 50.45,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8/16 | 71.9 | 78.3 | 50.4 | 1x25ms (5.2x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 (latency)",
+        "metric": "Latency (ms)",
+        "value": 130.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 71.7 | 77.7 | 50.5 | 2x65ms (1x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 (latency)",
+        "metric": "Latency (ms)",
+        "value": 25.0,
+        "baseline_label": "FP16",
+        "baseline_value": 130.0,
+        "delta": -105.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8/16 | 71.9 | 78.3 | 50.4 | 1x25ms (5.2x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 (efficiency)",
+        "metric": "Speedup over FP16",
+        "value": 5.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 4.2,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 A Showcase of GPT-J_{6B} and GPT-NeoX_{20B}",
+        "quote": "reduce both the GPU resource requirement (from 2 A100 GPUs to 1) and the latency from 65ms to 25ms, which together lead to 5.2x better throughput/efficiency",
+        "bbox": [
+          70.5,
+          433.5,
+          540.0,
+          538.5
+        ],
+        "block_id": "/page/8/Text/7",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large (W4/8A8 ablation)",
+        "method": "PTQ (no GQ/TQ/LKD)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 35.85,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -49.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "âœ— | âœ— | âœ— | -0.79 | 33.07 | 32.94 | 68.38/80.54 | 49.42 | 63.18/0.00 | 52.71 | 52.29 | -4.27/-1.90 | 35.85",
+        "bbox": [
+          68.885859375,
+          216.79453125,
+          540.723515625,
+          272.01796875
+        ],
+        "block_id": "/page/9/Table/5",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large (W4/8A8 ablation)",
+        "method": "GQ only",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 66.52,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -18.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "âœ“ | âœ— | âœ— | 59.81 | 66.63 | 68.79 | 68.63/71.17 | 83.87 | 78.24/61.30 | 46.93 | 89.45 | 54.58/32.52 | 66.52",
+        "bbox": [
+          68.885859375,
+          216.79453125,
+          540.723515625,
+          272.01796875
+        ],
+        "block_id": "/page/9/Table/5",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large (W4/8A8 ablation)",
+        "method": "GQ + TQ (ZeroQuant)",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 81.06,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -3.97,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "âœ“ | âœ“ | âœ— | 62.34 | 84.62 | 84.25 | 87.75/91.38 | 91.87 | 89.86/86.09 | 47.65 | 91.97 | 89.39/89.17 | 81.06",
+        "bbox": [
+          68.885859375,
+          216.79453125,
+          540.723515625,
+          272.01796875
+        ],
+        "block_id": "/page/9/Table/5",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large (W4/8A8 ablation)",
+        "method": "GQ + TQ + LKD (ZeroQuant-LKD)",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 81.62,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": -3.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "âœ“ | âœ“ | âœ“ | 63.51 | 84.70 | 84.71 | 88.73/91.99 | 91.73 | 90.25/86.74 | 49.82 | 92.09 | 89.34/89.08 | 81.62",
+        "bbox": [
+          68.885859375,
+          216.79453125,
+          540.723515625,
+          272.01796875
+        ],
+        "block_id": "/page/9/Table/5",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M (W4/8A8)",
+        "method": "ZeroQuant-LKD (Random data)",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 40.6,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 19.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "ZeroQuant-LKD | Random data | 26.1 | 59.3 | 29.2 | 50.5 | 64.9 | 34.5 | 40.6",
+        "bbox": [
+          69.1787109375,
+          316.59890625,
+          541.6259765625,
+          368.66671875
+        ],
+        "block_id": "/page/9/Table/7",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M (W4/8A8)",
+        "method": "ZeroQuant-LKD (Wikipedia)",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 30.4,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 8.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "ZeroQuant-LKD | Wikipedia | 33.9 | 62.4 | 28.0 | 52.7 | 69.5 | 36.2 | 30.4",
+        "bbox": [
+          69.1787109375,
+          316.59890625,
+          541.6259765625,
+          368.66671875
+        ],
+        "block_id": "/page/9/Table/7",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M (W4/8A8)",
+        "method": "ZeroQuant-LKD (Original PILE)",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 31.13,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 9.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "ZeroQuant-LKD | Original data | 37.4 | 61.8 | 28.2 | 53.1 | 68.5 | 36.6 | 31.1",
+        "bbox": [
+          69.1787109375,
+          316.59890625,
+          541.6259765625,
+          368.66671875
+        ],
+        "block_id": "/page/9/Table/7",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant-LKD (Tuned)",
+        "bit_width": "8-bit",
+        "group_size": "g48",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 84.07,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "E Tuned Results on BERT",
+        "quote": "W8A8 (ZeroQuant-LKD Tuned) | 60.90 | 84.95 | 85.10 | 86.27/90.60 | 92.07 | 91.47/88.47 | 71.84 | 93.46 | 90.09/89.62 | 84.07",
+        "bbox": [
+          68.27625,
+          115.93828125,
+          541.333125,
+          202.71796875
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table E.1"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "ZeroQuant-LKD (Tuned)",
+        "bit_width": "4-bit",
+        "group_size": "g48",
+        "dataset": "GLUE (W4/8A8)",
+        "metric": "Average Accuracy",
+        "value": 83.22,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "E Tuned Results on BERT",
+        "quote": "W4/8A8 (ZeroQuant-LKD Tuned) | 60.30 | 83.47 | 84.03 | 85.78/89.90 | 90.87 | 90.77/87.38 | 71.84 | 93.00 | 88.38/88.70 | 83.22",
+        "bbox": [
+          68.27625,
+          115.93828125,
+          541.333125,
+          202.71796875
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table E.1"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-large",
+        "method": "ZeroQuant-LKD (Tuned)",
+        "bit_width": "8-bit",
+        "group_size": "g64",
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 85.3,
+        "baseline_label": "FP16",
+        "baseline_value": 85.03,
+        "delta": 0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "E Tuned Results on BERT",
+        "quote": "W8A8 (ZeroQuant-LKD Tuned) | 64.36 | 86.64 | 85.74 | 88.48/91.97 | 92.49 | 91.15/88.13 | 74.73 | 93.58 | 90.45/90.19 | 85.30",
+        "bbox": [
+          67.3618359375,
+          257.082890625,
+          542.2475390625,
+          344.651484375
+        ],
+        "block_id": "/page/20/Table/3",
+        "source_table": "Table E.2"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "PTQ (W16A8 act-only)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 81.93,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -2.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "B.3 Accuracy reported for BERT on GLUE",
+        "quote": "W16A8 | 56.85 | 80.55 | 81.48 | 84.07/89.33 | 91.34 | 91.30/88.07 | 68.59 | 93.46 | 88.74/88.74 | 81.93",
+        "bbox": [
+          91.1246484375,
+          186.901171875,
+          519.6800390625,
+          253.958203125
+        ],
+        "block_id": "/page/18/Table/3",
+        "source_table": "Table C.1"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "PTQ (W8A16 weight-only)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Average Accuracy",
+        "value": 83.87,
+        "baseline_label": "FP16",
+        "baseline_value": 83.95,
+        "delta": -0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "B.3 Accuracy reported for BERT on GLUE",
+        "quote": "W8A16 | 60.77 | 84.65 | 84.92 | 85.29/89.86 | 91.84 | 91.52/88.56 | 71.84 | 93.46 | 89.89/89.50 | 83.87",
+        "bbox": [
+          91.1246484375,
+          186.901171875,
+          519.6800390625,
+          253.958203125
+        ],
+        "block_id": "/page/18/Table/3",
+        "source_table": "Table C.1"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "PTQ (W16A8 act-only)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 24.6,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3 Background and Challenge",
+        "quote": "W16A8 | 44.7 | 64.8 | 28.2 | 52.7 | 69.2 | 37.8 | 24.6",
+        "bbox": [
+          91.1246484375,
+          115.3659375,
+          519.6800390625,
+          181.6340625
+        ],
+        "block_id": "/page/3/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3-350M",
+        "method": "PTQ (W8A16 weight-only)",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Wikitext-2",
+        "metric": "Perplexity",
+        "value": 22.1,
+        "baseline_label": "FP16",
+        "baseline_value": 21.5,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3 Background and Challenge",
+        "quote": "W8A16 | 49.3 | 66.1 | 29.6 | 54.2 | 74.8 | 38.5 | 22.1",
+        "bbox": [
+          91.1246484375,
+          115.3659375,
+          519.6800390625,
+          181.6340625
+        ],
+        "block_id": "/page/3/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 71.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 71.7 | 77.7 | 50.5 | 2x65ms (1x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 71.9,
+        "baseline_label": "FP16",
+        "baseline_value": 71.7,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8/16 | 71.9 | 78.3 | 50.4 | 1x25ms (5.2x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 77.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W16A16 | 71.7 | 77.7 | 50.5 | 2x65ms (1x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 78.3,
+        "baseline_label": "FP16",
+        "baseline_value": 77.7,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.5 Ablation Study of Different Components",
+        "quote": "W8A8/16 | 71.9 | 78.3 | 50.4 | 1x25ms (5.2x)",
+        "bbox": [
+          304.30265625,
+          116.750390625,
+          538.39265625,
+          160.140234375
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 8"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 74,
+    "dropped_cited_count": 2,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }
