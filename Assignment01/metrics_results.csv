@@ -902,6 +902,339 @@ RP11,RoBERTa-large,8-bit FFN+Linear,8-bit,vector-wise,GLUE,Mean Accuracy,87.7,FP
 RP11,RoBERTa-large,8-bit FFN+Linear+decomp 1%,8-bit,vector-wise,GLUE,Mean Accuracy,87.9,FP32,88.6,-0.7,absolute,False,measured,20,F Fine-tuning Results,Table 10,\checkmark | \checkmark | 1% | 90.0 | 94.6 | 92.2 | 83.0 | 96.2 | 89.7 | 65.8 | 91.8 | 87.9
 RP11,RoBERTa-large,8-bit FFN+Linear+decomp 2%,8-bit,vector-wise,GLUE,Mean Accuracy,88.7,FP32,88.6,0.1,absolute,False,measured,20,F Fine-tuning Results,Table 10,\checkmark | \checkmark | 2% | 90.0 | 94.5 | 92.2 | 85.9 | 96.7 | 90.4 | 68.0 | 91.9 | 88.7
 RP11,RoBERTa-large,8-bit FFN+Linear+decomp 3%,8-bit,vector-wise,GLUE,Mean Accuracy,88.7,FP32,88.6,0.1,absolute,False,measured,20,F Fine-tuning Results,Table 10,\checkmark | \checkmark | 3% | 90.0 | 94.6 | 92.2 | 86.3 | 96.4 | 90.2 | 68.3 | 91.8 | 88.7
+RP12,Llama-2,Llama-2,,,Pretraining corpus,Pretraining tokens,2T,,,,,True,measured,5,2.1 Pretraining Data,,We trained on 2 trillion tokens of data as this provides a good performance-cost trade-off
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,Human Eval (helpfulness ~4000 prompts),Win rate vs ChatGPT (%),36.0,ChatGPT,50.0,-14.0,percent,True,measured,19,3.4.2 Human Evaluation,,Llama 2-Chat 70B model has a win rate of 36% and a tie rate of 31.5% relative to ChatGPT
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,Human Eval (helpfulness ~4000 prompts),Tie rate vs ChatGPT (%),31.5,,,,,True,measured,19,3.4.2 Human Evaluation,,Llama 2-Chat 70B model has a win rate of 36% and a tie rate of 31.5% relative to ChatGPT
+RP12,Llama-2-Chat-7B,Llama-2-Chat,,,Human Eval (helpfulness),Win rate vs MPT-7B-chat (%),60.0,,,,,True,measured,18,3.4.2 Human Evaluation,,Llama 2-Chat 7B model outperforms MPT-7B-chat on 60% of the prompts
+RP12,Llama-2-Chat-34B,Llama-2-Chat,,,Human Eval (helpfulness),Win rate vs Vicuna-33B / Falcon-40B (%),75.0,,,,,True,measured,18,3.4.2 Human Evaluation,,Llama 2-Chat 34B has an overall win rate of more than 75% against equivalently sized Vicuna-33B and Falcon 40B models
+RP12,Llama-2-7B,Llama-2,,,Pretraining,GPU hours,184320,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,LLAMA 2 | 7B | 184320 | 400 | 31.22
+RP12,Llama-2-7B,Llama-2,,,Pretraining,Power (W),400,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,LLAMA 2 | 7B | 184320 | 400 | 31.22
+RP12,Llama-2-7B,Llama-2,,,Pretraining,Carbon emitted (tCO2eq),31.22,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,LLAMA 2 | 7B | 184320 | 400 | 31.22
+RP12,Llama-2-13B,Llama-2,,,Pretraining,GPU hours,368640,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,13B | 368640 | 400 | 62.44
+RP12,Llama-2-13B,Llama-2,,,Pretraining,Carbon emitted (tCO2eq),62.44,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,13B | 368640 | 400 | 62.44
+RP12,Llama-2-34B,Llama-2,,,Pretraining,GPU hours,1038336,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,34B | 1038336 | 350 | 153.90
+RP12,Llama-2-34B,Llama-2,,,Pretraining,Power (W),350,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,34B | 1038336 | 350 | 153.90
+RP12,Llama-2-34B,Llama-2,,,Pretraining,Carbon emitted (tCO2eq),153.9,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,34B | 1038336 | 350 | 153.90
+RP12,Llama-2-70B,Llama-2,,,Pretraining,GPU hours,1720320,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,70B | 1720320 | 400 | 291.42
+RP12,Llama-2-70B,Llama-2,,,Pretraining,Carbon emitted (tCO2eq),291.42,,,,,True,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,70B | 1720320 | 400 | 291.42
+RP12,Llama-2 (all sizes),Llama-2,,,Pretraining,Total GPU hours,3311616,,,,,False,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,Total | | 3311616 | | 539.00
+RP12,Llama-2 (all sizes),Llama-2,,,Pretraining,Total carbon emitted (tCO2eq),539.0,,,,,True,measured,7,2.2.1 Training Hardware & Carbon Footprint,Table 2,"We estimate the total emissions for training to be 539 tCO2eq, of which 100% were directly offset"
+RP12,MPT-7B,MPT,,,Code (avg HumanEval/MBPP pass@1),Average score,20.5,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,Commonsense Reasoning (avg),Average accuracy,57.4,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,World Knowledge (NQ+TQA avg),Average score,41.0,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,Reading Comprehension (avg),Average score,57.5,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,Math (GSM8K+MATH avg),Average score,4.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,MMLU (5-shot),Accuracy,26.8,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,BBH (3-shot),Accuracy,31.0,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-7B,MPT,,,AGIEval (English),Accuracy,23.5,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,MPT | 7B | 20.5 | 57.4 | 41.0 | 57.5 | 4.9 | 26.8 | 31.0 | 23.5
+RP12,MPT-30B,MPT,,,Code (avg HumanEval/MBPP pass@1),Average score,28.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,30B | 28.9 | 64.9 | 50.0 | 64.7 | 9.1 | 46.9 | 38.0 | 33.8
+RP12,MPT-30B,MPT,,,MMLU (5-shot),Accuracy,46.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,30B | 28.9 | 64.9 | 50.0 | 64.7 | 9.1 | 46.9 | 38.0 | 33.8
+RP12,MPT-30B,MPT,,,BBH (3-shot),Accuracy,38.0,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,30B | 28.9 | 64.9 | 50.0 | 64.7 | 9.1 | 46.9 | 38.0 | 33.8
+RP12,Falcon-7B,Falcon,,,Code (avg),Average score,5.6,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,Falcon | 7B | 5.6 | 56.1 | 42.8 | 36.0 | 4.6 | 26.2 | 28.0 | 21.2
+RP12,Falcon-7B,Falcon,,,MMLU (5-shot),Accuracy,26.2,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,Falcon | 7B | 5.6 | 56.1 | 42.8 | 36.0 | 4.6 | 26.2 | 28.0 | 21.2
+RP12,Falcon-40B,Falcon,,,MMLU (5-shot),Accuracy,55.4,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,40B | 15.2 | 69.2 | 56.7 | 65.7 | 12.6 | 55.4 | 37.1 | 37.0
+RP12,Falcon-40B,Falcon,,,BBH (3-shot),Accuracy,37.1,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,40B | 15.2 | 69.2 | 56.7 | 65.7 | 12.6 | 55.4 | 37.1 | 37.0
+RP12,Falcon-40B,Falcon,,,AGIEval (English),Accuracy,37.0,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,40B | 15.2 | 69.2 | 56.7 | 65.7 | 12.6 | 55.4 | 37.1 | 37.0
+RP12,Llama-1-7B,Llama-1,,,MMLU (5-shot),Accuracy,35.1,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 1 | 7B | 14.1 | 60.8 | 46.2 | 58.5 | 6.95 | 35.1 | 30.3 | 23.9
+RP12,Llama-1-13B,Llama-1,,,MMLU (5-shot),Accuracy,46.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,13B | 18.9 | 66.1 | 52.6 | 62.3 | 10.9 | 46.9 | 37.0 | 33.9
+RP12,Llama-1-33B,Llama-1,,,MMLU (5-shot),Accuracy,57.8,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,33B | 26.0 | 70.0 | 58.4 | 67.6 | 21.4 | 57.8 | 39.8 | 41.7
+RP12,Llama-1-65B,Llama-1,,,MMLU (5-shot),Accuracy,63.4,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,65B | 30.7 | 70.7 | 60.5 | 68.6 | 30.8 | 63.4 | 43.5 | 47.6
+RP12,Llama-1-65B,Llama-1,,,BBH (3-shot),Accuracy,43.5,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,65B | 30.7 | 70.7 | 60.5 | 68.6 | 30.8 | 63.4 | 43.5 | 47.6
+RP12,Llama-1-65B,Llama-1,,,AGIEval (English),Accuracy,47.6,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,65B | 30.7 | 70.7 | 60.5 | 68.6 | 30.8 | 63.4 | 43.5 | 47.6
+RP12,Llama-2-7B,Llama-2,,,Code (avg),Average score,16.8,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,Commonsense Reasoning (avg),Average accuracy,63.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,World Knowledge (avg),Average score,48.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,Reading Comprehension (avg),Average score,61.3,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,Math (avg),Average score,14.6,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,MMLU (5-shot),Accuracy,45.3,Llama-1-7B (MMLU),35.1,10.2,absolute,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,BBH (3-shot),Accuracy,32.6,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-7B,Llama-2,,,AGIEval (English),Accuracy,29.3,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,LLAMA 2 | 7B | 16.8 | 63.9 | 48.9 | 61.3 | 14.6 | 45.3 | 32.6 | 29.3
+RP12,Llama-2-13B,Llama-2,,,MMLU (5-shot),Accuracy,54.8,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,13B | 24.5 | 66.9 | 55.4 | 65.8 | 28.7 | 54.8 | 39.4 | 39.1
+RP12,Llama-2-13B,Llama-2,,,BBH (3-shot),Accuracy,39.4,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,13B | 24.5 | 66.9 | 55.4 | 65.8 | 28.7 | 54.8 | 39.4 | 39.1
+RP12,Llama-2-13B,Llama-2,,,AGIEval (English),Accuracy,39.1,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,13B | 24.5 | 66.9 | 55.4 | 65.8 | 28.7 | 54.8 | 39.4 | 39.1
+RP12,Llama-2-34B,Llama-2,,,MMLU (5-shot),Accuracy,62.6,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,34B | 27.8 | 69.9 | 58.7 | 68.0 | 24.2 | 62.6 | 44.1 | 43.4
+RP12,Llama-2-34B,Llama-2,,,BBH (3-shot),Accuracy,44.1,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,34B | 27.8 | 69.9 | 58.7 | 68.0 | 24.2 | 62.6 | 44.1 | 43.4
+RP12,Llama-2-34B,Llama-2,,,AGIEval (English),Accuracy,43.4,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,34B | 27.8 | 69.9 | 58.7 | 68.0 | 24.2 | 62.6 | 44.1 | 43.4
+RP12,Llama-2-70B,Llama-2,,,Code (avg),Average score,37.5,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,Commonsense Reasoning (avg),Average accuracy,71.9,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,World Knowledge (avg),Average score,63.6,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,Reading Comprehension (avg),Average score,69.4,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,Math (avg),Average score,35.2,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,MMLU (5-shot),Accuracy,68.9,Llama-1-65B (MMLU),63.4,5.5,absolute,True,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,BBH (3-shot),Accuracy,51.2,Llama-1-65B (BBH),43.5,7.7,absolute,True,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,AGIEval (English),Accuracy,54.2,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 3,70B | 37.5 | 71.9 | 63.6 | 69.4 | 35.2 | 68.9 | 51.2 | 54.2
+RP12,Llama-2-70B,Llama-2,,,MMLU,Accuracy (5-shot),68.9,GPT-3.5,70.0,-1.1,absolute,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 4,MMLU (5-shot) | 70.0 | 86.4 | 69.3 | 78.3 | 68.9
+RP12,Llama-2-70B,Llama-2,,,TriviaQA,Exact Match (1-shot),85.0,PaLM,81.4,3.6,absolute,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 4,TriviaQA (1-shot) | - | - | 81.4 | 86.1 | 85.0
+RP12,Llama-2-70B,Llama-2,,,Natural Questions,Exact Match (1-shot),33.0,,,,,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 4,Natural Questions (1-shot) | - | - | 29.3 | 37.5 | 33.0
+RP12,Llama-2-70B,Llama-2,,,GSM8K,Accuracy (8-shot),56.8,GPT-3.5,57.1,-0.3,absolute,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 4,GSM8K (8-shot) | 57.1 | 92.0 | 56.5 | 80.7 | 56.8
+RP12,Llama-2-70B,Llama-2,,,HumanEval,pass@1 (0-shot),29.9,GPT-3.5,48.1,-18.2,absolute,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 4,HumanEval (0-shot) | 48.1 | 67.0 | 26.2 | - | 29.9
+RP12,Llama-2-70B,Llama-2,,,BIG-Bench Hard,Accuracy (3-shot),51.2,PaLM,52.3,-1.1,absolute,False,measured,8,2.3 Llama 2 Pretrained Model Evaluation,Table 4,BIG-Bench Hard (3-shot) | - | - | 52.3 | 65.7 | 51.2
+RP12,GPT-4,GPT-4,,,Meta Helpful.,Reward Model Accuracy,58.6,,,,,False,measured,12,3.2.2 Reward Modeling,Table 7,GPT4 | 58.6 | 58.1 | - | - | - | - | -
+RP12,GPT-4,GPT-4,,,Meta Safety,Reward Model Accuracy,58.1,,,,,False,measured,12,3.2.2 Reward Modeling,Table 7,GPT4 | 58.6 | 58.1 | - | - | - | - | -
+RP12,Llama-2-Safety-RM,Llama-2 Safety RM,,,Meta Safety,Reward Model Accuracy,64.5,GPT-4 (Meta Safety),58.1,6.4,absolute,False,measured,12,3.2.2 Reward Modeling,Table 7,Safety RM | 56.2 | 64.5 | 55.4 | 74.7 | 71.7 | 65.2 | 64.3
+RP12,Llama-2-Safety-RM,Llama-2 Safety RM,,,Meta Helpful.,Reward Model Accuracy,56.2,,,,,False,measured,12,3.2.2 Reward Modeling,Table 7,Safety RM | 56.2 | 64.5 | 55.4 | 74.7 | 71.7 | 65.2 | 64.3
+RP12,Llama-2-Safety-RM,Llama-2 Safety RM,,,All RM benchmarks (avg),Reward Model Accuracy,64.3,,,,,False,measured,12,3.2.2 Reward Modeling,Table 7,Safety RM | ... | 64.3
+RP12,Llama-2-Helpfulness-RM,Llama-2 Helpfulness RM,,,Meta Helpful.,Reward Model Accuracy,63.2,GPT-4 (Meta Helpful.),58.6,4.6,absolute,False,measured,12,3.2.2 Reward Modeling,Table 7,Helpfulness RM | 63.2 | 62.8 | 72.0 | 71.0 | 75.5 | 80.0 | 70.6
+RP12,Llama-2-Helpfulness-RM,Llama-2 Helpfulness RM,,,Meta Safety,Reward Model Accuracy,62.8,,,,,False,measured,12,3.2.2 Reward Modeling,Table 7,Helpfulness RM | 63.2 | 62.8 | 72.0 | 71.0 | 75.5 | 80.0 | 70.6
+RP12,Llama-2-Helpfulness-RM,Llama-2 Helpfulness RM,,,All RM benchmarks (avg),Reward Model Accuracy,70.6,,,,,True,measured,12,3.2.2 Reward Modeling,Table 7,Helpfulness RM | ... | 70.6
+RP12,Llama-2-Safety-RM,Llama-2 Safety RM,,,Meta Safety (Significantly Better),Accuracy,94.3,,,,,False,measured,12,3.2.2 Reward Modeling,Table 8,Safety RM | Meta Safety | 94.3 | 76.3 | 65.7 | 55.3 | 64.5
+RP12,Llama-2-Safety-RM,Llama-2 Safety RM,,,Meta Safety (Negligibly/Unsure),Accuracy,55.3,,,,,False,measured,12,3.2.2 Reward Modeling,Table 8,Safety RM | Meta Safety | 94.3 | 76.3 | 65.7 | 55.3 | 64.5
+RP12,Llama-2-Helpfulness-RM,Llama-2 Helpfulness RM,,,Meta Safety (Significantly Better),Accuracy,89.9,,,,,False,measured,12,3.2.2 Reward Modeling,Table 8,Helpfulness RM | | 89.9 | 73.2 | 63.8 | 54.5 | 62.8
+RP12,Llama-2-Helpfulness-RM,Llama-2 Helpfulness RM,,,Meta Helpful. (Significantly Better),Accuracy,80.7,,,,,False,measured,12,3.2.2 Reward Modeling,Table 8,Helpfulness RM | | 80.7 | 67.5 | 60.9 | 54.7 | 63.2
+RP12,MPT-7B,MPT,,,TruthfulQA,% truthful + informative,29.13,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,MPT-7B ... 29.13
+RP12,MPT-7B,MPT,,,ToxiGen,% toxic generations,22.32,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,MPT-7B ... 22.32
+RP12,MPT-30B,MPT,,,TruthfulQA,% truthful + informative,35.25,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,MPT-30B ... 35.25
+RP12,MPT-30B,MPT,,,ToxiGen,% toxic generations,22.61,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,MPT-30B ... 22.61
+RP12,Falcon-7B,Falcon,,,TruthfulQA,% truthful + informative,25.95,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Falcon-7B ... 25.95
+RP12,Falcon-7B,Falcon,,,ToxiGen,% toxic generations,14.53,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Falcon-7B ... 14.53
+RP12,Falcon-40B,Falcon,,,TruthfulQA,% truthful + informative,40.39,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Falcon-40B ... 40.39
+RP12,Falcon-40B,Falcon,,,ToxiGen,% toxic generations,23.44,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Falcon-40B ... 23.44
+RP12,Llama-1-7B,Llama-1,,,TruthfulQA,% truthful + informative,27.42,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-7B ... 27.42
+RP12,Llama-1-7B,Llama-1,,,ToxiGen,% toxic generations,23.0,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-7B ... 23.0
+RP12,Llama-1-13B,Llama-1,,,TruthfulQA,% truthful + informative,41.74,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-13B ... 41.74
+RP12,Llama-1-13B,Llama-1,,,ToxiGen,% toxic generations,23.08,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-13B ... 23.08
+RP12,Llama-1-33B,Llama-1,,,TruthfulQA,% truthful + informative,44.19,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-33B ... 44.19
+RP12,Llama-1-33B,Llama-1,,,ToxiGen,% toxic generations,22.57,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-33B ... 22.57
+RP12,Llama-1-65B,Llama-1,,,TruthfulQA,% truthful + informative,48.71,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-65B ... 48.71
+RP12,Llama-1-65B,Llama-1,,,ToxiGen,% toxic generations,21.77,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-1-65B ... 21.77
+RP12,Llama-2-7B,Llama-2,,,TruthfulQA,% truthful + informative,33.29,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-7B ... 33.29
+RP12,Llama-2-7B,Llama-2,,,ToxiGen,% toxic generations,21.25,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-7B ... 21.25
+RP12,Llama-2-13B,Llama-2,,,TruthfulQA,% truthful + informative,41.86,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-13B ... 41.86
+RP12,Llama-2-13B,Llama-2,,,ToxiGen,% toxic generations,26.1,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-13B ... 26.1
+RP12,Llama-2-34B,Llama-2,,,TruthfulQA,% truthful + informative,43.45,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-34B ... 43.45
+RP12,Llama-2-34B,Llama-2,,,ToxiGen,% toxic generations,21.19,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-34B ... 21.19
+RP12,Llama-2-70B,Llama-2,,,TruthfulQA,% truthful + informative,50.18,,,,,True,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-70B ... 50.18
+RP12,Llama-2-70B,Llama-2,,,ToxiGen,% toxic generations,24.6,,,,,False,measured,23,4.1 Safety in Pretraining,Table 11,Llama-2-70B ... 24.6
+RP12,ChatGPT,GPT-3.5,,,TruthfulQA,% truthful + informative,78.46,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,ChatGPT | - | 78.46 | 0.20
+RP12,ChatGPT,GPT-3.5,,,ToxiGen,% toxic generations,0.2,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,ChatGPT | - | 78.46 | 0.20
+RP12,Falcon-instruct-7B,Falcon-instruct,,,TruthfulQA,% truthful + informative,28.03,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,Falcon-instruct | 7B | 28.03 | 7.89
+RP12,Falcon-instruct-7B,Falcon-instruct,,,ToxiGen,% toxic generations,7.89,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,Falcon-instruct | 7B | 28.03 | 7.89
+RP12,MPT-instruct-7B,MPT-instruct,,,TruthfulQA,% truthful + informative,29.99,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,MPT-instruct | 7B | 29.99 | 16.33
+RP12,MPT-instruct-7B,MPT-instruct,,,ToxiGen,% toxic generations,16.33,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,MPT-instruct | 7B | 29.99 | 16.33
+RP12,Llama-2-Chat-7B,Llama-2-Chat,,,TruthfulQA,% truthful + informative,57.04,Llama-2-7B (pretrained),33.29,23.75,absolute,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,LLAMA 2-CHAT | 7B | 57.04 | 0.00
+RP12,Llama-2-Chat-7B,Llama-2-Chat,,,ToxiGen,% toxic generations,0.0,Llama-2-7B (pretrained),21.25,-21.25,absolute,True,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,LLAMA 2-CHAT | 7B | 57.04 | 0.00
+RP12,Llama-2-Chat-13B,Llama-2-Chat,,,TruthfulQA,% truthful + informative,62.18,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,13B | 62.18 | 0.00
+RP12,Llama-2-Chat-13B,Llama-2-Chat,,,ToxiGen,% toxic generations,0.0,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,13B | 62.18 | 0.00
+RP12,Llama-2-Chat-34B,Llama-2-Chat,,,TruthfulQA,% truthful + informative,67.2,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,34B | 67.20 | 0.02
+RP12,Llama-2-Chat-34B,Llama-2-Chat,,,ToxiGen,% toxic generations,0.02,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,34B | 67.20 | 0.02
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,TruthfulQA,% truthful + informative,64.14,ChatGPT (TruthfulQA),78.46,-14.32,absolute,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,70B | 64.14 | 0.01
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen,% toxic generations,0.01,,,,,False,measured,31,4.4 Safety Evaluation of Llama 2-Chat,Table 14,70B | 64.14 | 0.01
+RP12,Llama-2-Chat-70B,Llama-2-Chat (with calculator),,,ASDiv,Accuracy,67.1,Toolformer,40.4,26.7,absolute,False,measured,34,5.1 Learnings and Observations,Table 15,Llama 2-CHAT | 67.1 | 69.2 | 82.4
+RP12,Llama-2-Chat-70B,Llama-2-Chat (with calculator),,,SVAMP,Accuracy,69.2,Toolformer,29.4,39.8,absolute,False,measured,34,5.1 Learnings and Observations,Table 15,Llama 2-CHAT | 67.1 | 69.2 | 82.4
+RP12,Llama-2-Chat-70B,Llama-2-Chat (with calculator),,,MAWPS,Accuracy,82.4,Toolformer,44.0,38.4,absolute,False,measured,34,5.1 Learnings and Observations,Table 15,Llama 2-CHAT | 67.1 | 69.2 | 82.4
+RP12,Llama-2-30B-MHA,Llama-2 (MHA),,,MMLU,Accuracy (5-shot),28.0,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,MHA | 71.0 | 79.3 | 48.2 | 75.1 | 71.2 | 43.0 | 12.4 | 44.7 | 28.0 | 4.9 | 7.9
+RP12,Llama-2-30B-MQA,Llama-2 (MQA),,,MMLU,Accuracy (5-shot),26.5,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,MQA | 70.6 | 79.0 | 47.9 | 74.5 | 71.6 | 41.9 | 14.5 | 42.8 | 26.5 | 4.8 | 7.3
+RP12,Llama-2-30B-GQA,Llama-2 (GQA),,,MMLU,Accuracy (5-shot),26.9,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,GQA | 69.4 | 78.8 | 48.6 | 75.4 | 72.1 | 42.5 | 14.0 | 46.2 | 26.9 | 5.3 | 7.9
+RP12,Llama-2-30B-MHA,Llama-2 (MHA),,,GSM8K,maj@1 (8-shot),4.9,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,MHA | ... | 4.9 | 7.9
+RP12,Llama-2-30B-GQA,Llama-2 (GQA),,,GSM8K,maj@1 (8-shot),5.3,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,GQA | ... | 5.3 | 7.9
+RP12,Llama-2-30B-MHA,Llama-2 (MHA),,,HumanEval,pass@1,7.9,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,MHA | ... | 7.9
+RP12,Llama-2-30B-GQA,Llama-2 (GQA),,,HumanEval,pass@1,7.9,,,,,False,measured,48,A.2.1 Architecture Changes Compared to Llama 1,Table 18,GQA | ... | 7.9
+RP12,Llama-2-70B,Llama-2,,,MMLU-Humanities,Accuracy (5-shot),65.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 19,Llama-2-70B ... 65.0 | 58.0 | 80.3 | 74.6 | 68.9
+RP12,Llama-2-70B,Llama-2,,,MMLU-STEM,Accuracy (5-shot),58.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 19,Llama-2-70B ... 65.0 | 58.0 | 80.3 | 74.6 | 68.9
+RP12,Llama-2-70B,Llama-2,,,MMLU-Social-Sciences,Accuracy (5-shot),80.3,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 19,Llama-2-70B ... 65.0 | 58.0 | 80.3 | 74.6 | 68.9
+RP12,Llama-2-70B,Llama-2,,,MMLU-Other,Accuracy (5-shot),74.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 19,Llama-2-70B ... 65.0 | 58.0 | 80.3 | 74.6 | 68.9
+RP12,Llama-2-70B,Llama-2,,,BoolQ,Accuracy (0-shot),85.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 85.0
+RP12,Llama-2-70B,Llama-2,,,PIQA,Accuracy (0-shot),82.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 82.8
+RP12,Llama-2-70B,Llama-2,,,SIQA,Accuracy (0-shot),50.7,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 50.7
+RP12,Llama-2-70B,Llama-2,,,HellaSwag,Accuracy (0-shot),85.3,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 85.3
+RP12,Llama-2-70B,Llama-2,,,WinoGrande,Accuracy (0-shot),80.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 80.2
+RP12,Llama-2-70B,Llama-2,,,ARC-Easy,Accuracy (0-shot),80.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 80.2
+RP12,Llama-2-70B,Llama-2,,,ARC-Challenge,Accuracy (0-shot),57.4,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 57.4
+RP12,Llama-2-70B,Llama-2,,,OpenBookQA,Accuracy (0-shot),60.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 60.2
+RP12,Llama-2-70B,Llama-2,,,CommonsenseQA,Accuracy (0-shot),78.5,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,70B | 78.5
+RP12,Llama-1-65B,Llama-1,,,BoolQ,Accuracy (0-shot),85.3,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,65B | 85.3
+RP12,Llama-1-65B,Llama-1,,,PIQA,Accuracy (0-shot),82.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,65B | 82.8
+RP12,Llama-1-65B,Llama-1,,,HellaSwag,Accuracy (0-shot),84.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,65B | 84.2
+RP12,Llama-1-65B,Llama-1,,,WinoGrande,Accuracy (0-shot),77.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,65B | 77.0
+RP12,Llama-1-65B,Llama-1,,,ARC-Challenge,Accuracy (0-shot),56.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,65B | 56.0
+RP12,Llama-1-65B,Llama-1,,,OpenBookQA,Accuracy (0-shot),60.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,65B | 60.2
+RP12,Falcon-40B,Falcon,,,BoolQ,Accuracy (0-shot),83.1,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,40B | 83.1
+RP12,Falcon-40B,Falcon,,,HellaSwag,Accuracy (0-shot),83.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,40B | 83.6
+RP12,Falcon-40B,Falcon,,,WinoGrande,Accuracy (0-shot),76.9,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,40B | 76.9
+RP12,Falcon-40B,Falcon,,,ARC-Challenge,Accuracy (0-shot),54.5,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 20,40B | 54.5
+RP12,MPT-7B,MPT,,,HumanEval,pass@1 (0-shot),18.3,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,MPT-7B ... 18.3
+RP12,MPT-7B,MPT,,,MBPP,pass@1 (3-shot),22.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,MPT-7B ... 18.3
+RP12,MPT-30B,MPT,,,HumanEval,pass@1 (0-shot),25.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,MPT-30B ... 25.0
+RP12,MPT-30B,MPT,,,MBPP,pass@1 (3-shot),32.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,MPT-30B ... 25.0
+RP12,Falcon-7B,Falcon,,,HumanEval,pass@1 (0-shot),0.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Falcon-7B ... 0.0
+RP12,Falcon-7B,Falcon,,,MBPP,pass@1 (3-shot),11.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Falcon-7B ... 0.0
+RP12,Falcon-40B,Falcon,,,HumanEval,pass@1 (0-shot),0.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Falcon-40B ... 0.6
+RP12,Falcon-40B,Falcon,,,MBPP,pass@1 (3-shot),29.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Falcon-40B ... 0.6
+RP12,Llama-1-7B,Llama-1,,,HumanEval,pass@1 (0-shot),10.5,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-7B ... 10.5
+RP12,Llama-1-7B,Llama-1,,,HumanEval,pass@100,36.5,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-7B ... 10.5
+RP12,Llama-1-7B,Llama-1,,,MBPP,pass@1 (3-shot),17.7,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-7B ... 10.5
+RP12,Llama-1-7B,Llama-1,,,MBPP,pass@80,56.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-7B ... 10.5
+RP12,Llama-1-13B,Llama-1,,,HumanEval,pass@1 (0-shot),15.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-13B ... 15.8
+RP12,Llama-1-13B,Llama-1,,,HumanEval,pass@100,52.5,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-13B ... 15.8
+RP12,Llama-1-13B,Llama-1,,,MBPP,pass@1 (3-shot),22.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-13B ... 15.8
+RP12,Llama-1-13B,Llama-1,,,MBPP,pass@80,64.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-13B ... 15.8
+RP12,Llama-1-33B,Llama-1,,,HumanEval,pass@1 (0-shot),21.7,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-33B ... 21.7
+RP12,Llama-1-33B,Llama-1,,,HumanEval,pass@100,70.7,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-33B ... 21.7
+RP12,Llama-1-33B,Llama-1,,,MBPP,pass@1 (3-shot),30.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-33B ... 21.7
+RP12,Llama-1-33B,Llama-1,,,MBPP,pass@80,73.4,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-33B ... 21.7
+RP12,Llama-1-65B,Llama-1,,,HumanEval,pass@1 (0-shot),23.7,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-65B ... 23.7
+RP12,Llama-1-65B,Llama-1,,,HumanEval,pass@100,79.3,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-65B ... 23.7
+RP12,Llama-1-65B,Llama-1,,,MBPP,pass@1 (3-shot),37.7,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-65B ... 23.7
+RP12,Llama-1-65B,Llama-1,,,MBPP,pass@80,76.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-1-65B ... 23.7
+RP12,Llama-2-7B,Llama-2,,,HumanEval,pass@1 (0-shot),12.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-7B ... 12.8
+RP12,Llama-2-7B,Llama-2,,,HumanEval,pass@100,45.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-7B ... 12.8
+RP12,Llama-2-7B,Llama-2,,,MBPP,pass@1 (3-shot),20.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-7B ... 12.8
+RP12,Llama-2-7B,Llama-2,,,MBPP,pass@80,62.8,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-7B ... 12.8
+RP12,Llama-2-13B,Llama-2,,,HumanEval,pass@1 (0-shot),18.3,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-13B ... 18.3
+RP12,Llama-2-13B,Llama-2,,,HumanEval,pass@100,60.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-13B ... 18.3
+RP12,Llama-2-13B,Llama-2,,,MBPP,pass@1 (3-shot),30.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-13B ... 18.3
+RP12,Llama-2-13B,Llama-2,,,MBPP,pass@80,69.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-13B ... 18.3
+RP12,Llama-2-34B,Llama-2,,,HumanEval,pass@1 (0-shot),22.6,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-34B ... 22.6
+RP12,Llama-2-34B,Llama-2,,,HumanEval,pass@100,77.2,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-34B ... 22.6
+RP12,Llama-2-34B,Llama-2,,,MBPP,pass@1 (3-shot),33.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-34B ... 22.6
+RP12,Llama-2-34B,Llama-2,,,MBPP,pass@80,76.1,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-34B ... 22.6
+RP12,Llama-2-70B,Llama-2,,,HumanEval,pass@1 (0-shot),29.9,,,,,True,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-70B ... 29.9
+RP12,Llama-2-70B,Llama-2,,,HumanEval,pass@100,89.0,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-70B ... 29.9
+RP12,Llama-2-70B,Llama-2,,,MBPP,pass@1 (3-shot),45.0,,,,,True,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-70B ... 29.9
+RP12,Llama-2-70B,Llama-2,,,MBPP,pass@80,81.4,,,,,False,measured,49,A.2.2 Additional Details for Pretrained Models Evaluation,Table 21,Llama-2-70B ... 29.9
+RP12,MPT-7B,MPT,,,NaturalQuestions,Exact Match (1-shot),17.8,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-7B | 11.6 | 17.8 | 20.8 | 22.7
+RP12,MPT-7B,MPT,,,NaturalQuestions,Exact Match (64-shot),22.7,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-7B | 11.6 | 17.8 | 20.8 | 22.7
+RP12,MPT-30B,MPT,,,NaturalQuestions,Exact Match (1-shot),23.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-30B | 15.8 | 23.0 | 26.6 | 29.3
+RP12,MPT-30B,MPT,,,NaturalQuestions,Exact Match (64-shot),29.3,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-30B | 15.8 | 23.0 | 26.6 | 29.3
+RP12,Falcon-7B,Falcon,,,NaturalQuestions,Exact Match (1-shot),18.1,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-7B | 15.7 | 18.1 | 21.0 | 24.0
+RP12,Falcon-7B,Falcon,,,NaturalQuestions,Exact Match (64-shot),24.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-7B | 15.7 | 18.1 | 21.0 | 24.0
+RP12,Falcon-40B,Falcon,,,NaturalQuestions,Exact Match (1-shot),29.5,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-40B | 26.3 | 29.5 | 33.5 | 35.5
+RP12,Falcon-40B,Falcon,,,NaturalQuestions,Exact Match (64-shot),35.5,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-40B | 26.3 | 29.5 | 33.5 | 35.5
+RP12,Llama-1-7B,Llama-1,,,NaturalQuestions,Exact Match (1-shot),18.7,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-7B | 16.8 | 18.7 | 22.0 | 26.1
+RP12,Llama-1-7B,Llama-1,,,NaturalQuestions,Exact Match (64-shot),26.1,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-7B | 16.8 | 18.7 | 22.0 | 26.1
+RP12,Llama-1-13B,Llama-1,,,NaturalQuestions,Exact Match (1-shot),23.4,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-13B | 20.1 | 23.4 | 28.1 | 31.9
+RP12,Llama-1-13B,Llama-1,,,NaturalQuestions,Exact Match (64-shot),31.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-13B | 20.1 | 23.4 | 28.1 | 31.9
+RP12,Llama-1-33B,Llama-1,,,NaturalQuestions,Exact Match (1-shot),28.3,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-33B | 24.9 | 28.3 | 32.9 | 36.0
+RP12,Llama-1-33B,Llama-1,,,NaturalQuestions,Exact Match (64-shot),36.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-33B | 24.9 | 28.3 | 32.9 | 36.0
+RP12,Llama-1-65B,Llama-1,,,NaturalQuestions,Exact Match (1-shot),31.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-65B | 23.8 | 31.0 | 35.0 | 39.9
+RP12,Llama-1-65B,Llama-1,,,NaturalQuestions,Exact Match (64-shot),39.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-65B | 23.8 | 31.0 | 35.0 | 39.9
+RP12,Llama-2-7B,Llama-2,,,NaturalQuestions,Exact Match (1-shot),22.7,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-7B | 16.4 | 22.7 | 25.7 | 29.5
+RP12,Llama-2-7B,Llama-2,,,NaturalQuestions,Exact Match (64-shot),29.5,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-7B | 16.4 | 22.7 | 25.7 | 29.5
+RP12,Llama-2-13B,Llama-2,,,NaturalQuestions,Exact Match (1-shot),28.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-13B | 16.1 | 28.0 | 31.2 | 34.6
+RP12,Llama-2-13B,Llama-2,,,NaturalQuestions,Exact Match (64-shot),34.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-13B | 16.1 | 28.0 | 31.2 | 34.6
+RP12,Llama-2-34B,Llama-2,,,NaturalQuestions,Exact Match (1-shot),30.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-34B | 25.1 | 30.0 | 32.8 | 39.9
+RP12,Llama-2-34B,Llama-2,,,NaturalQuestions,Exact Match (64-shot),39.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-34B | 25.1 | 30.0 | 32.8 | 39.9
+RP12,Llama-2-70B,Llama-2,,,NaturalQuestions,Exact Match (1-shot),33.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-70B | 25.3 | 33.0 | 39.5 | 44.3
+RP12,Llama-2-70B,Llama-2,,,NaturalQuestions,Exact Match (64-shot),44.3,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-70B | 25.3 | 33.0 | 39.5 | 44.3
+RP12,MPT-7B,MPT,,,TriviaQA (Wiki),Exact Match (1-shot),59.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-7B | 55.7 | 59.6 | 61.2 | 61.6
+RP12,MPT-7B,MPT,,,TriviaQA (Wiki),Exact Match (64-shot),61.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-7B | 55.7 | 59.6 | 61.2 | 61.6
+RP12,MPT-30B,MPT,,,TriviaQA (Wiki),Exact Match (1-shot),71.3,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-30B | 68.0 | 71.3 | 73.3 | 73.6
+RP12,MPT-30B,MPT,,,TriviaQA (Wiki),Exact Match (64-shot),73.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,MPT-30B | 68.0 | 71.3 | 73.3 | 73.6
+RP12,Falcon-7B,Falcon,,,TriviaQA (Wiki),Exact Match (1-shot),56.8,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-7B | 52.6 | 56.8 | 64.6 | 61.1
+RP12,Falcon-7B,Falcon,,,TriviaQA (Wiki),Exact Match (64-shot),61.1,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-7B | 52.6 | 56.8 | 64.6 | 61.1
+RP12,Falcon-40B,Falcon,,,TriviaQA (Wiki),Exact Match (1-shot),78.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-40B | 74.6 | 78.6 | 79.9 | 79.6
+RP12,Falcon-40B,Falcon,,,TriviaQA (Wiki),Exact Match (64-shot),79.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Falcon-40B | 74.6 | 78.6 | 79.9 | 79.6
+RP12,Llama-1-7B,Llama-1,,,TriviaQA (Wiki),Exact Match (1-shot),67.4,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-7B | 63.3 | 67.4 | 70.4 | 71.0
+RP12,Llama-1-7B,Llama-1,,,TriviaQA (Wiki),Exact Match (64-shot),71.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-7B | 63.3 | 67.4 | 70.4 | 71.0
+RP12,Llama-1-13B,Llama-1,,,TriviaQA (Wiki),Exact Match (1-shot),74.4,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-13B | 70.1 | 74.4 | 77.1 | 77.9
+RP12,Llama-1-13B,Llama-1,,,TriviaQA (Wiki),Exact Match (64-shot),77.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-13B | 70.1 | 74.4 | 77.1 | 77.9
+RP12,Llama-1-33B,Llama-1,,,TriviaQA (Wiki),Exact Match (1-shot),80.7,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-33B | 78.7 | 80.7 | 83.8 | 83.6
+RP12,Llama-1-33B,Llama-1,,,TriviaQA (Wiki),Exact Match (64-shot),83.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-33B | 78.7 | 80.7 | 83.8 | 83.6
+RP12,Llama-1-65B,Llama-1,,,TriviaQA (Wiki),Exact Match (1-shot),84.5,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-65B | 81.7 | 84.5 | 85.9 | 86.0
+RP12,Llama-1-65B,Llama-1,,,TriviaQA (Wiki),Exact Match (64-shot),86.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-1-65B | 81.7 | 84.5 | 85.9 | 86.0
+RP12,Llama-2-7B,Llama-2,,,TriviaQA (Wiki),Exact Match (1-shot),68.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-7B | 65.8 | 68.9 | 72.1 | 73.7
+RP12,Llama-2-7B,Llama-2,,,TriviaQA (Wiki),Exact Match (64-shot),73.7,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-7B | 65.8 | 68.9 | 72.1 | 73.7
+RP12,Llama-2-13B,Llama-2,,,TriviaQA (Wiki),Exact Match (1-shot),77.2,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-13B | 73.1 | 77.2 | 79.6 | 79.4
+RP12,Llama-2-13B,Llama-2,,,TriviaQA (Wiki),Exact Match (64-shot),79.4,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-13B | 73.1 | 77.2 | 79.6 | 79.4
+RP12,Llama-2-34B,Llama-2,,,TriviaQA (Wiki),Exact Match (1-shot),83.3,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-34B | 81.0 | 83.3 | 84.5 | 84.6
+RP12,Llama-2-34B,Llama-2,,,TriviaQA (Wiki),Exact Match (64-shot),84.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-34B | 81.0 | 83.3 | 84.5 | 84.6
+RP12,Llama-2-70B,Llama-2,,,TriviaQA (Wiki),Exact Match (1-shot),85.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-70B | 82.4 | 85.0 | 87.6 | 87.5
+RP12,Llama-2-70B,Llama-2,,,TriviaQA (Wiki),Exact Match (64-shot),87.5,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 22,Llama-2-70B | 82.4 | 85.0 | 87.6 | 87.5
+RP12,Llama-2-70B,Llama-2,,,SQuAD,EM (0-shot),80.7,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,70B | 80.7 | 82.6 | 81.9 | 81.9
+RP12,Llama-2-70B,Llama-2,,,SQuAD,EM (5-shot),81.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,70B | 80.7 | 82.6 | 81.9 | 81.9
+RP12,Llama-2-70B,Llama-2,,,QUAC,F1 (0-shot),42.4,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,70B | ... | 42.4 | 49.3
+RP12,Llama-2-70B,Llama-2,,,QUAC,F1 (1-shot),49.3,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,70B | ... | 42.4 | 49.3
+RP12,Llama-1-65B,Llama-1,,,SQuAD,EM (0-shot),79.4,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,65B | 79.4 | 80.0 | 78.3 | 77.9
+RP12,Llama-1-65B,Llama-1,,,QUAC,F1 (0-shot),41.0,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,65B | ... | 41.0 | 39.8
+RP12,Falcon-40B,Falcon,,,SQuAD,EM (0-shot),72.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,40B | 72.9 | 73.1 | 71.7 | 71.0
+RP12,Falcon-40B,Falcon,,,QUAC,F1 (0-shot),41.2,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 23,40B | ... | 41.2 | 43.3
+RP12,Llama-2-70B,Llama-2,,,AGIEval-LSAT-LR,Accuracy,70.2,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 24,70B | 54.2 | 23.2 | 48.8 | 25.7 | 70.2 | 76.6 | 86.9 | 53.4 | 41.8
+RP12,Llama-2-70B,Llama-2,,,AGIEval-LSAT-RC,Accuracy,76.6,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 24,70B | ... | 76.6 ...
+RP12,Llama-2-70B,Llama-2,,,AGIEval-SAT-en,Accuracy,86.9,,,,,False,measured,50,A.2.2 Additional Details for Pretrained Models Evaluation,Table 24,70B | ... | 86.9 ...
+RP12,MPT-7B,MPT,,,GSM8K,maj1@1 (8-shot),6.8,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,MPT-7B | 6.8 | 3.0
+RP12,MPT-7B,MPT,,,MATH,maj1@1 (4-shot),3.0,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,MPT-7B | 6.8 | 3.0
+RP12,MPT-30B,MPT,,,GSM8K,maj1@1 (8-shot),15.2,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,MPT-30B | 15.2 | 3.1
+RP12,MPT-30B,MPT,,,MATH,maj1@1 (4-shot),3.1,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,MPT-30B | 15.2 | 3.1
+RP12,Falcon-7B,Falcon,,,GSM8K,maj1@1 (8-shot),6.8,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Falcon-7B | 6.8 | 2.3
+RP12,Falcon-7B,Falcon,,,MATH,maj1@1 (4-shot),2.3,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Falcon-7B | 6.8 | 2.3
+RP12,Falcon-40B,Falcon,,,GSM8K,maj1@1 (8-shot),19.6,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Falcon-40B | 19.6 | 5.5
+RP12,Falcon-40B,Falcon,,,MATH,maj1@1 (4-shot),5.5,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Falcon-40B | 19.6 | 5.5
+RP12,Llama-1-7B,Llama-1,,,GSM8K,maj1@1 (8-shot),11.0,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-7B | 11.0 | 2.9
+RP12,Llama-1-7B,Llama-1,,,MATH,maj1@1 (4-shot),2.9,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-7B | 11.0 | 2.9
+RP12,Llama-1-13B,Llama-1,,,GSM8K,maj1@1 (8-shot),17.8,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-13B | 17.8 | 3.9
+RP12,Llama-1-13B,Llama-1,,,MATH,maj1@1 (4-shot),3.9,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-13B | 17.8 | 3.9
+RP12,Llama-1-33B,Llama-1,,,GSM8K,maj1@1 (8-shot),35.6,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-33B | 35.6 | 7.1
+RP12,Llama-1-33B,Llama-1,,,MATH,maj1@1 (4-shot),7.1,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-33B | 35.6 | 7.1
+RP12,Llama-1-65B,Llama-1,,,GSM8K,maj1@1 (8-shot),50.9,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-65B | 50.9 | 10.6
+RP12,Llama-1-65B,Llama-1,,,MATH,maj1@1 (4-shot),10.6,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-1-65B | 50.9 | 10.6
+RP12,Llama-2-7B,Llama-2,,,GSM8K,maj1@1 (8-shot),14.6,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-7B | 14.6 | 2.5
+RP12,Llama-2-7B,Llama-2,,,MATH,maj1@1 (4-shot),2.5,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-7B | 14.6 | 2.5
+RP12,Llama-2-13B,Llama-2,,,GSM8K,maj1@1 (8-shot),28.7,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-13B | 28.7 | 3.9
+RP12,Llama-2-13B,Llama-2,,,MATH,maj1@1 (4-shot),3.9,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-13B | 28.7 | 3.9
+RP12,Llama-2-34B,Llama-2,,,GSM8K,maj1@1 (8-shot),42.2,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-34B | 42.2 | 6.24
+RP12,Llama-2-34B,Llama-2,,,MATH,maj1@1 (4-shot),6.24,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-34B | 42.2 | 6.24
+RP12,Llama-2-70B,Llama-2,,,GSM8K,maj1@1 (8-shot),56.8,,,,,True,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-70B | 56.8 | 13.5
+RP12,Llama-2-70B,Llama-2,,,MATH,maj1@1 (4-shot),13.5,,,,,False,measured,51,A.2.2 Additional Details for Pretrained Models Evaluation,Table 25,Llama-2-70B | 56.8 | 13.5
+RP12,Llama-2-Helpfulness-RM,RM (no margin),,,Meta Helpful.,Avg accuracy,62.5,,,,,False,measured,52,A.3.3 Ablation on Ranking Loss with Preference Rating-based Margin,Table 28,No margin | 79.1 | 66.9 | 59.8 | 54.5 | 62.5
+RP12,Llama-2-Helpfulness-RM,RM (margin small),,,Meta Helpful.,Avg accuracy,63.0,No margin,62.5,0.5,absolute,False,measured,52,A.3.3 Ablation on Ranking Loss with Preference Rating-based Margin,Table 28,Margin Small | 80.4 | 67.3 | 60.4 | 55.0 | 63.0
+RP12,Llama-2-Helpfulness-RM,RM (margin large),,,Meta Helpful.,Avg accuracy,62.9,No margin,62.5,0.4,absolute,False,measured,52,A.3.3 Ablation on Ranking Loss with Preference Rating-based Margin,Table 28,Margin Large | 80.7 | 67.5 | 60.5 | 54.3 | 62.9
+RP12,Llama-2-Safety-RM,RM baseline,,,Meta Safety,Avg accuracy,63.7,,,,,False,measured,53,A.3.4 Ablation on Ranking Loss with Safety Auxiliary Loss,Table 29,Baseline | 63.7 | 93.0 | 56.0 | 59.5 | 73.0
+RP12,Llama-2-Safety-RM,RM + Auxiliary Safety Loss,,,Meta Safety,Avg accuracy,64.5,Baseline,63.7,0.8,absolute,False,measured,53,A.3.4 Ablation on Ranking Loss with Safety Auxiliary Loss,Table 29,+ Auxiliary Safety Loss | 64.5 | 94.3 | 56.9 | 59.9 | 90.4
+RP12,Llama-2-Safety-RM,RM baseline,,,Meta Safety,Unsafe Response Recall,73.0,,,,,False,measured,53,A.3.4 Ablation on Ranking Loss with Safety Auxiliary Loss,Table 29,Baseline | ... | 73.0
+RP12,Llama-2-Safety-RM,RM + Auxiliary Safety Loss,,,Meta Safety,Unsafe Response Recall,90.4,Baseline,73.0,17.4,absolute,True,measured,53,A.3.4 Ablation on Ranking Loss with Safety Auxiliary Loss,Table 29,+ Auxiliary Safety Loss | ... | 90.4
+RP12,Llama-2-Chat,Llama-2-Chat (baseline),,,GAtt human eval,Attribute recall accuracy at turn 4 (%),10,,,,,False,measured,54,A.3.5 Additional Results for GAtt,Table 30,4 | 10% | 100%
+RP12,Llama-2-Chat,Llama-2-Chat + GAtt,,,GAtt human eval,Attribute recall accuracy at turn 4 (%),100,Baseline,10,90,percent,True,measured,54,A.3.5 Additional Results for GAtt,Table 30,4 | 10% | 100%
+RP12,Llama-2-Chat,Llama-2-Chat (baseline),,,GAtt human eval,Attribute recall accuracy at turn 20 (%),0,,,,,False,measured,54,A.3.5 Additional Results for GAtt,Table 30,20 | 0% | 100%
+RP12,Llama-2-Chat,Llama-2-Chat + GAtt,,,GAtt human eval,Attribute recall accuracy at turn 20 (%),100,Baseline,0,100,percent,False,measured,54,A.3.5 Additional Results for GAtt,Table 30,20 | 0% | 100%
+RP12,Llama-2 (2k context),Llama-2 (2k ctx),,,NarrativeQA,F1,0.21,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 16,2k | 0.21 | 0.71 | 26.1 | 0.13/0.01/0.12 | 11.76 | 57.23/62.89
+RP12,Llama-2 (4k context),Llama-2 (4k ctx),,,NarrativeQA,F1,17.26,2k ctx,0.21,17.05,absolute,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 16,4k | 17.26 | 18.52 | 29.6 | ...
+RP12,Llama-2 (2k context),Llama-2 (2k ctx),,,Qasper,F1,0.71,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 16,2k | 0.21 | 0.71 ...
+RP12,Llama-2 (4k context),Llama-2 (4k ctx),,,Qasper,F1,18.52,2k ctx,0.71,17.81,absolute,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 16,4k | ... | 18.52 ...
+RP12,Llama-2 (2k context),Llama-2 (2k ctx),,,QuALITY,Accuracy,26.1,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 16,2k | ... | 26.1 ...
+RP12,Llama-2 (4k context),Llama-2 (4k ctx),,,QuALITY,Accuracy,29.6,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 16,4k | ... | 29.6 ...
+RP12,Llama-2 (2k context),Llama-2 (2k ctx),,,HellaSwag,Accuracy (0-shot),75.1,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 17,2k | 75.1 | 25.5 | 53.7 | 4.9 | 7.9
+RP12,Llama-2 (4k context),Llama-2 (4k ctx),,,HellaSwag,Accuracy (0-shot),74.8,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 17,4k | 74.8 | 25.5 | 52.2 | 6.5 | 7.3
+RP12,Llama-2 (2k context),Llama-2 (2k ctx),,,GSM8K,maj@1 (8-shot),4.9,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 17,2k | ... | 4.9 ...
+RP12,Llama-2 (4k context),Llama-2 (4k ctx),,,GSM8K,maj@1 (8-shot),6.5,,,,,False,measured,47,A.2.1 Architecture Changes Compared to Llama 1,Table 17,4k | ... | 6.5 ...
+RP12,Llama-2-7B,Llama-2,,,TruthfulQA,% true,39.53,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,LLAMA 2 | 7B | 33.29 | 39.53 | 93.02
+RP12,Llama-2-7B,Llama-2,,,TruthfulQA,% informative,93.02,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,LLAMA 2 | 7B | 33.29 | 39.53 | 93.02
+RP12,Llama-2-70B,Llama-2,,,TruthfulQA,% true,53.37,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,LLAMA 2 | 70B | 50.18 | 53.37 | 96.21
+RP12,Llama-2-70B,Llama-2,,,TruthfulQA,% informative,96.21,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,LLAMA 2 | 70B | 50.18 | 53.37 | 96.21
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,TruthfulQA,% true,67.07,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,LLAMA 2-Chat | 70B | 64.14 | 67.07 | 97.06
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,TruthfulQA,% informative,97.06,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,LLAMA 2-Chat | 70B | 64.14 | 67.07 | 97.06
+RP12,ChatGPT,GPT-3.5,,,TruthfulQA,% true,79.92,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,ChatGPT | | 78.46 | 79.92 | 98.53
+RP12,ChatGPT,GPT-3.5,,,TruthfulQA,% informative,98.53,,,,,False,measured,70,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 44,ChatGPT | | 78.46 | 79.92 | 98.53
+RP12,Llama-2-70B,Llama-2,,,ToxiGen-Asian,% toxic,21.29,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2 70B ... Asian 21.29
+RP12,Llama-2-70B,Llama-2,,,ToxiGen-Mexican,% toxic,32.9,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2 70B ... Mexican 32.9
+RP12,Llama-2-70B,Llama-2,,,ToxiGen-Muslim,% toxic,25.91,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2 70B ... Muslim 25.91
+RP12,Llama-2-70B,Llama-2,,,ToxiGen-Jewish,% toxic,30.6,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2 70B ... Jewish 30.6
+RP12,Llama-2-70B,Llama-2,,,ToxiGen-Black,% toxic,28.43,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2 70B ... Black 28.43
+RP12,Llama-2-70B,Llama-2,,,ToxiGen-LGBTQ,% toxic,22.35,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2 70B ... LGBTQ 22.35
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen-Asian,% toxic,0,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2-Chat 70B ... Asian 0
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen-Mexican,% toxic,0,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2-Chat 70B ... Mexican 0
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen-Muslim,% toxic,0,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2-Chat 70B ... Muslim 0
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen-Jewish,% toxic,0,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2-Chat 70B ... Jewish 0
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen-Women,% toxic,0.16,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2-Chat 70B ... Women 0.16
+RP12,Llama-2-Chat-70B,Llama-2-Chat,,,ToxiGen-LGBTQ,% toxic,0,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,LLAMA 2-Chat 70B ... LGBTQ 0
+RP12,ChatGPT,GPT-3.5,,,ToxiGen-LGBTQ,% toxic,0.66,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,ChatGPT | ... | LGBTQ 0.66
+RP12,Falcon-instruct-7B,Falcon-instruct,,,ToxiGen-Jewish,% toxic,11.19,,,,,False,measured,71,A.4.8 Automatic Safety Benchmark Evaluation Results,Table 45,Falcon-instruct | 7B | ... | 11.19
+RP12,Llama-2-70B,Llama-2,,,MMLU-Humanities (clean),Accuracy,62.2,,,,,False,measured,76,A.6 Dataset Contamination,Table 51,MMLU-Humanities (L = 50) | 70B | Clean | 0.05 | 3996 | 62.2 | 65.3 | -4.08
+RP12,Llama-2-70B,Llama-2,,,MMLU-Humanities (dirty),Accuracy,85.8,,,,,False,measured,76,A.6 Dataset Contamination,Table 51,Dirty | 94.5 | 520 | 85.8 | 65.3 | 9.80
+RP12,Llama-2-70B,Llama-2,,,MMLU-Overall (clean),Accuracy,68.0,,,,,False,measured,76,A.6 Dataset Contamination,Table 51,MMLU-Overall (L = 50) | 70B | Clean | 0.02 | 11862 | 68.0 | 68.9 | -2.00
+RP12,Llama-2-70B,Llama-2,,,MMLU-Overall (dirty),Accuracy,78.2,,,,,False,measured,76,A.6 Dataset Contamination,Table 51,Dirty | 94.4 | 1536 | 78.2 | 68.9 | 7.87
+RP12,Llama-2-7B,Llama-2,,,MMLU-Humanities (clean),Accuracy,40.8,,,,,False,measured,76,A.6 Dataset Contamination,Table 51,7B | Clean | 0.05 | 3996 | 40.8 | 42.9 | -2.75
+RP12,Llama-2-7B,Llama-2,,,Pretraining,Context length (tokens),4096,,,,,False,measured,6,2.2 Training Details,Table 1,LLAMA 2 | A new mix of publicly available online data | 7B | 4k
+RP12,Llama-2-70B,Llama-2,,,Pretraining,Context length (tokens),4096,,,,,False,measured,6,2.2 Training Details,Table 1,70B | 4k | ✓ | 2.0T | 1.5e-4
+RP12,Llama-2-70B,Llama-2,,,Pretraining,Tokens trained,2.0T,,,,,True,measured,6,2.2 Training Details,Table 1,70B | 4k | ✓ | 2.0T | 1.5e-4
+RP12,Llama-1-65B,Llama-1,,,Pretraining,Context length (tokens),2048,,,,,False,measured,6,2.2 Training Details,Table 1,LLAMA 1 | ... | 65B | 2k | X | 1.4T | 1.5e-4
+RP12,Llama-1-65B,Llama-1,,,Pretraining,Tokens trained,1.4T,,,,,False,measured,6,2.2 Training Details,Table 1,65B | 2k | X | 1.4T | 1.5e-4
+RP12,Llama-2-Chat,Llama-2-Chat,,,Human Eval helpfulness,Gwet's AC2 IRR (range low),0.37,,,,,False,measured,19,3.4.2 Human Evaluation,,Gwet's AC2 score varies between 0.37 and 0.55 depending on the specific model comparison
+RP12,Llama-2-Chat,Llama-2-Chat,,,Human Eval helpfulness,Gwet's AC2 IRR (range high),0.55,,,,,False,measured,19,3.4.2 Human Evaluation,,Gwet's AC2 score varies between 0.37 and 0.55 depending on the specific model comparison
+RP12,Llama-2-Chat,Llama-2-Chat (100% safety data),,,Helpfulness test set,False refusal rate (%),0.05,,,,,True,measured,26,4.2.3 Safety RLHF,,"false refusal is overall rare-approximately 0.05%-on the helpfulness dataset, even with 100% safety data"
+RP12,Llama-2,Llama-2,,,BPE Tokenizer,Vocabulary size,32000,,,,,False,measured,6,2.2 Training Details,,The total vocabulary size is 32k tokens
+RP12,Llama-2-Chat,Llama-2-Chat (SFT),,,SFT data,Number of SFT annotations,27540,,,,,False,measured,9,3.1 Supervised Fine-Tuning,,"We stopped annotating SFT after collecting a total of 27,540 annotations"
+RP12,Llama-2-RM,Llama-2 RM,,,Meta Safety+Helpfulness,Number of pairwise comparisons,1418091,,,,,False,measured,11,3.2.2 Reward Modeling,Table 6,"Meta (Safety & Helpfulness) | 1,418,091 | 3.9 | 798.5 | 31.4 | 234.1"
+RP12,Llama-2-RM,Llama-2 RM,,,Combined preference data,Total comparisons (Meta + open source),2919326,,,,,False,measured,11,3.2.2 Reward Modeling,Table 6,"Total | 2,919,326 | 1.6 | 595.7 | 108.2 | 216.9"
 RP13,LLaMA-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.319,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
 RP13,LLaMA-2-70B,FP16,16-bit,,C4,Perplexity,5.709,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
 RP13,LLaMA-2-70B,FP16,16-bit,,ARC-Easy,Accuracy,59.72,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
@@ -1775,6 +2108,486 @@ RP19,Vicuna-7B,FP16,16-bit,,MMLU,Accuracy,46.7,,,,,True,measured,9,4 Additional 
 RP19,Vicuna-13B,Magnitude (pruning),,46.16% sparsity,MMLU,Accuracy,31.7,Vicuna-7B FP16,46.7,-15.0,absolute,True,measured,9,4 Additional Results and Discussions,,"compressed Vicuna-13B with exactly similar parameter count (46.16% sparsity) of 7 billion using one-shot magnitude, Wanda, SparseGPT can only achieve MMLU accuracy of 31.7%, 45.3%, and 46.3%, respectively"
 RP19,Vicuna-13B,Wanda,,46.16% sparsity,MMLU,Accuracy,45.3,Vicuna-7B FP16,46.7,-1.4,absolute,False,measured,9,4 Additional Results and Discussions,,"compressed Vicuna-13B with exactly similar parameter count (46.16% sparsity) of 7 billion using one-shot magnitude, Wanda, SparseGPT can only achieve MMLU accuracy of 31.7%, 45.3%, and 46.3%, respectively"
 RP19,Vicuna-13B,SparseGPT,,46.16% sparsity,MMLU,Accuracy,46.3,Vicuna-7B FP16,46.7,-0.4,absolute,False,measured,9,4 Additional Results and Discussions,,"compressed Vicuna-13B with exactly similar parameter count (46.16% sparsity) of 7 billion using one-shot magnitude, Wanda, SparseGPT can only achieve MMLU accuracy of 31.7%, 45.3%, and 46.3%, respectively"
+RP20,Llama-3-8B,Llama-3-Instruct,,,MMLU (5-shot),Accuracy,69.4,,,,,True,measured,3,1 Introduction,Table 2,MMLU (5-shot) | 69.4 | 72.3 | 61.1 | 83.6
+RP20,Llama-3-70B,Llama-3-Instruct,,,MMLU (5-shot),Accuracy,83.6,,,,,True,measured,3,1 Introduction,Table 2,MMLU (5-shot) | 69.4 | 72.3 | 61.1 | 83.6
+RP20,Llama-3-405B,Llama-3-Instruct,,,MMLU (5-shot),Accuracy,87.3,,,,,True,measured,3,1 Introduction,Table 2,Llama 3 405B | ... | 87.3
+RP20,Gemma-2-9B,Gemma-2,,,MMLU (5-shot),Accuracy,72.3,,,,,False,measured,3,1 Introduction,Table 2,Gemma 2 9B | ... | 72.3
+RP20,Mistral-7B,Mistral,,,MMLU (5-shot),Accuracy,61.1,,,,,False,measured,3,1 Introduction,Table 2,Mistral 7B | ... | 61.1
+RP20,Mixtral-8x22B,Mixtral,,,MMLU (5-shot),Accuracy,76.9,,,,,False,measured,3,1 Introduction,Table 2,Mixtral 8x22B | ... | 76.9
+RP20,Llama-3-8B,Llama-3-Instruct,,,"MMLU (0-shot, CoT)",Accuracy,73.0,,,,,False,measured,3,1 Introduction,Table 2,"MMLU (0-shot, CoT) | 73.0"
+RP20,Llama-3-70B,Llama-3-Instruct,,,"MMLU (0-shot, CoT)",Accuracy,86.0,,,,,False,measured,3,1 Introduction,Table 2,"MMLU (0-shot, CoT) | ... | 86.0"
+RP20,Llama-3-405B,Llama-3-Instruct,,,"MMLU (0-shot, CoT)",Accuracy,88.6,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B | ... | 88.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,"MMLU-Pro (5-shot, CoT)",Accuracy,48.3,,,,,False,measured,3,1 Introduction,Table 2,"MMLU-Pro (5-shot, CoT) | 48.3"
+RP20,Llama-3-70B,Llama-3-Instruct,,,"MMLU-Pro (5-shot, CoT)",Accuracy,66.4,,,,,False,measured,3,1 Introduction,Table 2,MMLU-Pro ... 66.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,"MMLU-Pro (5-shot, CoT)",Accuracy,73.3,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 73.3
+RP20,Llama-3-8B,Llama-3-Instruct,,,IFEval,Accuracy,80.4,,,,,False,measured,3,1 Introduction,Table 2,IFEval | 80.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,IFEval,Accuracy,87.5,,,,,False,measured,3,1 Introduction,Table 2,IFEval | ... | 87.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,IFEval,Accuracy,88.6,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 88.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,HumanEval (0-shot),Pass@1,72.6,,,,,True,measured,3,1 Introduction,Table 2,HumanEval (0-shot) | 72.6
+RP20,Llama-3-70B,Llama-3-Instruct,,,HumanEval (0-shot),Pass@1,80.5,,,,,False,measured,3,1 Introduction,Table 2,HumanEval ... 80.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,HumanEval (0-shot),Pass@1,89.0,,,,,True,measured,3,1 Introduction,Table 2,Llama 3 405B ... 89.0
+RP20,Llama-3-8B,Llama-3-Instruct,,,MBPP EvalPlus (0-shot),Pass@1,72.8,,,,,False,measured,3,1 Introduction,Table 2,MBPP EvalPlus (0-shot) | 72.8
+RP20,Llama-3-70B,Llama-3-Instruct,,,MBPP EvalPlus (0-shot),Pass@1,86.0,,,,,False,measured,3,1 Introduction,Table 2,MBPP EvalPlus ... 86.0
+RP20,Llama-3-405B,Llama-3-Instruct,,,MBPP EvalPlus (0-shot),Pass@1,88.6,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 88.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,"GSM8K (8-shot, CoT)",Accuracy,84.5,,,,,True,measured,3,1 Introduction,Table 2,"GSM8K (8-shot, CoT) | 84.5"
+RP20,Llama-3-70B,Llama-3-Instruct,,,"GSM8K (8-shot, CoT)",Accuracy,95.1,,,,,False,measured,3,1 Introduction,Table 2,GSM8K ... 95.1
+RP20,Llama-3-405B,Llama-3-Instruct,,,"GSM8K (8-shot, CoT)",Accuracy,96.8,,,,,True,measured,3,1 Introduction,Table 2,Llama 3 405B ... 96.8
+RP20,Llama-3-8B,Llama-3-Instruct,,,"MATH (0-shot, CoT)",Accuracy,51.9,,,,,False,measured,3,1 Introduction,Table 2,"MATH (0-shot, CoT) | 51.9"
+RP20,Llama-3-70B,Llama-3-Instruct,,,"MATH (0-shot, CoT)",Accuracy,68.0,,,,,False,measured,3,1 Introduction,Table 2,MATH ... 68.0
+RP20,Llama-3-405B,Llama-3-Instruct,,,"MATH (0-shot, CoT)",Accuracy,73.8,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 73.8
+RP20,Llama-3-8B,Llama-3-Instruct,,,ARC Challenge (0-shot),Accuracy,83.4,,,,,False,measured,3,1 Introduction,Table 2,ARC Challenge (0-shot) | 83.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,ARC Challenge (0-shot),Accuracy,94.8,,,,,False,measured,3,1 Introduction,Table 2,ARC ... 94.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,ARC Challenge (0-shot),Accuracy,96.9,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 96.9
+RP20,Llama-3-8B,Llama-3-Instruct,,,"GPQA (0-shot, CoT)",Accuracy,32.8,,,,,False,measured,3,1 Introduction,Table 2,"GPQA (0-shot, CoT) | 32.8"
+RP20,Llama-3-70B,Llama-3-Instruct,,,"GPQA (0-shot, CoT)",Accuracy,46.7,,,,,False,measured,3,1 Introduction,Table 2,GPQA ... 46.7
+RP20,Llama-3-405B,Llama-3-Instruct,,,"GPQA (0-shot, CoT)",Accuracy,51.1,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 51.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,BFCL,Accuracy,76.1,,,,,False,measured,3,1 Introduction,Table 2,BFCL | 76.1
+RP20,Llama-3-70B,Llama-3-Instruct,,,BFCL,Accuracy,84.8,,,,,False,measured,3,1 Introduction,Table 2,BFCL ... 84.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,BFCL,Accuracy,88.5,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 88.5
+RP20,Llama-3-8B,Llama-3-Instruct,,,Nexus,Accuracy,38.5,,,,,False,measured,3,1 Introduction,Table 2,Nexus | 38.5
+RP20,Llama-3-70B,Llama-3-Instruct,,,Nexus,Accuracy,56.7,,,,,False,measured,3,1 Introduction,Table 2,Nexus ... 56.7
+RP20,Llama-3-405B,Llama-3-Instruct,,,Nexus,Accuracy,58.7,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 58.7
+RP20,Llama-3-8B,Llama-3-Instruct,,,ZeroSCROLLS/QuALITY,Accuracy,81.0,,,,,False,measured,3,1 Introduction,Table 2,ZeroSCROLLS/QuALITY | 81.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,ZeroSCROLLS/QuALITY,Accuracy,90.5,,,,,False,measured,3,1 Introduction,Table 2,ZeroSCROLLS ... 90.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,ZeroSCROLLS/QuALITY,Accuracy,95.2,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 95.2
+RP20,Llama-3-8B,Llama-3-Instruct,,,InfiniteBench/En.MC,Accuracy,65.1,,,,,False,measured,3,1 Introduction,Table 2,InfiniteBench/En.MC | 65.1
+RP20,Llama-3-70B,Llama-3-Instruct,,,InfiniteBench/En.MC,Accuracy,78.2,,,,,False,measured,3,1 Introduction,Table 2,InfiniteBench/En.MC ... 78.2
+RP20,Llama-3-405B,Llama-3-Instruct,,,InfiniteBench/En.MC,Accuracy,83.4,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 83.4
+RP20,Llama-3-8B,Llama-3-Instruct,,,NIH/Multi-needle,Recall,98.8,,,,,False,measured,3,1 Introduction,Table 2,NIH/Multi-needle | 98.8
+RP20,Llama-3-70B,Llama-3-Instruct,,,NIH/Multi-needle,Recall,97.5,,,,,False,measured,3,1 Introduction,Table 2,NIH ... 97.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,NIH/Multi-needle,Recall,98.1,,,,,False,measured,3,1 Introduction,Table 2,Llama 3 405B ... 98.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,"MGSM (0-shot, CoT)",Accuracy,68.9,,,,,False,measured,3,1 Introduction,Table 2,"MGSM (0-shot, CoT) | 68.9"
+RP20,Llama-3-70B,Llama-3-Instruct,,,"MGSM (0-shot, CoT)",Accuracy,86.9,,,,,False,measured,3,1 Introduction,Table 2,MGSM ... 86.9
+RP20,Llama-3-405B,Llama-3-Instruct,,,"MGSM (0-shot, CoT)",Accuracy,91.6,,,,,True,measured,38,5.2.4 Multilingual Benchmarks,Table 2,"Llama 3 405B outperforms most other models on MGSM, achieving an average of 91.6%"
+RP20,Llama-3-8B,Llama-3,,,SQuAD,Accuracy,77.0,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-8B | 77.0
+RP20,Llama-3-8B,Llama-3,,,QuaC,F1,44.9,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-8B | 44.9
+RP20,Llama-3-8B,Llama-3,,,RACE,Accuracy,54.3,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-8B | 54.3
+RP20,Mistral-7B,Mistral,,,SQuAD,Accuracy,73.2,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Mistral-7B | 73.2
+RP20,Mistral-7B,Mistral,,,QuaC,F1,44.7,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Mistral-7B | 44.7
+RP20,Mistral-7B,Mistral,,,RACE,Accuracy,53.0,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Mistral-7B | 53.0
+RP20,Gemma-7B,Gemma,,,SQuAD,Accuracy,81.8,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Gemma-7B | 81.8
+RP20,Gemma-7B,Gemma,,,QuaC,F1,42.4,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Gemma-7B | 42.4
+RP20,Gemma-7B,Gemma,,,RACE,Accuracy,48.8,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Gemma-7B | 48.8
+RP20,Llama-3-70B,Llama-3,,,SQuAD,Accuracy,81.8,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-70B | 81.8
+RP20,Llama-3-70B,Llama-3,,,QuaC,F1,51.1,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-70B | 51.1
+RP20,Llama-3-70B,Llama-3,,,RACE,Accuracy,59.0,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-70B | 59.0
+RP20,Mixtral-8x22B,Mixtral,,,SQuAD,Accuracy,84.1,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Mixtral-8x22B | 84.1
+RP20,Mixtral-8x22B,Mixtral,,,QuaC,F1,44.9,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Mixtral-8x22B | 44.9
+RP20,Mixtral-8x22B,Mixtral,,,RACE,Accuracy,59.2,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Mixtral-8x22B | 59.2
+RP20,Llama-3-405B,Llama-3,,,SQuAD,Accuracy,81.8,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-405B | 81.8
+RP20,Llama-3-405B,Llama-3,,,QuaC,F1,53.6,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-405B | 53.6
+RP20,Llama-3-405B,Llama-3,,,RACE,Accuracy,58.1,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 9,Llama-3-405B | 58.1
+RP20,Llama-3-8B,Llama-3,,,HumanEval,Pass@1,37.2,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Llama-3-8B HumanEval 37.2 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,MBPP,Pass@1,47.6,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Llama-3-8B MBPP 47.6
+RP20,Mistral-7B,Mistral,,,HumanEval,Pass@1,30.5,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Mistral-7B HumanEval 30.5 (pretrained)
+RP20,Mistral-7B,Mistral,,,MBPP,Pass@1,47.5,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Mistral-7B MBPP 47.5
+RP20,Gemma-7B,Gemma,,,HumanEval,Pass@1,32.3,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Gemma-7B HumanEval 32.3 (pretrained)
+RP20,Gemma-7B,Gemma,,,MBPP,Pass@1,44.4,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Gemma-7B MBPP 44.4
+RP20,Llama-3-70B,Llama-3,,,HumanEval,Pass@1,58.5,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Llama-3-70B HumanEval 58.5 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,MBPP,Pass@1,66.2,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Llama-3-70B MBPP 66.2
+RP20,Mixtral-8x22B,Mixtral,,,HumanEval,Pass@1,45.1,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Mixtral-8x22B HumanEval 45.1 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,MBPP,Pass@1,71.2,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Mixtral-8x22B MBPP 71.2
+RP20,Llama-3-405B,Llama-3,,,HumanEval,Pass@1,61.0,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Llama-3-405B HumanEval 61.0 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,MBPP,Pass@1,73.4,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Llama-3-405B MBPP 73.4
+RP20,Nemotron-4-340B,Nemotron,,,HumanEval,Pass@1,57.3,,,,,False,measured,30,5.1.1 Standard Benchmarks,Table 10,Nemotron-4-340B HumanEval 57.3 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,CommonSenseQA,Accuracy,75.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-8B CommonSenseQA 75.0
+RP20,Llama-3-8B,Llama-3,,,PiQA,Accuracy,81.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-8B PiQA 81.0
+RP20,Llama-3-8B,Llama-3,,,SiQA,Accuracy,49.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-8B SiQA 49.5
+RP20,Llama-3-8B,Llama-3,,,OpenBookQA,Accuracy,45.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-8B OpenBookQA 45.0
+RP20,Llama-3-8B,Llama-3,,,WinoGrande,Accuracy,75.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-8B WinoGrande 75.7
+RP20,Mistral-7B,Mistral,,,CommonSenseQA,Accuracy,71.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mistral-7B CommonSenseQA 71.2
+RP20,Mistral-7B,Mistral,,,PiQA,Accuracy,83.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mistral-7B PiQA 83.0
+RP20,Mistral-7B,Mistral,,,SiQA,Accuracy,48.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mistral-7B SiQA 48.2
+RP20,Mistral-7B,Mistral,,,OpenBookQA,Accuracy,47.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mistral-7B OpenBookQA 47.8
+RP20,Mistral-7B,Mistral,,,WinoGrande,Accuracy,78.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mistral-7B WinoGrande 78.1
+RP20,Gemma-7B,Gemma,,,CommonSenseQA,Accuracy,74.4,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Gemma-7B CommonSenseQA 74.4
+RP20,Gemma-7B,Gemma,,,PiQA,Accuracy,81.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Gemma-7B PiQA 81.5
+RP20,Gemma-7B,Gemma,,,SiQA,Accuracy,51.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Gemma-7B SiQA 51.8
+RP20,Gemma-7B,Gemma,,,OpenBookQA,Accuracy,52.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Gemma-7B OpenBookQA 52.8
+RP20,Gemma-7B,Gemma,,,WinoGrande,Accuracy,74.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Gemma-7B WinoGrande 74.7
+RP20,Llama-3-70B,Llama-3,,,CommonSenseQA,Accuracy,84.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-70B CommonSenseQA 84.1
+RP20,Llama-3-70B,Llama-3,,,PiQA,Accuracy,83.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-70B PiQA 83.8
+RP20,Llama-3-70B,Llama-3,,,SiQA,Accuracy,52.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-70B SiQA 52.2
+RP20,Llama-3-70B,Llama-3,,,OpenBookQA,Accuracy,47.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-70B OpenBookQA 47.6
+RP20,Llama-3-70B,Llama-3,,,WinoGrande,Accuracy,83.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-70B WinoGrande 83.5
+RP20,Mixtral-8x22B,Mixtral,,,CommonSenseQA,Accuracy,82.4,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mixtral-8x22B CommonSenseQA 82.4
+RP20,Mixtral-8x22B,Mixtral,,,PiQA,Accuracy,85.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mixtral-8x22B PiQA 85.5
+RP20,Mixtral-8x22B,Mixtral,,,SiQA,Accuracy,51.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mixtral-8x22B SiQA 51.6
+RP20,Mixtral-8x22B,Mixtral,,,OpenBookQA,Accuracy,50.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mixtral-8x22B OpenBookQA 50.8
+RP20,Mixtral-8x22B,Mixtral,,,WinoGrande,Accuracy,84.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Mixtral-8x22B WinoGrande 84.7
+RP20,Llama-3-405B,Llama-3,,,CommonSenseQA,Accuracy,85.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-405B CommonSenseQA 85.8
+RP20,Llama-3-405B,Llama-3,,,PiQA,Accuracy,85.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-405B PiQA 85.6
+RP20,Llama-3-405B,Llama-3,,,SiQA,Accuracy,53.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-405B SiQA 53.7
+RP20,Llama-3-405B,Llama-3,,,OpenBookQA,Accuracy,49.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-405B OpenBookQA 49.2
+RP20,Llama-3-405B,Llama-3,,,WinoGrande,Accuracy,82.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Llama-3-405B WinoGrande 82.2
+RP20,Nemotron-4-340B,Nemotron,,,WinoGrande,Accuracy,89.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 11,Nemotron-4-340B WinoGrande 89.5
+RP20,Llama-3-8B,Llama-3,,,GSM8K,Accuracy,57.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-8B GSM8K 57.2 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,MATH,Accuracy,20.3,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-8B MATH 20.3 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,ARC-Challenge,Accuracy,79.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-8B ARC-Challenge 79.7 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,DROP,Accuracy,59.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-8B DROP 59.5 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,WorldSense,Accuracy,45.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-8B WorldSense 45.5 (pretrained)
+RP20,Mistral-7B,Mistral,,,GSM8K,Accuracy,52.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mistral-7B GSM8K 52.5 (pretrained)
+RP20,Mistral-7B,Mistral,,,MATH,Accuracy,13.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mistral-7B MATH 13.1 (pretrained)
+RP20,Mistral-7B,Mistral,,,ARC-Challenge,Accuracy,78.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mistral-7B ARC-Challenge 78.2 (pretrained)
+RP20,Mistral-7B,Mistral,,,DROP,Accuracy,53.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mistral-7B DROP 53.0 (pretrained)
+RP20,Mistral-7B,Mistral,,,WorldSense,Accuracy,44.9,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mistral-7B WorldSense 44.9 (pretrained)
+RP20,Gemma-7B,Gemma,,,GSM8K,Accuracy,46.4,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Gemma-7B GSM8K 46.4 (pretrained)
+RP20,Gemma-7B,Gemma,,,MATH,Accuracy,24.3,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Gemma-7B MATH 24.3 (pretrained)
+RP20,Gemma-7B,Gemma,,,ARC-Challenge,Accuracy,78.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Gemma-7B ARC-Challenge 78.6 (pretrained)
+RP20,Gemma-7B,Gemma,,,DROP,Accuracy,56.3,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Gemma-7B DROP 56.3 (pretrained)
+RP20,Gemma-7B,Gemma,,,WorldSense,Accuracy,46.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Gemma-7B WorldSense 46.0 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,GSM8K,Accuracy,83.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-70B GSM8K 83.7 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,MATH,Accuracy,41.4,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-70B MATH 41.4 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,ARC-Challenge,Accuracy,92.9,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-70B ARC-Challenge 92.9 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,DROP,Accuracy,79.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-70B DROP 79.6 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,WorldSense,Accuracy,61.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-70B WorldSense 61.1 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,GSM8K,Accuracy,88.4,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mixtral-8x22B GSM8K 88.4 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,MATH,Accuracy,41.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mixtral-8x22B MATH 41.8 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,ARC-Challenge,Accuracy,91.9,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mixtral-8x22B ARC-Challenge 91.9 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,DROP,Accuracy,77.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mixtral-8x22B DROP 77.5 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,WorldSense,Accuracy,51.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Mixtral-8x22B WorldSense 51.5 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,GSM8K,Accuracy,89.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-405B GSM8K 89.0 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,MATH,Accuracy,53.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-405B MATH 53.8 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,ARC-Challenge,Accuracy,96.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-405B ARC-Challenge 96.1 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,DROP,Accuracy,84.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-405B DROP 84.8 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,WorldSense,Accuracy,63.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Llama-3-405B WorldSense 63.7 (pretrained)
+RP20,Nemotron-4-340B,Nemotron,,,ARC-Challenge,Accuracy,94.3,,,,,False,measured,31,5.1.2 Model Robustness,Table 12,Nemotron-4-340B ARC-Challenge 94.3 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,MMLU,Accuracy,66.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-8B MMLU 66.7 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,MMLU-Pro,Accuracy,37.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-8B MMLU-Pro 37.1 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,AGIEval,Accuracy,47.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-8B AGIEval 47.8 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,BIG-Bench-Hard,Accuracy,64.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-8B BIG-Bench-Hard 64.2 (pretrained)
+RP20,Mistral-7B,Mistral,,,MMLU,Accuracy,63.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mistral-7B MMLU 63.6 (pretrained)
+RP20,Mistral-7B,Mistral,,,MMLU-Pro,Accuracy,32.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mistral-7B MMLU-Pro 32.5 (pretrained)
+RP20,Mistral-7B,Mistral,,,AGIEval,Accuracy,42.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mistral-7B AGIEval 42.7 (pretrained)
+RP20,Mistral-7B,Mistral,,,BIG-Bench-Hard,Accuracy,56.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mistral-7B BIG-Bench-Hard 56.8 (pretrained)
+RP20,Gemma-7B,Gemma,,,MMLU,Accuracy,64.3,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Gemma-7B MMLU 64.3 (pretrained)
+RP20,Gemma-7B,Gemma,,,MMLU-Pro,Accuracy,35.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Gemma-7B MMLU-Pro 35.1 (pretrained)
+RP20,Gemma-7B,Gemma,,,AGIEval,Accuracy,46.0,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Gemma-7B AGIEval 46.0 (pretrained)
+RP20,Gemma-7B,Gemma,,,BIG-Bench-Hard,Accuracy,57.7,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Gemma-7B BIG-Bench-Hard 57.7 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,MMLU,Accuracy,79.3,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-70B MMLU 79.3 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,MMLU-Pro,Accuracy,53.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-70B MMLU-Pro 53.8 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,AGIEval,Accuracy,64.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-70B AGIEval 64.6 (pretrained)
+RP20,Llama-3-70B,Llama-3,,,BIG-Bench-Hard,Accuracy,81.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-70B BIG-Bench-Hard 81.6 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,MMLU,Accuracy,77.8,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mixtral-8x22B MMLU 77.8 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,MMLU-Pro,Accuracy,51.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mixtral-8x22B MMLU-Pro 51.5 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,AGIEval,Accuracy,61.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mixtral-8x22B AGIEval 61.5 (pretrained)
+RP20,Mixtral-8x22B,Mixtral,,,BIG-Bench-Hard,Accuracy,79.5,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Mixtral-8x22B BIG-Bench-Hard 79.5 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,MMLU,Accuracy,85.2,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-405B MMLU 85.2 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,MMLU-Pro,Accuracy,61.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-405B MMLU-Pro 61.6 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,AGIEval,Accuracy,71.6,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-405B AGIEval 71.6 (pretrained)
+RP20,Llama-3-405B,Llama-3,,,BIG-Bench-Hard,Accuracy,85.9,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Llama-3-405B BIG-Bench-Hard 85.9 (pretrained)
+RP20,Nemotron-4-340B,Nemotron,,,MMLU,Accuracy,81.1,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Nemotron-4-340B MMLU 81.1 (pretrained)
+RP20,Nemotron-4-340B,Nemotron,,,BIG-Bench-Hard,Accuracy,85.4,,,,,False,measured,31,5.1.2 Model Robustness,Table 13,Nemotron-4-340B BIG-Bench-Hard 85.4 (pretrained)
+RP20,Llama-3-8B,Llama-3,,,QuALITY (5-shot),Accuracy,56.0,,,,,False,measured,34,5.1.4 Contamination Analysis,Table 14,Llama-3-8B QuALITY 56.0
+RP20,Llama-3-8B,Llama-3,,,GSM8K (16-shot),Accuracy,60.0,,,,,False,measured,34,5.1.4 Contamination Analysis,Table 14,Llama-3-8B GSM8K 16-shot 60.0
+RP20,Llama-3-70B,Llama-3,,,QuALITY (5-shot),Accuracy,82.8,,,,,False,measured,34,5.1.4 Contamination Analysis,Table 14,Llama-3-70B QuALITY 82.8
+RP20,Llama-3-70B,Llama-3,,,GSM8K (16-shot),Accuracy,83.0,,,,,False,measured,34,5.1.4 Contamination Analysis,Table 14,Llama-3-70B GSM8K 16-shot 83.0
+RP20,Llama-3-405B,Llama-3,,,QuALITY (5-shot),Accuracy,87.6,,,,,False,measured,34,5.1.4 Contamination Analysis,Table 14,Llama-3-405B QuALITY 87.6
+RP20,Llama-3-405B,Llama-3,,,GSM8K (16-shot),Accuracy,90.0,,,,,False,measured,34,5.1.4 Contamination Analysis,Table 14,Llama-3-405B GSM8K 16-shot 90.0
+RP20,Llama-3-8B,Llama-3-Instruct,,,LSAT,Accuracy,53.9,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B LSAT 53.9
+RP20,Llama-3-70B,Llama-3-Instruct,,,LSAT,Accuracy,74.2,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B LSAT 74.2
+RP20,Llama-3-405B,Llama-3-Instruct,,,LSAT,Accuracy,81.1,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B LSAT 81.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,SAT-Reading,Accuracy,57.4,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B SAT-Reading 57.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,SAT-Reading,Accuracy,71.4,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B SAT-Reading 71.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,SAT-Reading,Accuracy,74.8,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B SAT-Reading 74.8
+RP20,Llama-3-8B,Llama-3-Instruct,,,SAT-Math,Accuracy,73.3,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B SAT-Math 73.3
+RP20,Llama-3-70B,Llama-3-Instruct,,,SAT-Math,Accuracy,91.9,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B SAT-Math 91.9
+RP20,Llama-3-405B,Llama-3-Instruct,,,SAT-Math,Accuracy,94.9,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B SAT-Math 94.9
+RP20,Llama-3-8B,Llama-3-Instruct,,,GMAT-Quant,Accuracy,56.0,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B GMAT-Quant 56.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,GMAT-Quant,Accuracy,84.0,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B GMAT-Quant 84.0
+RP20,Llama-3-405B,Llama-3-Instruct,,,GMAT-Quant,Accuracy,96.0,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B GMAT-Quant 96.0
+RP20,Llama-3-8B,Llama-3-Instruct,,,GMAT-Verbal,Accuracy,65.7,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B GMAT-Verbal 65.7
+RP20,Llama-3-70B,Llama-3-Instruct,,,GMAT-Verbal,Accuracy,85.1,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B GMAT-Verbal 85.1
+RP20,Llama-3-405B,Llama-3-Instruct,,,GMAT-Verbal,Accuracy,86.6,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B GMAT-Verbal 86.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,GRE-Physics,Accuracy,48.0,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B GRE-Physics 48.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,GRE-Physics,Accuracy,74.7,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B GRE-Physics 74.7
+RP20,Llama-3-405B,Llama-3-Instruct,,,GRE-Physics,Accuracy,80.0,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B GRE-Physics 80.0
+RP20,Llama-3-8B,Llama-3-Instruct,,,AP-Average,Accuracy,74.1,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-8B AP-Average 74.1
+RP20,Llama-3-70B,Llama-3-Instruct,,,AP-Average,Accuracy,87.9,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-70B AP-Average 87.9
+RP20,Llama-3-405B,Llama-3-Instruct,,,AP-Average,Accuracy,93.5,,,,,False,measured,36,5.2.2 Proficiency Exams,Table 17,Llama-3-405B AP-Average 93.5
+RP20,Llama-3-8B,Llama-3-Instruct,,,HumanEval,Pass@1,72.6,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-8B HumanEval 72.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,HumanEval+,Pass@1,67.1,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-8B HumanEval+ 67.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,MBPP,Pass@1,60.8,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-8B MBPP 60.8
+RP20,Llama-3-8B,Llama-3-Instruct,,,MBPP-EvalPlus-base,Pass@1,72.8,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-8B MBPP EvalPlus base 72.8
+RP20,Llama-3-70B,Llama-3-Instruct,,,HumanEval,Pass@1,80.5,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-70B HumanEval 80.5
+RP20,Llama-3-70B,Llama-3-Instruct,,,HumanEval+,Pass@1,74.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-70B HumanEval+ 74.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,MBPP,Pass@1,75.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-70B MBPP 75.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,MBPP-EvalPlus-base,Pass@1,86.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-70B MBPP EvalPlus base 86.0
+RP20,Llama-3-405B,Llama-3-Instruct,,,HumanEval,Pass@1,89.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-405B HumanEval 89.0
+RP20,Llama-3-405B,Llama-3-Instruct,,,HumanEval+,Pass@1,82.3,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-405B HumanEval+ 82.3
+RP20,Llama-3-405B,Llama-3-Instruct,,,MBPP,Pass@1,78.8,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-405B MBPP 78.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,MBPP-EvalPlus-base,Pass@1,88.6,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 18,Llama-3-405B MBPP EvalPlus base 88.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/HumanEval/C++,Pass@1,52.8,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B HumanEval C++ 52.8
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/HumanEval/Java,Pass@1,58.2,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B HumanEval Java 58.2
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/HumanEval/PHP,Pass@1,54.7,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B HumanEval PHP 54.7
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/HumanEval/TypeScript,Pass@1,56.6,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B HumanEval TypeScript 56.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/HumanEval/C#,Pass@1,38.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B HumanEval C# 38.0
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/HumanEval/Shell,Pass@1,39.2,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B HumanEval Shell 39.2
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/MBPP/C++,Pass@1,53.7,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B MBPP C++ 53.7
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/MBPP/Java,Pass@1,54.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B MBPP Java 54.4
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/MBPP/PHP,Pass@1,55.7,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B MBPP PHP 55.7
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/MBPP/TypeScript,Pass@1,62.8,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B MBPP TypeScript 62.8
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/MBPP/C#,Pass@1,43.3,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B MBPP C# 43.3
+RP20,Llama-3-8B,Llama-3-Instruct,,,MultiPL-E/MBPP/Shell,Pass@1,33.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-8B MBPP Shell 33.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/HumanEval/C++,Pass@1,71.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B HumanEval C++ 71.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/HumanEval/Java,Pass@1,72.2,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B HumanEval Java 72.2
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/HumanEval/PHP,Pass@1,67.7,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B HumanEval PHP 67.7
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/HumanEval/TypeScript,Pass@1,73.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B HumanEval TypeScript 73.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/HumanEval/C#,Pass@1,50.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B HumanEval C# 50.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/HumanEval/Shell,Pass@1,51.9,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B HumanEval Shell 51.9
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/MBPP/C++,Pass@1,65.2,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B MBPP C++ 65.2
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/MBPP/Java,Pass@1,65.3,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B MBPP Java 65.3
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/MBPP/PHP,Pass@1,64.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B MBPP PHP 64.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/MBPP/TypeScript,Pass@1,70.5,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B MBPP TypeScript 70.5
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/MBPP/C#,Pass@1,51.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B MBPP C# 51.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,MultiPL-E/MBPP/Shell,Pass@1,41.9,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-70B MBPP Shell 41.9
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/HumanEval/C++,Pass@1,82.0,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B HumanEval C++ 82.0
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/HumanEval/Java,Pass@1,80.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B HumanEval Java 80.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/HumanEval/PHP,Pass@1,76.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B HumanEval PHP 76.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/HumanEval/TypeScript,Pass@1,81.1,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B HumanEval TypeScript 81.1
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/HumanEval/C#,Pass@1,54.4,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B HumanEval C# 54.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/HumanEval/Shell,Pass@1,57.6,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B HumanEval Shell 57.6
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/MBPP/C++,Pass@1,67.5,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B MBPP C++ 67.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/MBPP/Java,Pass@1,65.8,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B MBPP Java 65.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/MBPP/PHP,Pass@1,76.6,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B MBPP PHP 76.6
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/MBPP/TypeScript,Pass@1,72.6,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B MBPP TypeScript 72.6
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/MBPP/C#,Pass@1,53.1,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B MBPP C# 53.1
+RP20,Llama-3-405B,Llama-3-Instruct,,,MultiPL-E/MBPP/Shell,Pass@1,43.7,,,,,False,measured,37,5.2.3 Coding Benchmarks,Table 19,Llama-3-405B MBPP Shell 43.7
+RP20,Llama-3-8B,Llama-3-Instruct,,,MGSM,Accuracy,68.9,,,,,False,measured,38,5.2.4 Multilingual Benchmarks,Table 20,Llama-3-8B MGSM 68.9
+RP20,Llama-3-8B,Llama-3-Instruct,,,Multilingual-MMLU,Accuracy,58.6,,,,,False,measured,38,5.2.4 Multilingual Benchmarks,Table 20,Llama-3-8B Multilingual MMLU 58.6
+RP20,Llama-3-70B,Llama-3-Instruct,,,MGSM,Accuracy,86.9,,,,,False,measured,38,5.2.4 Multilingual Benchmarks,Table 20,Llama-3-70B MGSM 86.9
+RP20,Llama-3-70B,Llama-3-Instruct,,,Multilingual-MMLU,Accuracy,78.2,,,,,False,measured,38,5.2.4 Multilingual Benchmarks,Table 20,Llama-3-70B Multilingual MMLU 78.2
+RP20,Llama-3-405B,Llama-3-Instruct,,,MGSM,Accuracy,91.6,,,,,False,measured,38,5.2.4 Multilingual Benchmarks,Table 20,Llama-3-405B MGSM 91.6
+RP20,Llama-3-405B,Llama-3-Instruct,,,Multilingual-MMLU,Accuracy,83.2,,,,,False,measured,38,5.2.4 Multilingual Benchmarks,Table 20,Llama-3-405B Multilingual MMLU 83.2
+RP20,Llama-3-8B,Llama-3-Instruct,,,ZeroSCROLLS/QuALITY,Exact-Match,81.0,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-8B QuALITY 81.0
+RP20,Llama-3-8B,Llama-3-Instruct,,,ZeroSCROLLS/Qasper,F1,39.3,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-8B Qasper 39.3
+RP20,Llama-3-8B,Llama-3-Instruct,,,ZeroSCROLLS/SQuALITY,ROUGE-L,15.3,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-8B SQuALITY 15.3
+RP20,Llama-3-8B,Llama-3-Instruct,,,InfiniteBench/En.QA,F1,27.1,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-8B En.QA 27.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,InfiniteBench/En.MC,Accuracy,65.1,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-8B En.MC 65.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,NIH/Multi-needle,Recall,98.8,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-8B NIH 98.8
+RP20,Llama-3-70B,Llama-3-Instruct,,,ZeroSCROLLS/QuALITY,Exact-Match,90.5,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-70B QuALITY 90.5
+RP20,Llama-3-70B,Llama-3-Instruct,,,ZeroSCROLLS/Qasper,F1,49.0,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-70B Qasper 49.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,ZeroSCROLLS/SQuALITY,ROUGE-L,16.4,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-70B SQuALITY 16.4
+RP20,Llama-3-70B,Llama-3-Instruct,,,InfiniteBench/En.QA,F1,36.7,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-70B En.QA 36.7
+RP20,Llama-3-70B,Llama-3-Instruct,,,InfiniteBench/En.MC,Accuracy,78.2,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-70B En.MC 78.2
+RP20,Llama-3-70B,Llama-3-Instruct,,,NIH/Multi-needle,Recall,97.5,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-70B NIH 97.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,ZeroSCROLLS/QuALITY,Exact-Match,95.2,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-405B QuALITY 95.2
+RP20,Llama-3-405B,Llama-3-Instruct,,,ZeroSCROLLS/Qasper,F1,49.8,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-405B Qasper 49.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,ZeroSCROLLS/SQuALITY,ROUGE-L,15.4,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-405B SQuALITY 15.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,InfiniteBench/En.QA,F1,30.5,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-405B En.QA 30.5
+RP20,Llama-3-405B,Llama-3-Instruct,,,InfiniteBench/En.MC,Accuracy,83.4,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-405B En.MC 83.4
+RP20,Llama-3-405B,Llama-3-Instruct,,,NIH/Multi-needle,Recall,98.1,,,,,False,measured,39,5.2.7 Tool Use Performance,Table 21,Llama-3-405B NIH 98.1
+RP20,Llama-3-8B,Llama-3-Instruct,,,Nexus,Accuracy,38.5,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-8B Nexus 38.5
+RP20,Llama-3-8B,Llama-3-Instruct,,,API-Bank,Accuracy,82.6,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-8B API-Bank 82.6
+RP20,Llama-3-8B,Llama-3-Instruct,,,API-Bench,Accuracy,8.2,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-8B API-Bench 8.2
+RP20,Llama-3-8B,Llama-3-Instruct,,,BFCL,Accuracy,76.1,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-8B BFCL 76.1
+RP20,Llama-3-70B,Llama-3-Instruct,,,Nexus,Accuracy,56.7,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-70B Nexus 56.7
+RP20,Llama-3-70B,Llama-3-Instruct,,,API-Bank,Accuracy,90.0,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-70B API-Bank 90.0
+RP20,Llama-3-70B,Llama-3-Instruct,,,API-Bench,Accuracy,29.7,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-70B API-Bench 29.7
+RP20,Llama-3-70B,Llama-3-Instruct,,,BFCL,Accuracy,84.8,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-70B BFCL 84.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,Nexus,Accuracy,58.7,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-405B Nexus 58.7
+RP20,Llama-3-405B,Llama-3-Instruct,,,API-Bank,Accuracy,92.3,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-405B API-Bank 92.3
+RP20,Llama-3-405B,Llama-3-Instruct,,,API-Bench,Accuracy,35.3,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-405B API-Bench 35.3
+RP20,Llama-3-405B,Llama-3-Instruct,,,BFCL,Accuracy,88.5,,,,,False,measured,39,5.3 Human Evaluations,Table 22,Llama-3-405B BFCL 88.5
+RP20,Llama-3-8B,Llama-3,,,Memorization-English-50gram,Memorization-Rate-%,0.26,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-8B English 50-gram 0.26%
+RP20,Llama-3-8B,Llama-3,,,Memorization-All-50gram,Memorization-Rate-%,0.24,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-8B All 50-gram 0.24%
+RP20,Llama-3-8B,Llama-3,,,Memorization-All-1000gram,Memorization-Rate-%,1.11,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-8B All 1000-gram 1.11%
+RP20,Llama-2-7B,Llama-2,,,Memorization-English-50gram,Memorization-Rate-%,0.2,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-2-7B English 50-gram 0.2%
+RP20,Llama-3-70B,Llama-3,,,Memorization-English-50gram,Memorization-Rate-%,0.6,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-70B English 50-gram 0.6%
+RP20,Llama-3-70B,Llama-3,,,Memorization-All-50gram,Memorization-Rate-%,0.55,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-70B All 50-gram 0.55%
+RP20,Llama-3-70B,Llama-3,,,Memorization-All-1000gram,Memorization-Rate-%,3.56,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-70B All 1000-gram 3.56%
+RP20,Llama-2-70B,Llama-2,,,Memorization-English-50gram,Memorization-Rate-%,0.47,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-2-70B English 50-gram 0.47%
+RP20,Llama-3-405B,Llama-3,,,Memorization-English-50gram,Memorization-Rate-%,1.13,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-405B English 50-gram 1.13%
+RP20,Llama-3-405B,Llama-3,,,Memorization-All-50gram,Memorization-Rate-%,1.03,,,,,False,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-405B All 50-gram 1.03%
+RP20,Llama-3-405B,Llama-3,,,Memorization-All-1000gram,Memorization-Rate-%,3.91,,,,,True,measured,42,5.4.1 Benchmark Construction,Table 24,Llama-3-405B All 1000-gram 3.91%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-English,VR-Reduction-%,-76,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,English input VR -76%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-English,FRR-Increase-%,95,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,English input FRR +95%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-English,VR-Reduction-%,-75,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,English output VR -75%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-English,FRR-Increase-%,25,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,English output FRR +25%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-English,VR-Reduction-%,-86,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,English full VR -86%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-English,FRR-Increase-%,102,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,English full FRR +102%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-French,VR-Reduction-%,-38,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,French input VR -38%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-French,FRR-Increase-%,27,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,French input FRR +27%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-French,VR-Reduction-%,-45,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,French output VR -45%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-French,FRR-Increase-%,4,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,French output FRR +4%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-French,VR-Reduction-%,-59,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,French full VR -59%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-French,FRR-Increase-%,29,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,French full FRR +29%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-German,VR-Reduction-%,-57,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,German input VR -57%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-German,FRR-Increase-%,32,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,German input FRR +32%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-German,VR-Reduction-%,-60,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,German output VR -60%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-German,FRR-Increase-%,14,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,German output FRR +14%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-German,VR-Reduction-%,-77,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,German full VR -77%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-German,FRR-Increase-%,37,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,German full FRR +37%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Hindi,VR-Reduction-%,-54,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Hindi input VR -54%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Hindi,FRR-Increase-%,60,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Hindi input FRR +60%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Hindi,VR-Reduction-%,-54,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Hindi output VR -54%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Hindi,FRR-Increase-%,14,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Hindi output FRR +14%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Hindi,VR-Reduction-%,-71,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Hindi full VR -71%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Hindi,FRR-Increase-%,62,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Hindi full FRR +62%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Italian,VR-Reduction-%,-34,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Italian input VR -34%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Italian,FRR-Increase-%,27,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Italian input FRR +27%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Italian,VR-Reduction-%,-34,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Italian output VR -34%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Italian,FRR-Increase-%,5,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Italian output FRR +5%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Italian,VR-Reduction-%,-48,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Italian full VR -48%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Italian,FRR-Increase-%,29,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Italian full FRR +29%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Portuguese,VR-Reduction-%,-51,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Portuguese input VR -51%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Portuguese,FRR-Increase-%,35,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Portuguese input FRR +35%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Portuguese,VR-Reduction-%,-57,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Portuguese output VR -57%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Portuguese,FRR-Increase-%,13,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Portuguese output FRR +13%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Portuguese,VR-Reduction-%,-65,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Portuguese full VR -65%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Portuguese,FRR-Increase-%,39,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Portuguese full FRR +39%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Spanish,VR-Reduction-%,-41,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Spanish input VR -41%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Spanish,FRR-Increase-%,26,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Spanish input FRR +26%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Spanish,VR-Reduction-%,-50,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Spanish output VR -50%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Spanish,FRR-Increase-%,10,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Spanish output FRR +10%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Spanish,VR-Reduction-%,-60,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Spanish full VR -60%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Spanish,FRR-Increase-%,27,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Spanish full FRR +27%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Thai,VR-Reduction-%,-43,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Thai input VR -43%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Internal-Safety-Thai,FRR-Increase-%,37,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Thai input FRR +37%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Thai,VR-Reduction-%,-39,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Thai output VR -39%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Internal-Safety-Thai,FRR-Increase-%,8,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Thai output FRR +8%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Thai,VR-Reduction-%,-51,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Thai full VR -51%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Internal-Safety-Thai,FRR-Increase-%,39,,,,,False,measured,50,5.4.7 System Level Safety,Table 25,Thai full FRR +39%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Child-Sexual-Exploitation,VR-Reduction-%,-53,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Child-Sexual-Exploitation input -53%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Child-Sexual-Exploitation,VR-Reduction-%,-47,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Child-Sexual-Exploitation output -47%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Child-Sexual-Exploitation,VR-Reduction-%,-59,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Child-Sexual-Exploitation full -59%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Defamation,VR-Reduction-%,-86,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Defamation input -86%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Defamation,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Defamation output -100%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Defamation,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Defamation full -100%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Elections,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Elections input -100%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Elections,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Elections output -100%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Elections,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Elections full -100%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Hate,VR-Reduction-%,-36,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Hate input -36%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Hate,VR-Reduction-%,-82,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Hate output -82%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Hate,VR-Reduction-%,-91,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Hate full -91%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Indiscriminate-Weapons,VR-Reduction-%,0,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Indiscriminate-Weapons input 0%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Indiscriminate-Weapons,VR-Reduction-%,0,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Indiscriminate-Weapons output 0%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Indiscriminate-Weapons,VR-Reduction-%,0,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Indiscriminate-Weapons full 0%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Intellectual-Property,VR-Reduction-%,-88,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Intellectual-Property input -88%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Intellectual-Property,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Intellectual-Property output -100%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Intellectual-Property,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Intellectual-Property full -100%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Non-Violent-Crimes,VR-Reduction-%,-80,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Non-Violent-Crimes input -80%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Non-Violent-Crimes,VR-Reduction-%,-80,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Non-Violent-Crimes output -80%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Non-Violent-Crimes,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Non-Violent-Crimes full -100%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Privacy,VR-Reduction-%,-40,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Privacy input -40%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Privacy,VR-Reduction-%,-60,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Privacy output -60%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Privacy,VR-Reduction-%,-60,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Privacy full -60%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Sex-Related-Crimes,VR-Reduction-%,-75,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Sex-Related-Crimes input -75%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Sex-Related-Crimes,VR-Reduction-%,-75,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Sex-Related-Crimes output -75%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Sex-Related-Crimes,VR-Reduction-%,-88,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Sex-Related-Crimes full -88%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Sexual-Content,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Sexual-Content input -100%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Sexual-Content,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Sexual-Content output -100%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Sexual-Content,VR-Reduction-%,-100,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Sexual-Content full -100%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Specialized-Advice,VR-Reduction-%,-70,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Specialized-Advice input -70%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Specialized-Advice,VR-Reduction-%,-70,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Specialized-Advice output -70%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Specialized-Advice,VR-Reduction-%,-70,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Specialized-Advice full -70%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Suicide-Self-Harm,VR-Reduction-%,-62,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Suicide-Self-Harm input -62%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Suicide-Self-Harm,VR-Reduction-%,-31,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Suicide-Self-Harm output -31%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Suicide-Self-Harm,VR-Reduction-%,-62,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Suicide-Self-Harm full -62%
+RP20,Llama-3-405B,Llama-Guard-3-Input,,,Safety-Cat-Violent-Crimes,VR-Reduction-%,-67,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Violent-Crimes input -67%
+RP20,Llama-3-405B,Llama-Guard-3-Output,,,Safety-Cat-Violent-Crimes,VR-Reduction-%,-53,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Violent-Crimes output -53%
+RP20,Llama-3-405B,Llama-Guard-3-Full,,,Safety-Cat-Violent-Crimes,VR-Reduction-%,-80,,,,,False,measured,51,5.4.7 System Level Safety,Table 26,Violent-Crimes full -80%
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-English,Precision,0.947,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,English non-quant precision 0.947
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-English,Recall,0.931,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,English non-quant recall 0.931
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-English,F1,0.939,,,,,True,measured,51,5.4.7 System Level Safety,Table 27,English non-quant F1 0.939
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-English,FPR,0.04,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,English non-quant FPR 0.04
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-English,Precision,0.947,FP16,0.947,0.0,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,English int8 precision 0.947
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-English,Recall,0.925,FP16,0.931,-0.006,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,English int8 recall 0.925
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-English,F1,0.936,FP16,0.939,-0.003,absolute,True,measured,51,5.4.7 System Level Safety,Table 27,English int8 F1 0.936
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-English,FPR,0.04,FP16,0.04,0.0,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,English int8 FPR 0.04
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Multilingual,Precision,0.929,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual non-quant precision 0.929
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Multilingual,Recall,0.805,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual non-quant recall 0.805
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Multilingual,F1,0.862,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual non-quant F1 0.862
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Multilingual,FPR,0.033,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual non-quant FPR 0.033
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Multilingual,Precision,0.931,FP16,0.929,0.002,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual int8 precision 0.931
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Multilingual,Recall,0.785,FP16,0.805,-0.02,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual int8 recall 0.785
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Multilingual,F1,0.851,FP16,0.862,-0.011,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual int8 F1 0.851
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Multilingual,FPR,0.031,FP16,0.033,-0.002,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Multilingual int8 FPR 0.031
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Tool-Use,Precision,0.774,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use non-quant precision 0.774
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Tool-Use,Recall,0.884,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use non-quant recall 0.884
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Tool-Use,F1,0.825,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use non-quant F1 0.825
+RP20,Llama-Guard-3-8B,Llama-Guard-3,16-bit,,LG3-Capability-Tool-Use,FPR,0.176,,,,,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use non-quant FPR 0.176
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Tool-Use,Precision,0.793,FP16,0.774,0.019,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use int8 precision 0.793
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Tool-Use,Recall,0.865,FP16,0.884,-0.019,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use int8 recall 0.865
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Tool-Use,F1,0.827,FP16,0.825,0.002,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use int8 F1 0.827
+RP20,Llama-Guard-3-8B,Llama-Guard-3-int8,8-bit,,LG3-Capability-Tool-Use,FPR,0.155,FP16,0.176,-0.021,absolute,False,measured,51,5.4.7 System Level Safety,Table 27,Tool-Use int8 FPR 0.155
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Jailbreaks,TPR-%,99.9,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Jailbreaks TPR 99.9%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Jailbreaks,FPR-%,0.4,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Jailbreaks FPR 0.4%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Jailbreaks,AUC,0.997,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Jailbreaks AUC 0.997
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Injections,TPR-%,99.5,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Injections TPR 99.5%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Injections,FPR-%,0.8,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Injections FPR 0.8%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Injections,AUC,1.0,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Injections AUC 1.0
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Out-of-Distribution-Jailbreaks,TPR-%,97.5,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Out-of-Distribution-Jailbreaks TPR 97.5%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Out-of-Distribution-Jailbreaks,FPR-%,3.9,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Out-of-Distribution-Jailbreaks FPR 3.9%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Out-of-Distribution-Jailbreaks,AUC,0.975,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Out-of-Distribution-Jailbreaks AUC 0.975
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Multilingual-Jailbreaks,TPR-%,91.5,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Multilingual-Jailbreaks TPR 91.5%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Multilingual-Jailbreaks,FPR-%,5.3,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Multilingual-Jailbreaks FPR 5.3%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Multilingual-Jailbreaks,AUC,0.959,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Multilingual-Jailbreaks AUC 0.959
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Indirect-Injections,TPR-%,71.4,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Indirect-Injections TPR 71.4%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Indirect-Injections,FPR-%,1.0,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Indirect-Injections FPR 1.0%
+RP20,Prompt-Guard-mDeBERTa-86M,Prompt-Guard,,,PG-Indirect-Injections,AUC,0.996,,,,,False,measured,52,6.1 Pipeline Parallelism,Table 28,Indirect-Injections AUC 0.996
+RP20,Llama-3-405B,FP8,8-bit,,Inference-Pre-fill,Throughput-Improvement-%,50,BF16,0,50,percent,True,measured,53,6.2 FP8 Quantization,Figure 27,use of FP8 inference leads to throughput improvements of up to 50% during the pre-fill stage
+RP20,Llama-3-V-8B,Llama-3-V,,,MMMU-val-CoT,Accuracy,49.6,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-8B MMMU-val-CoT 49.6
+RP20,Llama-3-V-70B,Llama-3-V,,,MMMU-val-CoT,Accuracy,60.6,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-70B MMMU-val-CoT 60.6
+RP20,Llama-3-V-405B,Llama-3-V,,,MMMU-val-CoT,Accuracy,64.5,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-405B MMMU-val-CoT 64.5
+RP20,Llama-3-V-8B,Llama-3-V,,,VQAv2-test-dev,Accuracy,78.0,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-8B VQAv2-test-dev 78.0
+RP20,Llama-3-V-70B,Llama-3-V,,,VQAv2-test-dev,Accuracy,79.1,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-70B VQAv2-test-dev 79.1
+RP20,Llama-3-V-405B,Llama-3-V,,,VQAv2-test-dev,Accuracy,80.2,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-405B VQAv2-test-dev 80.2
+RP20,Llama-3-V-8B,Llama-3-V,,,AI2-Diagram-test,Accuracy,84.4,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-8B AI2-Diagram-test 84.4
+RP20,Llama-3-V-70B,Llama-3-V,,,AI2-Diagram-test,Accuracy,93.0,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-70B AI2-Diagram-test 93.0
+RP20,Llama-3-V-405B,Llama-3-V,,,AI2-Diagram-test,Accuracy,94.1,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-405B AI2-Diagram-test 94.1
+RP20,Llama-3-V-8B,Llama-3-V,,,ChartQA-test-CoT,Accuracy,78.7,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-8B ChartQA-test-CoT 78.7
+RP20,Llama-3-V-70B,Llama-3-V,,,ChartQA-test-CoT,Accuracy,83.2,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-70B ChartQA-test-CoT 83.2
+RP20,Llama-3-V-405B,Llama-3-V,,,ChartQA-test-CoT,Accuracy,85.8,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-405B ChartQA-test-CoT 85.8
+RP20,Llama-3-V-8B,Llama-3-V,,,TextVQA-val,Accuracy,78.2,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-8B TextVQA-val 78.2
+RP20,Llama-3-V-70B,Llama-3-V,,,TextVQA-val,Accuracy,83.4,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-70B TextVQA-val 83.4
+RP20,Llama-3-V-405B,Llama-3-V,,,TextVQA-val,Accuracy,84.8,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-405B TextVQA-val 84.8
+RP20,Llama-3-V-8B,Llama-3-V,,,DocVQA-test,Accuracy,84.4,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-8B DocVQA-test 84.4
+RP20,Llama-3-V-70B,Llama-3-V,,,DocVQA-test,Accuracy,92.2,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-70B DocVQA-test 92.2
+RP20,Llama-3-V-405B,Llama-3-V,,,DocVQA-test,Accuracy,92.6,,,,,False,measured,61,7.5.7 Quality Tuning,Table 29,Llama-3-V-405B DocVQA-test 92.6
+RP20,Llama-3-V-8B,Llama-3-V,,,PerceptionTest-test,Accuracy,53.8,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-8B PerceptionTest-test 53.8
+RP20,Llama-3-V-70B,Llama-3-V,,,PerceptionTest-test,Accuracy,60.8,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-70B PerceptionTest-test 60.8
+RP20,Llama-3-V-8B,Llama-3-V,,,TVQA-val,Accuracy,82.5,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-8B TVQA-val 82.5
+RP20,Llama-3-V-70B,Llama-3-V,,,TVQA-val,Accuracy,87.9,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-70B TVQA-val 87.9
+RP20,Llama-3-V-8B,Llama-3-V,,,NExT-QA-test,Accuracy,27.3,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-8B NExT-QA-test 27.3
+RP20,Llama-3-V-70B,Llama-3-V,,,NExT-QA-test,Accuracy,30.3,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-70B NExT-QA-test 30.3
+RP20,Llama-3-V-8B,Llama-3-V,,,ActivityNet-QA-test,Accuracy,52.7,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-8B ActivityNet-QA-test 52.7
+RP20,Llama-3-V-70B,Llama-3-V,,,ActivityNet-QA-test,Accuracy,56.3,,,,,False,measured,62,7.7 Video Recognition Results,Table 30,Llama-3-V-70B ActivityNet-QA-test 56.3
+RP20,Llama-3-8B,Llama-3-Speech,,,MLS-English,WER,4.9,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-8B MLS-English WER 4.9
+RP20,Llama-3-70B,Llama-3-Speech,,,MLS-English,WER,4.4,,,,,True,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-70B MLS-English WER 4.4
+RP20,Llama-3-8B,Llama-3-Speech,,,LibriSpeech-test-other,WER,3.4,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-8B LibriSpeech-test-other WER 3.4
+RP20,Llama-3-70B,Llama-3-Speech,,,LibriSpeech-test-other,WER,3.1,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-70B LibriSpeech-test-other WER 3.1
+RP20,Llama-3-8B,Llama-3-Speech,,,VoxPopuli-English,WER,6.2,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-8B VoxPopuli-English WER 6.2
+RP20,Llama-3-70B,Llama-3-Speech,,,VoxPopuli-English,WER,5.7,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-70B VoxPopuli-English WER 5.7
+RP20,Llama-3-8B,Llama-3-Speech,,,FLEURS-34-languages,WER,9.6,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-8B FLEURS-34-languages WER 9.6
+RP20,Llama-3-70B,Llama-3-Speech,,,FLEURS-34-languages,WER,8.2,,,,,False,measured,67,8.4 Speech Understanding Results,Table 31,Llama-3-70B FLEURS-34-languages WER 8.2
+RP20,Llama-3-8B,Llama-3-Speech,,,FLEURS-33lang->English,BLEU,29.5,,,,,False,measured,67,8.4 Speech Understanding Results,Table 32,Llama-3-8B FLEURS-33lang->English BLEU 29.5
+RP20,Llama-3-70B,Llama-3-Speech,,,FLEURS-33lang->English,BLEU,33.7,,,,,False,measured,67,8.4 Speech Understanding Results,Table 32,Llama-3-70B FLEURS-33lang->English BLEU 33.7
+RP20,Llama-3-8B,Llama-3-Speech,,,Covost2-15lang->English,BLEU,34.4,,,,,False,measured,67,8.4 Speech Understanding Results,Table 32,Llama-3-8B Covost2-15lang->English BLEU 34.4
+RP20,Llama-3-70B,Llama-3-Speech,,,Covost2-15lang->English,BLEU,38.8,,,,,False,measured,67,8.4 Speech Understanding Results,Table 32,Llama-3-70B Covost2-15lang->English BLEU 38.8
+RP20,Llama-3-405B,Llama-3-Instruct,,,Code-Interpreter-Abuse,Compliance-Rate-%,10.4,,,,,False,measured,46,5.4.5 Cybersecurity and Chemical/Biological Weapons Safety,Section 5.4.5,Llama 3 405B being particularly susceptible by complying with malicious prompts 10.4% of the time
+RP20,Llama-3-70B,Llama-3-Instruct,,,Code-Interpreter-Abuse,Compliance-Rate-%,3.8,,,,,False,measured,46,5.4.5 Cybersecurity and Chemical/Biological Weapons Safety,Section 5.4.5,Llama 3 70B complied at a rate of 3.8%
+RP20,Llama-3-405B,Llama-3-Instruct,,,Prompt-Injection-Text,Success-Rate-%,21.7,,,,,False,measured,46,5.4.5 Cybersecurity and Chemical/Biological Weapons Safety,Section 5.4.5,prompt injection attacks against Llama 3 405B were successful 21.7% of the time
+RP20,Llama-3-70B,Llama-3-Instruct,,,Spear-Phishing,Success-Rate-%,24,,,,,False,measured,46,5.4.5 Cybersecurity and Chemical/Biological Weapons Safety,Section 5.4.5,Llama 3 70B was judged by an LLM to have been successful in 24% of spear phishing attempts
+RP20,Llama-3-405B,Llama-3-Instruct,,,Spear-Phishing,Success-Rate-%,14,,,,,False,measured,46,5.4.5 Cybersecurity and Chemical/Biological Weapons Safety,Section 5.4.5,Llama 3 405B was judged to be successful in 14% of attempts
+RP20,Llama-3-405B,Llama-3,,,Pretraining-Compute,FLOPs,3.8e+25,,,,,True,measured,1,1 Introduction,Section 1,our flagship language model was pre-trained using 3.8 x 10^25 FLOPs
+RP20,Llama-3-405B,Llama-3,,,Pretraining-Tokens,Tokens,15600000000000.0,,,,,False,measured,1,1 Introduction,Section 1,we pre-trained a flagship model with 405B trainable parameters on 15.6T text tokens
+RP20,Llama-3,Llama-3,,,Pretraining-Tokens-All,Tokens,15000000000000.0,,,,,False,measured,1,1 Introduction,Section 1,"We pre-train Llama 3 on a corpus of about 15T multilingual tokens, compared to 1.8T tokens for Llama 2"
+RP20,Llama-3-8B,Llama-3,,,Architecture,Layers,32,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-8B 32 layers
+RP20,Llama-3-8B,Llama-3,,,Architecture,Model-Dimension,4096,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-8B model dim 4096
+RP20,Llama-3-8B,Llama-3,,,Architecture,FFN-Dimension,14336,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-8B FFN 14336
+RP20,Llama-3-8B,Llama-3,,,Architecture,Attention-Heads,32,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-8B attn heads 32
+RP20,Llama-3-8B,Llama-3,,,Architecture,KV-Heads,8,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-8B KV heads 8
+RP20,Llama-3-70B,Llama-3,,,Architecture,Layers,80,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-70B 80 layers
+RP20,Llama-3-70B,Llama-3,,,Architecture,Model-Dimension,8192,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-70B model dim 8192
+RP20,Llama-3-70B,Llama-3,,,Architecture,FFN-Dimension,28672,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-70B FFN 28672
+RP20,Llama-3-70B,Llama-3,,,Architecture,Attention-Heads,64,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-70B attn heads 64
+RP20,Llama-3-70B,Llama-3,,,Architecture,KV-Heads,8,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-70B KV heads 8
+RP20,Llama-3-405B,Llama-3,,,Architecture,Layers,126,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-405B 126 layers
+RP20,Llama-3-405B,Llama-3,,,Architecture,Model-Dimension,16384,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-405B model dim 16384
+RP20,Llama-3-405B,Llama-3,,,Architecture,FFN-Dimension,53248,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-405B FFN 53248
+RP20,Llama-3-405B,Llama-3,,,Architecture,Attention-Heads,128,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-405B attn heads 128
+RP20,Llama-3-405B,Llama-3,,,Architecture,KV-Heads,8,,,,,False,measured,7,3.2 Model Architecture,Table 3,Llama-3-405B KV heads 8
 RP21,Llama-2-70B,QuIP#,2-bit,E8P-g8,WikiText-2,Perplexity (ctx 4096),3.91,FP16,3.12,0.79,absolute,True,measured,9,6.1. QuIP# on Llama Models,Table 4,QUIP# | 2 | 6.19 | 8.16 | 2 | 5.35 | 7.20 | 2 | 3.91 | 5.71
 RP21,Llama-2-70B,QuIP#,3-bit,E8P+RVQ-g8,WikiText-2,Perplexity (ctx 4096),3.35,FP16,3.12,0.23,absolute,True,measured,9,6.1. QuIP# on Llama Models,Table 4,QUIP# | 3 | 5.41 | 7.04 | 3 | 4.78 | 6.35 | 3 | 3.35 | 5.15
 RP21,Llama-2-70B,QuIP#,4-bit,E8P+RVQ-g8,WikiText-2,Perplexity (ctx 4096),3.18,FP16,3.12,0.06,absolute,False,measured,9,6.1. QuIP# on Llama Models,Table 4,QUIP# | 4 | 5.19 | 6.75 | 4 | 4.63 | 6.13 | 4 | 3.18 | 5.02
