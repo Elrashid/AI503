@@ -902,6 +902,109 @@ RP11,RoBERTa-large,8-bit FFN+Linear,8-bit,vector-wise,GLUE,Mean Accuracy,87.7,FP
 RP11,RoBERTa-large,8-bit FFN+Linear+decomp 1%,8-bit,vector-wise,GLUE,Mean Accuracy,87.9,FP32,88.6,-0.7,absolute,False,measured,20,F Fine-tuning Results,Table 10,\checkmark | \checkmark | 1% | 90.0 | 94.6 | 92.2 | 83.0 | 96.2 | 89.7 | 65.8 | 91.8 | 87.9
 RP11,RoBERTa-large,8-bit FFN+Linear+decomp 2%,8-bit,vector-wise,GLUE,Mean Accuracy,88.7,FP32,88.6,0.1,absolute,False,measured,20,F Fine-tuning Results,Table 10,\checkmark | \checkmark | 2% | 90.0 | 94.5 | 92.2 | 85.9 | 96.7 | 90.4 | 68.0 | 91.9 | 88.7
 RP11,RoBERTa-large,8-bit FFN+Linear+decomp 3%,8-bit,vector-wise,GLUE,Mean Accuracy,88.7,FP32,88.6,0.1,absolute,False,measured,20,F Fine-tuning Results,Table 10,\checkmark | \checkmark | 3% | 90.0 | 94.6 | 92.2 | 86.3 | 96.4 | 90.2 | 68.3 | 91.8 | 88.7
+RP13,LLaMA-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.319,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,C4,Perplexity,5.709,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,ARC-Easy,Accuracy,59.72,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,PiQA,Accuracy,80.9,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,StoryCloze,Accuracy,79.95,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,OPTQ,4-bit,,WikiText-2,Perplexity,3.596,FP16,3.319,0.277,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12 | 3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,OPTQ,4-bit,,C4,Perplexity,5.905,FP16,5.709,0.196,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,4-bit,,ARC-Easy,Accuracy,58.96,FP16,59.72,-0.76,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,4-bit,,PiQA,Accuracy,80.52,FP16,80.9,-0.38,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,4-bit,,StoryCloze,Accuracy,79.12,FP16,79.95,-0.83,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,3-bit,,WikiText-2,Perplexity,4.907,FP16,3.319,1.588,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,C4,Perplexity,7.099,FP16,5.709,1.39,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,ARC-Easy,Accuracy,54.38,FP16,59.72,-5.34,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,PiQA,Accuracy,78.56,FP16,80.9,-2.34,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,StoryCloze,Accuracy,77.72,FP16,79.95,-2.23,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,2-bit,,WikiText-2,Perplexity,123.908,FP16,3.319,120.589,absolute,True,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,C4,Perplexity,70.541,FP16,5.709,64.832,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,ARC-Easy,Accuracy,25.34,FP16,59.72,-34.38,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,PiQA,Accuracy,50.54,FP16,80.9,-30.36,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,StoryCloze,Accuracy,51.75,FP16,79.95,-28.2,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,QuIP,4-bit,,WikiText-2,Perplexity,3.531,FP16,3.319,0.212,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12 | 3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,C4,Perplexity,5.869,FP16,5.709,0.16,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,ARC-Easy,Accuracy,59.81,FP16,59.72,0.09,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,PiQA,Accuracy,80.47,FP16,80.9,-0.43,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,StoryCloze,Accuracy,79.63,FP16,79.95,-0.32,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,3-bit,,WikiText-2,Perplexity,3.853,FP16,3.319,0.534,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72 | 3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,C4,Perplexity,6.135,FP16,5.709,0.426,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,ARC-Easy,Accuracy,59.81,FP16,59.72,0.09,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,PiQA,Accuracy,80.25,FP16,80.9,-0.65,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,StoryCloze,Accuracy,79.31,FP16,79.95,-0.64,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,2-bit,,WikiText-2,Perplexity,6.326,FP16,3.319,3.007,absolute,True,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75 | **6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,C4,Perplexity,8.937,FP16,5.709,3.228,absolute,True,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,ARC-Easy,Accuracy,54.38,FP16,59.72,-5.34,absolute,False,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,PiQA,Accuracy,75.08,FP16,80.9,-5.82,absolute,False,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,StoryCloze,Accuracy,75.37,FP16,79.95,-4.58,absolute,False,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,OPT-30B,FP16,16-bit,,WikiText-2,Perplexity,9.56,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,PTB,Perplexity,14.04,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,C4,Perplexity,11.45,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,ARC-Easy,Accuracy,65.4,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,LAMBADA,Accuracy,72.4,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,OPTQ,4-bit,,WikiText-2,Perplexity,9.59,FP16,9.56,0.03,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.59 | 14.22 | 11.56 | 64.77 | 72.39
+RP13,OPT-30B,OPTQ,4-bit,,PTB,Perplexity,14.22,FP16,14.04,0.18,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.59 | 14.22 | 11.56 | 64.77 | 72.39
+RP13,OPT-30B,OPTQ,4-bit,,C4,Perplexity,11.56,FP16,11.45,0.11,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.59 | 14.22 | 11.56 | 64.77 | 72.39
+RP13,OPT-30B,OPTQ,3-bit,,WikiText-2,Perplexity,10.32,FP16,9.56,0.76,absolute,False,measured,9,6 Experiments,Table 2,3 | 10.32 | 15.36 | 12.23 | 60.19 | 68.89
+RP13,OPT-30B,OPTQ,3-bit,,PTB,Perplexity,15.36,FP16,14.04,1.32,absolute,False,measured,9,6 Experiments,Table 2,3 | 10.32 | 15.36 | 12.23 | 60.19 | 68.89
+RP13,OPT-30B,OPTQ,3-bit,,C4,Perplexity,12.23,FP16,11.45,0.78,absolute,False,measured,9,6 Experiments,Table 2,3 | 10.32 | 15.36 | 12.23 | 60.19 | 68.89
+RP13,OPT-30B,OPTQ,2-bit,,WikiText-2,Perplexity,71.7,FP16,9.56,62.14,absolute,True,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77
+RP13,OPT-30B,OPTQ,2-bit,,PTB,Perplexity,88.19,FP16,14.04,74.15,absolute,False,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77
+RP13,OPT-30B,OPTQ,2-bit,,C4,Perplexity,29.59,FP16,11.45,18.14,absolute,False,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77
+RP13,OPT-30B,QuIP,4-bit,,WikiText-2,Perplexity,9.6,FP16,9.56,0.04,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.60 | 14.18 | 11.50 | 65.32 | 73.20
+RP13,OPT-30B,QuIP,4-bit,,PTB,Perplexity,14.18,FP16,14.04,0.14,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.60 | 14.18 | 11.50 | 65.32 | 73.20
+RP13,OPT-30B,QuIP,4-bit,,C4,Perplexity,11.5,FP16,11.45,0.05,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.60 | 14.18 | 11.50 | 65.32 | 73.20
+RP13,OPT-30B,QuIP,3-bit,,WikiText-2,Perplexity,9.79,FP16,9.56,0.23,absolute,False,measured,9,6 Experiments,Table 2,3 | 9.79 | 14.37 | 11.66 | 65.28 | 72.68
+RP13,OPT-30B,QuIP,3-bit,,PTB,Perplexity,14.37,FP16,14.04,0.33,absolute,False,measured,9,6 Experiments,Table 2,3 | 9.79 | 14.37 | 11.66 | 65.28 | 72.68
+RP13,OPT-30B,QuIP,3-bit,,C4,Perplexity,11.66,FP16,11.45,0.21,absolute,False,measured,9,6 Experiments,Table 2,3 | 9.79 | 14.37 | 11.66 | 65.28 | 72.68
+RP13,OPT-30B,QuIP,2-bit,,WikiText-2,Perplexity,11.48,FP16,9.56,1.92,absolute,True,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77 | **11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,PTB,Perplexity,17.4,FP16,14.04,3.36,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,C4,Perplexity,13.55,FP16,11.45,2.1,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,ARC-Easy,Accuracy,57.87,FP16,65.4,-7.53,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,LAMBADA,Accuracy,65.24,FP16,72.4,-7.16,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,Nearest,4-bit,,WikiText-2,Perplexity,10.77,FP16,9.56,1.21,absolute,False,measured,9,6 Experiments,Table 2,4 | 10.77 | 15.41 | 13.52 | 61.28 | 70.42
+RP13,OPT-30B,Nearest,3-bit,,WikiText-2,Perplexity,1564.9,FP16,9.56,1555.34,absolute,False,measured,9,6 Experiments,Table 2,3 | 1564.9 | 1526.2 | 1808.2 | 34.47 | 1.73
+RP13,OPT-30B,Nearest,2-bit,,WikiText-2,Perplexity,41547.8,FP16,9.56,41538.24,absolute,False,measured,9,6 Experiments,Table 2,2 | 41547.8 | 34348.6 | 24815.7 | 25.80 | 0.00
+RP13,OPT-30B,Nearest+IncP,2-bit,,WikiText-2,Perplexity,12.04,FP16,9.56,2.48,absolute,False,measured,9,6 Experiments,Table 2,2 | 41547.8 | 34348.6 | 24815.7 | 25.80 | 0.00 | 12.04 | 18.12 | 14.11 | 56.36 | 60.64
+RP13,OPT-30B,QuIP-RG,2-bit,,WikiText-2,Perplexity,11.68,FP16,9.56,2.12,absolute,False,measured,9,6 Experiments,Table 2,2 | 49.40 | 73.45 | 29.12 | 41.20 | 26.35 | 11.68 | **16.94** | 13.44 | **59.51** | 62.31
+RP13,OPT-30B,LDLQ-RG,2-bit,,WikiText-2,Perplexity,49.4,FP16,9.56,39.84,absolute,False,measured,9,6 Experiments,Table 2,2 | 49.40 | 73.45 | 29.12 | 41.20 | 26.35
+RP13,OPT-30B,Greedy,2-bit,,WikiText-2,Perplexity,4816.6,FP16,9.56,4807.04,absolute,False,measured,9,6 Experiments,Table 2,2 | 4816.6 | 3473.81 | 3183.2 | 26.30 | 0.00
+RP13,OPT-30B,Greedy+IncP,2-bit,,WikiText-2,Perplexity,11.59,FP16,9.56,2.03,absolute,False,measured,9,6 Experiments,Table 2,2 | 4816.6 | 3473.81 | 3183.2 | 26.30 | 0.00 | 11.59 | 17.39 | **13.30** | 58.80 | 64.47
+RP13,OPT-66B,QuIP,4-bit,,A6000,Latency (ms/token),81,OPTQ,53,1.53,x_factor,True,measured,10,6 Experiments,Table 4,QuIP | 81ms | OPTQ | 53ms
+RP13,OPT-66B,OPTQ,4-bit,,A6000,Latency (ms/token),53,,,,,False,measured,10,6 Experiments,Table 4,OPTQ | 53ms
+RP13,OPT-350m,Rescale,4-bit,,WikiText2/PTB/C4 average,Perplexity,24.3,,,,,False,measured,10,6 Experiments,Table 3,4 | 24.30 | 24.32 | 24.05 | 23.89
+RP13,OPT-350m,Rescale+Incoherence+QuantRange,4-bit,,WikiText2/PTB/C4 average,Perplexity,23.89,,,,,False,measured,10,6 Experiments,Table 3,4 | 24.30 | 24.32 | 24.05 | 23.89
+RP13,OPT-350m,Rescale,3-bit,,WikiText2/PTB/C4 average,Perplexity,32.62,,,,,False,measured,10,6 Experiments,Table 3,3 | 32.62 | 42.28 | 31.32 | 26.36
+RP13,OPT-350m,Rescale+Incoherence+QuantRange,3-bit,,WikiText2/PTB/C4 average,Perplexity,26.36,,,,,False,measured,10,6 Experiments,Table 3,3 | 32.62 | 42.28 | 31.32 | 26.36
+RP13,OPT-125m,Random permutation ablation,2-bit,,WikiText2/PTB/C4 average,Delta Perplexity,-74.2,,,,absolute,False,measured,10,7 Conclusion,Table 5,2 | -74.2
+RP13,OPT-125m,Random permutation ablation,3-bit,,WikiText2/PTB/C4 average,Delta Perplexity,-9.96,,,,absolute,False,measured,10,7 Conclusion,Table 5,3 | -9.96
+RP13,OPT-125m,Random permutation ablation,4-bit,,WikiText2/PTB/C4 average,Delta Perplexity,-0.22,,,,absolute,False,measured,10,7 Conclusion,Table 5,4 | -0.22
+RP13,OPT-13B,FP16,16-bit,,WikiText-2,Perplexity,10.13,,,,,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-13B,QuIP,4-bit,,WikiText-2,Perplexity,10.21,FP16,10.13,0.08,absolute,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-13B,QuIP,3-bit,,WikiText-2,Perplexity,10.5,FP16,10.13,0.37,absolute,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-13B,QuIP,2-bit,,WikiText-2,Perplexity,16.02,FP16,10.13,5.89,absolute,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-6.7B,FP16,16-bit,,WikiText-2,Perplexity,10.86,,,,,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,QuIP,4-bit,,WikiText-2,Perplexity,10.98,FP16,10.86,0.12,absolute,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,QuIP,3-bit,,WikiText-2,Perplexity,11.51,FP16,10.86,0.65,absolute,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,QuIP,2-bit,,WikiText-2,Perplexity,22.33,FP16,10.86,11.47,absolute,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,OPTQ,2-bit,,WikiText-2,Perplexity,2958,FP16,10.86,2947.14,absolute,False,measured,19,C.6,Table 9,"Wiki\downarrow | 10.86 | 11.49 | 14.87 | 2,958"
+RP13,OPT-2.7B,FP16,16-bit,,WikiText-2,Perplexity,12.47,,,,,False,measured,20,C.8,Table 10,Wiki↓ | 12.47 | 12.39 | 17.44
+RP13,OPT-2.7B,QuIP,4-bit,,WikiText-2,Perplexity,12.39,FP16,12.47,-0.08,absolute,False,measured,20,C.8,Table 10,Wiki↓ | 12.47 | 12.39 | 17.44
+RP13,OPT-2.7B,QuIP,3-bit,,WikiText-2,Perplexity,17.44,FP16,12.47,4.97,absolute,False,measured,20,C.8,Table 10,Wiki↓ | 12.47 | 12.39 | 17.44 | 2.998
+RP13,OPT-1.3B,FP16,16-bit,,WikiText-2,Perplexity,14.62,,,,,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,QuIP,4-bit,,WikiText-2,Perplexity,14.88,FP16,14.62,0.26,absolute,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,QuIP,3-bit,,WikiText-2,Perplexity,16.21,FP16,14.62,1.59,absolute,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,QuIP,2-bit,,WikiText-2,Perplexity,41.64,FP16,14.62,27.02,absolute,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,OPTQ,2-bit,,WikiText-2,Perplexity,7856,FP16,14.62,7841.38,absolute,False,measured,20,C.8,Table 11,"Wiki↓ | 14.62 | 15.59 | 21.35 | 7,856"
+RP13,OPT-350m,FP16,16-bit,,WikiText-2,Perplexity,22.0,,,,,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-350m,QuIP,4-bit,,WikiText-2,Perplexity,22.5,FP16,22.0,0.5,absolute,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-350m,QuIP,3-bit,,WikiText-2,Perplexity,25.19,FP16,22.0,3.19,absolute,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-350m,QuIP,2-bit,,WikiText-2,Perplexity,672.3,FP16,22.0,650.3,absolute,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-125m,FP16,16-bit,,WikiText-2,Perplexity,27.66,,,,,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,QuIP,4-bit,,WikiText-2,Perplexity,33.35,FP16,27.66,5.69,absolute,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,QuIP,3-bit,,WikiText-2,Perplexity,34.22,FP16,27.66,6.56,absolute,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,QuIP,2-bit,,WikiText-2,Perplexity,347.4,FP16,27.66,319.74,absolute,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,OPTQ,2-bit,,WikiText-2,Perplexity,4563,FP16,27.66,4535.34,absolute,False,measured,21,C.9,Table 13,"Wiki↓ | 27.66 | 31.44 | 53.26 | 4,563"
 RP14,BERT-base,ZeroQuant,8-bit,g48,GLUE,Average Accuracy,83.75,FP16,83.95,-0.2,absolute,False,measured,6,4.2 Layer-by-layer Knowledge Distillation with Affordable Cost,Table 2,W8A8 (ZeroQuant) | 59.59 | 84.83 | 85.13 | 86.03/90.39 | 91.98 | 91.45/88.46 | 71.12 | 93.12 | 90.09/89.62 | 83.75 | 0
 RP14,BERT-base,PTQ (baseline),8-bit,,GLUE,Average Accuracy,77.41,FP16,83.95,-6.54,absolute,False,measured,6,4.2 Layer-by-layer Knowledge Distillation with Affordable Cost,Table 2,W8A8 (PTQ) | 56.06 | 79.99 | 81.06 | 75.49/79.67 | 87.35 | 89.92/86.82 | 48.38 | 91.40 | 86.58/86.44 | 77.41 | 6
 RP14,BERT-base,QAT (authors' run),8-bit,,GLUE,Average Accuracy,83.37,FP16,83.95,-0.58,absolute,False,measured,6,4.2 Layer-by-layer Knowledge Distillation with Affordable Cost,Table 2,W8A8 (QAT) | 61.21 | 84.80 | 84.64 | 83.82/88.85 | 91.29 | 91.29/88.28 | 71.12 | 92.89 | 88.39/88.18 | 83.37 | 2900
@@ -2696,6 +2799,145 @@ RP30,LLAMA-2-70B,AQLM-PV,2-bit,,GSM8k,Accuracy (8-shot),47.9,FP16,56.3,-8.4,abso
 RP30,LLAMA-2-70B,QuIP#-PV,2-bit,,MMLU,Accuracy (5-shot),65.3,FP16,68.8,-3.5,absolute,False,measured,20,K. Evaluation on MMLU and GSM8k,Table 15,QuIP#★ | 2.01 | **65.3** | 46.4
 RP30,LLAMA-2-7B,GPTQ (block-tuned),2-bit,,WikiText-2,Perplexity,16.77,FP16,5.12,11.65,absolute,False,measured,20,L. Block-wise tuning for scalar quantization,Table 16,GPTQ | 2.14 | 16.77 | 17.53
 RP30,LLAMA-2-7B,AQLM (block-tuned),2-bit,,WikiText-2,Perplexity,6.64,FP16,5.12,1.52,absolute,False,measured,20,L. Block-wise tuning for scalar quantization,Table 16,AQLM | 2.02 | **6.64** | **8.56**
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 512+32,Throughput speedup over FlexGen,3.0,FlexGen,1.0,2.0,x_factor,True,measured,1,Abstract,Abstract,"improves the throughput over three leading inference systems DeepSpeed Zero-Inference, Hugging Face Accelerate, and FlexGen by up to 29x, 29x, and 3x on OPT-6.7B and OPT-30B"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 512+32,Throughput speedup over DeepSpeed,29.0,DeepSpeed,1.0,28.0,x_factor,True,measured,1,Abstract,Abstract,"improves the throughput over three leading inference systems DeepSpeed Zero-Inference, Hugging Face Accelerate, and FlexGen by up to 29x, 29x, and 3x"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 512+32,Throughput speedup over Accelerate,29.0,Hugging Face Accelerate,1.0,28.0,x_factor,True,measured,1,Abstract,Abstract,"improves the throughput over three leading inference systems DeepSpeed Zero-Inference, Hugging Face Accelerate, and FlexGen by up to 29x, 29x, and 3x"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic,Latency reduction vs FlexGen,1.9,FlexGen,1.0,0.9,x_factor,True,measured,1,Abstract,Abstract,"With the same batch size, H_2O can reduce the latency by up to 1.9x"
+RP31,Pre-trained LLM,Full KV,16-bit,,Wiki-Text-103,Attention sparsity,95.0,,,,,True,measured,2,1 Introduction,,the attention matrices of LLMs are over 95% sparse at inference time
+RP31,OPT-30B,Full,16-bit,,PiQA,Accuracy (5-shot),80.09,,,,,False,measured,8,5.1 End-to-End Results,Table 1,Full | 80.09 | 81.00 | 44.80 | 71.51
+RP31,OPT-30B,Full,16-bit,,COPA,Accuracy (5-shot),81.0,,,,,False,measured,8,5.1 End-to-End Results,Table 1,Full | 80.09 | 81.00 | 44.80 | 71.51
+RP31,OPT-30B,Full,16-bit,,OpenBookQA,Accuracy (5-shot),44.8,,,,,False,measured,8,5.1 End-to-End Results,Table 1,Full | 80.09 | 81.00 | 44.80 | 71.51
+RP31,OPT-30B,Full,16-bit,,Winogrande,Accuracy (5-shot),71.51,,,,,False,measured,8,5.1 End-to-End Results,Table 1,Full | 80.09 | 81.00 | 44.80 | 71.51
+RP31,OPT-30B,Full (0-shot),16-bit,,PiQA,Accuracy (0-shot),78.89,,,,,False,measured,8,5.1 End-to-End Results,Table 1,0-shot Full | 78.89 | 76.00 | 41.40 | 70.00
+RP31,OPT-30B,Full (0-shot),16-bit,,COPA,Accuracy (0-shot),76.0,,,,,False,measured,8,5.1 End-to-End Results,Table 1,0-shot Full | 78.89 | 76.00 | 41.40 | 70.00
+RP31,OPT-30B,Full (0-shot),16-bit,,OpenBookQA,Accuracy (0-shot),41.4,,,,,False,measured,8,5.1 End-to-End Results,Table 1,0-shot Full | 78.89 | 76.00 | 41.40 | 70.00
+RP31,OPT-30B,Full (0-shot),16-bit,,Winogrande,Accuracy (0-shot),70.0,,,,,False,measured,8,5.1 End-to-End Results,Table 1,0-shot Full | 78.89 | 76.00 | 41.40 | 70.00
+RP31,OPT-30B,Full (1-shot),16-bit,,PiQA,Accuracy (1-shot),79.11,,,,,False,measured,8,5.1 End-to-End Results,Table 1,1-shot Full | 79.11 | 76.00 | 43.60 | 70.24
+RP31,OPT-30B,Full (1-shot),16-bit,,COPA,Accuracy (1-shot),76.0,,,,,False,measured,8,5.1 End-to-End Results,Table 1,1-shot Full | 79.11 | 76.00 | 43.60 | 70.24
+RP31,OPT-30B,Full (1-shot),16-bit,,OpenBookQA,Accuracy (1-shot),43.6,,,,,False,measured,8,5.1 End-to-End Results,Table 1,1-shot Full | 79.11 | 76.00 | 43.60 | 70.24
+RP31,OPT-30B,Full (1-shot),16-bit,,Winogrande,Accuracy (1-shot),70.24,,,,,False,measured,8,5.1 End-to-End Results,Table 1,1-shot Full | 79.11 | 76.00 | 43.60 | 70.24
+RP31,OPT-30B,Local,16-bit,20% KV cache budget,PiQA,Accuracy (5-shot),57.94,Full,80.09,-22.15,absolute,False,measured,8,5.1 End-to-End Results,Table 1,Local | 57.94 | 56.00 | 28.40 | 51.30
+RP31,OPT-30B,Local,16-bit,20% KV cache budget,COPA,Accuracy (5-shot),56.0,Full,81.0,-25.0,absolute,False,measured,8,5.1 End-to-End Results,Table 1,Local | 57.94 | 56.00 | 28.40 | 51.30
+RP31,OPT-30B,Local,16-bit,20% KV cache budget,OpenBookQA,Accuracy (5-shot),28.4,Full,44.8,-16.4,absolute,False,measured,8,5.1 End-to-End Results,Table 1,Local | 57.94 | 56.00 | 28.40 | 51.30
+RP31,OPT-30B,Local,16-bit,20% KV cache budget,Winogrande,Accuracy (5-shot),51.3,Full,71.51,-20.21,absolute,False,measured,8,5.1 End-to-End Results,Table 1,Local | 57.94 | 56.00 | 28.40 | 51.30
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,PiQA,Accuracy (5-shot),79.22,Full,80.09,-0.87,absolute,True,measured,8,5.1 End-to-End Results,Table 1,H_2O | 79.22 | 85.00 | 43.80 | 71.67
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,COPA,Accuracy (5-shot),85.0,Full,81.0,4.0,absolute,True,measured,8,5.1 End-to-End Results,Table 1,H_2O | 79.22 | 85.00 | 43.80 | 71.67
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,OpenBookQA,Accuracy (5-shot),43.8,Full,44.8,-1.0,absolute,False,measured,8,5.1 End-to-End Results,Table 1,H_2O | 79.22 | 85.00 | 43.80 | 71.67
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,Winogrande,Accuracy (5-shot),71.67,Full,71.51,0.16,absolute,False,measured,8,5.1 End-to-End Results,Table 1,H_2O | 79.22 | 85.00 | 43.80 | 71.67
+RP31,OPT-30B,Full,16-bit,,COPA,Accuracy,85.0,,,,,False,measured,8,5.1 End-to-End Results,Table 2,Full | 85.00 | 43.20 | 78.51 | 70.24
+RP31,OPT-30B,Full,16-bit,,OpenBookQA,Accuracy,43.2,,,,,False,measured,8,5.1 End-to-End Results,Table 2,Full | 85.00 | 43.20 | 78.51 | 70.24
+RP31,OPT-30B,Full,16-bit,,PiQA,Accuracy,78.51,,,,,False,measured,8,5.1 End-to-End Results,Table 2,Full | 85.00 | 43.20 | 78.51 | 70.24
+RP31,OPT-30B,Full,16-bit,,Winogrande,Accuracy,70.24,,,,,False,measured,8,5.1 End-to-End Results,Table 2,Full | 85.00 | 43.20 | 78.51 | 70.24
+RP31,OPT-30B,Local w.o. H2,16-bit,20% KV cache budget,COPA,Accuracy,48.0,Full,85.0,-37.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17
+RP31,OPT-30B,Local w.o. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,25.2,Full,43.2,-18.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17
+RP31,OPT-30B,Local w.o. H2,16-bit,20% KV cache budget,PiQA,Accuracy,55.82,Full,78.51,-22.69,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17
+RP31,OPT-30B,Local w.o. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,49.17,Full,70.24,-21.07,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17
+RP31,OPT-30B,Local w. H2,16-bit,20% KV cache budget,COPA,Accuracy,84.0,Full,85.0,-1.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06
+RP31,OPT-30B,Local w. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,43.0,Full,43.2,-0.2,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06
+RP31,OPT-30B,Local w. H2,16-bit,20% KV cache budget,PiQA,Accuracy,78.45,Full,78.51,-0.06,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06
+RP31,OPT-30B,Local w. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,69.06,Full,70.24,-1.18,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06
+RP31,OPT-30B,Sparse Transformer (strided) w.o. H2,16-bit,20% KV cache budget,COPA,Accuracy,50.0,Full,85.0,-35.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59
+RP31,OPT-30B,Sparse Transformer (strided) w.o. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,24.6,Full,43.2,-18.6,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59
+RP31,OPT-30B,Sparse Transformer (strided) w.o. H2,16-bit,20% KV cache budget,PiQA,Accuracy,56.2,Full,78.51,-22.31,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59
+RP31,OPT-30B,Sparse Transformer (strided) w.o. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,47.59,Full,70.24,-22.65,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59
+RP31,OPT-30B,Sparse Transformer (strided) w. H2,16-bit,20% KV cache budget,COPA,Accuracy,83.0,Full,85.0,-2.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61
+RP31,OPT-30B,Sparse Transformer (strided) w. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,42.6,Full,43.2,-0.6,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61
+RP31,OPT-30B,Sparse Transformer (strided) w. H2,16-bit,20% KV cache budget,PiQA,Accuracy,78.24,Full,78.51,-0.27,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61
+RP31,OPT-30B,Sparse Transformer (strided) w. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,69.61,Full,70.24,-0.63,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61
+RP31,OPT-30B,Sparse Transformer (fixed) w.o. H2,16-bit,20% KV cache budget,COPA,Accuracy,61.0,Full,85.0,-24.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88
+RP31,OPT-30B,Sparse Transformer (fixed) w.o. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,23.8,Full,43.2,-19.4,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88
+RP31,OPT-30B,Sparse Transformer (fixed) w.o. H2,16-bit,20% KV cache budget,PiQA,Accuracy,58.6,Full,78.51,-19.91,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88
+RP31,OPT-30B,Sparse Transformer (fixed) w.o. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,49.88,Full,70.24,-20.36,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88
+RP31,OPT-30B,Sparse Transformer (fixed) w. H2,16-bit,20% KV cache budget,COPA,Accuracy,76.0,Full,85.0,-9.0,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96
+RP31,OPT-30B,Sparse Transformer (fixed) w. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,41.4,Full,43.2,-1.8,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96
+RP31,OPT-30B,Sparse Transformer (fixed) w. H2,16-bit,20% KV cache budget,PiQA,Accuracy,77.8,Full,78.51,-0.71,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96
+RP31,OPT-30B,Sparse Transformer (fixed) w. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,64.96,Full,70.24,-5.28,absolute,False,measured,8,5.1 End-to-End Results,Table 2,Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96
+RP31,OPT-6.7B,Accelerate,16-bit,,Synthetic 512+32,Throughput (token/s),20.4,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"Accelerate | 20.4 (2, G) | 0.6 (8, C) | 15.5 (1, G)"
+RP31,OPT-30B,Accelerate,16-bit,,Synthetic 512+32,Throughput (token/s),0.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"Accelerate | 20.4 (2, G) | 0.6 (8, C)"
+RP31,OPT-6.7B,DeepSpeed,16-bit,,Synthetic 512+32,Throughput (token/s),10.2,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"DeepSpeed | 10.2 (16, C) | 0.6 (4, C)"
+RP31,OPT-30B,DeepSpeed,16-bit,,Synthetic 512+32,Throughput (token/s),0.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"DeepSpeed | 10.2 (16, C) | 0.6 (4, C)"
+RP31,OPT-6.7B,FlexGen,16-bit,,Synthetic 512+32,Throughput (token/s),20.2,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"FlexGen | 20.2 (2, G) | 8.1 (144, C)"
+RP31,OPT-30B,FlexGen,16-bit,,Synthetic 512+32,Throughput (token/s),8.1,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"FlexGen | 20.2 (2, G) | 8.1 (144, C)"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 512+32,Throughput (token/s),35.1,FlexGen,20.2,14.9,absolute,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"H2O (20%) | 35.1 (4, G) | 12.7 (728, C)"
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,Synthetic 512+32,Throughput (token/s),12.7,FlexGen,8.1,4.6,absolute,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"H2O (20%) | 35.1 (4, G) | 12.7 (728, C)"
+RP31,OPT-6.7B,Accelerate,16-bit,,Synthetic 512+512,Throughput (token/s),15.5,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"Accelerate | 20.4 (2, G) | 0.6 (8, C) | 15.5 (1, G) | 0.6 (8, C)"
+RP31,OPT-30B,Accelerate,16-bit,,Synthetic 512+512,Throughput (token/s),0.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"Accelerate | ... 0.6 (8, C) | 15.5 (1, G) | 0.6 (8, C)"
+RP31,OPT-6.7B,DeepSpeed,16-bit,,Synthetic 512+512,Throughput (token/s),9.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"DeepSpeed | 10.2 (16, C) | 0.6 (4, C) | 9.6 (16, C) | 0.6 (4, C)"
+RP31,OPT-30B,DeepSpeed,16-bit,,Synthetic 512+512,Throughput (token/s),0.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"DeepSpeed | 10.2 (16, C) | 0.6 (4, C) | 9.6 (16, C) | 0.6 (4, C)"
+RP31,OPT-6.7B,FlexGen,16-bit,,Synthetic 512+512,Throughput (token/s),16.8,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"FlexGen | 20.2 (2, G) | 8.1 (144, C) | 16.8 (1, G) | 8.5 (80, C)"
+RP31,OPT-30B,FlexGen,16-bit,,Synthetic 512+512,Throughput (token/s),8.5,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"FlexGen | 20.2 (2, G) | 8.1 (144, C) | 16.8 (1, G) | 8.5 (80, C)"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 512+512,Throughput (token/s),51.7,FlexGen,16.8,34.9,absolute,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"H2O (20%) | 35.1 (4, G) | 12.7 (728, C) | 51.7 (4, G) | 18.83 (416, C)"
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,Synthetic 512+512,Throughput (token/s),18.83,FlexGen,8.5,10.33,absolute,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"H2O (20%) | 35.1 (4, G) | 12.7 (728, C) | 51.7 (4, G) | 18.83 (416, C)"
+RP31,OPT-6.7B,Accelerate,16-bit,,Synthetic 512+1024,Throughput (token/s),5.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"Accelerate | ... 5.6 (16, C) | 0.6 (8, C)"
+RP31,OPT-30B,Accelerate,16-bit,,Synthetic 512+1024,Throughput (token/s),0.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"Accelerate | ... 5.6 (16, C) | 0.6 (8, C)"
+RP31,OPT-6.7B,DeepSpeed,16-bit,,Synthetic 512+1024,Throughput (token/s),10.1,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"DeepSpeed | ... 10.1 (16, C) | 0.6 (4, C)"
+RP31,OPT-30B,DeepSpeed,16-bit,,Synthetic 512+1024,Throughput (token/s),0.6,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"DeepSpeed | ... 10.1 (16, C) | 0.6 (4, C)"
+RP31,OPT-6.7B,FlexGen,16-bit,,Synthetic 512+1024,Throughput (token/s),16.9,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"FlexGen | ... 16.9 (1, G) | 7.1 (48, C)"
+RP31,OPT-30B,FlexGen,16-bit,,Synthetic 512+1024,Throughput (token/s),7.1,,,,,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"FlexGen | ... 16.9 (1, G) | 7.1 (48, C)"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 512+1024,Throughput (token/s),52.1,FlexGen,16.9,35.2,absolute,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"H2O (20%) | ... 52.1 (4, G) | 13.82 (264, C)"
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,Synthetic 512+1024,Throughput (token/s),13.82,FlexGen,7.1,6.72,absolute,False,measured,8,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 3,"H2O (20%) | ... 52.1 (4, G) | 13.82 (264, C)"
+RP31,OPT-6.7B,Accelerate,16-bit,,XSUM,Throughput (token/s),11.98,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"Accelerate | 11.98 (1, G) | 0.23 (2, C)"
+RP31,OPT-30B,Accelerate,16-bit,,XSUM,Throughput (token/s),0.23,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"Accelerate | 11.98 (1, G) | 0.23 (2, C)"
+RP31,OPT-6.7B,DeepSpeed,16-bit,,XSUM,Throughput (token/s),3.52,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"DeepSpeed | 3.52 (6, C) | 0.31 (2, C)"
+RP31,OPT-30B,DeepSpeed,16-bit,,XSUM,Throughput (token/s),0.31,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"DeepSpeed | 3.52 (6, C) | 0.31 (2, C)"
+RP31,OPT-6.7B,FlexGen,16-bit,,XSUM,Throughput (token/s),10.8,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"FlexGen | 10.80 (1, G) | 3.29 (44, C)"
+RP31,OPT-30B,FlexGen,16-bit,,XSUM,Throughput (token/s),3.29,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"FlexGen | 10.80 (1, G) | 3.29 (44, C)"
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,XSUM,Throughput (token/s),30.4,FlexGen,10.8,19.6,absolute,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"H2O (20%) | 30.40 (1, G) | 6.70 (180, C)"
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,XSUM,Throughput (token/s),6.7,FlexGen,3.29,3.41,absolute,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 4,"H2O (20%) | 30.40 (1, G) | 6.70 (180, C)"
+RP31,OPT-30B,FlexGen,16-bit,,Synthetic 7000+1024,Latency (s),57.0,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,7000+1024 | 30B | 1 | latency (s) | 57.0 | 50.4
+RP31,OPT-30B,H2O,16-bit,20% KV cache budget,Synthetic 7000+1024,Latency (s),50.4,FlexGen,57.0,-6.6,absolute,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,7000+1024 | 30B | 1 | latency (s) | 57.0 | 50.4
+RP31,OPT-13B,FlexGen,16-bit,,Synthetic 5000+5000,Latency (s),214.2,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,5000+5000 | 13B | 4 | latency (s) | 214.2 | 155.4
+RP31,OPT-13B,H2O,16-bit,20% KV cache budget,Synthetic 5000+5000,Latency (s),155.4,FlexGen,214.2,-58.8,absolute,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,5000+5000 | 13B | 4 | latency (s) | 214.2 | 155.4
+RP31,OPT-6.7B,FlexGen,16-bit,,Synthetic 2048+2048,Latency (s),99.5,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,2048+2048 | 6.7B | 24 | latency (s) | 99.5 | 53.5
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 2048+2048,Latency (s),53.5,FlexGen,99.5,-46.0,absolute,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,2048+2048 | 6.7B | 24 | latency (s) | 99.5 | 53.5
+RP31,OPT-6.7B,FlexGen,16-bit,,Synthetic 2048+2048,Throughput (token/s),494.1,,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,2048+2048 | 6.7B | 24 | throughput (token/s) | 494.1 | 918.9
+RP31,OPT-6.7B,H2O,16-bit,20% KV cache budget,Synthetic 2048+2048,Throughput (token/s),918.9,FlexGen,494.1,424.8,absolute,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,2048+2048 | 6.7B | 24 | throughput (token/s) | 494.1 | 918.9
+RP31,OPT-6.7B,H2O (batch=64),16-bit,20% KV cache budget,Synthetic 2048+2048,Throughput (token/s),1161.0,FlexGen,,,,False,measured,9,5.2 Heavy Hitter for High-Throughput Generative Inference,Table 5,2048+2048 | 6.7B | 64 | throughput (token/s) | OOM | 1161.0
+RP31,OPT-30B,Quant-4bit,4-bit,,COPA,Accuracy,84.0,Full,85.0,-1.0,absolute,False,measured,24,C.1 ... Table 6: Compatibility with Quantization,Table 6,Quant-4bit | 84.00 | 43.28 | 78.67
+RP31,OPT-30B,Quant-4bit,4-bit,,OpenBookQA,Accuracy,43.28,Full,43.2,0.08,absolute,False,measured,24,C.1 ... Table 6: Compatibility with Quantization,Table 6,Quant-4bit | 84.00 | 43.28 | 78.67
+RP31,OPT-30B,Quant-4bit,4-bit,,PiQA,Accuracy,78.67,Full,78.51,0.16,absolute,False,measured,24,C.1 ... Table 6: Compatibility with Quantization,Table 6,Quant-4bit | 84.00 | 43.28 | 78.67
+RP31,OPT-30B,H2O w. Quant-4bit,4-bit,20% KV cache budget,COPA,Accuracy,84.0,Full,85.0,-1.0,absolute,False,measured,24,C.1 ... Table 6: Compatibility with Quantization,Table 6,H2O w. Quant-4bit | 84.00 | 43.20 | 78.80
+RP31,OPT-30B,H2O w. Quant-4bit,4-bit,20% KV cache budget,OpenBookQA,Accuracy,43.2,Full,43.2,0.0,absolute,False,measured,24,C.1 ... Table 6: Compatibility with Quantization,Table 6,H2O w. Quant-4bit | 84.00 | 43.20 | 78.80
+RP31,OPT-30B,H2O w. Quant-4bit,4-bit,20% KV cache budget,PiQA,Accuracy,78.8,Full,78.51,0.29,absolute,False,measured,24,C.1 ... Table 6: Compatibility with Quantization,Table 6,H2O w. Quant-4bit | 84.00 | 43.20 | 78.80
+RP31,OPT-6.7B,H2O-c (4-bit weights),4-bit,20% KV cache budget,Synthetic 512+32,Throughput (token/s),50.5,H2O,35.1,15.4,absolute,False,measured,24,C.2 Throughput Improvement of H2O Combining with Quantization,Table 7,H2O-c (20%) | 50.5 (70) | 72.5 (52) | 62.3 (44)
+RP31,OPT-6.7B,H2O-c (4-bit weights),4-bit,20% KV cache budget,Synthetic 512+512,Throughput (token/s),72.5,H2O,51.7,20.8,absolute,False,measured,24,C.2 Throughput Improvement of H2O Combining with Quantization,Table 7,H2O-c (20%) | 50.5 (70) | 72.5 (52) | 62.3 (44)
+RP31,OPT-6.7B,H2O-c (4-bit weights),4-bit,20% KV cache budget,Synthetic 512+1024,Throughput (token/s),62.3,H2O,52.1,10.2,absolute,False,measured,24,C.2 Throughput Improvement of H2O Combining with Quantization,Table 7,H2O-c (20%) | 50.5 (70) | 72.5 (52) | 62.3 (44)
+RP31,OPT-30B,TopK w.o. H2,16-bit,20% KV cache budget,COPA,Accuracy,80.0,Full,85.0,-5.0,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35
+RP31,OPT-30B,TopK w.o. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,41.4,Full,43.2,-1.8,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35
+RP31,OPT-30B,TopK w.o. H2,16-bit,20% KV cache budget,PiQA,Accuracy,76.96,Full,78.51,-1.55,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35
+RP31,OPT-30B,TopK w.o. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,65.35,Full,70.24,-4.89,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35
+RP31,OPT-30B,TopK w. H2,16-bit,20% KV cache budget,COPA,Accuracy,82.0,Full,85.0,-3.0,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48
+RP31,OPT-30B,TopK w. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,42.8,Full,43.2,-0.4,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48
+RP31,OPT-30B,TopK w. H2,16-bit,20% KV cache budget,PiQA,Accuracy,77.96,Full,78.51,-0.55,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48
+RP31,OPT-30B,TopK w. H2,16-bit,20% KV cache budget,Winogrande,Accuracy,66.48,Full,70.24,-3.76,absolute,False,measured,26,C.5 Enhancing the Top-K Baseline,Table 8,TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48
+RP31,OPT-13B,Full,16-bit,,PiQA,Accuracy,77.37,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26
+RP31,OPT-13B,w. Local,16-bit,20% KV cache budget,PiQA,Accuracy,54.62,Full,77.37,-22.75,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26
+RP31,OPT-13B,w. H2,16-bit,20% KV cache budget,PiQA,Accuracy,76.12,Full,77.37,-1.25,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26
+RP31,OPT-13B,w. Local + H2,16-bit,20% KV cache budget,PiQA,Accuracy,77.26,Full,77.37,-0.11,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26
+RP31,OPT-13B,w. Local,16-bit,20% KV cache budget,OpenBookQA,Accuracy,25.6,Full,41.4,-15.8,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,OpenBookQA | OPT-13B | 41.40 | 25.60 | 30.40 | 41.20
+RP31,OPT-13B,w. H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,30.4,Full,41.4,-11.0,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,OpenBookQA | OPT-13B | 41.40 | 25.60 | 30.40 | 41.20
+RP31,OPT-13B,w. Local + H2,16-bit,20% KV cache budget,OpenBookQA,Accuracy,41.2,Full,41.4,-0.2,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,OpenBookQA | OPT-13B | 41.40 | 25.60 | 30.40 | 41.20
+RP31,OPT-13B,Full,16-bit,,MathQA,Accuracy,26.67,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93
+RP31,OPT-13B,w. Local,16-bit,20% KV cache budget,MathQA,Accuracy,22.04,Full,26.67,-4.63,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93
+RP31,OPT-13B,w. H2,16-bit,20% KV cache budget,MathQA,Accuracy,23.82,Full,26.67,-2.85,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93
+RP31,OPT-13B,w. Local + H2,16-bit,20% KV cache budget,MathQA,Accuracy,26.93,Full,26.67,0.26,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 9,MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93
+RP31,OPT-30B,Full (10-shots),16-bit,,OpenBookQA,Accuracy,43.0,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,OpenBookQA | Full | 43.20 | 44.40 | 43.00 | 44.80
+RP31,OPT-66B,Full (10-shots),16-bit,,OpenBookQA,Accuracy,44.8,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,OpenBookQA | Full | 43.20 | 44.40 | 43.00 | 44.80
+RP31,OPT-66B,Full (5-shots),16-bit,,OpenBookQA,Accuracy,44.4,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,OpenBookQA | Full | 43.20 | 44.40 | 43.00 | 44.80
+RP31,OPT-30B,H2O (10-shots),16-bit,20% KV cache budget,OpenBookQA,Accuracy,42.8,Full,43.0,-0.2,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,OpenBookQA | ... H2O | 43.00 | 44.20 | 42.80 | 44.80
+RP31,OPT-66B,H2O (10-shots),16-bit,20% KV cache budget,OpenBookQA,Accuracy,44.8,Full,44.8,0.0,absolute,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,OpenBookQA | ... H2O | 43.00 | 44.20 | 42.80 | 44.80
+RP31,OPT-30B,Full,16-bit,,COPA,Accuracy (10-shot),86.0,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,COPA | Full | 85.00 | 83.00 | 86.00 | 85.00
+RP31,OPT-66B,Full,16-bit,,COPA,Accuracy (5-shot),83.0,,,,,False,measured,27,C.7 Performance of Inference with Different Number of Shots,Table 10,COPA | Full | 85.00 | 83.00 | 86.00 | 85.00
+RP31,OPT-30B,SpAtten,16-bit,20% KV cache budget,COPA,Accuracy,82.0,Full,85.0,-3.0,absolute,False,measured,27,C.9 Comparsion with SpAtten,Table 11,SpAtten | 82.00 | 41.90 | 77.06
+RP31,OPT-30B,SpAtten,16-bit,20% KV cache budget,OpenBookQA,Accuracy,41.9,Full,43.2,-1.3,absolute,False,measured,27,C.9 Comparsion with SpAtten,Table 11,SpAtten | 82.00 | 41.90 | 77.06
+RP31,OPT-30B,SpAtten,16-bit,20% KV cache budget,PiQA,Accuracy,77.06,Full,78.51,-1.45,absolute,False,measured,27,C.9 Comparsion with SpAtten,Table 11,SpAtten | 82.00 | 41.90 | 77.06
+RP31,GPT-2,Pretrained (Full),16-bit,,Wiki-Text-103,Perplexity,19.32,,,,,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,Table 12,Pretrained Model | 19.32
+RP31,GPT-2,Remove H2 (pruned),,,Wiki-Text-103,Perplexity,31.78,Pretrained,19.32,12.46,absolute,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,Table 12,Remove H2 | 31.78
+RP31,GPT-2,Fine-tuning (1% data),,,Wiki-Text-103,Perplexity,19.86,Pretrained,19.32,0.54,absolute,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,Table 12,Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83
+RP31,GPT-2,Fine-tuning (10% data),,,Wiki-Text-103,Perplexity,19.84,Pretrained,19.32,0.52,absolute,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,Table 12,Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83
+RP31,GPT-2,Fine-tuning (40% data),,,Wiki-Text-103,Perplexity,19.76,Pretrained,19.32,0.44,absolute,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,Table 12,Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83
+RP31,GPT-2,Fine-tuning (100% data),,,Wiki-Text-103,Perplexity,19.83,Pretrained,19.32,0.51,absolute,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,Table 12,Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83
+RP31,GPT-2 (scratch),Train from scratch (1% data),,,Wiki-Text-103,Perplexity,554.12,Pretrained,19.32,534.8,absolute,False,measured,30,C.10 Heavy-Hitter in MLP Blocks,,"training the model from scratch using only 1% of the training data, the resulting model achieves a perplexity of 554.12"
 RP32,Vicuna-13B-v1.5,FP16,16-bit,,HarmLevelBench,Human ASR (Simple Query),33.9,,,,,False,measured,5,4.1 Classic ASR,Table 2,1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4
 RP32,Vicuna-13B-v1.5,FP16,16-bit,,HarmLevelBench,String ASR (Simple Query),35.7,,,,,False,measured,5,4.1 Classic ASR,Table 2,1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4
 RP32,Vicuna-13B-v1.5,FP16,16-bit,,HarmLevelBench,GPT Judge Full Compliance (Simple Query),30.4,,,,,False,measured,5,4.1 Classic ASR,Table 2,1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4
@@ -3942,6 +4184,109 @@ RP43,Llama-3.2-3B-it,AWQ,4-bit,g128,MT-Bench,Score (0-10),7.17,FP16,7.11,0.06,ab
 RP43,Llama-3.3-70B-it,FP16,16-bit,,MT-Bench,Score (0-10),9.13,,,,,False,measured,20,Table 7,Table 7,Llama-3.3-70B-it ... Avg. | 9.13 | 9.04 | 8.94
 RP43,Llama-3.3-70B-it,GPTQ,4-bit,g128,MT-Bench,Score (0-10),9.04,FP16,9.13,-0.09,absolute,False,measured,20,Table 7,Table 7,Llama-3.3-70B-it ... Avg. | 9.13 | 9.04
 RP43,Llama-3.3-70B-it,AWQ,4-bit,g128,MT-Bench,Score (0-10),8.94,FP16,9.13,-0.19,absolute,False,measured,20,Table 7,Table 7,Llama-3.3-70B-it ... Avg. | ... | 8.94
+RP44,Zephyr 7B + R2D2,GCG,,,HarmBench,Attack Success Rate,5.9,Llama 2 7B Chat (GCG ASR),31.8,-25.9,absolute,True,measured,10,6.2. Adversarial Training Results,Section 6.2 prose,"Zephyr 7B + R2D2 obtains state-of-the-art robustness against GCG among model-level defenses, outperforming Llama 2 7B Chat (31.8 → 5.9) and Llama 2 13B Chat (30.2 → 5.9) in percent ASR"
+RP44,Llama 2 7B Chat,GCG,,,HarmBench,Attack Success Rate,31.8,,,,,False,measured,10,6.2. Adversarial Training Results,Section 6.2 prose,outperforming Llama 2 7B Chat (31.8 → 5.9) and Llama 2 13B Chat (30.2 → 5.9) in percent ASR
+RP44,Llama 2 13B Chat,GCG,,,HarmBench,Attack Success Rate,30.2,,,,,False,measured,10,6.2. Adversarial Training Results,Section 6.2 prose,and Llama 2 13B Chat (30.2 → 5.9) in percent ASR
+RP44,Zephyr 7B + R2D2,MT-Bench,,,MT-Bench,MT-Bench score,6.0,Mistral 7B Instruct v0.2,6.5,-0.5,absolute,True,measured,10,6.2. Adversarial Training Results,Section 6.2 prose,"The MT-Bench scores of these models are 6.0 and 6.5, respectively. This suggests that adversarial training with automated red teaming can greatly improve robustness while preserving general performance."
+RP44,GCG attack,Substring matching ASR,,,HarmBench,ASR variation across token-budget settings,30.0,,,,percent,True,measured,4,3.2. Toward Improved Evaluations,Figure 2,"We show in Figure 2 that the choice of this parameter can change ASR by up to 30%. Unfortunately, this parameter has not been standardized in prior work"
+RP44,HarmBench classifier (Llama 2 13B Chat fine-tuned),Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Standard, %)",94.53,GPT-4,89.8,4.73,absolute,False,measured,18,Evaluations in prior work.,Table 3,Standard | 71.14 | 77.36 | 65.67 | 68.41 | 89.8 | 94.53
+RP44,HarmBench classifier,Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Contextual, %)",90.5,GPT-4,85.5,5.0,absolute,False,measured,18,Evaluations in prior work.,Table 3,Contextual | 67.5 | 71.5 | 62.5 | 64.0 | 85.5 | 90.5
+RP44,HarmBench classifier,Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Average, %)",93.19,GPT-4,88.37,4.82,absolute,False,measured,18,Evaluations in prior work.,Table 3,Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19
+RP44,AdvBench classifier,Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Average, %)",69.93,,,,,False,measured,18,Evaluations in prior work.,Table 3,Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19
+RP44,GPTFuzz classifier,Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Average, %)",75.42,,,,,False,measured,18,Evaluations in prior work.,Table 3,Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19
+RP44,"ChatGLM classifier (Shen et al., 2023b)",Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Average, %)",64.29,,,,,False,measured,18,Evaluations in prior work.,Table 3,Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19
+RP44,Llama-Guard classifier,Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Average, %)",66.94,,,,,False,measured,18,Evaluations in prior work.,Table 3,Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19
+RP44,GPT-4 classifier (Chao et al.),Classifier agreement,,,HarmBench validation set,"Agreement with human labels (Average, %)",88.37,,,,,False,measured,18,Evaluations in prior work.,Table 3,Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19
+RP44,HarmBench classifier,Classifier robustness,,,Prequalification Set 1 (refusal then continue),Classifier accuracy,95.68,GPT-4 PAIR,89.0,6.68,absolute,False,measured,21,B.5.1. LLAMA 2 EVALUATION CLASSIFIER,Table 4,Ours | 95.68 | 98.0 | 93.4 | 95.7
+RP44,HarmBench classifier,Classifier robustness,,,Prequalification Set 2 (benign paragraphs),Classifier accuracy,98.0,GPT-4 PAIR,100.0,-2.0,absolute,False,measured,21,B.5.1. LLAMA 2 EVALUATION CLASSIFIER,Table 4,Ours | 95.68 | 98.0 | 93.4 | 95.7
+RP44,HarmBench classifier,Classifier robustness,,,Prequalification Set 3 (unrelated harmful),Classifier accuracy,93.4,GPT-4 PAIR,78.7,14.7,absolute,False,measured,21,B.5.1. LLAMA 2 EVALUATION CLASSIFIER,Table 4,Ours | 95.68 | 98.0 | 93.4 | 95.7
+RP44,HarmBench classifier,Classifier robustness,,,Prequalification Sets (avg),Classifier accuracy (avg),95.7,GPT-4 PAIR,89.6,6.1,absolute,False,measured,21,B.5.1. LLAMA 2 EVALUATION CLASSIFIER,Table 4,Ours | 95.68 | 98.0 | 93.4 | 95.7
+RP44,HarmBench validation classifier (Mistral 7B based),Classifier agreement,,,HarmBench validation set,Agreement with human labels (%),88.6,Test classifier,93.2,-4.6,absolute,False,measured,19,B.2. Validation and Test Splits,Section B.2 prose,"The validation classifier obtains 88.6% agreement with human labels, compared to 93.2% for the test classifier."
+RP44,Zephyr 7B,MT-Bench,,,MT-Bench,MT-Bench score,7.34,,,,,False,measured,33,Contextual Behaviors,Table 11,MT-Bench | 7.34 | 6.5 | 5.4 | 6.0
+RP44,Mistral 7B,MT-Bench,,,MT-Bench,MT-Bench score,6.5,,,,,False,measured,33,Contextual Behaviors,Table 11,MT-Bench | 7.34 | 6.5 | 5.4 | 6.0
+RP44,Koala 13B,MT-Bench,,,MT-Bench,MT-Bench score,5.4,,,,,False,measured,33,Contextual Behaviors,Table 11,MT-Bench | 7.34 | 6.5 | 5.4 | 6.0
+RP44,Zephyr 7B,GCG,,,HarmBench,Attack Success Rate (GCG),69.4,,,,,False,measured,33,Contextual Behaviors,Table 11,GCG ASR | 69.4 | 69.1 | 62.2 | 5.5
+RP44,Mistral 7B,GCG,,,HarmBench,Attack Success Rate (GCG),69.1,,,,,False,measured,33,Contextual Behaviors,Table 11,GCG ASR | 69.4 | 69.1 | 62.2 | 5.5
+RP44,Koala 13B,GCG,,,HarmBench,Attack Success Rate (GCG),62.2,,,,,False,measured,33,Contextual Behaviors,Table 11,GCG ASR | 69.4 | 69.1 | 62.2 | 5.5
+RP44,Zephyr 7B + R2D2,GCG,,,HarmBench,Attack Success Rate (GCG),5.5,Zephyr 7B (no R2D2),69.4,-63.9,absolute,False,measured,33,Contextual Behaviors,Table 11,GCG ASR | 69.4 | 69.1 | 62.2 | 5.5
+RP44,Zephyr 7B,Average across attacks,,,HarmBench,Average Attack Success Rate,62.7,,,,,False,measured,33,Contextual Behaviors,Table 11,Average ASR | 62.7 | 55.7 | 48.5 | 19.1
+RP44,Mistral 7B,Average across attacks,,,HarmBench,Average Attack Success Rate,55.7,,,,,False,measured,33,Contextual Behaviors,Table 11,Average ASR | 62.7 | 55.7 | 48.5 | 19.1
+RP44,Koala 13B,Average across attacks,,,HarmBench,Average Attack Success Rate,48.5,,,,,False,measured,33,Contextual Behaviors,Table 11,Average ASR | 62.7 | 55.7 | 48.5 | 19.1
+RP44,Zephyr 7B + R2D2,Average across attacks,,,HarmBench,Average Attack Success Rate,19.1,Zephyr 7B (no R2D2),62.7,-43.6,absolute,False,measured,33,Contextual Behaviors,Table 11,Average ASR | 62.7 | 55.7 | 48.5 | 19.1
+RP44,InstructBLIP,MultiModalPGD,,,HarmBench (multimodal),Attack Success Rate,64.55,DirectRequest,22.73,41.82,absolute,False,measured,32,Contextual Behaviors,Table 9,InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73
+RP44,InstructBLIP,MultiModalPGDPatch,,,HarmBench (multimodal),Attack Success Rate,36.36,DirectRequest,22.73,13.63,absolute,False,measured,32,Contextual Behaviors,Table 9,InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73
+RP44,InstructBLIP,MultiModalRenderText,,,HarmBench (multimodal),Attack Success Rate,1.82,DirectRequest,22.73,-20.91,absolute,False,measured,32,Contextual Behaviors,Table 9,InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73
+RP44,InstructBLIP,DirectRequest,,,HarmBench (multimodal),Attack Success Rate,22.73,,,,,False,measured,32,Contextual Behaviors,Table 9,InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73
+RP44,LLaVA 1.5,MultiModalPGD,,,HarmBench (multimodal),Attack Success Rate,74.55,DirectRequest,69.09,5.46,absolute,False,measured,32,Contextual Behaviors,Table 9,LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09
+RP44,LLaVA 1.5,MultiModalPGDPatch,,,HarmBench (multimodal),Attack Success Rate,72.73,DirectRequest,69.09,3.64,absolute,False,measured,32,Contextual Behaviors,Table 9,LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09
+RP44,LLaVA 1.5,MultiModalRenderText,,,HarmBench (multimodal),Attack Success Rate,15.45,DirectRequest,69.09,-53.64,absolute,False,measured,32,Contextual Behaviors,Table 9,LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09
+RP44,LLaVA 1.5,DirectRequest,,,HarmBench (multimodal),Attack Success Rate,69.09,,,,,False,measured,32,Contextual Behaviors,Table 9,LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09
+RP44,Qwen-VL-Chat,MultiModalPGD,,,HarmBench (multimodal),Attack Success Rate,82.73,DirectRequest,46.36,36.37,absolute,False,measured,32,Contextual Behaviors,Table 9,Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36
+RP44,Qwen-VL-Chat,MultiModalPGDPatch,,,HarmBench (multimodal),Attack Success Rate,81.82,DirectRequest,46.36,35.46,absolute,False,measured,32,Contextual Behaviors,Table 9,Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36
+RP44,Qwen-VL-Chat,MultiModalRenderText,,,HarmBench (multimodal),Attack Success Rate,9.09,DirectRequest,46.36,-37.27,absolute,False,measured,32,Contextual Behaviors,Table 9,Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36
+RP44,Qwen-VL-Chat,DirectRequest,,,HarmBench (multimodal),Attack Success Rate,46.36,,,,,False,measured,32,Contextual Behaviors,Table 9,Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36
+RP44,GPT-4V,MultiModalRenderText,,,HarmBench (multimodal),Attack Success Rate,20.0,DirectRequest,16.36,3.64,absolute,False,measured,32,Contextual Behaviors,Table 9,GPT-4V | - | - | 20.00 | 16.36
+RP44,GPT-4V,DirectRequest,,,HarmBench (multimodal),Attack Success Rate,16.36,,,,,False,measured,32,Contextual Behaviors,Table 9,GPT-4V | - | - | 20.00 | 16.36
+RP44,InstructBLIP,MultiModalPGDBlankImage,,,"HarmBench (text-only behaviors, multimodal pipeline)",Attack Success Rate,48.75,MultiModalRenderText,5.25,43.5,absolute,False,measured,32,Contextual Behaviors,Table 10,InstructBLIP | 48.75 | 5.25
+RP44,LLaVA 1.5,MultiModalPGDBlankImage,,,"HarmBench (text-only behaviors, multimodal pipeline)",Attack Success Rate,66.0,MultiModalRenderText,4.25,61.75,absolute,False,measured,32,Contextual Behaviors,Table 10,LLaVA 1.5 | 66.00 | 4.25
+RP44,Qwen-VL-Chat,MultiModalPGDBlankImage,,,"HarmBench (text-only behaviors, multimodal pipeline)",Attack Success Rate,62.25,MultiModalRenderText,3.5,58.75,absolute,False,measured,32,Contextual Behaviors,Table 10,Qwen-VL-Chat | 62.25 | 3.50
+RP44,GPT-4V,MultiModalRenderText,,,"HarmBench (text-only behaviors, multimodal pipeline)",Attack Success Rate,0.5,,,,,False,measured,32,Contextual Behaviors,Table 10,GPT-4V | - | 0.50
+RP44,MaliciousInstruct (dataset),Google searchability,,,MaliciousInstruct,Search-success rate (%),55.0,HarmBench (Contextual),0.0,55.0,absolute,False,measured,33,Contextual Behaviors,Table 12,MaliciousInstruct | AdvBench | HarmBench (Contextual) | 55 | 50 | 0
+RP44,AdvBench (dataset),Google searchability,,,AdvBench,Search-success rate (%),50.0,HarmBench (Contextual),0.0,50.0,absolute,False,measured,33,Contextual Behaviors,Table 12,MaliciousInstruct | AdvBench | HarmBench (Contextual) | 55 | 50 | 0
+RP44,HarmBench (Contextual),Google searchability,,,HarmBench (Contextual),Search-success rate (%),0.0,,,,,False,measured,33,Contextual Behaviors,Table 12,MaliciousInstruct | AdvBench | HarmBench (Contextual) | 55 | 50 | 0
+RP44,Average across all models (Table 6),GCG,,,HarmBench (All Behaviors),Attack Success Rate (avg),54.3,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8 | 30.8 | 43.7 | 38.3 | 25.4 | 40.7 | 45.2 | 48.3 | 52.7 | 16.6 | 27.3 | 25.3
+RP44,Average across all models (Table 6),GCG-M,,,HarmBench (All Behaviors),Attack Success Rate (avg),45.0,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8 | 30.8
+RP44,Average across all models (Table 6),GCG-T,,,HarmBench (All Behaviors),Attack Success Rate (avg),38.8,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),Average (†) | 54.3 | 45.0 | 38.8 | 29.0
+RP44,Average across all models (Table 6),PEZ,,,HarmBench (All Behaviors),Attack Success Rate (avg),29.0,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8
+RP44,Average across all models (Table 6),GBDA,,,HarmBench (All Behaviors),Attack Success Rate (avg),29.8,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8 | 30.8
+RP44,Average across all models (Table 6),UAT,,,HarmBench (All Behaviors),Attack Success Rate (avg),30.8,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),Average (†) | ... 30.8 | 43.7
+RP44,Average across all models (Table 6),AutoPrompt,,,HarmBench (All Behaviors),Attack Success Rate (avg),43.7,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),30.8 | 43.7 | 38.3
+RP44,Average across all models (Table 6),Stochastic Few-Shot,,,HarmBench (All Behaviors),Attack Success Rate (avg),38.3,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),43.7 | 38.3 | 25.4
+RP44,Average across all models (Table 6),Zero-Shot,,,HarmBench (All Behaviors),Attack Success Rate (avg),25.4,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),38.3 | 25.4 | 40.7
+RP44,Average across all models (Table 6),PAIR,,,HarmBench (All Behaviors),Attack Success Rate (avg),40.7,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),25.4 | 40.7 | 45.2
+RP44,Average across all models (Table 6),TAP,,,HarmBench (All Behaviors),Attack Success Rate (avg),45.2,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),40.7 | 45.2 | 48.3
+RP44,Average across all models (Table 6),TAP-T,,,HarmBench (All Behaviors),Attack Success Rate (avg),48.3,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),45.2 | 48.3 | 52.7
+RP44,Average across all models (Table 6),AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate (avg),52.7,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),48.3 | 52.7 | 16.6
+RP44,Average across all models (Table 6),PAP-top5,,,HarmBench (All Behaviors),Attack Success Rate (avg),16.6,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),52.7 | 16.6 | 27.3
+RP44,Average across all models (Table 6),Human Jailbreaks,,,HarmBench (All Behaviors),Attack Success Rate (avg),27.3,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),16.6 | 27.3 | 25.3
+RP44,Average across all models (Table 6),Direct Request,,,HarmBench (All Behaviors),Attack Success Rate (avg),25.3,,,,,False,measured,26,C.3. Full Results,Table 6 (All Behaviors),27.3 | 25.3
+RP44,Llama 2 7B Chat,GCG,,,HarmBench (All Behaviors),Attack Success Rate,32.5,Direct Request,0.8,31.7,absolute,False,measured,26,C.3. Full Results,Table 6,Llama 2 7B Chat | 32.5 | 21.2 | 19.7 | 1.8 | 1.4 | 4.5 | 15.3 | 4.3 | 2.0 | 9.3 | 9.3 | 7.8 | 0.5 | 2.7 | 0.8 | 0.8
+RP44,Llama 2 7B Chat,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,0.5,,,,,False,measured,26,C.3. Full Results,Table 6,Llama 2 7B Chat | 32.5 | 21.2 | 19.7 | 1.8 | 1.4 | 4.5 | 15.3 | 4.3 | 2.0 | 9.3 | 9.3 | 7.8 | 0.5
+RP44,Llama 2 13B Chat,GCG,,,HarmBench (All Behaviors),Attack Success Rate,30.0,Direct Request,2.8,27.2,absolute,False,measured,26,C.3. Full Results,Table 6,Llama 2 13B Chat | 30.0 | 11.3 | 16.4 | 1.7 | 2.2 | 1.5 | 16.3 | 6.0 | 2.9 | 15.0 | 14.2 | 8.0 | 0.8 | 3.3 | 1.7 | 2.8
+RP44,Llama 2 70B Chat,GCG,,,HarmBench (All Behaviors),Attack Success Rate,37.5,Direct Request,2.8,34.7,absolute,False,measured,26,C.3. Full Results,Table 6,Llama 2 70B Chat | 37.5 | 10.8 | 22.1 | 3.3 | 2.3 | 4.0 | 20.5 | 7.0 | 3.0 | 14.5 | 13.3 | 16.3 | 2.8 | 4.1 | 2.2 | 2.8
+RP44,Vicuna 7B,GCG,,,HarmBench (All Behaviors),Attack Success Rate,65.5,Direct Request,24.3,41.2,absolute,False,measured,26,C.3. Full Results,Table 6,Vicuna 7B | 65.5 | 61.5 | 60.8 | 19.8 | 19.0 | 19.3 | 56.3 | 42.3 | 27.2 | 53.5 | 51.0 | 59.8 | 66.0 | 18.9 | 39.0 | 24.3
+RP44,Vicuna 7B,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,66.0,Direct Request,24.3,41.7,absolute,False,measured,26,C.3. Full Results,Table 6,Vicuna 7B | 65.5 | 61.5 | 60.8 | ... | 66.0 | 18.9 | 39.0 | 24.3
+RP44,Vicuna 13B,GCG,,,HarmBench (All Behaviors),Attack Success Rate,67.0,,,,,False,measured,26,C.3. Full Results,Table 6,Vicuna 13B | 67.0 | 61.3 | 54.9 | 15.8 | 14.3 | 14.2 | 41.8 | 32.3 | 23.2 | 47.5 | 54.8 | 62.1 | 65.5 | 19.3 | 40.0 | 19.8
+RP44,Mistral 7B,GCG,,,HarmBench (All Behaviors),Attack Success Rate,69.8,Direct Request,46.3,23.5,absolute,False,measured,26,C.3. Full Results,Table 6,Mistral 7B | 69.8 | 63.6 | 64.5 | 51.3 | 52.8 | 52.3 | 62.7 | 51.0 | 41.3 | 52.5 | 62.5 | 66.1 | 71.5 | 27.2 | 58.0 | 46.3
+RP44,Mistral 7B,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,71.5,,,,,False,measured,26,C.3. Full Results,Table 6,Mistral 7B | 69.8 | ... | 71.5
+RP44,Zephyr 7B,GCG,,,HarmBench (All Behaviors),Attack Success Rate,69.5,Direct Request,65.8,3.7,absolute,False,measured,26,C.3. Full Results,Table 6,Zephyr 7B | 69.5 | 62.5 | 61.1 | 62.5 | 62.8 | 62.3 | 60.5 | 62.0 | 60.0 | 58.8 | 66.5 | 69.3 | 75.0 | 32.9 | 66.0 | 65.8
+RP44,Zephyr 7B,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,75.0,,,,,False,measured,26,C.3. Full Results,Table 6,Zephyr 7B | ... | 75.0 | 32.9 | 66.0 | 65.8
+RP44,R2D2 (Zephyr 7B + R2D2),GCG,,,HarmBench (All Behaviors),Attack Success Rate,5.5,Zephyr 7B,69.5,-64.0,absolute,False,measured,26,C.3. Full Results,Table 6,R2D2 (Ours) | 5.5 | 4.9 | 0.0 | 2.9 | 0.2 | 0.0 | 5.5 | 43.5 | 7.2 | 48.0 | 60.8 | 54.3 | 17.0 | 24.3 | 13.6 | 14.2
+RP44,R2D2 (Zephyr 7B + R2D2),AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,17.0,Zephyr 7B,75.0,-58.0,absolute,False,measured,26,C.3. Full Results,Table 6,R2D2 (Ours) | ... | 17.0 | 24.3 | 13.6 | 14.2
+RP44,R2D2 (Zephyr 7B + R2D2),PAIR,,,HarmBench (All Behaviors),Attack Success Rate,48.0,Zephyr 7B,58.8,-10.8,absolute,False,measured,26,C.3. Full Results,Table 6,R2D2 (Ours) | ... 48.0 | 60.8 | 54.3 | 17.0
+RP44,R2D2 (Zephyr 7B + R2D2),TAP,,,HarmBench (All Behaviors),Attack Success Rate,60.8,Zephyr 7B,66.5,-5.7,absolute,False,measured,26,C.3. Full Results,Table 6,R2D2 (Ours) | ... 48.0 | 60.8 | 54.3
+RP44,R2D2 (Zephyr 7B + R2D2),Stochastic Few-Shot,,,HarmBench (All Behaviors),Attack Success Rate,43.5,Zephyr 7B,62.0,-18.5,absolute,False,measured,26,C.3. Full Results,Table 6,R2D2 (Ours) | 5.5 | 4.9 | 0.0 | 2.9 | 0.2 | 0.0 | 5.5 | 43.5
+RP44,GPT-3.5 Turbo 0613,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,38.9,Direct Request,21.3,17.6,absolute,False,measured,26,C.3. Full Results,Table 6,GPT-3.5 Turbo 0613 | - | - | 38.9 | - | - | - | - | - | 24.8 | 46.8 | 47.7 | 62.3 | - | 15.4 | 24.5 | 21.3
+RP44,GPT-3.5 Turbo 0613,TAP-T,,,HarmBench (All Behaviors),Attack Success Rate,62.3,,,,,False,measured,26,C.3. Full Results,Table 6,GPT-3.5 Turbo 0613 | ... | 47.7 | 62.3
+RP44,GPT-4 0613,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,22.0,Direct Request,21.0,1.0,absolute,False,measured,26,C.3. Full Results,Table 6,GPT-4 0613 | - | - | 22.0 | - | - | - | - | - | 19.4 | 39.3 | 43.0 | 54.8 | - | 16.8 | 11.3 | 21.0
+RP44,GPT-4 0613,TAP-T,,,HarmBench (All Behaviors),Attack Success Rate,54.8,,,,,False,measured,26,C.3. Full Results,Table 6,GPT-4 0613 | ... | 54.8 | - | 16.8 | 11.3 | 21.0
+RP44,GPT-4 Turbo 1106,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,22.3,,,,,False,measured,26,C.3. Full Results,Table 6,GPT-4 Turbo 1106 | - | - | 22.3 | - | - | - | - | - | 13.9 | 33.0 | 36.4 | 58.5 | - | 11.1 | 2.6 | 9.3
+RP44,GPT-4 Turbo 1106,TAP-T,,,HarmBench (All Behaviors),Attack Success Rate,58.5,,,,,False,measured,26,C.3. Full Results,Table 6,GPT-4 Turbo 1106 | ... | 58.5 | - | 11.1 | 2.6 | 9.3
+RP44,Claude 1,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,12.1,Direct Request,5.0,7.1,absolute,False,measured,26,C.3. Full Results,Table 6,Claude 1 | - | - | 12.1 | - | - | - | - | - | 4.8 | 10.0 | 7.0 | 1.5 | - | 1.3 | 2.4 | 5.0
+RP44,Claude 2,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,2.7,Direct Request,2.0,0.7,absolute,False,measured,26,C.3. Full Results,Table 6,Claude 2 | - | - | 2.7 | - | - | - | - | - | 4.1 | 4.8 | 2.0 | 0.8 | - | 1.0 | 0.3 | 2.0
+RP44,Claude 2.1,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,2.6,Direct Request,2.0,0.6,absolute,False,measured,26,C.3. Full Results,Table 6,Claude 2.1 | - | - | 2.6 | - | - | - | - | - | 4.1 | 2.8 | 2.5 | 0.8 | - | 0.9 | 0.3 | 2.0
+RP44,Gemini Pro,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,18.0,Direct Request,18.0,0.0,absolute,False,measured,26,C.3. Full Results,Table 6,Gemini Pro | - | - | 18.0 | - | - | - | - | - | 14.8 | 35.1 | 38.8 | 31.2 | - | 11.8 | 12.1 | 18.0
+RP44,Gemini Pro,TAP-T,,,HarmBench (All Behaviors),Attack Success Rate,31.2,,,,,False,measured,26,C.3. Full Results,Table 6,Gemini Pro | ... | 38.8 | 31.2
+RP44,Baichuan 2 7B,GCG,,,HarmBench (All Behaviors),Attack Success Rate,61.5,,,,,False,measured,26,C.3. Full Results,Table 6,Baichuan 2 7B | 61.5 | 40.7 | 46.4 | 32.3 | 29.8 | 28.5 | 48.3 | 26.8 | 27.9 | 37.3 | 51.0 | 58.5 | 53.3 | 19.0 | 27.2 | 18.8
+RP44,Qwen 7B Chat,GCG,,,HarmBench (All Behaviors),Attack Success Rate,59.2,,,,,False,measured,26,C.3. Full Results,Table 6,Qwen 7B Chat | 59.2 | 52.5 | 38.3 | 13.2 | 12.7 | 11.0 | 49.7 | 31.8 | 15.6 | 50.2 | 53.0 | 59.0 | 47.3 | 13.3 | 24.6 | 13.0
+RP44,Starling 7B,GCG,,,HarmBench (All Behaviors),Attack Success Rate,66.0,,,,,False,measured,26,C.3. Full Results,Table 6,Starling 7B | 66.0 | 61.9 | 59.0 | 50.0 | 58.1 | 54.8 | 62.0 | 56.5 | 50.6 | 58.3 | 68.5 | 66.3 | 74.0 | 31.9 | 60.2 | 57.0
+RP44,Orca 2 13B,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,69.8,,,,,False,measured,26,C.3. Full Results,Table 6,Orca 2 13B | 50.7 | 30.3 | 52.0 | 35.7 | 33.4 | 36.3 | 31.8 | 50.5 | 42.8 | 55.8 | 59.5 | 63.8 | 69.8 | 19.6 | 42.4 | 44.5
+RP44,SOLAR 10.7B-Instruct,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,72.5,,,,,False,measured,26,C.3. Full Results,Table 6,SOLAR 10.7B-Instruct | 57.5 | 61.6 | 58.9 | 56.1 | 54.5 | 54.0 | 54.3 | 58.3 | 54.9 | 56.8 | 66.5 | 65.8 | 72.5 | 31.3 | 61.2 | 61.3
+RP44,OpenChat 3.5 1210,AutoDAN,,,HarmBench (All Behaviors),Attack Success Rate,73.5,,,,,False,measured,26,C.3. Full Results,Table 6,OpenChat 3.5 1210 | 66.3 | 54.6 | 57.3 | 38.9 | 44.5 | 40.8 | 57.0 | 52.5 | 43.3 | 52.5 | 63.5 | 66.1 | 73.5 | 26.9 | 51.3 | 46.0
+RP44,Mixtral 8x7B,GCG-T,,,HarmBench (All Behaviors),Attack Success Rate,62.5,,,,,False,measured,26,C.3. Full Results,Table 6,Mixtral 8x7B | - | - | 62.5 | - | - | - | - | 53.0 | 40.8 | 61.1 | 69.8 | 68.3 | 72.5 | 28.8 | 53.3 | 47.3
+RP44,HarmBench (overall benchmark scope),Coverage,,,HarmBench,Number of unique behaviors,510,"AdvBench (Zou et al., 2023)",58,452,absolute,True,measured,5,4.1. Overview,Section 4.1 prose,"HarmBench contains 510 unique harmful behaviors, split into 400 textual behaviors and 110 multimodal behaviors."
+RP44,HarmBench scope,Coverage,,,HarmBench,Number of red teaming methods evaluated,18,,,,,True,measured,1,Abstract,Abstract,we conduct a largescale comparison of 18 red teaming methods and 33 target LLMs and defenses
+RP44,HarmBench scope,Coverage,,,HarmBench,Number of target LLMs evaluated,33,,,,,True,measured,1,Abstract,Abstract,a largescale comparison of 18 red teaming methods and 33 target LLMs and defenses
 RP45,LLaMA-3.2-1B,bitsandbytes,8-bit,,MBPP,"Relative Robustness Score (RRS, character-level)",1.092,FP16,1.0,0.092,absolute,False,measured,7,V.A RQ1: Adversarial Robustness Evaluation,Table I,LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333
 RP45,LLaMA-3.2-1B,bitsandbytes,8-bit,,MBPP,"Relative Robustness Score (RRS, word-level)",1.862,FP16,1.0,0.862,absolute,False,measured,7,V.A RQ1: Adversarial Robustness Evaluation,Table I,LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333
 RP45,LLaMA-3.2-1B,bitsandbytes,8-bit,,MBPP,"Relative Robustness Score (RRS, sentence-level)",1.333,FP16,1.0,0.333,absolute,False,measured,7,V.A RQ1: Adversarial Robustness Evaluation,Table I,LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333

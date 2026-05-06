@@ -1330,5 +1330,4185 @@
         "block_id": "/page/6/Text/10"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput speedup over FlexGen",
+        "value": 3.0,
+        "baseline_label": "FlexGen",
+        "baseline_value": 1.0,
+        "delta": 2.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "improves the throughput over three leading inference systems DeepSpeed Zero-Inference, Hugging Face Accelerate, and FlexGen by up to 29x, 29x, and 3x on OPT-6.7B and OPT-30B",
+        "bbox": [
+          141.75,
+          312.75,
+          469.5,
+          562.5
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput speedup over DeepSpeed",
+        "value": 29.0,
+        "baseline_label": "DeepSpeed",
+        "baseline_value": 1.0,
+        "delta": 28.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "improves the throughput over three leading inference systems DeepSpeed Zero-Inference, Hugging Face Accelerate, and FlexGen by up to 29x, 29x, and 3x",
+        "bbox": [
+          141.75,
+          312.75,
+          469.5,
+          562.5
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput speedup over Accelerate",
+        "value": 29.0,
+        "baseline_label": "Hugging Face Accelerate",
+        "baseline_value": 1.0,
+        "delta": 28.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "improves the throughput over three leading inference systems DeepSpeed Zero-Inference, Hugging Face Accelerate, and FlexGen by up to 29x, 29x, and 3x",
+        "bbox": [
+          141.75,
+          312.75,
+          469.5,
+          562.5
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic",
+        "metric": "Latency reduction vs FlexGen",
+        "value": 1.9,
+        "baseline_label": "FlexGen",
+        "baseline_value": 1.0,
+        "delta": 0.9,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "With the same batch size, H_2O can reduce the latency by up to 1.9x",
+        "bbox": [
+          141.75,
+          312.75,
+          469.5,
+          562.5
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Pre-trained LLM",
+        "method": "Full KV",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Attention sparsity",
+        "value": 95.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "the attention matrices of LLMs are over 95% sparse at inference time",
+        "bbox": [
+          106.681640625,
+          516.26953125,
+          504.123046875,
+          571.0780639648438
+        ],
+        "block_id": "/page/1/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy (5-shot)",
+        "value": 80.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 80.09 | 81.00 | 44.80 | 71.51",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy (5-shot)",
+        "value": 81.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 80.09 | 81.00 | 44.80 | 71.51",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy (5-shot)",
+        "value": 44.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 80.09 | 81.00 | 44.80 | 71.51",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Winogrande",
+        "metric": "Accuracy (5-shot)",
+        "value": 71.51,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 80.09 | 81.00 | 44.80 | 71.51",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (0-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy (0-shot)",
+        "value": 78.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "0-shot Full | 78.89 | 76.00 | 41.40 | 70.00",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (0-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy (0-shot)",
+        "value": 76.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "0-shot Full | 78.89 | 76.00 | 41.40 | 70.00",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (0-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy (0-shot)",
+        "value": 41.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "0-shot Full | 78.89 | 76.00 | 41.40 | 70.00",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (0-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Winogrande",
+        "metric": "Accuracy (0-shot)",
+        "value": 70.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "0-shot Full | 78.89 | 76.00 | 41.40 | 70.00",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (1-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy (1-shot)",
+        "value": 79.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "1-shot Full | 79.11 | 76.00 | 43.60 | 70.24",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (1-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy (1-shot)",
+        "value": 76.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "1-shot Full | 79.11 | 76.00 | 43.60 | 70.24",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (1-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy (1-shot)",
+        "value": 43.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "1-shot Full | 79.11 | 76.00 | 43.60 | 70.24",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (1-shot)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Winogrande",
+        "metric": "Accuracy (1-shot)",
+        "value": 70.24,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "1-shot Full | 79.11 | 76.00 | 43.60 | 70.24",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy (5-shot)",
+        "value": 57.94,
+        "baseline_label": "Full",
+        "baseline_value": 80.09,
+        "delta": -22.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local | 57.94 | 56.00 | 28.40 | 51.30",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy (5-shot)",
+        "value": 56.0,
+        "baseline_label": "Full",
+        "baseline_value": 81.0,
+        "delta": -25.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local | 57.94 | 56.00 | 28.40 | 51.30",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy (5-shot)",
+        "value": 28.4,
+        "baseline_label": "Full",
+        "baseline_value": 44.8,
+        "delta": -16.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local | 57.94 | 56.00 | 28.40 | 51.30",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy (5-shot)",
+        "value": 51.3,
+        "baseline_label": "Full",
+        "baseline_value": 71.51,
+        "delta": -20.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local | 57.94 | 56.00 | 28.40 | 51.30",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy (5-shot)",
+        "value": 79.22,
+        "baseline_label": "Full",
+        "baseline_value": 80.09,
+        "delta": -0.87,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "H_2O | 79.22 | 85.00 | 43.80 | 71.67",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy (5-shot)",
+        "value": 85.0,
+        "baseline_label": "Full",
+        "baseline_value": 81.0,
+        "delta": 4.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "H_2O | 79.22 | 85.00 | 43.80 | 71.67",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy (5-shot)",
+        "value": 43.8,
+        "baseline_label": "Full",
+        "baseline_value": 44.8,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "H_2O | 79.22 | 85.00 | 43.80 | 71.67",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy (5-shot)",
+        "value": 71.67,
+        "baseline_label": "Full",
+        "baseline_value": 71.51,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "H_2O | 79.22 | 85.00 | 43.80 | 71.67",
+        "bbox": [
+          304.66125,
+          139.767890625,
+          502.1746875,
+          202.091484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 85.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 85.00 | 43.20 | 78.51 | 70.24",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 43.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 85.00 | 43.20 | 78.51 | 70.24",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 78.51,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 85.00 | 43.20 | 78.51 | 70.24",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 70.24,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Full | 85.00 | 43.20 | 78.51 | 70.24",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 48.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -37.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 25.2,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -18.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 55.82,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -22.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 49.17,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -21.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w.o. H_(2) | 48.00 | 25.20 | 55.82 | 49.17",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 84.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 43.0,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 78.45,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Local w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 69.06,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -1.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Local w. H_(2) | 84.00 | 43.00 | 78.45 | 69.06",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 50.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -35.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 24.6,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -18.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 56.2,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -22.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 47.59,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -22.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w.o. H_(2) | 50.00 | 24.60 | 56.20 | 47.59",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 83.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 42.6,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 78.24,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (strided) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 69.61,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -0.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (strided) w. H_(2) | 83.00 | 42.60 | 78.24 | 69.61",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 61.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -24.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 23.8,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -19.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 58.6,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -19.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 49.88,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -20.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w.o. H_(2) | 61.00 | 23.80 | 58.60 | 49.88",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 76.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -9.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 41.4,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 77.8,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -0.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Sparse Transformer (fixed) w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 64.96,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -5.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 End-to-End Results",
+        "quote": "Sparse Transformer (fixed) w. H_(2) | 76.00 | 41.40 | 77.80 | 64.96",
+        "bbox": [
+          243.6525,
+          324.76640625,
+          507.00375,
+          411.54609375
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 20.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | 20.4 (2, G) | 0.6 (8, C) | 15.5 (1, G)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 0.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | 20.4 (2, G) | 0.6 (8, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 10.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | 10.2 (16, C) | 0.6 (4, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 0.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | 10.2 (16, C) | 0.6 (4, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 20.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | 20.2 (2, G) | 8.1 (144, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 8.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | 20.2 (2, G) | 8.1 (144, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 35.1,
+        "baseline_label": "FlexGen",
+        "baseline_value": 20.2,
+        "delta": 14.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | 35.1 (4, G) | 12.7 (728, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 12.7,
+        "baseline_label": "FlexGen",
+        "baseline_value": 8.1,
+        "delta": 4.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | 35.1 (4, G) | 12.7 (728, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 15.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | 20.4 (2, G) | 0.6 (8, C) | 15.5 (1, G) | 0.6 (8, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 0.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | ... 0.6 (8, C) | 15.5 (1, G) | 0.6 (8, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 9.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | 10.2 (16, C) | 0.6 (4, C) | 9.6 (16, C) | 0.6 (4, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 0.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | 10.2 (16, C) | 0.6 (4, C) | 9.6 (16, C) | 0.6 (4, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 16.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | 20.2 (2, G) | 8.1 (144, C) | 16.8 (1, G) | 8.5 (80, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 8.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | 20.2 (2, G) | 8.1 (144, C) | 16.8 (1, G) | 8.5 (80, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 51.7,
+        "baseline_label": "FlexGen",
+        "baseline_value": 16.8,
+        "delta": 34.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | 35.1 (4, G) | 12.7 (728, C) | 51.7 (4, G) | 18.83 (416, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 18.83,
+        "baseline_label": "FlexGen",
+        "baseline_value": 8.5,
+        "delta": 10.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | 35.1 (4, G) | 12.7 (728, C) | 51.7 (4, G) | 18.83 (416, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 5.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | ... 5.6 (16, C) | 0.6 (8, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 0.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | ... 5.6 (16, C) | 0.6 (8, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 10.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | ... 10.1 (16, C) | 0.6 (4, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 0.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | ... 10.1 (16, C) | 0.6 (4, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 16.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | ... 16.9 (1, G) | 7.1 (48, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 7.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | ... 16.9 (1, G) | 7.1 (48, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 52.1,
+        "baseline_label": "FlexGen",
+        "baseline_value": 16.9,
+        "delta": 35.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | ... 52.1 (4, G) | 13.82 (264, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 13.82,
+        "baseline_label": "FlexGen",
+        "baseline_value": 7.1,
+        "delta": 6.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | ... 52.1 (4, G) | 13.82 (264, C)",
+        "bbox": [
+          105.7552734375,
+          640.769765625,
+          505.0494140625,
+          722.027109375
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 11.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | 11.98 (1, G) | 0.23 (2, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Accelerate",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 0.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "Accelerate | 11.98 (1, G) | 0.23 (2, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 3.52,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | 3.52 (6, C) | 0.31 (2, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "DeepSpeed",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 0.31,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "DeepSpeed | 3.52 (6, C) | 0.31 (2, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 10.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | 10.80 (1, G) | 3.29 (44, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 3.29,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "FlexGen | 10.80 (1, G) | 3.29 (44, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 30.4,
+        "baseline_label": "FlexGen",
+        "baseline_value": 10.8,
+        "delta": 19.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | 30.40 (1, G) | 6.70 (180, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "XSUM",
+        "metric": "Throughput (token/s)",
+        "value": 6.7,
+        "baseline_label": "FlexGen",
+        "baseline_value": 3.29,
+        "delta": 3.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "H2O (20%) | 30.40 (1, G) | 6.70 (180, C)",
+        "bbox": [
+          324.2583984375,
+          242.16328125,
+          504.0931640625,
+          313.16484375
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 7000+1024",
+        "metric": "Latency (s)",
+        "value": 57.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "7000+1024 | 30B | 1 | latency (s) | 57.0 | 50.4",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 7000+1024",
+        "metric": "Latency (s)",
+        "value": 50.4,
+        "baseline_label": "FlexGen",
+        "baseline_value": 57.0,
+        "delta": -6.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "7000+1024 | 30B | 1 | latency (s) | 57.0 | 50.4",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 5000+5000",
+        "metric": "Latency (s)",
+        "value": 214.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "5000+5000 | 13B | 4 | latency (s) | 214.2 | 155.4",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 5000+5000",
+        "metric": "Latency (s)",
+        "value": 155.4,
+        "baseline_label": "FlexGen",
+        "baseline_value": 214.2,
+        "delta": -58.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "5000+5000 | 13B | 4 | latency (s) | 214.2 | 155.4",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 2048+2048",
+        "metric": "Latency (s)",
+        "value": 99.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "2048+2048 | 6.7B | 24 | latency (s) | 99.5 | 53.5",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 2048+2048",
+        "metric": "Latency (s)",
+        "value": 53.5,
+        "baseline_label": "FlexGen",
+        "baseline_value": 99.5,
+        "delta": -46.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "2048+2048 | 6.7B | 24 | latency (s) | 99.5 | 53.5",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FlexGen",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Synthetic 2048+2048",
+        "metric": "Throughput (token/s)",
+        "value": 494.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "2048+2048 | 6.7B | 24 | throughput (token/s) | 494.1 | 918.9",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 2048+2048",
+        "metric": "Throughput (token/s)",
+        "value": 918.9,
+        "baseline_label": "FlexGen",
+        "baseline_value": 494.1,
+        "delta": 424.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "2048+2048 | 6.7B | 24 | throughput (token/s) | 494.1 | 918.9",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O (batch=64)",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 2048+2048",
+        "metric": "Throughput (token/s)",
+        "value": 1161.0,
+        "baseline_label": "FlexGen",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Heavy Hitter for High-Throughput Generative Inference",
+        "quote": "2048+2048 | 6.7B | 64 | throughput (token/s) | OOM | 1161.0",
+        "bbox": [
+          105.1576171875,
+          92.7196875,
+          504.4517578125,
+          181.0771875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Quant-4bit",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 84.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.1 ... Table 6: Compatibility with Quantization",
+        "quote": "Quant-4bit | 84.00 | 43.28 | 78.67",
+        "bbox": [
+          204.219140625,
+          333.049921875,
+          405.390234375,
+          403.262578125
+        ],
+        "block_id": "/page/23/Table/10",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Quant-4bit",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 43.28,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.1 ... Table 6: Compatibility with Quantization",
+        "quote": "Quant-4bit | 84.00 | 43.28 | 78.67",
+        "bbox": [
+          204.219140625,
+          333.049921875,
+          405.390234375,
+          403.262578125
+        ],
+        "block_id": "/page/23/Table/10",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Quant-4bit",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 78.67,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.1 ... Table 6: Compatibility with Quantization",
+        "quote": "Quant-4bit | 84.00 | 43.28 | 78.67",
+        "bbox": [
+          204.219140625,
+          333.049921875,
+          405.390234375,
+          403.262578125
+        ],
+        "block_id": "/page/23/Table/10",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O w. Quant-4bit",
+        "bit_width": "4-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 84.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.1 ... Table 6: Compatibility with Quantization",
+        "quote": "H2O w. Quant-4bit | 84.00 | 43.20 | 78.80",
+        "bbox": [
+          204.219140625,
+          333.049921875,
+          405.390234375,
+          403.262578125
+        ],
+        "block_id": "/page/23/Table/10",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O w. Quant-4bit",
+        "bit_width": "4-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 43.2,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.1 ... Table 6: Compatibility with Quantization",
+        "quote": "H2O w. Quant-4bit | 84.00 | 43.20 | 78.80",
+        "bbox": [
+          204.219140625,
+          333.049921875,
+          405.390234375,
+          403.262578125
+        ],
+        "block_id": "/page/23/Table/10",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O w. Quant-4bit",
+        "bit_width": "4-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 78.8,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": 0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.1 ... Table 6: Compatibility with Quantization",
+        "quote": "H2O w. Quant-4bit | 84.00 | 43.20 | 78.80",
+        "bbox": [
+          204.219140625,
+          333.049921875,
+          405.390234375,
+          403.262578125
+        ],
+        "block_id": "/page/23/Table/10",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O-c (4-bit weights)",
+        "bit_width": "4-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+32",
+        "metric": "Throughput (token/s)",
+        "value": 50.5,
+        "baseline_label": "H2O",
+        "baseline_value": 35.1,
+        "delta": 15.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.2 Throughput Improvement of H2O Combining with Quantization",
+        "quote": "H2O-c (20%) | 50.5 (70) | 72.5 (52) | 62.3 (44)",
+        "bbox": [
+          203.3047265625,
+          635.309296875,
+          406.3046484375,
+          721.300078125
+        ],
+        "block_id": "/page/23/Table/14",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O-c (4-bit weights)",
+        "bit_width": "4-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+512",
+        "metric": "Throughput (token/s)",
+        "value": 72.5,
+        "baseline_label": "H2O",
+        "baseline_value": 51.7,
+        "delta": 20.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.2 Throughput Improvement of H2O Combining with Quantization",
+        "quote": "H2O-c (20%) | 50.5 (70) | 72.5 (52) | 62.3 (44)",
+        "bbox": [
+          203.3047265625,
+          635.309296875,
+          406.3046484375,
+          721.300078125
+        ],
+        "block_id": "/page/23/Table/14",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "H2O-c (4-bit weights)",
+        "bit_width": "4-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Synthetic 512+1024",
+        "metric": "Throughput (token/s)",
+        "value": 62.3,
+        "baseline_label": "H2O",
+        "baseline_value": 52.1,
+        "delta": 10.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "C.2 Throughput Improvement of H2O Combining with Quantization",
+        "quote": "H2O-c (20%) | 50.5 (70) | 72.5 (52) | 62.3 (44)",
+        "bbox": [
+          203.3047265625,
+          635.309296875,
+          406.3046484375,
+          721.300078125
+        ],
+        "block_id": "/page/23/Table/14",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 80.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -5.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 41.4,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 76.96,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -1.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w.o. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 65.35,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -4.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w.o. H_2 | 80.00 | 41.40 | 76.96 | 65.35",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 82.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -3.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 42.8,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 77.96,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "TopK w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "Winogrande",
+        "metric": "Accuracy",
+        "value": 66.48,
+        "baseline_label": "Full",
+        "baseline_value": 70.24,
+        "delta": -3.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.5 Enhancing the Top-K Baseline",
+        "quote": "TopK w. H_2 | 82.00 | 42.80 | 77.96 | 66.48",
+        "bbox": [
+          174.6530859375,
+          550.11515625,
+          434.9562890625,
+          608.49421875
+        ],
+        "block_id": "/page/25/Table/8",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 77.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 54.62,
+        "baseline_label": "Full",
+        "baseline_value": 77.37,
+        "delta": -22.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 76.12,
+        "baseline_label": "Full",
+        "baseline_value": 77.37,
+        "delta": -1.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. Local + H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 77.26,
+        "baseline_label": "Full",
+        "baseline_value": 77.37,
+        "delta": -0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "PiQA | OPT-13B | 77.37 | 54.62 | 76.12 | 77.26",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 25.6,
+        "baseline_label": "Full",
+        "baseline_value": 41.4,
+        "delta": -15.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | OPT-13B | 41.40 | 25.60 | 30.40 | 41.20",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 30.4,
+        "baseline_label": "Full",
+        "baseline_value": 41.4,
+        "delta": -11.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | OPT-13B | 41.40 | 25.60 | 30.40 | 41.20",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. Local + H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 41.2,
+        "baseline_label": "Full",
+        "baseline_value": 41.4,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | OPT-13B | 41.40 | 25.60 | 30.40 | 41.20",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MathQA",
+        "metric": "Accuracy",
+        "value": 26.67,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. Local",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "MathQA",
+        "metric": "Accuracy",
+        "value": 22.04,
+        "baseline_label": "Full",
+        "baseline_value": 26.67,
+        "delta": -4.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "MathQA",
+        "metric": "Accuracy",
+        "value": 23.82,
+        "baseline_label": "Full",
+        "baseline_value": 26.67,
+        "delta": -2.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "w. Local + H2",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "MathQA",
+        "metric": "Accuracy",
+        "value": 26.93,
+        "baseline_label": "Full",
+        "baseline_value": 26.67,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "MathQA | OPT-13B | 26.67 | 22.04 | 23.82 | 26.93",
+        "bbox": [
+          184.3948828125,
+          77.521640625,
+          426.4098046875,
+          177.712734375
+        ],
+        "block_id": "/page/26/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full (10-shots)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 43.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | Full | 43.20 | 44.40 | 43.00 | 44.80",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "Full (10-shots)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 44.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | Full | 43.20 | 44.40 | 43.00 | 44.80",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "Full (5-shots)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 44.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | Full | 43.20 | 44.40 | 43.00 | 44.80",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "H2O (10-shots)",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 42.8,
+        "baseline_label": "Full",
+        "baseline_value": 43.0,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | ... H2O | 43.00 | 44.20 | 42.80 | 44.80",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "H2O (10-shots)",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 44.8,
+        "baseline_label": "Full",
+        "baseline_value": 44.8,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "OpenBookQA | ... H2O | 43.00 | 44.20 | 42.80 | 44.80",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy (10-shot)",
+        "value": 86.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "COPA | Full | 85.00 | 83.00 | 86.00 | 85.00",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "Full",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy (5-shot)",
+        "value": 83.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.7 Performance of Inference with Different Number of Shots",
+        "quote": "COPA | Full | 85.00 | 83.00 | 86.00 | 85.00",
+        "bbox": [
+          203.60953125,
+          196.754765625,
+          405.99984375,
+          284.323359375
+        ],
+        "block_id": "/page/26/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "SpAtten",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 82.0,
+        "baseline_label": "Full",
+        "baseline_value": 85.0,
+        "delta": -3.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.9 Comparsion with SpAtten",
+        "quote": "SpAtten | 82.00 | 41.90 | 77.06",
+        "bbox": [
+          225.2506640625,
+          496.399921875,
+          384.3587109375,
+          550.834453125
+        ],
+        "block_id": "/page/26/Table/9",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "SpAtten",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 41.9,
+        "baseline_label": "Full",
+        "baseline_value": 43.2,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.9 Comparsion with SpAtten",
+        "quote": "SpAtten | 82.00 | 41.90 | 77.06",
+        "bbox": [
+          225.2506640625,
+          496.399921875,
+          384.3587109375,
+          550.834453125
+        ],
+        "block_id": "/page/26/Table/9",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "SpAtten",
+        "bit_width": "16-bit",
+        "group_size": "20% KV cache budget",
+        "dataset": "PiQA",
+        "metric": "Accuracy",
+        "value": 77.06,
+        "baseline_label": "Full",
+        "baseline_value": 78.51,
+        "delta": -1.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "C.9 Comparsion with SpAtten",
+        "quote": "SpAtten | 82.00 | 41.90 | 77.06",
+        "bbox": [
+          225.2506640625,
+          496.399921875,
+          384.3587109375,
+          550.834453125
+        ],
+        "block_id": "/page/26/Table/9",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2",
+        "method": "Pretrained (Full)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 19.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "Pretrained Model | 19.32",
+        "bbox": [
+          205.1216015625,
+          210.228046875,
+          405.6830859375,
+          264.662578125
+        ],
+        "block_id": "/page/29/Table/2",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2",
+        "method": "Remove H2 (pruned)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 31.78,
+        "baseline_label": "Pretrained",
+        "baseline_value": 19.32,
+        "delta": 12.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "Remove H2 | 31.78",
+        "bbox": [
+          205.1216015625,
+          210.228046875,
+          405.6830859375,
+          264.662578125
+        ],
+        "block_id": "/page/29/Table/2",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2",
+        "method": "Fine-tuning (1% data)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 19.86,
+        "baseline_label": "Pretrained",
+        "baseline_value": 19.32,
+        "delta": 0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83",
+        "bbox": [
+          205.1216015625,
+          210.228046875,
+          405.6830859375,
+          264.662578125
+        ],
+        "block_id": "/page/29/Table/2",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2",
+        "method": "Fine-tuning (10% data)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 19.84,
+        "baseline_label": "Pretrained",
+        "baseline_value": 19.32,
+        "delta": 0.52,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83",
+        "bbox": [
+          205.1216015625,
+          210.228046875,
+          405.6830859375,
+          264.662578125
+        ],
+        "block_id": "/page/29/Table/2",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2",
+        "method": "Fine-tuning (40% data)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 19.76,
+        "baseline_label": "Pretrained",
+        "baseline_value": 19.32,
+        "delta": 0.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83",
+        "bbox": [
+          205.1216015625,
+          210.228046875,
+          405.6830859375,
+          264.662578125
+        ],
+        "block_id": "/page/29/Table/2",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2",
+        "method": "Fine-tuning (100% data)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 19.83,
+        "baseline_label": "Pretrained",
+        "baseline_value": 19.32,
+        "delta": 0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "Fine-tuning | 19.86 | 19.84 | 19.76 | 19.83",
+        "bbox": [
+          205.1216015625,
+          210.228046875,
+          405.6830859375,
+          264.662578125
+        ],
+        "block_id": "/page/29/Table/2",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-2 (scratch)",
+        "method": "Train from scratch (1% data)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Wiki-Text-103",
+        "metric": "Perplexity",
+        "value": 554.12,
+        "baseline_label": "Pretrained",
+        "baseline_value": 19.32,
+        "delta": 534.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "C.10 Heavy-Hitter in MLP Blocks",
+        "quote": "training the model from scratch using only 1% of the training data, the resulting model achieves a perplexity of 554.12",
+        "bbox": [
+          106.681640625,
+          74.1768798828125,
+          504.3479919433594,
+          183.16259765625
+        ],
+        "block_id": "/page/29/Text/0",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 139,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 7
   }
 }

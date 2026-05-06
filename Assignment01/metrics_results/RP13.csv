@@ -1,0 +1,104 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP13,LLaMA-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.319,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,C4,Perplexity,5.709,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,ARC-Easy,Accuracy,59.72,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,PiQA,Accuracy,80.9,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,FP16,16-bit,,StoryCloze,Accuracy,79.95,,,,,False,measured,9,6 Experiments,Table 1,16 | 3.319 | 5.709 | 59.72 | 80.90 | 79.95
+RP13,LLaMA-2-70B,OPTQ,4-bit,,WikiText-2,Perplexity,3.596,FP16,3.319,0.277,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12 | 3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,OPTQ,4-bit,,C4,Perplexity,5.905,FP16,5.709,0.196,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,4-bit,,ARC-Easy,Accuracy,58.96,FP16,59.72,-0.76,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,4-bit,,PiQA,Accuracy,80.52,FP16,80.9,-0.38,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,4-bit,,StoryCloze,Accuracy,79.12,FP16,79.95,-0.83,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12
+RP13,LLaMA-2-70B,OPTQ,3-bit,,WikiText-2,Perplexity,4.907,FP16,3.319,1.588,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,C4,Perplexity,7.099,FP16,5.709,1.39,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,ARC-Easy,Accuracy,54.38,FP16,59.72,-5.34,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,PiQA,Accuracy,78.56,FP16,80.9,-2.34,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,3-bit,,StoryCloze,Accuracy,77.72,FP16,79.95,-2.23,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72
+RP13,LLaMA-2-70B,OPTQ,2-bit,,WikiText-2,Perplexity,123.908,FP16,3.319,120.589,absolute,True,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,C4,Perplexity,70.541,FP16,5.709,64.832,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,ARC-Easy,Accuracy,25.34,FP16,59.72,-34.38,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,PiQA,Accuracy,50.54,FP16,80.9,-30.36,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,OPTQ,2-bit,,StoryCloze,Accuracy,51.75,FP16,79.95,-28.2,absolute,False,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75
+RP13,LLaMA-2-70B,QuIP,4-bit,,WikiText-2,Perplexity,3.531,FP16,3.319,0.212,absolute,False,measured,9,6 Experiments,Table 1,4 | 3.596 | 5.905 | 58.96 | 80.52 | 79.12 | 3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,C4,Perplexity,5.869,FP16,5.709,0.16,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,ARC-Easy,Accuracy,59.81,FP16,59.72,0.09,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,PiQA,Accuracy,80.47,FP16,80.9,-0.43,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,4-bit,,StoryCloze,Accuracy,79.63,FP16,79.95,-0.32,absolute,False,measured,9,6 Experiments,Table 1,3.531 | 5.869 | 59.81 | 80.47 | 79.63
+RP13,LLaMA-2-70B,QuIP,3-bit,,WikiText-2,Perplexity,3.853,FP16,3.319,0.534,absolute,False,measured,9,6 Experiments,Table 1,3 | 4.907 | 7.099 | 54.38 | 78.56 | 77.72 | 3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,C4,Perplexity,6.135,FP16,5.709,0.426,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,ARC-Easy,Accuracy,59.81,FP16,59.72,0.09,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,PiQA,Accuracy,80.25,FP16,80.9,-0.65,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,3-bit,,StoryCloze,Accuracy,79.31,FP16,79.95,-0.64,absolute,False,measured,9,6 Experiments,Table 1,3.853 | 6.135 | 59.81 | 80.25 | 79.31
+RP13,LLaMA-2-70B,QuIP,2-bit,,WikiText-2,Perplexity,6.326,FP16,3.319,3.007,absolute,True,measured,9,6 Experiments,Table 1,2 | 123.908 | 70.541 | 25.34 | 50.54 | 51.75 | **6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,C4,Perplexity,8.937,FP16,5.709,3.228,absolute,True,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,ARC-Easy,Accuracy,54.38,FP16,59.72,-5.34,absolute,False,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,PiQA,Accuracy,75.08,FP16,80.9,-5.82,absolute,False,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,LLaMA-2-70B,QuIP,2-bit,,StoryCloze,Accuracy,75.37,FP16,79.95,-4.58,absolute,False,measured,9,6 Experiments,Table 1,**6.326** | **8.937** | **54.38** | **75.08** | **75.37**
+RP13,OPT-30B,FP16,16-bit,,WikiText-2,Perplexity,9.56,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,PTB,Perplexity,14.04,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,C4,Perplexity,11.45,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,ARC-Easy,Accuracy,65.4,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,FP16,16-bit,,LAMBADA,Accuracy,72.4,,,,,False,measured,9,6 Experiments,Table 2,16 | 9.56 | 14.04 | 11.45 | 65.40 | 72.40
+RP13,OPT-30B,OPTQ,4-bit,,WikiText-2,Perplexity,9.59,FP16,9.56,0.03,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.59 | 14.22 | 11.56 | 64.77 | 72.39
+RP13,OPT-30B,OPTQ,4-bit,,PTB,Perplexity,14.22,FP16,14.04,0.18,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.59 | 14.22 | 11.56 | 64.77 | 72.39
+RP13,OPT-30B,OPTQ,4-bit,,C4,Perplexity,11.56,FP16,11.45,0.11,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.59 | 14.22 | 11.56 | 64.77 | 72.39
+RP13,OPT-30B,OPTQ,3-bit,,WikiText-2,Perplexity,10.32,FP16,9.56,0.76,absolute,False,measured,9,6 Experiments,Table 2,3 | 10.32 | 15.36 | 12.23 | 60.19 | 68.89
+RP13,OPT-30B,OPTQ,3-bit,,PTB,Perplexity,15.36,FP16,14.04,1.32,absolute,False,measured,9,6 Experiments,Table 2,3 | 10.32 | 15.36 | 12.23 | 60.19 | 68.89
+RP13,OPT-30B,OPTQ,3-bit,,C4,Perplexity,12.23,FP16,11.45,0.78,absolute,False,measured,9,6 Experiments,Table 2,3 | 10.32 | 15.36 | 12.23 | 60.19 | 68.89
+RP13,OPT-30B,OPTQ,2-bit,,WikiText-2,Perplexity,71.7,FP16,9.56,62.14,absolute,True,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77
+RP13,OPT-30B,OPTQ,2-bit,,PTB,Perplexity,88.19,FP16,14.04,74.15,absolute,False,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77
+RP13,OPT-30B,OPTQ,2-bit,,C4,Perplexity,29.59,FP16,11.45,18.14,absolute,False,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77
+RP13,OPT-30B,QuIP,4-bit,,WikiText-2,Perplexity,9.6,FP16,9.56,0.04,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.60 | 14.18 | 11.50 | 65.32 | 73.20
+RP13,OPT-30B,QuIP,4-bit,,PTB,Perplexity,14.18,FP16,14.04,0.14,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.60 | 14.18 | 11.50 | 65.32 | 73.20
+RP13,OPT-30B,QuIP,4-bit,,C4,Perplexity,11.5,FP16,11.45,0.05,absolute,False,measured,9,6 Experiments,Table 2,4 | 9.60 | 14.18 | 11.50 | 65.32 | 73.20
+RP13,OPT-30B,QuIP,3-bit,,WikiText-2,Perplexity,9.79,FP16,9.56,0.23,absolute,False,measured,9,6 Experiments,Table 2,3 | 9.79 | 14.37 | 11.66 | 65.28 | 72.68
+RP13,OPT-30B,QuIP,3-bit,,PTB,Perplexity,14.37,FP16,14.04,0.33,absolute,False,measured,9,6 Experiments,Table 2,3 | 9.79 | 14.37 | 11.66 | 65.28 | 72.68
+RP13,OPT-30B,QuIP,3-bit,,C4,Perplexity,11.66,FP16,11.45,0.21,absolute,False,measured,9,6 Experiments,Table 2,3 | 9.79 | 14.37 | 11.66 | 65.28 | 72.68
+RP13,OPT-30B,QuIP,2-bit,,WikiText-2,Perplexity,11.48,FP16,9.56,1.92,absolute,True,measured,9,6 Experiments,Table 2,2 | 71.70 | 88.19 | 29.59 | 42.47 | 25.77 | **11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,PTB,Perplexity,17.4,FP16,14.04,3.36,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,C4,Perplexity,13.55,FP16,11.45,2.1,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,ARC-Easy,Accuracy,57.87,FP16,65.4,-7.53,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,QuIP,2-bit,,LAMBADA,Accuracy,65.24,FP16,72.4,-7.16,absolute,False,measured,9,6 Experiments,Table 2,**11.48** | 17.40 | 13.55 | 57.87 | **65.24**
+RP13,OPT-30B,Nearest,4-bit,,WikiText-2,Perplexity,10.77,FP16,9.56,1.21,absolute,False,measured,9,6 Experiments,Table 2,4 | 10.77 | 15.41 | 13.52 | 61.28 | 70.42
+RP13,OPT-30B,Nearest,3-bit,,WikiText-2,Perplexity,1564.9,FP16,9.56,1555.34,absolute,False,measured,9,6 Experiments,Table 2,3 | 1564.9 | 1526.2 | 1808.2 | 34.47 | 1.73
+RP13,OPT-30B,Nearest,2-bit,,WikiText-2,Perplexity,41547.8,FP16,9.56,41538.24,absolute,False,measured,9,6 Experiments,Table 2,2 | 41547.8 | 34348.6 | 24815.7 | 25.80 | 0.00
+RP13,OPT-30B,Nearest+IncP,2-bit,,WikiText-2,Perplexity,12.04,FP16,9.56,2.48,absolute,False,measured,9,6 Experiments,Table 2,2 | 41547.8 | 34348.6 | 24815.7 | 25.80 | 0.00 | 12.04 | 18.12 | 14.11 | 56.36 | 60.64
+RP13,OPT-30B,QuIP-RG,2-bit,,WikiText-2,Perplexity,11.68,FP16,9.56,2.12,absolute,False,measured,9,6 Experiments,Table 2,2 | 49.40 | 73.45 | 29.12 | 41.20 | 26.35 | 11.68 | **16.94** | 13.44 | **59.51** | 62.31
+RP13,OPT-30B,LDLQ-RG,2-bit,,WikiText-2,Perplexity,49.4,FP16,9.56,39.84,absolute,False,measured,9,6 Experiments,Table 2,2 | 49.40 | 73.45 | 29.12 | 41.20 | 26.35
+RP13,OPT-30B,Greedy,2-bit,,WikiText-2,Perplexity,4816.6,FP16,9.56,4807.04,absolute,False,measured,9,6 Experiments,Table 2,2 | 4816.6 | 3473.81 | 3183.2 | 26.30 | 0.00
+RP13,OPT-30B,Greedy+IncP,2-bit,,WikiText-2,Perplexity,11.59,FP16,9.56,2.03,absolute,False,measured,9,6 Experiments,Table 2,2 | 4816.6 | 3473.81 | 3183.2 | 26.30 | 0.00 | 11.59 | 17.39 | **13.30** | 58.80 | 64.47
+RP13,OPT-66B,QuIP,4-bit,,A6000,Latency (ms/token),81,OPTQ,53,1.53,x_factor,True,measured,10,6 Experiments,Table 4,QuIP | 81ms | OPTQ | 53ms
+RP13,OPT-66B,OPTQ,4-bit,,A6000,Latency (ms/token),53,,,,,False,measured,10,6 Experiments,Table 4,OPTQ | 53ms
+RP13,OPT-350m,Rescale,4-bit,,WikiText2/PTB/C4 average,Perplexity,24.3,,,,,False,measured,10,6 Experiments,Table 3,4 | 24.30 | 24.32 | 24.05 | 23.89
+RP13,OPT-350m,Rescale+Incoherence+QuantRange,4-bit,,WikiText2/PTB/C4 average,Perplexity,23.89,,,,,False,measured,10,6 Experiments,Table 3,4 | 24.30 | 24.32 | 24.05 | 23.89
+RP13,OPT-350m,Rescale,3-bit,,WikiText2/PTB/C4 average,Perplexity,32.62,,,,,False,measured,10,6 Experiments,Table 3,3 | 32.62 | 42.28 | 31.32 | 26.36
+RP13,OPT-350m,Rescale+Incoherence+QuantRange,3-bit,,WikiText2/PTB/C4 average,Perplexity,26.36,,,,,False,measured,10,6 Experiments,Table 3,3 | 32.62 | 42.28 | 31.32 | 26.36
+RP13,OPT-125m,Random permutation ablation,2-bit,,WikiText2/PTB/C4 average,Delta Perplexity,-74.2,,,,absolute,False,measured,10,7 Conclusion,Table 5,2 | -74.2
+RP13,OPT-125m,Random permutation ablation,3-bit,,WikiText2/PTB/C4 average,Delta Perplexity,-9.96,,,,absolute,False,measured,10,7 Conclusion,Table 5,3 | -9.96
+RP13,OPT-125m,Random permutation ablation,4-bit,,WikiText2/PTB/C4 average,Delta Perplexity,-0.22,,,,absolute,False,measured,10,7 Conclusion,Table 5,4 | -0.22
+RP13,OPT-13B,FP16,16-bit,,WikiText-2,Perplexity,10.13,,,,,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-13B,QuIP,4-bit,,WikiText-2,Perplexity,10.21,FP16,10.13,0.08,absolute,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-13B,QuIP,3-bit,,WikiText-2,Perplexity,10.5,FP16,10.13,0.37,absolute,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-13B,QuIP,2-bit,,WikiText-2,Perplexity,16.02,FP16,10.13,5.89,absolute,False,measured,19,C.6,Table 8,Wiki↓ | 10.13 | 10.21 | 10.5 | 16.02
+RP13,OPT-6.7B,FP16,16-bit,,WikiText-2,Perplexity,10.86,,,,,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,QuIP,4-bit,,WikiText-2,Perplexity,10.98,FP16,10.86,0.12,absolute,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,QuIP,3-bit,,WikiText-2,Perplexity,11.51,FP16,10.86,0.65,absolute,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,QuIP,2-bit,,WikiText-2,Perplexity,22.33,FP16,10.86,11.47,absolute,False,measured,19,C.6,Table 9,Wiki\downarrow | 10.86 | 10.98 | 11.51 | 22.33
+RP13,OPT-6.7B,OPTQ,2-bit,,WikiText-2,Perplexity,2958,FP16,10.86,2947.14,absolute,False,measured,19,C.6,Table 9,"Wiki\downarrow | 10.86 | 11.49 | 14.87 | 2,958"
+RP13,OPT-2.7B,FP16,16-bit,,WikiText-2,Perplexity,12.47,,,,,False,measured,20,C.8,Table 10,Wiki↓ | 12.47 | 12.39 | 17.44
+RP13,OPT-2.7B,QuIP,4-bit,,WikiText-2,Perplexity,12.39,FP16,12.47,-0.08,absolute,False,measured,20,C.8,Table 10,Wiki↓ | 12.47 | 12.39 | 17.44
+RP13,OPT-2.7B,QuIP,3-bit,,WikiText-2,Perplexity,17.44,FP16,12.47,4.97,absolute,False,measured,20,C.8,Table 10,Wiki↓ | 12.47 | 12.39 | 17.44 | 2.998
+RP13,OPT-1.3B,FP16,16-bit,,WikiText-2,Perplexity,14.62,,,,,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,QuIP,4-bit,,WikiText-2,Perplexity,14.88,FP16,14.62,0.26,absolute,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,QuIP,3-bit,,WikiText-2,Perplexity,16.21,FP16,14.62,1.59,absolute,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,QuIP,2-bit,,WikiText-2,Perplexity,41.64,FP16,14.62,27.02,absolute,False,measured,20,C.8,Table 11,Wiki↓ | 14.62 | 14.88 | 16.21 | 41.64
+RP13,OPT-1.3B,OPTQ,2-bit,,WikiText-2,Perplexity,7856,FP16,14.62,7841.38,absolute,False,measured,20,C.8,Table 11,"Wiki↓ | 14.62 | 15.59 | 21.35 | 7,856"
+RP13,OPT-350m,FP16,16-bit,,WikiText-2,Perplexity,22.0,,,,,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-350m,QuIP,4-bit,,WikiText-2,Perplexity,22.5,FP16,22.0,0.5,absolute,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-350m,QuIP,3-bit,,WikiText-2,Perplexity,25.19,FP16,22.0,3.19,absolute,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-350m,QuIP,2-bit,,WikiText-2,Perplexity,672.3,FP16,22.0,650.3,absolute,False,measured,21,C.9,Table 12,Wiki↓ | 22.00 | 22.5 | 25.19 | 672.3
+RP13,OPT-125m,FP16,16-bit,,WikiText-2,Perplexity,27.66,,,,,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,QuIP,4-bit,,WikiText-2,Perplexity,33.35,FP16,27.66,5.69,absolute,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,QuIP,3-bit,,WikiText-2,Perplexity,34.22,FP16,27.66,6.56,absolute,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,QuIP,2-bit,,WikiText-2,Perplexity,347.4,FP16,27.66,319.74,absolute,False,measured,21,C.9,Table 13,Wiki↓ | 27.66 | 33.35 | 34.22 | 347.4
+RP13,OPT-125m,OPTQ,2-bit,,WikiText-2,Perplexity,4563,FP16,27.66,4535.34,absolute,False,measured,21,C.9,Table 13,"Wiki↓ | 27.66 | 31.44 | 53.26 | 4,563"

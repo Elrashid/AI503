@@ -1490,5 +1490,3105 @@
         "source_table": "Table 6"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Zephyr 7B + R2D2",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate",
+        "value": 5.9,
+        "baseline_label": "Llama 2 7B Chat (GCG ASR)",
+        "baseline_value": 31.8,
+        "delta": -25.9,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "6.2. Adversarial Training Results",
+        "quote": "Zephyr 7B + R2D2 obtains state-of-the-art robustness against GCG among model-level defenses, outperforming Llama 2 7B Chat (31.8 → 5.9) and Llama 2 13B Chat (30.2 → 5.9) in percent ASR",
+        "bbox": [
+          54.0,
+          610.62890625,
+          291.75,
+          716.25
+        ],
+        "block_id": "/page/9/Text/7",
+        "source_table": "Section 6.2 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 2 7B Chat",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate",
+        "value": 31.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "6.2. Adversarial Training Results",
+        "quote": "outperforming Llama 2 7B Chat (31.8 → 5.9) and Llama 2 13B Chat (30.2 → 5.9) in percent ASR",
+        "bbox": [
+          54.0,
+          610.62890625,
+          291.75,
+          716.25
+        ],
+        "block_id": "/page/9/Text/7",
+        "source_table": "Section 6.2 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 2 13B Chat",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate",
+        "value": 30.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "6.2. Adversarial Training Results",
+        "quote": "and Llama 2 13B Chat (30.2 → 5.9) in percent ASR",
+        "bbox": [
+          54.0,
+          610.62890625,
+          291.75,
+          716.25
+        ],
+        "block_id": "/page/9/Text/7",
+        "source_table": "Section 6.2 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B + R2D2",
+        "method": "MT-Bench",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench score",
+        "value": 6.0,
+        "baseline_label": "Mistral 7B Instruct v0.2",
+        "baseline_value": 6.5,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "6.2. Adversarial Training Results",
+        "quote": "The MT-Bench scores of these models are 6.0 and 6.5, respectively. This suggests that adversarial training with automated red teaming can greatly improve robustness while preserving general performance.",
+        "bbox": [
+          305.25,
+          426.0,
+          543.0,
+          531.0
+        ],
+        "block_id": "/page/9/Text/10",
+        "source_table": "Section 6.2 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "GCG attack",
+        "method": "Substring matching ASR",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "ASR variation across token-budget settings",
+        "value": 30.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Toward Improved Evaluations",
+        "quote": "We show in Figure 2 that the choice of this parameter can change ASR by up to 30%. Unfortunately, this parameter has not been standardized in prior work",
+        "bbox": [
+          305.40234375,
+          323.296875,
+          543.0960083007812,
+          405.5220947265625
+        ],
+        "block_id": "/page/3/Text/11",
+        "source_table": "Figure 2"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier (Llama 2 13B Chat fine-tuned)",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Standard, %)",
+        "value": 94.53,
+        "baseline_label": "GPT-4",
+        "baseline_value": 89.8,
+        "delta": 4.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Standard | 71.14 | 77.36 | 65.67 | 68.41 | 89.8 | 94.53",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Contextual, %)",
+        "value": 90.5,
+        "baseline_label": "GPT-4",
+        "baseline_value": 85.5,
+        "delta": 5.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Contextual | 67.5 | 71.5 | 62.5 | 64.0 | 85.5 | 90.5",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Average, %)",
+        "value": 93.19,
+        "baseline_label": "GPT-4",
+        "baseline_value": 88.37,
+        "delta": 4.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "AdvBench classifier",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Average, %)",
+        "value": 69.93,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "GPTFuzz classifier",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Average, %)",
+        "value": 75.42,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "ChatGLM classifier (Shen et al., 2023b)",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Average, %)",
+        "value": 64.29,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-Guard classifier",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Average, %)",
+        "value": 66.94,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 classifier (Chao et al.)",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (Average, %)",
+        "value": 88.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "Evaluations in prior work.",
+        "quote": "Average (↑) | 69.93 | 75.42 | 64.29 | 66.94 | 88.37 | 93.19",
+        "bbox": [
+          53.493026123046874,
+          115.636640625,
+          540.8957678222656,
+          193.738359375
+        ],
+        "block_id": "/page/17/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier",
+        "method": "Classifier robustness",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Prequalification Set 1 (refusal then continue)",
+        "metric": "Classifier accuracy",
+        "value": 95.68,
+        "baseline_label": "GPT-4 PAIR",
+        "baseline_value": 89.0,
+        "delta": 6.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "B.5.1. LLAMA 2 EVALUATION CLASSIFIER",
+        "quote": "Ours | 95.68 | 98.0 | 93.4 | 95.7",
+        "bbox": [
+          331.4840625,
+          66.832734375,
+          536.3128125,
+          152.823515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier",
+        "method": "Classifier robustness",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Prequalification Set 2 (benign paragraphs)",
+        "metric": "Classifier accuracy",
+        "value": 98.0,
+        "baseline_label": "GPT-4 PAIR",
+        "baseline_value": 100.0,
+        "delta": -2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "B.5.1. LLAMA 2 EVALUATION CLASSIFIER",
+        "quote": "Ours | 95.68 | 98.0 | 93.4 | 95.7",
+        "bbox": [
+          331.4840625,
+          66.832734375,
+          536.3128125,
+          152.823515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier",
+        "method": "Classifier robustness",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Prequalification Set 3 (unrelated harmful)",
+        "metric": "Classifier accuracy",
+        "value": 93.4,
+        "baseline_label": "GPT-4 PAIR",
+        "baseline_value": 78.7,
+        "delta": 14.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "B.5.1. LLAMA 2 EVALUATION CLASSIFIER",
+        "quote": "Ours | 95.68 | 98.0 | 93.4 | 95.7",
+        "bbox": [
+          331.4840625,
+          66.832734375,
+          536.3128125,
+          152.823515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench classifier",
+        "method": "Classifier robustness",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Prequalification Sets (avg)",
+        "metric": "Classifier accuracy (avg)",
+        "value": 95.7,
+        "baseline_label": "GPT-4 PAIR",
+        "baseline_value": 89.6,
+        "delta": 6.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "B.5.1. LLAMA 2 EVALUATION CLASSIFIER",
+        "quote": "Ours | 95.68 | 98.0 | 93.4 | 95.7",
+        "bbox": [
+          331.4840625,
+          66.832734375,
+          536.3128125,
+          152.823515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench validation classifier (Mistral 7B based)",
+        "method": "Classifier agreement",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench validation set",
+        "metric": "Agreement with human labels (%)",
+        "value": 88.6,
+        "baseline_label": "Test classifier",
+        "baseline_value": 93.2,
+        "delta": -4.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "B.2. Validation and Test Splits",
+        "quote": "The validation classifier obtains 88.6% agreement with human labels, compared to 93.2% for the test classifier.",
+        "bbox": [
+          53.490234375,
+          248.657958984375,
+          541.6141967773438,
+          294.7170715332031
+        ],
+        "block_id": "/page/18/Text/4",
+        "source_table": "Section B.2 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B",
+        "method": "MT-Bench",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench score",
+        "value": 7.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "MT-Bench | 7.34 | 6.5 | 5.4 | 6.0",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral 7B",
+        "method": "MT-Bench",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench score",
+        "value": 6.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "MT-Bench | 7.34 | 6.5 | 5.4 | 6.0",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Koala 13B",
+        "method": "MT-Bench",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench score",
+        "value": 5.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "MT-Bench | 7.34 | 6.5 | 5.4 | 6.0",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate (GCG)",
+        "value": 69.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "GCG ASR | 69.4 | 69.1 | 62.2 | 5.5",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate (GCG)",
+        "value": 69.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "GCG ASR | 69.4 | 69.1 | 62.2 | 5.5",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Koala 13B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate (GCG)",
+        "value": 62.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "GCG ASR | 69.4 | 69.1 | 62.2 | 5.5",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B + R2D2",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Attack Success Rate (GCG)",
+        "value": 5.5,
+        "baseline_label": "Zephyr 7B (no R2D2)",
+        "baseline_value": 69.4,
+        "delta": -63.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "GCG ASR | 69.4 | 69.1 | 62.2 | 5.5",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B",
+        "method": "Average across attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Average Attack Success Rate",
+        "value": 62.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "Average ASR | 62.7 | 55.7 | 48.5 | 19.1",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral 7B",
+        "method": "Average across attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Average Attack Success Rate",
+        "value": 55.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "Average ASR | 62.7 | 55.7 | 48.5 | 19.1",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Koala 13B",
+        "method": "Average across attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Average Attack Success Rate",
+        "value": 48.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "Average ASR | 62.7 | 55.7 | 48.5 | 19.1",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B + R2D2",
+        "method": "Average across attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Average Attack Success Rate",
+        "value": 19.1,
+        "baseline_label": "Zephyr 7B (no R2D2)",
+        "baseline_value": 62.7,
+        "delta": -43.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "Average ASR | 62.7 | 55.7 | 48.5 | 19.1",
+        "bbox": [
+          120.5293359375,
+          237.251953125,
+          475.9316015625,
+          296.419921875
+        ],
+        "block_id": "/page/32/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "InstructBLIP",
+        "method": "MultiModalPGD",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 64.55,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 22.73,
+        "delta": 41.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "InstructBLIP",
+        "method": "MultiModalPGDPatch",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 36.36,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 22.73,
+        "delta": 13.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "InstructBLIP",
+        "method": "MultiModalRenderText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 1.82,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 22.73,
+        "delta": -20.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "InstructBLIP",
+        "method": "DirectRequest",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 22.73,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "InstructBLIP | 64.55 | 36.36 | 1.82 | 22.73",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaVA 1.5",
+        "method": "MultiModalPGD",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 74.55,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 69.09,
+        "delta": 5.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaVA 1.5",
+        "method": "MultiModalPGDPatch",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 72.73,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 69.09,
+        "delta": 3.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaVA 1.5",
+        "method": "MultiModalRenderText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 15.45,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 69.09,
+        "delta": -53.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaVA 1.5",
+        "method": "DirectRequest",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 69.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "LLaVA 1.5 | 74.55 | 72.73 | 15.45 | 69.09",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen-VL-Chat",
+        "method": "MultiModalPGD",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 82.73,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 46.36,
+        "delta": 36.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen-VL-Chat",
+        "method": "MultiModalPGDPatch",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 81.82,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 46.36,
+        "delta": 35.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen-VL-Chat",
+        "method": "MultiModalRenderText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 9.09,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 46.36,
+        "delta": -37.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen-VL-Chat",
+        "method": "DirectRequest",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 46.36,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "Qwen-VL-Chat | 82.73 | 81.82 | 9.09 | 46.36",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4V",
+        "method": "MultiModalRenderText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 20.0,
+        "baseline_label": "DirectRequest",
+        "baseline_value": 16.36,
+        "delta": 3.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "GPT-4V | - | - | 20.00 | 16.36",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4V",
+        "method": "DirectRequest",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (multimodal)",
+        "metric": "Attack Success Rate",
+        "value": 16.36,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "GPT-4V | - | - | 20.00 | 16.36",
+        "bbox": [
+          80.3070703125,
+          442.45265625,
+          514.9585546875,
+          516.60984375
+        ],
+        "block_id": "/page/31/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "InstructBLIP",
+        "method": "MultiModalPGDBlankImage",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (text-only behaviors, multimodal pipeline)",
+        "metric": "Attack Success Rate",
+        "value": 48.75,
+        "baseline_label": "MultiModalRenderText",
+        "baseline_value": 5.25,
+        "delta": 43.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "InstructBLIP | 48.75 | 5.25",
+        "bbox": [
+          144.620859375,
+          618.811875,
+          450.644765625,
+          691.39125
+        ],
+        "block_id": "/page/31/Table/6",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaVA 1.5",
+        "method": "MultiModalPGDBlankImage",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (text-only behaviors, multimodal pipeline)",
+        "metric": "Attack Success Rate",
+        "value": 66.0,
+        "baseline_label": "MultiModalRenderText",
+        "baseline_value": 4.25,
+        "delta": 61.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "LLaVA 1.5 | 66.00 | 4.25",
+        "bbox": [
+          144.620859375,
+          618.811875,
+          450.644765625,
+          691.39125
+        ],
+        "block_id": "/page/31/Table/6",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen-VL-Chat",
+        "method": "MultiModalPGDBlankImage",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (text-only behaviors, multimodal pipeline)",
+        "metric": "Attack Success Rate",
+        "value": 62.25,
+        "baseline_label": "MultiModalRenderText",
+        "baseline_value": 3.5,
+        "delta": 58.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "Qwen-VL-Chat | 62.25 | 3.50",
+        "bbox": [
+          144.620859375,
+          618.811875,
+          450.644765625,
+          691.39125
+        ],
+        "block_id": "/page/31/Table/6",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4V",
+        "method": "MultiModalRenderText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (text-only behaviors, multimodal pipeline)",
+        "metric": "Attack Success Rate",
+        "value": 0.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "Contextual Behaviors",
+        "quote": "GPT-4V | - | 0.50",
+        "bbox": [
+          144.620859375,
+          618.811875,
+          450.644765625,
+          691.39125
+        ],
+        "block_id": "/page/31/Table/6",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MaliciousInstruct (dataset)",
+        "method": "Google searchability",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MaliciousInstruct",
+        "metric": "Search-success rate (%)",
+        "value": 55.0,
+        "baseline_label": "HarmBench (Contextual)",
+        "baseline_value": 0.0,
+        "delta": 55.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "MaliciousInstruct | AdvBench | HarmBench (Contextual) | 55 | 50 | 0",
+        "bbox": [
+          195.5351953125,
+          589.854375,
+          398.5351171875,
+          618.255
+        ],
+        "block_id": "/page/32/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "AdvBench (dataset)",
+        "method": "Google searchability",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvBench",
+        "metric": "Search-success rate (%)",
+        "value": 50.0,
+        "baseline_label": "HarmBench (Contextual)",
+        "baseline_value": 0.0,
+        "delta": 50.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "MaliciousInstruct | AdvBench | HarmBench (Contextual) | 55 | 50 | 0",
+        "bbox": [
+          195.5351953125,
+          589.854375,
+          398.5351171875,
+          618.255
+        ],
+        "block_id": "/page/32/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench (Contextual)",
+        "method": "Google searchability",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (Contextual)",
+        "metric": "Search-success rate (%)",
+        "value": 0.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "Contextual Behaviors",
+        "quote": "MaliciousInstruct | AdvBench | HarmBench (Contextual) | 55 | 50 | 0",
+        "bbox": [
+          195.5351953125,
+          589.854375,
+          398.5351171875,
+          618.255
+        ],
+        "block_id": "/page/32/Table/4",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 54.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8 | 30.8 | 43.7 | 38.3 | 25.4 | 40.7 | 45.2 | 48.3 | 52.7 | 16.6 | 27.3 | 25.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "GCG-M",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 45.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8 | 30.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 38.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Average (†) | 54.3 | 45.0 | 38.8 | 29.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "PEZ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 29.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "GBDA",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 29.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Average (†) | 54.3 | 45.0 | 38.8 | 29.0 | 29.8 | 30.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "UAT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 30.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Average (†) | ... 30.8 | 43.7",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "AutoPrompt",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 43.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "30.8 | 43.7 | 38.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "Stochastic Few-Shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 38.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "43.7 | 38.3 | 25.4",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "Zero-Shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 25.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "38.3 | 25.4 | 40.7",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "PAIR",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 40.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "25.4 | 40.7 | 45.2",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "TAP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 45.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "40.7 | 45.2 | 48.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "TAP-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 48.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "45.2 | 48.3 | 52.7",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 52.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "48.3 | 52.7 | 16.6",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "PAP-top5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 16.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "52.7 | 16.6 | 27.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "Human Jailbreaks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 27.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "16.6 | 27.3 | 25.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Average across all models (Table 6)",
+        "method": "Direct Request",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate (avg)",
+        "value": 25.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "27.3 | 25.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6 (All Behaviors)"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 2 7B Chat",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 32.5,
+        "baseline_label": "Direct Request",
+        "baseline_value": 0.8,
+        "delta": 31.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Llama 2 7B Chat | 32.5 | 21.2 | 19.7 | 1.8 | 1.4 | 4.5 | 15.3 | 4.3 | 2.0 | 9.3 | 9.3 | 7.8 | 0.5 | 2.7 | 0.8 | 0.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 2 7B Chat",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 0.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Llama 2 7B Chat | 32.5 | 21.2 | 19.7 | 1.8 | 1.4 | 4.5 | 15.3 | 4.3 | 2.0 | 9.3 | 9.3 | 7.8 | 0.5",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 2 13B Chat",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 30.0,
+        "baseline_label": "Direct Request",
+        "baseline_value": 2.8,
+        "delta": 27.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Llama 2 13B Chat | 30.0 | 11.3 | 16.4 | 1.7 | 2.2 | 1.5 | 16.3 | 6.0 | 2.9 | 15.0 | 14.2 | 8.0 | 0.8 | 3.3 | 1.7 | 2.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 2 70B Chat",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 37.5,
+        "baseline_label": "Direct Request",
+        "baseline_value": 2.8,
+        "delta": 34.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Llama 2 70B Chat | 37.5 | 10.8 | 22.1 | 3.3 | 2.3 | 4.0 | 20.5 | 7.0 | 3.0 | 14.5 | 13.3 | 16.3 | 2.8 | 4.1 | 2.2 | 2.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 65.5,
+        "baseline_label": "Direct Request",
+        "baseline_value": 24.3,
+        "delta": 41.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Vicuna 7B | 65.5 | 61.5 | 60.8 | 19.8 | 19.0 | 19.3 | 56.3 | 42.3 | 27.2 | 53.5 | 51.0 | 59.8 | 66.0 | 18.9 | 39.0 | 24.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna 7B",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 66.0,
+        "baseline_label": "Direct Request",
+        "baseline_value": 24.3,
+        "delta": 41.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Vicuna 7B | 65.5 | 61.5 | 60.8 | ... | 66.0 | 18.9 | 39.0 | 24.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna 13B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 67.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Vicuna 13B | 67.0 | 61.3 | 54.9 | 15.8 | 14.3 | 14.2 | 41.8 | 32.3 | 23.2 | 47.5 | 54.8 | 62.1 | 65.5 | 19.3 | 40.0 | 19.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 69.8,
+        "baseline_label": "Direct Request",
+        "baseline_value": 46.3,
+        "delta": 23.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Mistral 7B | 69.8 | 63.6 | 64.5 | 51.3 | 52.8 | 52.3 | 62.7 | 51.0 | 41.3 | 52.5 | 62.5 | 66.1 | 71.5 | 27.2 | 58.0 | 46.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral 7B",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 71.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Mistral 7B | 69.8 | ... | 71.5",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 69.5,
+        "baseline_label": "Direct Request",
+        "baseline_value": 65.8,
+        "delta": 3.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Zephyr 7B | 69.5 | 62.5 | 61.1 | 62.5 | 62.8 | 62.3 | 60.5 | 62.0 | 60.0 | 58.8 | 66.5 | 69.3 | 75.0 | 32.9 | 66.0 | 65.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Zephyr 7B",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 75.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Zephyr 7B | ... | 75.0 | 32.9 | 66.0 | 65.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "R2D2 (Zephyr 7B + R2D2)",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 5.5,
+        "baseline_label": "Zephyr 7B",
+        "baseline_value": 69.5,
+        "delta": -64.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "R2D2 (Ours) | 5.5 | 4.9 | 0.0 | 2.9 | 0.2 | 0.0 | 5.5 | 43.5 | 7.2 | 48.0 | 60.8 | 54.3 | 17.0 | 24.3 | 13.6 | 14.2",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "R2D2 (Zephyr 7B + R2D2)",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 17.0,
+        "baseline_label": "Zephyr 7B",
+        "baseline_value": 75.0,
+        "delta": -58.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "R2D2 (Ours) | ... | 17.0 | 24.3 | 13.6 | 14.2",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "R2D2 (Zephyr 7B + R2D2)",
+        "method": "PAIR",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 48.0,
+        "baseline_label": "Zephyr 7B",
+        "baseline_value": 58.8,
+        "delta": -10.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "R2D2 (Ours) | ... 48.0 | 60.8 | 54.3 | 17.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "R2D2 (Zephyr 7B + R2D2)",
+        "method": "TAP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 60.8,
+        "baseline_label": "Zephyr 7B",
+        "baseline_value": 66.5,
+        "delta": -5.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "R2D2 (Ours) | ... 48.0 | 60.8 | 54.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "R2D2 (Zephyr 7B + R2D2)",
+        "method": "Stochastic Few-Shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 43.5,
+        "baseline_label": "Zephyr 7B",
+        "baseline_value": 62.0,
+        "delta": -18.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "R2D2 (Ours) | 5.5 | 4.9 | 0.0 | 2.9 | 0.2 | 0.0 | 5.5 | 43.5",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 Turbo 0613",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 38.9,
+        "baseline_label": "Direct Request",
+        "baseline_value": 21.3,
+        "delta": 17.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "GPT-3.5 Turbo 0613 | - | - | 38.9 | - | - | - | - | - | 24.8 | 46.8 | 47.7 | 62.3 | - | 15.4 | 24.5 | 21.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 Turbo 0613",
+        "method": "TAP-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 62.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "GPT-3.5 Turbo 0613 | ... | 47.7 | 62.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 0613",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 22.0,
+        "baseline_label": "Direct Request",
+        "baseline_value": 21.0,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "GPT-4 0613 | - | - | 22.0 | - | - | - | - | - | 19.4 | 39.3 | 43.0 | 54.8 | - | 16.8 | 11.3 | 21.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 0613",
+        "method": "TAP-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 54.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "GPT-4 0613 | ... | 54.8 | - | 16.8 | 11.3 | 21.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 Turbo 1106",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 22.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "GPT-4 Turbo 1106 | - | - | 22.3 | - | - | - | - | - | 13.9 | 33.0 | 36.4 | 58.5 | - | 11.1 | 2.6 | 9.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 Turbo 1106",
+        "method": "TAP-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 58.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "GPT-4 Turbo 1106 | ... | 58.5 | - | 11.1 | 2.6 | 9.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Claude 1",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 12.1,
+        "baseline_label": "Direct Request",
+        "baseline_value": 5.0,
+        "delta": 7.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Claude 1 | - | - | 12.1 | - | - | - | - | - | 4.8 | 10.0 | 7.0 | 1.5 | - | 1.3 | 2.4 | 5.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Claude 2",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 2.7,
+        "baseline_label": "Direct Request",
+        "baseline_value": 2.0,
+        "delta": 0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Claude 2 | - | - | 2.7 | - | - | - | - | - | 4.1 | 4.8 | 2.0 | 0.8 | - | 1.0 | 0.3 | 2.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Claude 2.1",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 2.6,
+        "baseline_label": "Direct Request",
+        "baseline_value": 2.0,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Claude 2.1 | - | - | 2.6 | - | - | - | - | - | 4.1 | 2.8 | 2.5 | 0.8 | - | 0.9 | 0.3 | 2.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemini Pro",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 18.0,
+        "baseline_label": "Direct Request",
+        "baseline_value": 18.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Gemini Pro | - | - | 18.0 | - | - | - | - | - | 14.8 | 35.1 | 38.8 | 31.2 | - | 11.8 | 12.1 | 18.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemini Pro",
+        "method": "TAP-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 31.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Gemini Pro | ... | 38.8 | 31.2",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Baichuan 2 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 61.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Baichuan 2 7B | 61.5 | 40.7 | 46.4 | 32.3 | 29.8 | 28.5 | 48.3 | 26.8 | 27.9 | 37.3 | 51.0 | 58.5 | 53.3 | 19.0 | 27.2 | 18.8",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen 7B Chat",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 59.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Qwen 7B Chat | 59.2 | 52.5 | 38.3 | 13.2 | 12.7 | 11.0 | 49.7 | 31.8 | 15.6 | 50.2 | 53.0 | 59.0 | 47.3 | 13.3 | 24.6 | 13.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Starling 7B",
+        "method": "GCG",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 66.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Starling 7B | 66.0 | 61.9 | 59.0 | 50.0 | 58.1 | 54.8 | 62.0 | 56.5 | 50.6 | 58.3 | 68.5 | 66.3 | 74.0 | 31.9 | 60.2 | 57.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Orca 2 13B",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 69.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Orca 2 13B | 50.7 | 30.3 | 52.0 | 35.7 | 33.4 | 36.3 | 31.8 | 50.5 | 42.8 | 55.8 | 59.5 | 63.8 | 69.8 | 19.6 | 42.4 | 44.5",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "SOLAR 10.7B-Instruct",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 72.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "SOLAR 10.7B-Instruct | 57.5 | 61.6 | 58.9 | 56.1 | 54.5 | 54.0 | 54.3 | 58.3 | 54.9 | 56.8 | 66.5 | 65.8 | 72.5 | 31.3 | 61.2 | 61.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenChat 3.5 1210",
+        "method": "AutoDAN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 73.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "OpenChat 3.5 1210 | 66.3 | 54.6 | 57.3 | 38.9 | 44.5 | 40.8 | 57.0 | 52.5 | 43.3 | 52.5 | 63.5 | 66.1 | 73.5 | 26.9 | 51.3 | 46.0",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral 8x7B",
+        "method": "GCG-T",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench (All Behaviors)",
+        "metric": "Attack Success Rate",
+        "value": 62.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 26,
+        "section": "C.3. Full Results",
+        "quote": "Mixtral 8x7B | - | - | 62.5 | - | - | - | - | 53.0 | 40.8 | 61.1 | 69.8 | 68.3 | 72.5 | 28.8 | 53.3 | 47.3",
+        "bbox": [
+          49.402265625,
+          436.11046875,
+          557.816484375,
+          683.82703125
+        ],
+        "block_id": "/page/25/Table/5",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench (overall benchmark scope)",
+        "method": "Coverage",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Number of unique behaviors",
+        "value": 510,
+        "baseline_label": "AdvBench (Zou et al., 2023)",
+        "baseline_value": 58,
+        "delta": 452,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1. Overview",
+        "quote": "HarmBench contains 510 unique harmful behaviors, split into 400 textual behaviors and 110 multimodal behaviors.",
+        "bbox": [
+          54.0,
+          538.5,
+          289.5,
+          597.0
+        ],
+        "block_id": "/page/4/Text/7",
+        "source_table": "Section 4.1 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench scope",
+        "method": "Coverage",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Number of red teaming methods evaluated",
+        "value": 18,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we conduct a largescale comparison of 18 red teaming methods and 33 target LLMs and defenses",
+        "bbox": [
+          73.51171875,
+          222.36328125,
+          273.6994323730469,
+          472.5460510253906
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "HarmBench scope",
+        "method": "Coverage",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HarmBench",
+        "metric": "Number of target LLMs evaluated",
+        "value": 33,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "a largescale comparison of 18 red teaming methods and 33 target LLMs and defenses",
+        "bbox": [
+          73.51171875,
+          222.36328125,
+          273.6994323730469,
+          472.5460510253906
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 103,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }
