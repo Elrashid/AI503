@@ -1303,5 +1303,4305 @@
         "block_id": "/page/4/Text/11"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy improvement vs FP16-Llama-3.2-1B (%)",
+        "value": 13.32,
+        "baseline_label": "FP16-Llama-3.2-1B",
+        "baseline_value": 47.81,
+        "delta": 13.32,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "5.1 RQ1",
+        "quote": "quantizing Llama-3.2-3B (SmoothQuant) improves accuracy by 13.32% on OpenLLM Leaderboard-v1 and 8.72% on OpenLLM Leaderboard-v2 compared to the FP16-Llama-3.2-1B",
+        "bbox": [
+          312.873046875,
+          416.109375,
+          558.3875122070312,
+          492.2890930175781
+        ],
+        "block_id": "/page/4/Text/19",
+        "source_table": "Section 5.1 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy improvement vs FP16-Llama-3.2-1B (%)",
+        "value": 8.72,
+        "baseline_label": "FP16-Llama-3.2-1B",
+        "baseline_value": 11.63,
+        "delta": 8.72,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "5.1 RQ1",
+        "quote": "improves accuracy by 13.32% on OpenLLM Leaderboard-v1 and 8.72% on OpenLLM Leaderboard-v2 compared to the FP16-Llama-3.2-1B",
+        "bbox": [
+          312.873046875,
+          416.109375,
+          558.3875122070312,
+          492.2890930175781
+        ],
+        "block_id": "/page/4/Text/19",
+        "source_table": "Section 5.1 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Average accuracy drop vs FP8 (%)",
+        "value": -10.86,
+        "baseline_label": "FP8",
+        "baseline_value": 46.42,
+        "delta": -10.86,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 RQ2",
+        "quote": "SmoothQuant's activation quantization resulted in a significant accuracy drop compared to other methods, with an average decrease of up to 10.86% compared to FP8 on the OpenLLM Leaderboard-v2 datasets",
+        "bbox": [
+          53.19140625,
+          55.6875,
+          297.345947265625,
+          165.0
+        ],
+        "block_id": "/page/5/Text/0",
+        "source_table": "Section 5.2 prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "GSM8k",
+        "metric": "Accuracy delta (%)",
+        "value": -25.32,
+        "baseline_label": "FP16",
+        "baseline_value": 33.36,
+        "delta": -25.32,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.3 RQ3",
+        "quote": "For smaller models, such as Llama-3.2-1B, 4-bit quantization causes particularly severe accuracy drops (e.g., -25.32% on GSM8k and -16.01% on IFEval)",
+        "bbox": [
+          52.892578125,
+          506.91815185546875,
+          298.738037109375,
+          604.6650848388672
+        ],
+        "block_id": "/page/5/Text/5",
+        "source_table": "Section 5.3 prose / Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "IFEval",
+        "metric": "Accuracy delta (%)",
+        "value": -16.01,
+        "baseline_label": "FP16",
+        "baseline_value": 41.61,
+        "delta": -16.01,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.3 RQ3",
+        "quote": "-25.32% on GSM8k and -16.01% on IFEval",
+        "bbox": [
+          52.892578125,
+          506.91815185546875,
+          298.738037109375,
+          604.6650848388672
+        ],
+        "block_id": "/page/5/Text/5",
+        "source_table": "Section 5.3 prose / Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 53.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-2-7B-Chat | FP16 | 16 / 16 | 14 | 53.16 | 21.91 | 78.92 | 47.24 | 45.32 | 72.13 | 53.11",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 49.3,
+        "baseline_label": "FP16",
+        "baseline_value": 53.11,
+        "delta": -3.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ* | 4 / 16 | 3.5 | 51.28 ... 49.30 (↓3.81)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 51.84,
+        "baseline_label": "FP16",
+        "baseline_value": 53.11,
+        "delta": -1.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 3.5 | 52.47 ... 51.84 (↓1.27)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 58.28,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-2-13B-Chat | FP16 | 16 / 16 | 26 | 58.87 | 35.55 | 82.45 | 53.55 | 43.95 | 75.29 | 58.28",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 56.82,
+        "baseline_label": "FP16",
+        "baseline_value": 58.28,
+        "delta": -1.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ* | 4/16 | 6.5 | 57.51 ... 56.82 (↓1.46)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 57.77,
+        "baseline_label": "FP16",
+        "baseline_value": 58.28,
+        "delta": -0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 6.5 | 57.94 ... 57.77 (↓0.51)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 66.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-2-70B-Chat | FP16 | 16 / 16 | 140 | 66.30 | 50.64 | 85.61 | 63.18 | 52.76 | 80.50 | 66.50",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 65.03,
+        "baseline_label": "FP16",
+        "baseline_value": 66.5,
+        "delta": -1.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ* | 4/16 | 35 | 62.88 ... 65.03 (↓1.47)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 65.66,
+        "baseline_label": "FP16",
+        "baseline_value": 66.5,
+        "delta": -0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 35 | 65.27 ... 65.66 (↓0.84)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 69.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-3.1-8B-it | FP16 | 16 / 16 | 16 | 60.24 | 76.65 | 80.21 | 68.10 | 54.03 | 76.16 | 69.23",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 69.36,
+        "baseline_label": "FP16",
+        "baseline_value": 69.23,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "FP8 | 8/8 | 8 | 61.52 ... 69.36 (↑0.13)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ-AutoGPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 67.97,
+        "baseline_label": "FP16",
+        "baseline_value": 69.23,
+        "delta": -1.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ* | 4/16 | 4 | 61.43 ... 67.97 (↓1.26)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 66.91,
+        "baseline_label": "FP16",
+        "baseline_value": 69.23,
+        "delta": -2.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ** | 4/16 | 4 | 59.81 ... 66.91 (↓2.32)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 69.42,
+        "baseline_label": "FP16",
+        "baseline_value": 69.23,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ** | 8 / 16 | 8 | 61.01 ... 69.42 (↑0.19)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 69.36,
+        "baseline_label": "FP16",
+        "baseline_value": 69.23,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "SmoothQuant | 8/8 | 8 | 60.75 ... 69.36 (↑0.13)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 67.42,
+        "baseline_label": "FP16",
+        "baseline_value": 69.23,
+        "delta": -1.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 4 | 58.53 ... 67.42 (↓1.81)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.76,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-3.1-70B-it | FP16 | 16 / 16 | 140 | 69.54 | 88.70 | 86.74 | 82.30 | 59.85 | 85.40 | 78.76",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.55,
+        "baseline_label": "FP16",
+        "baseline_value": 78.76,
+        "delta": -0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "FP8 | 8/8 | 70 | 69.45 ... 78.55 (↓0.21)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ-AutoGPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.51,
+        "baseline_label": "FP16",
+        "baseline_value": 78.76,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ* | 4/16 | 35 | 69.80 ... 78.51 (↓0.25)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.54,
+        "baseline_label": "FP16",
+        "baseline_value": 78.76,
+        "delta": -0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ** | 4/16 | 35 | 69.97 ... 78.54 (↓0.22)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.15,
+        "baseline_label": "FP16",
+        "baseline_value": 78.76,
+        "delta": -0.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ** | 8 / 16 | 70 | 69.03 ... 78.15 (↓0.61)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.82,
+        "baseline_label": "FP16",
+        "baseline_value": 78.76,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "SmoothQuant | 8/8 | 70 | 70.05 ... 78.82 (↑0.06)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.7,
+        "baseline_label": "FP16",
+        "baseline_value": 78.76,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 35 | 69.80 ... 78.70 (↓0.06)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 81.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-3.1-405B-it | FP16 | 16 / 16 | 810 | 73.72 | 94.84 | 88.40 | 83.98 | 65.42 | 85.00 | 81.89",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 82.19,
+        "baseline_label": "FP16",
+        "baseline_value": 81.89,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "FP8 | 8/8 | 405 | 73.12 ... 82.19 (↑0.30)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 81.76,
+        "baseline_label": "FP16",
+        "baseline_value": 81.89,
+        "delta": -0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ** | 4/16 | 202.5 | 72.10 ... 81.76 (↓0.13)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 79.45,
+        "baseline_label": "FP16",
+        "baseline_value": 81.89,
+        "delta": -2.44,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "SmoothQuant | 8/8 | 405 | 72.01 ... 79.45 (↓2.44)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 82.2,
+        "baseline_label": "FP16",
+        "baseline_value": 81.89,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 202.5 | 73.98 ... 82.20 (↑0.31)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 47.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-3.2-1B-it | FP16 | 16 / 16 | 2 | 42.06 | 33.36 | 59.62 | 45.44 | 43.82 | 62.59 | 47.81",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 47.74,
+        "baseline_label": "FP16",
+        "baseline_value": 47.81,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "FP8 | 8/8 | 1 | 41.98 ... 47.74 (↓0.07)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "GPTQ-AutoRound",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 37.67,
+        "baseline_label": "FP16",
+        "baseline_value": 47.81,
+        "delta": -10.14,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ*** | 4/16 | 0.5 | 34.90 ... 37.67 (↓10.14)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 47.46,
+        "baseline_label": "FP16",
+        "baseline_value": 47.81,
+        "delta": -0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "SmoothQuant | 8/8 | 0.5 | 42.06 ... 47.46 (↓0.35)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 42.09,
+        "baseline_label": "FP16",
+        "baseline_value": 47.81,
+        "delta": -5.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 0.5 | 38.48 ... 42.09 (↓5.72)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 61.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-3.2-3B-it | FP16 | 16 / 16 | 6 | 52.13 | 64.52 | 73.08 | 59.59 | 47.79 | 69.61 | 61.45",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 61.1,
+        "baseline_label": "FP16",
+        "baseline_value": 61.45,
+        "delta": -0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "FP8 | 8/8 | 3 | 51.37 ... 61.10 (↓0.35)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "GPTQ-AutoRound",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 59.64,
+        "baseline_label": "FP16",
+        "baseline_value": 61.45,
+        "delta": -1.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ*** | 4/16 | 1.5 | 50.26 ... 59.64 (↓1.81)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 61.13,
+        "baseline_label": "FP16",
+        "baseline_value": 61.45,
+        "delta": -0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "SmoothQuant | 8/8 | 1.5 | 51.37 ... 61.13 (↓0.32)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 59.76,
+        "baseline_label": "FP16",
+        "baseline_value": 61.45,
+        "delta": -1.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 1.5 | 50.51 ... 59.76 (↓1.69)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 79.33,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "Llama-3.3-70B-it | FP16 | 16 / 16 | 140 | 71.67 | 90.83 | 86.39 | 82.20 | 60.90 | 83.98 | 79.33",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "GPTQ-AutoRound",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.63,
+        "baseline_label": "FP16",
+        "baseline_value": 79.33,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "GPTQ*** | 4/16 | 35 | 69.71 ... 78.63 (↓0.70)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 78.5,
+        "baseline_label": "FP16",
+        "baseline_value": 79.33,
+        "delta": -0.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "Table 1",
+        "quote": "AWQ | 4/16 | 35 | 70.82 ... 78.50 (↓0.83)",
+        "bbox": [
+          60.948984375,
+          48.919921875,
+          549.855703125,
+          463.095703125
+        ],
+        "block_id": "/page/2/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 11.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-2-7B-Chat | FP16 | 16 / 16 | 14 | 12.23 | 1.59 | 35.31 | 1.93 | 11.04 | 8.89 | 11.83",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 8.69,
+        "baseline_label": "FP16",
+        "baseline_value": 11.83,
+        "delta": -3.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ* | 4 / 16 | 3.5 | 7.96 ... 8.69 (↓3.14)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 11.01,
+        "baseline_label": "FP16",
+        "baseline_value": 11.83,
+        "delta": -0.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 3.5 | 10.78 ... 11.01 (↓0.82)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 14.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-2-13B-Chat | FP16 | 16 / 16 | 26 | 16.87 | 4.03 | 37.45 | 1.56 | 15.36 | 10.00 | 14.21",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 13.42,
+        "baseline_label": "FP16",
+        "baseline_value": 14.21,
+        "delta": -0.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ* | 4 / 16 | 6.5 | 16.92 ... 13.42 (↓0.79)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 14.09,
+        "baseline_label": "FP16",
+        "baseline_value": 14.21,
+        "delta": -0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 6.5 | 16.54 ... 14.09 (↓0.12)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 19.04,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-2-70B-Chat | FP16 | 16 / 16 | 140 | 29.42 | 6.72 | 44.11 | 2.64 | 25.01 | 6.32 | 19.04",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 17.8,
+        "baseline_label": "FP16",
+        "baseline_value": 19.04,
+        "delta": -1.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ* | 4 / 16 | 35 | 25.80 ... 17.80 (↓1.24)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 18.37,
+        "baseline_label": "FP16",
+        "baseline_value": 19.04,
+        "delta": -0.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 35 | 28.63 ... 18.37 (↓0.67)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 22.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-3.1-8B-it | FP16 | 16 / 16 | 16 | 30.11 | 6.23 | 50.09 | 11.69 | 30.90 | 8.88 | 22.98",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 22.29,
+        "baseline_label": "FP16",
+        "baseline_value": 22.98,
+        "delta": -0.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "FP8 | 8 / 8 | 8 | 29.20 ... 22.29 (↓0.69)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ-AutoGPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 21.02,
+        "baseline_label": "FP16",
+        "baseline_value": 22.98,
+        "delta": -1.96,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ* | 4 / 16 | 4 | 25.86 ... 21.02 (↓1.96)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 20.83,
+        "baseline_label": "FP16",
+        "baseline_value": 22.98,
+        "delta": -2.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ** | 4 / 16 | 4 | 25.83 ... 20.83 (↓2.15)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 22.94,
+        "baseline_label": "FP16",
+        "baseline_value": 22.98,
+        "delta": -0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ** | 8 / 16 | 8 | 29.97 ... 22.94 (↓0.04)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 22.44,
+        "baseline_label": "FP16",
+        "baseline_value": 22.98,
+        "delta": -0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "SmoothQuant | 8 / 8 | 8 | 30.19 ... 22.44 (↓0.54)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 20.92,
+        "baseline_label": "FP16",
+        "baseline_value": 22.98,
+        "delta": -2.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 4 | 25.73 ... 20.92 (↓2.06)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 40.64,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-3.1-70B-it | FP16 | 16 / 16 | 140 | 55.90 | 16.48 | 75.48 | 28.68 | 48.00 | 19.32 | 40.64",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 40.61,
+        "baseline_label": "FP16",
+        "baseline_value": 40.64,
+        "delta": -0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "FP8 | 8 / 8 | 70 | 55.54 ... 40.61 (↓0.03)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ-AutoGPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 39.95,
+        "baseline_label": "FP16",
+        "baseline_value": 40.64,
+        "delta": -0.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ* | 4 / 16 | 35 | 53.65 ... 39.95 (↓0.69)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 38.77,
+        "baseline_label": "FP16",
+        "baseline_value": 40.64,
+        "delta": -1.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ** | 4 / 16 | 35 | 55.79 ... 38.77 (↓1.87)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "8-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 36.88,
+        "baseline_label": "FP16",
+        "baseline_value": 40.64,
+        "delta": -3.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ** | 8 / 16 | 70 | 54.79 ... 36.88 (↓3.76)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 40.25,
+        "baseline_label": "FP16",
+        "baseline_value": 40.64,
+        "delta": -0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "SmoothQuant | 8 / 8 | 70 | 55.06 ... 40.25 (↓0.39)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 40.39,
+        "baseline_label": "FP16",
+        "baseline_value": 40.64,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 35 | 54.08 ... 40.39 (↓0.25)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 47.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-3.1-405B-it | FP16 | 16 / 16 | 810 | 66.81 | 26.25 | 76.18 | 37.06 | 60.01 | 19.86 | 47.70",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 46.42,
+        "baseline_label": "FP16",
+        "baseline_value": 47.7,
+        "delta": -1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "FP8 | 8 / 8 | 405 | 65.22 ... 46.42 (↓1.28)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "GPTQ-llmcompressor",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 45.91,
+        "baseline_label": "FP16",
+        "baseline_value": 47.7,
+        "delta": -1.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ** | 4 / 16 | 202.5 | 66.21 ... 45.91 (↓1.79)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 35.56,
+        "baseline_label": "FP16",
+        "baseline_value": 47.7,
+        "delta": -12.14,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "SmoothQuant | 8 / 8 | 405 | 54.46 ... 35.56 (↓12.14)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "MMLU-PRO",
+        "metric": "Accuracy (5-shot)",
+        "value": 18.24,
+        "baseline_label": "FP16",
+        "baseline_value": 60.01,
+        "delta": -41.77,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "SmoothQuant | 8 / 8 | 405 | 54.46 (↓12.35) | 16.73 (↓9.52) | 70.34 (↓5.84) | 35.01 (↓2.05) | 18.24 (↓41.77) | 18.60 (↓1.26)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 42.66,
+        "baseline_label": "FP16",
+        "baseline_value": 47.7,
+        "delta": -5.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 202.5 | 65.50 ... 42.66 (↓5.04)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "IFEval",
+        "metric": "Strict Accuracy (0-shot)",
+        "value": 47.52,
+        "baseline_label": "FP16",
+        "baseline_value": 76.18,
+        "delta": -28.66,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 202.5 | 65.50 (↓1.31) | 26.50 (↑0.25) | 47.52 (↓28.66)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 11.63,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-3.2-1B-it | FP16 | 16 / 16 | 2 | 8.32 | 1.34 | 41.61 | 4.20 | 10.60 | 3.70 | 11.63",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 11.81,
+        "baseline_label": "FP16",
+        "baseline_value": 11.63,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "FP8 | 8 / 8 | 1 | 8.83 ... 11.81 (↑0.18)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "GPTQ-AutoRound",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 6.55,
+        "baseline_label": "FP16",
+        "baseline_value": 11.63,
+        "delta": -5.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ*** | 4 / 16 | 0.5 | 3.98 ... 6.55 (↓5.08)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 11.77,
+        "baseline_label": "FP16",
+        "baseline_value": 11.63,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "SmoothQuant | 8 / 8 | 0.5 | 8.22 ... 11.77 (↑0.14)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 8.78,
+        "baseline_label": "FP16",
+        "baseline_value": 11.63,
+        "delta": -2.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 0.5 | 5.21 ... 8.78 (↓2.85)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 20.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-3.2-3B-it | FP16 | 16 / 16 | 6 | 20.77 | 7.69 | 53.56 | 11.20 | 22.24 | 6.92 | 20.40",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "FP8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 20.18,
+        "baseline_label": "FP16",
+        "baseline_value": 20.4,
+        "delta": -0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "FP8 | 8 / 8 | 3 | 21.00 ... 20.18 (↓0.22)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "GPTQ-AutoRound",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 18.19,
+        "baseline_label": "FP16",
+        "baseline_value": 20.4,
+        "delta": -2.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ*** | 4 / 16 | 1.5 | 18.82 ... 18.19 (↓2.21)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 20.35,
+        "baseline_label": "FP16",
+        "baseline_value": 20.4,
+        "delta": -0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "SmoothQuant | 8 / 8 | 1.5 | 21.01 ... 20.35 (↓0.05)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 19.23,
+        "baseline_label": "FP16",
+        "baseline_value": 20.4,
+        "delta": -1.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 1.5 | 19.45 ... 19.23 (↓1.17)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 43.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "Llama-3.3-70B-it | FP16 | 16 / 16 | 140 | 56.78 | 30.40 | 69.03 | 30.95 | 49.78 | 22.28 | 43.20",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "GPTQ-AutoRound",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 40.88,
+        "baseline_label": "FP16",
+        "baseline_value": 43.2,
+        "delta": -2.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "GPTQ*** | 4 / 16 | 35 | 52.48 ... 40.88 (↓2.32)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 42.14,
+        "baseline_label": "FP16",
+        "baseline_value": 43.2,
+        "delta": -1.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "Table 2",
+        "quote": "AWQ | 4 / 16 | 35 | 55.89 ... 42.14 (↓1.06)",
+        "bbox": [
+          60.9609375,
+          49.37625,
+          548.6484375,
+          456.451875
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 51.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "Vicuna-7B-v1.3 | FP16 | 16 / 16 | 14 | 51.28 | 13.34 | 77.36 | 47.21 | 47.01 | 71.03 | 51.21",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 48.17,
+        "baseline_label": "FP16",
+        "baseline_value": 51.21,
+        "delta": -3.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "GPTQ* | 4 / 16 | 3.5 | 46.84 ... 48.17 (↓3.04)",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 50.82,
+        "baseline_label": "FP16",
+        "baseline_value": 51.21,
+        "delta": -0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "AWQ | 4 / 16 | 3.5 | 51.20 ... 50.82 (↓0.39)",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 42.54,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "Gemma-2B-it | FP16 | 16 / 16 | 4 | 44.03 | 4.01 | 63.01 | 36.92 | 45.76 | 61.48 | 42.54",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 42.13,
+        "baseline_label": "FP16",
+        "baseline_value": 42.54,
+        "delta": -0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "GPTQ* | 4 / 16 | 1 | 44.28 ... 42.13 (↓0.41)",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 41.07,
+        "baseline_label": "FP16",
+        "baseline_value": 42.54,
+        "delta": -1.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "AWQ | 4 / 16 | 1 | 42.74 ... 41.07 (↓1.47)",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 52.41,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "Gemma-7B-it | FP16 | 16 / 16 | 14 | 51.54 | 27.45 | 72.06 | 51.62 | 47.05 | 64.72 | 52.41",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 52.0,
+        "baseline_label": "FP16",
+        "baseline_value": 52.41,
+        "delta": -0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "GPTQ* | 4 / 16 | 3.5 | 51.02 ... 52.00 (↓0.41)",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v1",
+        "metric": "Accuracy (Avg)",
+        "value": 51.86,
+        "baseline_label": "FP16",
+        "baseline_value": 52.41,
+        "delta": -0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 4",
+        "quote": "AWQ | 4 / 16 | 3.5 | 50.43 ... 51.86 (↓0.55)",
+        "bbox": [
+          49.0616015625,
+          144.06046875,
+          561.7430859375,
+          281.33015625
+        ],
+        "block_id": "/page/11/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 9.64,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "Vicuna-7B-v1.3 | FP16 | 16 / 16 | 14 | 12.26 | 2.08 | 26.13 | 1.61 | 10.03 | 5.72 | 9.64",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 7.81,
+        "baseline_label": "FP16",
+        "baseline_value": 9.64,
+        "delta": -1.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "GPTQ* | 4 / 16 | 3.5 | 7.61 ... 7.81 (↓1.83)",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 7.78,
+        "baseline_label": "FP16",
+        "baseline_value": 9.64,
+        "delta": -1.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "AWQ | 4 / 16 | 3.5 | 10.65 ... 7.78 (↓1.86)",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 8.58,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "Gemma-2B-it | FP16 | 16 / 16 | 4 | 4.67 | 6.72 | 27.02 | 2.01 | 6.23 | 4.82 | 8.58",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 8.63,
+        "baseline_label": "FP16",
+        "baseline_value": 8.58,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "GPTQ* | 4 / 16 | 1 | 4.16 ... 8.63 (↓0.05)",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 8.13,
+        "baseline_label": "FP16",
+        "baseline_value": 8.58,
+        "delta": -0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "AWQ | 4 / 16 | 1 | 4.96 ... 8.13 (↓0.45)",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 14.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "Gemma-7B-it | FP16 | 16 / 16 | 14 | 15.89 | 3.54 | 35.68 | 2.65 | 14.55 | 17.00 | 14.89",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 15.43,
+        "baseline_label": "FP16",
+        "baseline_value": 14.89,
+        "delta": 0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "GPTQ* | 4 / 16 | 3.5 | 13.51 ... 15.43 (↑0.54)",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "OpenLLM Leaderboard-v2",
+        "metric": "Accuracy (Avg)",
+        "value": 15.02,
+        "baseline_label": "FP16",
+        "baseline_value": 14.89,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "B Additional Models / Table 5",
+        "quote": "AWQ | 4 / 16 | 3.5 | 15.63 ... 15.02 (↑0.13)",
+        "bbox": [
+          49.0616015625,
+          333.220078125,
+          561.7430859375,
+          464.967421875
+        ],
+        "block_id": "/page/11/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Vicuna-7B-v1.3 | ... | Avg. | 6.00 | 5.71 | 6.03",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.71,
+        "baseline_label": "FP16",
+        "baseline_value": 6.0,
+        "delta": -0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Vicuna-7B-v1.3 ... Avg. | 6.00 | 5.71",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B-v1.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.03,
+        "baseline_label": "FP16",
+        "baseline_value": 6.0,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Vicuna-7B-v1.3 ... Avg. | ... | 6.03",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 4.63,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Gemma-2B-it ... Avg. | 4.63 | 4.53 | 4.43",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 4.53,
+        "baseline_label": "FP16",
+        "baseline_value": 4.63,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Gemma-2B-it ... Avg. | 4.63 | 4.53",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-2B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 4.43,
+        "baseline_label": "FP16",
+        "baseline_value": 4.63,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Gemma-2B-it ... Avg. | ... | 4.43",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Gemma-7B-it ... Avg. | 5.99 | 5.56 | 5.63",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.56,
+        "baseline_label": "FP16",
+        "baseline_value": 5.99,
+        "delta": -0.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Gemma-7B-it ... Avg. | 5.99 | 5.56",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Gemma-7B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.63,
+        "baseline_label": "FP16",
+        "baseline_value": 5.99,
+        "delta": -0.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Gemma-7B-it ... Avg. | ... | 5.63",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.54,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-7B-Chat ... Avg. | 6.54 | 5.85 | 6.62",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.85,
+        "baseline_label": "FP16",
+        "baseline_value": 6.54,
+        "delta": -0.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-7B-Chat ... Avg. | 6.54 | 5.85",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.62,
+        "baseline_label": "FP16",
+        "baseline_value": 6.54,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-7B-Chat ... Avg. | ... | 6.62",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.05,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-13B-Chat ... Avg. | 7.05 | 6.83 | 6.91",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.83,
+        "baseline_label": "FP16",
+        "baseline_value": 7.05,
+        "delta": -0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-13B-Chat ... Avg. | 7.05 | 6.83",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.91,
+        "baseline_label": "FP16",
+        "baseline_value": 7.05,
+        "delta": -0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-13B-Chat ... Avg. | ... | 6.91",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.18,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-70B-Chat ... Avg. | 7.18 | 7.08 | 7.05",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.08,
+        "baseline_label": "FP16",
+        "baseline_value": 7.18,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-70B-Chat ... Avg. | 7.18 | 7.08",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.05,
+        "baseline_label": "FP16",
+        "baseline_value": 7.18,
+        "delta": -0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-2-70B-Chat ... Avg. | ... | 7.05",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-8B-it ... Avg. | 7.89 | 7.64 | 7.94",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.64,
+        "baseline_label": "FP16",
+        "baseline_value": 7.89,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-8B-it ... Avg. | 7.89 | 7.64",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-8B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.94,
+        "baseline_label": "FP16",
+        "baseline_value": 7.89,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-8B-it ... Avg. | ... | 7.94",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.02,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-70B-it ... Avg. | 9.02 | 8.90 | 9.08",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 8.9,
+        "baseline_label": "FP16",
+        "baseline_value": 9.02,
+        "delta": -0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-70B-it ... Avg. | 9.02 | 8.90",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-70B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.08,
+        "baseline_label": "FP16",
+        "baseline_value": 9.02,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-70B-it ... Avg. | ... | 9.08",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-405B-it ... Avg. | 9.12 | 9.10 | 9.14",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.1,
+        "baseline_label": "FP16",
+        "baseline_value": 9.12,
+        "delta": -0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-405B-it ... Avg. | 9.12 | 9.10",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.1-405B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.14,
+        "baseline_label": "FP16",
+        "baseline_value": 9.12,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.1-405B-it ... Avg. | ... | 9.14",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.22,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.2-1B-it ... Avg. | 5.22 | 4.88 | 5.17",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 4.88,
+        "baseline_label": "FP16",
+        "baseline_value": 5.22,
+        "delta": -0.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.2-1B-it ... Avg. | 5.22 | 4.88",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-1B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 5.17,
+        "baseline_label": "FP16",
+        "baseline_value": 5.22,
+        "delta": -0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.2-1B-it ... Avg. | ... | 5.17",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.2-3B-it ... Avg. | 7.11 | 6.72 | 7.17",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 6.72,
+        "baseline_label": "FP16",
+        "baseline_value": 7.11,
+        "delta": -0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.2-3B-it ... Avg. | 7.11 | 6.72",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.2-3B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 7.17,
+        "baseline_label": "FP16",
+        "baseline_value": 7.11,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.2-3B-it ... Avg. | ... | 7.17",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.3-70B-it ... Avg. | 9.13 | 9.04 | 8.94",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 9.04,
+        "baseline_label": "FP16",
+        "baseline_value": 9.13,
+        "delta": -0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.3-70B-it ... Avg. | 9.13 | 9.04",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3.3-70B-it",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MT-Bench",
+        "metric": "Score (0-10)",
+        "value": 8.94,
+        "baseline_label": "FP16",
+        "baseline_value": 9.13,
+        "delta": -0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Table 7",
+        "quote": "Llama-3.3-70B-it ... Avg. | ... | 8.94",
+        "bbox": [
+          153.633515625,
+          46.97859375,
+          454.780546875,
+          540.83390625
+        ],
+        "block_id": "/page/19/Table/0",
+        "source_table": "Table 7"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 143,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 12
   }
 }

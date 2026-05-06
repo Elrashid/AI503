@@ -1151,5 +1151,3375 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.68,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "baseline | 5.68 | 64.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN-INT4",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.98,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "int4 | 5.98 | 16.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "NF4",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.87,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "nf4 | 5.87 | 16.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "ATOM",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.77,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "ATOM-4bit | 5.77 | 16.6",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FlexGen",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.73,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "FlexGen-4bit | 5.73 | 17.3",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq4)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.72,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-4bit | 5.72 | 16.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.69,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-4bit-1% | 5.69 | 17.3",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN-INT3",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.87,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 5.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "int3 | 10.87 | 12.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "NF3",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.33,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "nf3 | 7.33 | 12.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "ATOM",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.17,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "ATOM-3bit | 6.17 | 12.6",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FlexGen",
+        "bit_width": "3-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.93,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "FlexGen-3bit | 5.93 | 13.2",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.87,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-3bit | 5.87 | 12.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.75,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-3bit-1% | 5.75 | 13.3",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN-INT2",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11779,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 11773.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "int2 | 11779 | 8.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "NF2",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3210,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 3204.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "nf2 | 3210 | 8.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "ATOM",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 37.37,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 31.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "ATOM-2bit | 37.37 | 8.6",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FlexGen",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.09,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 5.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "FlexGen-2bit | 11.09 | 9.1",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq2)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.23,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-2bit | 7.23 | 8.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.01,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-2bit-1% | 6.01 | 9.3",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "baseline | 5.68 | 64.0 | 5.09 | 100.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN-INT4",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.32,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "int4 | ... | 5.32 | 25.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "NF4",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.23,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "nf4 | ... | 5.23 | 25.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "ATOM",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.16,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "ATOM-4bit | ... | 5.16 | 26.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FlexGen",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.14,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "FlexGen-4bit | ... | 5.14 | 27.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "KVQuant (nuq4)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.13,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-4bit | ... | 5.13 | 25.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.1,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-4bit-1% | ... | 5.10 | 27.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN-INT3",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.69,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "int3 | ... | 8.69 | 18.8",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "NF3",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.21,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 1.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "nf3 | ... | 6.21 | 18.8",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "ATOM",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.47,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "ATOM-3bit | ... | 5.47 | 19.7",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FlexGen",
+        "bit_width": "3-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "FlexGen-3bit | ... | 5.29 | 20.6",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "KVQuant (nuq3)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.25,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-3bit | ... | 5.25 | 18.8",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.14,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-3bit-1% | ... | 5.14 | 20.8",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "KVQuant (nuq2)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.82,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-2bit | ... | 5.82 | 12.5",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.36,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-2bit-1% | ... | 5.36 | 14.5",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "baseline | ... | 4.10 | 195.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.11,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-4bit-1% | ... | 4.11 | 52.7",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.15,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-3bit-1% | ... | 4.15 | 40.5",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.35,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-2bit-1% | ... | 4.35 | 28.3",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "baseline | ... | 3.53 | 320.0",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.54,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-4bit-1% | ... | 3.54 | 86.5",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.57,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-3bit-1% | ... | 3.57 | 66.5",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.7,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "3.7 Kernel Implementation",
+        "quote": "KVQuant-2bit-1% | ... | 3.70 | 46.5",
+        "bbox": [
+          112.5087890625,
+          163.110234375,
+          493.5146484375,
+          369.014765625
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | 5.68 | 5.09 | 4.10 | 3.53 | 5.12 | 4.57 | 3.12",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.13,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-4bit-1% | 5.69 | 5.10 | 4.11 | 3.54 | 5.13",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.17,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | 5.75 | 5.14 | 4.15 | 3.57 | 5.17",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.41,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | 6.01 | 5.36 | 4.35 | 3.70 | 5.41",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.57,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | ... | 5.12 | 4.57 | 3.12",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.61,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | ... | 5.17 | 4.61 | 3.15",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.78,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | ... | 5.41 | 4.78 | 3.26",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | ... | 4.57 | 3.12 | 5.54",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.15,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | ... | 4.61 | 3.15 | 5.64",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.26,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | ... | 4.78 | 3.26 | 6.04",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.54,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | ... | 3.12 | 5.54 | 2.59",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.56,
+        "baseline_label": "FP16",
+        "baseline_value": 5.54,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-4bit-1% | ... | 5.13 | 3.13 | 5.56",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.64,
+        "baseline_label": "FP16",
+        "baseline_value": 5.54,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | ... | 5.17 | 3.15 | 5.64",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.04,
+        "baseline_label": "FP16",
+        "baseline_value": 5.54,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | ... | 5.41 | 3.26 | 6.04",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 2.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | ... | 5.54 | 2.59 | 4.76",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-70B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 2.63,
+        "baseline_label": "FP16",
+        "baseline_value": 2.59,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | ... | 5.64 | 2.63",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-70B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 2.82,
+        "baseline_label": "FP16",
+        "baseline_value": 2.59,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | ... | 6.04 | 2.82",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.76,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | ... | 2.59 | 4.76 | 16",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.82,
+        "baseline_label": "FP16",
+        "baseline_value": 4.76,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | ... | 2.63 | 4.82",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.14,
+        "baseline_label": "FP16",
+        "baseline_value": 4.76,
+        "delta": 0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | ... | 2.82 | 5.14",
+        "bbox": [
+          110.99671875,
+          515.46515625,
+          493.83140625,
+          715.84734375
+        ],
+        "block_id": "/page/22/Table/3",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.08,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "baseline | 7.08 | 6.61 | 5.98 | 5.62",
+        "bbox": [
+          109.4726953125,
+          341.047265625,
+          495.3554296875,
+          542.218359375
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.09,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-4bit-1% | 7.09 | 6.62 | 5.99 | 5.62",
+        "bbox": [
+          109.4726953125,
+          341.047265625,
+          495.3554296875,
+          542.218359375
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.13,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-3bit-1% | 7.13 | 6.64 | 6.00 | 5.63",
+        "bbox": [
+          109.4726953125,
+          341.047265625,
+          495.3554296875,
+          542.218359375
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.33,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "O Full Perplexity Evaluation",
+        "quote": "KVQuant-2bit-1% | 7.33 | 6.78 | 6.11 | 5.70",
+        "bbox": [
+          109.4726953125,
+          341.047265625,
+          495.3554296875,
+          542.218359375
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Passkey Retrieval (32K)",
+        "metric": "Success rate",
+        "value": 1.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "LLaMA-2-7B-32K | fp16 | 1 | 1 | 1 | 1 | 1 | 16",
+        "bbox": [
+          149.6949609375,
+          324.64265625,
+          456.3284765625,
+          424.04484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KIVI",
+        "bit_width": "2-bit",
+        "group_size": "g32 r128",
+        "dataset": "Passkey Retrieval (32K)",
+        "metric": "Success rate",
+        "value": 0.7,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "KIVI-2-gs32-r128 | 0.76 | 0.72 | 0.72 | 0.68 | 0.7 | 3.05",
+        "bbox": [
+          149.6949609375,
+          324.64265625,
+          456.3284765625,
+          424.04484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Passkey Retrieval (32K)",
+        "metric": "Success rate",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "nuq4-1% | 1 | 1 | 1 | 1 | 1 | 4.33",
+        "bbox": [
+          149.6949609375,
+          324.64265625,
+          456.3284765625,
+          424.04484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Passkey Retrieval (32K)",
+        "metric": "Success rate",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "nuq3-1% | 0.98 | 1 | 1 | 1 | 1 | 3.33",
+        "bbox": [
+          149.6949609375,
+          324.64265625,
+          456.3284765625,
+          424.04484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Passkey Retrieval (32K)",
+        "metric": "Success rate",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "nuq2-1% | 1 | 1 | 0.98 | 1 | 1 | 2.33",
+        "bbox": [
+          149.6949609375,
+          324.64265625,
+          456.3284765625,
+          424.04484375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench",
+        "metric": "Average score",
+        "value": 31.96,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "fp16 Baseline | 16 | ... | 31.96",
+        "bbox": [
+          101.4641015625,
+          120.8109375,
+          511.7312109375,
+          183.9234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KIVI",
+        "bit_width": "2-bit",
+        "group_size": "g32 r128",
+        "dataset": "LongBench",
+        "metric": "Average score",
+        "value": 30.04,
+        "baseline_label": "FP16",
+        "baseline_value": 31.96,
+        "delta": -1.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "KIVI-2-gs32-r128 | 3.17 | ... | 30.04",
+        "bbox": [
+          101.4641015625,
+          120.8109375,
+          511.7312109375,
+          183.9234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "LongBench",
+        "metric": "Average score",
+        "value": 31.21,
+        "baseline_label": "FP16",
+        "baseline_value": 31.96,
+        "delta": -0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "KVQuant-3bit-1% | 3.33 | ... | 31.21",
+        "bbox": [
+          101.4641015625,
+          120.8109375,
+          511.7312109375,
+          183.9234375
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RULER",
+        "metric": "Average accuracy",
+        "value": 56.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "fp16 Baseline | 16 | ... | 56.40",
+        "bbox": [
+          101.76890625,
+          248.667890625,
+          511.42640625,
+          326.769609375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KIVI",
+        "bit_width": "2-bit",
+        "group_size": "g32 r128",
+        "dataset": "RULER",
+        "metric": "Average accuracy",
+        "value": 39.78,
+        "baseline_label": "FP16",
+        "baseline_value": 56.4,
+        "delta": -16.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "KIVI-2-gs32-r128 | 3.05 | ... | 39.78",
+        "bbox": [
+          101.76890625,
+          248.667890625,
+          511.42640625,
+          326.769609375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "RULER",
+        "metric": "Average accuracy",
+        "value": 53.65,
+        "baseline_label": "FP16",
+        "baseline_value": 56.4,
+        "delta": -2.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "KVQuant-3bit-1% | 3.33 | ... | 53.65",
+        "bbox": [
+          101.76890625,
+          248.667890625,
+          511.42640625,
+          326.769609375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq2-1%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "RULER",
+        "metric": "Average accuracy",
+        "value": 36.54,
+        "baseline_label": "FP16",
+        "baseline_value": 56.4,
+        "delta": -19.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Long Context Length Evaluation",
+        "quote": "KVQuant-2bit-1% | 2.33 | ... | 36.54",
+        "bbox": [
+          101.76890625,
+          248.667890625,
+          511.42640625,
+          326.769609375
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (w4-s45) + KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.79,
+        "baseline_label": "SqueezeLLM (w4-s45) + fp16 KV",
+        "baseline_value": 5.77,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "nuq4-1% | 5.79 | 5.18 | 4.32-4.33",
+        "bbox": [
+          185.333203125,
+          126.905625,
+          423.080859375,
+          199.485
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (w3-s45) + KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.23,
+        "baseline_label": "SqueezeLLM (w3-s45) + fp16 KV",
+        "baseline_value": 6.13,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "nuq3-1% | 6.23 | 5.52 | 3.32-3.33",
+        "bbox": [
+          185.333203125,
+          126.905625,
+          423.080859375,
+          199.485
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM (w4-s45) + KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.18,
+        "baseline_label": "SqueezeLLM (w4-s45) + fp16 KV",
+        "baseline_value": 5.17,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "nuq4-1% | 5.79 | 5.18 | 4.32-4.33",
+        "bbox": [
+          185.333203125,
+          126.905625,
+          423.080859375,
+          199.485
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM (w3-s45) + KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.52,
+        "baseline_label": "SqueezeLLM (w3-s45) + fp16 KV",
+        "baseline_value": 5.45,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "nuq3-1% | 6.23 | 5.52 | 3.32-3.33",
+        "bbox": [
+          185.333203125,
+          126.905625,
+          423.080859375,
+          199.485
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=2K)",
+        "metric": "Key Matvec latency (us)",
+        "value": 33.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Key | fp16 Matvec | 33.3 | 59.1 | 219.4",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=2K)",
+        "metric": "Key Matvec latency (us)",
+        "value": 25.6,
+        "baseline_label": "FP16",
+        "baseline_value": 33.3,
+        "delta": 1.3,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Key | nuq4-1% | 25.6 | 39.9 | 126.3",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=4K)",
+        "metric": "Key Matvec latency (us)",
+        "value": 59.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Key | fp16 Matvec | 33.3 | 59.1 | 219.4",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=4K)",
+        "metric": "Key Matvec latency (us)",
+        "value": 39.9,
+        "baseline_label": "FP16",
+        "baseline_value": 59.1,
+        "delta": 1.48,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Key | nuq4-1% | 25.6 | 39.9 | 126.3",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=16K)",
+        "metric": "Key Matvec latency (us)",
+        "value": 219.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Key | fp16 Matvec | 33.3 | 59.1 | 219.4",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=16K)",
+        "metric": "Key Matvec latency (us)",
+        "value": 126.3,
+        "baseline_label": "FP16",
+        "baseline_value": 219.4,
+        "delta": 1.74,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Key | nuq4-1% | 25.6 | 39.9 | 126.3",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=2K)",
+        "metric": "Value Matvec latency (us)",
+        "value": 26.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Value | fp16 Matvec | 26.0 | 50.2 | 203.7",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=2K)",
+        "metric": "Value Matvec latency (us)",
+        "value": 22.1,
+        "baseline_label": "FP16",
+        "baseline_value": 26.0,
+        "delta": 1.18,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Value | nuq4-1% | 22.1 | 37.9 | 124.5",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=4K)",
+        "metric": "Value Matvec latency (us)",
+        "value": 50.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Value | fp16 Matvec | 26.0 | 50.2 | 203.7",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=4K)",
+        "metric": "Value Matvec latency (us)",
+        "value": 37.9,
+        "baseline_label": "FP16",
+        "baseline_value": 50.2,
+        "delta": 1.32,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Value | nuq4-1% | 22.1 | 37.9 | 124.5",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=16K)",
+        "metric": "Value Matvec latency (us)",
+        "value": 203.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Value | fp16 Matvec | 26.0 | 50.2 | 203.7",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-32K",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU (l=16K)",
+        "metric": "Value Matvec latency (us)",
+        "value": 124.5,
+        "baseline_label": "FP16",
+        "baseline_value": 203.7,
+        "delta": 1.64,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.4 Performance Analysis and Memory Savings",
+        "quote": "Value | nuq4-1% | 22.1 | 37.9 | 124.5",
+        "bbox": [
+          205.486171875,
+          282.111328125,
+          399.341953125,
+          341.279296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Memory @ 128K seq",
+        "metric": "KV Cache size (GB)",
+        "value": 64.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "B.1 Outlier-Aware LLM Quantization",
+        "quote": "LLaMA-7B | fp16 | 64.0 | 512.0 | 4882.8",
+        "bbox": [
+          201.79265625,
+          125.088046875,
+          406.62140625,
+          264.724453125
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq2)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Memory @ 1M seq",
+        "metric": "KV Cache size (GB)",
+        "value": 64.1,
+        "baseline_label": "FP16",
+        "baseline_value": 512.0,
+        "delta": 8.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "B.1 Outlier-Aware LLM Quantization",
+        "quote": "nuq2 | 8.0 | 64.1 | 611.5",
+        "bbox": [
+          201.79265625,
+          125.088046875,
+          406.62140625,
+          264.724453125
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Memory @ 128K seq",
+        "metric": "KV Cache size (GB)",
+        "value": 13.3,
+        "baseline_label": "FP16",
+        "baseline_value": 64.0,
+        "delta": 4.81,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "B.1 Outlier-Aware LLM Quantization",
+        "quote": "nuq3-1% | 13.3 | 106.4 | 1014.4",
+        "bbox": [
+          201.79265625,
+          125.088046875,
+          406.62140625,
+          264.724453125
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq4-1%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Memory @ 128K seq",
+        "metric": "KV Cache size (GB)",
+        "value": 17.3,
+        "baseline_label": "FP16",
+        "baseline_value": 64.0,
+        "delta": 3.7,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "B.1 Outlier-Aware LLM Quantization",
+        "quote": "nuq4-1% | 17.3 | 138.4 | 1319.6",
+        "bbox": [
+          201.79265625,
+          125.088046875,
+          406.62140625,
+          264.724453125
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (PT-PT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.87,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 5.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "G Per-Channel Key Quantization Ablations",
+        "quote": "int3 | PT | PT | 10.87 | 12.0",
+        "bbox": [
+          189.636328125,
+          305.221640625,
+          415.191796875,
+          373.856484375
+        ],
+        "block_id": "/page/17/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (PC-PT)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.05,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "G Per-Channel Key Quantization Ablations",
+        "quote": "int3 | PC | PT | 7.05 | 12.0",
+        "bbox": [
+          189.636328125,
+          305.221640625,
+          415.191796875,
+          373.856484375
+        ],
+        "block_id": "/page/17/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (post-RoPE)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.05,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "H Pre-RoPE Key Quantization Ablations",
+        "quote": "int3 | post-RoPE | 7.05 | 12.0",
+        "bbox": [
+          210.6558984375,
+          529.23234375,
+          395.3675390625,
+          587.61140625
+        ],
+        "block_id": "/page/17/Table/7",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (pre-RoPE)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.23,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "H Pre-RoPE Key Quantization Ablations",
+        "quote": "int3 | pre-RoPE | 6.23 | 12.0",
+        "bbox": [
+          210.6558984375,
+          529.23234375,
+          395.3675390625,
+          587.61140625
+        ],
+        "block_id": "/page/17/Table/7",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3 unweighted)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.84,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I Sensitivity-Weighted Non-Uniform Quantization Ablations",
+        "quote": "nuq3 (unweighted) | 6.84 | 6.16 | 5.37 | 4.57",
+        "bbox": [
+          133.8331640625,
+          221.93015625,
+          473.3855859375,
+          305.55421875
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3 Fisher-weighted)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.01,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I Sensitivity-Weighted Non-Uniform Quantization Ablations",
+        "quote": "nuq3 (Fisher-weighted) | 6.01 | 5.34 | 4.41 | 3.74",
+        "bbox": [
+          133.8331640625,
+          221.93015625,
+          473.3855859375,
+          305.55421875
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3 full)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.94,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "I Sensitivity-Weighted Non-Uniform Quantization Ablations",
+        "quote": "nuq3 (KVQuant) | 5.94 | 5.32 | 4.34 | 3.68",
+        "bbox": [
+          133.8331640625,
+          221.93015625,
+          473.3855859375,
+          305.55421875
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3 PM-0.1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.89,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "J Per-Vector Dense-and-Sparse Quantization Ablations",
+        "quote": "nuq3 | 0.1% | PM | 5.89",
+        "bbox": [
+          186.564375,
+          537.794296875,
+          420.654375,
+          630.096328125
+        ],
+        "block_id": "/page/18/Table/6",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3 PV-0.1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.82,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "J Per-Vector Dense-and-Sparse Quantization Ablations",
+        "quote": "nuq3 | 0.1% | PV | 5.82",
+        "bbox": [
+          186.564375,
+          537.794296875,
+          420.654375,
+          630.096328125
+        ],
+        "block_id": "/page/18/Table/6",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "KVQuant (nuq3 PM-1%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.85,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "J Per-Vector Dense-and-Sparse Quantization Ablations",
+        "quote": "nuq3 | 1% | PM | 5.85",
+        "bbox": [
+          186.564375,
+          537.794296875,
+          420.654375,
+          630.096328125
+        ],
+        "block_id": "/page/18/Table/6",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B",
+        "method": "KVQuant (nuq2-1% no AS)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.54,
+        "delta": 0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K Attention Sink-Aware Quantization Ablations",
+        "quote": "nuq2-1% | X | 6.05 | 5.39 | 5.47 | 4.85 | 6.29 | 2.95",
+        "bbox": [
+          109.1559375,
+          161.8340625,
+          496.8675,
+          300.6815625
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B",
+        "method": "KVQuant (nuq2-1% with AS)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.04,
+        "baseline_label": "FP16",
+        "baseline_value": 5.54,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "K Attention Sink-Aware Quantization Ablations",
+        "quote": "nuq2-1% | O | 6.01 | 5.36 | 5.41 | 4.78 | 6.04 | 2.82",
+        "bbox": [
+          109.1559375,
+          161.8340625,
+          496.8675,
+          300.6815625
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "KVQuant (4-bit calibration)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Calibration time per layer (min)",
+        "value": 4.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "L Calibration Ablations",
+        "quote": "4-bit Calibration Per-Layer (including k-means) | 4.5",
+        "bbox": [
+          198.15890625,
+          575.685,
+          407.86453125,
+          629.330625
+        ],
+        "block_id": "/page/20/Table/7",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "KVQuant (Fisher info)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Fisher info compute time (min)",
+        "value": 2.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "L Calibration Ablations",
+        "quote": "Computing Fisher Information | 2.8",
+        "bbox": [
+          198.15890625,
+          575.685,
+          407.86453125,
+          629.330625
+        ],
+        "block_id": "/page/20/Table/7",
+        "source_table": "Table 16"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 112,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 10
   }
 }

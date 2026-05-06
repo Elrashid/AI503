@@ -1,0 +1,140 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP16,LLaMA-7B,SqueezeLLM,3-bit,,C4,Perplexity,7.75,FP16,7.08,0.67,absolute,True,measured,1,Abstract,Abstract,our 3-bit quantization significantly reduces the perplexity gap from the FP16 baseline by up to 2.1x
+RP16,LLaMA-7B,SqueezeLLM,3-bit,,C4,Speedup over FP16,2.3,FP16,1.0,1.3,x_factor,True,measured,1,Abstract,Abstract,"when deployed on an A6000 GPU, our quantized models achieve up to 2.3x speedup compared to the baseline"
+RP16,LLaMA-7B,RTN,3-bit,,C4,Perplexity,28.26,FP16,7.08,21.18,absolute,True,measured,2,1. Introduction,Intro list,improves the perplexity of 3-bit LLaMA-7B from 28.26 of uniform quantization to 7.75 on C4
+RP16,LLaMA-7B,SqueezeLLM (0.45%),3-bit,,C4,Perplexity,7.56,FP16,7.08,0.48,absolute,True,measured,2,1. Introduction,Intro list,"By extracting only 0.45% of the weight values as the sparse component, we further improve the perplexity of LLaMA-7B from 7.75 to 7.58 on C4"
+RP16,LLaMA-7B,SqueezeLLM,3-bit,,A6000 GPU,Speedup over FP16,2.4,FP16,1.0,1.4,x_factor,True,measured,2,1. Introduction,Intro,our deployed models on A6000 GPUs also exhibit significant latency gains of up to 2.4x compared to the FP16 baseline
+RP16,LLaMA-7B,FP16,16-bit,,C4,Perplexity,7.08,,,,,False,measured,7,5.2. Main Results,Table 1,Baseline | 16 | 7.08 | 5.68
+RP16,LLaMA-7B,FP16,16-bit,,WikiText-2,Perplexity,5.68,,,,,False,measured,7,5.2. Main Results,Table 1,Baseline | 16 | 7.08 | 5.68
+RP16,LLaMA-7B,RTN,3-bit,,WikiText-2,Perplexity,25.61,FP16,5.68,19.93,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 28.26 | 25.61
+RP16,LLaMA-7B,GPTQ,3-bit,,C4,Perplexity,9.55,FP16,7.08,2.47,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 9.55 ... 7.55
+RP16,LLaMA-7B,GPTQ,3-bit,,WikiText-2,Perplexity,7.55,FP16,5.68,1.87,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 9.55 ... 7.55
+RP16,LLaMA-7B,SqueezeLLM,3-bit,,WikiText-2,Perplexity,6.32,FP16,5.68,0.64,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 7.75 ... 6.32
+RP16,LLaMA-7B,RTN,4-bit,,C4,Perplexity,7.73,FP16,7.08,0.65,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 7.73 ... 6.29
+RP16,LLaMA-7B,RTN,4-bit,,WikiText-2,Perplexity,6.29,FP16,5.68,0.61,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 7.73 ... 6.29
+RP16,LLaMA-7B,GPTQ,4-bit,,C4,Perplexity,7.43,FP16,7.08,0.35,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 7.43 ... 5.94
+RP16,LLaMA-7B,GPTQ,4-bit,,WikiText-2,Perplexity,5.94,FP16,5.68,0.26,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 7.43 ... 5.94
+RP16,LLaMA-7B,SqueezeLLM,4-bit,,C4,Perplexity,7.21,FP16,7.08,0.13,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 7.21 ... 5.79
+RP16,LLaMA-7B,SqueezeLLM,4-bit,,WikiText-2,Perplexity,5.79,FP16,5.68,0.11,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 7.21 ... 5.79
+RP16,LLaMA-7B,GPTQ (no reorder),3-bit,g128,C4,Perplexity,10.09,FP16,7.08,3.01,absolute,False,measured,7,5.2. Main Results,Table 1,"GPTQ (g128, no reorder) ... 10.09 ... 8.85"
+RP16,LLaMA-7B,GPTQ (no reorder),3-bit,g128,WikiText-2,Perplexity,8.85,FP16,5.68,3.17,absolute,False,measured,7,5.2. Main Results,Table 1,"GPTQ (g128, no reorder) ... 10.09 ... 8.85"
+RP16,LLaMA-7B,GPTQ,3-bit,g128,C4,Perplexity,7.89,FP16,7.08,0.81,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ (g128) ... 7.89 ... 6.27
+RP16,LLaMA-7B,GPTQ,3-bit,g128,WikiText-2,Perplexity,6.27,FP16,5.68,0.59,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ (g128) ... 7.89 ... 6.27
+RP16,LLaMA-7B,AWQ,3-bit,g128,C4,Perplexity,7.9,FP16,7.08,0.82,absolute,False,measured,7,5.2. Main Results,Table 1,AWQ (g128) ... 7.90 ... 6.44
+RP16,LLaMA-7B,AWQ,3-bit,g128,WikiText-2,Perplexity,6.44,FP16,5.68,0.76,absolute,False,measured,7,5.2. Main Results,Table 1,AWQ (g128) ... 7.90 ... 6.44
+RP16,LLaMA-7B,SqueezeLLM (0.45%),3-bit,,WikiText-2,Perplexity,6.13,FP16,5.68,0.45,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM (0.45%) ... 7.56 ... 6.13
+RP16,LLaMA-7B,GPTQ,4-bit,g128,C4,Perplexity,7.21,FP16,7.08,0.13,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ (g128) ... 7.21 ... 5.78
+RP16,LLaMA-7B,GPTQ,4-bit,g128,WikiText-2,Perplexity,5.78,FP16,5.68,0.1,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ (g128) ... 7.21 ... 5.78
+RP16,LLaMA-7B,AWQ,4-bit,g128,C4,Perplexity,7.22,FP16,7.08,0.14,absolute,False,measured,7,5.2. Main Results,Table 1,AWQ (g128) ... 7.22 ... 5.82
+RP16,LLaMA-7B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.82,FP16,5.68,0.14,absolute,False,measured,7,5.2. Main Results,Table 1,AWQ (g128) ... 7.22 ... 5.82
+RP16,LLaMA-7B,SqueezeLLM (0.45%),4-bit,,C4,Perplexity,7.18,FP16,7.08,0.1,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM (0.45%) ... 7.18 ... 5.77
+RP16,LLaMA-7B,SqueezeLLM (0.45%),4-bit,,WikiText-2,Perplexity,5.77,FP16,5.68,0.09,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM (0.45%) ... 7.18 ... 5.77
+RP16,LLaMA-13B,FP16,16-bit,,C4,Perplexity,6.61,,,,,False,measured,7,5.2. Main Results,Table 1,Baseline | 16 | 6.61 | 5.09
+RP16,LLaMA-13B,FP16,16-bit,,WikiText-2,Perplexity,5.09,,,,,False,measured,7,5.2. Main Results,Table 1,Baseline | 16 | 6.61 | 5.09
+RP16,LLaMA-13B,RTN,3-bit,,C4,Perplexity,13.24,FP16,6.61,6.63,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 13.24 ... 11.78
+RP16,LLaMA-13B,RTN,3-bit,,WikiText-2,Perplexity,11.78,FP16,5.09,6.69,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 13.24 ... 11.78
+RP16,LLaMA-13B,GPTQ,3-bit,,C4,Perplexity,8.22,FP16,6.61,1.61,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 8.22 ... 6.22
+RP16,LLaMA-13B,GPTQ,3-bit,,WikiText-2,Perplexity,6.22,FP16,5.09,1.13,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 8.22 ... 6.22
+RP16,LLaMA-13B,SqueezeLLM,3-bit,,C4,Perplexity,7.08,FP16,6.61,0.47,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 7.08 ... 5.60
+RP16,LLaMA-13B,SqueezeLLM,3-bit,,WikiText-2,Perplexity,5.6,FP16,5.09,0.51,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 7.08 ... 5.60
+RP16,LLaMA-13B,RTN,4-bit,,C4,Perplexity,6.99,FP16,6.61,0.38,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 6.99 ... 5.53
+RP16,LLaMA-13B,RTN,4-bit,,WikiText-2,Perplexity,5.53,FP16,5.09,0.44,absolute,False,measured,7,5.2. Main Results,Table 1,RTN ... 6.99 ... 5.53
+RP16,LLaMA-13B,GPTQ,4-bit,,C4,Perplexity,6.84,FP16,6.61,0.23,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 6.84 ... 5.29
+RP16,LLaMA-13B,GPTQ,4-bit,,WikiText-2,Perplexity,5.29,FP16,5.09,0.2,absolute,False,measured,7,5.2. Main Results,Table 1,GPTQ ... 6.84 ... 5.29
+RP16,LLaMA-13B,SqueezeLLM,4-bit,,C4,Perplexity,6.71,FP16,6.61,0.1,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 6.71 ... 5.18
+RP16,LLaMA-13B,SqueezeLLM,4-bit,,WikiText-2,Perplexity,5.18,FP16,5.09,0.09,absolute,False,measured,7,5.2. Main Results,Table 1,SqueezeLLM ... 6.71 ... 5.18
+RP16,Vicuna-7B (v1.1),FP16,16-bit,,MMLU,Zero-shot Accuracy,39.1,,,,,False,measured,8,5.2. Main Results,Table 2,Baseline | 16 | 39.1% | 12.7
+RP16,Vicuna-7B (v1.1),AWQ,4-bit,g128,MMLU,Zero-shot Accuracy,38.0,FP16,39.1,-1.1,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 4.25 | 38.0% | 3.8
+RP16,Vicuna-7B (v1.1),SqueezeLLM,4-bit,,MMLU,Zero-shot Accuracy,38.8,FP16,39.1,-0.3,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 4.05 | 38.8% | 3.8
+RP16,Vicuna-7B (v1.1),SqueezeLLM (0.45%),4-bit,,MMLU,Zero-shot Accuracy,39.4,FP16,39.1,0.3,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 4.26 | 39.4% | 4.0
+RP16,Vicuna-7B (v1.1),AWQ,3-bit,g128,MMLU,Zero-shot Accuracy,36.5,FP16,39.1,-2.6,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 3.25 | 36.5% | 3.0
+RP16,Vicuna-7B (v1.1),SqueezeLLM,3-bit,,MMLU,Zero-shot Accuracy,36.0,FP16,39.1,-3.1,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 3.02 | 36.0% | 2.9
+RP16,Vicuna-7B (v1.1),SqueezeLLM (0.45%),3-bit,,MMLU,Zero-shot Accuracy,37.7,FP16,39.1,-1.4,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 3.24 | 37.7% | 3.1
+RP16,Vicuna-13B (v1.1),FP16,16-bit,,MMLU,Zero-shot Accuracy,41.2,,,,,False,measured,8,5.2. Main Results,Table 2,Baseline | 16 | 39.1% | 12.7 | 41.2% | 24.6
+RP16,Vicuna-13B (v1.1),AWQ,4-bit,g128,MMLU,Zero-shot Accuracy,40.4,FP16,41.2,-0.8,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 4.25 | ... | 40.4% | 7.2
+RP16,Vicuna-13B (v1.1),SqueezeLLM,4-bit,,MMLU,Zero-shot Accuracy,39.2,FP16,41.2,-2.0,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 4.05 | ... | 39.2% | 6.9
+RP16,Vicuna-13B (v1.1),SqueezeLLM (0.45%),4-bit,,MMLU,Zero-shot Accuracy,41.0,FP16,41.2,-0.2,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 4.26 | ... | 41.0% | 7.3
+RP16,Vicuna-13B (v1.1),AWQ,3-bit,g128,MMLU,Zero-shot Accuracy,37.6,FP16,41.2,-3.6,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 3.25 | ... | 37.6% | 5.7
+RP16,Vicuna-13B (v1.1),SqueezeLLM,3-bit,,MMLU,Zero-shot Accuracy,37.2,FP16,41.2,-4.0,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 3.02 | ... | 37.2% | 5.4
+RP16,Vicuna-13B (v1.1),SqueezeLLM (0.45%),3-bit,,MMLU,Zero-shot Accuracy,39.4,FP16,41.2,-1.8,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 3.24 | ... | 39.4% | 5.8
+RP16,Vicuna-7B (v1.3),FP16,16-bit,,MMLU,Zero-shot Accuracy,40.2,,,,,False,measured,8,5.2. Main Results,Table 2,Baseline | 16 | ... | 40.2% | 12.7
+RP16,Vicuna-7B (v1.3),AWQ,4-bit,g128,MMLU,Zero-shot Accuracy,39.6,FP16,40.2,-0.6,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 4.25 | ... | 39.6% | 3.8
+RP16,Vicuna-7B (v1.3),SqueezeLLM,4-bit,,MMLU,Zero-shot Accuracy,39.3,FP16,40.2,-0.9,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 4.05 | ... | 39.3% | 3.8
+RP16,Vicuna-7B (v1.3),SqueezeLLM (0.45%),4-bit,,MMLU,Zero-shot Accuracy,39.5,FP16,40.2,-0.7,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 4.26 | ... | 39.5% | 4.0
+RP16,Vicuna-7B (v1.3),AWQ,3-bit,g128,MMLU,Zero-shot Accuracy,37.4,FP16,40.2,-2.8,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 3.25 | ... | 37.4% | 3.0
+RP16,Vicuna-7B (v1.3),SqueezeLLM,3-bit,,MMLU,Zero-shot Accuracy,35.1,FP16,40.2,-5.1,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 3.02 | ... | 35.1% | 2.9
+RP16,Vicuna-7B (v1.3),SqueezeLLM (0.45%),3-bit,,MMLU,Zero-shot Accuracy,37.6,FP16,40.2,-2.6,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 3.24 | ... | 37.6% | 3.1
+RP16,Vicuna-13B (v1.3),FP16,16-bit,,MMLU,Zero-shot Accuracy,43.3,,,,,False,measured,8,5.2. Main Results,Table 2,Baseline | 16 | ... | 43.3% | 24.6
+RP16,Vicuna-13B (v1.3),AWQ,4-bit,g128,MMLU,Zero-shot Accuracy,42.2,FP16,43.3,-1.1,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 4.25 | ... | 42.2% | 7.2
+RP16,Vicuna-13B (v1.3),SqueezeLLM,4-bit,,MMLU,Zero-shot Accuracy,44.1,FP16,43.3,0.8,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 4.05 | ... | 44.1% | 6.9
+RP16,Vicuna-13B (v1.3),SqueezeLLM (0.45%),4-bit,,MMLU,Zero-shot Accuracy,43.8,FP16,43.3,0.5,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 4.26 | ... | 43.8% | 7.3
+RP16,Vicuna-13B (v1.3),AWQ,3-bit,g128,MMLU,Zero-shot Accuracy,40.7,FP16,43.3,-2.6,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 3.25 | ... | 40.7% | 5.7
+RP16,Vicuna-13B (v1.3),SqueezeLLM,3-bit,,MMLU,Zero-shot Accuracy,40.5,FP16,43.3,-2.8,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 3.02 | ... | 40.5% | 5.4
+RP16,Vicuna-13B (v1.3),SqueezeLLM (0.45%),3-bit,,MMLU,Zero-shot Accuracy,40.8,FP16,43.3,-2.5,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 3.24 | ... | 40.8% | 5.8
+RP16,Vicuna-33B (v1.3),FP16,16-bit,,MMLU,Zero-shot Accuracy,49.5,,,,,False,measured,8,5.2. Main Results,Table 2,Baseline | 16 | ... | 49.5% | OOM
+RP16,Vicuna-33B (v1.3),AWQ,4-bit,g128,MMLU,Zero-shot Accuracy,49.5,FP16,49.5,0.0,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 4.25 | ... | 49.5% | 17.2
+RP16,Vicuna-33B (v1.3),SqueezeLLM,4-bit,,MMLU,Zero-shot Accuracy,48.0,FP16,49.5,-1.5,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 4.05 | ... | 48.0% | 17.5
+RP16,Vicuna-33B (v1.3),SqueezeLLM (0.45%),4-bit,,MMLU,Zero-shot Accuracy,49.9,FP16,49.5,0.4,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 4.26 | ... | 49.9% | 18.7
+RP16,Vicuna-33B (v1.3),AWQ,3-bit,g128,MMLU,Zero-shot Accuracy,46.4,FP16,49.5,-3.1,absolute,False,measured,8,5.2. Main Results,Table 2,AWQ (g128) | 3.25 | ... | 46.4% | 13.2
+RP16,Vicuna-33B (v1.3),SqueezeLLM,3-bit,,MMLU,Zero-shot Accuracy,46.2,FP16,49.5,-3.3,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM | 3.02 | ... | 46.2% | 12.5
+RP16,Vicuna-33B (v1.3),SqueezeLLM (0.45%),3-bit,,MMLU,Zero-shot Accuracy,47.7,FP16,49.5,-1.8,absolute,False,measured,8,5.2. Main Results,Table 2,SqueezeLLM (0.45%) | 3.24 | ... | 47.7% | 14.7
+RP16,LLaMA-7B,FP16,16-bit,,A6000 GPU,Latency (s) per 128 tokens,3.2,,,,,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,Baseline | 16 | 7.08 | 3.2 | 12.7
+RP16,LLaMA-7B,GPTQ,3-bit,,A6000 GPU,Latency (s) per 128 tokens,1.4,FP16,3.2,-1.8,absolute,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,GPTQ | 3 | 9.55 | 1.4 | 2.9
+RP16,LLaMA-7B,SqueezeLLM,3-bit,,A6000 GPU,Latency (s) per 128 tokens,1.5,FP16,3.2,-1.7,absolute,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,SqueezeLLM | 3.02 | 7.75 | 1.5 | 2.9
+RP16,LLaMA-7B,GPTQ,3-bit,g128,A6000 GPU,Latency (s) per 128 tokens,13.7,FP16,3.2,10.5,absolute,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,GPTQ (g128) | 3.25 | 7.89 | 13.7 | 3.0
+RP16,LLaMA-7B,SqueezeLLM (0.45%),3-bit,,A6000 GPU,Latency (s) per 128 tokens,1.7,FP16,3.2,-1.5,absolute,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,SqueezeLLM (0.45%) | 3.24 | 7.56 | 1.7 | 3.1
+RP16,LLaMA-13B,FP16,16-bit,,A6000 GPU,Latency (s) per 128 tokens,5.6,,,,,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,Baseline | 16 | 6.61 | 5.6 | 24.6
+RP16,LLaMA-13B,GPTQ,3-bit,,A6000 GPU,Latency (s) per 128 tokens,2.1,FP16,5.6,-3.5,absolute,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,GPTQ | 3 | 8.22 | 2.1 | 5.3
+RP16,LLaMA-13B,SqueezeLLM,3-bit,,A6000 GPU,Latency (s) per 128 tokens,2.4,FP16,5.6,-3.2,absolute,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,SqueezeLLM | 3.02 | 7.08 | 2.4 | 5.4
+RP16,LLaMA-30B,GPTQ,3-bit,,A6000 GPU,Latency (s) per 128 tokens,4.0,,,,,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,GPTQ | 3 | ... | 7.31 | 4.0 | 12.3
+RP16,LLaMA-30B,SqueezeLLM,3-bit,,A6000 GPU,Latency (s) per 128 tokens,4.0,,,,,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,SqueezeLLM | 3.02 | ... | 6.37 | 4.0 | 12.5
+RP16,LLaMA-65B,GPTQ,3-bit,,A6000 GPU,Latency (s) per 128 tokens,6.7,,,,,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,GPTQ | 3 | ... | 6.70 | 6.7 | 24.0
+RP16,LLaMA-65B,SqueezeLLM,3-bit,,A6000 GPU,Latency (s) per 128 tokens,7.6,,,,,False,measured,9,5.4. Hardware Deployment and Profiling,Table 3,SqueezeLLM | 3.02 | ... | 5.99 | 7.6 | 24.5
+RP16,LLaMA-7B,SqueezeLLM (sensitivity-agnostic),3-bit,,C4,Perplexity,18.08,FP16,7.08,11.0,absolute,False,measured,15,D.1. Sensitivity-Based Quantization.,Table D.2,SqueezeLLM | 18.08 | 7.75
+RP16,LLaMA-7B,"SqueezeLLM (0.05%, sensitivity-agnostic)",3-bit,,C4,Perplexity,8.1,FP16,7.08,1.02,absolute,False,measured,15,D.1. Sensitivity-Based Quantization.,Table D.2,SqueezeLLM (0.05%) | 8.10 | 7.67
+RP16,LLaMA-7B,SqueezeLLM (0.05%),3-bit,,C4,Perplexity,7.67,FP16,7.08,0.59,absolute,False,measured,15,D.1. Sensitivity-Based Quantization.,Table D.2,SqueezeLLM (0.05%) | 8.10 | 7.67
+RP16,LLaMA-7B,"SqueezeLLM (0.45%, sensitivity-agnostic)",3-bit,,C4,Perplexity,7.61,FP16,7.08,0.53,absolute,False,measured,15,D.1. Sensitivity-Based Quantization.,Table D.2,SqueezeLLM (0.45%) | 7.61 | 7.56
+RP16,LLaMA-2-7B,FP16,16-bit,,WikiText-2,Perplexity,5.47,,,,,False,measured,17,D.5,Table D.3,16-bit | 0 | 16 | 5.47 | 5.47
+RP16,LLaMA-2-7B,RTN,4-bit,,WikiText-2,Perplexity,6.12,FP16,5.47,0.65,absolute,False,measured,17,D.5,Table D.3,4-bit | 0 | 4.04 | 6.12 | 5.62
+RP16,LLaMA-2-7B,SqueezeLLM,4-bit,,WikiText-2,Perplexity,5.62,FP16,5.47,0.15,absolute,False,measured,17,D.5,Table D.3,4-bit | 0 | 4.04 | 6.12 | 5.62
+RP16,LLaMA-2-7B,"RTN (3-bit, 0% sparsity)",3-bit,,WikiText-2,Perplexity,542.0,FP16,5.47,536.53,absolute,False,measured,17,D.5,Table D.3,3-bit | 0 | 3.02 | 542.00 | 6.18
+RP16,LLaMA-2-7B,"SqueezeLLM (3-bit, 0% sparsity)",3-bit,,WikiText-2,Perplexity,6.18,FP16,5.47,0.71,absolute,False,measured,17,D.5,Table D.3,3-bit | 0 | 3.02 | 542.00 | 6.18
+RP16,LLaMA-2-7B,SqueezeLLM (0.45%),3-bit,,WikiText-2,Perplexity,5.96,FP16,5.47,0.49,absolute,False,measured,17,D.5,Table D.3,0.45 | 3.24 | 26.58 | 5.96
+RP16,LLaMA-2-13B,QuIP,4-bit,,WikiText-2,Perplexity,4.81,,,,,False,measured,19,F.1. Comparison with QuIP,Table F.8,QuIP (our repr) | 4-bit | 4 | 4.81 | 3.65
+RP16,LLaMA-2-13B,SqueezeLLM,4-bit,,WikiText-2,Perplexity,4.67,QuIP,4.81,-0.14,absolute,False,measured,19,F.1. Comparison with QuIP,Table F.8,SqueezeLLM | 4-bit | 4.05 | 4.67 | 3.21
+RP16,LLaMA-2-70B,QuIP,4-bit,,WikiText-2,Perplexity,3.65,,,,,False,measured,19,F.1. Comparison with QuIP,Table F.8,QuIP (our repr) | 4-bit | 4 | 4.81 | 3.65
+RP16,LLaMA-2-70B,SqueezeLLM,4-bit,,WikiText-2,Perplexity,3.21,QuIP,3.65,-0.44,absolute,False,measured,19,F.1. Comparison with QuIP,Table F.8,SqueezeLLM | 4-bit | 4.05 | 4.67 | 3.21
+RP16,LLaMA-2-13B,SqueezeLLM,3-bit,,WikiText-2,Perplexity,5.01,QuIP,5.25,-0.24,absolute,False,measured,19,F.1. Comparison with QuIP,Table F.8,SqueezeLLM | 3-bit | 3.02 | 5.01 | 3.55
+RP16,LLaMA-2-70B,SqueezeLLM,3-bit,,WikiText-2,Perplexity,3.55,QuIP,3.84,-0.29,absolute,False,measured,19,F.1. Comparison with QuIP,Table F.8,SqueezeLLM | 3-bit | 3.02 | 5.01 | 3.55
+RP16,LLaMA-2-13B,SqueezeLLM (2-bit + 0.45%),2-bit,,WikiText-2,Perplexity,7.43,QuIP,20.54,-13.11,absolute,False,measured,19,F.1. Comparison with QuIP,Table F.8,SqueezeLLM | 2-bit + 0.45% | 2.22 | 7.43 | 4.71
+RP16,LLaMA-2-70B,SqueezeLLM (2-bit + 0.45%),2-bit,,WikiText-2,Perplexity,4.71,QuIP,6.2,-1.49,absolute,False,measured,19,F.1. Comparison with QuIP,Table F.8,SqueezeLLM | 2-bit + 0.45% | 2.22 | 7.43 | 4.71
+RP16,LLaMA-30B,FP16,16-bit,,C4,Perplexity,5.98,,,,,False,measured,21,G,Table H.13,Baseline | 16 | 5.98 | 4.10
+RP16,LLaMA-30B,FP16,16-bit,,WikiText-2,Perplexity,4.1,,,,,False,measured,21,G,Table H.13,Baseline | 16 | 5.98 | 4.10
+RP16,LLaMA-30B,RTN,3-bit,,C4,Perplexity,28.53,FP16,5.98,22.55,absolute,False,measured,21,G,Table H.13,RTN | 3 (5.33) | 28.53 | 14.89
+RP16,LLaMA-30B,RTN,3-bit,,WikiText-2,Perplexity,14.89,FP16,4.1,10.79,absolute,False,measured,21,G,Table H.13,RTN | 3 (5.33) | 28.53 | 14.89
+RP16,LLaMA-30B,GPTQ,3-bit,,C4,Perplexity,7.31,FP16,5.98,1.33,absolute,False,measured,21,G,Table H.13,GPTQ | 3 (5.33) | 7.31 | 5.76
+RP16,LLaMA-30B,GPTQ,3-bit,,WikiText-2,Perplexity,5.76,FP16,4.1,1.66,absolute,False,measured,21,G,Table H.13,GPTQ | 3 (5.33) | 7.31 | 5.76
+RP16,LLaMA-30B,SqueezeLLM,3-bit,,C4,Perplexity,6.37,FP16,5.98,0.39,absolute,False,measured,21,G,Table H.13,SqueezeLLM | 3.02 (5.31) | 6.37 | 4.66
+RP16,LLaMA-30B,SqueezeLLM,3-bit,,WikiText-2,Perplexity,4.66,FP16,4.1,0.56,absolute,False,measured,21,G,Table H.13,SqueezeLLM | 3.02 (5.31) | 6.37 | 4.66
+RP16,LLaMA-30B,SqueezeLLM (0.45%),3-bit,,C4,Perplexity,6.23,FP16,5.98,0.25,absolute,False,measured,21,G,Table H.13,SqueezeLLM (0.45%) | 3.25 (4.92) | 6.23 | 4.44
+RP16,LLaMA-30B,SqueezeLLM (0.45%),3-bit,,WikiText-2,Perplexity,4.44,FP16,4.1,0.34,absolute,False,measured,21,G,Table H.13,SqueezeLLM (0.45%) | 3.25 (4.92) | 6.23 | 4.44
+RP16,LLaMA-65B,FP16,16-bit,,C4,Perplexity,5.62,,,,,False,measured,21,G,Table H.13,Baseline | 16 | 5.62 | 3.53
+RP16,LLaMA-65B,FP16,16-bit,,WikiText-2,Perplexity,3.53,,,,,False,measured,21,G,Table H.13,Baseline | 16 | 5.62 | 3.53
+RP16,LLaMA-65B,GPTQ,3-bit,,C4,Perplexity,6.7,FP16,5.62,1.08,absolute,False,measured,21,G,Table H.13,GPTQ | 3 (5.33) | 6.70 | 5.58
+RP16,LLaMA-65B,SqueezeLLM,3-bit,,C4,Perplexity,5.99,FP16,5.62,0.37,absolute,False,measured,21,G,Table H.13,SqueezeLLM | 3.02 (5.30) | 5.99 | 4.05
+RP16,LLaMA-65B,SqueezeLLM (0.45%),3-bit,,C4,Perplexity,5.84,FP16,5.62,0.22,absolute,False,measured,21,G,Table H.13,SqueezeLLM (0.45%) | 3.24 (4.94) | 5.84 | 3.88
+RP16,LLaMA-65B,SqueezeLLM,4-bit,,C4,Perplexity,5.69,FP16,5.62,0.07,absolute,False,measured,21,G,Table H.13,SqueezeLLM | 4.04 (3.96) | 5.69 | 3.76
+RP16,LLaMA-2-70B,SqueezeLLM,3-bit,,C4,Perplexity,5.83,FP16,5.52,0.31,absolute,False,measured,22,I. Limitations,Table H.14,SqueezeLLM | 3.02 (5.30) | 5.83 | 3.77
+RP16,LLaMA-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.32,,,,,False,measured,22,I. Limitations,Table H.14,Baseline | 16 | 5.52 | 3.32
+RP16,LLaMA-2-70B,SqueezeLLM (0.45%),3-bit,,WikiText-2,Perplexity,3.63,FP16,3.32,0.31,absolute,False,measured,22,I. Limitations,Table H.14,SqueezeLLM (0.45%) | 3.24 (4.94) | 5.73 | 3.63
+RP16,OPT-1.3B,FP16,16-bit,,C4,Perplexity,14.72,,,,,False,measured,23,I. Limitations,Table H.15,Baseline | 16 | 14.72 | 14.62
+RP16,OPT-1.3B,SqueezeLLM,3-bit,,C4,Perplexity,16.42,FP16,14.72,1.7,absolute,False,measured,23,I. Limitations,Table H.15,SqueezeLLM | 3.04 (5.26) | 16.42 | 16.30
+RP16,OPT-6.7B,FP16,16-bit,,C4,Perplexity,11.74,,,,,False,measured,23,I. Limitations,Table H.15,Baseline | 16 | 11.74 | 10.86
+RP16,OPT-6.7B,SqueezeLLM,3-bit,,C4,Perplexity,12.44,FP16,11.74,0.7,absolute,False,measured,23,I. Limitations,Table H.15,SqueezeLLM | 3.02 (5.29) | 12.44 | 11.70
+RP16,LLaMA-7B,SqueezeLLM,4-bit,,A100 GPU,Latency (s) per 128 tokens,0.83,FP16,1.21,-0.38,absolute,False,measured,21,G. Additional Hardware Profiling Results,Table G.12,SqueezeLLM | 4 | 0.83 | 1.52 | 3.66
+RP16,LLaMA-7B,FP16,16-bit,,A100 GPU,Latency (s) per 128 tokens,1.21,,,,,False,measured,21,G. Additional Hardware Profiling Results,Table G.12,Baseline | 16 | 1.21 | 2.32 | 5.56
+RP16,LLaMA-7B,SqueezeLLM,3-bit,,A100 GPU,Latency (s) per 128 tokens,0.56,FP16,1.21,-0.65,absolute,False,measured,21,G. Additional Hardware Profiling Results,Table G.12,SqueezeLLM | 3 | 0.56 | 0.97 | 2.26
+RP16,Vicuna-7B (v1.1),FP16,16-bit,,MMLU (5-shot),Accuracy,45.3,,,,,False,measured,23,I. Limitations,Table H.16,Baseline | 16 | 45.3% | 12.7
+RP16,Vicuna-7B (v1.1),SqueezeLLM (0.45%),3-bit,,MMLU (5-shot),Accuracy,42.2,FP16,45.3,-3.1,absolute,False,measured,23,I. Limitations,Table H.16,SqueezeLLM (0.45%) | 3.24 | 42.2% | 3.1
+RP16,Vicuna-33B (v1.3),FP16,16-bit,,MMLU (5-shot),Accuracy,60.1,,,,,False,measured,23,I. Limitations,Table H.16,Baseline | 16 | ... | 60.1% | OOM
+RP16,Vicuna-33B (v1.3),SqueezeLLM (0.45%),4-bit,,MMLU (5-shot),Accuracy,60.0,FP16,60.1,-0.1,absolute,False,measured,23,I. Limitations,Table H.16,SqueezeLLM (0.45%) | 4.26 | ... | 60.0% | 17.7

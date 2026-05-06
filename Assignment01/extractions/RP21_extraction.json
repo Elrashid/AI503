@@ -1132,5 +1132,3225 @@
         "block_id": "/page/24/Text/14"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 3.91,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.79,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.19 | 8.16 | 2 | 5.35 | 7.20 | 2 | 3.91 | 5.71",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 3.35,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.41 | 7.04 | 3 | 4.78 | 6.35 | 3 | 3.35 | 5.15",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 3.18,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.19 | 6.75 | 4 | 4.63 | 6.13 | 4 | 3.18 | 5.02",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 6.19,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 1.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.19 | 8.16",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.41,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.41 | 7.04",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.19,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.19 | 6.75",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.35,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 5.35 | 7.20",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.78,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 4.78 | 6.35",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.63,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 4.63 | 6.13",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.12 | 6.63",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.57,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 4.57 | 6.05",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 3.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 3.12 | 4.97",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 8.16,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 1.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.19 | 8.16",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 7.2,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 1.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 5.35 | 7.20",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.71,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 0.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 3.91 | 5.71",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 7.04,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.41 | 7.04",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 6.35,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 4.78 | 6.35",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.15,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 3.35 | 5.15",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 6.75,
+        "baseline_label": "FP16",
+        "baseline_value": 6.63,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.19 | 6.75",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 6.13,
+        "baseline_label": "FP16",
+        "baseline_value": 6.05,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 4.63 | 6.13",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 5.02,
+        "baseline_label": "FP16",
+        "baseline_value": 4.97,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 3.18 | 5.02",
+        "bbox": [
+          53.19140625,
+          92.42578125,
+          297.03515625,
+          289.65234375
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 8.22,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "HADAMARD | 8.22 | 6.06 | 4.16",
+        "bbox": [
+          88.9372265625,
+          190.636875,
+          252.9221484375,
+          231.66
+        ],
+        "block_id": "/page/4/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 6.06,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 1.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "HADAMARD | 8.22 | 6.06 | 4.16",
+        "bbox": [
+          88.9372265625,
+          190.636875,
+          252.9221484375,
+          231.66
+        ],
+        "block_id": "/page/4/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.16,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "HADAMARD | 8.22 | 6.06 | 4.16",
+        "bbox": [
+          88.9372265625,
+          190.636875,
+          252.9221484375,
+          231.66
+        ],
+        "block_id": "/page/4/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP# (no FT, RFFT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 8.3,
+        "baseline_label": "FP16",
+        "baseline_value": 5.12,
+        "delta": 3.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "FOURIER | 8.30 | 6.08 | 4.17",
+        "bbox": [
+          88.9372265625,
+          190.636875,
+          252.9221484375,
+          231.66
+        ],
+        "block_id": "/page/4/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP# (no FT, RFFT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 6.08,
+        "baseline_label": "FP16",
+        "baseline_value": 4.57,
+        "delta": 1.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "FOURIER | 8.30 | 6.08 | 4.17",
+        "bbox": [
+          88.9372265625,
+          190.636875,
+          252.9221484375,
+          231.66
+        ],
+        "block_id": "/page/4/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP# (no FT, RFFT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.17,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3. Incoherence Processing with the Randomized Hadamard Transform",
+        "quote": "FOURIER | 8.30 | 6.08 | 4.17",
+        "bbox": [
+          88.9372265625,
+          190.636875,
+          252.9221484375,
+          231.66
+        ],
+        "block_id": "/page/4/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.68,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.68 | 5.09 | 4.10 | 3.53 | 5.47 | 4.88 | 3.32",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.68 | 5.09 | 4.10 | 3.53",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.68 | 5.09 | 4.10 | 3.53",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 3.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.68 | 5.09 | 4.10 | 3.53",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.47 | 4.88 | 3.32",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.47 | 4.88 | 3.32",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 3.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "FP16 | 16 | 5.47 | 4.88 | 3.32",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.76,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.76 | 5.17 | 4.18 | 3.60",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.17,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.76 | 5.17 | 4.18 | 3.60",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.18,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.76 | 5.17 | 4.18 | 3.60",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-65B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 3.6,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 5.76 | 5.17 | 4.18 | 3.60",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.56,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | ... 5.56 | 4.95 | 3.38",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.95,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | ... 5.56 | 4.95 | 3.38",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 3.38,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | ... 5.56 | 4.95 | 3.38",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-7B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.98,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.98 | 5.31 | 4.36 | 3.78",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-13B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.31,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.98 | 5.31 | 4.36 | 3.78",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.36,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.98 | 5.31 | 4.36 | 3.78",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-65B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 3.78,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 5.98 | 5.31 | 4.36 | 3.78",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.79,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | ... 5.79 | 5.10 | 3.56",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.1,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | ... 5.79 | 5.10 | 3.56",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 3.56,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | ... 5.79 | 5.10 | 3.56",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 6.86,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.86 | 5.97 | 5.02 | 4.36",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.97,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.86 | 5.97 | 5.02 | 4.36",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.02,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.86 | 5.97 | 5.02 | 4.36",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-65B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.36,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 6.86 | 5.97 | 5.02 | 4.36",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 6.66,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | ... 6.66 | 5.74 | 4.16",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 5.74,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | ... 6.66 | 5.74 | 4.16",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 2048)",
+        "value": 4.16,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | ... 6.66 | 5.74 | 4.16",
+        "bbox": [
+          54.7034765625,
+          93.72515625,
+          540.5621484375,
+          237.30609375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "ARC-Challenge",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 50.6,
+        "baseline_label": "FP16",
+        "baseline_value": 51.1,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 50.6 | 78.1 | 81.4 | 77.1",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "ARC-Easy",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 78.1,
+        "baseline_label": "FP16",
+        "baseline_value": 77.7,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 50.6 | 78.1 | 81.4 | 77.1",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "PIQA",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 81.4,
+        "baseline_label": "FP16",
+        "baseline_value": 81.1,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 50.6 | 78.1 | 81.4 | 77.1",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WinoGrande",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 77.1,
+        "baseline_label": "FP16",
+        "baseline_value": 77.0,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 4 | 50.6 | 78.1 | 81.4 | 77.1",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "ARC-Challenge",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 50.9,
+        "baseline_label": "FP16",
+        "baseline_value": 51.1,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 50.9 | 77.7 | 81.4 | 76.4",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "ARC-Easy",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 77.7,
+        "baseline_label": "FP16",
+        "baseline_value": 77.7,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 50.9 | 77.7 | 81.4 | 76.4",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "PIQA",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 81.4,
+        "baseline_label": "FP16",
+        "baseline_value": 81.1,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 50.9 | 77.7 | 81.4 | 76.4",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "3-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "WinoGrande",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 76.4,
+        "baseline_label": "FP16",
+        "baseline_value": 77.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 3 | 50.9 | 77.7 | 81.4 | 76.4",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "ARC-Challenge",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 48.7,
+        "baseline_label": "FP16",
+        "baseline_value": 51.1,
+        "delta": -2.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 48.7 | 77.3 | 80.3 | 75.9",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "ARC-Easy",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 77.3,
+        "baseline_label": "FP16",
+        "baseline_value": 77.7,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 48.7 | 77.3 | 80.3 | 75.9",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "PIQA",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 80.3,
+        "baseline_label": "FP16",
+        "baseline_value": 81.1,
+        "delta": -0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 48.7 | 77.3 | 80.3 | 75.9",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WinoGrande",
+        "metric": "Zeroshot Accuracy (acc)",
+        "value": 75.9,
+        "baseline_label": "FP16",
+        "baseline_value": 77.0,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1. QuIP# on Llama Models",
+        "quote": "QUIP# | 2 | 48.7 | 77.3 | 80.3 | 75.9",
+        "bbox": [
+          61.4450390625,
+          267.2715728759766,
+          530.2346484375,
+          420.0633270263672
+        ],
+        "block_id": "/page/7/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 170.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-7B | 170.50 | 29.60% | 117.73 | 40.87%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 29.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-7B | 170.50 | 29.60%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 117.73,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-7B | 170.50 | 29.60% | 117.73 | 40.87%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 40.87,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "117.73 | 40.87%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 104.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-13B | 104.83 | 33.80% | 71.09 | 45.84%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 33.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-13B | 104.83 | 33.80%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 71.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-13B | 104.83 | 33.80% | 71.09 | 45.84%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 45.84,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "71.09 | 45.84%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 51.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "1-30B | 51.60 | 38.39% | 32.50 | 48.36%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 38.39,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "1-30B | 51.60 | 38.39%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 32.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "1-30B | 51.60 | 38.39% | 32.50 | 48.36%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-1-30B",
+        "method": "QuIP#",
+        "bit_width": "4-bit",
+        "group_size": "E8P+RVQ-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 48.36,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "32.50 | 48.36%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "Throughput (tok/s)",
+        "value": 32.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-70B | 32.74 | 56.84% | OOM | OOM",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (FlashAttention)",
+        "metric": "% Peak Memory Bandwidth",
+        "value": 56.84,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "2-70B | 32.74 | 56.84%",
+        "bbox": [
+          62.7240234375,
+          356.253046875,
+          279.1353515625,
+          426.465703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Llama RTX 4090 (HuggingFace)",
+        "metric": "Throughput (tok/s)",
+        "value": 33.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "FP16 | 33.1 TOK/S | OOM",
+        "bbox": [
+          97.4650717163086,
+          664.282265625,
+          245.06291290283204,
+          713.983359375
+        ],
+        "block_id": "/page/8/Table/7",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "Llama RTX 4090 (HuggingFace)",
+        "metric": "Throughput (tok/s)",
+        "value": 20.6,
+        "baseline_label": "FP16",
+        "baseline_value": 33.1,
+        "delta": -12.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "AQLM 2 BIT | 20.6 | 8.27",
+        "bbox": [
+          97.4650717163086,
+          664.282265625,
+          245.06291290283204,
+          713.983359375
+        ],
+        "block_id": "/page/8/Table/7",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16-g8",
+        "dataset": "Llama RTX 4090 (HuggingFace)",
+        "metric": "Throughput (tok/s)",
+        "value": 8.27,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "AQLM 2 BIT | 20.6 | 8.27",
+        "bbox": [
+          97.4650717163086,
+          664.282265625,
+          245.06291290283204,
+          713.983359375
+        ],
+        "block_id": "/page/8/Table/7",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (HuggingFace)",
+        "metric": "Throughput (tok/s)",
+        "value": 106.3,
+        "baseline_label": "FP16",
+        "baseline_value": 33.1,
+        "delta": 73.2,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "QuIP# 2 BIT | 106.3 | 25.9",
+        "bbox": [
+          97.4650717163086,
+          664.282265625,
+          245.06291290283204,
+          713.983359375
+        ],
+        "block_id": "/page/8/Table/7",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "QuIP#",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "Llama RTX 4090 (HuggingFace)",
+        "metric": "Throughput (tok/s)",
+        "value": 25.9,
+        "baseline_label": "AQLM",
+        "baseline_value": 8.27,
+        "delta": 17.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3. Efficient Inference with QuIP#",
+        "quote": "QuIP# 2 BIT | 106.3 | 25.9",
+        "bbox": [
+          97.4650717163086,
+          664.282265625,
+          245.06291290283204,
+          713.983359375
+        ],
+        "block_id": "/page/8/Table/7",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "E8P",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096, no FT)",
+        "value": 4.156,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.036,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "C.4. E8P vs. Other Codebook Constructions",
+        "quote": "2-70B | E8P | 8 | 2 | 4.156 | 6.535",
+        "bbox": [
+          59.88515625,
+          210.97828125,
+          535.38046875,
+          307.22484375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "E8 Lattice",
+        "bit_width": "2-bit",
+        "group_size": "g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096, no FT)",
+        "value": 3.702,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.582,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "C.4. E8P vs. Other Codebook Constructions",
+        "quote": "2-70B | E_8 LATTICE | 8 | 2.37 | 3.702 | 6.082",
+        "bbox": [
+          59.88515625,
+          210.97828125,
+          535.38046875,
+          307.22484375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "D4 Lattice",
+        "bit_width": "2-bit",
+        "group_size": "g4",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096, no FT)",
+        "value": 4.408,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.288,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "C.4. E8P vs. Other Codebook Constructions",
+        "quote": "2-70B | D_4 LATTICE | 4 | 2 | 4.408 | 6.797",
+        "bbox": [
+          59.88515625,
+          210.97828125,
+          535.38046875,
+          307.22484375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "D4 Lattice",
+        "bit_width": "2-bit",
+        "group_size": "g4",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096, no FT)",
+        "value": 3.97,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 0.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "C.4. E8P vs. Other Codebook Constructions",
+        "quote": "2-70B | D_4 LATTICE | 4 | 2.21 | 3.970 | 6.332",
+        "bbox": [
+          59.88515625,
+          210.97828125,
+          535.38046875,
+          307.22484375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "K-Means",
+        "bit_width": "2-bit",
+        "group_size": "g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096, no FT)",
+        "value": 4.452,
+        "baseline_label": "FP16",
+        "baseline_value": 3.12,
+        "delta": 1.332,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "C.4. E8P vs. Other Codebook Constructions",
+        "quote": "2-70B | K-Means | 8 | 2 | 4.452 | 6.925",
+        "bbox": [
+          59.88515625,
+          210.97828125,
+          535.38046875,
+          307.22484375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 3.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 16 | 3.45 | 6.85",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.69,
+        "baseline_label": "FP16",
+        "baseline_value": 3.45,
+        "delta": 1.24,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | 4.69 | 8.25",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 8.25,
+        "baseline_label": "FP16",
+        "baseline_value": 6.85,
+        "delta": 1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | 4.69 | 8.25",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "ARC-Challenge",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.49,
+        "baseline_label": "FP16",
+        "baseline_value": 0.56,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | 4.69 | 8.25 | 0.49 | 0.68 | 0.81 | 0.80 | 0.73",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "ARC-Easy",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.68,
+        "baseline_label": "FP16",
+        "baseline_value": 0.74,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | ... 0.49 | 0.68 | 0.81 | 0.80 | 0.73",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "BoolQ",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.81,
+        "baseline_label": "FP16",
+        "baseline_value": 0.85,
+        "delta": -0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | ... 0.81 | 0.80 | 0.73",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "PIQA",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.8,
+        "baseline_label": "FP16",
+        "baseline_value": 0.84,
+        "delta": -0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | ... 0.81 | 0.80 | 0.73",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WinoGrande",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.73,
+        "baseline_label": "FP16",
+        "baseline_value": 0.75,
+        "delta": -0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "MIXTRAL-8X7B | 2 | ... 0.81 | 0.80 | 0.73",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 3.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 16 | 3.30 | 6.31",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 4.18,
+        "baseline_label": "FP16",
+        "baseline_value": 3.3,
+        "delta": 0.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | 4.18 | 7.06",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "C4",
+        "metric": "Perplexity (ctx 4096)",
+        "value": 7.06,
+        "baseline_label": "FP16",
+        "baseline_value": 6.31,
+        "delta": 0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | 4.18 | 7.06",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "ARC-Challenge",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.58,
+        "baseline_label": "FP16",
+        "baseline_value": 0.61,
+        "delta": -0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | ... 0.58 | 0.81 | 0.84 | 0.84 | 0.81",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "ARC-Easy",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.81,
+        "baseline_label": "FP16",
+        "baseline_value": 0.82,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | ... 0.58 | 0.81 | 0.84 | 0.84 | 0.81",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "BoolQ",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.84,
+        "baseline_label": "FP16",
+        "baseline_value": 0.87,
+        "delta": -0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | ... 0.58 | 0.81 | 0.84 | 0.84 | 0.81",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "PIQA",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.84,
+        "baseline_label": "FP16",
+        "baseline_value": 0.85,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | ... 0.58 | 0.81 | 0.84 | 0.84 | 0.81",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "QuIP# (no FT)",
+        "bit_width": "2-bit",
+        "group_size": "E8P-g8",
+        "dataset": "WinoGrande",
+        "metric": "Zeroshot Accuracy",
+        "value": 0.81,
+        "baseline_label": "FP16",
+        "baseline_value": 0.81,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "E. Additional Results",
+        "quote": "FALCON-180B | 2 | ... 0.58 | 0.81 | 0.84 | 0.84 | 0.81",
+        "bbox": [
+          106.825078125,
+          644.36625,
+          488.440546875,
+          713.79
+        ],
+        "block_id": "/page/21/Table/7",
+        "source_table": "Table 9"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 107,
+    "dropped_cited_count": 44,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

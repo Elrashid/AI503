@@ -1149,5 +1149,4185 @@
         "block_id": "/page/7/Text/10"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.75,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.67,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "our 3-bit quantization significantly reduces the perplexity gap from the FP16 baseline by up to 2.1x",
+        "bbox": [
+          74.70703125,
+          203.4140625,
+          271.25604248046875,
+          639.0630798339844
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Speedup over FP16",
+        "value": 2.3,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.3,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "when deployed on an A6000 GPU, our quantized models achieve up to 2.3x speedup compared to the baseline",
+        "bbox": [
+          74.70703125,
+          203.4140625,
+          271.25604248046875,
+          639.0630798339844
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 28.26,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 21.18,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1. Introduction",
+        "quote": "improves the perplexity of 3-bit LLaMA-7B from 28.26 of uniform quantization to 7.75 on C4",
+        "bbox": [
+          55.880859375,
+          443.0235900878906,
+          291.09027099609375,
+          717.4680709838867
+        ],
+        "block_id": "/page/1/ListGroup/409",
+        "source_table": "Intro list"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.56,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.48,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1. Introduction",
+        "quote": "By extracting only 0.45% of the weight values as the sparse component, we further improve the perplexity of LLaMA-7B from 7.75 to 7.58 on C4",
+        "bbox": [
+          55.880859375,
+          443.0235900878906,
+          291.09027099609375,
+          717.4680709838867
+        ],
+        "block_id": "/page/1/ListGroup/409",
+        "source_table": "Intro list"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Speedup over FP16",
+        "value": 2.4,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.4,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1. Introduction",
+        "quote": "our deployed models on A6000 GPUs also exhibit significant latency gains of up to 2.4x compared to the FP16 baseline",
+        "bbox": [
+          306.896484375,
+          287.0315856933594,
+          543.0965576171875,
+          393.29296875
+        ],
+        "block_id": "/page/1/Text/7",
+        "source_table": "Intro"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.08,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | 7.08 | 5.68",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.68,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | 7.08 | 5.68",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 25.61,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 19.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 28.26 | 25.61",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 9.55,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 2.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 9.55 ... 7.55",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.55,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 9.55 ... 7.55",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.32,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 7.75 ... 6.32",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.73,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 7.73 ... 6.29",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 7.73 ... 6.29",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.43,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 7.43 ... 5.94",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.94,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 7.43 ... 5.94",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.21,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 7.21 ... 5.79",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.79,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 7.21 ... 5.79",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ (no reorder)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 10.09,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 3.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ (g128, no reorder) ... 10.09 ... 8.85",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ (no reorder)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.85,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 3.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ (g128, no reorder) ... 10.09 ... 8.85",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.89,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ (g128) ... 7.89 ... 6.27",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.27,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ (g128) ... 7.89 ... 6.27",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.9,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) ... 7.90 ... 6.44",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.44,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) ... 7.90 ... 6.44",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.13,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) ... 7.56 ... 6.13",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.21,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ (g128) ... 7.21 ... 5.78",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.78,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ (g128) ... 7.21 ... 5.78",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.22,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) ... 7.22 ... 5.82",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.82,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) ... 7.22 ... 5.82",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.18,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) ... 7.18 ... 5.77",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.77,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) ... 7.18 ... 5.77",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.61,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | 6.61 | 5.09",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | 6.61 | 5.09",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 13.24,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 6.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 13.24 ... 11.78",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.78,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 6.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 13.24 ... 11.78",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.22,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 1.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 8.22 ... 6.22",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.22,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 1.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 8.22 ... 6.22",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.08,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 7.08 ... 5.60",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.6,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 7.08 ... 5.60",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.99,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 6.99 ... 5.53",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.53,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "RTN ... 6.99 ... 5.53",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.84,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 6.84 ... 5.29",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.29,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "GPTQ ... 6.84 ... 5.29",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.71,
+        "baseline_label": "FP16",
+        "baseline_value": 6.61,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 6.71 ... 5.18",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.18,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM ... 6.71 ... 5.18",
+        "bbox": [
+          67.188515625,
+          144.03963104248047,
+          529.272421875,
+          401.77070220947263
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | 39.1% | 12.7",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 38.0,
+        "baseline_label": "FP16",
+        "baseline_value": 39.1,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 4.25 | 38.0% | 3.8",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 38.8,
+        "baseline_label": "FP16",
+        "baseline_value": 39.1,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 4.05 | 38.8% | 3.8",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.4,
+        "baseline_label": "FP16",
+        "baseline_value": 39.1,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 4.26 | 39.4% | 4.0",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 36.5,
+        "baseline_label": "FP16",
+        "baseline_value": 39.1,
+        "delta": -2.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 3.25 | 36.5% | 3.0",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 36.0,
+        "baseline_label": "FP16",
+        "baseline_value": 39.1,
+        "delta": -3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 3.02 | 36.0% | 2.9",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 37.7,
+        "baseline_label": "FP16",
+        "baseline_value": 39.1,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | 37.7% | 3.1",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 41.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | 39.1% | 12.7 | 41.2% | 24.6",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 40.4,
+        "baseline_label": "FP16",
+        "baseline_value": 41.2,
+        "delta": -0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 4.25 | ... | 40.4% | 7.2",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.2,
+        "baseline_label": "FP16",
+        "baseline_value": 41.2,
+        "delta": -2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 4.05 | ... | 39.2% | 6.9",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 41.0,
+        "baseline_label": "FP16",
+        "baseline_value": 41.2,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 4.26 | ... | 41.0% | 7.3",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 37.6,
+        "baseline_label": "FP16",
+        "baseline_value": 41.2,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 3.25 | ... | 37.6% | 5.7",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 37.2,
+        "baseline_label": "FP16",
+        "baseline_value": 41.2,
+        "delta": -4.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 3.02 | ... | 37.2% | 5.4",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.1)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.4,
+        "baseline_label": "FP16",
+        "baseline_value": 41.2,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | ... | 39.4% | 5.8",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 40.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | ... | 40.2% | 12.7",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.6,
+        "baseline_label": "FP16",
+        "baseline_value": 40.2,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 4.25 | ... | 39.6% | 3.8",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.3,
+        "baseline_label": "FP16",
+        "baseline_value": 40.2,
+        "delta": -0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 4.05 | ... | 39.3% | 3.8",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 39.5,
+        "baseline_label": "FP16",
+        "baseline_value": 40.2,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 4.26 | ... | 39.5% | 4.0",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 37.4,
+        "baseline_label": "FP16",
+        "baseline_value": 40.2,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 3.25 | ... | 37.4% | 3.0",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 35.1,
+        "baseline_label": "FP16",
+        "baseline_value": 40.2,
+        "delta": -5.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 3.02 | ... | 35.1% | 2.9",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 37.6,
+        "baseline_label": "FP16",
+        "baseline_value": 40.2,
+        "delta": -2.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | ... | 37.6% | 3.1",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 43.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | ... | 43.3% | 24.6",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 42.2,
+        "baseline_label": "FP16",
+        "baseline_value": 43.3,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 4.25 | ... | 42.2% | 7.2",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 44.1,
+        "baseline_label": "FP16",
+        "baseline_value": 43.3,
+        "delta": 0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 4.05 | ... | 44.1% | 6.9",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 43.8,
+        "baseline_label": "FP16",
+        "baseline_value": 43.3,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 4.26 | ... | 43.8% | 7.3",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 40.7,
+        "baseline_label": "FP16",
+        "baseline_value": 43.3,
+        "delta": -2.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 3.25 | ... | 40.7% | 5.7",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 40.5,
+        "baseline_label": "FP16",
+        "baseline_value": 43.3,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 3.02 | ... | 40.5% | 5.4",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 40.8,
+        "baseline_label": "FP16",
+        "baseline_value": 43.3,
+        "delta": -2.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | ... | 40.8% | 5.8",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 49.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "Baseline | 16 | ... | 49.5% | OOM",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 49.5,
+        "baseline_label": "FP16",
+        "baseline_value": 49.5,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 4.25 | ... | 49.5% | 17.2",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 48.0,
+        "baseline_label": "FP16",
+        "baseline_value": 49.5,
+        "delta": -1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 4.05 | ... | 48.0% | 17.5",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 49.9,
+        "baseline_label": "FP16",
+        "baseline_value": 49.5,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 4.26 | ... | 49.9% | 18.7",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 46.4,
+        "baseline_label": "FP16",
+        "baseline_value": 49.5,
+        "delta": -3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "AWQ (g128) | 3.25 | ... | 46.4% | 13.2",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 46.2,
+        "baseline_label": "FP16",
+        "baseline_value": 49.5,
+        "delta": -3.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM | 3.02 | ... | 46.2% | 12.5",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Zero-shot Accuracy",
+        "value": 47.7,
+        "baseline_label": "FP16",
+        "baseline_value": 49.5,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. Main Results",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | ... | 47.7% | 14.7",
+        "bbox": [
+          49.521796875,
+          246.919921875,
+          545.743828125,
+          345.533203125
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 3.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "Baseline | 16 | 7.08 | 3.2 | 12.7",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 1.4,
+        "baseline_label": "FP16",
+        "baseline_value": 3.2,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "GPTQ | 3 | 9.55 | 1.4 | 2.9",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 1.5,
+        "baseline_label": "FP16",
+        "baseline_value": 3.2,
+        "delta": -1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "SqueezeLLM | 3.02 | 7.75 | 1.5 | 2.9",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 13.7,
+        "baseline_label": "FP16",
+        "baseline_value": 3.2,
+        "delta": 10.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "GPTQ (g128) | 3.25 | 7.89 | 13.7 | 3.0",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 1.7,
+        "baseline_label": "FP16",
+        "baseline_value": 3.2,
+        "delta": -1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | 7.56 | 1.7 | 3.1",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 5.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "Baseline | 16 | 6.61 | 5.6 | 24.6",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 2.1,
+        "baseline_label": "FP16",
+        "baseline_value": 5.6,
+        "delta": -3.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "GPTQ | 3 | 8.22 | 2.1 | 5.3",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 2.4,
+        "baseline_label": "FP16",
+        "baseline_value": 5.6,
+        "delta": -3.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "SqueezeLLM | 3.02 | 7.08 | 2.4 | 5.4",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 4.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "GPTQ | 3 | ... | 7.31 | 4.0 | 12.3",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 4.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "SqueezeLLM | 3.02 | ... | 6.37 | 4.0 | 12.5",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 6.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "GPTQ | 3 | ... | 6.70 | 6.7 | 24.0",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 7.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4. Hardware Deployment and Profiling",
+        "quote": "SqueezeLLM | 3.02 | ... | 5.99 | 7.6 | 24.5",
+        "bbox": [
+          54.0938671875,
+          114.383671875,
+          541.1717578125,
+          241.397578125
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (sensitivity-agnostic)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 18.08,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 11.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D.1. Sensitivity-Based Quantization.",
+        "quote": "SqueezeLLM | 18.08 | 7.75",
+        "bbox": [
+          150.705,
+          101.993203125,
+          445.7559375,
+          151.694296875
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table D.2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.05%, sensitivity-agnostic)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 8.1,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 1.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D.1. Sensitivity-Based Quantization.",
+        "quote": "SqueezeLLM (0.05%) | 8.10 | 7.67",
+        "bbox": [
+          150.705,
+          101.993203125,
+          445.7559375,
+          151.694296875
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table D.2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.05%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.67,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D.1. Sensitivity-Based Quantization.",
+        "quote": "SqueezeLLM (0.05%) | 8.10 | 7.67",
+        "bbox": [
+          150.705,
+          101.993203125,
+          445.7559375,
+          151.694296875
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table D.2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM (0.45%, sensitivity-agnostic)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.61,
+        "baseline_label": "FP16",
+        "baseline_value": 7.08,
+        "delta": 0.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D.1. Sensitivity-Based Quantization.",
+        "quote": "SqueezeLLM (0.45%) | 7.61 | 7.56",
+        "bbox": [
+          150.705,
+          101.993203125,
+          445.7559375,
+          151.694296875
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table D.2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "D.5",
+        "quote": "16-bit | 0 | 16 | 5.47 | 5.47",
+        "bbox": [
+          100.6273828125,
+          325.361953125,
+          474.3179296875,
+          469.731796875
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table D.3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.12,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "D.5",
+        "quote": "4-bit | 0 | 4.04 | 6.12 | 5.62",
+        "bbox": [
+          100.6273828125,
+          325.361953125,
+          474.3179296875,
+          469.731796875
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table D.3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.62,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "D.5",
+        "quote": "4-bit | 0 | 4.04 | 6.12 | 5.62",
+        "bbox": [
+          100.6273828125,
+          325.361953125,
+          474.3179296875,
+          469.731796875
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table D.3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "RTN (3-bit, 0% sparsity)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 542.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 536.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "D.5",
+        "quote": "3-bit | 0 | 3.02 | 542.00 | 6.18",
+        "bbox": [
+          100.6273828125,
+          325.361953125,
+          474.3179296875,
+          469.731796875
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table D.3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "SqueezeLLM (3-bit, 0% sparsity)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.18,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "D.5",
+        "quote": "3-bit | 0 | 3.02 | 542.00 | 6.18",
+        "bbox": [
+          100.6273828125,
+          325.361953125,
+          474.3179296875,
+          469.731796875
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table D.3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.96,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "D.5",
+        "quote": "0.45 | 3.24 | 26.58 | 5.96",
+        "bbox": [
+          100.6273828125,
+          325.361953125,
+          474.3179296875,
+          469.731796875
+        ],
+        "block_id": "/page/16/Table/4",
+        "source_table": "Table D.3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "QuIP",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "QuIP (our repr) | 4-bit | 4 | 4.81 | 3.65",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.67,
+        "baseline_label": "QuIP",
+        "baseline_value": 4.81,
+        "delta": -0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "SqueezeLLM | 4-bit | 4.05 | 4.67 | 3.21",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "QuIP",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.65,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "QuIP (our repr) | 4-bit | 4 | 4.81 | 3.65",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.21,
+        "baseline_label": "QuIP",
+        "baseline_value": 3.65,
+        "delta": -0.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "SqueezeLLM | 4-bit | 4.05 | 4.67 | 3.21",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.01,
+        "baseline_label": "QuIP",
+        "baseline_value": 5.25,
+        "delta": -0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "SqueezeLLM | 3-bit | 3.02 | 5.01 | 3.55",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.55,
+        "baseline_label": "QuIP",
+        "baseline_value": 3.84,
+        "delta": -0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "SqueezeLLM | 3-bit | 3.02 | 5.01 | 3.55",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "SqueezeLLM (2-bit + 0.45%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.43,
+        "baseline_label": "QuIP",
+        "baseline_value": 20.54,
+        "delta": -13.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "SqueezeLLM | 2-bit + 0.45% | 2.22 | 7.43 | 4.71",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "SqueezeLLM (2-bit + 0.45%)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.71,
+        "baseline_label": "QuIP",
+        "baseline_value": 6.2,
+        "delta": -1.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "F.1. Comparison with QuIP",
+        "quote": "SqueezeLLM | 2-bit + 0.45% | 2.22 | 7.43 | 4.71",
+        "bbox": [
+          135.082265625,
+          250.1915625,
+          438.667734375,
+          370.1053125
+        ],
+        "block_id": "/page/18/Table/4",
+        "source_table": "Table F.8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "Baseline | 16 | 5.98 | 4.10",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "Baseline | 16 | 5.98 | 4.10",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 28.53,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 22.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "RTN | 3 (5.33) | 28.53 | 14.89",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 14.89,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 10.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "RTN | 3 (5.33) | 28.53 | 14.89",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.31,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 1.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "GPTQ | 3 (5.33) | 7.31 | 5.76",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.76,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 1.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "GPTQ | 3 (5.33) | 7.31 | 5.76",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.37,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM | 3.02 (5.31) | 6.37 | 4.66",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.66,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM | 3.02 (5.31) | 6.37 | 4.66",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.23,
+        "baseline_label": "FP16",
+        "baseline_value": 5.98,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM (0.45%) | 3.25 (4.92) | 6.23 | 4.44",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.44,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM (0.45%) | 3.25 (4.92) | 6.23 | 4.44",
+        "bbox": [
+          61.65421875,
+          290.44125,
+          295.74421875,
+          407.199375
+        ],
+        "block_id": "/page/20/Table/4",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.62,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "Baseline | 16 | 5.62 | 3.53",
+        "bbox": [
+          297.740390625,
+          291.19921875,
+          530.611171875,
+          409.53515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "Baseline | 16 | 5.62 | 3.53",
+        "bbox": [
+          297.740390625,
+          291.19921875,
+          530.611171875,
+          409.53515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 6.7,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 1.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "GPTQ | 3 (5.33) | 6.70 | 5.58",
+        "bbox": [
+          297.740390625,
+          291.19921875,
+          530.611171875,
+          409.53515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.99,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM | 3.02 (5.30) | 5.99 | 4.05",
+        "bbox": [
+          297.740390625,
+          291.19921875,
+          530.611171875,
+          409.53515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.84,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM (0.45%) | 3.24 (4.94) | 5.84 | 3.88",
+        "bbox": [
+          297.740390625,
+          291.19921875,
+          530.611171875,
+          409.53515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.69,
+        "baseline_label": "FP16",
+        "baseline_value": 5.62,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G",
+        "quote": "SqueezeLLM | 4.04 (3.96) | 5.69 | 3.76",
+        "bbox": [
+          297.740390625,
+          291.19921875,
+          530.611171875,
+          409.53515625
+        ],
+        "block_id": "/page/20/Table/5",
+        "source_table": "Table H.13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 5.83,
+        "baseline_label": "FP16",
+        "baseline_value": 5.52,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "I. Limitations",
+        "quote": "SqueezeLLM | 3.02 (5.30) | 5.83 | 3.77",
+        "bbox": [
+          180.9284765625,
+          239.47171875,
+          410.7512109375,
+          348.34078125
+        ],
+        "block_id": "/page/21/Table/4",
+        "source_table": "Table H.14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "I. Limitations",
+        "quote": "Baseline | 16 | 5.52 | 3.32",
+        "bbox": [
+          180.9284765625,
+          239.47171875,
+          410.7512109375,
+          348.34078125
+        ],
+        "block_id": "/page/21/Table/4",
+        "source_table": "Table H.14"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.63,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "I. Limitations",
+        "quote": "SqueezeLLM (0.45%) | 3.24 (4.94) | 5.73 | 3.63",
+        "bbox": [
+          180.9284765625,
+          239.47171875,
+          410.7512109375,
+          348.34078125
+        ],
+        "block_id": "/page/21/Table/4",
+        "source_table": "Table H.14"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 14.72,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "Baseline | 16 | 14.72 | 14.62",
+        "bbox": [
+          57.482578125,
+          165.399609375,
+          534.197109375,
+          374.459765625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table H.15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 16.42,
+        "baseline_label": "FP16",
+        "baseline_value": 14.72,
+        "delta": 1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "SqueezeLLM | 3.04 (5.26) | 16.42 | 16.30",
+        "bbox": [
+          57.482578125,
+          165.399609375,
+          534.197109375,
+          374.459765625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table H.15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 11.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "Baseline | 16 | 11.74 | 10.86",
+        "bbox": [
+          57.482578125,
+          165.399609375,
+          534.197109375,
+          374.459765625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table H.15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.44,
+        "baseline_label": "FP16",
+        "baseline_value": 11.74,
+        "delta": 0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "SqueezeLLM | 3.02 (5.29) | 12.44 | 11.70",
+        "bbox": [
+          57.482578125,
+          165.399609375,
+          534.197109375,
+          374.459765625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table H.15"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 0.83,
+        "baseline_label": "FP16",
+        "baseline_value": 1.21,
+        "delta": -0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G. Additional Hardware Profiling Results",
+        "quote": "SqueezeLLM | 4 | 0.83 | 1.52 | 3.66",
+        "bbox": [
+          185.4646875,
+          124.3378125,
+          409.8009375,
+          222.1621875
+        ],
+        "block_id": "/page/20/Table/2",
+        "source_table": "Table G.12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 1.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G. Additional Hardware Profiling Results",
+        "quote": "Baseline | 16 | 1.21 | 2.32 | 5.56",
+        "bbox": [
+          185.4646875,
+          124.3378125,
+          409.8009375,
+          222.1621875
+        ],
+        "block_id": "/page/20/Table/2",
+        "source_table": "Table G.12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SqueezeLLM",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A100 GPU",
+        "metric": "Latency (s) per 128 tokens",
+        "value": 0.56,
+        "baseline_label": "FP16",
+        "baseline_value": 1.21,
+        "delta": -0.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "G. Additional Hardware Profiling Results",
+        "quote": "SqueezeLLM | 3 | 0.56 | 0.97 | 2.26",
+        "bbox": [
+          185.4646875,
+          124.3378125,
+          409.8009375,
+          222.1621875
+        ],
+        "block_id": "/page/20/Table/2",
+        "source_table": "Table G.12"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU (5-shot)",
+        "metric": "Accuracy",
+        "value": 45.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "Baseline | 16 | 45.3% | 12.7",
+        "bbox": [
+          48.6193359375,
+          584.533125,
+          545.4509765625,
+          682.3575
+        ],
+        "block_id": "/page/22/Table/5",
+        "source_table": "Table H.16"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B (v1.1)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU (5-shot)",
+        "metric": "Accuracy",
+        "value": 42.2,
+        "baseline_label": "FP16",
+        "baseline_value": 45.3,
+        "delta": -3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "SqueezeLLM (0.45%) | 3.24 | 42.2% | 3.1",
+        "bbox": [
+          48.6193359375,
+          584.533125,
+          545.4509765625,
+          682.3575
+        ],
+        "block_id": "/page/22/Table/5",
+        "source_table": "Table H.16"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU (5-shot)",
+        "metric": "Accuracy",
+        "value": 60.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "Baseline | 16 | ... | 60.1% | OOM",
+        "bbox": [
+          48.6193359375,
+          584.533125,
+          545.4509765625,
+          682.3575
+        ],
+        "block_id": "/page/22/Table/5",
+        "source_table": "Table H.16"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-33B (v1.3)",
+        "method": "SqueezeLLM (0.45%)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU (5-shot)",
+        "metric": "Accuracy",
+        "value": 60.0,
+        "baseline_label": "FP16",
+        "baseline_value": 60.1,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "I. Limitations",
+        "quote": "SqueezeLLM (0.45%) | 4.26 | ... | 60.0% | 17.7",
+        "bbox": [
+          48.6193359375,
+          584.533125,
+          545.4509765625,
+          682.3575
+        ],
+        "block_id": "/page/22/Table/5",
+        "source_table": "Table H.16"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 139,
+    "dropped_cited_count": 5,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

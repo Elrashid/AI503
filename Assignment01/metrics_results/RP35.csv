@@ -1,0 +1,129 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP35,LLaMA-3-70B,FLATQUANT,4-bit,,WikiText-2,Avg QA Accuracy Drop vs FP16 (W4A4),0.94,SpinQuant,8.45,-7.5,percent,True,measured,1,Abstract,Abstract,"less than 1% accuracy drop for W4A4 quantization on the LLaMA-3-70B model, surpassing SpinQuant by **7.5**%"
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,RTX3090,Prefill Speedup over FP16,2.3,FP16,1.0,1.3,x_factor,True,measured,1,Abstract,Abstract,it provides up to 2.3x prefill speedup and 1.7x decoding speedup compared to the FP16 model
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,RTX3090,Decoding Speedup over FP16,1.76,FP16,1.0,0.76,x_factor,True,measured,7,4.3. Inference Latency,Figure 4,FLATQUANT can achieve up to 2.30x speedup for prefill and 1.76x speedup for decoding under the batch size of 64
+RP35,LLaMA-2-7B,FP16,16-bit,,WikiText-2,Perplexity,5.47,,,,,False,measured,6,4.1. Settings,Table 1,FP16 | - | 5.47 | 4.88 | 3.32 | 6.14 | 2.86
+RP35,LLaMA-2-13B,FP16,16-bit,,WikiText-2,Perplexity,4.88,,,,,False,measured,6,4.1. Settings,Table 1,FP16 | - | 5.47 | 4.88 | 3.32 | 6.14 | 2.86
+RP35,LLaMA-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.32,,,,,False,measured,6,4.1. Settings,Table 1,FP16 | - | 5.47 | 4.88 | 3.32 | 6.14 | 2.86
+RP35,LLaMA-3-8B,FP16,16-bit,,WikiText-2,Perplexity,6.14,,,,,False,measured,6,4.1. Settings,Table 1,FP16 | - | 5.47 | 4.88 | 3.32 | 6.14 | 2.86
+RP35,LLaMA-3-70B,FP16,16-bit,,WikiText-2,Perplexity,2.86,,,,,False,measured,6,4.1. Settings,Table 1,FP16 | - | 5.47 | 4.88 | 3.32 | 6.14 | 2.86
+RP35,LLaMA-2-7B,SmoothQuant,4-bit,,WikiText-2,Perplexity,83.12,FP16,5.47,77.65,absolute,False,measured,6,4.1. Settings,Table 1,SmoothQuant | RTN | 83.12 | 35.88 | 26.01 | 210.19 | 9.60
+RP35,LLaMA-2-13B,SmoothQuant,4-bit,,WikiText-2,Perplexity,35.88,FP16,4.88,31.0,absolute,False,measured,6,4.1. Settings,Table 1,SmoothQuant | RTN | 83.12 | 35.88 | 26.01
+RP35,LLaMA-2-70B,SmoothQuant,4-bit,,WikiText-2,Perplexity,26.01,FP16,3.32,22.69,absolute,False,measured,6,4.1. Settings,Table 1,SmoothQuant | RTN | 83.12 | 35.88 | 26.01
+RP35,LLaMA-3-8B,SmoothQuant,4-bit,,WikiText-2,Perplexity,210.19,FP16,6.14,204.05,absolute,False,measured,6,4.1. Settings,Table 1,SmoothQuant | RTN | ... | 210.19 | 9.60
+RP35,LLaMA-3-70B,SmoothQuant,4-bit,,WikiText-2,Perplexity,9.6,FP16,2.86,6.74,absolute,False,measured,6,4.1. Settings,Table 1,SmoothQuant | RTN | ... | 210.19 | 9.60
+RP35,LLaMA-2-7B,OmniQuant,4-bit,,WikiText-2,Perplexity,14.74,FP16,5.47,9.27,absolute,False,measured,6,4.1. Settings,Table 1,OmniQuant | RTN | 14.74 | 12.28
+RP35,LLaMA-2-13B,OmniQuant,4-bit,,WikiText-2,Perplexity,12.28,FP16,4.88,7.4,absolute,False,measured,6,4.1. Settings,Table 1,OmniQuant | RTN | 14.74 | 12.28
+RP35,LLaMA-2-7B,AffineQuant,4-bit,,WikiText-2,Perplexity,12.69,FP16,5.47,7.22,absolute,False,measured,6,4.1. Settings,Table 1,AffineQuant | RTN | 12.69 | 11.45
+RP35,LLaMA-2-13B,AffineQuant,4-bit,,WikiText-2,Perplexity,11.45,FP16,4.88,6.57,absolute,False,measured,6,4.1. Settings,Table 1,AffineQuant | RTN | 12.69 | 11.45
+RP35,LLaMA-2-7B,QuaRot,4-bit,,WikiText-2,Perplexity,8.56,FP16,5.47,3.09,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | RTN | 8.56 | 6.10 | 4.14 | 10.60 | 55.44
+RP35,LLaMA-2-13B,QuaRot,4-bit,,WikiText-2,Perplexity,6.1,FP16,4.88,1.22,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | RTN | 8.56 | 6.10 | 4.14
+RP35,LLaMA-2-70B,QuaRot,4-bit,,WikiText-2,Perplexity,4.14,FP16,3.32,0.82,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | RTN | 8.56 | 6.10 | 4.14
+RP35,LLaMA-3-8B,QuaRot,4-bit,,WikiText-2,Perplexity,10.6,FP16,6.14,4.46,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | RTN | ... | 10.60 | 55.44
+RP35,LLaMA-3-70B,QuaRot,4-bit,,WikiText-2,Perplexity,55.44,FP16,2.86,52.58,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | RTN | ... | 10.60 | 55.44
+RP35,LLaMA-2-7B,SpinQuant,4-bit,,WikiText-2,Perplexity,6.14,FP16,5.47,0.67,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | RTN | 6.14 | 5.44 | 3.82 | 7.96 | 7.58
+RP35,LLaMA-2-13B,SpinQuant,4-bit,,WikiText-2,Perplexity,5.44,FP16,4.88,0.56,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | RTN | 6.14 | 5.44 | 3.82
+RP35,LLaMA-2-70B,SpinQuant,4-bit,,WikiText-2,Perplexity,3.82,FP16,3.32,0.5,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | RTN | 6.14 | 5.44 | 3.82
+RP35,LLaMA-3-8B,SpinQuant,4-bit,,WikiText-2,Perplexity,7.96,FP16,6.14,1.82,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | RTN | ... | 7.96 | 7.58
+RP35,LLaMA-3-70B,SpinQuant,4-bit,,WikiText-2,Perplexity,7.58,FP16,2.86,4.72,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | RTN | ... | 7.96 | 7.58
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,WikiText-2,Perplexity,5.79,FP16,5.47,0.32,absolute,True,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | **5.79** | **5.12** | **3.55** | **6.98** | **3.78**
+RP35,LLaMA-2-13B,FLATQUANT,4-bit,,WikiText-2,Perplexity,5.12,FP16,4.88,0.24,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | **5.79** | **5.12** | **3.55**
+RP35,LLaMA-2-70B,FLATQUANT,4-bit,,WikiText-2,Perplexity,3.55,FP16,3.32,0.23,absolute,True,measured,6,4.2. Main Results,Table 1,"For the LLaMA-2-70B model, FLATQUANT achieves a PPL score just 0.23 higher than the FP16 baseline"
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,WikiText-2,Perplexity,6.98,FP16,6.14,0.84,absolute,True,measured,6,4.2. Main Results,Table 1,"For LLaMA-3-8B, FLATQUANT reduces the PPL from 7.39 (SpinQuant) to 6.98, narrowing the gap with the FP16 baseline to 0.84"
+RP35,LLaMA-3-70B,FLATQUANT,4-bit,,WikiText-2,Perplexity,3.78,FP16,2.86,0.92,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | ... | **6.98** | **3.78**
+RP35,LLaMA-2-7B,QUIK-4B,4-bit,,WikiText-2,Perplexity,8.87,FP16,5.47,3.4,absolute,False,measured,6,4.1. Settings,Table 1,QUIK-4B | GPTQ | 8.87 | 7.78 | 6.91
+RP35,LLaMA-2-13B,QUIK-4B,4-bit,,WikiText-2,Perplexity,7.78,FP16,4.88,2.9,absolute,False,measured,6,4.1. Settings,Table 1,QUIK-4B | GPTQ | 8.87 | 7.78 | 6.91
+RP35,LLaMA-2-70B,QUIK-4B,4-bit,,WikiText-2,Perplexity,6.91,FP16,3.32,3.59,absolute,False,measured,6,4.1. Settings,Table 1,QUIK-4B | GPTQ | 8.87 | 7.78 | 6.91
+RP35,LLaMA-2-7B,QuaRot+GPTQ,4-bit,,WikiText-2,Perplexity,6.1,FP16,5.47,0.63,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | GPTQ | 6.10 | 5.40 | 3.79 | 8.16 | 6.60
+RP35,LLaMA-2-13B,QuaRot+GPTQ,4-bit,,WikiText-2,Perplexity,5.4,FP16,4.88,0.52,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | GPTQ | 6.10 | 5.40 | 3.79
+RP35,LLaMA-2-70B,QuaRot+GPTQ,4-bit,,WikiText-2,Perplexity,3.79,FP16,3.32,0.47,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | GPTQ | 6.10 | 5.40 | 3.79
+RP35,LLaMA-3-8B,QuaRot+GPTQ,4-bit,,WikiText-2,Perplexity,8.16,FP16,6.14,2.02,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | GPTQ | ... | 8.16 | 6.60
+RP35,LLaMA-3-70B,QuaRot+GPTQ,4-bit,,WikiText-2,Perplexity,6.6,FP16,2.86,3.74,absolute,False,measured,6,4.1. Settings,Table 1,QuaRot | GPTQ | ... | 8.16 | 6.60
+RP35,LLaMA-2-7B,SpinQuant+GPTQ,4-bit,,WikiText-2,Perplexity,5.96,FP16,5.47,0.49,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | GPTQ | 5.96 | 5.24 | 3.70 | 7.39 | 6.21
+RP35,LLaMA-2-13B,SpinQuant+GPTQ,4-bit,,WikiText-2,Perplexity,5.24,FP16,4.88,0.36,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | GPTQ | 5.96 | 5.24 | 3.70
+RP35,LLaMA-2-70B,SpinQuant+GPTQ,4-bit,,WikiText-2,Perplexity,3.7,FP16,3.32,0.38,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | GPTQ | 5.96 | 5.24 | 3.70
+RP35,LLaMA-3-8B,SpinQuant+GPTQ,4-bit,,WikiText-2,Perplexity,7.39,FP16,6.14,1.25,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | GPTQ | ... | 7.39 | 6.21
+RP35,LLaMA-3-70B,SpinQuant+GPTQ,4-bit,,WikiText-2,Perplexity,6.21,FP16,2.86,3.35,absolute,False,measured,6,4.1. Settings,Table 1,SpinQuant | GPTQ | ... | 7.39 | 6.21
+RP35,LLaMA-2-7B,FLATQUANT+GPTQ,4-bit,,WikiText-2,Perplexity,5.78,FP16,5.47,0.31,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | GPTQ | **5.78** | **5.11** | **3.54** | **6.90** | **3.77**
+RP35,LLaMA-2-13B,FLATQUANT+GPTQ,4-bit,,WikiText-2,Perplexity,5.11,FP16,4.88,0.23,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | GPTQ | **5.78** | **5.11** | **3.54**
+RP35,LLaMA-2-70B,FLATQUANT+GPTQ,4-bit,,WikiText-2,Perplexity,3.54,FP16,3.32,0.22,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | GPTQ | **5.78** | **5.11** | **3.54**
+RP35,LLaMA-3-8B,FLATQUANT+GPTQ,4-bit,,WikiText-2,Perplexity,6.9,FP16,6.14,0.76,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | GPTQ | ... | **6.90** | **3.77**
+RP35,LLaMA-3-70B,FLATQUANT+GPTQ,4-bit,,WikiText-2,Perplexity,3.77,FP16,2.86,0.91,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | GPTQ | ... | **6.90** | **3.77**
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,C4,Perplexity,7.79,FP16,7.26,0.53,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | ... | **7.79** | **7.09** | **5.91** | **11.13** | **7.86**
+RP35,LLaMA-2-13B,FLATQUANT,4-bit,,C4,Perplexity,7.09,FP16,6.73,0.36,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | ... | **7.09** | **5.91**
+RP35,LLaMA-2-70B,FLATQUANT,4-bit,,C4,Perplexity,5.91,FP16,5.71,0.2,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | ... | **5.91** | **11.13**
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,C4,Perplexity,11.13,FP16,9.45,1.68,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | ... | **11.13** | **7.86**
+RP35,LLaMA-3-70B,FLATQUANT,4-bit,,C4,Perplexity,7.86,FP16,7.17,0.69,absolute,False,measured,6,4.1. Settings,Table 1,FLATQUANT | RTN | ... | **11.13** | **7.86**
+RP35,LLaMA-2-7B,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,69.79,,,,,False,measured,7,4.2. Main Results,Table 2,2-7B | FP16 | - | 46.16 | 74.54 | 75.98 | 73.92 | 79.05 | 69.06 | 69.79
+RP35,LLaMA-2-7B,QuaRot,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,57.73,FP16,69.79,-12.06,absolute,False,measured,7,4.2. Main Results,Table 2,QuaRot | RTN | 36.60 | 61.41 | 65.07 | 48.06 | 72.20 | 63.06 | 57.73
+RP35,LLaMA-2-7B,SpinQuant,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,63.52,FP16,69.79,-6.27,absolute,False,measured,7,4.2. Main Results,Table 2,SpinQuant | RTN | 39.42 | 65.32 | 71.45 | 66.16 | 75.30 | 63.46 | 63.52
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,67.96,FP16,69.79,-1.83,absolute,False,measured,7,4.2. Main Results,Table 2,FLATQUANT | RTN | 43.26 | 72.05 | 73.64 | 72.04 | 77.26 | 69.53 | **67.96**
+RP35,LLaMA-2-13B,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,72.55,,,,,False,measured,7,4.2. Main Results,Table 2,2-13B | FP16 | - | 49.15 | 77.44 | 79.39 | 76.73 | 80.47 | 72.14 | 72.55
+RP35,LLaMA-2-13B,QuaRot,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,66.25,FP16,72.55,-6.3,absolute,False,measured,7,4.2. Main Results,Table 2,QuaRot | RTN | 42.83 | 69.95 | 73.54 | 65.62 | 77.69 | 67.88 | 66.25
+RP35,LLaMA-2-13B,SpinQuant,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,68.56,FP16,72.55,-3.99,absolute,False,measured,7,4.2. Main Results,Table 2,SpinQuant | RTN | 43.69 | 72.43 | 75.52 | 72.42 | 78.40 | 68.90 | 68.56
+RP35,LLaMA-2-13B,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,71.42,FP16,72.55,-1.13,absolute,False,measured,7,4.2. Main Results,Table 2,FLATQUANT | RTN | 48.04 | 76.64 | 77.59 | 76.60 | 79.38 | 70.24 | **71.42**
+RP35,LLaMA-2-70B,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,77.05,,,,,False,measured,7,4.2. Main Results,Table 2,2-70B | FP16 | - | 57.17 | 81.02 | 83.81 | 79.60 | 82.70 | 77.98 | 77.05
+RP35,LLaMA-2-70B,QuaRot,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,73.47,FP16,77.05,-3.58,absolute,False,measured,7,4.2. Main Results,Table 2,QuaRot | RTN | 52.22 | 76.60 | 79.96 | 74.61 | 81.12 | 76.32 | 73.47
+RP35,LLaMA-2-70B,SpinQuant,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,75.09,FP16,77.05,-1.96,absolute,False,measured,7,4.2. Main Results,Table 2,SpinQuant | RTN | 55.03 | 79.17 | 81.76 | 78.87 | 81.45 | 74.27 | 75.09
+RP35,LLaMA-2-70B,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,76.62,FP16,77.05,-0.43,absolute,False,measured,7,4.2. Main Results,Table 2,FLATQUANT | RTN | 56.14 | 80.30 | 83.01 | 79.60 | 82.75 | 77.90 | **76.62**
+RP35,LLaMA-3-8B,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,73.23,,,,,False,measured,7,4.2. Main Results,Table 2,3-8B | FP16 | - | 53.50 | 77.57 | 79.12 | 75.51 | 80.74 | 72.93 | 73.23
+RP35,LLaMA-3-8B,QuaRot,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,61.34,FP16,73.23,-11.89,absolute,False,measured,7,4.2. Main Results,Table 2,QuaRot | RTN | 38.65 | 66.54 | 68.82 | 57.20 | 71.82 | 65.04 | 61.34
+RP35,LLaMA-3-8B,SpinQuant,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,66.98,FP16,73.23,-6.25,absolute,False,measured,7,4.2. Main Results,Table 2,SpinQuant | RTN | 45.73 | 71.38 | 74.07 | 67.67 | 76.66 | 66.38 | 66.98
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,71.23,FP16,73.23,-2.0,absolute,True,measured,6,4.2. Main Results,Table 2,an accuracy loss of 2.00% for LLaMA-3-8B and 0.94% for LLaMA-3-70B
+RP35,LLaMA-3-70B,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,79.95,,,,,False,measured,7,4.2. Main Results,Table 2,3-70B | FP16 | - | 64.25 | 85.94 | 84.93 | 79.37 | 84.44 | 80.74 | 79.95
+RP35,LLaMA-3-70B,QuaRot,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,35.36,FP16,79.95,-44.59,absolute,False,measured,7,4.2. Main Results,Table 2,QuaRot | RTN | 22.18 | 34.30 | 32.15 | 13.35 | 57.67 | 52.49 | 35.36
+RP35,LLaMA-3-70B,SpinQuant,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,65.66,FP16,79.95,-14.29,absolute,False,measured,7,4.2. Main Results,Table 2,SpinQuant | RTN | 44.03 | 69.07 | 74.57 | 63.34 | 76.99 | 65.98 | 65.66
+RP35,LLaMA-3-70B,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,79.01,FP16,79.95,-0.94,absolute,True,measured,7,4.2. Main Results,Table 2,FLATQUANT | RTN | 62.12 | 84.97 | 83.95 | 78.73 | 84.28 | 80.03 | **79.01**
+RP35,LLaMA-3-8B,RTN,4-bit,,WikiText-2,Perplexity,1266.6,FP16,6.14,1260.46,absolute,False,measured,8,4.4. Discussions,Table 3,1266.60 | 936.41 | 30.99
+RP35,LLaMA-3-8B,FLATQUANT-LT,4-bit,,WikiText-2,Perplexity,8.5,FP16,6.14,2.36,absolute,False,measured,8,4.4. Discussions,Table 3,\checkmark | | | 8.50 | 13.51 | 66.82
+RP35,LLaMA-3-8B,FLATQUANT-LT+PS,4-bit,,WikiText-2,Perplexity,7.95,FP16,6.14,1.81,absolute,False,measured,8,4.4. Discussions,Table 3,\checkmark | \checkmark | | 7.95 | 12.74 | 67.08
+RP35,LLaMA-3-8B,FLATQUANT-LT+LCT,4-bit,,WikiText-2,Perplexity,7.11,FP16,6.14,0.97,absolute,False,measured,8,4.4. Discussions,Table 3,\checkmark | | \checkmark | 7.11 | 11.47 | 70.72
+RP35,LLaMA-3.1-8B-Instruct,FP16,16-bit,,WikiText-2,Perplexity,7.22,,,,,False,measured,17,C.1. Results on Other LLM Architectures,Table 7,FP16 | 7.22 | 11.38 | 55.20 | 79.67 | 79.20 | 73.14 | 81.12 | 73.80 | 73.69
+RP35,LLaMA-3.1-8B-Instruct,QuaRot,4-bit,,WikiText-2,Perplexity,9.25,FP16,7.22,2.03,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 7,QuaRot | 9.25 | 15.13 | 45.39 | 73.15
+RP35,LLaMA-3.1-8B-Instruct,FLATQUANT,4-bit,,WikiText-2,Perplexity,7.97,FP16,7.22,0.75,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 7,FLATQUANT | 7.97 | 12.99 | 52.90 | 79.25
+RP35,LLaMA-3.1-8B-Instruct,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,72.03,FP16,73.69,-1.66,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 7,FLATQUANT | 7.97 | 12.99 | 52.90 | 79.25 | 76.68 | 70.79 | 79.49 | 73.09 | **72.03**
+RP35,Qwen-2.5-7B-Instruct,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,70.75,,,,,False,measured,17,C.1. Results on Other LLM Architectures,Table 8,7B | FP16 | - | 8.36 | 14.37 | 51.37 | 75.80 | 79.57 | 67.61 | 80.20 | 69.93 | 70.75
+RP35,Qwen-2.5-7B-Instruct,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,68.62,FP16,70.75,-2.13,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 8,FLATQUANT | RTN | 8.46 | 13.94 | 51.71 | 77.69 | 78.42 | 57.46 | 76.93 | 69.53 | **68.62**
+RP35,Qwen-2.5-32B-Instruct,FP16,16-bit,,Avg-6QA,Avg Zero-shot Accuracy,75.1,,,,,False,measured,17,C.1. Results on Other LLM Architectures,Table 8,32B | FP16 | - | 5.32 | 10.45 | 58.62 | 77.02 | 85.25 | 75.14 | 81.39 | 73.16 | 75.10
+RP35,Qwen-2.5-32B-Instruct,QuaRot,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,70.24,FP16,75.1,-4.86,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 8,QuaRot | RTN | 6.95 | 12.17 | 52.13 | 74.37 | 80.41 | 68.37 | 78.45 | 67.72 | 70.24
+RP35,Qwen-2.5-32B-Instruct,FLATQUANT,4-bit,,Avg-6QA,Avg Zero-shot Accuracy,74.89,FP16,75.1,-0.21,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 8,FLATQUANT | RTN | 5.80 | 10.86 | 58.62 | 78.58 | 83.72 | 75.26 | 80.74 | 72.45 | **74.89**
+RP35,DeepSeek-V3-Base,FLATQUANT,4-bit,,MMLU,Accuracy,86.32,FP8,87.1,-0.78,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 9,FLATQUANT-W4A4 | 89.59 | 86.32 | -
+RP35,DeepSeek-V3-Base,FLATQUANT,4-bit,,C-Eval,Accuracy,89.59,FP8,90.1,-0.51,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 9,FLATQUANT-W4A4 | 89.59 | 86.32 | -
+RP35,DeepSeek-R1,FLATQUANT,4-bit,,AIME2024,Accuracy,73.3,FP8,79.8,-6.5,absolute,False,measured,17,C.1. Results on Other LLM Architectures,Table 9,FLATQUANT-W4A4 | - | - | 73.3
+RP35,LLaMA-3.1-8B-Instruct,FP16,16-bit,,MT-Bench,Avg Score,7.6,,,,,False,measured,18,C.2. Results on MT-Bench,Table 10,FP16 | 8.17 | 8.10 | 5.05 | 7.00 | 6.10 | 8.67 | 8.50 | 8.91 | 7.60
+RP35,LLaMA-3.1-8B-Instruct,QuaRot,4-bit,,MT-Bench,Avg Score,5.99,FP16,7.6,-1.61,absolute,False,measured,18,C.2. Results on MT-Bench,Table 10,QuaRot | 7.20 | 6.90 | 3.90 | 5.30 | 4.05 | 6.70 | 6.05 | 7.80 | 5.99
+RP35,LLaMA-3.1-8B-Instruct,FLATQUANT,4-bit,,MT-Bench,Avg Score,6.94,FP16,7.6,-0.66,absolute,False,measured,18,C.2. Results on MT-Bench,Table 10,FLATQUANT | 7.95 | 7.35 | 4.70 | 7.20 | 4.80 | 7.60 | 7.20 | 8.70 | **6.94**
+RP35,LLaMA-3-8B,RTN,4-bit,,WikiText-2,Perplexity,8.7,FP16,6.14,2.56,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,RTN | 8.70 | 2.2E3 | 14.00 | 5.6E3
+RP35,LLaMA-3-8B,RTN,3-bit,,WikiText-2,Perplexity,2200.0,FP16,6.14,2193.86,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,RTN | 8.70 | 2.2E3 | 14.00 | 5.6E3
+RP35,LLaMA-3-8B,GPTQ,4-bit,,WikiText-2,Perplexity,7.0,FP16,6.14,0.86,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,GPTQ | 7.00 | 13.00 | 11.80 | 45.90
+RP35,LLaMA-3-8B,GPTQ,3-bit,,WikiText-2,Perplexity,13.0,FP16,6.14,6.86,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,GPTQ | 7.00 | 13.00 | 11.80 | 45.90
+RP35,LLaMA-3-8B,GPTQ,4-bit,g128,WikiText-2,Perplexity,6.5,FP16,6.14,0.36,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,GPTQ-g128 | 6.50 | 8.20 | 10.40 | 13.70
+RP35,LLaMA-3-8B,GPTQ,3-bit,g128,WikiText-2,Perplexity,8.2,FP16,6.14,2.06,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,GPTQ-g128 | 6.50 | 8.20 | 10.40 | 13.70
+RP35,LLaMA-3-8B,AWQ,4-bit,,WikiText-2,Perplexity,7.1,FP16,6.14,0.96,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,AWQ | 7.10 | 12.80 | 10.10 | 16.80
+RP35,LLaMA-3-8B,AWQ,3-bit,,WikiText-2,Perplexity,12.8,FP16,6.14,6.66,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,AWQ | 7.10 | 12.80 | 10.10 | 16.80
+RP35,LLaMA-3-8B,QuIP,4-bit,,WikiText-2,Perplexity,6.5,FP16,6.14,0.36,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,QuIP | 6.50 | 7.50 | 11.10 | 11.30
+RP35,LLaMA-3-8B,QuIP,3-bit,,WikiText-2,Perplexity,7.5,FP16,6.14,1.36,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,QuIP | 6.50 | 7.50 | 11.10 | 11.30
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,WikiText-2,Perplexity (W4A16 weight-only),6.54,FP16,6.14,0.4,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,FLATQUANT-RTN | 6.54 | 7.78 | 10.17 | 12.64
+RP35,LLaMA-3-8B,FLATQUANT,3-bit,,WikiText-2,Perplexity (W3A16 weight-only),7.78,FP16,6.14,1.64,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,FLATQUANT-RTN | 6.54 | 7.78 | 10.17 | 12.64
+RP35,LLaMA-3-8B,FLATQUANT+GPTQ,4-bit,,WikiText-2,Perplexity (W4A16 weight-only),6.48,FP16,6.14,0.34,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,FLATQUANT-GPTQ | 6.48 | 7.52 | 10.28 | 12.91
+RP35,LLaMA-3-8B,FLATQUANT+GPTQ,3-bit,,WikiText-2,Perplexity (W3A16 weight-only),7.52,FP16,6.14,1.38,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 11,FLATQUANT-GPTQ | 6.48 | 7.52 | 10.28 | 12.91
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,g128,WikiText-2,Perplexity (KV4),6.2,FP16,6.14,0.06,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 12,4 | 4 | 6.20 | 9.56 | 52.82
+RP35,LLaMA-3-8B,FLATQUANT,3-bit,g128,WikiText-2,Perplexity (KV3),6.41,FP16,6.14,0.27,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 12,3 | 3 | 6.41 | 10.03 | 52.47
+RP35,LLaMA-3-8B,FLATQUANT,2-bit,g128,WikiText-2,Perplexity (KV2),8.93,FP16,6.14,2.79,absolute,False,measured,18,C.3. Extension to More Quantization Settings,Table 12,2 | 2 | 8.93 | 16.13 | 42.92
+RP35,LLaMA-2-7B,QuaRot,4-bit,g128,WikiText-2,Perplexity (KV4),5.51,FP16,5.47,0.04,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 13,QuaRot | 4 | 4 | 5.51 | 4.91
+RP35,LLaMA-2-7B,QuaRot,2-bit,g128,WikiText-2,Perplexity (KV2),9.23,FP16,5.47,3.76,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 13,QuaRot | ... | 2 | 2 | 9.23 | 7.07
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,g128,WikiText-2,Perplexity (KV4),5.5,FP16,5.47,0.03,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 13,FLATQUANT | 4 | 4 | 5.50 | 4.91
+RP35,LLaMA-2-7B,FLATQUANT,2-bit,g128,WikiText-2,Perplexity (KV2),6.66,QuaRot,9.23,-2.57,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 13,FLATQUANT outperforms QuaRot by 2.57 in perplexity for the 7B model
+RP35,LLaMA-2-13B,FLATQUANT,2-bit,g128,WikiText-2,Perplexity (KV2),5.69,FP16,4.88,0.81,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 13,FLATQUANT | ... | 2 | 2 | 6.66 | 5.69
+RP35,LLaMA-3-8B,FLATQUANT,3-bit,,WikiText-2,Perplexity (W3A3KV3),10.82,QuaRot,686.54,-675.72,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 14,FLATQUANT-W3A3KV3 | 10.82 | 19.03 | 35.41 | 63.26 | 65.30 | 52.49 | 73.56 | 60.69 | **58.45**
+RP35,LLaMA-3-8B,QuaRot,3-bit,,WikiText-2,Perplexity (W3A3KV3),686.54,FP16,6.14,680.4,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 14,QuaRot-W3A3KV3 | 686.54 | 630.89 | 25.34 | 28.41
+RP35,LLaMA-3-8B,FLATQUANT,3-bit,,Avg-6QA,Avg Zero-shot Accuracy (W3A3KV3),58.45,FP16,73.23,-14.78,absolute,False,measured,19,C.3. Extension to More Quantization Settings,Table 14,FLATQUANT-W3A3KV3 | 10.82 | 19.03 | 35.41 | 63.26 | 65.30 | 52.49 | 73.56 | 60.69 | **58.45**
+RP35,LLaMA-2-7B,FP16,16-bit,,RTX3090,Memory single-token decode (GB) seq256,0.393,,,,,False,measured,21,C.7. Analysis of Inference Memory,Table 20,256 | 0.393 | 0.110 | 0.110 | 3.58×
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,RTX3090,Memory single-token decode (GB) seq256,0.11,FP16,0.393,3.58,x_factor,False,measured,21,C.7. Analysis of Inference Memory,Table 20,256 | 0.393 | 0.110 | 0.110 | 3.58×
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,RTX3090,Memory single-token decode (GB) seq2048,0.13,FP16,0.434,3.35,x_factor,False,measured,21,C.7. Analysis of Inference Memory,Table 20,2048 | 0.434 | 0.130 | 0.130 | 3.35×
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,RTX3090,"Prefill Speedup over FP16 (seq2048,bs1)",2.12,FP16,1.0,1.12,x_factor,False,measured,23,C.9. Comparison with AffineQuant,Table 21,2048 | 2.16× | 1.97× | 2.12×
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,RTX3090,"Prefill Speedup over FP16 (seq16384,bs1)",1.8,FP16,1.0,0.8,x_factor,False,measured,23,C.9. Comparison with AffineQuant,Table 21,16384 | 1.83× | 1.72× | 1.80×
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,RTX3090,"Decoding Speedup over FP16 (kv2048,bs64)",1.76,FP16,1.0,0.76,x_factor,False,measured,23,C.9. Comparison with AffineQuant,Table 22,2048 | 1.78× | 1.72× | 1.76×
+RP35,LLaMA-3-8B,FLATQUANT,4-bit,,Calibration,Calibration Time (hours),0.9,,,,,False,measured,14,B.1. Matrix Inversion and Training Cost,Table 5,weight-activation | 1.15 hours | 1.55 hours | 6.15 hours | 0.90 hours | 5.94 hours
+RP35,LLaMA-3-70B,FLATQUANT,4-bit,,Calibration,Calibration Time (hours),5.94,,,,,False,measured,14,B.1. Matrix Inversion and Training Cost,Table 5,weight-activation | 1.15 hours | 1.55 hours | 6.15 hours | 0.90 hours | 5.94 hours
+RP35,LLaMA-2-7B,FLATQUANT,4-bit,,RTX3090,Online Transformation FLOPs % of FP16,2.61,,,,percent,False,measured,4,3.1. Fast and Learnable Affine Transformation,Section 3.1,they only take 2.61% of the overall computational FLOPs and 3.41MB extra memory for LLaMA-2-7B
