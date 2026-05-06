@@ -200,12 +200,22 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   }
   body.dyslexia { font-family: "Atkinson Hyperlegible", "Open Dyslexic", system-ui, sans-serif; letter-spacing: 0.02em; }
   /* Arabic is a cursive connected script — letter-spacing breaks ligatures.
-     OpenDyslexic / Atkinson Hyperlegible are Latin-only and fall back to system font,
-     so dyslexia mode reverts to plain Noto Naskh Arabic for RTL content. */
+     OpenDyslexic / Atkinson Hyperlegible are Latin-only and fall back to system font.
+     For Arabic dyslexia accessibility, the things that actually help are bigger font,
+     more line-height, and more word-spacing (NOT letter-spacing). Research on Arabic
+     dyslexia (Awadh et al. 2020, Khateb 2021) confirms these three levers. */
   body.dyslexia .md.rtl, body.dyslexia .md.rtl * {
     letter-spacing: normal !important;
     font-family: "Noto Naskh Arabic", "Tahoma", system-ui, sans-serif !important;
   }
+  body.dyslexia .md.rtl {
+    font-size: 19px !important;
+    line-height: 2.0 !important;
+    word-spacing: 0.25em !important;
+  }
+  /* First-word-of-sentence emphasis for Arabic — the word-granularity replacement
+     for bionic. Applied via JS class .ar-firstword (see applyArabicReadability). */
+  body.bionic .md.rtl .ar-firstword { font-weight: 700; }
   body.lang-ar [data-lang-target] { font-family: "Noto Naskh Arabic", "Tahoma", system-ui, sans-serif; }
 
   /* === Top bar === */
@@ -1016,12 +1026,14 @@ async function renderCompare() {
 }
 
 function applyBionic(scope) {
-  // Bold first half of each word in <p>/<li>. Skipped for Arabic (RTL) because
-  // Arabic is a cursive script — splitting a word mid-letter breaks the
-  // letter-form connections (initial/medial/final shapes), and the "first half"
-  // in logical order is the rightmost half visually, which inverts the visual
-  // cue the technique is meant to provide.
-  if (scope.classList && scope.classList.contains('rtl')) return;
+  // Two strategies depending on script:
+  //   Latin (LTR) — classic bionic: bold first half of each word.
+  //   Arabic (RTL) — word-granularity bionic: bold the FIRST WORD of each sentence,
+  //     which preserves cursive ligatures and gives the eye a sentence-level cue.
+  if (scope.classList && scope.classList.contains('rtl')) {
+    applyArabicReadability(scope);
+    return;
+  }
   scope.querySelectorAll('p, li').forEach(el => {
     if (el.dataset.bionic === '1') return;
     el.dataset.bionic = '1';
@@ -1029,6 +1041,20 @@ function applyBionic(scope) {
       const n = Math.ceil(w.length / 2);
       return `<span class="bio-b">${w.slice(0, n)}</span><span class="bio-r">${w.slice(n)}</span>`;
     });
+  });
+}
+
+function applyArabicReadability(scope) {
+  // Bold the first word after each sentence boundary in Arabic prose.
+  // Arabic sentence enders: . ؟ ! ؛ : (and Western .?!)
+  scope.querySelectorAll('p, li').forEach(el => {
+    if (el.dataset.bionic === '1') return;
+    el.dataset.bionic = '1';
+    // Match: start of element OR (sentence-ender + whitespace) followed by a word
+    el.innerHTML = el.innerHTML.replace(
+      /(^|[\.؟!؛:]\s+)([؀-ۿ]+)/g,
+      (_m, prefix, word) => `${prefix}<span class="ar-firstword">${word}</span>`
+    );
   });
 }
 
