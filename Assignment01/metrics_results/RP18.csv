@@ -1,0 +1,123 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP18,LLaMA-1-13B,OmniQuant,2-bit,,WikiText2,Perplexity,13.21,GPTQ,5500.0,-5486.79,absolute,True,measured,3,1 Introduction,,"when LLaMA-13B is quantized into W2A16, OmniQuant achieves a perplexity of 13.21, while GPTQ incurs a significant increase in perplexity to 3832"
+RP18,LLaMA-2-7B,OmniQuant,4-bit,,A100-40G,Quantization time (hours),1.6,,,,,True,measured,1,ABSTRACT,,the LLaMA-2 model family size 7-70B can be processed with OmniQuant on a single A100-40G GPU within 1-16 hours using 128 samples
+RP18,LLaMA-2-70B,OmniQuant,4-bit,,A100-40G,Quantization time (hours),14.4,,,,,True,measured,17,A4 TRAINING TIME,Table A12,weight-activation ... 65B 14.4h
+RP18,LLaMA-1-7B,RTN,2-bit,,WikiText2,Perplexity,110000.0,FP16,5.68,109994.32,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN 1.1e5 6.8e4 2.4e4 2.2e4
+RP18,LLaMA-1-13B,RTN,2-bit,,WikiText2,Perplexity,68000.0,FP16,5.09,67994.91,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN 1.1e5 6.8e4 2.4e4
+RP18,LLaMA-1-30B,RTN,2-bit,,WikiText2,Perplexity,24000.0,FP16,4.1,23995.9,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 2.4e4 2.2e4
+RP18,LLaMA-1-65B,RTN,2-bit,,WikiText2,Perplexity,22000.0,FP16,3.53,21996.47,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 2.2e4 3.8e4
+RP18,LLaMA-2-7B,RTN,2-bit,,WikiText2,Perplexity,38000.0,FP16,5.47,37994.53,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 3.8e4 5.6e4 2.0e4
+RP18,LLaMA-2-13B,RTN,2-bit,,WikiText2,Perplexity,56000.0,FP16,4.88,55995.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 5.6e4 2.0e4
+RP18,LLaMA-2-70B,RTN,2-bit,,WikiText2,Perplexity,20000.0,FP16,3.31,19996.69,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 2.0e4
+RP18,LLaMA-1-7B,GPTQ,2-bit,,WikiText2,Perplexity,2100.0,FP16,5.68,2094.32,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 2.1e3 5.5e3 499.75 55.91 7.7e3 2.1e3 77.95
+RP18,LLaMA-1-13B,GPTQ,2-bit,,WikiText2,Perplexity,5500.0,FP16,5.09,5494.91,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 2.1e3 5.5e3 499.75
+RP18,LLaMA-1-30B,GPTQ,2-bit,,WikiText2,Perplexity,499.75,FP16,4.1,495.65,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 499.75 55.91
+RP18,LLaMA-1-65B,GPTQ,2-bit,,WikiText2,Perplexity,55.91,FP16,3.53,52.38,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 55.91 7.7e3
+RP18,LLaMA-2-7B,GPTQ,2-bit,,WikiText2,Perplexity,7700.0,FP16,5.47,7694.53,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 7.7e3 2.1e3 77.95
+RP18,LLaMA-2-13B,GPTQ,2-bit,,WikiText2,Perplexity,2100.0,FP16,4.88,2095.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 2.1e3 77.95
+RP18,LLaMA-2-70B,GPTQ,2-bit,,WikiText2,Perplexity,77.95,FP16,3.31,74.64,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 77.95
+RP18,LLaMA-1-7B,OmniQuant,2-bit,,WikiText2,Perplexity,15.47,FP16,5.68,9.79,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 15.47 13.21 8.71 7.58 37.37 17.21 7.81
+RP18,LLaMA-1-13B,OmniQuant,2-bit,,WikiText2,Perplexity,13.21,FP16,5.09,8.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 15.47 13.21 8.71
+RP18,LLaMA-1-30B,OmniQuant,2-bit,,WikiText2,Perplexity,8.71,FP16,4.1,4.61,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 8.71 7.58
+RP18,LLaMA-1-65B,OmniQuant,2-bit,,WikiText2,Perplexity,7.58,FP16,3.53,4.05,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.58 37.37
+RP18,LLaMA-2-7B,OmniQuant,2-bit,,WikiText2,Perplexity,37.37,FP16,5.47,31.9,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 37.37 17.21 7.81
+RP18,LLaMA-2-13B,OmniQuant,2-bit,,WikiText2,Perplexity,17.21,FP16,4.88,12.33,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 17.21 7.81
+RP18,LLaMA-2-70B,OmniQuant,2-bit,,WikiText2,Perplexity,7.81,FP16,3.31,4.5,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.81
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g128,WikiText2,Perplexity,9.72,GPTQ,44.01,-34.29,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16g128 ... OmniQuant 9.72 7.93 7.12 5.95 11.06 8.26 6.55
+RP18,LLaMA-1-13B,OmniQuant,2-bit,g128,WikiText2,Perplexity,7.93,FP16,5.09,2.84,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 9.72 7.93 7.12
+RP18,LLaMA-1-30B,OmniQuant,2-bit,g128,WikiText2,Perplexity,7.12,FP16,4.1,3.02,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.12 5.95
+RP18,LLaMA-1-65B,OmniQuant,2-bit,g128,WikiText2,Perplexity,5.95,FP16,3.53,2.42,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.95 11.06
+RP18,LLaMA-2-7B,OmniQuant,2-bit,g128,WikiText2,Perplexity,11.06,FP16,5.47,5.59,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 11.06 8.26 6.55
+RP18,LLaMA-2-13B,OmniQuant,2-bit,g128,WikiText2,Perplexity,8.26,FP16,4.88,3.38,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 8.26 6.55
+RP18,LLaMA-2-70B,OmniQuant,2-bit,g128,WikiText2,Perplexity,6.55,FP16,3.31,3.24,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.55
+RP18,LLaMA-1-7B,GPTQ,2-bit,g128,WikiText2,Perplexity,44.01,FP16,5.68,38.33,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16g128 ... GPTQ 44.01 15.60 10.92 9.51 36.77 28.14 NAN
+RP18,LLaMA-1-13B,GPTQ,2-bit,g128,WikiText2,Perplexity,15.6,FP16,5.09,10.51,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 44.01 15.60 10.92
+RP18,LLaMA-1-30B,GPTQ,2-bit,g128,WikiText2,Perplexity,10.92,FP16,4.1,6.82,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 10.92 9.51
+RP18,LLaMA-1-65B,GPTQ,2-bit,g128,WikiText2,Perplexity,9.51,FP16,3.53,5.98,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 9.51 36.77
+RP18,LLaMA-2-7B,GPTQ,2-bit,g128,WikiText2,Perplexity,36.77,FP16,5.47,31.3,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 36.77 28.14 NAN
+RP18,LLaMA-2-13B,GPTQ,2-bit,g128,WikiText2,Perplexity,28.14,FP16,4.88,23.26,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 28.14 NAN
+RP18,LLaMA-1-7B,AWQ,2-bit,g128,WikiText2,Perplexity,260000.0,FP16,5.68,259994.32,absolute,False,measured,7,4.1 SETTINGS,Table 1,AWQ 2.6e5 2.8e5 2.4e5 7.4e4 2.2e5 1.2e5
+RP18,LLaMA-1-13B,AWQ,2-bit,g128,WikiText2,Perplexity,280000.0,FP16,5.09,279994.91,absolute,False,measured,7,4.1 SETTINGS,Table 1,AWQ 2.6e5 2.8e5 2.4e5
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g64,WikiText2,Perplexity,8.9,FP16,5.68,3.22,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16g64 ... OmniQuant 8.90 7.34 6.59 5.65 9.62 7.56 6.11
+RP18,LLaMA-1-13B,OmniQuant,2-bit,g64,WikiText2,Perplexity,7.34,FP16,5.09,2.25,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 8.90 7.34 6.59
+RP18,LLaMA-1-30B,OmniQuant,2-bit,g64,WikiText2,Perplexity,6.59,FP16,4.1,2.49,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.59 5.65
+RP18,LLaMA-1-65B,OmniQuant,2-bit,g64,WikiText2,Perplexity,5.65,FP16,3.53,2.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.65 9.62
+RP18,LLaMA-2-7B,OmniQuant,2-bit,g64,WikiText2,Perplexity,9.62,FP16,5.47,4.15,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 9.62 7.56 6.11
+RP18,LLaMA-2-13B,OmniQuant,2-bit,g64,WikiText2,Perplexity,7.56,FP16,4.88,2.68,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.56 6.11
+RP18,LLaMA-2-70B,OmniQuant,2-bit,g64,WikiText2,Perplexity,6.11,FP16,3.31,2.8,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.11
+RP18,LLaMA-1-7B,OmniQuant,3-bit,,WikiText2,Perplexity,6.49,FP16,5.68,0.81,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16 ... OmniQuant 6.49 5.68 4.74 4.04 6.58 5.58 3.92
+RP18,LLaMA-1-13B,OmniQuant,3-bit,,WikiText2,Perplexity,5.68,FP16,5.09,0.59,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 6.49 5.68 4.74
+RP18,LLaMA-1-30B,OmniQuant,3-bit,,WikiText2,Perplexity,4.74,FP16,4.1,0.64,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.74 4.04
+RP18,LLaMA-1-65B,OmniQuant,3-bit,,WikiText2,Perplexity,4.04,FP16,3.53,0.51,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.04 6.58
+RP18,LLaMA-2-7B,OmniQuant,3-bit,,WikiText2,Perplexity,6.58,FP16,5.47,1.11,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.58 5.58 3.92
+RP18,LLaMA-2-13B,OmniQuant,3-bit,,WikiText2,Perplexity,5.58,FP16,4.88,0.7,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.58 3.92
+RP18,LLaMA-2-70B,OmniQuant,3-bit,,WikiText2,Perplexity,3.92,FP16,3.31,0.61,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.92
+RP18,LLaMA-1-7B,GPTQ,3-bit,,WikiText2,Perplexity,8.06,FP16,5.68,2.38,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16 ... GPTQ 8.06 6.76 5.84 5.06 8.37 6.44 4.82
+RP18,LLaMA-1-13B,GPTQ,3-bit,,WikiText2,Perplexity,6.76,FP16,5.09,1.67,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 8.06 6.76 5.84
+RP18,LLaMA-1-30B,GPTQ,3-bit,,WikiText2,Perplexity,5.84,FP16,4.1,1.74,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 5.84 5.06
+RP18,LLaMA-1-65B,GPTQ,3-bit,,WikiText2,Perplexity,5.06,FP16,3.53,1.53,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 5.06 8.37
+RP18,LLaMA-2-7B,GPTQ,3-bit,,WikiText2,Perplexity,8.37,FP16,5.47,2.9,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 8.37 6.44 4.82
+RP18,LLaMA-2-13B,GPTQ,3-bit,,WikiText2,Perplexity,6.44,FP16,4.88,1.56,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 6.44 4.82
+RP18,LLaMA-2-70B,GPTQ,3-bit,,WikiText2,Perplexity,4.82,FP16,3.31,1.51,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 4.82
+RP18,LLaMA-1-7B,RTN,3-bit,,WikiText2,Perplexity,25.73,FP16,5.68,20.05,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16 RTN 25.73 11.39 14.95 10.68 539.48 10.68 7.52
+RP18,LLaMA-1-7B,OmniQuant,3-bit,g128,WikiText2,Perplexity,6.15,FP16,5.68,0.47,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16g128 ... OmniQuant 6.15 5.44 4.56 3.94 6.03 5.28 3.78
+RP18,LLaMA-1-13B,OmniQuant,3-bit,g128,WikiText2,Perplexity,5.44,FP16,5.09,0.35,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 6.15 5.44 4.56
+RP18,LLaMA-1-30B,OmniQuant,3-bit,g128,WikiText2,Perplexity,4.56,FP16,4.1,0.46,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.56 3.94
+RP18,LLaMA-1-65B,OmniQuant,3-bit,g128,WikiText2,Perplexity,3.94,FP16,3.53,0.41,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.94 6.03
+RP18,LLaMA-2-7B,OmniQuant,3-bit,g128,WikiText2,Perplexity,6.03,FP16,5.47,0.56,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.03 5.28 3.78
+RP18,LLaMA-2-13B,OmniQuant,3-bit,g128,WikiText2,Perplexity,5.28,FP16,4.88,0.4,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.28 3.78
+RP18,LLaMA-2-70B,OmniQuant,3-bit,g128,WikiText2,Perplexity,3.78,FP16,3.31,0.47,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.78
+RP18,LLaMA-1-7B,OmniQuant,4-bit,,WikiText2,Perplexity,5.86,FP16,5.68,0.18,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16 ... OmniQuant 5.86 5.21 4.25 3.71 5.74 5.02 3.47
+RP18,LLaMA-1-13B,OmniQuant,4-bit,,WikiText2,Perplexity,5.21,FP16,5.09,0.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 5.86 5.21 4.25
+RP18,LLaMA-1-30B,OmniQuant,4-bit,,WikiText2,Perplexity,4.25,FP16,4.1,0.15,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.25 3.71
+RP18,LLaMA-1-65B,OmniQuant,4-bit,,WikiText2,Perplexity,3.71,FP16,3.53,0.18,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.71 5.74
+RP18,LLaMA-2-7B,OmniQuant,4-bit,,WikiText2,Perplexity,5.74,FP16,5.47,0.27,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.74 5.02 3.47
+RP18,LLaMA-2-13B,OmniQuant,4-bit,,WikiText2,Perplexity,5.02,FP16,4.88,0.14,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.02 3.47
+RP18,LLaMA-2-70B,OmniQuant,4-bit,,WikiText2,Perplexity,3.47,FP16,3.31,0.16,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.47
+RP18,LLaMA-1-7B,GPTQ,4-bit,,WikiText2,Perplexity,6.13,FP16,5.68,0.45,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16 ... GPTQ 6.13 5.40 4.48 3.83 5.83 5.13 3.58
+RP18,LLaMA-2-7B,GPTQ,4-bit,,WikiText2,Perplexity,5.83,FP16,5.47,0.36,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 5.83 5.13 3.58
+RP18,LLaMA-1-7B,AWQ,4-bit,,WikiText2,Perplexity,6.08,FP16,5.68,0.4,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16 ... AWQ 6.08 5.34 4.39 3.76 6.15 5.12
+RP18,LLaMA-1-7B,OmniQuant,4-bit,g128,WikiText2,Perplexity,5.77,FP16,5.68,0.09,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16g128 ... OmniQuant 5.77 5.17 4.19 3.62 5.58 4.95 3.40
+RP18,LLaMA-1-13B,OmniQuant,4-bit,g128,WikiText2,Perplexity,5.17,FP16,5.09,0.08,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 5.77 5.17 4.19
+RP18,LLaMA-2-7B,OmniQuant,4-bit,g128,WikiText2,Perplexity,5.58,FP16,5.47,0.11,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.58 4.95 3.40
+RP18,LLaMA-2-70B,OmniQuant,4-bit,g128,WikiText2,Perplexity,3.4,FP16,3.31,0.09,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.40
+RP18,LLaMA-1-7B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,52.65,FP16,64.09,-11.44,absolute,True,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 66.15 45.20 31.14 63.51 56.44 53.43 52.65
+RP18,LLaMA-1-7B,SmoothQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,38.41,FP16,64.09,-25.68,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 SmoothQuant 49.80 30.40 25.80 49.10 27.40 48.00 38.41
+RP18,LLaMA-1-7B,LLM-QAT,4-bit,,Zero-shot Avg (6 tasks),Accuracy,41.27,FP16,64.09,-22.82,absolute,True,measured,8,4.1 SETTINGS,Table 2,W4A4 LLM-QAT 51.50 27.90 23.90 61.30 31.10 51.90 41.27
+RP18,LLaMA-1-7B,OS+,4-bit,,Zero-shot Avg (6 tasks),Accuracy,48.43,FP16,64.09,-15.66,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 OS+ 62.73 39.98 30.29 60.21 44.39 52.96 48.43
+RP18,LLaMA-1-7B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,63.17,FP16,64.09,-0.92,absolute,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 77.09 51.89 40.87 72.53 71.61 65.03 63.17
+RP18,LLaMA-1-7B,SmoothQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,62.81,FP16,64.09,-1.28,absolute,False,measured,8,4.1 SETTINGS,Table 2,W6A6 SmoothQuant 76.75 51.64 39.88 71.75 71.67 65.03 62.81
+RP18,LLaMA-1-13B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,54.37,FP16,66.33,-11.96,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 69.69 47.39 33.10 62.84 58.96 55.80 54.37
+RP18,LLaMA-1-13B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,64.95,FP16,66.33,-1.38,absolute,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 78.40 57.28 42.91 67.00 75.82 68.27 64.95
+RP18,LLaMA-1-30B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,56.63,SmoothQuant,44.83,11.8,absolute,True,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 71.21 49.45 34.47 65.33 64.65 59.19 56.63
+RP18,LLaMA-1-30B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,67.23,,,,,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 79.81 58.79 45.22 68.38 78.95 72.21 67.23
+RP18,LLaMA-1-65B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,59.22,SmoothQuant,47.71,11.51,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 71.81 48.02 35.92 73.27 66.81 59.51 59.22
+RP18,LLaMA-1-65B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,70.28,,,,,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 81.01 58.12 46.33 80.64 79.91 75.69 70.28
+RP18,LLaMA-1-7B,FP16,16-bit,,A100-80G,Memory (GB),12.6,,,,,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,FP 12.6G 14.4G 69.2
+RP18,LLaMA-1-7B,FP16,16-bit,,A100-80G,Speed (token/s),69.2,,,,,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,FP 12.6G 14.4G 69.2
+RP18,LLaMA-1-7B,OmniQuant,4-bit,g128,A100-80G,Memory (GB),3.8,FP16,12.6,-8.8,absolute,True,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W4A16g128 3.8G 5.7G 134.2
+RP18,LLaMA-1-7B,OmniQuant,4-bit,g128,A100-80G,Speed (token/s),134.2,FP16,69.2,65.0,absolute,True,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W4A16g128 3.8G 5.7G 134.2
+RP18,LLaMA-1-7B,OmniQuant,3-bit,g128,A100-80G,Memory (GB),3.2,FP16,12.6,-9.4,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W3A16g128 3.2G 5.1G 83.4
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g128,A100-80G,Memory (GB),2.2,FP16,12.6,-10.4,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W2A16g128 2.2G 4.1G 83.9
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g128,A100-80G,Speed (token/s),83.9,FP16,69.2,14.7,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W2A16g128 2.2G 4.1G 83.9
+RP18,LLaMA-1-13B,OmniQuant,4-bit,g128,A100-80G,Speed (token/s),91.3,FP16,52.5,38.8,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,13B ... W4A16g128 ... 7.0G 10.0G 91.3
+RP18,LLaMA-1-65B,OmniQuant,4-bit,g128,A100-80G,Speed (token/s),24.3,,,,,True,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,65B ... W4A16g128 33.0G 41.0G 24.3
+RP18,LLaMA-1-65B,OmniQuant,4-bit,g128,A100-80G,Memory (GB),33.0,,,,,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,65B ... W4A16g128 33.0G 41.0G 24.3
+RP18,LLaMA-2-7B-chat,OmniQuant,3-bit,g128,Vicuna-Bench (vs RTN),Win rate (%),80.3,RTN,69.4,10.9,absolute,False,measured,9,4.4 QUANTIZATION OF INSTRUCTION-TUNED MODELS,,"In LLaMA-2-7b-chat, OmniQuant matches AWQ with a 50% win rate but surpasses RTN more (80.3% vs. 69.4%)"
+RP18,Falcon-180B,OmniQuant,3-bit,g512,WikiText2,Perplexity,3.71,BF16,3.29,0.42,absolute,True,measured,23,A8 FULL RESULTS,Table A18,OmniQuant W3A16g512 65GB 1xA100 80GB 3.71 6.95 6.71
+RP18,Falcon-180B,RTN,3-bit,g512,WikiText2,Perplexity,5.33,BF16,3.29,2.04,absolute,False,measured,23,A8 FULL RESULTS,Table A18,RTN W3A16g512 65GB 1xA100 80GB 5.33 8.08 8.34
+RP18,Falcon-180B,OmniQuant,3-bit,g512,Hardware,Memory (GB),65.0,BF16,335.0,-270.0,absolute,True,measured,23,A8 FULL RESULTS,Table A18,OmniQuant W3A16g512 65GB 1xA100 80GB
+RP18,OPT-13B,OmniQuant,4-bit,,WikiText2,Perplexity,11.65,FP16,10.12,1.53,absolute,False,measured,15,A3 ABLATION STUDIES,Table A3,LWC+LET 10.87 5.65 11.65 10.87
+RP18,LLaMA-1-7B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),11.26,SmoothQuant,25.25,-13.99,absolute,True,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,LLaMA-1-13B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),10.87,SmoothQuant,40.05,-29.18,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant ... 10.87
+RP18,LLaMA-1-30B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),10.33,SmoothQuant,192.4,-182.07,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,LLaMA-1-65B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),9.17,SmoothQuant,275.53,-266.36,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,LLaMA-2-7B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),14.26,SmoothQuant,83.12,-68.86,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant ... 14.26
+RP18,LLaMA-2-13B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),12.3,SmoothQuant,35.88,-23.58,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,OPT-6.7B,OmniQuant,4-bit,,WikiText2,Perplexity,12.24,SmoothQuant,18000.0,-17987.76,absolute,False,measured,25,A8 FULL RESULTS,Table A25,OmniQuant 12.24 15.54 13.56
+RP18,OPT-13B,OmniQuant,4-bit,,WikiText2,Perplexity,11.65,SmoothQuant,7400.0,-7388.35,absolute,False,measured,25,A8 FULL RESULTS,Table A25,OmniQuant 12.24 15.54 13.56 11.65
+RP18,OPT-66B,OmniQuant,4-bit,,WikiText2,Perplexity,10.29,SmoothQuant,220000.0,-219989.71,absolute,False,measured,25,A8 FULL RESULTS,Table A25,OmniQuant ... 10.29 13.19 11.35
+RP18,LLaMa-1-7B,OmniQuant,4-bit,g128,MMLU,Accuracy,37.5,FP16,38.41,-0.91,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03% 26.93
+RP18,LLaMa-1-7B,OmniQuant,3-bit,g128,MMLU,Accuracy,35.6,FP16,38.41,-2.81,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03%
+RP18,LLaMa-1-7B,OmniQuant,2-bit,g128,MMLU,Accuracy,26.03,FP16,38.41,-12.38,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03% 26.93
+RP18,LLaMa-1-7B,OmniQuant,4-bit,,MMLU,Accuracy,26.93,FP16,38.41,-11.48,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03% 26.93

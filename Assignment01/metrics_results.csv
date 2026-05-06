@@ -1331,6 +1331,128 @@ RP17,Falcon-40B,FP16,16-bit,,Avg zero-shot,Accuracy (%),71.058,,,,,False,measure
 RP17,Falcon-40B,SpQR,4-bit,,Avg zero-shot,Accuracy (%),70.986,FP16,71.058,-0.072,absolute,False,measured,21,Falcon - Table 8,Table 8,SpQR | 4.46 | 76.48 | 82.1 | 63.8 | 81.78 | 50.77 | 70.986
 RP17,Falcon-40B,RTN,4-bit,,Avg zero-shot,Accuracy (%),69.252,FP16,71.058,-1.806,absolute,False,measured,21,Falcon - Table 8,Table 8,RTN | 4.00 | 75.69 | 80.30 | 60.52 | 79.92 | 49.83 | 69.252
 RP17,Falcon-40B,GPTQ,4-bit,,Avg zero-shot,Accuracy (%),70.212,FP16,71.058,-0.846,absolute,False,measured,21,Falcon - Table 8,Table 8,GPTQ | 4.00 | 75.93 | 81.23 | 63.05 | 80.85 | 50.00 | 70.212
+RP18,LLaMA-1-13B,OmniQuant,2-bit,,WikiText2,Perplexity,13.21,GPTQ,5500.0,-5486.79,absolute,True,measured,3,1 Introduction,,"when LLaMA-13B is quantized into W2A16, OmniQuant achieves a perplexity of 13.21, while GPTQ incurs a significant increase in perplexity to 3832"
+RP18,LLaMA-2-7B,OmniQuant,4-bit,,A100-40G,Quantization time (hours),1.6,,,,,True,measured,1,ABSTRACT,,the LLaMA-2 model family size 7-70B can be processed with OmniQuant on a single A100-40G GPU within 1-16 hours using 128 samples
+RP18,LLaMA-2-70B,OmniQuant,4-bit,,A100-40G,Quantization time (hours),14.4,,,,,True,measured,17,A4 TRAINING TIME,Table A12,weight-activation ... 65B 14.4h
+RP18,LLaMA-1-7B,RTN,2-bit,,WikiText2,Perplexity,110000.0,FP16,5.68,109994.32,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN 1.1e5 6.8e4 2.4e4 2.2e4
+RP18,LLaMA-1-13B,RTN,2-bit,,WikiText2,Perplexity,68000.0,FP16,5.09,67994.91,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN 1.1e5 6.8e4 2.4e4
+RP18,LLaMA-1-30B,RTN,2-bit,,WikiText2,Perplexity,24000.0,FP16,4.1,23995.9,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 2.4e4 2.2e4
+RP18,LLaMA-1-65B,RTN,2-bit,,WikiText2,Perplexity,22000.0,FP16,3.53,21996.47,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 2.2e4 3.8e4
+RP18,LLaMA-2-7B,RTN,2-bit,,WikiText2,Perplexity,38000.0,FP16,5.47,37994.53,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 3.8e4 5.6e4 2.0e4
+RP18,LLaMA-2-13B,RTN,2-bit,,WikiText2,Perplexity,56000.0,FP16,4.88,55995.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 5.6e4 2.0e4
+RP18,LLaMA-2-70B,RTN,2-bit,,WikiText2,Perplexity,20000.0,FP16,3.31,19996.69,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16 RTN ... 2.0e4
+RP18,LLaMA-1-7B,GPTQ,2-bit,,WikiText2,Perplexity,2100.0,FP16,5.68,2094.32,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 2.1e3 5.5e3 499.75 55.91 7.7e3 2.1e3 77.95
+RP18,LLaMA-1-13B,GPTQ,2-bit,,WikiText2,Perplexity,5500.0,FP16,5.09,5494.91,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 2.1e3 5.5e3 499.75
+RP18,LLaMA-1-30B,GPTQ,2-bit,,WikiText2,Perplexity,499.75,FP16,4.1,495.65,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 499.75 55.91
+RP18,LLaMA-1-65B,GPTQ,2-bit,,WikiText2,Perplexity,55.91,FP16,3.53,52.38,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 55.91 7.7e3
+RP18,LLaMA-2-7B,GPTQ,2-bit,,WikiText2,Perplexity,7700.0,FP16,5.47,7694.53,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 7.7e3 2.1e3 77.95
+RP18,LLaMA-2-13B,GPTQ,2-bit,,WikiText2,Perplexity,2100.0,FP16,4.88,2095.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 2.1e3 77.95
+RP18,LLaMA-2-70B,GPTQ,2-bit,,WikiText2,Perplexity,77.95,FP16,3.31,74.64,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 77.95
+RP18,LLaMA-1-7B,OmniQuant,2-bit,,WikiText2,Perplexity,15.47,FP16,5.68,9.79,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 15.47 13.21 8.71 7.58 37.37 17.21 7.81
+RP18,LLaMA-1-13B,OmniQuant,2-bit,,WikiText2,Perplexity,13.21,FP16,5.09,8.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 15.47 13.21 8.71
+RP18,LLaMA-1-30B,OmniQuant,2-bit,,WikiText2,Perplexity,8.71,FP16,4.1,4.61,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 8.71 7.58
+RP18,LLaMA-1-65B,OmniQuant,2-bit,,WikiText2,Perplexity,7.58,FP16,3.53,4.05,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.58 37.37
+RP18,LLaMA-2-7B,OmniQuant,2-bit,,WikiText2,Perplexity,37.37,FP16,5.47,31.9,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 37.37 17.21 7.81
+RP18,LLaMA-2-13B,OmniQuant,2-bit,,WikiText2,Perplexity,17.21,FP16,4.88,12.33,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 17.21 7.81
+RP18,LLaMA-2-70B,OmniQuant,2-bit,,WikiText2,Perplexity,7.81,FP16,3.31,4.5,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.81
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g128,WikiText2,Perplexity,9.72,GPTQ,44.01,-34.29,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16g128 ... OmniQuant 9.72 7.93 7.12 5.95 11.06 8.26 6.55
+RP18,LLaMA-1-13B,OmniQuant,2-bit,g128,WikiText2,Perplexity,7.93,FP16,5.09,2.84,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 9.72 7.93 7.12
+RP18,LLaMA-1-30B,OmniQuant,2-bit,g128,WikiText2,Perplexity,7.12,FP16,4.1,3.02,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.12 5.95
+RP18,LLaMA-1-65B,OmniQuant,2-bit,g128,WikiText2,Perplexity,5.95,FP16,3.53,2.42,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.95 11.06
+RP18,LLaMA-2-7B,OmniQuant,2-bit,g128,WikiText2,Perplexity,11.06,FP16,5.47,5.59,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 11.06 8.26 6.55
+RP18,LLaMA-2-13B,OmniQuant,2-bit,g128,WikiText2,Perplexity,8.26,FP16,4.88,3.38,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 8.26 6.55
+RP18,LLaMA-2-70B,OmniQuant,2-bit,g128,WikiText2,Perplexity,6.55,FP16,3.31,3.24,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.55
+RP18,LLaMA-1-7B,GPTQ,2-bit,g128,WikiText2,Perplexity,44.01,FP16,5.68,38.33,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16g128 ... GPTQ 44.01 15.60 10.92 9.51 36.77 28.14 NAN
+RP18,LLaMA-1-13B,GPTQ,2-bit,g128,WikiText2,Perplexity,15.6,FP16,5.09,10.51,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 44.01 15.60 10.92
+RP18,LLaMA-1-30B,GPTQ,2-bit,g128,WikiText2,Perplexity,10.92,FP16,4.1,6.82,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 10.92 9.51
+RP18,LLaMA-1-65B,GPTQ,2-bit,g128,WikiText2,Perplexity,9.51,FP16,3.53,5.98,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 9.51 36.77
+RP18,LLaMA-2-7B,GPTQ,2-bit,g128,WikiText2,Perplexity,36.77,FP16,5.47,31.3,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 36.77 28.14 NAN
+RP18,LLaMA-2-13B,GPTQ,2-bit,g128,WikiText2,Perplexity,28.14,FP16,4.88,23.26,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 28.14 NAN
+RP18,LLaMA-1-7B,AWQ,2-bit,g128,WikiText2,Perplexity,260000.0,FP16,5.68,259994.32,absolute,False,measured,7,4.1 SETTINGS,Table 1,AWQ 2.6e5 2.8e5 2.4e5 7.4e4 2.2e5 1.2e5
+RP18,LLaMA-1-13B,AWQ,2-bit,g128,WikiText2,Perplexity,280000.0,FP16,5.09,279994.91,absolute,False,measured,7,4.1 SETTINGS,Table 1,AWQ 2.6e5 2.8e5 2.4e5
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g64,WikiText2,Perplexity,8.9,FP16,5.68,3.22,absolute,False,measured,7,4.1 SETTINGS,Table 1,W2A16g64 ... OmniQuant 8.90 7.34 6.59 5.65 9.62 7.56 6.11
+RP18,LLaMA-1-13B,OmniQuant,2-bit,g64,WikiText2,Perplexity,7.34,FP16,5.09,2.25,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 8.90 7.34 6.59
+RP18,LLaMA-1-30B,OmniQuant,2-bit,g64,WikiText2,Perplexity,6.59,FP16,4.1,2.49,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.59 5.65
+RP18,LLaMA-1-65B,OmniQuant,2-bit,g64,WikiText2,Perplexity,5.65,FP16,3.53,2.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.65 9.62
+RP18,LLaMA-2-7B,OmniQuant,2-bit,g64,WikiText2,Perplexity,9.62,FP16,5.47,4.15,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 9.62 7.56 6.11
+RP18,LLaMA-2-13B,OmniQuant,2-bit,g64,WikiText2,Perplexity,7.56,FP16,4.88,2.68,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 7.56 6.11
+RP18,LLaMA-2-70B,OmniQuant,2-bit,g64,WikiText2,Perplexity,6.11,FP16,3.31,2.8,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.11
+RP18,LLaMA-1-7B,OmniQuant,3-bit,,WikiText2,Perplexity,6.49,FP16,5.68,0.81,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16 ... OmniQuant 6.49 5.68 4.74 4.04 6.58 5.58 3.92
+RP18,LLaMA-1-13B,OmniQuant,3-bit,,WikiText2,Perplexity,5.68,FP16,5.09,0.59,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 6.49 5.68 4.74
+RP18,LLaMA-1-30B,OmniQuant,3-bit,,WikiText2,Perplexity,4.74,FP16,4.1,0.64,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.74 4.04
+RP18,LLaMA-1-65B,OmniQuant,3-bit,,WikiText2,Perplexity,4.04,FP16,3.53,0.51,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.04 6.58
+RP18,LLaMA-2-7B,OmniQuant,3-bit,,WikiText2,Perplexity,6.58,FP16,5.47,1.11,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.58 5.58 3.92
+RP18,LLaMA-2-13B,OmniQuant,3-bit,,WikiText2,Perplexity,5.58,FP16,4.88,0.7,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.58 3.92
+RP18,LLaMA-2-70B,OmniQuant,3-bit,,WikiText2,Perplexity,3.92,FP16,3.31,0.61,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.92
+RP18,LLaMA-1-7B,GPTQ,3-bit,,WikiText2,Perplexity,8.06,FP16,5.68,2.38,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16 ... GPTQ 8.06 6.76 5.84 5.06 8.37 6.44 4.82
+RP18,LLaMA-1-13B,GPTQ,3-bit,,WikiText2,Perplexity,6.76,FP16,5.09,1.67,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ 8.06 6.76 5.84
+RP18,LLaMA-1-30B,GPTQ,3-bit,,WikiText2,Perplexity,5.84,FP16,4.1,1.74,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 5.84 5.06
+RP18,LLaMA-1-65B,GPTQ,3-bit,,WikiText2,Perplexity,5.06,FP16,3.53,1.53,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 5.06 8.37
+RP18,LLaMA-2-7B,GPTQ,3-bit,,WikiText2,Perplexity,8.37,FP16,5.47,2.9,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 8.37 6.44 4.82
+RP18,LLaMA-2-13B,GPTQ,3-bit,,WikiText2,Perplexity,6.44,FP16,4.88,1.56,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 6.44 4.82
+RP18,LLaMA-2-70B,GPTQ,3-bit,,WikiText2,Perplexity,4.82,FP16,3.31,1.51,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 4.82
+RP18,LLaMA-1-7B,RTN,3-bit,,WikiText2,Perplexity,25.73,FP16,5.68,20.05,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16 RTN 25.73 11.39 14.95 10.68 539.48 10.68 7.52
+RP18,LLaMA-1-7B,OmniQuant,3-bit,g128,WikiText2,Perplexity,6.15,FP16,5.68,0.47,absolute,False,measured,7,4.1 SETTINGS,Table 1,W3A16g128 ... OmniQuant 6.15 5.44 4.56 3.94 6.03 5.28 3.78
+RP18,LLaMA-1-13B,OmniQuant,3-bit,g128,WikiText2,Perplexity,5.44,FP16,5.09,0.35,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 6.15 5.44 4.56
+RP18,LLaMA-1-30B,OmniQuant,3-bit,g128,WikiText2,Perplexity,4.56,FP16,4.1,0.46,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.56 3.94
+RP18,LLaMA-1-65B,OmniQuant,3-bit,g128,WikiText2,Perplexity,3.94,FP16,3.53,0.41,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.94 6.03
+RP18,LLaMA-2-7B,OmniQuant,3-bit,g128,WikiText2,Perplexity,6.03,FP16,5.47,0.56,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 6.03 5.28 3.78
+RP18,LLaMA-2-13B,OmniQuant,3-bit,g128,WikiText2,Perplexity,5.28,FP16,4.88,0.4,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.28 3.78
+RP18,LLaMA-2-70B,OmniQuant,3-bit,g128,WikiText2,Perplexity,3.78,FP16,3.31,0.47,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.78
+RP18,LLaMA-1-7B,OmniQuant,4-bit,,WikiText2,Perplexity,5.86,FP16,5.68,0.18,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16 ... OmniQuant 5.86 5.21 4.25 3.71 5.74 5.02 3.47
+RP18,LLaMA-1-13B,OmniQuant,4-bit,,WikiText2,Perplexity,5.21,FP16,5.09,0.12,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 5.86 5.21 4.25
+RP18,LLaMA-1-30B,OmniQuant,4-bit,,WikiText2,Perplexity,4.25,FP16,4.1,0.15,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 4.25 3.71
+RP18,LLaMA-1-65B,OmniQuant,4-bit,,WikiText2,Perplexity,3.71,FP16,3.53,0.18,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.71 5.74
+RP18,LLaMA-2-7B,OmniQuant,4-bit,,WikiText2,Perplexity,5.74,FP16,5.47,0.27,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.74 5.02 3.47
+RP18,LLaMA-2-13B,OmniQuant,4-bit,,WikiText2,Perplexity,5.02,FP16,4.88,0.14,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.02 3.47
+RP18,LLaMA-2-70B,OmniQuant,4-bit,,WikiText2,Perplexity,3.47,FP16,3.31,0.16,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.47
+RP18,LLaMA-1-7B,GPTQ,4-bit,,WikiText2,Perplexity,6.13,FP16,5.68,0.45,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16 ... GPTQ 6.13 5.40 4.48 3.83 5.83 5.13 3.58
+RP18,LLaMA-2-7B,GPTQ,4-bit,,WikiText2,Perplexity,5.83,FP16,5.47,0.36,absolute,False,measured,7,4.1 SETTINGS,Table 1,GPTQ ... 5.83 5.13 3.58
+RP18,LLaMA-1-7B,AWQ,4-bit,,WikiText2,Perplexity,6.08,FP16,5.68,0.4,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16 ... AWQ 6.08 5.34 4.39 3.76 6.15 5.12
+RP18,LLaMA-1-7B,OmniQuant,4-bit,g128,WikiText2,Perplexity,5.77,FP16,5.68,0.09,absolute,False,measured,7,4.1 SETTINGS,Table 1,W4A16g128 ... OmniQuant 5.77 5.17 4.19 3.62 5.58 4.95 3.40
+RP18,LLaMA-1-13B,OmniQuant,4-bit,g128,WikiText2,Perplexity,5.17,FP16,5.09,0.08,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant 5.77 5.17 4.19
+RP18,LLaMA-2-7B,OmniQuant,4-bit,g128,WikiText2,Perplexity,5.58,FP16,5.47,0.11,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 5.58 4.95 3.40
+RP18,LLaMA-2-70B,OmniQuant,4-bit,g128,WikiText2,Perplexity,3.4,FP16,3.31,0.09,absolute,False,measured,7,4.1 SETTINGS,Table 1,OmniQuant ... 3.40
+RP18,LLaMA-1-7B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,52.65,FP16,64.09,-11.44,absolute,True,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 66.15 45.20 31.14 63.51 56.44 53.43 52.65
+RP18,LLaMA-1-7B,SmoothQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,38.41,FP16,64.09,-25.68,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 SmoothQuant 49.80 30.40 25.80 49.10 27.40 48.00 38.41
+RP18,LLaMA-1-7B,LLM-QAT,4-bit,,Zero-shot Avg (6 tasks),Accuracy,41.27,FP16,64.09,-22.82,absolute,True,measured,8,4.1 SETTINGS,Table 2,W4A4 LLM-QAT 51.50 27.90 23.90 61.30 31.10 51.90 41.27
+RP18,LLaMA-1-7B,OS+,4-bit,,Zero-shot Avg (6 tasks),Accuracy,48.43,FP16,64.09,-15.66,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 OS+ 62.73 39.98 30.29 60.21 44.39 52.96 48.43
+RP18,LLaMA-1-7B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,63.17,FP16,64.09,-0.92,absolute,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 77.09 51.89 40.87 72.53 71.61 65.03 63.17
+RP18,LLaMA-1-7B,SmoothQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,62.81,FP16,64.09,-1.28,absolute,False,measured,8,4.1 SETTINGS,Table 2,W6A6 SmoothQuant 76.75 51.64 39.88 71.75 71.67 65.03 62.81
+RP18,LLaMA-1-13B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,54.37,FP16,66.33,-11.96,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 69.69 47.39 33.10 62.84 58.96 55.80 54.37
+RP18,LLaMA-1-13B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,64.95,FP16,66.33,-1.38,absolute,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 78.40 57.28 42.91 67.00 75.82 68.27 64.95
+RP18,LLaMA-1-30B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,56.63,SmoothQuant,44.83,11.8,absolute,True,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 71.21 49.45 34.47 65.33 64.65 59.19 56.63
+RP18,LLaMA-1-30B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,67.23,,,,,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 79.81 58.79 45.22 68.38 78.95 72.21 67.23
+RP18,LLaMA-1-65B,OmniQuant,4-bit,,Zero-shot Avg (6 tasks),Accuracy,59.22,SmoothQuant,47.71,11.51,absolute,False,measured,8,4.1 SETTINGS,Table 2,W4A4 OmniQuant 71.81 48.02 35.92 73.27 66.81 59.51 59.22
+RP18,LLaMA-1-65B,OmniQuant,6-bit,,Zero-shot Avg (6 tasks),Accuracy,70.28,,,,,False,measured,8,4.1 SETTINGS,Table 2,W6A6 OmniQuant 81.01 58.12 46.33 80.64 79.91 75.69 70.28
+RP18,LLaMA-1-7B,FP16,16-bit,,A100-80G,Memory (GB),12.6,,,,,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,FP 12.6G 14.4G 69.2
+RP18,LLaMA-1-7B,FP16,16-bit,,A100-80G,Speed (token/s),69.2,,,,,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,FP 12.6G 14.4G 69.2
+RP18,LLaMA-1-7B,OmniQuant,4-bit,g128,A100-80G,Memory (GB),3.8,FP16,12.6,-8.8,absolute,True,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W4A16g128 3.8G 5.7G 134.2
+RP18,LLaMA-1-7B,OmniQuant,4-bit,g128,A100-80G,Speed (token/s),134.2,FP16,69.2,65.0,absolute,True,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W4A16g128 3.8G 5.7G 134.2
+RP18,LLaMA-1-7B,OmniQuant,3-bit,g128,A100-80G,Memory (GB),3.2,FP16,12.6,-9.4,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W3A16g128 3.2G 5.1G 83.4
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g128,A100-80G,Memory (GB),2.2,FP16,12.6,-10.4,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W2A16g128 2.2G 4.1G 83.9
+RP18,LLaMA-1-7B,OmniQuant,2-bit,g128,A100-80G,Speed (token/s),83.9,FP16,69.2,14.7,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,W2A16g128 2.2G 4.1G 83.9
+RP18,LLaMA-1-13B,OmniQuant,4-bit,g128,A100-80G,Speed (token/s),91.3,FP16,52.5,38.8,absolute,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,13B ... W4A16g128 ... 7.0G 10.0G 91.3
+RP18,LLaMA-1-65B,OmniQuant,4-bit,g128,A100-80G,Speed (token/s),24.3,,,,,True,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,65B ... W4A16g128 33.0G 41.0G 24.3
+RP18,LLaMA-1-65B,OmniQuant,4-bit,g128,A100-80G,Memory (GB),33.0,,,,,False,measured,9,4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS,Table 3,65B ... W4A16g128 33.0G 41.0G 24.3
+RP18,LLaMA-2-7B-chat,OmniQuant,3-bit,g128,Vicuna-Bench (vs RTN),Win rate (%),80.3,RTN,69.4,10.9,absolute,False,measured,9,4.4 QUANTIZATION OF INSTRUCTION-TUNED MODELS,,"In LLaMA-2-7b-chat, OmniQuant matches AWQ with a 50% win rate but surpasses RTN more (80.3% vs. 69.4%)"
+RP18,Falcon-180B,OmniQuant,3-bit,g512,WikiText2,Perplexity,3.71,BF16,3.29,0.42,absolute,True,measured,23,A8 FULL RESULTS,Table A18,OmniQuant W3A16g512 65GB 1xA100 80GB 3.71 6.95 6.71
+RP18,Falcon-180B,RTN,3-bit,g512,WikiText2,Perplexity,5.33,BF16,3.29,2.04,absolute,False,measured,23,A8 FULL RESULTS,Table A18,RTN W3A16g512 65GB 1xA100 80GB 5.33 8.08 8.34
+RP18,Falcon-180B,OmniQuant,3-bit,g512,Hardware,Memory (GB),65.0,BF16,335.0,-270.0,absolute,True,measured,23,A8 FULL RESULTS,Table A18,OmniQuant W3A16g512 65GB 1xA100 80GB
+RP18,OPT-13B,OmniQuant,4-bit,,WikiText2,Perplexity,11.65,FP16,10.12,1.53,absolute,False,measured,15,A3 ABLATION STUDIES,Table A3,LWC+LET 10.87 5.65 11.65 10.87
+RP18,LLaMA-1-7B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),11.26,SmoothQuant,25.25,-13.99,absolute,True,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,LLaMA-1-13B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),10.87,SmoothQuant,40.05,-29.18,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant ... 10.87
+RP18,LLaMA-1-30B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),10.33,SmoothQuant,192.4,-182.07,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,LLaMA-1-65B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),9.17,SmoothQuant,275.53,-266.36,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,LLaMA-2-7B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),14.26,SmoothQuant,83.12,-68.86,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant ... 14.26
+RP18,LLaMA-2-13B,OmniQuant,4-bit,,WikiText2,Perplexity (W4A4 weight-act),12.3,SmoothQuant,35.88,-23.58,absolute,False,measured,25,A8 FULL RESULTS,Table A23,OmniQuant 11.26 10.33 9.17 12.30
+RP18,OPT-6.7B,OmniQuant,4-bit,,WikiText2,Perplexity,12.24,SmoothQuant,18000.0,-17987.76,absolute,False,measured,25,A8 FULL RESULTS,Table A25,OmniQuant 12.24 15.54 13.56
+RP18,OPT-13B,OmniQuant,4-bit,,WikiText2,Perplexity,11.65,SmoothQuant,7400.0,-7388.35,absolute,False,measured,25,A8 FULL RESULTS,Table A25,OmniQuant 12.24 15.54 13.56 11.65
+RP18,OPT-66B,OmniQuant,4-bit,,WikiText2,Perplexity,10.29,SmoothQuant,220000.0,-219989.71,absolute,False,measured,25,A8 FULL RESULTS,Table A25,OmniQuant ... 10.29 13.19 11.35
+RP18,LLaMa-1-7B,OmniQuant,4-bit,g128,MMLU,Accuracy,37.5,FP16,38.41,-0.91,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03% 26.93
+RP18,LLaMa-1-7B,OmniQuant,3-bit,g128,MMLU,Accuracy,35.6,FP16,38.41,-2.81,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03%
+RP18,LLaMa-1-7B,OmniQuant,2-bit,g128,MMLU,Accuracy,26.03,FP16,38.41,-12.38,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03% 26.93
+RP18,LLaMa-1-7B,OmniQuant,4-bit,,MMLU,Accuracy,26.93,FP16,38.41,-11.48,absolute,False,measured,22,A8 FULL RESULTS,Table A16,OmniQuant 37.50% 35.60% 26.03% 26.93
 RP19,Vicuna-7B,GPTQ,8-bit,,FreebaseQA,Accuracy,60.14,,,,,False,measured,20,A.6 COMPARSION WITH AWQ AND LLM-INT8,Table 2,Factoid-QA | 60.14% | 60.31% | 61.02%
 RP19,Vicuna-7B,AWQ,8-bit,,FreebaseQA,Accuracy,60.31,,,,,False,measured,20,A.6 COMPARSION WITH AWQ AND LLM-INT8,Table 2,Factoid-QA | 60.14% | 60.31% | 61.02%
 RP19,Vicuna-7B,LLM.int8(),8-bit,,FreebaseQA,Accuracy,61.02,,,,,True,measured,20,A.6 COMPARSION WITH AWQ AND LLM-INT8,Table 2,Factoid-QA | 60.14% | 60.31% | 61.02%
@@ -1629,6 +1751,75 @@ RP25,OPT-175B,Server config (Table 1),16-bit,,Hardware (8xA100-80GB 640GB),Memor
 RP25,OPT-13B,Server config (Table 1),16-bit,,Hardware (1xA100 40GB),Max KV cache slots (K),15.7,,,,,False,measured,9,4.6 Distributed Execution,Table 1,Max. # KV cache slots | 15.7K | 9.7K | 60.1K
 RP25,OPT-66B,Server config (Table 1),16-bit,,Hardware (4xA100 160GB),Max KV cache slots (K),9.7,,,,,False,measured,9,4.6 Distributed Execution,Table 1,Max. # KV cache slots | 15.7K | 9.7K | 60.1K
 RP25,OPT-175B,Server config (Table 1),16-bit,,Hardware (8xA100-80GB),Max KV cache slots (K),60.1,,,,,False,measured,9,4.6 Distributed Execution,Table 1,Max. # KV cache slots | 15.7K | 9.7K | 60.1K
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,MMLU,Accuracy,52.1,FP16,53.6,-1.5,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,MMLU,Accuracy,53.6,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,AdvGLUE++,Accuracy,34.1,FP16,37.4,-3.3,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,AdvGLUE++,Accuracy,37.4,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-OOD,OOD Robustness Score,54.1,FP16,58.8,-4.7,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-OOD,OOD Robustness Score,58.8,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-AdvDemo,Adv Demo Score,66.4,FP16,66.4,0.0,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-AdvDemo,Adv Demo Score,66.4,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Ethics,Ethics Score,76.2,FP16,62.3,13.9,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-Ethics,Ethics Score,62.3,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Fairness,Fairness Score,88.0,FP16,82.2,5.8,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-Fairness,Fairness Score,82.2,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Toxicity,Toxicity Score,77.2,FP16,80.9,-3.7,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-Toxicity,Toxicity Score,80.9,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Privacy,Privacy Score,93.3,FP16,95.7,-2.4,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-Privacy,Privacy Score,95.7,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Stereotype,Stereotype Score,94.3,FP16,97.7,-3.4,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3
+RP26,Llama-2-13B-Chat,FP16,16-bit,,DecodingTrust-Stereotype,Stereotype Score,97.7,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,MMLU,Accuracy,62.2,FP16,63.1,-0.9,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,MMLU,Accuracy,63.1,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,AdvGLUE++,Accuracy,48.3,FP16,52.0,-3.7,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,AdvGLUE++,Accuracy,52.0,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-OOD,OOD Robustness Score,71.5,FP16,71.4,0.1,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-OOD,OOD Robustness Score,71.4,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-AdvDemo,Adv Demo Score,74.2,FP16,75.0,-0.8,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-AdvDemo,Adv Demo Score,75.0,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-Ethics,Ethics Score,71.1,FP16,54.2,16.9,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-Ethics,Ethics Score,54.2,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-Fairness,Fairness Score,67.4,FP16,65.3,2.1,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-Fairness,Fairness Score,65.3,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-Toxicity,Toxicity Score,77.8,FP16,80.9,-3.1,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-Toxicity,Toxicity Score,80.9,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-Privacy,Privacy Score,98.1,FP16,99.3,-1.2,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-Privacy,Privacy Score,99.3,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-70B-Chat,GPTQ,4-bit,,DecodingTrust-Stereotype,Stereotype Score,98.7,FP16,98.3,0.4,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7
+RP26,Llama-2-70B-Chat,FP16,16-bit,,DecodingTrust-Stereotype,Stereotype Score,98.3,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,MMLU,Accuracy,45.6,FP16,47.2,-1.6,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,MMLU,Accuracy,47.2,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,AdvGLUE++,Accuracy,52.2,FP16,46.5,5.7,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,AdvGLUE++,Accuracy,46.5,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-OOD,OOD Robustness Score,61.1,FP16,66.8,-5.7,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-OOD,OOD Robustness Score,66.8,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-AdvDemo,Adv Demo Score,53.0,FP16,57.1,-4.1,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-AdvDemo,Adv Demo Score,57.1,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-Ethics,Ethics Score,43.9,FP16,56.8,-12.9,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-Ethics,Ethics Score,56.8,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-Fairness,Fairness Score,79.7,FP16,88.3,-8.6,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-Fairness,Fairness Score,88.3,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-Toxicity,Toxicity Score,79.4,FP16,79.8,-0.4,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-Toxicity,Toxicity Score,79.8,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-Privacy,Privacy Score,98.4,FP16,99.0,-0.6,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-Privacy,Privacy Score,99.0,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-7B-Chat,GPTQ,4-bit,,DecodingTrust-Stereotype,Stereotype Score,90.0,FP16,90.0,0.0,absolute,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0
+RP26,Llama-2-7B-Chat,FP16,16-bit,,DecodingTrust-Stereotype,Stereotype Score,90.0,,,,,False,measured,16,C.1. AdvGLUE++,Table 3,7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0
+RP26,Llama-2-13B-Chat,GPTQ,3-bit,,MT-Bench,MT-Bench Score (1-10),2.89,FP16,7.0,-4.11,absolute,True,measured,16,C.1. AdvGLUE++,Table 4,GPTQ | 2.89 | 6.55 | 6.85 | 7.00
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,MT-Bench,MT-Bench Score (1-10),6.55,FP16,7.0,-0.45,absolute,False,measured,16,C.1. AdvGLUE++,Table 4,GPTQ | 2.89 | 6.55 | 6.85 | 7.00
+RP26,Llama-2-13B-Chat,GPTQ,8-bit,,MT-Bench,MT-Bench Score (1-10),6.85,FP16,7.0,-0.15,absolute,False,measured,16,C.1. AdvGLUE++,Table 4,GPTQ | 2.89 | 6.55 | 6.85 | 7.00
+RP26,Llama-2-13B-Chat,FP16,16-bit,,MT-Bench,MT-Bench Score (1-10),7.0,,,,,False,measured,16,C.1. AdvGLUE++,Table 4,GPTQ | 2.89 | 6.55 | 6.85 | 7.00
+RP26,Llama-2-13B-Chat,AWQ,3-bit,,MT-Bench,MT-Bench Score (1-10),6.42,FP16,7.0,-0.58,absolute,False,measured,16,C.1. AdvGLUE++,Table 4,AWQ | 6.42 | 6.73 | 6.99 | 7.00
+RP26,Llama-2-13B-Chat,AWQ,4-bit,,MT-Bench,MT-Bench Score (1-10),6.73,FP16,7.0,-0.27,absolute,False,measured,16,C.1. AdvGLUE++,Table 4,AWQ | 6.42 | 6.73 | 6.99 | 7.00
+RP26,Llama-2-13B-Chat,AWQ,8-bit,,MT-Bench,MT-Bench Score (1-10),6.99,FP16,7.0,-0.01,absolute,False,measured,16,C.1. AdvGLUE++,Table 4,AWQ | 6.42 | 6.73 | 6.99 | 7.00
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Ethics,Ethics Score (text),76.3,FP16,54.1,22.2,absolute,True,measured,7,5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness,,the model will emerge to improve the Ethics ability from 54.1 to 76.3 (GPTQ) or 62.8 (AWQ)
+RP26,Llama-2-13B-Chat,AWQ,4-bit,,DecodingTrust-Ethics,Ethics Score (text),62.8,FP16,54.1,8.7,absolute,False,measured,7,5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness,,improve the Ethics ability from 54.1 to 76.3 (GPTQ) or 62.8 (AWQ)
+RP26,Llama-2-13B-Chat,GPTQ,4-bit,,DecodingTrust-Fairness,EOD reduction (16-shot),0.2,FP16,,,absolute,False,measured,7,5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness,,quantization models can significantly reduce EOD in few-shot settings (over 0.2 reduction in the 16-shot setting)
+RP26,Llama-2-13B-Chat,GPTQ,3-bit,,DecodingTrust-Toxicity,Trustworthiness drop (worst-case),50.0,FP16,,-50.0,absolute,True,measured,8,5.2. The Losses on the Extreme Compression Rate,,"OOD robustness and Toxicity performances of GPTQ are degraded with about 30-point and 50-point drops, respectively"
+RP26,Llama-2-13B-Chat,GPTQ,3-bit,,DecodingTrust-OOD,Trustworthiness drop,30.0,FP16,,-30.0,absolute,True,measured,8,5.2. The Losses on the Extreme Compression Rate,,"OOD robustness and Toxicity performances of GPTQ are degraded with about 30-point and 50-point drops, respectively"
+RP26,Llama-2-13B-Chat,AWQ,3-bit,,DecodingTrust-Fairness,Trustworthiness drop (worst-case),10.0,FP16,,-10.0,absolute,False,measured,8,5.2. The Losses on the Extreme Compression Rate,,The worst case for AWQ is about a 10-point drop in Fairness
+RP26,Llama-2-13B-Chat,GPTQ,3-bit,,MMLU,Accuracy drop,8.0,FP16,,-8.0,absolute,False,measured,8,5.2. The Losses on the Extreme Compression Rate,,an adversary may quantize an LLM to break the alignment at a moderate cost of benign performance (about an 8-point drop in MMLU)
+RP26,Llama-2-13B-Chat,AWQ,3-bit,,MMLU,Accuracy drop,3.0,FP16,,-3.0,absolute,False,measured,8,5.2. The Losses on the Extreme Compression Rate,,AWQ is a more reliable choice by a 3-point drop only than the GPTQ
 RP27,LLaMA2-7b,FT,16-bit,,TULU-V2-mix,Mean accuracy (%),71.97,,,,,False,measured,6,4.1 Data,Table 1,FT | 71.97 | 71.88 | 75.09 | 75.21 | 76.13 | 77.02
 RP27,LLaMA2-7b,LoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),71.78,FT,71.97,-0.19,absolute,False,measured,6,4.1 Data,Table 1,LoRA | 71.78 | 70.89 | 74.03 | 74.01 | 75.91 | 75.63
 RP27,LLaMA2-7b,DoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),72.03,FT,71.97,0.06,absolute,False,measured,6,4.1 Data,Table 1,DoRA | 72.03 | 70.97 | 73.97 | 73.96 | 75.89 | 75.72
@@ -2259,6 +2450,292 @@ RP32,Vicuna-13B-v1.5,AWQ,4-bit,,HarmLevelBench,"GPT Judge Full Compliance (GCG, 
 RP32,Vicuna-13B-v1.5,GPTQ,4-bit,,HarmLevelBench,"GPT Judge Full Compliance (GCG, Transferred)",32.1,FP16,41.1,-9.0,absolute,False,measured,7,4.4 Enhanced Robustness of Quantization Against Transferred Attacks,Table 4,7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8
 RP32,Vicuna-13B-v1.5,AWQ,4-bit,,HarmLevelBench,"GPT Judge Partial Compliance (GCG, Transferred)",83.9,FP16,91.1,-7.2,absolute,False,measured,7,4.4 Enhanced Robustness of Quantization Against Transferred Attacks,Table 4,7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8
 RP32,Vicuna-13B-v1.5,GPTQ,4-bit,,HarmLevelBench,"GPT Judge Partial Compliance (GCG, Transferred)",92.8,FP16,91.1,1.7,absolute,False,measured,7,4.4 Enhanced Robustness of Quantization Against Transferred Attacks,Table 4,7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8
+RP34,OPT-30B,FP16,16-bit,,MLP block,Activation Sparsity,0.97,,,,,False,measured,3,2.1 LLM Inference & Architecture,Table 1,OPT-30B | ReLU | 97%
+RP34,LLaMA2-13B,FP16,16-bit,,MLP block,Activation Sparsity,0.43,,,,,False,measured,3,2.1 LLM Inference & Architecture,Table 1,LLaMA2-13B | SwiGLU | 43%
+RP34,Yi-34B,FP16,16-bit,,MLP block,Activation Sparsity,0.53,,,,,False,measured,3,2.1 LLM Inference & Architecture,Table 1,Yi-34B | SwiGLU | 53%
+RP34,Bamboo-7B,FP16,16-bit,,MLP block,Activation Sparsity,0.9,,,,,False,measured,10,8.1 Experimental Setup,Table 3,Bamboo-7B | dReLU | 90%
+RP34,Falcon(ReLU)-40B,FP16,16-bit,,MLP block,Activation Sparsity,0.95,,,,,False,measured,10,8.1 Experimental Setup,Table 3,Falcon(ReLU)-40B | ReLU | 95%
+RP34,LLaMA2(ReGLU)-7B,FP16,16-bit,,MLP block,Activation Sparsity,0.7,,,,,False,measured,10,8.1 Experimental Setup,Table 3,LLaMA2(ReGLU)-7B | ReGLU | 70%
+RP34,LLaMA2(ReGLU)-13B,FP16,16-bit,,MLP block,Activation Sparsity,0.78,,,,,False,measured,10,8.1 Experimental Setup,Table 3,LLaMA2(ReGLU)-13B | ReGLU | 78%
+RP34,LLaMA2(ReGLU)-70B,FP16,16-bit,,MLP block,Activation Sparsity,0.82,,,,,False,measured,10,8.1 Experimental Setup,Table 3,LLaMA2(ReGLU)-70B | ReGLU | 82%
+RP34,Qwen1.5-4B,FP16,16-bit,,MLP block,Activation Sparsity,0.4,,,,,False,measured,10,8.1 Experimental Setup,Table 3,Qwen1.5-4B | SwiGLU | 40%
+RP34,Mixed (avg),PowerInfer,16-bit,,Alpaca + ChatGPT prompts,Generation speed (tokens/s),8.32,llama.cpp,,,,True,measured,10,8.2 End-to-End Performance,Figure 10,"PowerInfer achieves a generation speed of 8.32 tokens/s, reaching up to 16.06 tokens/s"
+RP34,Mixed (peak),PowerInfer,16-bit,,Alpaca + ChatGPT prompts,Generation speed (tokens/s),16.06,,,,,False,measured,10,8.2 End-to-End Performance,Figure 10,"PowerInfer achieves a generation speed of 8.32 tokens/s, reaching up to 16.06 tokens/s"
+RP34,Mixed (avg),PowerInfer,16-bit,,PC-High (RTX 4090),Speedup over llama.cpp,7.23,llama.cpp,1.0,6.23,x_factor,False,measured,10,8.2 End-to-End Performance,Figure 10,with average speedups of 7.23\times and 6.19\times
+RP34,Mixed (avg),PowerInfer,16-bit,,PC-High (RTX 4090),Speedup over SpecInfer,6.19,SpecInfer,1.0,5.19,x_factor,False,measured,10,8.2 End-to-End Performance,Figure 10,with average speedups of 7.23\times and 6.19\times
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,PC-High (RTX 4090),Speedup over llama.cpp,11.69,llama.cpp,1.0,10.69,x_factor,True,measured,10,8.2 End-to-End Performance,Figure 10,"for Falcon-40B, up to 11.69× compared with llama.cpp"
+RP34,Mixed (avg),PowerInfer,16-bit,,PC-Low (RTX 2080Ti),Speedup over llama.cpp,4.71,llama.cpp,1.0,3.71,x_factor,False,measured,10,8.2 End-to-End Performance,Figure 11,"PowerInfer still attains considerable performance enhancement over llama.cpp and SpecInfer, averaging a speedup of 4.71×, 5.97×"
+RP34,Mixed (avg),PowerInfer,16-bit,,PC-Low (RTX 2080Ti),Speedup over SpecInfer,5.97,SpecInfer,1.0,4.97,x_factor,False,measured,10,8.2 End-to-End Performance,Figure 11,"averaging a speedup of 4.71×, 5.97× and peaking at 7.06× and 7.47×"
+RP34,Mixed (peak),PowerInfer,16-bit,,PC-Low (RTX 2080Ti),Speedup over llama.cpp,7.06,llama.cpp,1.0,6.06,x_factor,False,measured,10,8.2 End-to-End Performance,Figure 11,peaking at 7.06× and 7.47×
+RP34,Mixed (peak),PowerInfer,16-bit,,PC-Low (RTX 2080Ti),Speedup over SpecInfer,7.47,SpecInfer,1.0,6.47,x_factor,False,measured,10,8.2 End-to-End Performance,Figure 11,peaking at 7.06× and 7.47×
+RP34,LLaMA(ReGLU)-13B,llama.cpp,16-bit,,"PC-High (1.5K in, 256 out)",Latency (ms/token),49.91,,,,,False,measured,11,8.2 End-to-End Performance,Table 4,LLaMA(ReGLU)-13B-FP16 | 49.91 | 14.38 | 3.47×
+RP34,LLaMA(ReGLU)-13B,PowerInfer,16-bit,,"PC-High (1.5K in, 256 out)",Latency (ms/token),14.38,llama.cpp,49.91,-35.53,absolute,False,measured,11,8.2 End-to-End Performance,Table 4,LLaMA(ReGLU)-13B-FP16 | 49.91 | 14.38 | 3.47×
+RP34,LLaMA(ReGLU)-13B,PowerInfer,16-bit,,"PC-High (1.5K in, 256 out)",Speedup over llama.cpp,3.47,llama.cpp,1.0,2.47,x_factor,False,measured,11,8.2 End-to-End Performance,Table 4,LLaMA(ReGLU)-13B-FP16 | 49.91 | 14.38 | 3.47×
+RP34,Falcon(ReLU)-40B,llama.cpp,16-bit,,"PC-High (1.5K in, 256 out)",Latency (ms/token),321.63,,,,,False,measured,11,8.2 End-to-End Performance,Table 4,Falcon(ReLU)-40B-FP16 | 321.63 | 56.48 | 5.69×
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,"PC-High (1.5K in, 256 out)",Latency (ms/token),56.48,llama.cpp,321.63,-265.15,absolute,False,measured,11,8.2 End-to-End Performance,Table 4,Falcon(ReLU)-40B-FP16 | 321.63 | 56.48 | 5.69×
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,"PC-High (1.5K in, 256 out)",Speedup over llama.cpp,5.69,llama.cpp,1.0,4.69,x_factor,False,measured,11,8.2 End-to-End Performance,Table 4,Falcon(ReLU)-40B-FP16 | 321.63 | 56.48 | 5.69×
+RP34,LLaMA(ReGLU)-70B,llama.cpp,16-bit,,"PC-High (1.5K in, 256 out)",Latency (ms/token),92.76,,,,,False,measured,11,8.2 End-to-End Performance,Table 4,LLaMA(ReGLU)-70B-FP16 | 92.76 | 37.17 | 2.50×
+RP34,LLaMA(ReGLU)-70B,PowerInfer,16-bit,,"PC-High (1.5K in, 256 out)",Latency (ms/token),37.17,llama.cpp,92.76,-55.59,absolute,False,measured,11,8.2 End-to-End Performance,Table 4,LLaMA(ReGLU)-70B-FP16 | 92.76 | 37.17 | 2.50×
+RP34,LLaMA(ReGLU)-70B,PowerInfer,16-bit,,"PC-High (1.5K in, 256 out)",Speedup over llama.cpp,2.5,llama.cpp,1.0,1.5,x_factor,False,measured,11,8.2 End-to-End Performance,Table 4,LLaMA(ReGLU)-70B-FP16 | 92.76 | 37.17 | 2.50×
+RP34,Mixed (avg),PowerInfer,4-bit,,PC-High (RTX 4090),Generation speed (tokens/s),13.2,llama.cpp,,,,True,measured,11,8.2 End-to-End Performance,Figure 13,"PowerInfer delivers responses at an average speed of 13.20 tokens/s, reaching a peak of 29.08 tokens/s"
+RP34,Mixed (peak),PowerInfer,4-bit,,PC-High (RTX 4090),Generation speed (tokens/s),29.08,,,,,False,measured,11,8.2 End-to-End Performance,Figure 13,"an average speed of 13.20 tokens/s, reaching a peak of 29.08 tokens/s"
+RP34,Mixed (avg),PowerInfer,4-bit,,PC-High (RTX 4090),Speedup over llama.cpp,2.89,llama.cpp,1.0,1.89,x_factor,False,measured,11,8.2 End-to-End Performance,Figure 13,"The average speedup achieved compared with llama.cpp is 2.89×, with a maximum of 4.28×"
+RP34,Mixed (peak),PowerInfer,4-bit,,PC-High (RTX 4090),Speedup over llama.cpp,4.28,llama.cpp,1.0,3.28,x_factor,False,measured,11,8.2 End-to-End Performance,Figure 13,"2.89×, with a maximum of 4.28×"
+RP34,Mixed (avg),PowerInfer,4-bit,,PC-Low (RTX 2080Ti),Speedup over llama.cpp,5.01,llama.cpp,1.0,4.01,x_factor,False,measured,11,8.2 End-to-End Performance,Figure 13,"On a lower-end setup (PC-Low), the average speedup is 5.01×, peaking at 8.00×"
+RP34,Mixed (peak),PowerInfer,4-bit,,PC-Low (RTX 2080Ti),Speedup over llama.cpp,8.0,llama.cpp,1.0,7.0,x_factor,True,measured,11,8.2 End-to-End Performance,Figure 13,"the average speedup is 5.01×, peaking at 8.00×"
+RP34,OPT-175B,PowerInfer,4-bit,,PC-High (RTX 4090),Speedup over llama.cpp,2.66,llama.cpp,1.0,1.66,x_factor,False,measured,11,8.2 End-to-End Performance,Figure 13,"in our experiment with the OPT-175B model on PC-High, PowerInfer nearly reaches two tokens per second, surpassing llama.cpp by a factor of 2.66×"
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,PC-High (batch size <= 32),"Speedup over llama.cpp (avg, batch<32)",6.08,llama.cpp,1.0,5.08,x_factor,False,measured,11,8.2 End-to-End Performance,Figure 14,achieving an average 6.08× improvement in performance compared with llama.cpp
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,PC-High (batch size 32),Speedup over llama.cpp,4.38,llama.cpp,1.0,3.38,x_factor,False,measured,11,8.2 End-to-End Performance,Figure 14,"even with the batch size set to 32, PowerInfer still maintains a considerable speedup, achieving a 4.38× speedup"
+RP34,Bamboo-7B,+PO,16-bit,,PC-Low,Speedup over llama.cpp,1.87,llama.cpp,1.0,0.87,x_factor,False,measured,12,8.3 Ablation Studies,Figure 15,The initial integration of +PO into llama.cpp yields performance boosts of 1.87× and 3.32× for Bamboo-7B and Falcon-40B
+RP34,Falcon(ReLU)-40B,+PO,16-bit,,PC-High,Speedup over llama.cpp,3.32,llama.cpp,1.0,2.32,x_factor,False,measured,12,8.3 Ablation Studies,Figure 15,performance boosts of 1.87× and 3.32× for Bamboo-7B and Falcon-40B
+RP34,Bamboo-7B,+Engine,16-bit,,PC-Low,Speedup over llama.cpp,2.6,llama.cpp,1.0,1.6,x_factor,False,measured,12,8.3 Ablation Studies,Figure 15,+Engine further escalates these gains to 2.60\times and 7.80\times
+RP34,Falcon(ReLU)-40B,+Engine,16-bit,,PC-High,Speedup over llama.cpp,7.8,llama.cpp,1.0,6.8,x_factor,False,measured,12,8.3 Ablation Studies,Figure 15,+Engine further escalates these gains to 2.60\times and 7.80\times
+RP34,Bamboo-7B,+Policy (PowerInfer),16-bit,,PC-Low,Speedup over llama.cpp,3.62,llama.cpp,1.0,2.62,x_factor,False,measured,12,8.3 Ablation Studies,Figure 15,incorporating +Policy results in improvements of 3.62× and 11.69×
+RP34,Falcon(ReLU)-40B,+Policy (PowerInfer),16-bit,,PC-High,Speedup over llama.cpp,11.69,llama.cpp,1.0,10.69,x_factor,False,measured,12,8.3 Ablation Studies,Figure 15,incorporating +Policy results in improvements of 3.62× and 11.69×
+RP34,Bamboo-7B,PowerInfer,16-bit,,STEM (PC-Low),Avg latency (ms/token),38.05,,,,,False,measured,12,8.3 Ablation Studies,Table 5,Bamboo-7Bon PC-Low | Avg. | 38.05 | 36.71 | 37.08 | 37.42
+RP34,Bamboo-7B,PowerInfer,16-bit,,HumanEval (PC-Low),Avg latency (ms/token),36.71,,,,,False,measured,12,8.3 Ablation Studies,Table 5,Avg. | 38.05 | 36.71 | 37.08 | 37.42
+RP34,Bamboo-7B,PowerInfer,16-bit,,Roleplay (PC-Low),Avg latency (ms/token),37.08,,,,,False,measured,12,8.3 Ablation Studies,Table 5,Avg. | 38.05 | 36.71 | 37.08 | 37.42
+RP34,Bamboo-7B,PowerInfer,16-bit,,Table-Extraction (PC-Low),Avg latency (ms/token),37.42,,,,,False,measured,12,8.3 Ablation Studies,Table 5,Avg. | 38.05 | 36.71 | 37.08 | 37.42
+RP34,Bamboo-7B,PowerInfer,16-bit,,STEM (PC-Low),P95 latency (ms/token),40.75,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P95 | 40.75 | 40.48 | 40.61 | 40.74
+RP34,Bamboo-7B,PowerInfer,16-bit,,HumanEval (PC-Low),P95 latency (ms/token),40.48,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P95 | 40.75 | 40.48 | 40.61 | 40.74
+RP34,Bamboo-7B,PowerInfer,16-bit,,Roleplay (PC-Low),P95 latency (ms/token),40.61,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P95 | 40.75 | 40.48 | 40.61 | 40.74
+RP34,Bamboo-7B,PowerInfer,16-bit,,Table-Extraction (PC-Low),P95 latency (ms/token),40.74,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P95 | 40.75 | 40.48 | 40.61 | 40.74
+RP34,Bamboo-7B,PowerInfer,16-bit,,STEM (PC-Low),P99 latency (ms/token),42.33,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P99 | 42.33 | 42.37 | 43.87 | 42.93
+RP34,Bamboo-7B,PowerInfer,16-bit,,HumanEval (PC-Low),P99 latency (ms/token),42.37,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P99 | 42.33 | 42.37 | 43.87 | 42.93
+RP34,Bamboo-7B,PowerInfer,16-bit,,Roleplay (PC-Low),P99 latency (ms/token),43.87,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P99 | 42.33 | 42.37 | 43.87 | 42.93
+RP34,Bamboo-7B,PowerInfer,16-bit,,Table-Extraction (PC-Low),P99 latency (ms/token),42.93,,,,,False,measured,12,8.3 Ablation Studies,Table 5,P99 | 42.33 | 42.37 | 43.87 | 42.93
+RP34,OPT-13B,PowerInfer,16-bit,,Predictor,Predictor params (B),0.88,,,,,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-params | 0.88B | 3.23B | 3.63B | 5.66B
+RP34,OPT-13B,PowerInfer,16-bit,,Predictor,Predictor ratio (% of model params),6.71,,,,percent,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-ratio(%) | 6.71% | 4.88% | 8.68% | 8.08%
+RP34,OPT-66B,PowerInfer,16-bit,,Predictor,Predictor params (B),3.23,,,,,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-params | 0.88B | 3.23B | 3.63B | 5.66B
+RP34,OPT-66B,PowerInfer,16-bit,,Predictor,Predictor ratio (% of model params),4.88,,,,percent,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-ratio(%) | 6.71% | 4.88% | 8.68% | 8.08%
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,Predictor,Predictor params (B),3.63,,,,,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-params | 0.88B | 3.23B | 3.63B | 5.66B
+RP34,Falcon(ReLU)-40B,PowerInfer,16-bit,,Predictor,Predictor ratio (% of model params),8.68,,,,percent,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-ratio(%) | 6.71% | 4.88% | 8.68% | 8.08%
+RP34,LLaMA(ReGLU)-70B,PowerInfer,16-bit,,Predictor,Predictor params (B),5.66,,,,,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-params | 0.88B | 3.23B | 3.63B | 5.66B
+RP34,LLaMA(ReGLU)-70B,PowerInfer,16-bit,,Predictor,Predictor ratio (% of model params),8.08,,,,percent,False,measured,13,8.3 Ablation Studies,Table 6,Predictor-ratio(%) | 6.71% | 4.88% | 8.68% | 8.08%
+RP34,OPT-30B,PowerInfer,16-bit,,PC-High vs A100 vLLM,Slowdown vs vLLM A100 (input length 1),0.18,vLLM on A100,1.0,-0.18,percent,True,measured,13,8.3 Ablation Studies,Figure 18,PowerInfer reduces this to 18% and 23%
+RP34,Falcon-40B,PowerInfer,16-bit,,PC-High vs A100 vLLM,Slowdown vs vLLM A100 (input length 1),0.23,vLLM on A100,1.0,-0.23,percent,False,measured,13,8.3 Ablation Studies,Figure 18,PowerInfer reduces this to 18% and 23%
+RP34,OPT-30B,llama.cpp,16-bit,,PC-High vs A100 vLLM,Slowdown vs vLLM A100 (input length 1),0.93,vLLM on A100,1.0,-0.93,percent,False,measured,13,8.3 Ablation Studies,Figure 18,llama.cpp lags behind vLLM on the A100 by 93% and 92% for OPT-30B and Falcon-40B
+RP34,Falcon-40B,llama.cpp,16-bit,,PC-High vs A100 vLLM,Slowdown vs vLLM A100 (input length 1),0.92,vLLM on A100,1.0,-0.92,percent,False,measured,13,8.3 Ablation Studies,Figure 18,llama.cpp lags behind vLLM on the A100 by 93% and 92% for OPT-30B and Falcon-40B
+RP34,OPT-30B,PowerInfer,16-bit,,PC-High vs A100 vLLM,Slowdown vs vLLM A100 (input length 64),0.28,vLLM on A100,1.0,-0.28,percent,False,measured,13,8.3 Ablation Studies,Figure 18,PowerInfer still reduces the performance gap to 28% and 29%
+RP34,Falcon-40B,PowerInfer,16-bit,,PC-High vs A100 vLLM,Slowdown vs vLLM A100 (input length 64),0.29,vLLM on A100,1.0,-0.29,percent,False,measured,13,8.3 Ablation Studies,Figure 18,PowerInfer still reduces the performance gap to 28% and 29%
+RP34,Yi(SwiGLU)-34B,PowerInfer,16-bit,,PC-High,Generation speed (tokens/s),1.7,llama.cpp,1.0,0.7,absolute,False,measured,13,8.3 Ablation Studies,Table 8,PC-High | Yi(SwiGLU)-34B | 1.7 | 1.0 | 1.7×
+RP34,Yi(SwiGLU)-34B,PowerInfer,16-bit,,PC-High,Speedup over llama.cpp,1.7,llama.cpp,1.0,0.7,x_factor,False,measured,13,8.3 Ablation Studies,Table 8,PC-High | Yi(SwiGLU)-34B | 1.7 | 1.0 | 1.7×
+RP34,LLaMA2(SwiGLU)-13B,PowerInfer,16-bit,,PC-Low,Generation speed (tokens/s),3.1,llama.cpp,2.1,1.0,absolute,False,measured,13,8.3 Ablation Studies,Table 8,PC-Low | LLaMA(SwiGLU)-2-13B | 3.1 | 2.1 | 1.5×
+RP34,LLaMA2(SwiGLU)-13B,PowerInfer,16-bit,,PC-Low,Speedup over llama.cpp,1.5,llama.cpp,1.0,0.5,x_factor,False,measured,13,8.3 Ablation Studies,Table 8,PC-Low | LLaMA(SwiGLU)-2-13B | 3.1 | 2.1 | 1.5×
+RP34,OPT-30B,PowerInfer,16-bit,,PC-High,Generation speed (tokens/s),12.0,llama.cpp,1.1,10.9,absolute,False,measured,13,8.3 Ablation Studies,Table 8,PC-High | OPT-30B | 12.0 | 1.1 | 10.9×
+RP34,OPT-30B,PowerInfer,16-bit,,PC-High,Speedup over llama.cpp,10.9,llama.cpp,1.0,9.9,x_factor,False,measured,13,8.3 Ablation Studies,Table 8,PC-High | OPT-30B | 12.0 | 1.1 | 10.9×
+RP34,OPT-7B,FP16,16-bit,,PIQA,Accuracy,75.78,,,,,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B | 75.78% | 65.19% | 30.63% | 24.95% | 1.90% | 39.69%
+RP34,OPT-7B,PowerInfer,16-bit,,PIQA,Accuracy,75.67,OPT-7B FP16,75.78,-0.11,absolute,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B-PowerInfer | 75.67% | 65.51% | 30.63% | 24.73% | 1.82% | 39.67%
+RP34,OPT-7B,FP16,16-bit,,Winogrande,Accuracy,65.19,,,,,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B | 75.78% | 65.19% | 30.63% | 24.95% | 1.90% | 39.69%
+RP34,OPT-7B,PowerInfer,16-bit,,Winogrande,Accuracy,65.51,OPT-7B FP16,65.19,0.32,absolute,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B-PowerInfer | 75.67% | 65.51% | 30.63% | 24.73% | 1.82% | 39.67%
+RP34,OPT-7B,FP16,16-bit,,Arc-Challenge,Accuracy,30.63,,,,,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B | 75.78% | 65.19% | 30.63% | 24.95% | 1.90% | 39.69%
+RP34,OPT-7B,PowerInfer,16-bit,,Arc-Challenge,Accuracy,30.63,OPT-7B FP16,30.63,0.0,absolute,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B-PowerInfer | 75.67% | 65.51% | 30.63% | 24.73% | 1.82% | 39.67%
+RP34,OPT-7B,FP16,16-bit,,MMLU,Accuracy,24.95,,,,,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B | 75.78% | 65.19% | 30.63% | 24.95% | 1.90% | 39.69%
+RP34,OPT-7B,PowerInfer,16-bit,,MMLU,Accuracy,24.73,OPT-7B FP16,24.95,-0.22,absolute,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B-PowerInfer | 75.67% | 65.51% | 30.63% | 24.73% | 1.82% | 39.67%
+RP34,OPT-7B,FP16,16-bit,,GSM8K,Accuracy,1.9,,,,,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B | 75.78% | 65.19% | 30.63% | 24.95% | 1.90% | 39.69%
+RP34,OPT-7B,PowerInfer,16-bit,,GSM8K,Accuracy,1.82,OPT-7B FP16,1.9,-0.08,absolute,False,measured,13,8.3 Ablation Studies,Table 7,OPT-7B-PowerInfer | 75.67% | 65.51% | 30.63% | 24.73% | 1.82% | 39.67%
+RP34,OPT-13B,FP16,16-bit,,Avg (5 tasks),Accuracy (avg),40.21,,,,,False,measured,13,8.3 Ablation Studies,Table 7,OPT-13B | 76.01% | 64.96% | 32.94% | 25.02% | 2.12% | 40.21%
+RP34,OPT-13B,PowerInfer,16-bit,,Avg (5 tasks),Accuracy (avg),40.48,OPT-13B FP16,40.21,0.27,absolute,False,measured,13,8.3 Ablation Studies,Table 7,OPT-13B-PowerInfer | 76.28% | 65.98% | 33.19% | 24.76% | 2.20% | 40.48%
+RP34,LLaMA(ReGLU)-13B,FP16,16-bit,,Avg (5 tasks),Accuracy (avg),51.73,,,,,False,measured,13,8.3 Ablation Studies,Table 7,LLaMA(ReGLU)-13B | 76.44% | 70.09% | 36.52% | 50.21% | 25.40% | 51.73%
+RP34,LLaMA(ReGLU)-13B,PowerInfer,16-bit,,Avg (5 tasks),Accuracy (avg),50.79,LLaMA(ReGLU)-13B FP16,51.73,-0.94,absolute,False,measured,13,8.3 Ablation Studies,Table 7,LLaMA(ReGLU)-13B-PowerInfer | 74.06% | 69.93% | 36.60% | 49.47% | 23.90% | 50.79%
+RP34,Falcon-40B,FP16,16-bit,,Avg (5 tasks),Accuracy (avg),56.23,,,,,False,measured,13,8.3 Ablation Studies,Table 7,Falcon-40B | 81.23% | 75.45% | 50.68% | 51.78% | 21.99% | 56.23%
+RP34,Falcon-40B,PowerInfer,16-bit,,Avg (5 tasks),Accuracy (avg),55.95,Falcon-40B FP16,56.23,-0.28,absolute,False,measured,13,8.3 Ablation Studies,Table 7,Falcon-40B-PowerInfer | 81.01% | 75.92%50.68%51.68%20.45%55.95%
+RP34,LLaMA(ReGLU)-70B,FP16,16-bit,,Avg (5 tasks),Accuracy (avg),66.99,,,,,False,measured,13,8.3 Ablation Studies,Table 7,LLaMA(ReGLU))-70B | 82.01% | 75.93% | 52.39% | 62.30% | 62.30% | 66.99%
+RP34,LLaMA(ReGLU)-70B,PowerInfer,16-bit,,Avg (5 tasks),Accuracy (avg),66.57,LLaMA(ReGLU)-70B FP16,66.99,-0.42,absolute,False,measured,13,8.3 Ablation Studies,Table 7,LLaMA(ReGLU)-70B-PowerInfer | 82.05% | 75.53% | 51.45% | 61.90% | 61.90% | 66.57%
+RP34,OPT-7B,PowerInfer,16-bit,,Original dense vs predictor outputs,Cosine similarity drop (%),0.4,Dense FP16,,,percent,False,measured,14,8.5 LLM Accuracy,,we found that mispredictions only affect results by approximately 0.4%
+RP34,Qwen1.5-4B,FP16,16-bit,,PC-Low,Time-Between-Tokens (ms),10.83,,,,,False,measured,14,8.4 SiLU-based LLM Performance,Table 9,Qwen1.5-4B | 10.83 | 52.23 | 55.26 | 53.9 | 47.53
+RP34,Qwen1.5-4B,FP16,16-bit,,Avg (3 tasks),Accuracy (avg),52.23,,,,,False,measured,14,8.4 SiLU-based LLM Performance,Table 9,Qwen1.5-4B | 10.83 | 52.23 | 55.26 | 53.9 | 47.53
+RP34,Bamboo-7B,PowerInfer,16-bit,,PC-Low,Time-Between-Tokens (ms),11.85,,,,,False,measured,14,8.4 SiLU-based LLM Performance,Table 9,Bamboo-7B-PowerInfer | 11.85 | 65.65 | 62.26 | 70.54 | 64.16
+RP34,Bamboo-7B,PowerInfer,16-bit,,Avg (3 tasks),Accuracy (avg),65.65,Bamboo-7B-dense,65.49,0.16,absolute,False,measured,14,8.4 SiLU-based LLM Performance,Table 9,Bamboo-7B-PowerInfer | 11.85 | 65.65 | 62.26 | 70.54 | 64.16
+RP34,Bamboo-7B,Dense,16-bit,,PC-Low,Time-Between-Tokens (ms),18.54,,,,,False,measured,14,8.4 SiLU-based LLM Performance,Table 9,Bamboo-7B-dense | 18.54 | 65.49 | 62.46 | 70.28 | 63.74
+RP34,Bamboo-7B,Dense,16-bit,,Avg (3 tasks),Accuracy (avg),65.49,,,,,False,measured,14,8.4 SiLU-based LLM Performance,Table 9,Bamboo-7B-dense | 18.54 | 65.49 | 62.46 | 70.28 | 63.74
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.0,FP16,66.9,-2.9,absolute,True,measured,1,ABSTRACT,Abstract,SpinQuant narrows the accuracy gap on zero-shot reasoning tasks with full precision to merely 2.9 points on the LLaMA-2 7B model
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy gap to FP16,22.0,FP16,0.0,22.0,absolute,True,measured,2,1 INTRODUCTION,Introduction,"the previous LLM-QAT (Liu et al., 2023c) approach, which exhibited a 22.0 point gap under identical precision conditions"
+RP36,LLaMA-2-7B,SpinQuant-had vs LLM-QAT,4-bit,,Zero-shot CSR (8 tasks avg),Improvement over LLM-QAT,19.1,LLM-QAT,,19.1,absolute,True,measured,1,ABSTRACT,Abstract,surpassing LLM-QAT by 19.1 points and SmoothQuant by 25.0 points
+RP36,LLaMA-2-7B,SpinQuant-had vs SmoothQuant,4-bit,,Zero-shot CSR (8 tasks avg),Improvement over SmoothQuant,25.0,SmoothQuant,,25.0,absolute,True,measured,1,ABSTRACT,Abstract,surpassing LLM-QAT by 19.1 points and SmoothQuant by 25.0 points
+RP36,LLaMA-2-7B,SpinQuant (random rotations),4-bit,,Zero-shot CSR (8 tasks avg),Best-vs-worst rotation variance,13.0,,,,absolute,True,measured,1,ABSTRACT,Abstract,with an up to 13 points difference in downstream zero-shot reasoning performance
+RP36,LLaMA-3-8B,SpinQuant-had vs QuaRot,4-bit,,Zero-shot CSR (8 tasks avg),Relative gap reduction vs QuaRot,45.1,QuaRot,,45.1,percent,True,measured,1,ABSTRACT,Abstract,"for LLaMA-3 8B models that are hard to quantize, SpinQuant reduces the gap to full precision by up to 45.1% relative to QuaRot"
+RP36,LLaMA-2-7B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,66.9,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | 66.9 | 5.5
+RP36,LLaMA-2-7B,FP16,16-bit,,WikiText-2,Perplexity,5.5,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | 66.9 | 5.5
+RP36,LLaMA-2-13B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,68.3,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 68.3 | 5.0
+RP36,LLaMA-2-13B,FP16,16-bit,,WikiText-2,Perplexity,5.0,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 68.3 | 5.0
+RP36,LLaMA-2-70B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,72.9,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 72.9 | 3.3
+RP36,LLaMA-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.3,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 72.9 | 3.3
+RP36,LLaMA-3.2-1B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,56.9,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 56.9 | 13.4
+RP36,LLaMA-3.2-1B,FP16,16-bit,,WikiText-2,Perplexity,13.4,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 56.9 | 13.4
+RP36,LLaMA-3.2-3B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,63.9,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 63.9 | 10.7
+RP36,LLaMA-3.2-3B,FP16,16-bit,,WikiText-2,Perplexity,10.7,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 63.9 | 10.7
+RP36,LLaMA-3-8B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,69.6,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 69.6 | 6.1
+RP36,LLaMA-3-8B,FP16,16-bit,,WikiText-2,Perplexity,6.1,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 69.6 | 6.1
+RP36,Mistral-7B,FP16,16-bit,,Zero-shot CSR (8 tasks avg),Accuracy,71.0,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 71.0 | 5.4
+RP36,Mistral-7B,FP16,16-bit,,WikiText-2,Perplexity,5.4,,,,,False,measured,7,4.2 Main results,Table 1,16-16-16 | FloatingPoint | ... 71.0 | 5.4
+RP36,LLaMA-2-7B,RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,62.4,FP16,66.9,-4.5,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),4-8-16 | RTN | 62.4 | 7.9
+RP36,LLaMA-2-7B,RTN,4-bit,,WikiText-2,Perplexity,7.9,FP16,5.5,2.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),4-8-16 | RTN | 62.4 | 7.9
+RP36,LLaMA-2-7B,SmoothQuant,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,58.9,FP16,66.9,-8.0,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SmoothQuant | 58.9 | 7.5
+RP36,LLaMA-2-7B,SmoothQuant,4-bit,,WikiText-2,Perplexity,7.5,FP16,5.5,2.0,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SmoothQuant | 58.9 | 7.5
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.8,FP16,66.9,-2.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),LLM-QAT | 64.8 | 11.4
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,WikiText-2,Perplexity,11.4,FP16,5.5,5.9,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),LLM-QAT | 64.8 | 11.4
+RP36,LLaMA-2-7B,GPTQ,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.9,FP16,66.9,-2.0,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),GPTQ | 64.9 | 20.2
+RP36,LLaMA-2-7B,GPTQ,4-bit,,WikiText-2,Perplexity,20.2,FP16,5.5,14.7,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),GPTQ | 64.9 | 20.2
+RP36,LLaMA-2-7B,SpinQuant-no-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,65.7,FP16,66.9,-1.2,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SpinQuantno had | 65.7 | 5.8
+RP36,LLaMA-2-7B,SpinQuant-no-had,4-bit,,WikiText-2,Perplexity,5.8,FP16,5.5,0.3,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SpinQuantno had | 65.7 | 5.8
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,65.7,FP16,66.9,-1.2,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SpinQuanthad | 65.7 | 5.7
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,WikiText-2,Perplexity,5.7,FP16,5.5,0.2,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SpinQuanthad | 65.7 | 5.7
+RP36,LLaMA-2-7B,RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,35.6,FP16,66.9,-31.3,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),4-4-16 | RTN | 35.6 | 2e3
+RP36,LLaMA-2-7B,RTN,4-bit,,WikiText-2,Perplexity,2167.2,FP16,5.5,2161.7,absolute,False,measured,15,A.6 LATENCY MEASUREMENT ON GPU,Table 7 (W4A4KV16),"RTN | 26.6 | 22.1 | ... | 35.6 | 2,167.2"
+RP36,LLaMA-2-7B,SmoothQuant,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,41.8,FP16,66.9,-25.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),SmoothQuant | 41.8 | 3e2
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,47.8,FP16,66.9,-19.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),LLM-QAT | 47.8 | 12.9
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,WikiText-2,Perplexity,12.9,FP16,5.5,7.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),LLM-QAT | 47.8 | 12.9
+RP36,LLaMA-2-7B,GPTQ,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,36.8,FP16,66.9,-30.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),GPTQ | 36.8 | 9e3
+RP36,LLaMA-2-7B,SpinQuant-no-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,57.0,FP16,66.9,-9.9,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),SpinQuantno had | 57.0 | 9.2
+RP36,LLaMA-2-7B,SpinQuant-no-had,4-bit,,WikiText-2,Perplexity,9.2,FP16,5.5,3.7,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),SpinQuantno had | 57.0 | 9.2
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.1,FP16,66.9,-2.8,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),SpinQuanthad | 64.1 | 5.9
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,WikiText-2,Perplexity,5.9,FP16,5.5,0.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV16),SpinQuanthad | 64.1 | 5.9
+RP36,LLaMA-2-7B,RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,37.1,FP16,66.9,-29.8,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),4-4-4 | RTN | 37.1 | 2e3
+RP36,LLaMA-2-7B,SmoothQuant,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,39.0,FP16,66.9,-27.9,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SmoothQuant | 39.0 | 7e2
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,44.9,FP16,66.9,-22.0,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),LLM-QAT | 44.9 | 14.9
+RP36,LLaMA-2-7B,LLM-QAT,4-bit,,WikiText-2,Perplexity,14.9,FP16,5.5,9.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),LLM-QAT | 44.9 | 14.9
+RP36,LLaMA-2-7B,GPTQ,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,36.8,FP16,66.9,-30.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),GPTQ | 36.8 | 9e3
+RP36,LLaMA-2-7B,SpinQuant-no-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,56.0,FP16,66.9,-10.9,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuantno had | 56.0 | 9.2
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.0,FP16,66.9,-2.9,absolute,True,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 64.0 | 5.9
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,WikiText-2,Perplexity,5.9,FP16,5.5,0.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 64.0 | 5.9
+RP36,LLaMA-2-13B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,66.9,FP16,68.3,-1.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 66.9 | 5.3
+RP36,LLaMA-2-13B,SpinQuant-had,4-bit,,WikiText-2,Perplexity,5.3,FP16,5.0,0.3,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 66.9 | 5.3
+RP36,LLaMA-2-70B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,71.2,FP16,72.9,-1.7,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 71.2 | 3.8
+RP36,LLaMA-2-70B,SpinQuant-had,4-bit,,WikiText-2,Perplexity,3.8,FP16,3.3,0.5,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 71.2 | 3.8
+RP36,LLaMA-3.2-1B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,53.4,FP16,56.9,-3.5,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 53.4 | 15.9
+RP36,LLaMA-3.2-3B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,60.5,FP16,63.9,-3.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 60.5 | 11.4
+RP36,LLaMA-3-8B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,65.5,FP16,69.6,-4.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 65.5 | 7.3
+RP36,LLaMA-3-8B,SpinQuant-had,4-bit,,WikiText-2,Perplexity,7.3,FP16,6.1,1.2,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 65.5 | 7.3
+RP36,Mistral-7B,SpinQuant-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,68.6,FP16,71.0,-2.4,absolute,False,measured,7,4.2 Main results,Table 1 (W4A4KV4),SpinQuanthad | 68.6 | 5.8
+RP36,Mistral-7B,SpinQuant-no-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,69.4,FP16,71.0,-1.6,absolute,True,measured,7,4.2 Main results,Table 1 (W4A8KV8),SpinQuantno had | ... | 69.4 | 5.7
+RP36,Mistral-7B,RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,58.9,FP16,71.0,-12.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV8),RTN | ... 58.9 | 6.7
+RP36,LLaMA-3-8B,GPTQ,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.5,FP16,69.6,-5.1,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),GPTQ | ... 64.5 | 7.2
+RP36,LLaMA-3-8B,SpinQuant-no-had,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,68.6,FP16,69.6,-1.0,absolute,False,measured,7,4.2 Main results,Table 1 (W4A8KV16),SpinQuantno had | ... 68.6 | 6.7
+RP36,LLaMA-3.2-3B,"Random Hadamard (R1,2)",4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,49.8,,,,,False,measured,8,4.2 Main results,Table 2 (W4A4KV16),"Random Hadamard R_{1,2} | 49.8 | 49.6 | 49.5 | 50.0 | 51.4 | 51.5"
+RP36,LLaMA-3.2-3B,"SpinQuant-no-had (R1,2)",4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,52.9,Random Hadamard,49.8,3.1,absolute,False,measured,8,4.2 Main results,Table 2 (W4A4KV16),"SpinQuant_{no had} R_{1,2} | 52.9(↑3.1)"
+RP36,LLaMA-3-8B,"SpinQuant-no-had (R1,2)",4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,51.9,Random Hadamard,49.5,2.4,absolute,False,measured,8,4.2 Main results,Table 2 (W4A4KV16),"SpinQuant_{no had} R_{1,2} | ... | 51.9(↑2.4)"
+RP36,Mistral-7B,"SpinQuant-had (R1,2,3,4)",4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,68.4,Random Hadamard,52.7,15.7,absolute,True,measured,8,4.2 Main results,Table 2 (W4A4KV16),"SpinQuant_{had} R_{1,2,3,4} | ... | 68.4(↑15.7)"
+RP36,Mistral-7B,"SpinQuant-had (R1,2,3,4)",4-bit,,Zero-shot CSR (8 tasks avg) W4A4KV4,Improvement over Random Hadamard,16.2,Random Hadamard,52.4,16.2,absolute,False,measured,8,4.2 Main results,Table 2 (W4A4KV4),"SpinQuant_{had} R_{1,2,3,4} | ... | 68.6(↑16.2)"
+RP36,LLaMA-2-7B,SpinQuant Cayley on 4-4 act-only,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.1,Cayley on 4-4 W+A,61.0,3.1,absolute,False,measured,8,4.2 Main results,Table 3 (W4A4KV16),4-4-16 | 0-shot8 Avg.Wiki | 61.0 ±1.0 6.7 ±0.07 | 64.1 ±0.4 5.9 ±0.00
+RP36,LLaMA-3-8B,QuaRot+RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,59.5,FP16,69.6,-10.1,absolute,False,measured,9,4.3.4 Comparison with Quarot,Table 5 (W4A4KV16),QuaRot+RTN | 59.5 | 10.4
+RP36,LLaMA-3-8B,SpinQuant-had+RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,64.6,QuaRot+RTN,59.5,5.1,absolute,False,measured,9,4.3.4 Comparison with Quarot,Table 5 (W4A4KV16),SpinQuant_{had}+RTN | 64.6 | 7.7
+RP36,LLaMA-3-70B,QuaRot+RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,41.5,FP16,74.5,-33.0,absolute,False,measured,9,4.3.4 Comparison with Quarot,Table 5 (W4A4KV16),QuaRot+RTN | ... | 41.5 | 91.2
+RP36,LLaMA-3-70B,SpinQuant-had+RTN,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,70.1,QuaRot+RTN,41.5,28.6,absolute,False,measured,9,4.3.4 Comparison with Quarot,Table 5 (W4A4KV16),SpinQuant_{had}+RTN | ... | 70.1 | 4.1
+RP36,LLaMA-3-70B,SpinQuant-had+GPTQ,4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,69.5,QuaRot+GPTQ,65.4,4.1,absolute,False,measured,9,4.3.4 Comparison with Quarot,Table 5 (W4A4KV16),SpinQuant_{had}+GPTQ | ... | 69.5 | 5.5
+RP36,LLaMA-3-8B,FP16,16-bit,,MacBook M1 Pro CPU,Decoding latency (ms/token),177.15,,,,,False,measured,10,4.4 ILLUSTRATIVE ANALYSIS OF THE ROTATION EFFICACY,Table 6,FloatingPoint | 16-16 | 177.15 ms/token
+RP36,LLaMA-3-8B,SpinQuant-no-had,4-bit,,MacBook M1 Pro CPU,Decoding latency (ms/token),58.88,FP16,177.15,-118.27,absolute,True,measured,10,4.4 ILLUSTRATIVE ANALYSIS OF THE ROTATION EFFICACY,Table 6,SpinQuantno had | 4-8 | 58.88 ms/token
+RP36,LLaMA-3-8B,SpinQuant-had,4-bit,,MacBook M1 Pro CPU,Decoding latency (ms/token),63.9,FP16,177.15,-113.25,absolute,False,measured,10,4.4 ILLUSTRATIVE ANALYSIS OF THE ROTATION EFFICACY,Table 6,SpinQuant_{had} | 4-8 | 63.90 ms/token
+RP36,LLaMA-3-8B,SpinQuant-no-had,4-bit,,MacBook M1 Pro CPU,Speedup over FP16,3.0,FP16,1.0,2.0,x_factor,True,measured,10,4.5 SPEED MEASUREMENT,Section 4.5,4-bit quantization yields a ~3× speedup compared to the 16-bit model
+RP36,LLaMA-3-8B,SpinQuant-had vs no-had,4-bit,,MacBook M1 Pro CPU,Online Hadamard latency overhead,8.0,SpinQuant-no-had,,8.0,percent,False,measured,10,4.5 SPEED MEASUREMENT,Section 4.5,online Hadamard processing introduced a modest 8% increase in latency
+RP36,LLaMA-3-70B,SpinQuant-no-had,8-bit,,"H100 GPU (BS=1, T=4096)",TTIT (ms),9.85,,,,,False,measured,19,B.1 GRADIENT ANALYSIS,Table 14,BS=1 T=4096 | 153.58 | 9.85 | 158.25 | 10.15
+RP36,LLaMA-3-70B,SpinQuant-had,8-bit,,"H100 GPU (BS=1, T=4096)",TTIT (ms),10.15,SpinQuant-no-had,9.85,0.3,absolute,False,measured,19,B.1 GRADIENT ANALYSIS,Table 14,BS=1 T=4096 | 153.58 | 9.85 | 158.25 | 10.15
+RP36,LLaMA-3-70B,SpinQuant-no-had,8-bit,,"H100 GPU (BS=1, T=4096)",TTFT (ms),153.58,,,,,False,measured,19,B.1 GRADIENT ANALYSIS,Table 14,BS=1 T=4096 | 153.58 | 9.85
+RP36,LLaMA-2-7B,SpinQuant,4-bit,,WikiText-2 (calibration),Optimization time (min),25.0,GPTQ,18.0,7.0,absolute,False,measured,19,B.1 GRADIENT ANALYSIS,Table 15,SpinQuant | 13 min | 18 min | 30 min | 25 min | 30 min | 16 min
+RP36,LLaMA-2-70B,SpinQuant,4-bit,,WikiText-2 (calibration),Optimization time (hours),3.5,,,,,False,measured,6,4.1 EXPERIMENTAL SETTINGS,Section 4.1,"For LLaMA-2 70B, it takes ~3.5 hours and for Mistral-7B it takes ~16 minutes"
+RP36,LLaMA-2-7B,SpinQuant-had,4-bit,,WikiText-2,Quantization SNR improvement (dB),9.7,FP (R=I),-2.9,9.7,absolute,False,measured,20,B.2 Loss Analysis,Table 19,R = I | Randomly initialized R | Learned R | -2.9 | 0.9 | 6.8
+RP36,LLaMA-2-7B,SpinQuant-had (3-bit weight),3-bit,,Zero-shot CSR (8 tasks avg),Accuracy,63.7,FP16,66.9,-3.2,absolute,False,measured,17,A.6 LATENCY MEASUREMENT ON GPU,Table 10 (W3A8),SpinQuanthad | 71.9 | 47.5 | 74.6 | 76.4 | 47.0 | 71.2 | 53.4 | 67.9 | 63.7 | 6.2
+RP36,LLaMA-2-7B,SpinQuant-had (3-bit weight),3-bit,,WikiText-2,Perplexity,6.2,FP16,5.5,0.7,absolute,False,measured,17,A.6 LATENCY MEASUREMENT ON GPU,Table 10 (W3A8),SpinQuanthad | ... 63.7 | 6.2
+RP36,LLaMA-2-7B,SpinQuant-had (weight-only),4-bit,,WikiText-2,Perplexity,5.6,FP16,5.5,0.1,absolute,False,measured,20,B.2 Loss Analysis,Table 17 (W4 weight-only),SpinQuanthad | 65.9 | 5.6
+RP36,LLaMA-2-7B,SpinQuant-had (weight-only),4-bit,,Zero-shot CSR (8 tasks avg),Accuracy,65.9,FP16,66.9,-1.0,absolute,False,measured,20,B.2 Loss Analysis,Table 17 (W4 weight-only),SpinQuanthad | 65.9 | 5.6
+RP36,LLaMA-3.2-1B-Instruct,SpinQuant,4-bit,,MMLU (5-shot),Accuracy,47.3,BF16,49.3,-2.0,absolute,False,measured,20,B.2 Loss Analysis,Table 18,MMLU (5-shot) | 49.3 | 43.4 | 47.3
+RP36,LLaMA-3.2-1B-Instruct,Vanilla RTN,4-bit,,MMLU (5-shot),Accuracy,43.4,BF16,49.3,-5.9,absolute,False,measured,20,B.2 Loss Analysis,Table 18,MMLU (5-shot) | 49.3 | 43.4 | 47.3
+RP36,LLaMA-3.2-3B-Instruct,SpinQuant,4-bit,,MMLU (5-shot),Accuracy,62.0,BF16,63.4,-1.4,absolute,False,measured,20,B.2 Loss Analysis,Table 18,MMLU (5-shot) | ... 63.4 | 60.5 | 62.0
+RP36,LLaMA-3.2-3B-Instruct,SpinQuant,4-bit,,TLDR9+,ROUGE-L (1-shot),19.2,BF16,19.0,0.2,absolute,False,measured,20,B.2 Loss Analysis,Table 18,"TLDR9+ (test, 1-shot rougeL) | ... 19.0 | 19.1 | 19.2"
+RP36,LLaMA-2-7B,SpinQuant-no-had vs LLM-QAT,4-bit,,Zero-shot CSR (8 tasks avg) W4A4KV4,Improvement over LLM-QAT,11.1,LLM-QAT,44.9,11.1,absolute,False,measured,7,4.2 Main results,Section 4.2,"SpinQuant _{no~had} significantly surpasses LLM-QAT (Liu et al., 2023c), by 11.1 points on 7B model"
+RP36,LLaMA-2-13B,SpinQuant-no-had vs SmoothQuant,4-bit,,Zero-shot CSR (8 tasks avg) W4A4KV4,Improvement over SmoothQuant,20.2,SmoothQuant,40.5,20.2,absolute,False,measured,7,4.2 Main results,Section 4.2,"outperforms SmoothQuant (Xiao et al., 2023) by 20.2 on the 13B model"
+RP36,Mistral-7B,SpinQuant-no-had,4-bit,,Zero-shot CSR (8 tasks avg) W4A8KV8,Gap reduction to FP16,1.6,Baseline gap 12.1,12.1,-10.5,absolute,True,measured,2,1 INTRODUCTION,Introduction,narrowing the W4A8KV8 quantization performance gap from 12.1 to 1.6 on the Mistral-7B model
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,M1 Max,Speedup over Naive (CPU),4.75,Naive (FP16),1.0,3.75,x_factor,True,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Naive | CPU | 2196 | 0 | 986 | 3182 ... OPT 6.7B | All | CPU | 105 | 58 | 506 | 669
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,M1 Max,Speedup over Naive (GPU),26.4,Naive (FP16),1.0,25.4,x_factor,True,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Naive | GPU | 2196 | 0 | 22 | 2218 ... OPT 6.7B | All | GPU | 30 | 34 | 20 | 84
+RP37,OPT-6.7B,Naive,16-bit,,M1 Max,Total Inference Latency (ms/token),3182,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Naive | CPU | 2196 | 0 | 986 | 3182
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,M1 Max,Total Inference Latency (ms/token),669,Naive,3182,-2513,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | All | CPU | 105 | 58 | 506 | 669
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,M1 Max,I/O Latency (ms/token),105,Naive,2196,-2091,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | All | CPU | 105 | 58 | 506 | 669
+RP37,OPT-6.7B,Naive,16-bit,,Metal M1,Total Inference Latency (ms/token),2389,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Naive | Metal M1 | 2196 | 0 | 193 | 2389
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,Metal M1,Total Inference Latency (ms/token),565,Naive,2389,-1824,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | All | Metal M1 | 92 | 35 | 438 | 565
+RP37,OPT-6.7B,Naive,16-bit,,Metal M2 Ultra,Total Inference Latency (ms/token),2270,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Naive | Metal M2 | 2145 | 0 | 125 | 2270
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,Metal M2 Ultra,Total Inference Latency (ms/token),305,Naive,2270,-1965,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | All | Metal M2 | 26 | 8 | 271 | 305
+RP37,OPT-6.7B,Naive,16-bit,,RTX 4090,Total Inference Latency (ms/token),2218,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Naive | GPU | 2196 | 0 | 22 | 2218
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,RTX 4090,Total Inference Latency (ms/token),84,Naive,2218,-2134,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | All | GPU | 30 | 34 | 20 | 84
+RP37,OPT-6.7B,Flash-based inference + Speculative Decoding,16-bit,,RTX 4090,Total Inference Latency (ms/token),60,All (no speculative),84,-24,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | Speculative | GPU | 38.5 | 9.5 | 12 | 60
+RP37,OPT-6.7B,Speculative Decoding (in-flash),16-bit,,RTX 4090,Speedup from Speculative,1.4,All,1.0,0.4,x_factor,False,measured,8,5.2 Speculative Decoding,,We used lambda = 4 and were able to improve the speed of decoding by 1.4x as shown in table 5
+RP37,Falcon-7B,Naive,16-bit,,M1 Max,Total Inference Latency (ms/token),3095,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,Falcon 7B | Naive | CPU | 2295 | 0 | 800 | 3095
+RP37,Falcon-7B,Hybrid,16-bit,,M1 Max,Total Inference Latency (ms/token),1947,Naive,3095,-1148,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Falcon 7B | Hybrid | CPU | 1147 | 0 | 800 | 1947
+RP37,Falcon-7B,Flash-based inference (All),16-bit,,M1 Max,Total Inference Latency (ms/token),706,Naive,3095,-2389,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Falcon 7B | All | CPU | 161 | 92 | 453 | 706
+RP37,Falcon-7B,Flash-based inference (All),16-bit,,M1 Max,Speedup over Naive (CPU),4.38,Naive,1.0,3.38,x_factor,False,measured,18,C.2 Results for Falcon 7B Model,Table 3,"the baseline latency is around 2196 milliseconds, making our method approximately 9 to 10 times faster"
+RP37,Persimmon-8B,Naive,16-bit,,M1 Max,Total Inference Latency (ms/token),3806,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,Persimmon 8B | Naive | CPU | 2622 | 0 | 1184 | 3806
+RP37,Persimmon-8B,Hybrid,16-bit,,M1 Max,Total Inference Latency (ms/token),2495,Naive,3806,-1311,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Persimmon 8B | Hybrid | CPU | 1311 | 0 | 1184 | 2495
+RP37,Persimmon-8B,Flash-based inference (All),16-bit,,M1 Max,Total Inference Latency (ms/token),1041,Naive,3806,-2765,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Persimmon 8B | All | CPU | 283 | 98 | 660 | 1041
+RP37,Phi-2-2.7B,Naive,16-bit,,M1 Max,Total Inference Latency (ms/token),1287,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,Phi-2 2.7B | Naive | CPU | 885 | 0 | 402 | 1287
+RP37,Phi-2-2.7B,Hybrid,16-bit,,M1 Max,Total Inference Latency (ms/token),711,Naive,1287,-576,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Phi-2 2.7B | Hybrid | CPU | 309 | 0 | 402 | 711
+RP37,Phi-2-2.7B,Flash-based inference (All),16-bit,,M1 Max,Total Inference Latency (ms/token),546,Naive,1287,-741,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Phi-2 2.7B | All | CPU | 211 | 76 | 259 | 546
+RP37,Phi-2-2.7B,Flash-based inference (All),16-bit,,M1 Max,Speedup over Naive (CPU),2.35,Naive,1.0,1.35,x_factor,False,measured,18,C.4 Phi-2,Table 3,Phi-2 gets 2.35x speedup over naive baseline as it can be seen in table 3
+RP37,Llama-2-7B,Naive,16-bit,,M1 Max,Total Inference Latency (ms/token),3095,,,,,False,measured,8,4.2 Faster Load From Flash,Table 3,Llama 2 7B | Naive | CPU | 2166 | 0 | 929 | 3095
+RP37,Llama-2-7B,Hybrid,16-bit,,M1 Max,Total Inference Latency (ms/token),1903,Naive,3095,-1192,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Llama 2 7B | Hybrid | CPU | 974 | 0 | 929 | 1903
+RP37,Llama-2-7B,Flash-based inference (All),16-bit,,M1 Max,Total Inference Latency (ms/token),994,Naive,3095,-2101,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,Llama 2 7B | All | CPU | 279 | 152 | 563 | 994
+RP37,Llama-2-7B,Flash-based inference (All),16-bit,,M1 Max,Speedup over Naive (CPU),3.0,Naive,1.0,2.0,x_factor,False,measured,19,C.5 Llama 2,Table 3,LLM in flash gets 3x speed up over naive baseline (Table 3)
+RP37,OPT-6.7B,Naive (no optim),16-bit,,M1 Max,I/O Latency (ms),2196,,,,,False,measured,7,4.1 Experimental Setup,Table 2,× | × | × | × | 0 | 13.4 GB | 6.10 GB/s | 2196 ms
+RP37,OPT-6.7B,Hybrid,16-bit,,M1 Max,I/O Latency (ms),1090,Naive,2196,-1106,absolute,False,measured,7,4.1 Experimental Setup,Table 2,✓ | × | × | × | 6.7 | 6.7 GB | 6.10 GB/s | 1090 ms
+RP37,OPT-6.7B,Hybrid + Predictor,16-bit,,M1 Max,I/O Latency (ms),738,Naive,2196,-1458,absolute,False,measured,7,4.1 Experimental Setup,Table 2,✓ | ✓ | × | × | 4.8 | 0.9 GB | 1.25 GB/s | 738 ms
+RP37,OPT-6.7B,Hybrid + Predictor + Windowing,16-bit,,M1 Max,I/O Latency (ms),164,Naive,2196,-2032,absolute,False,measured,7,4.1 Experimental Setup,Table 2,✓ | ✓ | ✓ | × | 6.5 | 0.2 GB | 1.25 GB/s | 164 ms
+RP37,OPT-6.7B,Hybrid + Predictor + Windowing + Bundling,16-bit,,M1 Max,I/O Latency (ms),87,Naive,2196,-2109,absolute,True,measured,7,4.1 Experimental Setup,Table 2,✓ | ✓ | ✓ | ✓ | 6.5 | 0.2 GB | 2.25 GB/s | 87 ms
+RP37,OPT-6.7B,Naive,16-bit,,M1 Max,Flash to DRAM Transfer (GB),13.4,,,,,False,measured,7,4.1 Experimental Setup,Table 2,× | × | × | × | 0 | 13.4 GB | 6.10 GB/s | 2196 ms
+RP37,OPT-6.7B,Hybrid + Predictor + Windowing + Bundling,16-bit,,M1 Max,Flash to DRAM Transfer (GB),0.2,Naive,13.4,-13.2,absolute,False,measured,7,4.1 Experimental Setup,Table 2,✓ | ✓ | ✓ | ✓ | 6.5 | 0.2 GB | 2.25 GB/s | 87 ms
+RP37,OPT-6.7B,Naive,16-bit,,M1 Max,Throughput (GB/s),6.1,,,,,False,measured,7,4.1 Experimental Setup,Table 2,× | × | × | × | 0 | 13.4 GB | 6.10 GB/s | 2196 ms
+RP37,OPT-6.7B,Hybrid + Predictor + Windowing + Bundling,16-bit,,M1 Max,Throughput (GB/s),2.25,Sparse w/o bundling,1.25,1.0,absolute,False,measured,7,4.1 Experimental Setup,Table 2,✓ | ✓ | ✓ | ✓ | 6.5 | 0.2 GB | 2.25 GB/s | 87 ms
+RP37,OPT-6.7B,FP16 (uncached read),16-bit,,M1 Max,Linear Read Throughput (GiB/s),6.0,,,,,False,measured,2,2.2 Read Throughput,,benchmarks on an Apple MacBook M1 Max with 1TB flash memory demonstrate speeds exceeding 6 GiB/s for a 1GiB linear read of an uncached file
+RP37,OPT-6.7B,Predictor,16-bit,,Arc Easy,Accuracy,66.2,OPT-6.7B (no predictor),66.1,0.1,absolute,False,measured,4,3.1 Reducing Data Transfer,Table 1,Arc Easy | 66.1 | 66.2
+RP37,OPT-6.7B,Predictor,16-bit,,Arc Challenge,Accuracy,30.6,OPT-6.7B (no predictor),30.6,0.0,absolute,False,measured,4,3.1 Reducing Data Transfer,Table 1,Arc Challenge | 30.6 | 30.6
+RP37,OPT-6.7B,Predictor,16-bit,,HellaSwag,Accuracy,49.8,OPT-6.7B (no predictor),50.3,-0.5,absolute,False,measured,4,3.1 Reducing Data Transfer,Table 1,HellaSwag | 50.3 | 49.8
+RP37,Falcon-7B (relufied),FP16 (no predictor),16-bit,,Arc Easy,Accuracy,72.52,Falcon-7B base,74.62,-2.1,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied | - | - | - | 72.52 | 38.23 | 54.17
+RP37,Falcon-7B (relufied),FP16 (no predictor),16-bit,,Arc Challenge,Accuracy,38.23,Falcon-7B base,40.05,-1.82,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied | - | - | - | 72.52 | 38.23 | 54.17
+RP37,Falcon-7B (relufied),FP16 (no predictor),16-bit,,HellaSwag,Accuracy,54.17,Falcon-7B base,57.77,-3.6,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied | - | - | - | 72.52 | 38.23 | 54.17
+RP37,Falcon-7B (relufied),Predictor (rank 128/128),16-bit,,Arc Easy,Accuracy,70.2,Falcon-7B relufied,72.52,-2.32,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied with predictors | 128 | 128 | 0.50 | 70.20 | 35.41 | 50.74
+RP37,Falcon-7B (relufied),Predictor (rank 128/128),16-bit,,Arc Challenge,Accuracy,35.41,Falcon-7B relufied,38.23,-2.82,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied with predictors | 128 | 128 | 0.50 | 70.20 | 35.41 | 50.74
+RP37,Falcon-7B (relufied),Predictor (rank 128/128),16-bit,,HellaSwag,Accuracy,50.74,Falcon-7B relufied,54.17,-3.43,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied with predictors | 128 | 128 | 0.50 | 70.20 | 35.41 | 50.74
+RP37,Falcon-7B (relufied),Predictor (rank 1152/256),16-bit,,Arc Easy,Accuracy,72.35,Falcon-7B relufied,72.52,-0.17,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied with predictors | 1152 | 256 | 0.50 | 72.35 | 36.35 | 53.16
+RP37,Falcon-7B (relufied),Predictor (rank 1152/256),16-bit,,Arc Challenge,Accuracy,36.35,Falcon-7B relufied,38.23,-1.88,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied with predictors | 1152 | 256 | 0.50 | 72.35 | 36.35 | 53.16
+RP37,Falcon-7B (relufied),Predictor (rank 1152/256),16-bit,,HellaSwag,Accuracy,53.16,Falcon-7B relufied,54.17,-1.01,absolute,False,measured,16,C Extended Results,Table 4,Falcon 7B relufied with predictors | 1152 | 256 | 0.50 | 72.35 | 36.35 | 53.16
+RP37,Persimmon-8B,FP16 (no predictor),16-bit,,Arc Easy,Accuracy,67.8,,,,,False,measured,16,C Extended Results,Table 4,Persimmon 8B | - | - | - | 67.80 | 34.64 | 50.70
+RP37,Persimmon-8B,FP16 (no predictor),16-bit,,Arc Challenge,Accuracy,34.64,,,,,False,measured,16,C Extended Results,Table 4,Persimmon 8B | - | - | - | 67.80 | 34.64 | 50.70
+RP37,Persimmon-8B,FP16 (no predictor),16-bit,,HellaSwag,Accuracy,50.7,,,,,False,measured,16,C Extended Results,Table 4,Persimmon 8B | - | - | - | 67.80 | 34.64 | 50.70
+RP37,Persimmon-8B,"Predictor (256/256, thr 0.5)",16-bit,,Arc Easy,Accuracy,67.26,Persimmon-8B base,67.8,-0.54,absolute,False,measured,16,C Extended Results,Table 4,Persimmon 8B with predictors | 256 | 256 | 0.5 | 67.26 | 33.87 | 50.51
+RP37,Persimmon-8B,"Predictor (256/256, thr 0.5)",16-bit,,Arc Challenge,Accuracy,33.87,Persimmon-8B base,34.64,-0.77,absolute,False,measured,16,C Extended Results,Table 4,Persimmon 8B with predictors | 256 | 256 | 0.5 | 67.26 | 33.87 | 50.51
+RP37,Persimmon-8B,"Predictor (256/256, thr 0.5)",16-bit,,HellaSwag,Accuracy,50.51,Persimmon-8B base,50.7,-0.19,absolute,False,measured,16,C Extended Results,Table 4,Persimmon 8B with predictors | 256 | 256 | 0.5 | 67.26 | 33.87 | 50.51
+RP37,Persimmon-8B,"Predictor (1152/256, thr 0.7)",16-bit,,Arc Easy,Accuracy,66.3,Persimmon-8B base,67.8,-1.5,absolute,False,measured,16,C Extended Results,Table 4,Persimmon 8B with predictors | 1152 | 256 | 0.70 | 66.30 | 34.40 | 52.70
+RP37,Persimmon-8B,"Predictor (1152/256, thr 0.7)",16-bit,,Arc Challenge,Accuracy,34.4,Persimmon-8B base,34.64,-0.24,absolute,False,measured,16,C Extended Results,Table 4,Persimmon 8B with predictors | 1152 | 256 | 0.70 | 66.30 | 34.40 | 52.70
+RP37,Persimmon-8B,"Predictor (1152/256, thr 0.7)",16-bit,,HellaSwag,Accuracy,52.7,Persimmon-8B base,50.7,2.0,absolute,False,measured,16,C Extended Results,Table 4,Persimmon 8B with predictors | 1152 | 256 | 0.70 | 66.30 | 34.40 | 52.70
+RP37,Phi-2-2.7B,FP16 (base),16-bit,,Arc Easy,Accuracy,79.62,,,,,False,measured,16,C Extended Results,Table 4,Phi-2 | - | - | - | 79.62 | 51.49 | 55.17
+RP37,Phi-2-2.7B,FP16 (base),16-bit,,Arc Challenge,Accuracy,51.49,,,,,False,measured,16,C Extended Results,Table 4,Phi-2 | - | - | - | 79.62 | 51.49 | 55.17
+RP37,Phi-2-2.7B,FP16 (base),16-bit,,HellaSwag,Accuracy,55.17,,,,,False,measured,16,C Extended Results,Table 4,Phi-2 | - | - | - | 79.62 | 51.49 | 55.17
+RP37,Phi-2-2.7B (relufied),"Predictor (800, thr 0.40)",16-bit,,Arc Easy,Accuracy,79.96,Phi-2 base,79.62,0.34,absolute,False,measured,16,C Extended Results,Table 4,"Phi-2 relufied with predictors | 800 | mix 160, 480 | 0.40 | 79.96 | 49.57 | 53.50"
+RP37,Phi-2-2.7B (relufied),"Predictor (800, thr 0.40)",16-bit,,Arc Challenge,Accuracy,49.57,Phi-2 base,51.49,-1.92,absolute,False,measured,16,C Extended Results,Table 4,"Phi-2 relufied with predictors | 800 | mix 160, 480 | 0.40 | 79.96 | 49.57 | 53.50"
+RP37,Phi-2-2.7B (relufied),"Predictor (800, thr 0.40)",16-bit,,HellaSwag,Accuracy,53.5,Phi-2 base,55.17,-1.67,absolute,False,measured,16,C Extended Results,Table 4,"Phi-2 relufied with predictors | 800 | mix 160, 480 | 0.40 | 79.96 | 49.57 | 53.50"
+RP37,Phi-2-2.7B,Relufied + Predictor,16-bit,,MMLU,Accuracy,52.0,Phi-2 base,57.0,-5.0,absolute,False,measured,14,B.2 Accuracy of models using predictors,Figure 10b,Phi2's MMLU will drop 2.3 points from the relufied model still keeping at 52
+RP37,Phi-2-2.7B (relufied),Relufication only,16-bit,,MMLU,Accuracy,54.3,Phi-2 base,57.0,-2.7,absolute,False,measured,18,C.4 Phi-2,,MMLU metric drops from 57 to 54.3 after relufication with distillation
+RP37,Llama-2-7B,FP16 (base),16-bit,,MMLU,Accuracy,41.8,,,,,False,measured,19,C.5 Llama 2,,"we got MMLU of 41.8 for Llama 2, 38.96 for sparsified model by (Song et al., 2024) and 38.63 after training our predictors"
+RP37,Llama-2-7B (sparsified),FATReLU sparsification,16-bit,,MMLU,Accuracy,38.96,Llama-2-7B base,41.8,-2.84,absolute,False,measured,19,C.5 Llama 2,,"38.96 for sparsified model by (Song et al., 2024) and 38.63 after training our predictors"
+RP37,Llama-2-7B (sparsified),Predictor,16-bit,,MMLU,Accuracy,38.63,Llama-2-7B base,41.8,-3.17,absolute,False,measured,19,C.5 Llama 2,,"38.96 for sparsified model by (Song et al., 2024) and 38.63 after training our predictors"
+RP37,OPT-6.7B,Predictor,16-bit,,C4,False Negative Rate (%),5.0,,,,,False,measured,17,C.1 Results for OPT 6.7B Model,,These predictors achieve an average of 5% false negatives and 7% false positives in the OPT 6.7B model
+RP37,OPT-6.7B,Predictor,16-bit,,C4,False Positive Rate (%),7.0,,,,,False,measured,17,C.1 Results for OPT 6.7B Model,,These predictors achieve an average of 5% false negatives and 7% false positives in the OPT 6.7B model
+RP37,OPT-6.7B,Predictor,16-bit,,M1 Max,Predictor Inference Overhead (% of inference time),2.75,,,,,False,measured,14,B.3 Overhead of predictors,,In M1 Max CPU experiments this was comprising 2.75% and in RTX GPU it was 4.8% of inference time
+RP37,OPT-6.7B,Predictor,16-bit,,RTX 4090,Predictor Inference Overhead (% of inference time),4.8,,,,,False,measured,14,B.3 Overhead of predictors,,in RTX GPU it was 4.8% of inference time which is negligible
+RP37,Falcon-7B,Predictor,16-bit,,M1 Max,Predictor Inference Overhead (% of inference time),4.0,,,,,False,measured,14,B.3 Overhead of predictors,,"For Falocn 7B, predictors take 4% model size and CPU computation"
+RP37,Persimmon-8B,Predictor,16-bit,,M1 Max,Predictor Inference Overhead (% of inference time),2.85,,,,,False,measured,14,B.3 Overhead of predictors,,For Persimmon it was taking 2.85% of inference time on CPU
+RP37,Llama-2-7B,Predictor,16-bit,,M1 Max,Predictor Inference Overhead (% of inference time),3.92,,,,,False,measured,14,B.3 Overhead of predictors,,For Llama 2 7B it was taking 3.92% of inference time on CPU
+RP37,OPT-6.7B,Flash-based inference (windowed),16-bit,,M1 Max,DRAM Usage (% of model size),52.1,,,,,False,measured,17,C.1 Results for OPT 6.7B Model,,"Summing these up, the total DRAM memory usage amounts to 52.1% of the model's size"
+RP37,Falcon-7B (relufied),Flash-based inference (windowed),16-bit,,M1 Max,DRAM Usage (% of model size),52.93,,,,,False,measured,18,C.2 Results for Falcon 7B Model,,"Overall, this amounts to 52.93% of the model's total size"
+RP37,OPT-6.7B,Flash-based inference (32-bit),32-bit,,M1 Max,I/O Latency (ms/token),105,Naive (32-bit),2196,-2091,absolute,False,measured,17,C.1 Results for OPT 6.7B Model,,"On an M1 Max, this results in the average latency of 105ms per token for loading from flash and 57ms for memory management"
+RP37,OPT-6.7B,Flash-based inference (16-bit on GPU),16-bit,,RTX 4090,Flash Load Time (ms/token),30.5,,,,,False,measured,17,C.1 Results for OPT 6.7B Model,,"For a 16-bit model on a GPU machine, the flash load time is reduced to 30.5ms, and memory management takes 35ms"
+RP37,Falcon-7B (relufied),Flash-based inference (32-bit),32-bit,,M1 Max,Total Flash+Mem Latency (ms/token),250,Naive,2196,-1946,absolute,False,measured,18,C.2 Results for Falcon 7B Model,,"the time taken to load this data from flash memory is approximately 161ms, and the memory management process adds another 90ms, leading to a total latency of 250ms per token"
+RP37,Falcon-7B (relufied),Flash-based inference (32-bit),32-bit,,M1 Max,Speedup over Naive (CPU),9.5,Naive,1.0,8.5,x_factor,False,measured,18,C.2 Results for Falcon 7B Model,,"the baseline latency is around 2196 milliseconds, making our method approximately 9 to 10 times faster"
+RP37,OPT-6.7B,Quantized (4-bit),4-bit,,C4,Average FFN Active Neurons (%),3.27,OPT-6.7B FP16,3.3,-0.03,absolute,False,measured,20,F Small Device Implications,Table 6,average | 3.30% | 3.27%
+RP37,OPT-7B (smartphone scenario),Flash-based inference (4-bit),4-bit,,Smartphone,DRAM Usage (GB),2.0,Naive 4-bit (3.5 GB),3.5,-1.5,absolute,True,measured,20,F Small Device Implications,,"rather than the baseline's 3.5GB of required DRAM, our model would necessitate less than 2GB of memory for operation"
+RP37,LLM (general),Flash-based inference,16-bit,,M1 Max,Max Model Size vs DRAM (x),2.0,Standard DRAM-resident,1.0,1.0,x_factor,True,measured,1,Abstract,,These methods collectively enable running models up to twice the size of the available DRAM
+RP37,OPT-6.7B,Flash-based inference (All),16-bit,,RTX 4090,I/O Latency (ms/token),30,Naive,2196,-2166,absolute,False,measured,8,4.2 Faster Load From Flash,Table 3,OPT 6.7B | All | GPU | 30 | 34 | 20 | 84
+RP37,OPT-6.7B,"Flash-based inference (All, with std)",16-bit,,M1 Max,Total Inference Latency Std Dev (ms),39.74,,,,,False,measured,17,C.1 Results for OPT 6.7B Model,Table 5,OPT 6.7B | All | CPU | 104.90 (± 18.46) | 57.79 (± 9.63) | 506.50 (±17.33) | 669.20 (± 39.74)
+RP37,OPT-6.7B,"Flash-based inference (All, with std)",16-bit,,RTX 4090,Total Inference Latency Std Dev (ms),6.16,,,,,False,measured,17,C.1 Results for OPT 6.7B Model,Table 5,OPT 6.7B | All | GPU | 30.55 (±3.09) | 34.11 (±2.38) | 19.97 (±0.86) | 84.64 (±6.16)
+RP37,OPT-6.7B (active neurons),Sparse Read (no bundling),16-bit,,M1 Max,Throughput (GiB/s),1.25,Dense Read,6.1,-4.85,absolute,False,measured,7,4.2 Faster Load From Flash,,scattered reads will necessarily result in lower throughput (e.g. 1.25 GiB/s sparse vs 6.1 GiB/s dense)
+RP37,OPT-6.7B,Predictor (windowing k=4),16-bit,,M1 Max,FFN DRAM Footprint (% of FFN),2.4,Predictor only,10.0,-7.6,absolute,False,measured,17,C.1 Results for OPT 6.7B Model,,"Using active neurons of predictor would require about 10% of the DRAM memory capacity on average; however, with our method, it drops to 2.4%"
 RP38,Llama-2-7B,KIVI-2,2-bit,"g32, R128",Peak memory (model+KV cache),Peak memory reduction (x),2.6,FP16,1.0,1.6,x_factor,True,measured,1,Abstract,Abstract,"KIVI can enable Llama, Falcon, and Mistral models to maintain almost the same quality while using 2.6× less peak memory (including model weight)"
 RP38,Llama-2-7B,KIVI-2,2-bit,"g32, R32",ShareGPT workload (A100 80GB),Max batch size increase (x),4.0,FP16,1.0,3.0,x_factor,True,measured,1,Abstract,Abstract,This reduction in memory usage enables up to 4 \times larger batch size
 RP38,Llama-2-7B,KIVI-2,2-bit,"g32, R32",ShareGPT workload (A100 80GB),Throughput speedup (x) lower bound,2.35,FP16,1.0,1.35,x_factor,True,measured,1,Abstract,Abstract,bringing 2.35 \times \sim 3.47 \times throughput on real LLM inference workload
@@ -2498,6 +2975,81 @@ RP39,Llama 1-65B (fine-tuned),FastGen (no Cfrequent),,,AlpacaEval,Win rate vs Fu
 RP39,Llama 1-65B (fine-tuned),FastGen (order: special->frequent->local->punct.),,,AlpacaEval,Pruned KV ratio (%),36.4,FastGen default order,36.04,0.36,absolute,False,measured,14,A.1 ABLATIONS,Table 5,Cspecial -> Cfrequent -> Clocal -> Cpunct. | 36.40% | 47.64%
 RP39,Llama 1-65B (fine-tuned),FastGen (order: special->frequent->local->punct.),,,AlpacaEval,Win rate vs Full Cache (%),47.64,FastGen default order,49.75,-2.11,absolute,False,measured,14,A.1 ABLATIONS,Table 5,Cspecial -> Cfrequent -> Clocal -> Cpunct. | 36.40% | 47.64%
 RP39,Llama 1-65B,FastGen,,,Profiling memory overhead,Memory overhead vs KV cache (%),0.78,Full KV cache,0,0.78,percent,False,measured,9,5.4 PROFILING COST,,the memory overhead is 1/128=0.78% compared to storing KV cache only
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Performance vs ChatGPT (%),99.3,ChatGPT,100.0,-0.7,absolute,True,measured,1,Abstract,Abstract / Table 6,"outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a single GPU"
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,65B LLaMA finetuning,GPU Memory Required (GB),48,16-bit full finetuning,780,-732,absolute,True,measured,2,1 Introduction,Introduction prose,QLORA reduces the average memory requirements of finetuning a 65B parameter model from >780GB of GPU memory to <48GB without degrading the runtime or predictive performance
+RP40,OPT/BLOOM/LLaMA/Pythia 125M-13B,NF4+DQ,4-bit,blocksize=64,Pile Common Crawl,Mean Perplexity,27.41,Int4,34.34,-6.93,absolute,True,measured,7,4 QLoRA vs. Standard Finetuning,Table 2,NFloat4 + DQ | 27.41
+RP40,OPT/BLOOM/LLaMA/Pythia 125M-13B,Int4,4-bit,,Pile Common Crawl,Mean Perplexity,34.34,NF4+DQ,27.41,6.93,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 2,Int4 | 34.34
+RP40,OPT/BLOOM/LLaMA/Pythia 125M-13B,Float4 (E2M1),4-bit,,Pile Common Crawl,Mean Perplexity,31.07,NF4+DQ,27.41,3.66,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 2,Float4 (E2M1) | 31.07
+RP40,OPT/BLOOM/LLaMA/Pythia 125M-13B,Float4 (E3M0),4-bit,,Pile Common Crawl,Mean Perplexity,29.48,NF4+DQ,27.41,2.07,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 2,Float4 (E3M0) | 29.48
+RP40,RoBERTa-large,BF16 full finetuning,16-bit,,GLUE,Accuracy,88.6,,,,,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,BF16 | 88.6
+RP40,RoBERTa-large,QLoRA-NF4+DQ,4-bit,blocksize=64,GLUE,Accuracy,88.8,BF16,88.6,0.2,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,LoRA BF16 | 88.8
+RP40,RoBERTa-large,QLoRA-Int8,8-bit,,GLUE,Accuracy,88.8,BF16,88.6,0.2,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA Int8 | 88.8
+RP40,RoBERTa-large,QLoRA-FP4,4-bit,blocksize=64,GLUE,Accuracy,88.6,BF16,88.6,0.0,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA FP4 | 88.6
+RP40,T5-80M,BF16 full finetuning,16-bit,,Super-NaturalInstructions,RougeL,40.1,,,,,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,BF16 | 88.6 | 40.1
+RP40,T5-80M,QLoRA-NF4+DQ,4-bit,blocksize=64,Super-NaturalInstructions,RougeL,40.4,BF16,40.1,0.3,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA NF4 + DQ | - | 40.4
+RP40,T5-80M,QLoRA-FP4,4-bit,blocksize=64,Super-NaturalInstructions,RougeL,40.3,BF16,40.1,0.2,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA FP4 | 88.6 | 40.3
+RP40,T5-80M,QLoRA-Int8,8-bit,,Super-NaturalInstructions,RougeL,40.4,BF16,40.1,0.3,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA Int8 | 88.8 | 40.4
+RP40,T5-250M,BF16 full finetuning,16-bit,,Super-NaturalInstructions,RougeL,42.1,,,,,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,BF16 | 88.6 | 40.1 | 42.1
+RP40,T5-250M,QLoRA-NF4+DQ,4-bit,blocksize=64,Super-NaturalInstructions,RougeL,42.7,BF16,42.1,0.6,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA NF4 + DQ | - | 40.4 | 42.7
+RP40,T5-780M,BF16 full finetuning,16-bit,,Super-NaturalInstructions,RougeL,48.0,,,,,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,BF16 | 88.6 | 40.1 | 42.1 | 48.0
+RP40,T5-780M,QLoRA-NF4+DQ,4-bit,blocksize=64,Super-NaturalInstructions,RougeL,47.7,BF16,48.0,-0.3,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA NF4 + DQ | - | 40.4 | 42.7 | 47.7
+RP40,T5-3B,BF16 full finetuning,16-bit,,Super-NaturalInstructions,RougeL,54.3,,,,,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,BF16 | 88.6 | 40.1 | 42.1 | 48.0 | 54.3
+RP40,T5-3B,QLoRA-NF4+DQ,4-bit,blocksize=64,Super-NaturalInstructions,RougeL,55.3,BF16,54.3,1.0,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA NF4 + DQ | - | 40.4 | 42.7 | 47.7 | 55.3
+RP40,T5-11B,BF16 full finetuning,16-bit,,Super-NaturalInstructions,RougeL,62.0,,,,,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,BF16 | 88.6 | 40.1 | 42.1 | 48.0 | 54.3 | 62.0
+RP40,T5-11B,QLoRA-NF4+DQ,4-bit,blocksize=64,Super-NaturalInstructions,RougeL,60.9,BF16,62.0,-1.1,absolute,False,measured,7,4 QLoRA vs. Standard Finetuning,Table 3,QLORA NF4 + DQ | ... 60.9
+RP40,LLaMA-7B,BFloat16 LoRA,16-bit,,Alpaca / MMLU,5-shot Accuracy,38.4,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | 38.4 | 45.6
+RP40,LLaMA-7B,QLoRA-NF4+DQ,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,39.0,BFloat16,38.4,0.6,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | 39.0 | 44.5
+RP40,LLaMA-7B,QLoRA-FP4,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,37.2,BFloat16,38.4,-1.2,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,Float4 | 37.2 | 44.0
+RP40,LLaMA-7B,BFloat16 LoRA,16-bit,,FLAN v2 / MMLU,5-shot Accuracy,45.6,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | 38.4 | 45.6
+RP40,LLaMA-7B,QLoRA-NF4+DQ,4-bit,blocksize=64,FLAN v2 / MMLU,5-shot Accuracy,44.5,BFloat16,45.6,-1.1,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | 39.0 | 44.5
+RP40,LLaMA-13B,BFloat16 LoRA,16-bit,,Alpaca / MMLU,5-shot Accuracy,47.2,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... 47.2 | 50.6
+RP40,LLaMA-13B,QLoRA-NF4+DQ,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,47.5,BFloat16,47.2,0.3,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... 47.5 | 50.7
+RP40,LLaMA-13B,QLoRA-FP4,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,47.3,BFloat16,47.2,0.1,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,Float4 | ... 47.3 | 50.0
+RP40,LLaMA-13B,BFloat16 LoRA,16-bit,,FLAN v2 / MMLU,5-shot Accuracy,50.6,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... 50.6
+RP40,LLaMA-13B,QLoRA-NF4+DQ,4-bit,blocksize=64,FLAN v2 / MMLU,5-shot Accuracy,50.7,BFloat16,50.6,0.1,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... 50.7
+RP40,LLaMA-33B,BFloat16 LoRA,16-bit,,Alpaca / MMLU,5-shot Accuracy,57.7,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... 57.7 | 60.5
+RP40,LLaMA-33B,QLoRA-NF4+DQ,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,57.3,BFloat16,57.7,-0.4,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... 57.3 | 59.2
+RP40,LLaMA-33B,QLoRA-FP4,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,55.9,BFloat16,57.7,-1.8,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,Float4 | ... 55.9 | 58.5
+RP40,LLaMA-33B,BFloat16 LoRA,16-bit,,FLAN v2 / MMLU,5-shot Accuracy,60.5,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... 60.5
+RP40,LLaMA-33B,QLoRA-NF4+DQ,4-bit,blocksize=64,FLAN v2 / MMLU,5-shot Accuracy,59.2,BFloat16,60.5,-1.3,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... 59.2
+RP40,LLaMA-65B,BFloat16 LoRA,16-bit,,Alpaca / MMLU,5-shot Accuracy,61.8,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... 61.8 | 62.5
+RP40,LLaMA-65B,QLoRA-NF4+DQ,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,61.8,BFloat16,61.8,0.0,absolute,True,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... 61.8 | 63.9
+RP40,LLaMA-65B,QLoRA-FP4,4-bit,blocksize=64,Alpaca / MMLU,5-shot Accuracy,61.3,BFloat16,61.8,-0.5,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,Float4 | ... 61.3 | 63.3
+RP40,LLaMA-65B,BFloat16 LoRA,16-bit,,FLAN v2 / MMLU,5-shot Accuracy,62.5,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... 62.5
+RP40,LLaMA-65B,QLoRA-NF4+DQ,4-bit,blocksize=64,FLAN v2 / MMLU,5-shot Accuracy,63.9,BFloat16,62.5,1.4,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... 63.9
+RP40,Mean across LLaMA 7B-65B / Alpaca+FLANv2,BFloat16 LoRA,16-bit,,MMLU,5-shot Accuracy,53.0,,,,,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,BFloat16 | ... | 53.0
+RP40,Mean across LLaMA 7B-65B / Alpaca+FLANv2,QLoRA-NF4+DQ,4-bit,blocksize=64,MMLU,5-shot Accuracy,53.1,BFloat16,53.0,0.1,absolute,True,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,NFloat4 + DQ | ... | 53.1
+RP40,Mean across LLaMA 7B-65B / Alpaca+FLANv2,QLoRA-FP4,4-bit,blocksize=64,MMLU,5-shot Accuracy,52.2,BFloat16,53.0,-0.8,absolute,False,measured,8,5 Pushing the Chatbot State-of-the-art with QLoRA,Table 4,Float4 | ... | 52.2
+RP40,LLaMA-7B (no tuning),FP16,16-bit,,MMLU,5-shot Accuracy,35.1,,,,,False,measured,8,5.2 Evaluation,Table 5,LLaMA no tuning | 35.1 | 46.9 | 57.8 | 63.4
+RP40,LLaMA-13B (no tuning),FP16,16-bit,,MMLU,5-shot Accuracy,46.9,,,,,False,measured,8,5.2 Evaluation,Table 5,LLaMA no tuning | 35.1 | 46.9 | 57.8 | 63.4
+RP40,LLaMA-33B (no tuning),FP16,16-bit,,MMLU,5-shot Accuracy,57.8,,,,,False,measured,8,5.2 Evaluation,Table 5,LLaMA no tuning | ... 57.8 | 63.4
+RP40,LLaMA-65B (no tuning),FP16,16-bit,,MMLU,5-shot Accuracy,63.4,,,,,False,measured,8,5.2 Evaluation,Table 5,LLaMA no tuning | ... 63.4
+RP40,Guanaco-65B (LLaMA OASST1),QLoRA-NF4,4-bit,blocksize=64,MMLU,5-shot Accuracy,62.2,LLaMA-65B no tuning,63.4,-1.2,absolute,False,measured,8,5.2 Evaluation,Table 5,Guanaco (OASST1) | 36.6 | 46.4 | 57.0 | 62.2
+RP40,LLaMA-65B FLAN v2,QLoRA-NF4,4-bit,blocksize=64,MMLU,5-shot Accuracy,63.9,LLaMA-65B no tuning,63.4,0.5,absolute,False,measured,8,5.2 Evaluation,Table 5,FLAN v2 | 44.5 | 51.4 | 59.2 | 63.9
+RP40,LLaMA-7B FLAN v2,QLoRA-NF4,4-bit,blocksize=64,MMLU,5-shot Accuracy,44.5,LLaMA-7B no tuning,35.1,9.4,absolute,False,measured,8,5.2 Evaluation,Table 5,FLAN v2 | 44.5 | 51.4 | 59.2 | 63.9
+RP40,LLaMA-7B Alpaca,QLoRA-NF4,4-bit,blocksize=64,MMLU,5-shot Accuracy,38.8,LLaMA-7B no tuning,35.1,3.7,absolute,False,measured,8,5.2 Evaluation,Table 5,Alpaca | 38.8 | 47.8 | 57.3 | 62.5
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,99.3,ChatGPT,100.0,-0.7,absolute,True,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Guanaco | 65B | 4-bit | 41 GB | 96.7% | 101.9% | 99.3% | 4.4%
+RP40,Guanaco-33B,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,97.8,ChatGPT,100.0,-2.2,absolute,True,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Guanaco | 33B | 4-bit | 21 GB | 96.5% | 99.2% | 97.8% | 4.4%
+RP40,Guanaco-13B,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,90.4,ChatGPT,100.0,-9.6,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Guanaco | 13B | 4-bit | 10 GB | 87.3% | 93.4% | 90.4% | 5.2%
+RP40,Guanaco-7B,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,87.0,ChatGPT,100.0,-13.0,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Guanaco | 7B | 4-bit | 5 GB | 84.1% | 89.8% | 87.0% | 5.4%
+RP40,Open Assistant 33B,FP16 RLHF,16-bit,,Vicuna,Mean % vs ChatGPT,94.9,ChatGPT,100.0,-5.1,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Open Assistant | 33B | 16-bit | 66 GB | 91.2% | 98.7% | 94.9% | 4.5%
+RP40,GPT-4,n/a,16-bit,,Vicuna80 (human raters),Elo rating,1176,Init Elo,1000,176,absolute,False,measured,11,6 Qualitative Analysis,Table 7,GPT-4 | 1176 | 1 | 1348 | 1 | 1294 | 1 | 1
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,Vicuna80 (human raters),Elo rating,1023,ChatGPT-3.5,916,107,absolute,False,measured,11,6 Qualitative Analysis,Table 7,Guanaco-65B | 1023 | 2 | 1022 | 2 | 1008 | 3 | 2
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,Vicuna80 (GPT-4 judge),Elo rating,1022,ChatGPT-3.5,966,56,absolute,False,measured,11,6 Qualitative Analysis,Table 7,Guanaco-65B | 1023 | 2 | 1022 | 2 | 1008 | 3 | 2
+RP40,Guanaco-33B,QLoRA-NF4,4-bit,blocksize=64,Vicuna80 (GPT-4 judge),Elo rating,992,ChatGPT-3.5,966,26,absolute,False,measured,11,6 Qualitative Analysis,Table 7,Guanaco-33B | 1009 | 4 | 992 | 3 | 1002 | 4 | 4
+RP40,ChatGPT-3.5 Turbo,n/a,16-bit,,Vicuna80 (GPT-4 judge),Elo rating,966,Init Elo,1000,-34,absolute,False,measured,11,6 Qualitative Analysis,Table 7,ChatGPT-3.5 Turbo | 916 | 7 | 966 | 5 | 1015 | 2 | 5
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,OpenAssistant953 (GPT-4 judge),Elo rating,1008,ChatGPT-3.5,1015,-7,absolute,False,measured,11,6 Qualitative Analysis,Table 7,Guanaco-65B | ... | 1008 | 3 | 2
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,65B Llama finetune,Memory footprint (GB),41,FP16 65B,130,-89,absolute,False,measured,2,1 Introduction,Table 1,Guanaco 65B | 41 GB | 1022 \pm 1
+RP40,Guanaco-7B,QLoRA-NF4,4-bit,blocksize=64,Inference deployment,Memory footprint (GB),5,,,,,False,measured,2,1 Introduction,prose,smallest Guanaco model (7B parameters) requires just 5 GB of memory and outperforms a 26 GB Alpaca model by more than 20 percentage points on the Vicuna benchmark
+RP40,65B model,Double Quantization,4-bit,blocksize=64,65B parameter model,Bits per parameter saved,0.373,Single quantization (32-bit constant),0.5,-0.373,absolute,False,measured,5,3 QLORA Finetuning,prose,"this quantization reduces the memory footprint per parameter from 32/64 = 0.5 bits, to 8/64 + 32/(64 \cdot 256) = 0.127 bits, a reduction of 0.373 bits per parameter"
+RP40,Guanaco-65B,QLoRA-NF4,4-bit,blocksize=64,CrowS,Average bias score (lower is better),43.5,LLaMA-65B,66.6,-23.1,absolute,False,measured,15,7 Related Work,Table 8,Average | 66.6 | 67.2 | 69.5 | 43.5
+RP40,LLaMA-7B,QLoRA-NF4 train-on-target,4-bit,blocksize=64,MMLU (Mean across 4 datasets),5-shot Accuracy,38.6,Train on source+target,37.5,1.1,absolute,False,measured,24,B.3 Ablations,Table 10,Train on target | 38.0 | 34.5 | 39.0 | 42.9 | 38.6
+RP40,LLaMA-7B,QLoRA-NF4 train-on-source+target,4-bit,blocksize=64,MMLU (Mean across 4 datasets),5-shot Accuracy,37.5,Train on target only,38.6,-1.1,absolute,False,measured,24,B.3 Ablations,Table 10,Train on source and target | 36.2 | 33.7 | 38.1 | 42.0 | 37.5
+RP40,LLaMA-7B FLAN v2 150k,QLoRA-NF4,4-bit,blocksize=64,MMLU,"5-shot Accuracy (3 epochs, 150k samples)",43.5,FLAN v2 50k 3-epochs,44.1,-0.6,absolute,False,measured,24,F Normality of Trained Neural Network Weights,Table 11,150000 | 34.40 | 34.80 | 35.10 | 39.70 | 41.10 | 41.50 | 44.60 | 45.50 | 43.50 | 40.02
+RP40,LLaMA-7B Alpaca,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,64.4,ChatGPT,100.0,-35.6,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Alpaca | 7B | 4-bit | 5 GB | 57.3% | 71.2% | 64.4% | 5.0%
+RP40,LLaMA-13B Alpaca,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,69.4,ChatGPT,100.0,-30.6,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Alpaca | 13B | 4-bit | 10 GB | 63.8% | 76.7% | 69.4% | 4.2%
+RP40,LLaMA-65B Alpaca,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,70.7,ChatGPT,100.0,-29.3,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,Alpaca | 65B | 4-bit | 41 GB | 63.0% | 77.9% | 70.7% | 4.3%
+RP40,LLaMA-65B FLAN v2,QLoRA-NF4,4-bit,blocksize=64,Vicuna,Mean % vs ChatGPT,48.4,ChatGPT,100.0,-51.6,absolute,False,measured,10,5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot,Table 6,FLAN v2 | 65B | 4-bit | 41 GB | 37.0% | 59.6% | 48.4% | 4.6%
 RP45,LLaMA-3.2-1B,bitsandbytes,8-bit,,MBPP,"Relative Robustness Score (RRS, character-level)",1.092,FP16,1.0,0.092,absolute,False,measured,7,V.A RQ1: Adversarial Robustness Evaluation,Table I,LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333
 RP45,LLaMA-3.2-1B,bitsandbytes,8-bit,,MBPP,"Relative Robustness Score (RRS, word-level)",1.862,FP16,1.0,0.862,absolute,False,measured,7,V.A RQ1: Adversarial Robustness Evaluation,Table I,LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333
 RP45,LLaMA-3.2-1B,bitsandbytes,8-bit,,MBPP,"Relative Robustness Score (RRS, sentence-level)",1.333,FP16,1.0,0.333,absolute,False,measured,7,V.A RQ1: Adversarial Robustness Evaluation,Table I,LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333
@@ -2631,6 +3183,135 @@ RP45,Multiple (4 families x 3 sizes),bitsandbytes,8-bit,,Aggregated,Clean pass@1
 RP45,Multiple (4 families x 3 sizes),bitsandbytes,4-bit,,Aggregated,Clean pass@1 reduction vs FP16 (%),1.19,FP16,0.0,-1.19,percent,True,measured,9,V.C Quantization-Robustness Trade-off Evaluation,,while 4-bit causes a more noticeable 1.19% reduction
 RP45,Multiple (4 families x 3 sizes),bitsandbytes,8-bit,,Aggregated,Adversarial cases with quantized > original (%),59.72,,,,percent,True,measured,10,VII. CONCLUSION,,59.72% of our adversarial experiments showing better resilience in quantized models
 RP45,Aggregate (LLaMA family on HumanEval),FP16,16-bit,,HumanEval,Cases where original > quantized (count out of 18),15,,,,absolute,False,measured,6,V.A RQ1: Adversarial Robustness Evaluation,,15 out of 18 experiments showing greater robustness compared to its quantized version
+RP47,Llama 3 8B,Toy model (Section 2.2.3),16-bit,,H100 SXM,Maximum tokens per second,966,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,Llama 3 8B | 966 | 11
+RP47,Llama 3 8B,Toy model (Section 2.2.3),16-bit,,H100 SXM,Optimal instance size (GPUs),11,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,Llama 3 8B | 966 | 11
+RP47,Llama 3 70B,Toy model (Section 2.2.3),16-bit,,H100 SXM,Maximum tokens per second,234,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,Llama 3 70B | 234 | 26
+RP47,Llama 3 70B,Toy model (Section 2.2.3),16-bit,,H100 SXM,Optimal instance size (GPUs),26,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,Llama 3 70B | 234 | 26
+RP47,GPT-3,Toy model (Section 2.2.3),16-bit,,H100 SXM,Maximum tokens per second,148,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,GPT-3 | 148 | 42
+RP47,GPT-3,Toy model (Section 2.2.3),16-bit,,H100 SXM,Optimal instance size (GPUs),42,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,GPT-3 | 148 | 42
+RP47,PaLM-540B,Toy model (Section 2.2.3),16-bit,,H100 SXM,Maximum tokens per second,86,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,PaLM-540B | 86 | 79
+RP47,PaLM-540B,Toy model (Section 2.2.3),16-bit,,H100 SXM,Optimal instance size (GPUs),79,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,PaLM-540B | 86 | 79
+RP47,GPT-4,Toy model (Section 2.2.3),16-bit,,H100 SXM,Maximum tokens per second,56,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,GPT-4 (architecture from Patel and Wong 2023) | 56 | 173
+RP47,GPT-4,Toy model (Section 2.2.3),16-bit,,H100 SXM,Optimal instance size (GPUs),173,,,,,False,measured,7,2.2.3 Theoretical analysis,Table 1,GPT-4 (architecture from Patel and Wong 2023) | 56 | 173
+RP47,Llama 3 70B,Square root scaling prediction,16-bit,,NVIDIA hardware,Tokens per second,135,Llama 3 8B at 400 tok/s,400,,,False,measured,7,2.2.3 Theoretical analysis,,the square root model predicts 135 tokens/second for a 70B dense model
+RP47,Llama 3.1 405B,Square root scaling prediction,16-bit,,NVIDIA hardware,Tokens per second,56,Llama 3 8B at 400 tok/s,400,,,False,measured,7,2.2.3 Theoretical analysis,,and 56 tokens/second for a 405B dense model
+RP47,Mixtral 8x22B,Final model (Section 3) with speculative decoding,16-bit,,H100 SXM,Maximum tokens per second,199,,,,,False,measured,15,4 Inference economics of example models,Table 2,Mixtral 8x22B (16-bit) | 199 | 125
+RP47,Mixtral 8x22B,Final model (Section 3) with speculative decoding,16-bit,,H100 SXM,Optimal instance size (GPUs),125,,,,,False,measured,15,4 Inference economics of example models,Table 2,Mixtral 8x22B (16-bit) | 199 | 125
+RP47,Llama 3 70B,Final model (Section 3) with speculative decoding,8-bit,,H100 SXM,Maximum tokens per second,189,,,,,False,measured,15,4 Inference economics of example models,Table 2,Llama 3 70B (8-bit) | 189 | 24
+RP47,Llama 3 70B,Final model (Section 3) with speculative decoding,8-bit,,H100 SXM,Optimal instance size (GPUs),24,,,,,False,measured,15,4 Inference economics of example models,Table 2,Llama 3 70B (8-bit) | 189 | 24
+RP47,Llama 3.1 405B,Final model (Section 3) with speculative decoding,8-bit,,H100 SXM,Maximum tokens per second,122,,,,,False,measured,15,4 Inference economics of example models,Table 2,Llama 3.1 405B (8-bit) | 122 | 48
+RP47,Llama 3.1 405B,Final model (Section 3) with speculative decoding,8-bit,,H100 SXM,Optimal instance size (GPUs),48,,,,,False,measured,15,4 Inference economics of example models,Table 2,Llama 3.1 405B (8-bit) | 122 | 48
+RP47,GPT-4,Final model (Section 3) with speculative decoding,16-bit,,H100 SXM,Maximum tokens per second,106,,,,,False,measured,15,4 Inference economics of example models,Table 2,"GPT-4 (16-bit, speculative) | 106 | 460"
+RP47,GPT-4,Final model (Section 3) with speculative decoding,16-bit,,H100 SXM,Optimal instance size (GPUs),460,,,,,False,measured,15,4 Inference economics of example models,Table 2,"GPT-4 (16-bit, speculative) | 106 | 460"
+RP47,DeepSeek-V3,Final model (Section 3) with speculative decoding,8-bit,,H100 SXM,Maximum tokens per second,215,,,,,True,measured,15,4 Inference economics of example models,Table 2,DeepSeek-V3 (8-bit) | 215 | 14
+RP47,DeepSeek-V3,Final model (Section 3) with speculative decoding,8-bit,,H100 SXM,Optimal instance size (GPUs),14,,,,,False,measured,15,4 Inference economics of example models,Table 2,DeepSeek-V3 (8-bit) | 215 | 14
+RP47,Mixtral 8x22B,"Efficient setup (alpha=3, speculative decoding)",16-bit,,H100 SXM,Tokens per second,128,,,,,False,measured,15,4 Inference economics of example models,Table 3,Mixtral 8x22B (16-bit) | 128 | $0.54 | 23 | 197
+RP47,Mixtral 8x22B,"Efficient setup (alpha=3, speculative decoding)",16-bit,,H100 SXM,Cost per million tokens (USD),0.54,,,,,False,measured,15,4 Inference economics of example models,Table 3,Mixtral 8x22B (16-bit) | 128 | $0.54 | 23 | 197
+RP47,Llama 3 70B,"Efficient setup (alpha=3, speculative decoding)",8-bit,,H100 SXM,Tokens per second,107,,,,,False,measured,15,4 Inference economics of example models,Table 3,Llama 3 70B (8-bit) | 107 | $0.27 | 7 | 136
+RP47,Llama 3 70B,"Efficient setup (alpha=3, speculative decoding)",8-bit,,H100 SXM,Cost per million tokens (USD),0.27,,,,,False,measured,15,4 Inference economics of example models,Table 3,Llama 3 70B (8-bit) | 107 | $0.27 | 7 | 136
+RP47,Llama 3.1 405B,"Efficient setup (alpha=3, speculative decoding)",8-bit,,H100 SXM,Tokens per second,61,,,,,False,measured,15,4 Inference economics of example models,Table 3,Llama 3.1 405B (8-bit) | 61 | $1.31 | 8 | 58
+RP47,Llama 3.1 405B,"Efficient setup (alpha=3, speculative decoding)",8-bit,,H100 SXM,Cost per million tokens (USD),1.31,,,,,False,measured,15,4 Inference economics of example models,Table 3,Llama 3.1 405B (8-bit) | 61 | $1.31 | 8 | 58
+RP47,GPT-4,"Efficient setup (alpha=3, speculative decoding)",16-bit,,H100 SXM,Tokens per second,61,,,,,False,measured,15,4 Inference economics of example models,Table 3,"GPT-4 (16-bit, speculative) | 61 | $4.53 | 100 | 213"
+RP47,GPT-4,"Efficient setup (alpha=3, speculative decoding)",16-bit,,H100 SXM,Cost per million tokens (USD),4.53,,,,,False,measured,15,4 Inference economics of example models,Table 3,"GPT-4 (16-bit, speculative) | 61 | $4.53 | 100 | 213"
+RP47,DeepSeek-V3,"Efficient setup (alpha=3, speculative decoding)",8-bit,,H100 SXM,Tokens per second,116,,,,,False,measured,15,4 Inference economics of example models,Table 3,DeepSeek-V3 (8-bit) | 116 | $1.10 | 54 | 247
+RP47,DeepSeek-V3,"Efficient setup (alpha=3, speculative decoding)",8-bit,,H100 SXM,Cost per million tokens (USD),1.1,,,,,False,measured,15,4 Inference economics of example models,Table 3,DeepSeek-V3 (8-bit) | 116 | $1.10 | 54 | 247
+RP47,Llama 3 70B,Final model (Section 3) on H100 SXM,8-bit,,H100 SXM,Maximum tokens per second,152,,,,,False,measured,16,4 Inference economics of example models,Table 4,H100 SXM | 152 | 24
+RP47,Llama 3 70B,Final model (Section 3) on H100 SXM,8-bit,,H100 SXM,Optimal instance size (GPUs),24,,,,,False,measured,16,4 Inference economics of example models,Table 4,H100 SXM | 152 | 24
+RP47,Llama 3 70B,Final model (Section 3) on A100 SXM,8-bit,,A100 SXM,Maximum tokens per second,132,,,,,False,measured,16,4 Inference economics of example models,Table 4,A100 SXM | 132 | 32
+RP47,Llama 3 70B,Final model (Section 3) on A100 SXM,8-bit,,A100 SXM,Optimal instance size (GPUs),32,,,,,False,measured,16,4 Inference economics of example models,Table 4,A100 SXM | 132 | 32
+RP47,Llama 3 70B,Final model (Section 3) on V100 SXM,8-bit,,V100 SXM,Maximum tokens per second,105,,,,,False,measured,16,4 Inference economics of example models,Table 4,V100 SXM | 105 | 102
+RP47,Llama 3 70B,Final model (Section 3) on V100 SXM,8-bit,,V100 SXM,Optimal instance size (GPUs),102,,,,,False,measured,16,4 Inference economics of example models,Table 4,V100 SXM | 105 | 102
+RP47,Llama 3 70B,"Efficient setup, no speculative decoding (alpha=3)",16-bit,,H100 SXM,Tokens per second,69,,,,,False,measured,18,4.2 The impact of quantization,Table 5,Llama 3 70B | 69 | $0.52 | 8 | 127
+RP47,Llama 3 70B,"Efficient setup, no speculative decoding (alpha=3)",16-bit,,H100 SXM,Cost per million tokens (USD),0.52,,,,,False,measured,18,4.2 The impact of quantization,Table 5,Llama 3 70B | 69 | $0.52 | 8 | 127
+RP47,Llama 3 70B,Efficient setup with speculative decoding (alpha=3),16-bit,,H100 SXM,Tokens per second,95,Llama 3 70B (no spec dec),69,26,absolute,True,measured,18,4.2 The impact of quantization,Table 5,Llama 3 70B (S) | 95 | $0.51 | 6 | 73
+RP47,Llama 3 70B,Efficient setup with speculative decoding (alpha=3),16-bit,,H100 SXM,Cost per million tokens (USD),0.51,Llama 3 70B (no spec dec),0.52,-0.01,absolute,False,measured,18,4.2 The impact of quantization,Table 5,Llama 3 70B (S) | 95 | $0.51 | 6 | 73
+RP47,Llama 3.1 405B,"Efficient setup, no speculative decoding (alpha=3)",16-bit,,H100 SXM,Tokens per second,35,,,,,False,measured,18,4.2 The impact of quantization,Table 5,Llama 3.1 405B | 35 | $6.54 | 31 | 80
+RP47,Llama 3.1 405B,"Efficient setup, no speculative decoding (alpha=3)",16-bit,,H100 SXM,Cost per million tokens (USD),6.54,,,,,False,measured,18,4.2 The impact of quantization,Table 5,Llama 3.1 405B | 35 | $6.54 | 31 | 80
+RP47,Llama 3.1 405B,Efficient setup with speculative decoding (alpha=3),16-bit,,H100 SXM,Tokens per second,71,Llama 3.1 405B (no spec dec),35,36,absolute,True,measured,18,4.2 The impact of quantization,Table 5,Llama 3.1 405B (S) | 71 | $7.33 | 23 | 26
+RP47,Llama 3.1 405B,Efficient setup with speculative decoding (alpha=3),16-bit,,H100 SXM,Cost per million tokens (USD),7.33,Llama 3.1 405B (no spec dec),6.54,0.79,absolute,False,measured,18,4.2 The impact of quantization,Table 5,Llama 3.1 405B (S) | 71 | $7.33 | 23 | 26
+RP47,Llama 3 70B,"Efficient setup, weight-only quantization (alpha=4)",4-bit,,H100 SXM,Tokens per second,122,16-bit weights,83,39,absolute,True,measured,19,4.3 The impact of long context lengths,Table 6,4-bit weights | 122 | $0.23 | 4 | 90
+RP47,Llama 3 70B,"Efficient setup, weight-only quantization (alpha=4)",4-bit,,H100 SXM,Cost per million tokens (USD),0.23,16-bit weights,0.7,-0.47,absolute,False,measured,19,4.3 The impact of long context lengths,Table 6,4-bit weights | 122 | $0.23 | 4 | 90
+RP47,Llama 3 70B,"Efficient setup, weight-only quantization (alpha=4)",8-bit,,H100 SXM,Tokens per second,99,16-bit weights,83,16,absolute,False,measured,19,4.3 The impact of long context lengths,Table 6,8-bit weights | 99 | $0.37 | 7 | 109
+RP47,Llama 3 70B,"Efficient setup, weight-only quantization (alpha=4)",8-bit,,H100 SXM,Cost per million tokens (USD),0.37,16-bit weights,0.7,-0.33,absolute,False,measured,19,4.3 The impact of long context lengths,Table 6,8-bit weights | 99 | $0.37 | 7 | 109
+RP47,Llama 3 70B,"Efficient setup, weight-only quantization (alpha=4)",16-bit,,H100 SXM,Tokens per second,83,,,,,False,measured,19,4.3 The impact of long context lengths,Table 6,16-bit weights | 83 | $0.70 | 13 | 136
+RP47,Llama 3 70B,"Efficient setup, weight-only quantization (alpha=4)",16-bit,,H100 SXM,Cost per million tokens (USD),0.7,,,,,False,measured,19,4.3 The impact of long context lengths,Table 6,16-bit weights | 83 | $0.70 | 13 | 136
+RP47,Llama 3 70B,100% utilization theoretical,16-bit,,H100 SXM,Cost per million tokens (USD),0.11,,,,,False,measured,18,4.3 The impact of long context lengths,,"at 100% utilization on an H100, the cost per million tokens of Llama 3 70B at 16-bit precision would be around $0.11"
+RP47,Mistral Large 2,Long-context KV cache cost lower bound,16-bit,12,H100 SXM (100K context),KV cache cost (USD per million output tokens),6.06,,,,,False,measured,20,4.3 The impact of long context lengths,,$6.06 per million output tokens
+RP47,Mistral Large 2,KV cache size,16-bit,12,H100 SXM,Per-token KV cache size (KB),360,,,,,False,measured,20,4.3 The impact of long context lengths,,Mistral Large 2 has a per-token KV cache size of around 360 KB
+RP47,DeepSeek-V3,KV cache size (MLA),8-bit,,H100 SXM,Per-token KV cache size (KB),60,Mistral Large 2,360,-300,absolute,False,measured,20,4.3 The impact of long context lengths,,"With a per-token KV cache size of ≈ 60 KB, we expect DeepSeek-V3 to be around 6 times cheaper than Mistral Large 2"
+RP47,Llama 3 70B,Speculative decoding (alpha=0.8) gain,16-bit,,H100 SXM,Throughput increase from speculative decoding (%),66,,,,percent,True,measured,17,4.1 The impact of speculative decoding,,a 66% increase in throughput for Llama 3 70B and a doubling of throughput for Llama 3.1 405B at a fixed cost per token
+RP47,Llama 3.1 405B,Speculative decoding (alpha=0.8) gain,16-bit,,H100 SXM,Throughput increase from speculative decoding (%),100,,,,percent,True,measured,17,4.1 The impact of speculative decoding,,a doubling of throughput for Llama 3.1 405B at a fixed cost per token
+RP47,(any),Generational GPU comparison rule of thumb,,,NVIDIA generations (V100/A100/H100),Tokens-per-second gain per GPU generation (%),25,,,,percent,False,measured,15,4 Inference economics of example models,,"with each new generation of GPUs from NVIDIA, the tokens per second achieved at a fixed cost per token goes up by around 25%"
+RP47,(any),Quantization rule of thumb,,,H100 SXM,Token latency reduction per halving of weight precision (%),20,,,,percent,False,measured,22,5.1 Takeaways for short-context inference,,reducing the precision of a model by a factor of 2 seems to reduce token latency by around 20%
+RP47,(any dense),Toy model rule of thumb (1/sqrt(N)),16-bit,,H100 SXM,Predicted tokens-per-second increase per halved precision (%),26,,,,percent,False,measured,18,4.2 The impact of quantization,,2 ^(1)/^(3) − 1 ≈ 26% increase in maximum tokens per second
+RP47,Llama series,Empirical speculative decoding acceptance,,,"API logs (together.ai, octo.ai)",Token acceptance probability (range),0.7-0.9,,,,,False,measured,17,4.1 The impact of speculative decoding,,Typical acceptance rates we've obtained when doing this in the Llama model series at sampling temperature equal to 1 range from 0.7 to 0.9
+RP48,LLaMA-3-8B,FP16,16-bit,,WikiText2,Perplexity,6.14,,,,,False,measured,9,5 EXPERIMENTS,Table 2,16-16-16 | FloatingPoint | 68.09 | 6.14
+RP48,LLaMA-3-8B,FP16,16-bit,,Zero-Shot (9 tasks avg),Accuracy,68.09,,,,,False,measured,9,5 EXPERIMENTS,Table 2,16-16-16 | FloatingPoint | 68.09 | 6.14
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,WikiText2,Perplexity,6.53,FP16,6.14,0.39,absolute,True,measured,9,5 EXPERIMENTS,Table 2,"**OSTQuant** | **67.80** | **6.53** ... (W4-16-16 row, LLaMA-3 8B)"
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,Zero-Shot (9 tasks avg),Accuracy,67.8,FP16,68.09,-0.29,absolute,True,measured,9,5 EXPERIMENTS,Table 2,OSTQuant achieves only a 0.29-point performance drop in zero-shot evaluations
+RP48,LLaMA-3-8B,RTN,4-bit,,WikiText2,Perplexity,8.13,FP16,6.14,1.99,absolute,False,measured,9,5 EXPERIMENTS,Table 2,4-16-16 | RTN | 63.70 | 8.13
+RP48,LLaMA-3-8B,GPTQ,4-bit,,WikiText2,Perplexity,7.43,FP16,6.14,1.29,absolute,False,measured,9,5 EXPERIMENTS,Table 2,GPTQ | 61.03 | 7.43
+RP48,LLaMA-3-8B,AWQ,4-bit,,WikiText2,Perplexity,7.36,FP16,6.14,1.22,absolute,False,measured,9,5 EXPERIMENTS,Table 2,AWQ | 67.03 | 7.36
+RP48,LLaMA-3-8B,SmoothQuant,4-bit,,WikiText2,Perplexity,8.12,FP16,6.14,1.98,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SmoothQuant | 62.79 | 8.12
+RP48,LLaMA-3-8B,OmniQuant,4-bit,,WikiText2,Perplexity,7.19,FP16,6.14,1.05,absolute,False,measured,9,5 EXPERIMENTS,Table 2,Omniquant | 65.66 | 7.19
+RP48,LLaMA-3-8B,QuaRot,4-bit,,WikiText2,Perplexity,6.53,FP16,6.14,0.39,absolute,False,measured,9,5 EXPERIMENTS,Table 2,QuaRot | 67.27 | 6.53
+RP48,LLaMA-3-8B,SpinQuant,4-bit,,WikiText2,Perplexity,6.49,FP16,6.14,0.35,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SpinQuant | 66.54 | **6.49**
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,WikiText2,Perplexity,7.29,FP16,6.14,1.15,absolute,True,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.37** | **7.29** (W4A4KV4 row)
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,Zero-Shot (9 tasks avg),Accuracy,65.37,FP16,68.09,-2.72,absolute,True,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.37** | **7.29** (W4A4KV4)
+RP48,LLaMA-3-8B,SpinQuant,4-bit,,WikiText2,Perplexity,7.35,FP16,6.14,1.21,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SpinQuant | 64.10 | 7.35 (W4A4KV4)
+RP48,LLaMA-3-8B,QuaRot,4-bit,,WikiText2,Perplexity,8.18,FP16,6.14,2.04,absolute,False,measured,9,5 EXPERIMENTS,Table 2,QuaRot | 61.38 | 8.18 (W4A4KV4)
+RP48,LLaMA-3-70B,FP16,16-bit,,WikiText2,Perplexity,2.86,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 73.81 | 2.86 (LLaMA-3 70B)
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,WikiText2,Perplexity,3.19,FP16,2.86,0.33,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **73.69** | **3.19** (W4-16-16 LLaMA-3 70B)
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,WikiText2,Perplexity,4.01,FP16,2.86,1.15,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **71.69** | **4.01** (W4A4KV4 LLaMA-3 70B)
+RP48,LLaMA-2-7B,FP16,16-bit,,WikiText2,Perplexity,5.47,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 65.21 | 5.47 (LLaMA-2 7B)
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2,Perplexity,5.64,FP16,5.47,0.17,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **64.37** | **5.64** (W4-16-16 LLaMA-2 7B)
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Zero-Shot (9 tasks avg),Accuracy,64.37,FP16,65.21,-0.84,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **64.37** | **5.64**
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2,Perplexity,5.91,FP16,5.47,0.44,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **63.18** | **5.91** (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-7B,SpinQuant,4-bit,,WikiText2,Perplexity,5.96,FP16,5.47,0.49,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SpinQuant | 62.01 | 5.96 (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-7B,QuaRot,4-bit,,WikiText2,Perplexity,6.11,FP16,5.47,0.64,absolute,False,measured,9,5 EXPERIMENTS,Table 2,QuaRot | 61.48 | 6.11 (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-7B,OmniQuant,4-bit,,WikiText2,Perplexity,14.26,FP16,5.47,8.79,absolute,False,measured,9,5 EXPERIMENTS,Table 2,Omniquant | 48.40 | 14.26 (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-13B,FP16,16-bit,,WikiText2,Perplexity,4.88,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 67.61 | 4.88 (LLaMA-2 13B)
+RP48,LLaMA-2-13B,OSTQuant,4-bit,,WikiText2,Perplexity,4.94,FP16,4.88,0.06,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **67.31** | **4.94** (W4-16-16 LLaMA-2 13B)
+RP48,LLaMA-2-13B,OSTQuant,4-bit,,WikiText2,Perplexity,5.25,FP16,4.88,0.37,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.41** | **5.25** (W4A4KV4 LLaMA-2 13B)
+RP48,LLaMA-2-70B,FP16,16-bit,,WikiText2,Perplexity,3.32,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 71.59 | 3.32 (LLaMA-2 70B)
+RP48,LLaMA-2-70B,OSTQuant,4-bit,,WikiText2,Perplexity,3.41,FP16,3.32,0.09,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **71.48** | **3.41** (W4-16-16 LLaMA-2 70B)
+RP48,LLaMA-2-70B,OSTQuant,4-bit,,WikiText2,Perplexity,3.59,FP16,3.32,0.27,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **70.84** | **3.59** (W4A4KV4 LLaMA-2 70B)
+RP48,LLaMA-7B,FP16,16-bit,,WikiText2,Perplexity,5.68,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 64.48 | 5.68 (LLaMA 7B)
+RP48,LLaMA-7B,OSTQuant,4-bit,,WikiText2,Perplexity,5.81,FP16,5.68,0.13,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **64.13** | **5.81** (W4-16-16 LLaMA 7B)
+RP48,LLaMA-7B,OSTQuant,4-bit,,WikiText2,Perplexity,6.07,FP16,5.68,0.39,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **62.55** | **6.07** (W4A4KV4 LLaMA 7B)
+RP48,LLaMA-13B,FP16,16-bit,,WikiText2,Perplexity,5.09,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 66.67 | 5.09 (LLaMA 13B)
+RP48,LLaMA-13B,OSTQuant,4-bit,,WikiText2,Perplexity,5.21,FP16,5.09,0.12,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **66.62** | **5.21** (W4-16-16 LLaMA 13B)
+RP48,LLaMA-13B,OSTQuant,4-bit,,WikiText2,Perplexity,5.4,FP16,5.09,0.31,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.43** | **5.40** (W4A4KV4 LLaMA 13B)
+RP48,LLaMA-30B,FP16,16-bit,,WikiText2,Perplexity,4.1,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 70.00 | 4.10 (LLaMA 30B)
+RP48,LLaMA-30B,OSTQuant,4-bit,,WikiText2,Perplexity,4.19,FP16,4.1,0.09,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **69.84** | **4.19** (W4-16-16 LLaMA 30B)
+RP48,LLaMA-30B,OSTQuant,4-bit,,WikiText2,Perplexity,4.42,FP16,4.1,0.32,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **68.20** | **4.42** (W4A4KV4 LLaMA 30B)
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Prefill Speedup over FP16,2.14,FP16,1.0,1.14,x_factor,False,measured,9,5 EXPERIMENTS,Table 3,7B | 2.24x | 2.27x | 2.23x | 2.14x | 2.11x | 2.02x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Memory Saving Factor over FP16,2.86,FP16,1.0,1.86,x_factor,False,measured,9,5 EXPERIMENTS,Table 3,7B | ... | 3.48x | 3.34x | 3.12x | 2.86x | 2.57x | 2.34x
+RP48,LLaMA-30B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Prefill Speedup over FP16,3.4,FP16,1.0,2.4,x_factor,True,measured,9,5 EXPERIMENTS,Table 3,30B | 3.18x | 3.01x | 2.98x | 3.40x | 2.84x | 2.68x
+RP48,LLaMA-30B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Memory Saving Factor over FP16,3.15,FP16,1.0,2.15,x_factor,False,measured,9,5 EXPERIMENTS,Table 3,30B | ... | 3.70x | 3.59x | 3.42x | 3.15x | 2.83x | 2.53x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Prefill Latency (ms),25.312,FP16,54.276,-28.964,absolute,False,measured,17,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 9,LLaMA2-7B | ... 2048 | 54.276ms | 25.312ms | 2.144x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Memory (GB),0.202,FP16,0.577,-0.375,absolute,False,measured,17,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 9,2048 | 54.276ms | 25.312ms | 2.144x | 0.577GB | 0.202GB | 2.857x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Decoding (single GPU),Decoder Speed (tokens/sec),89.4,FP16,47.32,42.08,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-2-7B | 47.32 | 89.4 | 1.89x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Decoding (single GPU),Decoder Speedup over FP16,1.89,FP16,1.0,0.89,x_factor,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-2-7B | 47.32 | 89.4 | 1.89x | 13.94 | 4.32 | 3.23x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Decoding (single GPU),Memory (GB),4.32,FP16,13.94,-9.62,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-2-7B | ... | 13.94 | 4.32 | 3.23x
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,A6000 GPU (decoding),Decoder Speed (tokens/sec),14.68,FP16,,,,True,measured,17,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,even a single A6000 GPU can successfully run LLaMA-3-70B at a speed of 15 tokens per second after quantization
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,A6000 GPU (decoding),Memory (GB),38.41,,,,,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-3-70B | OOM | 14.68 | - | OOM | 38.41 | -
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2 calibration,Quantization Time (hours),0.3,OmniQuant,1.6,-1.3,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 11,Omniquant | 1.6h ... OSTQuant | 0.3h ... Speedup | 5.3x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2 calibration,Quantization Speedup over OmniQuant,5.3,OmniQuant,1.0,4.3,x_factor,True,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 11,Speedup | 5.3x | 4.5x | 4.1x | 3.3x | 1.7x
+RP48,LLaMA-2-70B,OSTQuant,4-bit,,WikiText2 calibration,Quantization Time (hours),5.5,OmniQuant,9.5,-4.0,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 11,Omniquant | ... 9.5h | OSTQuant | ... 5.5h
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2,Perplexity (Origin loss),5.38,FP16,5.47,-0.09,absolute,False,measured,8,4.2 KL-Top Loss.,Table 1,LLaMA-2-7B | Origin | **5.38** | 69.87 | 42.41
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,ARC-Easy,Accuracy (KL-Top),72.69,Origin loss,69.87,2.82,absolute,False,measured,8,4.2 KL-Top Loss.,Table 1,KL-Top | 5.94 | **72.69** | **44.62**
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,ARC-Challenge,Accuracy (KL-Top),44.62,Origin loss,42.41,2.21,absolute,False,measured,8,4.2 KL-Top Loss.,Table 1,KL-Top | 5.94 | **72.69** | **44.62**
+RP48,LLaMA-2-7B,OSTQuant (W3-only k=1000),3-bit,,WikiText2,Perplexity,6.06,FP16,5.47,0.59,absolute,False,measured,10,5.2 Ablation Study,Table 6,W3 Only | Zero-Shot9 ScoreWiki PPL | ... | **62.30****6.06** (k=1000)
+RP48,LLaMA-2-7B,OSTQuant (W3-only k=1000),3-bit,,Zero-Shot (9 tasks avg),Accuracy,62.3,FP16,65.21,-2.91,absolute,False,measured,10,5.2 Ablation Study,Table 6,"W3 Only | ... **62.30****6.06** (k=1000, LLaMA-2 7B)"
+RP48,LLaMA-2-7B,OSTQuant (Cayley SGD),4-bit,,Zero-Shot (9 tasks avg),Accuracy,63.11,FP16,65.21,-2.1,absolute,False,measured,10,5.2 Ablation Study,Table 5,LLaMA-2-7B | Cayley SGD | 150 | 1.50 | 0.20 | 63.11
+RP48,LLaMA-2-7B,OSTQuant (RiemannAdam),4-bit,,Zero-Shot (9 tasks avg),Accuracy,63.18,FP16,65.21,-2.03,absolute,False,measured,10,5.2 Ablation Study,Table 5,Riemann Adam | 150 | 0.02 | 1e-3 | **63.18**
+RP48,LLaMA-2-13B,OSTQuant (RiemannAdam),4-bit,,Zero-Shot (9 tasks avg),Accuracy,65.41,FP16,67.61,-2.2,absolute,False,measured,10,5.2 Ablation Study,Table 5,Riemann Adam | 150 | 0.02 | 0.002 | **65.41**
+RP48,LLaMA-2-7B,OSTQuant (Hadamard init),4-bit,,WikiText2,Perplexity,5.62,FP16,5.47,0.15,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A16KV16 | Hadamard | 63.32 | 5.62
+RP48,LLaMA-2-7B,OSTQuant (WOMI init),4-bit,,WikiText2,Perplexity,5.59,FP16,5.47,0.12,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A16KV16 | WOMI | 63.45 | 5.59
+RP48,LLaMA-2-7B,OSTQuant (Hadamard init),4-bit,,WikiText2,Perplexity,6.11,FP16,5.47,0.64,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A4KV4 | Hadamard | 61.47 | 6.11
+RP48,LLaMA-2-7B,OSTQuant (WOMI init),4-bit,,WikiText2,Perplexity,6.09,FP16,5.47,0.62,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A4KV4 | WOMI | 61.52 | 6.09
+RP48,LLaMA-3-8B,OSTQuant (WOMI init),4-bit,,WikiText2,Perplexity,6.48,FP16,6.14,0.34,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A16KV16 | WOMI | 67.41 | 6.48 (LLaMA-3-8B)
 RP49,LLaMA3.1-8B-Instruct,FP16,16-bit,,Affirmative,Accuracy (%),97.17,,,,,False,measured,4,3.1 Models and Quantization Methods,Table 1,LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96
 RP49,LLaMA3.1-8B-Instruct,FP16,16-bit,,Negated,Accuracy (%),93.24,,,,,False,measured,4,3.1 Models and Quantization Methods,Table 1,LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96
 RP49,LLaMA3.1-8B-Instruct,FP16,16-bit,,Conjunction,Accuracy (%),94.95,,,,,False,measured,4,3.1 Models and Quantization Methods,Table 1,LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96

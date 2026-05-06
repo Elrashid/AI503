@@ -1117,5 +1117,3675 @@
         "block_id": "/page/8/Text/6"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 13.21,
+        "baseline_label": "GPTQ",
+        "baseline_value": 5500.0,
+        "delta": -5486.79,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "1 Introduction",
+        "quote": "when LLaMA-13B is quantized into W2A16, OmniQuant achieves a perplexity of 13.21, while GPTQ incurs a significant increase in perplexity to 3832",
+        "bbox": [
+          106.681640625,
+          254.39971923828125,
+          504.0043029785156,
+          286.5098571777344
+        ],
+        "block_id": "/page/2/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100-40G",
+        "metric": "Quantization time (hours)",
+        "value": 1.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "the LLaMA-2 model family size 7-70B can be processed with OmniQuant on a single A100-40G GPU within 1-16 hours using 128 samples",
+        "bbox": [
+          141.64453125,
+          237.75,
+          469.5,
+          501.1875
+        ],
+        "block_id": "/page/0/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "A100-40G",
+        "metric": "Quantization time (hours)",
+        "value": 14.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A4 TRAINING TIME",
+        "quote": "weight-activation ... 65B 14.4h",
+        "bbox": [
+          201.76875,
+          483.437109375,
+          409.0359375,
+          518.937890625
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table A12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 110000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 109994.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN 1.1e5 6.8e4 2.4e4 2.2e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 68000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 67994.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN 1.1e5 6.8e4 2.4e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 24000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 23995.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN ... 2.4e4 2.2e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 22000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 21996.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN ... 2.2e4 3.8e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 38000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 37994.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN ... 3.8e4 5.6e4 2.0e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 56000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 55995.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN ... 5.6e4 2.0e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "RTN",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 20000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 19996.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16 RTN ... 2.0e4",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 2100.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 2094.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ 2.1e3 5.5e3 499.75 55.91 7.7e3 2.1e3 77.95",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5500.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 5494.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ 2.1e3 5.5e3 499.75",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 499.75,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 495.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 499.75 55.91",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 55.91,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 52.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 55.91 7.7e3",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7700.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 7694.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 7.7e3 2.1e3 77.95",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 2100.0,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 2095.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 2.1e3 77.95",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 77.95,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 74.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 77.95",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 15.47,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 9.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 15.47 13.21 8.71 7.58 37.37 17.21 7.81",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 13.21,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 8.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 15.47 13.21 8.71",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.71,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 4.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 8.71 7.58",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.58,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 4.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 7.58 37.37",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 37.37,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 31.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 37.37 17.21 7.81",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 17.21,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 12.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 17.21 7.81",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.81,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 4.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 7.81",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.72,
+        "baseline_label": "GPTQ",
+        "baseline_value": 44.01,
+        "delta": -34.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16g128 ... OmniQuant 9.72 7.93 7.12 5.95 11.06 8.26 6.55",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.93,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 2.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 9.72 7.93 7.12",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.12,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 3.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 7.12 5.95",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.95,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 2.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.95 11.06",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 11.06,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 5.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 11.06 8.26 6.55",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.26,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 3.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 8.26 6.55",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.55,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 3.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 6.55",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 44.01,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 38.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16g128 ... GPTQ 44.01 15.60 10.92 9.51 36.77 28.14 NAN",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 15.6,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 10.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ 44.01 15.60 10.92",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 10.92,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 6.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 10.92 9.51",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.51,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 5.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 9.51 36.77",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 36.77,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 31.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 36.77 28.14 NAN",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 28.14,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 23.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 28.14 NAN",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "AWQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 260000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 259994.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "AWQ 2.6e5 2.8e5 2.4e5 7.4e4 2.2e5 1.2e5",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "AWQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 280000.0,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 279994.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "AWQ 2.6e5 2.8e5 2.4e5",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.9,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 3.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W2A16g64 ... OmniQuant 8.90 7.34 6.59 5.65 9.62 7.56 6.11",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.34,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 2.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 8.90 7.34 6.59",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.59,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 2.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 6.59 5.65",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.65,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 2.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.65 9.62",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.62,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 4.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 9.62 7.56 6.11",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.56,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 2.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 7.56 6.11",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.11,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 6.11",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.49,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W3A16 ... OmniQuant 6.49 5.68 4.74 4.04 6.58 5.58 3.92",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.68,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 6.49 5.68 4.74",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.74,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 4.74 4.04",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.04,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 4.04 6.58",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.58,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 6.58 5.58 3.92",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.58,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.58 3.92",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.92,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 3.92",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.06,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 2.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W3A16 ... GPTQ 8.06 6.76 5.84 5.06 8.37 6.44 4.82",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.76,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 1.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ 8.06 6.76 5.84",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.84,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 1.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 5.84 5.06",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.06,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 1.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 5.06 8.37",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.37,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 2.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 8.37 6.44 4.82",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.44,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 1.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 6.44 4.82",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.82,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 1.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 4.82",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 25.73,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 20.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W3A16 RTN 25.73 11.39 14.95 10.68 539.48 10.68 7.52",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.15,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W3A16g128 ... OmniQuant 6.15 5.44 4.56 3.94 6.03 5.28 3.78",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.44,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 6.15 5.44 4.56",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.56,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 4.56 3.94",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.94,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 3.94 6.03",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.03,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 6.03 5.28 3.78",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.28,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.28 3.78",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.78,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 3.78",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.86,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A16 ... OmniQuant 5.86 5.21 4.25 3.71 5.74 5.02 3.47",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.21,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 5.86 5.21 4.25",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.25,
+        "baseline_label": "FP16",
+        "baseline_value": 4.1,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 4.25 3.71",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.71,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 3.71 5.74",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.74,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.74 5.02 3.47",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.02,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.02 3.47",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.47,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 3.47",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.13,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A16 ... GPTQ 6.13 5.40 4.48 3.83 5.83 5.13 3.58",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.83,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "GPTQ ... 5.83 5.13 3.58",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.08,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A16 ... AWQ 6.08 5.34 4.39 3.76 6.15 5.12",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.77,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A16g128 ... OmniQuant 5.77 5.17 4.19 3.62 5.58 4.95 3.40",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.17,
+        "baseline_label": "FP16",
+        "baseline_value": 5.09,
+        "delta": 0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant 5.77 5.17 4.19",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.58,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 5.58 4.95 3.40",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-70B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.4,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 SETTINGS",
+        "quote": "OmniQuant ... 3.40",
+        "bbox": [
+          106.083984375,
+          107.778515625,
+          502.330078125,
+          356.283984375
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 52.65,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -11.44,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 OmniQuant 66.15 45.20 31.14 63.51 56.44 53.43 52.65",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "SmoothQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 38.41,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -25.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 SmoothQuant 49.80 30.40 25.80 49.10 27.40 48.00 38.41",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "LLM-QAT",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 41.27,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -22.82,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 LLM-QAT 51.50 27.90 23.90 61.30 31.10 51.90 41.27",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OS+",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 48.43,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -15.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 OS+ 62.73 39.98 30.29 60.21 44.39 52.96 48.43",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 63.17,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -0.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W6A6 OmniQuant 77.09 51.89 40.87 72.53 71.61 65.03 63.17",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "SmoothQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 62.81,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W6A6 SmoothQuant 76.75 51.64 39.88 71.75 71.67 65.03 62.81",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 54.37,
+        "baseline_label": "FP16",
+        "baseline_value": 66.33,
+        "delta": -11.96,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 OmniQuant 69.69 47.39 33.10 62.84 58.96 55.80 54.37",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 64.95,
+        "baseline_label": "FP16",
+        "baseline_value": 66.33,
+        "delta": -1.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W6A6 OmniQuant 78.40 57.28 42.91 67.00 75.82 68.27 64.95",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 56.63,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 44.83,
+        "delta": 11.8,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 OmniQuant 71.21 49.45 34.47 65.33 64.65 59.19 56.63",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 67.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W6A6 OmniQuant 79.81 58.79 45.22 68.38 78.95 72.21 67.23",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 59.22,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 47.71,
+        "delta": 11.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W4A4 OmniQuant 71.81 48.02 35.92 73.27 66.81 59.51 59.22",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Accuracy",
+        "value": 70.28,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 SETTINGS",
+        "quote": "W6A6 OmniQuant 81.01 58.12 46.33 80.64 79.91 75.69 70.28",
+        "bbox": [
+          102.7430859375,
+          106.850390625,
+          504.4756640625,
+          371.133984375
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100-80G",
+        "metric": "Memory (GB)",
+        "value": 12.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "FP 12.6G 14.4G 69.2",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100-80G",
+        "metric": "Speed (token/s)",
+        "value": 69.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "FP 12.6G 14.4G 69.2",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Memory (GB)",
+        "value": 3.8,
+        "baseline_label": "FP16",
+        "baseline_value": 12.6,
+        "delta": -8.8,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "W4A16g128 3.8G 5.7G 134.2",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Speed (token/s)",
+        "value": 134.2,
+        "baseline_label": "FP16",
+        "baseline_value": 69.2,
+        "delta": 65.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "W4A16g128 3.8G 5.7G 134.2",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Memory (GB)",
+        "value": 3.2,
+        "baseline_label": "FP16",
+        "baseline_value": 12.6,
+        "delta": -9.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "W3A16g128 3.2G 5.1G 83.4",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Memory (GB)",
+        "value": 2.2,
+        "baseline_label": "FP16",
+        "baseline_value": 12.6,
+        "delta": -10.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "W2A16g128 2.2G 4.1G 83.9",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Speed (token/s)",
+        "value": 83.9,
+        "baseline_label": "FP16",
+        "baseline_value": 69.2,
+        "delta": 14.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "W2A16g128 2.2G 4.1G 83.9",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Speed (token/s)",
+        "value": 91.3,
+        "baseline_label": "FP16",
+        "baseline_value": 52.5,
+        "delta": 38.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "13B ... W4A16g128 ... 7.0G 10.0G 91.3",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Speed (token/s)",
+        "value": 24.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "65B ... W4A16g128 33.0G 41.0G 24.3",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "A100-80G",
+        "metric": "Memory (GB)",
+        "value": 33.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.3 WEIGHT-ACTIVATION QUANTIZATION RESULTS",
+        "quote": "65B ... W4A16g128 33.0G 41.0G 24.3",
+        "bbox": [
+          104.5719140625,
+          225.24046875,
+          502.6468359375,
+          286.77515625
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B-chat",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "Vicuna-Bench (vs RTN)",
+        "metric": "Win rate (%)",
+        "value": 80.3,
+        "baseline_label": "RTN",
+        "baseline_value": 69.4,
+        "delta": 10.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.4 QUANTIZATION OF INSTRUCTION-TUNED MODELS",
+        "quote": "In LLaMA-2-7b-chat, OmniQuant matches AWQ with a 50% win rate but surpasses RTN more (80.3% vs. 69.4%)",
+        "bbox": [
+          106.5,
+          318.0,
+          505.5,
+          405.0
+        ],
+        "block_id": "/page/8/Text/6",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g512",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.71,
+        "baseline_label": "BF16",
+        "baseline_value": 3.29,
+        "delta": 0.42,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant W3A16g512 65GB 1xA100 80GB 3.71 6.95 6.71",
+        "bbox": [
+          104.5360546875,
+          159.954609375,
+          506.2686328125,
+          214.389140625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table A18"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": "g512",
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.33,
+        "baseline_label": "BF16",
+        "baseline_value": 3.29,
+        "delta": 2.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "A8 FULL RESULTS",
+        "quote": "RTN W3A16g512 65GB 1xA100 80GB 5.33 8.08 8.34",
+        "bbox": [
+          104.5360546875,
+          159.954609375,
+          506.2686328125,
+          214.389140625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table A18"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-180B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g512",
+        "dataset": "Hardware",
+        "metric": "Memory (GB)",
+        "value": 65.0,
+        "baseline_label": "BF16",
+        "baseline_value": 335.0,
+        "delta": -270.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant W3A16g512 65GB 1xA100 80GB",
+        "bbox": [
+          104.5360546875,
+          159.954609375,
+          506.2686328125,
+          214.389140625
+        ],
+        "block_id": "/page/22/Table/2",
+        "source_table": "Table A18"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 11.65,
+        "baseline_label": "FP16",
+        "baseline_value": 10.12,
+        "delta": 1.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A3 ABLATION STUDIES",
+        "quote": "LWC+LET 10.87 5.65 11.65 10.87",
+        "bbox": [
+          157.6079296875,
+          110.26144409179688,
+          449.6108203125,
+          184.39883422851562
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table A3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (W4A4 weight-act)",
+        "value": 11.26,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 25.25,
+        "delta": -13.99,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 11.26 10.33 9.17 12.30",
+        "bbox": [
+          116.244140625,
+          399.8671875,
+          470.654296875,
+          462.0
+        ],
+        "block_id": "/page/24/Text/4",
+        "source_table": "Table A23"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (W4A4 weight-act)",
+        "value": 10.87,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 40.05,
+        "delta": -29.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant ... 10.87",
+        "bbox": [
+          286.5,
+          453.0,
+          309.0,
+          462.0
+        ],
+        "block_id": "/page/24/Text/10",
+        "source_table": "Table A23"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-30B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (W4A4 weight-act)",
+        "value": 10.33,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 192.4,
+        "delta": -182.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 11.26 10.33 9.17 12.30",
+        "bbox": [
+          116.244140625,
+          399.8671875,
+          470.654296875,
+          462.0
+        ],
+        "block_id": "/page/24/Text/4",
+        "source_table": "Table A23"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-1-65B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (W4A4 weight-act)",
+        "value": 9.17,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 275.53,
+        "delta": -266.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 11.26 10.33 9.17 12.30",
+        "bbox": [
+          116.244140625,
+          399.8671875,
+          470.654296875,
+          462.0
+        ],
+        "block_id": "/page/24/Text/4",
+        "source_table": "Table A23"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (W4A4 weight-act)",
+        "value": 14.26,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 83.12,
+        "delta": -68.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant ... 14.26",
+        "bbox": [
+          404.25,
+          453.0,
+          426.75,
+          462.0
+        ],
+        "block_id": "/page/24/Text/11",
+        "source_table": "Table A23"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (W4A4 weight-act)",
+        "value": 12.3,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 35.88,
+        "delta": -23.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 11.26 10.33 9.17 12.30",
+        "bbox": [
+          116.244140625,
+          399.8671875,
+          470.654296875,
+          462.0
+        ],
+        "block_id": "/page/24/Text/4",
+        "source_table": "Table A23"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 12.24,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 18000.0,
+        "delta": -17987.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 12.24 15.54 13.56",
+        "bbox": [
+          105.1456640625,
+          635.231953125,
+          505.6590234375,
+          729.111796875
+        ],
+        "block_id": "/page/24/Table/8",
+        "source_table": "Table A25"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 11.65,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 7400.0,
+        "delta": -7388.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 12.24 15.54 13.56 11.65",
+        "bbox": [
+          105.1456640625,
+          635.231953125,
+          505.6590234375,
+          729.111796875
+        ],
+        "block_id": "/page/24/Table/8",
+        "source_table": "Table A25"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 10.29,
+        "baseline_label": "SmoothQuant",
+        "baseline_value": 220000.0,
+        "delta": -219989.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant ... 10.29 13.19 11.35",
+        "bbox": [
+          105.1456640625,
+          635.231953125,
+          505.6590234375,
+          729.111796875
+        ],
+        "block_id": "/page/24/Table/8",
+        "source_table": "Table A25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMa-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 37.5,
+        "baseline_label": "FP16",
+        "baseline_value": 38.41,
+        "delta": -0.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 37.50% 35.60% 26.03% 26.93",
+        "bbox": [
+          125.00578125,
+          414.260859375,
+          481.01765625,
+          484.473515625
+        ],
+        "block_id": "/page/21/Table/9",
+        "source_table": "Table A16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMa-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 35.6,
+        "baseline_label": "FP16",
+        "baseline_value": 38.41,
+        "delta": -2.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 37.50% 35.60% 26.03%",
+        "bbox": [
+          125.00578125,
+          414.260859375,
+          481.01765625,
+          484.473515625
+        ],
+        "block_id": "/page/21/Table/9",
+        "source_table": "Table A16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMa-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 26.03,
+        "baseline_label": "FP16",
+        "baseline_value": 38.41,
+        "delta": -12.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 37.50% 35.60% 26.03% 26.93",
+        "bbox": [
+          125.00578125,
+          414.260859375,
+          481.01765625,
+          484.473515625
+        ],
+        "block_id": "/page/21/Table/9",
+        "source_table": "Table A16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMa-1-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 26.93,
+        "baseline_label": "FP16",
+        "baseline_value": 38.41,
+        "delta": -11.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 22,
+        "section": "A8 FULL RESULTS",
+        "quote": "OmniQuant 37.50% 35.60% 26.03% 26.93",
+        "bbox": [
+          125.00578125,
+          414.260859375,
+          481.01765625,
+          484.473515625
+        ],
+        "block_id": "/page/21/Table/9",
+        "source_table": "Table A16"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 122,
+    "dropped_cited_count": 11,
+    "dropped_other_count": 0,
+    "headline_count": 12
   }
 }

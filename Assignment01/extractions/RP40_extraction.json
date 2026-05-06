@@ -1460,5 +1460,2265 @@
         "block_id": "/page/7/Text/7"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Performance vs ChatGPT (%)",
+        "value": 99.3,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a single GPU",
+        "bbox": [
+          141.345703125,
+          283.46484375,
+          469.7901611328125,
+          545.1580810546875
+        ],
+        "block_id": "/page/0/Text/8",
+        "source_table": "Abstract / Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "65B LLaMA finetuning",
+        "metric": "GPU Memory Required (GB)",
+        "value": 48,
+        "baseline_label": "16-bit full finetuning",
+        "baseline_value": 780,
+        "delta": -732,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "QLORA reduces the average memory requirements of finetuning a 65B parameter model from >780GB of GPU memory to <48GB without degrading the runtime or predictive performance",
+        "bbox": [
+          107.578125,
+          104.338134765625,
+          317.1469421386719,
+          277.98199462890625
+        ],
+        "block_id": "/page/1/Text/1",
+        "source_table": "Introduction prose"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT/BLOOM/LLaMA/Pythia 125M-13B",
+        "method": "NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Pile Common Crawl",
+        "metric": "Mean Perplexity",
+        "value": 27.41,
+        "baseline_label": "Int4",
+        "baseline_value": 34.34,
+        "delta": -6.93,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "NFloat4 + DQ | 27.41",
+        "bbox": [
+          371.67046875,
+          336.174609375,
+          500.90765625,
+          403.231640625
+        ],
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT/BLOOM/LLaMA/Pythia 125M-13B",
+        "method": "Int4",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Pile Common Crawl",
+        "metric": "Mean Perplexity",
+        "value": 34.34,
+        "baseline_label": "NF4+DQ",
+        "baseline_value": 27.41,
+        "delta": 6.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Int4 | 34.34",
+        "bbox": [
+          371.67046875,
+          336.174609375,
+          500.90765625,
+          403.231640625
+        ],
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT/BLOOM/LLaMA/Pythia 125M-13B",
+        "method": "Float4 (E2M1)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Pile Common Crawl",
+        "metric": "Mean Perplexity",
+        "value": 31.07,
+        "baseline_label": "NF4+DQ",
+        "baseline_value": 27.41,
+        "delta": 3.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Float4 (E2M1) | 31.07",
+        "bbox": [
+          371.67046875,
+          336.174609375,
+          500.90765625,
+          403.231640625
+        ],
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT/BLOOM/LLaMA/Pythia 125M-13B",
+        "method": "Float4 (E3M0)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Pile Common Crawl",
+        "metric": "Mean Perplexity",
+        "value": 29.48,
+        "baseline_label": "NF4+DQ",
+        "baseline_value": 27.41,
+        "delta": 2.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "Float4 (E3M0) | 29.48",
+        "bbox": [
+          371.67046875,
+          336.174609375,
+          500.90765625,
+          403.231640625
+        ],
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "BF16 full finetuning",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Accuracy",
+        "value": 88.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "GLUE",
+        "metric": "Accuracy",
+        "value": 88.8,
+        "baseline_label": "BF16",
+        "baseline_value": 88.6,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "LoRA BF16 | 88.8",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "QLoRA-Int8",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "GLUE",
+        "metric": "Accuracy",
+        "value": 88.8,
+        "baseline_label": "BF16",
+        "baseline_value": 88.6,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA Int8 | 88.8",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-large",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "GLUE",
+        "metric": "Accuracy",
+        "value": 88.6,
+        "baseline_label": "BF16",
+        "baseline_value": 88.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA FP4 | 88.6",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-80M",
+        "method": "BF16 full finetuning",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 40.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6 | 40.1",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-80M",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 40.4,
+        "baseline_label": "BF16",
+        "baseline_value": 40.1,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA NF4 + DQ | - | 40.4",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-80M",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 40.3,
+        "baseline_label": "BF16",
+        "baseline_value": 40.1,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA FP4 | 88.6 | 40.3",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-80M",
+        "method": "QLoRA-Int8",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 40.4,
+        "baseline_label": "BF16",
+        "baseline_value": 40.1,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA Int8 | 88.8 | 40.4",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-250M",
+        "method": "BF16 full finetuning",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 42.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6 | 40.1 | 42.1",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-250M",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 42.7,
+        "baseline_label": "BF16",
+        "baseline_value": 42.1,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA NF4 + DQ | - | 40.4 | 42.7",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-780M",
+        "method": "BF16 full finetuning",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 48.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6 | 40.1 | 42.1 | 48.0",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-780M",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 47.7,
+        "baseline_label": "BF16",
+        "baseline_value": 48.0,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA NF4 + DQ | - | 40.4 | 42.7 | 47.7",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-3B",
+        "method": "BF16 full finetuning",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 54.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6 | 40.1 | 42.1 | 48.0 | 54.3",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-3B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 55.3,
+        "baseline_label": "BF16",
+        "baseline_value": 54.3,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA NF4 + DQ | - | 40.4 | 42.7 | 47.7 | 55.3",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-11B",
+        "method": "BF16 full finetuning",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 62.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "BF16 | 88.6 | 40.1 | 42.1 | 48.0 | 54.3 | 62.0",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "T5-11B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Super-NaturalInstructions",
+        "metric": "RougeL",
+        "value": 60.9,
+        "baseline_label": "BF16",
+        "baseline_value": 62.0,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 QLoRA vs. Standard Finetuning",
+        "quote": "QLORA NF4 + DQ | ... 60.9",
+        "bbox": [
+          106.3409765625,
+          107.639296875,
+          506.8543359375,
+          212.563828125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 38.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | 38.4 | 45.6",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 39.0,
+        "baseline_label": "BFloat16",
+        "baseline_value": 38.4,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | 39.0 | 44.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 37.2,
+        "baseline_label": "BFloat16",
+        "baseline_value": 38.4,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "Float4 | 37.2 | 44.0",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 45.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | 38.4 | 45.6",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 44.5,
+        "baseline_label": "BFloat16",
+        "baseline_value": 45.6,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | 39.0 | 44.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 47.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... 47.2 | 50.6",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 47.5,
+        "baseline_label": "BFloat16",
+        "baseline_value": 47.2,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... 47.5 | 50.7",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 47.3,
+        "baseline_label": "BFloat16",
+        "baseline_value": 47.2,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "Float4 | ... 47.3 | 50.0",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 50.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... 50.6",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 50.7,
+        "baseline_label": "BFloat16",
+        "baseline_value": 50.6,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... 50.7",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-33B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 57.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... 57.7 | 60.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-33B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 57.3,
+        "baseline_label": "BFloat16",
+        "baseline_value": 57.7,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... 57.3 | 59.2",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-33B",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 55.9,
+        "baseline_label": "BFloat16",
+        "baseline_value": 57.7,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "Float4 | ... 55.9 | 58.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-33B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 60.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... 60.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-33B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 59.2,
+        "baseline_label": "BFloat16",
+        "baseline_value": 60.5,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... 59.2",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 61.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... 61.8 | 62.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 61.8,
+        "baseline_label": "BFloat16",
+        "baseline_value": 61.8,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... 61.8 | 63.9",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Alpaca / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 61.3,
+        "baseline_label": "BFloat16",
+        "baseline_value": 61.8,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "Float4 | ... 61.3 | 63.3",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 62.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... 62.5",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "FLAN v2 / MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 63.9,
+        "baseline_label": "BFloat16",
+        "baseline_value": 62.5,
+        "delta": 1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... 63.9",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mean across LLaMA 7B-65B / Alpaca+FLANv2",
+        "method": "BFloat16 LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 53.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "BFloat16 | ... | 53.0",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mean across LLaMA 7B-65B / Alpaca+FLANv2",
+        "method": "QLoRA-NF4+DQ",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 53.1,
+        "baseline_label": "BFloat16",
+        "baseline_value": 53.0,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "NFloat4 + DQ | ... | 53.1",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mean across LLaMA 7B-65B / Alpaca+FLANv2",
+        "method": "QLoRA-FP4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 52.2,
+        "baseline_label": "BFloat16",
+        "baseline_value": 53.0,
+        "delta": -0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 Pushing the Chatbot State-of-the-art with QLoRA",
+        "quote": "Float4 | ... | 52.2",
+        "bbox": [
+          105.438515625,
+          109.16296875,
+          506.561484375,
+          177.00890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B (no tuning)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 35.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "LLaMA no tuning | 35.1 | 46.9 | 57.8 | 63.4",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B (no tuning)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 46.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "LLaMA no tuning | 35.1 | 46.9 | 57.8 | 63.4",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-33B (no tuning)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 57.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "LLaMA no tuning | ... 57.8 | 63.4",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B (no tuning)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 63.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "LLaMA no tuning | ... 63.4",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B (LLaMA OASST1)",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 62.2,
+        "baseline_label": "LLaMA-65B no tuning",
+        "baseline_value": 63.4,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "Guanaco (OASST1) | 36.6 | 46.4 | 57.0 | 62.2",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B FLAN v2",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 63.9,
+        "baseline_label": "LLaMA-65B no tuning",
+        "baseline_value": 63.4,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "FLAN v2 | 44.5 | 51.4 | 59.2 | 63.9",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B FLAN v2",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 44.5,
+        "baseline_label": "LLaMA-7B no tuning",
+        "baseline_value": 35.1,
+        "delta": 9.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "FLAN v2 | 44.5 | 51.4 | 59.2 | 63.9",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B Alpaca",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy",
+        "value": 38.8,
+        "baseline_label": "LLaMA-7B no tuning",
+        "baseline_value": 35.1,
+        "delta": 3.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Evaluation",
+        "quote": "Alpaca | 38.8 | 47.8 | 57.3 | 62.5",
+        "bbox": [
+          336.038203125,
+          580.240546875,
+          503.071171875,
+          682.009453125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 99.3,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Guanaco | 65B | 4-bit | 41 GB | 96.7% | 101.9% | 99.3% | 4.4%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-33B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 97.8,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -2.2,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Guanaco | 33B | 4-bit | 21 GB | 96.5% | 99.2% | 97.8% | 4.4%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-13B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 90.4,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -9.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Guanaco | 13B | 4-bit | 10 GB | 87.3% | 93.4% | 90.4% | 5.2%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-7B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 87.0,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -13.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Guanaco | 7B | 4-bit | 5 GB | 84.1% | 89.8% | 87.0% | 5.4%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Open Assistant 33B",
+        "method": "FP16 RLHF",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 94.9,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -5.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Open Assistant | 33B | 16-bit | 66 GB | 91.2% | 98.7% | 94.9% | 4.5%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "n/a",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Vicuna80 (human raters)",
+        "metric": "Elo rating",
+        "value": 1176,
+        "baseline_label": "Init Elo",
+        "baseline_value": 1000,
+        "delta": 176,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6 Qualitative Analysis",
+        "quote": "GPT-4 | 1176 | 1 | 1348 | 1 | 1294 | 1 | 1",
+        "bbox": [
+          122.51953125,
+          117.63984375,
+          488.28515625,
+          267.53203125
+        ],
+        "block_id": "/page/10/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna80 (human raters)",
+        "metric": "Elo rating",
+        "value": 1023,
+        "baseline_label": "ChatGPT-3.5",
+        "baseline_value": 916,
+        "delta": 107,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6 Qualitative Analysis",
+        "quote": "Guanaco-65B | 1023 | 2 | 1022 | 2 | 1008 | 3 | 2",
+        "bbox": [
+          122.51953125,
+          117.63984375,
+          488.28515625,
+          267.53203125
+        ],
+        "block_id": "/page/10/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna80 (GPT-4 judge)",
+        "metric": "Elo rating",
+        "value": 1022,
+        "baseline_label": "ChatGPT-3.5",
+        "baseline_value": 966,
+        "delta": 56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6 Qualitative Analysis",
+        "quote": "Guanaco-65B | 1023 | 2 | 1022 | 2 | 1008 | 3 | 2",
+        "bbox": [
+          122.51953125,
+          117.63984375,
+          488.28515625,
+          267.53203125
+        ],
+        "block_id": "/page/10/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-33B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna80 (GPT-4 judge)",
+        "metric": "Elo rating",
+        "value": 992,
+        "baseline_label": "ChatGPT-3.5",
+        "baseline_value": 966,
+        "delta": 26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6 Qualitative Analysis",
+        "quote": "Guanaco-33B | 1009 | 4 | 992 | 3 | 1002 | 4 | 4",
+        "bbox": [
+          122.51953125,
+          117.63984375,
+          488.28515625,
+          267.53203125
+        ],
+        "block_id": "/page/10/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "ChatGPT-3.5 Turbo",
+        "method": "n/a",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Vicuna80 (GPT-4 judge)",
+        "metric": "Elo rating",
+        "value": 966,
+        "baseline_label": "Init Elo",
+        "baseline_value": 1000,
+        "delta": -34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6 Qualitative Analysis",
+        "quote": "ChatGPT-3.5 Turbo | 916 | 7 | 966 | 5 | 1015 | 2 | 5",
+        "bbox": [
+          122.51953125,
+          117.63984375,
+          488.28515625,
+          267.53203125
+        ],
+        "block_id": "/page/10/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "OpenAssistant953 (GPT-4 judge)",
+        "metric": "Elo rating",
+        "value": 1008,
+        "baseline_label": "ChatGPT-3.5",
+        "baseline_value": 1015,
+        "delta": -7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "6 Qualitative Analysis",
+        "quote": "Guanaco-65B | ... | 1008 | 3 | 2",
+        "bbox": [
+          122.51953125,
+          117.63984375,
+          488.28515625,
+          267.53203125
+        ],
+        "block_id": "/page/10/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "65B Llama finetune",
+        "metric": "Memory footprint (GB)",
+        "value": 41,
+        "baseline_label": "FP16 65B",
+        "baseline_value": 130,
+        "delta": -89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "Guanaco 65B | 41 GB | 1022 \\pm 1",
+        "bbox": [
+          334.6456640625,
+          154.3471875,
+          491.3152734375,
+          267.9496875
+        ],
+        "block_id": "/page/1/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-7B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Inference deployment",
+        "metric": "Memory footprint (GB)",
+        "value": 5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "smallest Guanaco model (7B parameters) requires just 5 GB of memory and outperforms a 26 GB Alpaca model by more than 20 percentage points on the Vicuna benchmark",
+        "bbox": [
+          107.279296875,
+          278.82421875,
+          504.0928649902344,
+          299.8000793457031
+        ],
+        "block_id": "/page/1/Text/4",
+        "source_table": "prose"
+      }
+    },
+    {
+      "value": {
+        "model": "65B model",
+        "method": "Double Quantization",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "65B parameter model",
+        "metric": "Bits per parameter saved",
+        "value": 0.373,
+        "baseline_label": "Single quantization (32-bit constant)",
+        "baseline_value": 0.5,
+        "delta": -0.373,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "3 QLORA Finetuning",
+        "quote": "this quantization reduces the memory footprint per parameter from 32/64 = 0.5 bits, to 8/64 + 32/(64 \\cdot 256) = 0.127 bits, a reduction of 0.373 bits per parameter",
+        "bbox": [
+          105.75,
+          206.25,
+          506.25,
+          303.75
+        ],
+        "block_id": "/page/4/Text/2",
+        "source_table": "prose"
+      }
+    },
+    {
+      "value": {
+        "model": "Guanaco-65B",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "CrowS",
+        "metric": "Average bias score (lower is better)",
+        "value": 43.5,
+        "baseline_label": "LLaMA-65B",
+        "baseline_value": 66.6,
+        "delta": -23.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "7 Related Work",
+        "quote": "Average | 66.6 | 67.2 | 69.5 | 43.5",
+        "bbox": [
+          142.02703125,
+          100.384453125,
+          468.77765625,
+          235.287421875
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "QLoRA-NF4 train-on-target",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU (Mean across 4 datasets)",
+        "metric": "5-shot Accuracy",
+        "value": 38.6,
+        "baseline_label": "Train on source+target",
+        "baseline_value": 37.5,
+        "delta": 1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "B.3 Ablations",
+        "quote": "Train on target | 38.0 | 34.5 | 39.0 | 42.9 | 38.6",
+        "bbox": [
+          111.2537109375,
+          70.328671875,
+          498.3556640625,
+          115.296328125
+        ],
+        "block_id": "/page/23/Table/0",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "QLoRA-NF4 train-on-source+target",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU (Mean across 4 datasets)",
+        "metric": "5-shot Accuracy",
+        "value": 37.5,
+        "baseline_label": "Train on target only",
+        "baseline_value": 38.6,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "B.3 Ablations",
+        "quote": "Train on source and target | 36.2 | 33.7 | 38.1 | 42.0 | 37.5",
+        "bbox": [
+          111.2537109375,
+          70.328671875,
+          498.3556640625,
+          115.296328125
+        ],
+        "block_id": "/page/23/Table/0",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B FLAN v2 150k",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy (3 epochs, 150k samples)",
+        "value": 43.5,
+        "baseline_label": "FLAN v2 50k 3-epochs",
+        "baseline_value": 44.1,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "F Normality of Trained Neural Network Weights",
+        "quote": "150000 | 34.40 | 34.80 | 35.10 | 39.70 | 41.10 | 41.50 | 44.60 | 45.50 | 43.50 | 40.02",
+        "bbox": [
+          105.4265625,
+          647.44453125,
+          507.76875,
+          718.44609375
+        ],
+        "block_id": "/page/23/Table/15",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B Alpaca",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 64.4,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -35.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Alpaca | 7B | 4-bit | 5 GB | 57.3% | 71.2% | 64.4% | 5.0%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B Alpaca",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 69.4,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -30.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Alpaca | 13B | 4-bit | 10 GB | 63.8% | 76.7% | 69.4% | 4.2%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B Alpaca",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 70.7,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -29.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "Alpaca | 65B | 4-bit | 41 GB | 63.0% | 77.9% | 70.7% | 4.3%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B FLAN v2",
+        "method": "QLoRA-NF4",
+        "bit_width": "4-bit",
+        "group_size": "blocksize=64",
+        "dataset": "Vicuna",
+        "metric": "Mean % vs ChatGPT",
+        "value": 48.4,
+        "baseline_label": "ChatGPT",
+        "baseline_value": 100.0,
+        "delta": -51.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "5.3 Guanaco: QLORA trained on OASST1 is a State-of-the-art Chatbot",
+        "quote": "FLAN v2 | 65B | 4-bit | 41 GB | 37.0% | 59.6% | 48.4% | 4.6%",
+        "bbox": [
+          104.5241015625,
+          107.128828125,
+          507.4758984375,
+          343.011796875
+        ],
+        "block_id": "/page/9/Table/1",
+        "source_table": "Table 6"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 75,
+    "dropped_cited_count": 6,
+    "dropped_other_count": 0,
+    "headline_count": 7
   }
 }

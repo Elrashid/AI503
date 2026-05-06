@@ -1,0 +1,68 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP48,LLaMA-3-8B,FP16,16-bit,,WikiText2,Perplexity,6.14,,,,,False,measured,9,5 EXPERIMENTS,Table 2,16-16-16 | FloatingPoint | 68.09 | 6.14
+RP48,LLaMA-3-8B,FP16,16-bit,,Zero-Shot (9 tasks avg),Accuracy,68.09,,,,,False,measured,9,5 EXPERIMENTS,Table 2,16-16-16 | FloatingPoint | 68.09 | 6.14
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,WikiText2,Perplexity,6.53,FP16,6.14,0.39,absolute,True,measured,9,5 EXPERIMENTS,Table 2,"**OSTQuant** | **67.80** | **6.53** ... (W4-16-16 row, LLaMA-3 8B)"
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,Zero-Shot (9 tasks avg),Accuracy,67.8,FP16,68.09,-0.29,absolute,True,measured,9,5 EXPERIMENTS,Table 2,OSTQuant achieves only a 0.29-point performance drop in zero-shot evaluations
+RP48,LLaMA-3-8B,RTN,4-bit,,WikiText2,Perplexity,8.13,FP16,6.14,1.99,absolute,False,measured,9,5 EXPERIMENTS,Table 2,4-16-16 | RTN | 63.70 | 8.13
+RP48,LLaMA-3-8B,GPTQ,4-bit,,WikiText2,Perplexity,7.43,FP16,6.14,1.29,absolute,False,measured,9,5 EXPERIMENTS,Table 2,GPTQ | 61.03 | 7.43
+RP48,LLaMA-3-8B,AWQ,4-bit,,WikiText2,Perplexity,7.36,FP16,6.14,1.22,absolute,False,measured,9,5 EXPERIMENTS,Table 2,AWQ | 67.03 | 7.36
+RP48,LLaMA-3-8B,SmoothQuant,4-bit,,WikiText2,Perplexity,8.12,FP16,6.14,1.98,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SmoothQuant | 62.79 | 8.12
+RP48,LLaMA-3-8B,OmniQuant,4-bit,,WikiText2,Perplexity,7.19,FP16,6.14,1.05,absolute,False,measured,9,5 EXPERIMENTS,Table 2,Omniquant | 65.66 | 7.19
+RP48,LLaMA-3-8B,QuaRot,4-bit,,WikiText2,Perplexity,6.53,FP16,6.14,0.39,absolute,False,measured,9,5 EXPERIMENTS,Table 2,QuaRot | 67.27 | 6.53
+RP48,LLaMA-3-8B,SpinQuant,4-bit,,WikiText2,Perplexity,6.49,FP16,6.14,0.35,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SpinQuant | 66.54 | **6.49**
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,WikiText2,Perplexity,7.29,FP16,6.14,1.15,absolute,True,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.37** | **7.29** (W4A4KV4 row)
+RP48,LLaMA-3-8B,OSTQuant,4-bit,,Zero-Shot (9 tasks avg),Accuracy,65.37,FP16,68.09,-2.72,absolute,True,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.37** | **7.29** (W4A4KV4)
+RP48,LLaMA-3-8B,SpinQuant,4-bit,,WikiText2,Perplexity,7.35,FP16,6.14,1.21,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SpinQuant | 64.10 | 7.35 (W4A4KV4)
+RP48,LLaMA-3-8B,QuaRot,4-bit,,WikiText2,Perplexity,8.18,FP16,6.14,2.04,absolute,False,measured,9,5 EXPERIMENTS,Table 2,QuaRot | 61.38 | 8.18 (W4A4KV4)
+RP48,LLaMA-3-70B,FP16,16-bit,,WikiText2,Perplexity,2.86,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 73.81 | 2.86 (LLaMA-3 70B)
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,WikiText2,Perplexity,3.19,FP16,2.86,0.33,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **73.69** | **3.19** (W4-16-16 LLaMA-3 70B)
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,WikiText2,Perplexity,4.01,FP16,2.86,1.15,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **71.69** | **4.01** (W4A4KV4 LLaMA-3 70B)
+RP48,LLaMA-2-7B,FP16,16-bit,,WikiText2,Perplexity,5.47,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 65.21 | 5.47 (LLaMA-2 7B)
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2,Perplexity,5.64,FP16,5.47,0.17,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **64.37** | **5.64** (W4-16-16 LLaMA-2 7B)
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Zero-Shot (9 tasks avg),Accuracy,64.37,FP16,65.21,-0.84,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **64.37** | **5.64**
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2,Perplexity,5.91,FP16,5.47,0.44,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **63.18** | **5.91** (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-7B,SpinQuant,4-bit,,WikiText2,Perplexity,5.96,FP16,5.47,0.49,absolute,False,measured,9,5 EXPERIMENTS,Table 2,SpinQuant | 62.01 | 5.96 (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-7B,QuaRot,4-bit,,WikiText2,Perplexity,6.11,FP16,5.47,0.64,absolute,False,measured,9,5 EXPERIMENTS,Table 2,QuaRot | 61.48 | 6.11 (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-7B,OmniQuant,4-bit,,WikiText2,Perplexity,14.26,FP16,5.47,8.79,absolute,False,measured,9,5 EXPERIMENTS,Table 2,Omniquant | 48.40 | 14.26 (W4A4KV4 LLaMA-2 7B)
+RP48,LLaMA-2-13B,FP16,16-bit,,WikiText2,Perplexity,4.88,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 67.61 | 4.88 (LLaMA-2 13B)
+RP48,LLaMA-2-13B,OSTQuant,4-bit,,WikiText2,Perplexity,4.94,FP16,4.88,0.06,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **67.31** | **4.94** (W4-16-16 LLaMA-2 13B)
+RP48,LLaMA-2-13B,OSTQuant,4-bit,,WikiText2,Perplexity,5.25,FP16,4.88,0.37,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.41** | **5.25** (W4A4KV4 LLaMA-2 13B)
+RP48,LLaMA-2-70B,FP16,16-bit,,WikiText2,Perplexity,3.32,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 71.59 | 3.32 (LLaMA-2 70B)
+RP48,LLaMA-2-70B,OSTQuant,4-bit,,WikiText2,Perplexity,3.41,FP16,3.32,0.09,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **71.48** | **3.41** (W4-16-16 LLaMA-2 70B)
+RP48,LLaMA-2-70B,OSTQuant,4-bit,,WikiText2,Perplexity,3.59,FP16,3.32,0.27,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **70.84** | **3.59** (W4A4KV4 LLaMA-2 70B)
+RP48,LLaMA-7B,FP16,16-bit,,WikiText2,Perplexity,5.68,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 64.48 | 5.68 (LLaMA 7B)
+RP48,LLaMA-7B,OSTQuant,4-bit,,WikiText2,Perplexity,5.81,FP16,5.68,0.13,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **64.13** | **5.81** (W4-16-16 LLaMA 7B)
+RP48,LLaMA-7B,OSTQuant,4-bit,,WikiText2,Perplexity,6.07,FP16,5.68,0.39,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **62.55** | **6.07** (W4A4KV4 LLaMA 7B)
+RP48,LLaMA-13B,FP16,16-bit,,WikiText2,Perplexity,5.09,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 66.67 | 5.09 (LLaMA 13B)
+RP48,LLaMA-13B,OSTQuant,4-bit,,WikiText2,Perplexity,5.21,FP16,5.09,0.12,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **66.62** | **5.21** (W4-16-16 LLaMA 13B)
+RP48,LLaMA-13B,OSTQuant,4-bit,,WikiText2,Perplexity,5.4,FP16,5.09,0.31,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **65.43** | **5.40** (W4A4KV4 LLaMA 13B)
+RP48,LLaMA-30B,FP16,16-bit,,WikiText2,Perplexity,4.1,,,,,False,measured,9,5 EXPERIMENTS,Table 2,FloatingPoint | 70.00 | 4.10 (LLaMA 30B)
+RP48,LLaMA-30B,OSTQuant,4-bit,,WikiText2,Perplexity,4.19,FP16,4.1,0.09,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **69.84** | **4.19** (W4-16-16 LLaMA 30B)
+RP48,LLaMA-30B,OSTQuant,4-bit,,WikiText2,Perplexity,4.42,FP16,4.1,0.32,absolute,False,measured,9,5 EXPERIMENTS,Table 2,**OSTQuant** | **68.20** | **4.42** (W4A4KV4 LLaMA 30B)
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Prefill Speedup over FP16,2.14,FP16,1.0,1.14,x_factor,False,measured,9,5 EXPERIMENTS,Table 3,7B | 2.24x | 2.27x | 2.23x | 2.14x | 2.11x | 2.02x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Memory Saving Factor over FP16,2.86,FP16,1.0,1.86,x_factor,False,measured,9,5 EXPERIMENTS,Table 3,7B | ... | 3.48x | 3.34x | 3.12x | 2.86x | 2.57x | 2.34x
+RP48,LLaMA-30B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Prefill Speedup over FP16,3.4,FP16,1.0,2.4,x_factor,True,measured,9,5 EXPERIMENTS,Table 3,30B | 3.18x | 3.01x | 2.98x | 3.40x | 2.84x | 2.68x
+RP48,LLaMA-30B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Memory Saving Factor over FP16,3.15,FP16,1.0,2.15,x_factor,False,measured,9,5 EXPERIMENTS,Table 3,30B | ... | 3.70x | 3.59x | 3.42x | 3.15x | 2.83x | 2.53x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Prefill Latency (ms),25.312,FP16,54.276,-28.964,absolute,False,measured,17,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 9,LLaMA2-7B | ... 2048 | 54.276ms | 25.312ms | 2.144x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,3090 GPU (seqlen 2048),Memory (GB),0.202,FP16,0.577,-0.375,absolute,False,measured,17,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 9,2048 | 54.276ms | 25.312ms | 2.144x | 0.577GB | 0.202GB | 2.857x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Decoding (single GPU),Decoder Speed (tokens/sec),89.4,FP16,47.32,42.08,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-2-7B | 47.32 | 89.4 | 1.89x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Decoding (single GPU),Decoder Speedup over FP16,1.89,FP16,1.0,0.89,x_factor,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-2-7B | 47.32 | 89.4 | 1.89x | 13.94 | 4.32 | 3.23x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,Decoding (single GPU),Memory (GB),4.32,FP16,13.94,-9.62,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-2-7B | ... | 13.94 | 4.32 | 3.23x
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,A6000 GPU (decoding),Decoder Speed (tokens/sec),14.68,FP16,,,,True,measured,17,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,even a single A6000 GPU can successfully run LLaMA-3-70B at a speed of 15 tokens per second after quantization
+RP48,LLaMA-3-70B,OSTQuant,4-bit,,A6000 GPU (decoding),Memory (GB),38.41,,,,,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 10,LLaMA-3-70B | OOM | 14.68 | - | OOM | 38.41 | -
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2 calibration,Quantization Time (hours),0.3,OmniQuant,1.6,-1.3,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 11,Omniquant | 1.6h ... OSTQuant | 0.3h ... Speedup | 5.3x
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2 calibration,Quantization Speedup over OmniQuant,5.3,OmniQuant,1.0,4.3,x_factor,True,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 11,Speedup | 5.3x | 4.5x | 4.1x | 3.3x | 1.7x
+RP48,LLaMA-2-70B,OSTQuant,4-bit,,WikiText2 calibration,Quantization Time (hours),5.5,OmniQuant,9.5,-4.0,absolute,False,measured,18,A.4 INFERENCE EFFICIENCY AND QUANTIZATION OVERHEAD,Table 11,Omniquant | ... 9.5h | OSTQuant | ... 5.5h
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,WikiText2,Perplexity (Origin loss),5.38,FP16,5.47,-0.09,absolute,False,measured,8,4.2 KL-Top Loss.,Table 1,LLaMA-2-7B | Origin | **5.38** | 69.87 | 42.41
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,ARC-Easy,Accuracy (KL-Top),72.69,Origin loss,69.87,2.82,absolute,False,measured,8,4.2 KL-Top Loss.,Table 1,KL-Top | 5.94 | **72.69** | **44.62**
+RP48,LLaMA-2-7B,OSTQuant,4-bit,,ARC-Challenge,Accuracy (KL-Top),44.62,Origin loss,42.41,2.21,absolute,False,measured,8,4.2 KL-Top Loss.,Table 1,KL-Top | 5.94 | **72.69** | **44.62**
+RP48,LLaMA-2-7B,OSTQuant (W3-only k=1000),3-bit,,WikiText2,Perplexity,6.06,FP16,5.47,0.59,absolute,False,measured,10,5.2 Ablation Study,Table 6,W3 Only | Zero-Shot9 ScoreWiki PPL | ... | **62.30****6.06** (k=1000)
+RP48,LLaMA-2-7B,OSTQuant (W3-only k=1000),3-bit,,Zero-Shot (9 tasks avg),Accuracy,62.3,FP16,65.21,-2.91,absolute,False,measured,10,5.2 Ablation Study,Table 6,"W3 Only | ... **62.30****6.06** (k=1000, LLaMA-2 7B)"
+RP48,LLaMA-2-7B,OSTQuant (Cayley SGD),4-bit,,Zero-Shot (9 tasks avg),Accuracy,63.11,FP16,65.21,-2.1,absolute,False,measured,10,5.2 Ablation Study,Table 5,LLaMA-2-7B | Cayley SGD | 150 | 1.50 | 0.20 | 63.11
+RP48,LLaMA-2-7B,OSTQuant (RiemannAdam),4-bit,,Zero-Shot (9 tasks avg),Accuracy,63.18,FP16,65.21,-2.03,absolute,False,measured,10,5.2 Ablation Study,Table 5,Riemann Adam | 150 | 0.02 | 1e-3 | **63.18**
+RP48,LLaMA-2-13B,OSTQuant (RiemannAdam),4-bit,,Zero-Shot (9 tasks avg),Accuracy,65.41,FP16,67.61,-2.2,absolute,False,measured,10,5.2 Ablation Study,Table 5,Riemann Adam | 150 | 0.02 | 0.002 | **65.41**
+RP48,LLaMA-2-7B,OSTQuant (Hadamard init),4-bit,,WikiText2,Perplexity,5.62,FP16,5.47,0.15,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A16KV16 | Hadamard | 63.32 | 5.62
+RP48,LLaMA-2-7B,OSTQuant (WOMI init),4-bit,,WikiText2,Perplexity,5.59,FP16,5.47,0.12,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A16KV16 | WOMI | 63.45 | 5.59
+RP48,LLaMA-2-7B,OSTQuant (Hadamard init),4-bit,,WikiText2,Perplexity,6.11,FP16,5.47,0.64,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A4KV4 | Hadamard | 61.47 | 6.11
+RP48,LLaMA-2-7B,OSTQuant (WOMI init),4-bit,,WikiText2,Perplexity,6.09,FP16,5.47,0.62,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A4KV4 | WOMI | 61.52 | 6.09
+RP48,LLaMA-3-8B,OSTQuant (WOMI init),4-bit,,WikiText2,Perplexity,6.48,FP16,6.14,0.34,absolute,False,measured,16,A.3.1 THE EFFECT OF WEIGHT OUTLIER MINIMIZATION INITIALIZATION,Table 7,W4A16KV16 | WOMI | 67.41 | 6.48 (LLaMA-3-8B)

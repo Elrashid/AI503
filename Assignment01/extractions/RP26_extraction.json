@@ -1136,5 +1136,2085 @@
         "block_id": "/page/3/Text/4"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 52.1,
+        "baseline_label": "FP16",
+        "baseline_value": 53.6,
+        "delta": -1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 53.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "AdvGLUE++",
+        "metric": "Accuracy",
+        "value": 34.1,
+        "baseline_label": "FP16",
+        "baseline_value": 37.4,
+        "delta": -3.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "AdvGLUE++",
+        "metric": "Accuracy",
+        "value": 37.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "OOD Robustness Score",
+        "value": 54.1,
+        "baseline_label": "FP16",
+        "baseline_value": 58.8,
+        "delta": -4.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "OOD Robustness Score",
+        "value": 58.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-AdvDemo",
+        "metric": "Adv Demo Score",
+        "value": 66.4,
+        "baseline_label": "FP16",
+        "baseline_value": 66.4,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-AdvDemo",
+        "metric": "Adv Demo Score",
+        "value": 66.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score",
+        "value": 76.2,
+        "baseline_label": "FP16",
+        "baseline_value": 62.3,
+        "delta": 13.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score",
+        "value": 62.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Fairness Score",
+        "value": 88.0,
+        "baseline_label": "FP16",
+        "baseline_value": 82.2,
+        "delta": 5.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Fairness Score",
+        "value": 82.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Toxicity Score",
+        "value": 77.2,
+        "baseline_label": "FP16",
+        "baseline_value": 80.9,
+        "delta": -3.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Toxicity Score",
+        "value": 80.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Privacy",
+        "metric": "Privacy Score",
+        "value": 93.3,
+        "baseline_label": "FP16",
+        "baseline_value": 95.7,
+        "delta": -2.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Privacy",
+        "metric": "Privacy Score",
+        "value": 95.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Stereotype",
+        "metric": "Stereotype Score",
+        "value": 94.3,
+        "baseline_label": "FP16",
+        "baseline_value": 97.7,
+        "delta": -3.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 4 | GPTQ | 52.1 | 34.1 | 54.1 | 66.4 | 76.2 | 88.0 | 77.2 | 93.3 | 94.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Stereotype",
+        "metric": "Stereotype Score",
+        "value": 97.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "13b | 16 | none | 53.6 | 37.4 | 58.8 | 66.4 | 62.3 | 82.2 | 80.9 | 95.7 | 97.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 62.2,
+        "baseline_label": "FP16",
+        "baseline_value": 63.1,
+        "delta": -0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 63.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "AdvGLUE++",
+        "metric": "Accuracy",
+        "value": 48.3,
+        "baseline_label": "FP16",
+        "baseline_value": 52.0,
+        "delta": -3.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "AdvGLUE++",
+        "metric": "Accuracy",
+        "value": 52.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "OOD Robustness Score",
+        "value": 71.5,
+        "baseline_label": "FP16",
+        "baseline_value": 71.4,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "OOD Robustness Score",
+        "value": 71.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-AdvDemo",
+        "metric": "Adv Demo Score",
+        "value": 74.2,
+        "baseline_label": "FP16",
+        "baseline_value": 75.0,
+        "delta": -0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-AdvDemo",
+        "metric": "Adv Demo Score",
+        "value": 75.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score",
+        "value": 71.1,
+        "baseline_label": "FP16",
+        "baseline_value": 54.2,
+        "delta": 16.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score",
+        "value": 54.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Fairness Score",
+        "value": 67.4,
+        "baseline_label": "FP16",
+        "baseline_value": 65.3,
+        "delta": 2.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Fairness Score",
+        "value": 65.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Toxicity Score",
+        "value": 77.8,
+        "baseline_label": "FP16",
+        "baseline_value": 80.9,
+        "delta": -3.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Toxicity Score",
+        "value": 80.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Privacy",
+        "metric": "Privacy Score",
+        "value": 98.1,
+        "baseline_label": "FP16",
+        "baseline_value": 99.3,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Privacy",
+        "metric": "Privacy Score",
+        "value": 99.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Stereotype",
+        "metric": "Stereotype Score",
+        "value": 98.7,
+        "baseline_label": "FP16",
+        "baseline_value": 98.3,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 4 | GPTQ | 62.2 | 48.3 | 71.5 | 74.2 | 71.1 | 67.4 | 77.8 | 98.1 | 98.7",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Stereotype",
+        "metric": "Stereotype Score",
+        "value": 98.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "70b | 16 | none | 63.1 | 52.0 | 71.4 | 75.0 | 54.2 | 65.3 | 80.9 | 99.3 | 98.3",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 45.6,
+        "baseline_label": "FP16",
+        "baseline_value": 47.2,
+        "delta": -1.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 47.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "AdvGLUE++",
+        "metric": "Accuracy",
+        "value": 52.2,
+        "baseline_label": "FP16",
+        "baseline_value": 46.5,
+        "delta": 5.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "AdvGLUE++",
+        "metric": "Accuracy",
+        "value": 46.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "OOD Robustness Score",
+        "value": 61.1,
+        "baseline_label": "FP16",
+        "baseline_value": 66.8,
+        "delta": -5.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "OOD Robustness Score",
+        "value": 66.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-AdvDemo",
+        "metric": "Adv Demo Score",
+        "value": 53.0,
+        "baseline_label": "FP16",
+        "baseline_value": 57.1,
+        "delta": -4.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-AdvDemo",
+        "metric": "Adv Demo Score",
+        "value": 57.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score",
+        "value": 43.9,
+        "baseline_label": "FP16",
+        "baseline_value": 56.8,
+        "delta": -12.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score",
+        "value": 56.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Fairness Score",
+        "value": 79.7,
+        "baseline_label": "FP16",
+        "baseline_value": 88.3,
+        "delta": -8.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Fairness Score",
+        "value": 88.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Toxicity Score",
+        "value": 79.4,
+        "baseline_label": "FP16",
+        "baseline_value": 79.8,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Toxicity Score",
+        "value": 79.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Privacy",
+        "metric": "Privacy Score",
+        "value": 98.4,
+        "baseline_label": "FP16",
+        "baseline_value": 99.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Privacy",
+        "metric": "Privacy Score",
+        "value": 99.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Stereotype",
+        "metric": "Stereotype Score",
+        "value": 90.0,
+        "baseline_label": "FP16",
+        "baseline_value": 90.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 4 | GPTQ | 45.6 | 52.2 | 61.1 | 53.0 | 43.9 | 79.7 | 79.4 | 98.4 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Stereotype",
+        "metric": "Stereotype Score",
+        "value": 90.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "7b | 16 | none | 47.2 | 46.5 | 66.8 | 57.1 | 56.8 | 88.3 | 79.8 | 99.0 | 90.0",
+        "bbox": [
+          48.3384375,
+          81.84515625,
+          543.34125,
+          174.93609375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 2.89,
+        "baseline_label": "FP16",
+        "baseline_value": 7.0,
+        "delta": -4.11,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "GPTQ | 2.89 | 6.55 | 6.85 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 6.55,
+        "baseline_label": "FP16",
+        "baseline_value": 7.0,
+        "delta": -0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "GPTQ | 2.89 | 6.55 | 6.85 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 6.85,
+        "baseline_label": "FP16",
+        "baseline_value": 7.0,
+        "delta": -0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "GPTQ | 2.89 | 6.55 | 6.85 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 7.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "GPTQ | 2.89 | 6.55 | 6.85 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 6.42,
+        "baseline_label": "FP16",
+        "baseline_value": 7.0,
+        "delta": -0.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "AWQ | 6.42 | 6.73 | 6.99 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 6.73,
+        "baseline_label": "FP16",
+        "baseline_value": 7.0,
+        "delta": -0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "AWQ | 6.42 | 6.73 | 6.99 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score (1-10)",
+        "value": 6.99,
+        "baseline_label": "FP16",
+        "baseline_value": 7.0,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C.1. AdvGLUE++",
+        "quote": "AWQ | 6.42 | 6.73 | 6.99 | 7.00",
+        "bbox": [
+          92.887734375,
+          363.06703125,
+          250.166953125,
+          408.82359375
+        ],
+        "block_id": "/page/15/Table/6",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score (text)",
+        "value": 76.3,
+        "baseline_label": "FP16",
+        "baseline_value": 54.1,
+        "delta": 22.2,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness",
+        "quote": "the model will emerge to improve the Ethics ability from 54.1 to 76.3 (GPTQ) or 62.8 (AWQ)",
+        "bbox": [
+          54.087890625,
+          288.87890625,
+          291.0976867675781,
+          418.5890808105469
+        ],
+        "block_id": "/page/6/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Ethics",
+        "metric": "Ethics Score (text)",
+        "value": 62.8,
+        "baseline_label": "FP16",
+        "baseline_value": 54.1,
+        "delta": 8.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness",
+        "quote": "improve the Ethics ability from 54.1 to 76.3 (GPTQ) or 62.8 (AWQ)",
+        "bbox": [
+          54.087890625,
+          288.87890625,
+          291.0976867675781,
+          418.5890808105469
+        ],
+        "block_id": "/page/6/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "EOD reduction (16-shot)",
+        "value": 0.2,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.1. Finding the Essential Compression Rates and Induced Gains for Trustworthiness",
+        "quote": "quantization models can significantly reduce EOD in few-shot settings (over 0.2 reduction in the 16-shot setting)",
+        "bbox": [
+          305.701171875,
+          394.06640625,
+          543.1985473632812,
+          560.1080780029297
+        ],
+        "block_id": "/page/6/Text/10",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Toxicity",
+        "metric": "Trustworthiness drop (worst-case)",
+        "value": 50.0,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": -50.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. The Losses on the Extreme Compression Rate",
+        "quote": "OOD robustness and Toxicity performances of GPTQ are degraded with about 30-point and 50-point drops, respectively",
+        "bbox": [
+          54.0,
+          235.125,
+          291.75,
+          519.0
+        ],
+        "block_id": "/page/7/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-OOD",
+        "metric": "Trustworthiness drop",
+        "value": 30.0,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": -30.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. The Losses on the Extreme Compression Rate",
+        "quote": "OOD robustness and Toxicity performances of GPTQ are degraded with about 30-point and 50-point drops, respectively",
+        "bbox": [
+          54.0,
+          235.125,
+          291.75,
+          519.0
+        ],
+        "block_id": "/page/7/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "DecodingTrust-Fairness",
+        "metric": "Trustworthiness drop (worst-case)",
+        "value": 10.0,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": -10.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. The Losses on the Extreme Compression Rate",
+        "quote": "The worst case for AWQ is about a 10-point drop in Fairness",
+        "bbox": [
+          54.0,
+          235.125,
+          291.75,
+          519.0
+        ],
+        "block_id": "/page/7/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy drop",
+        "value": 8.0,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": -8.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. The Losses on the Extreme Compression Rate",
+        "quote": "an adversary may quantize an LLM to break the alignment at a moderate cost of benign performance (about an 8-point drop in MMLU)",
+        "bbox": [
+          54.0,
+          235.125,
+          291.75,
+          519.0
+        ],
+        "block_id": "/page/7/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy drop",
+        "value": 3.0,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": -3.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2. The Losses on the Extreme Compression Rate",
+        "quote": "AWQ is a more reliable choice by a 3-point drop only than the GPTQ",
+        "bbox": [
+          54.0,
+          235.125,
+          291.75,
+          519.0
+        ],
+        "block_id": "/page/7/Text/3",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 69,
+    "dropped_cited_count": 1,
+    "dropped_other_count": 0,
+    "headline_count": 4
   }
 }

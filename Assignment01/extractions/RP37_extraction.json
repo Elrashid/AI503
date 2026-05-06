@@ -1157,5 +1157,2745 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Speedup over Naive (CPU)",
+        "value": 4.75,
+        "baseline_label": "Naive (FP16)",
+        "baseline_value": 1.0,
+        "delta": 3.75,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Naive | CPU | 2196 | 0 | 986 | 3182 ... OPT 6.7B | All | CPU | 105 | 58 | 506 | 669",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Speedup over Naive (GPU)",
+        "value": 26.4,
+        "baseline_label": "Naive (FP16)",
+        "baseline_value": 1.0,
+        "delta": 25.4,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Naive | GPU | 2196 | 0 | 22 | 2218 ... OPT 6.7B | All | GPU | 30 | 34 | 20 | 84",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 3182,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Naive | CPU | 2196 | 0 | 986 | 3182",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 669,
+        "baseline_label": "Naive",
+        "baseline_value": 3182,
+        "delta": -2513,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | All | CPU | 105 | 58 | 506 | 669",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms/token)",
+        "value": 105,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -2091,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | All | CPU | 105 | 58 | 506 | 669",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Metal M1",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 2389,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Naive | Metal M1 | 2196 | 0 | 193 | 2389",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Metal M1",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 565,
+        "baseline_label": "Naive",
+        "baseline_value": 2389,
+        "delta": -1824,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | All | Metal M1 | 92 | 35 | 438 | 565",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Metal M2 Ultra",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 2270,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Naive | Metal M2 | 2145 | 0 | 125 | 2270",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Metal M2 Ultra",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 305,
+        "baseline_label": "Naive",
+        "baseline_value": 2270,
+        "delta": -1965,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | All | Metal M2 | 26 | 8 | 271 | 305",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 2218,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Naive | GPU | 2196 | 0 | 22 | 2218",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 84,
+        "baseline_label": "Naive",
+        "baseline_value": 2218,
+        "delta": -2134,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | All | GPU | 30 | 34 | 20 | 84",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference + Speculative Decoding",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 60,
+        "baseline_label": "All (no speculative)",
+        "baseline_value": 84,
+        "delta": -24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | Speculative | GPU | 38.5 | 9.5 | 12 | 60",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Speculative Decoding (in-flash)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Speedup from Speculative",
+        "value": 1.4,
+        "baseline_label": "All",
+        "baseline_value": 1.0,
+        "delta": 0.4,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Speculative Decoding",
+        "quote": "We used lambda = 4 and were able to improve the speed of decoding by 1.4x as shown in table 5",
+        "bbox": [
+          304.7556675062972,
+          520.0830078125,
+          528.4433249370277,
+          774.520035618878
+        ],
+        "block_id": "/page/7/Text/14",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 3095,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Falcon 7B | Naive | CPU | 2295 | 0 | 800 | 3095",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Hybrid",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 1947,
+        "baseline_label": "Naive",
+        "baseline_value": 3095,
+        "delta": -1148,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Falcon 7B | Hybrid | CPU | 1147 | 0 | 800 | 1947",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 706,
+        "baseline_label": "Naive",
+        "baseline_value": 3095,
+        "delta": -2389,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Falcon 7B | All | CPU | 161 | 92 | 453 | 706",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Speedup over Naive (CPU)",
+        "value": 4.38,
+        "baseline_label": "Naive",
+        "baseline_value": 1.0,
+        "delta": 3.38,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "C.2 Results for Falcon 7B Model",
+        "quote": "the baseline latency is around 2196 milliseconds, making our method approximately 9 to 10 times faster",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 3806,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Persimmon 8B | Naive | CPU | 2622 | 0 | 1184 | 3806",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Hybrid",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 2495,
+        "baseline_label": "Naive",
+        "baseline_value": 3806,
+        "delta": -1311,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Persimmon 8B | Hybrid | CPU | 1311 | 0 | 1184 | 2495",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 1041,
+        "baseline_label": "Naive",
+        "baseline_value": 3806,
+        "delta": -2765,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Persimmon 8B | All | CPU | 283 | 98 | 660 | 1041",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 1287,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Phi-2 2.7B | Naive | CPU | 885 | 0 | 402 | 1287",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "Hybrid",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 711,
+        "baseline_label": "Naive",
+        "baseline_value": 1287,
+        "delta": -576,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Phi-2 2.7B | Hybrid | CPU | 309 | 0 | 402 | 711",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 546,
+        "baseline_label": "Naive",
+        "baseline_value": 1287,
+        "delta": -741,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Phi-2 2.7B | All | CPU | 211 | 76 | 259 | 546",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Speedup over Naive (CPU)",
+        "value": 2.35,
+        "baseline_label": "Naive",
+        "baseline_value": 1.0,
+        "delta": 1.35,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "C.4 Phi-2",
+        "quote": "Phi-2 gets 2.35x speedup over naive baseline as it can be seen in table 3",
+        "bbox": [
+          304.7556675062972,
+          587.09765625,
+          526.9420654911838,
+          625.3143365983972
+        ],
+        "block_id": "/page/17/Text/14",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 3095,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Llama 2 7B | Naive | CPU | 2166 | 0 | 929 | 3095",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "Hybrid",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 1903,
+        "baseline_label": "Naive",
+        "baseline_value": 3095,
+        "delta": -1192,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Llama 2 7B | Hybrid | CPU | 974 | 0 | 929 | 1903",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency (ms/token)",
+        "value": 994,
+        "baseline_label": "Naive",
+        "baseline_value": 3095,
+        "delta": -2101,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "Llama 2 7B | All | CPU | 279 | 152 | 563 | 994",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Speedup over Naive (CPU)",
+        "value": 3.0,
+        "baseline_label": "Naive",
+        "baseline_value": 1.0,
+        "delta": 2.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "C.5 Llama 2",
+        "quote": "LLM in flash gets 3x speed up over naive baseline (Table 3)",
+        "bbox": [
+          69.05793450881612,
+          305.060546875,
+          291.24433249370276,
+          369.640249332146
+        ],
+        "block_id": "/page/18/Text/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive (no optim)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms)",
+        "value": 2196,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "× | × | × | × | 0 | 13.4 GB | 6.10 GB/s | 2196 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Hybrid",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms)",
+        "value": 1090,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -1106,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "✓ | × | × | × | 6.7 | 6.7 GB | 6.10 GB/s | 1090 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Hybrid + Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms)",
+        "value": 738,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -1458,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "✓ | ✓ | × | × | 4.8 | 0.9 GB | 1.25 GB/s | 738 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Hybrid + Predictor + Windowing",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms)",
+        "value": 164,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -2032,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "✓ | ✓ | ✓ | × | 6.5 | 0.2 GB | 1.25 GB/s | 164 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Hybrid + Predictor + Windowing + Bundling",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms)",
+        "value": 87,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -2109,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "✓ | ✓ | ✓ | ✓ | 6.5 | 0.2 GB | 2.25 GB/s | 87 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Flash to DRAM Transfer (GB)",
+        "value": 13.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "× | × | × | × | 0 | 13.4 GB | 6.10 GB/s | 2196 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Hybrid + Predictor + Windowing + Bundling",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Flash to DRAM Transfer (GB)",
+        "value": 0.2,
+        "baseline_label": "Naive",
+        "baseline_value": 13.4,
+        "delta": -13.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "✓ | ✓ | ✓ | ✓ | 6.5 | 0.2 GB | 2.25 GB/s | 87 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Naive",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Throughput (GB/s)",
+        "value": 6.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "× | × | × | × | 0 | 13.4 GB | 6.10 GB/s | 2196 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Hybrid + Predictor + Windowing + Bundling",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Throughput (GB/s)",
+        "value": 2.25,
+        "baseline_label": "Sparse w/o bundling",
+        "baseline_value": 1.25,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.1 Experimental Setup",
+        "quote": "✓ | ✓ | ✓ | ✓ | 6.5 | 0.2 GB | 2.25 GB/s | 87 ms",
+        "bbox": [
+          69.44796875,
+          124.1127734375,
+          525.38796875,
+          213.0161328125
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FP16 (uncached read)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Linear Read Throughput (GiB/s)",
+        "value": 6.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "2.2 Read Throughput",
+        "quote": "benchmarks on an Apple MacBook M1 Max with 1TB flash memory demonstrate speeds exceeding 6 GiB/s for a 1GiB linear read of an uncached file",
+        "bbox": [
+          304.7556675062972,
+          601.3214603739982,
+          527.6926952141058,
+          747.5280498664292
+        ],
+        "block_id": "/page/1/Text/15",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 66.2,
+        "baseline_label": "OPT-6.7B (no predictor)",
+        "baseline_value": 66.1,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Reducing Data Transfer",
+        "quote": "Arc Easy | 66.1 | 66.2",
+        "bbox": [
+          80.122421875,
+          345.17888671875,
+          278.408828125,
+          404.72736328125
+        ],
+        "block_id": "/page/3/Table/4",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 30.6,
+        "baseline_label": "OPT-6.7B (no predictor)",
+        "baseline_value": 30.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Reducing Data Transfer",
+        "quote": "Arc Challenge | 30.6 | 30.6",
+        "bbox": [
+          80.122421875,
+          345.17888671875,
+          278.408828125,
+          404.72736328125
+        ],
+        "block_id": "/page/3/Table/4",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 49.8,
+        "baseline_label": "OPT-6.7B (no predictor)",
+        "baseline_value": 50.3,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Reducing Data Transfer",
+        "quote": "HellaSwag | 50.3 | 49.8",
+        "bbox": [
+          80.122421875,
+          345.17888671875,
+          278.408828125,
+          404.72736328125
+        ],
+        "block_id": "/page/3/Table/4",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "FP16 (no predictor)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 72.52,
+        "baseline_label": "Falcon-7B base",
+        "baseline_value": 74.62,
+        "delta": -2.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied | - | - | - | 72.52 | 38.23 | 54.17",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "FP16 (no predictor)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 38.23,
+        "baseline_label": "Falcon-7B base",
+        "baseline_value": 40.05,
+        "delta": -1.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied | - | - | - | 72.52 | 38.23 | 54.17",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "FP16 (no predictor)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 54.17,
+        "baseline_label": "Falcon-7B base",
+        "baseline_value": 57.77,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied | - | - | - | 72.52 | 38.23 | 54.17",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Predictor (rank 128/128)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 70.2,
+        "baseline_label": "Falcon-7B relufied",
+        "baseline_value": 72.52,
+        "delta": -2.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied with predictors | 128 | 128 | 0.50 | 70.20 | 35.41 | 50.74",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Predictor (rank 128/128)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 35.41,
+        "baseline_label": "Falcon-7B relufied",
+        "baseline_value": 38.23,
+        "delta": -2.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied with predictors | 128 | 128 | 0.50 | 70.20 | 35.41 | 50.74",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Predictor (rank 128/128)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 50.74,
+        "baseline_label": "Falcon-7B relufied",
+        "baseline_value": 54.17,
+        "delta": -3.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied with predictors | 128 | 128 | 0.50 | 70.20 | 35.41 | 50.74",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Predictor (rank 1152/256)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 72.35,
+        "baseline_label": "Falcon-7B relufied",
+        "baseline_value": 72.52,
+        "delta": -0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied with predictors | 1152 | 256 | 0.50 | 72.35 | 36.35 | 53.16",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Predictor (rank 1152/256)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 36.35,
+        "baseline_label": "Falcon-7B relufied",
+        "baseline_value": 38.23,
+        "delta": -1.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied with predictors | 1152 | 256 | 0.50 | 72.35 | 36.35 | 53.16",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Predictor (rank 1152/256)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 53.16,
+        "baseline_label": "Falcon-7B relufied",
+        "baseline_value": 54.17,
+        "delta": -1.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Falcon 7B relufied with predictors | 1152 | 256 | 0.50 | 72.35 | 36.35 | 53.16",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "FP16 (no predictor)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 67.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B | - | - | - | 67.80 | 34.64 | 50.70",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "FP16 (no predictor)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 34.64,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B | - | - | - | 67.80 | 34.64 | 50.70",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "FP16 (no predictor)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 50.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B | - | - | - | 67.80 | 34.64 | 50.70",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor (256/256, thr 0.5)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 67.26,
+        "baseline_label": "Persimmon-8B base",
+        "baseline_value": 67.8,
+        "delta": -0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B with predictors | 256 | 256 | 0.5 | 67.26 | 33.87 | 50.51",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor (256/256, thr 0.5)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 33.87,
+        "baseline_label": "Persimmon-8B base",
+        "baseline_value": 34.64,
+        "delta": -0.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B with predictors | 256 | 256 | 0.5 | 67.26 | 33.87 | 50.51",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor (256/256, thr 0.5)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 50.51,
+        "baseline_label": "Persimmon-8B base",
+        "baseline_value": 50.7,
+        "delta": -0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B with predictors | 256 | 256 | 0.5 | 67.26 | 33.87 | 50.51",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor (1152/256, thr 0.7)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 66.3,
+        "baseline_label": "Persimmon-8B base",
+        "baseline_value": 67.8,
+        "delta": -1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B with predictors | 1152 | 256 | 0.70 | 66.30 | 34.40 | 52.70",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor (1152/256, thr 0.7)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 34.4,
+        "baseline_label": "Persimmon-8B base",
+        "baseline_value": 34.64,
+        "delta": -0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B with predictors | 1152 | 256 | 0.70 | 66.30 | 34.40 | 52.70",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor (1152/256, thr 0.7)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 52.7,
+        "baseline_label": "Persimmon-8B base",
+        "baseline_value": 50.7,
+        "delta": 2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Persimmon 8B with predictors | 1152 | 256 | 0.70 | 66.30 | 34.40 | 52.70",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "FP16 (base)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 79.62,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Phi-2 | - | - | - | 79.62 | 51.49 | 55.17",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "FP16 (base)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 51.49,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Phi-2 | - | - | - | 79.62 | 51.49 | 55.17",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "FP16 (base)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 55.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Phi-2 | - | - | - | 79.62 | 51.49 | 55.17",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B (relufied)",
+        "method": "Predictor (800, thr 0.40)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Easy",
+        "metric": "Accuracy",
+        "value": 79.96,
+        "baseline_label": "Phi-2 base",
+        "baseline_value": 79.62,
+        "delta": 0.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Phi-2 relufied with predictors | 800 | mix 160, 480 | 0.40 | 79.96 | 49.57 | 53.50",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B (relufied)",
+        "method": "Predictor (800, thr 0.40)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Arc Challenge",
+        "metric": "Accuracy",
+        "value": 49.57,
+        "baseline_label": "Phi-2 base",
+        "baseline_value": 51.49,
+        "delta": -1.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Phi-2 relufied with predictors | 800 | mix 160, 480 | 0.40 | 79.96 | 49.57 | 53.50",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B (relufied)",
+        "method": "Predictor (800, thr 0.40)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 53.5,
+        "baseline_label": "Phi-2 base",
+        "baseline_value": 55.17,
+        "delta": -1.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "C Extended Results",
+        "quote": "Phi-2 relufied with predictors | 800 | mix 160, 480 | 0.40 | 79.96 | 49.57 | 53.50",
+        "bbox": [
+          63.8313671875,
+          88.08931640625,
+          528.6764453125,
+          370.73490234375
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B",
+        "method": "Relufied + Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 52.0,
+        "baseline_label": "Phi-2 base",
+        "baseline_value": 57.0,
+        "delta": -5.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "B.2 Accuracy of models using predictors",
+        "quote": "Phi2's MMLU will drop 2.3 points from the relufied model still keeping at 52",
+        "bbox": [
+          304.984375,
+          238.8681640625,
+          526.2252197265625,
+          507.39874267578125
+        ],
+        "block_id": "/page/13/Text/13",
+        "source_table": "Figure 10b"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-2-2.7B (relufied)",
+        "method": "Relufication only",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 54.3,
+        "baseline_label": "Phi-2 base",
+        "baseline_value": 57.0,
+        "delta": -2.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "C.4 Phi-2",
+        "quote": "MMLU metric drops from 57 to 54.3 after relufication with distillation",
+        "bbox": [
+          304.7556675062972,
+          344.1181640625,
+          528.4433249370277,
+          422.12466607301866
+        ],
+        "block_id": "/page/17/Text/12",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16 (base)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 41.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "C.5 Llama 2",
+        "quote": "we got MMLU of 41.8 for Llama 2, 38.96 for sparsified model by (Song et al., 2024) and 38.63 after training our predictors",
+        "bbox": [
+          69.05793450881612,
+          374.13891362422083,
+          291.9949622166247,
+          478.35796972395366
+        ],
+        "block_id": "/page/18/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B (sparsified)",
+        "method": "FATReLU sparsification",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 38.96,
+        "baseline_label": "Llama-2-7B base",
+        "baseline_value": 41.8,
+        "delta": -2.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "C.5 Llama 2",
+        "quote": "38.96 for sparsified model by (Song et al., 2024) and 38.63 after training our predictors",
+        "bbox": [
+          69.05793450881612,
+          374.13891362422083,
+          291.9949622166247,
+          478.35796972395366
+        ],
+        "block_id": "/page/18/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B (sparsified)",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 38.63,
+        "baseline_label": "Llama-2-7B base",
+        "baseline_value": 41.8,
+        "delta": -3.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "C.5 Llama 2",
+        "quote": "38.96 for sparsified model by (Song et al., 2024) and 38.63 after training our predictors",
+        "bbox": [
+          69.05793450881612,
+          374.13891362422083,
+          291.9949622166247,
+          478.35796972395366
+        ],
+        "block_id": "/page/18/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "False Negative Rate (%)",
+        "value": 5.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "These predictors achieve an average of 5% false negatives and 7% false positives in the OPT 6.7B model",
+        "bbox": [
+          69.05793450881612,
+          258.19140625,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/16/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "False Positive Rate (%)",
+        "value": 7.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "These predictors achieve an average of 5% false negatives and 7% false positives in the OPT 6.7B model",
+        "bbox": [
+          69.05793450881612,
+          258.19140625,
+          291.9949622166247,
+          460.3633125556545
+        ],
+        "block_id": "/page/16/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Predictor Inference Overhead (% of inference time)",
+        "value": 2.75,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "B.3 Overhead of predictors",
+        "quote": "In M1 Max CPU experiments this was comprising 2.75% and in RTX GPU it was 4.8% of inference time",
+        "bbox": [
+          304.40234375,
+          538.9951171875,
+          526.2173461914062,
+          672.7917633056641
+        ],
+        "block_id": "/page/13/Text/15",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Predictor Inference Overhead (% of inference time)",
+        "value": 4.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "B.3 Overhead of predictors",
+        "quote": "in RTX GPU it was 4.8% of inference time which is negligible",
+        "bbox": [
+          304.40234375,
+          538.9951171875,
+          526.2173461914062,
+          672.7917633056641
+        ],
+        "block_id": "/page/13/Text/15",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Predictor Inference Overhead (% of inference time)",
+        "value": 4.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "B.3 Overhead of predictors",
+        "quote": "For Falocn 7B, predictors take 4% model size and CPU computation",
+        "bbox": [
+          304.40234375,
+          538.9951171875,
+          526.2173461914062,
+          672.7917633056641
+        ],
+        "block_id": "/page/13/Text/15",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Persimmon-8B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Predictor Inference Overhead (% of inference time)",
+        "value": 2.85,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "B.3 Overhead of predictors",
+        "quote": "For Persimmon it was taking 2.85% of inference time on CPU",
+        "bbox": [
+          304.40234375,
+          538.9951171875,
+          526.2173461914062,
+          672.7917633056641
+        ],
+        "block_id": "/page/13/Text/15",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "Predictor",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Predictor Inference Overhead (% of inference time)",
+        "value": 3.92,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "B.3 Overhead of predictors",
+        "quote": "For Llama 2 7B it was taking 3.92% of inference time on CPU",
+        "bbox": [
+          304.40234375,
+          538.9951171875,
+          526.2173461914062,
+          672.7917633056641
+        ],
+        "block_id": "/page/13/Text/15",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (windowed)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "DRAM Usage (% of model size)",
+        "value": 52.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "Summing these up, the total DRAM memory usage amounts to 52.1% of the model's size",
+        "bbox": [
+          69.05793450881612,
+          600.5716829919858,
+          291.9949622166247,
+          732.5325022261799
+        ],
+        "block_id": "/page/16/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Flash-based inference (windowed)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "DRAM Usage (% of model size)",
+        "value": 52.93,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "C.2 Results for Falcon 7B Model",
+        "quote": "Overall, this amounts to 52.93% of the model's total size",
+        "bbox": [
+          68.3073047858942,
+          276.6923828125,
+          291.9949622166247,
+          368.1406945681211
+        ],
+        "block_id": "/page/17/Text/2",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (32-bit)",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "I/O Latency (ms/token)",
+        "value": 105,
+        "baseline_label": "Naive (32-bit)",
+        "baseline_value": 2196,
+        "delta": -2091,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "On an M1 Max, this results in the average latency of 105ms per token for loading from flash and 57ms for memory management",
+        "bbox": [
+          304.693359375,
+          245.4462890625,
+          526.9420654911838,
+          416.8762243989314
+        ],
+        "block_id": "/page/16/Text/7",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (16-bit on GPU)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Flash Load Time (ms/token)",
+        "value": 30.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "For a 16-bit model on a GPU machine, the flash load time is reduced to 30.5ms, and memory management takes 35ms",
+        "bbox": [
+          304.111328125,
+          421.4111328125,
+          526.9420654911838,
+          498.60195903829026
+        ],
+        "block_id": "/page/16/Text/8",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Flash-based inference (32-bit)",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Flash+Mem Latency (ms/token)",
+        "value": 250,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -1946,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "C.2 Results for Falcon 7B Model",
+        "quote": "the time taken to load this data from flash memory is approximately 161ms, and the memory management process adds another 90ms, leading to a total latency of 250ms per token",
+        "bbox": [
+          69.05793450881612,
+          371.8895814781834,
+          291.9949622166247,
+          530.8423864648263
+        ],
+        "block_id": "/page/17/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B (relufied)",
+        "method": "Flash-based inference (32-bit)",
+        "bit_width": "32-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Speedup over Naive (CPU)",
+        "value": 9.5,
+        "baseline_label": "Naive",
+        "baseline_value": 1.0,
+        "delta": 8.5,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "C.2 Results for Falcon 7B Model",
+        "quote": "the baseline latency is around 2196 milliseconds, making our method approximately 9 to 10 times faster",
+        "bbox": [
+          69.05793450881612,
+          371.8895814781834,
+          291.9949622166247,
+          530.8423864648263
+        ],
+        "block_id": "/page/17/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Quantized (4-bit)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Average FFN Active Neurons (%)",
+        "value": 3.27,
+        "baseline_label": "OPT-6.7B FP16",
+        "baseline_value": 3.3,
+        "delta": -0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Small Device Implications",
+        "quote": "average | 3.30% | 3.27%",
+        "bbox": [
+          349.672734375,
+          291.68228515625,
+          481.467890625,
+          356.26302734375
+        ],
+        "block_id": "/page/19/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-7B (smartphone scenario)",
+        "method": "Flash-based inference (4-bit)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Smartphone",
+        "metric": "DRAM Usage (GB)",
+        "value": 2.0,
+        "baseline_label": "Naive 4-bit (3.5 GB)",
+        "baseline_value": 3.5,
+        "delta": -1.5,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "F Small Device Implications",
+        "quote": "rather than the baseline's 3.5GB of required DRAM, our model would necessitate less than 2GB of memory for operation",
+        "bbox": [
+          304.7556675062972,
+          394.38290293855744,
+          527.6926952141058,
+          622.0439453125
+        ],
+        "block_id": "/page/19/Text/11",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "LLM (general)",
+        "method": "Flash-based inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Max Model Size vs DRAM (x)",
+        "value": 2.0,
+        "baseline_label": "Standard DRAM-resident",
+        "baseline_value": 1.0,
+        "delta": 1.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "These methods collectively enable running models up to twice the size of the available DRAM",
+        "bbox": [
+          86.32241813602015,
+          241.74609375,
+          274.13671875,
+          635.8112199465717
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "I/O Latency (ms/token)",
+        "value": 30,
+        "baseline_label": "Naive",
+        "baseline_value": 2196,
+        "delta": -2166,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "OPT 6.7B | All | GPU | 30 | 34 | 20 | 84",
+        "bbox": [
+          67.8823046875,
+          128.06787109375,
+          297.6333203125,
+          358.71337890625
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All, with std)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Total Inference Latency Std Dev (ms)",
+        "value": 39.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "OPT 6.7B | All | CPU | 104.90 (± 18.46) | 57.79 (± 9.63) | 506.50 (±17.33) | 669.20 (± 39.74)",
+        "bbox": [
+          65.0187109375,
+          118.62826171875,
+          527.4891015625,
+          221.78970703125
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Flash-based inference (All, with std)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTX 4090",
+        "metric": "Total Inference Latency Std Dev (ms)",
+        "value": 6.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "OPT 6.7B | All | GPU | 30.55 (±3.09) | 34.11 (±2.38) | 19.97 (±0.86) | 84.64 (±6.16)",
+        "bbox": [
+          65.0187109375,
+          118.62826171875,
+          527.4891015625,
+          221.78970703125
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B (active neurons)",
+        "method": "Sparse Read (no bundling)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "Throughput (GiB/s)",
+        "value": 1.25,
+        "baseline_label": "Dense Read",
+        "baseline_value": 6.1,
+        "delta": -4.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.2 Faster Load From Flash",
+        "quote": "scattered reads will necessarily result in lower throughput (e.g. 1.25 GiB/s sparse vs 6.1 GiB/s dense)",
+        "bbox": [
+          304.693359375,
+          465.40234375,
+          526.9420654911838,
+          706.2902938557435
+        ],
+        "block_id": "/page/6/Text/9",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "Predictor (windowing k=4)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "M1 Max",
+        "metric": "FFN DRAM Footprint (% of FFN)",
+        "value": 2.4,
+        "baseline_label": "Predictor only",
+        "baseline_value": 10.0,
+        "delta": -7.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "C.1 Results for OPT 6.7B Model",
+        "quote": "Using active neurons of predictor would require about 10% of the DRAM memory capacity on average; however, with our method, it drops to 2.4%",
+        "bbox": [
+          69.05793450881612,
+          462.935546875,
+          291.9949622166247,
+          596.8227960819233
+        ],
+        "block_id": "/page/16/Text/4",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 91,
+    "dropped_cited_count": 3,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }
