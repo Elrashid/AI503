@@ -1219,5 +1219,2455 @@
         "block_id": "/page/2/Text/5"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 56.7,
+        "baseline_label": "TÜLU-2-7B FP16",
+        "baseline_value": 55.8,
+        "delta": 0.9,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "The 50% quantized TÜLU-2-13B model with LLM.int8() achieves 56.7% and 55.6% on MMLU and TRUTH-FULQA datasets, compared to the original TÜLU-2-7B model's 55.8% and 32.3%.",
+        "bbox": [
+          69.84375,
+          669.7270660400391,
+          291.01727294921875,
+          775.5797576904297
+        ],
+        "block_id": "/page/5/Text/4",
+        "source_table": "prose"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 55.6,
+        "baseline_label": "TÜLU-2-7B FP16",
+        "baseline_value": 32.3,
+        "delta": 23.3,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "The 50% quantized TÜLU-2-13B model with LLM.int8() achieves 56.7% and 55.6% on MMLU and TRUTH-FULQA datasets",
+        "bbox": [
+          69.84375,
+          669.7270660400391,
+          291.01727294921875,
+          775.5797576904297
+        ],
+        "block_id": "/page/5/Text/4",
+        "source_table": "prose"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.92,
+        "baseline_label": "LLAMA-2-7B FP16",
+        "baseline_value": 5.47,
+        "delta": -0.55,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "50% quantized LLAMA-2-13B model achieves 4.92 perplexity on WIKITEXT-2 compared to LLAMA-2-7B's 5.47.",
+        "bbox": [
+          304.984375,
+          72.7705078125,
+          526.2310180664062,
+          179.41571044921875
+        ],
+        "block_id": "/page/5/Text/5",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "GBLM (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 51.3,
+        "baseline_label": "TÜLU-2-13B FP16",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "50% pruned TÜLU-2-13B with GBLM pruning only achieves 51.3% and 44.4% on MMLU and TRUTH-FULQA, respectively.",
+        "bbox": [
+          304.984375,
+          72.7705078125,
+          526.2310180664062,
+          179.41571044921875
+        ],
+        "block_id": "/page/5/Text/5",
+        "source_table": "prose"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "GBLM (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 44.4,
+        "baseline_label": "TÜLU-2-13B FP16",
+        "baseline_value": 56.8,
+        "delta": -12.4,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "50% pruned TÜLU-2-13B with GBLM pruning only achieves 51.3% and 44.4% on MMLU and TRUTH-FULQA, respectively.",
+        "bbox": [
+          304.984375,
+          72.7705078125,
+          526.2310180664062,
+          179.41571044921875
+        ],
+        "block_id": "/page/5/Text/5",
+        "source_table": "prose"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLAMA-2-7B | 5.47 | 6.68 | 8.74 | 11.70 | 2.49 | 5.61 | 5.85 | 9.23 | 29.68 | 20.22",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLAMA-2-13B | 4.88 | 6.12 | 8.10 | 10.91 | 2.36 | 5.17 | 5.54 | 8.55 | 27.37 | 18.99",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "TÜLU-2-7B | 6.00 | 7.45 | 9.78 | 12.93 | 2.74 | 6.17 | 6.51 | 10.24 | 35.13 | 23.20",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "TÜLU-2-13B | 5.34 | 6.71 | 8.91 | 11.89 | 2.59 | 5.61 | 6.06 | 9.32 | 31.49 | 21.49",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.5,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLM.int8() | - | 50% | 5.50 | 6.71 | 8.79 | 11.76 | 2.50 | 5.64",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.61,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "AWQ | - | 75% | 5.61 | 6.86 | 8.94 | 11.90 | 2.53 | 5.74",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.44,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.97,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "GPTQ | - | 75% | 6.44 | 6.99 | 9.08 | 12.06 | 2.59 | 5.90",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.92,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLM.int8() | - | 50% | 4.92 | 6.15 | 8.13 | 10.93 | 2.37 | 5.18",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.87,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "AWQ | - | 75% | 4.87 | 6.22 | 8.22 | 11.04 | 2.39 | 5.25",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.03,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "GPTO | - | 75% | 5.03 | 6.26 | 8.29 | 11.09 | 2.41 | 5.29",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.02,
+        "baseline_label": "FP16",
+        "baseline_value": 6.0,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLM.int8() | - | 50% | 6.02 | 7.51 | 9.83 | 13.00 | 2.75 | 6.20",
+        "bbox": [
+          67.3817578125,
+          449.63951171875,
+          526.2901171875,
+          757.44642578125
+        ],
+        "block_id": "/page/33/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.18,
+        "baseline_label": "FP16",
+        "baseline_value": 6.0,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "AWQ | - | 75% | 6.18 | 7.62 | 10.04 | 13.20 | 2.81 | 6.35",
+        "bbox": [
+          67.3817578125,
+          449.63951171875,
+          526.2901171875,
+          757.44642578125
+        ],
+        "block_id": "/page/33/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.44,
+        "baseline_label": "FP16",
+        "baseline_value": 6.0,
+        "delta": 0.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "GPTQ | - | 75% | 6.44 | 6.99 | 9.08 | 12.06 | 2.59 | 5.90",
+        "bbox": [
+          67.3817578125,
+          449.63951171875,
+          526.2901171875,
+          757.44642578125
+        ],
+        "block_id": "/page/33/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.36,
+        "baseline_label": "FP16",
+        "baseline_value": 5.34,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLM.int8() | - | 50% | 5.36 | 6.73 | 8.94 | 11.92 | 2.60 | 5.63",
+        "bbox": [
+          67.666953125,
+          447.13982421875,
+          527.168984375,
+          758.30158203125
+        ],
+        "block_id": "/page/34/Table/3",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.45,
+        "baseline_label": "FP16",
+        "baseline_value": 5.34,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "AWQ | - | 75% | 5.45 | 6.80 | 9.06 | 12.07 | 2.63 | 5.71",
+        "bbox": [
+          67.666953125,
+          447.13982421875,
+          527.168984375,
+          758.30158203125
+        ],
+        "block_id": "/page/34/Table/3",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.48,
+        "baseline_label": "FP16",
+        "baseline_value": 5.34,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "GPTQ | - | 75% | 5.48 | 6.83 | 9.11 | 12.08 | 2.65 | 5.75",
+        "bbox": [
+          67.666953125,
+          447.13982421875,
+          527.168984375,
+          758.30158203125
+        ],
+        "block_id": "/page/34/Table/3",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 30.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "LLAMA-2-7B | 92.7 | 37.6 | 30.2",
+        "bbox": [
+          125.8584375,
+          697.79927734375,
+          467.8134375,
+          770.76712890625
+        ],
+        "block_id": "/page/28/Table/7",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 32.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "LLAMA-2-13B | 98.4 | 33.8 | 32.3",
+        "bbox": [
+          125.8584375,
+          697.79927734375,
+          467.8134375,
+          770.76712890625
+        ],
+        "block_id": "/page/28/Table/7",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 49.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "TÜLU-2-7B | 97.7 | 51.9 | 49.7",
+        "bbox": [
+          125.8584375,
+          697.79927734375,
+          467.8134375,
+          770.76712890625
+        ],
+        "block_id": "/page/28/Table/7",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 56.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "TÜLU-2-13B | 98.7 | 58.1 | 56.8",
+        "bbox": [
+          125.8584375,
+          697.79927734375,
+          467.8134375,
+          770.76712890625
+        ],
+        "block_id": "/page/28/Table/7",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 28.8,
+        "baseline_label": "FP16",
+        "baseline_value": 30.2,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "LLM.int8() | - | 50 | 92.8 | 35.9 | 28.8",
+        "bbox": [
+          67.07328125,
+          226.73974609375,
+          527.76265625,
+          625.12744140625
+        ],
+        "block_id": "/page/29/Table/1",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 29.0,
+        "baseline_label": "FP16",
+        "baseline_value": 30.2,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "AWQ | - | 75 | 94.1 | 34.5 | 29.0",
+        "bbox": [
+          67.07328125,
+          226.73974609375,
+          527.76265625,
+          625.12744140625
+        ],
+        "block_id": "/page/29/Table/1",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 30.6,
+        "baseline_label": "FP16",
+        "baseline_value": 30.2,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "GPTQ | - | 75 | 92.0 | 38.3 | 30.6",
+        "bbox": [
+          67.07328125,
+          226.73974609375,
+          527.76265625,
+          625.12744140625
+        ],
+        "block_id": "/page/29/Table/1",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 32.3,
+        "baseline_label": "FP16",
+        "baseline_value": 32.3,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 31,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "LLM.int8() | - | 50 | 99.0 | 33.2 | 32.3",
+        "bbox": [
+          67.3701171875,
+          226.320390625,
+          527.4658203125,
+          625.546796875
+        ],
+        "block_id": "/page/30/Table/1",
+        "source_table": "Table 21"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 26.7,
+        "baseline_label": "FP16",
+        "baseline_value": 32.3,
+        "delta": -5.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 31,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "AWQ | - | 75 | 89.1 | 36.2 | 26.7",
+        "bbox": [
+          67.3701171875,
+          226.320390625,
+          527.4658203125,
+          625.546796875
+        ],
+        "block_id": "/page/30/Table/1",
+        "source_table": "Table 21"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 32.3,
+        "baseline_label": "FP16",
+        "baseline_value": 32.3,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 31,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "GPTQ | - | 75 | 98.8 | 33.5 | 32.3",
+        "bbox": [
+          67.3701171875,
+          226.320390625,
+          527.4658203125,
+          625.546796875
+        ],
+        "block_id": "/page/30/Table/1",
+        "source_table": "Table 21"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 50.6,
+        "baseline_label": "FP16",
+        "baseline_value": 49.7,
+        "delta": 0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "LLM.int8 () | - | 50 | 98.3 | 52.1 | 50.6",
+        "bbox": [
+          67.3701171875,
+          226.73974609375,
+          527.4658203125,
+          625.12744140625
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 22"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 45.3,
+        "baseline_label": "FP16",
+        "baseline_value": 49.7,
+        "delta": -4.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "AWQ | - | 75 | 97.7 | 47.2 | 45.3",
+        "bbox": [
+          67.3701171875,
+          226.73974609375,
+          527.4658203125,
+          625.12744140625
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 22"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 45.5,
+        "baseline_label": "FP16",
+        "baseline_value": 49.7,
+        "delta": -4.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "GPTQ | - | 75 | 98.2 | 47.4 | 45.5",
+        "bbox": [
+          67.3701171875,
+          226.73974609375,
+          527.4658203125,
+          625.12744140625
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 22"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 55.6,
+        "baseline_label": "FP16",
+        "baseline_value": 56.8,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "LLM.int8() | - | 50 | 98.0 | 57.5 | 55.6",
+        "bbox": [
+          66.1944140625,
+          129.69595703125,
+          527.4774609375,
+          529.76107421875
+        ],
+        "block_id": "/page/32/Table/1",
+        "source_table": "Table 23"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 50.4,
+        "baseline_label": "FP16",
+        "baseline_value": 56.8,
+        "delta": -6.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "AWQ | - | 75 | 95.1 | 5.2 | 50.4",
+        "bbox": [
+          66.1944140625,
+          129.69595703125,
+          527.4774609375,
+          529.76107421875
+        ],
+        "block_id": "/page/32/Table/1",
+        "source_table": "Table 23"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 54.6,
+        "baseline_label": "FP16",
+        "baseline_value": 56.8,
+        "delta": -2.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.2 Full Results on Truthfulness Evaluation",
+        "quote": "GPTQ | - | 75 | 98.4 | 56.2 | 54.6",
+        "bbox": [
+          66.1944140625,
+          129.69595703125,
+          527.4774609375,
+          529.76107421875
+        ],
+        "block_id": "/page/32/Table/1",
+        "source_table": "Table 23"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "BBQ",
+        "metric": "Disambiguated Accuracy",
+        "value": 75.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets",
+        "quote": "LLAMA-2-7B | 18.1 | 75.7 | 0.21 | 0.09",
+        "bbox": null,
+        "block_id": "/page/28/Table/?",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "BBQ",
+        "metric": "Disambiguated Accuracy",
+        "value": 82.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets",
+        "quote": "LLAMA-2-13B | 17.4 | 82.6 | 0.27 | 0.08",
+        "bbox": null,
+        "block_id": "/page/28/Table/?",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "BBQ",
+        "metric": "Disambiguated Accuracy",
+        "value": 72.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets",
+        "quote": "TÜLU-2-7B | 17.7 | 72.1 | 0.22 | 0.13",
+        "bbox": null,
+        "block_id": "/page/28/Table/?",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "BBQ",
+        "metric": "Disambiguated Accuracy",
+        "value": 80.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "D.1.4 Uncompressed Models' Results on UNQOVER and BBQ Datasets",
+        "quote": "TÜLU-2-13B | 20.6 | 80.9 | 0.27 | 0.08",
+        "bbox": null,
+        "block_id": "/page/28/Table/?",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 7.44,
+        "baseline_label": "FP16",
+        "baseline_value": 9.38,
+        "delta": -1.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "LLM.int8() | - | 50% | 4.52% | 9.73% | 8.10% | 5.84% | 2.87% | 9.35% | 7.44%",
+        "bbox": [
+          68.5458203125,
+          204.93326171875,
+          527.4541796875,
+          646.93392578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 7.69,
+        "baseline_label": "FP16",
+        "baseline_value": 9.38,
+        "delta": -1.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "AWQ | - | 75% | 5.00% | 11.37% | 8.02% | 5.09% | 2.75% | 11.41% | 7.69%",
+        "bbox": [
+          68.5458203125,
+          204.93326171875,
+          527.4541796875,
+          646.93392578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 7.32,
+        "baseline_label": "FP16",
+        "baseline_value": 9.38,
+        "delta": -2.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "GPTQ | - | 75% | 5.42% | 9.96% | 6.13% | 6.39% | 3.26% | 9.31% | 7.32%",
+        "bbox": [
+          68.5458203125,
+          204.93326171875,
+          527.4541796875,
+          646.93392578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 9.38,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "Uncompressed Model | - | 0% | 5.84% | 15.56% | 11.57% | 10.35% | 2.43% | 8.15% | 9.38%",
+        "bbox": [
+          68.5458203125,
+          204.93326171875,
+          527.4541796875,
+          646.93392578125
+        ],
+        "block_id": "/page/20/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 0.14,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "Uncompressed Model | - | - | 0% | 0.07% | 0.07% | 0.18% | 0.02% | 0.08% | 0.28% | 0.14%",
+        "bbox": [
+          68.84265625,
+          204.09455078125,
+          527.15734375,
+          647.77263671875
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 0.15,
+        "baseline_label": "FP16",
+        "baseline_value": 0.14,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "LLM.int8() | - | 50% | 0.06% | 0.15% | 0.27% | 0.02% | 0.05% | 0.22% | 0.15%",
+        "bbox": [
+          68.84265625,
+          204.09455078125,
+          527.15734375,
+          647.77263671875
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 0.17,
+        "baseline_label": "FP16",
+        "baseline_value": 0.14,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "AWQ | - | 75% | 0.10% | 0.05% | 0.23% | 0.05% | 0.10% | 0.10% | 0.17%",
+        "bbox": [
+          68.84265625,
+          204.09455078125,
+          527.15734375,
+          647.77263671875
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Mean Toxicity (%)",
+        "value": 0.1,
+        "baseline_label": "FP16",
+        "baseline_value": 0.14,
+        "delta": -0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "D.1.1 Results on TOXIGEN Dataset",
+        "quote": "GPTQ | - | 75% | 0.06% | 0.04% | 0.14% | 0.03% | 0.07% | 0.02% | 0.10%",
+        "bbox": [
+          68.84265625,
+          204.09455078125,
+          527.15734375,
+          647.77263671875
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 48.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Uncompressed Model | | 0% | 5.93 | 48.8 | 7.5 | 57.7 | 0.10%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 46.7,
+        "baseline_label": "FP16",
+        "baseline_value": 48.8,
+        "delta": -2.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "LLM.int8() | - | 50% | 5.81 | 46.7 | 7.6 | 57.8 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 43.9,
+        "baseline_label": "FP16",
+        "baseline_value": 48.8,
+        "delta": -4.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "AWQ | - | 75% | 3.43 | 43.9 | 7.8 | 55.3 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 41.5,
+        "baseline_label": "FP16",
+        "baseline_value": 48.8,
+        "delta": -7.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "GPTQ | - | 75% | 5.68 | 41.5 | 7.4 | 56.3 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score",
+        "value": 5.93,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Uncompressed Model | | 0% | 5.93 | 48.8 | 7.5 | 57.7 | 0.10%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score",
+        "value": 5.81,
+        "baseline_label": "FP16",
+        "baseline_value": 5.93,
+        "delta": -0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "LLM.int8() | - | 50% | 5.81 | 46.7 | 7.6 | 57.8 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score",
+        "value": 3.43,
+        "baseline_label": "FP16",
+        "baseline_value": 5.93,
+        "delta": -2.5,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "AWQ | - | 75% | 3.43 | 43.9 | 7.8 | 55.3 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score",
+        "value": 5.68,
+        "baseline_label": "FP16",
+        "baseline_value": 5.93,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "GPTQ | - | 75% | 5.68 | 41.5 | 7.4 | 56.3 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "ROUGE-2",
+        "value": 7.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Uncompressed Model | | 0% | 5.93 | 48.8 | 7.5 | 57.7 | 0.10%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "ROUGE-2",
+        "value": 7.6,
+        "baseline_label": "FP16",
+        "baseline_value": 7.5,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "LLM.int8() | - | 50% | 5.81 | 46.7 | 7.6 | 57.8 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "ROUGE-2",
+        "value": 7.8,
+        "baseline_label": "FP16",
+        "baseline_value": 7.5,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "AWQ | - | 75% | 3.43 | 43.9 | 7.8 | 55.3 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "XSUM",
+        "metric": "ROUGE-2",
+        "value": 7.4,
+        "baseline_label": "FP16",
+        "baseline_value": 7.5,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "GPTQ | - | 75% | 5.68 | 41.5 | 7.4 | 56.3 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 57.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Uncompressed Model | | 0% | 5.93 | 48.8 | 7.5 | 57.7 | 0.10%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 57.8,
+        "baseline_label": "FP16",
+        "baseline_value": 57.7,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "LLM.int8() | - | 50% | 5.81 | 46.7 | 7.6 | 57.8 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 55.3,
+        "baseline_label": "FP16",
+        "baseline_value": 57.7,
+        "delta": -2.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "AWQ | - | 75% | 3.43 | 43.9 | 7.8 | 55.3 | 0.08%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "% (Information and Truthful)",
+        "value": 56.3,
+        "baseline_label": "FP16",
+        "baseline_value": 57.7,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "GPTQ | - | 75% | 5.68 | 41.5 | 7.4 | 56.3 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TOXIGEN",
+        "metric": "Toxicity (%)",
+        "value": 0.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Uncompressed Model | | 0% | 5.93 | 48.8 | 7.5 | 57.7 | 0.10%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "Magnitude (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MT-Bench",
+        "metric": "MT-Bench Score",
+        "value": 5.09,
+        "baseline_label": "FP16",
+        "baseline_value": 5.93,
+        "delta": -0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Magnitude | Unstructured | 50% | 5.09 | 38.6 | 6.7 | 37.5 | 0.10%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3 Prune→SFT"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "SparseGPT (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 41.5,
+        "baseline_label": "FP16",
+        "baseline_value": 48.8,
+        "delta": -7.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "SparseGPT | Unstructured | 50% | 5.18 | 41.5 | 6.9 | 36.5 | 0.05%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3 Prune→SFT"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "Wanda (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 39.6,
+        "baseline_label": "FP16",
+        "baseline_value": 48.8,
+        "delta": -9.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "Wanda | Unstructured | 50% | 5.25 | 39.6 | 7.0 | 35.9 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3 Prune→SFT"
+      }
+    },
+    {
+      "value": {
+        "model": "TÜLU-2-7B (reproduced)",
+        "method": "GBLM (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "Accuracy",
+        "value": 39.6,
+        "baseline_label": "FP16",
+        "baseline_value": 48.8,
+        "delta": -9.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Limitations",
+        "quote": "GBLM | Unstructured | 50% | 5.03 | 39.6 | 6.4 | 35.9 | 0.07%",
+        "bbox": [
+          67.3701171875,
+          106.08048828125,
+          527.4658203125,
+          398.79060546875
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3 Prune→SFT"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "Magnitude (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16.02,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 10.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "Magnitude | Unstructured | 50% | 16.02 | 20 | 27.31 | 33.06 | 9.18 | 16.57",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "SparseGPT (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.5,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "SparseGPT | Unstructured | 50% | 6.5 | 8.31 | 11.1 | 14.11 | 3.25 | 6.77",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "Wanda (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.94,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "Wanda | Unstructured | 50% | 6.94 | 8.27 | 10.90 | 13.93 | 3.12 | 6.99",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "GBLM (50% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.88,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "GBLM | Unstructured | 50% | 6.88 | 8.21 | 10.81 | 13.90 | 3.08 | 6.93",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-7B",
+        "method": "Magnitude (60% pruning)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 1915.92,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1910.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "Magnitude | Unstructured | 60% | 1915.92 | 2228.94 | 2549.27 | 2647.67 | 9317.04",
+        "bbox": [
+          67.3701171875,
+          93.968515625,
+          527.4658203125,
+          405.968984375
+        ],
+        "block_id": "/page/33/Table/1",
+        "source_table": "Table 25"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TwitterAAE",
+        "metric": "Perplexity",
+        "value": 27.46,
+        "baseline_label": "FP16",
+        "baseline_value": 27.37,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLM.int8() | - | 50% | 4.92 | 6.15 | 8.13 | 10.93 | 2.37 | 5.18 | 5.55 | 8.57 | 27.46 | 19.04",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "TwitterWhite",
+        "metric": "Perplexity",
+        "value": 19.04,
+        "baseline_label": "FP16",
+        "baseline_value": 18.99,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLM.int8() | - | 50% | 4.92 | 6.15 | 8.13 | 10.93 | 2.37 | 5.18 | 5.55 | 8.57 | 27.46 | 19.04",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TwitterAAE",
+        "metric": "Perplexity",
+        "value": 27.8,
+        "baseline_label": "FP16",
+        "baseline_value": 27.37,
+        "delta": 0.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "AWQ | - | 75% | 4.87 | 6.22 | 8.22 | 11.04 | 2.39 | 5.25 | 5.59 | 8.66 | 27.80 | 19.23",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TwitterAAE",
+        "metric": "Perplexity",
+        "value": 28.01,
+        "baseline_label": "FP16",
+        "baseline_value": 27.37,
+        "delta": 0.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 35,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "GPTO | - | 75% | 5.03 | 6.26 | 8.29 | 11.09 | 2.41 | 5.29 | 5.62 | 8.70 | 28.01 | 19.33",
+        "bbox": [
+          67.9521484375,
+          93.54916015625,
+          528.0478515625,
+          406.38833984375
+        ],
+        "block_id": "/page/34/Table/1",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TwitterAAE",
+        "metric": "Perplexity",
+        "value": 27.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLAMA-2-13B | 4.88 | 6.12 | 8.10 | 10.91 | 2.36 | 5.17 | 5.54 | 8.55 | 27.37 | 18.99",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TwitterWhite",
+        "metric": "Perplexity",
+        "value": 18.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 33,
+        "section": "D.3 Full Results on Language Modeling Evaluation",
+        "quote": "LLAMA-2-13B | 4.88 | 6.12 | 8.10 | 10.91 | 2.36 | 5.17 | 5.54 | 8.55 | 27.37 | 18.99",
+        "bbox": [
+          68.5574609375,
+          650.5765625,
+          526.2784765625,
+          717.6734375
+        ],
+        "block_id": "/page/32/Table/3",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA-2-13B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "BBQ",
+        "metric": "Aggregated Bias",
+        "value": 7.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Degeneration Harm & Representational Harms",
+        "quote": "uncompressed LLAMA-2-13B model has lower bias metric compared to its SFT-ed variant TÜLU-2-13B (7.2 vs 8.4).",
+        "bbox": [
+          68.6796875,
+          343.70703125,
+          290.9485778808594,
+          545.2437438964844
+        ],
+        "block_id": "/page/5/Text/2",
+        "source_table": "Figure 1c"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 82,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }

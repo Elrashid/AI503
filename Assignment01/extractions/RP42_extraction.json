@@ -1319,5 +1319,1905 @@
         "block_id": "/page/5/Text/9"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.28,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant | **6.40** | **5.65** | **4.72** | **4.13** | **6.28** | **5.42** | **3.79**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.08,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.61,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "only a 0.61 increase in perplexity and a 2.71% drop in accuracy compared to the FP16 model",
+        "bbox": [
+          106.98046875,
+          529.8046875,
+          505.744873046875,
+          671.1480712890625
+        ],
+        "block_id": "/page/1/Text/4",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "SmoothQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 83.12,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 77.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "W4A4 | SmoothQuant | 25.25 | 40.05 | 192.40 | 275.53 | 83.12 | 35.88 | 26.01",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "OmniQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 14.26,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 8.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "OmniQuant | 11.26 | 10.87 | 10.33 | 9.17 | 14.26 | 12.30 | NaN",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "QLLM",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 11.75,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 6.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "QLLM | 9.65 | 8.41 | 8.37 | 6.87 | 11.75 | 9.09 | 7.00",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "Atom",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.4,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 2.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "Atom | 8.15 | 7.43 | 6.52 | 5.14 | 8.40 | 6.96 | NaN",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.42,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant | **6.40** | **5.65** | **4.72** | **4.13** | **6.28** | **5.42** | **3.79**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-70B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.79,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant | **6.40** | **5.65** | **4.72** | **4.13** | **6.28** | **5.42** | **3.79**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-70B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.76,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant_{LWC} | **6.18** | **5.47** | **4.55** | **3.93** | **6.08** | **5.33** | **3.76**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.4,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant | **6.40** | **5.65** | **4.72** | **4.13** | **6.28** | **5.42** | **3.79**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-65B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.13,
+        "baseline_label": "FP16",
+        "baseline_value": 3.53,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant | **6.40** | **5.65** | **4.72** | **4.13** | **6.28** | **5.42** | **3.79**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 7.9,
+        "baseline_label": "FP16",
+        "baseline_value": 6.97,
+        "delta": 0.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "DuQuant | **7.84** | **7.16** | **6.45** | **6.03** | **7.90** | **7.05** | **5.87**",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "Atom",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 10.96,
+        "baseline_label": "FP16",
+        "baseline_value": 6.97,
+        "delta": 3.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "Atom | 10.34 | 9.57 | 8.56 | 8.17 | 10.96 | 9.12 | NaN",
+        "bbox": [
+          121.0194140625,
+          95.65875,
+          487.3946484375,
+          278.685
+        ],
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 61.76,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -2.33,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "**DuQuant** | **76.44** | **50.04** | **38.99** | **70.98** | **69.39** | **64.72** | **61.76**",
+        "bbox": [
+          121.6051171875,
+          308.27671875,
+          489.1995703125,
+          656.97328125
+        ],
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "Atom",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 56.88,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -7.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "Atom | 71.44 | 47.74 | 35.49 | 67.71 | 63.89 | 55.01 | 56.88",
+        "bbox": [
+          121.6051171875,
+          308.27671875,
+          489.1995703125,
+          656.97328125
+        ],
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "SmoothQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 38.41,
+        "baseline_label": "FP16",
+        "baseline_value": 64.09,
+        "delta": -25.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "SmoothQuant | 49.80 | 30.40 | 25.80 | 49.10 | 27.40 | 48.00 | 38.41",
+        "bbox": [
+          121.6051171875,
+          308.27671875,
+          489.1995703125,
+          656.97328125
+        ],
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 64.12,
+        "baseline_label": "FP16",
+        "baseline_value": 66.33,
+        "delta": -2.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "**DuQuant** | **77.26** | **58.04** | **41.55** | **67.55** | **73.62** | **66.69** | **64.12**",
+        "bbox": [
+          121.6051171875,
+          308.27671875,
+          489.1995703125,
+          656.97328125
+        ],
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-30B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 65.96,
+        "baseline_label": "FP16",
+        "baseline_value": 67.44,
+        "delta": -1.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "**DuQuant+LWC** | **78.73** | **56.52** | **43.17** | **68.84** | **77.53** | **70.96** | **65.96**",
+        "bbox": [
+          121.6051171875,
+          308.27671875,
+          489.1995703125,
+          656.97328125
+        ],
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-65B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 68.91,
+        "baseline_label": "FP16",
+        "baseline_value": 71.04,
+        "delta": -2.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4 Experiment",
+        "quote": "**DuQuant** | 79.71 | 57.95 | **45.05** | **79.82** | 78.66 | **72.29** | **68.91**",
+        "bbox": [
+          121.6051171875,
+          308.27671875,
+          489.1995703125,
+          656.97328125
+        ],
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 60.57,
+        "baseline_label": "FP16",
+        "baseline_value": 63.72,
+        "delta": -3.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D More Empirical Results",
+        "quote": "DuQuant | **75.24** | **51.89** | **36.77** | **67.86** | **69.54** | **62.12** | **60.57**",
+        "bbox": [
+          105.1576171875,
+          301.710234375,
+          504.4517578125,
+          570.727265625
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table D1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 63.47,
+        "baseline_label": "FP16",
+        "baseline_value": 66.08,
+        "delta": -2.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D More Empirical Results",
+        "quote": "DuQuant | **77.31** | **55.60** | **41.55** | **66.61** | **73.68** | **66.06** | **63.47**",
+        "bbox": [
+          105.1576171875,
+          301.710234375,
+          504.4517578125,
+          570.727265625
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table D1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-70B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 68.83,
+        "baseline_label": "FP16",
+        "baseline_value": 70.39,
+        "delta": -1.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "D More Empirical Results",
+        "quote": "DuQuant+Lwc | **79.82** | **59.76** | **46.76** | **73.12** | **79.38** | **74.11** | **68.83**",
+        "bbox": [
+          105.1576171875,
+          301.710234375,
+          504.4517578125,
+          570.727265625
+        ],
+        "block_id": "/page/17/Table/6",
+        "source_table": "Table D1"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-13B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "0-shot Accuracy (%)",
+        "value": 51.08,
+        "baseline_label": "FP16",
+        "baseline_value": 54.54,
+        "delta": -3.46,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "DuQuant_{LWC} | 40.13 | **47.48** | **58.86** | **57.83** | **51.08**",
+        "bbox": [
+          113.996953125,
+          93.63234375,
+          495.612421875,
+          167.78953125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-13B",
+        "method": "Atom",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "0-shot Accuracy (%)",
+        "value": 41.07,
+        "baseline_label": "FP16",
+        "baseline_value": 54.54,
+        "delta": -13.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "Atom | 32.54 | 39.60 | 46.02 | 46.11 | 41.07",
+        "bbox": [
+          113.996953125,
+          93.63234375,
+          495.612421875,
+          167.78953125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "5-shot Accuracy (%)",
+        "value": 51.96,
+        "baseline_label": "FP16",
+        "baseline_value": 55.78,
+        "delta": -3.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "DuQuant | **40.82** | 46.61 | 58.73 | 57.59 | 50.94 | 40.92 | **48.78** | **60.42** | 57.71 | **51.96**",
+        "bbox": [
+          113.996953125,
+          93.63234375,
+          495.612421875,
+          167.78953125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-13B",
+        "method": "SmoothQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "0-shot Accuracy (%)",
+        "value": 22.82,
+        "baseline_label": "FP16",
+        "baseline_value": 54.54,
+        "delta": -31.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "SmoothQuant | 21.70 | 24.29 | 22.13 | 23.16 | 22.82",
+        "bbox": [
+          113.996953125,
+          93.63234375,
+          495.612421875,
+          167.78953125
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "MMLU",
+        "metric": "0-shot Accuracy (%)",
+        "value": 45.44,
+        "baseline_label": "FP16",
+        "baseline_value": 49.07,
+        "delta": -3.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 19,
+        "section": "D More Empirical Results",
+        "quote": "**DuQuant** | **35.85** | **42.66** | **52.03** | **51.23** | **45.44**",
+        "bbox": [
+          104.243203125,
+          120.67171875,
+          505.366171875,
+          197.98453125
+        ],
+        "block_id": "/page/18/Table/2",
+        "source_table": "Table D2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LongBench",
+        "metric": "Avg Score",
+        "value": 40.37,
+        "baseline_label": "FP16",
+        "baseline_value": 41.83,
+        "delta": -1.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "DuQuant | **19.98** | **21.15** | **25.85** | **64.00** | **78.91** | **42.24** | **23.15** | **47.66** | **40.37**",
+        "bbox": [
+          112.777734375,
+          189.035859375,
+          496.831640625,
+          275.026640625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-7B",
+        "method": "Atom",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LongBench",
+        "metric": "Avg Score",
+        "value": 34.34,
+        "baseline_label": "FP16",
+        "baseline_value": 41.83,
+        "delta": -7.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "Atom | 17.97 | 20.24 | 24.60 | 58.00 | 67.20 | 37.94 | 19.41 | 29.34 | 34.34",
+        "bbox": [
+          112.777734375,
+          189.035859375,
+          496.831640625,
+          275.026640625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-v1.5-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LongBench",
+        "metric": "Avg Score",
+        "value": 40.32,
+        "baseline_label": "FP16",
+        "baseline_value": 42.45,
+        "delta": -2.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "DuQuant | **18.93** | **20.72** | **26.59** | **66.50** | **83.04** | **42.67** | **26.02** | **38.09** | **40.32**",
+        "bbox": [
+          112.777734375,
+          189.035859375,
+          496.831640625,
+          275.026640625
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.56,
+        "baseline_label": "FP16",
+        "baseline_value": 6.14,
+        "delta": 2.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "DuQuant | 8.56 | 11.98 | 13.66 | 75.68 | 68.48 | 41.81 | 71.99 | 73.07 | 66.22 | 66.21",
+        "bbox": [
+          113.38734375,
+          294.068671875,
+          496.22203125,
+          395.837578125
+        ],
+        "block_id": "/page/7/Table/5",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.06,
+        "baseline_label": "FP16",
+        "baseline_value": 6.14,
+        "delta": 1.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "**DuQuant**+LWC | **8.06** | **11.29** | **13.19** | **76.22** | **70.41** | **43.69** | **74.34** | **73.87** | **67.80** | 67.72",
+        "bbox": [
+          113.38734375,
+          294.068671875,
+          496.22203125,
+          395.837578125
+        ],
+        "block_id": "/page/7/Table/5",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8B",
+        "method": "SmoothQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 210.19,
+        "baseline_label": "FP16",
+        "baseline_value": 6.14,
+        "delta": 204.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "LLaMA3-8BW4A4 | SmoothQuant | 210.19 | 187.93 | 278.02",
+        "bbox": [
+          113.38734375,
+          294.068671875,
+          496.22203125,
+          395.837578125
+        ],
+        "block_id": "/page/7/Table/5",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8B",
+        "method": "DuQuant+LWC",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 67.72,
+        "baseline_label": "FP16",
+        "baseline_value": 74.22,
+        "delta": -6.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "**DuQuant**+LWC | **8.06** | **11.29** | **13.19** | **76.22** | **70.41** | **43.69** | **74.34** | **73.87** | **67.80** | 67.72",
+        "bbox": [
+          113.38734375,
+          294.068671875,
+          496.22203125,
+          395.837578125
+        ],
+        "block_id": "/page/7/Table/5",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8B",
+        "method": "DuQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.27,
+        "baseline_label": "FP16",
+        "baseline_value": 6.14,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "**DuQuant** | **6.27** | **8.38** | **10.77** | **80.20** | 77.27 | 52.05 | **80.12** | **79.14** | 72.77 | 73.59",
+        "bbox": [
+          113.38734375,
+          294.068671875,
+          496.22203125,
+          395.837578125
+        ],
+        "block_id": "/page/7/Table/5",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8B",
+        "method": "DuQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 73.59,
+        "baseline_label": "FP16",
+        "baseline_value": 74.22,
+        "delta": -0.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.1 Main Results",
+        "quote": "**DuQuant** | **6.27** | **8.38** | **10.77** | **80.20** | 77.27 | 52.05 | **80.12** | **79.14** | 72.77 | 73.59",
+        "bbox": [
+          113.38734375,
+          294.068671875,
+          496.22203125,
+          395.837578125
+        ],
+        "block_id": "/page/7/Table/5",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-70B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 4.9,
+        "baseline_label": "FP16",
+        "baseline_value": 2.9,
+        "delta": 2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "D More Empirical Results",
+        "quote": "**DuQuant** | **4.9** | **8.3** | **8.7** | **81.1** | **80.8** | **57.3** | **81.3** | **82.1** | **77.0** | **76.6**",
+        "bbox": [
+          104.23125,
+          368.921953125,
+          506.5734375,
+          409.156171875
+        ],
+        "block_id": "/page/19/Table/5",
+        "source_table": "Table D7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-70B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 76.6,
+        "baseline_label": "FP16",
+        "baseline_value": 80.1,
+        "delta": -3.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "D More Empirical Results",
+        "quote": "**DuQuant** | **4.9** | **8.3** | **8.7** | **81.1** | **80.8** | **57.3** | **81.3** | **82.1** | **77.0** | **76.6**",
+        "bbox": [
+          104.23125,
+          368.921953125,
+          506.5734375,
+          409.156171875
+        ],
+        "block_id": "/page/19/Table/5",
+        "source_table": "Table D7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-70B",
+        "method": "SmoothQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Avg-Commonsense-QA",
+        "metric": "Zero-shot Accuracy (%)",
+        "value": 63.7,
+        "baseline_label": "FP16",
+        "baseline_value": 80.1,
+        "delta": -16.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "D More Empirical Results",
+        "quote": "SmoothQuant | 9.6 | 16.9 | 17.7 | 76.9 | 75.8 | 43.5 | 64.4 | 62.9 | 58.9 | 63.7",
+        "bbox": [
+          104.23125,
+          368.921953125,
+          506.5734375,
+          409.156171875
+        ],
+        "block_id": "/page/19/Table/5",
+        "source_table": "Table D7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.86,
+        "baseline_label": "FP16",
+        "baseline_value": 5.25,
+        "delta": 0.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Comparison with FP16 models on MT-Bench.",
+        "quote": "Mistral-7BW4A4 | FP16 | 5.25 | 7.75 ... **DuQuant** | **5.86** | **8.48**",
+        "bbox": [
+          105.1576171875,
+          185.64046875,
+          504.4517578125,
+          262.95328125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table D6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "Atom",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 8.65,
+        "baseline_label": "FP16",
+        "baseline_value": 5.25,
+        "delta": 3.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Comparison with FP16 models on MT-Bench.",
+        "quote": "Atom | 8.65 | 12.43",
+        "bbox": [
+          105.1576171875,
+          185.64046875,
+          504.4517578125,
+          262.95328125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table D6"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi2-2.8B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 20.65,
+        "baseline_label": "FP16",
+        "baseline_value": 9.71,
+        "delta": 10.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Comparison with FP16 models on MT-Bench.",
+        "quote": "Phi2-2.8BW4A4 | FP16 | 9.71 | 12.76 ... **DuQuant** | **20.65** | **22.49**",
+        "bbox": [
+          105.1576171875,
+          185.64046875,
+          504.4517578125,
+          262.95328125
+        ],
+        "block_id": "/page/19/Table/2",
+        "source_table": "Table D6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 7.08,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "QuaRot-RTN | 7.08 | 6.57 | 5.44 | 9.66 | 6.73",
+        "bbox": [
+          108.3371484375,
+          622.771875,
+          305.2409765625,
+          685.884375
+        ],
+        "block_id": "/page/8/Table/11",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.44,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "QuaRot-GPTQ | 6.44 | 5.63 | 4.73 | 6.39 | 5.75",
+        "bbox": [
+          108.3371484375,
+          622.771875,
+          305.2409765625,
+          685.884375
+        ],
+        "block_id": "/page/8/Table/11",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 6.39,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "QuaRot-GPTQ | 6.44 | 5.63 | 4.73 | 6.39 | 5.75",
+        "bbox": [
+          108.3371484375,
+          622.771875,
+          305.2409765625,
+          685.884375
+        ],
+        "block_id": "/page/8/Table/11",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 9.66,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 4.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "QuaRot-RTN | 7.08 | 6.57 | 5.44 | 9.66 | 6.73",
+        "bbox": [
+          108.3371484375,
+          622.771875,
+          305.2409765625,
+          685.884375
+        ],
+        "block_id": "/page/8/Table/11",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA RTX 3090",
+        "metric": "Pre-filling Speedup over FP16",
+        "value": 2.08,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.08,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "LLaMA2-7B | 16 | 2.08 \\times",
+        "bbox": [
+          131.5142578125,
+          268.808203125,
+          280.8685546875,
+          343.754296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA RTX 3090",
+        "metric": "Pre-filling Speedup over FP16 (BS=1)",
+        "value": 1.95,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.95,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "LLaMA2-7B | 1 | 1.95 \\times",
+        "bbox": [
+          131.5142578125,
+          268.808203125,
+          280.8685546875,
+          343.754296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA RTX 3090",
+        "metric": "Pre-filling Speedup over FP16",
+        "value": 2.34,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.34,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "LLaMA2-13B | 16 | 2.34 \\times",
+        "bbox": [
+          131.5142578125,
+          268.808203125,
+          280.8685546875,
+          343.754296875
+        ],
+        "block_id": "/page/9/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA RTX 3090",
+        "metric": "Memory (GB) Pre-filling",
+        "value": 4.786,
+        "baseline_label": "FP16",
+        "baseline_value": 15.282,
+        "delta": -10.496,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "DuQuant | 4.786 | 3.193× | 3.893 | 3.503×",
+        "bbox": [
+          107.2255078125,
+          427.424765625,
+          478.4776171875,
+          496.059609375
+        ],
+        "block_id": "/page/9/Table/9",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA RTX 3090",
+        "metric": "Memory Saving Pre-filling (x)",
+        "value": 3.193,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.193,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "DuQuant | 4.786 | 3.193× | 3.893 | 3.503×",
+        "bbox": [
+          107.2255078125,
+          427.424765625,
+          478.4776171875,
+          496.059609375
+        ],
+        "block_id": "/page/9/Table/9",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA RTX 3090",
+        "metric": "Memory Saving Decoding (x)",
+        "value": 3.503,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.503,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "reduces memory usage during decoding phase by 3.50×",
+        "bbox": [
+          106.98046875,
+          529.8046875,
+          505.744873046875,
+          671.1480712890625
+        ],
+        "block_id": "/page/1/Text/4",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA A100",
+        "metric": "Quantization Runtime (s)",
+        "value": 50,
+        "baseline_label": "OmniQuant",
+        "baseline_value": 7200,
+        "delta": -7150,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "LLaMA2-7B | 2.0h | 9.1h | 1.1h | 20min | 50s",
+        "bbox": [
+          261.5044921875,
+          518.937890625,
+          502.3001953125,
+          562.327734375
+        ],
+        "block_id": "/page/9/Table/12",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA A100",
+        "metric": "Quantization Runtime (s)",
+        "value": 71,
+        "baseline_label": "OmniQuant",
+        "baseline_value": 11520,
+        "delta": -11449,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "LLaMA2-13B | 3.2h | 16.0h | 1.7h | 36min | 71s",
+        "bbox": [
+          261.5044921875,
+          518.937890625,
+          502.3001953125,
+          562.327734375
+        ],
+        "block_id": "/page/9/Table/12",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-70B",
+        "method": "DuQuant",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "NVIDIA A100",
+        "metric": "Quantization Runtime (s)",
+        "value": 270,
+        "baseline_label": "OmniQuant",
+        "baseline_value": 52560,
+        "delta": -52290,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "4.2 Ablation Study",
+        "quote": "LLaMA2-70B | 14.6h | 18.6h | 9.3h | 3.5h | 270s",
+        "bbox": [
+          261.5044921875,
+          518.937890625,
+          502.3001953125,
+          562.327734375
+        ],
+        "block_id": "/page/9/Table/12",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant (Smooth+Rot1+Perm+Rot2)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (Ablation)",
+        "value": 6.28,
+        "baseline_label": "Smooth-only (NaN)",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "✓ | ✓ | ✓ | ✓ | **6.28** | **7.90** | **5.42** | **7.05**",
+        "bbox": [
+          175.8603515625,
+          186.63046875,
+          434.9443359375,
+          241.85390625
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant (Rot1-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (Ablation)",
+        "value": 8.48,
+        "baseline_label": "Full DuQuant",
+        "baseline_value": 6.28,
+        "delta": 2.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "| ✓ |  |  | 8.48 | 10.63 | 14.32 | 21.73",
+        "bbox": [
+          175.8603515625,
+          186.63046875,
+          434.9443359375,
+          241.85390625
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant (Smooth+Rot1)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (Ablation)",
+        "value": 7.92,
+        "baseline_label": "Full DuQuant",
+        "baseline_value": 6.28,
+        "delta": 1.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "✓ | ✓ |  |  | 7.92 | 10.64 | 5.96 | 7.94",
+        "bbox": [
+          175.8603515625,
+          186.63046875,
+          434.9443359375,
+          241.85390625
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "Smooth-Massive-only",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (Outlier Ablation)",
+        "value": 18.16,
+        "baseline_label": "Full DuQuant",
+        "baseline_value": 6.28,
+        "delta": 11.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "|  | ✓ | 18.16 | 26.42 | 10.51 | 16.01",
+        "bbox": [
+          106.430625,
+          420.680390625,
+          284.4365625,
+          467.225859375
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "Smooth-Normal-only",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity (Outlier Ablation)",
+        "value": 10.88,
+        "baseline_label": "Full DuQuant",
+        "baseline_value": 6.28,
+        "delta": 4.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "4.2 Ablation Study",
+        "quote": "| ✓ |  | 10.88 | 13.89 | 7.87 | 10.52",
+        "bbox": [
+          106.430625,
+          420.680390625,
+          284.4365625,
+          467.225859375
+        ],
+        "block_id": "/page/8/Table/6",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7B",
+        "method": "DuQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.53,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Comparison with FP16 models on MT-Bench.",
+        "quote": "DuQuant | **5.73** | **5.13** | **4.14** | **3.57** | **5.53** | **4.92** | **3.35**",
+        "bbox": [
+          121.921875,
+          567.00703125,
+          487.6875,
+          716.89921875
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table D8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-70B",
+        "method": "DuQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 3.35,
+        "baseline_label": "FP16",
+        "baseline_value": 3.31,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Comparison with FP16 models on MT-Bench.",
+        "quote": "DuQuant | **5.73** | **5.13** | **4.14** | **3.57** | **5.53** | **4.92** | **3.35**",
+        "bbox": [
+          121.921875,
+          567.00703125,
+          487.6875,
+          716.89921875
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table D8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA1-7B",
+        "method": "DuQuant",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText2",
+        "metric": "Perplexity",
+        "value": 5.73,
+        "baseline_label": "FP16",
+        "baseline_value": 5.68,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "Comparison with FP16 models on MT-Bench.",
+        "quote": "DuQuant | **5.73** | **5.13** | **4.14** | **3.57** | **5.53** | **4.92** | **3.35**",
+        "bbox": [
+          121.921875,
+          567.00703125,
+          487.6875,
+          716.89921875
+        ],
+        "block_id": "/page/19/Table/8",
+        "source_table": "Table D8"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 63,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }
