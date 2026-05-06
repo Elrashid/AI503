@@ -1,0 +1,528 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP46,GPT-4,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.656,,,,,True,measured,2,Abstract,,"stereotype recognition, with even the best-performing (GPT-4) having an overall accuracy of only 65%"
+RP46,GPT-4,FP16,16-bit,,TruthfulQA,Hallucination MC Accuracy,0.835,,,,,True,measured,30,6.2 Hallucination,Table 9,GPT-4 performs the best on MC and SUM tasks
+RP46,Llama2-70b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.974,,,,,True,measured,39,7.1 Jailbreak,Table 17,Llama2-70b ... 0.974
+RP46,Llama2-70b,FP16,16-bit,,ADVINSTRUCTION,Semantic Similarity (%),97.64,,,,,True,measured,50,9.1.2 Performance in Open-ended Tasks,Table 29,"Llama2-70b demonstrates the best robustness, as its average semantic similarity is 97.64%"
+RP46,GPT-4,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.813,,,,,True,measured,33,6.4 Adversarial Factuality,Table 14,"GPT-4 shows impressive performance, successfully identifying factual errors ... more than 80 percent"
+RP46,GPT-4,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.417,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,GPT-4 internal-knowledge avg 0.417
+RP46,Llama2-70b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.3125,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-70b internal-knowledge avg 0.3125
+RP46,ChatGPT,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.2878,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGPT internal-knowledge avg 0.2878
+RP46,ERNIE,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.2522,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ERNIE internal-knowledge avg 0.2522
+RP46,Vicuna-33b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.2605,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-33b internal-knowledge avg 0.2605
+RP46,Llama2-13b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.235,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-13b internal-knowledge avg 0.235
+RP46,Vicuna-13b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.18,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-13b internal-knowledge avg 0.18
+RP46,Vicuna-7b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.132,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-7b internal-knowledge avg 0.132
+RP46,Koala-13b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.145,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Koala-13b internal-knowledge avg 0.145
+RP46,Llama2-7b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.2025,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-7b internal-knowledge avg 0.2025
+RP46,Wizardlm-13b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.212,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Wizardlm-13b internal-knowledge avg 0.212
+RP46,ChatGLM2,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.1273,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGLM2 internal-knowledge avg 0.1273
+RP46,Oasst-12b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.1005,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Oasst-12b internal-knowledge avg 0.1005
+RP46,Baichuan-13b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.17,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Baichuan-13b internal-knowledge avg 0.17
+RP46,Mistral-7b,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.341,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Mistral-7b internal-knowledge avg 0.341
+RP46,PaLM 2,FP16,16-bit,,Internal-Knowledge QA (SQuAD2.0+CODAH+HotpotQA+AdversarialQA),Accuracy (Avg),0.2835,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,PaLM 2 internal-knowledge avg 0.2835
+RP46,GPT-4,FP16,16-bit,,Climate-FEVER,Macro F-1,0.816,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,GPT-4 ... 0.816
+RP46,GPT-4,FP16,16-bit,,SciFact,Macro F-1,0.833,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,GPT-4 ... 0.833
+RP46,GPT-4,FP16,16-bit,,COVID-Fact,Macro F-1,0.724,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,GPT-4 ... 0.724
+RP46,GPT-4,FP16,16-bit,,HealthVer,Macro F-1,0.797,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,GPT-4 ... 0.797
+RP46,Llama2-70b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.724,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-70b ... 0.724
+RP46,Llama2-70b,FP16,16-bit,,SciFact,Macro F-1,0.744,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-70b ... 0.744
+RP46,Llama2-70b,FP16,16-bit,,COVID-Fact,Macro F-1,0.729,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-70b ... 0.729
+RP46,Llama2-70b,FP16,16-bit,,HealthVer,Macro F-1,0.685,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-70b ... 0.685
+RP46,ChatGPT,FP16,16-bit,,Climate-FEVER,Macro F-1,0.726,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGPT ... 0.726
+RP46,ChatGPT,FP16,16-bit,,SciFact,Macro F-1,0.841,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGPT ... 0.841
+RP46,ChatGPT,FP16,16-bit,,COVID-Fact,Macro F-1,0.588,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGPT ... 0.588
+RP46,ChatGPT,FP16,16-bit,,HealthVer,Macro F-1,0.747,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGPT ... 0.747
+RP46,ERNIE,FP16,16-bit,,Climate-FEVER,Macro F-1,0.665,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ERNIE ... 0.665
+RP46,ERNIE,FP16,16-bit,,SciFact,Macro F-1,0.854,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ERNIE ... 0.854
+RP46,ERNIE,FP16,16-bit,,COVID-Fact,Macro F-1,0.567,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ERNIE ... 0.567
+RP46,ERNIE,FP16,16-bit,,HealthVer,Macro F-1,0.669,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ERNIE ... 0.669
+RP46,Vicuna-33b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.749,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-33b ... 0.749
+RP46,Vicuna-33b,FP16,16-bit,,SciFact,Macro F-1,0.836,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-33b ... 0.836
+RP46,Vicuna-33b,FP16,16-bit,,COVID-Fact,Macro F-1,0.631,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-33b ... 0.631
+RP46,Vicuna-33b,FP16,16-bit,,HealthVer,Macro F-1,0.689,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-33b ... 0.689
+RP46,Llama2-13b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.803,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-13b ... 0.803
+RP46,Llama2-13b,FP16,16-bit,,SciFact,Macro F-1,0.797,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-13b ... 0.797
+RP46,Llama2-13b,FP16,16-bit,,COVID-Fact,Macro F-1,0.54,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-13b ... 0.54
+RP46,Llama2-13b,FP16,16-bit,,HealthVer,Macro F-1,0.747,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-13b ... 0.747
+RP46,Vicuna-13b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.591,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-13b ... 0.591
+RP46,Vicuna-13b,FP16,16-bit,,SciFact,Macro F-1,0.672,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-13b ... 0.672
+RP46,Vicuna-13b,FP16,16-bit,,COVID-Fact,Macro F-1,0.709,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-13b ... 0.709
+RP46,Vicuna-13b,FP16,16-bit,,HealthVer,Macro F-1,0.518,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-13b ... 0.518
+RP46,Vicuna-7b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.4,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-7b ... 0.4
+RP46,Vicuna-7b,FP16,16-bit,,SciFact,Macro F-1,0.583,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-7b ... 0.583
+RP46,Vicuna-7b,FP16,16-bit,,COVID-Fact,Macro F-1,0.757,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-7b ... 0.757
+RP46,Vicuna-7b,FP16,16-bit,,HealthVer,Macro F-1,0.585,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Vicuna-7b ... 0.585
+RP46,Koala-13b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.55,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Koala-13b ... 0.55
+RP46,Koala-13b,FP16,16-bit,,SciFact,Macro F-1,0.697,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Koala-13b ... 0.697
+RP46,Koala-13b,FP16,16-bit,,COVID-Fact,Macro F-1,0.416,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Koala-13b ... 0.416
+RP46,Koala-13b,FP16,16-bit,,HealthVer,Macro F-1,0.547,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Koala-13b ... 0.547
+RP46,Llama2-7b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.747,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-7b ... 0.747
+RP46,Llama2-7b,FP16,16-bit,,SciFact,Macro F-1,0.772,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-7b ... 0.772
+RP46,Llama2-7b,FP16,16-bit,,COVID-Fact,Macro F-1,0.419,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-7b ... 0.419
+RP46,Llama2-7b,FP16,16-bit,,HealthVer,Macro F-1,0.614,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Llama2-7b ... 0.614
+RP46,Wizardlm-13b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.597,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Wizardlm-13b ... 0.597
+RP46,Wizardlm-13b,FP16,16-bit,,SciFact,Macro F-1,0.709,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Wizardlm-13b ... 0.709
+RP46,Wizardlm-13b,FP16,16-bit,,COVID-Fact,Macro F-1,0.37,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Wizardlm-13b ... 0.37
+RP46,Wizardlm-13b,FP16,16-bit,,HealthVer,Macro F-1,0.621,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Wizardlm-13b ... 0.621
+RP46,ChatGLM2,FP16,16-bit,,Climate-FEVER,Macro F-1,0.576,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGLM2 ... 0.576
+RP46,ChatGLM2,FP16,16-bit,,SciFact,Macro F-1,0.648,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGLM2 ... 0.648
+RP46,ChatGLM2,FP16,16-bit,,COVID-Fact,Macro F-1,0.354,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGLM2 ... 0.354
+RP46,ChatGLM2,FP16,16-bit,,HealthVer,Macro F-1,0.589,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,ChatGLM2 ... 0.589
+RP46,Oasst-12b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.576,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Oasst-12b ... 0.576
+RP46,Oasst-12b,FP16,16-bit,,SciFact,Macro F-1,0.452,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Oasst-12b ... 0.452
+RP46,Oasst-12b,FP16,16-bit,,COVID-Fact,Macro F-1,0.546,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Oasst-12b ... 0.546
+RP46,Oasst-12b,FP16,16-bit,,HealthVer,Macro F-1,0.561,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Oasst-12b ... 0.561
+RP46,Baichuan-13b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.708,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Baichuan-13b ... 0.708
+RP46,Baichuan-13b,FP16,16-bit,,SciFact,Macro F-1,0.691,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Baichuan-13b ... 0.691
+RP46,Baichuan-13b,FP16,16-bit,,COVID-Fact,Macro F-1,0.455,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Baichuan-13b ... 0.455
+RP46,Baichuan-13b,FP16,16-bit,,HealthVer,Macro F-1,0.632,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Baichuan-13b ... 0.632
+RP46,Mistral-7b,FP16,16-bit,,Climate-FEVER,Macro F-1,0.704,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Mistral-7b ... 0.704
+RP46,Mistral-7b,FP16,16-bit,,SciFact,Macro F-1,0.751,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Mistral-7b ... 0.751
+RP46,Mistral-7b,FP16,16-bit,,COVID-Fact,Macro F-1,0.602,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Mistral-7b ... 0.602
+RP46,Mistral-7b,FP16,16-bit,,HealthVer,Macro F-1,0.69,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,Mistral-7b ... 0.69
+RP46,PaLM 2,FP16,16-bit,,Climate-FEVER,Macro F-1,0.435,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,PaLM 2 ... 0.435
+RP46,PaLM 2,FP16,16-bit,,SciFact,Macro F-1,0.551,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,PaLM 2 ... 0.551
+RP46,PaLM 2,FP16,16-bit,,COVID-Fact,Macro F-1,0.415,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,PaLM 2 ... 0.415
+RP46,PaLM 2,FP16,16-bit,,HealthVer,Macro F-1,0.725,,,,,False,measured,28,6.1.2 Integrating External Knowledge,Table 7,PaLM 2 ... 0.725
+RP46,Vicuna-7b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.077,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-7b MC Acc 0.077
+RP46,Koala-13b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.375,,,,,False,measured,30,6.2 Hallucination,Table 9,Koala-13b MC Acc 0.375
+RP46,Baichuan-13b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.125,,,,,False,measured,30,6.2 Hallucination,Table 9,Baichuan-13b MC Acc 0.125
+RP46,ChatGLM2,FP16,16-bit,,TruthfulQA,MC Accuracy,0.557,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGLM2 MC Acc 0.557
+RP46,Oasst-12b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.381,,,,,False,measured,30,6.2 Hallucination,Table 9,Oasst-12b MC Acc 0.381
+RP46,ERNIE,FP16,16-bit,,TruthfulQA,MC Accuracy,0.651,,,,,False,measured,30,6.2 Hallucination,Table 9,ERNIE MC Acc 0.651
+RP46,Vicuna-33b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.412,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-33b MC Acc 0.412
+RP46,Wizardlm-13b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.233,,,,,False,measured,30,6.2 Hallucination,Table 9,Wizardlm-13b MC Acc 0.233
+RP46,Llama2-70b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.256,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-70b MC Acc 0.256
+RP46,Llama2-13b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.185,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-13b MC Acc 0.185
+RP46,ChatGPT,FP16,16-bit,,TruthfulQA,MC Accuracy,0.557,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGPT MC Acc 0.557
+RP46,Vicuna-13b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.153,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-13b MC Acc 0.153
+RP46,Llama2-7b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.105,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-7b MC Acc 0.105
+RP46,GPT-4,FP16,16-bit,,TruthfulQA,MC Accuracy,0.835,,,,,False,measured,30,6.2 Hallucination,Table 9,GPT-4 MC Acc 0.835
+RP46,Mistral-7b,FP16,16-bit,,TruthfulQA,MC Accuracy,0.412,,,,,False,measured,30,6.2 Hallucination,Table 9,Mistral-7b MC Acc 0.412
+RP46,PaLM 2,FP16,16-bit,,TruthfulQA,MC Accuracy,0.577,,,,,False,measured,30,6.2 Hallucination,Table 9,PaLM 2 MC Acc 0.577
+RP46,Vicuna-7b,FP16,16-bit,,HaluEval-QA,Accuracy,0.4,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-7b QA Acc 0.4
+RP46,Koala-13b,FP16,16-bit,,HaluEval-QA,Accuracy,0.48,,,,,False,measured,30,6.2 Hallucination,Table 9,Koala-13b QA Acc 0.48
+RP46,Baichuan-13b,FP16,16-bit,,HaluEval-QA,Accuracy,0.53,,,,,False,measured,30,6.2 Hallucination,Table 9,Baichuan-13b QA Acc 0.53
+RP46,ChatGLM2,FP16,16-bit,,HaluEval-QA,Accuracy,0.6,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGLM2 QA Acc 0.6
+RP46,Oasst-12b,FP16,16-bit,,HaluEval-QA,Accuracy,0.42,,,,,False,measured,30,6.2 Hallucination,Table 9,Oasst-12b QA Acc 0.42
+RP46,ERNIE,FP16,16-bit,,HaluEval-QA,Accuracy,0.52,,,,,False,measured,30,6.2 Hallucination,Table 9,ERNIE QA Acc 0.52
+RP46,Vicuna-33b,FP16,16-bit,,HaluEval-QA,Accuracy,0.41,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-33b QA Acc 0.41
+RP46,Wizardlm-13b,FP16,16-bit,,HaluEval-QA,Accuracy,0.4,,,,,False,measured,30,6.2 Hallucination,Table 9,Wizardlm-13b QA Acc 0.4
+RP46,Llama2-70b,FP16,16-bit,,HaluEval-QA,Accuracy,0.37,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-70b QA Acc 0.37
+RP46,Llama2-13b,FP16,16-bit,,HaluEval-QA,Accuracy,0.51,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-13b QA Acc 0.51
+RP46,ChatGPT,FP16,16-bit,,HaluEval-QA,Accuracy,0.5,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGPT QA Acc 0.5
+RP46,Vicuna-13b,FP16,16-bit,,HaluEval-QA,Accuracy,0.53,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-13b QA Acc 0.53
+RP46,Llama2-7b,FP16,16-bit,,HaluEval-QA,Accuracy,0.53,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-7b QA Acc 0.53
+RP46,GPT-4,FP16,16-bit,,HaluEval-QA,Accuracy,0.32,,,,,False,measured,30,6.2 Hallucination,Table 9,GPT-4 QA Acc 0.32
+RP46,Mistral-7b,FP16,16-bit,,HaluEval-QA,Accuracy,0.48,,,,,False,measured,30,6.2 Hallucination,Table 9,Mistral-7b QA Acc 0.48
+RP46,PaLM 2,FP16,16-bit,,HaluEval-QA,Accuracy,0.39,,,,,False,measured,30,6.2 Hallucination,Table 9,PaLM 2 QA Acc 0.39
+RP46,Vicuna-7b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.44,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-7b KGD Acc 0.44
+RP46,Koala-13b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.46,,,,,False,measured,30,6.2 Hallucination,Table 9,Koala-13b KGD Acc 0.46
+RP46,Baichuan-13b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.4,,,,,False,measured,30,6.2 Hallucination,Table 9,Baichuan-13b KGD Acc 0.4
+RP46,ChatGLM2,FP16,16-bit,,HaluEval-KGD,Accuracy,0.5,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGLM2 KGD Acc 0.5
+RP46,Oasst-12b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.44,,,,,False,measured,30,6.2 Hallucination,Table 9,Oasst-12b KGD Acc 0.44
+RP46,ERNIE,FP16,16-bit,,HaluEval-KGD,Accuracy,0.43,,,,,False,measured,30,6.2 Hallucination,Table 9,ERNIE KGD Acc 0.43
+RP46,Vicuna-33b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.42,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-33b KGD Acc 0.42
+RP46,Wizardlm-13b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.36,,,,,False,measured,30,6.2 Hallucination,Table 9,Wizardlm-13b KGD Acc 0.36
+RP46,Llama2-70b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.44,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-70b KGD Acc 0.44
+RP46,Llama2-13b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.42,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-13b KGD Acc 0.42
+RP46,ChatGPT,FP16,16-bit,,HaluEval-KGD,Accuracy,0.43,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGPT KGD Acc 0.43
+RP46,Vicuna-13b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.46,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-13b KGD Acc 0.46
+RP46,Llama2-7b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.43,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-7b KGD Acc 0.43
+RP46,GPT-4,FP16,16-bit,,HaluEval-KGD,Accuracy,0.15,,,,,False,measured,30,6.2 Hallucination,Table 9,GPT-4 KGD Acc 0.15
+RP46,Mistral-7b,FP16,16-bit,,HaluEval-KGD,Accuracy,0.45,,,,,False,measured,30,6.2 Hallucination,Table 9,Mistral-7b KGD Acc 0.45
+RP46,PaLM 2,FP16,16-bit,,HaluEval-KGD,Accuracy,0.27,,,,,False,measured,30,6.2 Hallucination,Table 9,PaLM 2 KGD Acc 0.27
+RP46,Vicuna-7b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.47,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-7b SUM Acc 0.47
+RP46,Koala-13b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.49,,,,,False,measured,30,6.2 Hallucination,Table 9,Koala-13b SUM Acc 0.49
+RP46,Baichuan-13b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.17,,,,,False,measured,30,6.2 Hallucination,Table 9,Baichuan-13b SUM Acc 0.17
+RP46,ChatGLM2,FP16,16-bit,,HaluEval-SUM,Accuracy,0.51,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGLM2 SUM Acc 0.51
+RP46,Oasst-12b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.43,,,,,False,measured,30,6.2 Hallucination,Table 9,Oasst-12b SUM Acc 0.43
+RP46,ERNIE,FP16,16-bit,,HaluEval-SUM,Accuracy,0.46,,,,,False,measured,30,6.2 Hallucination,Table 9,ERNIE SUM Acc 0.46
+RP46,Vicuna-33b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.45,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-33b SUM Acc 0.45
+RP46,Wizardlm-13b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.43,,,,,False,measured,30,6.2 Hallucination,Table 9,Wizardlm-13b SUM Acc 0.43
+RP46,Llama2-70b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.54,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-70b SUM Acc 0.54
+RP46,Llama2-13b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.5,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-13b SUM Acc 0.5
+RP46,ChatGPT,FP16,16-bit,,HaluEval-SUM,Accuracy,0.63,,,,,False,measured,30,6.2 Hallucination,Table 9,ChatGPT SUM Acc 0.63
+RP46,Vicuna-13b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.47,,,,,False,measured,30,6.2 Hallucination,Table 9,Vicuna-13b SUM Acc 0.47
+RP46,Llama2-7b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.52,,,,,False,measured,30,6.2 Hallucination,Table 9,Llama2-7b SUM Acc 0.52
+RP46,GPT-4,FP16,16-bit,,HaluEval-SUM,Accuracy,0.76,,,,,False,measured,30,6.2 Hallucination,Table 9,GPT-4 SUM Acc 0.76
+RP46,Mistral-7b,FP16,16-bit,,HaluEval-SUM,Accuracy,0.49,,,,,False,measured,30,6.2 Hallucination,Table 9,Mistral-7b SUM Acc 0.49
+RP46,PaLM 2,FP16,16-bit,,HaluEval-SUM,Accuracy,0.28,,,,,False,measured,30,6.2 Hallucination,Table 9,PaLM 2 SUM Acc 0.28
+RP46,Vicuna-7b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.395,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Vicuna-7b Preference Perc 0.395
+RP46,Koala-13b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.5,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Koala-13b Preference Perc 0.5
+RP46,Baichuan-13b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.286,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Baichuan-13b Preference Perc 0.286
+RP46,ChatGLM2,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.432,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,ChatGLM2 Preference Perc 0.432
+RP46,Oasst-12b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.436,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Oasst-12b Preference Perc 0.436
+RP46,ERNIE,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.312,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,ERNIE Preference Perc 0.312
+RP46,Vicuna-33b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.458,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Vicuna-33b Preference Perc 0.458
+RP46,Wizardlm-13b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.385,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Wizardlm-13b Preference Perc 0.385
+RP46,Llama2-13b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.571,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Llama2-13b Preference Perc 0.571
+RP46,ChatGPT,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.257,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,ChatGPT Preference Perc 0.257
+RP46,Vicuna-13b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.375,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Vicuna-13b Preference Perc 0.375
+RP46,Llama2-7b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.587,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Llama2-7b Preference Perc 0.587
+RP46,Llama2-70b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.468,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Llama2-70b Preference Perc 0.468
+RP46,GPT-4,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.296,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,GPT-4 Preference Perc 0.296
+RP46,Mistral-7b,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.293,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,Mistral-7b Preference Perc 0.293
+RP46,PaLM 2,FP16,16-bit,,Preference Sycophancy,Opinion Change Percentage,0.581,,,,,False,measured,32,6.3.2 Preference-driven Sycophancy,Table 12,PaLM 2 Preference Perc 0.581
+RP46,Vicuna-7b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.469,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Vicuna-7b Correction Perc 0.469
+RP46,Koala-13b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.435,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Koala-13b Correction Perc 0.435
+RP46,Baichuan-13b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.44,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Baichuan-13b Correction Perc 0.44
+RP46,ChatGLM2,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.349,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,ChatGLM2 Correction Perc 0.349
+RP46,Oasst-12b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.221,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Oasst-12b Correction Perc 0.221
+RP46,ERNIE,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.407,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,ERNIE Correction Perc 0.407
+RP46,Vicuna-33b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.699,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Vicuna-33b Correction Perc 0.699
+RP46,Wizardlm-13b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.794,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Wizardlm-13b Correction Perc 0.794
+RP46,Llama2-13b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.78,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Llama2-13b Correction Perc 0.78
+RP46,ChatGPT,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.708,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,ChatGPT Correction Perc 0.708
+RP46,Vicuna-13b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.665,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Vicuna-13b Correction Perc 0.665
+RP46,Llama2-7b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.718,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Llama2-7b Correction Perc 0.718
+RP46,Llama2-70b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.794,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Llama2-70b Correction Perc 0.794
+RP46,GPT-4,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.813,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,GPT-4 Correction Perc 0.813
+RP46,Mistral-7b,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.426,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,Mistral-7b Correction Perc 0.426
+RP46,PaLM 2,FP16,16-bit,,Adversarial Factuality,Correction Percentage,0.273,,,,,False,measured,33,6.4 Adversarial Factuality,Table 14,PaLM 2 Correction Perc 0.273
+RP46,Mistral-7b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.59,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Mistral-7b JB Overall 0.59
+RP46,Mistral-7b,FP16,16-bit,,Perspective API,Average Toxicity,0.262,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Mistral-7b Avg Toxic 0.262
+RP46,Mistral-7b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.961,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Mistral-7b Max Toxic 0.961
+RP46,Mistral-7b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.709,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Mistral-7b Misuse Overall 0.709
+RP46,Mistral-7b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.46,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Mistral-7b Exag 0.46
+RP46,Baichuan-13b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.25,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Baichuan-13b JB Overall 0.25
+RP46,Baichuan-13b,FP16,16-bit,,Perspective API,Average Toxicity,0.112,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Baichuan-13b Avg Toxic 0.112
+RP46,Baichuan-13b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.95,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Baichuan-13b Max Toxic 0.95
+RP46,Baichuan-13b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.114,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Baichuan-13b Misuse Overall 0.114
+RP46,Baichuan-13b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.19,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Baichuan-13b Exag 0.19
+RP46,ChatGLM2,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.845,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGLM2 JB Overall 0.845
+RP46,ChatGLM2,FP16,16-bit,,Perspective API,Average Toxicity,0.141,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGLM2 Avg Toxic 0.141
+RP46,ChatGLM2,FP16,16-bit,,Perspective API,Maximum Toxicity,0.892,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGLM2 Max Toxic 0.892
+RP46,ChatGLM2,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.819,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGLM2 Misuse Overall 0.819
+RP46,ChatGLM2,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.15,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGLM2 Exag 0.15
+RP46,ChatGPT,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.898,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGPT JB Overall 0.898
+RP46,ChatGPT,FP16,16-bit,,Perspective API,Average Toxicity,0.352,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGPT Avg Toxic 0.352
+RP46,ChatGPT,FP16,16-bit,,Perspective API,Maximum Toxicity,0.87,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGPT Max Toxic 0.87
+RP46,ChatGPT,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.91,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGPT Misuse Overall 0.91
+RP46,ChatGPT,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.15,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ChatGPT Exag 0.15
+RP46,GPT-4,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.914,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,GPT-4 JB Overall 0.914
+RP46,GPT-4,FP16,16-bit,,Perspective API,Average Toxicity,0.386,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,GPT-4 Avg Toxic 0.386
+RP46,GPT-4,FP16,16-bit,,Perspective API,Maximum Toxicity,0.95,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,GPT-4 Max Toxic 0.95
+RP46,GPT-4,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.924,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,GPT-4 Misuse Overall 0.924
+RP46,GPT-4,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.085,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,GPT-4 Exag 0.085
+RP46,Llama2-7b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.945,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-7b JB Overall 0.945
+RP46,Llama2-7b,FP16,16-bit,,Perspective API,Average Toxicity,0.191,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-7b Avg Toxic 0.191
+RP46,Llama2-7b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.641,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-7b Max Toxic 0.641
+RP46,Llama2-7b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.943,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-7b Misuse Overall 0.943
+RP46,Llama2-7b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.49,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-7b Exag 0.49
+RP46,Llama2-13b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.959,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-13b JB Overall 0.959
+RP46,Llama2-13b,FP16,16-bit,,Perspective API,Average Toxicity,0.205,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-13b Avg Toxic 0.205
+RP46,Llama2-13b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.643,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-13b Max Toxic 0.643
+RP46,Llama2-13b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.963,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-13b Misuse Overall 0.963
+RP46,Llama2-13b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.55,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-13b Exag 0.55
+RP46,Llama2-70b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.974,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-70b JB Overall 0.974
+RP46,Llama2-70b,FP16,16-bit,,Perspective API,Average Toxicity,0.248,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-70b Avg Toxic 0.248
+RP46,Llama2-70b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.787,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-70b Max Toxic 0.787
+RP46,Llama2-70b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.956,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-70b Misuse Overall 0.956
+RP46,Llama2-70b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.315,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Llama2-70b Exag 0.315
+RP46,Vicuna-7b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.596,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-7b JB Overall 0.596
+RP46,Vicuna-7b,FP16,16-bit,,Perspective API,Average Toxicity,0.213,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-7b Avg Toxic 0.213
+RP46,Vicuna-7b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.956,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-7b Max Toxic 0.956
+RP46,Vicuna-7b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.565,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-7b Misuse Overall 0.565
+RP46,Vicuna-7b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.09,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-7b Exag 0.09
+RP46,Vicuna-13b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.781,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-13b JB Overall 0.781
+RP46,Vicuna-13b,FP16,16-bit,,Perspective API,Average Toxicity,0.374,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-13b Avg Toxic 0.374
+RP46,Vicuna-13b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.964,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-13b Max Toxic 0.964
+RP46,Vicuna-13b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.848,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-13b Misuse Overall 0.848
+RP46,Vicuna-13b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.095,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-13b Exag 0.095
+RP46,Vicuna-33b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.585,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-33b JB Overall 0.585
+RP46,Vicuna-33b,FP16,16-bit,,Perspective API,Average Toxicity,0.294,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-33b Avg Toxic 0.294
+RP46,Vicuna-33b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.961,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-33b Max Toxic 0.961
+RP46,Vicuna-33b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.735,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-33b Misuse Overall 0.735
+RP46,Vicuna-33b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.035,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Vicuna-33b Exag 0.035
+RP46,Wizardlm-13b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.865,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Wizardlm-13b JB Overall 0.865
+RP46,Wizardlm-13b,FP16,16-bit,,Perspective API,Average Toxicity,0.183,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Wizardlm-13b Avg Toxic 0.183
+RP46,Wizardlm-13b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.925,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Wizardlm-13b Max Toxic 0.925
+RP46,Wizardlm-13b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.883,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Wizardlm-13b Misuse Overall 0.883
+RP46,Wizardlm-13b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.06,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Wizardlm-13b Exag 0.06
+RP46,Koala-13b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.691,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Koala-13b JB Overall 0.691
+RP46,Koala-13b,FP16,16-bit,,Perspective API,Average Toxicity,0.237,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Koala-13b Avg Toxic 0.237
+RP46,Koala-13b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.956,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Koala-13b Max Toxic 0.956
+RP46,Koala-13b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.738,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Koala-13b Misuse Overall 0.738
+RP46,Koala-13b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.045,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Koala-13b Exag 0.045
+RP46,Oasst-12b,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.69,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Oasst-12b JB Overall 0.69
+RP46,Oasst-12b,FP16,16-bit,,Perspective API,Average Toxicity,0.154,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Oasst-12b Avg Toxic 0.154
+RP46,Oasst-12b,FP16,16-bit,,Perspective API,Maximum Toxicity,0.961,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Oasst-12b Max Toxic 0.961
+RP46,Oasst-12b,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.583,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Oasst-12b Misuse Overall 0.583
+RP46,Oasst-12b,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.05,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,Oasst-12b Exag 0.05
+RP46,ERNIE,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.949,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ERNIE JB Overall 0.949
+RP46,ERNIE,FP16,16-bit,,Perspective API,Average Toxicity,0.072,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ERNIE Avg Toxic 0.072
+RP46,ERNIE,FP16,16-bit,,Perspective API,Maximum Toxicity,0.215,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ERNIE Max Toxic 0.215
+RP46,ERNIE,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.899,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ERNIE Misuse Overall 0.899
+RP46,ERNIE,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.385,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,ERNIE Exag 0.385
+RP46,PaLM 2,FP16,16-bit,,JAILBREAK TRIGGER,Refuse to Answer (RtA),0.486,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,PaLM 2 JB Overall 0.486
+RP46,PaLM 2,FP16,16-bit,,Perspective API,Average Toxicity,0.317,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,PaLM 2 Avg Toxic 0.317
+RP46,PaLM 2,FP16,16-bit,,Perspective API,Maximum Toxicity,0.982,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,PaLM 2 Max Toxic 0.982
+RP46,PaLM 2,FP16,16-bit,,Misuse (DoNotAnswer+Additional+DoAnything),Refuse to Answer (RtA),0.473,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,PaLM 2 Misuse Overall 0.473
+RP46,PaLM 2,FP16,16-bit,,XSTEST,Exaggerated Safety RtA,0.377,,,,,False,measured,39,7.2 Exaggerated Safety,Table 17,PaLM 2 Exag 0.377
+RP46,Baichuan-13b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.279,,,,,False,measured,44,8.1 Stereotypes,Table 20,Baichuan-13b stereotype overall 0.279
+RP46,ChatGLM2,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.594,,,,,False,measured,44,8.1 Stereotypes,Table 20,ChatGLM2 stereotype overall 0.594
+RP46,ChatGPT,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.12,,,,,False,measured,44,8.1 Stereotypes,Table 20,ChatGPT stereotype overall 0.12
+RP46,GPT-4,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.018,,,,,False,measured,44,8.1 Stereotypes,Table 20,GPT-4 stereotype overall 0.018
+RP46,Llama2-7b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.027,,,,,False,measured,44,8.1 Stereotypes,Table 20,Llama2-7b stereotype overall 0.027
+RP46,Llama2-13b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.005,,,,,False,measured,44,8.1 Stereotypes,Table 20,Llama2-13b stereotype overall 0.005
+RP46,Llama2-70b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.084,,,,,False,measured,44,8.1 Stereotypes,Table 20,Llama2-70b stereotype overall 0.084
+RP46,Vicuna-7b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.265,,,,,False,measured,44,8.1 Stereotypes,Table 20,Vicuna-7b stereotype overall 0.265
+RP46,Vicuna-13b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.095,,,,,False,measured,44,8.1 Stereotypes,Table 20,Vicuna-13b stereotype overall 0.095
+RP46,Vicuna-33b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.399,,,,,False,measured,44,8.1 Stereotypes,Table 20,Vicuna-33b stereotype overall 0.399
+RP46,Wizardlm-13b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.201,,,,,False,measured,44,8.1 Stereotypes,Table 20,Wizardlm-13b stereotype overall 0.201
+RP46,Koala-13b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.402,,,,,False,measured,44,8.1 Stereotypes,Table 20,Koala-13b stereotype overall 0.402
+RP46,Oasst-12b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.722,,,,,False,measured,44,8.1 Stereotypes,Table 20,Oasst-12b stereotype overall 0.722
+RP46,ERNIE,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.018,,,,,False,measured,44,8.1 Stereotypes,Table 20,ERNIE stereotype overall 0.018
+RP46,PaLM 2,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.075,,,,,False,measured,44,8.1 Stereotypes,Table 20,PaLM 2 stereotype overall 0.075
+RP46,Mistral-7b,FP16,16-bit,,CrowS-Pair,Stereotype Agreement Percentage,0.086,,,,,False,measured,44,8.1 Stereotypes,Table 20,Mistral-7b stereotype overall 0.086
+RP46,Baichuan-13b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.388,,,,,False,measured,44,8.1 Stereotypes,Table 21,Baichuan-13b stereotype recognition 0.388
+RP46,ChatGLM2,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.391,,,,,False,measured,44,8.1 Stereotypes,Table 21,ChatGLM2 stereotype recognition 0.391
+RP46,ChatGPT,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.608,,,,,False,measured,44,8.1 Stereotypes,Table 21,ChatGPT stereotype recognition 0.608
+RP46,GPT-4,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.656,,,,,False,measured,44,8.1 Stereotypes,Table 21,GPT-4 stereotype recognition 0.656
+RP46,Llama2-7b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.405,,,,,False,measured,44,8.1 Stereotypes,Table 21,Llama2-7b stereotype recognition 0.405
+RP46,Llama2-13b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.429,,,,,False,measured,44,8.1 Stereotypes,Table 21,Llama2-13b stereotype recognition 0.429
+RP46,Llama2-70b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.616,,,,,False,measured,44,8.1 Stereotypes,Table 21,Llama2-70b stereotype recognition 0.616
+RP46,Vicuna-7b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.409,,,,,False,measured,44,8.1 Stereotypes,Table 21,Vicuna-7b stereotype recognition 0.409
+RP46,Vicuna-13b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.404,,,,,False,measured,44,8.1 Stereotypes,Table 21,Vicuna-13b stereotype recognition 0.404
+RP46,Vicuna-33b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.505,,,,,False,measured,44,8.1 Stereotypes,Table 21,Vicuna-33b stereotype recognition 0.505
+RP46,Wizardlm-13b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.459,,,,,False,measured,44,8.1 Stereotypes,Table 21,Wizardlm-13b stereotype recognition 0.459
+RP46,Koala-13b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.386,,,,,False,measured,44,8.1 Stereotypes,Table 21,Koala-13b stereotype recognition 0.386
+RP46,Oasst-12b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.327,,,,,False,measured,44,8.1 Stereotypes,Table 21,Oasst-12b stereotype recognition 0.327
+RP46,ERNIE,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.457,,,,,False,measured,44,8.1 Stereotypes,Table 21,ERNIE stereotype recognition 0.457
+RP46,Mistral-7b,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.473,,,,,False,measured,44,8.1 Stereotypes,Table 21,Mistral-7b stereotype recognition 0.473
+RP46,PaLM 2,FP16,16-bit,,StereoSet,Stereotype Recognition Accuracy,0.634,,,,,False,measured,44,8.1 Stereotypes,Table 21,PaLM 2 stereotype recognition 0.634
+RP46,Baichuan-13b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.063,,,,,False,measured,44,8.2 Disparagement,Table 22,Baichuan-13b stereotype query RtA 0.063
+RP46,ChatGLM2,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.989,,,,,False,measured,44,8.2 Disparagement,Table 22,ChatGLM2 stereotype query RtA 0.989
+RP46,ChatGPT,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,ChatGPT stereotype query RtA 1.0
+RP46,ERNIE,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.926,,,,,False,measured,44,8.2 Disparagement,Table 22,ERNIE stereotype query RtA 0.926
+RP46,Koala-13b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Koala-13b stereotype query RtA 1.0
+RP46,Llama2-7b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Llama2-7b stereotype query RtA 1.0
+RP46,Llama2-13b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Llama2-13b stereotype query RtA 1.0
+RP46,Oasst-12b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.958,,,,,False,measured,44,8.2 Disparagement,Table 22,Oasst-12b stereotype query RtA 0.958
+RP46,Vicuna-7b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.937,,,,,False,measured,44,8.2 Disparagement,Table 22,Vicuna-7b stereotype query RtA 0.937
+RP46,Vicuna-13b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Vicuna-13b stereotype query RtA 1.0
+RP46,Vicuna-33b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Vicuna-33b stereotype query RtA 1.0
+RP46,Wizardlm-13b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Wizardlm-13b stereotype query RtA 1.0
+RP46,GPT-4,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,GPT-4 stereotype query RtA 1.0
+RP46,Llama2-70b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),1.0,,,,,False,measured,44,8.2 Disparagement,Table 22,Llama2-70b stereotype query RtA 1.0
+RP46,Mistral-7b,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.979,,,,,False,measured,44,8.2 Disparagement,Table 22,Mistral-7b stereotype query RtA 0.979
+RP46,PaLM 2,FP16,16-bit,,Do-Not-Answer (Stereotype Query),Refuse to Answer (RtA),0.947,,,,,False,measured,44,8.2 Disparagement,Table 22,PaLM 2 stereotype query RtA 0.947
+RP46,Mistral-7b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.442,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Mistral-7b preference Overall 0.442
+RP46,Baichuan-13b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.021,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Baichuan-13b preference Overall 0.021
+RP46,ChatGLM2,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.579,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,ChatGLM2 preference Overall 0.579
+RP46,ChatGPT,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.425,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,ChatGPT preference Overall 0.425
+RP46,GPT-4,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.525,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,GPT-4 preference Overall 0.525
+RP46,Llama2-7b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.575,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Llama2-7b preference Overall 0.575
+RP46,Llama2-13b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.458,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Llama2-13b preference Overall 0.458
+RP46,Llama2-70b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.513,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Llama2-70b preference Overall 0.513
+RP46,Vicuna-7b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.408,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Vicuna-7b preference Overall 0.408
+RP46,Vicuna-13b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.517,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Vicuna-13b preference Overall 0.517
+RP46,Vicuna-33b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.413,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Vicuna-33b preference Overall 0.413
+RP46,Wizardlm-13b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.479,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Wizardlm-13b preference Overall 0.479
+RP46,Koala-13b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.354,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Koala-13b preference Overall 0.354
+RP46,Oasst-12b,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.4,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,Oasst-12b preference Overall 0.4
+RP46,ERNIE,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.904,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,ERNIE preference Overall 0.904
+RP46,PaLM 2,FP16,16-bit,,Preference Bias,Refuse to Answer (RtA) Overall,0.365,,,,,False,measured,47,8.3 Preference Bias in Subjective Choices,Table 25,PaLM 2 preference Overall 0.365
+RP46,Baichuan-13b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.632,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Baichuan-13b AdvGLUE Acc(adv) 0.632
+RP46,Baichuan-13b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.269,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Baichuan-13b AdvGLUE ASR 0.269
+RP46,ChatGLM2,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.588,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,ChatGLM2 AdvGLUE Acc(adv) 0.588
+RP46,ChatGLM2,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.334,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,ChatGLM2 AdvGLUE ASR 0.334
+RP46,ChatGPT,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.608,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,ChatGPT AdvGLUE Acc(adv) 0.608
+RP46,ChatGPT,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.282,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,ChatGPT AdvGLUE ASR 0.282
+RP46,GPT-4,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.742,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,GPT-4 AdvGLUE Acc(adv) 0.742
+RP46,GPT-4,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.151,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,GPT-4 AdvGLUE ASR 0.151
+RP46,Llama2-7b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.442,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Llama2-7b AdvGLUE Acc(adv) 0.442
+RP46,Llama2-7b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.068,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Llama2-7b AdvGLUE ASR 0.068
+RP46,Llama2-13b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.528,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Llama2-13b AdvGLUE Acc(adv) 0.528
+RP46,Llama2-13b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.222,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Llama2-13b AdvGLUE ASR 0.222
+RP46,Llama2-70b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.674,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Llama2-70b AdvGLUE Acc(adv) 0.674
+RP46,Llama2-70b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.203,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Llama2-70b AdvGLUE ASR 0.203
+RP46,Vicuna-7b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.503,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Vicuna-7b AdvGLUE Acc(adv) 0.503
+RP46,Vicuna-7b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.431,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Vicuna-7b AdvGLUE ASR 0.431
+RP46,Vicuna-13b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.512,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Vicuna-13b AdvGLUE Acc(adv) 0.512
+RP46,Vicuna-13b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.332,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Vicuna-13b AdvGLUE ASR 0.332
+RP46,Vicuna-33b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.565,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Vicuna-33b AdvGLUE Acc(adv) 0.565
+RP46,Vicuna-33b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.346,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Vicuna-33b AdvGLUE ASR 0.346
+RP46,Wizardlm-13b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.532,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Wizardlm-13b AdvGLUE Acc(adv) 0.532
+RP46,Wizardlm-13b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.38,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Wizardlm-13b AdvGLUE ASR 0.38
+RP46,Koala-13b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.533,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Koala-13b AdvGLUE Acc(adv) 0.533
+RP46,Koala-13b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.417,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Koala-13b AdvGLUE ASR 0.417
+RP46,Oasst-12b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.479,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Oasst-12b AdvGLUE Acc(adv) 0.479
+RP46,Oasst-12b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.336,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Oasst-12b AdvGLUE ASR 0.336
+RP46,ERNIE,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.646,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,ERNIE AdvGLUE Acc(adv) 0.646
+RP46,ERNIE,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.238,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,ERNIE AdvGLUE ASR 0.238
+RP46,Mistral-7b,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.505,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Mistral-7b AdvGLUE Acc(adv) 0.505
+RP46,Mistral-7b,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.174,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,Mistral-7b AdvGLUE ASR 0.174
+RP46,PaLM 2,FP16,16-bit,,AdvGLUE,Adversarial Accuracy,0.763,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,PaLM 2 AdvGLUE Acc(adv) 0.763
+RP46,PaLM 2,FP16,16-bit,,AdvGLUE,Attack Success Rate,0.156,,,,,False,measured,49,9.1.1 Ground-Truth Labeled Task Performance,Table 27,PaLM 2 AdvGLUE ASR 0.156
+RP46,Mistral-7b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),95.76,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Mistral-7b ADVINSTRUCTION avg 95.76
+RP46,Baichuan-13b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),93.99,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Baichuan-13b ADVINSTRUCTION avg 93.99
+RP46,ChatGLM2,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),94.37,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,ChatGLM2 ADVINSTRUCTION avg 94.37
+RP46,ChatGPT,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),97.42,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,ChatGPT ADVINSTRUCTION avg 97.42
+RP46,GPT-4,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),96.36,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,GPT-4 ADVINSTRUCTION avg 96.36
+RP46,Llama2-7b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),96.68,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Llama2-7b ADVINSTRUCTION avg 96.68
+RP46,Llama2-13b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),96.48,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Llama2-13b ADVINSTRUCTION avg 96.48
+RP46,Llama2-70b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),97.64,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Llama2-70b ADVINSTRUCTION avg 97.64
+RP46,Vicuna-7b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),88.77,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Vicuna-7b ADVINSTRUCTION avg 88.77
+RP46,Vicuna-13b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),96.01,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Vicuna-13b ADVINSTRUCTION avg 96.01
+RP46,Vicuna-33b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),95.97,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Vicuna-33b ADVINSTRUCTION avg 95.97
+RP46,Wizardlm-13b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),95.02,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Wizardlm-13b ADVINSTRUCTION avg 95.02
+RP46,Koala-13b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),94.05,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Koala-13b ADVINSTRUCTION avg 94.05
+RP46,Oasst-12b,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),93.68,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,Oasst-12b ADVINSTRUCTION avg 93.68
+RP46,ERNIE,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),90.99,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,ERNIE ADVINSTRUCTION avg 90.99
+RP46,PaLM 2,FP16,16-bit,,ADVINSTRUCTION,Average Semantic Similarity (%),95.41,,,,,False,measured,51,9.1.2 Performance in Open-ended Tasks,Table 29,PaLM 2 ADVINSTRUCTION avg 95.41
+RP46,Mistral-7b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.407,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Mistral-7b OOD detection RtA 0.407
+RP46,Baichuan-13b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.004,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Baichuan-13b OOD detection RtA 0.004
+RP46,ChatGLM2,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.627,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,ChatGLM2 OOD detection RtA 0.627
+RP46,ChatGPT,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.697,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,ChatGPT OOD detection RtA 0.697
+RP46,GPT-4,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.805,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,GPT-4 OOD detection RtA 0.805
+RP46,Llama2-7b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.465,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Llama2-7b OOD detection RtA 0.465
+RP46,Llama2-13b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.432,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Llama2-13b OOD detection RtA 0.432
+RP46,Llama2-70b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.461,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Llama2-70b OOD detection RtA 0.461
+RP46,Vicuna-7b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.49,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Vicuna-7b OOD detection RtA 0.49
+RP46,Vicuna-13b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.635,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Vicuna-13b OOD detection RtA 0.635
+RP46,Vicuna-33b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.685,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Vicuna-33b OOD detection RtA 0.685
+RP46,Wizardlm-13b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.643,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Wizardlm-13b OOD detection RtA 0.643
+RP46,Koala-13b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.552,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Koala-13b OOD detection RtA 0.552
+RP46,Oasst-12b,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.398,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,Oasst-12b OOD detection RtA 0.398
+RP46,ERNIE,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.548,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,ERNIE OOD detection RtA 0.548
+RP46,PaLM 2,FP16,16-bit,,ToolE (OOD Detection),Refuse to Answer (RtA),0.104,,,,,False,measured,53,9.2.1 OOD Detection,Table 30,PaLM 2 OOD detection RtA 0.104
+RP46,Mistral-7b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.822,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Mistral-7b OOD generalization Overall 0.822
+RP46,Baichuan-13b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.539,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Baichuan-13b OOD generalization Overall 0.539
+RP46,ChatGLM2,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.778,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,ChatGLM2 OOD generalization Overall 0.778
+RP46,ChatGPT,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.867,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,ChatGPT OOD generalization Overall 0.867
+RP46,GPT-4,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.923,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,GPT-4 OOD generalization Overall 0.923
+RP46,Llama2-7b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.777,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Llama2-7b OOD generalization Overall 0.777
+RP46,Llama2-13b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.884,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Llama2-13b OOD generalization Overall 0.884
+RP46,Llama2-70b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.873,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Llama2-70b OOD generalization Overall 0.873
+RP46,Vicuna-7b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.753,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Vicuna-7b OOD generalization Overall 0.753
+RP46,Vicuna-13b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.839,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Vicuna-13b OOD generalization Overall 0.839
+RP46,Vicuna-33b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.785,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Vicuna-33b OOD generalization Overall 0.785
+RP46,Wizardlm-13b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.871,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Wizardlm-13b OOD generalization Overall 0.871
+RP46,Koala-13b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.584,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Koala-13b OOD generalization Overall 0.584
+RP46,Oasst-12b,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.883,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,Oasst-12b OOD generalization Overall 0.883
+RP46,ERNIE,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.795,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,ERNIE OOD generalization Overall 0.795
+RP46,PaLM 2,FP16,16-bit,,OOD Generalization (DDXPlus+Flipkart),F1 (micro) Overall,0.822,,,,,False,measured,53,9.2.2 OOD Generalization,Table 31,PaLM 2 OOD generalization Overall 0.822
+RP46,Mistral-7b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.469,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Mistral-7b privacy awareness Cor 0.469
+RP46,Llama2-70b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.484,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Llama2-70b privacy awareness Cor 0.484
+RP46,Vicuna-7b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.373,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Vicuna-7b privacy awareness Cor 0.373
+RP46,Koala-13b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.185,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Koala-13b privacy awareness Cor 0.185
+RP46,Wizardlm-13b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.183,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Wizardlm-13b privacy awareness Cor 0.183
+RP46,Vicuna-13b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.367,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Vicuna-13b privacy awareness Cor 0.367
+RP46,ChatGLM2,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.248,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,ChatGLM2 privacy awareness Cor 0.248
+RP46,Oasst-12b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,-0.161,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Oasst-12b privacy awareness Cor -0.161
+RP46,Baichuan-13b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.567,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Baichuan-13b privacy awareness Cor 0.567
+RP46,Llama2-13b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.17,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Llama2-13b privacy awareness Cor 0.17
+RP46,Llama2-7b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.101,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Llama2-7b privacy awareness Cor 0.101
+RP46,ChatGPT,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.665,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,ChatGPT privacy awareness Cor 0.665
+RP46,GPT-4,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.634,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,GPT-4 privacy awareness Cor 0.634
+RP46,ERNIE,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.473,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,ERNIE privacy awareness Cor 0.473
+RP46,Vicuna-33b,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.442,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,Vicuna-33b privacy awareness Cor 0.442
+RP46,PaLM 2,FP16,16-bit,,Privacy Awareness Tier-2,Pearson Correlation,0.572,,,,,False,measured,57,10.1 Privacy Awareness,Table 33,PaLM 2 privacy awareness Cor 0.572
+RP46,Baichuan-13b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.082,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Baichuan-13b privacy scenario Normal 0.082
+RP46,ChatGLM2,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.789,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,ChatGLM2 privacy scenario Normal 0.789
+RP46,ChatGPT,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.714,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,ChatGPT privacy scenario Normal 0.714
+RP46,ERNIE,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.911,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,ERNIE privacy scenario Normal 0.911
+RP46,Koala-13b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.718,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Koala-13b privacy scenario Normal 0.718
+RP46,Llama2-7b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,1.0,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Llama2-7b privacy scenario Normal 1.0
+RP46,Llama2-13b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,1.0,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Llama2-13b privacy scenario Normal 1.0
+RP46,Oasst-12b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.389,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Oasst-12b privacy scenario Normal 0.389
+RP46,Vicuna-7b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.836,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Vicuna-7b privacy scenario Normal 0.836
+RP46,Vicuna-13b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.829,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Vicuna-13b privacy scenario Normal 0.829
+RP46,Vicuna-33b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.743,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Vicuna-33b privacy scenario Normal 0.743
+RP46,Wizardlm-13b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.979,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Wizardlm-13b privacy scenario Normal 0.979
+RP46,GPT-4,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.982,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,GPT-4 privacy scenario Normal 0.982
+RP46,Llama2-70b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,1.0,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Llama2-70b privacy scenario Normal 1.0
+RP46,Mistral-7b,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.654,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,Mistral-7b privacy scenario Normal 0.654
+RP46,PaLM 2,FP16,16-bit,,Privacy Scenario Test (Normal),Refuse to Answer (RtA) Overall,0.089,,,,,False,measured,57,10.1 Privacy Awareness,Table 34,PaLM 2 privacy scenario Normal 0.089
+RP46,Llama2-70b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.26,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Llama2-70b TemplateD 5-shot TD 0.26
+RP46,Vicuna-7b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.34,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Vicuna-7b TemplateD 5-shot TD 0.34
+RP46,Koala-13b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.6,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Koala-13b TemplateD 5-shot TD 0.6
+RP46,Wizardlm-13b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.24,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Wizardlm-13b TemplateD 5-shot TD 0.24
+RP46,Vicuna-13b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.46,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Vicuna-13b TemplateD 5-shot TD 0.46
+RP46,ChatGLM2,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.3,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,ChatGLM2 TemplateD 5-shot TD 0.3
+RP46,Oasst-12b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.0,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Oasst-12b TemplateD 5-shot TD 0.0
+RP46,Baichuan-13b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.28,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Baichuan-13b TemplateD 5-shot TD 0.28
+RP46,Llama2-13b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.02,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Llama2-13b TemplateD 5-shot TD 0.02
+RP46,Llama2-7b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.0,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Llama2-7b TemplateD 5-shot TD 0.0
+RP46,ChatGPT,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.6,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,ChatGPT TemplateD 5-shot TD 0.6
+RP46,GPT-4,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.68,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,GPT-4 TemplateD 5-shot TD 0.68
+RP46,ERNIE,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.0,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,ERNIE TemplateD 5-shot TD 0.0
+RP46,Vicuna-33b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.54,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Vicuna-33b TemplateD 5-shot TD 0.54
+RP46,Mistral-7b,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.0,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,Mistral-7b TemplateD 5-shot TD 0.0
+RP46,PaLM 2,FP16,16-bit,,"Enron Email (Template D, 5-shot)",Total Disclosure (TD),0.46,,,,,False,measured,59,10.2 Privacy Leakage,Table 35,PaLM 2 TemplateD 5-shot TD 0.46
+RP46,Mistral-7b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.647,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Mistral-7b SC101 Overall 0.647
+RP46,Mistral-7b,FP16,16-bit,,ETHICS,Overall Accuracy,0.66,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Mistral-7b ETHICS Overall 0.66
+RP46,Mistral-7b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.987,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Mistral-7b MoralChoice Low-amb Acc 0.987
+RP46,Baichuan-13b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.571,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Baichuan-13b SC101 Overall 0.571
+RP46,Baichuan-13b,FP16,16-bit,,ETHICS,Overall Accuracy,0.592,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Baichuan-13b ETHICS Overall 0.592
+RP46,Baichuan-13b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.789,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Baichuan-13b MoralChoice Low-amb Acc 0.789
+RP46,ChatGLM2,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.588,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ChatGLM2 SC101 Overall 0.588
+RP46,ChatGLM2,FP16,16-bit,,ETHICS,Overall Accuracy,0.613,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ChatGLM2 ETHICS Overall 0.613
+RP46,ChatGLM2,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.942,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ChatGLM2 MoralChoice Low-amb Acc 0.942
+RP46,ChatGPT,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.654,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ChatGPT SC101 Overall 0.654
+RP46,ChatGPT,FP16,16-bit,,ETHICS,Overall Accuracy,0.668,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ChatGPT ETHICS Overall 0.668
+RP46,ChatGPT,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,1.0,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ChatGPT MoralChoice Low-amb Acc 1.0
+RP46,ERNIE,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.651,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ERNIE SC101 Overall 0.651
+RP46,ERNIE,FP16,16-bit,,ETHICS,Overall Accuracy,0.601,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ERNIE ETHICS Overall 0.601
+RP46,ERNIE,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.993,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,ERNIE MoralChoice Low-amb Acc 0.993
+RP46,GPT-4,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.674,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,GPT-4 SC101 Overall 0.674
+RP46,GPT-4,FP16,16-bit,,ETHICS,Overall Accuracy,0.674,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,GPT-4 ETHICS Overall 0.674
+RP46,GPT-4,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,1.0,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,GPT-4 MoralChoice Low-amb Acc 1.0
+RP46,Koala-13b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.546,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Koala-13b SC101 Overall 0.546
+RP46,Koala-13b,FP16,16-bit,,ETHICS,Overall Accuracy,0.465,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Koala-13b ETHICS Overall 0.465
+RP46,Koala-13b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.924,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Koala-13b MoralChoice Low-amb Acc 0.924
+RP46,Llama2-13b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.619,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-13b SC101 Overall 0.619
+RP46,Llama2-13b,FP16,16-bit,,ETHICS,Overall Accuracy,0.614,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-13b ETHICS Overall 0.614
+RP46,Llama2-13b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.962,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-13b MoralChoice Low-amb Acc 0.962
+RP46,Llama2-70b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.653,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-70b SC101 Overall 0.653
+RP46,Llama2-70b,FP16,16-bit,,ETHICS,Overall Accuracy,0.598,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-70b ETHICS Overall 0.598
+RP46,Llama2-70b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.991,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-70b MoralChoice Low-amb Acc 0.991
+RP46,Llama2-7b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.609,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-7b SC101 Overall 0.609
+RP46,Llama2-7b,FP16,16-bit,,ETHICS,Overall Accuracy,0.657,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-7b ETHICS Overall 0.657
+RP46,Llama2-7b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.92,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Llama2-7b MoralChoice Low-amb Acc 0.92
+RP46,Oasst-12b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.539,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Oasst-12b SC101 Overall 0.539
+RP46,Oasst-12b,FP16,16-bit,,ETHICS,Overall Accuracy,0.492,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Oasst-12b ETHICS Overall 0.492
+RP46,Oasst-12b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.505,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Oasst-12b MoralChoice Low-amb Acc 0.505
+RP46,Vicuna-13b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.518,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-13b SC101 Overall 0.518
+RP46,Vicuna-13b,FP16,16-bit,,ETHICS,Overall Accuracy,0.633,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-13b ETHICS Overall 0.633
+RP46,Vicuna-13b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.905,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-13b MoralChoice Low-amb Acc 0.905
+RP46,Vicuna-33b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.668,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-33b SC101 Overall 0.668
+RP46,Vicuna-33b,FP16,16-bit,,ETHICS,Overall Accuracy,0.643,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-33b ETHICS Overall 0.643
+RP46,Vicuna-33b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.985,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-33b MoralChoice Low-amb Acc 0.985
+RP46,Vicuna-7b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.594,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-7b SC101 Overall 0.594
+RP46,Vicuna-7b,FP16,16-bit,,ETHICS,Overall Accuracy,0.609,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-7b ETHICS Overall 0.609
+RP46,Vicuna-7b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.594,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Vicuna-7b MoralChoice Low-amb Acc 0.594
+RP46,Wizardlm-13b,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.652,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Wizardlm-13b SC101 Overall 0.652
+RP46,Wizardlm-13b,FP16,16-bit,,ETHICS,Overall Accuracy,0.655,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Wizardlm-13b ETHICS Overall 0.655
+RP46,Wizardlm-13b,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.991,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,Wizardlm-13b MoralChoice Low-amb Acc 0.991
+RP46,PaLM 2,FP16,16-bit,,Social Chemistry 101,Overall Accuracy,0.67,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,PaLM 2 SC101 Overall 0.67
+RP46,PaLM 2,FP16,16-bit,,ETHICS,Overall Accuracy,0.602,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,PaLM 2 ETHICS Overall 0.602
+RP46,PaLM 2,FP16,16-bit,,MoralChoice (Low-Ambiguity),Accuracy,0.993,,,,,False,measured,62,11.1 Implicit Ethics,Table 37,PaLM 2 MoralChoice Low-amb Acc 0.993
+RP46,ChatGPT,FP16,16-bit,,Capability Awareness,Accuracy (%),24.67,,,,,False,measured,68,11.3 Awareness,Table 45,ChatGPT Capability 24.67
+RP46,ChatGPT,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),64.99,,,,,False,measured,68,11.3 Awareness,Table 45,ChatGPT Avg 64.99
+RP46,GPT-4,FP16,16-bit,,Capability Awareness,Accuracy (%),84.5,,,,,False,measured,68,11.3 Awareness,Table 45,GPT-4 Capability 84.5
+RP46,GPT-4,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),89.02,,,,,False,measured,68,11.3 Awareness,Table 45,GPT-4 Avg 89.02
+RP46,Llama2-7b,FP16,16-bit,,Capability Awareness,Accuracy (%),25.67,,,,,False,measured,68,11.3 Awareness,Table 45,Llama2-7b Capability 25.67
+RP46,Llama2-7b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),54.8,,,,,False,measured,68,11.3 Awareness,Table 45,Llama2-7b Avg 54.8
+RP46,Llama2-13b,FP16,16-bit,,Capability Awareness,Accuracy (%),33.33,,,,,False,measured,68,11.3 Awareness,Table 45,Llama2-13b Capability 33.33
+RP46,Llama2-13b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),61.6,,,,,False,measured,68,11.3 Awareness,Table 45,Llama2-13b Avg 61.6
+RP46,Llama2-70b,FP16,16-bit,,Capability Awareness,Accuracy (%),32.0,,,,,False,measured,68,11.3 Awareness,Table 45,Llama2-70b Capability 32.0
+RP46,Llama2-70b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),67.86,,,,,False,measured,68,11.3 Awareness,Table 45,Llama2-70b Avg 67.86
+RP46,Mistral-7b,FP16,16-bit,,Capability Awareness,Accuracy (%),26.17,,,,,False,measured,68,11.3 Awareness,Table 45,Mistral-7b Capability 26.17
+RP46,Mistral-7b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),61.19,,,,,False,measured,68,11.3 Awareness,Table 45,Mistral-7b Avg 61.19
+RP46,Mixtral-8x7b,FP16,16-bit,,Capability Awareness,Accuracy (%),65.67,,,,,False,measured,68,11.3 Awareness,Table 45,Mixtral-8x7b Capability 65.67
+RP46,Mixtral-8x7b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),79.16,,,,,False,measured,68,11.3 Awareness,Table 45,Mixtral-8x7b Avg 79.16
+RP46,GLM-Turbo,FP16,16-bit,,Capability Awareness,Accuracy (%),48.17,,,,,False,measured,68,11.3 Awareness,Table 45,GLM-Turbo Capability 48.17
+RP46,GLM-Turbo,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),75.93,,,,,False,measured,68,11.3 Awareness,Table 45,GLM-Turbo Avg 75.93
+RP46,GLM-4,FP16,16-bit,,Capability Awareness,Accuracy (%),81.67,,,,,False,measured,68,11.3 Awareness,Table 45,GLM-4 Capability 81.67
+RP46,GLM-4,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),84.24,,,,,False,measured,68,11.3 Awareness,Table 45,GLM-4 Avg 84.24
+RP46,ChatGLM3,FP16,16-bit,,Capability Awareness,Accuracy (%),34.5,,,,,False,measured,68,11.3 Awareness,Table 45,ChatGLM3 Capability 34.5
+RP46,ChatGLM3,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),53.07,,,,,False,measured,68,11.3 Awareness,Table 45,ChatGLM3 Avg 53.07
+RP46,Vicuna-7b,FP16,16-bit,,Capability Awareness,Accuracy (%),12.5,,,,,False,measured,68,11.3 Awareness,Table 45,Vicuna-7b Capability 12.5
+RP46,Vicuna-7b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),41.1,,,,,False,measured,68,11.3 Awareness,Table 45,Vicuna-7b Avg 41.1
+RP46,Vicuna-13b,FP16,16-bit,,Capability Awareness,Accuracy (%),48.33,,,,,False,measured,68,11.3 Awareness,Table 45,Vicuna-13b Capability 48.33
+RP46,Vicuna-13b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),58.9,,,,,False,measured,68,11.3 Awareness,Table 45,Vicuna-13b Avg 58.9
+RP46,Vicuna-33b,FP16,16-bit,,Capability Awareness,Accuracy (%),21.0,,,,,False,measured,68,11.3 Awareness,Table 45,Vicuna-33b Capability 21.0
+RP46,Vicuna-33b,FP16,16-bit,,Awareness (5 Dim Average),Accuracy (%),62.52,,,,,False,measured,68,11.3 Awareness,Table 45,Vicuna-33b Avg 62.52
