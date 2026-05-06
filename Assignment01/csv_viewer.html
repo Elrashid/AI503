@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>CSV Viewer — AI503 A1</title>
+<style>
+  :root {
+    --ink:#1f2329; --ink-soft:#3a3f46; --muted:#6b7280;
+    --bg:#f7f8fa; --card:#fff; --border:#e1e4e8; --accent:#4472C4;
+    --hl:#fff3a3; --row-alt:#fafbfc;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; }
+  body {
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    background:var(--bg); color:var(--ink); padding:0;
+    -webkit-font-smoothing:antialiased; overscroll-behavior-y:contain;
+  }
+  header {
+    position:sticky; top:0; background:var(--card); border-bottom:1px solid var(--border);
+    padding:14px 18px; z-index:10; display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+  }
+  header h1 { margin:0; font-size:18px; flex:1; min-width:240px; }
+  .picker { display:flex; gap:8px; flex-wrap:wrap; }
+  .picker button {
+    background:var(--card); border:1px solid var(--border); border-radius:6px;
+    padding:6px 12px; font-size:13px; cursor:pointer; color:var(--ink-soft);
+    white-space:nowrap;
+  }
+  .picker button.active { background:var(--accent); color:white; border-color:var(--accent); }
+  .picker button:hover:not(.active) { border-color:var(--accent); color:var(--accent); }
+  .toolbar {
+    display:flex; gap:8px; padding:10px 18px; background:var(--card);
+    border-bottom:1px solid var(--border); align-items:center; flex-wrap:wrap;
+  }
+  .toolbar input[type="search"] {
+    flex:1; min-width:180px; padding:8px 12px; font-size:14px;
+    border:1px solid var(--border); border-radius:6px; outline:none;
+  }
+  .toolbar input[type="search"]:focus { border-color:var(--accent); }
+  .stat { font-size:12px; color:var(--muted); }
+  .info-pill {
+    font-size:11px; color:var(--muted); background:#f0f2f5;
+    padding:3px 8px; border-radius:10px; white-space:nowrap;
+  }
+  .info-pill a { color:var(--accent); text-decoration:none; }
+
+  /* Desktop table */
+  .table-wrap { overflow-x:auto; padding:18px; }
+  table { border-collapse:collapse; background:var(--card); width:100%;
+          border:1px solid var(--border); border-radius:8px; overflow:hidden; font-size:13px; }
+  thead th {
+    background:#eef1f6; padding:10px 12px; text-align:left; font-weight:600;
+    border-bottom:1px solid var(--border); position:sticky; top:0;
+    cursor:pointer; user-select:none; white-space:nowrap;
+  }
+  thead th:hover { background:#e3e8f0; }
+  thead th .arr { color:var(--muted); margin-left:4px; font-size:11px; }
+  tbody tr:nth-child(even) { background:var(--row-alt); }
+  tbody tr:hover { background:#f0f5ff; }
+  tbody td {
+    padding:8px 12px; border-bottom:1px solid #f0f2f5;
+    vertical-align:top; word-break:break-word; min-width:120px; max-width:340px;
+  }
+  tbody td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  mark { background:var(--hl); padding:0 1px; border-radius:2px; }
+
+  /* Mobile card view (≤700px): one card per row */
+  @media (max-width: 700px) {
+    .table-wrap { padding:10px; }
+    table, thead, tbody, tr, td { display:block; }
+    thead { display:none; }
+    tbody tr {
+      background:var(--card); border:1px solid var(--border);
+      border-radius:8px; margin-bottom:10px; padding:8px 12px;
+    }
+    tbody tr:nth-child(even) { background:var(--card); }
+    tbody tr:hover { background:var(--card); }
+    tbody td {
+      border:none; padding:6px 0; max-width:none;
+      display:grid; grid-template-columns: 100px 1fr; gap:8px; align-items:start;
+    }
+    tbody td::before {
+      content: attr(data-label); font-size:11px; font-weight:600; color:var(--muted);
+      text-transform:uppercase; letter-spacing:.5px;
+    }
+  }
+
+  .empty { padding:60px 18px; text-align:center; color:var(--muted); }
+  .loading { padding:30px; text-align:center; color:var(--muted); font-size:14px; }
+  footer { padding:24px 18px; text-align:center; font-size:12px; color:var(--muted); }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📋 CSV Viewer</h1>
+  <div class="picker" id="picker"></div>
+</header>
+
+<div class="toolbar">
+  <input type="search" id="search" placeholder="Search…">
+  <span class="stat" id="stat"></span>
+  <span class="info-pill" id="dl"></span>
+</div>
+
+<div id="content"><div class="loading">Loading…</div></div>
+
+<footer>
+  AI503 — Quantization-Safety SLR · <a href="../index.html">← back to portal</a>
+</footer>
+
+<script>
+const CSVS = [
+  {
+    id: 'comp',
+    label: '50-paper Comparative Table',
+    file: 'comparative_analysis_table.csv',
+    description: 'The graded Deliverable: 50 rows × 12 columns of source-traced extraction.'
+  },
+  {
+    id: 'rr',
+    label: 'ResearchRabbit Export',
+    file: 'exports/AI503_A1_RR_export_50papers_official.csv',
+    description: 'Deliverable #1 — the 50-paper bibliographic export from ResearchRabbit.'
+  },
+  {
+    id: 'rrx',
+    label: 'RR Export (extended)',
+    file: 'exports/AI503_A1_RR_export_50papers_extended.csv',
+    description: 'RR export with extra fields (citation count, references list, abstract).'
+  },
+];
+
+let current = null, rows = [], headers = [], sortCol = null, sortDir = 1;
+
+const $ = s => document.querySelector(s);
+const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const highlight = (s, q) => {
+  if (!q) return escape(s);
+  const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return escape(s).replace(re, '<mark>$1</mark>');
+};
+
+// Tiny RFC-4180-ish CSV parser (handles quoted fields, escaped quotes, multi-line cells, BOM)
+function parseCSV(text) {
+  if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+  const rows = [];
+  let row = [], field = '', inQ = false, i = 0, c;
+  while (i < text.length) {
+    c = text[i];
+    if (inQ) {
+      if (c === '"') {
+        if (text[i+1] === '"') { field += '"'; i += 2; continue; }
+        inQ = false; i++; continue;
+      }
+      field += c; i++; continue;
+    }
+    if (c === '"') { inQ = true; i++; continue; }
+    if (c === ',') { row.push(field); field = ''; i++; continue; }
+    if (c === '\r') { i++; continue; }
+    if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; i++; continue; }
+    field += c; i++;
+  }
+  if (field !== '' || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+function buildPicker() {
+  $('#picker').innerHTML = CSVS.map(c =>
+    `<button data-id="${c.id}" onclick="loadCSV('${c.id}')">${c.label}</button>`
+  ).join('');
+}
+
+async function loadCSV(id) {
+  current = CSVS.find(c => c.id === id);
+  document.querySelectorAll('#picker button').forEach(b =>
+    b.classList.toggle('active', b.dataset.id === id));
+  $('#dl').innerHTML = `<a href="${current.file}" download>⬇ download ${current.file.split('/').pop()}</a>`;
+  $('#content').innerHTML = '<div class="loading">Loading ' + current.file + '…</div>';
+  try {
+    const r = await fetch(current.file);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const text = await r.text();
+    const parsed = parseCSV(text).filter(r => r.some(c => c.trim()));
+    headers = parsed[0];
+    rows = parsed.slice(1);
+    sortCol = null; sortDir = 1;
+    $('#search').value = '';
+    render();
+  } catch (e) {
+    $('#content').innerHTML = `<div class="empty">Could not load <code>${current.file}</code><br><small>${e.message}</small></div>`;
+  }
+}
+
+function render() {
+  const q = $('#search').value.trim().toLowerCase();
+  let filtered = rows;
+  if (q) filtered = rows.filter(r => r.some(c => c.toLowerCase().includes(q)));
+  if (sortCol !== null) {
+    const idx = sortCol;
+    filtered = [...filtered].sort((a, b) => {
+      const av = a[idx] || '', bv = b[idx] || '';
+      const an = parseFloat(av), bn = parseFloat(bv);
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * sortDir;
+      return av.localeCompare(bv) * sortDir;
+    });
+  }
+  $('#stat').textContent = `${filtered.length} of ${rows.length} rows · ${headers.length} columns · ${current.description}`;
+  if (!filtered.length) {
+    $('#content').innerHTML = '<div class="empty">No matching rows.</div>';
+    return;
+  }
+  const headHtml = headers.map((h, i) => {
+    const arr = sortCol === i ? (sortDir === 1 ? '▲' : '▼') : '';
+    return `<th onclick="sortBy(${i})">${escape(h)} <span class="arr">${arr}</span></th>`;
+  }).join('');
+  const bodyHtml = filtered.map(r =>
+    '<tr>' + r.map((c, i) => {
+      const isNum = !isNaN(parseFloat(c)) && c.trim().length < 12;
+      return `<td data-label="${escape(headers[i] || '')}" class="${isNum ? 'num' : ''}">${highlight(c, q)}</td>`;
+    }).join('') + '</tr>'
+  ).join('');
+  $('#content').innerHTML =
+    `<div class="table-wrap"><table><thead><tr>${headHtml}</tr></thead><tbody>${bodyHtml}</tbody></table></div>`;
+}
+
+function sortBy(i) {
+  if (sortCol === i) sortDir = -sortDir;
+  else { sortCol = i; sortDir = 1; }
+  render();
+}
+
+$('#search').addEventListener('input', () => render());
+
+buildPicker();
+loadCSV('comp');
+</script>
+
+</body>
+</html>
