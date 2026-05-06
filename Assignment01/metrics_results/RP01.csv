@@ -1,0 +1,54 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP01,Random vocabulary word,Random baseline,,,LAMBADA,Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Random vocabulary word | 0 | 60000 | 30026
+RP01,Random vocabulary word,Random baseline,,,LAMBADA,Perplexity,60000,,,,,False,measured,8,4 Modeling experiments,Table 1,Random vocabulary word | 0 | 60000 | 30026
+RP01,Random vocabulary word,Random baseline,,,LAMBADA,Median Rank,30026,,,,,False,measured,8,4 Modeling experiments,Table 1,Random vocabulary word | 0 | 60000 | 30026
+RP01,Random word from passage,Random baseline,,,LAMBADA,Accuracy (%),1.6,,,,,False,measured,8,4 Modeling experiments,Table 1,Random word from passage | 1.6 | - | -
+RP01,Random capitalized word from passage,Random baseline,,,LAMBADA,Accuracy (%),7.3,,,,,True,measured,8,4 Modeling experiments,Table 1,Random capitalized word from passage | 7.3 | - | -
+RP01,Unsup-CBOW,Unsup-CBOW,,,LAMBADA,Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Unsup-CBOW | 0 | 57040 | 16352
+RP01,Unsup-CBOW,Unsup-CBOW,,,LAMBADA,Perplexity,57040,,,,,False,measured,8,4 Modeling experiments,Table 1,Unsup-CBOW | 0 | 57040 | 16352
+RP01,Unsup-CBOW,Unsup-CBOW,,,LAMBADA,Median Rank,16352,,,,,False,measured,8,4 Modeling experiments,Table 1,Unsup-CBOW | 0 | 57040 | 16352
+RP01,Sup-CBOW,Sup-CBOW,,,LAMBADA,Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Sup-CBOW | 0 | 47587 | 4660
+RP01,Sup-CBOW,Sup-CBOW,,,LAMBADA,Perplexity,47587,,,,,False,measured,8,4 Modeling experiments,Table 1,Sup-CBOW | 0 | 47587 | 4660
+RP01,Sup-CBOW,Sup-CBOW,,,LAMBADA,Median Rank,4660,,,,,False,measured,8,4 Modeling experiments,Table 1,Sup-CBOW | 0 | 47587 | 4660
+RP01,N-Gram,N-Gram,,,LAMBADA,Accuracy (%),0.1,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram | 0.1 | 3125 | 993
+RP01,N-Gram,N-Gram,,,LAMBADA,Perplexity,3125,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram | 0.1 | 3125 | 993
+RP01,N-Gram,N-Gram,,,LAMBADA,Median Rank,993,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram | 0.1 | 3125 | 993
+RP01,N-Gram w/cache,N-Gram w/cache,,,LAMBADA,Accuracy (%),0.1,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram w/cache | 0.1 | 768 | 87
+RP01,N-Gram w/cache,N-Gram w/cache,,,LAMBADA,Perplexity,768,,,,,True,measured,8,4 Modeling experiments,Table 1,"the best relative performance on LAMBADA is achieved by N-Gram w/cache, which takes passage statistics into account. While even this model is effectively unable to guess the right word, it achieves a respectable perplexity of 768."
+RP01,N-Gram w/cache,N-Gram w/cache,,,LAMBADA,Median Rank,87,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram w/cache | 0.1 | 768 | 87
+RP01,RNN,RNN,,,LAMBADA,Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,RNN | 0 | 14725 | 7831
+RP01,RNN,RNN,,,LAMBADA,Perplexity,14725,,,,,False,measured,8,4 Modeling experiments,Table 1,RNN | 0 | 14725 | 7831
+RP01,RNN,RNN,,,LAMBADA,Median Rank,7831,,,,,False,measured,8,4 Modeling experiments,Table 1,RNN | 0 | 14725 | 7831
+RP01,LSTM,LSTM,,,LAMBADA,Accuracy (%),0,,,,,True,measured,8,4 Modeling experiments,Table 1,LSTM | 0 | 5357 | 324
+RP01,LSTM,LSTM,,,LAMBADA,Perplexity,5357,,,,,False,measured,8,4 Modeling experiments,Table 1,LSTM | 0 | 5357 | 324
+RP01,LSTM,LSTM,,,LAMBADA,Median Rank,324,,,,,False,measured,8,4 Modeling experiments,Table 1,LSTM | 0 | 5357 | 324
+RP01,Memory Network,Memory Network,,,LAMBADA,Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Memory Network | 0 | 16318 | 846
+RP01,Memory Network,Memory Network,,,LAMBADA,Perplexity,16318,,,,,False,measured,8,4 Modeling experiments,Table 1,Memory Network | 0 | 16318 | 846
+RP01,Memory Network,Memory Network,,,LAMBADA,Median Rank,846,,,,,False,measured,8,4 Modeling experiments,Table 1,Memory Network | 0 | 16318 | 846
+RP01,Random vocabulary word,Random baseline,,,Control (5K Book Corpus passages),Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Random vocabulary word | 0 | 60000 | 30453
+RP01,Random vocabulary word,Random baseline,,,Control (5K Book Corpus passages),Perplexity,60000,,,,,False,measured,8,4 Modeling experiments,Table 1,Random vocabulary word | 0 | 60000 | 30453
+RP01,Random vocabulary word,Random baseline,,,Control (5K Book Corpus passages),Median Rank,30453,,,,,False,measured,8,4 Modeling experiments,Table 1,Random vocabulary word | 0 | 60000 | 30453
+RP01,Random word from passage,Random baseline,,,Control (5K Book Corpus passages),Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Random word from passage | 0 | - | -
+RP01,Random capitalized word from passage,Random baseline,,,Control (5K Book Corpus passages),Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Random capitalized word from passage | 0 | - | -
+RP01,Unsup-CBOW,Unsup-CBOW,,,Control (5K Book Corpus passages),Accuracy (%),0,,,,,False,measured,8,4 Modeling experiments,Table 1,Unsup-CBOW | 0 | 55190 | 12950
+RP01,Unsup-CBOW,Unsup-CBOW,,,Control (5K Book Corpus passages),Perplexity,55190,,,,,False,measured,8,4 Modeling experiments,Table 1,Unsup-CBOW | 0 | 55190 | 12950
+RP01,Unsup-CBOW,Unsup-CBOW,,,Control (5K Book Corpus passages),Median Rank,12950,,,,,False,measured,8,4 Modeling experiments,Table 1,Unsup-CBOW | 0 | 55190 | 12950
+RP01,Sup-CBOW,Sup-CBOW,,,Control (5K Book Corpus passages),Accuracy (%),3.5,,,,,False,measured,8,4 Modeling experiments,Table 1,Sup-CBOW | 3.5 | 2344 | 259
+RP01,Sup-CBOW,Sup-CBOW,,,Control (5K Book Corpus passages),Perplexity,2344,,,,,False,measured,8,4 Modeling experiments,Table 1,Sup-CBOW | 3.5 | 2344 | 259
+RP01,Sup-CBOW,Sup-CBOW,,,Control (5K Book Corpus passages),Median Rank,259,,,,,False,measured,8,4 Modeling experiments,Table 1,Sup-CBOW | 3.5 | 2344 | 259
+RP01,N-Gram,N-Gram,,,Control (5K Book Corpus passages),Accuracy (%),19.1,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram | 19.1 | 285 | 17
+RP01,N-Gram,N-Gram,,,Control (5K Book Corpus passages),Perplexity,285,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram | 19.1 | 285 | 17
+RP01,N-Gram,N-Gram,,,Control (5K Book Corpus passages),Median Rank,17,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram | 19.1 | 285 | 17
+RP01,N-Gram w/cache,N-Gram w/cache,,,Control (5K Book Corpus passages),Accuracy (%),19.1,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram w/cache | 19.1 | 270 | 18
+RP01,N-Gram w/cache,N-Gram w/cache,,,Control (5K Book Corpus passages),Perplexity,270,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram w/cache | 19.1 | 270 | 18
+RP01,N-Gram w/cache,N-Gram w/cache,,,Control (5K Book Corpus passages),Median Rank,18,,,,,False,measured,8,4 Modeling experiments,Table 1,N-Gram w/cache | 19.1 | 270 | 18
+RP01,RNN,RNN,,,Control (5K Book Corpus passages),Accuracy (%),15.4,,,,,False,measured,8,4 Modeling experiments,Table 1,RNN | 15.4 | 277 | 24
+RP01,RNN,RNN,,,Control (5K Book Corpus passages),Perplexity,277,,,,,False,measured,8,4 Modeling experiments,Table 1,RNN | 15.4 | 277 | 24
+RP01,RNN,RNN,,,Control (5K Book Corpus passages),Median Rank,24,,,,,False,measured,8,4 Modeling experiments,Table 1,RNN | 15.4 | 277 | 24
+RP01,LSTM,LSTM,,,Control (5K Book Corpus passages),Accuracy (%),21.9,,,,,True,measured,8,4 Modeling experiments,Table 1,LSTM | 21.9 | 149 | 12
+RP01,LSTM,LSTM,,,Control (5K Book Corpus passages),Perplexity,149,,,,,False,measured,8,4 Modeling experiments,Table 1,LSTM | 21.9 | 149 | 12
+RP01,LSTM,LSTM,,,Control (5K Book Corpus passages),Median Rank,12,,,,,False,measured,8,4 Modeling experiments,Table 1,LSTM | 21.9 | 149 | 12
+RP01,Memory Network,Memory Network,,,Control (5K Book Corpus passages),Accuracy (%),8.5,,,,,False,measured,8,4 Modeling experiments,Table 1,Memory Network | 8.5 | 566 | 46
+RP01,Memory Network,Memory Network,,,Control (5K Book Corpus passages),Perplexity,566,,,,,False,measured,8,4 Modeling experiments,Table 1,Memory Network | 8.5 | 566 | 46
+RP01,Memory Network,Memory Network,,,Control (5K Book Corpus passages),Median Rank,46,,,,,False,measured,8,4 Modeling experiments,Table 1,Memory Network | 8.5 | 566 | 46
+RP01,Best of N-Gram/LSTM/Memory Network,various,,,LAMBADA,Max Accuracy (%) across tested models,1,,,,,True,measured,1,Abstract,,none of several state-ofthe-art language models reaches accuracy above 1% on this novel benchmark

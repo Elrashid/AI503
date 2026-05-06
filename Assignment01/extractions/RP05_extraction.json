@@ -838,5 +838,3195 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Chance",
+        "method": "Chance",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 25.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Chance | 25.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 30.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | 30.9 | 31.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 31.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | 30.9 | 31.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 33.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | 30.9 | 31.6 | 33.8 | 32.9",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 32.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | 30.9 | 31.6 | 33.8 | 32.9",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 28.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | ... | 28.0 | 30.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 30.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | ... | 28.0 | 30.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 27.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | ... | 27.7 | 28.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 28.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | ... | 27.7 | 28.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 32.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | ... | 32.4 | 33.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "fastText",
+        "method": "fastText",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 33.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "fastText | ... | 32.4 | 33.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 31.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | 31.9 | 31.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 31.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | 31.9 | 31.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 34.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | 31.9 | 31.7 | 34.3 | 32.9",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 32.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | 31.9 | 31.7 | 34.3 | 32.9",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 29.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | ... | 29.5 | 30.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 30.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | ... | 29.5 | 30.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 34.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | ... | 34.3 | 33.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 33.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | ... | 34.3 | 33.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 30.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | ... | 30.7 | 30.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+GloVe",
+        "method": "LSTM+GloVe",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 30.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+GloVe | ... | 30.7 | 30.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 31.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | 31.7 | 31.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 31.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | 31.7 | 31.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 33.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | 31.7 | 31.4 | 33.2 | 32.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 32.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | 31.7 | 31.4 | 33.2 | 32.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 30.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | ... | 30.4 | 30.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 30.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | ... | 30.4 | 30.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 33.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | ... | 33.8 | 33.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 33.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | ... | 33.8 | 33.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 30.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | ... | 30.8 | 30.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+ELMo",
+        "method": "LSTM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 30.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+ELMo | ... | 30.8 | 30.4",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 35.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | 35.9 | 36.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 36.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | 35.9 | 36.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 38.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | 35.9 | 36.2 | 38.7 | 38.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 38.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | 35.9 | 36.2 | 38.7 | 38.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 33.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | ... | 33.2 | 34.1",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 34.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | ... | 33.2 | 34.1",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 40.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | ... | 40.5 | 40.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 40.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | ... | 40.5 | 40.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 33.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | ... | 33.7 | 33.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM+BERT-Base",
+        "method": "LSTM+BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 33.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "LSTM+BERT-Base | ... | 33.7 | 33.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 33.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | 33.6 | 33.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 33.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "ESIM+ELMo obtained 59% accuracy on SWAG, it obtains only 33.3% accuracy on HellaSwag",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 35.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | 33.6 | 33.3 | 35.7 | 34.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 34.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | 33.6 | 33.3 | 35.7 | 34.2",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 31.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | ... | 31.5 | 32.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 32.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | ... | 31.5 | 32.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 37.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | ... | 37.7 | 36.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 36.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | ... | 37.7 | 36.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 31.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | ... | 31.6 | 31.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM+ELMo",
+        "method": "ESIM+ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 31.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "ESIM+ELMo | ... | 31.6 | 31.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 41.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | 41.9 | 41.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 41.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | 41.9 | 41.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 45.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | 41.9 | 41.7 | 45.3 | 44.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 44.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | 41.9 | 41.7 | 45.3 | 44.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 38.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | ... | 38.6 | 39.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 39.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | ... | 38.6 | 39.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 46.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | ... | 46.4 | 43.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 43.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | ... | 46.4 | 43.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 39.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | ... | 39.8 | 40.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 40.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "OpenAI GPT | ... | 39.8 | 40.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 39.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | 39.5 | 40.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 40.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | 39.5 | 40.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 42.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | 39.5 | 40.5 | 42.9 | 42.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 42.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | 39.5 | 40.5 | 42.9 | 42.8",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 36.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | ... | 36.1 | 38.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 38.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | ... | 36.1 | 38.3",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 48.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | ... | 48.9 | 45.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 45.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | ... | 48.9 | 45.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 34.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | ... | 34.9 | 37.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Base",
+        "method": "BERT-Base",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 37.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Base | ... | 34.9 | 37.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 46.7,
+        "baseline_label": "Human",
+        "baseline_value": 95.7,
+        "delta": -49.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | **46.7** | **47.3**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 47.3,
+        "baseline_label": "Human",
+        "baseline_value": 95.6,
+        "delta": -48.3,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5 Results",
+        "quote": "BERT-Large having been used as the adversarial filter, it still performs the strongest at 47.3% overall",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 50.2,
+        "baseline_label": "Human",
+        "baseline_value": 95.6,
+        "delta": -45.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | **46.7** | **47.3** | **50.2** | **49.7**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 49.7,
+        "baseline_label": "Human",
+        "baseline_value": 95.6,
+        "delta": -45.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | **46.7** | **47.3** | **50.2** | **49.7**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 43.3,
+        "baseline_label": "Human",
+        "baseline_value": 95.8,
+        "delta": -52.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | ... | **43.3** | **45.0**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 45.0,
+        "baseline_label": "Human",
+        "baseline_value": 95.7,
+        "delta": -50.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | ... | **43.3** | **45.0**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 54.7,
+        "baseline_label": "Human",
+        "baseline_value": 94.0,
+        "delta": -39.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | ... | **54.7** | **51.7**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 51.7,
+        "baseline_label": "Human",
+        "baseline_value": 94.0,
+        "delta": -42.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | ... | **54.7** | **51.7**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 42.9,
+        "baseline_label": "Human",
+        "baseline_value": 96.5,
+        "delta": -53.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "BERT-Large | ... | **42.9** | **45.0**",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 45.0,
+        "baseline_label": "Human",
+        "baseline_value": 96.5,
+        "delta": -51.5,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "WikiHow is a much harder domain that ActivityNet for machines: 45% Bert-Large performance, versus 96.5% for humans",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 95.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | 95.7 | 95.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 95.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "the resulting dataset of 70k problems is easy for humans (95.6% accuracy), yet challenging for machines (<50%)",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Overall Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 95.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | 95.7 | 95.6 | 95.6 | 95.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag In-Domain",
+        "metric": "Accuracy",
+        "value": 95.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | 95.7 | 95.6 | 95.6 | 95.6",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (In-Domain Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 95.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | ... | 95.8 | 95.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag Zero-Shot",
+        "metric": "Accuracy",
+        "value": 95.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | ... | 95.8 | 95.7",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (Zero-Shot Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 94.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | ... | 94.0 | 94.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 94.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | ... | 94.0 | 94.0",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (ActivityNet Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 96.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "WikiHow is a much harder domain that ActivityNet for machines: 45% Bert-Large performance, versus 96.5% for humans",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Val)"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 96.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.4 Zero-shot categories for evaluation",
+        "quote": "Human | ... | 96.5 | 96.5",
+        "bbox": [
+          97.96249816894532,
+          61.0285546875,
+          495.0454974365234,
+          210.3191015625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1 (WikiHow Test)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (full-context)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SWAG",
+        "metric": "Accuracy",
+        "value": 86.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "What is learned during finetuning?",
+        "quote": "BERT's performance only slips 11.9 points (86.7% -> 74.8%) when context is omitted",
+        "bbox": [
+          306.25692695214104,
+          609.298828125,
+          526.9420654911838,
+          711.259765625
+        ],
+        "block_id": "/page/2/Text/16",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (Ending Only)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SWAG",
+        "metric": "Accuracy",
+        "value": 74.8,
+        "baseline_label": "Full-context",
+        "baseline_value": 86.7,
+        "delta": -11.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "What is learned during finetuning?",
+        "quote": "BERT's performance only slips 11.9 points (86.7% -> 74.8%) when context is omitted (Ending Only)",
+        "bbox": [
+          306.25692695214104,
+          609.298828125,
+          526.9420654911838,
+          711.259765625
+        ],
+        "block_id": "/page/2/Text/16",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (Shuffled+Ending Only)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SWAG",
+        "metric": "Accuracy",
+        "value": 60.4,
+        "baseline_label": "Full-context",
+        "baseline_value": 86.7,
+        "delta": -26.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "What is learned during finetuning?",
+        "quote": "when the context is removed and the words in each ending are shuffled, performance drops to 60.4%",
+        "bbox": [
+          71.298828125,
+          421.822265625,
+          290.724609375,
+          543.1779479980469
+        ],
+        "block_id": "/page/3/Text/4",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (transfer SWAG->HellaSwag)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 34.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "a BERT-Large that is trained on SWAG hardly generalizes to HellaSwag: it scores 34.6%",
+        "bbox": [
+          71.298828125,
+          173.0869140625,
+          290.2772521972656,
+          220.13031005859375
+        ],
+        "block_id": "/page/6/Caption/1",
+        "source_table": "Figure 9"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (AF discriminator, ActivityNet)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet (Zellers et al. 2018 LM)",
+        "metric": "Accuracy (post-AF)",
+        "value": 75.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.3 Where do the stylistic biases come from?",
+        "quote": "the LM used for SWAG converges at 75%",
+        "bbox": [
+          71.298828125,
+          230.6455078125,
+          525.865234375,
+          280.144287109375
+        ],
+        "block_id": "/page/3/Caption/2",
+        "source_table": "Figure 5 (left)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (AF discriminator, ActivityNet GPT)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet (GPT generations)",
+        "metric": "Accuracy (post-AF)",
+        "value": 30.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.3 Where do the stylistic biases come from?",
+        "quote": "GPT's generations are good enough that BERT accuracy drops below 30%",
+        "bbox": [
+          305.56640625,
+          355.6928405761719,
+          525.57421875,
+          461.4459533691406
+        ],
+        "block_id": "/page/3/Text/10",
+        "source_table": "Figure 5 (left)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (AF, 1-sentence WikiHow)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow (1-sentence endings)",
+        "metric": "Accuracy (post-AF)",
+        "value": 35.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.2 WikiHow: A New Testbed",
+        "quote": "the one-sentence case converges to slightly higher than random – 35% when it converges",
+        "bbox": [
+          71.58984375,
+          266.8251953125,
+          290.43359375,
+          495.54095458984375
+        ],
+        "block_id": "/page/4/Text/3",
+        "source_table": "Figure 5 (right)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (AF, 2-sentence WikiHow)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow (2-sentence endings)",
+        "metric": "Accuracy (post-AF)",
+        "value": 40.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.2 WikiHow: A New Testbed",
+        "quote": "the two and three sentence cases are higher, at 40% and 50% respectively",
+        "bbox": [
+          71.58984375,
+          266.8251953125,
+          290.43359375,
+          495.54095458984375
+        ],
+        "block_id": "/page/4/Text/3",
+        "source_table": "Figure 5 (right)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (AF, 3-sentence WikiHow)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow (3-sentence endings)",
+        "metric": "Accuracy (post-AF)",
+        "value": 50.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.2 WikiHow: A New Testbed",
+        "quote": "the two and three sentence cases are higher, at 40% and 50% respectively",
+        "bbox": [
+          71.58984375,
+          266.8251953125,
+          290.43359375,
+          495.54095458984375
+        ],
+        "block_id": "/page/4/Text/3",
+        "source_table": "Figure 5 (right)"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (pre-validation ActivityNet)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 25.5,
+        "baseline_label": "Human (initial)",
+        "baseline_value": 60.0,
+        "delta": -34.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3 Obtaining high human agreement",
+        "quote": "While ActivityNet starts off harder for BERT (25.5%), it also proves difficult for humans (60%)",
+        "bbox": [
+          70.716796875,
+          523.783203125,
+          290.2728576660156,
+          738.5209503173828
+        ],
+        "block_id": "/page/4/Text/5",
+        "source_table": "Figure 6"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (pre-validation WikiHow)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 41.1,
+        "baseline_label": "Human (initial)",
+        "baseline_value": 93.5,
+        "delta": -52.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3 Obtaining high human agreement",
+        "quote": "WikiHow starts easier for BERT (41.1%) and humans find the domain almost trivial (93.5%)",
+        "bbox": [
+          70.716796875,
+          523.783203125,
+          290.2728576660156,
+          738.5209503173828
+        ],
+        "block_id": "/page/4/Text/5",
+        "source_table": "Figure 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human (post-validation)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ActivityNet",
+        "metric": "Accuracy",
+        "value": 94.0,
+        "baseline_label": "Initial",
+        "baseline_value": 60.0,
+        "delta": 34.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.3 Obtaining high human agreement",
+        "quote": "we perform several rounds of human filtering, increasing human performance to 94%",
+        "bbox": [
+          305.857421875,
+          462.11328125,
+          525.5452880859375,
+          582.1640625
+        ],
+        "block_id": "/page/4/Text/11",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (transfer SWAG model on WikiHow)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow",
+        "metric": "Accuracy",
+        "value": 28.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.1 SWAG to HellaSwag transfer",
+        "quote": "SWAG models do not generalize at all to their missing domain, WikiHow (28%)",
+        "bbox": [
+          71.298828125,
+          553.384765625,
+          290.724609375,
+          687.262939453125
+        ],
+        "block_id": "/page/6/Text/6",
+        "source_table": "Figure 9"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (transfer HellaSwag->LSMDC)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LSMDC",
+        "metric": "Accuracy",
+        "value": 69.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.1 SWAG to HellaSwag transfer",
+        "quote": "HellaSwag models obtain 69% accuracy",
+        "bbox": [
+          71.298828125,
+          553.384765625,
+          290.724609375,
+          687.262939453125
+        ],
+        "block_id": "/page/6/Text/6",
+        "source_table": "Figure 9"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large vs BERT-Base AF (WikiHow ablation)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "WikiHow (AF ablation)",
+        "metric": "Accuracy",
+        "value": 63.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "6.1 How easy might HellaSwag be for future discriminators?",
+        "quote": "using a discriminator with 3x the parameters as the adversarial filter (BERT-Large vs. BERT-Base) results in 63% machine accuracy",
+        "bbox": [
+          71.298828125,
+          564.4853515625,
+          290.724609375,
+          765.6199493408203
+        ],
+        "block_id": "/page/7/Text/6",
+        "source_table": "Figure 11"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 106,
+    "dropped_cited_count": 1,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }

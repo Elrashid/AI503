@@ -1,0 +1,45 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP03,Human,Human solver,,,OpenBookQA-Dev,Accuracy,89.3,,,,,True,measured,8,4.4 Trained Model with External Knowledge,Table 4,Human solver | 89.3* | 91.7*
+RP03,Human,Human solver,,,OpenBookQA-Test,Accuracy,91.7,,,,,True,measured,8,4.4 Trained Model with External Knowledge,Table 4,Human solver | 89.3* | 91.7*
+RP03,Random,Guess All,,,OpenBookQA-Dev,Accuracy,25.0,,,,,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,"Guess All (""random"") | 25.0 | 25.0"
+RP03,Random,Guess All,,,OpenBookQA-Test,Accuracy,25.0,,,,,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,"Guess All (""random"") | 25.0 | 25.0"
+RP03,TupleInference,TupleInference,,,OpenBookQA-Dev,Accuracy,15.9,Guess All,25.0,-9.1,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,TupleInference | 15.9 | 17.9
+RP03,TupleInference,TupleInference,,,OpenBookQA-Test,Accuracy,17.9,Guess All,25.0,-7.1,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,TupleInference | 15.9 | 17.9
+RP03,PMI,PMI (Waterloo corpus),,,OpenBookQA-Dev,Accuracy,19.7,Guess All,25.0,-5.3,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,PMI (Waterloo corpus) | 19.7 | 21.2
+RP03,PMI,PMI (Waterloo corpus),,,OpenBookQA-Test,Accuracy,21.2,Guess All,25.0,-3.8,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,PMI (Waterloo corpus) | 19.7 | 21.2
+RP03,TableILP,TableILP,,,OpenBookQA-Dev,Accuracy,20.0,Guess All,25.0,-5.0,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,TableILP | 20.0 | 23.4
+RP03,TableILP,TableILP,,,OpenBookQA-Test,Accuracy,23.4,Guess All,25.0,-1.6,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,TableILP | 20.0 | 23.4
+RP03,DGEM,DGEM,,,OpenBookQA-Dev,Accuracy,27.4,Guess All,25.0,2.4,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,DGEM | 27.4 | **24.4**
+RP03,DGEM,DGEM,,,OpenBookQA-Test,Accuracy,24.4,Guess All,25.0,-0.6,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,DGEM | 27.4 | **24.4**
+RP03,IR Solver,IR with F,,,OpenBookQA-Dev,Accuracy,25.5,Guess All,25.0,0.5,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,IR with \mathcal{F} | 25.5 | 24.8
+RP03,IR Solver,IR with F,,,OpenBookQA-Test,Accuracy,24.8,Guess All,25.0,-0.2,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,IR with \mathcal{F} | 25.5 | 24.8
+RP03,TupleInference,TupleInference with F,,,OpenBookQA-Dev,Accuracy,23.6,TupleInference,15.9,7.7,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,TupleInference with \mathcal{F} | 23.6 | **26.6**
+RP03,TupleInference,TupleInference with F,,,OpenBookQA-Test,Accuracy,26.6,TupleInference,17.9,8.7,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,TupleInference with \mathcal{F} | 23.6 | **26.6**
+RP03,DGEM,DGEM with F,,,OpenBookQA-Dev,Accuracy,28.2,DGEM,27.4,0.8,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,DGEM with \mathcal{F} | 28.2 | 24.6
+RP03,DGEM,DGEM with F,,,OpenBookQA-Test,Accuracy,24.6,DGEM,24.4,0.2,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,DGEM with \mathcal{F} | 28.2 | 24.6
+RP03,Embedd+Sim,Embedd+Sim,,,OpenBookQA-Dev,Accuracy,44.6,Guess All,25.0,19.6,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,Embedd+Sim | 44.6 | 41.8
+RP03,Embedd+Sim,Embedd+Sim,,,OpenBookQA-Test,Accuracy,41.8,Guess All,25.0,16.8,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,Embedd+Sim | 44.6 | 41.8
+RP03,ESIM,ESIM,,,OpenBookQA-Dev,Accuracy,53.9,Guess All,25.0,28.9,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,ESIM | 53.9 \pm 0.4 | 48.9 \pm 1.1
+RP03,ESIM,ESIM,,,OpenBookQA-Test,Accuracy,48.9,Guess All,25.0,23.9,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,ESIM | 53.9 \pm 0.4 | 48.9 \pm 1.1
+RP03,BiLSTM Max-Out,Plausible Answer Detector,,,OpenBookQA-Dev,Accuracy,54.4,Guess All,25.0,29.4,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,Plausible Answer Detector | 54.4 \pm 0.7 | 49.6 \pm 0.7
+RP03,BiLSTM Max-Out,Plausible Answer Detector,,,OpenBookQA-Test,Accuracy,49.6,Guess All,25.0,24.6,absolute,True,measured,8,4.4 Trained Model with External Knowledge,Table 4,Plausible Answer Detector | 54.4 \pm 0.7 | 49.6 \pm 0.7
+RP03,BiLSTM Max-Out,Odd-one-out Solver,,,OpenBookQA-Dev,Accuracy,56.9,Guess All,25.0,31.9,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,Odd-one-out Solver | 56.9 \pm 0.5 | 50.2 \pm 1.6
+RP03,BiLSTM Max-Out,Odd-one-out Solver,,,OpenBookQA-Test,Accuracy,50.2,Guess All,25.0,25.2,absolute,True,measured,8,4.4 Trained Model with External Knowledge,Table 4,Odd-one-out Solver | 56.9 \pm 0.5 | 50.2 \pm 1.6
+RP03,BiLSTM Max-Out,Question Match,,,OpenBookQA-Dev,Accuracy,54.6,Guess All,25.0,29.6,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,Question Match | 54.6 \pm 1.2 | **50.2 \pm 0.9**
+RP03,BiLSTM Max-Out,Question Match,,,OpenBookQA-Test,Accuracy,50.2,Guess All,25.0,25.2,absolute,True,measured,8,4.4 Trained Model with External Knowledge,Table 4,Question Match | 54.6 \pm 1.2 | **50.2 \pm 0.9**
+RP03,Knowledge-Enhanced Reader,Oracle f,,,OpenBookQA-Dev,Accuracy,63.0,Question Match,54.6,8.4,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f | 63.0 \pm 2.3 | 55.8 \pm 2.3
+RP03,Knowledge-Enhanced Reader,Oracle f,,,OpenBookQA-Test,Accuracy,55.8,Question Match,50.2,5.6,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f | 63.0 \pm 2.3 | 55.8 \pm 2.3
+RP03,Knowledge-Enhanced Reader,Oracle f + WordNet,,,OpenBookQA-Dev,Accuracy,57.6,Oracle f,63.0,-5.4,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f + WordNet | 57.6 \pm 1.4 | 56.3 \pm 1.3
+RP03,Knowledge-Enhanced Reader,Oracle f + WordNet,,,OpenBookQA-Test,Accuracy,56.3,Oracle f,55.8,0.5,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f + WordNet | 57.6 \pm 1.4 | 56.3 \pm 1.3
+RP03,Knowledge-Enhanced Reader,Oracle f + ConceptNet,,,OpenBookQA-Dev,Accuracy,57.0,Oracle f,63.0,-6.0,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f + ConceptNet | 57.0 \pm 1.6 | 53.7 \pm 1.5
+RP03,Knowledge-Enhanced Reader,Oracle f + ConceptNet,,,OpenBookQA-Test,Accuracy,53.7,Oracle f,55.8,-2.1,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f + ConceptNet | 57.0 \pm 1.6 | 53.7 \pm 1.5
+RP03,Knowledge-Enhanced Reader,Oracle f + k,,,OpenBookQA-Dev,Accuracy,80.2,Oracle f,63.0,17.2,absolute,False,measured,8,4.4 Trained Model with External Knowledge,Table 4,f + k | 80.2 \pm 1.1 | 76.9 \pm 0.7
+RP03,Knowledge-Enhanced Reader,Oracle f + k,,,OpenBookQA-Test,Accuracy,76.9,Oracle f,55.8,21.1,absolute,True,measured,8,4.4 Trained Model with External Knowledge,Table 4,f + k | 80.2 \pm 1.1 | 76.9 \pm 0.7
+RP03,Human,Human (re-annotation),,,OpenBookQA-Train (100 sample),Accuracy,88.6,,,,,False,measured,9,5 Baseline Performance,,"The performance remained similar at 88.6%, 90.2%, and 91.6%, resp."
+RP03,Human,Human (re-annotation),,,OpenBookQA-Dev (100 sample),Accuracy,90.2,,,,,False,measured,9,5 Baseline Performance,,"The performance remained similar at 88.6%, 90.2%, and 91.6%, resp."
+RP03,Human,Human (re-annotation),,,OpenBookQA-Test (100 sample),Accuracy,91.6,,,,,False,measured,9,5 Baseline Performance,,"The performance remained similar at 88.6%, 90.2%, and 91.6%, resp."
+RP03,BiLSTM Max-Out,Question Match + ELMo,,,OpenBookQA-Test,Accuracy improvement,0.4,Question Match,50.2,0.4,absolute,False,measured,9,5 Baseline Performance,,"For Question Match and ESIM we also experiment with ElMo (Peters et al., 2018) which improved their score on Test with 0.4% and 1.8%."
+RP03,ESIM,ESIM + ELMo,,,OpenBookQA-Test,Accuracy improvement,1.8,ESIM,48.9,1.8,absolute,False,measured,9,5 Baseline Performance,,"For Question Match and ESIM we also experiment with ElMo (Peters et al., 2018) which improved their score on Test with 0.4% and 1.8%."
+RP03,BiLSTM Max-Out,Question Match,,,ARC Reasoning Challenge,Accuracy,33.87,,,,,False,measured,9,Acknowledgments,,"This model also achieves the current best score, 33.87%, on the ARC Reasoning Challenge"
+RP03,BiLSTM Max-Out,BiLSTM max-out (entailment-adapted),,,SciTail,Accuracy,85.0,,,,,False,measured,9,Acknowledgments,,"When adapted for the textual entailment task by comparing BiLSTM max-out encodings of premise and hypothesis, it achieves 85% on the SciTail dataset"
+RP03,TableILP,TableILP,,,OpenBookQA,Coverage (no answer rate),24.0,,,,percent,False,measured,6,"4.1 No Training, External Knowledge Only",,"The small set of these knowledge tables, however, often results in missing knowledge, making TableILP not answer 24% of the OpenBookQA questions at all."

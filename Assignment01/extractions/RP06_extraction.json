@@ -735,5 +735,495 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Random",
+        "method": "random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 50.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Random Chance |  | 50.0 | 50.0",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random",
+        "method": "random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (test)",
+        "metric": "Accuracy",
+        "value": 50.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Random Chance |  | 50.0 | 50.0",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority Class",
+        "method": "majority class baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 50.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Majority Class |  | 50.5 | 50.4",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority Class",
+        "method": "majority class baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (test)",
+        "metric": "Accuracy",
+        "value": 50.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Majority Class |  | 50.5 | 50.4",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-124M",
+        "method": "GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 70.9,
+        "baseline_label": "Human",
+        "baseline_value": 94.9,
+        "delta": -24.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "OpenAI GPT | 124M | 70.9 | 69.2",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-124M",
+        "method": "GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (test)",
+        "metric": "Accuracy",
+        "value": 69.2,
+        "baseline_label": "Human",
+        "baseline_value": 94.9,
+        "delta": -25.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "OpenAI GPT | 124M | 70.9 | 69.2",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 67.1,
+        "baseline_label": "Human",
+        "baseline_value": 94.9,
+        "delta": -27.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Google BERT | 340M | 67.1 | 66.8",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (test)",
+        "metric": "Accuracy",
+        "value": 66.8,
+        "baseline_label": "Human",
+        "baseline_value": 94.9,
+        "delta": -28.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Google BERT | 340M | 67.1 | 66.8",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-Large",
+        "method": "RoBERTa-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.2,
+        "baseline_label": "Human",
+        "baseline_value": 94.9,
+        "delta": -15.7,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "FAIR RoBERTa | 355M | 79.2 | 77.1",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-Large",
+        "method": "RoBERTa-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (test)",
+        "metric": "Accuracy",
+        "value": 77.1,
+        "baseline_label": "Human",
+        "baseline_value": 94.9,
+        "delta": -17.8,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "FAIR RoBERTa | 355M | 79.2 | 77.1",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 94.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Experiments",
+        "quote": "Human |  | 94.9 |",
+        "bbox": [
+          72.74671875,
+          51.889921875,
+          272.69859375,
+          163.125703125
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 95.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Though humans find the dataset easy (95% accuracy), large pretrained models struggle (~77%)",
+        "bbox": [
+          61.55859375,
+          251.75390625,
+          283.5,
+          425.25
+        ],
+        "block_id": "/page/0/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-Large",
+        "method": "RoBERTa-Large (abstract headline)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 77.0,
+        "baseline_label": "Human",
+        "baseline_value": 95.0,
+        "delta": -18.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "Though humans find the dataset easy (95% accuracy), large pretrained models struggle (~77%)",
+        "bbox": [
+          61.55859375,
+          251.75390625,
+          283.5,
+          425.25
+        ],
+        "block_id": "/page/0/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-Large",
+        "method": "RoBERTa-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (water-pivot subset)",
+        "metric": "Accuracy",
+        "value": 75.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "PIQA as a diagnostic for physical understanding",
+        "quote": "Though certain concepts such as water occur quite frequently, RoBERTa nevertheless finds those concepts difficult, with 75% accuracy.",
+        "bbox": [
+          52.59375,
+          242.47265625,
+          292.504638671875,
+          351.6599426269531
+        ],
+        "block_id": "/page/5/Caption/1",
+        "source_table": "Figure 7"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-Large",
+        "method": "RoBERTa-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (spoon-pivot subset)",
+        "metric": "Accuracy",
+        "value": 90.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "PIQA as a diagnostic for physical understanding",
+        "quote": "RoBERTa performs much butter at examples where 'spoon' is the pivot word (90%) versus 'water' (75%).",
+        "bbox": [
+          318.55078125,
+          291.5859375,
+          558.0047607421875,
+          378.3169860839844
+        ],
+        "block_id": "/page/5/Caption/10",
+        "source_table": "Figure 8"
+      }
+    },
+    {
+      "value": {
+        "model": "RoBERTa-Large",
+        "method": "RoBERTa-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "PIQA (freeze-pivot subset)",
+        "metric": "Accuracy",
+        "value": 66.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "PIQA as a diagnostic for physical understanding",
+        "quote": "Freeze has an accuracy of 66% on the validation set, and shows that verbs are challenging as well.",
+        "bbox": [
+          318.55078125,
+          291.5859375,
+          558.0047607421875,
+          378.3169860839844
+        ],
+        "block_id": "/page/5/Caption/10",
+        "source_table": "Figure 8"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 16,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

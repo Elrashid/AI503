@@ -967,5 +967,1335 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human solver",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 89.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Human solver | 89.3* | 91.7*",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human solver",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 91.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Human solver | 89.3* | 91.7*",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Random",
+        "method": "Guess All",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 25.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Guess All (\"random\") | 25.0 | 25.0",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Random",
+        "method": "Guess All",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 25.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Guess All (\"random\") | 25.0 | 25.0",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "TupleInference",
+        "method": "TupleInference",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 15.9,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -9.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "TupleInference | 15.9 | 17.9",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "TupleInference",
+        "method": "TupleInference",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 17.9,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -7.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "TupleInference | 15.9 | 17.9",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "PMI",
+        "method": "PMI (Waterloo corpus)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 19.7,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -5.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "PMI (Waterloo corpus) | 19.7 | 21.2",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "PMI",
+        "method": "PMI (Waterloo corpus)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 21.2,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -3.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "PMI (Waterloo corpus) | 19.7 | 21.2",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "TableILP",
+        "method": "TableILP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 20.0,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -5.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "TableILP | 20.0 | 23.4",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "TableILP",
+        "method": "TableILP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 23.4,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -1.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "TableILP | 20.0 | 23.4",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "DGEM",
+        "method": "DGEM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 27.4,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 2.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "DGEM | 27.4 | **24.4**",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "DGEM",
+        "method": "DGEM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 24.4,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "DGEM | 27.4 | **24.4**",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "IR Solver",
+        "method": "IR with F",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 25.5,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "IR with \\mathcal{F} | 25.5 | 24.8",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "IR Solver",
+        "method": "IR with F",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 24.8,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "IR with \\mathcal{F} | 25.5 | 24.8",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "TupleInference",
+        "method": "TupleInference with F",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 23.6,
+        "baseline_label": "TupleInference",
+        "baseline_value": 15.9,
+        "delta": 7.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "TupleInference with \\mathcal{F} | 23.6 | **26.6**",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "TupleInference",
+        "method": "TupleInference with F",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 26.6,
+        "baseline_label": "TupleInference",
+        "baseline_value": 17.9,
+        "delta": 8.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "TupleInference with \\mathcal{F} | 23.6 | **26.6**",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "DGEM",
+        "method": "DGEM with F",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 28.2,
+        "baseline_label": "DGEM",
+        "baseline_value": 27.4,
+        "delta": 0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "DGEM with \\mathcal{F} | 28.2 | 24.6",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "DGEM",
+        "method": "DGEM with F",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 24.6,
+        "baseline_label": "DGEM",
+        "baseline_value": 24.4,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "DGEM with \\mathcal{F} | 28.2 | 24.6",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Embedd+Sim",
+        "method": "Embedd+Sim",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 44.6,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 19.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Embedd+Sim | 44.6 | 41.8",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Embedd+Sim",
+        "method": "Embedd+Sim",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 41.8,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 16.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Embedd+Sim | 44.6 | 41.8",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM",
+        "method": "ESIM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 53.9,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 28.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "ESIM | 53.9 \\pm 0.4 | 48.9 \\pm 1.1",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM",
+        "method": "ESIM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 48.9,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 23.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "ESIM | 53.9 \\pm 0.4 | 48.9 \\pm 1.1",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Plausible Answer Detector",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 54.4,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 29.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Plausible Answer Detector | 54.4 \\pm 0.7 | 49.6 \\pm 0.7",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Plausible Answer Detector",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 49.6,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 24.6,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Plausible Answer Detector | 54.4 \\pm 0.7 | 49.6 \\pm 0.7",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Odd-one-out Solver",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 56.9,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 31.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Odd-one-out Solver | 56.9 \\pm 0.5 | 50.2 \\pm 1.6",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Odd-one-out Solver",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 50.2,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 25.2,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Odd-one-out Solver | 56.9 \\pm 0.5 | 50.2 \\pm 1.6",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Question Match",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 54.6,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 29.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Question Match | 54.6 \\pm 1.2 | **50.2 \\pm 0.9**",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Question Match",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 50.2,
+        "baseline_label": "Guess All",
+        "baseline_value": 25.0,
+        "delta": 25.2,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "Question Match | 54.6 \\pm 1.2 | **50.2 \\pm 0.9**",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 63.0,
+        "baseline_label": "Question Match",
+        "baseline_value": 54.6,
+        "delta": 8.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f | 63.0 \\pm 2.3 | 55.8 \\pm 2.3",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 55.8,
+        "baseline_label": "Question Match",
+        "baseline_value": 50.2,
+        "delta": 5.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f | 63.0 \\pm 2.3 | 55.8 \\pm 2.3",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f + WordNet",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 57.6,
+        "baseline_label": "Oracle f",
+        "baseline_value": 63.0,
+        "delta": -5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f + WordNet | 57.6 \\pm 1.4 | 56.3 \\pm 1.3",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f + WordNet",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 56.3,
+        "baseline_label": "Oracle f",
+        "baseline_value": 55.8,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f + WordNet | 57.6 \\pm 1.4 | 56.3 \\pm 1.3",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f + ConceptNet",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 57.0,
+        "baseline_label": "Oracle f",
+        "baseline_value": 63.0,
+        "delta": -6.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f + ConceptNet | 57.0 \\pm 1.6 | 53.7 \\pm 1.5",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f + ConceptNet",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 53.7,
+        "baseline_label": "Oracle f",
+        "baseline_value": 55.8,
+        "delta": -2.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f + ConceptNet | 57.0 \\pm 1.6 | 53.7 \\pm 1.5",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f + k",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev",
+        "metric": "Accuracy",
+        "value": 80.2,
+        "baseline_label": "Oracle f",
+        "baseline_value": 63.0,
+        "delta": 17.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f + k | 80.2 \\pm 1.1 | 76.9 \\pm 0.7",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Knowledge-Enhanced Reader",
+        "method": "Oracle f + k",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy",
+        "value": 76.9,
+        "baseline_label": "Oracle f",
+        "baseline_value": 55.8,
+        "delta": 21.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.4 Trained Model with External Knowledge",
+        "quote": "f + k | 80.2 \\pm 1.1 | 76.9 \\pm 0.7",
+        "bbox": [
+          310.47875,
+          57.1145703125,
+          521.8259375,
+          354.0182421875
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human (re-annotation)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Train (100 sample)",
+        "metric": "Accuracy",
+        "value": 88.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Baseline Performance",
+        "quote": "The performance remained similar at 88.6%, 90.2%, and 91.6%, resp.",
+        "bbox": [
+          71.0078125,
+          64.5478515625,
+          290.2693176269531,
+          157.80877685546875
+        ],
+        "block_id": "/page/8/Text/0",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human (re-annotation)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Dev (100 sample)",
+        "metric": "Accuracy",
+        "value": 90.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Baseline Performance",
+        "quote": "The performance remained similar at 88.6%, 90.2%, and 91.6%, resp.",
+        "bbox": [
+          71.0078125,
+          64.5478515625,
+          290.2693176269531,
+          157.80877685546875
+        ],
+        "block_id": "/page/8/Text/0",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human (re-annotation)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test (100 sample)",
+        "metric": "Accuracy",
+        "value": 91.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Baseline Performance",
+        "quote": "The performance remained similar at 88.6%, 90.2%, and 91.6%, resp.",
+        "bbox": [
+          71.0078125,
+          64.5478515625,
+          290.2693176269531,
+          157.80877685546875
+        ],
+        "block_id": "/page/8/Text/0",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Question Match + ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy improvement",
+        "value": 0.4,
+        "baseline_label": "Question Match",
+        "baseline_value": 50.2,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Baseline Performance",
+        "quote": "For Question Match and ESIM we also experiment with ElMo (Peters et al., 2018) which improved their score on Test with 0.4% and 1.8%.",
+        "bbox": [
+          71.0078125,
+          540.228515625,
+          290.2692565917969,
+          619.8899841308594
+        ],
+        "block_id": "/page/8/Text/4",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "ESIM",
+        "method": "ESIM + ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA-Test",
+        "metric": "Accuracy improvement",
+        "value": 1.8,
+        "baseline_label": "ESIM",
+        "baseline_value": 48.9,
+        "delta": 1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 Baseline Performance",
+        "quote": "For Question Match and ESIM we also experiment with ElMo (Peters et al., 2018) which improved their score on Test with 0.4% and 1.8%.",
+        "bbox": [
+          71.0078125,
+          540.228515625,
+          290.2692565917969,
+          619.8899841308594
+        ],
+        "block_id": "/page/8/Text/4",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "Question Match",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ARC Reasoning Challenge",
+        "metric": "Accuracy",
+        "value": 33.87,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Acknowledgments",
+        "quote": "This model also achieves the current best score, 33.87%, on the ARC Reasoning Challenge",
+        "bbox": [
+          71.298828125,
+          714.8826522827148,
+          290.26953125,
+          765.2423706054688
+        ],
+        "block_id": "/page/8/Footnote/7",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BiLSTM Max-Out",
+        "method": "BiLSTM max-out (entailment-adapted)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SciTail",
+        "metric": "Accuracy",
+        "value": 85.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "Acknowledgments",
+        "quote": "When adapted for the textual entailment task by comparing BiLSTM max-out encodings of premise and hypothesis, it achieves 85% on the SciTail dataset",
+        "bbox": [
+          71.298828125,
+          714.8826522827148,
+          290.26953125,
+          765.2423706054688
+        ],
+        "block_id": "/page/8/Footnote/7",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "TableILP",
+        "method": "TableILP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Coverage (no answer rate)",
+        "value": 24.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 No Training, External Knowledge Only",
+        "quote": "The small set of these knowledge tables, however, often results in missing knowledge, making TableILP not answer 24% of the OpenBookQA questions at all.",
+        "bbox": [
+          305.56640625,
+          79.3486328125,
+          525.57421875,
+          226.382080078125
+        ],
+        "block_id": "/page/5/Text/7",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 44,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }

@@ -1,0 +1,59 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP07,ResNet-18,FP32,32-bit,,ImageNet,Top-1 Accuracy,69.68,,,,,True,measured,6,5. Experiments,,The baseline performance of this model with full precision weights and activations is 69.68%.
+RP07,ResNet-18,FP32,32-bit,,ImageNet,Top-1 Accuracy,69.68,,,,,False,measured,8,5.2 Literature comparison,Table 7,Full precision | 32/32 | 69.68 | 76.07 | 77.40 | 71.72
+RP07,ResNet-50,FP32,32-bit,,ImageNet,Top-1 Accuracy,76.07,,,,,False,measured,8,5.2 Literature comparison,Table 7,Full precision | 32/32 | 69.68 | 76.07 | 77.40 | 71.72
+RP07,InceptionV3,FP32,32-bit,,ImageNet,Top-1 Accuracy,77.4,,,,,False,measured,8,5.2 Literature comparison,Table 7,Full precision | 32/32 | 69.68 | 76.07 | 77.40 | 71.72
+RP07,MobileNetV2,FP32,32-bit,,ImageNet,Top-1 Accuracy,71.72,,,,,False,measured,8,5.2 Literature comparison,Table 7,Full precision | 32/32 | 69.68 | 76.07 | 77.40 | 71.72
+RP07,ResNet-18 (first layer),Nearest,4-bit,,ImageNet,Top-1 Accuracy,52.29,FP32,69.68,-17.39,absolute,False,measured,3,3. Method,Table 1,Nearest | 52.29
+RP07,ResNet-18 (first layer),Ceil,4-bit,,ImageNet,Top-1 Accuracy,0.1,FP32,69.68,-69.58,absolute,False,measured,3,3. Method,Table 1,Ceil | 0.10
+RP07,ResNet-18 (first layer),Floor,4-bit,,ImageNet,Top-1 Accuracy,0.1,FP32,69.68,-69.58,absolute,False,measured,3,3. Method,Table 1,Floor | 0.10
+RP07,ResNet-18 (first layer),Stochastic rounding,4-bit,,ImageNet,Top-1 Accuracy,52.06,FP32,69.68,-17.62,absolute,False,measured,3,3. Method,Table 1,Stochastic | 52.06 \pm 5.52
+RP07,ResNet-18 (first layer),Stochastic (best),4-bit,,ImageNet,Top-1 Accuracy,63.06,FP32,69.68,-6.62,absolute,False,measured,3,3. Method,Table 1,Stochastic (best) | 63.06
+RP07,ResNet-18 (first layer),Hessian task loss (Eq. 13),4-bit,,ImageNet,Top-1 Accuracy,68.62,FP32,69.68,-1.06,absolute,False,measured,6,5.1 Ablation study,Table 2,H^{(w)} task loss (cf. (13)) | 68.62 \pm 0.17 | N/A
+RP07,ResNet-18 (first layer),Local MSE loss (Eq. 20),4-bit,,ImageNet,Top-1 Accuracy,69.39,FP32,69.68,-0.29,absolute,False,measured,6,5.1 Ablation study,Table 2,Local MSE loss (cf. (20)) | 69.39 \pm 0.04 | 65.83 \pm 0.14
+RP07,ResNet-18,Local MSE loss (Eq. 20),4-bit,,ImageNet,Top-1 Accuracy,65.83,FP32,69.68,-3.85,absolute,False,measured,6,5.1 Ablation study,Table 2,Local MSE loss (cf. (20)) | 69.39 \pm 0.04 | 65.83 \pm 0.14
+RP07,ResNet-18 (first layer),Continuous relaxation (Eq. 21),4-bit,,ImageNet,Top-1 Accuracy,69.58,FP32,69.68,-0.1,absolute,False,measured,6,5.1 Ablation study,Table 2,Cont. relaxation (cf (21)) | 69.58 \pm 0.03 | 66.56 \pm 0.12
+RP07,ResNet-18,Continuous relaxation (Eq. 21),4-bit,,ImageNet,Top-1 Accuracy,66.56,FP32,69.68,-3.12,absolute,False,measured,6,5.1 Ablation study,Table 2,Cont. relaxation (cf (21)) | 69.58 \pm 0.03 | 66.56 \pm 0.12
+RP07,ResNet-18,Nearest (whole network),4-bit,,ImageNet,Top-1 Accuracy,23.99,FP32,69.68,-45.69,absolute,False,measured,6,5.1 Ablation study,Table 2,Nearest | 52.29 | 23.99
+RP07,ResNet-18 (first layer),Sigmoid + T annealing,4-bit,,ImageNet,Top-1 Accuracy,69.31,FP32,69.68,-0.37,absolute,False,measured,7,5.1 Ablation study,Table 3,Sigmoid + T annealing | 69.31 \pm 0.21 | 65.22 \pm 0.67
+RP07,ResNet-18,Sigmoid + T annealing,4-bit,,ImageNet,Top-1 Accuracy,65.22,FP32,69.68,-4.46,absolute,False,measured,7,5.1 Ablation study,Table 3,Sigmoid + T annealing | 69.31 \pm 0.21 | 65.22 \pm 0.67
+RP07,ResNet-18 (first layer),Sigmoid + f_reg,4-bit,,ImageNet,Top-1 Accuracy,69.58,FP32,69.68,-0.1,absolute,False,measured,7,5.1 Ablation study,Table 3,Sigmoid + f_{reg} | 69.58 \pm 0.03 | 66.25 \pm 0.15
+RP07,ResNet-18,Sigmoid + f_reg,4-bit,,ImageNet,Top-1 Accuracy,66.25,FP32,69.68,-3.43,absolute,False,measured,7,5.1 Ablation study,Table 3,Sigmoid + f_{reg} | 69.58 \pm 0.03 | 66.25 \pm 0.15
+RP07,ResNet-18 (first layer),Rect. sigmoid + f_reg,4-bit,,ImageNet,Top-1 Accuracy,69.58,FP32,69.68,-0.1,absolute,False,measured,7,5.1 Ablation study,Table 3,Rect. sigmoid + f_{reg} | 69.58 \pm 0.03 | 66.56 \pm 0.12
+RP07,ResNet-18,Rect. sigmoid + f_reg,4-bit,,ImageNet,Top-1 Accuracy,66.56,FP32,69.68,-3.12,absolute,False,measured,7,5.1 Ablation study,Table 3,Rect. sigmoid + f_{reg} | 69.58 \pm 0.03 | 66.56 \pm 0.12
+RP07,ResNet-18,AdaRound (Layer-wise),4-bit,,ImageNet,Top-1 Accuracy,66.56,FP32,69.68,-3.12,absolute,False,measured,7,5.1 Ablation study,Table 4,Layer wise | 66.56\pm0.12
+RP07,ResNet-18,AdaRound (Asymmetric),4-bit,,ImageNet,Top-1 Accuracy,68.37,FP32,69.68,-1.31,absolute,False,measured,7,5.1 Ablation study,Table 4,Asymmetric | 68.37\pm0.07
+RP07,ResNet-18,AdaRound (Asymmetric + ReLU),4-bit,,ImageNet,Top-1 Accuracy,68.6,FP32,69.68,-1.08,absolute,False,measured,7,5.1 Ablation study,Table 4,Asymmetric + ReLU | 68.60\pm0.09
+RP07,ResNet-18,STE,4-bit,,ImageNet,Top-1 Accuracy,66.63,FP32,69.68,-3.05,absolute,False,measured,7,5.1 Ablation study,Table 5,STE | 66.63 \pm 0.06
+RP07,ResNet-18,AdaRound,4-bit,,ImageNet,Top-1 Accuracy,68.6,FP32,69.68,-1.08,absolute,False,measured,7,5.1 Ablation study,Table 5,AdaRound | 68.60 \pm 0.09
+RP07,ResNet-18,Nearest (Min-Max grid),4-bit,,ImageNet,Top-1 Accuracy,0.23,FP32,69.68,-69.45,absolute,False,measured,7,5.1 Ablation study,Table 6,Min-Max | 0.23 | 61.96 \pm 0.04
+RP07,ResNet-18,AdaRound (Min-Max grid),4-bit,,ImageNet,Top-1 Accuracy,61.96,FP32,69.68,-7.72,absolute,False,measured,7,5.1 Ablation study,Table 6,Min-Max | 0.23 | 61.96 \pm 0.04
+RP07,ResNet-18,Nearest (||W-W_bar|| grid),4-bit,,ImageNet,Top-1 Accuracy,23.99,FP32,69.68,-45.69,absolute,False,measured,7,5.1 Ablation study,Table 6,||W - W_bar||_F^2 | 23.99 | 68.60 \pm 0.09
+RP07,ResNet-18,AdaRound (||W-W_bar|| grid),4-bit,,ImageNet,Top-1 Accuracy,68.6,FP32,69.68,-1.08,absolute,False,measured,7,5.1 Ablation study,Table 6,||W - W_bar||_F^2 | 23.99 | 68.60 \pm 0.09
+RP07,ResNet-18,Nearest (||Wx-W_bar x|| grid),4-bit,,ImageNet,Top-1 Accuracy,42.89,FP32,69.68,-26.79,absolute,False,measured,7,5.1 Ablation study,Table 6,||Wx - W_bar x_hat||_F^2 | 42.89 | 68.62 \pm 0.08
+RP07,ResNet-18,AdaRound (||Wx-W_bar x|| grid),4-bit,,ImageNet,Top-1 Accuracy,68.62,FP32,69.68,-1.06,absolute,False,measured,7,5.1 Ablation study,Table 6,||Wx - W_bar x_hat||_F^2 | 42.89 | 68.62 \pm 0.08
+RP07,ResNet-18,Nearest,4-bit,,ImageNet,Top-1 Accuracy,23.99,FP32,69.68,-45.69,absolute,False,measured,8,5.2 Literature comparison,Table 7,Nearest | 4/32 | 23.99 | 35.60 | 1.67 | 8.09
+RP07,ResNet-50,Nearest,4-bit,,ImageNet,Top-1 Accuracy,35.6,FP32,76.07,-40.47,absolute,False,measured,8,5.2 Literature comparison,Table 7,Nearest | 4/32 | 23.99 | 35.60 | 1.67 | 8.09
+RP07,InceptionV3,Nearest,4-bit,,ImageNet,Top-1 Accuracy,1.67,FP32,77.4,-75.73,absolute,False,measured,8,5.2 Literature comparison,Table 7,Nearest | 4/32 | 23.99 | 35.60 | 1.67 | 8.09
+RP07,MobileNetV2,Nearest,4-bit,,ImageNet,Top-1 Accuracy,8.09,FP32,71.72,-63.63,absolute,False,measured,8,5.2 Literature comparison,Table 7,Nearest | 4/32 | 23.99 | 35.60 | 1.67 | 8.09
+RP07,ResNet-18,AdaRound,4-bit,,ImageNet,Top-1 Accuracy,68.71,FP32,69.68,-0.97,absolute,True,measured,8,5.2 Literature comparison,Table 7,AdaRound | 4/32 | 68.71 \pm 0.06 | 75.23 \pm 0.04 | 75.76 \pm 0.09 | 69.78 \pm 0.05
+RP07,ResNet-50,AdaRound,4-bit,,ImageNet,Top-1 Accuracy,75.23,FP32,76.07,-0.84,absolute,True,measured,8,5.2 Literature comparison,Table 7,AdaRound | 4/32 | 68.71 \pm 0.06 | 75.23 \pm 0.04 | 75.76 \pm 0.09 | 69.78 \pm 0.05
+RP07,InceptionV3,AdaRound,4-bit,,ImageNet,Top-1 Accuracy,75.76,FP32,77.4,-1.64,absolute,False,measured,8,5.2 Literature comparison,Table 7,AdaRound | 4/32 | 68.71 \pm 0.06 | 75.23 \pm 0.04 | 75.76 \pm 0.09 | 69.78 \pm 0.05
+RP07,MobileNetV2,AdaRound + CLE,4-bit,,ImageNet,Top-1 Accuracy,69.78,FP32,71.72,-1.94,absolute,False,measured,8,5.2 Literature comparison,Table 7,AdaRound | 4/32 | 68.71 \pm 0.06 | 75.23 \pm 0.04 | 75.76 \pm 0.09 | 69.78 \pm 0.05^{\dagger}
+RP07,ResNet-18,DFQ (our impl.),4-bit,,ImageNet,Top-1 Accuracy,38.98,FP32,69.68,-30.7,absolute,False,measured,8,5.2 Literature comparison,Table 7,DFQ (our impl.) | 4/8 | 38.98 | 52.84 | - | 46.57
+RP07,ResNet-50,DFQ (our impl.),4-bit,,ImageNet,Top-1 Accuracy,52.84,FP32,76.07,-23.23,absolute,False,measured,8,5.2 Literature comparison,Table 7,DFQ (our impl.) | 4/8 | 38.98 | 52.84 | - | 46.57
+RP07,MobileNetV2,DFQ (our impl.),4-bit,,ImageNet,Top-1 Accuracy,46.57,FP32,71.72,-25.15,absolute,False,measured,8,5.2 Literature comparison,Table 7,DFQ (our impl.) | 4/8 | 38.98 | 52.84 | - | 46.57
+RP07,ResNet-18,AdaRound w/ act quant,4-bit,,ImageNet,Top-1 Accuracy,68.55,FP32,69.68,-1.13,absolute,False,measured,8,5.2 Literature comparison,Table 7,AdaRound w/ act quant | 4/8 | 68.55 \pm 0.01 | 75.01 \pm 0.05 | 75.72 \pm 0.09 | 69.25 \pm 0.06
+RP07,ResNet-50,AdaRound w/ act quant,4-bit,,ImageNet,Top-1 Accuracy,75.01,FP32,76.07,-1.06,absolute,False,measured,8,5.2 Literature comparison,Table 7,AdaRound w/ act quant | 4/8 | 68.55 \pm 0.01 | 75.01 \pm 0.05 | 75.72 \pm 0.09 | 69.25 \pm 0.06
+RP07,InceptionV3,AdaRound w/ act quant,4-bit,,ImageNet,Top-1 Accuracy,75.72,FP32,77.4,-1.68,absolute,False,measured,8,5.2 Literature comparison,Table 7,AdaRound w/ act quant | 4/8 | 68.55 \pm 0.01 | 75.01 \pm 0.05 | 75.72 \pm 0.09 | 69.25 \pm 0.06
+RP07,MobileNetV2,AdaRound w/ act quant + CLE,4-bit,,ImageNet,Top-1 Accuracy,69.25,FP32,71.72,-2.47,absolute,False,measured,8,5.2 Literature comparison,Table 7,AdaRound w/ act quant | 4/8 | 68.55 \pm 0.01 | 75.01 \pm 0.05 | 75.72 \pm 0.09 | 69.25 \pm 0.06^{\dagger}
+RP07,ResNet-18,Nearest,4-bit,,ImageNet,Top-1 Accuracy,23.99,FP32,69.68,-45.69,absolute,False,measured,8,5.2 Literature comparison,Table 8,Nearest | 23.99
+RP07,ResNet-18,Bias correction (Nagel 2019),4-bit,,ImageNet,Top-1 Accuracy,38.87,FP32,69.68,-30.81,absolute,False,measured,8,5.2 Literature comparison,Table 8,Bias correction | 38.87
+RP07,ResNet-18,AdaRound,4-bit,,ImageNet,Top-1 Accuracy,68.6,FP32,69.68,-1.08,absolute,True,measured,8,5.2 Literature comparison,Table 8,AdaRound | 68.60\pm0.09
+RP07,DeepLabV3+ (MobileNetV2 backbone),FP32,32-bit,,Pascal VOC,mIOU,72.94,,,,,False,measured,9,5.2 Literature comparison,Table 9,Full precision | 32/32 | 72.94
+RP07,DeepLabV3+ (MobileNetV2 backbone),Nearest,4-bit,,Pascal VOC,mIOU,6.09,FP32,72.94,-66.85,absolute,False,measured,9,5.2 Literature comparison,Table 9,Nearest | 4/8 | 6.09
+RP07,DeepLabV3+ (MobileNetV2 backbone),DFQ (our impl.),4-bit,,Pascal VOC,mIOU,14.45,FP32,72.94,-58.49,absolute,False,measured,9,5.2 Literature comparison,Table 9,DFQ (our impl.) | 4/8 | 14.45
+RP07,DeepLabV3+ (MobileNetV2 backbone),AdaRound,4-bit,,Pascal VOC,mIOU,70.89,FP32,72.94,-2.05,absolute,True,measured,9,5.2 Literature comparison,Table 9,AdaRound | 4/32 | 70.89\pm0.33
+RP07,DeepLabV3+ (MobileNetV2 backbone),AdaRound w/ act quant,4-bit,,Pascal VOC,mIOU,70.86,FP32,72.94,-2.08,absolute,False,measured,9,5.2 Literature comparison,Table 9,AdaRound w/ act quant | 4/8 | 70.86\pm0.37
+RP07,ResNet-18 (first layer),Cross-entropy method,4-bit,,ImageNet,Top-1 Accuracy,68.62,FP32,69.68,-1.06,absolute,False,measured,11,A. Comparison among QUBO solvers,Table 10,Cross-entropy Method | 68.62 \pm 0.17
+RP07,ResNet-18 (first layer),QUBO solver (qbsolv),4-bit,,ImageNet,Top-1 Accuracy,41.98,FP32,69.68,-27.7,absolute,False,measured,11,A. Comparison among QUBO solvers,Table 10,QUBO solver (qbsolv) | 41.98 \pm 3.04

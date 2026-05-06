@@ -1191,5 +1191,945 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "MoE-1T",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Latency reduction (x_factor)",
+        "value": 7.3,
+        "baseline_label": "PyTorch-MoE (state-of-the-art)",
+        "baseline_value": 1.0,
+        "delta": 6.3,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "DeepSpeed Inference reduces latency by up to 7.3× over the state-of-the-art for latency oriented scenarios",
+        "bbox": [
+          48.111328125,
+          436.5834655761719,
+          301.5923156738281,
+          515.53076171875
+        ],
+        "block_id": "/page/0/Text/6",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Throughput improvement (x_factor)",
+        "value": 1.5,
+        "baseline_label": "FasterTransformer",
+        "baseline_value": 1.0,
+        "delta": 0.5,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "increases throughput by over 1.5x for throughput oriented scenarios",
+        "bbox": [
+          48.111328125,
+          436.5834655761719,
+          301.5923156738281,
+          515.53076171875
+        ],
+        "block_id": "/page/0/Text/6",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Model scale vs GPU-only (x_factor)",
+        "value": 25.0,
+        "baseline_label": "GPU-only solution",
+        "baseline_value": 1.0,
+        "delta": 24.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "It can inference 25× larger models than with GPU-only solutions, while delivering a high throughput of 84 TFLOPS (over 50% of A6000 peak).",
+        "bbox": [
+          48.111328125,
+          436.5834655761719,
+          301.5923156738281,
+          515.53076171875
+        ],
+        "block_id": "/page/0/Text/6",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Compute throughput (TFLOPS)",
+        "value": 84.0,
+        "baseline_label": "A6000 theoretical peak",
+        "baseline_value": 158.4,
+        "delta": -74.4,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "delivering a high throughput of 84 TFLOPS (over 50% of A6000 peak).",
+        "bbox": [
+          48.111328125,
+          436.5834655761719,
+          301.5923156738281,
+          515.53076171875
+        ],
+        "block_id": "/page/0/Text/6",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Dense up to 175B",
+        "method": "DeepSpeed-Transformer",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Latency reduction (x_factor)",
+        "value": 1.9,
+        "baseline_label": "FasterTransformer",
+        "baseline_value": 1.0,
+        "delta": 0.9,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "I. INTRODUCTION",
+        "quote": "DeepSpeed Transformer shows latency reduction over state-of-the-art of up to 1.9× for dense models (up to 175B parameters)",
+        "bbox": [
+          320.94140625,
+          289.65234375,
+          564.8305053710938,
+          670.3980712890625
+        ],
+        "block_id": "/page/1/ListGroup/400",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "MoE-1T",
+        "method": "DeepSpeed-MoE",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Latency reduction for sparse model (x_factor)",
+        "value": 7.2,
+        "baseline_label": "PyTorch-MoE",
+        "baseline_value": 1.0,
+        "delta": 6.2,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "I. INTRODUCTION",
+        "quote": "7.2× for sparse models (a 1T model under 25 ms), while scaling to 256 GPUs at 33% peak memory bandwidth utilization",
+        "bbox": [
+          320.94140625,
+          289.65234375,
+          564.8305053710938,
+          670.3980712890625
+        ],
+        "block_id": "/page/1/ListGroup/400",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "MoE-1T",
+        "method": "DeepSpeed-MoE",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (256 GPUs)",
+        "metric": "Per-token latency (ms)",
+        "value": 25.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "I. INTRODUCTION",
+        "quote": "7.2× for sparse models (a 1T model under 25 ms), while scaling to 256 GPUs",
+        "bbox": [
+          320.94140625,
+          289.65234375,
+          564.8305053710938,
+          670.3980712890625
+        ],
+        "block_id": "/page/1/ListGroup/400",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "MoE-1T",
+        "method": "DeepSpeed-MoE",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (256 GPUs)",
+        "metric": "Peak memory bandwidth utilization (%)",
+        "value": 33.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "I. INTRODUCTION",
+        "quote": "scaling to 256 GPUs at 33% peak memory bandwidth utilization, an unprecedented scale for inference",
+        "bbox": [
+          320.94140625,
+          289.65234375,
+          564.8305053710938,
+          670.3980712890625
+        ],
+        "block_id": "/page/1/ListGroup/400",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Dense up to 175B",
+        "method": "DeepSpeed-Transformer",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Throughput gain (x_factor)",
+        "value": 1.5,
+        "baseline_label": "FasterTransformer",
+        "baseline_value": 1.0,
+        "delta": 0.5,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "I. INTRODUCTION",
+        "quote": "DeepSpeed Transformer demonstrates over 1.5× gain over state-of-the-art",
+        "bbox": [
+          320.94140625,
+          289.65234375,
+          564.8305053710938,
+          670.3980712890625
+        ],
+        "block_id": "/page/1/ListGroup/400",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Hardware peak utilization (%)",
+        "value": 50.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "I. INTRODUCTION",
+        "quote": "ZeRO-Inference can support inference with 25× larger models than with GPU only solution while achieving over 50% of peak hardware performance",
+        "bbox": [
+          320.94140625,
+          289.65234375,
+          564.8305053710938,
+          670.3980712890625
+        ],
+        "block_id": "/page/1/ListGroup/400",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Dense (small batch)",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Speedup (x_factor)",
+        "value": 1.55,
+        "baseline_label": "FasterTransformer FP16",
+        "baseline_value": 1.0,
+        "delta": 0.55,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "B. Evaluation of DeepSpeed Inference for Latency Sensitive Workloads",
+        "quote": "For small batch size, DeepSpeed-FP16 achieves a speedup of up to 1.55\\times over the baseline",
+        "bbox": [
+          47.25,
+          460.1953125,
+          302.25,
+          602.5078125
+        ],
+        "block_id": "/page/9/Text/5",
+        "source_table": "Fig. 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Dense (small batch)",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Speedup (x_factor)",
+        "value": 1.95,
+        "baseline_label": "FasterTransformer FP16",
+        "baseline_value": 1.0,
+        "delta": 0.95,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "B. Evaluation of DeepSpeed Inference for Latency Sensitive Workloads",
+        "quote": "DeepSpeed-INT8 enables a further performance boost of up to 1.95\\times over the FP16 baseline",
+        "bbox": [
+          47.25,
+          460.1953125,
+          302.25,
+          602.5078125
+        ],
+        "block_id": "/page/9/Text/5",
+        "source_table": "Fig. 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Dense (large batch)",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Latency reduction (x_factor)",
+        "value": 1.57,
+        "baseline_label": "FasterTransformer FP16",
+        "baseline_value": 1.0,
+        "delta": 0.57,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "B. Evaluation of DeepSpeed Inference for Latency Sensitive Workloads",
+        "quote": "For larger batch sizes, DeepSpeed-FP16 reduces the latency by up to 1.57\\times over the baseline",
+        "bbox": [
+          48.0,
+          605.25,
+          302.25,
+          674.82421875
+        ],
+        "block_id": "/page/9/Text/6",
+        "source_table": "Fig. 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Dense (large batch)",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Latency reduction (x_factor)",
+        "value": 1.93,
+        "baseline_label": "FasterTransformer FP16",
+        "baseline_value": 1.0,
+        "delta": 0.93,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "B. Evaluation of DeepSpeed Inference for Latency Sensitive Workloads",
+        "quote": "and up to 1.93\\times using DeepSpeed-INT8",
+        "bbox": [
+          48.0,
+          605.25,
+          302.25,
+          674.82421875
+        ],
+        "block_id": "/page/9/Text/6",
+        "source_table": "Fig. 6"
+      }
+    },
+    {
+      "value": {
+        "model": "MoE 100B-2T",
+        "method": "DeepSpeed-MoE",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (256 GPUs)",
+        "metric": "Latency reduction (x_factor)",
+        "value": 7.3,
+        "baseline_label": "PyTorch-MoE",
+        "baseline_value": 1.0,
+        "delta": 6.3,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "B. Evaluation of DeepSpeed Inference for Latency Sensitive Workloads",
+        "quote": "Compared to baseline, DeepSpeed-MoE achieves better performance than the state-of-the-art, with up to 7.3 \\times reduction in latency",
+        "bbox": [
+          310.482421875,
+          476.82421875,
+          564.75,
+          690.75
+        ],
+        "block_id": "/page/9/Text/9",
+        "source_table": "Fig. 7"
+      }
+    },
+    {
+      "value": {
+        "model": "MoE-1T",
+        "method": "DeepSpeed-MoE",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (256 GPUs)",
+        "metric": "Aggregate memory bandwidth (TB/s)",
+        "value": 128.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "B. Evaluation of DeepSpeed Inference for Latency Sensitive Workloads",
+        "quote": "a staggering trillion parameter MoE model can be served under 25ms by leveraging an aggregate GPU memory bandwidth of 128 TB/sec (33 % of peak memory bandwidth)",
+        "bbox": [
+          310.482421875,
+          476.82421875,
+          564.75,
+          690.75
+        ],
+        "block_id": "/page/9/Text/9",
+        "source_table": "Fig. 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (16 GPUs)",
+        "metric": "Throughput improvement (x_factor)",
+        "value": 1.51,
+        "baseline_label": "FasterTransformer (best config)",
+        "baseline_value": 1.0,
+        "delta": 0.51,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "C. Throughput Oriented Massive Model Inference",
+        "quote": "DeepSpeed Inference achieves 1.51\\times throughput improvement over the best FasterTransformer (FT) configuration for the GPT-3 175B model running on two nodes (2\\times 8 A100)",
+        "bbox": [
+          47.21484375,
+          366.609375,
+          301.5,
+          495.0
+        ],
+        "block_id": "/page/10/Text/5",
+        "source_table": "Fig. 8"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (40 GPUs)",
+        "metric": "Throughput improvement (x_factor)",
+        "value": 1.53,
+        "baseline_label": "FasterTransformer TP-only",
+        "baseline_value": 1.0,
+        "delta": 0.53,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "C. Throughput Oriented Massive Model Inference",
+        "quote": "compared to the TP only version of FT, DeepSpeed Inference achieves over 1.53\\times throughput improvement running on 5 nodes",
+        "bbox": [
+          47.21484375,
+          366.609375,
+          301.5,
+          495.0
+        ],
+        "block_id": "/page/10/Text/5",
+        "source_table": "Fig. 8"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB (1 GPU)",
+        "metric": "Model scale vs GPU-only (x_factor)",
+        "value": 25.0,
+        "baseline_label": "GPU-only (largest fitting model)",
+        "baseline_value": 1.0,
+        "delta": 24.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "D. Democratizing Larger Model Inference with ZeRO-Inference",
+        "quote": "ZeRO-Inference can inference a 530B parameter model on a single A6000 GPU, 25 \\times larger than the largest model that can be inferenced with a GPU-only solution",
+        "bbox": [
+          47.25,
+          528.75,
+          302.25,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/181",
+        "source_table": "Fig. 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB (1 GPU)",
+        "metric": "Model scale vs CPU-only (x_factor)",
+        "value": 10.0,
+        "baseline_label": "CPU-only solution",
+        "baseline_value": 1.0,
+        "delta": 9.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "D. Democratizing Larger Model Inference with ZeRO-Inference",
+        "quote": "and 10 \\times larger compared to the CPU-only solution",
+        "bbox": [
+          47.25,
+          528.75,
+          302.25,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/181",
+        "source_table": "Fig. 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB (1 GPU)",
+        "metric": "Compute throughput (TFLOPS)",
+        "value": 84.0,
+        "baseline_label": "A6000 theoretical peak",
+        "baseline_value": 158.4,
+        "delta": -74.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "D. Democratizing Larger Model Inference with ZeRO-Inference",
+        "quote": "ZeRO-Inference achieves excellent inference throughput of up to 84 TFLOPS, 54% of theoretical peak (158.4 TFLOPS) for offline inference with very large batch sizes",
+        "bbox": [
+          47.25,
+          528.75,
+          302.25,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/181",
+        "source_table": "Fig. 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB (1 GPU)",
+        "metric": "Theoretical peak utilization (%)",
+        "value": 54.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "D. Democratizing Larger Model Inference with ZeRO-Inference",
+        "quote": "84 TFLOPS, 54% of theoretical peak (158.4 TFLOPS) for offline inference",
+        "bbox": [
+          47.25,
+          528.75,
+          302.25,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/181",
+        "source_table": "Fig. 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B / similar",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Throughput vs CPU-only (x_factor)",
+        "value": 25.0,
+        "baseline_label": "CPU-only solution",
+        "baseline_value": 1.0,
+        "delta": 24.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "D. Democratizing Larger Model Inference with ZeRO-Inference",
+        "quote": "for models that fit in CPU memory, it offers over 25× higher throughput than the CPU-only solution",
+        "bbox": [
+          47.25,
+          528.75,
+          302.25,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/181",
+        "source_table": "Fig. 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-NeoX-20B / similar",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Throughput vs GPU-only (relative)",
+        "value": 1.5,
+        "baseline_label": "GPU-only solution",
+        "baseline_value": 1.0,
+        "delta": 0.5,
+        "delta_unit": "relative",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "D. Democratizing Larger Model Inference with ZeRO-Inference",
+        "quote": "even for models that fit in single GPU memory, it offers over 50% better throughput than the GPU-only solution",
+        "bbox": [
+          47.25,
+          528.75,
+          302.25,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/181",
+        "source_table": "Fig. 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-50B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "V100 32GB (DGX-2, 16 GPUs)",
+        "metric": "Compute throughput (TFLOPS)",
+        "value": 67.0,
+        "baseline_label": "V100 peak",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "E. Performance Breakdown and Analysis",
+        "quote": "(c) Throughput of GPT-50B using up to 16 GPUs over a single GPU (67 TFLOPS, 53% of peak) on the DGX2 V100.",
+        "bbox": [
+          46.916015625,
+          158.25,
+          563.25,
+          177.0
+        ],
+        "block_id": "/page/11/Caption/1",
+        "source_table": "Fig. 9(c)"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-50B",
+        "method": "ZeRO-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "V100 32GB (DGX-2, 16 GPUs)",
+        "metric": "V100 peak utilization (%)",
+        "value": 53.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 12,
+        "section": "E. Performance Breakdown and Analysis",
+        "quote": "(67 TFLOPS, 53% of peak) on the DGX2 V100",
+        "bbox": [
+          46.916015625,
+          158.25,
+          563.25,
+          177.0
+        ],
+        "block_id": "/page/11/Caption/1",
+        "source_table": "Fig. 9(c)"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B",
+        "method": "DeepSpeed-Inference (hybrid scheduling, PP+MP)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (16 GPUs)",
+        "metric": "Prompt-processing speedup (x_factor)",
+        "value": 1.18,
+        "baseline_label": "FasterTransformer",
+        "baseline_value": 1.0,
+        "delta": 0.18,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "E. Performance Breakdown and Analysis",
+        "quote": "DeepSpeed Inference with hybrid scheduling achieves 1.18x and 3.06x prompt processing speed-up over FasterTransformer for GPT-3 175B model with PP + MP configuration and MP-only configuration, respectively",
+        "bbox": [
+          309.884765625,
+          157.39453125,
+          564.75,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/182",
+        "source_table": "Fig. 13"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 175B",
+        "method": "DeepSpeed-Inference (hybrid scheduling, MP-only)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB (16 GPUs)",
+        "metric": "Prompt-processing speedup (x_factor)",
+        "value": 3.06,
+        "baseline_label": "FasterTransformer",
+        "baseline_value": 1.0,
+        "delta": 2.06,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "E. Performance Breakdown and Analysis",
+        "quote": "1.18x and 3.06x prompt processing speed-up over FasterTransformer for GPT-3 175B model with PP + MP configuration and MP-only configuration, respectively",
+        "bbox": [
+          309.884765625,
+          157.39453125,
+          564.75,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/182",
+        "source_table": "Fig. 13"
+      }
+    },
+    {
+      "value": {
+        "model": "DistilBERT",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Speedup (x_factor)",
+        "value": 1.7,
+        "baseline_label": "E.T.",
+        "baseline_value": 1.0,
+        "delta": 0.7,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "E. Performance Breakdown and Analysis",
+        "quote": "DeepSpeed Inference is 1.7x and 1.4x faster than E.T. on those two models",
+        "bbox": [
+          309.884765625,
+          157.39453125,
+          564.75,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/182",
+        "source_table": "Fig. 12"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT",
+        "method": "DeepSpeed-Inference",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "Speedup (x_factor)",
+        "value": 1.4,
+        "baseline_label": "E.T.",
+        "baseline_value": 1.0,
+        "delta": 0.4,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 11,
+        "section": "E. Performance Breakdown and Analysis",
+        "quote": "DeepSpeed Inference is 1.7x and 1.4x faster than E.T. on those two models",
+        "bbox": [
+          309.884765625,
+          157.39453125,
+          564.75,
+          717.0
+        ],
+        "block_id": "/page/10/ListGroup/182",
+        "source_table": "Fig. 12"
+      }
+    },
+    {
+      "value": {
+        "model": "MoE",
+        "method": "DeepSpeed-MoE (kernel optimizations)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 40GB",
+        "metric": "MoE-kernel latency reduction (x_factor)",
+        "value": 6.0,
+        "baseline_label": "Sparse-einsum baseline",
+        "baseline_value": 1.0,
+        "delta": 5.0,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "C. Highly Optimized Computation Kernels for MoE",
+        "quote": "Combined, these optimizations result in over 6× reduction in MoE kernel-related latency.",
+        "bbox": [
+          48.111328125,
+          636.92578125,
+          301.67657470703125,
+          718.8520736694336
+        ],
+        "block_id": "/page/7/Text/3",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 31,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 7
   }
 }

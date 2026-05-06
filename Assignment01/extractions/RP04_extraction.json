@@ -846,5 +846,1395 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "BERT-Large + MultiNLI",
+        "method": "BERT-Large + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 80.43,
+        "baseline_label": "Human",
+        "baseline_value": 90.0,
+        "delta": -9.57,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "It achieves 80.4% accuracy compared to 90% accuracy of human annotators (and 62% majority-baseline)",
+        "bbox": [
+          87.013671875,
+          271.267578125,
+          273.2606201171875,
+          520.0930480957031
+        ],
+        "block_id": "/page/0/Text/7",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Human",
+        "method": "Human",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy",
+        "value": 90.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "compared to 90% accuracy of human annotators",
+        "bbox": [
+          87.013671875,
+          271.267578125,
+          273.2606201171875,
+          520.0930480957031
+        ],
+        "block_id": "/page/0/Text/7",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority",
+        "method": "Majority Class",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (train)",
+        "value": 62.31,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "our best model reaches 80.43% accuracy, compared to 62.31% for the majority baseline and 90% human accuracy",
+        "bbox": [
+          71.880859375,
+          604.365234375,
+          290.269287109375,
+          765.7118377685547
+        ],
+        "block_id": "/page/1/Text/4",
+        "source_table": "Introduction"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large + MultiNLI",
+        "method": "BERT-Large + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 80.43,
+        "baseline_label": "Majority",
+        "baseline_value": 62.31,
+        "delta": 18.12,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "our best model reaches 80.43% accuracy, compared to 62.31% for the majority baseline and 90% human accuracy",
+        "bbox": [
+          71.880859375,
+          604.365234375,
+          290.269287109375,
+          765.7118377685547
+        ],
+        "block_id": "/page/1/Text/4",
+        "source_table": "Introduction"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent (no transfer)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 69.6,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 7.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4 Training Yes/No QA Models",
+        "quote": "Our best model reaches 69.6% accuracy, only 8% better than the majority baseline.",
+        "bbox": [
+          71.0078125,
+          90.0380859375,
+          290.2729187011719,
+          251.36065673828125
+        ],
+        "block_id": "/page/5/Text/1",
+        "source_table": "Section 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority",
+        "method": "Majority Class",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 62.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.1 Shallow Models",
+        "quote": "majority-class baseline accuracy (62.17% on the dev set)",
+        "bbox": [
+          70.716796875,
+          251.2021484375,
+          290.2693176269531,
+          425.4007263183594
+        ],
+        "block_id": "/page/6/Text/4",
+        "source_table": "Section 5.1"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (question only)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 64.48,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 2.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.3 Question/Passage Only Results",
+        "quote": "The pre-trained BERTL model reached 64.48% dev set accuracy using just the question",
+        "bbox": [
+          305.857421875,
+          307.1162109375,
+          525.5452270507812,
+          482.0378112792969
+        ],
+        "block_id": "/page/6/Text/14",
+        "source_table": "Section 5.3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (passage only)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 66.74,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 4.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.3 Question/Passage Only Results",
+        "quote": "and 66.74% using just the passage",
+        "bbox": [
+          305.857421875,
+          307.1162109375,
+          525.5452270507812,
+          482.0378112792969
+        ],
+        "block_id": "/page/6/Text/14",
+        "source_table": "Section 5.3"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority",
+        "method": "Majority",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 62.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| N/A | Majority | - | - | - | 62.17 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent (no transfer)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 69.6,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 7.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| N/A | Recurrent | - | - | - | 69.60 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + QNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 71.36,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 9.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Extractive QA | Recurrent | QNLI | 108k | 79.66 | 71.36 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + QNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "QNLI",
+        "metric": "Source Accuracy",
+        "value": 79.66,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Extractive QA | Recurrent | QNLI | 108k | 79.66 | 71.36 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + SQuAD 2.0",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 69.83,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 7.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| SQuAD 2.0 | 130k | 69.45 | 69.83 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + SQuAD 2.0",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SQuAD 2.0",
+        "metric": "Source Accuracy",
+        "value": 69.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| SQuAD 2.0 | 130k | 69.45 | 69.83 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + NQ Long Answer",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 72.78,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 10.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| NQ Long Answer | 93k | 71.78 | 72.78 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + NQ Long Answer",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "NQ Long Answer",
+        "metric": "Source Accuracy",
+        "value": 71.78,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| NQ Long Answer | 93k | 71.78 | 72.78 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + QQP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 71.3,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 9.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Paraphrasing | Recurrent | QQP | 364k | 89.58 | 71.30 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + QQP",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "QQP",
+        "metric": "Source Accuracy",
+        "value": 89.58,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Paraphrasing | Recurrent | QQP | 364k | 89.58 | 71.30 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + Y/N MS Marco",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 71.4,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 9.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Heuristic Y/N | Recurrent | Y/N MS Marco | 39k | 87.26 | 71.40 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + Y/N MS Marco",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Y/N MS Marco",
+        "metric": "Source Accuracy",
+        "value": 87.26,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Heuristic Y/N | Recurrent | Y/N MS Marco | 39k | 87.26 | 71.40 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 75.57,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 13.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Entailment | Recurrent | MultiNLI | 392k | 78.23 | 75.57 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MultiNLI",
+        "metric": "Source Accuracy",
+        "value": 78.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Entailment | Recurrent | MultiNLI | 392k | 78.23 | 75.57 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI w/o Entail",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 72.95,
+        "baseline_label": "Recurrent + MultiNLI",
+        "baseline_value": 75.57,
+        "delta": -2.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| - w/o Entail | 262k | 84.26 | 72.95 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI w/o Entail",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MultiNLI w/o Entail",
+        "metric": "Source Accuracy",
+        "value": 84.26,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| - w/o Entail | 262k | 84.26 | 72.95 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI w/o Contradict",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 72.85,
+        "baseline_label": "Recurrent + MultiNLI",
+        "baseline_value": 75.57,
+        "delta": -2.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| - w/o Contradict | 262k | 81.16 | 72.85 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI w/o Contradict",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MultiNLI w/o Contradict",
+        "metric": "Source Accuracy",
+        "value": 81.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| - w/o Contradict | 262k | 81.16 | 72.85 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI w/o Neutral",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 74.83,
+        "baseline_label": "Recurrent + MultiNLI",
+        "baseline_value": 75.57,
+        "delta": -0.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| - w/o Neutral | 262k | 89.72 | 74.83 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + MultiNLI w/o Neutral",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MultiNLI w/o Neutral",
+        "metric": "Source Accuracy",
+        "value": 89.72,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| - w/o Neutral | 262k | 89.72 | 74.83 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + SNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 73.16,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 10.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| SNLI | 351k | 88.17 | 73.16 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + SNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SNLI",
+        "metric": "Source Accuracy",
+        "value": 88.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| SNLI | 351k | 88.17 | 73.16 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + RACE",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 68.4,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 6.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| MC QA | Recurrent | RACE | 549k | 42.30 | 68.40 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent + RACE",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RACE",
+        "metric": "Source Accuracy",
+        "value": 42.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| MC QA | Recurrent | RACE | 549k | 42.30 | 68.40 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent + ELMo",
+        "method": "Recurrent + ELMo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 71.41,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 9.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Unsupervised | Recurrent +ELMo | Billion Word | 1000M | - | 71.41 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OpenAI GPT",
+        "method": "OpenAI GPT",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 72.87,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 10.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| OpenAI GPT | Books | 800M | - | 72.87 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 76.9,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 14.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| BERTL | Books/Wikipedia | 3,300M | - | 76.90 |",
+        "bbox": [
+          95.2610546875,
+          60.32962890625,
+          500.7389453125,
+          322.84615234375
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority",
+        "method": "Majority Class",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 62.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Majority Class | 62.17 | 62.31 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Majority",
+        "method": "Majority Class",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 62.31,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Majority Class | 62.17 | 62.31 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent (no transfer)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 70.28,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 8.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Recurrent | 70.28 | 67.52 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent",
+        "method": "Recurrent (no transfer)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 67.52,
+        "baseline_label": "Majority",
+        "baseline_value": 62.31,
+        "delta": 5.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Recurrent | 70.28 | 67.52 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent + MultiNLI",
+        "method": "Recurrent + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 76.15,
+        "baseline_label": "Recurrent",
+        "baseline_value": 70.28,
+        "delta": 5.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| +MultiNLI | 76.15 | 74.24 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Recurrent + MultiNLI",
+        "method": "Recurrent + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 74.24,
+        "baseline_label": "Recurrent",
+        "baseline_value": 67.52,
+        "delta": 6.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| +MultiNLI | 76.15 | 74.24 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (Pre-trained)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 78.09,
+        "baseline_label": "Majority",
+        "baseline_value": 62.17,
+        "delta": 15.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Pre-trained BERTL | 78.09 | 76.70 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large",
+        "method": "BERT-Large (Pre-trained)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 76.7,
+        "baseline_label": "Majority",
+        "baseline_value": 62.31,
+        "delta": 14.39,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| Pre-trained BERTL | 78.09 | 76.70 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large + MultiNLI",
+        "method": "BERT-Large + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 82.2,
+        "baseline_label": "BERT-Large",
+        "baseline_value": 78.09,
+        "delta": 4.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| +MultiNLI | 82.20 | 80.43 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large + MultiNLI",
+        "method": "BERT-Large + MultiNLI",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (test)",
+        "value": 80.43,
+        "baseline_label": "BERT-Large",
+        "baseline_value": 76.7,
+        "delta": 3.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Transfer Learning Results",
+        "quote": "| +MultiNLI | 82.20 | 80.43 |",
+        "bbox": [
+          311.9862109375,
+          386.78552734375,
+          517.9903515625,
+          479.88244140625
+        ],
+        "block_id": "/page/7/Table/7",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-Large + MultiNLI w/o Contradict",
+        "method": "BERT-Large + MultiNLI w/o Contradict",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BoolQ",
+        "metric": "Accuracy (dev)",
+        "value": 78.43,
+        "baseline_label": "BERT-Large + MultiNLI",
+        "baseline_value": 82.2,
+        "delta": -3.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.7 Discussion",
+        "quote": "our two step transfer procedure only reaches 78.43% dev set accuracy if we remove the contradiction class from MultiNLI",
+        "bbox": [
+          305.275390625,
+          312.4609375,
+          525.865234375,
+          460.4097900390625
+        ],
+        "block_id": "/page/8/Text/11",
+        "source_table": "Section 5.7"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 46,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

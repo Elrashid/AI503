@@ -953,5 +953,1605 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Random vocabulary word",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random vocabulary word | 0 | 60000 | 30026",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random vocabulary word",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 60000,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random vocabulary word | 0 | 60000 | 30026",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random vocabulary word",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 30026,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random vocabulary word | 0 | 60000 | 30026",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random word from passage",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 1.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random word from passage | 1.6 | - | -",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random capitalized word from passage",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 7.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random capitalized word from passage | 7.3 | - | -",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Unsup-CBOW",
+        "method": "Unsup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Unsup-CBOW | 0 | 57040 | 16352",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Unsup-CBOW",
+        "method": "Unsup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 57040,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Unsup-CBOW | 0 | 57040 | 16352",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Unsup-CBOW",
+        "method": "Unsup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 16352,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Unsup-CBOW | 0 | 57040 | 16352",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Sup-CBOW",
+        "method": "Sup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Sup-CBOW | 0 | 47587 | 4660",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Sup-CBOW",
+        "method": "Sup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 47587,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Sup-CBOW | 0 | 47587 | 4660",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Sup-CBOW",
+        "method": "Sup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 4660,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Sup-CBOW | 0 | 47587 | 4660",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram",
+        "method": "N-Gram",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram | 0.1 | 3125 | 993",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram",
+        "method": "N-Gram",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 3125,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram | 0.1 | 3125 | 993",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram",
+        "method": "N-Gram",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 993,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram | 0.1 | 3125 | 993",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram w/cache",
+        "method": "N-Gram w/cache",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram w/cache | 0.1 | 768 | 87",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram w/cache",
+        "method": "N-Gram w/cache",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 768,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "the best relative performance on LAMBADA is achieved by N-Gram w/cache, which takes passage statistics into account. While even this model is effectively unable to guess the right word, it achieves a respectable perplexity of 768.",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram w/cache",
+        "method": "N-Gram w/cache",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 87,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram w/cache | 0.1 | 768 | 87",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RNN",
+        "method": "RNN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "RNN | 0 | 14725 | 7831",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RNN",
+        "method": "RNN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 14725,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "RNN | 0 | 14725 | 7831",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RNN",
+        "method": "RNN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 7831,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "RNN | 0 | 14725 | 7831",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM",
+        "method": "LSTM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "LSTM | 0 | 5357 | 324",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM",
+        "method": "LSTM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 5357,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "LSTM | 0 | 5357 | 324",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM",
+        "method": "LSTM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 324,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "LSTM | 0 | 5357 | 324",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Memory Network",
+        "method": "Memory Network",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Memory Network | 0 | 16318 | 846",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Memory Network",
+        "method": "Memory Network",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Perplexity",
+        "value": 16318,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Memory Network | 0 | 16318 | 846",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Memory Network",
+        "method": "Memory Network",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Median Rank",
+        "value": 846,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Memory Network | 0 | 16318 | 846",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random vocabulary word",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random vocabulary word | 0 | 60000 | 30453",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random vocabulary word",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 60000,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random vocabulary word | 0 | 60000 | 30453",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random vocabulary word",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 30453,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random vocabulary word | 0 | 60000 | 30453",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random word from passage",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random word from passage | 0 | - | -",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Random capitalized word from passage",
+        "method": "Random baseline",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Random capitalized word from passage | 0 | - | -",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Unsup-CBOW",
+        "method": "Unsup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Unsup-CBOW | 0 | 55190 | 12950",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Unsup-CBOW",
+        "method": "Unsup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 55190,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Unsup-CBOW | 0 | 55190 | 12950",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Unsup-CBOW",
+        "method": "Unsup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 12950,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Unsup-CBOW | 0 | 55190 | 12950",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Sup-CBOW",
+        "method": "Sup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 3.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Sup-CBOW | 3.5 | 2344 | 259",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Sup-CBOW",
+        "method": "Sup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 2344,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Sup-CBOW | 3.5 | 2344 | 259",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Sup-CBOW",
+        "method": "Sup-CBOW",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 259,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Sup-CBOW | 3.5 | 2344 | 259",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram",
+        "method": "N-Gram",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 19.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram | 19.1 | 285 | 17",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram",
+        "method": "N-Gram",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 285,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram | 19.1 | 285 | 17",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram",
+        "method": "N-Gram",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram | 19.1 | 285 | 17",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram w/cache",
+        "method": "N-Gram w/cache",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 19.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram w/cache | 19.1 | 270 | 18",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram w/cache",
+        "method": "N-Gram w/cache",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 270,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram w/cache | 19.1 | 270 | 18",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "N-Gram w/cache",
+        "method": "N-Gram w/cache",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 18,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "N-Gram w/cache | 19.1 | 270 | 18",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RNN",
+        "method": "RNN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 15.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "RNN | 15.4 | 277 | 24",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RNN",
+        "method": "RNN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 277,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "RNN | 15.4 | 277 | 24",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "RNN",
+        "method": "RNN",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 24,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "RNN | 15.4 | 277 | 24",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM",
+        "method": "LSTM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 21.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "LSTM | 21.9 | 149 | 12",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM",
+        "method": "LSTM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 149,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "LSTM | 21.9 | 149 | 12",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LSTM",
+        "method": "LSTM",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "LSTM | 21.9 | 149 | 12",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Memory Network",
+        "method": "Memory Network",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Accuracy (%)",
+        "value": 8.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Memory Network | 8.5 | 566 | 46",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Memory Network",
+        "method": "Memory Network",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Perplexity",
+        "value": 566,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Memory Network | 8.5 | 566 | 46",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Memory Network",
+        "method": "Memory Network",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Control (5K Book Corpus passages)",
+        "metric": "Median Rank",
+        "value": 46,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4 Modeling experiments",
+        "quote": "Memory Network | 8.5 | 566 | 46",
+        "bbox": [
+          115.4342578125,
+          57.42703125,
+          481.7298046875,
+          406.33078125
+        ],
+        "block_id": "/page/7/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Best of N-Gram/LSTM/Memory Network",
+        "method": "various",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Max Accuracy (%) across tested models",
+        "value": 1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "none of several state-ofthe-art language models reaches accuracy above 1% on this novel benchmark",
+        "bbox": [
+          87.3046875,
+          247.9130859375,
+          273.5546875,
+          557.7189636230469
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 53,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 5
   }
 }

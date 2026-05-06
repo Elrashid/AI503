@@ -1,0 +1,107 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP05,Chance,Chance,,,HellaSwag,Accuracy,25.0,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1,Chance | 25.0
+RP05,fastText,fastText,,,HellaSwag,Accuracy,30.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),fastText | 30.9 | 31.6
+RP05,fastText,fastText,,,HellaSwag,Accuracy,31.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Test),fastText | 30.9 | 31.6
+RP05,fastText,fastText,,,HellaSwag In-Domain,Accuracy,33.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),fastText | 30.9 | 31.6 | 33.8 | 32.9
+RP05,fastText,fastText,,,HellaSwag In-Domain,Accuracy,32.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),fastText | 30.9 | 31.6 | 33.8 | 32.9
+RP05,fastText,fastText,,,HellaSwag Zero-Shot,Accuracy,28.0,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),fastText | ... | 28.0 | 30.2
+RP05,fastText,fastText,,,HellaSwag Zero-Shot,Accuracy,30.2,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),fastText | ... | 28.0 | 30.2
+RP05,fastText,fastText,,,ActivityNet,Accuracy,27.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),fastText | ... | 27.7 | 28.4
+RP05,fastText,fastText,,,ActivityNet,Accuracy,28.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),fastText | ... | 27.7 | 28.4
+RP05,fastText,fastText,,,WikiHow,Accuracy,32.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),fastText | ... | 32.4 | 33.3
+RP05,fastText,fastText,,,WikiHow,Accuracy,33.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),fastText | ... | 32.4 | 33.3
+RP05,LSTM+GloVe,LSTM+GloVe,,,HellaSwag,Accuracy,31.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),LSTM+GloVe | 31.9 | 31.7
+RP05,LSTM+GloVe,LSTM+GloVe,,,HellaSwag,Accuracy,31.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Test),LSTM+GloVe | 31.9 | 31.7
+RP05,LSTM+GloVe,LSTM+GloVe,,,HellaSwag In-Domain,Accuracy,34.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),LSTM+GloVe | 31.9 | 31.7 | 34.3 | 32.9
+RP05,LSTM+GloVe,LSTM+GloVe,,,HellaSwag In-Domain,Accuracy,32.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),LSTM+GloVe | 31.9 | 31.7 | 34.3 | 32.9
+RP05,LSTM+GloVe,LSTM+GloVe,,,HellaSwag Zero-Shot,Accuracy,29.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),LSTM+GloVe | ... | 29.5 | 30.4
+RP05,LSTM+GloVe,LSTM+GloVe,,,HellaSwag Zero-Shot,Accuracy,30.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),LSTM+GloVe | ... | 29.5 | 30.4
+RP05,LSTM+GloVe,LSTM+GloVe,,,ActivityNet,Accuracy,34.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),LSTM+GloVe | ... | 34.3 | 33.8
+RP05,LSTM+GloVe,LSTM+GloVe,,,ActivityNet,Accuracy,33.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),LSTM+GloVe | ... | 34.3 | 33.8
+RP05,LSTM+GloVe,LSTM+GloVe,,,WikiHow,Accuracy,30.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),LSTM+GloVe | ... | 30.7 | 30.5
+RP05,LSTM+GloVe,LSTM+GloVe,,,WikiHow,Accuracy,30.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),LSTM+GloVe | ... | 30.7 | 30.5
+RP05,LSTM+ELMo,LSTM+ELMo,,,HellaSwag,Accuracy,31.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),LSTM+ELMo | 31.7 | 31.4
+RP05,LSTM+ELMo,LSTM+ELMo,,,HellaSwag,Accuracy,31.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Test),LSTM+ELMo | 31.7 | 31.4
+RP05,LSTM+ELMo,LSTM+ELMo,,,HellaSwag In-Domain,Accuracy,33.2,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),LSTM+ELMo | 31.7 | 31.4 | 33.2 | 32.8
+RP05,LSTM+ELMo,LSTM+ELMo,,,HellaSwag In-Domain,Accuracy,32.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),LSTM+ELMo | 31.7 | 31.4 | 33.2 | 32.8
+RP05,LSTM+ELMo,LSTM+ELMo,,,HellaSwag Zero-Shot,Accuracy,30.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),LSTM+ELMo | ... | 30.4 | 30.0
+RP05,LSTM+ELMo,LSTM+ELMo,,,HellaSwag Zero-Shot,Accuracy,30.0,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),LSTM+ELMo | ... | 30.4 | 30.0
+RP05,LSTM+ELMo,LSTM+ELMo,,,ActivityNet,Accuracy,33.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),LSTM+ELMo | ... | 33.8 | 33.3
+RP05,LSTM+ELMo,LSTM+ELMo,,,ActivityNet,Accuracy,33.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),LSTM+ELMo | ... | 33.8 | 33.3
+RP05,LSTM+ELMo,LSTM+ELMo,,,WikiHow,Accuracy,30.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),LSTM+ELMo | ... | 30.8 | 30.4
+RP05,LSTM+ELMo,LSTM+ELMo,,,WikiHow,Accuracy,30.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),LSTM+ELMo | ... | 30.8 | 30.4
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,HellaSwag,Accuracy,35.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),LSTM+BERT-Base | 35.9 | 36.2
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,HellaSwag,Accuracy,36.2,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Test),LSTM+BERT-Base | 35.9 | 36.2
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,HellaSwag In-Domain,Accuracy,38.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),LSTM+BERT-Base | 35.9 | 36.2 | 38.7 | 38.2
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,HellaSwag In-Domain,Accuracy,38.2,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),LSTM+BERT-Base | 35.9 | 36.2 | 38.7 | 38.2
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,HellaSwag Zero-Shot,Accuracy,33.2,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),LSTM+BERT-Base | ... | 33.2 | 34.1
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,HellaSwag Zero-Shot,Accuracy,34.1,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),LSTM+BERT-Base | ... | 33.2 | 34.1
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,ActivityNet,Accuracy,40.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),LSTM+BERT-Base | ... | 40.5 | 40.5
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,ActivityNet,Accuracy,40.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),LSTM+BERT-Base | ... | 40.5 | 40.5
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,WikiHow,Accuracy,33.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),LSTM+BERT-Base | ... | 33.7 | 33.8
+RP05,LSTM+BERT-Base,LSTM+BERT-Base,,,WikiHow,Accuracy,33.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),LSTM+BERT-Base | ... | 33.7 | 33.8
+RP05,ESIM+ELMo,ESIM+ELMo,,,HellaSwag,Accuracy,33.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),ESIM+ELMo | 33.6 | 33.3
+RP05,ESIM+ELMo,ESIM+ELMo,,,HellaSwag,Accuracy,33.3,,,,,True,measured,6,5 Results,Table 1 (Overall Test),"ESIM+ELMo obtained 59% accuracy on SWAG, it obtains only 33.3% accuracy on HellaSwag"
+RP05,ESIM+ELMo,ESIM+ELMo,,,HellaSwag In-Domain,Accuracy,35.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),ESIM+ELMo | 33.6 | 33.3 | 35.7 | 34.2
+RP05,ESIM+ELMo,ESIM+ELMo,,,HellaSwag In-Domain,Accuracy,34.2,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),ESIM+ELMo | 33.6 | 33.3 | 35.7 | 34.2
+RP05,ESIM+ELMo,ESIM+ELMo,,,HellaSwag Zero-Shot,Accuracy,31.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),ESIM+ELMo | ... | 31.5 | 32.3
+RP05,ESIM+ELMo,ESIM+ELMo,,,HellaSwag Zero-Shot,Accuracy,32.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),ESIM+ELMo | ... | 31.5 | 32.3
+RP05,ESIM+ELMo,ESIM+ELMo,,,ActivityNet,Accuracy,37.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),ESIM+ELMo | ... | 37.7 | 36.6
+RP05,ESIM+ELMo,ESIM+ELMo,,,ActivityNet,Accuracy,36.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),ESIM+ELMo | ... | 37.7 | 36.6
+RP05,ESIM+ELMo,ESIM+ELMo,,,WikiHow,Accuracy,31.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),ESIM+ELMo | ... | 31.6 | 31.5
+RP05,ESIM+ELMo,ESIM+ELMo,,,WikiHow,Accuracy,31.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),ESIM+ELMo | ... | 31.6 | 31.5
+RP05,OpenAI GPT,OpenAI GPT,,,HellaSwag,Accuracy,41.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),OpenAI GPT | 41.9 | 41.7
+RP05,OpenAI GPT,OpenAI GPT,,,HellaSwag,Accuracy,41.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Test),OpenAI GPT | 41.9 | 41.7
+RP05,OpenAI GPT,OpenAI GPT,,,HellaSwag In-Domain,Accuracy,45.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),OpenAI GPT | 41.9 | 41.7 | 45.3 | 44.0
+RP05,OpenAI GPT,OpenAI GPT,,,HellaSwag In-Domain,Accuracy,44.0,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),OpenAI GPT | 41.9 | 41.7 | 45.3 | 44.0
+RP05,OpenAI GPT,OpenAI GPT,,,HellaSwag Zero-Shot,Accuracy,38.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),OpenAI GPT | ... | 38.6 | 39.3
+RP05,OpenAI GPT,OpenAI GPT,,,HellaSwag Zero-Shot,Accuracy,39.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),OpenAI GPT | ... | 38.6 | 39.3
+RP05,OpenAI GPT,OpenAI GPT,,,ActivityNet,Accuracy,46.4,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),OpenAI GPT | ... | 46.4 | 43.8
+RP05,OpenAI GPT,OpenAI GPT,,,ActivityNet,Accuracy,43.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),OpenAI GPT | ... | 46.4 | 43.8
+RP05,OpenAI GPT,OpenAI GPT,,,WikiHow,Accuracy,39.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),OpenAI GPT | ... | 39.8 | 40.5
+RP05,OpenAI GPT,OpenAI GPT,,,WikiHow,Accuracy,40.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),OpenAI GPT | ... | 39.8 | 40.5
+RP05,BERT-Base,BERT-Base,,,HellaSwag,Accuracy,39.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),BERT-Base | 39.5 | 40.5
+RP05,BERT-Base,BERT-Base,,,HellaSwag,Accuracy,40.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Test),BERT-Base | 39.5 | 40.5
+RP05,BERT-Base,BERT-Base,,,HellaSwag In-Domain,Accuracy,42.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),BERT-Base | 39.5 | 40.5 | 42.9 | 42.8
+RP05,BERT-Base,BERT-Base,,,HellaSwag In-Domain,Accuracy,42.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),BERT-Base | 39.5 | 40.5 | 42.9 | 42.8
+RP05,BERT-Base,BERT-Base,,,HellaSwag Zero-Shot,Accuracy,36.1,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),BERT-Base | ... | 36.1 | 38.3
+RP05,BERT-Base,BERT-Base,,,HellaSwag Zero-Shot,Accuracy,38.3,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),BERT-Base | ... | 36.1 | 38.3
+RP05,BERT-Base,BERT-Base,,,ActivityNet,Accuracy,48.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),BERT-Base | ... | 48.9 | 45.7
+RP05,BERT-Base,BERT-Base,,,ActivityNet,Accuracy,45.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),BERT-Base | ... | 48.9 | 45.7
+RP05,BERT-Base,BERT-Base,,,WikiHow,Accuracy,34.9,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),BERT-Base | ... | 34.9 | 37.7
+RP05,BERT-Base,BERT-Base,,,WikiHow,Accuracy,37.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),BERT-Base | ... | 34.9 | 37.7
+RP05,BERT-Large,BERT-Large,,,HellaSwag,Accuracy,46.7,Human,95.7,-49.0,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),BERT-Large | **46.7** | **47.3**
+RP05,BERT-Large,BERT-Large,,,HellaSwag,Accuracy,47.3,Human,95.6,-48.3,absolute,True,measured,6,5 Results,Table 1 (Overall Test),"BERT-Large having been used as the adversarial filter, it still performs the strongest at 47.3% overall"
+RP05,BERT-Large,BERT-Large,,,HellaSwag In-Domain,Accuracy,50.2,Human,95.6,-45.4,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),BERT-Large | **46.7** | **47.3** | **50.2** | **49.7**
+RP05,BERT-Large,BERT-Large,,,HellaSwag In-Domain,Accuracy,49.7,Human,95.6,-45.9,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),BERT-Large | **46.7** | **47.3** | **50.2** | **49.7**
+RP05,BERT-Large,BERT-Large,,,HellaSwag Zero-Shot,Accuracy,43.3,Human,95.8,-52.5,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),BERT-Large | ... | **43.3** | **45.0**
+RP05,BERT-Large,BERT-Large,,,HellaSwag Zero-Shot,Accuracy,45.0,Human,95.7,-50.7,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),BERT-Large | ... | **43.3** | **45.0**
+RP05,BERT-Large,BERT-Large,,,ActivityNet,Accuracy,54.7,Human,94.0,-39.3,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),BERT-Large | ... | **54.7** | **51.7**
+RP05,BERT-Large,BERT-Large,,,ActivityNet,Accuracy,51.7,Human,94.0,-42.3,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),BERT-Large | ... | **54.7** | **51.7**
+RP05,BERT-Large,BERT-Large,,,WikiHow,Accuracy,42.9,Human,96.5,-53.6,absolute,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Val),BERT-Large | ... | **42.9** | **45.0**
+RP05,BERT-Large,BERT-Large,,,WikiHow,Accuracy,45.0,Human,96.5,-51.5,absolute,True,measured,7,5 Results,Table 1 (WikiHow Test),"WikiHow is a much harder domain that ActivityNet for machines: 45% Bert-Large performance, versus 96.5% for humans"
+RP05,Human,Human,,,HellaSwag,Accuracy,95.7,,,,,True,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Overall Val),Human | 95.7 | 95.6
+RP05,Human,Human,,,HellaSwag,Accuracy,95.6,,,,,True,measured,2,1 Introduction,Table 1 (Overall Test),"the resulting dataset of 70k problems is easy for humans (95.6% accuracy), yet challenging for machines (<50%)"
+RP05,Human,Human,,,HellaSwag In-Domain,Accuracy,95.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Val),Human | 95.7 | 95.6 | 95.6 | 95.6
+RP05,Human,Human,,,HellaSwag In-Domain,Accuracy,95.6,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (In-Domain Test),Human | 95.7 | 95.6 | 95.6 | 95.6
+RP05,Human,Human,,,HellaSwag Zero-Shot,Accuracy,95.8,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Val),Human | ... | 95.8 | 95.7
+RP05,Human,Human,,,HellaSwag Zero-Shot,Accuracy,95.7,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (Zero-Shot Test),Human | ... | 95.8 | 95.7
+RP05,Human,Human,,,ActivityNet,Accuracy,94.0,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Val),Human | ... | 94.0 | 94.0
+RP05,Human,Human,,,ActivityNet,Accuracy,94.0,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (ActivityNet Test),Human | ... | 94.0 | 94.0
+RP05,Human,Human,,,WikiHow,Accuracy,96.5,,,,,True,measured,7,5 Results,Table 1 (WikiHow Val),"WikiHow is a much harder domain that ActivityNet for machines: 45% Bert-Large performance, versus 96.5% for humans"
+RP05,Human,Human,,,WikiHow,Accuracy,96.5,,,,,False,measured,6,4.4 Zero-shot categories for evaluation,Table 1 (WikiHow Test),Human | ... | 96.5 | 96.5
+RP05,BERT-Large,BERT-Large (full-context),,,SWAG,Accuracy,86.7,,,,,False,measured,3,What is learned during finetuning?,,BERT's performance only slips 11.9 points (86.7% -> 74.8%) when context is omitted
+RP05,BERT-Large,BERT-Large (Ending Only),,,SWAG,Accuracy,74.8,Full-context,86.7,-11.9,absolute,False,measured,3,What is learned during finetuning?,,BERT's performance only slips 11.9 points (86.7% -> 74.8%) when context is omitted (Ending Only)
+RP05,BERT-Large,BERT-Large (Shuffled+Ending Only),,,SWAG,Accuracy,60.4,Full-context,86.7,-26.3,absolute,False,measured,4,What is learned during finetuning?,,"when the context is removed and the words in each ending are shuffled, performance drops to 60.4%"
+RP05,BERT-Large,BERT-Large (transfer SWAG->HellaSwag),,,HellaSwag,Accuracy,34.6,,,,,False,measured,7,5 Results,Figure 9,a BERT-Large that is trained on SWAG hardly generalizes to HellaSwag: it scores 34.6%
+RP05,BERT-Large,"BERT-Large (AF discriminator, ActivityNet)",,,ActivityNet (Zellers et al. 2018 LM),Accuracy (post-AF),75.0,,,,,False,measured,4,3.3 Where do the stylistic biases come from?,Figure 5 (left),the LM used for SWAG converges at 75%
+RP05,BERT-Large,"BERT-Large (AF discriminator, ActivityNet GPT)",,,ActivityNet (GPT generations),Accuracy (post-AF),30.0,,,,,False,measured,4,3.3 Where do the stylistic biases come from?,Figure 5 (left),GPT's generations are good enough that BERT accuracy drops below 30%
+RP05,BERT-Large,"BERT-Large (AF, 1-sentence WikiHow)",,,WikiHow (1-sentence endings),Accuracy (post-AF),35.0,,,,,False,measured,5,4.2 WikiHow: A New Testbed,Figure 5 (right),the one-sentence case converges to slightly higher than random – 35% when it converges
+RP05,BERT-Large,"BERT-Large (AF, 2-sentence WikiHow)",,,WikiHow (2-sentence endings),Accuracy (post-AF),40.0,,,,,False,measured,5,4.2 WikiHow: A New Testbed,Figure 5 (right),"the two and three sentence cases are higher, at 40% and 50% respectively"
+RP05,BERT-Large,"BERT-Large (AF, 3-sentence WikiHow)",,,WikiHow (3-sentence endings),Accuracy (post-AF),50.0,,,,,False,measured,5,4.2 WikiHow: A New Testbed,Figure 5 (right),"the two and three sentence cases are higher, at 40% and 50% respectively"
+RP05,BERT-Large,BERT-Large (pre-validation ActivityNet),,,ActivityNet,Accuracy,25.5,Human (initial),60.0,-34.5,absolute,False,measured,5,4.3 Obtaining high human agreement,Figure 6,"While ActivityNet starts off harder for BERT (25.5%), it also proves difficult for humans (60%)"
+RP05,BERT-Large,BERT-Large (pre-validation WikiHow),,,WikiHow,Accuracy,41.1,Human (initial),93.5,-52.4,absolute,False,measured,5,4.3 Obtaining high human agreement,Figure 6,WikiHow starts easier for BERT (41.1%) and humans find the domain almost trivial (93.5%)
+RP05,Human,Human (post-validation),,,ActivityNet,Accuracy,94.0,Initial,60.0,34.0,absolute,False,measured,5,4.3 Obtaining high human agreement,,"we perform several rounds of human filtering, increasing human performance to 94%"
+RP05,BERT-Large,BERT-Large (transfer SWAG model on WikiHow),,,WikiHow,Accuracy,28.0,,,,,False,measured,7,5.1 SWAG to HellaSwag transfer,Figure 9,"SWAG models do not generalize at all to their missing domain, WikiHow (28%)"
+RP05,BERT-Large,BERT-Large (transfer HellaSwag->LSMDC),,,LSMDC,Accuracy,69.0,,,,,False,measured,7,5.1 SWAG to HellaSwag transfer,Figure 9,HellaSwag models obtain 69% accuracy
+RP05,BERT-Large,BERT-Large vs BERT-Base AF (WikiHow ablation),,,WikiHow (AF ablation),Accuracy,63.0,,,,,False,measured,8,6.1 How easy might HellaSwag be for future discriminators?,Figure 11,using a discriminator with 3x the parameters as the adversarial filter (BERT-Large vs. BERT-Base) results in 63% machine accuracy

@@ -1,0 +1,47 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP04,BERT-Large + MultiNLI,BERT-Large + MultiNLI,,,BoolQ,Accuracy (test),80.43,Human,90.0,-9.57,absolute,True,measured,1,Abstract,Abstract,It achieves 80.4% accuracy compared to 90% accuracy of human annotators (and 62% majority-baseline)
+RP04,Human,Human,,,BoolQ,Accuracy,90.0,,,,,True,measured,1,Abstract,Abstract,compared to 90% accuracy of human annotators
+RP04,Majority,Majority Class,,,BoolQ,Accuracy (train),62.31,,,,,True,measured,2,1 Introduction,Introduction,"our best model reaches 80.43% accuracy, compared to 62.31% for the majority baseline and 90% human accuracy"
+RP04,BERT-Large + MultiNLI,BERT-Large + MultiNLI,,,BoolQ,Accuracy (test),80.43,Majority,62.31,18.12,absolute,True,measured,2,1 Introduction,Introduction,"our best model reaches 80.43% accuracy, compared to 62.31% for the majority baseline and 90% human accuracy"
+RP04,Recurrent,Recurrent (no transfer),,,BoolQ,Accuracy (dev),69.6,Majority,62.17,7.43,absolute,False,measured,6,4 Training Yes/No QA Models,Section 4,"Our best model reaches 69.6% accuracy, only 8% better than the majority baseline."
+RP04,Majority,Majority Class,,,BoolQ,Accuracy (dev),62.17,,,,,False,measured,7,5.1 Shallow Models,Section 5.1,majority-class baseline accuracy (62.17% on the dev set)
+RP04,BERT-Large,BERT-Large (question only),,,BoolQ,Accuracy (dev),64.48,Majority,62.17,2.31,absolute,False,measured,7,5.3 Question/Passage Only Results,Section 5.3,The pre-trained BERTL model reached 64.48% dev set accuracy using just the question
+RP04,BERT-Large,BERT-Large (passage only),,,BoolQ,Accuracy (dev),66.74,Majority,62.17,4.57,absolute,False,measured,7,5.3 Question/Passage Only Results,Section 5.3,and 66.74% using just the passage
+RP04,Majority,Majority,,,BoolQ,Accuracy (dev),62.17,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| N/A | Majority | - | - | - | 62.17 |
+RP04,Recurrent,Recurrent (no transfer),,,BoolQ,Accuracy (dev),69.6,Majority,62.17,7.43,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| N/A | Recurrent | - | - | - | 69.60 |
+RP04,Recurrent,Recurrent + QNLI,,,BoolQ,Accuracy (dev),71.36,Majority,62.17,9.19,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| Extractive QA | Recurrent | QNLI | 108k | 79.66 | 71.36 |
+RP04,Recurrent,Recurrent + QNLI,,,QNLI,Source Accuracy,79.66,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| Extractive QA | Recurrent | QNLI | 108k | 79.66 | 71.36 |
+RP04,Recurrent,Recurrent + SQuAD 2.0,,,BoolQ,Accuracy (dev),69.83,Majority,62.17,7.66,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| SQuAD 2.0 | 130k | 69.45 | 69.83 |
+RP04,Recurrent,Recurrent + SQuAD 2.0,,,SQuAD 2.0,Source Accuracy,69.45,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| SQuAD 2.0 | 130k | 69.45 | 69.83 |
+RP04,Recurrent,Recurrent + NQ Long Answer,,,BoolQ,Accuracy (dev),72.78,Majority,62.17,10.61,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| NQ Long Answer | 93k | 71.78 | 72.78 |
+RP04,Recurrent,Recurrent + NQ Long Answer,,,NQ Long Answer,Source Accuracy,71.78,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| NQ Long Answer | 93k | 71.78 | 72.78 |
+RP04,Recurrent,Recurrent + QQP,,,BoolQ,Accuracy (dev),71.3,Majority,62.17,9.13,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| Paraphrasing | Recurrent | QQP | 364k | 89.58 | 71.30 |
+RP04,Recurrent,Recurrent + QQP,,,QQP,Source Accuracy,89.58,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| Paraphrasing | Recurrent | QQP | 364k | 89.58 | 71.30 |
+RP04,Recurrent,Recurrent + Y/N MS Marco,,,BoolQ,Accuracy (dev),71.4,Majority,62.17,9.23,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| Heuristic Y/N | Recurrent | Y/N MS Marco | 39k | 87.26 | 71.40 |
+RP04,Recurrent,Recurrent + Y/N MS Marco,,,Y/N MS Marco,Source Accuracy,87.26,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| Heuristic Y/N | Recurrent | Y/N MS Marco | 39k | 87.26 | 71.40 |
+RP04,Recurrent,Recurrent + MultiNLI,,,BoolQ,Accuracy (dev),75.57,Majority,62.17,13.4,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| Entailment | Recurrent | MultiNLI | 392k | 78.23 | 75.57 |
+RP04,Recurrent,Recurrent + MultiNLI,,,MultiNLI,Source Accuracy,78.23,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| Entailment | Recurrent | MultiNLI | 392k | 78.23 | 75.57 |
+RP04,Recurrent,Recurrent + MultiNLI w/o Entail,,,BoolQ,Accuracy (dev),72.95,Recurrent + MultiNLI,75.57,-2.62,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| - w/o Entail | 262k | 84.26 | 72.95 |
+RP04,Recurrent,Recurrent + MultiNLI w/o Entail,,,MultiNLI w/o Entail,Source Accuracy,84.26,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| - w/o Entail | 262k | 84.26 | 72.95 |
+RP04,Recurrent,Recurrent + MultiNLI w/o Contradict,,,BoolQ,Accuracy (dev),72.85,Recurrent + MultiNLI,75.57,-2.72,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| - w/o Contradict | 262k | 81.16 | 72.85 |
+RP04,Recurrent,Recurrent + MultiNLI w/o Contradict,,,MultiNLI w/o Contradict,Source Accuracy,81.16,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| - w/o Contradict | 262k | 81.16 | 72.85 |
+RP04,Recurrent,Recurrent + MultiNLI w/o Neutral,,,BoolQ,Accuracy (dev),74.83,Recurrent + MultiNLI,75.57,-0.74,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| - w/o Neutral | 262k | 89.72 | 74.83 |
+RP04,Recurrent,Recurrent + MultiNLI w/o Neutral,,,MultiNLI w/o Neutral,Source Accuracy,89.72,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| - w/o Neutral | 262k | 89.72 | 74.83 |
+RP04,Recurrent,Recurrent + SNLI,,,BoolQ,Accuracy (dev),73.16,Majority,62.17,10.99,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| SNLI | 351k | 88.17 | 73.16 |
+RP04,Recurrent,Recurrent + SNLI,,,SNLI,Source Accuracy,88.17,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| SNLI | 351k | 88.17 | 73.16 |
+RP04,Recurrent,Recurrent + RACE,,,BoolQ,Accuracy (dev),68.4,Majority,62.17,6.23,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| MC QA | Recurrent | RACE | 549k | 42.30 | 68.40 |
+RP04,Recurrent,Recurrent + RACE,,,RACE,Source Accuracy,42.3,,,,,False,measured,8,5.4 Transfer Learning Results,Table 3,| MC QA | Recurrent | RACE | 549k | 42.30 | 68.40 |
+RP04,Recurrent + ELMo,Recurrent + ELMo,,,BoolQ,Accuracy (dev),71.41,Majority,62.17,9.24,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| Unsupervised | Recurrent +ELMo | Billion Word | 1000M | - | 71.41 |
+RP04,OpenAI GPT,OpenAI GPT,,,BoolQ,Accuracy (dev),72.87,Majority,62.17,10.7,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,| OpenAI GPT | Books | 800M | - | 72.87 |
+RP04,BERT-Large,BERT-Large,,,BoolQ,Accuracy (dev),76.9,Majority,62.17,14.73,absolute,False,measured,8,5.4 Transfer Learning Results,Table 3,"| BERTL | Books/Wikipedia | 3,300M | - | 76.90 |"
+RP04,Majority,Majority Class,,,BoolQ,Accuracy (dev),62.17,,,,,False,measured,8,5.4 Transfer Learning Results,Table 4,| Majority Class | 62.17 | 62.31 |
+RP04,Majority,Majority Class,,,BoolQ,Accuracy (test),62.31,,,,,False,measured,8,5.4 Transfer Learning Results,Table 4,| Majority Class | 62.17 | 62.31 |
+RP04,Recurrent,Recurrent (no transfer),,,BoolQ,Accuracy (dev),70.28,Majority,62.17,8.11,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| Recurrent | 70.28 | 67.52 |
+RP04,Recurrent,Recurrent (no transfer),,,BoolQ,Accuracy (test),67.52,Majority,62.31,5.21,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| Recurrent | 70.28 | 67.52 |
+RP04,Recurrent + MultiNLI,Recurrent + MultiNLI,,,BoolQ,Accuracy (dev),76.15,Recurrent,70.28,5.87,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| +MultiNLI | 76.15 | 74.24 |
+RP04,Recurrent + MultiNLI,Recurrent + MultiNLI,,,BoolQ,Accuracy (test),74.24,Recurrent,67.52,6.72,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| +MultiNLI | 76.15 | 74.24 |
+RP04,BERT-Large,BERT-Large (Pre-trained),,,BoolQ,Accuracy (dev),78.09,Majority,62.17,15.92,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| Pre-trained BERTL | 78.09 | 76.70 |
+RP04,BERT-Large,BERT-Large (Pre-trained),,,BoolQ,Accuracy (test),76.7,Majority,62.31,14.39,absolute,True,measured,8,5.4 Transfer Learning Results,Table 4,| Pre-trained BERTL | 78.09 | 76.70 |
+RP04,BERT-Large + MultiNLI,BERT-Large + MultiNLI,,,BoolQ,Accuracy (dev),82.2,BERT-Large,78.09,4.11,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| +MultiNLI | 82.20 | 80.43 |
+RP04,BERT-Large + MultiNLI,BERT-Large + MultiNLI,,,BoolQ,Accuracy (test),80.43,BERT-Large,76.7,3.73,absolute,False,measured,8,5.4 Transfer Learning Results,Table 4,| +MultiNLI | 82.20 | 80.43 |
+RP04,BERT-Large + MultiNLI w/o Contradict,BERT-Large + MultiNLI w/o Contradict,,,BoolQ,Accuracy (dev),78.43,BERT-Large + MultiNLI,82.2,-3.77,absolute,False,measured,9,5.7 Discussion,Section 5.7,our two step transfer procedure only reaches 78.43% dev set accuracy if we remove the contradiction class from MultiNLI

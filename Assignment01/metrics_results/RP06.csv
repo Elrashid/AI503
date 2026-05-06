@@ -1,0 +1,17 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP06,Random,random baseline,,,PIQA,Accuracy,50.0,,,,,False,measured,5,Experiments,Table 1,Random Chance |  | 50.0 | 50.0
+RP06,Random,random baseline,,,PIQA (test),Accuracy,50.0,,,,,False,measured,5,Experiments,Table 1,Random Chance |  | 50.0 | 50.0
+RP06,Majority Class,majority class baseline,,,PIQA,Accuracy,50.5,,,,,False,measured,5,Experiments,Table 1,Majority Class |  | 50.5 | 50.4
+RP06,Majority Class,majority class baseline,,,PIQA (test),Accuracy,50.4,,,,,False,measured,5,Experiments,Table 1,Majority Class |  | 50.5 | 50.4
+RP06,GPT-124M,GPT,,,PIQA,Accuracy,70.9,Human,94.9,-24.0,absolute,False,measured,5,Experiments,Table 1,OpenAI GPT | 124M | 70.9 | 69.2
+RP06,GPT-124M,GPT,,,PIQA (test),Accuracy,69.2,Human,94.9,-25.7,absolute,False,measured,5,Experiments,Table 1,OpenAI GPT | 124M | 70.9 | 69.2
+RP06,BERT-Large,BERT-Large,,,PIQA,Accuracy,67.1,Human,94.9,-27.8,absolute,False,measured,5,Experiments,Table 1,Google BERT | 340M | 67.1 | 66.8
+RP06,BERT-Large,BERT-Large,,,PIQA (test),Accuracy,66.8,Human,94.9,-28.1,absolute,False,measured,5,Experiments,Table 1,Google BERT | 340M | 67.1 | 66.8
+RP06,RoBERTa-Large,RoBERTa-Large,,,PIQA,Accuracy,79.2,Human,94.9,-15.7,absolute,True,measured,5,Experiments,Table 1,FAIR RoBERTa | 355M | 79.2 | 77.1
+RP06,RoBERTa-Large,RoBERTa-Large,,,PIQA (test),Accuracy,77.1,Human,94.9,-17.8,absolute,True,measured,5,Experiments,Table 1,FAIR RoBERTa | 355M | 79.2 | 77.1
+RP06,Human,Human,,,PIQA,Accuracy,94.9,,,,,True,measured,5,Experiments,Table 1,Human |  | 94.9 |
+RP06,Human,Human,,,PIQA,Accuracy,95.0,,,,,True,measured,1,Abstract,,"Though humans find the dataset easy (95% accuracy), large pretrained models struggle (~77%)"
+RP06,RoBERTa-Large,RoBERTa-Large (abstract headline),,,PIQA,Accuracy,77.0,Human,95.0,-18.0,absolute,True,measured,1,Abstract,,"Though humans find the dataset easy (95% accuracy), large pretrained models struggle (~77%)"
+RP06,RoBERTa-Large,RoBERTa-Large,,,PIQA (water-pivot subset),Accuracy,75.0,,,,,False,measured,6,PIQA as a diagnostic for physical understanding,Figure 7,"Though certain concepts such as water occur quite frequently, RoBERTa nevertheless finds those concepts difficult, with 75% accuracy."
+RP06,RoBERTa-Large,RoBERTa-Large,,,PIQA (spoon-pivot subset),Accuracy,90.0,,,,,False,measured,6,PIQA as a diagnostic for physical understanding,Figure 8,RoBERTa performs much butter at examples where 'spoon' is the pivot word (90%) versus 'water' (75%).
+RP06,RoBERTa-Large,RoBERTa-Large,,,PIQA (freeze-pivot subset),Accuracy,66.0,,,,,False,measured,6,PIQA as a diagnostic for physical understanding,Figure 8,"Freeze has an accuracy of 66% on the validation set, and shows that verbs are challenging as well."
