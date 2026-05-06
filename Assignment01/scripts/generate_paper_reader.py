@@ -1112,11 +1112,17 @@ function chunkForTTS(text, maxLen = 220) {
 }
 
 function ttsStop() {
+  // Engine state always cleared (safe to call before any UI exists)
   ttsQueue = [];
   if (ttsKeepAlive) { clearInterval(ttsKeepAlive); ttsKeepAlive = null; }
   if ('speechSynthesis' in window) speechSynthesis.cancel();
-  $('#ttsBtn').classList.remove('active');
-  $('#ttsBtn').textContent = '🔊';
+  // Fix #6: button is rendered per-paper inside showPaper(); on first call
+  // (from loadManifest → showPaper) it doesn't exist yet. Guard against null.
+  const btn = $('#ttsBtn');
+  if (btn) {
+    btn.classList.remove('active');
+    btn.textContent = '🔊';
+  }
 }
 
 function ttsSpeakNext(voice, lang, rate) {
