@@ -567,6 +567,8 @@ function setTag(rpId, tag) {
 }
 
 async function showPaper(rpId) {
+  // Stop any in-progress TTS when switching papers
+  if (typeof ttsStop === 'function') ttsStop();
   // In compare mode, second click sets the right side
   if (compareMode && currentIndex >= 0 && manifest[currentIndex].rp_id !== rpId) {
     compareTarget = rpId;
@@ -910,21 +912,109 @@ function copyCite(rpId, page, section) {
   navigator.clipboard.writeText(cite).then(() => toast('Citation copied'));
 }
 
-function toggleTTS() {
-  if (!('speechSynthesis' in window)) { toast('TTS not supported'); return; }
-  if (speechSynthesis.speaking) {
-    speechSynthesis.cancel(); $('#ttsBtn').classList.remove('active'); return;
+// Browser TTS with three fixes:
+//  (1) Chrome stops speaking after ~15s unless you periodically resume() it.
+//  (2) Long utterances get truncated; we chunk on sentence/paragraph boundaries.
+//  (3) Voices load asynchronously on Chrome; we wait for voiceschanged.
+let ttsQueue = [], ttsTimer = null, ttsKeepAlive = null;
+
+function pickTTSVoice(langCode) {
+  const all = speechSynthesis.getVoices();
+  if (!all.length) return null;
+  // Prefer a local voice in the requested language; fall back to any matching.
+  const exact = all.find(v => v.lang === langCode);
+  if (exact) return exact;
+  const prefix = langCode.split('-')[0];
+  const startsWith = all.find(v => v.lang.startsWith(prefix));
+  return startsWith || null;
+}
+
+function chunkForTTS(text, maxLen = 220) {
+  // Split on sentence boundaries first (English . ? ! and Arabic ؟ ؛), then
+  // pack chunks up to ~220 chars so each utterance survives Chrome's quirks.
+  const sentences = text.replace(/\s+/g, ' ').match(/[^.!?؟؛\n]+[.!?؟؛\n]?/g) || [text];
+  const chunks = [];
+  let buf = '';
+  for (const s of sentences) {
+    if ((buf + ' ' + s).length > maxLen) { if (buf) chunks.push(buf.trim()); buf = s; }
+    else buf = buf ? buf + ' ' + s : s;
   }
+  if (buf.trim()) chunks.push(buf.trim());
+  return chunks.filter(c => c.length > 0);
+}
+
+function ttsStop() {
+  ttsQueue = [];
+  if (ttsKeepAlive) { clearInterval(ttsKeepAlive); ttsKeepAlive = null; }
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  $('#ttsBtn').classList.remove('active');
+  $('#ttsBtn').textContent = '🔊';
+}
+
+function ttsSpeakNext(voice, lang, rate) {
+  if (!ttsQueue.length) { ttsStop(); return; }
+  const text = ttsQueue.shift();
+  const u = new SpeechSynthesisUtterance(text);
+  if (voice) u.voice = voice;
+  u.lang = lang;
+  u.rate = rate;
+  u.pitch = 1.0;
+  u.onend = () => ttsSpeakNext(voice, lang, rate);
+  u.onerror = (ev) => {
+    console.warn('TTS error:', ev.error);
+    if (ev.error === 'not-allowed') toast('TTS blocked — allow audio for this site');
+    ttsSpeakNext(voice, lang, rate);  // skip this chunk, continue
+  };
+  speechSynthesis.speak(u);
+}
+
+function startTTSKeepAlive() {
+  // Chrome workaround: pause/resume every ~10s to defeat the silent-after-15s bug.
+  if (ttsKeepAlive) clearInterval(ttsKeepAlive);
+  ttsKeepAlive = setInterval(() => {
+    if (!speechSynthesis.speaking) { clearInterval(ttsKeepAlive); ttsKeepAlive = null; return; }
+    speechSynthesis.pause();
+    speechSynthesis.resume();
+  }, 10000);
+}
+
+function toggleTTS() {
+  if (!('speechSynthesis' in window)) { toast('TTS not supported in this browser'); return; }
+  // Already speaking → stop.
+  if (speechSynthesis.speaking || ttsQueue.length) { ttsStop(); return; }
   const md = $('#mdContent');
   if (!md) { toast('Open Read tab first'); return; }
-  const text = md.innerText.slice(0, 8000);  // cap
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = currentLang === 'ar' ? 'ar-SA' : 'en-US';
-  u.rate = 1.0;
-  u.onend = () => $('#ttsBtn').classList.remove('active');
-  speechSynthesis.speak(u);
-  $('#ttsBtn').classList.add('active');
+  // Get clean text (strip tashkeel marks for cleaner Arabic prosody, drop code blocks)
+  let text = md.innerText.replace(/```[\s\S]*?```/g, ' ').replace(/[ً-ٰٟ]/g, '');
+  text = text.slice(0, 30000);  // hard cap to avoid runaway
+  const lang = currentLang === 'ar' ? 'ar-SA' : 'en-US';
+
+  function start() {
+    const voice = pickTTSVoice(lang);
+    if (currentLang === 'ar' && !voice) {
+      toast('No Arabic voice installed on this device — install one in OS settings');
+      // still try with default voice, may use English-accented fallback
+    }
+    ttsQueue = chunkForTTS(text);
+    if (!ttsQueue.length) { toast('Nothing to read'); return; }
+    $('#ttsBtn').classList.add('active');
+    $('#ttsBtn').textContent = '⏹';
+    ttsSpeakNext(voice, lang, 1.0);
+    startTTSKeepAlive();
+  }
+
+  // Voices may not be ready yet on Chrome; wait for the event.
+  if (!speechSynthesis.getVoices().length) {
+    speechSynthesis.addEventListener('voiceschanged', start, { once: true });
+    // fallback: start anyway after 800ms
+    setTimeout(() => { if (!ttsQueue.length) start(); }, 800);
+  } else {
+    start();
+  }
 }
+
+// Stop TTS when navigating between papers
+window.addEventListener('beforeunload', ttsStop);
 
 function bindHighlightCapture(rpId) {
   const md = $('#mdContent');
