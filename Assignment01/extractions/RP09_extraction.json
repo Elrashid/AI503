@@ -1302,5 +1302,3840 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "ResNet-18",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "ImageNet",
+        "metric": "Top-1 Accuracy",
+        "value": 69.37,
+        "baseline_label": "FP32",
+        "baseline_value": 69.76,
+        "delta": -0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 69.37 | 67.88 | 75.71 | 74.87",
+        "bbox": null,
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "ResNet-18",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "ImageNet",
+        "metric": "Top-1 Accuracy",
+        "value": 67.88,
+        "baseline_label": "FP32",
+        "baseline_value": 69.76,
+        "delta": -1.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 69.37 | 67.88 | 75.71 | 74.87",
+        "bbox": null,
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "ResNet-50",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "ImageNet",
+        "metric": "Top-1 Accuracy",
+        "value": 75.71,
+        "baseline_label": "FP32",
+        "baseline_value": 76.13,
+        "delta": -0.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 69.37 | 67.88 | 75.71 | 74.87",
+        "bbox": null,
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "ResNet-50",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "ImageNet",
+        "metric": "Top-1 Accuracy",
+        "value": 74.87,
+        "baseline_label": "FP32",
+        "baseline_value": 76.13,
+        "delta": -1.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 69.37 | 67.88 | 75.71 | 74.87",
+        "bbox": null,
+        "block_id": "/page/6/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (minutes)",
+        "value": 20.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "OPT | 13B | 30B | 66B | 175B | Runtime | 20.9m | 44.9m | 1.6h | 4.2h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (minutes)",
+        "value": 44.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Runtime | 20.9m | 44.9m | 1.6h | 4.2h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (hours)",
+        "value": 1.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Runtime | 20.9m | 44.9m | 1.6h | 4.2h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (hours)",
+        "value": 4.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Runtime | 20.9m | 44.9m | 1.6h | 4.2h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.7B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (minutes)",
+        "value": 2.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "BLOOM | 1.7B | 3B | 7.1B | 176B | Runtime | 2.9m | 5.2m | 10.0m | 3.8h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-3B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (minutes)",
+        "value": 5.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Runtime | 2.9m | 5.2m | 10.0m | 3.8h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-7.1B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (minutes)",
+        "value": 10.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Runtime | 2.9m | 5.2m | 10.0m | 3.8h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Quantization runtime (hours)",
+        "value": 3.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Runtime | 2.9m | 5.2m | 10.0m | 3.8h",
+        "bbox": null,
+        "block_id": "/page/6/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 27.65,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | 27.65 | 22.00 | 14.63 | 12.47 | 10.86 | 10.13 | 9.56 | 9.34 | 8.34",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-350M",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 22.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | 27.65 | 22.00 | 14.63",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 14.63,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | 27.65 | 22.00 | 14.63 | 12.47",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-2.7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 12.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 12.47 | 10.86",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 10.86 | 10.13",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 10.13 | 9.56",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.56,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 9.56 | 9.34",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 9.34 | 8.34",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | 27.65 | ... | 8.34",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 37.28,
+        "baseline_label": "FP16",
+        "baseline_value": 27.65,
+        "delta": 9.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 37.28 | 25.94 | 48.17 | 16.92 | 12.10 | 11.32 | 10.98 | 110 | 10.54",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-350M",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 25.94,
+        "baseline_label": "FP16",
+        "baseline_value": 22.0,
+        "delta": 3.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 37.28 | 25.94 | 48.17",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 48.17,
+        "baseline_label": "FP16",
+        "baseline_value": 14.63,
+        "delta": 33.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 37.28 | 25.94 | 48.17 | 16.92",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-2.7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16.92,
+        "baseline_label": "FP16",
+        "baseline_value": 12.47,
+        "delta": 4.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 48.17 | 16.92 | 12.10",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 12.1,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": 1.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 16.92 | 12.10 | 11.32",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.32,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 1.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 12.10 | 11.32 | 10.98",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.98,
+        "baseline_label": "FP16",
+        "baseline_value": 9.56,
+        "delta": 1.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 11.32 | 10.98 | 110",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 110,
+        "baseline_label": "FP16",
+        "baseline_value": 9.34,
+        "delta": 100.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 10.98 | 110 | 10.54",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.54,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 2.2,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... | 110 | 10.54",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 31.12,
+        "baseline_label": "FP16",
+        "baseline_value": 27.65,
+        "delta": 3.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | **31.12** | **24.24** | **15.47** | **12.87** | **11.39** | **10.31** | **9.63** | **9.55** | **8.37**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-350M",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 24.24,
+        "baseline_label": "FP16",
+        "baseline_value": 22.0,
+        "delta": 2.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | **31.12** | **24.24** | **15.47**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 15.47,
+        "baseline_label": "FP16",
+        "baseline_value": 14.63,
+        "delta": 0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **15.47** | **12.87**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-2.7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 12.87,
+        "baseline_label": "FP16",
+        "baseline_value": 12.47,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **12.87** | **11.39**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.39,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": 0.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **11.39** | **10.31**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.31,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **10.31** | **9.63**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.63,
+        "baseline_label": "FP16",
+        "baseline_value": 9.56,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **9.63** | **9.55**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.55,
+        "baseline_label": "FP16",
+        "baseline_value": 9.34,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **9.55** | **8.37**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.37,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **8.37**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 1300,
+        "baseline_label": "FP16",
+        "baseline_value": 27.65,
+        "delta": 1272.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 1.3e3 | 64.57 | 1.3e4 | 1.6e4 | 5.8e3 | 3.4e3 | 1.6e3 | 6.1e3 | 7.3e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-350M",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 64.57,
+        "baseline_label": "FP16",
+        "baseline_value": 22.0,
+        "delta": 42.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 1.3e3 | 64.57 | 1.3e4",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 13000,
+        "baseline_label": "FP16",
+        "baseline_value": 14.63,
+        "delta": 12985.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 1.3e3 | 64.57 | 1.3e4 | 1.6e4",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-2.7B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16000,
+        "baseline_label": "FP16",
+        "baseline_value": 12.47,
+        "delta": 15987.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 1.3e4 | 1.6e4 | 5.8e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5800,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": 5789.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 1.6e4 | 5.8e3 | 3.4e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3400,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 3389.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 5.8e3 | 3.4e3 | 1.6e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 1600,
+        "baseline_label": "FP16",
+        "baseline_value": 9.56,
+        "delta": 1590.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 3.4e3 | 1.6e3 | 6.1e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6100,
+        "baseline_label": "FP16",
+        "baseline_value": 9.34,
+        "delta": 6090.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 1.6e3 | 6.1e3 | 7.3e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7300,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 7291.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 6.1e3 | 7.3e3",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 53.85,
+        "baseline_label": "FP16",
+        "baseline_value": 27.65,
+        "delta": 26.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | **53.85** | **33.79** | **20.97** | **16.88** | **14.86** | **11.61** | **10.27** | **14.16** | **8.68**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-350M",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 33.79,
+        "baseline_label": "FP16",
+        "baseline_value": 22.0,
+        "delta": 11.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | **53.85** | **33.79** | **20.97**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-1.3B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 20.97,
+        "baseline_label": "FP16",
+        "baseline_value": 14.63,
+        "delta": 6.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **20.97** | **16.88**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-2.7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16.88,
+        "baseline_label": "FP16",
+        "baseline_value": 12.47,
+        "delta": 4.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **16.88** | **14.86**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 14.86,
+        "baseline_label": "FP16",
+        "baseline_value": 10.86,
+        "delta": 4.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **14.86** | **11.61**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.61,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 1.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **11.61** | **10.27**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.27,
+        "baseline_label": "FP16",
+        "baseline_value": 9.56,
+        "delta": 0.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **10.27** | **14.16**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 14.16,
+        "baseline_label": "FP16",
+        "baseline_value": 9.34,
+        "delta": 4.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **14.16** | **8.68**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.68,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.34,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **8.68**",
+        "bbox": null,
+        "block_id": "/page/6/Table/7",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-560M",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 22.42,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | 22.42 | 17.69 | 15.39 | 13.48 | 11.37 | 8.11",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.1B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 17.69,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | 22.42 | 17.69 | 15.39",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 15.39,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 15.39 | 13.48",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-3B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 13.48,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 13.48 | 11.37",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-7.1B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... 11.37 | 8.11",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "full | 16 | ... | 8.11",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-560M",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 25.9,
+        "baseline_label": "FP16",
+        "baseline_value": 22.42,
+        "delta": 3.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 25.90 | 22.00 | 16.97 | 14.76 | 12.10 | 8.37",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.1B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 22.0,
+        "baseline_label": "FP16",
+        "baseline_value": 17.69,
+        "delta": 4.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 25.90 | 22.00 | 16.97",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.7B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16.97,
+        "baseline_label": "FP16",
+        "baseline_value": 15.39,
+        "delta": 1.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 22.00 | 16.97 | 14.76",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-3B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 14.76,
+        "baseline_label": "FP16",
+        "baseline_value": 13.48,
+        "delta": 1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 16.97 | 14.76 | 12.10",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-7.1B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 12.1,
+        "baseline_label": "FP16",
+        "baseline_value": 11.37,
+        "delta": 0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 14.76 | 12.10 | 8.37",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.37,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 12.10 | 8.37",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-560M",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 24.03,
+        "baseline_label": "FP16",
+        "baseline_value": 22.42,
+        "delta": 1.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | **24.03** | **19.05** | **16.48** | **14.20** | 11.73 | **8.21**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.1B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 19.05,
+        "baseline_label": "FP16",
+        "baseline_value": 17.69,
+        "delta": 1.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | **24.03** | **19.05** | **16.48**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.7B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 16.48,
+        "baseline_label": "FP16",
+        "baseline_value": 15.39,
+        "delta": 1.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **16.48** | **14.20**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-3B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 14.2,
+        "baseline_label": "FP16",
+        "baseline_value": 13.48,
+        "delta": 0.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **14.20** | 11.73",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-7.1B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.73,
+        "baseline_label": "FP16",
+        "baseline_value": 11.37,
+        "delta": 0.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... 11.73 | **8.21**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.21,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **8.21**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-560M",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 57.08,
+        "baseline_label": "FP16",
+        "baseline_value": 22.42,
+        "delta": 34.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 57.08 | 50.19 | 63.59 | 39.36 | 17.38 | 571",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.1B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 50.19,
+        "baseline_label": "FP16",
+        "baseline_value": 17.69,
+        "delta": 32.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 57.08 | 50.19 | 63.59",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.7B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 63.59,
+        "baseline_label": "FP16",
+        "baseline_value": 15.39,
+        "delta": 48.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 50.19 | 63.59 | 39.36",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-3B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 39.36,
+        "baseline_label": "FP16",
+        "baseline_value": 13.48,
+        "delta": 25.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 63.59 | 39.36 | 17.38",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-7.1B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 17.38,
+        "baseline_label": "FP16",
+        "baseline_value": 11.37,
+        "delta": 6.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 39.36 | 17.38 | 571",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 571,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 562.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 17.38 | 571",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-560M",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 32.31,
+        "baseline_label": "FP16",
+        "baseline_value": 22.42,
+        "delta": 9.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | **32.31** | **25.08** | **21.11** | **17.40** | **13.47** | **8.64**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.1B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 25.08,
+        "baseline_label": "FP16",
+        "baseline_value": 17.69,
+        "delta": 7.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | **32.31** | **25.08** | **21.11**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-1.7B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 21.11,
+        "baseline_label": "FP16",
+        "baseline_value": 15.39,
+        "delta": 5.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **21.11** | **17.40**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-3B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 17.4,
+        "baseline_label": "FP16",
+        "baseline_value": 13.48,
+        "delta": 3.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **17.40** | **13.47**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-7.1B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 13.47,
+        "baseline_label": "FP16",
+        "baseline_value": 11.37,
+        "delta": 2.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **13.47** | **8.64**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.64,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 0.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **8.64**",
+        "bbox": null,
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 12.01,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 10.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 75.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 14.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Baseline | 16 | ... | 8.11 | 14.59 | 11.71 | 67.40",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 11.71,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Baseline | 16 | ... | 14.59 | 11.71 | 67.40",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 67.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "Baseline | 16 | ... | 11.71 | 67.40",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 14.22,
+        "baseline_label": "FP16",
+        "baseline_value": 12.01,
+        "delta": 2.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34 | 8.37 | 15.00 | 12.04 | 66.70",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 11.61,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 1.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 71.34,
+        "baseline_label": "FP16",
+        "baseline_value": 75.59,
+        "delta": -4.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34 | 8.37",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 15.0,
+        "baseline_label": "FP16",
+        "baseline_value": 14.59,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 8.37 | 15.00 | 12.04 | 66.70",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.04,
+        "baseline_label": "FP16",
+        "baseline_value": 11.71,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 15.00 | 12.04 | 66.70",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 66.7,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 4 | ... 12.04 | 66.70",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 12.26,
+        "baseline_label": "FP16",
+        "baseline_value": 12.01,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | **8.37** | **12.26** | **10.28** | **76.80** | **8.21** | **14.75** | **11.81** | **67.71**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 10.28,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | **8.37** | **12.26** | **10.28** | **76.80**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 76.8,
+        "baseline_label": "FP16",
+        "baseline_value": 75.59,
+        "delta": 1.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **10.28** | **76.80**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 14.75,
+        "baseline_label": "FP16",
+        "baseline_value": 14.59,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **8.21** | **14.75** | **11.81** | **67.71**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 11.81,
+        "baseline_label": "FP16",
+        "baseline_value": 11.71,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **14.75** | **11.81** | **67.71**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 67.71,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 4 | ... **11.81** | **67.71**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 8000,
+        "baseline_label": "FP16",
+        "baseline_value": 12.01,
+        "delta": 7987.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 4600,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 4589.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 0,
+        "baseline_label": "FP16",
+        "baseline_value": 75.59,
+        "delta": -75.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 107,
+        "baseline_label": "FP16",
+        "baseline_value": 14.59,
+        "delta": 92.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 571. | 107. | 598. | 0.17",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 598,
+        "baseline_label": "FP16",
+        "baseline_value": 11.71,
+        "delta": 586.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 107. | 598. | 0.17",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "RTN",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 0.17,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -67.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "RTN | 3 | ... 598. | 0.17",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 12.68,
+        "baseline_label": "FP16",
+        "baseline_value": 12.01,
+        "delta": 0.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | **8.68** | **12.68** | **10.67** | **76.19**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 10.67,
+        "baseline_label": "FP16",
+        "baseline_value": 10.13,
+        "delta": 0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | **8.68** | **12.68** | **10.67** | **76.19**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 76.19,
+        "baseline_label": "FP16",
+        "baseline_value": 75.59,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **10.67** | **76.19**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 15.57,
+        "baseline_label": "FP16",
+        "baseline_value": 14.59,
+        "delta": 0.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **8.64** | **15.57** | **12.27** | **65.10**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "C4",
+        "metric": "Perplexity",
+        "value": 12.27,
+        "baseline_label": "FP16",
+        "baseline_value": 11.71,
+        "delta": 0.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **15.57** | **12.27** | **65.10**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 65.1,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -2.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3 | ... **12.27** | **65.10**",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": "g1024",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.45,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3/g1024 | 8.45 | 12.48 | 10.47 | 77.39",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.45,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "GPTQ | 3/g128 | 8.45 | 12.37 | 10.36 | 76.42",
+        "bbox": null,
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency per token (ms, batch=1)",
+        "value": 230,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1",
+        "bbox": null,
+        "block_id": "/page/7/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency per token (ms, batch=1)",
+        "value": 71,
+        "baseline_label": "FP16",
+        "baseline_value": 230,
+        "delta": -159,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1",
+        "bbox": null,
+        "block_id": "/page/7/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 3.24,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.24,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1",
+        "bbox": null,
+        "block_id": "/page/7/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Latency per token (ms, batch=1)",
+        "value": 589,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2",
+        "bbox": null,
+        "block_id": "/page/7/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Latency per token (ms, batch=1)",
+        "value": 130,
+        "baseline_label": "FP16",
+        "baseline_value": 589,
+        "delta": -459,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2",
+        "bbox": null,
+        "block_id": "/page/7/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "A6000 48GB",
+        "metric": "Speedup over FP16",
+        "value": 4.53,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.53,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2",
+        "bbox": null,
+        "block_id": "/page/7/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.58,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 1.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "OPT-175B | 8.34 | 9.58 | 9.18 | 8.94 | 8.68",
+        "bbox": null,
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.18,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "OPT-175B | 8.34 | 9.58 | 9.18 | 8.94",
+        "bbox": null,
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.94,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "OPT-175B | 8.34 | 9.58 | 9.18 | 8.94 | 8.68",
+        "bbox": null,
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.55,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 1.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "BLOOM | 8.11 | 9.55 | 9.17 | 8.83 | 8.64",
+        "bbox": null,
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.17,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 1.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "BLOOM | 8.11 | 9.55 | 9.17 | 8.83",
+        "bbox": null,
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.83,
+        "baseline_label": "FP16",
+        "baseline_value": 8.11,
+        "delta": 0.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "BLOOM | 8.11 | 9.55 | 9.17 | 8.83 | 8.64",
+        "bbox": null,
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "ternary",
+        "group_size": "g8",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.2,
+        "baseline_label": "FP16",
+        "baseline_value": 8.34,
+        "delta": 0.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5 EXPERIMENTAL VALIDATION",
+        "quote": "if we reduce group size to 8, we can apply *ternary* (-1, 0, +1) quantization, which achieves 9.20 WikiText2 PPL on OPT-175B",
+        "bbox": null,
+        "block_id": "/page/8/Text/8",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "OBQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SQuAD",
+        "metric": "F1",
+        "value": 88.23,
+        "baseline_label": "FP32",
+        "baseline_value": 88.53,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "A.1 ADDITIONAL COMPARISON WITH OBQ",
+        "quote": "OBQ | 88.23 | 85.29 | 32.52 | 69.32",
+        "bbox": null,
+        "block_id": "/page/12/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "OBQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "SQuAD",
+        "metric": "F1",
+        "value": 85.29,
+        "baseline_label": "FP32",
+        "baseline_value": 88.53,
+        "delta": -3.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "A.1 ADDITIONAL COMPARISON WITH OBQ",
+        "quote": "OBQ | 88.23 | 85.29 | 32.52 | 69.32",
+        "bbox": null,
+        "block_id": "/page/12/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "OBQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 32.52,
+        "baseline_label": "FP16",
+        "baseline_value": 27.66,
+        "delta": 4.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "A.1 ADDITIONAL COMPARISON WITH OBQ",
+        "quote": "OBQ | 88.23 | 85.29 | 32.52 | 69.32",
+        "bbox": null,
+        "block_id": "/page/12/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-125M",
+        "method": "OBQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 69.32,
+        "baseline_label": "FP16",
+        "baseline_value": 27.66,
+        "delta": 41.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "A.1 ADDITIONAL COMPARISON WITH OBQ",
+        "quote": "OBQ | 88.23 | 85.29 | 32.52 | 69.32",
+        "bbox": null,
+        "block_id": "/page/12/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "SQuAD",
+        "metric": "F1",
+        "value": 88.18,
+        "baseline_label": "FP32",
+        "baseline_value": 88.53,
+        "delta": -0.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "A.1 ADDITIONAL COMPARISON WITH OBQ",
+        "quote": "GPTQ | 88.18 | 86.02 | 31.12 | 53.85",
+        "bbox": null,
+        "block_id": "/page/12/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "BERT-base",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "SQuAD",
+        "metric": "F1",
+        "value": 86.02,
+        "baseline_label": "FP32",
+        "baseline_value": 88.53,
+        "delta": -2.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "A.1 ADDITIONAL COMPARISON WITH OBQ",
+        "quote": "GPTQ | 88.18 | 86.02 | 31.12 | 53.85",
+        "bbox": null,
+        "block_id": "/page/12/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 225.66,
+        "baseline_label": "FP16",
+        "baseline_value": 13.36,
+        "delta": 212.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 ADDITIONAL LANGUAGE GENERATION RESULTS",
+        "quote": "RTN | 4 | ... 15.40 | 225.66 | 14.22",
+        "bbox": null,
+        "block_id": "/page/13/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PTB",
+        "metric": "Perplexity",
+        "value": 12.86,
+        "baseline_label": "FP16",
+        "baseline_value": 12.01,
+        "delta": 0.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 ADDITIONAL LANGUAGE GENERATION RESULTS",
+        "quote": "GPTQ | 3 | ... **28.12** | **12.86**",
+        "bbox": null,
+        "block_id": "/page/13/Table/3",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 81.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "full | 16 | ... 79.76 | 81.07",
+        "bbox": null,
+        "block_id": "/page/14/Table/7",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 81.0,
+        "baseline_label": "FP16",
+        "baseline_value": 81.07,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 4 | ... 79.33 | 81.00",
+        "bbox": null,
+        "block_id": "/page/14/Table/7",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 78.23,
+        "baseline_label": "FP16",
+        "baseline_value": 81.07,
+        "delta": -2.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "RTN | 4 | ... 60.07 | 78.23",
+        "bbox": null,
+        "block_id": "/page/14/Table/7",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 80.03,
+        "baseline_label": "FP16",
+        "baseline_value": 81.07,
+        "delta": -1.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 3 | ... 71.27 | 80.03",
+        "bbox": null,
+        "block_id": "/page/14/Table/7",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "full | 16 | ... 73.72 | 79.16",
+        "bbox": null,
+        "block_id": "/page/14/Table/9",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.0,
+        "baseline_label": "FP16",
+        "baseline_value": 79.16,
+        "delta": -0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 4 | ... **72.96** | **79.00**",
+        "bbox": null,
+        "block_id": "/page/14/Table/9",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 77.7,
+        "baseline_label": "FP16",
+        "baseline_value": 79.16,
+        "delta": -1.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 3 | ... **70.95** | **77.70**",
+        "bbox": null,
+        "block_id": "/page/14/Table/9",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ARC-Easy",
+        "metric": "Accuracy",
+        "value": 71.04,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "full | 16 | ... 67.26 | 71.04",
+        "bbox": null,
+        "block_id": "/page/14/Table/11",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "ARC-Easy",
+        "metric": "Accuracy",
+        "value": 68.69,
+        "baseline_label": "FP16",
+        "baseline_value": 71.04,
+        "delta": -2.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 4 | ... **65.35** | **68.69**",
+        "bbox": null,
+        "block_id": "/page/14/Table/11",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "ARC-Easy",
+        "metric": "Accuracy",
+        "value": 65.36,
+        "baseline_label": "FP16",
+        "baseline_value": 71.04,
+        "delta": -5.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 3 | ... **52.44** | **65.36**",
+        "bbox": null,
+        "block_id": "/page/14/Table/11",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "ARC-Easy",
+        "metric": "Accuracy",
+        "value": 67.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "full | 16 | ... 57.37 | 67.47",
+        "bbox": null,
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "ARC-Easy",
+        "metric": "Accuracy",
+        "value": 67.42,
+        "baseline_label": "FP16",
+        "baseline_value": 67.47,
+        "delta": -0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 4 | ... **56.14** | **67.42**",
+        "bbox": null,
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 18"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "GPTQ",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "ARC-Easy",
+        "metric": "Accuracy",
+        "value": 62.84,
+        "baseline_label": "FP16",
+        "baseline_value": 67.47,
+        "delta": -4.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.4 ADDITIONAL ZEROSHOT RESULTS",
+        "quote": "GPTQ | 3 | ... **51.56** | **62.84**",
+        "bbox": null,
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 18"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 153,
+    "dropped_cited_count": 18,
+    "dropped_other_count": 0,
+    "headline_count": 8
   }
 }

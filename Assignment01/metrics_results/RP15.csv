@@ -1,0 +1,208 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP15,OPT-1.3B,FP16,16-bit,,WikiText-2,Perplexity,14.62,,,,,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,RTN,3-bit,g128,WikiText-2,Perplexity,119.0,FP16,14.62,104.38,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03
+RP15,OPT-1.3B,FP16% (based on act.) 0.1%,3-bit,g128,WikiText-2,Perplexity,25.03,FP16,14.62,10.41,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,FP16% (based on act.) 1%,3-bit,g128,WikiText-2,Perplexity,16.91,FP16,14.62,2.29,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,FP16% (based on act.) 3%,3-bit,g128,WikiText-2,Perplexity,16.68,FP16,14.62,2.06,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,FP16% (based on W) 0.1%,3-bit,g128,WikiText-2,Perplexity,108.71,FP16,14.62,94.09,absolute,False,measured,4,Analyzing the quantization error.,Table 1,108.71 | 98.55 | 98.08
+RP15,OPT-1.3B,FP16% (based on W) 1%,3-bit,g128,WikiText-2,Perplexity,98.55,FP16,14.62,83.93,absolute,False,measured,4,Analyzing the quantization error.,Table 1,108.71 | 98.55 | 98.08
+RP15,OPT-1.3B,FP16% (based on W) 3%,3-bit,g128,WikiText-2,Perplexity,98.08,FP16,14.62,83.46,absolute,False,measured,4,Analyzing the quantization error.,Table 1,108.71 | 98.55 | 98.08
+RP15,OPT-1.3B,FP16% (random) 0.1%,3-bit,g128,WikiText-2,Perplexity,119.76,FP16,14.62,105.14,absolute,False,measured,4,Analyzing the quantization error.,Table 1,119.76 | 109.38 | 61.49
+RP15,OPT-1.3B,FP16% (random) 1%,3-bit,g128,WikiText-2,Perplexity,109.38,FP16,14.62,94.76,absolute,False,measured,4,Analyzing the quantization error.,Table 1,119.76 | 109.38 | 61.49
+RP15,OPT-1.3B,FP16% (random) 3%,3-bit,g128,WikiText-2,Perplexity,61.49,FP16,14.62,46.87,absolute,False,measured,4,Analyzing the quantization error.,Table 1,119.76 | 109.38 | 61.49
+RP15,OPT-6.7B,FP16,16-bit,,WikiText-2,Perplexity,10.86,,,,,False,measured,4,Analyzing the quantization error.,Table 1,OPT-6.7B | 10.86 | 23.54 | 11.58
+RP15,OPT-6.7B,RTN,3-bit,g128,WikiText-2,Perplexity,23.54,FP16,10.86,12.68,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-6.7B | 10.86 | 23.54 | 11.58
+RP15,OPT-6.7B,FP16% (based on act.) 0.1%,3-bit,g128,WikiText-2,Perplexity,11.58,FP16,10.86,0.72,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-6.7B | 10.86 | 23.54 | 11.58 | 11.39 | 11.36
+RP15,OPT-6.7B,FP16% (based on act.) 1%,3-bit,g128,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,4,Analyzing the quantization error.,Table 1,11.58 | 11.39 | 11.36
+RP15,OPT-6.7B,FP16% (based on act.) 3%,3-bit,g128,WikiText-2,Perplexity,11.36,FP16,10.86,0.5,absolute,False,measured,4,Analyzing the quantization error.,Table 1,11.58 | 11.39 | 11.36
+RP15,OPT-13B,FP16,16-bit,,WikiText-2,Perplexity,10.13,,,,,False,measured,4,Analyzing the quantization error.,Table 1,OPT-13B | 10.13 | 46.04 | 10.51
+RP15,OPT-13B,RTN,3-bit,g128,WikiText-2,Perplexity,46.04,FP16,10.13,35.91,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-13B | 10.13 | 46.04 | 10.51
+RP15,OPT-13B,FP16% (based on act.) 0.1%,3-bit,g128,WikiText-2,Perplexity,10.51,FP16,10.13,0.38,absolute,False,measured,4,Analyzing the quantization error.,Table 1,10.13 | 46.04 | 10.51 | 10.43 | 10.42
+RP15,OPT-13B,FP16% (based on act.) 1%,3-bit,g128,WikiText-2,Perplexity,10.43,FP16,10.13,0.3,absolute,False,measured,4,Analyzing the quantization error.,Table 1,10.51 | 10.43 | 10.42
+RP15,OPT-13B,FP16% (based on act.) 3%,3-bit,g128,WikiText-2,Perplexity,10.42,FP16,10.13,0.29,absolute,False,measured,4,Analyzing the quantization error.,Table 1,10.51 | 10.43 | 10.42
+RP15,OPT-6.7B,Scaled-RTN s=1.25,3-bit,g128,WikiText-2,Perplexity,12.87,RTN (s=1),23.54,-10.67,absolute,False,measured,4,Analyzing the quantization error.,Table 2,Wiki-2 PPL | 23.54 | 12.87 | 12.48 | 11.92 | 12.36
+RP15,OPT-6.7B,Scaled-RTN s=1.5,3-bit,g128,WikiText-2,Perplexity,12.48,RTN (s=1),23.54,-11.06,absolute,False,measured,4,Analyzing the quantization error.,Table 2,Wiki-2 PPL | 23.54 | 12.87 | 12.48 | 11.92 | 12.36
+RP15,OPT-6.7B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,11.92,RTN (s=1),23.54,-11.62,absolute,False,measured,4,Analyzing the quantization error.,Table 2,the perplexity improves from 23.54 for s = 1 (simply RTN) to 11.92 for s = 2
+RP15,OPT-6.7B,Scaled-RTN s=4,3-bit,g128,WikiText-2,Perplexity,12.36,RTN (s=1),23.54,-11.18,absolute,False,measured,4,Analyzing the quantization error.,Table 2,Wiki-2 PPL | 23.54 | 12.87 | 12.48 | 11.92 | 12.36
+RP15,OPT-2.7B,FP16,16-bit,,WikiText-2,Perplexity,12.47,,,,,False,measured,4,Analyzing the quantization error.,Table 3,FP16 | 14.62 | 12.47 | 10.86 | 10.13 | 9.56
+RP15,OPT-30B,FP16,16-bit,,WikiText-2,Perplexity,9.56,,,,,False,measured,4,Analyzing the quantization error.,Table 3,FP16 | 14.62 | 12.47 | 10.86 | 10.13 | 9.56
+RP15,OPT-1.3B,RTN (Table 3),3-bit,g128,WikiText-2,Perplexity,119.47,FP16,14.62,104.85,absolute,False,measured,4,Analyzing the quantization error.,Table 3,RTN | 119.47 | 298.00 | 23.54 | 46.04 | 18.80
+RP15,OPT-2.7B,RTN,3-bit,g128,WikiText-2,Perplexity,298.0,FP16,12.47,285.53,absolute,False,measured,4,Analyzing the quantization error.,Table 3,RTN | 119.47 | 298.00 | 23.54 | 46.04 | 18.80
+RP15,OPT-30B,RTN,3-bit,g128,WikiText-2,Perplexity,18.8,FP16,9.56,9.24,absolute,False,measured,4,Analyzing the quantization error.,Table 3,RTN | 119.47 | 298.00 | 23.54 | 46.04 | 18.80
+RP15,OPT-1.3B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,16.91,FP16,14.62,2.29,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-2.7B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,13.69,FP16,12.47,1.22,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-6.7B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-13B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,10.43,FP16,10.13,0.3,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-30B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,9.85,FP16,9.56,0.29,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-1.3B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,18.63,FP16,14.62,4.01,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-2.7B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,14.94,FP16,12.47,2.47,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-13B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,10.8,FP16,10.13,0.67,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-30B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,10.32,FP16,9.56,0.76,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-1.3B,AWQ,3-bit,g128,WikiText-2,Perplexity,16.32,FP16,14.62,1.7,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-2.7B,AWQ,3-bit,g128,WikiText-2,Perplexity,13.58,FP16,12.47,1.11,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-6.7B,AWQ,3-bit,g128,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-13B,AWQ,3-bit,g128,WikiText-2,Perplexity,10.56,FP16,10.13,0.43,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-30B,AWQ,3-bit,g128,WikiText-2,Perplexity,9.77,FP16,9.56,0.21,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,Llama-2-7B,FP16,16-bit,,WikiText-2,Perplexity,5.47,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,Llama-2-13B,FP16,16-bit,,WikiText-2,Perplexity,4.88,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32
+RP15,Llama-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.32,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32
+RP15,LLaMA-7B,FP16,16-bit,,WikiText-2,Perplexity,5.68,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,LLaMA-13B,FP16,16-bit,,WikiText-2,Perplexity,5.09,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,LLaMA-30B,FP16,16-bit,,WikiText-2,Perplexity,4.1,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,LLaMA-65B,FP16,16-bit,,WikiText-2,Perplexity,3.53,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,Llama-2-7B,RTN,3-bit,g128,WikiText-2,Perplexity,6.66,FP16,5.47,1.19,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,Llama-2-13B,RTN,3-bit,g128,WikiText-2,Perplexity,5.52,FP16,4.88,0.64,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98
+RP15,Llama-2-70B,RTN,3-bit,g128,WikiText-2,Perplexity,3.98,FP16,3.32,0.66,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98
+RP15,LLaMA-7B,RTN,3-bit,g128,WikiText-2,Perplexity,7.01,FP16,5.68,1.33,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,LLaMA-13B,RTN,3-bit,g128,WikiText-2,Perplexity,5.88,FP16,5.09,0.79,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,LLaMA-30B,RTN,3-bit,g128,WikiText-2,Perplexity,4.88,FP16,4.1,0.78,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,LLaMA-65B,RTN,3-bit,g128,WikiText-2,Perplexity,4.24,FP16,3.53,0.71,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,Llama-2-7B,GPTQ,3-bit,g128,WikiText-2,Perplexity,6.43,FP16,5.47,0.96,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,Llama-2-13B,GPTQ,3-bit,g128,WikiText-2,Perplexity,5.48,FP16,4.88,0.6,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88
+RP15,Llama-2-70B,GPTQ,3-bit,g128,WikiText-2,Perplexity,3.88,FP16,3.32,0.56,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88
+RP15,LLaMA-7B,GPTQ,3-bit,g128,WikiText-2,Perplexity,8.81,FP16,5.68,3.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,LLaMA-13B,GPTQ,3-bit,g128,WikiText-2,Perplexity,5.66,FP16,5.09,0.57,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,LLaMA-30B,GPTQ,3-bit,g128,WikiText-2,Perplexity,4.88,FP16,4.1,0.78,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,LLaMA-65B,GPTQ,3-bit,g128,WikiText-2,Perplexity,4.17,FP16,3.53,0.64,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,Llama-2-7B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,6.42,FP16,5.47,0.95,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,Llama-2-13B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,5.41,FP16,4.88,0.53,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86
+RP15,Llama-2-70B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,3.86,FP16,3.32,0.54,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86
+RP15,LLaMA-7B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,6.53,FP16,5.68,0.85,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,LLaMA-13B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,5.64,FP16,5.09,0.55,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,LLaMA-30B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,4.74,FP16,4.1,0.64,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,LLaMA-65B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,4.21,FP16,3.53,0.68,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,Llama-2-7B,AWQ,3-bit,g128,WikiText-2,Perplexity,6.24,FP16,5.47,0.77,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,Llama-2-13B,AWQ,3-bit,g128,WikiText-2,Perplexity,5.32,FP16,4.88,0.44,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74**
+RP15,Llama-2-70B,AWQ,3-bit,g128,WikiText-2,Perplexity,3.74,FP16,3.32,0.42,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74**
+RP15,LLaMA-7B,AWQ,3-bit,g128,WikiText-2,Perplexity,6.35,FP16,5.68,0.67,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,LLaMA-13B,AWQ,3-bit,g128,WikiText-2,Perplexity,5.52,FP16,5.09,0.43,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,LLaMA-30B,AWQ,3-bit,g128,WikiText-2,Perplexity,4.61,FP16,4.1,0.51,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,LLaMA-65B,AWQ,3-bit,g128,WikiText-2,Perplexity,3.95,FP16,3.53,0.42,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,Llama-2-7B,RTN,4-bit,g128,WikiText-2,Perplexity,5.73,FP16,5.47,0.26,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,Llama-2-13B,RTN,4-bit,g128,WikiText-2,Perplexity,4.98,FP16,4.88,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46
+RP15,Llama-2-70B,RTN,4-bit,g128,WikiText-2,Perplexity,3.46,FP16,3.32,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46
+RP15,LLaMA-7B,RTN,4-bit,g128,WikiText-2,Perplexity,5.96,FP16,5.68,0.28,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,LLaMA-13B,RTN,4-bit,g128,WikiText-2,Perplexity,5.25,FP16,5.09,0.16,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,LLaMA-30B,RTN,4-bit,g128,WikiText-2,Perplexity,4.23,FP16,4.1,0.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,LLaMA-65B,RTN,4-bit,g128,WikiText-2,Perplexity,3.67,FP16,3.53,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,Llama-2-7B,GPTQ,4-bit,g128,WikiText-2,Perplexity,5.69,FP16,5.47,0.22,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,Llama-2-13B,GPTQ,4-bit,g128,WikiText-2,Perplexity,4.98,FP16,4.88,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42
+RP15,Llama-2-70B,GPTQ,4-bit,g128,WikiText-2,Perplexity,3.42,FP16,3.32,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42
+RP15,LLaMA-7B,GPTQ,4-bit,g128,WikiText-2,Perplexity,6.22,FP16,5.68,0.54,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,LLaMA-13B,GPTQ,4-bit,g128,WikiText-2,Perplexity,5.23,FP16,5.09,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,LLaMA-30B,GPTQ,4-bit,g128,WikiText-2,Perplexity,4.24,FP16,4.1,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,LLaMA-65B,GPTQ,4-bit,g128,WikiText-2,Perplexity,3.66,FP16,3.53,0.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,Llama-2-7B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,5.63,FP16,5.47,0.16,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,Llama-2-13B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,4.99,FP16,4.88,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43
+RP15,Llama-2-70B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,3.43,FP16,3.32,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43
+RP15,LLaMA-7B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,5.83,FP16,5.68,0.15,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,LLaMA-13B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,5.2,FP16,5.09,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,LLaMA-30B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,4.22,FP16,4.1,0.12,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,LLaMA-65B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,3.66,FP16,3.53,0.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,Llama-2-7B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.6,FP16,5.47,0.13,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,Llama-2-13B,AWQ,4-bit,g128,WikiText-2,Perplexity,4.97,FP16,4.88,0.09,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41**
+RP15,Llama-2-70B,AWQ,4-bit,g128,WikiText-2,Perplexity,3.41,FP16,3.32,0.09,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41**
+RP15,LLaMA-7B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.78,FP16,5.68,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,LLaMA-13B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.19,FP16,5.09,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,LLaMA-30B,AWQ,4-bit,g128,WikiText-2,Perplexity,4.21,FP16,4.1,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,LLaMA-65B,AWQ,4-bit,g128,WikiText-2,Perplexity,3.62,FP16,3.53,0.09,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,Mixtral-8x7B-Instruct-v0.1,FP16,16-bit,,WikiText-2,Perplexity,5.94,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,FP16 | 5.94 | 4.14
+RP15,Mistral-7B-Instruct-v0.2,FP16,16-bit,,WikiText-2,Perplexity,4.14,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,FP16 | 5.94 | 4.14
+RP15,Mixtral-8x7B-Instruct-v0.1,AWQ,4-bit,g128,WikiText-2,Perplexity,6.05,FP16,5.94,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT4-g128 | 6.05 | 4.30
+RP15,Mistral-7B-Instruct-v0.2,AWQ,4-bit,g128,WikiText-2,Perplexity,4.3,FP16,4.14,0.16,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT4-g128 | 6.05 | 4.30
+RP15,Mixtral-8x7B-Instruct-v0.1,AWQ,3-bit,g128,WikiText-2,Perplexity,6.52,FP16,5.94,0.58,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT3-g128 | 6.52 | 4.83
+RP15,Mistral-7B-Instruct-v0.2,AWQ,3-bit,g128,WikiText-2,Perplexity,4.83,FP16,4.14,0.69,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT3-g128 | 6.52 | 4.83
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (0-shot),CIDEr,63.73,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (4-shot),CIDEr,72.18,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (8-shot),CIDEr,76.95,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (16-shot),CIDEr,79.74,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (32-shot),CIDEr,81.7,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,RTN,4-bit,g128,COCO Captioning (32-shot),CIDEr,77.13,FP16,81.7,-4.57,absolute,False,measured,8,5.2 Evaluation,Table 6,INT4g128 | RTNGPTQAWQ | 60.2459.72**62.57** | 68.0767.68**71.02** | 72.4672.53**74.75** | 74.0974.98**78.23** | 77.1374.98**80.53** | -4.57-6.72**-1.17**
+RP15,OpenFlamingo-9B,GPTQ,4-bit,g128,COCO Captioning (32-shot),CIDEr,74.98,FP16,81.7,-6.72,absolute,False,measured,8,5.2 Evaluation,Table 6,77.1374.98**80.53** | -4.57-6.72**-1.17**
+RP15,OpenFlamingo-9B,AWQ,4-bit,g128,COCO Captioning (32-shot),CIDEr,80.53,FP16,81.7,-1.17,absolute,True,measured,8,5.2 Evaluation,Table 6,It reduces the quantization degradation (32-shot) from 4.57 to 1.17 under INT4-g128
+RP15,OpenFlamingo-9B,RTN,3-bit,g128,COCO Captioning (32-shot),CIDEr,64.79,FP16,81.7,-16.91,absolute,False,measured,8,5.2 Evaluation,Table 6,INT3g128 | RTNGPTQAWQ | 46.0729.84**56.33** | ... | 64.7964.77**74.47** | -16.91-16.93**-7.23**
+RP15,OpenFlamingo-9B,GPTQ,3-bit,g128,COCO Captioning (32-shot),CIDEr,64.77,FP16,81.7,-16.93,absolute,False,measured,8,5.2 Evaluation,Table 6,64.7964.77**74.47** | -16.91-16.93**-7.23**
+RP15,OpenFlamingo-9B,AWQ,3-bit,g128,COCO Captioning (32-shot),CIDEr,74.47,FP16,81.7,-7.23,absolute,False,measured,8,5.2 Evaluation,Table 6,64.7964.77**74.47** | -16.91-16.93**-7.23**
+RP15,VILA-7B,AWQ,4-bit,g128,VQAv2,Accuracy,80.1,FP16,80.3,-0.2,absolute,True,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3 | 68.8 | 61.3 | 75.8 | 35.9
+RP15,VILA-7B,AWQ,4-bit,g128,GQA,Accuracy,63.0,FP16,63.1,-0.1,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8
+RP15,VILA-7B,AWQ,4-bit,g128,VizWiz,Accuracy,57.8,FP16,59.6,-1.8,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0
+RP15,VILA-7B,AWQ,4-bit,g128,POPE,Accuracy,85.3,FP16,86.3,-1.0,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3
+RP15,VILA-7B,AWQ,4-bit,g128,MME,Score,1486.3,FP16,1489.4,-3.1,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3
+RP15,VILA-7B,AWQ,4-bit,g128,MMBench,Accuracy,68.8,FP16,69.8,-1.0,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3 | 68.8
+RP15,VILA-7B,AWQ,4-bit,g128,SEED-Bench,Accuracy,61.3,FP16,61.7,-0.4,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3 | 68.8 | 61.3
+RP15,VILA-13B,AWQ,4-bit,g128,VQAv2,Accuracy,80.4,FP16,80.5,-0.1,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-13B-AWQ | 80.4 | 63.6 | 63.0 | 71.2 | 63.5 | 87.0 | 1552.9
+RP15,VILA-13B,AWQ,4-bit,g128,MME,Score,1552.9,FP16,1553.6,-0.7,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-13B-AWQ | 80.4 | 63.6 | 63.0 | 71.2 | 63.5 | 87.0 | 1552.9
+RP15,CodeLlama-7B-Instruct,FP16,16-bit,,MBPP,pass@1,38.53,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 38.53 | 49.77
+RP15,CodeLlama-7B-Instruct,FP16,16-bit,,MBPP,pass@10,49.77,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 38.53 | 49.77
+RP15,CodeLlama-7B-Instruct,RTN,4-bit,g128,MBPP,pass@1,37.51,FP16,38.53,-1.02,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 37.51 | 48.49
+RP15,CodeLlama-7B-Instruct,RTN,4-bit,g128,MBPP,pass@10,48.49,FP16,49.77,-1.28,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 37.51 | 48.49
+RP15,CodeLlama-7B-Instruct,GPTQ,4-bit,g128,MBPP,pass@1,31.97,FP16,38.53,-6.56,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 31.97 | 44.75
+RP15,CodeLlama-7B-Instruct,GPTQ,4-bit,g128,MBPP,pass@10,44.75,FP16,49.77,-5.02,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 31.97 | 44.75
+RP15,CodeLlama-7B-Instruct,AWQ,4-bit,g128,MBPP,pass@1,40.64,FP16,38.53,2.11,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **40.64** | **49.25**
+RP15,CodeLlama-7B-Instruct,AWQ,4-bit,g128,MBPP,pass@10,49.25,FP16,49.77,-0.52,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **40.64** | **49.25**
+RP15,Llama-2-7B,FP16,16-bit,,GSM8K,Accuracy,13.87,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 13.87 | 26.16 | 56.41
+RP15,Llama-2-13B,FP16,16-bit,,GSM8K,Accuracy,26.16,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 13.87 | 26.16 | 56.41
+RP15,Llama-2-70B,FP16,16-bit,,GSM8K,Accuracy,56.41,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 13.87 | 26.16 | 56.41
+RP15,Llama-2-7B,RTN,4-bit,g128,GSM8K,Accuracy,11.07,FP16,13.87,-2.8,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 11.07 | 21.23 | 53.98
+RP15,Llama-2-13B,RTN,4-bit,g128,GSM8K,Accuracy,21.23,FP16,26.16,-4.93,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 11.07 | 21.23 | 53.98
+RP15,Llama-2-70B,RTN,4-bit,g128,GSM8K,Accuracy,53.98,FP16,56.41,-2.43,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 11.07 | 21.23 | 53.98
+RP15,Llama-2-7B,GPTQ,4-bit,g128,GSM8K,Accuracy,12.13,FP16,13.87,-1.74,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 12.13 | 24.26 | 56.03
+RP15,Llama-2-13B,GPTQ,4-bit,g128,GSM8K,Accuracy,24.26,FP16,26.16,-1.9,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 12.13 | 24.26 | 56.03
+RP15,Llama-2-70B,GPTQ,4-bit,g128,GSM8K,Accuracy,56.03,FP16,56.41,-0.38,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 12.13 | 24.26 | 56.03
+RP15,Llama-2-7B,AWQ,4-bit,g128,GSM8K,Accuracy,13.57,FP16,13.87,-0.3,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **13.57** | **25.25** | **56.40**
+RP15,Llama-2-13B,AWQ,4-bit,g128,GSM8K,Accuracy,25.25,FP16,26.16,-0.91,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **13.57** | **25.25** | **56.40**
+RP15,Llama-2-70B,AWQ,4-bit,g128,GSM8K,Accuracy,56.4,FP16,56.41,-0.01,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **13.57** | **25.25** | **56.40**
+RP15,OPT-1.3B,RTN,2-bit,g64,WikiText-2,Perplexity,10476,FP16,14.62,10461.38,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-2.7B,RTN,2-bit,g64,WikiText-2,Perplexity,193210,FP16,12.47,193197.53,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-6.7B,RTN,2-bit,g64,WikiText-2,Perplexity,7622,FP16,10.86,7611.14,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-13B,RTN,2-bit,g64,WikiText-2,Perplexity,17564,FP16,10.13,17553.87,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-30B,RTN,2-bit,g64,WikiText-2,Perplexity,8170,FP16,9.56,8160.44,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-1.3B,GPTQ,2-bit,g64,WikiText-2,Perplexity,46.67,FP16,14.62,32.05,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-2.7B,GPTQ,2-bit,g64,WikiText-2,Perplexity,28.15,FP16,12.47,15.68,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-6.7B,GPTQ,2-bit,g64,WikiText-2,Perplexity,16.65,FP16,10.86,5.79,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-13B,GPTQ,2-bit,g64,WikiText-2,Perplexity,16.74,FP16,10.13,6.61,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-30B,GPTQ,2-bit,g64,WikiText-2,Perplexity,11.75,FP16,9.56,2.19,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-1.3B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,35.71,FP16,14.62,21.09,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-2.7B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,25.7,FP16,12.47,13.23,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-6.7B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,15.71,FP16,10.86,4.85,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-13B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,13.25,FP16,10.13,3.12,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-30B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,11.38,FP16,9.56,1.82,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-6.7B,GPTQ (PubMed cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,32.48,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,GPTQ (PubMed cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,50.41,,,4.89,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,AWQ (PubMed cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,32.56,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,AWQ (PubMed cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,45.07,,,0.5,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,GPTQ (Enron cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,34.81,,,2.33,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,OPT-6.7B,GPTQ (Enron cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,45.52,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,OPT-6.7B,AWQ (Enron cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,33.16,,,0.6,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,OPT-6.7B,AWQ (Enron cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,44.57,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,VILA-7B,FP16,16-bit,,A100,Throughput (tokens/s),81.6,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B | FP16 | 81.6 | 58.5 | 11.5
+RP15,VILA-7B,FP16,16-bit,,RTX 4090,Throughput (tokens/s),58.5,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B | FP16 | 81.6 | 58.5 | 11.5
+RP15,VILA-7B,FP16,16-bit,,Jetson Orin,Throughput (tokens/s),11.5,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B | FP16 | 81.6 | 58.5 | 11.5
+RP15,VILA-7B,AWQ,4-bit,,A100,Throughput (tokens/s),155.3,FP16,81.6,1.9,x_factor,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B-AWQ | W4A16 | 155.3 | 168.1 | 35.6
+RP15,VILA-7B,AWQ,4-bit,,RTX 4090,Throughput (tokens/s),168.1,FP16,58.5,2.87,x_factor,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B-AWQ | W4A16 | 155.3 | 168.1 | 35.6
+RP15,VILA-7B,AWQ,4-bit,,Jetson Orin,Throughput (tokens/s),35.6,FP16,11.5,3.1,x_factor,True,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B-AWQ | W4A16 | 155.3 | 168.1 | 35.6 ... TinyChat accelerates VILA-7B by up to 3.1x
+RP15,VILA-13B,FP16,16-bit,,A100,Throughput (tokens/s),48.5,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B | FP16 | 48.5 | OOM | 6.1
+RP15,VILA-13B,FP16,16-bit,,Jetson Orin,Throughput (tokens/s),6.1,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B | FP16 | 48.5 | OOM | 6.1
+RP15,VILA-13B,AWQ,4-bit,,A100,Throughput (tokens/s),102.1,FP16,48.5,2.1,x_factor,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B-AWQ | W4A16 | 102.1 | 99.0 | 17.5
+RP15,VILA-13B,AWQ,4-bit,,RTX 4090,Throughput (tokens/s),99.0,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B-AWQ | W4A16 | 102.1 | 99.0 | 17.5
+RP15,VILA-13B,AWQ,4-bit,,Jetson Orin,Throughput (tokens/s),17.5,FP16,6.1,2.87,x_factor,True,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B-AWQ | W4A16 | 102.1 | 99.0 | 17.5 ... VILA-13B by up to 2.9x
+RP15,OPT-6.7B,RTN (Figure 2 left),3-bit,g128,WikiText-2,Perplexity,43.2,,,,,False,measured,3,2 RELATED WORK,Figure 2,Keeping the salient weights in FP16 can significantly improve the quantized performance (PPL from 43.2 (left) to 13.0 (middle))
+RP15,OPT-6.7B,"Mixed-precision (1% FP16 salient by act, Figure 2 middle)",3-bit,g128,WikiText-2,Perplexity,13.0,RTN,43.2,-30.2,absolute,False,measured,3,2 RELATED WORK,Figure 2,Keeping the salient weights in FP16 can significantly improve the quantized performance (PPL from 43.2 (left) to 13.0 (middle))
+RP15,LLaMA-7B,FP16 (FasterTransformer),16-bit,,RTX 4090,Latency (ms / 20 tokens),310,,,,,False,measured,5,4.1 Why AWQ Helps Accelerate On-Device LLMs,Figure 3,it takes 310 ms to generate 20 tokens
+RP15,LLaMA-7B,FP16 (FasterTransformer),16-bit,,RTX 4090,Context latency (ms / 200 tokens),10,,,,,False,measured,6,4.1 Why AWQ Helps Accelerate On-Device LLMs,Figure 3,summarizing a prompt with 200 tokens only takes 10 ms
+RP15,Llama-2-7B,FP16 (Huggingface),16-bit,,RTX 4090,Throughput (tokens/s),52,,,,,False,measured,11,5.4 Speedup Evaluation,Figure 9,we improve the inference speed from 52 tokens/s to 62 tokens/s through FP16 kernel fusion
+RP15,Llama-2-7B,FP16 (TinyChat fused),16-bit,,RTX 4090,Throughput (tokens/s),62,FP16 (Huggingface),52,10,absolute,False,measured,11,5.4 Speedup Evaluation,Figure 9,we improve the inference speed from 52 tokens/s to 62 tokens/s through FP16 kernel fusion
+RP15,Llama-2-7B,AWQ (TinyChat),4-bit,g128,RTX 4090,Speedup over fused FP16,3.1,FP16 (TinyChat fused),1.0,2.1,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 9,"On top of the stronger FP16 baseline, we further harvest 3.1x additional speedup from the fast quantized linear kernels"
+RP15,Llama-2 family,AWQ (TinyChat),4-bit,g128,RTX 4090,Max Speedup over FP16 (Huggingface),3.9,FP16 (Huggingface),1.0,2.9,x_factor,True,measured,10,5.2 Evaluation,Figure 9,"TinyChat is up to 3.9 x and 3.5 x faster than the FP16 implementation from Huggingface on 4090 (desktop GPU) and Orin (mobile GPU), respectively"
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Max Speedup over FP16 (Huggingface),3.5,FP16 (Huggingface),1.0,2.5,x_factor,True,measured,10,5.2 Evaluation,Figure 9,"TinyChat is up to 3.9 x and 3.5 x faster than the FP16 implementation from Huggingface on 4090 (desktop GPU) and Orin (mobile GPU), respectively"
+RP15,Llama-2-13B,AWQ (TinyChat),4-bit,g128,"RTX 4070 (laptop, 8GB)",Throughput (tokens/s),33,,,,,False,measured,11,5.4 Speedup Evaluation,Figure 9,we are still able to run Llama-2-13B models at 33 tokens/s
+RP15,13B LLM,AWQ (TinyChat),4-bit,g128,"RTX 4070 (laptop, 8GB)",Throughput (tokens/s),30,,,,,True,measured,2,1 Introduction,Introduction,democratizes 13 billion parameter LLM at an interactive pace of 30 tokens/second on a laptop RTX 4070 GPU with only 8GB of memory
+RP15,Llama family (avg),AWQ (TinyChat),4-bit,g128,Desktop/Laptop/Mobile GPUs,Average Speedup over FP16 (Huggingface),3.25,FP16 (Huggingface),1.0,2.25,x_factor,True,measured,2,1 Introduction,Abstract/Intro,we consistently observe a 3.2-3.3x average speedup compared to the FP16 implementation by Huggingface
+RP15,7B family,AWQ (TinyChat),4-bit,g128,Raspberry Pi 4B,Throughput (tokens/s),0.7,,,,,False,measured,11,5.4 Speedup Evaluation,Figure 10,"TinyChat even democratizes LLM deployment on extremely resource-constrained Raspberry Pi 4B, achieving 0.7 tokens/s for 7B models"
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Speedup over llama.cpp,1.7,llama.cpp,1.0,0.7,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,Our system achieves up to 1.7x speedup over llama.cpp on Orin
+RP15,general LLMs,AWQ (TinyChat),4-bit,g128,Jetson Orin,Min Speedup over AutoGPTQ,2.6,AutoGPTQ,1.0,1.6,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,at least 2.6x speedup over AutoGPTQ
+RP15,Falcon-7B,FP16 fused (TinyChat),16-bit,,RTX 4090,Speedup over baseline FP16,1.6,"FP16 (Huggingface, no KV cache)",1.0,0.6,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 9,our FP16 optimizations bring about a larger speedup of 1.6x
+RP15,Llama-2/MPT/Falcon,AWQ (TinyChat),4-bit,g128,RTX 4090,Min Speedup over FP16 (Huggingface),2.7,FP16 (Huggingface),1.0,1.7,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 9,"TinyChat brings 2.7-3.9x speedup to three families of LLMs (Llama-2, MPT and Falcon) on 4090"
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Min Speedup over existing systems,1.2,existing edge LLM systems,1.0,0.2,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,TinyChat offers 1.2-3.0x speedup over existing systems when running 4-bit quantized Llama models on NVIDIA Jetson Orin
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Max Speedup over existing systems,3.0,existing edge LLM systems,1.0,2.0,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,TinyChat offers 1.2-3.0x speedup over existing systems when running 4-bit quantized Llama models on NVIDIA Jetson Orin
+RP15,ARM CPU SIMD (general),AWQ (TinyChat platform-aware packing),4-bit,,ARM CPU 128-bit SIMD,Speedup over conventional packing,1.2,conventional packing,1.0,0.2,x_factor,False,measured,6,4.2 Deploy AWQ with TinyChat,Figure 4,our strategy for ARM CPUs with 128-bit SIMD registers offering up to 1.2 x speedup

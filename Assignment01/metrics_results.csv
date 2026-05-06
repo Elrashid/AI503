@@ -1,0 +1,555 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP09,ResNet-18,GPTQ,4-bit,,ImageNet,Top-1 Accuracy,69.37,FP32,69.76,-0.39,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,ResNet-18,GPTQ,3-bit,,ImageNet,Top-1 Accuracy,67.88,FP32,69.76,-1.88,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,ResNet-50,GPTQ,4-bit,,ImageNet,Top-1 Accuracy,75.71,FP32,76.13,-0.42,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,ResNet-50,GPTQ,3-bit,,ImageNet,Top-1 Accuracy,74.87,FP32,76.13,-1.26,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,OPT-13B,GPTQ,,,C4,Quantization runtime (minutes),20.9,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,OPT | 13B | 30B | 66B | 175B | Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,OPT-30B,GPTQ,,,C4,Quantization runtime (minutes),44.9,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,OPT-66B,GPTQ,,,C4,Quantization runtime (hours),1.6,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,OPT-175B,GPTQ,,,C4,Quantization runtime (hours),4.2,,,,,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,BLOOM-1.7B,GPTQ,,,C4,Quantization runtime (minutes),2.9,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,BLOOM | 1.7B | 3B | 7.1B | 176B | Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,BLOOM-3B,GPTQ,,,C4,Quantization runtime (minutes),5.2,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,BLOOM-7.1B,GPTQ,,,C4,Quantization runtime (minutes),10.0,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,BLOOM-176B,GPTQ,,,C4,Quantization runtime (hours),3.8,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,OPT-125M,FP16,16-bit,,WikiText-2,Perplexity,27.65,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | 22.00 | 14.63 | 12.47 | 10.86 | 10.13 | 9.56 | 9.34 | 8.34
+RP09,OPT-350M,FP16,16-bit,,WikiText-2,Perplexity,22.0,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | 22.00 | 14.63
+RP09,OPT-1.3B,FP16,16-bit,,WikiText-2,Perplexity,14.63,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | 22.00 | 14.63 | 12.47
+RP09,OPT-2.7B,FP16,16-bit,,WikiText-2,Perplexity,12.47,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 12.47 | 10.86
+RP09,OPT-6.7B,FP16,16-bit,,WikiText-2,Perplexity,10.86,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 10.86 | 10.13
+RP09,OPT-13B,FP16,16-bit,,WikiText-2,Perplexity,10.13,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 10.13 | 9.56
+RP09,OPT-30B,FP16,16-bit,,WikiText-2,Perplexity,9.56,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 9.56 | 9.34
+RP09,OPT-66B,FP16,16-bit,,WikiText-2,Perplexity,9.34,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 9.34 | 8.34
+RP09,OPT-175B,FP16,16-bit,,WikiText-2,Perplexity,8.34,,,,,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | ... | 8.34
+RP09,OPT-125M,RTN,4-bit,,WikiText-2,Perplexity,37.28,FP16,27.65,9.63,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | 37.28 | 25.94 | 48.17 | 16.92 | 12.10 | 11.32 | 10.98 | 110 | 10.54
+RP09,OPT-350M,RTN,4-bit,,WikiText-2,Perplexity,25.94,FP16,22.0,3.94,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | 37.28 | 25.94 | 48.17
+RP09,OPT-1.3B,RTN,4-bit,,WikiText-2,Perplexity,48.17,FP16,14.63,33.54,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | 37.28 | 25.94 | 48.17 | 16.92
+RP09,OPT-2.7B,RTN,4-bit,,WikiText-2,Perplexity,16.92,FP16,12.47,4.45,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 48.17 | 16.92 | 12.10
+RP09,OPT-6.7B,RTN,4-bit,,WikiText-2,Perplexity,12.1,FP16,10.86,1.24,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 16.92 | 12.10 | 11.32
+RP09,OPT-13B,RTN,4-bit,,WikiText-2,Perplexity,11.32,FP16,10.13,1.19,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 12.10 | 11.32 | 10.98
+RP09,OPT-30B,RTN,4-bit,,WikiText-2,Perplexity,10.98,FP16,9.56,1.42,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 11.32 | 10.98 | 110
+RP09,OPT-66B,RTN,4-bit,,WikiText-2,Perplexity,110,FP16,9.34,100.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 10.98 | 110 | 10.54
+RP09,OPT-175B,RTN,4-bit,,WikiText-2,Perplexity,10.54,FP16,8.34,2.2,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... | 110 | 10.54
+RP09,OPT-125M,GPTQ,4-bit,,WikiText-2,Perplexity,31.12,FP16,27.65,3.47,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | **31.12** | **24.24** | **15.47** | **12.87** | **11.39** | **10.31** | **9.63** | **9.55** | **8.37**
+RP09,OPT-350M,GPTQ,4-bit,,WikiText-2,Perplexity,24.24,FP16,22.0,2.24,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | **31.12** | **24.24** | **15.47**
+RP09,OPT-1.3B,GPTQ,4-bit,,WikiText-2,Perplexity,15.47,FP16,14.63,0.84,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **15.47** | **12.87**
+RP09,OPT-2.7B,GPTQ,4-bit,,WikiText-2,Perplexity,12.87,FP16,12.47,0.4,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **12.87** | **11.39**
+RP09,OPT-6.7B,GPTQ,4-bit,,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **11.39** | **10.31**
+RP09,OPT-13B,GPTQ,4-bit,,WikiText-2,Perplexity,10.31,FP16,10.13,0.18,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **10.31** | **9.63**
+RP09,OPT-30B,GPTQ,4-bit,,WikiText-2,Perplexity,9.63,FP16,9.56,0.07,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **9.63** | **9.55**
+RP09,OPT-66B,GPTQ,4-bit,,WikiText-2,Perplexity,9.55,FP16,9.34,0.21,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **9.55** | **8.37**
+RP09,OPT-175B,GPTQ,4-bit,,WikiText-2,Perplexity,8.37,FP16,8.34,0.03,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **8.37**
+RP09,OPT-125M,RTN,3-bit,,WikiText-2,Perplexity,1300,FP16,27.65,1272.35,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | 1.3e3 | 64.57 | 1.3e4 | 1.6e4 | 5.8e3 | 3.4e3 | 1.6e3 | 6.1e3 | 7.3e3
+RP09,OPT-350M,RTN,3-bit,,WikiText-2,Perplexity,64.57,FP16,22.0,42.57,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | 1.3e3 | 64.57 | 1.3e4
+RP09,OPT-1.3B,RTN,3-bit,,WikiText-2,Perplexity,13000,FP16,14.63,12985.37,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | 1.3e3 | 64.57 | 1.3e4 | 1.6e4
+RP09,OPT-2.7B,RTN,3-bit,,WikiText-2,Perplexity,16000,FP16,12.47,15987.53,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 1.3e4 | 1.6e4 | 5.8e3
+RP09,OPT-6.7B,RTN,3-bit,,WikiText-2,Perplexity,5800,FP16,10.86,5789.14,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 1.6e4 | 5.8e3 | 3.4e3
+RP09,OPT-13B,RTN,3-bit,,WikiText-2,Perplexity,3400,FP16,10.13,3389.87,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 5.8e3 | 3.4e3 | 1.6e3
+RP09,OPT-30B,RTN,3-bit,,WikiText-2,Perplexity,1600,FP16,9.56,1590.44,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 3.4e3 | 1.6e3 | 6.1e3
+RP09,OPT-66B,RTN,3-bit,,WikiText-2,Perplexity,6100,FP16,9.34,6090.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 1.6e3 | 6.1e3 | 7.3e3
+RP09,OPT-175B,RTN,3-bit,,WikiText-2,Perplexity,7300,FP16,8.34,7291.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 6.1e3 | 7.3e3
+RP09,OPT-125M,GPTQ,3-bit,,WikiText-2,Perplexity,53.85,FP16,27.65,26.2,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | **53.85** | **33.79** | **20.97** | **16.88** | **14.86** | **11.61** | **10.27** | **14.16** | **8.68**
+RP09,OPT-350M,GPTQ,3-bit,,WikiText-2,Perplexity,33.79,FP16,22.0,11.79,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | **53.85** | **33.79** | **20.97**
+RP09,OPT-1.3B,GPTQ,3-bit,,WikiText-2,Perplexity,20.97,FP16,14.63,6.34,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **20.97** | **16.88**
+RP09,OPT-2.7B,GPTQ,3-bit,,WikiText-2,Perplexity,16.88,FP16,12.47,4.41,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **16.88** | **14.86**
+RP09,OPT-6.7B,GPTQ,3-bit,,WikiText-2,Perplexity,14.86,FP16,10.86,4.0,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **14.86** | **11.61**
+RP09,OPT-13B,GPTQ,3-bit,,WikiText-2,Perplexity,11.61,FP16,10.13,1.48,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **11.61** | **10.27**
+RP09,OPT-30B,GPTQ,3-bit,,WikiText-2,Perplexity,10.27,FP16,9.56,0.71,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **10.27** | **14.16**
+RP09,OPT-66B,GPTQ,3-bit,,WikiText-2,Perplexity,14.16,FP16,9.34,4.82,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **14.16** | **8.68**
+RP09,OPT-175B,GPTQ,3-bit,,WikiText-2,Perplexity,8.68,FP16,8.34,0.34,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **8.68**
+RP09,BLOOM-560M,FP16,16-bit,,WikiText-2,Perplexity,22.42,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | 22.42 | 17.69 | 15.39 | 13.48 | 11.37 | 8.11
+RP09,BLOOM-1.1B,FP16,16-bit,,WikiText-2,Perplexity,17.69,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | 22.42 | 17.69 | 15.39
+RP09,BLOOM-1.7B,FP16,16-bit,,WikiText-2,Perplexity,15.39,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... 15.39 | 13.48
+RP09,BLOOM-3B,FP16,16-bit,,WikiText-2,Perplexity,13.48,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... 13.48 | 11.37
+RP09,BLOOM-7.1B,FP16,16-bit,,WikiText-2,Perplexity,11.37,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... 11.37 | 8.11
+RP09,BLOOM-176B,FP16,16-bit,,WikiText-2,Perplexity,8.11,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... | 8.11
+RP09,BLOOM-560M,RTN,4-bit,,WikiText-2,Perplexity,25.9,FP16,22.42,3.48,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | 25.90 | 22.00 | 16.97 | 14.76 | 12.10 | 8.37
+RP09,BLOOM-1.1B,RTN,4-bit,,WikiText-2,Perplexity,22.0,FP16,17.69,4.31,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | 25.90 | 22.00 | 16.97
+RP09,BLOOM-1.7B,RTN,4-bit,,WikiText-2,Perplexity,16.97,FP16,15.39,1.58,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 22.00 | 16.97 | 14.76
+RP09,BLOOM-3B,RTN,4-bit,,WikiText-2,Perplexity,14.76,FP16,13.48,1.28,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 16.97 | 14.76 | 12.10
+RP09,BLOOM-7.1B,RTN,4-bit,,WikiText-2,Perplexity,12.1,FP16,11.37,0.73,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 14.76 | 12.10 | 8.37
+RP09,BLOOM-176B,RTN,4-bit,,WikiText-2,Perplexity,8.37,FP16,8.11,0.26,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 12.10 | 8.37
+RP09,BLOOM-560M,GPTQ,4-bit,,WikiText-2,Perplexity,24.03,FP16,22.42,1.61,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | **24.03** | **19.05** | **16.48** | **14.20** | 11.73 | **8.21**
+RP09,BLOOM-1.1B,GPTQ,4-bit,,WikiText-2,Perplexity,19.05,FP16,17.69,1.36,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | **24.03** | **19.05** | **16.48**
+RP09,BLOOM-1.7B,GPTQ,4-bit,,WikiText-2,Perplexity,16.48,FP16,15.39,1.09,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... **16.48** | **14.20**
+RP09,BLOOM-3B,GPTQ,4-bit,,WikiText-2,Perplexity,14.2,FP16,13.48,0.72,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... **14.20** | 11.73
+RP09,BLOOM-7.1B,GPTQ,4-bit,,WikiText-2,Perplexity,11.73,FP16,11.37,0.36,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... 11.73 | **8.21**
+RP09,BLOOM-176B,GPTQ,4-bit,,WikiText-2,Perplexity,8.21,FP16,8.11,0.1,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... **8.21**
+RP09,BLOOM-560M,RTN,3-bit,,WikiText-2,Perplexity,57.08,FP16,22.42,34.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | 57.08 | 50.19 | 63.59 | 39.36 | 17.38 | 571
+RP09,BLOOM-1.1B,RTN,3-bit,,WikiText-2,Perplexity,50.19,FP16,17.69,32.5,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | 57.08 | 50.19 | 63.59
+RP09,BLOOM-1.7B,RTN,3-bit,,WikiText-2,Perplexity,63.59,FP16,15.39,48.2,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 50.19 | 63.59 | 39.36
+RP09,BLOOM-3B,RTN,3-bit,,WikiText-2,Perplexity,39.36,FP16,13.48,25.88,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 63.59 | 39.36 | 17.38
+RP09,BLOOM-7.1B,RTN,3-bit,,WikiText-2,Perplexity,17.38,FP16,11.37,6.01,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 39.36 | 17.38 | 571
+RP09,BLOOM-176B,RTN,3-bit,,WikiText-2,Perplexity,571,FP16,8.11,562.89,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 17.38 | 571
+RP09,BLOOM-560M,GPTQ,3-bit,,WikiText-2,Perplexity,32.31,FP16,22.42,9.89,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | **32.31** | **25.08** | **21.11** | **17.40** | **13.47** | **8.64**
+RP09,BLOOM-1.1B,GPTQ,3-bit,,WikiText-2,Perplexity,25.08,FP16,17.69,7.39,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | **32.31** | **25.08** | **21.11**
+RP09,BLOOM-1.7B,GPTQ,3-bit,,WikiText-2,Perplexity,21.11,FP16,15.39,5.72,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **21.11** | **17.40**
+RP09,BLOOM-3B,GPTQ,3-bit,,WikiText-2,Perplexity,17.4,FP16,13.48,3.92,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **17.40** | **13.47**
+RP09,BLOOM-7.1B,GPTQ,3-bit,,WikiText-2,Perplexity,13.47,FP16,11.37,2.1,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **13.47** | **8.64**
+RP09,BLOOM-176B,GPTQ,3-bit,,WikiText-2,Perplexity,8.64,FP16,8.11,0.53,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **8.64**
+RP09,OPT-175B,FP16,16-bit,,PTB,Perplexity,12.01,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59
+RP09,OPT-175B,FP16,16-bit,,C4,Perplexity,10.13,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59
+RP09,OPT-175B,FP16,16-bit,,LAMBADA,Accuracy,75.59,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59
+RP09,BLOOM-176B,FP16,16-bit,,PTB,Perplexity,14.59,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | ... | 8.11 | 14.59 | 11.71 | 67.40
+RP09,BLOOM-176B,FP16,16-bit,,C4,Perplexity,11.71,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | ... | 14.59 | 11.71 | 67.40
+RP09,BLOOM-176B,FP16,16-bit,,LAMBADA,Accuracy,67.4,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | ... | 11.71 | 67.40
+RP09,OPT-175B,RTN,4-bit,,PTB,Perplexity,14.22,FP16,12.01,2.21,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34 | 8.37 | 15.00 | 12.04 | 66.70
+RP09,OPT-175B,RTN,4-bit,,C4,Perplexity,11.61,FP16,10.13,1.48,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34
+RP09,OPT-175B,RTN,4-bit,,LAMBADA,Accuracy,71.34,FP16,75.59,-4.25,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34 | 8.37
+RP09,BLOOM-176B,RTN,4-bit,,PTB,Perplexity,15.0,FP16,14.59,0.41,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | ... 8.37 | 15.00 | 12.04 | 66.70
+RP09,BLOOM-176B,RTN,4-bit,,C4,Perplexity,12.04,FP16,11.71,0.33,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | ... 15.00 | 12.04 | 66.70
+RP09,BLOOM-176B,RTN,4-bit,,LAMBADA,Accuracy,66.7,FP16,67.4,-0.7,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | ... 12.04 | 66.70
+RP09,OPT-175B,GPTQ,4-bit,,PTB,Perplexity,12.26,FP16,12.01,0.25,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | **8.37** | **12.26** | **10.28** | **76.80** | **8.21** | **14.75** | **11.81** | **67.71**
+RP09,OPT-175B,GPTQ,4-bit,,C4,Perplexity,10.28,FP16,10.13,0.15,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | **8.37** | **12.26** | **10.28** | **76.80**
+RP09,OPT-175B,GPTQ,4-bit,,LAMBADA,Accuracy,76.8,FP16,75.59,1.21,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **10.28** | **76.80**
+RP09,BLOOM-176B,GPTQ,4-bit,,PTB,Perplexity,14.75,FP16,14.59,0.16,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **8.21** | **14.75** | **11.81** | **67.71**
+RP09,BLOOM-176B,GPTQ,4-bit,,C4,Perplexity,11.81,FP16,11.71,0.1,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **14.75** | **11.81** | **67.71**
+RP09,BLOOM-176B,GPTQ,4-bit,,LAMBADA,Accuracy,67.71,FP16,67.4,0.31,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **11.81** | **67.71**
+RP09,OPT-175B,RTN,3-bit,,PTB,Perplexity,8000,FP16,12.01,7987.99,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0
+RP09,OPT-175B,RTN,3-bit,,C4,Perplexity,4600,FP16,10.13,4589.87,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0
+RP09,OPT-175B,RTN,3-bit,,LAMBADA,Accuracy,0,FP16,75.59,-75.59,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0
+RP09,BLOOM-176B,RTN,3-bit,,PTB,Perplexity,107,FP16,14.59,92.41,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | ... 571. | 107. | 598. | 0.17
+RP09,BLOOM-176B,RTN,3-bit,,C4,Perplexity,598,FP16,11.71,586.29,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | ... 107. | 598. | 0.17
+RP09,BLOOM-176B,RTN,3-bit,,LAMBADA,Accuracy,0.17,FP16,67.4,-67.23,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | ... 598. | 0.17
+RP09,OPT-175B,GPTQ,3-bit,,PTB,Perplexity,12.68,FP16,12.01,0.67,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | **8.68** | **12.68** | **10.67** | **76.19**
+RP09,OPT-175B,GPTQ,3-bit,,C4,Perplexity,10.67,FP16,10.13,0.54,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | **8.68** | **12.68** | **10.67** | **76.19**
+RP09,OPT-175B,GPTQ,3-bit,,LAMBADA,Accuracy,76.19,FP16,75.59,0.6,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **10.67** | **76.19**
+RP09,BLOOM-176B,GPTQ,3-bit,,PTB,Perplexity,15.57,FP16,14.59,0.98,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **8.64** | **15.57** | **12.27** | **65.10**
+RP09,BLOOM-176B,GPTQ,3-bit,,C4,Perplexity,12.27,FP16,11.71,0.56,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **15.57** | **12.27** | **65.10**
+RP09,BLOOM-176B,GPTQ,3-bit,,LAMBADA,Accuracy,65.1,FP16,67.4,-2.3,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **12.27** | **65.10**
+RP09,OPT-175B,GPTQ,3-bit,g1024,WikiText-2,Perplexity,8.45,FP16,8.34,0.11,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3/g1024 | 8.45 | 12.48 | 10.47 | 77.39
+RP09,OPT-175B,GPTQ,3-bit,g128,WikiText-2,Perplexity,8.45,FP16,8.34,0.11,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3/g128 | 8.45 | 12.37 | 10.36 | 76.42
+RP09,OPT-175B,FP16,16-bit,,A100 80GB,"Latency per token (ms, batch=1)",230,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1
+RP09,OPT-175B,GPTQ,3-bit,,A100 80GB,"Latency per token (ms, batch=1)",71,FP16,230,-159,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1
+RP09,OPT-175B,GPTQ,3-bit,,A100 80GB,Speedup over FP16,3.24,FP16,1.0,2.24,x_factor,True,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1
+RP09,OPT-175B,FP16,16-bit,,A6000 48GB,"Latency per token (ms, batch=1)",589,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2
+RP09,OPT-175B,GPTQ,3-bit,,A6000 48GB,"Latency per token (ms, batch=1)",130,FP16,589,-459,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2
+RP09,OPT-175B,GPTQ,3-bit,,A6000 48GB,Speedup over FP16,4.53,FP16,1.0,3.53,x_factor,True,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2
+RP09,OPT-175B,GPTQ,2-bit,g128,WikiText-2,Perplexity,9.58,FP16,8.34,1.24,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,OPT-175B | 8.34 | 9.58 | 9.18 | 8.94 | 8.68
+RP09,OPT-175B,GPTQ,2-bit,g64,WikiText-2,Perplexity,9.18,FP16,8.34,0.84,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,OPT-175B | 8.34 | 9.58 | 9.18 | 8.94
+RP09,OPT-175B,GPTQ,2-bit,g32,WikiText-2,Perplexity,8.94,FP16,8.34,0.6,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,OPT-175B | 8.34 | 9.58 | 9.18 | 8.94 | 8.68
+RP09,BLOOM-176B,GPTQ,2-bit,g128,WikiText-2,Perplexity,9.55,FP16,8.11,1.44,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,BLOOM | 8.11 | 9.55 | 9.17 | 8.83 | 8.64
+RP09,BLOOM-176B,GPTQ,2-bit,g64,WikiText-2,Perplexity,9.17,FP16,8.11,1.06,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,BLOOM | 8.11 | 9.55 | 9.17 | 8.83
+RP09,BLOOM-176B,GPTQ,2-bit,g32,WikiText-2,Perplexity,8.83,FP16,8.11,0.72,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,BLOOM | 8.11 | 9.55 | 9.17 | 8.83 | 8.64
+RP09,OPT-175B,GPTQ,ternary,g8,WikiText-2,Perplexity,9.2,FP16,8.34,0.86,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,,"if we reduce group size to 8, we can apply *ternary* (-1, 0, +1) quantization, which achieves 9.20 WikiText2 PPL on OPT-175B"
+RP09,BERT-base,OBQ,4-bit,,SQuAD,F1,88.23,FP32,88.53,-0.3,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,BERT-base,OBQ,3-bit,,SQuAD,F1,85.29,FP32,88.53,-3.24,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,OPT-125M,OBQ,4-bit,,WikiText-2,Perplexity,32.52,FP16,27.66,4.86,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,OPT-125M,OBQ,3-bit,,WikiText-2,Perplexity,69.32,FP16,27.66,41.66,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,BERT-base,GPTQ,4-bit,,SQuAD,F1,88.18,FP32,88.53,-0.35,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,GPTQ | 88.18 | 86.02 | 31.12 | 53.85
+RP09,BERT-base,GPTQ,3-bit,,SQuAD,F1,86.02,FP32,88.53,-2.51,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,GPTQ | 88.18 | 86.02 | 31.12 | 53.85
+RP09,OPT-66B,RTN,4-bit,,PTB,Perplexity,225.66,FP16,13.36,212.3,absolute,False,measured,14,A.3 ADDITIONAL LANGUAGE GENERATION RESULTS,Table 9,RTN | 4 | ... 15.40 | 225.66 | 14.22
+RP09,OPT-175B,GPTQ,3-bit,,PTB,Perplexity,12.86,FP16,12.01,0.85,absolute,False,measured,14,A.3 ADDITIONAL LANGUAGE GENERATION RESULTS,Table 9,GPTQ | 3 | ... **28.12** | **12.86**
+RP09,OPT-175B,FP16,16-bit,,PIQA,Accuracy,81.07,,,,,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,full | 16 | ... 79.76 | 81.07
+RP09,OPT-175B,GPTQ,4-bit,,PIQA,Accuracy,81.0,FP16,81.07,-0.07,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,GPTQ | 4 | ... 79.33 | 81.00
+RP09,OPT-175B,RTN,4-bit,,PIQA,Accuracy,78.23,FP16,81.07,-2.84,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,RTN | 4 | ... 60.07 | 78.23
+RP09,OPT-175B,GPTQ,3-bit,,PIQA,Accuracy,80.03,FP16,81.07,-1.04,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,GPTQ | 3 | ... 71.27 | 80.03
+RP09,BLOOM-176B,FP16,16-bit,,PIQA,Accuracy,79.16,,,,,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 16,full | 16 | ... 73.72 | 79.16
+RP09,BLOOM-176B,GPTQ,4-bit,,PIQA,Accuracy,79.0,FP16,79.16,-0.16,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 16,GPTQ | 4 | ... **72.96** | **79.00**
+RP09,BLOOM-176B,GPTQ,3-bit,,PIQA,Accuracy,77.7,FP16,79.16,-1.46,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 16,GPTQ | 3 | ... **70.95** | **77.70**
+RP09,OPT-175B,FP16,16-bit,,ARC-Easy,Accuracy,71.04,,,,,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 17,full | 16 | ... 67.26 | 71.04
+RP09,OPT-175B,GPTQ,4-bit,,ARC-Easy,Accuracy,68.69,FP16,71.04,-2.35,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 17,GPTQ | 4 | ... **65.35** | **68.69**
+RP09,OPT-175B,GPTQ,3-bit,,ARC-Easy,Accuracy,65.36,FP16,71.04,-5.68,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 17,GPTQ | 3 | ... **52.44** | **65.36**
+RP09,BLOOM-176B,FP16,16-bit,,ARC-Easy,Accuracy,67.47,,,,,False,measured,16,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 18,full | 16 | ... 57.37 | 67.47
+RP09,BLOOM-176B,GPTQ,4-bit,,ARC-Easy,Accuracy,67.42,FP16,67.47,-0.05,absolute,False,measured,16,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 18,GPTQ | 4 | ... **56.14** | **67.42**
+RP09,BLOOM-176B,GPTQ,3-bit,,ARC-Easy,Accuracy,62.84,FP16,67.47,-4.63,absolute,False,measured,16,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 18,GPTQ | 3 | ... **51.56** | **62.84**
+RP15,OPT-1.3B,FP16,16-bit,,WikiText-2,Perplexity,14.62,,,,,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,RTN,3-bit,g128,WikiText-2,Perplexity,119.0,FP16,14.62,104.38,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03
+RP15,OPT-1.3B,FP16% (based on act.) 0.1%,3-bit,g128,WikiText-2,Perplexity,25.03,FP16,14.62,10.41,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,FP16% (based on act.) 1%,3-bit,g128,WikiText-2,Perplexity,16.91,FP16,14.62,2.29,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,FP16% (based on act.) 3%,3-bit,g128,WikiText-2,Perplexity,16.68,FP16,14.62,2.06,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-1.3B | 14.62 | 119.00 | 25.03 | 16.91 | 16.68
+RP15,OPT-1.3B,FP16% (based on W) 0.1%,3-bit,g128,WikiText-2,Perplexity,108.71,FP16,14.62,94.09,absolute,False,measured,4,Analyzing the quantization error.,Table 1,108.71 | 98.55 | 98.08
+RP15,OPT-1.3B,FP16% (based on W) 1%,3-bit,g128,WikiText-2,Perplexity,98.55,FP16,14.62,83.93,absolute,False,measured,4,Analyzing the quantization error.,Table 1,108.71 | 98.55 | 98.08
+RP15,OPT-1.3B,FP16% (based on W) 3%,3-bit,g128,WikiText-2,Perplexity,98.08,FP16,14.62,83.46,absolute,False,measured,4,Analyzing the quantization error.,Table 1,108.71 | 98.55 | 98.08
+RP15,OPT-1.3B,FP16% (random) 0.1%,3-bit,g128,WikiText-2,Perplexity,119.76,FP16,14.62,105.14,absolute,False,measured,4,Analyzing the quantization error.,Table 1,119.76 | 109.38 | 61.49
+RP15,OPT-1.3B,FP16% (random) 1%,3-bit,g128,WikiText-2,Perplexity,109.38,FP16,14.62,94.76,absolute,False,measured,4,Analyzing the quantization error.,Table 1,119.76 | 109.38 | 61.49
+RP15,OPT-1.3B,FP16% (random) 3%,3-bit,g128,WikiText-2,Perplexity,61.49,FP16,14.62,46.87,absolute,False,measured,4,Analyzing the quantization error.,Table 1,119.76 | 109.38 | 61.49
+RP15,OPT-6.7B,FP16,16-bit,,WikiText-2,Perplexity,10.86,,,,,False,measured,4,Analyzing the quantization error.,Table 1,OPT-6.7B | 10.86 | 23.54 | 11.58
+RP15,OPT-6.7B,RTN,3-bit,g128,WikiText-2,Perplexity,23.54,FP16,10.86,12.68,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-6.7B | 10.86 | 23.54 | 11.58
+RP15,OPT-6.7B,FP16% (based on act.) 0.1%,3-bit,g128,WikiText-2,Perplexity,11.58,FP16,10.86,0.72,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-6.7B | 10.86 | 23.54 | 11.58 | 11.39 | 11.36
+RP15,OPT-6.7B,FP16% (based on act.) 1%,3-bit,g128,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,4,Analyzing the quantization error.,Table 1,11.58 | 11.39 | 11.36
+RP15,OPT-6.7B,FP16% (based on act.) 3%,3-bit,g128,WikiText-2,Perplexity,11.36,FP16,10.86,0.5,absolute,False,measured,4,Analyzing the quantization error.,Table 1,11.58 | 11.39 | 11.36
+RP15,OPT-13B,FP16,16-bit,,WikiText-2,Perplexity,10.13,,,,,False,measured,4,Analyzing the quantization error.,Table 1,OPT-13B | 10.13 | 46.04 | 10.51
+RP15,OPT-13B,RTN,3-bit,g128,WikiText-2,Perplexity,46.04,FP16,10.13,35.91,absolute,False,measured,4,Analyzing the quantization error.,Table 1,OPT-13B | 10.13 | 46.04 | 10.51
+RP15,OPT-13B,FP16% (based on act.) 0.1%,3-bit,g128,WikiText-2,Perplexity,10.51,FP16,10.13,0.38,absolute,False,measured,4,Analyzing the quantization error.,Table 1,10.13 | 46.04 | 10.51 | 10.43 | 10.42
+RP15,OPT-13B,FP16% (based on act.) 1%,3-bit,g128,WikiText-2,Perplexity,10.43,FP16,10.13,0.3,absolute,False,measured,4,Analyzing the quantization error.,Table 1,10.51 | 10.43 | 10.42
+RP15,OPT-13B,FP16% (based on act.) 3%,3-bit,g128,WikiText-2,Perplexity,10.42,FP16,10.13,0.29,absolute,False,measured,4,Analyzing the quantization error.,Table 1,10.51 | 10.43 | 10.42
+RP15,OPT-6.7B,Scaled-RTN s=1.25,3-bit,g128,WikiText-2,Perplexity,12.87,RTN (s=1),23.54,-10.67,absolute,False,measured,4,Analyzing the quantization error.,Table 2,Wiki-2 PPL | 23.54 | 12.87 | 12.48 | 11.92 | 12.36
+RP15,OPT-6.7B,Scaled-RTN s=1.5,3-bit,g128,WikiText-2,Perplexity,12.48,RTN (s=1),23.54,-11.06,absolute,False,measured,4,Analyzing the quantization error.,Table 2,Wiki-2 PPL | 23.54 | 12.87 | 12.48 | 11.92 | 12.36
+RP15,OPT-6.7B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,11.92,RTN (s=1),23.54,-11.62,absolute,False,measured,4,Analyzing the quantization error.,Table 2,the perplexity improves from 23.54 for s = 1 (simply RTN) to 11.92 for s = 2
+RP15,OPT-6.7B,Scaled-RTN s=4,3-bit,g128,WikiText-2,Perplexity,12.36,RTN (s=1),23.54,-11.18,absolute,False,measured,4,Analyzing the quantization error.,Table 2,Wiki-2 PPL | 23.54 | 12.87 | 12.48 | 11.92 | 12.36
+RP15,OPT-2.7B,FP16,16-bit,,WikiText-2,Perplexity,12.47,,,,,False,measured,4,Analyzing the quantization error.,Table 3,FP16 | 14.62 | 12.47 | 10.86 | 10.13 | 9.56
+RP15,OPT-30B,FP16,16-bit,,WikiText-2,Perplexity,9.56,,,,,False,measured,4,Analyzing the quantization error.,Table 3,FP16 | 14.62 | 12.47 | 10.86 | 10.13 | 9.56
+RP15,OPT-1.3B,RTN (Table 3),3-bit,g128,WikiText-2,Perplexity,119.47,FP16,14.62,104.85,absolute,False,measured,4,Analyzing the quantization error.,Table 3,RTN | 119.47 | 298.00 | 23.54 | 46.04 | 18.80
+RP15,OPT-2.7B,RTN,3-bit,g128,WikiText-2,Perplexity,298.0,FP16,12.47,285.53,absolute,False,measured,4,Analyzing the quantization error.,Table 3,RTN | 119.47 | 298.00 | 23.54 | 46.04 | 18.80
+RP15,OPT-30B,RTN,3-bit,g128,WikiText-2,Perplexity,18.8,FP16,9.56,9.24,absolute,False,measured,4,Analyzing the quantization error.,Table 3,RTN | 119.47 | 298.00 | 23.54 | 46.04 | 18.80
+RP15,OPT-1.3B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,16.91,FP16,14.62,2.29,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-2.7B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,13.69,FP16,12.47,1.22,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-6.7B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-13B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,10.43,FP16,10.13,0.3,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-30B,1% FP16 (mixed-precision),3-bit,g128,WikiText-2,Perplexity,9.85,FP16,9.56,0.29,absolute,False,measured,4,Analyzing the quantization error.,Table 3,1% FP16 | 16.91 | 13.69 | 11.39 | 10.43 | 9.85
+RP15,OPT-1.3B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,18.63,FP16,14.62,4.01,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-2.7B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,14.94,FP16,12.47,2.47,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-13B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,10.8,FP16,10.13,0.67,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-30B,Scaled-RTN s=2,3-bit,g128,WikiText-2,Perplexity,10.32,FP16,9.56,0.76,absolute,False,measured,4,Analyzing the quantization error.,Table 3,s = 2 | 18.63 | 14.94 | 11.92 | 10.80 | 10.32
+RP15,OPT-1.3B,AWQ,3-bit,g128,WikiText-2,Perplexity,16.32,FP16,14.62,1.7,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-2.7B,AWQ,3-bit,g128,WikiText-2,Perplexity,13.58,FP16,12.47,1.11,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-6.7B,AWQ,3-bit,g128,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-13B,AWQ,3-bit,g128,WikiText-2,Perplexity,10.56,FP16,10.13,0.43,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,OPT-30B,AWQ,3-bit,g128,WikiText-2,Perplexity,9.77,FP16,9.56,0.21,absolute,False,measured,4,Analyzing the quantization error.,Table 3,AWQ | 16.32 | 13.58 | 11.39 | 10.56 | 9.77
+RP15,Llama-2-7B,FP16,16-bit,,WikiText-2,Perplexity,5.47,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,Llama-2-13B,FP16,16-bit,,WikiText-2,Perplexity,4.88,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32
+RP15,Llama-2-70B,FP16,16-bit,,WikiText-2,Perplexity,3.32,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32
+RP15,LLaMA-7B,FP16,16-bit,,WikiText-2,Perplexity,5.68,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,LLaMA-13B,FP16,16-bit,,WikiText-2,Perplexity,5.09,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,LLaMA-30B,FP16,16-bit,,WikiText-2,Perplexity,4.1,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,LLaMA-65B,FP16,16-bit,,WikiText-2,Perplexity,3.53,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,FP16 | - | 5.47 | 4.88 | 3.32 | 5.68 | 5.09 | 4.10 | 3.53
+RP15,Llama-2-7B,RTN,3-bit,g128,WikiText-2,Perplexity,6.66,FP16,5.47,1.19,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,Llama-2-13B,RTN,3-bit,g128,WikiText-2,Perplexity,5.52,FP16,4.88,0.64,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98
+RP15,Llama-2-70B,RTN,3-bit,g128,WikiText-2,Perplexity,3.98,FP16,3.32,0.66,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98
+RP15,LLaMA-7B,RTN,3-bit,g128,WikiText-2,Perplexity,7.01,FP16,5.68,1.33,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,LLaMA-13B,RTN,3-bit,g128,WikiText-2,Perplexity,5.88,FP16,5.09,0.79,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,LLaMA-30B,RTN,3-bit,g128,WikiText-2,Perplexity,4.88,FP16,4.1,0.78,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,LLaMA-65B,RTN,3-bit,g128,WikiText-2,Perplexity,4.24,FP16,3.53,0.71,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT3g128 | RTN | 6.66 | 5.52 | 3.98 | 7.01 | 5.88 | 4.88 | 4.24
+RP15,Llama-2-7B,GPTQ,3-bit,g128,WikiText-2,Perplexity,6.43,FP16,5.47,0.96,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,Llama-2-13B,GPTQ,3-bit,g128,WikiText-2,Perplexity,5.48,FP16,4.88,0.6,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88
+RP15,Llama-2-70B,GPTQ,3-bit,g128,WikiText-2,Perplexity,3.88,FP16,3.32,0.56,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88
+RP15,LLaMA-7B,GPTQ,3-bit,g128,WikiText-2,Perplexity,8.81,FP16,5.68,3.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,LLaMA-13B,GPTQ,3-bit,g128,WikiText-2,Perplexity,5.66,FP16,5.09,0.57,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,LLaMA-30B,GPTQ,3-bit,g128,WikiText-2,Perplexity,4.88,FP16,4.1,0.78,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,LLaMA-65B,GPTQ,3-bit,g128,WikiText-2,Perplexity,4.17,FP16,3.53,0.64,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 6.43 | 5.48 | 3.88 | 8.81 | 5.66 | 4.88 | 4.17
+RP15,Llama-2-7B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,6.42,FP16,5.47,0.95,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,Llama-2-13B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,5.41,FP16,4.88,0.53,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86
+RP15,Llama-2-70B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,3.86,FP16,3.32,0.54,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86
+RP15,LLaMA-7B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,6.53,FP16,5.68,0.85,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,LLaMA-13B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,5.64,FP16,5.09,0.55,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,LLaMA-30B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,4.74,FP16,4.1,0.64,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,LLaMA-65B,GPTQ-R,3-bit,g128,WikiText-2,Perplexity,4.21,FP16,3.53,0.68,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 6.42 | 5.41 | 3.86 | 6.53 | 5.64 | 4.74 | 4.21
+RP15,Llama-2-7B,AWQ,3-bit,g128,WikiText-2,Perplexity,6.24,FP16,5.47,0.77,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,Llama-2-13B,AWQ,3-bit,g128,WikiText-2,Perplexity,5.32,FP16,4.88,0.44,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74**
+RP15,Llama-2-70B,AWQ,3-bit,g128,WikiText-2,Perplexity,3.74,FP16,3.32,0.42,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74**
+RP15,LLaMA-7B,AWQ,3-bit,g128,WikiText-2,Perplexity,6.35,FP16,5.68,0.67,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,LLaMA-13B,AWQ,3-bit,g128,WikiText-2,Perplexity,5.52,FP16,5.09,0.43,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,LLaMA-30B,AWQ,3-bit,g128,WikiText-2,Perplexity,4.61,FP16,4.1,0.51,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,LLaMA-65B,AWQ,3-bit,g128,WikiText-2,Perplexity,3.95,FP16,3.53,0.42,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **6.24** | **5.32** | **3.74** | **6.35** | **5.52** | **4.61** | **3.95**
+RP15,Llama-2-7B,RTN,4-bit,g128,WikiText-2,Perplexity,5.73,FP16,5.47,0.26,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,Llama-2-13B,RTN,4-bit,g128,WikiText-2,Perplexity,4.98,FP16,4.88,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46
+RP15,Llama-2-70B,RTN,4-bit,g128,WikiText-2,Perplexity,3.46,FP16,3.32,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46
+RP15,LLaMA-7B,RTN,4-bit,g128,WikiText-2,Perplexity,5.96,FP16,5.68,0.28,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,LLaMA-13B,RTN,4-bit,g128,WikiText-2,Perplexity,5.25,FP16,5.09,0.16,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,LLaMA-30B,RTN,4-bit,g128,WikiText-2,Perplexity,4.23,FP16,4.1,0.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,LLaMA-65B,RTN,4-bit,g128,WikiText-2,Perplexity,3.67,FP16,3.53,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,INT4g128 | RTN | 5.73 | 4.98 | 3.46 | 5.96 | 5.25 | 4.23 | 3.67
+RP15,Llama-2-7B,GPTQ,4-bit,g128,WikiText-2,Perplexity,5.69,FP16,5.47,0.22,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,Llama-2-13B,GPTQ,4-bit,g128,WikiText-2,Perplexity,4.98,FP16,4.88,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42
+RP15,Llama-2-70B,GPTQ,4-bit,g128,WikiText-2,Perplexity,3.42,FP16,3.32,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42
+RP15,LLaMA-7B,GPTQ,4-bit,g128,WikiText-2,Perplexity,6.22,FP16,5.68,0.54,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,LLaMA-13B,GPTQ,4-bit,g128,WikiText-2,Perplexity,5.23,FP16,5.09,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,LLaMA-30B,GPTQ,4-bit,g128,WikiText-2,Perplexity,4.24,FP16,4.1,0.14,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,LLaMA-65B,GPTQ,4-bit,g128,WikiText-2,Perplexity,3.66,FP16,3.53,0.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ | 5.69 | 4.98 | 3.42 | 6.22 | 5.23 | 4.24 | 3.66
+RP15,Llama-2-7B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,5.63,FP16,5.47,0.16,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,Llama-2-13B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,4.99,FP16,4.88,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43
+RP15,Llama-2-70B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,3.43,FP16,3.32,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43
+RP15,LLaMA-7B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,5.83,FP16,5.68,0.15,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,LLaMA-13B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,5.2,FP16,5.09,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,LLaMA-30B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,4.22,FP16,4.1,0.12,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,LLaMA-65B,GPTQ-R,4-bit,g128,WikiText-2,Perplexity,3.66,FP16,3.53,0.13,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,GPTQ-R | 5.63 | 4.99 | 3.43 | 5.83 | 5.20 | 4.22 | 3.66
+RP15,Llama-2-7B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.6,FP16,5.47,0.13,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,Llama-2-13B,AWQ,4-bit,g128,WikiText-2,Perplexity,4.97,FP16,4.88,0.09,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41**
+RP15,Llama-2-70B,AWQ,4-bit,g128,WikiText-2,Perplexity,3.41,FP16,3.32,0.09,absolute,True,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41**
+RP15,LLaMA-7B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.78,FP16,5.68,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,LLaMA-13B,AWQ,4-bit,g128,WikiText-2,Perplexity,5.19,FP16,5.09,0.1,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,LLaMA-30B,AWQ,4-bit,g128,WikiText-2,Perplexity,4.21,FP16,4.1,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,LLaMA-65B,AWQ,4-bit,g128,WikiText-2,Perplexity,3.62,FP16,3.53,0.09,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 4,AWQ | **5.60** | **4.97** | **3.41** | **5.78** | **5.19** | **4.21** | **3.62**
+RP15,Mixtral-8x7B-Instruct-v0.1,FP16,16-bit,,WikiText-2,Perplexity,5.94,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,FP16 | 5.94 | 4.14
+RP15,Mistral-7B-Instruct-v0.2,FP16,16-bit,,WikiText-2,Perplexity,4.14,,,,,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,FP16 | 5.94 | 4.14
+RP15,Mixtral-8x7B-Instruct-v0.1,AWQ,4-bit,g128,WikiText-2,Perplexity,6.05,FP16,5.94,0.11,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT4-g128 | 6.05 | 4.30
+RP15,Mistral-7B-Instruct-v0.2,AWQ,4-bit,g128,WikiText-2,Perplexity,4.3,FP16,4.14,0.16,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT4-g128 | 6.05 | 4.30
+RP15,Mixtral-8x7B-Instruct-v0.1,AWQ,3-bit,g128,WikiText-2,Perplexity,6.52,FP16,5.94,0.58,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT3-g128 | 6.52 | 4.83
+RP15,Mistral-7B-Instruct-v0.2,AWQ,3-bit,g128,WikiText-2,Perplexity,4.83,FP16,4.14,0.69,absolute,False,measured,7,4.2 Deploy AWQ with TinyChat,Table 5,INT3-g128 | 6.52 | 4.83
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (0-shot),CIDEr,63.73,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (4-shot),CIDEr,72.18,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (8-shot),CIDEr,76.95,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (16-shot),CIDEr,79.74,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,FP16,16-bit,,COCO Captioning (32-shot),CIDEr,81.7,,,,,False,measured,8,5.2 Evaluation,Table 6,FP16 | - | 63.73 | 72.18 | 76.95 | 79.74 | 81.70
+RP15,OpenFlamingo-9B,RTN,4-bit,g128,COCO Captioning (32-shot),CIDEr,77.13,FP16,81.7,-4.57,absolute,False,measured,8,5.2 Evaluation,Table 6,INT4g128 | RTNGPTQAWQ | 60.2459.72**62.57** | 68.0767.68**71.02** | 72.4672.53**74.75** | 74.0974.98**78.23** | 77.1374.98**80.53** | -4.57-6.72**-1.17**
+RP15,OpenFlamingo-9B,GPTQ,4-bit,g128,COCO Captioning (32-shot),CIDEr,74.98,FP16,81.7,-6.72,absolute,False,measured,8,5.2 Evaluation,Table 6,77.1374.98**80.53** | -4.57-6.72**-1.17**
+RP15,OpenFlamingo-9B,AWQ,4-bit,g128,COCO Captioning (32-shot),CIDEr,80.53,FP16,81.7,-1.17,absolute,True,measured,8,5.2 Evaluation,Table 6,It reduces the quantization degradation (32-shot) from 4.57 to 1.17 under INT4-g128
+RP15,OpenFlamingo-9B,RTN,3-bit,g128,COCO Captioning (32-shot),CIDEr,64.79,FP16,81.7,-16.91,absolute,False,measured,8,5.2 Evaluation,Table 6,INT3g128 | RTNGPTQAWQ | 46.0729.84**56.33** | ... | 64.7964.77**74.47** | -16.91-16.93**-7.23**
+RP15,OpenFlamingo-9B,GPTQ,3-bit,g128,COCO Captioning (32-shot),CIDEr,64.77,FP16,81.7,-16.93,absolute,False,measured,8,5.2 Evaluation,Table 6,64.7964.77**74.47** | -16.91-16.93**-7.23**
+RP15,OpenFlamingo-9B,AWQ,3-bit,g128,COCO Captioning (32-shot),CIDEr,74.47,FP16,81.7,-7.23,absolute,False,measured,8,5.2 Evaluation,Table 6,64.7964.77**74.47** | -16.91-16.93**-7.23**
+RP15,VILA-7B,AWQ,4-bit,g128,VQAv2,Accuracy,80.1,FP16,80.3,-0.2,absolute,True,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3 | 68.8 | 61.3 | 75.8 | 35.9
+RP15,VILA-7B,AWQ,4-bit,g128,GQA,Accuracy,63.0,FP16,63.1,-0.1,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8
+RP15,VILA-7B,AWQ,4-bit,g128,VizWiz,Accuracy,57.8,FP16,59.6,-1.8,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0
+RP15,VILA-7B,AWQ,4-bit,g128,POPE,Accuracy,85.3,FP16,86.3,-1.0,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3
+RP15,VILA-7B,AWQ,4-bit,g128,MME,Score,1486.3,FP16,1489.4,-3.1,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3
+RP15,VILA-7B,AWQ,4-bit,g128,MMBench,Accuracy,68.8,FP16,69.8,-1.0,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3 | 68.8
+RP15,VILA-7B,AWQ,4-bit,g128,SEED-Bench,Accuracy,61.3,FP16,61.7,-0.4,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-7B-AWQ | 80.1 | 63.0 | 57.8 | 68.0 | 61.9 | 85.3 | 1486.3 | 68.8 | 61.3
+RP15,VILA-13B,AWQ,4-bit,g128,VQAv2,Accuracy,80.4,FP16,80.5,-0.1,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-13B-AWQ | 80.4 | 63.6 | 63.0 | 71.2 | 63.5 | 87.0 | 1552.9
+RP15,VILA-13B,AWQ,4-bit,g128,MME,Score,1552.9,FP16,1553.6,-0.7,absolute,False,measured,8,5.2 Evaluation,Table 7,VILA-13B-AWQ | 80.4 | 63.6 | 63.0 | 71.2 | 63.5 | 87.0 | 1552.9
+RP15,CodeLlama-7B-Instruct,FP16,16-bit,,MBPP,pass@1,38.53,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 38.53 | 49.77
+RP15,CodeLlama-7B-Instruct,FP16,16-bit,,MBPP,pass@10,49.77,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 38.53 | 49.77
+RP15,CodeLlama-7B-Instruct,RTN,4-bit,g128,MBPP,pass@1,37.51,FP16,38.53,-1.02,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 37.51 | 48.49
+RP15,CodeLlama-7B-Instruct,RTN,4-bit,g128,MBPP,pass@10,48.49,FP16,49.77,-1.28,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 37.51 | 48.49
+RP15,CodeLlama-7B-Instruct,GPTQ,4-bit,g128,MBPP,pass@1,31.97,FP16,38.53,-6.56,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 31.97 | 44.75
+RP15,CodeLlama-7B-Instruct,GPTQ,4-bit,g128,MBPP,pass@10,44.75,FP16,49.77,-5.02,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 31.97 | 44.75
+RP15,CodeLlama-7B-Instruct,AWQ,4-bit,g128,MBPP,pass@1,40.64,FP16,38.53,2.11,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **40.64** | **49.25**
+RP15,CodeLlama-7B-Instruct,AWQ,4-bit,g128,MBPP,pass@10,49.25,FP16,49.77,-0.52,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **40.64** | **49.25**
+RP15,Llama-2-7B,FP16,16-bit,,GSM8K,Accuracy,13.87,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 13.87 | 26.16 | 56.41
+RP15,Llama-2-13B,FP16,16-bit,,GSM8K,Accuracy,26.16,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 13.87 | 26.16 | 56.41
+RP15,Llama-2-70B,FP16,16-bit,,GSM8K,Accuracy,56.41,,,,,False,measured,8,5.2 Evaluation,Table 8,FP16 | 13.87 | 26.16 | 56.41
+RP15,Llama-2-7B,RTN,4-bit,g128,GSM8K,Accuracy,11.07,FP16,13.87,-2.8,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 11.07 | 21.23 | 53.98
+RP15,Llama-2-13B,RTN,4-bit,g128,GSM8K,Accuracy,21.23,FP16,26.16,-4.93,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 11.07 | 21.23 | 53.98
+RP15,Llama-2-70B,RTN,4-bit,g128,GSM8K,Accuracy,53.98,FP16,56.41,-2.43,absolute,False,measured,8,5.2 Evaluation,Table 8,RTN | 11.07 | 21.23 | 53.98
+RP15,Llama-2-7B,GPTQ,4-bit,g128,GSM8K,Accuracy,12.13,FP16,13.87,-1.74,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 12.13 | 24.26 | 56.03
+RP15,Llama-2-13B,GPTQ,4-bit,g128,GSM8K,Accuracy,24.26,FP16,26.16,-1.9,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 12.13 | 24.26 | 56.03
+RP15,Llama-2-70B,GPTQ,4-bit,g128,GSM8K,Accuracy,56.03,FP16,56.41,-0.38,absolute,False,measured,8,5.2 Evaluation,Table 8,GPTQ | 12.13 | 24.26 | 56.03
+RP15,Llama-2-7B,AWQ,4-bit,g128,GSM8K,Accuracy,13.57,FP16,13.87,-0.3,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **13.57** | **25.25** | **56.40**
+RP15,Llama-2-13B,AWQ,4-bit,g128,GSM8K,Accuracy,25.25,FP16,26.16,-0.91,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **13.57** | **25.25** | **56.40**
+RP15,Llama-2-70B,AWQ,4-bit,g128,GSM8K,Accuracy,56.4,FP16,56.41,-0.01,absolute,False,measured,8,5.2 Evaluation,Table 8,AWQ | **13.57** | **25.25** | **56.40**
+RP15,OPT-1.3B,RTN,2-bit,g64,WikiText-2,Perplexity,10476,FP16,14.62,10461.38,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-2.7B,RTN,2-bit,g64,WikiText-2,Perplexity,193210,FP16,12.47,193197.53,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-6.7B,RTN,2-bit,g64,WikiText-2,Perplexity,7622,FP16,10.86,7611.14,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-13B,RTN,2-bit,g64,WikiText-2,Perplexity,17564,FP16,10.13,17553.87,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-30B,RTN,2-bit,g64,WikiText-2,Perplexity,8170,FP16,9.56,8160.44,absolute,False,measured,9,5.2 Evaluation,Table 9,RTN | 10476 | 193210 | 7622 | 17564 | 8170
+RP15,OPT-1.3B,GPTQ,2-bit,g64,WikiText-2,Perplexity,46.67,FP16,14.62,32.05,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-2.7B,GPTQ,2-bit,g64,WikiText-2,Perplexity,28.15,FP16,12.47,15.68,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-6.7B,GPTQ,2-bit,g64,WikiText-2,Perplexity,16.65,FP16,10.86,5.79,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-13B,GPTQ,2-bit,g64,WikiText-2,Perplexity,16.74,FP16,10.13,6.61,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-30B,GPTQ,2-bit,g64,WikiText-2,Perplexity,11.75,FP16,9.56,2.19,absolute,False,measured,9,5.2 Evaluation,Table 9,GPTQ | 46.67 | 28.15 | 16.65 | 16.74 | 11.75
+RP15,OPT-1.3B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,35.71,FP16,14.62,21.09,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-2.7B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,25.7,FP16,12.47,13.23,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-6.7B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,15.71,FP16,10.86,4.85,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-13B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,13.25,FP16,10.13,3.12,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-30B,AWQ+GPTQ,2-bit,g64,WikiText-2,Perplexity,11.38,FP16,9.56,1.82,absolute,False,measured,9,5.2 Evaluation,Table 9,AWQ +GPTQ | **35.71** | **25.70** | **15.71** | **13.25** | **11.38**
+RP15,OPT-6.7B,GPTQ (PubMed cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,32.48,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,GPTQ (PubMed cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,50.41,,,4.89,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,AWQ (PubMed cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,32.56,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,AWQ (PubMed cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,45.07,,,0.5,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,PubMed | 32.48 | 50.41 +4.89 | 32.56 | 45.07 +0.50
+RP15,OPT-6.7B,GPTQ (Enron cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,34.81,,,2.33,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,OPT-6.7B,GPTQ (Enron cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,45.52,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,OPT-6.7B,AWQ (Enron cal -> PubMed eval),3-bit,g128,Pile-PubMed,Perplexity,33.16,,,0.6,absolute,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,OPT-6.7B,AWQ (Enron cal -> Enron eval),3-bit,g128,Pile-Enron,Perplexity,44.57,,,,,False,measured,10,5.2 Evaluation,Calibration distribution,Enron | +2.33 34.81 | 45.52 | +0.60 33.16 | 44.57
+RP15,VILA-7B,FP16,16-bit,,A100,Throughput (tokens/s),81.6,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B | FP16 | 81.6 | 58.5 | 11.5
+RP15,VILA-7B,FP16,16-bit,,RTX 4090,Throughput (tokens/s),58.5,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B | FP16 | 81.6 | 58.5 | 11.5
+RP15,VILA-7B,FP16,16-bit,,Jetson Orin,Throughput (tokens/s),11.5,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B | FP16 | 81.6 | 58.5 | 11.5
+RP15,VILA-7B,AWQ,4-bit,,A100,Throughput (tokens/s),155.3,FP16,81.6,1.9,x_factor,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B-AWQ | W4A16 | 155.3 | 168.1 | 35.6
+RP15,VILA-7B,AWQ,4-bit,,RTX 4090,Throughput (tokens/s),168.1,FP16,58.5,2.87,x_factor,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B-AWQ | W4A16 | 155.3 | 168.1 | 35.6
+RP15,VILA-7B,AWQ,4-bit,,Jetson Orin,Throughput (tokens/s),35.6,FP16,11.5,3.1,x_factor,True,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-7B-AWQ | W4A16 | 155.3 | 168.1 | 35.6 ... TinyChat accelerates VILA-7B by up to 3.1x
+RP15,VILA-13B,FP16,16-bit,,A100,Throughput (tokens/s),48.5,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B | FP16 | 48.5 | OOM | 6.1
+RP15,VILA-13B,FP16,16-bit,,Jetson Orin,Throughput (tokens/s),6.1,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B | FP16 | 48.5 | OOM | 6.1
+RP15,VILA-13B,AWQ,4-bit,,A100,Throughput (tokens/s),102.1,FP16,48.5,2.1,x_factor,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B-AWQ | W4A16 | 102.1 | 99.0 | 17.5
+RP15,VILA-13B,AWQ,4-bit,,RTX 4090,Throughput (tokens/s),99.0,,,,,False,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B-AWQ | W4A16 | 102.1 | 99.0 | 17.5
+RP15,VILA-13B,AWQ,4-bit,,Jetson Orin,Throughput (tokens/s),17.5,FP16,6.1,2.87,x_factor,True,measured,10,5.3 Data Efficiency and Generalization,Table 10,VILA-13B-AWQ | W4A16 | 102.1 | 99.0 | 17.5 ... VILA-13B by up to 2.9x
+RP15,OPT-6.7B,RTN (Figure 2 left),3-bit,g128,WikiText-2,Perplexity,43.2,,,,,False,measured,3,2 RELATED WORK,Figure 2,Keeping the salient weights in FP16 can significantly improve the quantized performance (PPL from 43.2 (left) to 13.0 (middle))
+RP15,OPT-6.7B,"Mixed-precision (1% FP16 salient by act, Figure 2 middle)",3-bit,g128,WikiText-2,Perplexity,13.0,RTN,43.2,-30.2,absolute,False,measured,3,2 RELATED WORK,Figure 2,Keeping the salient weights in FP16 can significantly improve the quantized performance (PPL from 43.2 (left) to 13.0 (middle))
+RP15,LLaMA-7B,FP16 (FasterTransformer),16-bit,,RTX 4090,Latency (ms / 20 tokens),310,,,,,False,measured,5,4.1 Why AWQ Helps Accelerate On-Device LLMs,Figure 3,it takes 310 ms to generate 20 tokens
+RP15,LLaMA-7B,FP16 (FasterTransformer),16-bit,,RTX 4090,Context latency (ms / 200 tokens),10,,,,,False,measured,6,4.1 Why AWQ Helps Accelerate On-Device LLMs,Figure 3,summarizing a prompt with 200 tokens only takes 10 ms
+RP15,Llama-2-7B,FP16 (Huggingface),16-bit,,RTX 4090,Throughput (tokens/s),52,,,,,False,measured,11,5.4 Speedup Evaluation,Figure 9,we improve the inference speed from 52 tokens/s to 62 tokens/s through FP16 kernel fusion
+RP15,Llama-2-7B,FP16 (TinyChat fused),16-bit,,RTX 4090,Throughput (tokens/s),62,FP16 (Huggingface),52,10,absolute,False,measured,11,5.4 Speedup Evaluation,Figure 9,we improve the inference speed from 52 tokens/s to 62 tokens/s through FP16 kernel fusion
+RP15,Llama-2-7B,AWQ (TinyChat),4-bit,g128,RTX 4090,Speedup over fused FP16,3.1,FP16 (TinyChat fused),1.0,2.1,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 9,"On top of the stronger FP16 baseline, we further harvest 3.1x additional speedup from the fast quantized linear kernels"
+RP15,Llama-2 family,AWQ (TinyChat),4-bit,g128,RTX 4090,Max Speedup over FP16 (Huggingface),3.9,FP16 (Huggingface),1.0,2.9,x_factor,True,measured,10,5.2 Evaluation,Figure 9,"TinyChat is up to 3.9 x and 3.5 x faster than the FP16 implementation from Huggingface on 4090 (desktop GPU) and Orin (mobile GPU), respectively"
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Max Speedup over FP16 (Huggingface),3.5,FP16 (Huggingface),1.0,2.5,x_factor,True,measured,10,5.2 Evaluation,Figure 9,"TinyChat is up to 3.9 x and 3.5 x faster than the FP16 implementation from Huggingface on 4090 (desktop GPU) and Orin (mobile GPU), respectively"
+RP15,Llama-2-13B,AWQ (TinyChat),4-bit,g128,"RTX 4070 (laptop, 8GB)",Throughput (tokens/s),33,,,,,False,measured,11,5.4 Speedup Evaluation,Figure 9,we are still able to run Llama-2-13B models at 33 tokens/s
+RP15,13B LLM,AWQ (TinyChat),4-bit,g128,"RTX 4070 (laptop, 8GB)",Throughput (tokens/s),30,,,,,True,measured,2,1 Introduction,Introduction,democratizes 13 billion parameter LLM at an interactive pace of 30 tokens/second on a laptop RTX 4070 GPU with only 8GB of memory
+RP15,Llama family (avg),AWQ (TinyChat),4-bit,g128,Desktop/Laptop/Mobile GPUs,Average Speedup over FP16 (Huggingface),3.25,FP16 (Huggingface),1.0,2.25,x_factor,True,measured,2,1 Introduction,Abstract/Intro,we consistently observe a 3.2-3.3x average speedup compared to the FP16 implementation by Huggingface
+RP15,7B family,AWQ (TinyChat),4-bit,g128,Raspberry Pi 4B,Throughput (tokens/s),0.7,,,,,False,measured,11,5.4 Speedup Evaluation,Figure 10,"TinyChat even democratizes LLM deployment on extremely resource-constrained Raspberry Pi 4B, achieving 0.7 tokens/s for 7B models"
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Speedup over llama.cpp,1.7,llama.cpp,1.0,0.7,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,Our system achieves up to 1.7x speedup over llama.cpp on Orin
+RP15,general LLMs,AWQ (TinyChat),4-bit,g128,Jetson Orin,Min Speedup over AutoGPTQ,2.6,AutoGPTQ,1.0,1.6,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,at least 2.6x speedup over AutoGPTQ
+RP15,Falcon-7B,FP16 fused (TinyChat),16-bit,,RTX 4090,Speedup over baseline FP16,1.6,"FP16 (Huggingface, no KV cache)",1.0,0.6,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 9,our FP16 optimizations bring about a larger speedup of 1.6x
+RP15,Llama-2/MPT/Falcon,AWQ (TinyChat),4-bit,g128,RTX 4090,Min Speedup over FP16 (Huggingface),2.7,FP16 (Huggingface),1.0,1.7,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 9,"TinyChat brings 2.7-3.9x speedup to three families of LLMs (Llama-2, MPT and Falcon) on 4090"
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Min Speedup over existing systems,1.2,existing edge LLM systems,1.0,0.2,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,TinyChat offers 1.2-3.0x speedup over existing systems when running 4-bit quantized Llama models on NVIDIA Jetson Orin
+RP15,Llama family,AWQ (TinyChat),4-bit,g128,Jetson Orin,Max Speedup over existing systems,3.0,existing edge LLM systems,1.0,2.0,x_factor,False,measured,11,5.4 Speedup Evaluation,Figure 10,TinyChat offers 1.2-3.0x speedup over existing systems when running 4-bit quantized Llama models on NVIDIA Jetson Orin
+RP15,ARM CPU SIMD (general),AWQ (TinyChat platform-aware packing),4-bit,,ARM CPU 128-bit SIMD,Speedup over conventional packing,1.2,conventional packing,1.0,0.2,x_factor,False,measured,6,4.2 Deploy AWQ with TinyChat,Figure 4,our strategy for ARM CPUs with 128-bit SIMD registers offering up to 1.2 x speedup
+RP24,LLaMA-2-7B,FP16,16-bit,,CrowSPairs,Stereotype score (%),65,,,,,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ↓7 60 | ↓3 63 | ↓2 64 | ↑2 66 | ↓1 64
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,CrowSPairs,Stereotype score (%),60,FP16,65,-5,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ↓7 60
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,CrowSPairs,Stereotype score (%),63,FP16,65,-2,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↓3 63
+RP24,LLaMA-2-7B,AWQ,4-bit,,CrowSPairs,Stereotype score (%),64,FP16,65,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↓2 64
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,CrowSPairs,Stereotype score (%),66,FP16,65,1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↑2 66
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,CrowSPairs,Stereotype score (%),64,FP16,65,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↓1 64
+RP24,Mistral-7B-v0.3,FP16,16-bit,,CrowSPairs,Stereotype score (%),68,,,,,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ↓2 66 | 68 | ↓1 67 | ↑1 69 | 68
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,CrowSPairs,Stereotype score (%),66,FP16,68,-2,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ↓2 66
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,CrowSPairs,Stereotype score (%),68,FP16,68,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... 68
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,CrowSPairs,Stereotype score (%),67,FP16,68,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... ↓1 67
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,CrowSPairs,Stereotype score (%),69,FP16,68,1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... ↑1 69
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,CrowSPairs,Stereotype score (%),68,FP16,68,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... 68
+RP24,LLaMA-3.1-8B,FP16,16-bit,,CrowSPairs,Stereotype score (%),66,,,,,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ↓4 63 | ↓2 65 | 66 | 66 | 66
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,CrowSPairs,Stereotype score (%),63,FP16,66,-3,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ↓4 63
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,CrowSPairs,Stereotype score (%),65,FP16,66,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... ↓2 65
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,CrowSPairs,Stereotype score (%),66,FP16,66,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... 66
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,CrowSPairs,Stereotype score (%),66,FP16,66,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... 66 | 66
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,CrowSPairs,Stereotype score (%),66,FP16,66,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... 66 | 66 | 66
+RP24,LLaMA-2-7B,FP16,16-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,,,,,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ↓36 0.07 | 0.11 | ↑9 0.12 | ↑9 0.12 | ↓9 0.1 | 0.11 | 0.11
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,GlobalOpinionQA,Wasserstein-Gini bias,0.07,FP16,0.11,-0.04,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ↓36 0.07
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ↓36 0.07 | 0.11
+RP24,LLaMA-2-7B,AWQ,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.12,FP16,0.11,0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... ↑9 0.12
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.12,FP16,0.11,0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... ↑9 0.12 | ↑9 0.12
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.1,FP16,0.11,-0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... ↓9 0.1
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... 0.11 | 0.11
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... 0.11 | 0.11
+RP24,Mistral-7B-v0.3,FP16,16-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,,,,,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ↑45 0.16 | ↑18 0.13 | ↑36 0.15 | 0.11 | ↓18 0.09 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,GlobalOpinionQA,Wasserstein-Gini bias,0.16,FP16,0.11,0.05,absolute,True,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ↑45 0.16
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,GlobalOpinionQA,Wasserstein-Gini bias,0.13,FP16,0.11,0.02,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... ↑18 0.13
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.15,FP16,0.11,0.04,absolute,True,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... ↑36 0.15
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... 0.11
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.09,FP16,0.11,-0.02,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... ↓18 0.09
+RP24,LLaMA-3.1-8B,FP16,16-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,,,,,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ↓21 0.11 | ↓14 0.12 | ↑7 0.15 | 0.14 | 0.14 | 0.14 | 0.14
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.14,-0.03,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ↓21 0.11
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,GlobalOpinionQA,Wasserstein-Gini bias,0.12,FP16,0.14,-0.02,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... ↓14 0.12
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.15,FP16,0.14,0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... ↑7 0.15
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14 | 0.14 | 0.14
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14 | 0.14
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14 | 0.14
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Mean absolute relative error,0.52,,,,,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ↑8 0.56 | ↑6 0.55 | 0.52 | ↑2 0.53 | ↓8 0.48 | ↓10 0.47 | ↓12 0.46
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,WorldBench,Mean absolute relative error,0.56,FP16,0.52,0.04,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ↑8 0.56
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,WorldBench,Mean absolute relative error,0.55,FP16,0.52,0.03,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↑6 0.55
+RP24,LLaMA-2-7B,AWQ,4-bit,,WorldBench,Mean absolute relative error,0.52,FP16,0.52,0,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... 0.52
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,WorldBench,Mean absolute relative error,0.53,FP16,0.52,0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↑2 0.53
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,WorldBench,Mean absolute relative error,0.48,FP16,0.52,-0.04,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↓8 0.48
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,WorldBench,Mean absolute relative error,0.47,FP16,0.52,-0.05,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↓10 0.47
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,WorldBench,Mean absolute relative error,0.46,FP16,0.52,-0.06,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↓12 0.46
+RP24,Mistral-7B-v0.3,FP16,16-bit,,WorldBench,Mean absolute relative error,0.43,,,,,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ↑37 0.59 | ↑19 0.51 | ↑2 0.44 | 0.43 | ↓21 0.34 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,WorldBench,Mean absolute relative error,0.59,FP16,0.43,0.16,absolute,True,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ↑37 0.59
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,WorldBench,Mean absolute relative error,0.51,FP16,0.43,0.08,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... ↑19 0.51
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,WorldBench,Mean absolute relative error,0.44,FP16,0.43,0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... ↑2 0.44
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,WorldBench,Mean absolute relative error,0.43,FP16,0.43,0,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... 0.43
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,WorldBench,Mean absolute relative error,0.34,FP16,0.43,-0.09,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... ↓21 0.34
+RP24,LLaMA-3.1-8B,FP16,16-bit,,WorldBench,Mean absolute relative error,0.4,,,,,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ↑25 0.5 | ↑38 0.55 | ↑10 0.44 | ↑5 0.42 | ↓3 0.39 | 0.4 | ↓3 0.39
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,WorldBench,Mean absolute relative error,0.5,FP16,0.4,0.1,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ↑25 0.5
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,WorldBench,Mean absolute relative error,0.55,FP16,0.4,0.15,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↑38 0.55
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,WorldBench,Mean absolute relative error,0.44,FP16,0.4,0.04,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↑10 0.44
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,WorldBench,Mean absolute relative error,0.42,FP16,0.4,0.02,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↑5 0.42
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,WorldBench,Mean absolute relative error,0.39,FP16,0.4,-0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↓3 0.39
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,WorldBench,Mean absolute relative error,0.4,FP16,0.4,0,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... 0.4
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,WorldBench,Mean absolute relative error,0.39,FP16,0.4,-0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↓3 0.39
+RP24,LLaMA-2-7B,FP16,16-bit,,DiscrimEval,Bias score,0.22,,,,,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ↓86 0.03 | ↓27 0.16 | ↑123 0.49 | ↓36 0.14 | ↑18 0.26 | ↓64 0.08 | 0.22
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DiscrimEval,Bias score,0.03,FP16,0.22,-0.19,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ↓86 0.03
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DiscrimEval,Bias score,0.16,FP16,0.22,-0.06,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↓27 0.16
+RP24,LLaMA-2-7B,AWQ,4-bit,,DiscrimEval,Bias score,0.49,FP16,0.22,0.27,absolute,True,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↑123 0.49
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DiscrimEval,Bias score,0.14,FP16,0.22,-0.08,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↓36 0.14
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,DiscrimEval,Bias score,0.26,FP16,0.22,0.04,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↑18 0.26
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,DiscrimEval,Bias score,0.08,FP16,0.22,-0.14,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↓64 0.08
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,DiscrimEval,Bias score,0.22,FP16,0.22,0,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... 0.22
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEval,Bias score,0.1,,,,,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ↓40 0.06 | ↓10 0.09 | ↑110 0.21 | ↓10 0.09 | ↑10 0.11 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DiscrimEval,Bias score,0.06,FP16,0.1,-0.04,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ↓40 0.06
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEval,Bias score,0.09,FP16,0.1,-0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↓10 0.09
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEval,Bias score,0.21,FP16,0.1,0.11,absolute,True,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↑110 0.21
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DiscrimEval,Bias score,0.09,FP16,0.1,-0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↓10 0.09
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DiscrimEval,Bias score,0.11,FP16,0.1,0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↑10 0.11
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEval,Bias score,0.19,,,,,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ↓58 0.08 | ↓47 0.1 | ↑11 0.21 | ↑5 0.2 | ↑26 0.24 | ↓58 0.08 | 0.19
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DiscrimEval,Bias score,0.08,FP16,0.19,-0.11,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ↓58 0.08
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DiscrimEval,Bias score,0.1,FP16,0.19,-0.09,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↓47 0.1
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEval,Bias score,0.21,FP16,0.19,0.02,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↑11 0.21
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DiscrimEval,Bias score,0.2,FP16,0.19,0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↑5 0.2
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DiscrimEval,Bias score,0.24,FP16,0.19,0.05,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↑26 0.24
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DiscrimEval,Bias score,0.08,FP16,0.19,-0.11,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↓58 0.08
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DiscrimEval,Bias score,0.19,FP16,0.19,0,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... 0.19
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (greedy),Agreement rate (%),22,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | 22 | ↓59 9 | ↓18 18 | ↓50 11 | ↓41 13 | ↓18 18 | ↓5 21
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DT-Stereotyping (greedy),Agreement rate (%),22,FP16,22,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | 22
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (greedy),Agreement rate (%),9,FP16,22,-13,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | 22 | ↓59 9
+RP24,LLaMA-2-7B,AWQ,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),18,FP16,22,-4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓18 18
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),11,FP16,22,-11,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓50 11
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),13,FP16,22,-9,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓41 13
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),18,FP16,22,-4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓18 18
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),21,FP16,22,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓5 21
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (greedy),Agreement rate (%),21,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ↑71 6 | ↑367 98 | ↑348 94 | ↑267 77 | ↑43 30 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DT-Stereotyping (greedy),Agreement rate (%),6,FP16,21,-15,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ↑71 6
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (greedy),Agreement rate (%),98,FP16,21,77,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑367 98
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),94,FP16,21,73,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑348 94
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),77,FP16,21,56,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑267 77
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),30,FP16,21,9,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑43 30
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (greedy),Agreement rate (%),10,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ↓100 0 | ↑20 12 | ↓100 0 | ↓90 1 | ↑20 12 | 10 | 10
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (greedy),Agreement rate (%),0,FP16,10,-10,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ↓100 0
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (greedy),Agreement rate (%),12,FP16,10,2,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↑20 12
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),0,FP16,10,-10,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↓100 0
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),1,FP16,10,-9,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↓90 1
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),12,FP16,10,2,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↑20 12
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),10,FP16,10,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... 10
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),10,FP16,10,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... 10 | 10
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ↑44 13 | 9 | 9 | ↓11 8 | ↓11 8 | ↓11 8 | 9
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Agreement rate (%),13,FP16,9,4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ↑44 13
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,9,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ... 9
+RP24,LLaMA-2-7B,AWQ,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,9,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ... 9 | 9
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),8,FP16,9,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),8,FP16,9,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8 | ↓11 8
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),8,FP16,9,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8 | ↓11 8 | ↓11 8
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,9,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8 | 9
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),Agreement rate (%),34,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... 34 | ↓21 27 | ↑76 60 | ↑109 71 | ↑21 41 | ↑3 35 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Agreement rate (%),27,FP16,34,-7,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... 34 | ↓21 27
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Agreement rate (%),60,FP16,34,26,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑76 60
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),71,FP16,34,37,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑109 71
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),41,FP16,34,7,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑21 41
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),35,FP16,34,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑3 35
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),Agreement rate (%),20,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... 20 | ↓85 3 | ↑5 21 | ↓20 16 | ↓55 9 | ↑5 21 | ↑5 21 | 20
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Agreement rate (%),3,FP16,20,-17,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↓85 3
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Agreement rate (%),21,FP16,20,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↑5 21
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),16,FP16,20,-4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↓20 16
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,20,-11,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↓55 9
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),21,FP16,20,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↑5 21
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),21,FP16,20,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↑5 21
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),20,FP16,20,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... 20
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEvalGen (greedy),Bias score,0.87,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ↓70 0.26 | ↓18 0.71 | ↑8 0.94 | 0.87 | ↓1 0.86 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DiscrimEvalGen (greedy),Bias score,0.26,FP16,0.87,-0.61,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ↓70 0.26
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (greedy),Bias score,0.71,FP16,0.87,-0.16,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... ↓18 0.71
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEvalGen (greedy),Bias score,0.94,FP16,0.87,0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... ↑8 0.94
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.87,FP16,0.87,0,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... 0.87
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (greedy),Bias score,0.86,FP16,0.87,-0.01,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... ↓1 0.86
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEvalGen (greedy),Bias score,0.61,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ND | ↑16 0.71 | ↑26 0.77 | ↑21 0.74 | ↓2 0.6 | ↑16 0.51 | ↑21 0.74
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (greedy),Bias score,0.71,FP16,0.61,0.1,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ND | ↑16 0.71
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEvalGen (greedy),Bias score,0.77,FP16,0.61,0.16,absolute,True,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑26 0.77
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.74,FP16,0.61,0.13,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑21 0.74
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (greedy),Bias score,0.6,FP16,0.61,-0.01,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↓2 0.6
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.51,FP16,0.61,-0.1,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑16 0.51
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DiscrimEvalGen (greedy),Bias score,0.74,FP16,0.61,0.13,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑21 0.74
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEvalGen (sampling),Bias score,0.82,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ↓79 0.17 | ↓51 0.4 | ↓6 0.77 | ↓11 0.73 | ↓9 0.75 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DiscrimEvalGen (sampling),Bias score,0.17,FP16,0.82,-0.65,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ↓79 0.17
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (sampling),Bias score,0.4,FP16,0.82,-0.42,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓51 0.4
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEvalGen (sampling),Bias score,0.77,FP16,0.82,-0.05,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓6 0.77
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.73,FP16,0.82,-0.09,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓11 0.73
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (sampling),Bias score,0.75,FP16,0.82,-0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓9 0.75
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEvalGen (sampling),Bias score,0.16,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ↑225 0.52 | ↓31 0.11 | ↑12 0.18 | ↑44 0.23 | ↑44 0.23 | ↓44 0.09 | ↑50 0.24
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DiscrimEvalGen (sampling),Bias score,0.52,FP16,0.16,0.36,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ↑225 0.52
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (sampling),Bias score,0.11,FP16,0.16,-0.05,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↓31 0.11
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEvalGen (sampling),Bias score,0.18,FP16,0.16,0.02,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑12 0.18
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.23,FP16,0.16,0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑44 0.23
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (sampling),Bias score,0.23,FP16,0.16,0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑44 0.23
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.09,FP16,0.16,-0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↓44 0.09
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DiscrimEvalGen (sampling),Bias score,0.24,FP16,0.16,0.08,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑50 0.24
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,8,RQ3,Table 3,GlobalOpinionQA | 0.14 | 0.14 | 0.14 | 0.14
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,WorldBench,Mean absolute relative error,0.42,FP16,0.4,0.02,absolute,False,measured,8,RQ3,Table 3,WorldBench | 0.4 | ↑5 0.42 | 0.4 | ↑5 0.42
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DiscrimEval,Bias score,0.2,FP16,0.19,0.01,absolute,False,measured,8,RQ3,Table 3,DiscrimEval | 0.19 | ↑5 0.2 | ↓58 0.08 | ↑5 0.2
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),2,FP16,10,-8,absolute,False,measured,8,RQ3,Table 3,DT-Stereo (g) | 10 | ↓90 1 | 10 | ↓80 2
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),11,FP16,20,-9,absolute,False,measured,8,RQ3,Table 3,DT-Stereo (s) | 20 | ↓55 9 | ↑5 21 | ↓45 11
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.53,FP16,0.61,-0.08,absolute,False,measured,8,RQ3,Table 3,DiscrimEvalGen (g) | 0.61 | ↑21 0.74 | ↓16 0.51 | ↓13 0.53
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.19,FP16,0.16,0.03,absolute,False,measured,8,RQ3,Table 3,DiscrimEvalGen (s) | 0.16 | ↑44 0.23 | ↓44 0.09 | ↑19 0.19
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),Average response length (words),65,,,,,True,measured,9,RQ3 prose,Table A.2,structured pruning increases the average response length in LLaMA-2 from 65 to 107 words
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Average response length (words),107,FP16,65,42,absolute,True,measured,9,RQ3 prose,Table A.2,structured pruning increases the average response length in LLaMA-2 from 65 to 107 words
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),Non-dictionary word rate (%),11,,,,,False,measured,9,RQ3 prose,Table A.2,"For LLaMa-3.1, the rate of non-dictionary words increases from 11% to 25%"
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Non-dictionary word rate (%),25,FP16,11,14,absolute,True,measured,9,RQ3 prose,Table A.2,"For LLaMa-3.1, the rate of non-dictionary words increases from 11% to 25%"
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Average response length (words),80,FP16,65,15,absolute,False,measured,15,Table A.2,Table A.2,+ W UNSTRUCT | 80 | 6 | 27 | 73
+RP24,LLaMA-2-7B,AWQ,4-bit,,DT-Stereotyping (sampling),Average response length (words),75,FP16,65,10,absolute,False,measured,15,Table A.2,Table A.2,+ AWQ | 75 | 6 | 22 | 78
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Average response length (words),53,FP16,65,-12,absolute,False,measured,15,Table A.2,Table A.2,+ INT4 | 53 | 4 | 16 | 84
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),Average response length (words),73,,,,,False,measured,15,Table A.2,Table A.2,Mistral | 73 | 11 | 24 | 76
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Average response length (words),63,FP16,73,-10,absolute,False,measured,15,Table A.2,Table A.2,+ W STRUCT | 63 | 8 | 29 | 71
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),Average response length (words),141,,,,,False,measured,15,Table A.2,Table A.2,LLaMA-3.1 | 141 | 11 | 36 | 64
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),Disagreement rate (%),17,,,,,False,measured,16,Table B.2,Table B.2,LLaMA-2 | 9 | 17 | 74
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),No-response rate (%),74,,,,,False,measured,16,Table B.2,Table B.2,LLaMA-2 | 9 | 17 | 74
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),Disagreement rate (%),54,,,,,False,measured,16,Table B.2,Table B.2,Mistral | 34 | 54 | 12
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),No-response rate (%),12,,,,,False,measured,16,Table B.2,Table B.2,Mistral | 34 | 54 | 12
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),No-response rate (%),46,,,,,False,measured,16,Table B.2,Table B.2,LLaMA-3.1 | 20 | 34 | 46
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),No-response rate (%),96,FP16,46,50,absolute,False,measured,16,Table B.2,Table B.2,+ WS | ↓85 3 | 2 | 96
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Disparity income (%),16,,,,,False,measured,19,Table B.5,Table B.5,LLaMA-2 | 0.52 | 16 | 17 | 91
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Disparity regions (%),17,,,,,False,measured,19,Table B.5,Table B.5,LLaMA-2 | 0.52 | 16 | 17 | 91
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Parse rate (%),91,,,,,False,measured,19,Table B.5,Table B.5,LLaMA-2 | 0.52 | 16 | 17 | 91
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,WorldBench,Parse rate (%),54,FP16,91,-37,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.56 | 12 | 14 | 54
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,WorldBench,Disparity regions (%),26,FP16,18,8,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.59 | 15 | 26 | 100
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,WorldBench,Parse rate (%),83,FP16,100,-17,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.50 | 24 | 27 | 83
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,WorldBench,Disparity regions (%),27,FP16,20,7,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.50 | 24 | 27 | 83
+RP24,LLaMA-2-7B,FP16,16-bit,,DiscrimEvalGen (sampling),No-response count (out of 70),66,,,,,False,measured,17,Table B.4,Table B.4,LLaMA-2 | 0 | 1 | 3 | 66
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),28,,,,,False,measured,17,Table B.4,Table B.4,Mistral | 2 | 28 | 1 | 39
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),51,FP16,28,23,absolute,False,measured,17,Table B.4,Table B.4,+ WU | 14 | 51 | 3 | 2
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),50,FP16,28,22,absolute,False,measured,17,Table B.4,Table B.4,+ AWQ | 3 | 50 | 0 | 17
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),26,,,,,False,measured,17,Table B.4,Table B.4,LLaMA-3.1 | 3 | 26 | 9 | 32
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEval (chat template),Bias score,0.51,FP16,0.21,0.3,absolute,False,measured,20,Table C.1c DiscrimEval,Table C.1c,LLaMA-3.1 | 0.21 | ↓62 0.08 | ↓62 0.08 | ↑143 0.51
+RP24,LLaMA-2-7B,AWQ,4-bit,,DiscrimEval (chat template),Bias score,0.37,FP16,0.18,0.19,absolute,False,measured,20,Table C.1c DiscrimEval,Table C.1c,LLaMA-2 | 0.18 | ↓89 0.02 | ↓28 0.13 | ↑106 0.37
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,"DT-Stereotyping (greedy, chat template)",Agreement rate (%),100,FP16,1,99,absolute,False,measured,20,Table C.1d DT-Stereotyping,Table C.1d,LLaMA-3.1 | 1 | ↑9900 100
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,"DiscrimEvalGen (sampling, chat template)",Bias score,0.29,FP16,0.91,-0.62,absolute,False,measured,20,Table C.1e DiscrimEvalGen,Table C.1e,Mistral | ... 0.91 | ↓68 0.29

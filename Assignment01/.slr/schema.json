@@ -1,5 +1,5 @@
 {
-  "schema_version": "a1.v1",
+  "schema_version": "a1.v3",
   "description": "AI503 Assignment 1 SLR extraction schema. Every leaf field is a {value, ev} pair where ev = {page, section, quote, bbox, block_id}. Arrays of values become arrays of {value, ev} objects. Designed so an interactive paper explorer can show source page images with highlight overlays.",
 
   "ev_shape": {
@@ -35,6 +35,27 @@
     "models_used":   {"type": "array_leaf", "value_type": "string", "note": "every model checkpoint tested, e.g. 'OPT-175B', 'LLaMA-2-7B'"},
     "eval_metrics":  {"type": "array_leaf", "value_type": "string", "note": "every metric reported: PPL, accuracy, BLEU, ASR, etc."},
     "key_results":   {"type": "array_leaf", "value_type": "string", "note": "2-4 headline numeric results in 'X on Y at Z = N' form. Source MUST point to the table or text where the number appears. Use ev.source_table if from a table."},
+
+    "metrics_results": {
+      "type": "array_object",
+      "note": "Long-format structured table of EVERY reported numerical result in the paper. One entry per (model x method x bit_width x dataset x metric) datapoint. Captures all values from results tables, ablations, and prose. Each entry is sourced to its table/figure with page+bbox+quote.",
+      "object_shape": {
+        "model":          {"type": "string", "note": "Specific model checkpoint, e.g. 'OPT-175B', 'LLaMA-2-7B', 'Mistral-7B-Instruct'. Use canonical names."},
+        "method":         {"type": "string", "note": "Quantization method or baseline label, e.g. 'GPTQ', 'AWQ', 'RTN', 'FP16', 'SmoothQuant'. Use 'FP16' (or 'BF16' / 'FP32') for unquantized baselines."},
+        "bit_width":      {"type": "string", "note": "Normalize to N-bit form: '2-bit', '3-bit', '4-bit', '8-bit', '16-bit'. Map 'INT4'/'W4'/'4 bits per weight'/'NF4' all to '4-bit'. Use '16-bit' for FP16/BF16 baselines."},
+        "group_size":     {"type": "string_or_null", "note": "Quantization group size if reported, e.g. 'g128', 'g64', 'per-channel'. Null if not applicable / not reported."},
+        "dataset":        {"type": "string", "note": "Specific evaluation/calibration dataset name, e.g. 'WikiText-2', 'MMLU', 'AdvBench'. Use canonical names."},
+        "metric":         {"type": "string", "note": "Specific metric name, e.g. 'Perplexity', 'Accuracy', 'BLEU', 'Refusal rate', 'Speedup', 'Latency (ms/token)', 'Memory (GB)'. Include unit if part of metric definition."},
+        "value":          {"type": "number_or_string", "note": "The reported numerical value. Prefer raw float (e.g. 8.37). Use string only if the paper reports a range or non-numeric value (e.g. '8.3-8.5')."},
+        "baseline_label": {"type": "string_or_null", "note": "Label of the comparison baseline if the paper reports one alongside this value, e.g. 'FP16', 'RTN'. Null if no baseline reported."},
+        "baseline_value": {"type": "number_or_null", "note": "Numerical value of the baseline. Null if not applicable."},
+        "delta":          {"type": "number_or_null", "note": "Difference from baseline: value - baseline_value (for 'lower is better' metrics like PPL, the delta is positive when worse). Null if no baseline."},
+        "delta_unit":     {"type": "enum_or_null", "values": ["absolute", "percent", "relative", "x_factor", null], "note": "How the delta should be interpreted: 'absolute' (raw difference), 'percent' (e.g. +3% accuracy drop), 'relative' (ratio), 'x_factor' (e.g. 3.25x speedup)."},
+        "headline":       {"type": "bool", "note": "True if this value appears in the paper's abstract or introduction as a headline result. Roughly 3-5 entries per paper should be marked headline=true."},
+        "source_kind":    {"type": "enum", "values": ["measured", "cited"], "note": "REQUIRED. 'measured' = the paper itself ran the experiment to produce this number (the paper's own contribution). 'cited' = the paper reproduces a number from prior work (typically appears in a comparison table where the paper says 'baselines from [X]', or where the value is on a model the paper does not run end-to-end). When in doubt, look at table captions for phrases like 'numbers from', 'as reported in', 'reproduced from'. Stock baselines like FP32 ImageNet ResNet-18 = 69.76% are 'cited' unless the paper explicitly retrained the baseline. Numbers the paper produced by running their own code on someone else's algorithm (e.g., 'we re-ran AdaRound') ARE 'measured', not 'cited'."}
+      },
+      "ev_shape": "Same as standard ev: {page, section, quote, bbox, block_id, source_table}. The quote MUST contain the numeric value verbatim."
+    },
 
     "paper_type":    {"type": "leaf", "value_type": "enum", "values": ["benchmark", "method", "survey", "application", "safety_analysis"]},
     "method_family": {"type": "leaf", "value_type": "enum", "values": ["PTQ", "QAT", "KV-cache-quant", "pruning", "architecture", "none"], "note": "'none' for benchmark/non-method papers"},
@@ -86,6 +107,44 @@
     "key_results": [
       {"value": "OPT-175B at 4-bit reaches WikiText-2 PPL 8.37 vs FP16 8.34 (Δ 0.03)", "ev": {"page": 8, "section": "Experiments", "quote": "OPT 175B 4-bit GPTQ 8.37", "bbox": null, "block_id": "/page/7/Table/2", "source_table": "Table 5"}},
       {"value": "3.25× decoding speedup on A100 over FP16",                              "ev": {"page": 9, "section": "Inference Speedup", "quote": "3.25x speedup on the A100", "bbox": null, "block_id": null, "source_table": "Table 6"}}
+    ],
+    "metrics_results": [
+      {
+        "value": {
+          "model": "OPT-175B", "method": "GPTQ", "bit_width": "4-bit", "group_size": null,
+          "dataset": "WikiText-2", "metric": "Perplexity", "value": 8.37,
+          "baseline_label": "FP16", "baseline_value": 8.34, "delta": 0.03, "delta_unit": "absolute",
+          "headline": true, "source_kind": "measured"
+        },
+        "ev": {"page": 8, "section": "5.2 Language Generation Results", "quote": "OPT 175B 4-bit GPTQ 8.37 ... FP16 8.34", "bbox": [115, 412, 502, 478], "block_id": "/page/7/Table/2", "source_table": "Table 5"}
+      },
+      {
+        "value": {
+          "model": "OPT-175B", "method": "RTN", "bit_width": "4-bit", "group_size": null,
+          "dataset": "WikiText-2", "metric": "Perplexity", "value": 10.54,
+          "baseline_label": "FP16", "baseline_value": 8.34, "delta": 2.20, "delta_unit": "absolute",
+          "headline": false, "source_kind": "measured"
+        },
+        "ev": {"page": 8, "section": "5.2 Language Generation Results", "quote": "OPT 175B 4-bit RTN 10.54", "bbox": null, "block_id": "/page/7/Table/2", "source_table": "Table 5"}
+      },
+      {
+        "value": {
+          "model": "ResNet-18", "method": "AdaRound", "bit_width": "4-bit", "group_size": null,
+          "dataset": "ImageNet", "metric": "Top-1 Accuracy", "value": 69.34,
+          "baseline_label": "FP32", "baseline_value": 69.76, "delta": -0.42, "delta_unit": "absolute",
+          "headline": false, "source_kind": "cited"
+        },
+        "ev": {"page": 7, "section": "5.1 Vision Models", "quote": "AdaRound | 4-bit ... 69.34 (numbers from Nahshan et al.)", "bbox": null, "block_id": "/page/6/Table/0", "source_table": "Table 1"}
+      },
+      {
+        "value": {
+          "model": "OPT-175B", "method": "GPTQ", "bit_width": "4-bit", "group_size": null,
+          "dataset": "A100 80GB", "metric": "Speedup over FP16", "value": 3.25,
+          "baseline_label": "FP16", "baseline_value": 1.0, "delta": 2.25, "delta_unit": "x_factor",
+          "headline": true, "source_kind": "measured"
+        },
+        "ev": {"page": 9, "section": "5.4 Inference Speedup", "quote": "3.25x speedup on the A100", "bbox": null, "block_id": null, "source_table": "Table 6"}
+      }
     ],
     "gap_signals": {
       "reports_energy_consumption":             {"value": false, "ev": {"page": null, "section": "absence", "quote": "", "bbox": null, "block_id": null}},

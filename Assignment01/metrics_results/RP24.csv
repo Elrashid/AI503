@@ -1,0 +1,195 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP24,LLaMA-2-7B,FP16,16-bit,,CrowSPairs,Stereotype score (%),65,,,,,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ↓7 60 | ↓3 63 | ↓2 64 | ↑2 66 | ↓1 64
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,CrowSPairs,Stereotype score (%),60,FP16,65,-5,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ↓7 60
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,CrowSPairs,Stereotype score (%),63,FP16,65,-2,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↓3 63
+RP24,LLaMA-2-7B,AWQ,4-bit,,CrowSPairs,Stereotype score (%),64,FP16,65,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↓2 64
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,CrowSPairs,Stereotype score (%),66,FP16,65,1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↑2 66
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,CrowSPairs,Stereotype score (%),64,FP16,65,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-2 | 65 | ... ↓1 64
+RP24,Mistral-7B-v0.3,FP16,16-bit,,CrowSPairs,Stereotype score (%),68,,,,,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ↓2 66 | 68 | ↓1 67 | ↑1 69 | 68
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,CrowSPairs,Stereotype score (%),66,FP16,68,-2,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ↓2 66
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,CrowSPairs,Stereotype score (%),68,FP16,68,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... 68
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,CrowSPairs,Stereotype score (%),67,FP16,68,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... ↓1 67
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,CrowSPairs,Stereotype score (%),69,FP16,68,1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... ↑1 69
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,CrowSPairs,Stereotype score (%),68,FP16,68,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,Mistral | 68 | ... 68
+RP24,LLaMA-3.1-8B,FP16,16-bit,,CrowSPairs,Stereotype score (%),66,,,,,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ↓4 63 | ↓2 65 | 66 | 66 | 66
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,CrowSPairs,Stereotype score (%),63,FP16,66,-3,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ↓4 63
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,CrowSPairs,Stereotype score (%),65,FP16,66,-1,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... ↓2 65
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,CrowSPairs,Stereotype score (%),66,FP16,66,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... 66
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,CrowSPairs,Stereotype score (%),66,FP16,66,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... 66 | 66
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,CrowSPairs,Stereotype score (%),66,FP16,66,0,absolute,False,measured,7,(a) CrowSPairs,Table 2a,LLaMA-3.1 | 66 | ... 66 | 66 | 66
+RP24,LLaMA-2-7B,FP16,16-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,,,,,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ↓36 0.07 | 0.11 | ↑9 0.12 | ↑9 0.12 | ↓9 0.1 | 0.11 | 0.11
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,GlobalOpinionQA,Wasserstein-Gini bias,0.07,FP16,0.11,-0.04,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ↓36 0.07
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ↓36 0.07 | 0.11
+RP24,LLaMA-2-7B,AWQ,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.12,FP16,0.11,0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... ↑9 0.12
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.12,FP16,0.11,0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... ↑9 0.12 | ↑9 0.12
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.1,FP16,0.11,-0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... ↓9 0.1
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... 0.11 | 0.11
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-2 | 0.11 | ... 0.11 | 0.11
+RP24,Mistral-7B-v0.3,FP16,16-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,,,,,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ↑45 0.16 | ↑18 0.13 | ↑36 0.15 | 0.11 | ↓18 0.09 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,GlobalOpinionQA,Wasserstein-Gini bias,0.16,FP16,0.11,0.05,absolute,True,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ↑45 0.16
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,GlobalOpinionQA,Wasserstein-Gini bias,0.13,FP16,0.11,0.02,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... ↑18 0.13
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.15,FP16,0.11,0.04,absolute,True,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... ↑36 0.15
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.11,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... 0.11
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.09,FP16,0.11,-0.02,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,Mistral | 0.11 | ... ↓18 0.09
+RP24,LLaMA-3.1-8B,FP16,16-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,,,,,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ↓21 0.11 | ↓14 0.12 | ↑7 0.15 | 0.14 | 0.14 | 0.14 | 0.14
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,GlobalOpinionQA,Wasserstein-Gini bias,0.11,FP16,0.14,-0.03,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ↓21 0.11
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,GlobalOpinionQA,Wasserstein-Gini bias,0.12,FP16,0.14,-0.02,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... ↓14 0.12
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.15,FP16,0.14,0.01,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... ↑7 0.15
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14 | 0.14 | 0.14
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14 | 0.14
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,7,(b) GlobalOpinionQA,Table 2b,LLaMA-3.1 | 0.14 | ... 0.14 | 0.14
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Mean absolute relative error,0.52,,,,,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ↑8 0.56 | ↑6 0.55 | 0.52 | ↑2 0.53 | ↓8 0.48 | ↓10 0.47 | ↓12 0.46
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,WorldBench,Mean absolute relative error,0.56,FP16,0.52,0.04,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ↑8 0.56
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,WorldBench,Mean absolute relative error,0.55,FP16,0.52,0.03,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↑6 0.55
+RP24,LLaMA-2-7B,AWQ,4-bit,,WorldBench,Mean absolute relative error,0.52,FP16,0.52,0,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... 0.52
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,WorldBench,Mean absolute relative error,0.53,FP16,0.52,0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↑2 0.53
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,WorldBench,Mean absolute relative error,0.48,FP16,0.52,-0.04,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↓8 0.48
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,WorldBench,Mean absolute relative error,0.47,FP16,0.52,-0.05,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↓10 0.47
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,WorldBench,Mean absolute relative error,0.46,FP16,0.52,-0.06,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-2 | 0.52 | ... ↓12 0.46
+RP24,Mistral-7B-v0.3,FP16,16-bit,,WorldBench,Mean absolute relative error,0.43,,,,,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ↑37 0.59 | ↑19 0.51 | ↑2 0.44 | 0.43 | ↓21 0.34 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,WorldBench,Mean absolute relative error,0.59,FP16,0.43,0.16,absolute,True,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ↑37 0.59
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,WorldBench,Mean absolute relative error,0.51,FP16,0.43,0.08,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... ↑19 0.51
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,WorldBench,Mean absolute relative error,0.44,FP16,0.43,0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... ↑2 0.44
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,WorldBench,Mean absolute relative error,0.43,FP16,0.43,0,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... 0.43
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,WorldBench,Mean absolute relative error,0.34,FP16,0.43,-0.09,absolute,False,measured,7,(c) WorldBench,Table 2c,Mistral | 0.43 | ... ↓21 0.34
+RP24,LLaMA-3.1-8B,FP16,16-bit,,WorldBench,Mean absolute relative error,0.4,,,,,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ↑25 0.5 | ↑38 0.55 | ↑10 0.44 | ↑5 0.42 | ↓3 0.39 | 0.4 | ↓3 0.39
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,WorldBench,Mean absolute relative error,0.5,FP16,0.4,0.1,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ↑25 0.5
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,WorldBench,Mean absolute relative error,0.55,FP16,0.4,0.15,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↑38 0.55
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,WorldBench,Mean absolute relative error,0.44,FP16,0.4,0.04,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↑10 0.44
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,WorldBench,Mean absolute relative error,0.42,FP16,0.4,0.02,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↑5 0.42
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,WorldBench,Mean absolute relative error,0.39,FP16,0.4,-0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↓3 0.39
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,WorldBench,Mean absolute relative error,0.4,FP16,0.4,0,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... 0.4
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,WorldBench,Mean absolute relative error,0.39,FP16,0.4,-0.01,absolute,False,measured,7,(c) WorldBench,Table 2c,LLaMA-3.1 | 0.4 | ... ↓3 0.39
+RP24,LLaMA-2-7B,FP16,16-bit,,DiscrimEval,Bias score,0.22,,,,,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ↓86 0.03 | ↓27 0.16 | ↑123 0.49 | ↓36 0.14 | ↑18 0.26 | ↓64 0.08 | 0.22
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DiscrimEval,Bias score,0.03,FP16,0.22,-0.19,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ↓86 0.03
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DiscrimEval,Bias score,0.16,FP16,0.22,-0.06,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↓27 0.16
+RP24,LLaMA-2-7B,AWQ,4-bit,,DiscrimEval,Bias score,0.49,FP16,0.22,0.27,absolute,True,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↑123 0.49
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DiscrimEval,Bias score,0.14,FP16,0.22,-0.08,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↓36 0.14
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,DiscrimEval,Bias score,0.26,FP16,0.22,0.04,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↑18 0.26
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,DiscrimEval,Bias score,0.08,FP16,0.22,-0.14,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... ↓64 0.08
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,DiscrimEval,Bias score,0.22,FP16,0.22,0,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-2 | 0.22 | ... 0.22
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEval,Bias score,0.1,,,,,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ↓40 0.06 | ↓10 0.09 | ↑110 0.21 | ↓10 0.09 | ↑10 0.11 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DiscrimEval,Bias score,0.06,FP16,0.1,-0.04,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ↓40 0.06
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEval,Bias score,0.09,FP16,0.1,-0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↓10 0.09
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEval,Bias score,0.21,FP16,0.1,0.11,absolute,True,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↑110 0.21
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DiscrimEval,Bias score,0.09,FP16,0.1,-0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↓10 0.09
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DiscrimEval,Bias score,0.11,FP16,0.1,0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,Mistral | 0.1 | ... ↑10 0.11
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEval,Bias score,0.19,,,,,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ↓58 0.08 | ↓47 0.1 | ↑11 0.21 | ↑5 0.2 | ↑26 0.24 | ↓58 0.08 | 0.19
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DiscrimEval,Bias score,0.08,FP16,0.19,-0.11,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ↓58 0.08
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DiscrimEval,Bias score,0.1,FP16,0.19,-0.09,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↓47 0.1
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEval,Bias score,0.21,FP16,0.19,0.02,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↑11 0.21
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DiscrimEval,Bias score,0.2,FP16,0.19,0.01,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↑5 0.2
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DiscrimEval,Bias score,0.24,FP16,0.19,0.05,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↑26 0.24
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DiscrimEval,Bias score,0.08,FP16,0.19,-0.11,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... ↓58 0.08
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DiscrimEval,Bias score,0.19,FP16,0.19,0,absolute,False,measured,7,(d) DiscrimEval,Table 2d,LLaMA-3.1 | 0.19 | ... 0.19
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (greedy),Agreement rate (%),22,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | 22 | ↓59 9 | ↓18 18 | ↓50 11 | ↓41 13 | ↓18 18 | ↓5 21
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DT-Stereotyping (greedy),Agreement rate (%),22,FP16,22,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | 22
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (greedy),Agreement rate (%),9,FP16,22,-13,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | 22 | ↓59 9
+RP24,LLaMA-2-7B,AWQ,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),18,FP16,22,-4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓18 18
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),11,FP16,22,-11,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓50 11
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),13,FP16,22,-9,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓41 13
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),18,FP16,22,-4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓18 18
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),21,FP16,22,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | 22 | ... ↓5 21
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (greedy),Agreement rate (%),21,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ↑71 6 | ↑367 98 | ↑348 94 | ↑267 77 | ↑43 30 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DT-Stereotyping (greedy),Agreement rate (%),6,FP16,21,-15,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ↑71 6
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (greedy),Agreement rate (%),98,FP16,21,77,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑367 98
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),94,FP16,21,73,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑348 94
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),77,FP16,21,56,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑267 77
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),30,FP16,21,9,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | 21 | ... ↑43 30
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (greedy),Agreement rate (%),10,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ↓100 0 | ↑20 12 | ↓100 0 | ↓90 1 | ↑20 12 | 10 | 10
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (greedy),Agreement rate (%),0,FP16,10,-10,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ↓100 0
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (greedy),Agreement rate (%),12,FP16,10,2,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↑20 12
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),0,FP16,10,-10,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↓100 0
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),1,FP16,10,-9,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↓90 1
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),12,FP16,10,2,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... ↑20 12
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),10,FP16,10,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... 10
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DT-Stereotyping (greedy),Agreement rate (%),10,FP16,10,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | 10 | ... 10 | 10
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ↑44 13 | 9 | 9 | ↓11 8 | ↓11 8 | ↓11 8 | 9
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Agreement rate (%),13,FP16,9,4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ↑44 13
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,9,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ... 9
+RP24,LLaMA-2-7B,AWQ,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,9,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... 9 | ... 9 | 9
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),8,FP16,9,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8
+RP24,LLaMA-2-7B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),8,FP16,9,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8 | ↓11 8
+RP24,LLaMA-2-7B,KV-cache-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),8,FP16,9,-1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8 | ↓11 8 | ↓11 8
+RP24,LLaMA-2-7B,KV-cache-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,9,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-2 | ... ↓11 8 | 9
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),Agreement rate (%),34,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... 34 | ↓21 27 | ↑76 60 | ↑109 71 | ↑21 41 | ↑3 35 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Agreement rate (%),27,FP16,34,-7,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... 34 | ↓21 27
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Agreement rate (%),60,FP16,34,26,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑76 60
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),71,FP16,34,37,absolute,True,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑109 71
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),41,FP16,34,7,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑21 41
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),35,FP16,34,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,Mistral | ... ↑3 35
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),Agreement rate (%),20,,,,,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... 20 | ↓85 3 | ↑5 21 | ↓20 16 | ↓55 9 | ↑5 21 | ↑5 21 | 20
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Agreement rate (%),3,FP16,20,-17,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↓85 3
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Agreement rate (%),21,FP16,20,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↑5 21
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),16,FP16,20,-4,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↓20 16
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),9,FP16,20,-11,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↓55 9
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),21,FP16,20,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↑5 21
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),21,FP16,20,1,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... ↑5 21
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DT-Stereotyping (sampling),Agreement rate (%),20,FP16,20,0,absolute,False,measured,7,(e) DT-Stereotyping,Table 2e,LLaMA-3.1 | ... 20
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEvalGen (greedy),Bias score,0.87,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ↓70 0.26 | ↓18 0.71 | ↑8 0.94 | 0.87 | ↓1 0.86 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DiscrimEvalGen (greedy),Bias score,0.26,FP16,0.87,-0.61,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ↓70 0.26
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (greedy),Bias score,0.71,FP16,0.87,-0.16,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... ↓18 0.71
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEvalGen (greedy),Bias score,0.94,FP16,0.87,0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... ↑8 0.94
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.87,FP16,0.87,0,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... 0.87
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (greedy),Bias score,0.86,FP16,0.87,-0.01,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | 0.87 | ... ↓1 0.86
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEvalGen (greedy),Bias score,0.61,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ND | ↑16 0.71 | ↑26 0.77 | ↑21 0.74 | ↓2 0.6 | ↑16 0.51 | ↑21 0.74
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (greedy),Bias score,0.71,FP16,0.61,0.1,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ND | ↑16 0.71
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEvalGen (greedy),Bias score,0.77,FP16,0.61,0.16,absolute,True,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑26 0.77
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.74,FP16,0.61,0.13,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑21 0.74
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (greedy),Bias score,0.6,FP16,0.61,-0.01,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↓2 0.6
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.51,FP16,0.61,-0.1,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑16 0.51
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DiscrimEvalGen (greedy),Bias score,0.74,FP16,0.61,0.13,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | 0.61 | ... ↑21 0.74
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEvalGen (sampling),Bias score,0.82,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ↓79 0.17 | ↓51 0.4 | ↓6 0.77 | ↓11 0.73 | ↓9 0.75 | NI | NI
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DiscrimEvalGen (sampling),Bias score,0.17,FP16,0.82,-0.65,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ↓79 0.17
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (sampling),Bias score,0.4,FP16,0.82,-0.42,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓51 0.4
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEvalGen (sampling),Bias score,0.77,FP16,0.82,-0.05,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓6 0.77
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.73,FP16,0.82,-0.09,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓11 0.73
+RP24,Mistral-7B-v0.3,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (sampling),Bias score,0.75,FP16,0.82,-0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,Mistral | ... 0.82 | ... ↓9 0.75
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEvalGen (sampling),Bias score,0.16,,,,,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ↑225 0.52 | ↓31 0.11 | ↑12 0.18 | ↑44 0.23 | ↑44 0.23 | ↓44 0.09 | ↑50 0.24
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DiscrimEvalGen (sampling),Bias score,0.52,FP16,0.16,0.36,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ↑225 0.52
+RP24,LLaMA-3.1-8B,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (sampling),Bias score,0.11,FP16,0.16,-0.05,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↓31 0.11
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEvalGen (sampling),Bias score,0.18,FP16,0.16,0.02,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑12 0.18
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.23,FP16,0.16,0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑44 0.23
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT8,8-bit,,DiscrimEvalGen (sampling),Bias score,0.23,FP16,0.16,0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑44 0.23
+RP24,LLaMA-3.1-8B,KV-cache-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.09,FP16,0.16,-0.07,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↓44 0.09
+RP24,LLaMA-3.1-8B,KV-cache-INT8,8-bit,,DiscrimEvalGen (sampling),Bias score,0.24,FP16,0.16,0.08,absolute,False,measured,7,(f) DiscrimEvalGen,Table 2f,LLaMA-3.1 | ... 0.16 | ... ↑50 0.24
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,GlobalOpinionQA,Wasserstein-Gini bias,0.14,FP16,0.14,0,absolute,False,measured,8,RQ3,Table 3,GlobalOpinionQA | 0.14 | 0.14 | 0.14 | 0.14
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,WorldBench,Mean absolute relative error,0.42,FP16,0.4,0.02,absolute,False,measured,8,RQ3,Table 3,WorldBench | 0.4 | ↑5 0.42 | 0.4 | ↑5 0.42
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DiscrimEval,Bias score,0.2,FP16,0.19,0.01,absolute,False,measured,8,RQ3,Table 3,DiscrimEval | 0.19 | ↑5 0.2 | ↓58 0.08 | ↑5 0.2
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DT-Stereotyping (greedy),Agreement rate (%),2,FP16,10,-8,absolute,False,measured,8,RQ3,Table 3,DT-Stereo (g) | 10 | ↓90 1 | 10 | ↓80 2
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DT-Stereotyping (sampling),Agreement rate (%),11,FP16,20,-9,absolute,False,measured,8,RQ3,Table 3,DT-Stereo (s) | 20 | ↓55 9 | ↑5 21 | ↓45 11
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DiscrimEvalGen (greedy),Bias score,0.53,FP16,0.61,-0.08,absolute,False,measured,8,RQ3,Table 3,DiscrimEvalGen (g) | 0.61 | ↑21 0.74 | ↓16 0.51 | ↓13 0.53
+RP24,LLaMA-3.1-8B,Bitsandbytes-INT4 + KV-cache-INT4,4-bit,,DiscrimEvalGen (sampling),Bias score,0.19,FP16,0.16,0.03,absolute,False,measured,8,RQ3,Table 3,DiscrimEvalGen (s) | 0.16 | ↑44 0.23 | ↓44 0.09 | ↑19 0.19
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),Average response length (words),65,,,,,True,measured,9,RQ3 prose,Table A.2,structured pruning increases the average response length in LLaMA-2 from 65 to 107 words
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Average response length (words),107,FP16,65,42,absolute,True,measured,9,RQ3 prose,Table A.2,structured pruning increases the average response length in LLaMA-2 from 65 to 107 words
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),Non-dictionary word rate (%),11,,,,,False,measured,9,RQ3 prose,Table A.2,"For LLaMa-3.1, the rate of non-dictionary words increases from 11% to 25%"
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Non-dictionary word rate (%),25,FP16,11,14,absolute,True,measured,9,RQ3 prose,Table A.2,"For LLaMa-3.1, the rate of non-dictionary words increases from 11% to 25%"
+RP24,LLaMA-2-7B,Wanda-Unstructured,,50% sparsity,DT-Stereotyping (sampling),Average response length (words),80,FP16,65,15,absolute,False,measured,15,Table A.2,Table A.2,+ W UNSTRUCT | 80 | 6 | 27 | 73
+RP24,LLaMA-2-7B,AWQ,4-bit,,DT-Stereotyping (sampling),Average response length (words),75,FP16,65,10,absolute,False,measured,15,Table A.2,Table A.2,+ AWQ | 75 | 6 | 22 | 78
+RP24,LLaMA-2-7B,Bitsandbytes-INT4,4-bit,,DT-Stereotyping (sampling),Average response length (words),53,FP16,65,-12,absolute,False,measured,15,Table A.2,Table A.2,+ INT4 | 53 | 4 | 16 | 84
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),Average response length (words),73,,,,,False,measured,15,Table A.2,Table A.2,Mistral | 73 | 11 | 24 | 76
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,DT-Stereotyping (sampling),Average response length (words),63,FP16,73,-10,absolute,False,measured,15,Table A.2,Table A.2,+ W STRUCT | 63 | 8 | 29 | 71
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),Average response length (words),141,,,,,False,measured,15,Table A.2,Table A.2,LLaMA-3.1 | 141 | 11 | 36 | 64
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),Disagreement rate (%),17,,,,,False,measured,16,Table B.2,Table B.2,LLaMA-2 | 9 | 17 | 74
+RP24,LLaMA-2-7B,FP16,16-bit,,DT-Stereotyping (sampling),No-response rate (%),74,,,,,False,measured,16,Table B.2,Table B.2,LLaMA-2 | 9 | 17 | 74
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),Disagreement rate (%),54,,,,,False,measured,16,Table B.2,Table B.2,Mistral | 34 | 54 | 12
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DT-Stereotyping (sampling),No-response rate (%),12,,,,,False,measured,16,Table B.2,Table B.2,Mistral | 34 | 54 | 12
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DT-Stereotyping (sampling),No-response rate (%),46,,,,,False,measured,16,Table B.2,Table B.2,LLaMA-3.1 | 20 | 34 | 46
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,DT-Stereotyping (sampling),No-response rate (%),96,FP16,46,50,absolute,False,measured,16,Table B.2,Table B.2,+ WS | ↓85 3 | 2 | 96
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Disparity income (%),16,,,,,False,measured,19,Table B.5,Table B.5,LLaMA-2 | 0.52 | 16 | 17 | 91
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Disparity regions (%),17,,,,,False,measured,19,Table B.5,Table B.5,LLaMA-2 | 0.52 | 16 | 17 | 91
+RP24,LLaMA-2-7B,FP16,16-bit,,WorldBench,Parse rate (%),91,,,,,False,measured,19,Table B.5,Table B.5,LLaMA-2 | 0.52 | 16 | 17 | 91
+RP24,LLaMA-2-7B,Wanda-Structured,,2:4,WorldBench,Parse rate (%),54,FP16,91,-37,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.56 | 12 | 14 | 54
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,WorldBench,Disparity regions (%),26,FP16,18,8,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.59 | 15 | 26 | 100
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,WorldBench,Parse rate (%),83,FP16,100,-17,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.50 | 24 | 27 | 83
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,WorldBench,Disparity regions (%),27,FP16,20,7,absolute,False,measured,19,Table B.5,Table B.5,+ WS | 0.50 | 24 | 27 | 83
+RP24,LLaMA-2-7B,FP16,16-bit,,DiscrimEvalGen (sampling),No-response count (out of 70),66,,,,,False,measured,17,Table B.4,Table B.4,LLaMA-2 | 0 | 1 | 3 | 66
+RP24,Mistral-7B-v0.3,FP16,16-bit,,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),28,,,,,False,measured,17,Table B.4,Table B.4,Mistral | 2 | 28 | 1 | 39
+RP24,Mistral-7B-v0.3,Wanda-Unstructured,,50% sparsity,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),51,FP16,28,23,absolute,False,measured,17,Table B.4,Table B.4,+ WU | 14 | 51 | 3 | 2
+RP24,Mistral-7B-v0.3,AWQ,4-bit,,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),50,FP16,28,22,absolute,False,measured,17,Table B.4,Table B.4,+ AWQ | 3 | 50 | 0 | 17
+RP24,LLaMA-3.1-8B,FP16,16-bit,,DiscrimEvalGen (sampling),Non-binary preference count (out of 70),26,,,,,False,measured,17,Table B.4,Table B.4,LLaMA-3.1 | 3 | 26 | 9 | 32
+RP24,LLaMA-3.1-8B,AWQ,4-bit,,DiscrimEval (chat template),Bias score,0.51,FP16,0.21,0.3,absolute,False,measured,20,Table C.1c DiscrimEval,Table C.1c,LLaMA-3.1 | 0.21 | ↓62 0.08 | ↓62 0.08 | ↑143 0.51
+RP24,LLaMA-2-7B,AWQ,4-bit,,DiscrimEval (chat template),Bias score,0.37,FP16,0.18,0.19,absolute,False,measured,20,Table C.1c DiscrimEval,Table C.1c,LLaMA-2 | 0.18 | ↓89 0.02 | ↓28 0.13 | ↑106 0.37
+RP24,LLaMA-3.1-8B,Wanda-Structured,,2:4,"DT-Stereotyping (greedy, chat template)",Agreement rate (%),100,FP16,1,99,absolute,False,measured,20,Table C.1d DT-Stereotyping,Table C.1d,LLaMA-3.1 | 1 | ↑9900 100
+RP24,Mistral-7B-v0.3,Wanda-Structured,,2:4,"DiscrimEvalGen (sampling, chat template)",Bias score,0.29,FP16,0.91,-0.62,absolute,False,measured,20,Table C.1e DiscrimEvalGen,Table C.1e,Mistral | ... 0.91 | ↓68 0.29

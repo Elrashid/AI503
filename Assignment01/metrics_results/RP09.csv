@@ -1,0 +1,154 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP09,ResNet-18,GPTQ,4-bit,,ImageNet,Top-1 Accuracy,69.37,FP32,69.76,-0.39,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,ResNet-18,GPTQ,3-bit,,ImageNet,Top-1 Accuracy,67.88,FP32,69.76,-1.88,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,ResNet-50,GPTQ,4-bit,,ImageNet,Top-1 Accuracy,75.71,FP32,76.13,-0.42,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,ResNet-50,GPTQ,3-bit,,ImageNet,Top-1 Accuracy,74.87,FP32,76.13,-1.26,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 1,GPTQ | 69.37 | 67.88 | 75.71 | 74.87
+RP09,OPT-13B,GPTQ,,,C4,Quantization runtime (minutes),20.9,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,OPT | 13B | 30B | 66B | 175B | Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,OPT-30B,GPTQ,,,C4,Quantization runtime (minutes),44.9,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,OPT-66B,GPTQ,,,C4,Quantization runtime (hours),1.6,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,OPT-175B,GPTQ,,,C4,Quantization runtime (hours),4.2,,,,,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 20.9m | 44.9m | 1.6h | 4.2h
+RP09,BLOOM-1.7B,GPTQ,,,C4,Quantization runtime (minutes),2.9,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,BLOOM | 1.7B | 3B | 7.1B | 176B | Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,BLOOM-3B,GPTQ,,,C4,Quantization runtime (minutes),5.2,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,BLOOM-7.1B,GPTQ,,,C4,Quantization runtime (minutes),10.0,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,BLOOM-176B,GPTQ,,,C4,Quantization runtime (hours),3.8,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 2,Runtime | 2.9m | 5.2m | 10.0m | 3.8h
+RP09,OPT-125M,FP16,16-bit,,WikiText-2,Perplexity,27.65,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | 22.00 | 14.63 | 12.47 | 10.86 | 10.13 | 9.56 | 9.34 | 8.34
+RP09,OPT-350M,FP16,16-bit,,WikiText-2,Perplexity,22.0,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | 22.00 | 14.63
+RP09,OPT-1.3B,FP16,16-bit,,WikiText-2,Perplexity,14.63,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | 22.00 | 14.63 | 12.47
+RP09,OPT-2.7B,FP16,16-bit,,WikiText-2,Perplexity,12.47,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 12.47 | 10.86
+RP09,OPT-6.7B,FP16,16-bit,,WikiText-2,Perplexity,10.86,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 10.86 | 10.13
+RP09,OPT-13B,FP16,16-bit,,WikiText-2,Perplexity,10.13,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 10.13 | 9.56
+RP09,OPT-30B,FP16,16-bit,,WikiText-2,Perplexity,9.56,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 9.56 | 9.34
+RP09,OPT-66B,FP16,16-bit,,WikiText-2,Perplexity,9.34,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | ... 9.34 | 8.34
+RP09,OPT-175B,FP16,16-bit,,WikiText-2,Perplexity,8.34,,,,,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,full | 16 | 27.65 | ... | 8.34
+RP09,OPT-125M,RTN,4-bit,,WikiText-2,Perplexity,37.28,FP16,27.65,9.63,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | 37.28 | 25.94 | 48.17 | 16.92 | 12.10 | 11.32 | 10.98 | 110 | 10.54
+RP09,OPT-350M,RTN,4-bit,,WikiText-2,Perplexity,25.94,FP16,22.0,3.94,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | 37.28 | 25.94 | 48.17
+RP09,OPT-1.3B,RTN,4-bit,,WikiText-2,Perplexity,48.17,FP16,14.63,33.54,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | 37.28 | 25.94 | 48.17 | 16.92
+RP09,OPT-2.7B,RTN,4-bit,,WikiText-2,Perplexity,16.92,FP16,12.47,4.45,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 48.17 | 16.92 | 12.10
+RP09,OPT-6.7B,RTN,4-bit,,WikiText-2,Perplexity,12.1,FP16,10.86,1.24,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 16.92 | 12.10 | 11.32
+RP09,OPT-13B,RTN,4-bit,,WikiText-2,Perplexity,11.32,FP16,10.13,1.19,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 12.10 | 11.32 | 10.98
+RP09,OPT-30B,RTN,4-bit,,WikiText-2,Perplexity,10.98,FP16,9.56,1.42,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 11.32 | 10.98 | 110
+RP09,OPT-66B,RTN,4-bit,,WikiText-2,Perplexity,110,FP16,9.34,100.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... 10.98 | 110 | 10.54
+RP09,OPT-175B,RTN,4-bit,,WikiText-2,Perplexity,10.54,FP16,8.34,2.2,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 4 | ... | 110 | 10.54
+RP09,OPT-125M,GPTQ,4-bit,,WikiText-2,Perplexity,31.12,FP16,27.65,3.47,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | **31.12** | **24.24** | **15.47** | **12.87** | **11.39** | **10.31** | **9.63** | **9.55** | **8.37**
+RP09,OPT-350M,GPTQ,4-bit,,WikiText-2,Perplexity,24.24,FP16,22.0,2.24,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | **31.12** | **24.24** | **15.47**
+RP09,OPT-1.3B,GPTQ,4-bit,,WikiText-2,Perplexity,15.47,FP16,14.63,0.84,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **15.47** | **12.87**
+RP09,OPT-2.7B,GPTQ,4-bit,,WikiText-2,Perplexity,12.87,FP16,12.47,0.4,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **12.87** | **11.39**
+RP09,OPT-6.7B,GPTQ,4-bit,,WikiText-2,Perplexity,11.39,FP16,10.86,0.53,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **11.39** | **10.31**
+RP09,OPT-13B,GPTQ,4-bit,,WikiText-2,Perplexity,10.31,FP16,10.13,0.18,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **10.31** | **9.63**
+RP09,OPT-30B,GPTQ,4-bit,,WikiText-2,Perplexity,9.63,FP16,9.56,0.07,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **9.63** | **9.55**
+RP09,OPT-66B,GPTQ,4-bit,,WikiText-2,Perplexity,9.55,FP16,9.34,0.21,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **9.55** | **8.37**
+RP09,OPT-175B,GPTQ,4-bit,,WikiText-2,Perplexity,8.37,FP16,8.34,0.03,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 4 | ... **8.37**
+RP09,OPT-125M,RTN,3-bit,,WikiText-2,Perplexity,1300,FP16,27.65,1272.35,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | 1.3e3 | 64.57 | 1.3e4 | 1.6e4 | 5.8e3 | 3.4e3 | 1.6e3 | 6.1e3 | 7.3e3
+RP09,OPT-350M,RTN,3-bit,,WikiText-2,Perplexity,64.57,FP16,22.0,42.57,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | 1.3e3 | 64.57 | 1.3e4
+RP09,OPT-1.3B,RTN,3-bit,,WikiText-2,Perplexity,13000,FP16,14.63,12985.37,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | 1.3e3 | 64.57 | 1.3e4 | 1.6e4
+RP09,OPT-2.7B,RTN,3-bit,,WikiText-2,Perplexity,16000,FP16,12.47,15987.53,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 1.3e4 | 1.6e4 | 5.8e3
+RP09,OPT-6.7B,RTN,3-bit,,WikiText-2,Perplexity,5800,FP16,10.86,5789.14,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 1.6e4 | 5.8e3 | 3.4e3
+RP09,OPT-13B,RTN,3-bit,,WikiText-2,Perplexity,3400,FP16,10.13,3389.87,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 5.8e3 | 3.4e3 | 1.6e3
+RP09,OPT-30B,RTN,3-bit,,WikiText-2,Perplexity,1600,FP16,9.56,1590.44,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 3.4e3 | 1.6e3 | 6.1e3
+RP09,OPT-66B,RTN,3-bit,,WikiText-2,Perplexity,6100,FP16,9.34,6090.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 1.6e3 | 6.1e3 | 7.3e3
+RP09,OPT-175B,RTN,3-bit,,WikiText-2,Perplexity,7300,FP16,8.34,7291.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,RTN | 3 | ... 6.1e3 | 7.3e3
+RP09,OPT-125M,GPTQ,3-bit,,WikiText-2,Perplexity,53.85,FP16,27.65,26.2,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | **53.85** | **33.79** | **20.97** | **16.88** | **14.86** | **11.61** | **10.27** | **14.16** | **8.68**
+RP09,OPT-350M,GPTQ,3-bit,,WikiText-2,Perplexity,33.79,FP16,22.0,11.79,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | **53.85** | **33.79** | **20.97**
+RP09,OPT-1.3B,GPTQ,3-bit,,WikiText-2,Perplexity,20.97,FP16,14.63,6.34,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **20.97** | **16.88**
+RP09,OPT-2.7B,GPTQ,3-bit,,WikiText-2,Perplexity,16.88,FP16,12.47,4.41,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **16.88** | **14.86**
+RP09,OPT-6.7B,GPTQ,3-bit,,WikiText-2,Perplexity,14.86,FP16,10.86,4.0,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **14.86** | **11.61**
+RP09,OPT-13B,GPTQ,3-bit,,WikiText-2,Perplexity,11.61,FP16,10.13,1.48,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **11.61** | **10.27**
+RP09,OPT-30B,GPTQ,3-bit,,WikiText-2,Perplexity,10.27,FP16,9.56,0.71,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **10.27** | **14.16**
+RP09,OPT-66B,GPTQ,3-bit,,WikiText-2,Perplexity,14.16,FP16,9.34,4.82,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **14.16** | **8.68**
+RP09,OPT-175B,GPTQ,3-bit,,WikiText-2,Perplexity,8.68,FP16,8.34,0.34,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 3,GPTQ | 3 | ... **8.68**
+RP09,BLOOM-560M,FP16,16-bit,,WikiText-2,Perplexity,22.42,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | 22.42 | 17.69 | 15.39 | 13.48 | 11.37 | 8.11
+RP09,BLOOM-1.1B,FP16,16-bit,,WikiText-2,Perplexity,17.69,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | 22.42 | 17.69 | 15.39
+RP09,BLOOM-1.7B,FP16,16-bit,,WikiText-2,Perplexity,15.39,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... 15.39 | 13.48
+RP09,BLOOM-3B,FP16,16-bit,,WikiText-2,Perplexity,13.48,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... 13.48 | 11.37
+RP09,BLOOM-7.1B,FP16,16-bit,,WikiText-2,Perplexity,11.37,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... 11.37 | 8.11
+RP09,BLOOM-176B,FP16,16-bit,,WikiText-2,Perplexity,8.11,,,,,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,full | 16 | ... | 8.11
+RP09,BLOOM-560M,RTN,4-bit,,WikiText-2,Perplexity,25.9,FP16,22.42,3.48,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | 25.90 | 22.00 | 16.97 | 14.76 | 12.10 | 8.37
+RP09,BLOOM-1.1B,RTN,4-bit,,WikiText-2,Perplexity,22.0,FP16,17.69,4.31,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | 25.90 | 22.00 | 16.97
+RP09,BLOOM-1.7B,RTN,4-bit,,WikiText-2,Perplexity,16.97,FP16,15.39,1.58,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 22.00 | 16.97 | 14.76
+RP09,BLOOM-3B,RTN,4-bit,,WikiText-2,Perplexity,14.76,FP16,13.48,1.28,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 16.97 | 14.76 | 12.10
+RP09,BLOOM-7.1B,RTN,4-bit,,WikiText-2,Perplexity,12.1,FP16,11.37,0.73,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 14.76 | 12.10 | 8.37
+RP09,BLOOM-176B,RTN,4-bit,,WikiText-2,Perplexity,8.37,FP16,8.11,0.26,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 4 | ... 12.10 | 8.37
+RP09,BLOOM-560M,GPTQ,4-bit,,WikiText-2,Perplexity,24.03,FP16,22.42,1.61,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | **24.03** | **19.05** | **16.48** | **14.20** | 11.73 | **8.21**
+RP09,BLOOM-1.1B,GPTQ,4-bit,,WikiText-2,Perplexity,19.05,FP16,17.69,1.36,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | **24.03** | **19.05** | **16.48**
+RP09,BLOOM-1.7B,GPTQ,4-bit,,WikiText-2,Perplexity,16.48,FP16,15.39,1.09,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... **16.48** | **14.20**
+RP09,BLOOM-3B,GPTQ,4-bit,,WikiText-2,Perplexity,14.2,FP16,13.48,0.72,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... **14.20** | 11.73
+RP09,BLOOM-7.1B,GPTQ,4-bit,,WikiText-2,Perplexity,11.73,FP16,11.37,0.36,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... 11.73 | **8.21**
+RP09,BLOOM-176B,GPTQ,4-bit,,WikiText-2,Perplexity,8.21,FP16,8.11,0.1,absolute,True,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 4 | ... **8.21**
+RP09,BLOOM-560M,RTN,3-bit,,WikiText-2,Perplexity,57.08,FP16,22.42,34.66,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | 57.08 | 50.19 | 63.59 | 39.36 | 17.38 | 571
+RP09,BLOOM-1.1B,RTN,3-bit,,WikiText-2,Perplexity,50.19,FP16,17.69,32.5,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | 57.08 | 50.19 | 63.59
+RP09,BLOOM-1.7B,RTN,3-bit,,WikiText-2,Perplexity,63.59,FP16,15.39,48.2,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 50.19 | 63.59 | 39.36
+RP09,BLOOM-3B,RTN,3-bit,,WikiText-2,Perplexity,39.36,FP16,13.48,25.88,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 63.59 | 39.36 | 17.38
+RP09,BLOOM-7.1B,RTN,3-bit,,WikiText-2,Perplexity,17.38,FP16,11.37,6.01,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 39.36 | 17.38 | 571
+RP09,BLOOM-176B,RTN,3-bit,,WikiText-2,Perplexity,571,FP16,8.11,562.89,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,RTN | 3 | ... 17.38 | 571
+RP09,BLOOM-560M,GPTQ,3-bit,,WikiText-2,Perplexity,32.31,FP16,22.42,9.89,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | **32.31** | **25.08** | **21.11** | **17.40** | **13.47** | **8.64**
+RP09,BLOOM-1.1B,GPTQ,3-bit,,WikiText-2,Perplexity,25.08,FP16,17.69,7.39,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | **32.31** | **25.08** | **21.11**
+RP09,BLOOM-1.7B,GPTQ,3-bit,,WikiText-2,Perplexity,21.11,FP16,15.39,5.72,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **21.11** | **17.40**
+RP09,BLOOM-3B,GPTQ,3-bit,,WikiText-2,Perplexity,17.4,FP16,13.48,3.92,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **17.40** | **13.47**
+RP09,BLOOM-7.1B,GPTQ,3-bit,,WikiText-2,Perplexity,13.47,FP16,11.37,2.1,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **13.47** | **8.64**
+RP09,BLOOM-176B,GPTQ,3-bit,,WikiText-2,Perplexity,8.64,FP16,8.11,0.53,absolute,False,measured,7,5 EXPERIMENTAL VALIDATION,Table 4,GPTQ | 3 | ... **8.64**
+RP09,OPT-175B,FP16,16-bit,,PTB,Perplexity,12.01,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59
+RP09,OPT-175B,FP16,16-bit,,C4,Perplexity,10.13,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59
+RP09,OPT-175B,FP16,16-bit,,LAMBADA,Accuracy,75.59,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | 8.34 | 12.01 | 10.13 | 75.59
+RP09,BLOOM-176B,FP16,16-bit,,PTB,Perplexity,14.59,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | ... | 8.11 | 14.59 | 11.71 | 67.40
+RP09,BLOOM-176B,FP16,16-bit,,C4,Perplexity,11.71,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | ... | 14.59 | 11.71 | 67.40
+RP09,BLOOM-176B,FP16,16-bit,,LAMBADA,Accuracy,67.4,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,Baseline | 16 | ... | 11.71 | 67.40
+RP09,OPT-175B,RTN,4-bit,,PTB,Perplexity,14.22,FP16,12.01,2.21,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34 | 8.37 | 15.00 | 12.04 | 66.70
+RP09,OPT-175B,RTN,4-bit,,C4,Perplexity,11.61,FP16,10.13,1.48,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34
+RP09,OPT-175B,RTN,4-bit,,LAMBADA,Accuracy,71.34,FP16,75.59,-4.25,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | 10.54 | 14.22 | 11.61 | 71.34 | 8.37
+RP09,BLOOM-176B,RTN,4-bit,,PTB,Perplexity,15.0,FP16,14.59,0.41,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | ... 8.37 | 15.00 | 12.04 | 66.70
+RP09,BLOOM-176B,RTN,4-bit,,C4,Perplexity,12.04,FP16,11.71,0.33,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | ... 15.00 | 12.04 | 66.70
+RP09,BLOOM-176B,RTN,4-bit,,LAMBADA,Accuracy,66.7,FP16,67.4,-0.7,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 4 | ... 12.04 | 66.70
+RP09,OPT-175B,GPTQ,4-bit,,PTB,Perplexity,12.26,FP16,12.01,0.25,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | **8.37** | **12.26** | **10.28** | **76.80** | **8.21** | **14.75** | **11.81** | **67.71**
+RP09,OPT-175B,GPTQ,4-bit,,C4,Perplexity,10.28,FP16,10.13,0.15,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | **8.37** | **12.26** | **10.28** | **76.80**
+RP09,OPT-175B,GPTQ,4-bit,,LAMBADA,Accuracy,76.8,FP16,75.59,1.21,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **10.28** | **76.80**
+RP09,BLOOM-176B,GPTQ,4-bit,,PTB,Perplexity,14.75,FP16,14.59,0.16,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **8.21** | **14.75** | **11.81** | **67.71**
+RP09,BLOOM-176B,GPTQ,4-bit,,C4,Perplexity,11.81,FP16,11.71,0.1,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **14.75** | **11.81** | **67.71**
+RP09,BLOOM-176B,GPTQ,4-bit,,LAMBADA,Accuracy,67.71,FP16,67.4,0.31,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 4 | ... **11.81** | **67.71**
+RP09,OPT-175B,RTN,3-bit,,PTB,Perplexity,8000,FP16,12.01,7987.99,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0
+RP09,OPT-175B,RTN,3-bit,,C4,Perplexity,4600,FP16,10.13,4589.87,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0
+RP09,OPT-175B,RTN,3-bit,,LAMBADA,Accuracy,0,FP16,75.59,-75.59,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | 7.3e3 | 8.0e3 | 4.6e3 | 0
+RP09,BLOOM-176B,RTN,3-bit,,PTB,Perplexity,107,FP16,14.59,92.41,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | ... 571. | 107. | 598. | 0.17
+RP09,BLOOM-176B,RTN,3-bit,,C4,Perplexity,598,FP16,11.71,586.29,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | ... 107. | 598. | 0.17
+RP09,BLOOM-176B,RTN,3-bit,,LAMBADA,Accuracy,0.17,FP16,67.4,-67.23,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,RTN | 3 | ... 598. | 0.17
+RP09,OPT-175B,GPTQ,3-bit,,PTB,Perplexity,12.68,FP16,12.01,0.67,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | **8.68** | **12.68** | **10.67** | **76.19**
+RP09,OPT-175B,GPTQ,3-bit,,C4,Perplexity,10.67,FP16,10.13,0.54,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | **8.68** | **12.68** | **10.67** | **76.19**
+RP09,OPT-175B,GPTQ,3-bit,,LAMBADA,Accuracy,76.19,FP16,75.59,0.6,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **10.67** | **76.19**
+RP09,BLOOM-176B,GPTQ,3-bit,,PTB,Perplexity,15.57,FP16,14.59,0.98,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **8.64** | **15.57** | **12.27** | **65.10**
+RP09,BLOOM-176B,GPTQ,3-bit,,C4,Perplexity,12.27,FP16,11.71,0.56,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **15.57** | **12.27** | **65.10**
+RP09,BLOOM-176B,GPTQ,3-bit,,LAMBADA,Accuracy,65.1,FP16,67.4,-2.3,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3 | ... **12.27** | **65.10**
+RP09,OPT-175B,GPTQ,3-bit,g1024,WikiText-2,Perplexity,8.45,FP16,8.34,0.11,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3/g1024 | 8.45 | 12.48 | 10.47 | 77.39
+RP09,OPT-175B,GPTQ,3-bit,g128,WikiText-2,Perplexity,8.45,FP16,8.34,0.11,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 5,GPTQ | 3/g128 | 8.45 | 12.37 | 10.36 | 76.42
+RP09,OPT-175B,FP16,16-bit,,A100 80GB,"Latency per token (ms, batch=1)",230,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1
+RP09,OPT-175B,GPTQ,3-bit,,A100 80GB,"Latency per token (ms, batch=1)",71,FP16,230,-159,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1
+RP09,OPT-175B,GPTQ,3-bit,,A100 80GB,Speedup over FP16,3.24,FP16,1.0,2.24,x_factor,True,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A100 – 80GB | 230ms | 71ms | 3.24× | 5 → 1
+RP09,OPT-175B,FP16,16-bit,,A6000 48GB,"Latency per token (ms, batch=1)",589,,,,,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2
+RP09,OPT-175B,GPTQ,3-bit,,A6000 48GB,"Latency per token (ms, batch=1)",130,FP16,589,-459,absolute,False,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2
+RP09,OPT-175B,GPTQ,3-bit,,A6000 48GB,Speedup over FP16,4.53,FP16,1.0,3.53,x_factor,True,measured,8,5 EXPERIMENTAL VALIDATION,Table 6,A6000 – 48GB | 589ms | 130ms | 4.53× | 8 → 2
+RP09,OPT-175B,GPTQ,2-bit,g128,WikiText-2,Perplexity,9.58,FP16,8.34,1.24,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,OPT-175B | 8.34 | 9.58 | 9.18 | 8.94 | 8.68
+RP09,OPT-175B,GPTQ,2-bit,g64,WikiText-2,Perplexity,9.18,FP16,8.34,0.84,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,OPT-175B | 8.34 | 9.58 | 9.18 | 8.94
+RP09,OPT-175B,GPTQ,2-bit,g32,WikiText-2,Perplexity,8.94,FP16,8.34,0.6,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,OPT-175B | 8.34 | 9.58 | 9.18 | 8.94 | 8.68
+RP09,BLOOM-176B,GPTQ,2-bit,g128,WikiText-2,Perplexity,9.55,FP16,8.11,1.44,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,BLOOM | 8.11 | 9.55 | 9.17 | 8.83 | 8.64
+RP09,BLOOM-176B,GPTQ,2-bit,g64,WikiText-2,Perplexity,9.17,FP16,8.11,1.06,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,BLOOM | 8.11 | 9.55 | 9.17 | 8.83
+RP09,BLOOM-176B,GPTQ,2-bit,g32,WikiText-2,Perplexity,8.83,FP16,8.11,0.72,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,Table 7,BLOOM | 8.11 | 9.55 | 9.17 | 8.83 | 8.64
+RP09,OPT-175B,GPTQ,ternary,g8,WikiText-2,Perplexity,9.2,FP16,8.34,0.86,absolute,False,measured,9,5 EXPERIMENTAL VALIDATION,,"if we reduce group size to 8, we can apply *ternary* (-1, 0, +1) quantization, which achieves 9.20 WikiText2 PPL on OPT-175B"
+RP09,BERT-base,OBQ,4-bit,,SQuAD,F1,88.23,FP32,88.53,-0.3,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,BERT-base,OBQ,3-bit,,SQuAD,F1,85.29,FP32,88.53,-3.24,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,OPT-125M,OBQ,4-bit,,WikiText-2,Perplexity,32.52,FP16,27.66,4.86,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,OPT-125M,OBQ,3-bit,,WikiText-2,Perplexity,69.32,FP16,27.66,41.66,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,OBQ | 88.23 | 85.29 | 32.52 | 69.32
+RP09,BERT-base,GPTQ,4-bit,,SQuAD,F1,88.18,FP32,88.53,-0.35,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,GPTQ | 88.18 | 86.02 | 31.12 | 53.85
+RP09,BERT-base,GPTQ,3-bit,,SQuAD,F1,86.02,FP32,88.53,-2.51,absolute,False,measured,13,A.1 ADDITIONAL COMPARISON WITH OBQ,Table 8,GPTQ | 88.18 | 86.02 | 31.12 | 53.85
+RP09,OPT-66B,RTN,4-bit,,PTB,Perplexity,225.66,FP16,13.36,212.3,absolute,False,measured,14,A.3 ADDITIONAL LANGUAGE GENERATION RESULTS,Table 9,RTN | 4 | ... 15.40 | 225.66 | 14.22
+RP09,OPT-175B,GPTQ,3-bit,,PTB,Perplexity,12.86,FP16,12.01,0.85,absolute,False,measured,14,A.3 ADDITIONAL LANGUAGE GENERATION RESULTS,Table 9,GPTQ | 3 | ... **28.12** | **12.86**
+RP09,OPT-175B,FP16,16-bit,,PIQA,Accuracy,81.07,,,,,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,full | 16 | ... 79.76 | 81.07
+RP09,OPT-175B,GPTQ,4-bit,,PIQA,Accuracy,81.0,FP16,81.07,-0.07,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,GPTQ | 4 | ... 79.33 | 81.00
+RP09,OPT-175B,RTN,4-bit,,PIQA,Accuracy,78.23,FP16,81.07,-2.84,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,RTN | 4 | ... 60.07 | 78.23
+RP09,OPT-175B,GPTQ,3-bit,,PIQA,Accuracy,80.03,FP16,81.07,-1.04,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 15,GPTQ | 3 | ... 71.27 | 80.03
+RP09,BLOOM-176B,FP16,16-bit,,PIQA,Accuracy,79.16,,,,,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 16,full | 16 | ... 73.72 | 79.16
+RP09,BLOOM-176B,GPTQ,4-bit,,PIQA,Accuracy,79.0,FP16,79.16,-0.16,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 16,GPTQ | 4 | ... **72.96** | **79.00**
+RP09,BLOOM-176B,GPTQ,3-bit,,PIQA,Accuracy,77.7,FP16,79.16,-1.46,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 16,GPTQ | 3 | ... **70.95** | **77.70**
+RP09,OPT-175B,FP16,16-bit,,ARC-Easy,Accuracy,71.04,,,,,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 17,full | 16 | ... 67.26 | 71.04
+RP09,OPT-175B,GPTQ,4-bit,,ARC-Easy,Accuracy,68.69,FP16,71.04,-2.35,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 17,GPTQ | 4 | ... **65.35** | **68.69**
+RP09,OPT-175B,GPTQ,3-bit,,ARC-Easy,Accuracy,65.36,FP16,71.04,-5.68,absolute,False,measured,15,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 17,GPTQ | 3 | ... **52.44** | **65.36**
+RP09,BLOOM-176B,FP16,16-bit,,ARC-Easy,Accuracy,67.47,,,,,False,measured,16,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 18,full | 16 | ... 57.37 | 67.47
+RP09,BLOOM-176B,GPTQ,4-bit,,ARC-Easy,Accuracy,67.42,FP16,67.47,-0.05,absolute,False,measured,16,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 18,GPTQ | 4 | ... **56.14** | **67.42**
+RP09,BLOOM-176B,GPTQ,3-bit,,ARC-Easy,Accuracy,62.84,FP16,67.47,-4.63,absolute,False,measured,16,A.4 ADDITIONAL ZEROSHOT RESULTS,Table 18,GPTQ | 3 | ... **51.56** | **62.84**
