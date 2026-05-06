@@ -326,7 +326,11 @@ function renderPage(pageNum) {
   img.alt = `${CURRENT} page ${pageNum}`;
   wrap.appendChild(img);
 
-  if (isSourcePage && Array.isArray(CURRENT_EV.bbox) && CURRENT_EV.bbox.length === 4 && pageInfo) {
+  // Capture bbox NOW so the async load callback doesn't depend on CURRENT_EV,
+  // which may have been replaced or cleared by a subsequent click before load fires.
+  const bboxSnapshot = (isSourcePage && CURRENT_EV && Array.isArray(CURRENT_EV.bbox)
+                        && CURRENT_EV.bbox.length === 4) ? CURRENT_EV.bbox.slice() : null;
+  if (bboxSnapshot && pageInfo) {
     img.addEventListener("load", () => {
       const renderedW = img.clientWidth || img.naturalWidth;
       const renderedH = img.clientHeight || img.naturalHeight;
@@ -334,7 +338,7 @@ function renderPage(pageNum) {
       const ptH = pageInfo.height_pt || (img.naturalHeight / SCALE);
       const sx = renderedW / ptW;
       const sy = renderedH / ptH;
-      const [x0, y0, x1, y1] = CURRENT_EV.bbox;
+      const [x0, y0, x1, y1] = bboxSnapshot;
       const overlay = el("div", "bbox-overlay");
       overlay.style.left   = (x0 * sx) + "px";
       overlay.style.top    = (y0 * sy) + "px";
