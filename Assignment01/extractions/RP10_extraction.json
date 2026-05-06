@@ -1157,5 +1157,6315 @@
         "block_id": "/page/6/Text/5"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 64.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "FP16 | 64.9% | 65.6% | 67.9% | 69.5% | 71.6%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 65.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "FP16 | 64.9% | 65.6% | 67.9% | 69.5% | 71.6%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 67.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "FP16 | 64.9% | 65.6% | 67.9% | 69.5% | 71.6%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 69.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "FP16 | 64.9% | 65.6% | 67.9% | 69.5% | 71.6%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 71.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "FP16 | 64.9% | 65.6% | 67.9% | 69.5% | 71.6%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "INT8 per-tensor",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 39.9,
+        "baseline_label": "FP16",
+        "baseline_value": 64.9,
+        "delta": -25.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-tensor | 39.9% | 33.0% | 32.8% | 33.1% | 32.3%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "INT8 per-tensor",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 33.0,
+        "baseline_label": "FP16",
+        "baseline_value": 65.6,
+        "delta": -32.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-tensor | 39.9% | 33.0% | 32.8% | 33.1% | 32.3%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "INT8 per-tensor",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 32.8,
+        "baseline_label": "FP16",
+        "baseline_value": 67.9,
+        "delta": -35.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-tensor | 39.9% | 33.0% | 32.8% | 33.1% | 32.3%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "INT8 per-tensor",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 33.1,
+        "baseline_label": "FP16",
+        "baseline_value": 69.5,
+        "delta": -36.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-tensor | 39.9% | 33.0% | 32.8% | 33.1% | 32.3%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "INT8 per-tensor",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 32.3,
+        "baseline_label": "FP16",
+        "baseline_value": 71.6,
+        "delta": -39.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-tensor | 39.9% | 33.0% | 32.8% | 33.1% | 32.3%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "INT8 per-token",
+        "bit_width": "8-bit",
+        "group_size": "per-token",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 42.5,
+        "baseline_label": "FP16",
+        "baseline_value": 64.9,
+        "delta": -22.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-token | 42.5% | 33.0% | 33.1% | 32.9% | 31.7%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "INT8 per-token",
+        "bit_width": "8-bit",
+        "group_size": "per-token",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 33.0,
+        "baseline_label": "FP16",
+        "baseline_value": 65.6,
+        "delta": -32.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-token | 42.5% | 33.0% | 33.1% | 32.9% | 31.7%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "INT8 per-token",
+        "bit_width": "8-bit",
+        "group_size": "per-token",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 33.1,
+        "baseline_label": "FP16",
+        "baseline_value": 67.9,
+        "delta": -34.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-token | 42.5% | 33.0% | 33.1% | 32.9% | 31.7%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "INT8 per-token",
+        "bit_width": "8-bit",
+        "group_size": "per-token",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 32.9,
+        "baseline_label": "FP16",
+        "baseline_value": 69.5,
+        "delta": -36.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-token | 42.5% | 33.0% | 33.1% | 32.9% | 31.7%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "INT8 per-token",
+        "bit_width": "8-bit",
+        "group_size": "per-token",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 31.7,
+        "baseline_label": "FP16",
+        "baseline_value": 71.6,
+        "delta": -39.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-token | 42.5% | 33.0% | 33.1% | 32.9% | 31.7%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-6.7B",
+        "method": "INT8 per-channel",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 64.8,
+        "baseline_label": "FP16",
+        "baseline_value": 64.9,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-channel | 64.8% | 65.6% | 68.0% | 69.4% | 71.4%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B",
+        "method": "INT8 per-channel",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 65.6,
+        "baseline_label": "FP16",
+        "baseline_value": 65.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-channel | 64.8% | 65.6% | 68.0% | 69.4% | 71.4%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B",
+        "method": "INT8 per-channel",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 68.0,
+        "baseline_label": "FP16",
+        "baseline_value": 67.9,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-channel | 64.8% | 65.6% | 68.0% | 69.4% | 71.4%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-66B",
+        "method": "INT8 per-channel",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 69.4,
+        "baseline_label": "FP16",
+        "baseline_value": 69.5,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-channel | 64.8% | 65.6% | 68.0% | 69.4% | 71.4%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "INT8 per-channel",
+        "bit_width": "8-bit",
+        "group_size": "per-channel",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 71.4,
+        "baseline_label": "FP16",
+        "baseline_value": 71.6,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3 Review of Quantization Difficulty",
+        "quote": "INT8 per-channel | 64.8% | 65.6% | 68.0% | 69.4% | 71.4%",
+        "bbox": [
+          311.8869140625,
+          135.45984375,
+          534.3943359375,
+          203.30578125
+        ],
+        "block_id": "/page/2/Table/10",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 74.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 59.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 72.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 34.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 59.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 88.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 66.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 10.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 74.7% | 59.3% | 79.7% | 72.6% | 34.0% | 59.9% | 88.0% | 66.9% | 10.99",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 0.0,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": -74.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 25.6,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -33.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 53.4,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": -26.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 50.3,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -22.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 14.0,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": -20.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 49.5,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": -10.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 56.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": -32.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 35.5,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -31.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 93080,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 93069.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 0.0% | 25.6% | 53.4% | 50.3% | 14.0% | 49.5% | 56.0% | 35.5% | 93080",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 0.0,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": -74.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 26.0,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -33.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 51.7,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": -28.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 49.3,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -23.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 17.8,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": -16.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 50.9,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": -9.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 55.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": -33.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 35.8,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -31.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 84648,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 84637.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 0.0%* | 26.0% | 51.7% | 49.3% | 17.8% | 50.9% | 55.0% | 35.8% | 84648",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 74.7,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 59.2,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.7,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 72.1,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 34.2,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 60.3,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 87.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 66.7,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 11.1,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 74.7% | 59.2% | 79.7% | 72.1% | 34.2% | 60.3% | 87.0% | 66.7% | 11.10",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 0.0,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": -74.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 25.8,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -33.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 52.5,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": -27.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 48.6,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -24.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 16.6,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": -17.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 53.4,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": -6.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 55.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": -33.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 36.0,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -30.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 96151,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 96140.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 25.8% | 52.5% | 48.6% | 16.6% | 53.4% | 55.0% | 36.0% | 96151",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 74.7,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 59.2,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.7,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 71.2,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 33.4,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 58.1,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 89.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 66.5,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 11.11,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | 74.7% | 59.2% | 79.7% | 71.2% | 33.4% | 58.1% | 89.0% | 66.5% | 11.11",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 75.0,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 59.0,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.2,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 71.2,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 33.0,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 59.6,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 88.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 66.4,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 11.14,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 75.0% | 59.0% | 79.2% | 71.2% | 33.0% | 59.6% | 88.0% | 66.4% | 11.14",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 74.6,
+        "baseline_label": "FP16",
+        "baseline_value": 74.7,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 58.9,
+        "baseline_label": "FP16",
+        "baseline_value": 59.3,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 79.7,
+        "baseline_label": "FP16",
+        "baseline_value": 79.7,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 71.2,
+        "baseline_label": "FP16",
+        "baseline_value": 72.6,
+        "delta": -1.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "OpenBookQA",
+        "metric": "Accuracy",
+        "value": 33.4,
+        "baseline_label": "FP16",
+        "baseline_value": 34.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "RTE",
+        "metric": "Accuracy",
+        "value": 59.9,
+        "baseline_label": "FP16",
+        "baseline_value": 59.9,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "COPA",
+        "metric": "Accuracy",
+        "value": 90.0,
+        "baseline_label": "FP16",
+        "baseline_value": 88.0,
+        "delta": 2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "7-task average",
+        "metric": "Average Accuracy",
+        "value": 66.8,
+        "baseline_label": "FP16",
+        "baseline_value": 66.9,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 11.17,
+        "baseline_label": "FP16",
+        "baseline_value": 10.99,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 74.6% | 58.9% | 79.7% | 71.2% | 33.4% | 59.9% | 90.0% | 66.8% | 11.17",
+        "bbox": [
+          69.3341015625,
+          133.905234375,
+          525.9315234375,
+          241.985390625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 68.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 71.6% | 68.2% | 73.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 73.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 71.6% | 68.2% | 73.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 64.2,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": -4.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 32.3% | 64.2% | 26.9%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 26.9,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": -46.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 32.3% | 64.2% | 26.9%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 67.4,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": -0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 31.7% | 67.4% | 26.7%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 26.7,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": -47.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 31.7% | 67.4% | 26.7%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 68.0,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 71.4% | 68.0% | 73.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 73.8,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 71.4% | 68.0% | 73.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 54.1,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": -14.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 31.7% | 54.1% | 63.5%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 63.5,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": -10.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 31.7% | 54.1% | 63.5%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 68.3,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | **71.2%** | 68.3% | **73.7%**",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 73.7,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O1 | **71.2%** | 68.3% | **73.7%**",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 68.4,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 71.1% | **68.4%** | 72.5%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 72.5,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 71.1% | **68.4%** | 72.5%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 71.1,
+        "baseline_label": "FP16",
+        "baseline_value": 71.6,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O2 | 71.1% | **68.4%** | 72.5%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "BLOOM-176B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 67.4,
+        "baseline_label": "FP16",
+        "baseline_value": 68.2,
+        "delta": -0.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 71.1% | 67.4% | 72.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GLM-130B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "LAMBADA+MMLU+MNLI+QNLI (avg)",
+        "metric": "Average Accuracy",
+        "value": 72.8,
+        "baseline_label": "FP16",
+        "baseline_value": 73.8,
+        "delta": -1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 71.1% | 67.4% | 72.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "WinoGrande+HellaSwag+PIQA+LAMBADA (avg)",
+        "metric": "Average Accuracy",
+        "value": 71.1,
+        "baseline_label": "FP16",
+        "baseline_value": 71.6,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | 71.1% | 67.4% | 72.8%",
+        "bbox": [
+          59.6401171875,
+          365.147578125,
+          285.8051953125,
+          474.805546875
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 69.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 69.12% | 14.26",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 14.26,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 69.12% | 14.26",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 4.21,
+        "baseline_label": "FP16",
+        "baseline_value": 69.12,
+        "delta": -64.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 4.21% | 576.53",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "W8A8",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 576.53,
+        "baseline_label": "FP16",
+        "baseline_value": 14.26,
+        "delta": 562.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 | 4.21% | 576.53",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 5.12,
+        "baseline_label": "FP16",
+        "baseline_value": 69.12,
+        "delta": -64.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 5.12% | 455.12",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "ZeroQuant",
+        "bit_width": "8-bit",
+        "group_size": "group-wise",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 455.12,
+        "baseline_label": "FP16",
+        "baseline_value": 14.26,
+        "delta": 440.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "ZeroQuant | 5.12% | 455.12",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 69.14,
+        "baseline_label": "FP16",
+        "baseline_value": 69.12,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 69.14% | 14.27",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 14.27,
+        "baseline_label": "FP16",
+        "baseline_value": 14.26,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "LLM.int8() | 69.14% | 14.27",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 0.0,
+        "baseline_label": "FP16",
+        "baseline_value": 69.12,
+        "delta": -69.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 9485.62",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "Outlier Suppression",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor static",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 9485.62,
+        "baseline_label": "FP16",
+        "baseline_value": 14.26,
+        "delta": 9471.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Outlier Suppression | 0.00% | 9485.62",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 69.77,
+        "baseline_label": "FP16",
+        "baseline_value": 69.12,
+        "delta": 0.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | **69.77%** | **14.37**",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-IML-30B",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "WikiText",
+        "metric": "Perplexity",
+        "value": 14.37,
+        "baseline_label": "FP16",
+        "baseline_value": 14.26,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "SmoothQuant-O3 | **69.77%** | **14.37**",
+        "bbox": [
+          81.293203125,
+          97.723828125,
+          262.956796875,
+          188.448046875
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.51,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 11.51 | 10.05 | 7.53 | 6.17",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.05,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 11.51 | 10.05 | 7.53 | 6.17",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 11.51 | 10.05 | 7.53 | 6.17",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "FP16 | 11.51 | 10.05 | 7.53 | 6.17",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-7B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.56,
+        "baseline_label": "FP16",
+        "baseline_value": 11.51,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SmoothQuant | 11.56 | 10.08 | 7.56 | 6.20",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-13B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.08,
+        "baseline_label": "FP16",
+        "baseline_value": 10.05,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SmoothQuant | 11.56 | 10.08 | 7.56 | 6.20",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-30B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.56,
+        "baseline_label": "FP16",
+        "baseline_value": 7.53,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SmoothQuant | 11.56 | 10.08 | 7.56 | 6.20",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-65B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.2,
+        "baseline_label": "FP16",
+        "baseline_value": 6.17,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SmoothQuant | 11.56 | 10.08 | 7.56 | 6.20",
+        "bbox": [
+          55.3967578125,
+          271.8478125,
+          287.6579296875,
+          312.8709375
+        ],
+        "block_id": "/page/6/Table/4",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.474,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Llama-2-7B | FP16 | 5.474",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.85)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.515,
+        "baseline_label": "FP16",
+        "baseline_value": 5.474,
+        "delta": 0.041,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 5.515 | 0.85",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.95,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Llama-2-13B | FP16 | 4.950",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.85)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.929,
+        "baseline_label": "FP16",
+        "baseline_value": 4.95,
+        "delta": -0.021,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 4.929 | 0.85",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Llama-2-70B | FP16 | 3.320",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-70B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.9)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.359,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.039,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 3.359 | 0.9",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Falcon-7B | FP16 | 6.590",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.6)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.629,
+        "baseline_label": "FP16",
+        "baseline_value": 6.59,
+        "delta": 0.039,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 6.629 | 0.6",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.228,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Falcon-40B | FP16 | 5.228",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-40B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.7)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.255,
+        "baseline_label": "FP16",
+        "baseline_value": 5.228,
+        "delta": 0.027,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 5.255 | 0.7",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.253,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Mistral-7B | FP16 | 5.253",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.8)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.277,
+        "baseline_label": "FP16",
+        "baseline_value": 5.253,
+        "delta": 0.024,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 5.277 | 0.8",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.842,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "Mixtral-8x7B | FP16 | 3.842",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mixtral-8x7B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": "per-token A / per-channel W (alpha=0.8)",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.893,
+        "baseline_label": "FP16",
+        "baseline_value": 3.842,
+        "delta": 0.051,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5.2 Accurate Quantization",
+        "quote": "W8A8 SQ | 3.893 | 0.8",
+        "bbox": [
+          328.3344140625,
+          157.48734375,
+          519.1421484375,
+          345.24703125
+        ],
+        "block_id": "/page/6/Table/9",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=1, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 314,
+        "baseline_label": "FP16",
+        "baseline_value": 422,
+        "delta": -108,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 512 | 422 | 314 | 1.35×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=1, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.35,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.35,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 512 | 422 | 314 | 1.35×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=1, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 30,
+        "baseline_label": "FP16",
+        "baseline_value": 57,
+        "delta": -27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "57 | 30 | 1.91×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=1, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory Saving",
+        "value": 1.91,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.91,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "57 | 30 | 1.91×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=1, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 440,
+        "baseline_label": "FP16",
+        "baseline_value": 559,
+        "delta": -119,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 1024 | 559 | 440 | 1.27×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=1, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.27,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.27,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 1024 | 559 | 440 | 1.27×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=16, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 1753,
+        "baseline_label": "FP16",
+        "baseline_value": 2488,
+        "delta": -735,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 512 | 2488 | 1753 | 1.42×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=16, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.42,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.42,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 512 | 2488 | 1753 | 1.42×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (1 GPU, BS=16, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 3947,
+        "baseline_label": "FP16",
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 1024 | OOM | 3947",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=1, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 359,
+        "baseline_label": "FP16",
+        "baseline_value": 426,
+        "delta": -67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 512 | 426 | 359 | 1.19×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=1, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.19,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.19,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 512 | 426 | 359 | 1.19×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=1, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 475,
+        "baseline_label": "FP16",
+        "baseline_value": 571,
+        "delta": -96,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 1024 | 571 | 475 | 1.20×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=1, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.2,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "1 | 1024 | 571 | 475 | 1.20×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=16, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 1628,
+        "baseline_label": "FP16",
+        "baseline_value": 2212,
+        "delta": -584,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 512 | 2212 | 1628 | 1.36×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=16, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.36,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.36,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 512 | 2212 | 1628 | 1.36×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=16, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Decoding Latency (ms)",
+        "value": 3231,
+        "baseline_label": "FP16",
+        "baseline_value": 4133,
+        "delta": -902,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 1024 | 4133 | 3231 | 1.28×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-175B (8 GPUs, BS=16, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.28,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.28,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "16 | 1024 | 4133 | 3231 | 1.28×",
+        "bbox": [
+          306.3645703125,
+          87.220546875,
+          543.5026171875,
+          223.701328125
+        ],
+        "block_id": "/page/7/Table/10",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 76.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "FP16 | 76.6% | 62.1% | 81.0% | 72.9% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 62.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "FP16 | 76.6% | 62.1% | 81.0% | 72.9% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 81.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "FP16 | 76.6% | 62.1% | 81.0% | 72.9% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 72.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "FP16 | 76.6% | 62.1% | 81.0% | 72.9% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "4-task average",
+        "metric": "Average Accuracy",
+        "value": 73.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "FP16 | 76.6% | 62.1% | 81.0% | 72.9% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 77.2,
+        "baseline_label": "FP16",
+        "baseline_value": 76.6,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "INT8 | 77.2% | 60.4% | 80.7% | 74.1% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 60.4,
+        "baseline_label": "FP16",
+        "baseline_value": 62.1,
+        "delta": -1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "INT8 | 77.2% | 60.4% | 80.7% | 74.1% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 80.7,
+        "baseline_label": "FP16",
+        "baseline_value": 81.0,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "INT8 | 77.2% | 60.4% | 80.7% | 74.1% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 74.1,
+        "baseline_label": "FP16",
+        "baseline_value": 72.9,
+        "delta": 1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "INT8 | 77.2% | 60.4% | 80.7% | 74.1% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "4-task average",
+        "metric": "Average Accuracy",
+        "value": 73.1,
+        "baseline_label": "FP16",
+        "baseline_value": 73.1,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Up: 530B Model Within a Single Node",
+        "quote": "INT8 | 77.2% | 60.4% | 80.7% | 74.1% | 73.1%",
+        "bbox": [
+          303.023671875,
+          263.35546875,
+          545.648203125,
+          302.80078125
+        ],
+        "block_id": "/page/7/Table/12",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=128)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 232,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "128 | FP16 | 16 | 232ms | 1040GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=128)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 1040,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "128 | FP16 | 16 | 232ms | 1040GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=128)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 253,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 232,
+        "delta": 21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 253ms | 527GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=128)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 527,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 1040,
+        "delta": -513,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 253ms | 527GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=256)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 451,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "256 | FP16 | 16 | 451ms | 1054GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=256)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 1054,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "256 | FP16 | 16 | 451ms | 1054GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=256)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 434,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 451,
+        "delta": -17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 434ms | 533GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=256)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 533,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 1054,
+        "delta": -521,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 434ms | 533GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=512)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 838,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "512 | FP16 | 16 | 838ms | 1068GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=512)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 1068,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "512 | FP16 | 16 | 838ms | 1068GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 839,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 838,
+        "delta": 1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 839ms | 545GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=512)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 545,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 1068,
+        "delta": -523,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 839ms | 545GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=1024)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 1707,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "1024 | FP16 | 16 | 1707ms | 1095GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (16 GPUs, SeqLen=1024)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 1095,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "1024 | FP16 | 16 | 1707ms | 1095GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 1689,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 1707,
+        "delta": -18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 1689ms | 570GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "MT-NLG 530B (8 GPUs, SeqLen=1024)",
+        "method": "SmoothQuant",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory (GB)",
+        "value": 570,
+        "baseline_label": "FP16-16GPUs",
+        "baseline_value": 1095,
+        "delta": -525,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "INT8 | 8 | 1689ms | 570GB",
+        "bbox": [
+          66.088828125,
+          314.054296875,
+          274.575234375,
+          428.445703125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=256)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 152.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "FP16 | 152.6 | 296.3 | 343.0 | 659.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=512)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 296.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "FP16 | 152.6 | 296.3 | 343.0 | 659.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=256)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 343.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "FP16 | 152.6 | 296.3 | 343.0 | 659.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=512)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 659.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "FP16 | 152.6 | 296.3 | 343.0 | 659.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=256)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 237.1,
+        "baseline_label": "FP16",
+        "baseline_value": 152.6,
+        "delta": 84.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "LLM.int8() | 237.1 | 371.5 | 387.9 | 654.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=512)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 371.5,
+        "baseline_label": "FP16",
+        "baseline_value": 296.3,
+        "delta": 75.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "LLM.int8() | 237.1 | 371.5 | 387.9 | 654.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=256)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 387.9,
+        "baseline_label": "FP16",
+        "baseline_value": 343.0,
+        "delta": 44.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "LLM.int8() | 237.1 | 371.5 | 387.9 | 654.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=512)",
+        "method": "LLM.int8()",
+        "bit_width": "8-bit",
+        "group_size": "per-channel+FP16-mixed",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 654.9,
+        "baseline_label": "FP16",
+        "baseline_value": 659.9,
+        "delta": -5.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "LLM.int8() | 237.1 | 371.5 | 387.9 | 654.9",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=256)",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 124.5,
+        "baseline_label": "FP16",
+        "baseline_value": 152.6,
+        "delta": -28.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O1 | 124.5 | 243.3 | 246.7 | 490.7",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=512)",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 243.3,
+        "baseline_label": "FP16",
+        "baseline_value": 296.3,
+        "delta": -53.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O1 | 124.5 | 243.3 | 246.7 | 490.7",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=256)",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 246.7,
+        "baseline_label": "FP16",
+        "baseline_value": 343.0,
+        "delta": -96.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O1 | 124.5 | 243.3 | 246.7 | 490.7",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=512)",
+        "method": "SmoothQuant-O1",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-token A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 490.7,
+        "baseline_label": "FP16",
+        "baseline_value": 659.9,
+        "delta": -169.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O1 | 124.5 | 243.3 | 246.7 | 490.7",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=256)",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 120.5,
+        "baseline_label": "FP16",
+        "baseline_value": 152.6,
+        "delta": -32.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O2 | 120.5 | 235.1 | 240.2 | 478.3",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=512)",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 235.1,
+        "baseline_label": "FP16",
+        "baseline_value": 296.3,
+        "delta": -61.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O2 | 120.5 | 235.1 | 240.2 | 478.3",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=256)",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 240.2,
+        "baseline_label": "FP16",
+        "baseline_value": 343.0,
+        "delta": -102.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O2 | 120.5 | 235.1 | 240.2 | 478.3",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=512)",
+        "method": "SmoothQuant-O2",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor dynamic A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 478.3,
+        "baseline_label": "FP16",
+        "baseline_value": 659.9,
+        "delta": -181.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O2 | 120.5 | 235.1 | 240.2 | 478.3",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=256)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 112.1,
+        "baseline_label": "FP16",
+        "baseline_value": 152.6,
+        "delta": -40.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O3 | 112.1 | 223.1 | 227.6 | 458.4",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-13B (SeqLen=512)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 223.1,
+        "baseline_label": "FP16",
+        "baseline_value": 296.3,
+        "delta": -73.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O3 | 112.1 | 223.1 | 227.6 | 458.4",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=256)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 227.6,
+        "baseline_label": "FP16",
+        "baseline_value": 343.0,
+        "delta": -115.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O3 | 112.1 | 223.1 | 227.6 | 458.4",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (SeqLen=512)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": "per-tensor W / per-tensor static A",
+        "dataset": "A100 80GB",
+        "metric": "Latency (ms)",
+        "value": 458.4,
+        "baseline_label": "FP16",
+        "baseline_value": 659.9,
+        "delta": -201.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6 Related Work",
+        "quote": "SmoothQuant-O3 | 112.1 | 223.1 | 227.6 | 458.4",
+        "bbox": [
+          316.7996484375,
+          337.095,
+          525.8956640625,
+          428.608125
+        ],
+        "block_id": "/page/8/Table/8",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT-30B (PyTorch, SeqLen=256)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.51,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.51,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "up to 1.51× speed up and 1.96× memory saving on PyTorch",
+        "bbox": [
+          305.25,
+          69.0,
+          543.0,
+          209.25
+        ],
+        "block_id": "/page/1/Text/5",
+        "source_table": "Figure 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT (PyTorch)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Memory Saving",
+        "value": 1.96,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.96,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "up to 1.51× speed up and 1.96× memory saving on PyTorch",
+        "bbox": [
+          305.25,
+          69.0,
+          543.0,
+          209.25
+        ],
+        "block_id": "/page/1/Text/5",
+        "source_table": "Figure 8"
+      }
+    },
+    {
+      "value": {
+        "model": "OPT (FasterTransformer)",
+        "method": "SmoothQuant-O3",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "A100 80GB",
+        "metric": "Speedup over FP16",
+        "value": 1.56,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.56,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 2,
+        "section": "1 Introduction",
+        "quote": "achieving up to 1.56× speedup and halving the memory usage compared with FP16",
+        "bbox": [
+          305.25,
+          69.0,
+          543.0,
+          209.25
+        ],
+        "block_id": "/page/1/Text/5",
+        "source_table": "Figure 9"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 210,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 9
   }
 }

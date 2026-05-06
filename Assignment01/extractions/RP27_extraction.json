@@ -1056,5 +1056,4035 @@
         "block_id": "/page/7/Text/7"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "FT",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 71.97,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "FT | 71.97 | 71.88 | 75.09 | 75.21 | 76.13 | 77.02",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 71.78,
+        "baseline_label": "FT",
+        "baseline_value": 71.97,
+        "delta": -0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "LoRA | 71.78 | 70.89 | 74.03 | 74.01 | 75.91 | 75.63",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "DoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 72.03,
+        "baseline_label": "FT",
+        "baseline_value": 71.97,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "DoRA | 72.03 | 70.97 | 73.97 | 73.96 | 75.89 | 75.72",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 73.33,
+        "baseline_label": "FT",
+        "baseline_value": 71.97,
+        "delta": 1.36,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 73.33 | 72.33 | 75.93 | 76.02 | 76.37 | 76.78",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "FT",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 71.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "FT | 71.97 | 71.88",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 70.89,
+        "baseline_label": "FT",
+        "baseline_value": 71.88,
+        "delta": -0.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "LoRA | 71.78 | 70.89",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "DoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 70.97,
+        "baseline_label": "FT",
+        "baseline_value": 71.88,
+        "delta": -0.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "DoRA | 72.03 | 70.97",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 72.33,
+        "baseline_label": "FT",
+        "baseline_value": 71.88,
+        "delta": 0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 73.33 | 72.33",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "FT",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 75.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "FT | ... | 75.09 | 75.21",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 74.03,
+        "baseline_label": "FT",
+        "baseline_value": 75.09,
+        "delta": -1.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "LoRA | ... | 74.03 | 74.01",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "DoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 73.97,
+        "baseline_label": "FT",
+        "baseline_value": 75.09,
+        "delta": -1.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "DoRA | ... | 73.97 | 73.96",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 75.93,
+        "baseline_label": "FT",
+        "baseline_value": 75.09,
+        "delta": 0.84,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | ... | 75.93 | 76.02",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "FT",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 75.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "FT | ... | 75.09 | 75.21",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 74.01,
+        "baseline_label": "FT",
+        "baseline_value": 75.21,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "LoRA | ... | 74.03 | 74.01",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "DoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 73.96,
+        "baseline_label": "FT",
+        "baseline_value": 75.21,
+        "delta": -1.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "DoRA | ... | 73.97 | 73.96",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 76.02,
+        "baseline_label": "FT",
+        "baseline_value": 75.21,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | ... | 75.93 | 76.02",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "FT",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 76.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "FT | ... | 76.13 | 77.02",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 75.91,
+        "baseline_label": "FT",
+        "baseline_value": 76.13,
+        "delta": -0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "LoRA | ... | 75.91 | 75.63",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "DoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 75.89,
+        "baseline_label": "FT",
+        "baseline_value": 76.13,
+        "delta": -0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "DoRA | ... | 75.89 | 75.72",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 76.37,
+        "baseline_label": "FT",
+        "baseline_value": 76.13,
+        "delta": 0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | ... | 76.37 | 76.78",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "FT",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 77.02,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "FT | ... | 76.13 | 77.02",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "LoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 75.63,
+        "baseline_label": "FT",
+        "baseline_value": 77.02,
+        "delta": -1.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "LoRA | ... | 75.91 | 75.63",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "DoRA",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 75.72,
+        "baseline_label": "FT",
+        "baseline_value": 77.02,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "DoRA | ... | 75.89 | 75.72",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "OpenOrca",
+        "metric": "Mean accuracy (%)",
+        "value": 76.78,
+        "baseline_label": "FT",
+        "baseline_value": 77.02,
+        "delta": -0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | ... | 76.37 | 76.78",
+        "bbox": [
+          64.3435546875,
+          69.32521484375,
+          536.3126953125,
+          169.13181640625
+        ],
+        "block_id": "/page/5/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "STE",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 72.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "4 bit | STE | 72.43 | 75.29 | 74.84",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK+LoRA",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 63.99,
+        "baseline_label": "STE",
+        "baseline_value": 72.43,
+        "delta": -8.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 63.99 | 71.08 | 74.27",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 72.53,
+        "baseline_label": "STE",
+        "baseline_value": 72.43,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 72.53 | 74.50 | 75.46",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "STE",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 75.29,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "STE | 72.43 | 75.29 | 74.84",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK+LoRA",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 71.08,
+        "baseline_label": "STE",
+        "baseline_value": 75.29,
+        "delta": -4.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 63.99 | 71.08",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 74.5,
+        "baseline_label": "STE",
+        "baseline_value": 75.29,
+        "delta": -0.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 72.53 | 74.50",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "STE",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 74.84,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "STE | 72.43 | 75.29 | 74.84",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "QUIK+LoRA",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 74.27,
+        "baseline_label": "STE",
+        "baseline_value": 74.84,
+        "delta": -0.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 63.99 | 71.08 | 74.27",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 75.46,
+        "baseline_label": "STE",
+        "baseline_value": 74.84,
+        "delta": 0.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 72.53 | 74.50 | 75.46",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "STE",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 69.82,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "3 bit | STE | 69.82 | 74.37 | 70.24",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK+LoRA",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 62.91,
+        "baseline_label": "STE",
+        "baseline_value": 69.82,
+        "delta": -6.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 62.91 | 71.30 | 71.65",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 71.0,
+        "baseline_label": "STE",
+        "baseline_value": 69.82,
+        "delta": 1.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 71.00 | 74.34 | 73.27",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "STE",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 74.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "STE | 69.82 | 74.37 | 70.24",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK+LoRA",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 71.3,
+        "baseline_label": "STE",
+        "baseline_value": 74.37,
+        "delta": -3.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 62.91 | 71.30",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 74.34,
+        "baseline_label": "STE",
+        "baseline_value": 74.37,
+        "delta": -0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 71.00 | 74.34",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "STE",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 70.24,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "STE | 69.82 | 74.37 | 70.24",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "QUIK+LoRA",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 71.65,
+        "baseline_label": "STE",
+        "baseline_value": 70.24,
+        "delta": 1.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 62.91 | 71.30 | 71.65",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 73.27,
+        "baseline_label": "STE",
+        "baseline_value": 70.24,
+        "delta": 3.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 71.00 | 74.34 | 73.27",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "STE",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 58.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "2 bit | STE | 58.20 | 62.19 | 48.96",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK+LoRA",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 41.44,
+        "baseline_label": "STE",
+        "baseline_value": 58.2,
+        "delta": -16.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 41.44 | 47.14 | 53.80",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 61.09,
+        "baseline_label": "STE",
+        "baseline_value": 58.2,
+        "delta": 2.89,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 61.09 | 67.61 | 58.89",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "STE",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 62.19,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "STE | 58.20 | 62.19 | 48.96",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK+LoRA",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 47.14,
+        "baseline_label": "STE",
+        "baseline_value": 62.19,
+        "delta": -15.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 41.44 | 47.14",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 67.61,
+        "baseline_label": "STE",
+        "baseline_value": 62.19,
+        "delta": 5.42,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 61.09 | 67.61",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "STE",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 48.96,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "STE | 58.20 | 62.19 | 48.96",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "QUIK+LoRA",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 53.8,
+        "baseline_label": "STE",
+        "baseline_value": 48.96,
+        "delta": 4.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "QUIK + LORA | 41.44 | 47.14 | 53.80",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "TULU-V2-mix",
+        "metric": "Mean accuracy (%)",
+        "value": 58.89,
+        "baseline_label": "STE",
+        "baseline_value": 48.96,
+        "delta": 9.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.1 Data",
+        "quote": "GIFT-SW | 61.09 | 67.61 | 58.89",
+        "bbox": [
+          129.1119921875,
+          202.13755859375,
+          465.7239453125,
+          342.20228515625
+        ],
+        "block_id": "/page/5/Table/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 73.33,
+        "baseline_label": "TULU2",
+        "baseline_value": 73.49,
+        "delta": -0.16,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "GIFT-SW | 73.33 | 174M / 500 | 75.93 | 272M / 500",
+        "bbox": [
+          305.75265625,
+          68.93052734375,
+          524.22390625,
+          125.12416015625
+        ],
+        "block_id": "/page/6/Table/10",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.93,
+        "baseline_label": "TULU2",
+        "baseline_value": 75.51,
+        "delta": 0.42,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "5 Results",
+        "quote": "GIFT-SW | 73.33 | 174M / 500 | 75.93 | 272M / 500",
+        "bbox": [
+          305.75265625,
+          68.93052734375,
+          524.22390625,
+          125.12416015625
+        ],
+        "block_id": "/page/6/Table/10",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Salient FT",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.82,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Salient FT | 72.82 | 71.06 | 59.82",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Pre-GIFT-SW",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 73.15,
+        "baseline_label": "Salient FT",
+        "baseline_value": 72.82,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Pre-GIFT-SW | 73.15 | 70.24 | 47.08",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Post-GIFT-SW",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.53,
+        "baseline_label": "Salient FT",
+        "baseline_value": 72.82,
+        "delta": -0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Post-GIFT-SW | 72.53 | 71.00 | 61.09",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Salient FT",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.06,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Salient FT | 72.82 | 71.06 | 59.82",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Pre-GIFT-SW",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 70.24,
+        "baseline_label": "Salient FT",
+        "baseline_value": 71.06,
+        "delta": -0.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Pre-GIFT-SW | 73.15 | 70.24 | 47.08",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Post-GIFT-SW",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.0,
+        "baseline_label": "Salient FT",
+        "baseline_value": 71.06,
+        "delta": -0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Post-GIFT-SW | 72.53 | 71.00 | 61.09",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Salient FT",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 59.82,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Salient FT | 72.82 | 71.06 | 59.82",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Pre-GIFT-SW",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 47.08,
+        "baseline_label": "Salient FT",
+        "baseline_value": 59.82,
+        "delta": -12.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Pre-GIFT-SW | 73.15 | 70.24 | 47.08",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Post-GIFT-SW",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 61.09,
+        "baseline_label": "Salient FT",
+        "baseline_value": 59.82,
+        "delta": 1.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.4 Scaling Properties",
+        "quote": "Post-GIFT-SW | 72.53 | 71.00 | 61.09",
+        "bbox": [
+          78.9234375,
+          243.65375,
+          280.771875,
+          300.68609375
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 69.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "4 bit | LLaMA2-7b | 69.86 | 69.85 | 69.68 | 69.55 | 69.52",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 69.85,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 69.86 | 69.85 | 69.68",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 69.68,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 69.86 | 69.85 | 69.68",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 69.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 69.86 | 69.85 | 69.68 | 69.55 | 69.52",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 69.52,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 69.86 | 69.85 | 69.68 | 69.55 | 69.52",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.94,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 72.94 | 73.17 | 72.77 | 72.22 | 72.78",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 73.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 72.94 | 73.17",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.77,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 72.94 | 73.17 | 72.77",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.22,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 72.94 | 73.17 | 72.77 | 72.22",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.78,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 72.94 | 73.17 | 72.77 | 72.22 | 72.78",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.92,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 72.92 | 72.99 | 72.83 | 72.83 | 72.56",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 72.92 | 72.99",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 72.92 | 72.99 | 72.83",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 72.92 | 72.99 | 72.83 | 72.83",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.56,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 72.92 | 72.99 | 72.83 | 72.83 | 72.56",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 75.12 | 74.86 | 75.19 | 75.47 | 75.17",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 75.12 | 74.86",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.19,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 75.12 | 74.86 | 75.19",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 75.12 | 74.86 | 75.19 | 75.47",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 75.12 | 74.86 | 75.19 | 75.47 | 75.17",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 67.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "3 bit | LLaMA2-7b | 67.50 | 68.31 | 67.47 | 68.09 | 67.86",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 68.31,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 67.50 | 68.31",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 67.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 67.50 | 68.31 | 67.47",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 68.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 67.50 | 68.31 | 67.47 | 68.09",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 67.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 67.50 | 68.31 | 67.47 | 68.09 | 67.86",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 70.91,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 70.91 | 71.30 | 70.85 | 71.14 | 70.88",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 70.91 | 71.30",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 70.85,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 70.91 | 71.30 | 70.85",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.14,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 70.91 | 71.30 | 70.85 | 71.14",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 70.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 70.91 | 71.30 | 70.85 | 71.14 | 70.88",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.92,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 71.92 | 71.59 | 72.10 | 71.77 | 71.45",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 71.92 | 71.59",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 72.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 71.92 | 71.59 | 72.10",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.77,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 71.92 | 71.59 | 72.10 | 71.77",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 71.92 | 71.59 | 72.10 | 71.77 | 71.45",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.33,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 74.33 | 74.07 | 74.07 | 74.09 | 74.31",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 74.33 | 74.07",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 74.33 | 74.07 | 74.07",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 74.33 | 74.07 | 74.07 | 74.09",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.31,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 74.33 | 74.07 | 74.07 | 74.09 | 74.31",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 45.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "2 bit | LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81 | 46.83",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 46.78,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 45.86 | 46.78",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 45.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 45.86 | 46.78 | 45.99",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 46.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 46.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81 | 46.83",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 54.84,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 54.84 | 46.85 | 46.78 | 48.56 | 48.20",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 46.85,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 54.84 | 46.85",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 46.78,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 54.84 | 46.85 | 46.78",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 48.56,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 54.84 | 46.85 | 46.78 | 48.56",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-7b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 48.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-7b | 54.84 | 46.85 | 46.78 | 48.56 | 48.20",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 57.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 57.07 | 57.36 | 51.83 | 57.30 | 56.73",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 57.36,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 57.07 | 57.36",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 51.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 57.07 | 57.36 | 51.83",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 57.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 57.07 | 57.36 | 51.83 | 57.30",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 56.73,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 57.07 | 57.36 | 51.83 | 57.30 | 56.73",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: D2-X2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 59.62,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 59.62 | 59.62 | 59.43 | 60.67 | 59.39",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 59.62,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 59.62 | 59.62",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Xinf, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 59.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 59.62 | 59.62 | 59.43",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^0.5, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 60.67,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 59.62 | 59.62 | 59.43 | 60.67",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "TULU2-13b",
+        "method": "QUIK (metric: Dinf-Xinf^2, salient frozen)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 59.39,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "TÜLU2-13b | 59.62 | 59.62 | 59.43 | 60.67 | 59.39",
+        "bbox": [
+          64.3086328125,
+          67.096875,
+          539.8398046875,
+          268.3875
+        ],
+        "block_id": "/page/8/Table/0",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW (Outliers FT w/ Noise)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 73.33,
+        "baseline_label": "GIFT-SW (Outliers FT w/o Noise)",
+        "baseline_value": 73.16,
+        "delta": 0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 73.33 | 73.16 | 71.64 | 71.97",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "GIFT-SW (Outliers FT w/o Noise)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 73.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 73.33 | 73.16",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Full FT w/ Noise",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.64,
+        "baseline_label": "Full FT w/o Noise",
+        "baseline_value": 71.97,
+        "delta": -0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 73.33 | 73.16 | 71.64 | 71.97",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-7b",
+        "method": "Full FT w/o Noise",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 71.97,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-7b | 73.33 | 73.16 | 71.64 | 71.97",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW (Outliers FT w/ Noise)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.93,
+        "baseline_label": "GIFT-SW (Outliers FT w/o Noise)",
+        "baseline_value": 74.8,
+        "delta": 1.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 75.93 | 74.80 | 74.58 | 75.09",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "GIFT-SW (Outliers FT w/o Noise)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 75.93 | 74.80",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "Full FT w/ Noise",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 74.58,
+        "baseline_label": "Full FT w/o Noise",
+        "baseline_value": 75.09,
+        "delta": -0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 75.93 | 74.80 | 74.58 | 75.09",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA2-13b",
+        "method": "Full FT w/o Noise",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA2-13b | 75.93 | 74.80 | 74.58 | 75.09",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW (Outliers FT w/ Noise)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 76.37,
+        "baseline_label": "GIFT-SW (Outliers FT w/o Noise)",
+        "baseline_value": 75.45,
+        "delta": 0.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA3-8b | 76.37 | 75.45 | 76.32 | 76.13",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "GIFT-SW (Outliers FT w/o Noise)",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 75.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA3-8b | 76.37 | 75.45",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "Full FT w/ Noise",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 76.32,
+        "baseline_label": "Full FT w/o Noise",
+        "baseline_value": 76.13,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA3-8b | 76.37 | 75.45 | 76.32 | 76.13",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3-8b",
+        "method": "Full FT w/o Noise",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Mean of 6 zero-shot benchmarks",
+        "metric": "Mean accuracy (%)",
+        "value": 76.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "6.3 Quantization Before and After Training",
+        "quote": "LLaMA3-8b | 76.37 | 75.45 | 76.32 | 76.13",
+        "bbox": [
+          70.03,
+          318.44703125,
+          288.50125,
+          378.83421875
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 6"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 134,
+    "dropped_cited_count": 4,
+    "dropped_other_count": 0,
+    "headline_count": 7
   }
 }

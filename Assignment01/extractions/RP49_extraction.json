@@ -1218,5 +1218,6645 @@
         "source_table": "Table 1"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 97.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 93.24,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 94.95,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 55.91,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 76.96,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | Original | 16 | 97.17 | 93.24 | 94.95 | 55.91 | 76.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 95.11,
+        "baseline_label": "FP16",
+        "baseline_value": 97.17,
+        "delta": -2.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AWQ | 4 | 95.11 | 91.81 | 90.36 | 54.60 | 76.04",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 91.81,
+        "baseline_label": "FP16",
+        "baseline_value": 93.24,
+        "delta": -1.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AWQ | 4 | 95.11 | 91.81 | 90.36 | 54.60 | 76.04",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 90.36,
+        "baseline_label": "FP16",
+        "baseline_value": 94.95,
+        "delta": -4.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AWQ | 4 | 95.11 | 91.81 | 90.36 | 54.60 | 76.04",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 54.6,
+        "baseline_label": "FP16",
+        "baseline_value": 55.91,
+        "delta": -1.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AWQ | 4 | 95.11 | 91.81 | 90.36 | 54.60 | 76.04",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 76.04,
+        "baseline_label": "FP16",
+        "baseline_value": 76.96,
+        "delta": -0.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AWQ | 4 | 95.11 | 91.81 | 90.36 | 54.60 | 76.04",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 96.79,
+        "baseline_label": "FP16",
+        "baseline_value": 97.17,
+        "delta": -0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | GPTQ | 4 | 96.79 | 93.43 | 94.93 | 59.43 | 74.94",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 93.43,
+        "baseline_label": "FP16",
+        "baseline_value": 93.24,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | GPTQ | 4 | 96.79 | 93.43 | 94.93 | 59.43 | 74.94",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 94.93,
+        "baseline_label": "FP16",
+        "baseline_value": 94.95,
+        "delta": -0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | GPTQ | 4 | 96.79 | 93.43 | 94.93 | 59.43 | 74.94",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 59.43,
+        "baseline_label": "FP16",
+        "baseline_value": 55.91,
+        "delta": 3.52,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | GPTQ | 4 | 96.79 | 93.43 | 94.93 | 59.43 | 74.94",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 74.94,
+        "baseline_label": "FP16",
+        "baseline_value": 76.96,
+        "delta": -2.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | GPTQ | 4 | 96.79 | 93.43 | 94.93 | 59.43 | 74.94",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 85.11,
+        "baseline_label": "FP16",
+        "baseline_value": 97.17,
+        "delta": -12.06,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-1x16 | 2 | 85.11 | 92.03 | 91.34 | 48.78 | 75.93",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 92.03,
+        "baseline_label": "FP16",
+        "baseline_value": 93.24,
+        "delta": -1.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-1x16 | 2 | 85.11 | 92.03 | 91.34 | 48.78 | 75.93",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 91.34,
+        "baseline_label": "FP16",
+        "baseline_value": 94.95,
+        "delta": -3.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-1x16 | 2 | 85.11 | 92.03 | 91.34 | 48.78 | 75.93",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 48.78,
+        "baseline_label": "FP16",
+        "baseline_value": 55.91,
+        "delta": -7.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-1x16 | 2 | 85.11 | 92.03 | 91.34 | 48.78 | 75.93",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 75.93,
+        "baseline_label": "FP16",
+        "baseline_value": 76.96,
+        "delta": -1.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-1x16 | 2 | 85.11 | 92.03 | 91.34 | 48.78 | 75.93",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 68.48,
+        "baseline_label": "FP16",
+        "baseline_value": 97.17,
+        "delta": -28.69,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-2x8 | 2 | 68.48 | 49.41 | 81.08 | 63.45 | 73.21",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 49.41,
+        "baseline_label": "FP16",
+        "baseline_value": 93.24,
+        "delta": -43.83,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-2x8 | 2 | 68.48 | 49.41 | 81.08 | 63.45 | 73.21",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 81.08,
+        "baseline_label": "FP16",
+        "baseline_value": 94.95,
+        "delta": -13.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-2x8 | 2 | 68.48 | 49.41 | 81.08 | 63.45 | 73.21",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 63.45,
+        "baseline_label": "FP16",
+        "baseline_value": 55.91,
+        "delta": 7.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-2x8 | 2 | 68.48 | 49.41 | 81.08 | 63.45 | 73.21",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 73.21,
+        "baseline_label": "FP16",
+        "baseline_value": 76.96,
+        "delta": -3.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-8B | Chat | AQLM-PV-2x8 | 2 | 68.48 | 49.41 | 81.08 | 63.45 | 73.21",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 95.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | Original | 16 | 95.21 | 86.16 | 81.35 | 61.34 | 75.48",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 86.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | Original | 16 | 95.21 | 86.16 | 81.35 | 61.34 | 75.48",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 81.35,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | Original | 16 | 95.21 | 86.16 | 81.35 | 61.34 | 75.48",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 61.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | Original | 16 | 95.21 | 86.16 | 81.35 | 61.34 | 75.48",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 75.48,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | Original | 16 | 95.21 | 86.16 | 81.35 | 61.34 | 75.48",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 94.89,
+        "baseline_label": "FP16",
+        "baseline_value": 95.21,
+        "delta": -0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AWQ | 4 | 94.89 | 86.48 | 82.26 | 61.02 | 74.92",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 86.48,
+        "baseline_label": "FP16",
+        "baseline_value": 86.16,
+        "delta": 0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AWQ | 4 | 94.89 | 86.48 | 82.26 | 61.02 | 74.92",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 82.26,
+        "baseline_label": "FP16",
+        "baseline_value": 81.35,
+        "delta": 0.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AWQ | 4 | 94.89 | 86.48 | 82.26 | 61.02 | 74.92",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 61.02,
+        "baseline_label": "FP16",
+        "baseline_value": 61.34,
+        "delta": -0.32,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AWQ | 4 | 94.89 | 86.48 | 82.26 | 61.02 | 74.92",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 74.92,
+        "baseline_label": "FP16",
+        "baseline_value": 75.48,
+        "delta": -0.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AWQ | 4 | 94.89 | 86.48 | 82.26 | 61.02 | 74.92",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 94.54,
+        "baseline_label": "FP16",
+        "baseline_value": 95.21,
+        "delta": -0.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | GPTQ | 4 | 94.54 | 88.03 | 78.27 | 64.16 | 74.35",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 88.03,
+        "baseline_label": "FP16",
+        "baseline_value": 86.16,
+        "delta": 1.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | GPTQ | 4 | 94.54 | 88.03 | 78.27 | 64.16 | 74.35",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 78.27,
+        "baseline_label": "FP16",
+        "baseline_value": 81.35,
+        "delta": -3.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | GPTQ | 4 | 94.54 | 88.03 | 78.27 | 64.16 | 74.35",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 64.16,
+        "baseline_label": "FP16",
+        "baseline_value": 61.34,
+        "delta": 2.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | GPTQ | 4 | 94.54 | 88.03 | 78.27 | 64.16 | 74.35",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 74.35,
+        "baseline_label": "FP16",
+        "baseline_value": 75.48,
+        "delta": -1.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | GPTQ | 4 | 94.54 | 88.03 | 78.27 | 64.16 | 74.35",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 77.02,
+        "baseline_label": "FP16",
+        "baseline_value": 95.21,
+        "delta": -18.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AQLM-2x8 | 2 | 77.02 | 52.74 | 60.06 | 50.29 | 64.61",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 52.74,
+        "baseline_label": "FP16",
+        "baseline_value": 86.16,
+        "delta": -33.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AQLM-2x8 | 2 | 77.02 | 52.74 | 60.06 | 50.29 | 64.61",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 60.06,
+        "baseline_label": "FP16",
+        "baseline_value": 81.35,
+        "delta": -21.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AQLM-2x8 | 2 | 77.02 | 52.74 | 60.06 | 50.29 | 64.61",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 50.29,
+        "baseline_label": "FP16",
+        "baseline_value": 61.34,
+        "delta": -11.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AQLM-2x8 | 2 | 77.02 | 52.74 | 60.06 | 50.29 | 64.61",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 64.61,
+        "baseline_label": "FP16",
+        "baseline_value": 75.48,
+        "delta": -10.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral2-7B | Chat | AQLM-2x8 | 2 | 77.02 | 52.74 | 60.06 | 50.29 | 64.61",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 96.57,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | Original | 16 | 96.57 | 90.98 | 85.32 | 84.76 | 76.71",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 90.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | Original | 16 | 96.57 | 90.98 | 85.32 | 84.76 | 76.71",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 85.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | Original | 16 | 96.57 | 90.98 | 85.32 | 84.76 | 76.71",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 84.76,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | Original | 16 | 96.57 | 90.98 | 85.32 | 84.76 | 76.71",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 76.71,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | Original | 16 | 96.57 | 90.98 | 85.32 | 84.76 | 76.71",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 96.06,
+        "baseline_label": "FP16",
+        "baseline_value": 96.57,
+        "delta": -0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | AWQ | 4 | 96.06 | 91.55 | 84.74 | 83.13 | 75.64",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 91.55,
+        "baseline_label": "FP16",
+        "baseline_value": 90.98,
+        "delta": 0.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | AWQ | 4 | 96.06 | 91.55 | 84.74 | 83.13 | 75.64",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 84.74,
+        "baseline_label": "FP16",
+        "baseline_value": 85.32,
+        "delta": -0.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | AWQ | 4 | 96.06 | 91.55 | 84.74 | 83.13 | 75.64",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 83.13,
+        "baseline_label": "FP16",
+        "baseline_value": 84.76,
+        "delta": -1.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | AWQ | 4 | 96.06 | 91.55 | 84.74 | 83.13 | 75.64",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 75.64,
+        "baseline_label": "FP16",
+        "baseline_value": 76.71,
+        "delta": -1.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | AWQ | 4 | 96.06 | 91.55 | 84.74 | 83.13 | 75.64",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 95.49,
+        "baseline_label": "FP16",
+        "baseline_value": 96.57,
+        "delta": -1.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | GPTQ | 4 | 95.49 | 89.08 | 81.61 | 84.79 | 76.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 89.08,
+        "baseline_label": "FP16",
+        "baseline_value": 90.98,
+        "delta": -1.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | GPTQ | 4 | 95.49 | 89.08 | 81.61 | 84.79 | 76.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 81.61,
+        "baseline_label": "FP16",
+        "baseline_value": 85.32,
+        "delta": -3.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | GPTQ | 4 | 95.49 | 89.08 | 81.61 | 84.79 | 76.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 84.79,
+        "baseline_label": "FP16",
+        "baseline_value": 84.76,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | GPTQ | 4 | 95.49 | 89.08 | 81.61 | 84.79 | 76.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.3",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 76.01,
+        "baseline_label": "FP16",
+        "baseline_value": 76.71,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Mistral3-7B | Chat | GPTQ | 4 | 95.49 | 89.08 | 81.61 | 84.79 | 76.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 96.25,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | Original | 16 | 96.25 | 93.27 | 91.81 | 58.20 | 78.51",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 93.27,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | Original | 16 | 96.25 | 93.27 | 91.81 | 58.20 | 78.51",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 91.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | Original | 16 | 96.25 | 93.27 | 91.81 | 58.20 | 78.51",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 58.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | Original | 16 | 96.25 | 93.27 | 91.81 | 58.20 | 78.51",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 78.51,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | Original | 16 | 96.25 | 93.27 | 91.81 | 58.20 | 78.51",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 94.06,
+        "baseline_label": "FP16",
+        "baseline_value": 96.25,
+        "delta": -2.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | AWQ | 4 | 94.06 | 90.35 | 73.73 | 41.55 | 70.44",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 90.35,
+        "baseline_label": "FP16",
+        "baseline_value": 93.27,
+        "delta": -2.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | AWQ | 4 | 94.06 | 90.35 | 73.73 | 41.55 | 70.44",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 73.73,
+        "baseline_label": "FP16",
+        "baseline_value": 91.81,
+        "delta": -18.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | AWQ | 4 | 94.06 | 90.35 | 73.73 | 41.55 | 70.44",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 41.55,
+        "baseline_label": "FP16",
+        "baseline_value": 58.2,
+        "delta": -16.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | AWQ | 4 | 94.06 | 90.35 | 73.73 | 41.55 | 70.44",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 70.44,
+        "baseline_label": "FP16",
+        "baseline_value": 78.51,
+        "delta": -8.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | AWQ | 4 | 94.06 | 90.35 | 73.73 | 41.55 | 70.44",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 95.87,
+        "baseline_label": "FP16",
+        "baseline_value": 96.25,
+        "delta": -0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | GPTQ | 4 | 95.87 | 93.49 | 93.35 | 55.37 | 78.65",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 93.49,
+        "baseline_label": "FP16",
+        "baseline_value": 93.27,
+        "delta": 0.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | GPTQ | 4 | 95.87 | 93.49 | 93.35 | 55.37 | 78.65",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 93.35,
+        "baseline_label": "FP16",
+        "baseline_value": 91.81,
+        "delta": 1.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | GPTQ | 4 | 95.87 | 93.49 | 93.35 | 55.37 | 78.65",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 55.37,
+        "baseline_label": "FP16",
+        "baseline_value": 58.2,
+        "delta": -2.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | GPTQ | 4 | 95.87 | 93.49 | 93.35 | 55.37 | 78.65",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2.5-14B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 78.65,
+        "baseline_label": "FP16",
+        "baseline_value": 78.51,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2.5-14B | Chat | GPTQ | 4 | 95.87 | 93.49 | 93.35 | 55.37 | 78.65",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 98.09,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | Original | 16 | 98.09 | 97.01 | 96.99 | 91.43 | 79.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 97.01,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | Original | 16 | 98.09 | 97.01 | 96.99 | 91.43 | 79.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 96.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | Original | 16 | 98.09 | 97.01 | 96.99 | 91.43 | 79.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 91.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | Original | 16 | 98.09 | 97.01 | 96.99 | 91.43 | 79.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 79.01,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | Original | 16 | 98.09 | 97.01 | 96.99 | 91.43 | 79.01",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 97.54,
+        "baseline_label": "FP16",
+        "baseline_value": 98.09,
+        "delta": -0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AWQ | 4 | 97.54 | 96.22 | 96.68 | 90.69 | 76.89",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 96.22,
+        "baseline_label": "FP16",
+        "baseline_value": 97.01,
+        "delta": -0.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AWQ | 4 | 97.54 | 96.22 | 96.68 | 90.69 | 76.89",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 96.68,
+        "baseline_label": "FP16",
+        "baseline_value": 96.99,
+        "delta": -0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AWQ | 4 | 97.54 | 96.22 | 96.68 | 90.69 | 76.89",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 90.69,
+        "baseline_label": "FP16",
+        "baseline_value": 91.43,
+        "delta": -0.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AWQ | 4 | 97.54 | 96.22 | 96.68 | 90.69 | 76.89",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 76.89,
+        "baseline_label": "FP16",
+        "baseline_value": 79.01,
+        "delta": -2.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AWQ | 4 | 97.54 | 96.22 | 96.68 | 90.69 | 76.89",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 96.31,
+        "baseline_label": "FP16",
+        "baseline_value": 98.09,
+        "delta": -1.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AQLM-1x16 | 2 | 96.31 | 94.44 | 93.65 | 68.81 | 74.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 94.44,
+        "baseline_label": "FP16",
+        "baseline_value": 97.01,
+        "delta": -2.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AQLM-1x16 | 2 | 96.31 | 94.44 | 93.65 | 68.81 | 74.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 93.65,
+        "baseline_label": "FP16",
+        "baseline_value": 96.99,
+        "delta": -3.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AQLM-1x16 | 2 | 96.31 | 94.44 | 93.65 | 68.81 | 74.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 68.81,
+        "baseline_label": "FP16",
+        "baseline_value": 91.43,
+        "delta": -22.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AQLM-1x16 | 2 | 96.31 | 94.44 | 93.65 | 68.81 | 74.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3-70B-Instruct",
+        "method": "AQLM",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 74.96,
+        "baseline_label": "FP16",
+        "baseline_value": 79.01,
+        "delta": -4.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3-70B | Chat | AQLM-1x16 | 2 | 96.31 | 94.44 | 93.65 | 68.81 | 74.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 98.03,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | Original | 16 | 98.03 | 97.15 | 96.67 | 90.21 | 79.32",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 97.15,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | Original | 16 | 98.03 | 97.15 | 96.67 | 90.21 | 79.32",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 96.67,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | Original | 16 | 98.03 | 97.15 | 96.67 | 90.21 | 79.32",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 90.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | Original | 16 | 98.03 | 97.15 | 96.67 | 90.21 | 79.32",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 79.32,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | Original | 16 | 98.03 | 97.15 | 96.67 | 90.21 | 79.32",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 97.58,
+        "baseline_label": "FP16",
+        "baseline_value": 98.03,
+        "delta": -0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AWQ | 4 | 97.58 | 96.25 | 95.58 | 86.34 | 74.87",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 96.25,
+        "baseline_label": "FP16",
+        "baseline_value": 97.15,
+        "delta": -0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AWQ | 4 | 97.58 | 96.25 | 95.58 | 86.34 | 74.87",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 95.58,
+        "baseline_label": "FP16",
+        "baseline_value": 96.67,
+        "delta": -1.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AWQ | 4 | 97.58 | 96.25 | 95.58 | 86.34 | 74.87",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 86.34,
+        "baseline_label": "FP16",
+        "baseline_value": 90.21,
+        "delta": -3.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AWQ | 4 | 97.58 | 96.25 | 95.58 | 86.34 | 74.87",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 74.87,
+        "baseline_label": "FP16",
+        "baseline_value": 79.32,
+        "delta": -4.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AWQ | 4 | 97.58 | 96.25 | 95.58 | 86.34 | 74.87",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 97.17,
+        "baseline_label": "FP16",
+        "baseline_value": 98.03,
+        "delta": -0.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AQLM-PV-1x16 | 2 | 97.17 | 94.82 | 93.40 | 83.98 | 75.43",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 94.82,
+        "baseline_label": "FP16",
+        "baseline_value": 97.15,
+        "delta": -2.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AQLM-PV-1x16 | 2 | 97.17 | 94.82 | 93.40 | 83.98 | 75.43",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 93.4,
+        "baseline_label": "FP16",
+        "baseline_value": 96.67,
+        "delta": -3.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AQLM-PV-1x16 | 2 | 97.17 | 94.82 | 93.40 | 83.98 | 75.43",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 83.98,
+        "baseline_label": "FP16",
+        "baseline_value": 90.21,
+        "delta": -6.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AQLM-PV-1x16 | 2 | 97.17 | 94.82 | 93.40 | 83.98 | 75.43",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-70B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 75.43,
+        "baseline_label": "FP16",
+        "baseline_value": 79.32,
+        "delta": -3.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "LLaMA3.1-70B | Chat | AQLM-PV-1x16 | 2 | 97.17 | 94.82 | 93.40 | 83.98 | 75.43",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 99.01,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | Original | 16 | 99.01 | 97.89 | 97.24 | 71.51 | 86.78",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 97.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | Original | 16 | 99.01 | 97.89 | 97.24 | 71.51 | 86.78",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 97.24,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | Original | 16 | 99.01 | 97.89 | 97.24 | 71.51 | 86.78",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 71.51,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | Original | 16 | 99.01 | 97.89 | 97.24 | 71.51 | 86.78",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 86.78,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | Original | 16 | 99.01 | 97.89 | 97.24 | 71.51 | 86.78",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 98.22,
+        "baseline_label": "FP16",
+        "baseline_value": 99.01,
+        "delta": -0.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AWQ | 4 | 98.22 | 96.61 | 96.51 | 65.43 | 84.34",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 96.61,
+        "baseline_label": "FP16",
+        "baseline_value": 97.89,
+        "delta": -1.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AWQ | 4 | 98.22 | 96.61 | 96.51 | 65.43 | 84.34",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 96.51,
+        "baseline_label": "FP16",
+        "baseline_value": 97.24,
+        "delta": -0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AWQ | 4 | 98.22 | 96.61 | 96.51 | 65.43 | 84.34",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 65.43,
+        "baseline_label": "FP16",
+        "baseline_value": 71.51,
+        "delta": -6.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AWQ | 4 | 98.22 | 96.61 | 96.51 | 65.43 | 84.34",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 84.34,
+        "baseline_label": "FP16",
+        "baseline_value": 86.78,
+        "delta": -2.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AWQ | 4 | 98.22 | 96.61 | 96.51 | 65.43 | 84.34",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 98.19,
+        "baseline_label": "FP16",
+        "baseline_value": 99.01,
+        "delta": -0.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Base | AQLM-PV-1x16 | 2 | 98.19 | 89.27 | 95.10 | 64.40 | 82.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 89.27,
+        "baseline_label": "FP16",
+        "baseline_value": 97.89,
+        "delta": -8.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Base | AQLM-PV-1x16 | 2 | 98.19 | 89.27 | 95.10 | 64.40 | 82.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 95.1,
+        "baseline_label": "FP16",
+        "baseline_value": 97.24,
+        "delta": -2.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Base | AQLM-PV-1x16 | 2 | 98.19 | 89.27 | 95.10 | 64.40 | 82.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 64.4,
+        "baseline_label": "FP16",
+        "baseline_value": 71.51,
+        "delta": -7.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Base | AQLM-PV-1x16 | 2 | 98.19 | 89.27 | 95.10 | 64.40 | 82.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 82.96,
+        "baseline_label": "FP16",
+        "baseline_value": 86.78,
+        "delta": -3.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Base | AQLM-PV-1x16 | 2 | 98.19 | 89.27 | 95.10 | 64.40 | 82.96",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Affirmative",
+        "metric": "Accuracy (%)",
+        "value": 98.47,
+        "baseline_label": "FP16",
+        "baseline_value": 99.01,
+        "delta": -0.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AQLM-PV-1x16 | 2 | 98.47 | 96.31 | 96.78 | 68.71 | 83.33",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Negated",
+        "metric": "Accuracy (%)",
+        "value": 96.31,
+        "baseline_label": "FP16",
+        "baseline_value": 97.89,
+        "delta": -1.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AQLM-PV-1x16 | 2 | 98.47 | 96.31 | 96.78 | 68.71 | 83.33",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Conjunction",
+        "metric": "Accuracy (%)",
+        "value": 96.78,
+        "baseline_label": "FP16",
+        "baseline_value": 97.24,
+        "delta": -0.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AQLM-PV-1x16 | 2 | 98.47 | 96.31 | 96.78 | 68.71 | 83.33",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "Disjunction",
+        "metric": "Accuracy (%)",
+        "value": 68.71,
+        "baseline_label": "FP16",
+        "baseline_value": 71.51,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AQLM-PV-1x16 | 2 | 98.47 | 96.31 | 96.78 | 68.71 | 83.33",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Qwen2-72B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "CommonClaim",
+        "metric": "Accuracy (%)",
+        "value": 83.33,
+        "baseline_label": "FP16",
+        "baseline_value": 86.78,
+        "delta": -3.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.1 Models and Quantization Methods",
+        "quote": "Qwen2-72B | Chat | AQLM-PV-1x16 | 2 | 98.47 | 96.31 | 96.78 | 68.71 | 83.33",
+        "bbox": [
+          71.8459375,
+          66.79263671875,
+          520.661875,
+          341.05111328125
+        ],
+        "block_id": "/page/3/Table/0",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 33.54,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | Original | 16 | 33.54 | 52.14 | 25.22 | 67.84 | 57.47 | 38.98",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 52.14,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | Original | 16 | 33.54 | 52.14 | 25.22 | 67.84 | 57.47 | 38.98",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 25.22,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | Original | 16 | 33.54 | 52.14 | 25.22 | 67.84 | 57.47 | 38.98",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 67.84,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | Original | 16 | 33.54 | 52.14 | 25.22 | 67.84 | 57.47 | 38.98",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 57.47,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | Original | 16 | 33.54 | 52.14 | 25.22 | 67.84 | 57.47 | 38.98",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 38.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | Original | 16 | 33.54 | 52.14 | 25.22 | 67.84 | 57.47 | 38.98",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 35.19,
+        "baseline_label": "FP16",
+        "baseline_value": 33.54,
+        "delta": 1.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 35.19 | 64.37 | 32.05 | 68.25 | 58.62 | 40.01",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 64.37,
+        "baseline_label": "FP16",
+        "baseline_value": 52.14,
+        "delta": 12.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 35.19 | 64.37 | 32.05 | 68.25 | 58.62 | 40.01",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 32.05,
+        "baseline_label": "FP16",
+        "baseline_value": 25.22,
+        "delta": 6.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 35.19 | 64.37 | 32.05 | 68.25 | 58.62 | 40.01",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 68.25,
+        "baseline_label": "FP16",
+        "baseline_value": 67.84,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 35.19 | 64.37 | 32.05 | 68.25 | 58.62 | 40.01",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 58.62,
+        "baseline_label": "FP16",
+        "baseline_value": 57.47,
+        "delta": 1.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 35.19 | 64.37 | 32.05 | 68.25 | 58.62 | 40.01",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 40.01,
+        "baseline_label": "FP16",
+        "baseline_value": 38.98,
+        "delta": 1.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 35.19 | 64.37 | 32.05 | 68.25 | 58.62 | 40.01",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 33.04,
+        "baseline_label": "FP16",
+        "baseline_value": 33.54,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | AWQ | 4 | 33.04 | 51.18 | 24.62 | 64.68 | 55.31 | 35.77",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 51.18,
+        "baseline_label": "FP16",
+        "baseline_value": 52.14,
+        "delta": -0.96,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | AWQ | 4 | 33.04 | 51.18 | 24.62 | 64.68 | 55.31 | 35.77",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 24.62,
+        "baseline_label": "FP16",
+        "baseline_value": 25.22,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | AWQ | 4 | 33.04 | 51.18 | 24.62 | 64.68 | 55.31 | 35.77",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 64.68,
+        "baseline_label": "FP16",
+        "baseline_value": 67.84,
+        "delta": -3.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | AWQ | 4 | 33.04 | 51.18 | 24.62 | 64.68 | 55.31 | 35.77",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 55.31,
+        "baseline_label": "FP16",
+        "baseline_value": 57.47,
+        "delta": -2.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | AWQ | 4 | 33.04 | 51.18 | 24.62 | 64.68 | 55.31 | 35.77",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 35.77,
+        "baseline_label": "FP16",
+        "baseline_value": 38.98,
+        "delta": -3.21,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | AWQ | 4 | 33.04 | 51.18 | 24.62 | 64.68 | 55.31 | 35.77",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 35.19,
+        "baseline_label": "AWQ",
+        "baseline_value": 33.04,
+        "delta": 2.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.19 | 64.59 | 32.13 | 66.01 | 57.08 | 37.68",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 64.59,
+        "baseline_label": "AWQ",
+        "baseline_value": 51.18,
+        "delta": 13.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.19 | 64.59 | 32.13 | 66.01 | 57.08 | 37.68",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 32.13,
+        "baseline_label": "AWQ",
+        "baseline_value": 24.62,
+        "delta": 7.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.19 | 64.59 | 32.13 | 66.01 | 57.08 | 37.68",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 66.01,
+        "baseline_label": "AWQ",
+        "baseline_value": 64.68,
+        "delta": 1.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.19 | 64.59 | 32.13 | 66.01 | 57.08 | 37.68",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 57.08,
+        "baseline_label": "AWQ",
+        "baseline_value": 55.31,
+        "delta": 1.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.19 | 64.59 | 32.13 | 66.01 | 57.08 | 37.68",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 37.68,
+        "baseline_label": "AWQ",
+        "baseline_value": 35.77,
+        "delta": 1.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.19 | 64.59 | 32.13 | 66.01 | 57.08 | 37.68",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 30.88,
+        "baseline_label": "FP16",
+        "baseline_value": 33.54,
+        "delta": -2.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | GPTQ | 4 | 30.88 | 48.65 | 23.41 | 64.38 | 52.78 | 33.97",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 48.65,
+        "baseline_label": "FP16",
+        "baseline_value": 52.14,
+        "delta": -3.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | GPTQ | 4 | 30.88 | 48.65 | 23.41 | 64.38 | 52.78 | 33.97",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 23.41,
+        "baseline_label": "FP16",
+        "baseline_value": 25.22,
+        "delta": -1.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | GPTQ | 4 | 30.88 | 48.65 | 23.41 | 64.38 | 52.78 | 33.97",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 64.38,
+        "baseline_label": "FP16",
+        "baseline_value": 67.84,
+        "delta": -3.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | GPTQ | 4 | 30.88 | 48.65 | 23.41 | 64.38 | 52.78 | 33.97",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 52.78,
+        "baseline_label": "FP16",
+        "baseline_value": 57.47,
+        "delta": -4.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | GPTQ | 4 | 30.88 | 48.65 | 23.41 | 64.38 | 52.78 | 33.97",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 33.97,
+        "baseline_label": "FP16",
+        "baseline_value": 38.98,
+        "delta": -5.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA2-13B-Chat | GPTQ | 4 | 30.88 | 48.65 | 23.41 | 64.38 | 52.78 | 33.97",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 34.43,
+        "baseline_label": "GPTQ",
+        "baseline_value": 30.88,
+        "delta": 3.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 34.43 | 63.19 | 31.31 | 65.19 | 55.21 | 35.99",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 63.19,
+        "baseline_label": "GPTQ",
+        "baseline_value": 48.65,
+        "delta": 14.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 34.43 | 63.19 | 31.31 | 65.19 | 55.21 | 35.99",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 31.31,
+        "baseline_label": "GPTQ",
+        "baseline_value": 23.41,
+        "delta": 7.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 34.43 | 63.19 | 31.31 | 65.19 | 55.21 | 35.99",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 65.19,
+        "baseline_label": "GPTQ",
+        "baseline_value": 64.38,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 34.43 | 63.19 | 31.31 | 65.19 | 55.21 | 35.99",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 55.21,
+        "baseline_label": "GPTQ",
+        "baseline_value": 52.78,
+        "delta": 2.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 34.43 | 63.19 | 31.31 | 65.19 | 55.21 | 35.99",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-2-13B-Chat",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 35.99,
+        "baseline_label": "GPTQ",
+        "baseline_value": 33.97,
+        "delta": 2.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 34.43 | 63.19 | 31.31 | 65.19 | 55.21 | 35.99",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 38.61,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | Original | 16 | 38.61 | 58.70 | 30.45 | 60.11 | 27.46 | 16.51",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 58.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | Original | 16 | 38.61 | 58.70 | 30.45 | 60.11 | 27.46 | 16.51",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 30.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | Original | 16 | 38.61 | 58.70 | 30.45 | 60.11 | 27.46 | 16.51",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 60.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | Original | 16 | 38.61 | 58.70 | 30.45 | 60.11 | 27.46 | 16.51",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 27.46,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | Original | 16 | 38.61 | 58.70 | 30.45 | 60.11 | 27.46 | 16.51",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 16.51,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | Original | 16 | 38.61 | 58.70 | 30.45 | 60.11 | 27.46 | 16.51",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 37.08,
+        "baseline_label": "FP16",
+        "baseline_value": 38.61,
+        "delta": -1.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 37.08 | 66.48 | 34.83 | 64.05 | 37.59 | 24.07",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 66.48,
+        "baseline_label": "FP16",
+        "baseline_value": 58.7,
+        "delta": 7.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 37.08 | 66.48 | 34.83 | 64.05 | 37.59 | 24.07",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 34.83,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": 4.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 37.08 | 66.48 | 34.83 | 64.05 | 37.59 | 24.07",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 64.05,
+        "baseline_label": "FP16",
+        "baseline_value": 60.11,
+        "delta": 3.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 37.08 | 66.48 | 34.83 | 64.05 | 37.59 | 24.07",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 37.59,
+        "baseline_label": "FP16",
+        "baseline_value": 27.46,
+        "delta": 10.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 37.08 | 66.48 | 34.83 | 64.05 | 37.59 | 24.07",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "FP16+DoLa",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 24.07,
+        "baseline_label": "FP16",
+        "baseline_value": 16.51,
+        "delta": 7.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | Original | 16 | 37.08 | 66.48 | 34.83 | 64.05 | 37.59 | 24.07",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 36.45,
+        "baseline_label": "FP16",
+        "baseline_value": 38.61,
+        "delta": -2.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AWQ | 4 | 36.45 | 56.46 | 29.18 | 59.62 | 23.29 | 13.88",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 56.46,
+        "baseline_label": "FP16",
+        "baseline_value": 58.7,
+        "delta": -2.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AWQ | 4 | 36.45 | 56.46 | 29.18 | 59.62 | 23.29 | 13.88",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 29.18,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -1.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AWQ | 4 | 36.45 | 56.46 | 29.18 | 59.62 | 23.29 | 13.88",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 59.62,
+        "baseline_label": "FP16",
+        "baseline_value": 60.11,
+        "delta": -0.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AWQ | 4 | 36.45 | 56.46 | 29.18 | 59.62 | 23.29 | 13.88",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 23.29,
+        "baseline_label": "FP16",
+        "baseline_value": 27.46,
+        "delta": -4.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AWQ | 4 | 36.45 | 56.46 | 29.18 | 59.62 | 23.29 | 13.88",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 13.88,
+        "baseline_label": "FP16",
+        "baseline_value": 16.51,
+        "delta": -2.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AWQ | 4 | 36.45 | 56.46 | 29.18 | 59.62 | 23.29 | 13.88",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 35.56,
+        "baseline_label": "AWQ",
+        "baseline_value": 36.45,
+        "delta": -0.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.56 | 65.87 | 34.08 | 60.78 | 28.86 | 17.54",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 65.87,
+        "baseline_label": "AWQ",
+        "baseline_value": 56.46,
+        "delta": 9.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.56 | 65.87 | 34.08 | 60.78 | 28.86 | 17.54",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 34.08,
+        "baseline_label": "AWQ",
+        "baseline_value": 29.18,
+        "delta": 4.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.56 | 65.87 | 34.08 | 60.78 | 28.86 | 17.54",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 60.78,
+        "baseline_label": "AWQ",
+        "baseline_value": 59.62,
+        "delta": 1.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.56 | 65.87 | 34.08 | 60.78 | 28.86 | 17.54",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 28.86,
+        "baseline_label": "AWQ",
+        "baseline_value": 23.29,
+        "delta": 5.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.56 | 65.87 | 34.08 | 60.78 | 28.86 | 17.54",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AWQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 17.54,
+        "baseline_label": "AWQ",
+        "baseline_value": 13.88,
+        "delta": 3.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AWQ | 4 | 35.56 | 65.87 | 34.08 | 60.78 | 28.86 | 17.54",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 36.32,
+        "baseline_label": "FP16",
+        "baseline_value": 38.61,
+        "delta": -2.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | GPTQ | 4 | 36.32 | 56.71 | 28.84 | 59.22 | 23.74 | 14.05",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 56.71,
+        "baseline_label": "FP16",
+        "baseline_value": 58.7,
+        "delta": -1.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | GPTQ | 4 | 36.32 | 56.71 | 28.84 | 59.22 | 23.74 | 14.05",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 28.84,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -1.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | GPTQ | 4 | 36.32 | 56.71 | 28.84 | 59.22 | 23.74 | 14.05",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 59.22,
+        "baseline_label": "FP16",
+        "baseline_value": 60.11,
+        "delta": -0.89,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | GPTQ | 4 | 36.32 | 56.71 | 28.84 | 59.22 | 23.74 | 14.05",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 23.74,
+        "baseline_label": "FP16",
+        "baseline_value": 27.46,
+        "delta": -3.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | GPTQ | 4 | 36.32 | 56.71 | 28.84 | 59.22 | 23.74 | 14.05",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 14.05,
+        "baseline_label": "FP16",
+        "baseline_value": 16.51,
+        "delta": -2.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | GPTQ | 4 | 36.32 | 56.71 | 28.84 | 59.22 | 23.74 | 14.05",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 35.57,
+        "baseline_label": "GPTQ",
+        "baseline_value": 36.32,
+        "delta": -0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 35.57 | 65.63 | 33.87 | 60.42 | 28.45 | 17.18",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 65.63,
+        "baseline_label": "GPTQ",
+        "baseline_value": 56.71,
+        "delta": 8.92,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 35.57 | 65.63 | 33.87 | 60.42 | 28.45 | 17.18",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 33.87,
+        "baseline_label": "GPTQ",
+        "baseline_value": 28.84,
+        "delta": 5.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 35.57 | 65.63 | 33.87 | 60.42 | 28.45 | 17.18",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 60.42,
+        "baseline_label": "GPTQ",
+        "baseline_value": 59.22,
+        "delta": 1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 35.57 | 65.63 | 33.87 | 60.42 | 28.45 | 17.18",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 28.45,
+        "baseline_label": "GPTQ",
+        "baseline_value": 27.46,
+        "delta": 0.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 35.57 | 65.63 | 33.87 | 60.42 | 28.45 | 17.18",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "GPTQ+DoLa",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 17.18,
+        "baseline_label": "GPTQ",
+        "baseline_value": 28.45,
+        "delta": -11.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | GPTQ | 4 | 35.57 | 65.63 | 33.87 | 60.42 | 28.45 | 17.18",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 31.89,
+        "baseline_label": "FP16",
+        "baseline_value": 38.61,
+        "delta": -6.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-1x16 | 2 | 31.89 | 51.70 | 24.92 | 59.74 | 44.17 | 26.39",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 51.7,
+        "baseline_label": "FP16",
+        "baseline_value": 58.7,
+        "delta": -7.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-1x16 | 2 | 31.89 | 51.70 | 24.92 | 59.74 | 44.17 | 26.39",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 24.92,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -5.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-1x16 | 2 | 31.89 | 51.70 | 24.92 | 59.74 | 44.17 | 26.39",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 59.74,
+        "baseline_label": "FP16",
+        "baseline_value": 60.11,
+        "delta": -0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-1x16 | 2 | 31.89 | 51.70 | 24.92 | 59.74 | 44.17 | 26.39",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 44.17,
+        "baseline_label": "FP16",
+        "baseline_value": 27.46,
+        "delta": 16.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-1x16 | 2 | 31.89 | 51.70 | 24.92 | 59.74 | 44.17 | 26.39",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 26.39,
+        "baseline_label": "FP16",
+        "baseline_value": 16.51,
+        "delta": 9.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-1x16 | 2 | 31.89 | 51.70 | 24.92 | 59.74 | 44.17 | 26.39",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 34.3,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 31.89,
+        "delta": 2.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-1x16 | 2 | 34.30 | 64.40 | 32.58 | 60.79 | 53.04 | 32.24",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 64.4,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 51.7,
+        "delta": 12.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-1x16 | 2 | 34.30 | 64.40 | 32.58 | 60.79 | 53.04 | 32.24",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 32.58,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 24.92,
+        "delta": 7.66,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-1x16 | 2 | 34.30 | 64.40 | 32.58 | 60.79 | 53.04 | 32.24",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 60.79,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 59.74,
+        "delta": 1.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-1x16 | 2 | 34.30 | 64.40 | 32.58 | 60.79 | 53.04 | 32.24",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 53.04,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 44.17,
+        "delta": 8.87,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-1x16 | 2 | 34.30 | 64.40 | 32.58 | 60.79 | 53.04 | 32.24",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "1x16",
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 32.24,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 26.39,
+        "delta": 5.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-1x16 | 2 | 34.30 | 64.40 | 32.58 | 60.79 | 53.04 | 32.24",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 30.63,
+        "baseline_label": "FP16",
+        "baseline_value": 38.61,
+        "delta": -7.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-2x8 | 2 | 30.63 | 49.53 | 24.38 | 56.21 | 29.11 | 16.36",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 49.53,
+        "baseline_label": "FP16",
+        "baseline_value": 58.7,
+        "delta": -9.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-2x8 | 2 | 30.63 | 49.53 | 24.38 | 56.21 | 29.11 | 16.36",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 24.38,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -6.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-2x8 | 2 | 30.63 | 49.53 | 24.38 | 56.21 | 29.11 | 16.36",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 56.21,
+        "baseline_label": "FP16",
+        "baseline_value": 60.11,
+        "delta": -3.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-2x8 | 2 | 30.63 | 49.53 | 24.38 | 56.21 | 29.11 | 16.36",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 29.11,
+        "baseline_label": "FP16",
+        "baseline_value": 27.46,
+        "delta": 1.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-2x8 | 2 | 30.63 | 49.53 | 24.38 | 56.21 | 29.11 | 16.36",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 16.36,
+        "baseline_label": "FP16",
+        "baseline_value": 16.51,
+        "delta": -0.15,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "LLaMA3.1-8B-Instruct | AQLM-PV-2x8 | 2 | 30.63 | 49.53 | 24.38 | 56.21 | 29.11 | 16.36",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "MC1 (%)",
+        "value": 34.43,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 30.63,
+        "delta": 3.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-2x8 | 2 | 34.43 | 64.04 | 32.57 | 57.55 | 46.45 | 26.73",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "MC2 (%)",
+        "value": 64.04,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 49.53,
+        "delta": 14.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-2x8 | 2 | 34.43 | 64.04 | 32.57 | 57.55 | 46.45 | 26.73",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "MC3 (%)",
+        "value": 32.57,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 24.38,
+        "delta": 8.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-2x8 | 2 | 34.43 | 64.04 | 32.57 | 57.55 | 46.45 | 26.73",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "%Truth",
+        "value": 57.55,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 56.21,
+        "delta": 1.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-2x8 | 2 | 34.43 | 64.04 | 32.57 | 57.55 | 46.45 | 26.73",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "%Info",
+        "value": 46.45,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 29.11,
+        "delta": 17.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-2x8 | 2 | 34.43 | 64.04 | 32.57 | 57.55 | 46.45 | 26.73",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA3.1-8B-Instruct",
+        "method": "AQLM-PV+DoLa",
+        "bit_width": "2-bit",
+        "group_size": "2x8",
+        "dataset": "TruthfulQA",
+        "metric": "%T*I",
+        "value": 26.73,
+        "baseline_label": "AQLM-PV",
+        "baseline_value": 16.36,
+        "delta": 10.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "Vanilla Prompt for True/False Datasets",
+        "quote": "+ DoLa | AQLM-PV-2x8 | 2 | 34.43 | 64.04 | 32.57 | 57.55 | 46.45 | 26.73",
+        "bbox": [
+          92.9212890625,
+          67.63134765625,
+          499.5865234375,
+          340.21240234375
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 221,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }

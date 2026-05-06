@@ -1248,5 +1248,4995 @@
         "block_id": "/page/5/Text/14"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "Peak memory (model+KV cache)",
+        "metric": "Peak memory reduction (x)",
+        "value": 2.6,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.6,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "KIVI can enable Llama, Falcon, and Mistral models to maintain almost the same quality while using 2.6× less peak memory (including model weight)",
+        "bbox": [
+          74.109375,
+          205.734375,
+          271.5,
+          606.375
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "ShareGPT workload (A100 80GB)",
+        "metric": "Max batch size increase (x)",
+        "value": 4.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.0,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "This reduction in memory usage enables up to 4 \\times larger batch size",
+        "bbox": [
+          74.109375,
+          205.734375,
+          271.5,
+          606.375
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "ShareGPT workload (A100 80GB)",
+        "metric": "Throughput speedup (x) lower bound",
+        "value": 2.35,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.35,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "bringing 2.35 \\times \\sim 3.47 \\times throughput on real LLM inference workload",
+        "bbox": [
+          74.109375,
+          205.734375,
+          271.5,
+          606.375
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "ShareGPT workload (A100 80GB)",
+        "metric": "Throughput speedup (x) upper bound",
+        "value": 3.47,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.47,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "bringing 2.35 \\times \\sim 3.47 \\times throughput on real LLM inference workload",
+        "bbox": [
+          74.109375,
+          205.734375,
+          271.5,
+          606.375
+        ],
+        "block_id": "/page/0/Text/4",
+        "source_table": "Abstract"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "16-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "16bit | 66.37 | 29.53",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "16bit | 66.37 | 29.53",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.48,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "4bit (K - T, V - T) | 66.48 | 29.51",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.51,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "4bit (K - T, V - T) | 66.48 | 29.51",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 52.93,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": -13.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - T, V - T) | 52.93 | 24.98",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 24.98,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -4.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - T, V - T) | 52.93 | 24.98",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 2.88,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": -63.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - C, V - C) | 2.88 | 0.74",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 0.74,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -28.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - C, V - C) | 2.88 | 0.74",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 2.8,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": -63.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - T, V - C) | 2.80 | 0.26",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 0.26,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -29.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - T, V - C) | 2.80 | 0.26",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 63.53,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": -2.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - C, V - T) | 63.53 | 28.60",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 28.6,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -0.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "3.1. Preliminary Study of KV Cache Quantization",
+        "quote": "2bit (K - C, V - T) | 63.53 | 28.60",
+        "bbox": [
+          332.32078125,
+          130.239140625,
+          512.76515625,
+          217.807734375
+        ],
+        "block_id": "/page/2/Table/12",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Token Key Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative key reconstruction error (Frobenius)",
+        "value": 13.67,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. ||(X_K - X_K')/X_K||_F | 13.67 | 4.55",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Channel Key Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative key reconstruction error (Frobenius)",
+        "value": 4.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. ||(X_K - X_K')/X_K||_F | 13.67 | 4.55",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Token Key Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative attention score error (Frobenius)",
+        "value": 47.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. ||(A-A')/A||_F | 47.00 | 9.60",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Channel Key Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative attention score error (Frobenius)",
+        "value": 9.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. ||(A-A')/A||_F | 47.00 | 9.60",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "Llama-2-13B activations",
+        "metric": "Attention sparsity (%)",
+        "value": 84.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Attention sparsity | 84.3%",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Token Value Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative value reconstruction error (Frobenius)",
+        "value": 4.57,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. ||(X_V - X_V')/X_V||_F | 4.57 | 3.73",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Channel Value Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative value reconstruction error (Frobenius)",
+        "value": 3.73,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. ||(X_V - X_V')/X_V||_F | 4.57 | 3.73",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Token Value Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative attention output error (Delta)",
+        "value": 3.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. \\Delta | 3.55 | 49.89",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "Per-Channel Value Quantization",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "Llama-2-13B activations",
+        "metric": "Avg relative attention output error (Delta)",
+        "value": 49.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 4,
+        "section": "3.2. Why Key and Value Cache Should Quantize Along Different Dimensions?",
+        "quote": "Avg. \\Delta | 3.55 | 49.89",
+        "bbox": [
+          318.5926171875,
+          436.651875,
+          527.6886328125,
+          550.254375
+        ],
+        "block_id": "/page/3/Table/7",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 63.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Llama-2-7B | 16bit | 63.88 | 30.76 | 13.50",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 30.76,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Llama-2-7B | 16bit | 63.88 | 30.76 | 13.50",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 13.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Llama-2-7B | 16bit | 63.88 | 30.76 | 13.50",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 64.82,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": 0.94,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 64.82 | 29.85 | 12.28",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.85,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": -0.91,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 64.82 | 29.85 | 12.28",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 12.28,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": -1.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 64.82 | 29.85 | 12.28",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 59.08,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -4.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 59.08 | 33.10 | 5.76",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 33.1,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": 2.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 59.08 | 33.10 | 5.76",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 5.76,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": -7.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 59.08 | 33.10 | 5.76",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 39.88,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -24.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 39.88 | 18.29 | 0.83",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 18.29,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": -12.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 39.88 | 18.29 | 0.83",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.83,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": -12.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 39.88 | 18.29 | 0.83",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 3.6,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -60.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 3.60 | 0.27 | 0.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 0.27,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": -30.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 3.60 | 0.27 | 0.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.0,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": -13.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 3.60 | 0.27 | 0.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 1.3,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -62.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 1.30 | 0.49 | 0.08",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 0.49,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": -30.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 1.30 | 0.49 | 0.08",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.08,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": -13.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 1.30 | 0.49 | 0.08",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 63.78,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 63.78 | 30.80 | 13.80",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 30.8,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 63.78 | 30.80 | 13.80",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 13.8,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": 0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 63.78 | 30.80 | 13.80",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 63.05,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -0.83,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 63.05 | 33.95 | 12.74",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 33.95,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": 3.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 63.05 | 33.95 | 12.74",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 12.74,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": -0.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 63.05 | 33.95 | 12.74",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 22.67,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Llama-2-13B | 16bit | 66.37 | 29.53 | 22.67",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 20.92,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -1.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 66.73 | 29.14 | 20.92",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.73,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": 0.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 66.73 | 29.14 | 20.92",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.14,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -0.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 66.73 | 29.14 | 20.92",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 12.21,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -10.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 63.53 | 28.60 | 12.21",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 4.55,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -18.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 52.93 | 24.98 | 4.55",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.0,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -22.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 2.88 | 0.74 | 0.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.08,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -22.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 2.80 | 0.26 | 0.08",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.38,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 66.38 | 29.49 | 23.65",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.49,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 66.38 | 29.49 | 23.65",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 23.65,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": 0.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 66.38 | 29.49 | 23.65",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.23,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": -0.14,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 66.23 | 29.84 | 20.77",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.84,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 66.23 | 29.84 | 20.77",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 20.77,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -1.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 66.23 | 29.84 | 20.77",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 59.83,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Falcon-7B | 16bit | 59.83 | 23.20 | 4.55",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 23.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Falcon-7B | 16bit | 59.83 | 23.20 | 4.55",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 4.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Falcon-7B | 16bit | 59.83 | 23.20 | 4.55",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 58.53,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 58.53 | 22.94 | 3.26",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 22.94,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 58.53 | 22.94 | 3.26",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 3.26,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -1.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 58.53 | 22.94 | 3.26",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 43.93,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -15.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 43.93 | 20.82 | 1.29",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 20.82,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -2.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 43.93 | 20.82 | 1.29",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 1.29,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -3.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 43.93 | 20.82 | 1.29",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 25.72,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -34.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 25.72 | 0.91 | 0.53",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 0.91,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -22.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 25.72 | 0.91 | 0.53",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.53,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -4.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 25.72 | 0.91 | 0.53",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 41.95,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -17.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 41.95 | 17.11 | 1.52",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 17.11,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -6.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 41.95 | 17.11 | 1.52",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 1.52,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -3.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 41.95 | 17.11 | 1.52",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 19.53,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -40.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 19.53 | 0.94 | 0.15",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 0.94,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -22.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 19.53 | 0.94 | 0.15",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.15,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -4.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 19.53 | 0.94 | 0.15",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 59.67,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 59.67 | 22.58 | 4.47",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 22.58,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -0.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 59.67 | 22.58 | 4.47",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 4.47,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -0.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 59.67 | 22.58 | 4.47",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 57.48,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -2.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 57.48 | 24.98 | 3.41",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 24.98,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": 1.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 57.48 | 24.98 | 3.41",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 3.41,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -1.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 57.48 | 24.98 | 3.41",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 67.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Mistral-7B | 16bit | 67.40 | 30.45 | 38.36",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 30.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Mistral-7B | 16bit | 67.40 | 30.45 | 38.36",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 38.36,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "Mistral-7B | 16bit | 67.40 | 30.45 | 38.36",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 67.8,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 67.80 | 29.83 | 36.85",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.83,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -0.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 67.80 | 29.83 | 36.85",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "4-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 36.85,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -1.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "4bit (K - T, V - T) | 67.80 | 29.83 | 36.85",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 61.65,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -5.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 61.65 | 29.64 | 26.46",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.64,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 61.65 | 29.64 | 26.46",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerChannel,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 26.46,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -11.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - T) | 61.65 | 29.64 | 26.46",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 54.55,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -12.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 54.55 | 25.86 | 5.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 25.86,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -4.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 54.55 | 25.86 | 5.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerToken (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 5.0,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -33.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - T) | 54.55 | 25.86 | 5.00",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 24.4,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -43.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 24.40 | 24.86 | 2.27",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 24.86,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -5.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 24.40 | 24.86 | 2.27",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerChannel,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 2.27,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -36.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - C, V - C) | 24.40 | 24.86 | 2.27",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 10.73,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -56.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 10.73 | 19.12 | 0.99",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 19.12,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": -11.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 10.73 | 19.12 | 0.99",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "K-PerToken,V-PerChannel (fake)",
+        "bit_width": "2-bit",
+        "group_size": "g32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 0.99,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -37.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "2bit (K - T, V - C) | 10.73 | 19.12 | 0.99",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.95,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -0.45,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 66.95 | 30.49 | 37.30",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 30.49,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 66.95 | 30.49 | 37.30",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 37.3,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -1.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-4 | 66.95 | 30.49 | 37.30",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.35,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -1.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 66.35 | 32.17 | 36.01",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 32.17,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": 1.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 66.35 | 32.17 | 36.01",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 36.01,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -2.35,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "4.2.4. EFFICIENCY COMPARISON",
+        "quote": "KIVI-2 | 66.35 | 32.17 | 36.01",
+        "bbox": [
+          53.872734375,
+          180.342421875,
+          289.181953125,
+          521.938828125
+        ],
+        "block_id": "/page/7/Table/2",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.52,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Llama2-7B | 16bit | 9.52 | 21.28 | 3.51 | 66.00 | 87.72 | 41.69 | 66.66 | 59.82 | 44.52",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.59,
+        "baseline_label": "FP16",
+        "baseline_value": 44.52,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-4 | 9.28 | 21.42 | 3.88 | 66.00 | 87.72 | 41.82 | 66.80 | 59.83 | 44.59",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.27,
+        "baseline_label": "FP16",
+        "baseline_value": 44.52,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-2 | 9.31 | 20.50 | 1.14 | 66.00 | 87.42 | 42.71 | 66.88 | 60.23 | 44.27",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.85,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Llama2-13B | 16bit | 9.32 | 21.38 | 3.71 | 70.00 | 87.87 | 43.55 | 66.61 | 56.42 | 44.85",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.48,
+        "baseline_label": "FP16",
+        "baseline_value": 44.85,
+        "delta": -0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-4 | 9.16 | 20.86 | 3.21 | 69.00 | 86.97 | 44.26 | 65.30 | 57.08 | 44.48",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.69,
+        "baseline_label": "FP16",
+        "baseline_value": 44.85,
+        "delta": -0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-2 | 8.58 | 20.69 | 6.19 | 69.50 | 87.78 | 44.30 | 65.08 | 55.46 | 44.69",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.95,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Llama2-7B-Chat | 16bit | 19.65 | 20.54 | 26.36 | 63.00 | 84.28 | 41.12 | 59.75 | 52.93 | 45.95",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.83,
+        "baseline_label": "FP16",
+        "baseline_value": 45.95,
+        "delta": -0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-4 | 19.62 | 20.70 | 25.49 | 63.00 | 84.13 | 40.87 | 59.27 | 53.56 | 45.83",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.67,
+        "baseline_label": "FP16",
+        "baseline_value": 45.95,
+        "delta": -0.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-2 | 19.32 | 20.46 | 25.48 | 63.00 | 84.84 | 40.60 | 58.71 | 52.97 | 45.67",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.96,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Llama2-13B-Chat | 16bit | 24.18 | 20.37 | 25.69 | 67.50 | 86.90 | 42.18 | 50.23 | 50.64 | 45.96",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 46.44,
+        "baseline_label": "FP16",
+        "baseline_value": 45.96,
+        "delta": 0.48,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-4 | 23.00 | 20.36 | 26.06 | 67.50 | 87.20 | 42.04 | 52.55 | 52.77 | 46.44",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.52,
+        "baseline_label": "FP16",
+        "baseline_value": 45.96,
+        "delta": -0.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-2 | 23.59 | 20.76 | 25.25 | 67.5 | 87.17 | 41.56 | 49.93 | 48.45 | 45.52",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 8.71,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Falcon-7B | 16bit | 1.48 | 2.35 | 11.09 | 13.00 | 5.84 | 2.44 | 23.86 | 9.69 | 8.71",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 8.78,
+        "baseline_label": "FP16",
+        "baseline_value": 8.71,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-4 | 1.04 | 2.41 | 11.98 | 13.00 | 5.84 | 2.36 | 23.72 | 9.92 | 8.78",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 7.95,
+        "baseline_label": "FP16",
+        "baseline_value": 8.71,
+        "delta": -0.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-2 | 1.98 | 3.61 | 6.78 | 10.00 | 6.24 | 2.73 | 22.18 | 10.12 | 7.95",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 46.58,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Mistral-7B | 16bit | 8.12 | 19.98 | 19.99 | 67.50 | 89.80 | 41.69 | 66.59 | 58.99 | 46.58",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 46.56,
+        "baseline_label": "FP16",
+        "baseline_value": 46.58,
+        "delta": -0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-4 | 7.89 | 20.06 | 20.58 | 67.50 | 89.80 | 41.56 | 66.45 | 58.62 | 46.56",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.85,
+        "baseline_label": "FP16",
+        "baseline_value": 46.58,
+        "delta": -0.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "KIVI-2 | 6.92 | 19.71 | 17.92 | 66.50 | 89.63 | 41.66 | 65.52 | 58.99 | 45.85",
+        "bbox": [
+          51.6554296875,
+          108.783984375,
+          543.6101953125,
+          333.622265625
+        ],
+        "block_id": "/page/8/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "GSM8K (ablation)",
+        "metric": "Exact Match Accuracy",
+        "value": 20.77,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Llama2-13B | 32 | 20.77",
+        "bbox": [
+          81.317109375,
+          382.859296875,
+          260.542265625,
+          500.406328125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g64, R128",
+        "dataset": "GSM8K (ablation)",
+        "metric": "Exact Match Accuracy",
+        "value": 21.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "64 | 21.00",
+        "bbox": [
+          81.317109375,
+          382.859296875,
+          260.542265625,
+          500.406328125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g128, R128",
+        "dataset": "GSM8K (ablation)",
+        "metric": "Exact Match Accuracy",
+        "value": 17.29,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "128 | 17.29",
+        "bbox": [
+          81.317109375,
+          382.859296875,
+          260.542265625,
+          500.406328125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "GSM8K (ablation)",
+        "metric": "Exact Match Accuracy",
+        "value": 20.62,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "Llama2-13B | 32 | 20.62",
+        "bbox": [
+          81.317109375,
+          382.859296875,
+          260.542265625,
+          500.406328125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R64",
+        "dataset": "GSM8K (ablation)",
+        "metric": "Exact Match Accuracy",
+        "value": 19.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "64 | 19.86",
+        "bbox": [
+          81.317109375,
+          382.859296875,
+          260.542265625,
+          500.406328125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R96",
+        "dataset": "GSM8K (ablation)",
+        "metric": "Exact Match Accuracy",
+        "value": 20.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5. Related Work",
+        "quote": "96 | 20.55",
+        "bbox": [
+          81.317109375,
+          382.859296875,
+          260.542265625,
+          500.406328125
+        ],
+        "block_id": "/page/8/Table/4",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 62.85,
+        "baseline_label": "FP16",
+        "baseline_value": 63.88,
+        "delta": -1.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 62.85 | 33.01 | 13.57",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 33.01,
+        "baseline_label": "FP16",
+        "baseline_value": 30.76,
+        "delta": 2.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 62.85 | 33.01 | 13.57",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 13.57,
+        "baseline_label": "FP16",
+        "baseline_value": 13.5,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 62.85 | 33.01 | 13.57",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 66.57,
+        "baseline_label": "FP16",
+        "baseline_value": 66.37,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 66.57 | 29.35 | 20.62",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 29.35,
+        "baseline_label": "FP16",
+        "baseline_value": 29.53,
+        "delta": -0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 66.57 | 29.35 | 20.62",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 20.62,
+        "baseline_label": "FP16",
+        "baseline_value": 22.67,
+        "delta": -2.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 66.57 | 29.35 | 20.62",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4 R32",
+        "bit_width": "4-bit",
+        "group_size": "g32, R32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 59.73,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-4 R32 | 59.73 | 22.96 | 3.94",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4 R32",
+        "bit_width": "4-bit",
+        "group_size": "g32, R32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 22.96,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -0.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-4 R32 | 59.73 | 22.96 | 3.94",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4 R32",
+        "bit_width": "4-bit",
+        "group_size": "g32, R32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 3.94,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -0.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-4 R32 | 59.73 | 22.96 | 3.94",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 57.5,
+        "baseline_label": "FP16",
+        "baseline_value": 59.83,
+        "delta": -2.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 57.50 | 25.70 | 2.20",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 25.7,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": 2.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 57.50 | 25.70 | 2.20",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 2.2,
+        "baseline_label": "FP16",
+        "baseline_value": 4.55,
+        "delta": -2.35,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 57.50 | 25.70 | 2.20",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "CoQA",
+        "metric": "Exact Match Accuracy",
+        "value": 65.9,
+        "baseline_label": "FP16",
+        "baseline_value": 67.4,
+        "delta": -1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 65.90 | 31.21 | 34.34",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "TruthfulQA",
+        "metric": "BLEU",
+        "value": 31.21,
+        "baseline_label": "FP16",
+        "baseline_value": 30.45,
+        "delta": 0.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 65.90 | 31.21 | 34.34",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "GSM8K",
+        "metric": "Exact Match Accuracy",
+        "value": 34.34,
+        "baseline_label": "FP16",
+        "baseline_value": 38.36,
+        "delta": -4.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "C. More Ablation Results",
+        "quote": "KIVI-2 R32 | 65.90 | 31.21 | 34.34",
+        "bbox": [
+          151.92421875,
+          351.055546875,
+          444.53671875,
+          556.960078125
+        ],
+        "block_id": "/page/12/Table/9",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.08,
+        "baseline_label": "FP16",
+        "baseline_value": 44.52,
+        "delta": -0.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-2 R32 | 9.26 | 20.53 | 0.97 | 66.00 | 87.42 | 42.61 | 66.22 | 59.67 | 44.08",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 44.75,
+        "baseline_label": "FP16",
+        "baseline_value": 44.85,
+        "delta": -0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-2 R32 | 8.38 | 20.74 | 7.01 | 69.50 | 87.78 | 44.43 | 64.89 | 55.31 | 44.75",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.33,
+        "baseline_label": "FP16",
+        "baseline_value": 45.95,
+        "delta": -0.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-2 R32 | 19.10 | 20.08 | 25.33 | 63.00 | 85.04 | 39.80 | 57.91 | 52.38 | 45.33",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-13B-Chat",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.49,
+        "baseline_label": "FP16",
+        "baseline_value": 45.96,
+        "delta": -0.47,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-2 R32 | 23.56 | 20.90 | 25.45 | 67.50 | 87.42 | 41.40 | 48.93 | 48.81 | 45.49",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-4 R32",
+        "bit_width": "4-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 8.88,
+        "baseline_label": "FP16",
+        "baseline_value": 8.71,
+        "delta": 0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-4 R32 | 1.03 | 2.45 | 11.99 | 13.50 | 5.84 | 2.46 | 23.88 | 9.95 | 8.88",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 8.07,
+        "baseline_label": "FP16",
+        "baseline_value": 8.71,
+        "delta": -0.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-2 R32 | 2.28 | 3.23 | 6.73 | 10.00 | 6.31 | 2.88 | 22.71 | 10.45 | 8.07",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B",
+        "method": "KIVI-2 R32",
+        "bit_width": "2-bit",
+        "group_size": "g32, R32",
+        "dataset": "LongBench (avg over 8 tasks)",
+        "metric": "Average score",
+        "value": 45.74,
+        "baseline_label": "FP16",
+        "baseline_value": 46.58,
+        "delta": -0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "KIVI-2 R32 | 6.84 | 19.81 | 17.20 | 66.50 | 89.63 | 42.82 | 65.13 | 58.06 | 45.74",
+        "bbox": [
+          50.75296875,
+          108.3121875,
+          543.31734375,
+          341.8284375
+        ],
+        "block_id": "/page/13/Table/2",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 45.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "Baseline | 27.79 | 57.00 | 51.22 | 90.23 | 42.53 | 74.50 | 67.00 | 45.21",
+        "bbox": [
+          51.9721875,
+          411.553828125,
+          542.098125,
+          521.211796875
+        ],
+        "block_id": "/page/13/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 44.37,
+        "baseline_label": "FP16",
+        "baseline_value": 45.21,
+        "delta": -0.84,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "w./ KIVI-2 | 27.77 | 50.84 | 46.65 | 90.54 | 42.26 | 74.50 | 67.50 | 44.37",
+        "bbox": [
+          51.9721875,
+          411.553828125,
+          542.098125,
+          521.211796875
+        ],
+        "block_id": "/page/13/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-3-8B-Instruct",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 45.31,
+        "baseline_label": "FP16",
+        "baseline_value": 45.21,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "w./ KIVI-4 | 27.97 | 57.36 | 52.03 | 90.33 | 42.97 | 74.50 | 66.50 | 45.31",
+        "bbox": [
+          51.9721875,
+          411.553828125,
+          542.098125,
+          521.211796875
+        ],
+        "block_id": "/page/13/Table/4",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 43.54,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "Baseline | 27.09 | 53.49 | 51.40 | 86.23 | 43.04 | 71.00 | 89.33 | 43.54",
+        "bbox": [
+          51.362578125,
+          594.873984375,
+          542.707734375,
+          702.954140625
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 42.43,
+        "baseline_label": "FP16",
+        "baseline_value": 43.54,
+        "delta": -1.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "w./ KIVI-2 | 26.54 | 53.03 | 51.16 | 86.00 | 43.34 | 71.00 | 80.83 | 42.43",
+        "bbox": [
+          51.362578125,
+          594.873984375,
+          542.707734375,
+          702.954140625
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "Mistral-7B-Instruct-v0.2",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 43.53,
+        "baseline_label": "FP16",
+        "baseline_value": 43.54,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "D. More Experimental Results",
+        "quote": "w./ KIVI-4 | 26.89 | 53.33 | 51.41 | 86.23 | 43.34 | 71.00 | 89.42 | 43.53",
+        "bbox": [
+          51.362578125,
+          594.873984375,
+          542.707734375,
+          702.954140625
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LongChat-7B-v1.5-32K",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 38.72,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D. More Experimental Results",
+        "quote": "Baseline | 26.55 | 54.83 | 58.94 | 83.99 | 40.75 | 66.50 | 30.50 | 38.72",
+        "bbox": [
+          51.6554296875,
+          352.39359375,
+          543.6101953125,
+          461.26265625
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LongChat-7B-v1.5-32K",
+        "method": "KIVI-2",
+        "bit_width": "2-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 38.3,
+        "baseline_label": "FP16",
+        "baseline_value": 38.72,
+        "delta": -0.42,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D. More Experimental Results",
+        "quote": "w./ KIVI-2 | 26.28 | 54.11 | 57.62 | 83.19 | 41.28 | 66.50 | 32.25 | 38.30",
+        "bbox": [
+          51.6554296875,
+          352.39359375,
+          543.6101953125,
+          461.26265625
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LongChat-7B-v1.5-32K",
+        "method": "KIVI-4",
+        "bit_width": "4-bit",
+        "group_size": "g32, R128",
+        "dataset": "LongBench (avg over 15 tasks)",
+        "metric": "Average score",
+        "value": 38.79,
+        "baseline_label": "FP16",
+        "baseline_value": 38.72,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "D. More Experimental Results",
+        "quote": "w./ KIVI-4 | 26.52 | 54.06 | 58.77 | 83.88 | 40.62 | 67.00 | 31.50 | 38.79",
+        "bbox": [
+          51.6554296875,
+          352.39359375,
+          543.6101953125,
+          461.26265625
+        ],
+        "block_id": "/page/14/Table/2",
+        "source_table": "Table 10"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 166,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 8
   }
 }

@@ -1147,5 +1147,4335 @@
         "block_id": "/page/16/Text/5"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QUIK-4B",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.87,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 3.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QUIK-4B | GPTQ | 256 | 8.87 | 7.78 | 6.91",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QUIK-4B",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.78,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 2.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QUIK-4B | GPTQ | 256 | 8.87 | 7.78 | 6.91",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QUIK-4B",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.91,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 3.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QUIK-4B | GPTQ | 256 | 8.87 | 7.78 | 6.91",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.1,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.63,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | GPTQ | 0 | **6.10** | **5.40** | **3.79**",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.4,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.52,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | GPTQ | 0 | **6.10** | **5.40** | **3.79**",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.79,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.47,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | GPTQ | 0 | **6.10** | **5.40** | **3.79**",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "Atom-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.03,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "Atom-128G | GPTQ-128G | 128 | 6.03 | **5.26** | -",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "Atom-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.26,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "Atom-128G | GPTQ-128G | 128 | 6.03 | **5.26** | -",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.93,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-128G | 0 | **5.93** | **5.26** | **3.61**",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.26,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-128G | 0 | **5.93** | **5.26** | **3.61**",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.61,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-128G | 0 | **5.93** | **5.26** | **3.61**",
+        "bbox": [
+          174.6650390625,
+          123.092578125,
+          433.7490234375,
+          229.594921875
+        ],
+        "block_id": "/page/7/Table/1",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 76.77,
+        "baseline_label": "FP16",
+        "baseline_value": 79.11,
+        "delta": -2.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 63.77,
+        "baseline_label": "FP16",
+        "baseline_value": 69.06,
+        "delta": -5.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 72.16,
+        "baseline_label": "FP16",
+        "baseline_value": 75.99,
+        "delta": -3.83,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Arc-Easy",
+        "metric": "Accuracy",
+        "value": 69.87,
+        "baseline_label": "FP16",
+        "baseline_value": 74.58,
+        "delta": -4.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Arc-Challenge",
+        "metric": "Accuracy",
+        "value": 40.87,
+        "baseline_label": "FP16",
+        "baseline_value": 46.25,
+        "delta": -5.38,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 70.39,
+        "baseline_label": "FP16",
+        "baseline_value": 73.9,
+        "delta": -3.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 65.64,
+        "baseline_label": "FP16",
+        "baseline_value": 69.82,
+        "delta": -4.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 78.89,
+        "baseline_label": "FP16",
+        "baseline_value": 80.47,
+        "delta": -1.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 70.24,
+        "baseline_label": "FP16",
+        "baseline_value": 72.22,
+        "delta": -1.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 76.37,
+        "baseline_label": "FP16",
+        "baseline_value": 79.39,
+        "delta": -3.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Arc-Easy",
+        "metric": "Accuracy",
+        "value": 72.98,
+        "baseline_label": "FP16",
+        "baseline_value": 77.48,
+        "delta": -4.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Arc-Challenge",
+        "metric": "Accuracy",
+        "value": 46.59,
+        "baseline_label": "FP16",
+        "baseline_value": 49.23,
+        "delta": -2.64,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 73.67,
+        "baseline_label": "FP16",
+        "baseline_value": 76.75,
+        "delta": -3.08,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 69.79,
+        "baseline_label": "FP16",
+        "baseline_value": 72.59,
+        "delta": -2.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 78.89 | 70.24 | 76.37 | 72.98 | 46.59 | 73.67 | 69.79",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "PIQA",
+        "metric": "Accuracy",
+        "value": 82.43,
+        "baseline_label": "FP16",
+        "baseline_value": 82.7,
+        "delta": -0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WinoGrande",
+        "metric": "Accuracy",
+        "value": 76.24,
+        "baseline_label": "FP16",
+        "baseline_value": 77.98,
+        "delta": -1.74,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HellaSwag",
+        "metric": "Accuracy",
+        "value": 81.82,
+        "baseline_label": "FP16",
+        "baseline_value": 83.84,
+        "delta": -2.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Arc-Easy",
+        "metric": "Accuracy",
+        "value": 80.43,
+        "baseline_label": "FP16",
+        "baseline_value": 80.98,
+        "delta": -0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Arc-Challenge",
+        "metric": "Accuracy",
+        "value": 56.23,
+        "baseline_label": "FP16",
+        "baseline_value": 57.34,
+        "delta": -1.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "LAMBADA",
+        "metric": "Accuracy",
+        "value": 78.73,
+        "baseline_label": "FP16",
+        "baseline_value": 79.58,
+        "delta": -0.85,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 75.98,
+        "baseline_label": "FP16",
+        "baseline_value": 77.07,
+        "delta": -1.09,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot | 82.43 | 76.24 | 81.82 | 80.43 | 56.23 | 78.73 | 75.98",
+        "bbox": [
+          142.6725,
+          273.325078125,
+          464.54625,
+          360.893671875
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.37,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 2.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-RTN | INT4 | 8.37 | 72.09 | 60.69 | 65.40 | 58.88 | 35.24 | 57.27 | 58.26",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 58.26,
+        "baseline_label": "FP16",
+        "baseline_value": 69.82,
+        "delta": -11.56,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-RTN | INT4 | 8.37 | 72.09 | 60.69 | 65.40 | 58.88 | 35.24 | 57.27 | 58.26",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.5,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "INT8 | 5.50 | 78.94 | 68.67 | 75.80 | 74.79 | 45.39 | 74.33 | 69.65",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 69.65,
+        "baseline_label": "FP16",
+        "baseline_value": 69.82,
+        "delta": -0.17,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "INT8 | 5.50 | 78.94 | 68.67 | 75.80 | 74.79 | 45.39 | 74.33 | 69.65",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.14,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.82,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-RTN | INT4 | 4.14 | 80.69 | 75.14 | 79.63 | 77.57 | 51.71 | 77.02 | 73.63",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 73.63,
+        "baseline_label": "FP16",
+        "baseline_value": 77.07,
+        "delta": -3.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-RTN | INT4 | 4.14 | 80.69 | 75.14 | 79.63 | 77.57 | 51.71 | 77.02 | 73.63",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.33,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "INT8 | 3.33 | 82.97 | 77.98 | 83.67 | 80.77 | 58.11 | 79.53 | 77.17",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 77.17,
+        "baseline_label": "FP16",
+        "baseline_value": 77.07,
+        "delta": 0.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "INT8 | 3.33 | 82.97 | 77.98 | 83.67 | 80.77 | 58.11 | 79.53 | 77.17",
+        "bbox": [
+          101.828671875,
+          128.614921875,
+          505.390078125,
+          224.072578125
+        ],
+        "block_id": "/page/8/Table/1",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-256G",
+        "bit_width": "4-bit",
+        "group_size": "g256",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.98,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.51,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-256G | 5.98 | 5.28 | 3.63",
+        "bbox": [
+          224.9578125,
+          276.372421875,
+          383.45625,
+          368.674453125
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-256G",
+        "bit_width": "4-bit",
+        "group_size": "g256",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.28,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-256G | 5.98 | 5.28 | 3.63",
+        "bbox": [
+          224.9578125,
+          276.372421875,
+          383.45625,
+          368.674453125
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-256G",
+        "bit_width": "4-bit",
+        "group_size": "g256",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.63,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-256G | 5.98 | 5.28 | 3.63",
+        "bbox": [
+          224.9578125,
+          276.372421875,
+          383.45625,
+          368.674453125
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-64G",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.88,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-64G | 5.88 | 5.25 | 3.58",
+        "bbox": [
+          224.9578125,
+          276.372421875,
+          383.45625,
+          368.674453125
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-64G",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.25,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.37,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-64G | 5.88 | 5.25 | 3.58",
+        "bbox": [
+          224.9578125,
+          276.372421875,
+          383.45625,
+          368.674453125
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-64G",
+        "bit_width": "4-bit",
+        "group_size": "g64",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.58,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.2 Performance Analysis",
+        "quote": "QuaRot-64G | 5.88 | 5.25 | 3.58",
+        "bbox": [
+          224.9578125,
+          276.372421875,
+          383.45625,
+          368.674453125
+        ],
+        "block_id": "/page/8/Table/3",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K4V4)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.51,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 4 | 5.51 | 4.91 | 3.33",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K4V4)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.91,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 4 | 5.51 | 4.91 | 3.33",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K4V4)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.33,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 4 | 5.51 | 4.91 | 3.33",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K4V3)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.54,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 3 | 5.54 | 4.93 | 3.35",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K4V3)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.93,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 3 | 5.54 | 4.93 | 3.35",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K4V3)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.35,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 3 | 5.54 | 4.93 | 3.35",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K4V2)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.75,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 2 | 5.75 | 5.09 | 3.43",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K4V2)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.09,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 2 | 5.75 | 5.09 | 3.43",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K4V2)",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.43,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "4 | 2 | 5.75 | 5.09 | 3.43",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K3V4)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.65,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 4 | 5.65 | 5.01 | 3.38",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K3V4)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.01,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 4 | 5.65 | 5.01 | 3.38",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K3V4)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.38,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.06,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 4 | 5.65 | 5.01 | 3.38",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K3V3)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.68,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 3 | 5.68 | 5.02 | 3.39",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K3V3)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.02,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 3 | 5.68 | 5.02 | 3.39",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K3V3)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.39,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 3 | 5.68 | 5.02 | 3.39",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K3V2)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.93,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 2 | 5.93 | 5.21 | 3.48",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K3V2)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.21,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 2 | 5.93 | 5.21 | 3.48",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K3V2)",
+        "bit_width": "3-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.48,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.16,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "3 | 2 | 5.93 | 5.21 | 3.48",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K2V4)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.06,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 2.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 4 | 8.06 | 6.42 | 3.89",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K2V4)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.42,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 1.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 4 | 8.06 | 6.42 | 3.89",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K2V4)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.89,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 4 | 8.06 | 6.42 | 3.89",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K2V3)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.18,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 2.71,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 3 | 8.18 | 6.50 | 3.92",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K2V3)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.5,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 1.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 3 | 8.18 | 6.50 | 3.92",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K2V3)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.92,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 3 | 8.18 | 6.50 | 3.92",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (W=FP16, K2V2)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.23,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 3.76,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 2 | 9.23 | 7.07 | 4.13",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (W=FP16, K2V2)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.07,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 2.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 2 | 9.23 | 7.07 | 4.13",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (W=FP16, K2V2)",
+        "bit_width": "2-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.13,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.3 KV Cache Quantization Ablation",
+        "quote": "2 | 2 | 9.23 | 7.07 | 4.13",
+        "bbox": [
+          224.6410546875,
+          434.478515625,
+          384.9683203125,
+          572.537109375
+        ],
+        "block_id": "/page/13/Table/6",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "RTN (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.99,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.52,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "RTN | 6.99 | Inf | Inf | 6.32 | Inf | Inf | 4.45 | 42.11 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "RTN (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.32,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 1.44,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "RTN | 6.99 | Inf | Inf | 6.32 | Inf | Inf | 4.45 | 42.11 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "RTN (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.45,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 1.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "RTN | 6.99 | Inf | Inf | 6.32 | Inf | Inf | 4.45 | 42.11 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "RTN (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 42.11,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 38.79,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "RTN | 6.99 | Inf | Inf | 6.32 | Inf | Inf | 4.45 | 42.11 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "GPTQ (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.25,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 2.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "GPTQ | 8.25 | NaN | NaN | 5.65 | 9.51 | Inf | 3.87 | 5.91 | 25.30",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "GPTQ (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.65,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "GPTQ | 8.25 | NaN | NaN | 5.65 | 9.51 | Inf | 3.87 | 5.91 | 25.30",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "GPTQ (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 9.51,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 4.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "GPTQ | 8.25 | NaN | NaN | 5.65 | 9.51 | Inf | 3.87 | 5.91 | 25.30",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "GPTQ (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.87,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.55,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "GPTQ | 8.25 | NaN | NaN | 5.65 | 9.51 | Inf | 3.87 | 5.91 | 25.30",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "GPTQ (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.91,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 2.59,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "GPTQ | 8.25 | NaN | NaN | 5.65 | 9.51 | Inf | 3.87 | 5.91 | 25.30",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "GPTQ (weight-only)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 25.3,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 21.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "GPTQ | 8.25 | NaN | NaN | 5.65 | 9.51 | Inf | 3.87 | 5.91 | 25.30",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.76,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.29,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-RTN | 6.76 | Inf | Inf | 5.48 | 48.89 | Inf | 3.66 | 5.25 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-RTN (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.48,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-RTN | 6.76 | Inf | Inf | 5.48 | 48.89 | Inf | 3.66 | 5.25 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-RTN (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 48.89,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 44.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-RTN | 6.76 | Inf | Inf | 5.48 | 48.89 | Inf | 3.66 | 5.25 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.66,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-RTN | 6.76 | Inf | Inf | 5.48 | 48.89 | Inf | 3.66 | 5.25 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.25,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 1.93,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-RTN | 6.76 | Inf | Inf | 5.48 | 48.89 | Inf | 3.66 | 5.25 | Inf",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.6,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.13,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.09,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.62,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 22.07,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 16.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.0,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.12,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.37,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.49,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 10.41,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 5.53,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.41,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "3-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.72,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-GPTQ (weight-only)",
+        "bit_width": "2-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.6,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 2.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.4 Weight-only Quantization Ablation",
+        "quote": "QuaRot-GPTQ | 5.60 | 6.09 | 22.07 | 5.00 | 5.37 | 10.41 | 3.41 | 3.72 | 5.60",
+        "bbox": [
+          103.0359375,
+          118.16578125,
+          505.378125,
+          214.41234375
+        ],
+        "block_id": "/page/14/Table/1",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (Random Orthogonal)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.45,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 1.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.5 Random Orthogonal Matrices Ablation",
+        "quote": "QuaRot (Random) | 7.45 | 5.84 | 4.07",
+        "bbox": [
+          216.7280859375,
+          389.14734375,
+          391.6859765625,
+          456.99328125
+        ],
+        "block_id": "/page/14/Table/5",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (Random Orthogonal)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.84,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.96,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.5 Random Orthogonal Matrices Ablation",
+        "quote": "QuaRot (Random) | 7.45 | 5.84 | 4.07",
+        "bbox": [
+          216.7280859375,
+          389.14734375,
+          391.6859765625,
+          456.99328125
+        ],
+        "block_id": "/page/14/Table/5",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot (Random Orthogonal)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.07,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.75,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 15,
+        "section": "A.5 Random Orthogonal Matrices Ablation",
+        "quote": "QuaRot (Random) | 7.45 | 5.84 | 4.07",
+        "bbox": [
+          216.7280859375,
+          389.14734375,
+          391.6859765625,
+          456.99328125
+        ],
+        "block_id": "/page/14/Table/5",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.56,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 5.56 | 78.73 | 67.80 | 75.92 | 74.16 | 46.08 | 73.86 | 69.42",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-RTN",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 69.42,
+        "baseline_label": "FP16",
+        "baseline_value": 69.82,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 5.56 | 78.73 | 67.80 | 75.92 | 74.16 | 46.08 | 73.86 | 69.42",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.52,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "QuaRot-GPTQ | INT4 | 6.10 | 76.77 | 63.77 | 72.16 | 69.87 | 40.87 | 70.39 | 65.64",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 69.77,
+        "baseline_label": "FP16",
+        "baseline_value": 69.82,
+        "delta": -0.05,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 5.52 | 78.45 | 69.46 | 75.60 | 74.45 | 46.50 | 74.19 | 69.77",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.5,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT8 | 5.50 | 78.94 | 68.90 | 75.79 | 74.66 | 46.16 | 74.44 | 69.81",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 69.81,
+        "baseline_label": "FP16",
+        "baseline_value": 69.82,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT8 | 5.50 | 78.94 | 68.90 | 75.79 | 74.66 | 46.16 | 74.44 | 69.81",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.09,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 1.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "QuaRot-RTN | INT4 | 6.09 | 77.37 | 67.32 | 73.11 | 70.83 | 43.69 | 70.66 | 67.16",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 67.16,
+        "baseline_label": "FP16",
+        "baseline_value": 72.59,
+        "delta": -5.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "QuaRot-RTN | INT4 | 6.09 | 77.37 | 67.32 | 73.11 | 70.83 | 43.69 | 70.66 | 67.16",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-RTN",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.95,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 4.95 | 79.65 | 72.22 | 79.10 | 77.27 | 50.34 | 76.75 | 72.56",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-RTN",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.9,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT8 | 4.90 | 80.52 | 71.59 | 79.38 | 77.31 | 49.32 | 76.63 | 72.46",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.92,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 4.92 | 79.98 | 72.69 | 79.17 | 77.78 | 49.74 | 76.27 | 72.60",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 4.9,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT8 | 4.90 | 80.36 | 71.98 | 79.38 | 77.31 | 49.15 | 76.79 | 72.49",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-RTN",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.36,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 3.36 | 83.24 | 77.90 | 83.47 | 80.93 | 58.28 | 79.41 | 77.21",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.35,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT6 | 3.35 | 82.13 | 77.66 | 83.63 | 80.89 | 57.08 | 79.70 | 77.02",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 3.33,
+        "baseline_label": "FP16",
+        "baseline_value": 3.32,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "INT8 | 3.33 | 83.13 | 78.06 | 83.72 | 80.85 | 58.19 | 79.72 | 77.28",
+        "bbox": [
+          101.828671875,
+          139.775625,
+          505.390078125,
+          398.536875
+        ],
+        "block_id": "/page/15/Table/1",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot (FP16 Hadamard)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.08,
+        "baseline_label": "FP16",
+        "baseline_value": 5.47,
+        "delta": 0.61,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "FP16 | 6.08 | 76.99 | 66.46 | 72.59 | 69.07 | 41.21 | 70.59 | 66.21",
+        "bbox": [
+          102.1334765625,
+          488.139609375,
+          505.0852734375,
+          596.219765625
+        ],
+        "block_id": "/page/15/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-13B",
+        "method": "QuaRot (FP16 Hadamard)",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.4,
+        "baseline_label": "FP16",
+        "baseline_value": 4.88,
+        "delta": 0.52,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 16,
+        "section": "A.7 FP16 Hadamard Transformation Ablation",
+        "quote": "FP16 | 5.40 | 77.69 | 70.09 | 75.75 | 73.95 | 47.61 | 73.22 | 69.72",
+        "bbox": [
+          102.1334765625,
+          488.139609375,
+          505.0852734375,
+          596.219765625
+        ],
+        "block_id": "/page/15/Table/3",
+        "source_table": "Table 10"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA3-8B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 8.16,
+        "baseline_label": "FP16",
+        "baseline_value": 6.14,
+        "delta": 2.02,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.8 LLAMA-3 Results",
+        "quote": "QuaRot | GPTQ | 0 | 8.16 | 6.66",
+        "bbox": [
+          184.113984375,
+          103.68703125,
+          424.300078125,
+          177.84421875
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA3-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.66,
+        "baseline_label": "FP16",
+        "baseline_value": 2.86,
+        "delta": 3.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.8 LLAMA-3 Results",
+        "quote": "QuaRot | GPTQ | 0 | 8.16 | 6.66",
+        "bbox": [
+          184.113984375,
+          103.68703125,
+          424.300078125,
+          177.84421875
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA3-8B",
+        "method": "QuaRot-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.36,
+        "baseline_label": "FP16",
+        "baseline_value": 6.14,
+        "delta": 1.22,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.8 LLAMA-3 Results",
+        "quote": "QuaRot-128G | GPTQ-128G | 0 | 7.36 | 5.51",
+        "bbox": [
+          184.113984375,
+          103.68703125,
+          424.300078125,
+          177.84421875
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA3-70B",
+        "method": "QuaRot-128G",
+        "bit_width": "4-bit",
+        "group_size": "g128",
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 5.51,
+        "baseline_label": "FP16",
+        "baseline_value": 2.86,
+        "delta": 2.65,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.8 LLAMA-3 Results",
+        "quote": "QuaRot-128G | GPTQ-128G | 0 | 7.36 | 5.51",
+        "bbox": [
+          184.113984375,
+          103.68703125,
+          424.300078125,
+          177.84421875
+        ],
+        "block_id": "/page/16/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA3-8B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 65.18,
+        "baseline_label": "FP16",
+        "baseline_value": 73.22,
+        "delta": -8.04,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.8 LLAMA-3 Results",
+        "quote": "QuaRot | 75.14 | 65.82 | 72.94 | 68.01 | 43.34 | 65.81 | 65.18",
+        "bbox": [
+          144.489375,
+          234.916171875,
+          463.9246875,
+          295.661953125
+        ],
+        "block_id": "/page/16/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA3-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 69.21,
+        "baseline_label": "FP16",
+        "baseline_value": 79.94,
+        "delta": -10.73,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.8 LLAMA-3 Results",
+        "quote": "QuaRot | 78.07 | 69.30 | 77.33 | 73.44 | 47.53 | 69.57 | 69.21",
+        "bbox": [
+          144.489375,
+          234.916171875,
+          463.9246875,
+          295.661953125
+        ],
+        "block_id": "/page/16/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 11.69,
+        "baseline_label": "FP16",
+        "baseline_value": 6.35,
+        "delta": 5.34,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "Phi-3-mini | QuaRot-RTN | INT4 | 11.69 | 68.39 | 58.64 | 60.60 | 65.87 | 39.25 | 43.99 | 56.12",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-RTN",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 56.12,
+        "baseline_label": "FP16",
+        "baseline_value": 73.11,
+        "delta": -16.99,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "Phi-3-mini | QuaRot-RTN | INT4 | 11.69 | 68.39 | 58.64 | 60.60 | 65.87 | 39.25 | 43.99 | 56.12",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-RTN",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.78,
+        "baseline_label": "FP16",
+        "baseline_value": 6.35,
+        "delta": 0.43,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "INT6 | 6.78 | 79.54 | 73.01 | 77.46 | 79.21 | 55.12 | 67.53 | 71.98",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-RTN",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.58,
+        "baseline_label": "FP16",
+        "baseline_value": 6.35,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "INT8 | 6.58 | 79.71 | 74.11 | 78.63 | 80.47 | 56.66 | 68.56 | 73.02",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 7.85,
+        "baseline_label": "FP16",
+        "baseline_value": 6.35,
+        "delta": 1.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "QuaRot-GPTQ | INT4 | 7.85 | 75.35 | 67.88 | 72.95 | 72.98 | 48.12 | 60.78 | 66.34",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Zero-shot Avg (6 tasks)",
+        "metric": "Average Accuracy",
+        "value": 66.34,
+        "baseline_label": "FP16",
+        "baseline_value": 73.11,
+        "delta": -6.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "QuaRot-GPTQ | INT4 | 7.85 | 75.35 | 67.88 | 72.95 | 72.98 | 48.12 | 60.78 | 66.34",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "6-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.63,
+        "baseline_label": "FP16",
+        "baseline_value": 6.35,
+        "delta": 0.28,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "INT6 | 6.63 | 79.54 | 72.69 | 78.50 | 79.42 | 56.74 | 68.85 | 72.67",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "Phi-3-mini-4k-instruct",
+        "method": "QuaRot-GPTQ",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "WikiText-2",
+        "metric": "Perplexity",
+        "value": 6.58,
+        "baseline_label": "FP16",
+        "baseline_value": 6.35,
+        "delta": 0.23,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "A.9 Phi-3-mini-4k-instruct Results",
+        "quote": "INT8 | 6.58 | 80.25 | 74.19 | 78.54 | 80.35 | 57.08 | 68.64 | 73.18",
+        "bbox": [
+          102.7430859375,
+          431.817890625,
+          504.4756640625,
+          525.697734375
+        ],
+        "block_id": "/page/16/Table/7",
+        "source_table": "Table 13"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=1)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 1.97,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.97,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "LLAMA2-7B | 1 | 1.97×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=4)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 2.06,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.06,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "4 | 2.06×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=16)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 2.11,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.11,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "16 | 2.11×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=32)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 2.14,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.14,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "32 | 2.14×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=64)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 2.16,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.16,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "64 | 2.16×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=1)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 3.16,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.16,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "LLAMA2-70B | 1 | 3.16×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=4)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 3.27,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.27,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "4 | 3.27×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=16)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 3.32,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.32,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "16 | 3.32×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=32)",
+        "metric": "Prefill Speedup over FP16",
+        "value": 3.33,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.33,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 20,
+        "section": "A.10 Performance Analysis",
+        "quote": "32 | 3.33×",
+        "bbox": [
+          215.4969140625,
+          551.80125,
+          394.1124609375,
+          674.870625
+        ],
+        "block_id": "/page/19/Table/3",
+        "source_table": "Table 16"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=1, seq=2048)",
+        "metric": "KV-cache Memory Saving Factor",
+        "value": 3.67,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.67,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "A.10 Performance Analysis",
+        "quote": "LLAMA2-7B | 1 | 256 | 0.392GB | 0.108GB | 3.63× ... 2048 | 0.419GB | 0.114GB | 3.67×",
+        "bbox": [
+          152.7191015625,
+          69.2690625,
+          455.6949609375,
+          340.6528125
+        ],
+        "block_id": "/page/20/Table/0",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-7B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=16, seq=4096)",
+        "metric": "KV-cache Memory Saving Factor",
+        "value": 3.75,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.75,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "A.10 Performance Analysis",
+        "quote": "16 | ... 4096 | 1.416GB | 0.378GB | 3.75×",
+        "bbox": [
+          152.7191015625,
+          69.2690625,
+          455.6949609375,
+          340.6528125
+        ],
+        "block_id": "/page/20/Table/0",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=1, seq=2048)",
+        "metric": "KV-cache Memory Saving Factor",
+        "value": 3.92,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.92,
+        "delta_unit": "x_factor",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "A.10 Performance Analysis",
+        "quote": "LLAMA2-70B | 1 | 256 | 1.605GB | 0.409GB | 3.92×",
+        "bbox": [
+          152.7191015625,
+          69.2690625,
+          455.6949609375,
+          340.6528125
+        ],
+        "block_id": "/page/20/Table/0",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "LLAMA2-70B",
+        "method": "QuaRot",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "RTX 3090 (batch=16, seq=2048)",
+        "metric": "KV-cache Memory Saving Factor",
+        "value": 3.89,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.89,
+        "delta_unit": "x_factor",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "A.10 Performance Analysis",
+        "quote": "16 | 256 | 1.626GB | 0.418GB | 3.89×",
+        "bbox": [
+          152.7191015625,
+          69.2690625,
+          455.6949609375,
+          340.6528125
+        ],
+        "block_id": "/page/20/Table/0",
+        "source_table": "Table 17"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 144,
+    "dropped_cited_count": 34,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }

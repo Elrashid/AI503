@@ -1064,5 +1064,4005 @@
         "block_id": null
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.092,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.092,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.862,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.862,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.333,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.333,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "LLaMA | 1B | 1.092 ↓ | 1.862 ↓ | 1.333",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.053,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.053,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.053 ↓ | 1.917 ↓ | 1.900 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.917,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.917,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.053 ↓ | 1.917 ↓ | 1.900 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.9,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.053 ↓ | 1.917 ↓ | 1.900 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.500 ↓ | 0.714 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.500 ↓ | 0.714 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.500 ↓ | 0.714 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.333,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.333,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.333 ↓ | 0.714 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.333 ↓ | 0.714 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-1B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.333 ↓ | 0.714 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.136,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.136,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "3B | 1.136 ↓ | 1.630 ↓ | 0.769 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.63,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.63,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "3B | 1.136 ↓ | 1.630 ↓ | 0.769 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.769,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.231,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "3B | 1.136 ↓ | 1.630 ↓ | 0.769 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 | 1.258 ↓ | 0.559 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.258,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.258,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 | 1.258 ↓ | 0.559 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.559,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.441,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 | 1.258 ↓ | 0.559 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.625,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.375,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.625 ↑ | 0.714 ↑ | 0.833 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.625 ↑ | 0.714 ↑ | 0.833 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.833,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.167,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.625 ↑ | 0.714 ↑ | 0.833 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.75,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.111 ↑ | 0.857 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.111,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.889,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.111 ↑ | 0.857 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.857,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.143,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.111 ↑ | 0.857 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.429,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.571,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "8B | 0.429 ↑ | 0.500 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "8B | 0.429 ↑ | 0.500 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "8B | 0.429 ↑ | 0.500 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.621,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.379,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.621 ↑ | 0.594 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.594,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.406,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.621 ↑ | 0.594 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.621 ↑ | 0.594 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 | 0.714 ↑ | 0.786 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 | 0.714 ↑ | 0.786 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.786,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.214,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 | 0.714 ↑ | 0.786 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.4,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.400 ↑ | 0.714 ↑ | 0.929 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.400 ↑ | 0.714 ↑ | 0.929 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "LLaMA-3.1-8B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.929,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.071,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.400 ↑ | 0.714 ↑ | 0.929 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "DeepSeek | 1.3B | 1.000 | 0.700 ↑ | 1.333 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.7,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "DeepSeek | 1.3B | 1.000 | 0.700 ↑ | 1.333 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.333,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.333,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "DeepSeek | 1.3B | 1.000 | 0.700 ↑ | 1.333 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.219,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.219,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.219 ↓ | 0.652 ↑ | 1.167 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.652,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.348,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.219 ↓ | 0.652 ↑ | 1.167 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.167,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.167,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.219 ↓ | 0.652 ↑ | 1.167 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.75,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.714 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.714 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.714 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.75,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.714 ↓ | 1.250 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.714 ↓ | 1.250 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-1.3B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.25,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.750 ↑ | 0.714 ↓ | 1.250 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.778,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.778,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "6.7B | 1.778 ↓ | 1.444 ↓ | 1.133 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.444,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.444,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "6.7B | 1.778 ↓ | 1.444 ↓ | 1.133 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.133,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.133,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "6.7B | 1.778 ↓ | 1.444 ↓ | 1.133 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.6,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.600 ↓ | 1.555 ↓ | 1.571 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.555,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.555,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.600 ↓ | 1.555 ↓ | 1.571 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.571,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.571,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.600 ↓ | 1.555 ↓ | 1.571 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 ↓ | 0.714 ↓ | 5.000 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 ↓ | 0.714 ↓ | 5.000 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 5.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 4.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.000 ↓ | 0.714 ↓ | 5.000 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 2.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "2.000 ↓ | 0.714 ↑ | 4.500 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "2.000 ↓ | 0.714 ↑ | 4.500 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-6.7B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 4.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 3.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "2.000 ↓ | 0.714 ↑ | 4.500 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "33B | 0.714 ↓ | 0.718 ↑ | 0.488 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.718,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.282,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "33B | 0.714 ↓ | 0.718 ↑ | 0.488 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.488,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.512,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "33B | 0.714 ↓ | 0.718 ↑ | 0.488 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.714 ↓ | 0.600 ↑ | 0.467 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.6,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.714 ↓ | 0.600 ↑ | 0.467 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.467,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.533,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.714 ↓ | 0.600 ↑ | 0.467 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.5,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.500 ↑ | 0.889 ↑ | 1.400 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.889,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.111,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.500 ↑ | 0.889 ↑ | 1.400 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.4,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.500 ↑ | 0.889 ↑ | 1.400 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.429,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.571,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.429 ↑ | 1.167 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.167,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.167,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.429 ↑ | 1.167 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "DeepSeek-Coder-33B-base",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.429 ↑ | 1.167 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.942,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.058,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "CodeGen | 350M | 0.942 ↑ | 0.758 ↑ | 0.857 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.758,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.242,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "CodeGen | 350M | 0.942 ↑ | 0.758 ↑ | 0.857 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.857,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.143,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "CodeGen | 350M | 0.942 ↑ | 0.758 ↑ | 0.857 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.017,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.017,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.017 ↓ | 1.000 | 6.997 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.017 ↓ | 1.000 | 6.997 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 6.997,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 5.997,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.017 ↓ | 1.000 | 6.997 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.875,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.125,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.875 ↑ | 1.200 ↓ | 1.250 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.875 ↑ | 1.200 ↓ | 1.250 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.25,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.875 ↑ | 1.200 ↓ | 1.250 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.833,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.167,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.833 ↑ | 2.000 ↓ | 2.000 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 2.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.833 ↑ | 2.000 ↓ | 2.000 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-350M",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 2.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.833 ↑ | 2.000 ↓ | 2.000 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.029,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.029,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "2B | 1.029 ↓ | 2.437 ↓ | 1.437 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 2.437,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.437,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "2B | 1.029 ↓ | 2.437 ↓ | 1.437 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.437,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.437,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "2B | 1.029 ↓ | 2.437 ↓ | 1.437 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.829,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.171,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.829 ↑ | 1.661 ↓ | 1.083 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.661,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.661,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.829 ↑ | 1.661 ↓ | 1.083 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.083,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.083,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.829 ↑ | 1.661 ↓ | 1.083 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.4,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.400 ↑ | 3.000 ↓ | 1.667 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 3.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.400 ↑ | 3.000 ↓ | 1.667 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.667,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.667,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.400 ↑ | 3.000 ↓ | 1.667 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.455,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.545,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.455 ↑ | 5.999 ↓ | 1.200 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 5.999,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 4.999,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "CodeGen-2B with RRS=5.999 on HumanEval",
+        "bbox": [
+          48.111328125,
+          250.59375,
+          300.02154541015625,
+          356.4220275878906
+        ],
+        "block_id": "/page/6/Text/3",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-2B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.2,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.455 ↑ | 5.999 ↓ | 1.200 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.315,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.315,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "6B | 1.315 ↓ | 1.286 ↓ | 1.667 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.286,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "6B | 1.315 ↓ | 1.286 ↓ | 1.667 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.667,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.667,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "6B | 1.315 ↓ | 1.286 ↓ | 1.667 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.289,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.289,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.289 ↓ | 1.410 ↓ | 1.571 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.41,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.289 ↓ | 1.410 ↓ | 1.571 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.571,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.571,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.289 ↓ | 1.410 ↓ | 1.571 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.6,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.600 ↑ | 3.666 ↓ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 3.666,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.666,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.600 ↑ | 3.666 ↓ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.600 ↑ | 3.666 ↓ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.909,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.091,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.909 ↑ | 2.667 ↓ | 0.833 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 2.667,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 1.667,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.909 ↑ | 2.667 ↓ | 0.833 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "CodeGen-6B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "HumanEval+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.833,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.167,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.909 ↑ | 2.667 ↓ | 0.833 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.579,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.579,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "StarCoder | 3B | 1.579 ↓ | 1.278 ↓ | 3.999 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.278,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.278,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "StarCoder | 3B | 1.579 ↓ | 1.278 ↓ | 3.999 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 3.999,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 2.999,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "StarCoder | 3B | 1.579 ↓ | 1.278 ↓ | 3.999 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 1.211,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.211,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.211 ↓ | 1.364 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.364,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.364,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.211 ↓ | 1.364 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-3B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.0,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "1.211 ↓ | 1.364 ↓ | 1.000",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-7B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.483,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.517,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "7B | 0.483 ↑ | 0.684 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-7B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.684,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.316,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "7B | 0.483 ↑ | 0.684 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-7B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "7B | 0.483 ↑ | 0.684 ↑ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-7B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.593,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.407,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.593 ↑ | 1.273 ↓ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-7B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 1.273,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.273,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.593 ↑ | 1.273 ↓ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-7B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.593 ↑ | 1.273 ↓ | 0.714 ↑",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-15B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "15B | 0.714 ↓ | 0.148 ↑ | 1.857 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-15B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.148,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.852,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "15B | 0.714 ↓ | 0.148 ↑ | 1.857 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-15B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 1.857,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": 0.857,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "15B | 0.714 ↓ | 0.148 ↑ | 1.857 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-15B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, character-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.714 ↓ | 0.714 ↑ | 0.714 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-15B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, word-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.714 ↓ | 0.714 ↑ | 0.714 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "StarCoder2-15B",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP+",
+        "metric": "Relative Robustness Score (RRS, sentence-level)",
+        "value": 0.714,
+        "baseline_label": "FP16",
+        "baseline_value": 1.0,
+        "delta": -0.286,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "0.714 ↓ | 0.714 ↑ | 0.714 ↓",
+        "bbox": [
+          45.68484375,
+          100.06489624023438,
+          567.51046875,
+          228.11735473632814
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table I"
+      }
+    },
+    {
+      "value": {
+        "model": "Multiple (4 families x 3 sizes)",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP/MBPP+/HumanEval/HumanEval+",
+        "metric": "Adversarial cases where quantized > original (%)",
+        "value": 51.59,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "with 51.59% versus 42.86% of our adversarial experiments showing better resilience in quantized LLMs",
+        "bbox": [
+          48.41015625,
+          176.73046875,
+          300.0233459472656,
+          415.21563720703125
+        ],
+        "block_id": "/page/0/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Multiple (4 families x 3 sizes)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "MBPP/MBPP+/HumanEval/HumanEval+",
+        "metric": "Adversarial cases where original > quantized (%)",
+        "value": 42.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "Abstract",
+        "quote": "51.59% versus 42.86% of our adversarial experiments showing better resilience in quantized LLMs",
+        "bbox": [
+          48.41015625,
+          176.73046875,
+          300.0233459472656,
+          415.21563720703125
+        ],
+        "block_id": "/page/0/Text/3",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Multiple (4 families x 3 sizes)",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "MBPP/MBPP+/HumanEval/HumanEval+",
+        "metric": "Adversarial cases with no robustness difference (%)",
+        "value": 5.56,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "5.56% of experiments show that there are no robustness difference between LLMs pre- and post-quantization",
+        "bbox": [
+          310.18359375,
+          256.3326416015625,
+          563.0413208007812,
+          457.5780944824219
+        ],
+        "block_id": "/page/5/Text/14",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Multiple (4 families x 3 sizes)",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Aggregated",
+        "metric": "Clean pass@1 reduction vs FP16 (%)",
+        "value": 0.36,
+        "baseline_label": "FP16",
+        "baseline_value": 0.0,
+        "delta": -0.36,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "V.C Quantization-Robustness Trade-off Evaluation",
+        "quote": "8 bit quantization decreases clean performance by just 0.36% on average",
+        "bbox": [
+          47.8125,
+          415.1542663574219,
+          300.0218811035156,
+          580.5337677001953
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Multiple (4 families x 3 sizes)",
+        "method": "bitsandbytes",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "Aggregated",
+        "metric": "Clean pass@1 reduction vs FP16 (%)",
+        "value": 1.19,
+        "baseline_label": "FP16",
+        "baseline_value": 0.0,
+        "delta": -1.19,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "V.C Quantization-Robustness Trade-off Evaluation",
+        "quote": "while 4-bit causes a more noticeable 1.19% reduction",
+        "bbox": [
+          47.8125,
+          415.1542663574219,
+          300.0218811035156,
+          580.5337677001953
+        ],
+        "block_id": "/page/8/Text/5",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Multiple (4 families x 3 sizes)",
+        "method": "bitsandbytes",
+        "bit_width": "8-bit",
+        "group_size": null,
+        "dataset": "Aggregated",
+        "metric": "Adversarial cases with quantized > original (%)",
+        "value": 59.72,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 10,
+        "section": "VII. CONCLUSION",
+        "quote": "59.72% of our adversarial experiments showing better resilience in quantized models",
+        "bbox": [
+          310.482421875,
+          606.76171875,
+          563.03564453125,
+          748.30078125
+        ],
+        "block_id": "/page/9/Text/14",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Aggregate (LLaMA family on HumanEval)",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HumanEval",
+        "metric": "Cases where original > quantized (count out of 18)",
+        "value": 15,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "V.A RQ1: Adversarial Robustness Evaluation",
+        "quote": "15 out of 18 experiments showing greater robustness compared to its quantized version",
+        "bbox": [
+          310.18359375,
+          256.3326416015625,
+          563.0413208007812,
+          457.5780944824219
+        ],
+        "block_id": "/page/5/Text/14",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 133,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }

@@ -795,5 +795,3375 @@
         "block_id": "/page/3/Text/9"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Simple Query)",
+        "value": 33.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Simple Query)",
+        "value": 35.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Simple Query)",
+        "value": 30.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Simple Query)",
+        "value": 96.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "1 - Simple Query | 33.9 | 35.7 | 30.4 | 96.4",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Ignorance context)",
+        "value": 30.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "2 - Ignorance context | 30.6 | 37.5 | 30.4 | 82.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Ignorance context)",
+        "value": 37.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "2 - Ignorance context | 30.6 | 37.5 | 30.4 | 82.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Ignorance context)",
+        "value": 30.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "2 - Ignorance context | 30.6 | 37.5 | 30.4 | 82.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Ignorance context)",
+        "value": 82.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "2 - Ignorance context | 30.6 | 37.5 | 30.4 | 82.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Role Play context)",
+        "value": 69.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 51.8 | 94.6",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Role Play context)",
+        "value": 58.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 51.8 | 94.6",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Role Play context)",
+        "value": 51.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 51.8 | 94.6",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Role Play context)",
+        "value": 94.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 51.8 | 94.6",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAP)",
+        "value": 80.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "4 - PAP | 80.4 | 66.1 | **76.8** | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAP)",
+        "value": 66.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "4 - PAP | 80.4 | 66.1 | **76.8** | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAP)",
+        "value": 76.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "4 - PAP | 80.4 | 66.1 | **76.8** | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAP)",
+        "value": 98.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "4 - PAP | 80.4 | 66.1 | **76.8** | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAIR)",
+        "value": 94.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "5 - PAIR | 94.6 | 92.9 | 60.7 | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAIR)",
+        "value": 92.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "5 - PAIR | 94.6 | 92.9 | 60.7 | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAIR)",
+        "value": 60.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "5 - PAIR | 94.6 | 92.9 | 60.7 | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAIR)",
+        "value": 98.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "5 - PAIR | 94.6 | 92.9 | 60.7 | **98.2**",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (AutoDAN)",
+        "value": 100,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "6 - AutoDAN | **100** | 98.2 | 23.2 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (AutoDAN)",
+        "value": 98.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "6 - AutoDAN | **100** | 98.2 | 23.2 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (AutoDAN)",
+        "value": 23.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "6 - AutoDAN | **100** | 98.2 | 23.2 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (AutoDAN)",
+        "value": 91.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "6 - AutoDAN | **100** | 98.2 | 23.2 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (GCG)",
+        "value": 92.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "7 - GCG | 92.9 | **100** | 41.1 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (GCG)",
+        "value": 100,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "7 - GCG | 92.9 | **100** | 41.1 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (GCG)",
+        "value": 41.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "7 - GCG | 92.9 | **100** | 41.1 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "FP16",
+        "bit_width": "16-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (GCG)",
+        "value": 91.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 5,
+        "section": "4.1 Classic ASR",
+        "quote": "7 - GCG | 92.9 | **100** | 41.1 | 91.1",
+        "bbox": [
+          110.99671875,
+          69.37734375,
+          493.83140625,
+          171.93515625
+        ],
+        "block_id": "/page/4/Table/0",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Simple Query, Direct)",
+        "value": 44.6,
+        "baseline_label": "FP16",
+        "baseline_value": 33.9,
+        "delta": 10.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "1 - Simple Query | 44.6 | 51.8 | 32.1 | 100",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Simple Query, Direct)",
+        "value": 51.8,
+        "baseline_label": "FP16",
+        "baseline_value": 35.7,
+        "delta": 16.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "1 - Simple Query | 44.6 | 51.8 | 32.1 | 100",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Simple Query, Direct)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 30.4,
+        "delta": 1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "1 - Simple Query | 44.6 | 51.8 | 32.1 | 100",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Simple Query, Direct)",
+        "value": 100,
+        "baseline_label": "FP16",
+        "baseline_value": 96.4,
+        "delta": 3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "1 - Simple Query | 44.6 | 51.8 | 32.1 | 100",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Ignorance context, Direct)",
+        "value": 28.6,
+        "baseline_label": "FP16",
+        "baseline_value": 30.6,
+        "delta": -2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 32.1 | 26.8 | 87.5",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Ignorance context, Direct)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 37.5,
+        "delta": -5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 32.1 | 26.8 | 87.5",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Ignorance context, Direct)",
+        "value": 26.8,
+        "baseline_label": "FP16",
+        "baseline_value": 30.4,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 32.1 | 26.8 | 87.5",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Ignorance context, Direct)",
+        "value": 87.5,
+        "baseline_label": "FP16",
+        "baseline_value": 82.1,
+        "delta": 5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 32.1 | 26.8 | 87.5",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Role Play context, Direct)",
+        "value": 69.6,
+        "baseline_label": "FP16",
+        "baseline_value": 69.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 48.2 | 94.6",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Role Play context, Direct)",
+        "value": 58.9,
+        "baseline_label": "FP16",
+        "baseline_value": 58.9,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 48.2 | 94.6",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Role Play context, Direct)",
+        "value": 48.2,
+        "baseline_label": "FP16",
+        "baseline_value": 51.8,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 48.2 | 94.6",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Role Play context, Direct)",
+        "value": 94.6,
+        "baseline_label": "FP16",
+        "baseline_value": 94.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "3 - Role Play context | 69.6 | 58.9 | 48.2 | 94.6",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAP, Direct)",
+        "value": 67.3,
+        "baseline_label": "FP16",
+        "baseline_value": 80.4,
+        "delta": -13.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "4 - PAP | 67.3 | 63.1 | 60.1 | 99.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAP, Direct)",
+        "value": 63.1,
+        "baseline_label": "FP16",
+        "baseline_value": 66.1,
+        "delta": -3.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "4 - PAP | 67.3 | 63.1 | 60.1 | 99.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAP, Direct)",
+        "value": 60.1,
+        "baseline_label": "FP16",
+        "baseline_value": 76.8,
+        "delta": -16.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "4 - PAP | 67.3 | 63.1 | 60.1 | 99.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAP, Direct)",
+        "value": 99.4,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": 1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "4 - PAP | 67.3 | 63.1 | 60.1 | 99.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAIR, Direct)",
+        "value": 85.7,
+        "baseline_label": "FP16",
+        "baseline_value": 94.6,
+        "delta": -8.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "5 - PAIR | 85.7 | **98.2** | **67.9** | 96.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAIR, Direct)",
+        "value": 98.2,
+        "baseline_label": "FP16",
+        "baseline_value": 92.9,
+        "delta": 5.3,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "the PAIR technique achieves a notably high String ASR of 98.2, demonstrating its efficiency in eliciting compliant outputs from the AWQ Vicuna 13B v1.5 model",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAIR, Direct)",
+        "value": 67.9,
+        "baseline_label": "FP16",
+        "baseline_value": 60.7,
+        "delta": 7.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "5 - PAIR | 85.7 | **98.2** | **67.9** | 96.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAIR, Direct)",
+        "value": 96.4,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "5 - PAIR | 85.7 | **98.2** | **67.9** | 96.4",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (AutoDAN, Direct)",
+        "value": 92.9,
+        "baseline_label": "FP16",
+        "baseline_value": 100,
+        "delta": -7.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "6 - AutoDAN | **92.9** | 94.6 | 17.9 | 98.3",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (AutoDAN, Direct)",
+        "value": 94.6,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "6 - AutoDAN | **92.9** | 94.6 | 17.9 | 98.3",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (AutoDAN, Direct)",
+        "value": 17.9,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -5.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "6 - AutoDAN | **92.9** | 94.6 | 17.9 | 98.3",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (AutoDAN, Direct)",
+        "value": 98.3,
+        "baseline_label": "FP16",
+        "baseline_value": 91.1,
+        "delta": 7.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "6 - AutoDAN | **92.9** | 94.6 | 17.9 | 98.3",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (GCG, Direct)",
+        "value": 66.1,
+        "baseline_label": "FP16",
+        "baseline_value": 92.9,
+        "delta": -26.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "7 - GCG | 66.1 | 71.4 | 26.8 | 75.0",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (GCG, Direct)",
+        "value": 71.4,
+        "baseline_label": "FP16",
+        "baseline_value": 100,
+        "delta": -28.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "7 - GCG | 66.1 | 71.4 | 26.8 | 75.0",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (GCG, Direct)",
+        "value": 26.8,
+        "baseline_label": "FP16",
+        "baseline_value": 41.1,
+        "delta": -14.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "7 - GCG | 66.1 | 71.4 | 26.8 | 75.0",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (GCG, Direct)",
+        "value": 75.0,
+        "baseline_label": "FP16",
+        "baseline_value": 91.1,
+        "delta": -16.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 6,
+        "section": "4.3 Vulnerability of Quantized Models to Direct Attacks",
+        "quote": "7 - GCG | 66.1 | 71.4 | 26.8 | 75.0",
+        "bbox": [
+          109.789453125,
+          283.62670532226565,
+          493.843359375,
+          385.45276245117185
+        ],
+        "block_id": "/page/5/Table/4",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Simple Query, Transferred)",
+        "value": 44.6,
+        "baseline_label": "FP16",
+        "baseline_value": 33.9,
+        "delta": 10.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Simple Query, Transferred)",
+        "value": 39.3,
+        "baseline_label": "FP16",
+        "baseline_value": 33.9,
+        "delta": 5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Simple Query, Transferred)",
+        "value": 51.8,
+        "baseline_label": "FP16",
+        "baseline_value": 35.7,
+        "delta": 16.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Simple Query, Transferred)",
+        "value": 48.2,
+        "baseline_label": "FP16",
+        "baseline_value": 35.7,
+        "delta": 12.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Simple Query, Transferred)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 30.4,
+        "delta": 1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Simple Query, Transferred)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 30.4,
+        "delta": 1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Simple Query, Transferred)",
+        "value": 100,
+        "baseline_label": "FP16",
+        "baseline_value": 96.4,
+        "delta": 3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Simple Query, Transferred)",
+        "value": 96.4,
+        "baseline_label": "FP16",
+        "baseline_value": 96.4,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "1 - Simple Query | 44.6 | 39.3 | 51.8 | 48.2 | 32.1 | 32.1 | 100 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Ignorance context, Transferred)",
+        "value": 28.6,
+        "baseline_label": "FP16",
+        "baseline_value": 30.6,
+        "delta": -2.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Ignorance context, Transferred)",
+        "value": 30.4,
+        "baseline_label": "FP16",
+        "baseline_value": 30.6,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Ignorance context, Transferred)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 37.5,
+        "delta": -5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Ignorance context, Transferred)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 37.5,
+        "delta": -5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Ignorance context, Transferred)",
+        "value": 26.8,
+        "baseline_label": "FP16",
+        "baseline_value": 30.4,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Ignorance context, Transferred)",
+        "value": 28.6,
+        "baseline_label": "FP16",
+        "baseline_value": 30.4,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Ignorance context, Transferred)",
+        "value": 87.5,
+        "baseline_label": "FP16",
+        "baseline_value": 82.1,
+        "delta": 5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Ignorance context, Transferred)",
+        "value": 87.5,
+        "baseline_label": "FP16",
+        "baseline_value": 82.1,
+        "delta": 5.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "2 - Ignorance context | 28.6 | 30.4 | 32.1 | 32.1 | 26.8 | 28.6 | 87.5 | 87.5",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Role Play context, Transferred)",
+        "value": 69.6,
+        "baseline_label": "FP16",
+        "baseline_value": 69.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (Role Play context, Transferred)",
+        "value": 62.5,
+        "baseline_label": "FP16",
+        "baseline_value": 69.6,
+        "delta": -7.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Role Play context, Transferred)",
+        "value": 58.9,
+        "baseline_label": "FP16",
+        "baseline_value": 58.9,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (Role Play context, Transferred)",
+        "value": 60.7,
+        "baseline_label": "FP16",
+        "baseline_value": 58.9,
+        "delta": 1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Role Play context, Transferred)",
+        "value": 48.2,
+        "baseline_label": "FP16",
+        "baseline_value": 51.8,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (Role Play context, Transferred)",
+        "value": 57.1,
+        "baseline_label": "FP16",
+        "baseline_value": 51.8,
+        "delta": 5.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Role Play context, Transferred)",
+        "value": 94.6,
+        "baseline_label": "FP16",
+        "baseline_value": 94.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (Role Play context, Transferred)",
+        "value": 94.6,
+        "baseline_label": "FP16",
+        "baseline_value": 94.6,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "3 - Role Play context | 69.6 | 62.5 | 58.9 | 60.7 | 48.2 | 57.1 | 94.6 | 94.6",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAP, Transferred)",
+        "value": 67.3,
+        "baseline_label": "FP16",
+        "baseline_value": 80.4,
+        "delta": -13.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAP, Transferred)",
+        "value": 73.2,
+        "baseline_label": "FP16",
+        "baseline_value": 80.4,
+        "delta": -7.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAP, Transferred)",
+        "value": 63.1,
+        "baseline_label": "FP16",
+        "baseline_value": 66.1,
+        "delta": -3.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAP, Transferred)",
+        "value": 68.4,
+        "baseline_label": "FP16",
+        "baseline_value": 66.1,
+        "delta": 2.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAP, Transferred)",
+        "value": 60.1,
+        "baseline_label": "FP16",
+        "baseline_value": 76.8,
+        "delta": -16.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAP, Transferred)",
+        "value": 66.7,
+        "baseline_label": "FP16",
+        "baseline_value": 76.8,
+        "delta": -10.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAP, Transferred)",
+        "value": 99.4,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": 1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAP, Transferred)",
+        "value": 96.4,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": -1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "4 - PAP | 67.3 | 73.2 | 63.1 | 68.4 | 60.1 | 66.7 | 99.4 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAIR, Transferred)",
+        "value": 66.1,
+        "baseline_label": "FP16",
+        "baseline_value": 94.6,
+        "delta": -28.5,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "the PAIR technique shows a notable decline in Human ASR, dropping from 94.6 on the original model to 66.1 for AWQ and 64.3 for GPTQ",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (PAIR, Transferred)",
+        "value": 64.3,
+        "baseline_label": "FP16",
+        "baseline_value": 94.6,
+        "delta": -30.3,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "the PAIR technique shows a notable decline in Human ASR, dropping from 94.6 on the original model to 66.1 for AWQ and 64.3 for GPTQ",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAIR, Transferred)",
+        "value": 58.9,
+        "baseline_label": "FP16",
+        "baseline_value": 92.9,
+        "delta": -34.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "5 - PAIR | 66.1 | 64.3 | 58.9 | 60.7 | 28.6 | 30.4 | 100 | 100",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (PAIR, Transferred)",
+        "value": 60.7,
+        "baseline_label": "FP16",
+        "baseline_value": 92.9,
+        "delta": -32.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "5 - PAIR | 66.1 | 64.3 | 58.9 | 60.7 | 28.6 | 30.4 | 100 | 100",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAIR, Transferred)",
+        "value": 28.6,
+        "baseline_label": "FP16",
+        "baseline_value": 60.7,
+        "delta": -32.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "5 - PAIR | 66.1 | 64.3 | 58.9 | 60.7 | 28.6 | 30.4 | 100 | 100",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (PAIR, Transferred)",
+        "value": 30.4,
+        "baseline_label": "FP16",
+        "baseline_value": 60.7,
+        "delta": -30.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "5 - PAIR | 66.1 | 64.3 | 58.9 | 60.7 | 28.6 | 30.4 | 100 | 100",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAIR, Transferred)",
+        "value": 100,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": 1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "5 - PAIR | 66.1 | 64.3 | 58.9 | 60.7 | 28.6 | 30.4 | 100 | 100",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (PAIR, Transferred)",
+        "value": 100,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": 1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "5 - PAIR | 66.1 | 64.3 | 58.9 | 60.7 | 28.6 | 30.4 | 100 | 100",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (AutoDAN, Transferred)",
+        "value": 71.4,
+        "baseline_label": "FP16",
+        "baseline_value": 100,
+        "delta": -28.6,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "AutoDAN's effectiveness decreases from 100 to 71.4 and 67.9, respectively",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (AutoDAN, Transferred)",
+        "value": 67.9,
+        "baseline_label": "FP16",
+        "baseline_value": 100,
+        "delta": -32.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "AutoDAN's effectiveness decreases from 100 to 71.4 and 67.9, respectively",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (AutoDAN, Transferred)",
+        "value": 46.4,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": -51.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "6 - AutoDAN | 71.4 | 67.9 | 46.4 | 58.9 | 23.2 | 19.6 | 92.9 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (AutoDAN, Transferred)",
+        "value": 58.9,
+        "baseline_label": "FP16",
+        "baseline_value": 98.2,
+        "delta": -39.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "6 - AutoDAN | 71.4 | 67.9 | 46.4 | 58.9 | 23.2 | 19.6 | 92.9 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (AutoDAN, Transferred)",
+        "value": 23.2,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": 0.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "6 - AutoDAN | 71.4 | 67.9 | 46.4 | 58.9 | 23.2 | 19.6 | 92.9 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (AutoDAN, Transferred)",
+        "value": 19.6,
+        "baseline_label": "FP16",
+        "baseline_value": 23.2,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "6 - AutoDAN | 71.4 | 67.9 | 46.4 | 58.9 | 23.2 | 19.6 | 92.9 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (AutoDAN, Transferred)",
+        "value": 92.9,
+        "baseline_label": "FP16",
+        "baseline_value": 91.1,
+        "delta": 1.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "6 - AutoDAN | 71.4 | 67.9 | 46.4 | 58.9 | 23.2 | 19.6 | 92.9 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (AutoDAN, Transferred)",
+        "value": 96.4,
+        "baseline_label": "FP16",
+        "baseline_value": 91.1,
+        "delta": 5.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "6 - AutoDAN | 71.4 | 67.9 | 46.4 | 58.9 | 23.2 | 19.6 | 92.9 | 96.4",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (GCG, Transferred)",
+        "value": 42.9,
+        "baseline_label": "FP16",
+        "baseline_value": 92.9,
+        "delta": -50.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "Human ASR (GCG, Transferred)",
+        "value": 48.2,
+        "baseline_label": "FP16",
+        "baseline_value": 92.9,
+        "delta": -44.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (GCG, Transferred)",
+        "value": 53.6,
+        "baseline_label": "FP16",
+        "baseline_value": 100,
+        "delta": -46.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "String ASR (GCG, Transferred)",
+        "value": 53.6,
+        "baseline_label": "FP16",
+        "baseline_value": 100,
+        "delta": -46.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (GCG, Transferred)",
+        "value": 62.5,
+        "baseline_label": "FP16",
+        "baseline_value": 41.1,
+        "delta": 21.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Full Compliance (GCG, Transferred)",
+        "value": 32.1,
+        "baseline_label": "FP16",
+        "baseline_value": 41.1,
+        "delta": -9.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "AWQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (GCG, Transferred)",
+        "value": 83.9,
+        "baseline_label": "FP16",
+        "baseline_value": 91.1,
+        "delta": -7.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-13B-v1.5",
+        "method": "GPTQ",
+        "bit_width": "4-bit",
+        "group_size": null,
+        "dataset": "HarmLevelBench",
+        "metric": "GPT Judge Partial Compliance (GCG, Transferred)",
+        "value": 92.8,
+        "baseline_label": "FP16",
+        "baseline_value": 91.1,
+        "delta": 1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 7,
+        "section": "4.4 Enhanced Robustness of Quantization Against Transferred Attacks",
+        "quote": "7 - GCG | 42.9 | 48.2 | 53.6 | 53.6 | 62.5 | 32.1 | 83.9 | 92.8",
+        "bbox": [
+          100.5975,
+          175.2068637084961,
+          507.8165625,
+          291.16926544189454
+        ],
+        "block_id": "/page/6/Table/2",
+        "source_table": "Table 4"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 112,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 8
   }
 }

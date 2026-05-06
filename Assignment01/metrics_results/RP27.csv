@@ -1,0 +1,135 @@
+rp_id,model,method,bit_width,group_size,dataset,metric,value,baseline_label,baseline_value,delta,delta_unit,headline,source_kind,page,section,source_table,quote
+RP27,LLaMA2-7b,FT,16-bit,,TULU-V2-mix,Mean accuracy (%),71.97,,,,,False,measured,6,4.1 Data,Table 1,FT | 71.97 | 71.88 | 75.09 | 75.21 | 76.13 | 77.02
+RP27,LLaMA2-7b,LoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),71.78,FT,71.97,-0.19,absolute,False,measured,6,4.1 Data,Table 1,LoRA | 71.78 | 70.89 | 74.03 | 74.01 | 75.91 | 75.63
+RP27,LLaMA2-7b,DoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),72.03,FT,71.97,0.06,absolute,False,measured,6,4.1 Data,Table 1,DoRA | 72.03 | 70.97 | 73.97 | 73.96 | 75.89 | 75.72
+RP27,LLaMA2-7b,GIFT-SW,16-bit,,TULU-V2-mix,Mean accuracy (%),73.33,FT,71.97,1.36,absolute,True,measured,6,4.1 Data,Table 1,GIFT-SW | 73.33 | 72.33 | 75.93 | 76.02 | 76.37 | 76.78
+RP27,LLaMA2-7b,FT,16-bit,,OpenOrca,Mean accuracy (%),71.88,,,,,False,measured,6,4.1 Data,Table 1,FT | 71.97 | 71.88
+RP27,LLaMA2-7b,LoRA,16-bit,,OpenOrca,Mean accuracy (%),70.89,FT,71.88,-0.99,absolute,False,measured,6,4.1 Data,Table 1,LoRA | 71.78 | 70.89
+RP27,LLaMA2-7b,DoRA,16-bit,,OpenOrca,Mean accuracy (%),70.97,FT,71.88,-0.91,absolute,False,measured,6,4.1 Data,Table 1,DoRA | 72.03 | 70.97
+RP27,LLaMA2-7b,GIFT-SW,16-bit,,OpenOrca,Mean accuracy (%),72.33,FT,71.88,0.45,absolute,False,measured,6,4.1 Data,Table 1,GIFT-SW | 73.33 | 72.33
+RP27,LLaMA2-13b,FT,16-bit,,TULU-V2-mix,Mean accuracy (%),75.09,,,,,False,measured,6,4.1 Data,Table 1,FT | ... | 75.09 | 75.21
+RP27,LLaMA2-13b,LoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),74.03,FT,75.09,-1.06,absolute,False,measured,6,4.1 Data,Table 1,LoRA | ... | 74.03 | 74.01
+RP27,LLaMA2-13b,DoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),73.97,FT,75.09,-1.12,absolute,False,measured,6,4.1 Data,Table 1,DoRA | ... | 73.97 | 73.96
+RP27,LLaMA2-13b,GIFT-SW,16-bit,,TULU-V2-mix,Mean accuracy (%),75.93,FT,75.09,0.84,absolute,True,measured,6,4.1 Data,Table 1,GIFT-SW | ... | 75.93 | 76.02
+RP27,LLaMA2-13b,FT,16-bit,,OpenOrca,Mean accuracy (%),75.21,,,,,False,measured,6,4.1 Data,Table 1,FT | ... | 75.09 | 75.21
+RP27,LLaMA2-13b,LoRA,16-bit,,OpenOrca,Mean accuracy (%),74.01,FT,75.21,-1.2,absolute,False,measured,6,4.1 Data,Table 1,LoRA | ... | 74.03 | 74.01
+RP27,LLaMA2-13b,DoRA,16-bit,,OpenOrca,Mean accuracy (%),73.96,FT,75.21,-1.25,absolute,False,measured,6,4.1 Data,Table 1,DoRA | ... | 73.97 | 73.96
+RP27,LLaMA2-13b,GIFT-SW,16-bit,,OpenOrca,Mean accuracy (%),76.02,FT,75.21,0.81,absolute,False,measured,6,4.1 Data,Table 1,GIFT-SW | ... | 75.93 | 76.02
+RP27,LLaMA3-8b,FT,16-bit,,TULU-V2-mix,Mean accuracy (%),76.13,,,,,False,measured,6,4.1 Data,Table 1,FT | ... | 76.13 | 77.02
+RP27,LLaMA3-8b,LoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),75.91,FT,76.13,-0.22,absolute,False,measured,6,4.1 Data,Table 1,LoRA | ... | 75.91 | 75.63
+RP27,LLaMA3-8b,DoRA,16-bit,,TULU-V2-mix,Mean accuracy (%),75.89,FT,76.13,-0.24,absolute,False,measured,6,4.1 Data,Table 1,DoRA | ... | 75.89 | 75.72
+RP27,LLaMA3-8b,GIFT-SW,16-bit,,TULU-V2-mix,Mean accuracy (%),76.37,FT,76.13,0.24,absolute,False,measured,6,4.1 Data,Table 1,GIFT-SW | ... | 76.37 | 76.78
+RP27,LLaMA3-8b,FT,16-bit,,OpenOrca,Mean accuracy (%),77.02,,,,,False,measured,6,4.1 Data,Table 1,FT | ... | 76.13 | 77.02
+RP27,LLaMA3-8b,LoRA,16-bit,,OpenOrca,Mean accuracy (%),75.63,FT,77.02,-1.39,absolute,False,measured,6,4.1 Data,Table 1,LoRA | ... | 75.91 | 75.63
+RP27,LLaMA3-8b,DoRA,16-bit,,OpenOrca,Mean accuracy (%),75.72,FT,77.02,-1.3,absolute,False,measured,6,4.1 Data,Table 1,DoRA | ... | 75.89 | 75.72
+RP27,LLaMA3-8b,GIFT-SW,16-bit,,OpenOrca,Mean accuracy (%),76.78,FT,77.02,-0.24,absolute,False,measured,6,4.1 Data,Table 1,GIFT-SW | ... | 76.37 | 76.78
+RP27,LLaMA2-7b,STE,4-bit,,TULU-V2-mix,Mean accuracy (%),72.43,,,,,False,measured,6,4.1 Data,Table 2,4 bit | STE | 72.43 | 75.29 | 74.84
+RP27,LLaMA2-7b,QUIK+LoRA,4-bit,,TULU-V2-mix,Mean accuracy (%),63.99,STE,72.43,-8.44,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 63.99 | 71.08 | 74.27
+RP27,LLaMA2-7b,GIFT-SW,4-bit,,TULU-V2-mix,Mean accuracy (%),72.53,STE,72.43,0.1,absolute,True,measured,6,4.1 Data,Table 2,GIFT-SW | 72.53 | 74.50 | 75.46
+RP27,LLaMA2-13b,STE,4-bit,,TULU-V2-mix,Mean accuracy (%),75.29,,,,,False,measured,6,4.1 Data,Table 2,STE | 72.43 | 75.29 | 74.84
+RP27,LLaMA2-13b,QUIK+LoRA,4-bit,,TULU-V2-mix,Mean accuracy (%),71.08,STE,75.29,-4.21,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 63.99 | 71.08
+RP27,LLaMA2-13b,GIFT-SW,4-bit,,TULU-V2-mix,Mean accuracy (%),74.5,STE,75.29,-0.79,absolute,False,measured,6,4.1 Data,Table 2,GIFT-SW | 72.53 | 74.50
+RP27,LLaMA3-8b,STE,4-bit,,TULU-V2-mix,Mean accuracy (%),74.84,,,,,False,measured,6,4.1 Data,Table 2,STE | 72.43 | 75.29 | 74.84
+RP27,LLaMA3-8b,QUIK+LoRA,4-bit,,TULU-V2-mix,Mean accuracy (%),74.27,STE,74.84,-0.57,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 63.99 | 71.08 | 74.27
+RP27,LLaMA3-8b,GIFT-SW,4-bit,,TULU-V2-mix,Mean accuracy (%),75.46,STE,74.84,0.62,absolute,False,measured,6,4.1 Data,Table 2,GIFT-SW | 72.53 | 74.50 | 75.46
+RP27,LLaMA2-7b,STE,3-bit,,TULU-V2-mix,Mean accuracy (%),69.82,,,,,False,measured,6,4.1 Data,Table 2,3 bit | STE | 69.82 | 74.37 | 70.24
+RP27,LLaMA2-7b,QUIK+LoRA,3-bit,,TULU-V2-mix,Mean accuracy (%),62.91,STE,69.82,-6.91,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 62.91 | 71.30 | 71.65
+RP27,LLaMA2-7b,GIFT-SW,3-bit,,TULU-V2-mix,Mean accuracy (%),71.0,STE,69.82,1.18,absolute,False,measured,6,4.1 Data,Table 2,GIFT-SW | 71.00 | 74.34 | 73.27
+RP27,LLaMA2-13b,STE,3-bit,,TULU-V2-mix,Mean accuracy (%),74.37,,,,,False,measured,6,4.1 Data,Table 2,STE | 69.82 | 74.37 | 70.24
+RP27,LLaMA2-13b,QUIK+LoRA,3-bit,,TULU-V2-mix,Mean accuracy (%),71.3,STE,74.37,-3.07,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 62.91 | 71.30
+RP27,LLaMA2-13b,GIFT-SW,3-bit,,TULU-V2-mix,Mean accuracy (%),74.34,STE,74.37,-0.03,absolute,False,measured,6,4.1 Data,Table 2,GIFT-SW | 71.00 | 74.34
+RP27,LLaMA3-8b,STE,3-bit,,TULU-V2-mix,Mean accuracy (%),70.24,,,,,False,measured,6,4.1 Data,Table 2,STE | 69.82 | 74.37 | 70.24
+RP27,LLaMA3-8b,QUIK+LoRA,3-bit,,TULU-V2-mix,Mean accuracy (%),71.65,STE,70.24,1.41,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 62.91 | 71.30 | 71.65
+RP27,LLaMA3-8b,GIFT-SW,3-bit,,TULU-V2-mix,Mean accuracy (%),73.27,STE,70.24,3.03,absolute,False,measured,6,4.1 Data,Table 2,GIFT-SW | 71.00 | 74.34 | 73.27
+RP27,LLaMA2-7b,STE,2-bit,,TULU-V2-mix,Mean accuracy (%),58.2,,,,,False,measured,6,4.1 Data,Table 2,2 bit | STE | 58.20 | 62.19 | 48.96
+RP27,LLaMA2-7b,QUIK+LoRA,2-bit,,TULU-V2-mix,Mean accuracy (%),41.44,STE,58.2,-16.76,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 41.44 | 47.14 | 53.80
+RP27,LLaMA2-7b,GIFT-SW,2-bit,,TULU-V2-mix,Mean accuracy (%),61.09,STE,58.2,2.89,absolute,True,measured,6,4.1 Data,Table 2,GIFT-SW | 61.09 | 67.61 | 58.89
+RP27,LLaMA2-13b,STE,2-bit,,TULU-V2-mix,Mean accuracy (%),62.19,,,,,False,measured,6,4.1 Data,Table 2,STE | 58.20 | 62.19 | 48.96
+RP27,LLaMA2-13b,QUIK+LoRA,2-bit,,TULU-V2-mix,Mean accuracy (%),47.14,STE,62.19,-15.05,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 41.44 | 47.14
+RP27,LLaMA2-13b,GIFT-SW,2-bit,,TULU-V2-mix,Mean accuracy (%),67.61,STE,62.19,5.42,absolute,True,measured,6,4.1 Data,Table 2,GIFT-SW | 61.09 | 67.61
+RP27,LLaMA3-8b,STE,2-bit,,TULU-V2-mix,Mean accuracy (%),48.96,,,,,False,measured,6,4.1 Data,Table 2,STE | 58.20 | 62.19 | 48.96
+RP27,LLaMA3-8b,QUIK+LoRA,2-bit,,TULU-V2-mix,Mean accuracy (%),53.8,STE,48.96,4.84,absolute,False,measured,6,4.1 Data,Table 2,QUIK + LORA | 41.44 | 47.14 | 53.80
+RP27,LLaMA3-8b,GIFT-SW,2-bit,,TULU-V2-mix,Mean accuracy (%),58.89,STE,48.96,9.93,absolute,False,measured,6,4.1 Data,Table 2,GIFT-SW | 61.09 | 67.61 | 58.89
+RP27,LLaMA2-7b,GIFT-SW,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),73.33,TULU2,73.49,-0.16,absolute,True,measured,7,5 Results,Table 3,GIFT-SW | 73.33 | 174M / 500 | 75.93 | 272M / 500
+RP27,LLaMA2-13b,GIFT-SW,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.93,TULU2,75.51,0.42,absolute,True,measured,7,5 Results,Table 3,GIFT-SW | 73.33 | 174M / 500 | 75.93 | 272M / 500
+RP27,LLaMA2-7b,Salient FT,4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.82,,,,,False,measured,8,5.4 Scaling Properties,Table 4,Salient FT | 72.82 | 71.06 | 59.82
+RP27,LLaMA2-7b,Pre-GIFT-SW,4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),73.15,Salient FT,72.82,0.33,absolute,False,measured,8,5.4 Scaling Properties,Table 4,Pre-GIFT-SW | 73.15 | 70.24 | 47.08
+RP27,LLaMA2-7b,Post-GIFT-SW,4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.53,Salient FT,72.82,-0.29,absolute,False,measured,8,5.4 Scaling Properties,Table 4,Post-GIFT-SW | 72.53 | 71.00 | 61.09
+RP27,LLaMA2-7b,Salient FT,3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.06,,,,,False,measured,8,5.4 Scaling Properties,Table 4,Salient FT | 72.82 | 71.06 | 59.82
+RP27,LLaMA2-7b,Pre-GIFT-SW,3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),70.24,Salient FT,71.06,-0.82,absolute,False,measured,8,5.4 Scaling Properties,Table 4,Pre-GIFT-SW | 73.15 | 70.24 | 47.08
+RP27,LLaMA2-7b,Post-GIFT-SW,3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.0,Salient FT,71.06,-0.06,absolute,False,measured,8,5.4 Scaling Properties,Table 4,Post-GIFT-SW | 72.53 | 71.00 | 61.09
+RP27,LLaMA2-7b,Salient FT,2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),59.82,,,,,False,measured,8,5.4 Scaling Properties,Table 4,Salient FT | 72.82 | 71.06 | 59.82
+RP27,LLaMA2-7b,Pre-GIFT-SW,2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),47.08,Salient FT,59.82,-12.74,absolute,False,measured,8,5.4 Scaling Properties,Table 4,Pre-GIFT-SW | 73.15 | 70.24 | 47.08
+RP27,LLaMA2-7b,Post-GIFT-SW,2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),61.09,Salient FT,59.82,1.27,absolute,False,measured,8,5.4 Scaling Properties,Table 4,Post-GIFT-SW | 72.53 | 71.00 | 61.09
+RP27,LLaMA2-7b,"QUIK (metric: D2-X2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),69.86,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,4 bit | LLaMA2-7b | 69.86 | 69.85 | 69.68 | 69.55 | 69.52
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),69.85,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 69.86 | 69.85 | 69.68
+RP27,LLaMA2-7b,"QUIK (metric: Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),69.68,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 69.86 | 69.85 | 69.68
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),69.55,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 69.86 | 69.85 | 69.68 | 69.55 | 69.52
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),69.52,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 69.86 | 69.85 | 69.68 | 69.55 | 69.52
+RP27,TULU2-7b,"QUIK (metric: D2-X2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.94,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 72.94 | 73.17 | 72.77 | 72.22 | 72.78
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),73.17,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 72.94 | 73.17
+RP27,TULU2-7b,"QUIK (metric: Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.77,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 72.94 | 73.17 | 72.77
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.22,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 72.94 | 73.17 | 72.77 | 72.22
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.78,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 72.94 | 73.17 | 72.77 | 72.22 | 72.78
+RP27,LLaMA2-13b,"QUIK (metric: D2-X2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.92,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 72.92 | 72.99 | 72.83 | 72.83 | 72.56
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.99,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 72.92 | 72.99
+RP27,LLaMA2-13b,"QUIK (metric: Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.83,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 72.92 | 72.99 | 72.83
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.83,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 72.92 | 72.99 | 72.83 | 72.83
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.56,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 72.92 | 72.99 | 72.83 | 72.83 | 72.56
+RP27,TULU2-13b,"QUIK (metric: D2-X2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.12,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 75.12 | 74.86 | 75.19 | 75.47 | 75.17
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.86,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 75.12 | 74.86
+RP27,TULU2-13b,"QUIK (metric: Xinf, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.19,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 75.12 | 74.86 | 75.19
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.47,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 75.12 | 74.86 | 75.19 | 75.47
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",4-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.17,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 75.12 | 74.86 | 75.19 | 75.47 | 75.17
+RP27,LLaMA2-7b,"QUIK (metric: D2-X2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),67.5,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,3 bit | LLaMA2-7b | 67.50 | 68.31 | 67.47 | 68.09 | 67.86
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),68.31,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 67.50 | 68.31
+RP27,LLaMA2-7b,"QUIK (metric: Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),67.47,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 67.50 | 68.31 | 67.47
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),68.09,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 67.50 | 68.31 | 67.47 | 68.09
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),67.86,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 67.50 | 68.31 | 67.47 | 68.09 | 67.86
+RP27,TULU2-7b,"QUIK (metric: D2-X2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),70.91,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 70.91 | 71.30 | 70.85 | 71.14 | 70.88
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.3,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 70.91 | 71.30
+RP27,TULU2-7b,"QUIK (metric: Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),70.85,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 70.91 | 71.30 | 70.85
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.14,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 70.91 | 71.30 | 70.85 | 71.14
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),70.88,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 70.91 | 71.30 | 70.85 | 71.14 | 70.88
+RP27,LLaMA2-13b,"QUIK (metric: D2-X2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.92,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 71.92 | 71.59 | 72.10 | 71.77 | 71.45
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.59,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 71.92 | 71.59
+RP27,LLaMA2-13b,"QUIK (metric: Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),72.1,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 71.92 | 71.59 | 72.10
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.77,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 71.92 | 71.59 | 72.10 | 71.77
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.45,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 71.92 | 71.59 | 72.10 | 71.77 | 71.45
+RP27,TULU2-13b,"QUIK (metric: D2-X2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.33,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 74.33 | 74.07 | 74.07 | 74.09 | 74.31
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.07,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 74.33 | 74.07
+RP27,TULU2-13b,"QUIK (metric: Xinf, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.07,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 74.33 | 74.07 | 74.07
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.09,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 74.33 | 74.07 | 74.07 | 74.09
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",3-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.31,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 74.33 | 74.07 | 74.07 | 74.09 | 74.31
+RP27,LLaMA2-7b,"QUIK (metric: D2-X2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),45.86,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,2 bit | LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81 | 46.83
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),46.78,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 45.86 | 46.78
+RP27,LLaMA2-7b,"QUIK (metric: Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),45.99,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 45.86 | 46.78 | 45.99
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),46.81,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81
+RP27,LLaMA2-7b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),46.83,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-7b | 45.86 | 46.78 | 45.99 | 46.81 | 46.83
+RP27,TULU2-7b,"QUIK (metric: D2-X2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),54.84,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 54.84 | 46.85 | 46.78 | 48.56 | 48.20
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),46.85,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 54.84 | 46.85
+RP27,TULU2-7b,"QUIK (metric: Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),46.78,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 54.84 | 46.85 | 46.78
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),48.56,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 54.84 | 46.85 | 46.78 | 48.56
+RP27,TULU2-7b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),48.2,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-7b | 54.84 | 46.85 | 46.78 | 48.56 | 48.20
+RP27,LLaMA2-13b,"QUIK (metric: D2-X2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),57.07,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 57.07 | 57.36 | 51.83 | 57.30 | 56.73
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),57.36,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 57.07 | 57.36
+RP27,LLaMA2-13b,"QUIK (metric: Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),51.83,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 57.07 | 57.36 | 51.83
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),57.3,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 57.07 | 57.36 | 51.83 | 57.30
+RP27,LLaMA2-13b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),56.73,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,LLaMA2-13b | 57.07 | 57.36 | 51.83 | 57.30 | 56.73
+RP27,TULU2-13b,"QUIK (metric: D2-X2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),59.62,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 59.62 | 59.62 | 59.43 | 60.67 | 59.39
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),59.62,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 59.62 | 59.62
+RP27,TULU2-13b,"QUIK (metric: Xinf, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),59.43,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 59.62 | 59.62 | 59.43
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf^0.5, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),60.67,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 59.62 | 59.62 | 59.43 | 60.67
+RP27,TULU2-13b,"QUIK (metric: Dinf-Xinf^2, salient frozen)",2-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),59.39,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 5,TÜLU2-13b | 59.62 | 59.62 | 59.43 | 60.67 | 59.39
+RP27,LLaMA2-7b,GIFT-SW (Outliers FT w/ Noise),16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),73.33,GIFT-SW (Outliers FT w/o Noise),73.16,0.17,absolute,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-7b | 73.33 | 73.16 | 71.64 | 71.97
+RP27,LLaMA2-7b,GIFT-SW (Outliers FT w/o Noise),16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),73.16,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-7b | 73.33 | 73.16
+RP27,LLaMA2-7b,Full FT w/ Noise,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.64,Full FT w/o Noise,71.97,-0.33,absolute,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-7b | 73.33 | 73.16 | 71.64 | 71.97
+RP27,LLaMA2-7b,Full FT w/o Noise,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),71.97,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-7b | 73.33 | 73.16 | 71.64 | 71.97
+RP27,LLaMA2-13b,GIFT-SW (Outliers FT w/ Noise),16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.93,GIFT-SW (Outliers FT w/o Noise),74.8,1.13,absolute,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-13b | 75.93 | 74.80 | 74.58 | 75.09
+RP27,LLaMA2-13b,GIFT-SW (Outliers FT w/o Noise),16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.8,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-13b | 75.93 | 74.80
+RP27,LLaMA2-13b,Full FT w/ Noise,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),74.58,Full FT w/o Noise,75.09,-0.51,absolute,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-13b | 75.93 | 74.80 | 74.58 | 75.09
+RP27,LLaMA2-13b,Full FT w/o Noise,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.09,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA2-13b | 75.93 | 74.80 | 74.58 | 75.09
+RP27,LLaMA3-8b,GIFT-SW (Outliers FT w/ Noise),16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),76.37,GIFT-SW (Outliers FT w/o Noise),75.45,0.92,absolute,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA3-8b | 76.37 | 75.45 | 76.32 | 76.13
+RP27,LLaMA3-8b,GIFT-SW (Outliers FT w/o Noise),16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),75.45,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA3-8b | 76.37 | 75.45
+RP27,LLaMA3-8b,Full FT w/ Noise,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),76.32,Full FT w/o Noise,76.13,0.19,absolute,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA3-8b | 76.37 | 75.45 | 76.32 | 76.13
+RP27,LLaMA3-8b,Full FT w/o Noise,16-bit,,Mean of 6 zero-shot benchmarks,Mean accuracy (%),76.13,,,,,False,measured,9,6.3 Quantization Before and After Training,Table 6,LLaMA3-8b | 76.37 | 75.45 | 76.32 | 76.13

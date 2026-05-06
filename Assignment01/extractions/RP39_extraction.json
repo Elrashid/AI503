@@ -1048,5 +1048,2205 @@
         "block_id": "/page/6/Text/3"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Attention map recovery (%)",
+        "value": 95,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "FastGen effectively performs KV cache compression with negligible generation quality loss (i.e., recover over 95% of attention scores with 35% cache compressed)",
+        "bbox": [
+          107.279296875,
+          112.1484375,
+          504.00335693359375,
+          165.9620361328125
+        ],
+        "block_id": "/page/2/Text/2",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 35,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 35,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "1 INTRODUCTION",
+        "quote": "recover over 95% of attention scores with 35% cache compressed",
+        "bbox": [
+          107.279296875,
+          112.1484375,
+          504.00335693359375,
+          165.9620361328125
+        ],
+        "block_id": "/page/2/Text/2",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 50,
+        "baseline_label": "Fixed KV compression (Frequent+Local)",
+        "baseline_value": 15,
+        "delta": 35,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 3,
+        "section": "1 INTRODUCTION",
+        "quote": "as to the 30b model in Figure 2, FastGen (50% cache compressed) surpasses all fixed KV compression methods (15% cache compressed)",
+        "bbox": [
+          107.279296875,
+          112.1484375,
+          504.00335693359375,
+          165.9620361328125
+        ],
+        "block_id": "/page/2/Text/2",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 1.9,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 4.3,
+        "delta": -2.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "7B | 4.3Gb | 1.9Gb | 56.6% | 91% | 30.8%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 56.6,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 56.6,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "7B | 4.3Gb | 1.9Gb | 56.6% | 91% | 30.8%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen (T=91%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 30.8,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -19.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "7B | 4.3Gb | 1.9Gb | 56.6% | 91% | 30.8%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 2.6,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 4.3,
+        "delta": -1.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "2.6Gb | 39.8% | 95% | 37.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 39.8,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 39.8,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "2.6Gb | 39.8% | 95% | 37.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen (T=95%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 37.7,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -12.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "2.6Gb | 39.8% | 95% | 37.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 3.6,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 4.3,
+        "delta": -0.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "3.6Gb | 16.9% | 98% | 47.4%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 16.9,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 16.9,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "FastGen can get as much as 44.9% pruned ratio on Llama 1-65B, compared to 16.9% pruned ratio on Llama 1-7B",
+        "bbox": [
+          106.3828125,
+          209.25,
+          505.5,
+          295.5
+        ],
+        "block_id": "/page/7/Text/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen (T=98%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 47.4,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -2.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "3.6Gb | 16.9% | 98% | 47.4%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 3.1,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 6.7,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13B | 6.7Gb | 3.1Gb | 53.4% | 91% | 32.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 53.4,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 53.4,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13B | 6.7Gb | 3.1Gb | 53.4% | 91% | 32.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen (T=91%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 32.0,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -18.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13B | 6.7Gb | 3.1Gb | 53.4% | 91% | 32.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 4.1,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 6.7,
+        "delta": -2.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "4.1Gb | 39.0% | 95% | 39.9%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 39.0,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 39.0,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "4.1Gb | 39.0% | 95% | 39.9%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen (T=95%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 39.9,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -10.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "4.1Gb | 39.0% | 95% | 39.9%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 5.5,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 6.7,
+        "delta": -1.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "5.5Gb | 18.3% | 98% | 48.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 18.3,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 18.3,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "5.5Gb | 18.3% | 98% | 48.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-13B",
+        "method": "FastGen (T=98%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 48.7,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -1.3,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "5.5Gb | 18.3% | 98% | 48.7%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 5.7,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 13.1,
+        "delta": -7.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "30B | 13.1Gb | 5.7Gb | 56.7% | 93% | 37.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 56.7,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 56.7,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "30B | 13.1Gb | 5.7Gb | 56.7% | 93% | 37.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen (T=93%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 37.0,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -13.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "30B | 13.1Gb | 5.7Gb | 56.7% | 93% | 37.0%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 6.7,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 13.1,
+        "delta": -6.4,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "6.7Gb | 48.8% | 95% | 42.5%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 48.8,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 48.8,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "6.7Gb | 48.8% | 95% | 42.5%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen (T=95%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 42.5,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -7.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "6.7Gb | 48.8% | 95% | 42.5%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 9.5,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 13.1,
+        "delta": -3.6,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "9.5Gb | 27.4% | 98% | 47.5%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 27.4,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 27.4,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "9.5Gb | 27.4% | 98% | 47.5%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-30B",
+        "method": "FastGen (T=98%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 47.5,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -2.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "9.5Gb | 27.4% | 98% | 47.5%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 9.4,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 21.5,
+        "delta": -12.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "65B | 21.5Gb | 9.4Gb | 56.3% | 93% | 40.9%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 56.3,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 56.3,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "65B | 21.5Gb | 9.4Gb | 56.3% | 93% | 40.9%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen (T=93%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 40.9,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -9.1,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "65B | 21.5Gb | 9.4Gb | 56.3% | 93% | 40.9%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 11.8,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 21.5,
+        "delta": -9.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "11.8Gb | 44.9% | 95% | 44.2%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 44.9,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 44.9,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "FastGen can get as much as 44.9% pruned ratio on Llama 1-65B",
+        "bbox": [
+          106.3828125,
+          209.25,
+          505.5,
+          295.5
+        ],
+        "block_id": "/page/7/Text/2",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen (T=95%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 44.2,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -5.8,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "11.8Gb | 44.9% | 95% | 44.2%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache memory (Gb)",
+        "value": 13.8,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 21.5,
+        "delta": -7.7,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13.8Gb | 36.0% | 98% | 49.8%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "KV cache pruned ratio (%)",
+        "value": 36.0,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 36.0,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13.8Gb | 36.0% | 98% | 49.8%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen (T=98%)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 49.8,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -0.2,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.1 TRADE-OFF BETWEEN PERFORMANCE AND MEMORY REDUCTION",
+        "quote": "13.8Gb | 36.0% | 98% | 49.8%",
+        "bbox": [
+          175.8723046875,
+          306.629296875,
+          433.7370703125,
+          468.355078125
+        ],
+        "block_id": "/page/7/Table/3",
+        "source_table": "Table 1"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "HF (Hugging Face Accelerate, Full KV)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=512]",
+        "metric": "End-to-end latency (s)",
+        "value": 13.35,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "HF | 13.35 | 57.37 | 299 | 799.14",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "DS (DeepSpeed, Full KV)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=512]",
+        "metric": "End-to-end latency (s)",
+        "value": 11.58,
+        "baseline_label": "HF",
+        "baseline_value": 13.35,
+        "delta": -1.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "DS | 11.58 | 47.12 | 201.23 | 435.74",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=512]",
+        "metric": "End-to-end latency (s)",
+        "value": 11.21,
+        "baseline_label": "HF",
+        "baseline_value": 13.35,
+        "delta": -2.14,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "FastGen | 11.21 | 44.6 | 179.43 | 359.83",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=512]",
+        "metric": "Speedup over HF (%)",
+        "value": 16.03,
+        "baseline_label": "HF",
+        "baseline_value": 0,
+        "delta": 16.03,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "Speed-up(%) over HF | 16.03% | 22.30% | 40.00% | 55.00%",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=2048]",
+        "metric": "End-to-end latency (s)",
+        "value": 44.6,
+        "baseline_label": "HF",
+        "baseline_value": 57.37,
+        "delta": -12.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "FastGen | 11.21 | 44.6 | 179.43 | 359.83",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=2048]",
+        "metric": "Speedup over HF (%)",
+        "value": 22.3,
+        "baseline_label": "HF",
+        "baseline_value": 0,
+        "delta": 22.3,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "Speed-up(%) over HF | 16.03% | 22.30% | 40.00% | 55.00%",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "HF (Hugging Face Accelerate, Full KV)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=8192]",
+        "metric": "End-to-end latency (s)",
+        "value": 299,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "HF | 13.35 | 57.37 | 299 | 799.14",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=8192]",
+        "metric": "End-to-end latency (s)",
+        "value": 179.43,
+        "baseline_label": "HF",
+        "baseline_value": 299,
+        "delta": -119.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "FastGen | 11.21 | 44.6 | 179.43 | 359.83",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=8192]",
+        "metric": "Speedup over HF (%)",
+        "value": 40.0,
+        "baseline_label": "HF",
+        "baseline_value": 0,
+        "delta": 40.0,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "Speed-up(%) over HF | 16.03% | 22.30% | 40.00% | 55.00%",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "HF (Hugging Face Accelerate, Full KV)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=16384]",
+        "metric": "End-to-end latency (s)",
+        "value": 799.14,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "HF | 13.35 | 57.37 | 299 | 799.14",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=16384]",
+        "metric": "End-to-end latency (s)",
+        "value": 359.83,
+        "baseline_label": "HF",
+        "baseline_value": 799.14,
+        "delta": -439.31,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 8,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "FastGen | 11.21 | 44.6 | 179.43 | 359.83",
+        "bbox": [
+          106.3529296875,
+          666.06890625,
+          505.6470703125,
+          730.75921875
+        ],
+        "block_id": "/page/7/Table/9",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-7B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Synthetic [batch=1, prompt=32, gen=16384]",
+        "metric": "Speedup over HF (%)",
+        "value": 55.0,
+        "baseline_label": "HF",
+        "baseline_value": 0,
+        "delta": 55.0,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.3 END-TO-END LATENCY IMPROVEMENT",
+        "quote": "we can achieve up to 55.0% latency reduction over HF with FastGen at a generation length of 16k",
+        "bbox": [
+          106.681640625,
+          187.9453125,
+          504.0033874511719,
+          308.4278259277344
+        ],
+        "block_id": "/page/8/Text/2",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=128]",
+        "metric": "Overall generation duration (s)",
+        "value": 30.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "128 | 30.98 | 0.11 | 0.10 | 0.35%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=128]",
+        "metric": "Profiling duration (s)",
+        "value": 0.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "128 | 30.98 | 0.11 | 0.10 | 0.35%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=128]",
+        "metric": "Profiling/Overall (%)",
+        "value": 0.35,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "128 | 30.98 | 0.11 | 0.10 | 0.35%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=256]",
+        "metric": "Overall generation duration (s)",
+        "value": 50.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "256 | 50.1 | 0.11 | 0.10 | 0.21%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=256]",
+        "metric": "Profiling/Overall (%)",
+        "value": 0.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "256 | 50.1 | 0.11 | 0.10 | 0.21%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=512]",
+        "metric": "Overall generation duration (s)",
+        "value": 94.98,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "512 | 94.98 | 0.11 | 0.10 | 0.12%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=512]",
+        "metric": "Profiling/Overall (%)",
+        "value": 0.12,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "512 | 94.98 | 0.11 | 0.10 | 0.12%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=1024]",
+        "metric": "Overall generation duration (s)",
+        "value": 157.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "1024 | 157.43 | 0.11 | 0.10 | 0.07%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling overhead [gen=1024]",
+        "metric": "Profiling/Overall (%)",
+        "value": 0.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "1024 | 157.43 | 0.11 | 0.10 | 0.07%",
+        "bbox": [
+          125.2866796875,
+          387.917578125,
+          483.1273828125,
+          462.863671875
+        ],
+        "block_id": "/page/8/Table/5",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (full policy set C)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Pruned KV ratio (%)",
+        "value": 36.04,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "C | 36.04% | 49.75%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (full policy set C)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 49.75,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 50,
+        "delta": -0.25,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "C | 36.04% | 49.75%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Cspecial)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Pruned KV ratio (%)",
+        "value": 31.16,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 36.04,
+        "delta": -4.88,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "{Cpunct., Cpunct.+frequent, Cpunct.+frequent+local, Cfull} | 31.16% | 47.64%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Cspecial)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 47.64,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 49.75,
+        "delta": -2.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "Removing them will incur a 3.67% and a 2.11% win rate drop respectively",
+        "bbox": [
+          106.3828125,
+          637.3001556396484,
+          504.0033874511719,
+          738.6157112121582
+        ],
+        "block_id": "/page/12/Text/10",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Cpunct.)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Pruned KV ratio (%)",
+        "value": 34.23,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 36.04,
+        "delta": -1.81,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "{Cspecial, Cspecial+frequent, Cspecial+frequent+local, Cfull} | 34.23% | 49.56%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Cpunct.)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 49.56,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 49.75,
+        "delta": -0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "{Cspecial, Cspecial+frequent, Cspecial+frequent+local, Cfull} | 34.23% | 49.56%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Clocal)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Pruned KV ratio (%)",
+        "value": 30.18,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 36.04,
+        "delta": -5.86,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "{Cspecial, Cspecial+punct., Cspecial+punct.+frequent, Cfull} | 30.18% | 49.06%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Clocal)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 49.06,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 49.75,
+        "delta": -0.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "{Cspecial, Cspecial+punct., Cspecial+punct.+frequent, Cfull} | 30.18% | 49.06%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Cfrequent)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Pruned KV ratio (%)",
+        "value": 21.26,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 36.04,
+        "delta": -14.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "{Cspecial, Cspecial+punct., Cspecial+punct.+local, Cfull} | 21.26% | 46.08%",
+        "bbox": [
+          124.95796875,
+          81.450703125,
+          485.84671875,
+          175.330546875
+        ],
+        "block_id": "/page/13/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (no Cfrequent)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 46.08,
+        "baseline_label": "FastGen full set",
+        "baseline_value": 49.75,
+        "delta": -3.67,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "Removing them will incur a 3.67% and a 2.11% win rate drop respectively",
+        "bbox": [
+          106.3828125,
+          637.3001556396484,
+          504.0033874511719,
+          738.6157112121582
+        ],
+        "block_id": "/page/12/Text/10",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (order: special->frequent->local->punct.)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Pruned KV ratio (%)",
+        "value": 36.4,
+        "baseline_label": "FastGen default order",
+        "baseline_value": 36.04,
+        "delta": 0.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "Cspecial -> Cfrequent -> Clocal -> Cpunct. | 36.40% | 47.64%",
+        "bbox": [
+          156.3408984375,
+          217.6453125,
+          455.6591015625,
+          264.9796875
+        ],
+        "block_id": "/page/13/Table/3",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B (fine-tuned)",
+        "method": "FastGen (order: special->frequent->local->punct.)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AlpacaEval",
+        "metric": "Win rate vs Full Cache (%)",
+        "value": 47.64,
+        "baseline_label": "FastGen default order",
+        "baseline_value": 49.75,
+        "delta": -2.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 14,
+        "section": "A.1 ABLATIONS",
+        "quote": "Cspecial -> Cfrequent -> Clocal -> Cpunct. | 36.40% | 47.64%",
+        "bbox": [
+          156.3408984375,
+          217.6453125,
+          455.6591015625,
+          264.9796875
+        ],
+        "block_id": "/page/13/Table/3",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama 1-65B",
+        "method": "FastGen",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Profiling memory overhead",
+        "metric": "Memory overhead vs KV cache (%)",
+        "value": 0.78,
+        "baseline_label": "Full KV cache",
+        "baseline_value": 0,
+        "delta": 0.78,
+        "delta_unit": "percent",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 9,
+        "section": "5.4 PROFILING COST",
+        "quote": "the memory overhead is 1/128=0.78% compared to storing KV cache only",
+        "bbox": [
+          106.98046875,
+          544.88671875,
+          504.0033874511719,
+          633.4920654296875
+        ],
+        "block_id": "/page/8/Text/8",
+        "source_table": null
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 73,
+    "dropped_cited_count": 0,
+    "dropped_other_count": 0,
+    "headline_count": 6
   }
 }
