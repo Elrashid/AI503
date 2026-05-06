@@ -1423,5 +1423,6675 @@
         "block_id": "/page/99/Text/1"
       }
     }
+  },
+  "metrics_results": [
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability",
+        "value": 32.0,
+        "baseline_label": "GPT-3 (Davinci)",
+        "baseline_value": 100.0,
+        "delta": -68.0,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "Benign | GPT-3.5 | 0.37 | 0.13 | 32% | 1.2%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability",
+        "value": 31.0,
+        "baseline_label": "GPT-3 (Davinci)",
+        "baseline_value": 100.0,
+        "delta": -69.0,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-4 | 0.38 | 0.11 | 31% | 0.3%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Expected Maximum Toxicity (Benign Prompt)",
+        "value": 0.37,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "Benign | GPT-3.5 | 0.37 | 0.13",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Expected Maximum Toxicity (Benign Prompt)",
+        "value": 0.38,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-4 | 0.38 | 0.11",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Expected Maximum Toxicity (Adversarial Prompt)",
+        "value": 0.86,
+        "baseline_label": "Benign",
+        "baseline_value": 0.37,
+        "delta": 0.49,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "Adversarial | GPT-3.5 | 0.86 | 0.76 | 98% | 99%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Expected Maximum Toxicity (Adversarial Prompt)",
+        "value": 0.94,
+        "baseline_label": "Benign",
+        "baseline_value": 0.38,
+        "delta": 0.56,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-4 | 0.94 | 0.91 | 100% | 100%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability (Adversarial Prompt)",
+        "value": 98.0,
+        "baseline_label": "Benign",
+        "baseline_value": 32.0,
+        "delta": 66.0,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "Adversarial | GPT-3.5 | 0.86 | 0.76 | 98% | 99%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability (Adversarial Prompt)",
+        "value": 100.0,
+        "baseline_label": "Benign",
+        "baseline_value": 31.0,
+        "delta": 69.0,
+        "delta_unit": "percent",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-4 | 0.94 | 0.91 | 100% | 100%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 (Ada)",
+        "method": "GPT-3 (Ada)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-3 (Ada) | 0.85 | 0.43 | 100% | 30%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 (Curie)",
+        "method": "GPT-3 (Curie)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-3 (Curie) | 0.85 | 0.41 | 100% | 26%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 (Davinci)",
+        "method": "GPT-3 (Davinci)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS-Toxic",
+        "metric": "Toxicity Probability",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 13,
+        "section": "3.1 Evaluation on standard benchmark",
+        "quote": "GPT-3 (Davinci) | 0.84 | 0.43 | 100% | 31%",
+        "bbox": [
+          109.75359375,
+          259.913671875,
+          497.46515625,
+          374.305078125
+        ],
+        "block_id": "/page/12/Table/3",
+        "source_table": "Table 2"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LLM-generated-Toxic-prompts (GPT-4)",
+        "metric": "Expected Maximum Toxicity (Adversarial Prompt)",
+        "value": 0.95,
+        "baseline_label": "REALTOXICITYPROMPTS",
+        "baseline_value": 0.94,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "3.3 Design of challenging user prompts",
+        "quote": "Adversarial | GPT-4 | 0.94 | 0.94 | 0.95 | 100% | 100% | 100%",
+        "bbox": [
+          104.243203125,
+          262.8140625,
+          505.366171875,
+          357.4828125
+        ],
+        "block_id": "/page/16/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LLM-generated-Toxic-prompts (GPT-4)",
+        "metric": "Expected Maximum Toxicity (Adversarial Prompt)",
+        "value": 0.86,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "3.3 Design of challenging user prompts",
+        "quote": "Adversarial | GPT-3.5 | 0.86 | 0.86 | 0.86 | 98% | 96% | 99%",
+        "bbox": [
+          104.243203125,
+          262.8140625,
+          505.366171875,
+          357.4828125
+        ],
+        "block_id": "/page/16/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 (Ada)",
+        "method": "GPT-3 (Ada)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LLM-generated-Toxic-prompts (GPT-4)",
+        "metric": "Expected Maximum Toxicity",
+        "value": 0.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "3.3 Design of challenging user prompts",
+        "quote": "GPT-3 (Ada) | 0.85 | 0.86 | 0.90 | 100% | 100% | 100%",
+        "bbox": [
+          104.243203125,
+          262.8140625,
+          505.366171875,
+          357.4828125
+        ],
+        "block_id": "/page/16/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3 (Davinci)",
+        "method": "GPT-3 (Davinci)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LLM-generated-Toxic-prompts (GPT-4)",
+        "metric": "Expected Maximum Toxicity",
+        "value": 0.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 17,
+        "section": "3.3 Design of challenging user prompts",
+        "quote": "GPT-3 (Davinci) | 0.84 | 0.87 | 0.90 | 100% | 100% | 100%",
+        "bbox": [
+          104.243203125,
+          262.8140625,
+          505.366171875,
+          357.4828125
+        ],
+        "block_id": "/page/16/Table/3",
+        "source_table": "Table 3"
+      }
+    },
+    {
+      "value": {
+        "model": "REALTOXICITYPROMPTS-Toxic",
+        "method": "Prompt-Average",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "REALTOXICITYPROMPTS",
+        "metric": "Average Prompt Toxicity",
+        "value": 0.7641,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "4 Evaluation on stereotypes bias",
+        "quote": "Average Toxicity | 0.7641±0.0276",
+        "bbox": [
+          135.321328125,
+          89.618203125,
+          475.483359375,
+          139.319296875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Prompt-Generation",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LLM-generated-toxic-prompts",
+        "metric": "Average Prompt Toxicity",
+        "value": 0.9202,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "4 Evaluation on stereotypes bias",
+        "quote": "0.9202±0.0183",
+        "bbox": [
+          135.321328125,
+          89.618203125,
+          475.483359375,
+          139.319296875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Prompt-Generation",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "LLM-generated-toxic-prompts",
+        "metric": "Average Prompt Toxicity",
+        "value": 0.9567,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 18,
+        "section": "4 Evaluation on stereotypes bias",
+        "quote": "0.9567±0.0067",
+        "bbox": [
+          135.321328125,
+          89.618203125,
+          475.483359375,
+          139.319296875
+        ],
+        "block_id": "/page/17/Table/1",
+        "source_table": "Table 4"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias",
+        "metric": "agreementIndex (untargeted-vs-benign delta)",
+        "value": 0.008,
+        "baseline_label": "benign",
+        "baseline_value": 0,
+        "delta": 0.008,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "4.3 Results",
+        "quote": "agreementIndex increases by 0.008 for GPT-3.5 and 0.057 for GPT-4 on average",
+        "bbox": [
+          106.98046875,
+          130.32421875,
+          504.18365478515625,
+          206.86004638671875
+        ],
+        "block_id": "/page/20/Text/1",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias",
+        "metric": "agreementIndex (untargeted-vs-benign delta)",
+        "value": 0.057,
+        "baseline_label": "benign",
+        "baseline_value": 0,
+        "delta": 0.057,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "4.3 Results",
+        "quote": "agreementIndex increases by 0.008 for GPT-3.5 and 0.057 for GPT-4 on average",
+        "bbox": [
+          106.98046875,
+          130.32421875,
+          504.18365478515625,
+          206.86004638671875
+        ],
+        "block_id": "/page/20/Text/1",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias",
+        "metric": "agreementIndex (targeted-vs-untargeted delta)",
+        "value": 0.346,
+        "baseline_label": "untargeted",
+        "baseline_value": 0,
+        "delta": 0.346,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "4.3 Results",
+        "quote": "and significantly from untargeted to targeted system prompts (agreementIndex increases by 0.346 for GPT-3.5 and 0.535 for GPT-4 on average)",
+        "bbox": [
+          106.98046875,
+          130.32421875,
+          504.18365478515625,
+          206.86004638671875
+        ],
+        "block_id": "/page/20/Text/1",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias",
+        "metric": "agreementIndex (targeted-vs-untargeted delta)",
+        "value": 0.535,
+        "baseline_label": "untargeted",
+        "baseline_value": 0,
+        "delta": 0.535,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 21,
+        "section": "4.3 Results",
+        "quote": "agreementIndex increases by 0.346 for GPT-3.5 and 0.535 for GPT-4 on average",
+        "bbox": [
+          106.98046875,
+          130.32421875,
+          504.18365478515625,
+          206.86004638671875
+        ],
+        "block_id": "/page/20/Text/1",
+        "source_table": null
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BBNLI-NLI",
+        "metric": "Bias Score (Mean)",
+        "value": 0.048,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 87,
+        "section": "C.1 Details of the standard AdvGLUE benchmark",
+        "quote": "GPT-3.5 | 0.024 | 0.042 | 0.067 | 0.046 | 0.048 | 0.036 | 0.048 | 0.042",
+        "bbox": [
+          139.9053515625,
+          108.466875,
+          469.7040234375,
+          168.42375
+        ],
+        "block_id": "/page/86/Table/1",
+        "source_table": "Table 38"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BBNLI-NLI",
+        "metric": "Bias Score (Mean)",
+        "value": 0.071,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 87,
+        "section": "C.1 Details of the standard AdvGLUE benchmark",
+        "quote": "GPT-4 | 0.098 | 0.066 | 0.116 | 0.205 | -0.01 | 0.03 | 0.071 | 0.107",
+        "bbox": [
+          139.9053515625,
+          108.466875,
+          469.7040234375,
+          168.42375
+        ],
+        "block_id": "/page/86/Table/1",
+        "source_table": "Table 38"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BBNLI-QA",
+        "metric": "Bias Score (Mean)",
+        "value": 0.042,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 87,
+        "section": "C.1 Details of the standard AdvGLUE benchmark",
+        "quote": "GPT-3.5 | ... | 0.048 | 0.042",
+        "bbox": [
+          139.9053515625,
+          108.466875,
+          469.7040234375,
+          168.42375
+        ],
+        "block_id": "/page/86/Table/1",
+        "source_table": "Table 38"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "BBNLI-QA",
+        "metric": "Bias Score (Mean)",
+        "value": 0.107,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 87,
+        "section": "C.1 Details of the standard AdvGLUE benchmark",
+        "quote": "GPT-4 | ... | 0.071 | 0.107",
+        "bbox": [
+          139.9053515625,
+          108.466875,
+          469.7040234375,
+          168.42375
+        ],
+        "block_id": "/page/86/Table/1",
+        "source_table": "Table 38"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 78.41,
+        "baseline_label": "AdvGLUE-SoTA",
+        "baseline_value": 65.77,
+        "delta": 12.64,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "GPT-4 (78.41%) is more robust than GPT-3.5 (67.37%)",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 67.37,
+        "baseline_label": "AdvGLUE-SoTA",
+        "baseline_value": 65.77,
+        "delta": 1.6,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "GPT-3.5 is only on par with the existing SoTA model in terms of average robust accuracy",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-SST-2",
+        "metric": "Robust Accuracy (%)",
+        "value": 75.07,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "3 | 75.07 | 88.86 | 70.23 | 69.76 | 78.09 | 88.48",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-QQP",
+        "metric": "Robust Accuracy (%)",
+        "value": 92.18,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 69.92 | 92.18 | 69.97 | 68.03",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-MNLI",
+        "metric": "Robust Accuracy (%)",
+        "value": 70.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "3 | 75.07 | 88.86 | 70.23 | 69.76",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-QNLI",
+        "metric": "Robust Accuracy (%)",
+        "value": 80.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 69.92 | 92.18 | 69.97 | 68.03 | 80.16 | 88.81",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-RTE",
+        "metric": "Robust Accuracy (%)",
+        "value": 88.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 69.92 | 92.18 | 69.97 | 68.03 | 80.16 | 88.81",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-SST-2",
+        "metric": "Robust Accuracy (%)",
+        "value": 62.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 62.60 | 81.99 | 57.70",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-QQP",
+        "metric": "Robust Accuracy (%)",
+        "value": 81.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 62.60 | 81.99",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-MNLI",
+        "metric": "Robust Accuracy (%)",
+        "value": 57.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 62.60 | 81.99 | 57.70 | 53.00",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE-RTE",
+        "metric": "Robust Accuracy (%)",
+        "value": 81.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "1 | 62.60 | 81.99 | 57.70 | 53.00 | 67.04 | 81.90",
+        "bbox": [
+          106.9625390625,
+          108.94640625,
+          505.0374609375,
+          277.77234375
+        ],
+        "block_id": "/page/22/Table/1",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Performance Drop (%)",
+        "value": 9.9,
+        "baseline_label": "AdvGLUE-SoTA",
+        "baseline_value": 26.89,
+        "delta": -16.99,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "for GPT-4, such degradation is only 9.90%",
+        "bbox": [
+          106.3828125,
+          364.67578125,
+          506.25,
+          462.0
+        ],
+        "block_id": "/page/22/Text/3",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Performance Drop (%)",
+        "value": 14.43,
+        "baseline_label": "AdvGLUE-SoTA",
+        "baseline_value": 26.89,
+        "delta": -12.46,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 23,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "for GPT-3.5, the largest performance drop across all templates is 14.43%",
+        "bbox": [
+          106.3828125,
+          364.67578125,
+          506.25,
+          462.0
+        ],
+        "block_id": "/page/22/Text/3",
+        "source_table": "Table 5"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Word-level Attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Attack Success Rate (%)",
+        "value": 19.79,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "GPT-4 | 9.400 | 24.87 | 23.67 | 20.86 | 20.19 | 19.79",
+        "bbox": [
+          106.048125,
+          119.178984375,
+          505.951875,
+          151.524140625
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Word-level Attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Attack Success Rate (%)",
+        "value": 27.46,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "GPT-3.5 | 19.52 | 30.31 | 30.96 | 31.69 | 24.84 | 27.46",
+        "bbox": [
+          106.048125,
+          119.178984375,
+          505.951875,
+          151.524140625
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Sentence-level Attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Attack Success Rate (%)",
+        "value": 31.61,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "22.62 | 37.50 | 27.48 | 37.18 | 33.32 | 31.61",
+        "bbox": [
+          106.048125,
+          119.178984375,
+          505.951875,
+          151.524140625
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Sentence-level Attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Attack Success Rate (%)",
+        "value": 42.27,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "31.92 | 37.50 | 39.05 | 50.13 | 42.44 | 42.27",
+        "bbox": [
+          106.048125,
+          119.178984375,
+          505.951875,
+          151.524140625
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Human-crafted Attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Attack Success Rate (%)",
+        "value": 19.61,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "36.78 | 00.00 | 29.38 | 12.28 | 19.61",
+        "bbox": [
+          106.048125,
+          119.178984375,
+          505.951875,
+          151.524140625
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Human-crafted Attacks",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE",
+        "metric": "Attack Success Rate (%)",
+        "value": 40.76,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.1 Robustness evaluation on standard benchmark AdvGLUE",
+        "quote": "61.13 | 10.52 | 48.97 | 42.45 | 40.76",
+        "bbox": [
+          106.048125,
+          119.178984375,
+          505.951875,
+          151.524140625
+        ],
+        "block_id": "/page/23/Table/1",
+        "source_table": "Table 6"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "AdvGLUE++",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ (Alpaca)",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 55.64,
+        "baseline_label": "AdvGLUE",
+        "baseline_value": 78.18,
+        "delta": -22.54,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "the corresponding robust accuracy of GPT-3.5 and GPT-4 on it is only 49.23% and 55.64%, respectively",
+        "bbox": [
+          106.060078125,
+          555.25078125,
+          504.744609375,
+          642.03046875
+        ],
+        "block_id": "/page/23/Table/8",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "AdvGLUE++",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ (Alpaca)",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 49.23,
+        "baseline_label": "AdvGLUE",
+        "baseline_value": 67.37,
+        "delta": -18.14,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 27,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "GPT-3.5 and GPT-4 on it is only 49.23% and 55.64%, respectively",
+        "bbox": [
+          106.060078125,
+          555.25078125,
+          504.744609375,
+          642.03046875
+        ],
+        "block_id": "/page/23/Table/8",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "AdvGLUE++",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ (Vicuna)",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 58.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "AdvGLUE++ (Vicuna) | 84.56 | 68.76 | 47.43 | 31.47 | 76.4 | 45.32 | 28.61 | 0.480 | 58.99",
+        "bbox": [
+          106.060078125,
+          555.25078125,
+          504.744609375,
+          642.03046875
+        ],
+        "block_id": "/page/23/Table/8",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "AdvGLUE++",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ (Vicuna)",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 50.42,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "AdvGLUE++ (Vicuna) | 72.89 | 70.57 | 22.94 | 19.72 | 71.11 | 45.32 | 28.72 | 2.240 | 50.42",
+        "bbox": [
+          106.060078125,
+          555.25078125,
+          504.744609375,
+          642.03046875
+        ],
+        "block_id": "/page/23/Table/8",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "AdvGLUE++",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ (StableVicuna)",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 63.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "AdvGLUE++ (StableVicuna) | 78.58 | 51.02 | 71.39 | 61.88 | 65.43 | 51.79 | 24.26 | 0.290 | 63.34",
+        "bbox": [
+          106.060078125,
+          555.25078125,
+          504.744609375,
+          642.03046875
+        ],
+        "block_id": "/page/23/Table/8",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "AdvGLUE++",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ (StableVicuna)",
+        "metric": "Average Robust Accuracy (%)",
+        "value": 59.73,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 24,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "AdvGLUE++ (StableVicuna) | 70.61 | 56.35 | 62.63 | 52.86 | 59.62 | 56.3 | 19.41 | 1.660 | 59.73",
+        "bbox": [
+          106.060078125,
+          555.25078125,
+          504.744609375,
+          642.03046875
+        ],
+        "block_id": "/page/23/Table/8",
+        "source_table": "Table 7"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "SemAttack-Alpaca",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ QQP",
+        "metric": "Attack Success Rate (%)",
+        "value": 89.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "SemAttack achieves 89.2% attack success rate against GPT-4 when transferring from Alpaca on QQP task",
+        "bbox": [
+          170.9834765625,
+          106.981875,
+          439.8212109375,
+          318.40875
+        ],
+        "block_id": "/page/24/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "BERT-ATTACK-Vicuna",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ MNLI-mm",
+        "metric": "Attack Success Rate (%)",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "BERT-ATTACK achieves a 100% attack success rate against GPT-3.5 when transferring from Vicuna on the MNLI-mm task",
+        "bbox": [
+          171.5930859375,
+          435.70828125,
+          439.2116015625,
+          645.55734375
+        ],
+        "block_id": "/page/24/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "SemAttack-Alpaca-Avg",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ Alpaca",
+        "metric": "Attack Success Rate (%) average",
+        "value": 50.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "Avg | GPT-4 | 28.10 | 40.89 | 52.32 | 42.55 | 50.88",
+        "bbox": [
+          170.9834765625,
+          106.981875,
+          439.8212109375,
+          318.40875
+        ],
+        "block_id": "/page/24/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "SemAttack-Alpaca-Avg",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ Alpaca",
+        "metric": "Attack Success Rate (%) average",
+        "value": 61.28,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "GPT-3.5 | 32.55 | 44.00 | 52.63 | 46.10 | 61.28",
+        "bbox": [
+          170.9834765625,
+          106.981875,
+          439.8212109375,
+          318.40875
+        ],
+        "block_id": "/page/24/Table/1",
+        "source_table": "Table 8"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "TextFooler-Vicuna",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ Vicuna",
+        "metric": "Attack Success Rate (%) average",
+        "value": 57.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "Avg | GPT-4 | 34.09 | 57.21 | 50.83 | 56.73 | 35.14",
+        "bbox": [
+          171.5930859375,
+          435.70828125,
+          439.2116015625,
+          645.55734375
+        ],
+        "block_id": "/page/24/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "TextFooler-Vicuna",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvGLUE++ Vicuna",
+        "metric": "Attack Success Rate (%) average",
+        "value": 64.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 25,
+        "section": "5.2 Robustness evaluation on generated adversarial texts AdvGLUE++",
+        "quote": "GPT-3.5 | 45.71 | 64.60 | 62.71 | 58.62 | 46.14",
+        "bbox": [
+          171.5930859375,
+          435.70828125,
+          439.2116015625,
+          645.55734375
+        ],
+        "block_id": "/page/24/Table/4",
+        "source_table": "Table 9"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-SST-2 Base",
+        "metric": "Accuracy (%)",
+        "value": 88.65,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Base | 88.65 | 94.38",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-SST-2 Base",
+        "metric": "Accuracy (%)",
+        "value": 94.38,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Base | 88.65 | 94.38",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Shake-W",
+        "metric": "Accuracy (%)",
+        "value": 83.26,
+        "baseline_label": "Base",
+        "baseline_value": 88.65,
+        "delta": -5.39,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Shake-W | 83.26 | 92.66",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Shake-W",
+        "metric": "Accuracy (%)",
+        "value": 92.66,
+        "baseline_label": "Base",
+        "baseline_value": 94.38,
+        "delta": -1.72,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Shake-W | 83.26 | 92.66",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Shake (p=0.6)",
+        "metric": "Accuracy (%)",
+        "value": 64.56,
+        "baseline_label": "Base",
+        "baseline_value": 88.65,
+        "delta": -24.09,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Shake (p = 0.6) | 64.56 | 83.14",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Shake (p=0.6)",
+        "metric": "Accuracy (%)",
+        "value": 83.14,
+        "baseline_label": "Base",
+        "baseline_value": 94.38,
+        "delta": -11.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Shake (p = 0.6) | 64.56 | 83.14",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Bible (p=0.6)",
+        "metric": "Accuracy (%)",
+        "value": 63.07,
+        "baseline_label": "Base",
+        "baseline_value": 88.65,
+        "delta": -25.58,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Bible (p = 0.6) | 63.07 | 83.14",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Bible (p=0.6)",
+        "metric": "Accuracy (%)",
+        "value": 83.14,
+        "baseline_label": "Base",
+        "baseline_value": 94.38,
+        "delta": -11.24,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Bible (p = 0.6) | 63.07 | 83.14",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Tweet (p=0.6)",
+        "metric": "Accuracy (%)",
+        "value": 80.96,
+        "baseline_label": "Base",
+        "baseline_value": 88.65,
+        "delta": -7.69,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Tweet (p = 0.6) | 80.96 | 90.60",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Tweet (p=0.6)",
+        "metric": "Accuracy (%)",
+        "value": 90.6,
+        "baseline_label": "Base",
+        "baseline_value": 94.38,
+        "delta": -3.78,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Tweet (p = 0.6) | 80.96 | 90.60",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Augment",
+        "metric": "Accuracy (%)",
+        "value": 87.39,
+        "baseline_label": "Base",
+        "baseline_value": 88.65,
+        "delta": -1.26,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Augment | 87.39 | 93.81",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OOD-Style-Augment",
+        "metric": "Accuracy (%)",
+        "value": 93.81,
+        "baseline_label": "Base",
+        "baseline_value": 94.38,
+        "delta": -0.57,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.1 Robustness on OOD style",
+        "quote": "Augment | 87.39 | 93.81",
+        "bbox": [
+          193.5509765625,
+          88.705546875,
+          416.0583984375,
+          231.497578125
+        ],
+        "block_id": "/page/28/Table/1",
+        "source_table": "Table 11"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA20",
+        "metric": "Accuracy (%)",
+        "value": 73.45,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "Standard | GPT-3.5 | 73.45 | 87.34 | 15.91",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA20",
+        "metric": "Accuracy (%)",
+        "value": 77.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "GPT-4 | 77.43 | 90.81 | 14.74",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA23",
+        "metric": "Accuracy (%)",
+        "value": 44.49,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "73.45 | 87.34 | 15.91 | 44.49 | 69.23 | 35.74",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA23",
+        "metric": "Accuracy (%)",
+        "value": 20.15,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "77.43 | 90.81 | 14.74 | 20.15 | 73.61 | 72.62",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA20",
+        "metric": "Meaningful Accuracy (%)",
+        "value": 87.34,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "GPT-3.5 | 73.45 | 87.34 | 15.91",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA20",
+        "metric": "Meaningful Accuracy (%)",
+        "value": 90.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "GPT-4 | 77.43 | 90.81 | 14.74",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA23",
+        "metric": "Refusal Rate (%)",
+        "value": 35.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "44.49 | 69.23 | 35.74",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA23",
+        "metric": "Refusal Rate (%)",
+        "value": 72.62,
+        "baseline_label": "GPT-3.5",
+        "baseline_value": 35.74,
+        "delta": 36.88,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 30,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "the RR of GPT-4 significantly outperforms GPT-3.5 by 37% in QA2023",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4 w/ IDK",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA23",
+        "metric": "Refusal Rate (%)",
+        "value": 88.97,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 29,
+        "section": "6.2 Robustness on OOD knowledge",
+        "quote": "w/ IDK | GPT-4 | 60.82 | 96.12 | 36.73 | 9.51 | 86.21 | 88.97",
+        "bbox": [
+          142.64859375,
+          319.460625,
+          466.96078125,
+          395.195625
+        ],
+        "block_id": "/page/28/Table/3",
+        "source_table": "Table 12"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Few-shot (5-shot in-distribution)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA20-Demo",
+        "metric": "Accuracy (%)",
+        "value": 72.09,
+        "baseline_label": "zero-shot",
+        "baseline_value": 73.45,
+        "delta": -1.36,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "6.3 Robustness on OOD demonstrations via in-context learning",
+        "quote": "5-shot | 72.09 ± 0.28",
+        "bbox": [
+          105.438515625,
+          128.599453125,
+          506.561484375,
+          225.634921875
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Few-shot (5-shot in-distribution)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-QA20-Demo",
+        "metric": "Accuracy (%)",
+        "value": 84.41,
+        "baseline_label": "zero-shot",
+        "baseline_value": 77.43,
+        "delta": 6.98,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "6.3 Robustness on OOD demonstrations via in-context learning",
+        "quote": "84.41 ± 1.87",
+        "bbox": [
+          105.438515625,
+          128.599453125,
+          506.561484375,
+          225.634921875
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Few-shot (Facts)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-Facts-Demo",
+        "metric": "Accuracy (%)",
+        "value": 85.11,
+        "baseline_label": "zero-shot",
+        "baseline_value": 77.43,
+        "delta": 7.68,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "6.3 Robustness on OOD demonstrations via in-context learning",
+        "quote": "Facts | 67.91 ± 1.05 | 72.52 ± 0.17 | 6.35 ± 1.23 | 85.11 ± 0.43",
+        "bbox": [
+          105.438515625,
+          128.599453125,
+          506.561484375,
+          225.634921875
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Few-shot (Facts)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-Facts-Demo",
+        "metric": "Accuracy (%)",
+        "value": 67.91,
+        "baseline_label": "zero-shot",
+        "baseline_value": 73.45,
+        "delta": -5.54,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "6.3 Robustness on OOD demonstrations via in-context learning",
+        "quote": "Facts | 67.91 ± 1.05",
+        "bbox": [
+          105.438515625,
+          128.599453125,
+          506.561484375,
+          225.634921875
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Few-shot (ML)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-ML-Demo",
+        "metric": "Accuracy (%)",
+        "value": 63.55,
+        "baseline_label": "zero-shot",
+        "baseline_value": 73.45,
+        "delta": -9.9,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "6.3 Robustness on OOD demonstrations via in-context learning",
+        "quote": "ML | 63.55 ± 0.53",
+        "bbox": [
+          105.438515625,
+          128.599453125,
+          506.561484375,
+          225.634921875
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Few-shot (ML)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "RealtimeQA-ML-Demo",
+        "metric": "Accuracy (%)",
+        "value": 74.66,
+        "baseline_label": "zero-shot",
+        "baseline_value": 77.43,
+        "delta": -2.77,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 32,
+        "section": "6.3 Robustness on OOD demonstrations via in-context learning",
+        "quote": "74.66 ± 1.45 | 92.65 ± 1.37",
+        "bbox": [
+          105.438515625,
+          128.599453125,
+          506.561484375,
+          225.634921875
+        ],
+        "block_id": "/page/31/Table/1",
+        "source_table": "Table 15"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Counterfactual-CF(x)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SNLI-CAD/SNLI-RP",
+        "metric": "Accuracy",
+        "value": 0.89,
+        "baseline_label": "Zero-shot",
+        "baseline_value": 0.9,
+        "delta": -0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "7.1 Robustness against counterfactual demonstrations",
+        "quote": "SNLI-CAD | SNLI-RP | GPT-3.5GPT-4 | 0.740.90 | 0.900.89",
+        "bbox": [
+          119.495390625,
+          323.1687533569336,
+          488.918671875,
+          494.018410949707
+        ],
+        "block_id": "/page/33/Table/2",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Counterfactual-Demo+CF(x)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SNLI-CAD/SNLI-RP",
+        "metric": "Accuracy",
+        "value": 0.85,
+        "baseline_label": "Zero-shot",
+        "baseline_value": 0.74,
+        "delta": 0.11,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "7.1 Robustness against counterfactual demonstrations",
+        "quote": "0.85 ± 0.02 | 0.91 ± 0.01",
+        "bbox": [
+          119.495390625,
+          323.1687533569336,
+          488.918671875,
+          494.018410949707
+        ],
+        "block_id": "/page/33/Table/2",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "MSGS-syntactic_category-Demo+CF",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MSGS-syntactic_category",
+        "metric": "Accuracy",
+        "value": 1.0,
+        "baseline_label": "Zero-shot",
+        "baseline_value": 0.81,
+        "delta": 0.19,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "7.1 Robustness against counterfactual demonstrations",
+        "quote": "syntactic_category | GPT-3.5GPT-4 | 0.550.81 | 1.000.99",
+        "bbox": [
+          119.495390625,
+          323.1687533569336,
+          488.918671875,
+          494.018410949707
+        ],
+        "block_id": "/page/33/Table/2",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "MSGS-control_raising-Demo",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "MSGS-control_raising",
+        "metric": "Accuracy",
+        "value": 0.54,
+        "baseline_label": "Zero-shot",
+        "baseline_value": 0.53,
+        "delta": 0.01,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 34,
+        "section": "7.1 Robustness against counterfactual demonstrations",
+        "quote": "control_raising | GPT-3.5GPT-4 | 0.500.53 | 0.530.91 | 0.52 ± 0.010.54 ± 0.04",
+        "bbox": [
+          119.495390625,
+          323.1687533569336,
+          488.918671875,
+          494.018410949707
+        ],
+        "block_id": "/page/33/Table/2",
+        "source_table": "Table 17"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Spurious-Verb non-entailment",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HANS-Verb",
+        "metric": "Accuracy",
+        "value": 0.51,
+        "baseline_label": "Zero-shot",
+        "baseline_value": 0.58,
+        "delta": -0.07,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 37,
+        "section": "7.3 Robustness against backdoors in demonstrations",
+        "quote": "Verb | GPT-3.5 | 0.59 | 0.81 | ... | GPT-4 | 0.58 | 0.84 | 0.67±0.10 | 0.66±0.20 | 0.51±0.02 | 0.98±0.03",
+        "bbox": [
+          148.123125,
+          100.36125,
+          462.6815625,
+          277.07625
+        ],
+        "block_id": "/page/36/Table/1",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Spurious-Adverb entailment-correlated",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "HANS-Adverb",
+        "metric": "Accuracy",
+        "value": 0.54,
+        "baseline_label": "Zero-shot",
+        "baseline_value": 0.57,
+        "delta": -0.03,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 37,
+        "section": "7.3 Robustness against backdoors in demonstrations",
+        "quote": "Adverb | GPT-3.5 | 0.57 | 0.85 | 0.54±0.04 | 0.92±0.07",
+        "bbox": [
+          148.123125,
+          100.36125,
+          462.6815625,
+          277.07625
+        ],
+        "block_id": "/page/36/Table/1",
+        "source_table": "Table 19"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Backdoor-BadWord-Setup1",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-BadWord",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 0.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 38,
+        "section": "7.3.1 Evaluation setup",
+        "quote": "Setup 1 | GPT-3.5 | 0.92±0.01 | 0.17±0.05",
+        "bbox": [
+          106.9625390625,
+          269.0325,
+          505.0374609375,
+          360.545625
+        ],
+        "block_id": "/page/37/Table/3",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Backdoor-BadWord-Setup1",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-BadWord",
+        "metric": "Clean Accuracy (CACC)",
+        "value": 0.92,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 38,
+        "section": "7.3.1 Evaluation setup",
+        "quote": "Setup 1 | GPT-3.5 | 0.92±0.01 | 0.17±0.05",
+        "bbox": [
+          106.9625390625,
+          269.0325,
+          505.0374609375,
+          360.545625
+        ],
+        "block_id": "/page/37/Table/3",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Backdoor-BadWord-Setup2",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-BadWord",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 0.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 38,
+        "section": "7.3.1 Evaluation setup",
+        "quote": "Setup 2 | GPT-4 | 0.95±0.01 | 0.89±0.09",
+        "bbox": [
+          106.9625390625,
+          269.0325,
+          505.0374609375,
+          360.545625
+        ],
+        "block_id": "/page/37/Table/3",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Backdoor-AddSent-Setup2",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-AddSent",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 0.97,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 38,
+        "section": "7.3.1 Evaluation setup",
+        "quote": "Setup 2 | GPT-4 | 0.95±0.01 | 0.89±0.09 | 0.95±0.00 | 0.97±0.03",
+        "bbox": [
+          106.9625390625,
+          269.0325,
+          505.0374609375,
+          360.545625
+        ],
+        "block_id": "/page/37/Table/3",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Backdoor-Instruction-Setup1",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-BadWord-Instr",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 1.0,
+        "baseline_label": "Benign description",
+        "baseline_value": 0.11,
+        "delta": 0.89,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 39,
+        "section": "7.3.2 Results",
+        "quote": "GPT-4 | 0.95 \\pm 0.01 | 1.00 \\pm 0.00 | 0.96 \\pm 0.00 | 0.11 \\pm 0.07",
+        "bbox": [
+          169.47140625,
+          402.086953125,
+          440.13796875,
+          451.788046875
+        ],
+        "block_id": "/page/38/Table/7",
+        "source_table": "Table 23"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Backdoor-BadWord-Setup3",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-BadWord",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 0.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 38,
+        "section": "7.3.1 Evaluation setup",
+        "quote": "Setup 3 | GPT-3.5 | 0.76±0.06 | 0.55±0.12",
+        "bbox": [
+          106.9625390625,
+          269.0325,
+          505.0374609375,
+          360.545625
+        ],
+        "block_id": "/page/37/Table/3",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Backdoor-BadWord-Setup3",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-BadWord",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 0.71,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 38,
+        "section": "7.3.1 Evaluation setup",
+        "quote": "Setup 3 | ... | GPT-4 | 0.94±0.01 | 0.71±0.21",
+        "bbox": [
+          106.9625390625,
+          269.0325,
+          505.0374609375,
+          360.545625
+        ],
+        "block_id": "/page/37/Table/3",
+        "source_table": "Table 20"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Backdoor-Backdoor-Last",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "SST-2-Location",
+        "metric": "Attack Success Rate (ASR)",
+        "value": 0.45,
+        "baseline_label": "Backdoor-First",
+        "baseline_value": 0.86,
+        "delta": -0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 39,
+        "section": "7.3.2 Results",
+        "quote": "GPT-4 | 0.95 ± 0.01 | 0.89 ± 0.09 | 0.96 ± 0.00 | 0.86 ± 0.19 | 0.95 ± 0.00 | 0.45 ± 0.43",
+        "bbox": [
+          126.5178515625,
+          89.618203125,
+          480.7008984375,
+          139.319296875
+        ],
+        "block_id": "/page/38/Table/1",
+        "source_table": "Table 21"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Context-200",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 5.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 40,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "Context (200) | ... | GPT-3.5 | 5.23% | 14.74% | 13.06%",
+        "bbox": [
+          166.7281640625,
+          90.56953125,
+          442.8812109375,
+          240.46171875
+        ],
+        "block_id": "/page/39/Table/1",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Context-200",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 3.19,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 40,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "Context (200) | ... | GPT-4 | 3.19% | 8.40% | 8.88%",
+        "bbox": [
+          166.7281640625,
+          90.56953125,
+          442.8812109375,
+          240.46171875
+        ],
+        "block_id": "/page/39/Table/1",
+        "source_table": "Table 24"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "5-shot Template-A (known domain)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 48.19,
+        "baseline_label": "GPT-Neo-2.7B-5shot",
+        "baseline_value": 37.06,
+        "delta": 11.13,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 41,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "5-shot (A) | GPT-4 | 48.19% | 48.25% | 98.69%",
+        "bbox": [
+          103.9264453125,
+          105.72890625,
+          506.8782421875,
+          444.95859375
+        ],
+        "block_id": "/page/40/Table/3",
+        "source_table": "Table 25a"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "5-shot Template-A (known domain)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 27.72,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 41,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "5-shot (A) | GPT-3.5 | 27.72% | 27.88% | 60.01%",
+        "bbox": [
+          103.9264453125,
+          105.72890625,
+          506.8782421875,
+          444.95859375
+        ],
+        "block_id": "/page/40/Table/3",
+        "source_table": "Table 25a"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "1-shot Template-A (known domain)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 31.88,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 41,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "1-shot (A) | ... | GPT-4 | 31.88% | 39.48% | 54.16%",
+        "bbox": [
+          103.9264453125,
+          105.72890625,
+          506.8782421875,
+          444.95859375
+        ],
+        "block_id": "/page/40/Table/3",
+        "source_table": "Table 25a"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "0-shot Template-A (known domain)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 18.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 41,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "0-shot (A) | ... | GPT-4 | 18.80% | 19.68% | 87.80%",
+        "bbox": [
+          103.9264453125,
+          105.72890625,
+          506.8782421875,
+          444.95859375
+        ],
+        "block_id": "/page/40/Table/3",
+        "source_table": "Table 25a"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "0-shot Template-B (known domain)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Enron-Email",
+        "metric": "Email Recovery Accuracy (%)",
+        "value": 21.28,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 41,
+        "section": "8.1 Privacy leakage of training data",
+        "quote": "0-shot (B) | ... | GPT-4 | 21.28% | 21.28% | 99.67%",
+        "bbox": [
+          103.9264453125,
+          105.72890625,
+          506.8782421875,
+          444.95859375
+        ],
+        "block_id": "/page/40/Table/3",
+        "source_table": "Table 25a"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 (few-shot)",
+        "method": "GPT-4 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality",
+        "metric": "Accuracy (%)",
+        "value": 89.3,
+        "baseline_label": "RoBERTa-large",
+        "baseline_value": 90.4,
+        "delta": -1.1,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-4 (few-shot) | 89.3",
+        "bbox": [
+          106.9505859375,
+          431.523984375,
+          506.2447265625,
+          476.491640625
+        ],
+        "block_id": "/page/48/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 (few-shot)",
+        "method": "GPT-3.5 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality",
+        "metric": "Accuracy (%)",
+        "value": 87.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-3.5 (few-shot) | 87.9",
+        "bbox": [
+          106.9505859375,
+          431.523984375,
+          506.2447265625,
+          476.491640625
+        ],
+        "block_id": "/page/48/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 (zero-shot)",
+        "method": "GPT-3.5 (zero-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality",
+        "metric": "Accuracy (%)",
+        "value": 85.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-3.5 (zero-shot) | 85.1",
+        "bbox": [
+          106.9505859375,
+          431.523984375,
+          506.2447265625,
+          476.491640625
+        ],
+        "block_id": "/page/48/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 (zero-shot)",
+        "method": "GPT-4 (zero-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality",
+        "metric": "Accuracy (%)",
+        "value": 89.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-4 (zero-shot) | 89.0",
+        "bbox": [
+          106.9505859375,
+          431.523984375,
+          506.2447265625,
+          476.491640625
+        ],
+        "block_id": "/page/48/Table/3",
+        "source_table": "Table 26"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Few-shot-Short",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality-Short",
+        "metric": "Accuracy (%)",
+        "value": 95.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Few-shot | GPT-3.5 | 95.0 | 78.3",
+        "bbox": [
+          194.7582421875,
+          605.299921875,
+          416.0464453125,
+          675.512578125
+        ],
+        "block_id": "/page/48/Table/6",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Few-shot-Short",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality-Short",
+        "metric": "Accuracy (%)",
+        "value": 97.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-4 | 97.8 | 79.2",
+        "bbox": [
+          194.7582421875,
+          605.299921875,
+          416.0464453125,
+          675.512578125
+        ],
+        "block_id": "/page/48/Table/6",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Few-shot-Long",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality-Long",
+        "metric": "Accuracy (%)",
+        "value": 78.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Few-shot | GPT-3.5 | 95.0 | 78.3",
+        "bbox": [
+          194.7582421875,
+          605.299921875,
+          416.0464453125,
+          675.512578125
+        ],
+        "block_id": "/page/48/Table/6",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Few-shot-Long",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality-Long",
+        "metric": "Accuracy (%)",
+        "value": 79.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-4 | 97.8 | 79.2",
+        "bbox": [
+          194.7582421875,
+          605.299921875,
+          416.0464453125,
+          675.512578125
+        ],
+        "block_id": "/page/48/Table/6",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Zero-shot-Short",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality-Short",
+        "metric": "Accuracy (%)",
+        "value": 92.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Zero-shot | GPT-3.5 | 92.7 | 76.0",
+        "bbox": [
+          194.7582421875,
+          605.299921875,
+          416.0464453125,
+          675.512578125
+        ],
+        "block_id": "/page/48/Table/6",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Zero-shot-Short",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-CommonsenseMorality-Short",
+        "metric": "Accuracy (%)",
+        "value": 96.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 49,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "GPT-4 | 96.1 | 80.5",
+        "bbox": [
+          194.7582421875,
+          605.299921875,
+          416.0464453125,
+          675.512578125
+        ],
+        "block_id": "/page/48/Table/6",
+        "source_table": "Table 27"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Zero-shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Jiminy-Cricket",
+        "metric": "Accuracy (%)",
+        "value": 73.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 50,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Zero-shot | 73.9 | 78.6",
+        "bbox": [
+          242.3077734375,
+          134.570390625,
+          368.4969140625,
+          174.804609375
+        ],
+        "block_id": "/page/49/Table/2",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Zero-shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Jiminy-Cricket",
+        "metric": "Accuracy (%)",
+        "value": 78.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 50,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Zero-shot | 73.9 | 78.6",
+        "bbox": [
+          242.3077734375,
+          134.570390625,
+          368.4969140625,
+          174.804609375
+        ],
+        "block_id": "/page/49/Table/2",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Few-shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Jiminy-Cricket",
+        "metric": "Accuracy (%)",
+        "value": 77.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 50,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Few-shot | 77.9 | 82.4",
+        "bbox": [
+          242.3077734375,
+          134.570390625,
+          368.4969140625,
+          174.804609375
+        ],
+        "block_id": "/page/49/Table/2",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Few-shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Jiminy-Cricket",
+        "metric": "Accuracy (%)",
+        "value": 82.4,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 50,
+        "section": "9.1 Evaluation on standard machine ethics benchmarks",
+        "quote": "Few-shot | 77.9 | 82.4",
+        "bbox": [
+          242.3077734375,
+          134.570390625,
+          368.4969140625,
+          174.804609375
+        ],
+        "block_id": "/page/49/Table/2",
+        "source_table": "Table 28"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 (few-shot)",
+        "method": "GPT-4 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Justice",
+        "metric": "Accuracy (%)",
+        "value": 96.2,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-4 (few-shot) | 96.2 | 94.0 | 94.6 | 95.5 | 89.3",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 (few-shot)",
+        "method": "GPT-4 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Deontology",
+        "metric": "Accuracy (%)",
+        "value": 94.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-4 (few-shot) | 96.2 | 94.0 | 94.6 | 95.5 | 89.3",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 (few-shot)",
+        "method": "GPT-4 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Virtue",
+        "metric": "Accuracy (%)",
+        "value": 94.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-4 (few-shot) | 96.2 | 94.0 | 94.6 | 95.5 | 89.3",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4 (few-shot)",
+        "method": "GPT-4 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Utilitarianism",
+        "metric": "Accuracy (%)",
+        "value": 95.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-4 (few-shot) | 96.2 | 94.0 | 94.6 | 95.5",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 (few-shot)",
+        "method": "GPT-3.5 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Justice",
+        "metric": "Accuracy (%)",
+        "value": 87.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-3.5 (few-shot) | 87.9 | 73.1 | 93.6 | 94.8 | 87.9",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 (few-shot)",
+        "method": "GPT-3.5 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Deontology",
+        "metric": "Accuracy (%)",
+        "value": 73.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-3.5 (few-shot) | 87.9 | 73.1",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 (few-shot)",
+        "method": "GPT-3.5 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Virtue",
+        "metric": "Accuracy (%)",
+        "value": 93.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-3.5 (few-shot) | 87.9 | 73.1 | 93.6",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5 (few-shot)",
+        "method": "GPT-3.5 (few-shot)",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Utilitarianism",
+        "metric": "Accuracy (%)",
+        "value": 94.8,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 94,
+        "section": "G.1.3 More experimental results",
+        "quote": "GPT-3.5 (few-shot) | 87.9 | 73.1 | 93.6 | 94.8",
+        "bbox": [
+          130.7612109375,
+          155.886328125,
+          478.8481640625,
+          309.723046875
+        ],
+        "block_id": "/page/93/Table/3",
+        "source_table": "Table 47"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "jb_prompt3",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 33.5,
+        "baseline_label": "Benign",
+        "baseline_value": 6.0,
+        "delta": 27.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "jb_prompt3 | 33.50 | +27.50",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "jb_prompt2",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 100.0,
+        "baseline_label": "Benign",
+        "baseline_value": 4.0,
+        "delta": 96.0,
+        "delta_unit": "absolute",
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "jb_prompt2 | 100.00 | +96.00",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "jb_prompt4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 100.0,
+        "baseline_label": "Benign",
+        "baseline_value": 4.0,
+        "delta": 96.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "jb_prompt4 | 100.00 | +96.00",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "combine_weak",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 94.0,
+        "baseline_label": "Benign",
+        "baseline_value": 4.0,
+        "delta": 90.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "combine_weak | 94.00 | +90.00",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "combine_strong",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 65.5,
+        "baseline_label": "Benign",
+        "baseline_value": 6.0,
+        "delta": 59.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "combine_strong | 65.50 | +59.50",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "jb_prompt4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Jiminy-Cricket-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 99.5,
+        "baseline_label": "Benign",
+        "baseline_value": 44.5,
+        "delta": 55.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "jb_prompt4 | 99.50 | +55.00",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "jb_prompt2",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Jiminy-Cricket-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 100.0,
+        "baseline_label": "Benign",
+        "baseline_value": 35.0,
+        "delta": 65.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "jb_prompt2 | 100.00 | +65.00",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Benign",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 6.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "ETHICS | benign | 6.00 | -",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Benign",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "ETHICS-Jailbreak",
+        "metric": "False Positive Rate (%)",
+        "value": 4.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 51,
+        "section": "9.2 Evaluation on jailbreaking prompts",
+        "quote": "benign | 4.00 | -",
+        "bbox": [
+          137.4669140625,
+          221.88375,
+          472.1424609375,
+          389.131875
+        ],
+        "block_id": "/page/50/Table/3",
+        "source_table": "Table 29"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt0.0",
+        "metric": "Accuracy (%)",
+        "value": 63.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "GPT-3.5 | 63.5 | 0.17 | 0.20",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt0.0",
+        "metric": "Accuracy (%)",
+        "value": 72.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "GPT-4 | 72.5 | 0.21 | 0.26",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt0.0",
+        "metric": "Demographic Parity Difference",
+        "value": 0.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "GPT-3.5 | 63.5 | 0.17 | 0.20",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt0.0",
+        "metric": "Demographic Parity Difference",
+        "value": 0.21,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "GPT-4 | 72.5 | 0.21 | 0.26",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt1.0",
+        "metric": "Accuracy (%)",
+        "value": 73.0,
+        "baseline_label": "bPt0.0",
+        "baseline_value": 63.5,
+        "delta": 9.5,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "73.0 | 0.46 | 0.49",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt1.0",
+        "metric": "Accuracy (%)",
+        "value": 85.5,
+        "baseline_label": "bPt0.0",
+        "baseline_value": 72.5,
+        "delta": 13.0,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "85.5 | 0.71 | 0.95",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt1.0",
+        "metric": "Demographic Parity Difference",
+        "value": 0.46,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "73.0 | 0.46 | 0.49",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt1.0",
+        "metric": "Demographic Parity Difference",
+        "value": 0.71,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "85.5 | 0.71 | 0.95",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-zero-shot-bPt1.0",
+        "metric": "Equalized Odds Difference",
+        "value": 0.95,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 54,
+        "section": "10.1 Metrics of fairness",
+        "quote": "85.5 | 0.71 | 0.95",
+        "bbox": [
+          112.801640625,
+          323.55984375,
+          494.417109375,
+          375.62765625
+        ],
+        "block_id": "/page/53/Table/3",
+        "source_table": "Table 30"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "32-shot-bPc0.0",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-32shot",
+        "metric": "Demographic Parity Difference",
+        "value": 0.033,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 55,
+        "section": "10.1 Metrics of fairness",
+        "quote": "GPT-3.5 | 61.5 | 0.033 | 0.057",
+        "bbox": [
+          112.19203125,
+          108.165234375,
+          495.02671875,
+          159.444140625
+        ],
+        "block_id": "/page/54/Table/1",
+        "source_table": "Table 31"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "32-shot-bPc0.0",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-32shot",
+        "metric": "Demographic Parity Difference",
+        "value": 0.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 55,
+        "section": "10.1 Metrics of fairness",
+        "quote": "GPT-4 | 72.0 | 0.10 | 0.12",
+        "bbox": [
+          112.19203125,
+          108.165234375,
+          495.02671875,
+          159.444140625
+        ],
+        "block_id": "/page/54/Table/1",
+        "source_table": "Table 31"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "32-shot-bPc1.0",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-32shot",
+        "metric": "Demographic Parity Difference",
+        "value": 0.12,
+        "baseline_label": "bPc0.0",
+        "baseline_value": 0.033,
+        "delta": 0.087,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 55,
+        "section": "10.1 Metrics of fairness",
+        "quote": "70.5 | 0.12 | 0.20",
+        "bbox": [
+          112.19203125,
+          108.165234375,
+          495.02671875,
+          159.444140625
+        ],
+        "block_id": "/page/54/Table/1",
+        "source_table": "Table 31"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "32-shot-bPc1.0",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-32shot",
+        "metric": "Demographic Parity Difference",
+        "value": 0.28,
+        "baseline_label": "bPc0.0",
+        "baseline_value": 0.1,
+        "delta": 0.18,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 55,
+        "section": "10.1 Metrics of fairness",
+        "quote": "79.0 | 0.28 | 0.34",
+        "bbox": [
+          112.19203125,
+          108.165234375,
+          495.02671875,
+          159.444140625
+        ],
+        "block_id": "/page/54/Table/1",
+        "source_table": "Table 31"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "16-shot-fair",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-bPt0.5",
+        "metric": "Demographic Parity Difference",
+        "value": 0.25,
+        "baseline_label": "0-shot",
+        "baseline_value": 0.46,
+        "delta": -0.21,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 56,
+        "section": "Takeaways.",
+        "quote": "GPT-3.5 | 73.0 | 0.46 | 0.49 | 67.5 | 0.25 | 0.084",
+        "bbox": [
+          144.8061328125,
+          681.297890625,
+          462.4126171875,
+          730.998984375
+        ],
+        "block_id": "/page/55/Table/12",
+        "source_table": "Table 33"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "16-shot-fair",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-bPt0.5",
+        "metric": "Demographic Parity Difference",
+        "value": 0.38,
+        "baseline_label": "0-shot",
+        "baseline_value": 0.71,
+        "delta": -0.33,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 56,
+        "section": "Takeaways.",
+        "quote": "GPT-4 | 85.5 | 0.71 | 0.95 | 78.0 | 0.38 | 0.27",
+        "bbox": [
+          144.8061328125,
+          681.297890625,
+          462.4126171875,
+          730.998984375
+        ],
+        "block_id": "/page/55/Table/12",
+        "source_table": "Table 33"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "32-shot-fair",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-bPt0.5",
+        "metric": "Demographic Parity Difference",
+        "value": 0.19,
+        "baseline_label": "0-shot",
+        "baseline_value": 0.46,
+        "delta": -0.27,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 56,
+        "section": "Takeaways.",
+        "quote": "63.5 | 0.19 | 0.10",
+        "bbox": [
+          144.8061328125,
+          681.297890625,
+          462.4126171875,
+          730.998984375
+        ],
+        "block_id": "/page/55/Table/12",
+        "source_table": "Table 33"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "32-shot-fair",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-bPt0.5",
+        "metric": "Demographic Parity Difference",
+        "value": 0.3,
+        "baseline_label": "0-shot",
+        "baseline_value": 0.71,
+        "delta": -0.41,
+        "delta_unit": "absolute",
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 56,
+        "section": "Takeaways.",
+        "quote": "75.0 | 0.30 | 0.13",
+        "bbox": [
+          144.8061328125,
+          681.297890625,
+          462.4126171875,
+          730.998984375
+        ],
+        "block_id": "/page/55/Table/12",
+        "source_table": "Table 33"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 80.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Llama-v2-7B-Chat | 80.00 | 97.60 | 51.01 | 75.65 | 55.54 | 97.39 | 40.58 | 100.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 97.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Llama-v2-7B-Chat | 80.00 | 97.60",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvRobustness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 51.01,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Llama-v2-7B-Chat | ... | 51.01 | 75.65",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 75.65,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "75.65",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Demo-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 55.54,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "55.54 | 97.39 | 40.58 | 100.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 97.39,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "97.39",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 40.58,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "40.58",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Fairness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "100.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 28.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Vicuna-7B | 28.00 | 81.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 81.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Vicuna-7B | 28.00 | 81.00 | 52.16",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvRobustness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 52.16,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "52.16 | 59.10 | 57.99 | 72.96 | 48.22 | 85.53",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 59.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "59.10 | 57.99",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Demo-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 57.99,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "57.99 | 72.96 | 48.22 | 85.53",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 72.96,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "72.96 | 48.22",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 48.22,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "48.22 | 85.53",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Vicuna-7B",
+        "method": "Vicuna-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Fairness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 85.53,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "85.53",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Alpaca-7B",
+        "method": "Alpaca-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 22.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Alpaca-7B | 22.00 | 43.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Alpaca-7B",
+        "method": "Alpaca-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 43.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Alpaca-7B | 22.00 | 43.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Alpaca-7B",
+        "method": "Alpaca-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvRobustness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 46.43,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "46.43 | 51.79",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Alpaca-7B",
+        "method": "Alpaca-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 46.39,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "46.39 | 30.43 | 92.63",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "MPT-7B",
+        "method": "MPT-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 40.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "MPT-7B | 40.00 | 84.60",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "MPT-7B",
+        "method": "MPT-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 84.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "MPT-7B | 40.00 | 84.60",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Falcon-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 39.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Falcon-7B | 39.00 | 87.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "Falcon-7B",
+        "method": "Falcon-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 87.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Falcon-7B | 39.00 | 87.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "RedPajama-7B-Instruct",
+        "method": "RedPajama-7B-Instruct",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 18.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "RedPajama-7B-Instruct | 18.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 47.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-3.5 | 47.00 | 87.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 87.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-3.5 | 47.00 | 87.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvRobustness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 56.69,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-3.5 | 47.00 | 87.00 | 56.69",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 73.58,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-3.5 | 47.00 | 87.00 | 56.69 | 73.58",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Demo-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 81.28,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "73.58 | 81.28 | 70.13 | 86.38 | 77.57",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 70.13,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "70.13 | 86.38",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 86.38,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "86.38 | 77.57",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Fairness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 77.57,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "77.57",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 41.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-4 | 41.00 | 77.00",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 77.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-4 | 41.00 | 77.00 | 64.04",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvRobustness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 64.04,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-4 | 41.00 | 77.00 | 64.04 | 87.55",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 87.55,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": true,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-4 | ... | 87.55 | 77.94",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Demo-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 77.94,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "87.55 | 77.94 | 66.11 | 76.60 | 63.67",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 66.11,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "66.11 | 76.60",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 76.6,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "76.60 | 63.67",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Fairness-Aggregate",
+        "metric": "Trustworthiness Score",
+        "value": 63.67,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "63.67",
+        "bbox": [
+          132.285234375,
+          127.779609375,
+          477.324140625,
+          229.548515625
+        ],
+        "block_id": "/page/102/Table/1",
+        "source_table": "Table 57"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Benign-System-Prompt",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-RealToxicityPrompts-Nontoxic",
+        "metric": "1 - Expected Maximum Toxicity (%)",
+        "value": 89.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-4 | 89.00 | 62.00",
+        "bbox": [
+          113.996953125,
+          266.967421875,
+          495.612421875,
+          371.891953125
+        ],
+        "block_id": "/page/102/Table/3",
+        "source_table": "Table 58"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Benign-System-Prompt",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-RealToxicityPrompts-Nontoxic",
+        "metric": "1 - Expected Maximum Toxicity (%)",
+        "value": 87.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-3.5 | 87.00 | 63.00",
+        "bbox": [
+          113.996953125,
+          266.967421875,
+          495.612421875,
+          371.891953125
+        ],
+        "block_id": "/page/102/Table/3",
+        "source_table": "Table 58"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Benign-System-Prompt",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-RealToxicityPrompts-Nontoxic",
+        "metric": "1 - Expected Maximum Toxicity (%)",
+        "value": 86.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Llama-v2-7B-Chat | 86.23 | 74.68",
+        "bbox": [
+          113.996953125,
+          266.967421875,
+          495.612421875,
+          371.891953125
+        ],
+        "block_id": "/page/102/Table/3",
+        "source_table": "Table 58"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Adversarial-System-Prompt",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-RealToxicityPrompts-Toxic",
+        "metric": "1 - Expected Maximum Toxicity (%)",
+        "value": 78.74,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "Llama-v2-7B-Chat | 86.23 | 74.68 | 77.12 | 79.63 | 81.68 | 78.74",
+        "bbox": [
+          113.996953125,
+          266.967421875,
+          495.612421875,
+          371.891953125
+        ],
+        "block_id": "/page/102/Table/3",
+        "source_table": "Table 58"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Adversarial-System-Prompt",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Toxicity-RealToxicityPrompts-Toxic",
+        "metric": "1 - Expected Maximum Toxicity (%)",
+        "value": 6.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 103,
+        "section": "I.1 Aggregation protocol for each trustworthiness perspective",
+        "quote": "GPT-4 | 89.00 | 62.00 | 76.00 | 76.00 | 9.00 | 6.00",
+        "bbox": [
+          113.996953125,
+          266.967421875,
+          495.612421875,
+          371.891953125
+        ],
+        "block_id": "/page/102/Table/3",
+        "source_table": "Table 58"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Targeted",
+        "metric": "Bias Score (1 - agreementIndex)*100",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "Llama-v2-7B-Chat | 93.00 | 100.00 | 100.00",
+        "bbox": [
+          196.927734375,
+          96.4940625,
+          410.291015625,
+          194.3184375
+        ],
+        "block_id": "/page/105/Table/1",
+        "source_table": "Table 59"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Targeted",
+        "metric": "Bias Score (1 - agreementIndex)*100",
+        "value": 40.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 99.00 | 93.00 | 40.00",
+        "bbox": [
+          196.927734375,
+          96.4940625,
+          410.291015625,
+          194.3184375
+        ],
+        "block_id": "/page/105/Table/1",
+        "source_table": "Table 59"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Targeted",
+        "metric": "Bias Score (1 - agreementIndex)*100",
+        "value": 64.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 99.00 | 98.00 | 64.00",
+        "bbox": [
+          196.927734375,
+          96.4940625,
+          410.291015625,
+          194.3184375
+        ],
+        "block_id": "/page/105/Table/1",
+        "source_table": "Table 59"
+      }
+    },
+    {
+      "value": {
+        "model": "Alpaca-7B",
+        "method": "Alpaca-7B",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Stereotype-Bias-Benign",
+        "metric": "Bias Score (1 - agreementIndex)*100",
+        "value": 43.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "Alpaca-7B | 43.00 | 43.00 | 43.00",
+        "bbox": [
+          196.927734375,
+          96.4940625,
+          410.291015625,
+          194.3184375
+        ],
+        "block_id": "/page/105/Table/1",
+        "source_table": "Table 59"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Knowledge-Aggregate",
+        "metric": "Robustness Score (%)",
+        "value": 95.63,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 95.63 | 87.91 | 78.91 | 87.74",
+        "bbox": [
+          104.23125,
+          499.803046875,
+          506.5734375,
+          601.571953125
+        ],
+        "block_id": "/page/105/Table/7",
+        "source_table": "Table 61"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Knowledge-Aggregate",
+        "metric": "Robustness Score (%)",
+        "value": 80.23,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 80.23 | 75.01 | 67.00 | 72.09",
+        "bbox": [
+          104.23125,
+          499.803046875,
+          506.5734375,
+          601.571953125
+        ],
+        "block_id": "/page/105/Table/7",
+        "source_table": "Table 61"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "OoD-Knowledge-Aggregate",
+        "metric": "Robustness Score (%)",
+        "value": 99.81,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "Llama-v2-7B-Chat | 99.81 | 81.12",
+        "bbox": [
+          104.23125,
+          499.803046875,
+          506.5734375,
+          601.571953125
+        ],
+        "block_id": "/page/105/Table/7",
+        "source_table": "Table 61"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvDemo-Counterfactual",
+        "metric": "Robustness Score (%)",
+        "value": 91.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 91.50 | 91.16 | 51.17",
+        "bbox": [
+          185.6380078125,
+          625.873359375,
+          422.7760546875,
+          727.642265625
+        ],
+        "block_id": "/page/105/Table/9",
+        "source_table": "Table 62"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvDemo-Counterfactual",
+        "metric": "Robustness Score (%)",
+        "value": 82.66,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 82.66 | 82.91 | 78.28",
+        "bbox": [
+          185.6380078125,
+          625.873359375,
+          422.7760546875,
+          727.642265625
+        ],
+        "block_id": "/page/105/Table/9",
+        "source_table": "Table 62"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "AdvDemo-Backdoor",
+        "metric": "Robustness Score (%)",
+        "value": 51.17,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 106,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 91.50 | 91.16 | 51.17",
+        "bbox": [
+          185.6380078125,
+          625.873359375,
+          422.7760546875,
+          727.642265625
+        ],
+        "block_id": "/page/105/Table/9",
+        "source_table": "Table 62"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Enron",
+        "metric": "Privacy Protection Score (%)",
+        "value": 77.27,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 77.27 | 72.89 | 48.18",
+        "bbox": [
+          197.8301953125,
+          112.326328125,
+          410.5838671875,
+          212.517421875
+        ],
+        "block_id": "/page/106/Table/1",
+        "source_table": "Table 63"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Enron",
+        "metric": "Privacy Protection Score (%)",
+        "value": 83.82,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 83.82 | 52.03 | 74.54",
+        "bbox": [
+          197.8301953125,
+          112.326328125,
+          410.5838671875,
+          212.517421875
+        ],
+        "block_id": "/page/106/Table/1",
+        "source_table": "Table 63"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "GPT-4",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-PII",
+        "metric": "Privacy Protection Score (%)",
+        "value": 72.89,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 77.27 | 72.89 | 48.18",
+        "bbox": [
+          197.8301953125,
+          112.326328125,
+          410.5838671875,
+          212.517421875
+        ],
+        "block_id": "/page/106/Table/1",
+        "source_table": "Table 63"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "GPT-3.5",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-PII",
+        "metric": "Privacy Protection Score (%)",
+        "value": 52.03,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 83.82 | 52.03 | 74.54",
+        "bbox": [
+          197.8301953125,
+          112.326328125,
+          410.5838671875,
+          212.517421875
+        ],
+        "block_id": "/page/106/Table/1",
+        "source_table": "Table 63"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Llama-2-7B-Chat",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Privacy-Enron",
+        "metric": "Privacy Protection Score (%)",
+        "value": 99.69,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "Llama-v2-7B-Chat | 99.69 | 97.56 | 94.93",
+        "bbox": [
+          197.8301953125,
+          112.326328125,
+          410.5838671875,
+          212.517421875
+        ],
+        "block_id": "/page/106/Table/1",
+        "source_table": "Table 63"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Jailbreak-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Jailbreak",
+        "metric": "Robustness Score (%)",
+        "value": 54.5,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 54.50 | 33.00 | 96.10 | 97.80",
+        "bbox": [
+          132.906796875,
+          268.15078125,
+          475.507265625,
+          370.70859375
+        ],
+        "block_id": "/page/106/Table/3",
+        "source_table": "Table 64"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Jailbreak-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Jailbreak",
+        "metric": "Robustness Score (%)",
+        "value": 19.9,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 19.90 | 22.30 | 92.70 | 95.00",
+        "bbox": [
+          132.906796875,
+          268.15078125,
+          475.507265625,
+          370.70859375
+        ],
+        "block_id": "/page/106/Table/3",
+        "source_table": "Table 64"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Evasive-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Evasive",
+        "metric": "Robustness Score (%)",
+        "value": 33.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 54.50 | 33.00",
+        "bbox": [
+          132.906796875,
+          268.15078125,
+          475.507265625,
+          370.70859375
+        ],
+        "block_id": "/page/106/Table/3",
+        "source_table": "Table 64"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Evasive-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Evasive",
+        "metric": "Robustness Score (%)",
+        "value": 22.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 19.90 | 22.30",
+        "bbox": [
+          132.906796875,
+          268.15078125,
+          475.507265625,
+          370.70859375
+        ],
+        "block_id": "/page/106/Table/3",
+        "source_table": "Table 64"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Zero-shot",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Ethics-Zeroshot-benchmark",
+        "metric": "Accuracy (%)",
+        "value": 96.1,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 54.50 | 33.00 | 96.10 | 97.80",
+        "bbox": [
+          132.906796875,
+          268.15078125,
+          475.507265625,
+          370.70859375
+        ],
+        "block_id": "/page/106/Table/3",
+        "source_table": "Table 64"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-4",
+        "method": "Zero-shot-Fairness-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-Aggregate",
+        "metric": "Fairness Score (%)",
+        "value": 46.3,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-4 | 46.30 | 80.00 | 55.00",
+        "bbox": [
+          168.5808984375,
+          425.143125,
+          438.6378515625,
+          529.27875
+        ],
+        "block_id": "/page/106/Table/5",
+        "source_table": "Table 65"
+      }
+    },
+    {
+      "value": {
+        "model": "GPT-3.5",
+        "method": "Zero-shot-Fairness-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-Aggregate",
+        "metric": "Fairness Score (%)",
+        "value": 70.7,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "GPT-3.5 | 70.70 | 89.40 | 77.50",
+        "bbox": [
+          168.5808984375,
+          425.143125,
+          438.6378515625,
+          529.27875
+        ],
+        "block_id": "/page/106/Table/5",
+        "source_table": "Table 65"
+      }
+    },
+    {
+      "value": {
+        "model": "Llama-2-7B-Chat",
+        "method": "Zero-shot-Fairness-Aggregate",
+        "bit_width": null,
+        "group_size": null,
+        "dataset": "Adult-Aggregate",
+        "metric": "Fairness Score (%)",
+        "value": 100.0,
+        "baseline_label": null,
+        "baseline_value": null,
+        "delta": null,
+        "delta_unit": null,
+        "headline": false,
+        "source_kind": "measured"
+      },
+      "ev": {
+        "page": 107,
+        "section": "I.2 Comprehensive evaluation results of existing LLMs",
+        "quote": "Llama-v2-7B-Chat | 100.00 | 100.00 | 100.00",
+        "bbox": [
+          168.5808984375,
+          425.143125,
+          438.6378515625,
+          529.27875
+        ],
+        "block_id": "/page/106/Table/5",
+        "source_table": "Table 65"
+      }
+    }
+  ],
+  "_metrics_meta": {
+    "schema_version": "a1.v3",
+    "merge_filter": "source_kind == 'measured'",
+    "kept_count": 222,
+    "dropped_cited_count": 7,
+    "dropped_other_count": 0,
+    "headline_count": 28
   }
 }
