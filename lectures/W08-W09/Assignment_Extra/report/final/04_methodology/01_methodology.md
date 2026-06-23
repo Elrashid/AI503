@@ -16,6 +16,7 @@ Augmentation makes small random changes to each image. The pipeline used horizon
 
 
 
+
 The pretrained backbones needed a second data version. These models expect larger inputs and their own scaling. So the raw 0–255 images were kept, upscaled to 128 pixels, and passed through each backbone's own preprocessing. Mixing the two scales would quietly harm accuracy, so both versions were stored.
 
 ### 3.2 Architecture Design (Task 3)

@@ -14,6 +14,7 @@ The from-scratch ladder gave a clear pattern. Test accuracy rose from the two-la
 
 
 
+
 This result matches the expectation set before the run. Plain depth stops helping for three reasons. After several poolings, a 32×32 image has almost no spatial size left. Deep plain networks also suffer from weak gradient signals (He et al., 2016 [R3]). And more layers add more parameters, which makes overfitting worse on limited data. The training curves support this reading, since the gap between training and validation accuracy widened with depth.
 
 ![Training and validation accuracy for the three required CNNs (Models 1-3).](../../figures/fig_curves_accuracy.png)
@@ -23,6 +24,8 @@ This result matches the expectation set before the run. Plain depth stops helpin
 ![Training and validation loss for the three required CNNs (Models 1-3).](../../figures/fig_curves_loss.png)
 
 > **Figure 4.3:** Training and validation loss for the three required CNNs (Models 1-3).
+
+
 
 
 
@@ -66,6 +69,7 @@ Transfer learning filled the top of the board. The best single model was a fine-
 
 
 
+
 The three ensembles took the very top places. A stacking model, which trains a small logistic-regression learner on the base outputs, reached 0.940 F1 (Wolpert, 1992 [R15]). The meta-learner was trained on validation predictions and judged on the test set, so it never saw the test answers in advance.
 
 ![Heatmap of every metric for every model.](../../figures/fig_metrics_heatmap.png)
@@ -79,6 +83,9 @@ The three ensembles took the very top places. A stacking model, which trains a s
 ![Validation-accuracy curves grouped by model family.](../../figures/fig_group_curves.png)
 
 > **Figure 4.7:** Validation-accuracy curves grouped by model family.
+
+
+
 
 
 

@@ -12,3 +12,4 @@
 - [References](10_references/01_references.md)
 - [Appendix A - Figures](11_appendix_a/01_appendix_a.md)
 - [Appendix B - Numeric matrices and worked calculation](12_appendix_b/01_appendix_b.md)
+- [Appendix C - Assignment brief](13_appendix_c/01_appendix_c.md)

@@ -34,6 +34,7 @@ RELATIVE_FILES = [
     "07_improvement/01_improvement.md", "08_limitations/01_limitations.md",
     "09_conclusion/01_conclusion.md", "10_references/01_references.md",
     "11_appendix_a/01_appendix_a.md", "12_appendix_b/01_appendix_b.md",
+    "13_appendix_c/01_appendix_c.md",
 ]
 # Big/tall charts that get their own page (rendered large, on a fresh page).
 FULLPAGE = {"fig_f1_bar", "fig_metrics_heatmap", "fig_group_curves", "fig_confusion_grid"}

@@ -69,6 +69,7 @@ SECTIONS = [
     ('## References',                        '10_references/01_references.md',      'References'),
     ('## Appendix A',                        '11_appendix_a/01_appendix_a.md',     'Appendix A - Figures'),
     ('## Appendix B',                        '12_appendix_b/01_appendix_b.md',     'Appendix B - Numeric matrices and worked calculation'),
+    ('## Appendix C',                        '13_appendix_c/01_appendix_c.md',     'Appendix C - Assignment brief'),
 ]
 
 # locate each section start

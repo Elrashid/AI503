@@ -12,6 +12,7 @@ CIFAR-10 is a standard benchmark of 60,000 colour images (Krizhevsky, 2009 [R7])
 
 
 
+
 The classes are perfectly balanced. The run confirmed 5,000 training images for each of the ten classes. The set also has a fixed train and test split by design, so there is no leakage between them.
 
 Why does this dataset suit a CNN? The pictures are small and natural, and nearby pixels belong together. A CNN reads exactly this kind of local structure (Course Notes, W05–W06, p.18 [R16]). The dataset is large enough to train deep models, yet small enough to run many experiments in one session. It is also a well-known benchmark, so the results are easy to place against published work.

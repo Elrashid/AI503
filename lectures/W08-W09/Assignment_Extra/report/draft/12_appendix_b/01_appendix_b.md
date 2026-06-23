@@ -83,5 +83,3 @@ Champion model: **Ensemble: Stacking (LogReg)**. From the confusion matrix C, fo
 | truck | 954 | 37 | 46 | 0.963 | 0.954 | 0.958 |
 
 Overall accuracy = sum(diagonal) / total = 9398 / 10000 = **0.940**
-
-<!-- APPENDIX END -->

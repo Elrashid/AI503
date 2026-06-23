@@ -36,6 +36,7 @@ CIFAR-10 is a standard benchmark of 60,000 colour images (Krizhevsky, 2009 [R7])
 
 
 
+
 The classes are perfectly balanced. The run confirmed 5,000 training images for each of the ten classes. The set also has a fixed train and test split by design, so there is no leakage between them.
 
 Why does this dataset suit a CNN? The pictures are small and natural, and nearby pixels belong together. A CNN reads exactly this kind of local structure (Course Notes, W05–W06, p.18 [R16]). The dataset is large enough to train deep models, yet small enough to run many experiments in one session. It is also a well-known benchmark, so the results are easy to place against published work.
@@ -55,6 +56,7 @@ Augmentation makes small random changes to each image. The pipeline used horizon
 ![One training image shown with five random augmentations.](figures/fig_augmentation.png)
 
 > **Figure 3.1:** One training image shown with five random augmentations.
+
 
 
 
@@ -113,6 +115,7 @@ The from-scratch ladder gave a clear pattern. Test accuracy rose from the two-la
 
 
 
+
 This result matches the expectation set before the run. Plain depth stops helping for three reasons. After several poolings, a 32×32 image has almost no spatial size left. Deep plain networks also suffer from weak gradient signals (He et al., 2016 [R3]). And more layers add more parameters, which makes overfitting worse on limited data. The training curves support this reading, since the gap between training and validation accuracy widened with depth.
 
 ![Training and validation accuracy for the three required CNNs (Models 1-3).](figures/fig_curves_accuracy.png)
@@ -122,6 +125,8 @@ This result matches the expectation set before the run. Plain depth stops helpin
 ![Training and validation loss for the three required CNNs (Models 1-3).](figures/fig_curves_loss.png)
 
 > **Figure 4.3:** Training and validation loss for the three required CNNs (Models 1-3).
+
+
 
 
 
@@ -165,6 +170,7 @@ Transfer learning filled the top of the board. The best single model was a fine-
 
 
 
+
 The three ensembles took the very top places. A stacking model, which trains a small logistic-regression learner on the base outputs, reached 0.940 F1 (Wolpert, 1992 [R15]). The meta-learner was trained on validation predictions and judged on the test set, so it never saw the test answers in advance.
 
 ![Heatmap of every metric for every model.](figures/fig_metrics_heatmap.png)
@@ -178,6 +184,9 @@ The three ensembles took the very top places. A stacking model, which trains a s
 ![Validation-accuracy curves grouped by model family.](figures/fig_group_curves.png)
 
 > **Figure 4.7:** Validation-accuracy curves grouped by model family.
+
+
+
 
 
 
@@ -215,11 +224,13 @@ The champion ensemble was strong across all ten classes. Per-class F1 ranged fro
 
 
 
+
 Why are cats and dogs harder? Both are four-legged animals with fur and similar poses. At only 32×32 pixels, fine details are lost, so the two classes look alike. The most common single mistake was a real cat predicted as a dog, which happened 67 times. This pattern held from the weak QUICK-mode run through to the final run, which suggests it reflects the data, not the model size.
 
 ![Confusion matrices for the top six models.](figures/fig_confusion_grid.png)
 
 > **Figure 5.2:** Confusion matrices for the top six models.
+
 
 
 
@@ -234,6 +245,7 @@ The confusion matrices show that errors cluster among visually similar groups. A
 ![Ten test images the champion misclassified (true vs predicted).](figures/fig_misclassified.png)
 
 > **Figure 5.3:** Ten test images the champion misclassified (true vs predicted).
+
 
 
 
@@ -270,6 +282,7 @@ The study also added Grad-CAM heatmaps to explain single predictions (Selvaraju 
 ![Grad-CAM heatmaps showing the pixels that drove each prediction.](figures/fig_gradcam.png)
 
 > **Figure 6.1:** Grad-CAM heatmaps showing the pixels that drove each prediction.
+
 
 
 
@@ -496,5 +509,104 @@ Champion model: **Ensemble: Stacking (LogReg)**. From the confusion matrix C, fo
 | truck | 954 | 37 | 46 | 0.963 | 0.954 | 0.958 |
 
 Overall accuracy = sum(diagonal) / total = 9398 / 10000 = **0.940**
+
+## Appendix C - Assignment Brief
+
+*The original assignment instructions, reproduced for reference. The notebook and report above implement all seven tasks (T1-T7).*
+
+### Assignment: Image Classification Using CNN on a Large Dataset
+
+**Title:** Deep Learning-Based Image Classification Using Convolutional Neural Networks.
+
+**Objective:** The aim of this assignment is to design, train, and evaluate a Convolutional Neural Network (CNN) for classifying images from a large image dataset. Students will explore image preprocessing, CNN architecture design, model training, evaluation, and performance analysis.
+
+### Dataset
+
+Use one large image dataset such as:
+
+- CIFAR-10
+- CIFAR-100
+- Fashion-MNIST
+- PlantVillage Dataset
+- Chest X-ray Dataset
+- Kaggle Animals-10 Dataset
+- Food-101 Dataset
+- Brain Tumor MRI Dataset
+- Traffic Signs Dataset
+
+The dataset should include:
+
+- At least 10,000 images
+- Multiple image classes
+- Training and testing sets
+
+### Task 1: Dataset Description
+
+Describe the selected image dataset, including the number of images, number of classes, image size, and examples of categories. Explain why this dataset is suitable for CNN classification.
+
+### Task 2: Image Preprocessing
+
+Apply suitable preprocessing techniques such as image resizing, normalization, train-test split, and data augmentation. Explain why preprocessing is important for CNN performance.
+
+### Task 3: CNN Model Design
+
+Build a CNN model that includes:
+
+- Convolutional layers
+- Pooling layers
+- Activation function such as ReLU
+- Flatten layer
+- Dense fully connected layers
+- Output layer with Softmax activation
+
+### Task 4: Model Training
+
+Train the CNN model using the training dataset. Select suitable hyperparameters such as batch size, number of epochs, optimizer, and learning rate.
+
+### Task 5: Model Evaluation and Architecture Comparison
+
+Evaluate the CNN model using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrix
+- Training and validation accuracy curves
+- Training and validation loss curves
+
+In addition, students must perform an architecture comparison by gradually increasing the number of hidden layers in the CNN model and evaluating the performance each time. Students should train and compare at least three CNN architectures:
+
+| Model | CNN Architecture |
+|-------|------------------|
+| Model 1 | Basic CNN with 2 convolutional layers |
+| Model 2 | CNN with 3-4 convolutional layers |
+| Model 3 | Deeper CNN with 5 or more convolutional layers |
+
+For each model, students should report: training accuracy, validation accuracy, test accuracy, training loss, validation loss, precision, recall, and F1-score.
+
+### Task 6: Results Discussion
+
+Discuss the model performance. Identify which classes were classified correctly and which classes caused confusion. Explain possible reasons for misclassification.
+
+### Task 7: Improvement
+
+Improve the CNN model using one or more of the following:
+
+- Data augmentation
+- Dropout
+- Batch normalization
+- Transfer learning using VGG16, ResNet50, or MobileNet
+- Hyperparameter tuning
+
+### Final Deliverables
+
+Students must submit:
+
+- A written report.
+- Python code or Jupyter Notebook.
+- Dataset source link.
+- Model evaluation results.
+- Graphs and confusion matrix.
 
 <!-- APPENDIX END -->

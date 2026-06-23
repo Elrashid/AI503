@@ -14,11 +14,13 @@ The champion ensemble was strong across all ten classes. Per-class F1 ranged fro
 
 
 
+
 Why are cats and dogs harder? Both are four-legged animals with fur and similar poses. At only 32×32 pixels, fine details are lost, so the two classes look alike. The most common single mistake was a real cat predicted as a dog, which happened 67 times. This pattern held from the weak QUICK-mode run through to the final run, which suggests it reflects the data, not the model size.
 
 ![Confusion matrices for the top six models.](../../figures/fig_confusion_grid.png)
 
 > **Figure 5.2:** Confusion matrices for the top six models.
+
 
 
 
@@ -33,6 +35,7 @@ The confusion matrices show that errors cluster among visually similar groups. A
 ![Ten test images the champion misclassified (true vs predicted).](../../figures/fig_misclassified.png)
 
 > **Figure 5.3:** Ten test images the champion misclassified (true vs predicted).
+
 
 
 
