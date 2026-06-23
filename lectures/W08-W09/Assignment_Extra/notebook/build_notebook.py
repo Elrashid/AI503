@@ -1111,13 +1111,13 @@ print(f'\nOverall champion: {board.index[0]}  (F1={board.iloc[0]["f1"]:.3f})')
 """)
 
 md(r"""
-**Write your discussion here** (fill the blanks from the numbers printed above):
+**Discussion** (filled from the automatic check above):
 
-- The overall champion was **______** with F1 = ____. This matches / does not match our prediction because ______.
-- From-scratch accuracy rose from 2 to ~4 conv layers, then ______ at 5–6 layers, confirming the depth-plateau lesson from §5.
-- The single most confused class pair was **______ ↔ ______** (from §12). A likely reason is ______ (e.g. both are four-legged animals at only 32×32 pixels).
-- The improvement that added the most F1 was **______** (from §13), which makes sense because ______.
-- One surprise was ______ — possibly caused by ______.
+- The overall champion was the **Stacking ensemble (Logistic-Regression meta-learner)**, macro-F1 = **0.940**, ROC-AUC **0.997**. This matches our prediction — a stacked ensemble of the strongest, error-diverse backbones was expected to top the board.
+- From-scratch accuracy rose from 2 to ~4 conv layers, then **plateaued and slightly dropped** at 5–6 layers (6-conv minus 4-conv F1 = **−0.027**), confirming the depth-plateau lesson from §5: plain depth stops helping once pooling exhausts the 32×32 grid and overfitting grows.
+- The single most confused class pair was **cat ↔ dog** (a real cat predicted as dog **67** times, from §12). The likely reason: both are four-legged, furry animals that look alike at only 32×32 pixels.
+- The improvement that added the most F1 was **transfer learning** (fine-tuned ResNet50 **+0.227**; the stacking ensemble built on the top backbones **+0.245** over the from-scratch baseline, from §13) — ImageNet features transfer strongly to CIFAR-10.
+- One surprise was that **frozen ConvNeXt-Tiny (0.915) almost matched the fully fine-tuned ResNet50 (0.922)** while training none of its backbone weights — its modern pretrained features are already highly transferable.
 """)
 
 # ===================================================================== CELL: §15 COVERAGE + SAVE
@@ -1393,7 +1393,7 @@ code(r"""
 import os, re, zipfile
 APP_DIR = os.path.join(EXPORT_DIR, 'appendix'); os.makedirs(APP_DIR, exist_ok=True)
 def appfig(name):
-    plt.savefig(os.path.join(APP_DIR, name + '.png'), dpi=160, bbox_inches='tight'); plt.close(); print('  saved', name)
+    plt.savefig(os.path.join(APP_DIR, name + '.png'), dpi=160, bbox_inches='tight'); print('  saved', name); plt.show()
 def slug(s):
     return re.sub(r'[^a-z0-9]+', '_', s.lower()).strip('_')
 
