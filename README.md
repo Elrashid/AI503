@@ -24,6 +24,7 @@ A systematic literature review of **post-training quantization for transformer L
 | `Assignment01/paper_explorer.html` | **Interactive paper explorer** with extraction tree + page-image bbox overlay |
 | `Assignment01/scripts/` | Build pipeline (Python) — comparative table, dashboard, paper explorer, audit, downloads |
 | `Assignment01/.slr/` | Schema, system prompt, and config used for extraction (Claude agent inputs) |
+| `Assignment02/experiments/` | **Assignment 2 experiments** — Exp 1: quantization × safety diagnosis (Qwen2.5-1.5B at FP16/INT8/NF4; Colab notebook + per-prompt generations + results). Exp 2: SAQC selective-escalation cascade (scripts, CSV results, figures; no GPU needed). Each experiment folder has its own README. |
 | `notebooks/marker_convert_v5.ipynb` | Colab notebook — PDF → marker JSON conversion (Gemini 2.5 Flash backend) |
 | `lectures/` | **Course lecture slides + lab notebooks (Weeks 1–9)** — see `lectures/index.html`. Logistic regression, KNN/DT/SVM/NB, clustering, deep learning, LSTM, ensembles. |
 | `lectures/W08-W09/Assignment_Extra/` | **CNN Image Classification — Extra Assignment**: a 26-model CNN bake-off on CIFAR-10 (notebook + 43-page report, champion 0.94 macro-F1) |
